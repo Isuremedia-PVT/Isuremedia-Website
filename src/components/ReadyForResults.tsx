@@ -1,3 +1,5 @@
+'use client';
+
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
