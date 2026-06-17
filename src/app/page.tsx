@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ClientsMarquee from '@/components/ClientsMarquee';
 import ProblemStatement from '@/components/ProblemStatement';
-import ReadyForResults from '@/components/ReadyForResults';
 import Stats from '@/components/Stats';
 import ClientResults from '@/components/ClientResults';
 import Services from '@/components/Services';
@@ -24,7 +23,6 @@ export default function Home() {
         <Hero />
         <ClientsMarquee />
         <ProblemStatement />
-        <ReadyForResults />
         <Stats />
         <ClientResults />
         <TrustVideo />
