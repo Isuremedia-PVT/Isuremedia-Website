@@ -1,26 +1,98 @@
 @import "tailwindcss";
+@source "../**/*.{tsx,ts,jsx,js}";
 
+/* ══════════════════════════════════════════════
+   ISureMedia Official Brand Token System
+   Source: ISM_Brand_Colour_Palette_single page_final.docx
+          ISM_Typography_System_final.docx
+══════════════════════════════════════════════ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ── Official Brand Colours ── */
+  --ism-digital-blue: #1E4DC3;   /* PRIMARY  · 36% · buttons, links, section bg */
+  --ism-dark-navy:    #002353;   /* FOOTER   ·  8% · footer bg, nav tint only */
+  --ism-amber:        #FFB000;   /* ACCENT   ·  3% · CTAs, stats, highlights */
+  --ism-soft-white:   #F7F8FA;   /* BG       · 52% · primary page background */
+  --ism-near-black:   #002353;   /* HEADING  · headings and body — brand navy */
+
+  /* ── Semantic aliases ── */
+  --color-primary:        #1E4DC3;
+  --color-primary-hover:  #1940A3;
+  --color-primary-active: #133280;
+  --color-navy:           #002353;
+  --color-accent:         #FFB000;
+  --color-accent-hover:   #D69300;
+
+  /* ── Text ── */
+  --color-text-heading: #002353;
+  --color-text-body:    #002353;
+  --color-text-muted:   #4A6080;
+  --color-text-white:   #FFFFFF;
+
+  /* ── Backgrounds ── */
+  --color-bg-white:     #FFFFFF;
+  --color-bg-soft:      #F7F8FA;
+  --color-border:       #E5E7EB;
+
+  /* ── Tint palettes ── */
+  --ism-blue-50:   #E8EEFB;
+  --ism-blue-100:  #C9D6F6;
+  --ism-blue-200:  #94AEEE;
+  --ism-amber-50:  #FCF7EC;
+  --ism-amber-200: #F8D995;
+
+  /* ── Shadows ── */
+  --sh-xs: 0 1px 2px rgba(0,0,0,.06);
+  --sh-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+  --sh-md: 0 4px 16px rgba(0,0,0,.09);
+  --sh-lg: 0 12px 40px rgba(0,0,0,.13);
+  --sh-xl: 0 24px 60px rgba(0,0,0,.18);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-body);
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* ── Typography — ISM_Typography_System_final.docx ──
+   H1  56px / 700 / 1.15  Plus Jakarta Sans
+   H2  40px / 700 / 1.20  Plus Jakarta Sans
+   H3  24px / 600 / 1.30  Plus Jakarta Sans
+   H4  13px / 600 / 1.40  Plus Jakarta Sans UPPER
+   Stat 64px / 800 / 1.10 Plus Jakarta Sans
+   Body-lg 18px / 400 / 1.70  Inter
+   Body    16px / 400 / 1.70  Inter
+   Caption 14px / 400 / 1.60  Inter
+── */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-jakarta, 'Plus Jakarta Sans', sans-serif);
+  letter-spacing: -0.3px;
+}
+h1 { font-size: clamp(36px, 4.2vw, 56px); font-weight: 700; line-height: 1.15; color: var(--color-text-heading); }
+h2 { font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; line-height: 1.20; color: var(--color-text-heading); }
+h3 { font-size: clamp(20px, 2vw, 24px);   font-weight: 600; line-height: 1.30; color: var(--color-text-heading); }
+h4 { font-size: 13px; font-weight: 600; line-height: 1.40; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-heading); }
+p  { font-family: var(--font-inter, 'Inter', sans-serif); }
+
+/* ── Animations ── */
+@keyframes ism-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes ism-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 4px; }
