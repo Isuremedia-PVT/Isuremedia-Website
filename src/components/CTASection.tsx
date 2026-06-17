@@ -15,11 +15,17 @@ export default function CTASection() {
 
           {/* ── Left: Text + Buttons ── */}
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.10, marginBottom: 20 }}>
-              One conversation.<br />Endless possibilities.
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+              <div style={{ width: 28, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+              <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.75)', letterSpacing: '.12em', textTransform: 'uppercase', margin: 0 }}>
+                Your Growth Starts Here
+              </p>
+            </div>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.10, marginBottom: 20, whiteSpace: 'nowrap' }}>
+              Ready for <span style={{ color: 'var(--ism-amber)' }}>Results?</span>
             </h2>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, maxWidth: 540, marginBottom: 36 }}>
-              Whether you&apos;re scaling a business or building an agency, we start with what you actually need.
+            <p style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, maxWidth: 620, marginBottom: 36 }}>
+              Whether you run a local business, a growing brand, or a digital agency, the question is the same. Are you getting the growth your marketing should be delivering? If not, you are in the right place. Talk to us today and we will help you identify and achieve your biggest growth opportunities.
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
