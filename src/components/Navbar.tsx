@@ -32,7 +32,7 @@ const serviceCategories = [
   },
   {
     label: 'White Label', icon: 'fa-solid fa-tag',
-    items: ['White-Label SEO', 'White-Label PPC', 'White-Label Web', 'Branded Reports', 'Agency Dashboards', 'Dedicated Pods'],
+    items: ['White Label SEO', 'White Label PPC', 'White Label Web', 'Branded Reports', 'Agency Dashboards', 'Dedicated Pods'],
   },
   {
     label: 'Automation', icon: 'fa-solid fa-robot',
@@ -92,28 +92,28 @@ const whitelabelCategories = [
   {
     heading: 'Core Services',
     items: [
-      { icon: 'fa-solid fa-magnifying-glass', label: 'White-Label SEO' },
-      { icon: 'fa-solid fa-chart-bar',        label: 'White-Label PPC' },
-      { icon: 'fa-solid fa-globe',            label: 'White-Label Web Development' },
-      { icon: 'fa-solid fa-share-nodes',      label: 'White-Label Social Media Marketing' },
+      { icon: 'fa-solid fa-magnifying-glass', label: 'White Label SEO' },
+      { icon: 'fa-solid fa-chart-bar',        label: 'White Label PPC' },
+      { icon: 'fa-solid fa-globe',            label: 'White Label Web Development' },
+      { icon: 'fa-solid fa-share-nodes',      label: 'White Label Social Media Marketing' },
     ],
   },
   {
     heading: 'Content & Creative',
     items: [
-      { icon: 'fa-solid fa-pen-nib',          label: 'White-Label Content Marketing' },
-      { icon: 'fa-solid fa-link',             label: 'White-Label Link Building' },
-      { icon: 'fa-solid fa-palette',          label: 'White-Label Graphic Design' },
-      { icon: 'fa-solid fa-video',            label: 'White-Label Video Editing' },
+      { icon: 'fa-solid fa-pen-nib',          label: 'White Label Content Marketing' },
+      { icon: 'fa-solid fa-link',             label: 'White Label Link Building' },
+      { icon: 'fa-solid fa-palette',          label: 'White Label Graphic Design' },
+      { icon: 'fa-solid fa-video',            label: 'White Label Video Editing' },
     ],
   },
   {
     heading: 'Automation & Reporting',
     items: [
-      { icon: 'fa-solid fa-robot',            label: 'White-Label GoHighLevel Support' },
-      { icon: 'fa-solid fa-chart-pie',        label: 'White-Label Reporting & Dashboards' },
+      { icon: 'fa-solid fa-robot',            label: 'White Label GoHighLevel Support' },
+      { icon: 'fa-solid fa-chart-pie',        label: 'White Label Reporting & Dashboards' },
       { icon: 'fa-solid fa-users-gear',       label: 'Dedicated Agency Pods' },
-      { icon: 'fa-solid fa-envelope',         label: 'White-Label Email Marketing' },
+      { icon: 'fa-solid fa-envelope',         label: 'White Label Email Marketing' },
     ],
   },
 ];
@@ -230,7 +230,7 @@ export default function Navbar() {
         {/* ── Logo ── */}
         <a href="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="ISureMedia" style={{ height: 52, width: 'auto', display: 'block' }} />
+          <img src="/logo.png" alt="Isuremedia" style={{ height: 52, width: 'auto', display: 'block' }} />
         </a>
 
         {/* ── Desktop Nav ── */}
@@ -277,7 +277,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div style={{ paddingLeft: 24, minWidth: 220 }}>
-                      <CtaCard heading="Scale Your Business with ISureMedia" sub="Book a free strategy call with our team." btnLabel="Book Free Call" />
+                      <CtaCard heading="Scale Your Business with Isuremedia" sub="Book a free strategy call with our team." btnLabel="Book Free Call" />
                     </div>
                   </Dropdown>
                 )}
@@ -411,7 +411,7 @@ export default function Navbar() {
                       <div>
                         <CtaCard
                           heading="Scale Your Agency Without Hiring"
-                          sub="Our 40+ in-house specialists handle delivery under your brand."
+                          sub="Our 40+ in house specialists handle delivery under your brand."
                           btnLabel="Get Started"
                         />
                       </div>

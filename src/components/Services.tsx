@@ -9,7 +9,7 @@ const tabs = [
   {
     id: 'web', label: 'Websites & Funnels', icon: 'fa-solid fa-globe',
     title: 'Websites & Funnels Built to Convert',
-    desc: 'We design and build fast, conversion-optimized websites and funnels that plug directly into your CRM and automation stack. Whether you need a new site, a sales funnel, or GoHighLevel build-outs, our in-house team handles strategy, design, and execution end-to-end.',
+    desc: 'We design and build fast, conversion optimized websites and funnels that plug directly into your CRM and automation stack. Whether you need a new site, a sales funnel, or GoHighLevel build-outs, our in-house team handles strategy, design, and execution end to end.',
     stat: '3x', statLabel: 'Higher Conversion Rate',
     img: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
     cta: 'Discover Services',
@@ -18,11 +18,11 @@ const tabs = [
   {
     id: 'seo', label: 'SEO', icon: 'fa-solid fa-magnifying-glass',
     title: 'SEO & Organic Growth Engine',
-    desc: 'We build an organic traffic engine that compounds over time. Our team blends technical SEO, content strategy, and authority link building to help you rank for high-intent keywords and attract qualified leads month after month.',
+    desc: 'We build an organic traffic engine that compounds over time. Our team blends technical SEO, content strategy, and authority link building to help you rank for high intent keywords and attract qualified leads month after month.',
     stat: '225%', statLabel: 'Avg. Traffic Growth',
     img: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
     cta: 'Discover SEO Services',
-    subServices: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'E-commerce SEO', 'Link Building', 'SEO Content Strategy', 'SEO Audits', 'AI SEO', 'AEO (Answer Engine Optimization)', 'White-Label SEO'],
+    subServices: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'E commerce SEO', 'Link Building', 'SEO Content Strategy', 'SEO Audits', 'AI SEO', 'AEO (Answer Engine Optimization)', 'White Label SEO'],
   },
   {
     id: 'ppc', label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar',
@@ -31,12 +31,12 @@ const tabs = [
     stat: '5.2x', statLabel: 'Average ROAS',
     img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80',
     cta: 'Discover PPC Services',
-    subServices: ['PPC Management', 'Google Ads', 'Meta Ads (Facebook & Instagram)', 'LinkedIn Ads', 'YouTube Ads', 'Programmatic Advertising', 'Retargeting & Remarketing', 'Paid Social Media Advertising', 'Funnel Strategy & Tracking Setup', 'White-Label PPC'],
+    subServices: ['PPC Management', 'Google Ads', 'Meta Ads (Facebook & Instagram)', 'LinkedIn Ads', 'YouTube Ads', 'Programmatic Advertising', 'Retargeting & Remarketing', 'Paid Social Media Advertising', 'Funnel Strategy & Tracking Setup', 'White Label PPC'],
   },
   {
     id: 'creative', label: 'Content & Creative', icon: 'fa-solid fa-palette',
     title: 'Content & Creative That Converts',
-    desc: 'Great strategy needs great assets. Our content and design team creates on-brand copy, graphics, and social content that plug directly into your SEO, funnels, and ad campaigns — so every click lands on something worth reading.',
+    desc: 'Great strategy needs great assets. Our content and design team creates on brand copy, graphics, and social content that plug directly into your SEO, funnels, and ad campaigns — so every click lands on something worth reading.',
     stat: '2x', statLabel: 'Better Engagement',
     img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&q=80',
     cta: 'Discover Content Services',
@@ -44,12 +44,12 @@ const tabs = [
   },
   {
     id: 'whitelabel', label: 'White Label', icon: 'fa-solid fa-tag',
-    title: 'White-Label Fulfillment for Growing Agencies',
-    desc: 'Scale your agency without hiring. Work directly with our US-based strategy team while our 40+ in-house specialists handle delivery behind the scenes. From SEO and PPC to web builds and GoHighLevel setups — everything ships under your brand.',
+    title: 'White Label Fulfillment for Growing Agencies',
+    desc: 'Scale your agency without hiring. Work directly with our US-based strategy team while our 40+ in house specialists handle delivery behind the scenes. From SEO and PPC to web builds and GoHighLevel setups — everything ships under your brand.',
     stat: '40+', statLabel: 'In-House Specialists',
     img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
     cta: 'Discover White Label',
-    subServices: ['White-Label PPC', 'White-Label Social Media Marketing', 'White-Label Web Development', 'White-Label GoHighLevel Support', 'White-Label Content Marketing', 'White-Label Link Building', 'White-Label Graphic Design', 'Dedicated Agency Pods', 'White-Label Reporting & Dashboards'],
+    subServices: ['White Label PPC', 'White Label Social Media Marketing', 'White Label Web Development', 'White Label GoHighLevel Support', 'White Label Content Marketing', 'White Label Link Building', 'White Label Graphic Design', 'Dedicated Agency Pods', 'White Label Reporting & Dashboards'],
   },
   {
     id: 'automation', label: 'Automation', icon: 'fa-solid fa-robot',
@@ -58,7 +58,7 @@ const tabs = [
     stat: '62%', statLabel: 'Lower Lead Cost',
     img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80',
     cta: 'Discover Automation',
-    subServices: ['GoHighLevel Setup & Automation', 'CRM Setup & Management', 'Lead Nurture Workflows', 'API Integration', 'Email Marketing Automation', 'Appointment Booking Systems', 'Sales Pipeline Automation', 'SMS & WhatsApp Automation', 'White-Label GoHighLevel Support', 'AI Chatbot & Conversation Automation'],
+    subServices: ['GoHighLevel Setup & Automation', 'CRM Setup & Management', 'Lead Nurture Workflows', 'API Integration', 'Email Marketing Automation', 'Appointment Booking Systems', 'Sales Pipeline Automation', 'SMS & WhatsApp Automation', 'White Label GoHighLevel Support', 'AI Chatbot & Conversation Automation'],
   },
 ];
 
@@ -145,7 +145,7 @@ export default function Services() {
 
             {/* ISM badge */}
             <div style={{ position: 'absolute', bottom: 18, left: '50%', transform: 'translateX(-50%)', background: 'rgba(255,255,255,.15)', borderRadius: 8, padding: '6px 16px', border: '1px solid rgba(255,255,255,.30)', backdropFilter: 'blur(6px)', whiteSpace: 'nowrap' }}>
-              <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: '#fff', letterSpacing: '.04em' }}>ISureMedia ✓</span>
+              <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: '#fff', letterSpacing: '.04em' }}>Isuremedia ✓</span>
             </div>
           </div>
 

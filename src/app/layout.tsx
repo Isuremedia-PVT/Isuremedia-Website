@@ -18,11 +18,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "IsureMedia – Full-Service Digital Marketing Agency & White-Label Partner",
+  title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
   description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
   keywords: "digital marketing agency, white label marketing, SEO agency, PPC management, social media marketing, content marketing",
   openGraph: {
-    title: "IsureMedia – Full-Service Digital Marketing Agency & White-Label Partner",
+    title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
     description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
     type: "website",
   },

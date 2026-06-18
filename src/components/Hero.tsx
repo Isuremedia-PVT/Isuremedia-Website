@@ -42,12 +42,12 @@ export default function Hero() {
           <div>
             <h1 style={{ fontFamily: J, fontWeight: 900, lineHeight: 1.10, letterSpacing: '-0.5px', marginBottom: 24, fontSize: 'clamp(28px,3.5vw,52px)', color: 'var(--color-navy)' }}>
               Digital Marketing Agency and<br />
-              White-Label Partner.<br />
+              White Label Partner.<br />
               <span style={{ color: 'var(--ism-amber)' }}>Built for Results.</span>
             </h1>
 
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, marginBottom: 28 }}>
-              We deliver measurable results for businesses that want to grow and agencies that want to scale. Complete digital marketing and white-label fulfilment, in one place.
+              We deliver measurable results for businesses that want to grow and agencies that want to scale. Complete digital marketing and white label fulfilment, in one place.
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 24 }}>
