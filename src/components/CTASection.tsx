@@ -55,7 +55,7 @@ export default function CTASection() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/katherine-koralewski-img.png"
-              alt="ISureMedia team"
+              alt="Isuremedia team"
               style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', objectPosition: 'bottom' }}
             />
           </div>

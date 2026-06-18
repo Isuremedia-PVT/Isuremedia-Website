@@ -14,7 +14,7 @@ const cols = [
   },
   {
     title: 'Industries',
-    links: ['Law Firms', 'Local Businesses', 'Restaurants', 'Health & Wellness', 'Real Estate', 'E-Commerce'],
+    links: ['Law Firms', 'Local Businesses', 'Restaurants', 'Health & Wellness', 'Real Estate', 'E Commerce'],
   },
   {
     title: 'Resources',
@@ -48,9 +48,9 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="ISureMedia" style={{ height: 44, width: 'auto', objectFit: 'contain', objectPosition: 'left center', filter: 'brightness(0) invert(1)', display: 'block', marginBottom: 16 }} />
+            <img src="/logo.png" alt="Isuremedia" style={{ height: 44, width: 'auto', objectFit: 'contain', objectPosition: 'left center', filter: 'brightness(0) invert(1)', display: 'block', marginBottom: 16 }} />
             <p style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.80)', lineHeight: 1.75, marginBottom: 24 }}>
-              End-to-end digital marketing. One team. One strategy. Zero gaps.
+              End to end digital marketing. One team. One strategy. Zero gaps.
             </p>
 
             {/* India Address */}

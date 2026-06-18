@@ -98,7 +98,7 @@ export default function Testimonials() {
           <div>
             <div style={{ fontFamily: J, fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
               200+ agencies and businesses have{' '}
-              <span style={{ color: 'var(--ism-amber)' }}>trusted ISureMedia.</span>
+              <span style={{ color: 'var(--ism-amber)' }}>trusted Isuremedia.</span>
             </div>
             <div style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.65)' }}>
               From startups to enterprise brands, across every industry.

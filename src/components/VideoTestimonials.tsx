@@ -13,7 +13,7 @@ const videos = [
     role:    'CEO, BrightPath Agency',
     country: 'United States',
     flag:    '🇺🇸',
-    quote:   '"ISureMedia tripled our client pipeline in 4 months. The white-label SEO is flawless."',
+    quote:   '"Isuremedia tripled our client pipeline in 4 months. The white label SEO is flawless."',
   },
   {
     id:      'eQ8kni-hnt0',
@@ -54,7 +54,7 @@ export default function VideoTestimonials() {
             <span style={{ color: 'var(--color-primary)' }}>Clients Say</span>
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-            Businesses and agencies share the results they&apos;ve seen working with ISureMedia.
+            Businesses and agencies share the results they&apos;ve seen working with Isuremedia.
           </p>
         </div>
 
