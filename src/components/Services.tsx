@@ -9,56 +9,56 @@ const tabs = [
   {
     id: 'web', label: 'Websites & Funnels', icon: 'fa-solid fa-globe',
     title: 'Websites & Funnels Built to Convert',
-    desc: 'We design and build fast, conversion optimized websites and funnels that plug directly into your CRM and automation stack. Whether you need a new site, a sales funnel, or GoHighLevel build-outs, our in-house team handles strategy, design, and execution end to end.',
+    desc: 'We design and build websites, landing pages, and sales funnels that turn visitors into leads and customers. Whether you need a new site, a GoHighLevel funnel build, or a full redesign, every project is built around one goal: more conversions from the traffic you already have.',
     stat: '3x', statLabel: 'Higher Conversion Rate',
     img: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
-    cta: 'Discover Services',
-    subServices: ['Business Websites', 'Landing Pages', 'Sales Funnels', 'GoHighLevel Funnels & Automation', 'Website Redesign', 'Conversion Rate Optimization (CRO)', 'Website Maintenance & Support', 'AI-Powered Website Personalization'],
+    cta: 'Explore Web & Funnel Services',
+    subServices: ['Business Websites', 'Landing Pages', 'Sales Funnels', 'GoHighLevel Funnels & Automation', 'WordPress Website Design', 'Shopify Website Design', 'E-commerce Website Design', 'Website Redesign', 'Conversion Rate Optimization (CRO)', 'Webflow Development', 'AI-Powered Website Personalization', 'Website Maintenance & Support'],
   },
   {
     id: 'seo', label: 'SEO', icon: 'fa-solid fa-magnifying-glass',
-    title: 'SEO & Organic Growth Engine',
-    desc: 'We build an organic traffic engine that compounds over time. Our team blends technical SEO, content strategy, and authority link building to help you rank for high intent keywords and attract qualified leads month after month.',
+    title: 'SEO Built for Long-Term Growth.',
+    desc: 'We build an organic traffic engine that compounds over time. Our team blends technical SEO, content strategy, and authority link building to help you rank for high-intent keywords and attract qualified leads month after month.',
     stat: '225%', statLabel: 'Avg. Traffic Growth',
     img: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
-    cta: 'Discover SEO Services',
-    subServices: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'E commerce SEO', 'Link Building', 'SEO Content Strategy', 'SEO Audits', 'AI SEO', 'AEO (Answer Engine Optimization)', 'White Label SEO'],
+    cta: 'Explore Our SEO Services',
+    subServices: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'Google Business Profile Optimization', 'E-commerce SEO', 'AI SEO', 'AEO (Answer Engine Optimization)', 'Link Building', 'SEO Content Strategy', 'YouTube SEO', 'International SEO', 'SEO Audits', 'White-Label SEO'],
   },
   {
     id: 'ppc', label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar',
-    title: 'Paid Ads & Performance Marketing',
-    desc: 'We make every ad dollar accountable. We plan, launch, and optimize PPC and paid social campaigns that are tightly aligned with your funnels, so you get predictable leads, clear ROAS, and reporting that actually makes sense.',
+    title: 'Paid Ads That Bring You Customers.',
+    desc: 'We make every ad dollar accountable. We plan, build, and optimize paid campaigns across Google, Meta, LinkedIn, and YouTube, targeting the right people at the right moment so paid advertising becomes the most predictable part of your growth.',
     stat: '5.2x', statLabel: 'Average ROAS',
     img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80',
-    cta: 'Discover PPC Services',
-    subServices: ['PPC Management', 'Google Ads', 'Meta Ads (Facebook & Instagram)', 'LinkedIn Ads', 'YouTube Ads', 'Programmatic Advertising', 'Retargeting & Remarketing', 'Paid Social Media Advertising', 'Funnel Strategy & Tracking Setup', 'White Label PPC'],
+    cta: 'Explore PPC Services',
+    subServices: ['Google Ads', 'Meta Ads (Facebook & Instagram)', 'PPC Management', 'Retargeting & Remarketing', 'Google Shopping Ads', 'LinkedIn Ads', 'YouTube Ads', 'Microsoft / Bing Ads', 'Programmatic Advertising', 'Paid Social Media Advertising', 'Conversion Tracking & Analytics Setup', 'Funnel Strategy & Tracking Setup', 'White-Label PPC'],
   },
   {
     id: 'creative', label: 'Content & Creative', icon: 'fa-solid fa-palette',
-    title: 'Content & Creative That Converts',
-    desc: 'Great strategy needs great assets. Our content and design team creates on brand copy, graphics, and social content that plug directly into your SEO, funnels, and ad campaigns — so every click lands on something worth reading.',
+    title: 'Content & Creative That Makes People Choose You.',
+    desc: 'Good content does more than look good. We create copy, graphics, videos, and social content that attracts the right audience and moves them toward a buying decision, whether they find you through search, social, or paid ads.',
     stat: '2x', statLabel: 'Better Engagement',
     img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&q=80',
-    cta: 'Discover Content Services',
-    subServices: ['Content Marketing', 'SEO Blog Writing', 'Website Copywriting', 'Social Media Content & Management', 'Graphic Design', 'Brand Identity & Visual Design', 'Ad Creative Design', 'Video Marketing & Editing', 'Email Marketing', 'AI Content Production'],
+    cta: 'Explore Content & Creative Services',
+    subServices: ['Social Media Content & Management', 'SEO Blog Writing', 'Website Copywriting', 'Graphic Design', 'Short Form Video Content', 'Video Marketing & Editing', 'Ad Creative Design', 'Email Marketing', 'LinkedIn Content & Personal Branding', 'Brand Identity & Visual Design', 'UGC Content for Ads', 'Infographic Design', 'Content Marketing', 'AI Content Production'],
   },
   {
     id: 'whitelabel', label: 'White Label', icon: 'fa-solid fa-tag',
-    title: 'White Label Fulfillment for Growing Agencies',
-    desc: 'Scale your agency without hiring. Work directly with our US-based strategy team while our 40+ in house specialists handle delivery behind the scenes. From SEO and PPC to web builds and GoHighLevel setups — everything ships under your brand.',
+    title: 'White-Label Fulfillment Built to Grow Your Agency.',
+    desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists in India handle delivery. From SEO and PPC to web builds and GoHighLevel setups, everything ships under your brand.',
     stat: '40+', statLabel: 'In-House Specialists',
     img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
-    cta: 'Discover White Label',
-    subServices: ['White Label PPC', 'White Label Social Media Marketing', 'White Label Web Development', 'White Label GoHighLevel Support', 'White Label Content Marketing', 'White Label Link Building', 'White Label Graphic Design', 'Dedicated Agency Pods', 'White Label Reporting & Dashboards'],
+    cta: 'Explore White Label Services',
+    subServices: ['White-Label SEO', 'White-Label PPC', 'White-Label Web Development', 'White-Label GoHighLevel Support', 'White-Label Marketing Automation', 'White-Label Content Marketing', 'White-Label Social Media Marketing', 'White-Label Email Marketing', 'White-Label Copywriting', 'White-Label Graphic Design', 'White-Label Link Building', 'Dedicated Agency Pods', 'White-Label Reporting & Dashboards'],
   },
   {
-    id: 'automation', label: 'Automation', icon: 'fa-solid fa-robot',
-    title: 'Marketing Automation That Keeps Your Pipeline Full',
-    desc: 'We set up the systems that follow up with leads, book appointments, and move people through your funnel automatically. You stay focused on running your business while everything behind the scenes keeps working.',
+    id: 'automation', label: 'Marketing Automation', icon: 'fa-solid fa-robot',
+    title: 'Automation That Grows Your Business 24/7.',
+    desc: 'We build the automation systems that keep your business moving without you managing every step. Lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically. Whether you are on GoHighLevel, Kajabi, HubSpot, or building from the ground up, we own it from setup to results.',
     stat: '62%', statLabel: 'Lower Lead Cost',
     img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80',
-    cta: 'Discover Automation',
-    subServices: ['GoHighLevel Setup & Automation', 'CRM Setup & Management', 'Lead Nurture Workflows', 'API Integration', 'Email Marketing Automation', 'Appointment Booking Systems', 'Sales Pipeline Automation', 'SMS & WhatsApp Automation', 'White Label GoHighLevel Support', 'AI Chatbot & Conversation Automation'],
+    cta: 'Explore Automation Services',
+    subServices: ['GoHighLevel Setup & Automation', 'CRM Setup & Management', 'Lead Nurture Workflows', 'Email Marketing Automation', 'Appointment Booking Systems', 'Sales Pipeline Automation', 'SMS & WhatsApp Automation', 'AI Chatbot & Conversation Automation', 'Make (Integromat) Automation', 'Zapier Workflow Automation', 'n8n Workflow Automation', 'Reputation Management Automation', 'E-commerce Automation', 'Social Media Automation', 'API Integration', 'Reporting & Dashboard Automation', 'White-Label GoHighLevel Support'],
   },
 ];
 
@@ -72,15 +72,11 @@ export default function Services() {
 
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', maxWidth: 700, margin: '0 auto 52px' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 18 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', display: 'inline-block' }} />
-            <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, letterSpacing: '.10em', textTransform: 'uppercase', color: 'var(--color-primary)' }}>What We Do</span>
-          </div>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 16, lineHeight: 1.15, letterSpacing: '-0.5px' }}>
-            Get All Your Digital Marketing<br />Done in One Place.
+            Digital Marketing Services Built<br />to Grow Your Business.
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-            Growing online takes more than just good SEO or a well-designed website. It takes all the right pieces working together — search rankings, paid campaigns, strong content, a website that converts, and a team that knows how to connect all of it.
+            Get found on Google and in AI search. Turn ad spend into revenue. Build websites and funnels that convert. Automate your CRM, bookings, and pipelines on GoHighLevel. From SEO, PPC, and content marketing to web design, automation, and white-label fulfillment, every service built to grow your business.
           </p>
         </div>
 
