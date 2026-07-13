@@ -1,0 +1,249 @@
+'use client';
+
+import Navbar from '@/components/Navbar';
+import CTASection from '@/components/CTASection';
+import Footer from '@/components/Footer';
+
+const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
+const I = 'var(--font-inter,Inter,sans-serif)';
+
+const BENEFITS = [
+  {
+    icon: 'fa-solid fa-wand-magic-sparkles',
+    title: 'Done-for-You Funnel Builds',
+    desc: 'We handle everything — strategy, design, copy, and tech. You hand us the brief and get back a fully built, revenue-ready ClickFunnels funnel.',
+  },
+  {
+    icon: 'fa-solid fa-arrows-split-up-and-left',
+    title: 'Upsell/Downsell Sequences',
+    desc: 'Maximise revenue per customer with strategically placed upsells, downsells, and order bumps that increase average order value without adding more traffic costs.',
+  },
+  {
+    icon: 'fa-solid fa-credit-card',
+    title: 'Payment Gateway Integration',
+    desc: 'Stripe, PayPal, and other major payment processors connected and tested — so your funnel takes payments from day one without technical headaches.',
+  },
+];
+
+const INCLUDED = [
+  'Funnel strategy session',
+  'Page design',
+  'Copy framework',
+  'Email follow-up',
+  'Order form setup',
+  'Upsell page',
+  'Membership area',
+  'Analytics & tracking',
+];
+
+const PROCESS = [
+  { n: '01', title: 'Plan', desc: 'We map out your funnel architecture — offer stack, pricing tiers, and follow-up sequence — before touching the builder.' },
+  { n: '02', title: 'Design', desc: 'Every page is designed inside ClickFunnels to match your brand and maximise conversions at each stage of the funnel.' },
+  { n: '03', title: 'Integrate', desc: 'Payment gateways, email autoresponders, and analytics tools are connected and fully tested end-to-end.' },
+  { n: '04', title: 'Launch', desc: 'We run final QA across all devices and payment flows, then hand over a ready-to-sell funnel with a full walkthrough.' },
+];
+
+const RELATED = [
+  { href: '/services/websites-funnels/gohighlevel-funnels', icon: 'fa-solid fa-filter', title: 'GHL Funnels', desc: 'GoHighLevel funnel builds with built-in CRM, SMS, and email automation for an all-in-one solution.' },
+  { href: '/services/websites-funnels/landing-pages', icon: 'fa-solid fa-rectangle-ad', title: 'Landing Pages', desc: 'Standalone high-converting landing pages for paid ads and organic campaigns.' },
+  { href: '/services/marketing-automation', icon: 'fa-solid fa-robot', title: 'Marketing Automation', desc: 'Automate your follow-up, nurture sequences, and client communications end-to-end.' },
+];
+
+export default function ClickFunnelsPage() {
+  return (
+    <>
+      <Navbar />
+      <main>
+
+        {/* ── Breadcrumb ── */}
+        <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '12px 0' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <a href="/" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Home</a>
+            <i className="fa-solid fa-chevron-right" style={{ fontSize: 9, color: 'var(--color-text-muted)' }} />
+            <a href="/services/websites-funnels" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Websites &amp; Funnels</a>
+            <i className="fa-solid fa-chevron-right" style={{ fontSize: 9, color: 'var(--color-text-muted)' }} />
+            <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-primary)', fontWeight: 500 }}>ClickFunnels</span>
+          </div>
+        </div>
+
+        {/* ── Hero ── */}
+        <section style={{ background: 'var(--color-bg-soft)', padding: '104px 0', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 28 }}>
+              <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
+              <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>ClickFunnels</span>
+            </div>
+            <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(28px,3.8vw,56px)', color: 'var(--color-navy)', lineHeight: 1.1, letterSpacing: '-0.5px', marginBottom: 22, maxWidth: 820, margin: '0 auto 22px' }}>
+              ClickFunnels Funnels Built<br />for Coaches &amp; Course Creators.
+            </h1>
+            <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,18px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 620, margin: '0 auto 40px' }}>
+              Done-for-you ClickFunnels builds for coaches, course creators, and info-product sellers — complete with upsells, payment integration, and automated follow-up.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
+              <a href="/contact"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+                Build My Funnel <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+              </a>
+              <a href="/services/websites-funnels"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color = '#fff'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; (e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-primary)'; }}>
+                Back to Websites &amp; Funnels
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ── What Is It ── */}
+        <section style={{ padding: '104px 0', background: '#fff' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+            <div className="split-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
+                  <div style={{ width: 40, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.10em', textTransform: 'uppercase' }}>What Is It</span>
+                </div>
+                <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,36px)', color: 'var(--color-navy)', lineHeight: 1.22, letterSpacing: '-0.4px', marginBottom: 20 }}>
+                  Your Complete ClickFunnels Sales Machine
+                </h2>
+                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
+                  ClickFunnels is the platform of choice for coaches, course creators, and info-product sellers who want a proven system for selling online. But most people don&#39;t have the time or expertise to build a high-converting funnel themselves.
+                </p>
+                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
+                  We build your entire funnel from scratch — strategy, page design, copy frameworks, email sequences, and payment integration — so you can focus on delivering results for your clients.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+                  {['Multi-step funnel architecture', 'Order bump & upsell sequences', 'Stripe & PayPal integration', 'Email autoresponder connection'].map(item => (
+                    <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <div style={{ width: 22, height: 22, borderRadius: '50%', background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <i className="fa-solid fa-check" style={{ color: 'var(--color-primary)', fontSize: 10 }} />
+                      </div>
+                      <span style={{ fontFamily: I, fontSize: 15, color: 'var(--color-navy)' }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ position: 'relative' }}>
+                <div style={{ position: 'absolute', top: 24, right: -16, width: '86%', height: '80%', background: 'var(--ism-blue-50)', borderRadius: 20, zIndex: 0 }} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="ClickFunnels funnel strategy" style={{ position: 'relative', zIndex: 1, width: '100%', height: 440, objectFit: 'cover', borderRadius: 16, display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.15)' }} />
+              </div>
+            </div>
+          </div>
+          <style>{`.split-grid { } @media(max-width:860px){ .split-grid{ grid-template-columns:1fr !important; gap:48px !important; } }`}</style>
+        </section>
+
+        {/* ── Key Benefits ── */}
+        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+            <div style={{ textAlign: 'center', marginBottom: 60 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.10em', textTransform: 'uppercase' }}>Key Benefits</span>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+              </div>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Why Our ClickFunnels Builds Deliver Results</h2>
+            </div>
+            <div className="benefits-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
+              {BENEFITS.map(b => (
+                <div key={b.title}
+                  style={{ background: '#fff', borderRadius: 16, padding: '36px 30px', border: '1px solid var(--color-border)', transition: 'all .22s' }}
+                  onMouseEnter={e => { const el = e.currentTarget as HTMLDivElement; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 52px rgba(30,77,195,.14)'; el.style.borderColor = 'var(--color-primary)'; }}
+                  onMouseLeave={e => { const el = e.currentTarget as HTMLDivElement; el.style.transform = ''; el.style.boxShadow = ''; el.style.borderColor = 'var(--color-border)'; }}>
+                  <div style={{ width: 54, height: 54, borderRadius: 14, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
+                    <i className={b.icon} style={{ color: 'var(--color-primary)', fontSize: 21 }} />
+                  </div>
+                  <h3 style={{ fontFamily: J, fontSize: 18, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 10 }}>{b.title}</h3>
+                  <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>{b.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style>{`@media(max-width:860px){ .benefits-grid{ grid-template-columns:1fr !important; } } @media(max-width:1100px) and (min-width:861px){ .benefits-grid{ grid-template-columns:repeat(2,1fr) !important; } }`}</style>
+        </section>
+
+        {/* ── What's Included ── */}
+        <section style={{ padding: '104px 0', background: '#fff' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+            <div style={{ textAlign: 'center', marginBottom: 56 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.10em', textTransform: 'uppercase' }}>What&#39;s Included</span>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+              </div>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Everything Covered in Our ClickFunnels Service</h2>
+            </div>
+            <div className="included-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16, maxWidth: 860, margin: '0 auto' }}>
+              {INCLUDED.map(item => (
+                <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 14, background: 'var(--color-bg-soft)', borderRadius: 12, padding: '18px 22px' }}>
+                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <i className="fa-solid fa-check" style={{ color: 'var(--color-navy)', fontSize: 12 }} />
+                  </div>
+                  <span style={{ fontFamily: I, fontSize: 15, color: 'var(--color-navy)', fontWeight: 500 }}>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style>{`@media(max-width:640px){ .included-grid{ grid-template-columns:1fr !important; } }`}</style>
+        </section>
+
+        {/* ── Process ── */}
+        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+            <div style={{ textAlign: 'center', marginBottom: 60 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.10em', textTransform: 'uppercase' }}>Our Process</span>
+                <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+              </div>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>How We Build Your ClickFunnels Funnel</h2>
+            </div>
+            <div className="process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 24 }}>
+              {PROCESS.map(p => (
+                <div key={p.n} style={{ background: '#fff', borderRadius: 16, padding: '36px 28px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
+                  <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: '0 8px 24px rgba(30,77,195,.25)' }}>
+                    <span style={{ fontFamily: J, fontSize: 15, fontWeight: 800, color: '#fff' }}>{p.n}</span>
+                  </div>
+                  <h3 style={{ fontFamily: J, fontSize: 17, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 10 }}>{p.title}</h3>
+                  <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.72, margin: 0 }}>{p.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style>{`@media(max-width:900px){ .process-grid{ grid-template-columns:repeat(2,1fr) !important; } } @media(max-width:520px){ .process-grid{ grid-template-columns:1fr !important; } }`}</style>
+        </section>
+
+        {/* ── Related Services ── */}
+        <section style={{ padding: '104px 0', background: '#fff' }}>
+          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+            <div style={{ textAlign: 'center', marginBottom: 52 }}>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,36px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Related Services</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', marginTop: 12 }}>Explore other services that work alongside your ClickFunnels build.</p>
+            </div>
+            <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
+              {RELATED.map(r => (
+                <a key={r.href} href={r.href} style={{ display: 'block', textDecoration: 'none', background: 'var(--color-bg-soft)', borderRadius: 16, padding: '32px 28px', border: '1px solid var(--color-border)', transition: 'all .22s' }}
+                  onMouseEnter={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = 'translateY(-4px)'; el.style.boxShadow = '0 16px 44px rgba(30,77,195,.12)'; el.style.borderColor = 'var(--color-primary)'; }}
+                  onMouseLeave={e => { const el = e.currentTarget as HTMLAnchorElement; el.style.transform = ''; el.style.boxShadow = ''; el.style.borderColor = 'var(--color-border)'; }}>
+                  <div style={{ width: 48, height: 48, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                    <i className={r.icon} style={{ color: 'var(--color-primary)', fontSize: 19 }} />
+                  </div>
+                  <h3 style={{ fontFamily: J, fontSize: 17, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8 }}>{r.title}</h3>
+                  <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.72, margin: 0 }}>{r.desc}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+          <style>{`@media(max-width:860px){ .related-grid{ grid-template-columns:1fr !important; } } @media(max-width:1100px) and (min-width:861px){ .related-grid{ grid-template-columns:repeat(2,1fr) !important; } }`}</style>
+        </section>
+
+        <CTASection />
+      </main>
+      <Footer />
+    </>
+  );
+}

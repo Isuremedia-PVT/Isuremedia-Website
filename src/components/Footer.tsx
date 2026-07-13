@@ -6,19 +6,47 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 const cols = [
   {
     title: 'Services',
-    links: ['Website Development', 'SEO & Content', 'Google / Meta Ads', 'Marketing Automation', 'Social Media', 'White Label'],
+    links: [
+      { label: 'Websites & Funnels',   href: '/services/websites-funnels'    },
+      { label: 'SEO & Organic Growth', href: '/services/seo'                 },
+      { label: 'PPC & Paid Marketing', href: '/services/ppc-paid-marketing'  },
+      { label: 'Content & Creative',   href: '/services/content-creative'    },
+      { label: 'White-Label',          href: '/services/white-label'         },
+      { label: 'Marketing Automation', href: '/services/marketing-automation'},
+    ],
   },
   {
     title: 'Company',
-    links: ['About Us', 'Our Work', 'Case Studies', 'Testimonials', 'Careers', 'Affiliates'],
+    links: [
+      { label: 'About Us',      href: '/about'          },
+      { label: 'Portfolio',     href: '/portfolio'      },
+      { label: 'Case Studies',  href: '/case-studies'   },
+      { label: 'Testimonials',  href: '/testimonials'   },
+      { label: 'Careers',       href: '/careers'        },
+      { label: 'Affiliates',    href: '/affiliates'     },
+    ],
   },
   {
     title: 'Industries',
-    links: ['Law Firms', 'Local Businesses', 'Restaurants', 'Health & Wellness', 'Real Estate', 'E Commerce'],
+    links: [
+      { label: 'HVAC & Home Services', href: '/industries/hvac-home-services' },
+      { label: 'E-Commerce',           href: '/industries/ecommerce'          },
+      { label: 'SaaS & Tech',          href: '/industries/saas-tech'          },
+      { label: 'Marketing Agencies',   href: '/industries/marketing-agencies' },
+      { label: 'Real Estate',          href: '/industries/real-estate'        },
+      { label: 'All Industries',       href: '/industries'                    },
+    ],
   },
   {
     title: 'Resources',
-    links: ['Blog', 'Guides', 'Freebies', 'FAQ', 'Privacy Policy', 'Terms of Service'],
+    links: [
+      { label: 'Blog',          href: '/blog'           },
+      { label: 'Guides',        href: '/guides'         },
+      { label: 'Free Tools',    href: '/freetools'      },
+      { label: 'Privacy Policy',href: '/privacy-policy' },
+      { label: 'Terms of Service', href: '/terms'       },
+      { label: 'Contact Us',    href: '/contact'        },
+    ],
   },
 ];
 
@@ -30,7 +58,12 @@ const socials = [
   { icon: 'fa-brands fa-youtube',      href: '#' },
 ];
 
-const legalLinks = ['Sitemap', 'Privacy Policy', 'Terms', 'Cookie Policy', 'Refund Policy'];
+const legalLinks = [
+  { label: 'Sitemap',        href: '/sitemap'        },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Terms',          href: '/terms'          },
+  { label: 'Cookie Policy',  href: '/cookie-policy'  },
+];
 
 export default function Footer() {
   return (
@@ -73,9 +106,9 @@ export default function Footer() {
 
             {/* Contacts */}
             {[
-              { href: 'tel:+917011041363',           icon: 'fa-solid fa-phone',    label: '+91 70110 41363' },
-              { href: 'tel:+16465881430',             icon: 'fa-solid fa-phone',    label: '+1 646-588-1430' },
-              { href: 'mailto:hello@isuremedia.com',  icon: 'fa-solid fa-envelope', label: 'hello@isuremedia.com' },
+              { href: 'tel:+917011041363',          icon: 'fa-solid fa-phone',    label: '+91 70110 41363' },
+              { href: 'tel:+16465881430',            icon: 'fa-solid fa-phone',    label: '+1 646-588-1430' },
+              { href: 'mailto:hello@isuremedia.com', icon: 'fa-solid fa-envelope', label: 'hello@isuremedia.com' },
             ].map(c => (
               <a key={c.label} href={c.href}
                 style={{ fontFamily: I, fontSize: 12, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 9, transition: 'color .15s' }}
@@ -107,14 +140,14 @@ export default function Footer() {
               <h5 style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 22 }}>{col.title}</h5>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
                 {col.links.map(link => (
-                  <li key={link}>
-                    <a href="#"
+                  <li key={link.label}>
+                    <a href={link.href}
                       style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.85)', textDecoration: 'none', transition: 'color .15s', display: 'flex', alignItems: 'center', gap: 6 }}
                       onMouseEnter={e => { e.currentTarget.style.color = 'var(--ism-amber)'; }}
                       onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,.85)'; }}
                     >
                       <span style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--ism-amber)', flexShrink: 0, display: 'inline-block' }} />
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -131,11 +164,11 @@ export default function Footer() {
           </p>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
             {legalLinks.map(item => (
-              <a key={item} href="#"
+              <a key={item.label} href={item.href}
                 style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.65)', textDecoration: 'none', transition: 'color .15s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,.65)')}
-              >{item}</a>
+              >{item.label}</a>
             ))}
           </div>
         </div>
