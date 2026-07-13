@@ -7,36 +7,76 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ─── Dropdown data ─── */
 const companyLinks = [
-  { icon: 'fa-solid fa-circle-info',  label: 'About Us',      href: '/about'  },
-  { icon: 'fa-solid fa-medal',        label: 'Certifications', href: '#'       },
-  { icon: 'fa-solid fa-briefcase',    label: 'Careers',        href: '#'       },
-  { icon: 'fa-solid fa-handshake',    label: 'Affiliates',     href: '#'       },
+  { icon: 'fa-solid fa-circle-info',  label: 'About Us',   href: '/about'      },
+  { icon: 'fa-solid fa-layer-group',  label: 'Portfolio',  href: '/portfolio'  },
+  { icon: 'fa-solid fa-briefcase',    label: 'Careers',    href: '/careers'    },
+  { icon: 'fa-solid fa-handshake',    label: 'Affiliates', href: '/affiliates' },
 ];
 
 const serviceCategories = [
   {
-    label: 'Websites & Funnels', icon: 'fa-solid fa-globe',
-    items: ['Business Websites', 'Landing Pages', 'Sales Funnels', 'GoHighLevel Builds', 'Web Applications', 'CRO & Optimisation'],
+    label: 'Websites & Funnels', icon: 'fa-solid fa-globe', mainHref: '/services/websites-funnels',
+    items: [
+      { label: 'WordPress Design',      href: '/services/websites-funnels/wordpress-design'    },
+      { label: 'Shopify Design',        href: '/services/websites-funnels/shopify-design'       },
+      { label: 'GoHighLevel Funnels',   href: '/services/websites-funnels/gohighlevel-funnels'  },
+      { label: 'Landing Pages',         href: '/services/websites-funnels/landing-pages'        },
+      { label: 'ClickFunnels',          href: '/services/websites-funnels/clickfunnels'         },
+      { label: 'CRO & Optimisation',    href: '/services/websites-funnels/cro'                  },
+    ],
   },
   {
-    label: 'SEO', icon: 'fa-solid fa-magnifying-glass',
-    items: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'Link Building', 'AEO & AI Overviews', 'Content Strategy'],
+    label: 'SEO', icon: 'fa-solid fa-magnifying-glass', mainHref: '/services/seo',
+    items: [
+      { label: 'Technical SEO', href: '/services/seo/technical-seo' },
+      { label: 'On-Page SEO',   href: '/services/seo/on-page-seo'   },
+      { label: 'Local SEO',     href: '/services/seo/local-seo'     },
+      { label: 'Link Building', href: '/services/seo/link-building' },
+      { label: 'AI SEO',        href: '/services/seo/ai-seo'        },
+      { label: 'SEO Audits',    href: '/services/seo/seo-audits'    },
+    ],
   },
   {
-    label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar',
-    items: ['Google Ads', 'Meta Ads', 'LinkedIn Ads', 'YouTube Ads', 'Retargeting', 'Conversion Tracking'],
+    label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar', mainHref: '/services/ppc-paid-marketing',
+    items: [
+      { label: 'Google Ads',         href: '/services/ppc/google-ads'              },
+      { label: 'Meta Ads',           href: '/services/ppc/meta-ads'                },
+      { label: 'Retargeting',        href: '/services/ppc/retargeting-remarketing' },
+      { label: 'Funnel Strategy',    href: '/services/ppc/funnel-strategy-tracking'},
+    ],
   },
   {
-    label: 'Brand & Creative', icon: 'fa-solid fa-palette',
-    items: ['Content Marketing', 'SEO Blog Writing', 'Graphic Design', 'Video Editing', 'Social Media', 'Brand Identity'],
+    label: 'Content & Creative', icon: 'fa-solid fa-palette', mainHref: '/services/content-creative',
+    items: [
+      { label: 'SEO Blog Writing',     href: '/services/content-creative/seo-blog-writing'    },
+      { label: 'Website Copywriting',  href: '/services/content-creative/website-copywriting' },
+      { label: 'Social Media Content', href: '/services/content-creative/social-media-content'},
+      { label: 'Graphic Design',       href: '/services/content-creative/graphic-design'      },
+      { label: 'Ad Creative Design',   href: '/services/content-creative/ad-creative-design'  },
+      { label: 'Email Marketing',      href: '/services/content-creative/email-marketing'     },
+    ],
   },
   {
-    label: 'White Label', icon: 'fa-solid fa-tag',
-    items: ['White Label SEO', 'White Label PPC', 'White Label Web', 'Branded Reports', 'Agency Dashboards', 'Dedicated Pods'],
+    label: 'White Label', icon: 'fa-solid fa-tag', mainHref: '/services/white-label',
+    items: [
+      { label: 'White-Label SEO',        href: '/services/white-label/white-label-seo'        },
+      { label: 'White-Label PPC',        href: '/services/white-label/white-label-ppc'        },
+      { label: 'White-Label Web Design', href: '/services/white-label/white-label-web-design' },
+      { label: 'White-Label Automation', href: '/services/white-label/white-label-automation' },
+      { label: 'White-Label Content',    href: '/services/white-label/white-label-content'    },
+      { label: 'View All',               href: '/services/white-label'                        },
+    ],
   },
   {
-    label: 'Automation', icon: 'fa-solid fa-robot',
-    items: ['GoHighLevel', 'CRM Setup', 'Lead Nurture', 'Email Automation', 'Appointment Booking', 'HubSpot & Zoho'],
+    label: 'Automation', icon: 'fa-solid fa-robot', mainHref: '/services/marketing-automation',
+    items: [
+      { label: 'GoHighLevel Setup', href: '/services/automation/gohighlevel'     },
+      { label: 'CRM Setup',         href: '/services/automation/crm-setup'       },
+      { label: 'Zapier Automation', href: '/services/automation/zapier'          },
+      { label: 'Make Automation',   href: '/services/automation/make-integromat' },
+      { label: 'n8n Automation',    href: '/services/automation/n8n'             },
+      { label: 'AI Chatbot',        href: '/services/automation/ai-chatbot'      },
+    ],
   },
 ];
 
@@ -48,6 +88,7 @@ const resultCards = [
     img: 'https://picsum.photos/seed/analytics/400/300',
     icon: 'fa-solid fa-chart-line',
     shape1: '#1E4DC3', shape2: '#FFB000',
+    href: '/case-studies',
   },
   {
     label: 'Client Testimonials',
@@ -56,6 +97,7 @@ const resultCards = [
     img: 'https://picsum.photos/seed/team/400/300',
     icon: 'fa-solid fa-star',
     shape1: '#0E9B6E', shape2: '#FFB000',
+    href: '/testimonials',
   },
   {
     label: 'Design Portfolio',
@@ -64,6 +106,7 @@ const resultCards = [
     img: 'https://picsum.photos/seed/design/400/300',
     icon: 'fa-solid fa-layer-group',
     shape1: '#4C4CC8', shape2: '#FFB000',
+    href: '/portfolio',
   },
   {
     label: 'Industries Served',
@@ -72,6 +115,7 @@ const resultCards = [
     img: 'https://picsum.photos/seed/business/400/300',
     icon: 'fa-solid fa-briefcase',
     shape1: '#D4860A', shape2: '#1E4DC3',
+    href: '/industries',
   },
   {
     label: 'Video Testimonials',
@@ -80,52 +124,54 @@ const resultCards = [
     img: 'https://picsum.photos/seed/camera/400/300',
     icon: 'fa-solid fa-circle-play',
     shape1: '#1840A0', shape2: '#FFB000',
+    href: '/testimonials',
   },
 ];
 
 const resourceLinks = [
-  { icon: 'fa-solid fa-newspaper',   label: 'Blog'   },
-  { icon: 'fa-solid fa-book-open',   label: 'Guides' },
+  { icon: 'fa-solid fa-newspaper',  label: 'Blog',       href: '/blog'      },
+  { icon: 'fa-solid fa-book-open',  label: 'Guides',     href: '/guides'    },
+  { icon: 'fa-solid fa-gift',       label: 'Free Tools', href: '/freetools' },
 ];
 
 const whitelabelCategories = [
   {
-    heading: 'Core Services',
+    heading: 'Marketing',
     items: [
-      { icon: 'fa-solid fa-magnifying-glass', label: 'White Label SEO' },
-      { icon: 'fa-solid fa-chart-bar',        label: 'White Label PPC' },
-      { icon: 'fa-solid fa-globe',            label: 'White Label Web Development' },
-      { icon: 'fa-solid fa-share-nodes',      label: 'White Label Social Media Marketing' },
+      { icon: 'fa-solid fa-magnifying-glass', label: 'White-Label SEO',        href: '/services/white-label/white-label-seo'        },
+      { icon: 'fa-solid fa-chart-bar',        label: 'White-Label PPC',        href: '/services/white-label/white-label-ppc'        },
+      { icon: 'fa-solid fa-pen-nib',          label: 'White-Label Content',    href: '/services/white-label/white-label-content'    },
+      { icon: 'fa-solid fa-tag',              label: 'White-Label Overview',   href: '/services/white-label'                        },
     ],
   },
   {
-    heading: 'Content & Creative',
+    heading: 'Design & Tech',
     items: [
-      { icon: 'fa-solid fa-pen-nib',          label: 'White Label Content Marketing' },
-      { icon: 'fa-solid fa-link',             label: 'White Label Link Building' },
-      { icon: 'fa-solid fa-palette',          label: 'White Label Graphic Design' },
-      { icon: 'fa-solid fa-video',            label: 'White Label Video Editing' },
-    ],
-  },
-  {
-    heading: 'Automation & Reporting',
-    items: [
-      { icon: 'fa-solid fa-robot',            label: 'White Label GoHighLevel Support' },
-      { icon: 'fa-solid fa-chart-pie',        label: 'White Label Reporting & Dashboards' },
-      { icon: 'fa-solid fa-users-gear',       label: 'Dedicated Agency Pods' },
-      { icon: 'fa-solid fa-envelope',         label: 'White Label Email Marketing' },
+      { icon: 'fa-solid fa-globe',            label: 'White-Label Web Design', href: '/services/white-label/white-label-web-design' },
+      { icon: 'fa-solid fa-robot',            label: 'White-Label Automation', href: '/services/white-label/white-label-automation' },
+      { icon: 'fa-solid fa-bullhorn',         label: 'For Agencies',           href: '/industries/marketing-agencies'               },
+      { icon: 'fa-solid fa-handshake',        label: 'Affiliate Partners',     href: '/affiliates'                                  },
     ],
   },
 ];
 
+const hireLinks = [
+  { icon: 'fa-brands fa-wordpress',       label: 'Hire a WordPress Developer',        href: '/hire/wordpress-developer'         },
+  { icon: 'fa-brands fa-shopify',         label: 'Hire a Shopify Developer',          href: '/hire/shopify-developer'           },
+  { icon: 'fa-solid fa-pen-ruler',        label: 'Hire a Web Designer',               href: '/hire/web-designer'                },
+  { icon: 'fa-solid fa-magnifying-glass', label: 'Hire an SEO Expert',                href: '/hire/seo-expert'                  },
+  { icon: 'fa-solid fa-robot',            label: 'Hire a GoHighLevel Expert',         href: '/hire/gohighlevel-expert'          },
+  { icon: 'fa-solid fa-gears',            label: 'Hire a Marketing Automation Expert',href: '/hire/marketing-automation-expert' },
+];
+
 const navItems = [
-  { label: 'Company',     type: 'company'   },
-  { label: 'Services',    type: 'services'  },
-  { label: 'Results',     type: 'work'      },
+  { label: 'Company',     type: 'company'    },
+  { label: 'Services',    type: 'services'   },
+  { label: 'Results',     type: 'work'       },
   { label: 'White Label', type: 'whitelabel' },
-  { label: 'Hire a Team', type: 'link'      },
-  { label: 'Resources',   type: 'resources' },
-  { label: 'Contact',     type: 'contact'   },
+  { label: 'Hire a Team', type: 'hire'       },
+  { label: 'Resources',   type: 'resources'  },
+  { label: 'Contact',     type: 'contact'    },
 ];
 
 /* Reusable CTA card shown in the right panel of each dropdown */
@@ -156,7 +202,7 @@ export default function Navbar() {
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const openNav  = (key: string) => { if (timer.current) clearTimeout(timer.current); setOpenMenu(key); };
-  const closeNav = ()            => { timer.current = setTimeout(() => setOpenMenu(null), 130); };
+  const closeNav = ()            => { timer.current = setTimeout(() => setOpenMenu(null), 280); };
 
   useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
 
@@ -165,14 +211,14 @@ export default function Navbar() {
     <div
       onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
       onMouseLeave={closeNav}
-      style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: wide ? 860 : 640, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', padding: '28px 28px 24px', zIndex: 300, display: 'grid', gridTemplateColumns: wide ? '1fr 1fr 1fr auto' : '1fr auto', gap: 0 }}
+      style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: wide ? 860 : 640, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', padding: '28px 28px 24px', zIndex: 10000, display: 'grid', gridTemplateColumns: wide ? '1fr 1fr 1fr auto' : '1fr auto', gap: 0 }}
     >
       {children}
     </div>
   );
 
   return (
-    <header style={{ position: 'sticky', top: 0, zIndex: 200, background: '#fff', borderBottom: '1px solid #E2E8F0', boxShadow: '0 1px 10px rgba(0,0,0,.05)' }}>
+    <header style={{ position: 'sticky', top: 0, zIndex: 9999, background: '#fff', borderBottom: '1px solid #E2E8F0', boxShadow: '0 1px 10px rgba(0,0,0,.05)' }}>
 
       {/* ── Top utility bar ── */}
       <div className="nav-top-bar" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '7px 0' }}>
@@ -287,21 +333,21 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 300, overflow: 'hidden' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, overflow: 'hidden' }}
                   >
                     {/* Icon tab row */}
                     <div style={{ display: 'flex', borderBottom: '1px solid #E2E8F0', background: '#FAFBFF' }}>
                       {serviceCategories.map((cat, i) => {
                         const isTab = activeServiceTab === i;
                         return (
-                          <div key={cat.label} onMouseEnter={() => setActiveServiceTab(i)}
-                            style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 10, padding: '14px 18px', cursor: 'pointer', borderBottom: isTab ? '2px solid var(--color-primary)' : '2px solid transparent', background: isTab ? '#EFF4FF' : 'transparent', transition: 'all .15s' }}
+                          <a key={cat.label} href={cat.mainHref} onMouseEnter={() => setActiveServiceTab(i)}
+                            style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 10, padding: '14px 18px', cursor: 'pointer', borderBottom: isTab ? '2px solid var(--color-primary)' : '2px solid transparent', background: isTab ? '#EFF4FF' : 'transparent', transition: 'all .15s', textDecoration: 'none' }}
                           >
                             <div style={{ width: 34, height: 34, borderRadius: 8, background: isTab ? 'var(--color-primary)' : '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transition: 'all .15s' }}>
                               <i className={cat.icon} style={{ fontSize: 14, color: isTab ? '#fff' : 'var(--color-primary)' }} />
                             </div>
                             <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: isTab ? 'var(--color-primary)' : 'var(--color-text-muted)', lineHeight: 1.3, transition: 'color .15s' }}>{cat.label}</span>
-                          </div>
+                          </a>
                         );
                       })}
                     </div>
@@ -310,21 +356,27 @@ export default function Navbar() {
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 260px', padding: '24px 28px 28px', gap: 24 }}>
                       {/* Links grid — 3 cols */}
                       <div>
-                        <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>{serviceCategories[activeServiceTab].label}</p>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
+                          <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', margin: 0 }}>{serviceCategories[activeServiceTab].label}</p>
+                          <a href={serviceCategories[activeServiceTab].mainHref} style={{ fontFamily: I, fontSize: 12, fontWeight: 600, color: 'var(--color-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5, transition: 'opacity .15s' }}
+                            onMouseEnter={e => (e.currentTarget.style.opacity = '.7')}
+                            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+                          >View all <i className="fa-solid fa-arrow-right" style={{ fontSize: 9 }} /></a>
+                        </div>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '4px 12px' }}>
                           {serviceCategories[activeServiceTab].items.map(s => (
-                            <a key={s} href="#" className="nav-svc-link"
+                            <a key={s.label} href={s.href} className="nav-svc-link"
                               style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
                             >
                               <i className="fa-solid fa-arrow-right nav-svc-icon" style={{ fontSize: 9, flexShrink: 0 }} />
-                              <span className="nav-svc-text" style={{ fontFamily: I, fontSize: 13, fontWeight: 500 }}>{s}</span>
+                              <span className="nav-svc-text" style={{ fontFamily: I, fontSize: 13, fontWeight: 500 }}>{s.label}</span>
                             </a>
                           ))}
                         </div>
                       </div>
                       {/* CTA card */}
                       <div>
-                        <CtaCard heading="Not sure which service fits?" sub="Talk to our team and get a custom plan built for your business." btnLabel="Get Free Audit" />
+                        <CtaCard heading="Not sure which service fits?" sub="Talk to our team and get a custom plan built for your business." btnLabel="Get Started" />
                       </div>
                     </div>
                   </div>
@@ -335,12 +387,12 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 300, padding: '24px 24px 28px' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 24px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Our Results</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 10 }}>
                       {resultCards.map(card => (
-                        <a key={card.label} href="#"
+                        <a key={card.label} href={card.href}
                           style={{ textDecoration: 'none', borderRadius: 12, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 180, position: 'relative', transition: 'transform .18s, box-shadow .18s', cursor: 'pointer' }}
                           onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,.30)'; }}
                           onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
@@ -382,17 +434,17 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 900, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 300, padding: '24px 28px 28px' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 220px', gap: 24 }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 220px', gap: 24 }}>
 
                       {whitelabelCategories.map(cat => (
                         <div key={cat.heading}>
                           <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: 10 }}>{cat.heading}</p>
                           <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                             {cat.items.map(l => (
-                              <a key={l.label} href="#"
+                              <a key={l.label} href={l.href}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -427,7 +479,7 @@ export default function Navbar() {
                       <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>Resources</p>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                         {resourceLinks.map(l => (
-                          <a key={l.label} href="#"
+                          <a key={l.label} href={l.href}
                             style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 12px', borderRadius: 10, textDecoration: 'none', transition: 'background .15s' }}
                             onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                             onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -444,6 +496,31 @@ export default function Navbar() {
                       <CtaCard heading="Get Valuable Marketing Insights" sub="Explore our free resources, guides, and tools." btnLabel="Explore Freebies" />
                     </div>
                   </Dropdown>
+                )}
+
+                {/* Hire a Team dropdown */}
+                {isOpen && item.type === 'hire' && (
+                  <div
+                    onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
+                    onMouseLeave={closeNav}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 760, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
+                  >
+                    <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Hire a Specialist</p>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10 }}>
+                      {hireLinks.map(l => (
+                        <a key={l.label} href={l.href}
+                          style={{ display: 'flex', alignItems: 'center', gap: 13, padding: '14px 16px', borderRadius: 12, textDecoration: 'none', border: '1px solid #E8EEFF', background: '#FAFBFF', transition: 'all .15s' }}
+                          onMouseEnter={e => { e.currentTarget.style.background = '#EFF4FF'; e.currentTarget.style.borderColor = 'var(--color-primary)'; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = '#FAFBFF'; e.currentTarget.style.borderColor = '#E8EEFF'; }}
+                        >
+                          <div style={{ width: 40, height: 40, borderRadius: 10, background: '#E8EEFF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                            <i className={l.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
+                          </div>
+                          <span style={{ fontFamily: I, fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)', lineHeight: 1.35 }}>{l.label}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 )}
               </div>
             );
@@ -471,7 +548,7 @@ export default function Navbar() {
           {navItems.map(item => {
             const hasDropdown = item.type !== 'link' && item.type !== 'contact';
             const isExpanded  = mobileSection === item.type;
-            const links = item.type === 'company' ? companyLinks : item.type === 'resources' ? resourceLinks : [];
+            const links = item.type === 'company' ? companyLinks : item.type === 'resources' ? resourceLinks : item.type === 'hire' ? hireLinks : [];
             const wlLinks = whitelabelCategories.flatMap(c => c.items);
 
             return (
@@ -489,17 +566,17 @@ export default function Navbar() {
                       <div style={{ paddingLeft: 14, marginBottom: 4 }}>
                         {item.type === 'services'
                           ? serviceCategories.flatMap(g => g.items).map(s => (
-                              <a key={s} href="#" onClick={() => setMobileOpen(false)}
+                              <a key={s.label} href={s.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                               >
-                                <i className="fa-solid fa-arrow-right" style={{ fontSize: 9, color: 'var(--color-primary)' }} /> {s}
+                                <i className="fa-solid fa-arrow-right" style={{ fontSize: 9, color: 'var(--color-primary)' }} /> {s.label}
                               </a>
                             ))
                           : item.type === 'whitelabel'
                           ? wlLinks.map(l => (
-                              <a key={l.label} href="#" onClick={() => setMobileOpen(false)}
+                              <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -509,7 +586,7 @@ export default function Navbar() {
                             ))
                           : item.type === 'work'
                           ? resultCards.map(c => (
-                              <a key={c.label} href="#" onClick={() => setMobileOpen(false)}
+                              <a key={c.label} href={c.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -518,7 +595,7 @@ export default function Navbar() {
                               </a>
                             ))
                           : links.map(l => (
-                              <a key={l.label} href="#" onClick={() => setMobileOpen(false)}
+                              <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
