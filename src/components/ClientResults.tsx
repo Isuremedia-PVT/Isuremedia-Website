@@ -40,7 +40,7 @@ export default function ClientResults() {
       <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 560, height: 560, background: 'radial-gradient(circle,rgba(30,77,195,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '5%', left: '-5%', width: 440, height: 440, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         {/* ── Partner Logos Strip ── */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 56 }}>

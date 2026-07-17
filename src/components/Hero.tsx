@@ -7,9 +7,9 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 
 const SLIDES = [
+  { img: '/images/Artboard.png', alt: 'Isuremedia' },
   { img: 'https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png', alt: 'Client 1' },
   { img: 'https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/gary-singleton-img.png', alt: 'Client 2' },
-  { img: 'https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png', alt: 'Client 3' },
 ];
 
 export default function Hero() {
