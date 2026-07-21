@@ -49,12 +49,6 @@ const RELATED = [
   { icon: 'fa-solid fa-database', title: 'CRM Setup', desc: 'Configure your CRM as a clean data source for n8n to read from, write to, and trigger workflows from.', href: '/services/automation/crm-setup' },
 ];
 
-const Pill = ({ label }: { label: string }) => (
-  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
-    <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-    <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' as const }}>{label}</span>
-  </div>
-);
 
 export default function N8nPage() {
   return (
@@ -89,7 +83,6 @@ export default function N8nPage() {
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', textAlign: 'center', position: 'relative' }}>
-            <Pill label="n8n Workflow Automation" />
             <h1 style={{ fontFamily: J, fontSize: 'clamp(32px,4.5vw,62px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.08, margin: '0 auto 24px', maxWidth: 860 }}>
               n8n Automations for Teams Who Want Full Control
             </h1>
@@ -115,7 +108,6 @@ export default function N8nPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
             <div>
-              <Pill label="Why Tech-Forward Businesses Choose n8n" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 20 }}>
                 Automation Without Limits or Vendor Lock-In
               </h2>
@@ -147,7 +139,6 @@ export default function N8nPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Key Benefits" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why n8n Is the Automation Platform for Serious Teams</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Unlimited runs, full customisation, and total data ownership — n8n is built for teams that take automation seriously.</p>
             </div>
@@ -171,7 +162,6 @@ export default function N8nPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="What's Included" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>From Server Setup to 10 Live Workflows</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>We handle everything from infrastructure to workflow delivery and team handover.</p>
             </div>
@@ -192,7 +182,6 @@ export default function N8nPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Our Process" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Setup to Deployed Workflows in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>Infrastructure first, then workflows — ensuring your n8n environment is production-ready before the first automation goes live.</p>
             </div>
@@ -216,7 +205,6 @@ export default function N8nPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="Related Services" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair n8n With These Services</h2>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>

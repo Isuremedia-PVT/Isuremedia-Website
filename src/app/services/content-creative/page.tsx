@@ -3,162 +3,120 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Testimonials from '@/components/Testimonials';
+import ClientResults from '@/components/ClientResults';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-/* ── DATA ─────────────────────────────────────────────────────────────── */
-
-const STATS = [
-  { num: '1,000+', label: 'Content pieces produced monthly',              sub: 'Blogs, ads, social, email, video — every format' },
-  { num: '3×',     label: 'Average engagement lift with new creative',     sub: 'vs. previous generic or inconsistent content' },
-  { num: '40+',    label: 'In-house writers, designers, and video editors', sub: 'No outsourcing. One roof. One standard.' },
-  { num: 'Zero',   label: 'Generic stock content',                         sub: 'Every piece is custom-built for your brand' },
-];
+/* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
-  { icon: 'fa-file-lines',  title: 'Content Marketing',                 desc: 'Full-service content marketing — strategy, production, publishing, and measurement. Built to grow organic authority and guide buyers through every stage of your funnel.', cta: 'See Content Marketing Services',        href: '/services/content-marketing' },
-  { icon: 'fa-pen-nib',     title: 'SEO Blog Writing',                  desc: 'Keyword-researched, topically authoritative blog articles written for both search engines and real readers. Human-edited, properly structured, and built to rank.',           cta: 'See SEO Blog Writing Services',         href: '/services/seo-blog-writing' },
-  { icon: 'fa-globe',       title: 'Website Copywriting',               desc: 'Homepage, service page, about page, and landing page copy written to convert visitors into leads. Every word earns its place.',                                                  cta: 'See Website Copywriting Services',      href: '/services/website-copywriting' },
-  { icon: 'fa-hashtag',     title: 'Social Media Content & Management', desc: 'Content calendars, caption writing, creative assets, and posting management for organic social media. Consistent brand presence without you managing it.',                     cta: 'See Social Media Services',             href: '/services/social-media-content-management' },
-  { icon: 'fa-palette',     title: 'Graphic Design',                    desc: 'Brand-aligned graphic design for digital channels — social posts, ad creatives, infographics, email headers, and presentation assets.',                                         cta: 'See Graphic Design Services',           href: '/services/graphic-design' },
-  { icon: 'fa-star',        title: 'Brand Identity & Visual Design',    desc: 'Logo design, brand guidelines, colour systems, and typography — the visual foundation that makes everything else look intentional and consistent.',                              cta: 'See Brand Identity Services',           href: '/services/brand-identity-design' },
-  { icon: 'fa-image',       title: 'Ad Creative Design',                desc: 'Static and animated creatives for paid ads across Google Display, Meta, LinkedIn, and YouTube. Designed to stop the scroll and get the click.',                                 cta: 'See Ad Creative Design Services',       href: '/services/ad-creative-design' },
-  { icon: 'fa-video',       title: 'Video Marketing & Editing',         desc: 'Video scripting, editing, short-form reels, and long-form video content for social and paid campaigns. Strategy-led, not just edited footage.',                                  cta: 'See Video Marketing Services',          href: '/services/video-marketing-editing' },
-  { icon: 'fa-envelope',    title: 'Email Marketing',                   desc: 'Email campaigns, drip sequences, list management, and newsletter production. Written, designed, and ready to send — or handed to your team fully prepared.',                     cta: 'See Email Marketing Services',          href: '/services/email-marketing' },
-  { icon: 'fa-robot',       title: 'AI Content Production',             desc: 'AI-assisted content workflows for scale — SEO articles, product descriptions, social copy, and email sequences produced at volume, human-edited for quality and brand consistency.', cta: 'See AI Content Production Services', href: '/services/ai-content-production', isNew: true },
-];
-
-const DIFFERENTIATORS = [
-  { num: '01', title: 'Brief once, receive consistently',   desc: 'One thorough brief captures your brand voice and goals. Every piece after that maintains them without you re-explaining.' },
-  { num: '02', title: 'Feeds your SEO and paid channels',  desc: 'Our content team works alongside our SEO and PPC specialists. Every piece serves a live marketing objective.' },
-  { num: '03', title: 'Scales without quality dropping',   desc: 'AI-assisted production handles volume without sacrificing brand consistency. Every piece is reviewed by a human before delivery.' },
-  { num: '04', title: 'One team for everything',           desc: 'Copy, design, video, and email from the same team. Your brand looks and sounds consistent everywhere, not scattered.' },
+  {
+    title: 'SEO Blog Writing',
+    icon: 'fa-solid fa-pen-nib',
+    desc: 'Blog content that ranks on Google and brings in the right traffic. We research the keywords your buyers search for, write articles that answer their questions, and optimise every post for search. Content that earns rankings and earns trust at the same time.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Website Copywriting',
+    icon: 'fa-solid fa-file-lines',
+    desc: 'Your website copy has one job — get the right person to take the next step. We write home pages, service pages, and landing pages that communicate what you do clearly, position you against competitors, and move visitors toward a decision.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Social Media Management',
+    icon: 'fa-solid fa-share-nodes',
+    desc: 'Consistent, on-brand content across the platforms where your audience is. We handle strategy, content creation, scheduling, and engagement so your social presence builds continuously without you managing it day to day.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Graphic Design',
+    icon: 'fa-solid fa-palette',
+    desc: 'Ad creatives, social graphics, presentations, brochures, and brand assets — designed by our in-house team to a high standard and delivered fast. Every design is built around your brand and your audience, not pulled from a template.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Short Form Video Content',
+    icon: 'fa-solid fa-video',
+    desc: 'Short-form video is the highest-reach content format on every major platform right now. We script, produce, and edit short-form videos for Instagram Reels, TikTok, YouTube Shorts, and LinkedIn — content built to perform, not just to exist.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Ad Creative Design',
+    icon: 'fa-solid fa-rectangle-ad',
+    desc: 'Ad creative is the single biggest variable in paid ad performance. We design static ads, animated ads, and video creatives for Meta, Google, LinkedIn, and YouTube — built to stop the scroll and drive the click.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'Email Marketing',
+    icon: 'fa-solid fa-envelope',
+    desc: 'Email is still the highest-ROI marketing channel when done well. We write and design email campaigns and sequences that get opened, read, and acted on — welcome sequences, nurture campaigns, promotional emails, and re-engagement flows.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'LinkedIn Content & Personal Branding',
+    icon: 'fa-brands fa-linkedin',
+    desc: 'LinkedIn is the most powerful B2B channel available — for individuals and companies alike. We write posts, articles, and profile copy that build authority, grow your audience, and generate inbound leads from the right people.',
+    href: '/services/content-creative',
+  },
+  {
+    title: 'AI Content Production',
+    icon: 'fa-solid fa-robot',
+    desc: 'We use AI to produce content at scale without sacrificing quality — combining AI-assisted drafting with human editing, SEO optimisation, and brand alignment. More content, faster, at a lower cost per piece — without the generic output that comes from using AI without proper oversight.',
+    href: '/services/content-creative',
+  },
 ];
 
 const TIMELINE_STEPS = [
-  { num: '01', title: 'Discovery and Brand Briefing',  desc: 'We start by understanding your brand voice, audience, tone, competitors, and what each piece of content needs to do. One thorough brief upfront prevents weeks of revisions later. Every writer and designer on your account works from this brief, every time.' },
-  { num: '02', title: 'Strategy and Content Plan',     desc: 'We map out what to produce, in what format, for which channel, and why. A blog content calendar, an ad creative brief, a social posting schedule — everything planned before production starts. Every piece has a defined goal.' },
-  { num: '03', title: 'Production and Quality Review', desc: 'Writers, designers, and video editors produce the content. Every piece goes through a quality review against your brand brief before you see it. We do not send first drafts and call them done. You receive polished, ready-to-publish work.' },
-  { num: '04', title: 'Deliver, Publish, and Measure', desc: 'Assets are delivered in the format you need — ready to publish, or handed off to your team. We track what performs and feed that data back into the next production cycle. What works gets more of, what does not gets adjusted.' },
+  { num: 1, period: 'Content Strategy & Audit', desc: 'We start by understanding your audience, your goals, and what content already exists. We audit what is working, find the gaps, and build a content strategy that ties everything to business outcomes — not just traffic.' },
+  { num: 2, period: 'Brand Voice & Guidelines', desc: 'Before a word is written or a graphic is designed, we establish your brand voice, tone, and visual guidelines. Consistency matters — everything we produce sounds and looks like it came from the same place.' },
+  { num: 3, period: 'Content Production', desc: 'Our team of writers, designers, and video editors get to work. Every piece goes through quality control before it reaches you. You review it. We refine it. Nothing ships until it is right.' },
+  { num: 4, period: 'Publish & Distribute', desc: 'We do not just hand you files. We publish, schedule, and distribute content across the channels in your strategy. Blog posts go live on your site, social posts are scheduled, email campaigns are set up in your platform.' },
+  { num: 5, period: 'Measure & Improve', desc: 'We track what performs — which posts rank, which emails get opened, which content drives leads. Monthly reporting tells you what is working and what to do more of. The content strategy gets sharper over time.' },
 ];
 
-const RESULTS = [
-  {
-    tag: 'E-COMMERCE — SEO BLOG CONTENT + AD CREATIVES',
-    headline: '218% More Organic Traffic in 8 Months',
-    body: 'An online retailer had no consistent content strategy and ad creatives that were not converting. We built a topical cluster content plan, published 24 SEO articles over 8 months, and redesigned their Meta ad creative library. Organic traffic grew 218% and ad click-through improved by 91%.',
-    metrics: [
-      { val: '218%', label: 'Organic traffic growth' },
-      { val: '91%',  label: 'Ad CTR improvement' },
-      { val: '24',   label: 'SEO articles published' },
-    ],
-  },
-  {
-    tag: 'COACHING BUSINESS — BRAND IDENTITY + CONTENT MARKETING',
-    headline: '3× More Inbound Enquiries in 6 Months',
-    body: 'A business coach had no consistent brand identity and content that looked different every week. We built their brand guidelines, redesigned all digital assets, and launched a blog and social content programme. Inbound enquiries tripled in 6 months without increasing ad spend.',
-    metrics: [
-      { val: '3×',  label: 'Inbound enquiries' },
-      { val: '0%',  label: 'Increase in ad spend' },
-      { val: '6mo', label: 'To triple enquiries' },
-    ],
-  },
-];
-
-const INDUSTRIES = [
-  'Real Estate & Property', 'E-Commerce', 'Marketing Agencies',
-  'Coaches & Consultants', 'Law Firms', 'Home Services & HVAC',
-  'Education & Online Courses', 'Health & Wellness', 'SaaS & Tech',
-  'Finance & Fintech', 'Restaurants & Hospitality', 'Automotive',
-];
-
-const TOOL_CATEGORIES = [
-  { label: 'Design and creative tools', tools: ['Adobe Creative Suite', 'Figma', 'Canva Pro', 'Adobe Premiere Pro', 'CapCut', 'DaVinci Resolve', 'After Effects'], color: 'rgba(30,77,195,.09)', tcolor: 'var(--color-primary)' },
-  { label: 'Content and copy tools',    tools: ['SurferSEO', 'Clearscope', 'Grammarly', 'Notion', 'Airtable', 'ChatGPT (human-edited)'],                           color: 'rgba(255,176,0,.09)',  tcolor: '#B37800' },
-  { label: 'Publishing and management', tools: ['Buffer', 'Later', 'Hootsuite', 'HubSpot', 'Mailchimp', 'Klaviyo', 'ActiveCampaign', 'WordPress'],                  color: 'rgba(52,199,89,.09)', tcolor: '#16A34A' },
+const DIFFERENTIATORS = [
+  { dark: true,  icon: 'fa-solid fa-bullseye',      title: 'Content Built Around Business Goals',    desc: 'Most content agencies produce content. We produce content that does something. Every blog post, every video, every email we create is tied to a specific outcome — ranking on Google, generating leads, building authority, or moving a prospect closer to a buying decision. There is always a reason behind what we make.' },
+  { dark: false, icon: 'fa-solid fa-magnifying-glass', title: 'SEO Baked Into Every Piece',          desc: 'Content that does not rank does not matter. We optimise every blog post and website page for search before it goes live — keyword targeting, semantic structure, internal linking, and meta data. Your content builds organic traffic while it builds your brand.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Contracts. No Lock-In.',             desc: 'Our content programmes run month to month. You are not locked into an annual commitment. Start with what you need, scale up when results come in, and adjust as your business changes. Most clients stay because the content keeps performing — not because they have to.' },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Assisted, Human-Quality Output',     desc: 'We use AI where it makes sense — to research faster, draft at scale, and generate variation. But every piece is edited, fact-checked, and refined by a human writer before it reaches you. You get the speed benefits of AI with the quality that comes from genuine editorial standards.' },
+  { dark: false, icon: 'fa-solid fa-eye',            title: 'You See Everything Before It Goes Live', desc: 'Nothing is published without your approval. You see the content in draft, request changes, and sign off before anything is published. You always know what is going out under your brand — and you always have the final say.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'One Dedicated Content Strategist',      desc: 'You work with one person who knows your brand, your audience, and your goals. Not a rotating pool of freelancers, not a new writer every month. The same person manages your content strategy, briefs the team, and makes sure everything stays on-brand.' },
 ];
 
 const FAQS = [
-  { q: 'What is content marketing and how is it different from just writing blog posts?', a: 'Content marketing is a strategic approach to creating and distributing content that attracts, nurtures, and converts your ideal buyers — not just publishing articles for the sake of volume. A blog post is one tactic within a content marketing strategy. We also build in social content, email, video, lead magnets, and creative assets that support your SEO, funnels, and ads. The blog is part of the system, not the whole thing.' },
-  { q: 'How do you maintain brand voice across different content types?', a: 'We start every engagement with a brand voice and style brief. This documents your tone, vocabulary, audience, and examples of content you like and dislike. Every writer and designer on your account works from the same brief. We also do a calibration round — your first batch of content comes back with a feedback cycle so we dial in the voice before entering full production.' },
-  { q: 'What is AI content production and should I be worried about quality?', a: 'AI content production means using AI tools to speed up research, structure drafts, and scale output. We use it for clients who need high volume — product descriptions, social captions, email variations — where speed matters. Every piece produced with AI assistance is reviewed, edited, and approved by a human writer before it leaves our team. You would not be able to tell the difference from fully human-written content. We never publish raw AI output.' },
-  { q: 'Do you handle social media content and graphic design separately?', a: 'You can use them separately or together. Some clients need only the written captions and content calendar while they handle design in-house. Others need the full package — calendar, captions, and graphic assets for every post. We scope it based on what you actually need rather than selling you the whole package when part of it is enough.' },
-  { q: 'Do you offer white label content marketing and graphic design for agencies?', a: 'Yes. Content production and graphic design are two of our most requested white label services for agencies. Blog writing, social content, ad creatives, email campaigns, and brand design are all delivered under your agency brand with no ISM branding. We also have dedicated production pods for agencies that need consistent, high-volume output across multiple client accounts.' },
-  { q: 'How long does it take to start receiving content?', a: 'After the brand brief and strategy session, most clients receive their first batch of content within 7 to 10 business days. For high-urgency needs — ad creatives for a campaign launching next week or a landing page that needs copy today — we can turn around individual assets in 2 to 3 business days depending on complexity and current workload.' },
-  { q: 'What types of video content do you produce?', a: 'We handle video scripting, editing, short-form reels and TikTok-style content, YouTube video editing, product demonstration videos, testimonial editing, and social-first video cuts. We work with footage you provide or brief you on what to record. We do not handle physical video shoots but can recommend trusted production partners for that.' },
-  { q: 'What is the difference between graphic design and brand identity design?', a: 'Graphic design covers individual assets — social post templates, ad creatives, email headers, infographics, and presentation slides. Brand identity design is the foundational system those assets are built from — your logo, colour palette, typography, and brand guidelines. Most clients need graphic design ongoing, while brand identity is a one-time project that makes all the ongoing design work faster and more consistent.' },
+  { q: 'What types of content do you produce?', a: 'We produce SEO blog articles, website copy, landing page copy, social media content, short-form video scripts and edits, email campaigns, LinkedIn content, graphic design, ad creatives, and AI-assisted content at scale. Most clients use us for a combination of these — we build the mix around their goals.' },
+  { q: 'How do you make sure the content sounds like us?', a: 'We start every engagement with a brand voice session. We look at your existing content, interview your team if needed, and document your tone, language, and style in a brand voice guide. Every writer and designer on your account references that guide before they produce anything.' },
+  { q: 'Do you write SEO content?', a: 'Yes. SEO content is one of our strongest services. Every blog post we produce is built around keyword research, written to rank for a specific search intent, and optimised for search before it goes live. We also handle the technical side — meta descriptions, title tags, internal linking, and image optimisation.' },
+  { q: 'How much content can you produce per month?', a: 'There is no upper limit. We can produce two blog posts a month for a small business or forty pieces a week for a large brand. We scale to whatever volume your strategy requires, and our AI-assisted production process means we can increase output without decreasing quality.' },
+  { q: 'Can you manage our social media accounts?', a: 'Yes. We handle strategy, content creation, scheduling, and engagement across Instagram, Facebook, LinkedIn, TikTok, and X. You retain full access to your accounts at all times. We manage the day-to-day while you focus on running the business.' },
+  { q: 'Do you design ad creatives?', a: 'Yes. Ad creative is one of the highest-leverage things you can improve in a paid campaign. We design static ads, carousel ads, and video creatives for Meta, Google Display, LinkedIn, and YouTube. Every creative is designed to perform — not just to look good.' },
+  { q: 'How do you measure content performance?', a: 'We track the metrics that matter for each type of content — organic traffic and keyword rankings for blog content, open and click rates for email, reach and engagement for social, and lead volume for landing pages. Monthly reports show what is working and where we are focusing next.' },
+  { q: 'Can you help with LinkedIn content for our leadership team?', a: 'Yes. LinkedIn personal branding is one of our specialisms. We work with founders, executives, and sales leaders to build a consistent posting cadence, grow their follower base, and generate inbound leads and conversations from their target audience. We ghostwrite posts that sound like the person — not like a corporate content machine.' },
 ];
 
-const CONTENT_CARDS = [
-  { label: 'Blog Content',   icon: 'fa-file-lines', color: '#1E4DC3', progress: 95 },
-  { label: 'Ad Creative',    icon: 'fa-image',       color: '#FFB000', progress: 100 },
-  { label: 'Social Post',    icon: 'fa-hashtag',     color: '#8B5CF6', progress: 88 },
-  { label: 'Email',          icon: 'fa-envelope',    color: '#16A34A', progress: 100 },
-  { label: 'Brand Identity', icon: 'fa-star',        color: '#EC4899', progress: 92 },
-  { label: 'Video',          icon: 'fa-video',       color: '#F97316', progress: 80 },
-];
-
-const BUSINESS_PAINS = [
-  'Your content looks inconsistent because different people are producing different things with no shared brand brief',
-  'You publish content occasionally but there is no system or strategy behind it',
-  'Your ad creatives look generic and your social content is not getting the engagement it should',
-  'You need a full content and design team but cannot justify hiring a full team in-house',
-  'You want SEO content, ad creatives, social posts, email, and video handled by one team who understand your goals',
-];
-
-const AGENCY_PAINS = [
-  'Your clients need ongoing content and creative production and you need a reliable white label partner to deliver it consistently',
-  'You want blog writing, graphic design, ad creatives, and social content delivered under your agency brand',
-  'You need a production team that can handle volume per client without compromising on brand consistency',
-  'You want AI-assisted production available for high-volume clients who need rapid content output at scale',
-  'You need a creative partner who understands marketing objectives, not just how to produce assets',
-];
-
-const TICKER_ITEMS = [
-  'Content Marketing', 'SEO Blog Writing', 'Graphic Design', 'Ad Creative', 'Video Editing',
-  'Brand Identity', 'Website Copywriting', 'Social Media Content', 'Email Marketing', 'AI Production',
-];
-
-/* ── COMPONENTS ───────────────────────────────────────────────────────── */
-
-function Pill({ text, amber, purple }: { text: string; amber?: boolean; purple?: boolean }) {
-  const bg     = purple ? 'rgba(168,85,247,.10)' : amber ? 'rgba(255,176,0,.10)' : 'var(--ism-blue-50)';
-  const border = purple ? 'rgba(168,85,247,.30)' : amber ? 'rgba(255,176,0,.30)' : 'var(--ism-blue-100)';
-  const dot    = purple ? '#9333EA' : amber ? 'var(--ism-amber)' : 'var(--color-primary)';
-  const color  = purple ? '#9333EA' : amber ? 'var(--ism-amber)' : 'var(--color-primary)';
-  return (
-    <div style={{ display:'inline-flex', alignItems:'center', gap:8, background:bg, border:`1px solid ${border}`, borderRadius:100, padding:'6px 18px', marginBottom:20 }}>
-      <span style={{ width:7, height:7, borderRadius:'50%', background:dot, display:'inline-block' }} />
-      <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color, letterSpacing:'.09em', textTransform:'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
-
-function FAQSection() {
+/* ── FAQ 2-COL ────────────────────────────────────────────────────── */
+function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section className="cnt-section" style={{ padding:'100px 0', background:'#F0F5FF' }}>
+    <section className="cc-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-        <div className="cnt-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
-          {/* Left sticky */}
+        <div className="cc-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           <div style={{ position:'sticky', top:100 }}>
-            <Pill text="FAQ" />
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
-              Questions we get asked before every content engagement.
+              Questions About <span style={{ color:'var(--ism-amber)' }}>Content & Creative</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              Honest answers about brand voice, quality, timelines, and how we handle AI-assisted production.
+              Honest answers before you decide. No spin, no buzzwords.
             </p>
-            <a href="/contact"
-              style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
-              onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
-              onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+            <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Book a Free Creative Strategy Call →
+              Get Started →
             </a>
           </div>
-          {/* Right accordion */}
           <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
             {FAQS.map((faq, i) => (
               <div key={i} style={{ background:'#fff', borderRadius:12, border:`1px solid ${open===i ? 'var(--color-primary)' : 'var(--color-border)'}`, overflow:'hidden', transition:'border-color .2s' }}>
@@ -181,7 +139,7 @@ function FAQSection() {
   );
 }
 
-/* ══ PAGE ═════════════════════════════════════════════════════════════════ */
+/* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function ContentCreativePage() {
   return (
     <>
@@ -189,513 +147,497 @@ export default function ContentCreativePage() {
       <main>
 
         {/* ══ 1. HERO ══════════════════════════════════════════════════════ */}
-        <section className="cnt-hero" style={{ background:'#fff', padding:'80px 0 72px', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-10%', right:'-5%', width:600, height:600, background:'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
-          <div style={{ position:'absolute', bottom:'-10%', left:'-4%', width:400, height:400, background:'radial-gradient(circle,rgba(255,176,0,.04) 0%,transparent 65%)', pointerEvents:'none' }} />
+        <section className="cc-hero" style={{ background:'linear-gradient(160deg,#EDF2FF 0%,#F7F8FA 48%,#FFFBEB 100%)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
+          <div style={{ position:'absolute', top:'-10%', right:'-6%', width:720, height:720, background:'radial-gradient(circle,rgba(30,77,195,.13) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', bottom:'-15%', left:'-5%', width:560, height:560, background:'radial-gradient(circle,rgba(255,176,0,.11) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:'20%', left:'50%', transform:'translateX(-50%)', width:900, height:400, background:'radial-gradient(ellipse,rgba(30,77,195,.04) 0%,transparent 70%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
+          <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
 
-          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px' }}>
-            <div className="cnt-hero-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'center' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
+            <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
+              Content That Attracts.<br />
+              Creative That Converts.<br />
+              <span style={{ color:'var(--ism-amber)' }}>Results You Can Measure.</span>
+            </h1>
 
-              {/* LEFT */}
-              <div>
-                {/* Breadcrumb */}
-                <div style={{ display:'flex', alignItems:'center', gap:7, fontFamily:I, fontSize:13, color:'var(--color-text-muted)', marginBottom:20 }}>
-                  <a href="/" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Home</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <a href="/services" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Services</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <span style={{ color:'var(--color-primary)', fontWeight:600 }}>Brand &amp; Creative</span>
-                </div>
+            <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
+              We create the content and creative that attracts the right audience, builds trust, and moves people toward a buying decision — across search, social, email, and paid ads.
+            </p>
 
-                {/* Label pill with pulse */}
-                <div style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'6px 18px', borderRadius:100, background:'rgba(30,77,195,.07)', border:'1px solid rgba(30,77,195,.15)', fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.05em', marginBottom:24 }}>
-                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#22C55E', display:'inline-block', boxShadow:'0 0 0 3px rgba(34,197,94,.25)', animation:'cnt-pulse 2s infinite' }} />
-                  BRAND &amp; CREATIVE SERVICES
-                </div>
-
-                <h1 style={{ fontFamily:J, fontSize:'clamp(26px,2.8vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-1px', lineHeight:1.1, margin:'0 0 20px' }}>
-                  Content Marketing and Creative Services Built to Attract, Engage, and Convert —{' '}
-                  <span style={{ color:'var(--ism-amber)', position:'relative', display:'inline-block' }}>
-                    Not Just Fill a Calendar
-                    <svg style={{ position:'absolute', bottom:-4, left:0, width:'100%' }} height="6" viewBox="0 0 260 6" preserveAspectRatio="none">
-                      <path d="M2 4 Q65 1 130 4 Q195 7 258 2" stroke="var(--ism-amber)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                    </svg>
-                  </span>
-                </h1>
-
-                <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.78, margin:'0 0 32px', maxWidth:460 }}>
-                  We write, design, film, and produce the content that powers your SEO, ads, and funnels. Copy, graphics, social content, video, email, and AI-assisted production — all in-house, all connected to your marketing goals.
-                </p>
-
-                {/* CTAs */}
-                <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap', marginBottom:28 }}>
-                  <a href="/contact"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
-                    onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
-                  >
-                    Book a Free Creative Strategy Call →
-                  </a>
-                  <a href="#cnt-services"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
-                    onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
-                  >
-                    See Our Services ↓
-                  </a>
-                </div>
-
-                {/* Trust badges */}
-                <div style={{ display:'flex', alignItems:'center', gap:'6px 16px', flexWrap:'wrap', fontFamily:I, fontSize:13, color:'var(--color-text-muted)' }}>
-                  {['1,000+ content pieces delivered monthly','In-house writers and designers only','AI-assisted production available'].map((b, i) => (
-                    <span key={i} style={{ display:'inline-flex', alignItems:'center', gap:6 }}>
-                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* RIGHT: 3×2 content type grid */}
-              <div style={{ position:'relative' }}>
-                <div style={{ background:'var(--color-navy)', borderRadius:16, padding:24, boxShadow:'0 32px 80px rgba(30,77,195,.18)', border:'1px solid rgba(0,0,0,.08)' }}>
-                  {/* Browser chrome */}
-                  <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:16, padding:'8px 10px', background:'rgba(255,255,255,.05)', borderRadius:8, border:'1px solid rgba(255,255,255,.07)' }}>
-                    <div style={{ display:'flex', gap:5 }}>
-                      {['#FF5F57','#FEBC2E','#28C840'].map(c => <div key={c} style={{ width:11, height:11, borderRadius:'50%', background:c }} />)}
-                    </div>
-                    <span style={{ fontSize:10, color:'rgba(255,255,255,.40)', fontFamily:I, letterSpacing:'.05em', textTransform:'uppercase' as const, marginLeft:4 }}>Content Production — Live</span>
-                  </div>
-                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:10 }}>
-                    {CONTENT_CARDS.map(card => (
-                      <div key={card.label} style={{ background:'rgba(255,255,255,.06)', borderRadius:10, padding:'14px 12px', border:'1px solid rgba(255,255,255,.08)' }}>
-                        <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:10 }}>
-                          <div style={{ width:28, height:28, borderRadius:6, background:`${card.color}22`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                            <i className={`fa-solid ${card.icon}`} style={{ color:card.color, fontSize:12 }} />
-                          </div>
-                          <span style={{ fontSize:10, fontWeight:700, color:'rgba(255,255,255,.85)', fontFamily:J, lineHeight:1.2 }}>{card.label}</span>
-                        </div>
-                        <div style={{ background:'rgba(255,255,255,.1)', borderRadius:4, height:4, overflow:'hidden' }}>
-                          <div style={{ height:'100%', width:`${card.progress}%`, background:card.color, borderRadius:4 }} />
-                        </div>
-                        <div style={{ display:'flex', justifyContent:'space-between', marginTop:5 }}>
-                          <span style={{ fontSize:9, color:'rgba(255,255,255,.4)', fontFamily:I }}>Progress</span>
-                          <span style={{ fontSize:9, color:card.color, fontFamily:I, fontWeight:700 }}>{card.progress}%</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div style={{ marginTop:14, padding:'10px 16px', background:'rgba(255,255,255,.04)', borderRadius:8, border:'1px solid rgba(255,255,255,.06)', display:'flex', justifyContent:'space-between', alignItems:'center' }}>
-                    <span style={{ fontSize:12, color:'rgba(255,255,255,.55)', fontFamily:I }}>Monthly output</span>
-                    <span style={{ fontSize:14, fontWeight:700, color:'var(--ism-amber)', fontFamily:J }}>1,000+ pieces</span>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 2. TICKER STRIP ══════════════════════════════════════════════ */}
-        <div style={{ background:'#0A1628', borderBottom:'2px solid var(--ism-amber)', overflow:'hidden', padding:'14px 0' }}>
-          <div style={{ display:'flex', animation:'cnt-ticker 28s linear infinite', whiteSpace:'nowrap' }}>
-            {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
-              <span key={i} style={{ display:'inline-flex', alignItems:'center', gap:12, padding:'0 28px', fontFamily:J, fontSize:13, fontWeight:700, color:'rgba(255,255,255,.75)', letterSpacing:'.06em', textTransform:'uppercase' as const, flexShrink:0 }}>
-                <span style={{ color:'var(--ism-amber)', fontSize:16 }}>✦</span>
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* ══ 3. STATS ═════════════════════════════════════════════════════ */}
-        <section style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'64px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div className="cnt-stats-row" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {STATS.map(s => (
-                <div key={s.num} style={{ textAlign:'center', padding:'32px 20px', borderRadius:14, background:'rgba(255,255,255,.07)', border:'1px solid rgba(255,255,255,.12)' }}>
-                  <div style={{ fontSize:40, fontWeight:900, fontFamily:J, color:'var(--ism-amber)', lineHeight:1 }}>{s.num}</div>
-                  <div style={{ marginTop:8, fontSize:14, fontWeight:700, color:'#fff', fontFamily:J, lineHeight:1.4 }}>{s.label}</div>
-                  <div style={{ marginTop:6, fontSize:12, color:'rgba(255,255,255,.60)', fontFamily:I, lineHeight:1.5 }}>{s.sub}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 4. WHAT WE SOLVE ═════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'#fff', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ maxWidth:680, margin:'0 auto', textAlign:'center' }}>
-              <Pill text="The Problem We Solve" />
-              <h2 style={{ margin:'0 0 24px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.8vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Your Content Looks Inconsistent Because It Was Made by Five Different People With No Shared Brief.
-              </h2>
-              <p style={{ fontSize:16, lineHeight:1.8, color:'var(--color-text-muted)', fontFamily:I, marginBottom:20 }}>
-                You can have the best SEO strategy, the sharpest ad targeting, and the most optimised funnel. But if the blog post is thin, the ad creative looks generic, and the social content is inconsistent — none of it converts. People do not buy from strategy. They buy from what they see, read, and feel.
-              </p>
-              <p style={{ fontSize:16, lineHeight:1.8, color:'var(--color-text-muted)', fontFamily:I, marginBottom:48 }}>
-                We produce the content and creative that makes your marketing actually land. Copy that converts, design that communicates, and video that keeps people watching — all connected to the campaigns and channels they need to feed.
-              </p>
-            </div>
-            <div className="cnt-callouts" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:20 }}>
-              {[
-                { icon:'fa-bullseye',      title:'Content that serves a purpose',   desc:'Every piece is written or designed to do a specific job — rank, convert, nurture, or build trust. Nothing produced just to fill a calendar.' },
-                { icon:'fa-arrows-rotate', title:'Consistent across every channel', desc:'Your blog, ads, social, email, and website all sound and look like the same brand. No disjointed output from five different freelancers.' },
-                { icon:'fa-link',          title:'Connected to your full strategy', desc:'Our content team works alongside your SEO and PPC specialists. Everything feeds everything else instead of operating in a silo.' },
-              ].map(c => (
-                <div key={c.title}
-                  style={{ padding:'28px 24px', background:'var(--color-bg-soft)', borderRadius:14, border:'1px solid var(--color-border)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:16 }}>
-                    <i className={`fa-solid ${c.icon}`} style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h4 style={{ margin:'0 0 8px', fontFamily:J, fontWeight:700, fontSize:15, color:'var(--color-navy)' }}>{c.title}</h4>
-                  <p style={{ margin:0, fontSize:13, lineHeight:1.65, color:'var(--color-text-muted)', fontFamily:I }}>{c.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 5. SERVICE CARDS ═════════════════════════════════════════════ */}
-        <section id="cnt-services" className="cnt-section" style={{ background:'var(--color-bg-soft)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Our Brand & Creative Services" />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Every Content and Creative Service You Need. All In-House.
-              </h2>
-              <p style={{ fontSize:16, color:'var(--color-text-muted)', fontFamily:I, maxWidth:600, margin:'0 auto', lineHeight:1.7 }}>
-                From long-form SEO content to ad creatives and brand identity — one team producing everything your marketing needs to perform.
-              </p>
-            </div>
-            <div className="cnt-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
-              {SERVICES.map(svc => (
-                <div key={svc.title}
-                  style={{ position:'relative', padding:'28px 24px', background:'#fff', borderRadius:14, border:'1px solid var(--color-border)', borderLeft:'3px solid var(--color-primary)', boxShadow:'0 2px 12px rgba(0,0,0,.04)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.12)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 2px 12px rgba(0,0,0,.04)'; }}
-                >
-                  {svc.isNew && (
-                    <div style={{ position:'absolute', top:16, right:16 }}>
-                      <Pill text="New" purple />
-                    </div>
-                  )}
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:16 }}>
-                    <i className={`fa-solid ${svc.icon}`} style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:'0 0 10px', fontFamily:J, fontWeight:700, fontSize:16, color:'var(--color-navy)', lineHeight:1.3 }}>{svc.title}</h3>
-                  <p style={{ margin:'0 0 20px', fontSize:13, lineHeight:1.7, color:'var(--color-text-muted)', fontFamily:I }}>{svc.desc}</p>
-                  <a href={svc.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', fontFamily:J }}>
-                    {svc.cta} →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 6. DIFFERENTIATORS ═══════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'#fff', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Why It Works Differently Here" />
-              <h2 style={{ margin:'0 0 0', fontFamily:J, fontWeight:900, fontSize:'clamp(22px,2.2vw,36px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Content and Creative That Is Built Into Your Marketing, Not Bolted On
-              </h2>
-            </div>
-            <div className="cnt-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {DIFFERENTIATORS.map(d => (
-                <div key={d.num}
-                  style={{ padding:'32px 24px', background:'var(--color-bg-soft)', borderRadius:14, border:'1px solid var(--color-border)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <div style={{ fontFamily:J, fontSize:30, fontWeight:900, color:'var(--color-primary)', lineHeight:1, marginBottom:16 }}>{d.num}</div>
-                  <h4 style={{ margin:'0 0 10px', fontFamily:J, fontWeight:700, fontSize:15, color:'var(--color-navy)', lineHeight:1.3 }}>{d.title}</h4>
-                  <p style={{ margin:0, fontSize:13, lineHeight:1.65, color:'var(--color-text-muted)', fontFamily:I }}>{d.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 7. PROCESS ═══════════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="How We Produce Your Content" amber />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'#fff' }}>
-                From Brief to Final Asset Without the Back and Forth
-              </h2>
-              <p style={{ fontSize:16, color:'rgba(255,255,255,.70)', fontFamily:I, maxWidth:500, margin:'0 auto' }}>
-                Four steps. Clear ownership at every stage. Consistent output every time.
-              </p>
-            </div>
-            <div className="cnt-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {TIMELINE_STEPS.map((step, i) => (
-                <div key={step.num}
-                  style={{ position:'relative', padding:'32px 24px', background:'rgba(255,255,255,.07)', borderRadius:14, border:'1px solid rgba(255,255,255,.12)', transition:'transform .22s, background .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.background='rgba(255,255,255,.11)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.background='rgba(255,255,255,.07)'; }}
-                >
-                  {i < TIMELINE_STEPS.length - 1 && (
-                    <div className="cnt-step-arrow" style={{ position:'absolute', top:40, right:-13, zIndex:2 }}>
-                      <i className="fa-solid fa-chevron-right" style={{ color:'var(--ism-amber)', fontSize:14 }} />
-                    </div>
-                  )}
-                  <div style={{ fontFamily:J, fontSize:32, fontWeight:900, color:'var(--ism-amber)', lineHeight:1, marginBottom:16 }}>{step.num}</div>
-                  <h4 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:700, fontSize:15, color:'#fff', lineHeight:1.3 }}>{step.title}</h4>
-                  <p style={{ margin:0, fontSize:13, lineHeight:1.65, color:'rgba(255,255,255,.68)', fontFamily:I }}>{step.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign:'center', marginTop:52 }}>
-              <p style={{ fontSize:15, color:'rgba(255,255,255,.72)', fontFamily:I, maxWidth:580, margin:'0 auto 24px', lineHeight:1.7 }}>
-                Book a Free Creative Strategy Call — We will review your current content, identify the gaps, and show you exactly what a connected content plan looks like.
-              </p>
+            <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
               <a href="/contact"
-                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:14, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Book a Free Creative Strategy Call →
+                Start Building My Content Strategy
+              </a>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+              >
+                Get a Free Content Audit
               </a>
             </div>
           </div>
         </section>
 
-        {/* ══ 8. WHO THIS IS FOR ═══════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'var(--ism-blue-50,#F0F5FF)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:48 }}>
-              <Pill text="Who We Produce Content For" />
-              <h2 style={{ margin:'0', fontFamily:J, fontWeight:900, fontSize:'clamp(24px,2.5vw,38px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Whether You Run a Business or an Agency, We Have Done This Before.
-              </h2>
-            </div>
-            <div className="cnt-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:32 }}>
-              {/* Businesses */}
-              <div style={{ padding:'40px 36px', background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', boxShadow:'0 4px 20px rgba(0,0,0,.05)', transition:'transform .22s, box-shadow .22s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 4px 20px rgba(0,0,0,.05)'; }}
-              >
-                <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:24 }}>
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-building" style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:18, color:'var(--color-navy)' }}>For Businesses</h3>
-                </div>
-                <ul style={{ margin:'0 0 28px', padding:0, listStyle:'none', display:'flex', flexDirection:'column', gap:12 }}>
-                  {BUSINESS_PAINS.map(item => (
-                    <li key={item} style={{ display:'flex', gap:10, fontSize:14, color:'var(--color-text-muted)', fontFamily:I, lineHeight:1.6 }}>
-                      <i className="fa-solid fa-circle-check" style={{ color:'var(--color-primary)', flexShrink:0, marginTop:3, fontSize:13 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a href="/contact"
-                  style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'13px 22px', background:'var(--color-primary)', color:'#fff', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:13, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='#1840A0'; (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.transform=''; }}
-                >
-                  Book a Free Creative Call for Businesses →
-                </a>
+        {/* ══ REVIEWS BAR ══════════════════════════════════════════════════ */}
+        <div style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:56, flexWrap:'wrap' }}>
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/google-review-icon.webp" alt="Google" width={44} height={44} style={{ width:44, height:44, objectFit:'contain', display:'block', flexShrink:0 }} />
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>150+</span> Google Reviews</div>
               </div>
-
-              {/* Agencies */}
-              <div style={{ padding:'40px 36px', background:'var(--color-navy)', borderRadius:16, border:'1px solid rgba(255,255,255,.06)', boxShadow:'0 4px 24px rgba(0,0,0,.14)', transition:'transform .22s, box-shadow .22s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 20px 50px rgba(0,0,0,.22)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 4px 24px rgba(0,0,0,.14)'; }}
-              >
-                <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:24 }}>
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(255,176,0,.15)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-briefcase" style={{ color:'var(--ism-amber)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:18, color:'#fff' }}>For Agencies</h3>
-                </div>
-                <ul style={{ margin:'0 0 28px', padding:0, listStyle:'none', display:'flex', flexDirection:'column', gap:12 }}>
-                  {AGENCY_PAINS.map(item => (
-                    <li key={item} style={{ display:'flex', gap:10, fontSize:14, color:'rgba(255,255,255,.78)', fontFamily:I, lineHeight:1.6 }}>
-                      <i className="fa-solid fa-circle-check" style={{ color:'var(--ism-amber)', flexShrink:0, marginTop:3, fontSize:13 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a href="/contact"
-                  style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'13px 22px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:13, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.opacity='.88'; (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.opacity='1'; (e.currentTarget as HTMLAnchorElement).style.transform=''; }}
-                >
-                  Book a Free Call for Agencies →
-                </a>
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ width:44, height:44, borderRadius:10, background:'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}><span style={{ fontFamily:J, fontSize:15, fontWeight:900, color:'#fff' }}>C</span></div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>100+</span> Clutch Reviews</div>
+              </div>
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ display:'flex' }}>{['#4F46E5','#0EA5E9','#10B981','#F59E0B','#EF4444','#8B5CF6'].map((c,i)=>(<div key={i} style={{ width:38, height:38, borderRadius:'50%', border:'2px solid var(--color-bg-soft)', marginLeft:i===0?0:-10, background:c, display:'flex', alignItems:'center', justifyContent:'center', zIndex:6-i, position:'relative', flexShrink:0 }}><i className="fa-solid fa-user" style={{ fontSize:14, color:'#fff' }} /></div>))}</div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>1,000+</span> Client Reviews</div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* ══ 9. RESULTS ═══════════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'#fff', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Real Results" />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(24px,2.5vw,38px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                What Happens When Content and Creative Are Done Properly
+        {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
+        <section className="cc-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
+                Why Content and Creative Are the <span style={{ color:'var(--ism-amber)' }}>Foundation</span> of Every Channel
               </h2>
-              <p style={{ fontSize:16, color:'var(--color-text-muted)', fontFamily:I, maxWidth:560, margin:'0 auto', lineHeight:1.7 }}>
-                Real outcomes from content and creative engagements our in-house team delivered.
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
+                Every marketing channel runs on content. Here is what the data says about why creative quality is the biggest lever in your marketing.
               </p>
             </div>
-            <div className="cnt-results-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:28 }}>
-              {RESULTS.map(r => (
-                <div key={r.headline}
-                  style={{ padding:'36px 32px', background:'var(--color-bg-soft)', borderRadius:16, border:'1px solid rgba(30,77,195,.1)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <span style={{ display:'inline-block', fontSize:10, fontWeight:700, letterSpacing:'.1em', color:'var(--color-primary)', textTransform:'uppercase', fontFamily:I, marginBottom:16 }}>{r.tag}</span>
-                  <h3 style={{ margin:'0 0 16px', fontFamily:J, fontWeight:900, fontSize:'clamp(20px,1.8vw,28px)', color:'var(--color-navy)', lineHeight:1.2, letterSpacing:'-0.3px' }}>{r.headline}</h3>
-                  <p style={{ margin:'0 0 24px', fontSize:14, lineHeight:1.75, color:'var(--color-text-muted)', fontFamily:I }}>{r.body}</p>
-                  <div style={{ display:'flex', gap:20, borderTop:'1px solid rgba(30,77,195,.1)', paddingTop:20, marginBottom:20 }}>
-                    {r.metrics.map(m => (
-                      <div key={m.label} style={{ flex:1 }}>
-                        <div style={{ fontFamily:J, fontWeight:900, fontSize:22, color:'var(--color-primary)' }}>{m.val}</div>
-                        <div style={{ fontSize:11, color:'var(--color-text-muted)', fontFamily:I, marginTop:2, lineHeight:1.4 }}>{m.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                  <a href="#" style={{ fontSize:13, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', fontFamily:J }}>Read Full Case Study →</a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        {/* ══ 10. INDUSTRIES ═══════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'var(--color-bg-soft)', padding:'80px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px', textAlign:'center' }}>
-            <Pill text="Industries We Serve" />
-            <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(22px,2.2vw,36px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-              We Have Produced Content and Creative Across These Industries.
-            </h2>
-            <p style={{ fontSize:15, color:'var(--color-text-muted)', fontFamily:I, maxWidth:600, margin:'0 auto 36px', lineHeight:1.7 }}>
-              The content strategy that works for a law firm is completely different from what works for an e-commerce brand. We know the difference and we build for it.
-            </p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:10, justifyContent:'center', marginBottom:28 }}>
-              {INDUSTRIES.map(ind => (
-                <span key={ind}
-                  style={{ padding:'8px 20px', background:'#fff', border:'1px solid var(--color-border)', borderRadius:100, fontSize:13, color:'var(--color-navy)', fontFamily:I, fontWeight:600, cursor:'pointer', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLSpanElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLSpanElement).style.color='#fff'; (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-primary)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLSpanElement).style.background='#fff'; (e.currentTarget as HTMLSpanElement).style.color='var(--color-navy)'; (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-border)'; }}
-                >{ind}</span>
-              ))}
-            </div>
-            <p style={{ fontSize:14, color:'var(--color-text-muted)', fontFamily:I }}>
-              Don&apos;t see your industry?{' '}
-              <a href="/contact" style={{ color:'var(--color-primary)', fontWeight:700, textDecoration:'none' }}>Book a call and let&apos;s talk. →</a>
-            </p>
-          </div>
-        </section>
+            <div className="cc-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center', marginBottom:52 }}>
 
-        {/* ══ 11. TOOLS ════════════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'#fff', padding:'80px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:48 }}>
-              <Pill text="Tools and Platforms We Use" />
-              <h2 style={{ margin:'0', fontFamily:J, fontWeight:900, fontSize:'clamp(22px,2.2vw,36px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                We Produce Content Across Every Major Platform and Design Tool
-              </h2>
-            </div>
-            <div style={{ display:'flex', flexDirection:'column', gap:16 }}>
-              {TOOL_CATEGORIES.map(cat => (
-                <div key={cat.label} style={{ padding:'18px 24px', background:'var(--color-bg-soft)', borderRadius:12, border:'1px solid var(--color-border)' }}>
-                  <div className="cnt-tool-row" style={{ display:'flex', flexWrap:'wrap', alignItems:'center', gap:12 }}>
-                    <span style={{ fontSize:11, fontWeight:700, color:'var(--color-text-muted)', fontFamily:I, letterSpacing:'.06em', textTransform:'uppercase', minWidth:180, flexShrink:0 }}>{cat.label}</span>
-                    <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
-                      {cat.tools.map(t => (
-                        <span key={t} style={{ padding:'5px 12px', background:cat.color, color:cat.tcolor, borderRadius:6, fontSize:12, fontWeight:600, fontFamily:I }}>{t}</span>
-                      ))}
+              <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
+                {[
+                  { num:'01', title:'Every marketing channel runs on content', text:'SEO needs content to rank. Paid ads need creative to convert. Email needs copy to get opened. Without good content, every other investment underperforms.' },
+                  { num:'02', title:'Content that ranks on Google keeps earning without ongoing cost', text:'A blog post published today can rank for years and send leads every month without additional spend.' },
+                  { num:'03', title:'Creative quality is the single biggest variable in paid ad performance', text:'The same ad budget produces dramatically different results depending on the quality of the creative.' },
+                  { num:'04', title:'Content builds the trust that closes sales', text:'People buy from brands they recognise and trust. Content is how you build that recognition across every channel.' },
+                ].map(item => (
+                  <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div>
+                      <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
+                      <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
                     </div>
                   </div>
+                ))}
+              </div>
+
+              <div className="cc-strategy-mosaic" style={{ position:'relative', height:460 }}>
+                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+              </div>
+
+            </div>
+
+            <div style={{ textAlign:'center' }}>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
+              >
+                Get a Free Content Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+              </a>
+            </div>
+
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .cc-strategy-section { padding: 56px 0 !important; }
+              .cc-strategy-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+              .cc-strategy-mosaic { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .cc-strategy-section { padding: 44px 0 !important; }
+            }
+          `}</style>
+        </section>
+
+        {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
+        <div id="cc-results"><ClientResults /></div>
+
+        {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="cc-cta-banner-grid">
+              <div />
+              <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
+                  Is your content attracting the <span style={{ color:'var(--ism-amber)' }}>right people?</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
+                  Get a free content audit and find out exactly what your content is missing and what to do about it.
+                </p>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get My Free Content Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                </a>
+              </div>
+            </div>
+            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg" alt="Content Expert" style={{ position:'absolute', bottom:0, left:0, height:'100%', width:'100%', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+            </div>
+          </div>
+          <style>{`@media (max-width: 900px) { .cc-cta-banner-grid { grid-template-columns: 1fr !important; } .cc-cta-banner-grid > div:first-child { display: none !important; } }`}</style>
+        </section>
+
+        {/* ══ IMAGE + TEXT SECTION ════════════════════════════════════════ */}
+        <section style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+            <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
+              Content and Creative That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
+            </h2>
+            <div className="cc-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
+              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="Content Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+              <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                  Good content does two things at once — it attracts the right people and it moves them toward a decision. Blog posts that rank on Google bring in people already searching for what you sell. Ad creative that speaks to the right pain stops the scroll and starts a conversation. Both compound over time.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  We do not just produce content — we build content engines. The strategy, the production process, the distribution, and the measurement all work together so every piece of content serves a purpose and every month the output gets sharper.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  Whether you need one blog post a week or a hundred ad creatives a month, we scale to meet the need — without compromising on quality or strategy.
+                </p>
+                <div style={{ marginTop:8 }}>
+                  <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                    onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                    onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                  >
+                    Start My Content Strategy <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>{`@media (max-width: 768px) { .cc-imgtext-grid { grid-template-columns: 1fr !important; } }`}</style>
+        </section>
+
+        {/* ══ TESTIMONIALS ════════════════════════════════════════════════ */}
+        <Testimonials />
+
+        {/* ══ SERVICES GRID ════════════════════════════════════════════════ */}
+        <section className="cc-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:56 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
+                Our Complete <span style={{ color:'var(--ism-amber)' }}>Content & Creative Services</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Every type of content and creative your business needs — built around your goals.
+              </p>
+            </div>
+            <div className="cc-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
+              {SERVICES.map((s,i)=>(
+                <div key={i} className={`cc-svc-cell cc-svc-cell-${i}`}
+                  style={{ padding:'36px 32px', borderRight:(i+1)%3===0?'none':'1px solid #E8EAF0', borderBottom:i<6?'1px solid #E8EAF0':'none', background:'#fff', transition:'background .18s', cursor:'default' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.background='#F7F8FD'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.background='#fff'; }}
+                >
+                  <div style={{ display:'flex', alignItems:'flex-start', gap:14, marginBottom:18 }}>
+                    <div style={{ width:46, height:46, borderRadius:10, background:'var(--ism-blue-50,rgba(30,77,195,.08))', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                      <i className={s.icon} style={{ fontSize:20, color:'var(--color-primary)' }} />
+                    </div>
+                    <h3 style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'var(--color-navy)', margin:0, lineHeight:1.3, paddingTop:6 }}>{s.title}</h3>
+                  </div>
+                  <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.80, margin:'0 0 22px' }}>{s.desc}</p>
+                  <a href={s.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.03em', transition:'gap .18s' }}
+                    onMouseEnter={e=>(e.currentTarget.style.gap='10px')}
+                    onMouseLeave={e=>(e.currentTarget.style.gap='6px')}
+                  >
+                    Learn more <i className="fa-solid fa-arrow-right" style={{ fontSize:10 }} />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style>{`
+            @media (max-width: 900px) { .cc-svc-grid { grid-template-columns: repeat(2,1fr) !important; } .cc-svc-cell-1,.cc-svc-cell-3,.cc-svc-cell-5,.cc-svc-cell-7 { border-right: none !important; } .cc-svc-cell-0,.cc-svc-cell-1,.cc-svc-cell-2,.cc-svc-cell-3,.cc-svc-cell-4,.cc-svc-cell-5,.cc-svc-cell-6,.cc-svc-cell-7 { border-bottom: 1px solid #E8EAF0 !important; } .cc-svc-cell-8 { border-bottom: none !important; border-right: none !important; } }
+            @media (max-width: 560px) { .cc-svc-grid { grid-template-columns: 1fr !important; } .cc-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; } .cc-svc-cell-8 { border-bottom: none !important; } }
+          `}</style>
+        </section>
+
+        {/* ══ DARK NAVY ════════════════════════════════════════════════════ */}
+        <section className="cc-section" style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div className="cc-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
+              <div>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
+                  Why Content Is a{' '}
+                  <span style={{ color:'var(--ism-amber)' }}>Long-Term Growth Asset</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
+                  Build an Audience That Comes to You — Without Paying for Every Click
+                </p>
+                <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Content compounds.</strong> A blog post published today can rank on Google for years and send you leads every month without ongoing cost. A paid ad stops the moment you stop paying.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Good creative makes every paid channel more profitable.</strong> The same ad spend produces dramatically different results depending on the quality of the creative. Improving your creative is often the highest-ROI thing you can do in a paid campaign.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Trust is built through content.</strong> The businesses people buy from are the ones they recognise, understand, and trust. Content is how you build that — consistently, across every channel they use.
+                  </p>
+                </div>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
+                >
+                  Start Building My Content Engine →
+                </a>
+              </div>
+              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="Content Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ TIMELINE ══════════════════════════════════════════════════════ */}
+        <section className="cc-section" style={{ padding:'100px 0', background:'#fff' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:64 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                Isuremedia&apos;s Process for <span style={{ color:'var(--ism-amber)' }}>Content That Performs</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                From strategy to publishing — a clear, systematic approach to content that grows your business.
+              </p>
+            </div>
+            <div className="cc-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
+              <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
+              {TIMELINE_STEPS.map((step,i)=>(
+                <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
+                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                    <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
+                  </div>
+                  <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>
+                  <p style={{ fontFamily:I, fontSize:13, color:'var(--color-text-muted)', lineHeight:1.65, margin:0 }}>{step.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign:'center', marginTop:56 }}>
+              <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
+              >
+                Get a Free Content Audit
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ PRICING ═══════════════════════════════════════════════════════ */}
+        <section className="cc-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                Start with the right scope{' '}
+                <span style={{ color:'var(--ism-amber)' }}>for your goals.</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Every plan includes a dedicated content strategist and monthly performance reporting.
+              </p>
+            </div>
+            <div className="cc-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>STARTER</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Content Essentials</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Consistent SEO content and social media for small businesses.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['4 SEO blog posts per month','Social media management (2 platforms)','Basic graphic design for posts','Content calendar & strategy','Monthly performance report','Dedicated content contact'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 24px rgba(255,176,0,.40)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+                >
+                  Get Started
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'2px solid var(--color-primary)', padding:'36px 32px', transform:'scale(1.04)', boxShadow:'0 16px 56px rgba(30,77,195,.18)', position:'relative', transition:'all .22s' }}>
+                <div style={{ position:'absolute', top:-14, left:'50%', transform:'translateX(-50%)', background:'var(--ism-amber)', borderRadius:100, padding:'5px 18px', whiteSpace:'nowrap' }}>
+                  <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase' }}>Most Popular</span>
+                </div>
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Full Content Programme</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full content strategy — SEO, social, email, and creative — for growing brands.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['8+ SEO blog posts per month','Social media management (4 platforms)','Email marketing campaigns','Ad creative design','Short-form video content','Monthly strategy & performance review'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Start Growing
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>ENTERPRISE</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Enterprise Content</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>High-volume content production for large brands and agencies.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['Custom content volume & mix','AI-assisted at-scale production','Dedicated writer & designer team','Brand voice documentation','White-label content available','Quarterly strategy workshops'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+                >
+                  Talk to Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ WHY DIFFERENT ════════════════════════════════════════════════ */}
+        <section className="cc-section" style={{ padding:'100px 0', background:'#fff' }}>
+          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
+                Why Our Content Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Results</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Content built around your goals — not just your content calendar.
+              </p>
+            </div>
+            <div className="cc-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
+              {DIFFERENTIATORS.map((d,i)=>(
+                <div key={i} style={{ background:d.dark?'var(--color-navy)':'var(--color-bg-soft)', borderRadius:16, border:`1px solid ${d.dark?'transparent':'var(--color-border)'}`, padding:'36px 30px', transition:'all .22s' }}
+                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+                >
+                  <div style={{ width:48, height:48, borderRadius:12, background:d.dark?'rgba(255,176,0,.15)':'rgba(30,77,195,.10)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:20 }}>
+                    <i className={d.icon} style={{ fontSize:20, color:d.dark?'var(--ism-amber)':'var(--color-primary)' }} />
+                  </div>
+                  <h3 style={{ fontFamily:J, fontSize:18, fontWeight:800, color:d.dark?'#fff':'var(--color-navy)', margin:'0 0 10px' }}>{d.title}</h3>
+                  <p style={{ fontFamily:I, fontSize:14, color:d.dark?'rgba(255,255,255,.7)':'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>{d.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ══ 12. FAQ ══════════════════════════════════════════════════════ */}
-        <FAQSection />
+        {/* ══ FAQ ══════════════════════════════════════════════════════════ */}
+        <FAQAccordion />
 
-        {/* ══ 13. BOTTOM CTA ═══════════════════════════════════════════════ */}
-        <section className="cnt-section" style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'100px 0', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', width:800, height:800, background:'radial-gradient(circle,rgba(255,255,255,.04) 0%,transparent 60%)', pointerEvents:'none' }} />
-          <div style={{ maxWidth:800, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
-            <h2 style={{ margin:'0 0 16px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,3vw,44px)', color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px' }}>
-              Ready to Have Content and Creative<br className="cnt-cta-br" /> That Actually Moves People?
-            </h2>
-            <p style={{ fontSize:16, color:'rgba(255,255,255,.72)', fontFamily:I, margin:'0 auto 36px', maxWidth:560, lineHeight:1.75 }}>
-              Book a free 30-minute creative strategy call. We will review your current content and creative, identify what is missing, and show you what a connected content plan looks like for your business.
-            </p>
-            <a href="/contact"
-              style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 32px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:800, fontSize:15, textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 8px 28px rgba(255,176,0,.45)', transition:'all .18s' }}
-              onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-3px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 14px 36px rgba(255,176,0,.60)'; }}
-              onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 8px 28px rgba(255,176,0,.45)'; }}
-            >
-              Book a Free Creative Strategy Call →
-            </a>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:'10px 28px', justifyContent:'center', marginTop:32 }}>
-              {['No contract required','In-house writers and designers','AI production available at scale','White-label ready for agencies'].map(b => (
-                <span key={b} style={{ display:'flex', alignItems:'center', gap:6, fontSize:13, color:'rgba(255,255,255,.60)', fontFamily:I }}>
-                  <i className="fa-solid fa-circle-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                  {b}
-                </span>
-              ))}
+        {/* ══ READY FOR RESULTS CTA ════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'60px 28px' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="cc-rfr-grid">
+            <div style={{ position:'absolute', top:'-30%', right:'30%', width:500, height:500, background:'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:20 }}>
+                <div style={{ width:28, height:3, background:'var(--ism-amber)', borderRadius:2 }} />
+                <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.12em', textTransform:'uppercase' }}>Your Growth Starts Here</span>
+              </div>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
+                Ready to build content that<br /><span style={{ color:'var(--ism-amber)' }}>actually grows your business?</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
+                Whether you need blog content that ranks, ad creatives that convert, or a full content programme across every channel — we build it around your goals. Talk to us today and we will show you where the opportunity is.
+              </p>
+              <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.55)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get My Free Content Audit
+                </a>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
+                >
+                  Talk to Our Team
+                </a>
+              </div>
+            </div>
+            <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Client" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
+          <style>{`@media (max-width: 900px) { .cc-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; } }`}</style>
         </section>
 
       </main>
       <Footer />
+
       <style>{`
-        @keyframes cnt-pulse {
-          0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.25); }
-          50%      { box-shadow: 0 0 0 7px rgba(34,197,94,.08); }
-        }
-        @keyframes cnt-ticker {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        @media (max-width: 640px) {
-          .cnt-hero    { padding: 56px 0 44px !important; }
-          .cnt-section { padding-top: 60px !important; padding-bottom: 60px !important; }
-          .cnt-cta-br  { display: none; }
-        }
-        @media (max-width: 900px) {
-          .cnt-hero-grid    { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .cnt-stats-row    { grid-template-columns: 1fr 1fr !important; }
-          .cnt-callouts     { grid-template-columns: 1fr 1fr !important; }
-          .cnt-svc-grid     { grid-template-columns: 1fr 1fr !important; }
-          .cnt-diff-grid    { grid-template-columns: 1fr 1fr !important; }
-          .cnt-timeline     { grid-template-columns: 1fr 1fr !important; }
-          .cnt-split        { grid-template-columns: 1fr !important; }
-          .cnt-results-grid { grid-template-columns: 1fr !important; }
-          .cnt-faq-grid     { grid-template-columns: 1fr !important; }
-          .cnt-step-arrow   { display: none !important; }
-        }
-        @media (max-width: 600px) {
-          .cnt-svc-grid  { grid-template-columns: 1fr !important; }
-          .cnt-callouts  { grid-template-columns: 1fr !important; }
-          .cnt-diff-grid { grid-template-columns: 1fr !important; }
-          .cnt-timeline  { grid-template-columns: 1fr !important; }
-          .cnt-tool-row  { flex-direction: column !important; align-items: flex-start !important; }
-        }
+        @media (max-width: 900px)  { .cc-plan-grid { grid-template-columns: 1fr !important; } .cc-plan-grid > *:nth-child(2) { transform: none !important; } }
+        @media (max-width: 900px)  { .cc-split { grid-template-columns: 1fr !important; gap: 36px !important; } }
+        @media (max-width: 900px)  { .cc-diff-grid { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 540px)  { .cc-diff-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 900px)  { .cc-timeline { grid-template-columns: 1fr !important; gap: 40px !important; } .cc-timeline > *:not(:last-child)::after { content:''; display:block; width:2px; height:32px; background:var(--ism-amber); margin:20px auto 0; } }
+        @media (max-width: 900px)  { .cc-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+        @media (max-width: 640px)  { .cc-hero { padding: 56px 0 44px !important; } .cc-section { padding-top: 60px !important; padding-bottom: 60px !important; } }
       `}</style>
     </>
   );

@@ -49,12 +49,6 @@ const RELATED = [
   { icon: 'fa-solid fa-tag', title: 'White-Label GHL', desc: 'Resell GoHighLevel under your own brand — we set up, configure, and support your clients.', href: '/services/white-label/gohighlevel' },
 ];
 
-const Pill = ({ label }: { label: string }) => (
-  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
-    <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-    <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' as const }}>{label}</span>
-  </div>
-);
 
 export default function GoHighLevelSetupPage() {
   return (
@@ -89,7 +83,6 @@ export default function GoHighLevelSetupPage() {
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', textAlign: 'center', position: 'relative' }}>
-            <Pill label="GoHighLevel Setup" />
             <h1 style={{ fontFamily: J, fontSize: 'clamp(32px,4.5vw,62px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.08, margin: '0 auto 24px', maxWidth: 900 }}>
               GoHighLevel Setup Done Right — Funnels, CRM, and Automations Built to Scale
             </h1>
@@ -115,7 +108,6 @@ export default function GoHighLevelSetupPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
             <div>
-              <Pill label="What's Included in a Proper GHL Setup" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 20 }}>
                 More Than Just Turning It On
               </h2>
@@ -147,7 +139,6 @@ export default function GoHighLevelSetupPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Key Benefits" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why Our GHL Setup Delivers Results</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>We do not just activate GoHighLevel — we build a system that runs your follow-ups, manages your pipeline, and scales with your team.</p>
             </div>
@@ -171,7 +162,6 @@ export default function GoHighLevelSetupPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="What's Included" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Everything You Need, Nothing Left Out</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Every GHL setup engagement covers the full stack — no add-ons, no surprises.</p>
             </div>
@@ -192,7 +182,6 @@ export default function GoHighLevelSetupPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Our Process" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>From Kickoff to Go-Live in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>A structured delivery process that gets your GHL account live, tested, and running smoothly.</p>
             </div>
@@ -216,7 +205,6 @@ export default function GoHighLevelSetupPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="Related Services" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair GHL Setup With These Services</h2>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>

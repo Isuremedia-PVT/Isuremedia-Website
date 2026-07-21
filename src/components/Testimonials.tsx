@@ -52,14 +52,10 @@ export default function Testimonials() {
   );
 
   return (
-    <section style={{ padding: '48px 0 88px', background: 'var(--color-bg-soft)' }}>
+    <section className="tsm-section" style={{ padding: '48px 0 88px', background: 'var(--color-bg-soft)' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <h4 style={{ fontFamily: J, fontSize: 13, fontWeight: 600, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', display: 'inline-block' }} />
-            Client Stories
-          </h4>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: 14, lineHeight: 1.20 }}>
             What Our Clients Say
           </h2>
@@ -68,7 +64,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div style={{ position: 'relative', padding: '0 52px' }}
+        <div className="tsm-carousel-wrap" style={{ position: 'relative', padding: '0 52px' }}
           onMouseEnter={() => autoplay.current.stop()}
           onMouseLeave={() => autoplay.current.play()}
         >
@@ -94,7 +90,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div style={{ marginTop: 52, background: 'var(--color-primary)', borderRadius: 16, padding: '32px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
+        <div className="tsm-trust-bar" style={{ marginTop: 52, background: 'var(--color-primary)', borderRadius: 16, padding: '32px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
           <div>
             <div style={{ fontFamily: J, fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
               200+ agencies and businesses have{' '}
@@ -118,6 +114,17 @@ export default function Testimonials() {
         .tsm-slide { flex: 0 0 calc(33.333% - 8px); min-width: 0; }
         @media (max-width: 1023px) { .tsm-slide { flex: 0 0 calc(50% - 11px); } }
         @media (max-width: 639px)  { .tsm-slide { flex: 0 0 100%; } }
+        @media (max-width: 768px) {
+          .tsm-section { padding: 40px 0 64px !important; }
+        }
+        @media (max-width: 600px) {
+          .tsm-carousel-wrap { padding: 0 36px !important; }
+          .tsm-trust-bar { padding: 24px 20px !important; flex-direction: column !important; text-align: center; }
+          .tsm-trust-bar a { width: 100% !important; justify-content: center !important; box-sizing: border-box !important; }
+        }
+        @media (max-width: 480px) {
+          .tsm-section { padding: 32px 0 48px !important; }
+        }
       `}</style>
     </section>
   );

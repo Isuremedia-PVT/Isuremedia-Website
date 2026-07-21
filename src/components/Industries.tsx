@@ -49,15 +49,11 @@ export default function Industries() {
   const next = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section id="industries" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
+    <section id="industries" className="ind-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 600, margin: '0 auto 48px' }}>
-          <h4 style={{ fontFamily: J, fontSize: 13, fontWeight: 600, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', display: 'inline-block', flexShrink: 0 }} />
-            Industries We Serve
-          </h4>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
             Industries We&apos;ve{' '}
             <span style={{ color: 'var(--ism-amber)' }}>Worked With</span>
@@ -142,6 +138,12 @@ export default function Industries() {
         .ind-slide { flex: 0 0 25% !important; }
         @media (max-width: 1023px) { .ind-slide { flex: 0 0 50% !important; } }
         @media (max-width: 600px)  { .ind-slide { flex: 0 0 100% !important; } }
+        @media (max-width: 768px) {
+          .ind-section { padding: 56px 0 !important; }
+        }
+        @media (max-width: 480px) {
+          .ind-section { padding: 44px 0 !important; }
+        }
       `}</style>
     </section>
   );

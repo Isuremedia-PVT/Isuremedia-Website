@@ -3,177 +3,118 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Testimonials from '@/components/Testimonials';
+import ClientResults from '@/components/ClientResults';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-/* ── DATA ─────────────────────────────────────────────────────────────── */
-
-const STATS = [
-  { num: '200+', label: 'Automation systems built',  sub: 'Deployed across businesses and agencies' },
-  { num: '5×',   label: 'Lead response speed',       sub: 'Average improvement vs. manual follow-up' },
-  { num: '40+',  label: 'In-house specialists',      sub: 'GoHighLevel and automation experts only' },
-  { num: '24/7', label: 'Your pipeline runs',        sub: 'Even when your team is not online' },
-];
-
-const FLOW_STEPS = [
-  { label: 'Lead submits form',              time: 'Trigger',   badge: null,   icon: 'fa-file-lines',     color: '#60A5FA' },
-  { label: 'SMS sent in 60 seconds',         time: '0:60',      badge: 'AUTO', icon: 'fa-comment-sms',    color: '#34D399' },
-  { label: 'Email follow-up in 5 mins',      time: '5:00',      badge: 'AUTO', icon: 'fa-envelope',       color: '#818CF8' },
-  { label: 'CRM contact created',            time: '5:01',      badge: 'AUTO', icon: 'fa-user-plus',      color: '#F472B6' },
-  { label: 'Booking link sent next morning', time: '+12hr',     badge: 'AUTO', icon: 'fa-calendar-check', color: '#FCD34D' },
-  { label: 'Lead books appointment',         time: 'Converted', badge: 'DONE', icon: 'fa-circle-check',   color: '#34D399' },
-];
-
-const BEFORE_ROWS = [
-  'Leads sit in an inbox until someone manually checks and follows up',
-  'Follow-up happens inconsistently — sometimes next day, sometimes never',
-  'Team manually books appointments, sends reminders, chases no-shows',
-  'Leads not ready to buy today get forgotten and never return',
-  'CRM is out of date because nobody has time to update it manually',
-  'Revenue lost to faster competitors every single week',
-];
-
-const AFTER_ROWS = [
-  'Every lead gets a response within minutes, at any hour, any day',
-  'Nurture sequences keep every lead warm until they are ready to buy',
-  'Booking reminders, confirmations, and no-show follow-ups happen automatically',
-  'CRM updates in real time. Every contact, every action, always current',
-  'Team only speaks to leads who have been warmed and are ready to talk',
-  'Pipeline works even when your team does not',
-];
+/* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
-  { icon:'fa-bolt',              title:'GoHighLevel Setup & Automation',       desc:'Complete GHL platform setup, sub-account configuration, funnel builds, and automation workflows. Built from scratch or rebuilt properly from a broken or underperforming existing account.',               cta:'See GoHighLevel Setup Services',      href:'/services/gohighlevel-setup-automation' },
-  { icon:'fa-database',          title:'CRM Setup & Management',               desc:'CRM configuration, pipeline design, contact management, tagging, and ongoing CRM hygiene — so your sales team always knows exactly where every lead stands without manual data entry.',                    cta:'See CRM Setup Services',              href:'/services/crm-setup-management' },
-  { icon:'fa-code-branch',       title:'Lead Nurture Workflows',               desc:'Multi-step email and SMS nurture sequences that keep every lead engaged from first enquiry through to ready-to-buy, automatically, without anyone on your team managing the sequences manually.',       cta:'See Lead Nurture Services',           href:'/services/lead-nurture-workflows' },
-  { icon:'fa-envelope-open-text',title:'Email Marketing Automation',           desc:'Automated email campaigns, drip sequences, and triggered workflows that send the right message to the right person at exactly the right stage of their buyer journey — with no manual sending.',        cta:'See Email Automation Services',       href:'/services/email-marketing-automation' },
-  { icon:'fa-calendar-check',    title:'Appointment Booking Systems',          desc:'End-to-end booking automation — scheduling links, confirmation emails, reminder sequences, rescheduling flows, and no-show follow-up — all running without a single manual action from your team.',   cta:'See Booking Automation Services',     href:'/services/appointment-booking-automation' },
-  { icon:'fa-chart-line',        title:'Sales Pipeline Automation',            desc:'Automated pipeline stage movement, task creation, deal tracking, and team notifications — so every opportunity is followed up properly and nothing falls through while your team is focused elsewhere.',  cta:'See Pipeline Automation Services',    href:'/services/sales-pipeline-automation' },
-  { icon:'fa-comment-sms',       title:'SMS & WhatsApp Automation',            desc:'Instant SMS and WhatsApp sequences triggered by lead actions, bookings, or pipeline changes. Response times no manual process can match — delivered to the channel leads actually check first.',         cta:'See SMS Automation Services',         href:'/services/sms-whatsapp-automation' },
-  { icon:'fa-plug',              title:'API Integration Services',             desc:'Connect your CRM, website, booking tools, payment systems, and third-party platforms so data flows automatically between everything — no manual exports, no copy-paste between tools.',                cta:'See API Integration Services',        href:'/services/api-integration' },
-  { icon:'fa-chart-bar',         title:'Reporting & Dashboard Automation',     desc:'Automated performance reports and live dashboards showing pipeline health, conversion rates, and campaign results — always current, always available, requiring zero manual compilation from your team.',  cta:'See Dashboard Automation Services',   href:'/services/reporting-dashboard-automation' },
-  { icon:'fa-robot',             title:'AI Chatbot & Conversation Automation', desc:'AI-powered chatbots that qualify leads, answer questions, book appointments, and hand off to your sales team when the time is right — available 24/7 with no staffing cost or after-hours blind spots.',  cta:'See AI Chatbot Services',             href:'/services/ai-chatbot-automation', isNew: true },
-  { icon:'fa-building-columns',  title:'White-Label GoHighLevel Support',      desc:'All of the above delivered under your agency brand for your clients. Sub-account setups, funnel builds, automations, and ongoing GHL support without any ISM footprint on any deliverable.',          cta:'See White-Label GHL Services',        href:'/white-label/gohighlevel-support', isAgency: true },
-];
-
-const PLATFORMS = [
-  { name:'GoHighLevel',    role:'Primary CRM and automation platform',    abbr:'GHL', color:'#F59E0B' },
-  { name:'HubSpot',        role:'CRM and email workflow automation',       abbr:'HS',  color:'#FF7A59' },
-  { name:'Zapier',         role:'App-to-app connection and workflow',      abbr:'ZP',  color:'#FF4A00' },
-  { name:'n8n',            role:'Complex multi-step workflow automation',  abbr:'n8n', color:'#EA4B71' },
-  { name:'ActiveCampaign', role:'Email and CRM automation sequences',      abbr:'AC',  color:'#356AE6' },
-  { name:'Mailchimp',      role:'Email marketing automation',              abbr:'MC',  color:'#007C89' },
-  { name:'Klaviyo',        role:'E-commerce email automation',             abbr:'KV',  color:'#06B6D4' },
-  { name:'Stripe',         role:'Payment and subscription triggers',       abbr:'ST',  color:'#635BFF' },
-  { name:'Calendly',       role:'Appointment and booking automation',      abbr:'CL',  color:'#006BFF' },
-  { name:'Twilio',         role:'SMS and WhatsApp delivery',               abbr:'TW',  color:'#F22F46' },
+  {
+    title: 'GoHighLevel Setup & Automation',
+    icon: 'fa-solid fa-bolt',
+    desc: 'GoHighLevel is the most powerful all-in-one platform for service businesses and agencies. We handle the complete setup — CRM, pipelines, funnels, calendars, email and SMS automations — everything configured to match how your business actually works.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'CRM Setup & Management',
+    icon: 'fa-solid fa-users',
+    desc: 'Your CRM should work the way your sales process works — not the other way around. We set up, customise, and manage your CRM so leads are tracked, followed up with, and moved through your pipeline automatically. No more leads falling through the cracks.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'Lead Nurture Workflows',
+    icon: 'fa-solid fa-route',
+    desc: 'Most leads are not ready to buy the day they come in. A well-built nurture sequence keeps your business in front of them until they are. We design and build email and SMS sequences that warm leads up and move them toward a buying decision automatically.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'Appointment Booking Systems',
+    icon: 'fa-solid fa-calendar-check',
+    desc: 'Manual appointment scheduling wastes time and creates friction. We build automated booking systems that let leads schedule directly from your website, landing page, or follow-up sequence — reducing no-shows with automated reminders along the way.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'Email & SMS Automation',
+    icon: 'fa-solid fa-envelope',
+    desc: 'Email and SMS sequences that run on autopilot — welcome sequences, re-engagement flows, post-purchase follow-ups, and review request campaigns. We write the copy, build the sequences, and set up the triggers so every message lands at the right time.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'AI Chatbot & Conversation Automation',
+    icon: 'fa-solid fa-robot',
+    desc: 'An AI chatbot that works around the clock — answering common questions, qualifying leads, and booking appointments without any human involvement. We build, train, and deploy chatbots that handle your most common conversations automatically.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'Make & Zapier Workflows',
+    icon: 'fa-solid fa-diagram-project',
+    desc: 'Connect the tools your business already uses. We build Make (Integromat) and Zapier workflows that pass data between your CRM, website, email platform, payment processor, and any other app — eliminating manual data entry and keeping everything in sync.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'n8n Workflow Automation',
+    icon: 'fa-solid fa-code-branch',
+    desc: 'For businesses that need more control and flexibility, n8n gives you powerful self-hosted automation without per-task pricing. We design and build n8n workflows for complex automation needs — API connections, data processing, and multi-step business logic.',
+    href: '/services/marketing-automation',
+  },
+  {
+    title: 'Reputation Management Automation',
+    icon: 'fa-solid fa-star',
+    desc: 'More reviews come in when the request is automatic. We build review request sequences that go out at the right moment in your customer journey — after a job is completed, a purchase is made, or a positive interaction happens — driving consistent review volume without manual effort.',
+    href: '/services/marketing-automation',
+  },
 ];
 
 const TIMELINE_STEPS = [
-  { num:'01', title:'Audit and Discovery',            desc:'We map your current lead journey in detail — where leads come in, what happens immediately after, where they drop off, what your team does manually that takes time, and what is currently being missed. This audit is the foundation everything is built on.' },
-  { num:'02', title:'System Design and Architecture', desc:'We design the full automation system before building anything. CRM pipeline structure, trigger logic, sequence timing, branching conditions, and platform integrations are all mapped out and approved before a single workflow gets created. You see the plan before we touch your account.' },
-  { num:'03', title:'Build, Test, and Connect',       desc:'Every workflow is built, tested with real data, and connected to your tools before anything goes live. We test every trigger, every branch, and every edge case. We do not push automation live until we are certain it works exactly as designed across every scenario.' },
-  { num:'04', title:'Go Live, Monitor, and Optimise', desc:'Your automation system goes live. We watch it closely during the first two weeks, fix anything that does not perform as expected, and refine sequences based on real conversion data. Once it is stable and optimised, it runs with minimal oversight and ongoing improvement as your business grows.' },
+  { num: 1, period: 'Business Process Audit', desc: 'We map out how your business actually operates — where leads come in, how they are followed up with, where manual work is happening, and where things fall through the cracks. This tells us exactly what to automate first.' },
+  { num: 2, period: 'Automation Strategy', desc: 'We design the full automation plan — which tools, which workflows, which triggers, and what the output should look like. You see the complete picture before any build begins.' },
+  { num: 3, period: 'Build & Configure', desc: 'We build every workflow, write every email and SMS, set up every trigger, and connect every integration. Everything is tested thoroughly before anything touches your real leads or customers.' },
+  { num: 4, period: 'Test & Launch', desc: 'We run full end-to-end tests on every automation — form submissions, trigger conditions, message timing, and CRM updates. Nothing goes live until it works exactly as designed.' },
+  { num: 5, period: 'Monitor & Optimise', desc: 'After launch we monitor your automations, track performance, and make improvements. Open rates, reply rates, booking rates — we measure what matters and keep improving the results.' },
 ];
 
-const BUSINESS_PAINS = [
-  'You are losing leads because your follow-up is too slow or too inconsistent',
-  'Your team spends too much time on manual tasks that a system could handle automatically',
-  'You want your pipeline to keep working after hours, at weekends, and while you are out of office',
-  'You are on GoHighLevel but it is not set up properly or not being used to its full potential',
-  'You want CRM, email, SMS, booking, and reporting all connected and running as one automated system',
-];
-
-const AGENCY_PAINS = [
-  'Your clients need GoHighLevel setup or marketing automation and you need a specialist to build it',
-  'You want white label GoHighLevel support delivered silently under your brand for client accounts',
-  'Your clients are asking about AI chatbots and you need a partner who can actually deliver them',
-  'You need clean, documented automation builds that are easy to hand over and explain to clients',
-  'You want consistent GoHighLevel quality across multiple client accounts without an in-house GHL specialist',
-];
-
-const RESULTS = [
-  {
-    tag: 'HVAC COMPANY — GOHIGHLEVEL AUTOMATION + BOOKING SYSTEM',
-    headline: '340% More Booked Jobs in 90 Days Without More Ad Spend',
-    body: 'An HVAC company was running Google Ads and getting leads but converting poorly because follow-up was taking hours. We built a complete GoHighLevel automation system — instant SMS on form submission, booking link sent within 2 minutes, reminder sequences, and a no-show follow-up workflow. Booked jobs tripled within 90 days without changing the ad budget by a penny.',
-    metrics: [
-      { val: '340%', label: 'More booked jobs' },
-      { val: '90',   label: 'Days to achieve it' },
-      { val: '0%',   label: 'Increase in ad spend' },
-    ],
-  },
-  {
-    tag: 'COACHING BUSINESS — LEAD NURTURE + CRM + AI CHATBOT',
-    headline: '72% More Leads Converting to Discovery Calls',
-    body: 'A business coach had a large email list but poor conversion to paid programmes. We built a full lead nurture system in GoHighLevel, deployed an AI chatbot to qualify inbound enquiries around the clock, and rebuilt the appointment booking automation. Conversion from lead to booked discovery call improved by 72% within the first 60 days.',
-    metrics: [
-      { val: '72%',  label: 'More discovery call bookings' },
-      { val: '60',   label: 'Days to 72% improvement' },
-      { val: '24/7', label: 'AI chatbot coverage' },
-    ],
-  },
-];
-
-const INDUSTRIES = [
-  'Home Services & HVAC', 'Coaches & Consultants', 'Law Firms', 'Real Estate & Property',
-  'E-Commerce', 'Marketing Agencies', 'Health & Wellness', 'Education & Online Courses',
-  'SaaS & Tech', 'Finance & Fintech', 'Automotive', 'Restaurants & Hospitality',
+const DIFFERENTIATORS = [
+  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'We Build for Your Business, Not a Template',   desc: 'Every business has a different sales process, different lead sources, and different follow-up needs. We never copy-paste templates. Every automation we build is designed around how your business actually works — the triggers, the timing, the copy, and the CRM structure are all built specifically for you.' },
+  { dark: false, icon: 'fa-solid fa-bolt',           title: 'GoHighLevel Specialists',                      desc: 'GoHighLevel is one of the most powerful platforms for service businesses and agencies — but only when it is set up correctly. Most businesses leave most of the platform unused. Our team has built hundreds of GHL systems from scratch and knows exactly how to get the most from it.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Contracts. No Lock-In.',                    desc: 'We do not lock clients in because we do not need to. The automation systems we build keep working every month — and the results keep our clients with us. You can pause or cancel ongoing support at any time with 30 days notice.' },
+  { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Transparency on What We Build',           desc: 'You own everything we build for you. Every workflow, every sequence, every template is documented and handed over. If you ever decide to manage things in-house, you have everything you need to do so.' },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Powered Automation',                        desc: 'We integrate AI into your workflows where it adds real value — AI chatbots that qualify leads and book appointments, AI-driven content personalisation, and intelligent routing that makes your automation smarter over time.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'One Dedicated Point of Contact',               desc: 'You work with one person who understands your entire automation setup. No being passed between departments, no starting over when someone changes. One contact who knows your system and keeps it running.' },
 ];
 
 const FAQS = [
-  { q: 'What is marketing automation and how does it work?',              a: 'Marketing automation is the use of software to automatically perform marketing and sales tasks that would otherwise require manual effort — following up with leads, sending email sequences, updating a CRM, booking appointments, sending reminders, and moving contacts through a pipeline. When a lead takes a specific action (submitting a form, opening an email, reaching a booking page), the system triggers a pre-built sequence of responses instantly, without anyone on your team needing to monitor or intervene.' },
-  { q: 'Do I need GoHighLevel for marketing automation?',                 a: 'Not necessarily. GoHighLevel is the platform we build on most frequently because it combines CRM, email, SMS, funnels, booking, and reporting in one place at a price point that makes sense for most businesses. If you are already using HubSpot, ActiveCampaign, or another CRM, we build automation on those platforms too. We recommend GoHighLevel for businesses starting from scratch because it covers the widest range of automation capability without needing multiple separate tools.' },
-  { q: 'How quickly can automation improve my lead response time?',       a: 'Immediately. Once the automation system is live, every new lead gets a response within the first minute or two of submitting a form — day or night, weekend or weekday. For most businesses, this alone produces a significant improvement in conversion because speed of response is one of the most impactful variables in lead conversion. Studies consistently show that leads contacted within five minutes are far more likely to convert than those contacted after an hour.' },
-  { q: 'How long does it take to set up a marketing automation system?',  a: 'A basic system covering CRM setup, a lead nurture sequence, and booking automation typically takes 2 to 3 weeks from the first call to going live. More complex systems with multiple pipelines, AI chatbots, SMS sequences, API integrations, and multi-channel workflows take 4 to 6 weeks. We give you a clear timeline in the audit call based on exactly what you need — and we never launch anything until it has been properly tested.' },
-  { q: 'What is an AI chatbot and can it actually replace a human?',      a: 'An AI chatbot uses artificial intelligence to handle the first stage of a sales conversation — capturing the lead, qualifying their needs, answering common questions, and booking an appointment — automatically and around the clock. For most businesses, it does not fully replace the human sales conversation. It handles the top of the funnel so your team only speaks to prospects who have already been qualified and are ready to talk. This significantly increases the quality of conversations your sales team has without increasing their workload.' },
-  { q: 'Can you fix a GoHighLevel account that was already set up badly?', a: 'Yes. This is one of our most common requests. Many businesses have GoHighLevel accounts that were set up by a freelancer or agency, never fully configured, or have workflows that are broken, duplicated, or firing incorrectly. We start with a full account audit, identify what is working and what is not, and then rebuild the system properly. Most audits take one to two business days and come with a clear action plan before any build work starts.' },
-  { q: 'What is the difference between email marketing and email marketing automation?', a: 'Email marketing typically refers to sending campaigns manually — a newsletter, a promotion, an announcement that goes to a list at a specific time. Email marketing automation means emails are sent based on triggers and behaviour rather than a manual send. Someone submits a form and gets a welcome sequence. A contact reaches a certain pipeline stage and gets a specific message. A lead has not engaged in 14 days and gets a re-engagement email. The automation version runs continuously without anyone pressing send.' },
-  { q: 'Do you offer white label GoHighLevel support for agencies?',       a: 'Yes. We build and manage GoHighLevel setups for agency clients fully under your brand. Sub-account configuration, funnel builds, automation workflows, and ongoing GHL support — all delivered with no ISM branding. Your clients see your agency name on everything. This allows agencies to offer GoHighLevel as part of their service offering without needing an in-house GHL specialist on the payroll.' },
+  { q: 'What is marketing automation?', a: 'Marketing automation is the use of software to handle repetitive marketing and sales tasks automatically — sending follow-up emails, booking appointments, moving leads through your CRM, sending review requests, and more. The goal is to make sure the right thing happens at the right time without anyone doing it manually.' },
+  { q: 'Which platforms do you work with?', a: 'We work with GoHighLevel, HubSpot, ActiveCampaign, Mailchimp, Make (Integromat), Zapier, n8n, Klaviyo, and more. For most service businesses and agencies we recommend GoHighLevel because it combines CRM, funnels, email, SMS, and booking all in one platform. We will recommend the right tool for your situation.' },
+  { q: 'Do you work with GoHighLevel?', a: 'Yes. GoHighLevel is one of our core specialisms. We build complete GHL systems from scratch — CRM setup, funnel builds, email and SMS automations, appointment calendars, pipeline stages, and reporting. We also help agencies who need GHL built and managed for their clients.' },
+  { q: 'How long does it take to set up automation?', a: 'A basic CRM and email automation setup typically takes two to three weeks. A more complex system with full GoHighLevel setup, multi-channel sequences, and custom integrations can take four to eight weeks. We give you a clear timeline before we start.' },
+  { q: 'Can you automate the follow-up for our leads?', a: 'Yes. Lead follow-up automation is one of the most impactful things we do. The speed and consistency of your follow-up has a huge effect on how many leads convert. We build sequences that follow up immediately after a lead comes in, continue over days and weeks, and stop automatically when the lead books or responds.' },
+  { q: 'Do you write the email and SMS copy?', a: 'Yes. Every email and SMS sequence we build includes the copy. We write it, you review it, we refine it. The messages are written to match your brand voice, your offer, and where each lead is in their journey.' },
+  { q: 'What is an AI chatbot and do I need one?', a: 'An AI chatbot lives on your website or landing page and handles conversations automatically — answering questions, qualifying leads, and booking appointments without any human involvement. If you are getting website visitors who are not converting, or if you want to capture leads outside of business hours, a chatbot can make a significant difference.' },
+  { q: 'Can you connect our existing tools together?', a: 'Yes. If you use multiple tools that do not communicate with each other, we can connect them using Make, Zapier, or n8n. Common connections include CRM to email platform, website forms to CRM, payment processor to CRM, and booking system to calendar. We map out the connections, build the workflows, and test everything.' },
 ];
 
-const TICKER_ITEMS = [
-  'GoHighLevel Setup', 'CRM Automation', 'Lead Nurture Workflows', 'Email Automation',
-  'SMS & WhatsApp', 'Booking Systems', 'AI Chatbots', 'Pipeline Automation',
-  'API Integrations', 'White-Label GHL',
-];
-
-/* ── COMPONENTS ───────────────────────────────────────────────────────── */
-
-function Pill({ text, amber, purple }: { text: string; amber?: boolean; purple?: boolean }) {
-  const bg     = purple ? 'rgba(168,85,247,.10)' : amber ? 'rgba(255,176,0,.10)' : 'var(--ism-blue-50)';
-  const border = purple ? 'rgba(168,85,247,.30)' : amber ? 'rgba(255,176,0,.30)' : 'var(--ism-blue-100)';
-  const dot    = purple ? '#9333EA' : amber ? 'var(--ism-amber)' : 'var(--color-primary)';
-  const color  = purple ? '#9333EA' : amber ? 'var(--ism-amber)' : 'var(--color-primary)';
-  return (
-    <div style={{ display:'inline-flex', alignItems:'center', gap:8, background:bg, border:`1px solid ${border}`, borderRadius:100, padding:'6px 18px', marginBottom:20 }}>
-      <span style={{ width:7, height:7, borderRadius:'50%', background:dot, display:'inline-block' }} />
-      <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color, letterSpacing:'.09em', textTransform:'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
-
-function FAQSection() {
+/* ── FAQ 2-COL ────────────────────────────────────────────────────── */
+function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section className="ma-section" style={{ padding:'100px 0', background:'#F0F5FF' }}>
+    <section className="auto-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-        <div className="ma-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
+        <div className="auto-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           <div style={{ position:'sticky', top:100 }}>
-            <Pill text="FAQ" />
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
-              Questions we get asked before every automation project.
+              Questions About <span style={{ color:'var(--ism-amber)' }}>Marketing Automation</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              Honest answers about GoHighLevel, AI chatbots, timelines, and how automation actually works in practice.
+              Honest answers before you decide. No spin, no buzzwords.
             </p>
-            <a href="/contact"
-              style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
-              onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
-              onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+            <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Book a Free Automation Audit Call →
+              Get Started →
             </a>
           </div>
           <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
@@ -198,580 +139,505 @@ function FAQSection() {
   );
 }
 
-/* ══ PAGE ═════════════════════════════════════════════════════════════════ */
-export default function MarketingAutomationPage() {
+/* ══ PAGE ═════════════════════════════════════════════════════════════ */
+export default function AutomationPage() {
   return (
     <>
       <Navbar />
       <main>
 
         {/* ══ 1. HERO ══════════════════════════════════════════════════════ */}
-        <section className="ma-hero" style={{ background:'#fff', padding:'80px 0 72px', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-10%', right:'-5%', width:600, height:600, background:'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
-          <div style={{ position:'absolute', bottom:'-10%', left:'-4%', width:400, height:400, background:'radial-gradient(circle,rgba(255,176,0,.04) 0%,transparent 65%)', pointerEvents:'none' }} />
+        <section className="auto-hero" style={{ background:'linear-gradient(160deg,#EDF2FF 0%,#F7F8FA 48%,#FFFBEB 100%)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
+          <div style={{ position:'absolute', top:'-10%', right:'-6%', width:720, height:720, background:'radial-gradient(circle,rgba(30,77,195,.13) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', bottom:'-15%', left:'-5%', width:560, height:560, background:'radial-gradient(circle,rgba(255,176,0,.11) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:'20%', left:'50%', transform:'translateX(-50%)', width:900, height:400, background:'radial-gradient(ellipse,rgba(30,77,195,.04) 0%,transparent 70%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
+          <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
 
-          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px' }}>
-            <div className="ma-hero-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'center' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
+            <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
+              Stop Doing It Manually.<br />
+              Automate Your Follow-Up,<br />
+              <span style={{ color:'var(--ism-amber)' }}>Scale Your Revenue.</span>
+            </h1>
 
-              {/* LEFT */}
-              <div>
-                <div style={{ display:'flex', alignItems:'center', gap:7, fontFamily:I, fontSize:13, color:'var(--color-text-muted)', marginBottom:20 }}>
-                  <a href="/" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Home</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <a href="/services" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Services</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <span style={{ color:'var(--color-primary)', fontWeight:600 }}>Marketing Automation</span>
-                </div>
+            <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
+              We build the automation systems that keep your business moving — lead follow-up, appointment booking, CRM workflows, and email sequences — all running without you managing every step.
+            </p>
 
-                <div style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'6px 18px', borderRadius:100, background:'rgba(30,77,195,.07)', border:'1px solid rgba(30,77,195,.15)', fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.05em', marginBottom:24 }}>
-                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#22C55E', display:'inline-block', boxShadow:'0 0 0 3px rgba(34,197,94,.25)', animation:'ma-pulse 2s infinite' }} />
-                  MARKETING AUTOMATION SERVICES
-                </div>
-
-                <h1 style={{ fontFamily:J, fontSize:'clamp(26px,2.8vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-1px', lineHeight:1.1, margin:'0 0 20px' }}>
-                  Marketing Automation Services That Keep Your Pipeline Full{' '}
-                  <span style={{ color:'var(--ism-amber)', position:'relative', display:'inline-block' }}>
-                    While You Focus on Running Your Business
-                    <svg style={{ position:'absolute', bottom:-4, left:0, width:'100%' }} height="6" viewBox="0 0 380 6" preserveAspectRatio="none">
-                      <path d="M2 4 Q95 1 190 4 Q285 7 378 2" stroke="var(--ism-amber)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                    </svg>
-                  </span>
-                </h1>
-
-                <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.78, margin:'0 0 32px', maxWidth:480 }}>
-                  We set up the GoHighLevel systems, CRM workflows, lead nurture sequences, and AI-powered automation that follow up with leads, book appointments, and move people through your funnel — automatically, around the clock.
-                </p>
-
-                <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap', marginBottom:28 }}>
-                  <a href="/contact"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
-                    onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
-                  >
-                    Book a Free Automation Audit Call →
-                  </a>
-                  <a href="#ma-how"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
-                    onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
-                  >
-                    See How It Works ↓
-                  </a>
-                </div>
-
-                <div style={{ display:'flex', alignItems:'center', gap:'6px 16px', flexWrap:'wrap', fontFamily:I, fontSize:13, color:'var(--color-text-muted)' }}>
-                  {['GoHighLevel certified setups','In-house automation specialists','AI chatbots and workflows included'].map((b, i) => (
-                    <span key={i} style={{ display:'inline-flex', alignItems:'center', gap:6 }}>
-                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* RIGHT — Automation Flow Visual */}
-              <div style={{ position:'relative' }}>
-                <div style={{ position:'absolute', top:-18, right:-6, zIndex:10, background:'var(--ism-amber)', borderRadius:12, padding:'10px 16px', boxShadow:'0 8px 28px rgba(255,176,0,.50)' }}>
-                  <div style={{ fontFamily:J, fontSize:10, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase', marginBottom:2 }}>Running</div>
-                  <div style={{ fontFamily:J, fontSize:16, fontWeight:900, color:'var(--color-navy)', lineHeight:1 }}>24 / 7</div>
-                </div>
-
-                <div style={{ background:'var(--color-navy)', borderRadius:16, overflow:'hidden', boxShadow:'0 32px 80px rgba(30,77,195,.18)', border:'1px solid rgba(0,0,0,.08)' }}>
-                  <div style={{ background:'rgba(255,255,255,.06)', padding:'10px 14px', display:'flex', alignItems:'center', gap:8, borderBottom:'1px solid rgba(255,255,255,.08)' }}>
-                    <div style={{ display:'flex', gap:5 }}>
-                      {['#FF5F57','#FEBC2E','#28C840'].map(c=><div key={c} style={{ width:11, height:11, borderRadius:'50%', background:c }} />)}
-                    </div>
-                    <div style={{ flex:1, background:'rgba(255,255,255,.08)', borderRadius:6, padding:'5px 12px', fontFamily:I, fontSize:11, color:'rgba(255,255,255,.45)', border:'1px solid rgba(255,255,255,.1)', textAlign:'left' }}>
-                      🔒 ISM Automation Pipeline — Active
-                    </div>
-                  </div>
-
-                  <div style={{ padding:'20px 20px 16px' }}>
-                    {FLOW_STEPS.map((step, i) => (
-                      <div key={i} style={{ animationName:'ma-step-in', animationDuration:'.5s', animationTimingFunction:'ease', animationFillMode:'both', animationDelay:`${i * 0.12}s` }}>
-                        <div style={{ display:'flex', alignItems:'center', gap:12, padding:'10px 12px', background:'rgba(255,255,255,.05)', borderRadius:10, border:'1px solid rgba(255,255,255,.07)', marginBottom: i < FLOW_STEPS.length - 1 ? 0 : 0 }}>
-                          <div style={{ width:32, height:32, borderRadius:8, background:`${step.color}22`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, border:`1px solid ${step.color}44` }}>
-                            <i className={`fa-solid ${step.icon}`} style={{ color:step.color, fontSize:13 }} />
-                          </div>
-                          <div style={{ flex:1, minWidth:0 }}>
-                            <div style={{ fontFamily:J, fontSize:12, fontWeight:700, color:'rgba(255,255,255,.88)', lineHeight:1.3, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{step.label}</div>
-                            <div style={{ fontFamily:I, fontSize:10, color:'rgba(255,255,255,.35)', marginTop:1 }}>{step.time}</div>
-                          </div>
-                          {step.badge && (
-                            <span style={{
-                              padding:'3px 9px', borderRadius:6, fontFamily:J, fontSize:10, fontWeight:800, letterSpacing:'.06em',
-                              background: step.badge === 'DONE' ? 'rgba(52,211,153,.18)' : 'rgba(30,77,195,.30)',
-                              color: step.badge === 'DONE' ? '#34D399' : '#93C5FD',
-                              border: `1px solid ${step.badge === 'DONE' ? 'rgba(52,211,153,.35)' : 'rgba(147,197,253,.25)'}`,
-                              flexShrink:0,
-                            }}>
-                              {step.badge === 'DONE' ? '✓ DONE' : '⚡ AUTO'}
-                            </span>
-                          )}
-                        </div>
-                        {i < FLOW_STEPS.length - 1 && (
-                          <div style={{ display:'flex', justifyContent:'flex-start', paddingLeft:27, height:14 }}>
-                            <div style={{ width:1, height:'100%', background:`linear-gradient(to bottom, ${step.color}60, ${FLOW_STEPS[i+1].color}40)` }} />
-                          </div>
-                        )}
-                      </div>
-                    ))}
-
-                    <div style={{ marginTop:14, padding:'10px 14px', background:'rgba(52,211,153,.07)', borderRadius:8, border:'1px solid rgba(52,211,153,.20)', display:'flex', alignItems:'center', gap:8 }}>
-                      <i className="fa-solid fa-circle-check" style={{ color:'#34D399', fontSize:13, flexShrink:0 }} />
-                      <span style={{ fontFamily:I, fontSize:12, color:'rgba(255,255,255,.65)', lineHeight:1.4 }}>
-                        Your team did zero of this. <span style={{ color:'#34D399', fontWeight:700 }}>The system handled it.</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 2. TICKER ════════════════════════════════════════════════════ */}
-        <div style={{ background:'#0A1628', borderBottom:'2px solid var(--ism-amber)', overflow:'hidden', padding:'14px 0' }}>
-          <div style={{ display:'flex', animation:'ma-ticker 28s linear infinite', whiteSpace:'nowrap' }}>
-            {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
-              <span key={i} style={{ display:'inline-flex', alignItems:'center', gap:12, padding:'0 28px', fontFamily:J, fontSize:13, fontWeight:700, color:'rgba(255,255,255,.75)', letterSpacing:'.06em', textTransform:'uppercase' as const, flexShrink:0 }}>
-                <span style={{ color:'var(--ism-amber)', fontSize:16 }}>✦</span>
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* ══ 3. STATS ═════════════════════════════════════════════════════ */}
-        <section style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'64px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div className="ma-stats-row" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {STATS.map(s => (
-                <div key={s.num} style={{ textAlign:'center', padding:'32px 20px', borderRadius:14, background:'rgba(255,255,255,.07)', border:'1px solid rgba(255,255,255,.12)' }}>
-                  <div style={{ fontSize:40, fontWeight:900, fontFamily:J, color:'var(--ism-amber)', lineHeight:1 }}>{s.num}</div>
-                  <div style={{ marginTop:8, fontSize:14, fontWeight:700, color:'#fff', fontFamily:J, lineHeight:1.4 }}>{s.label}</div>
-                  <div style={{ marginTop:6, fontSize:12, color:'rgba(255,255,255,.60)', fontFamily:I, lineHeight:1.5 }}>{s.sub}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 4. WHAT WE SOLVE ═════════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'var(--color-bg-soft)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ maxWidth:680, margin:'0 auto', textAlign:'center' }}>
-              <Pill text="The Problem We Solve" />
-              <h2 style={{ margin:'0 0 24px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.8vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Every Lead That Does Not Hear Back Within the First Hour Is Probably Gone.
-              </h2>
-              <p style={{ fontSize:16, lineHeight:1.8, color:'var(--color-text-muted)', fontFamily:I, marginBottom:20 }}>
-                Most businesses lose leads not because of bad marketing but because of slow follow-up. The lead came in at 6pm on a Friday. Nobody replied until Monday. By then they had already booked with a competitor who got back to them in five minutes.
-              </p>
-              <p style={{ fontSize:16, lineHeight:1.8, color:'var(--color-text-muted)', fontFamily:I, marginBottom:52 }}>
-                Marketing automation services fix this permanently. Your pipeline follows up instantly, every time, regardless of when the lead comes in or whether your team is watching. You stop losing leads to speed and start converting them with consistency.
-              </p>
-            </div>
-            <div className="ma-callouts" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:20 }}>
-              {[
-                { icon:'fa-bolt',         title:'Instant response, every time',    desc:'Follow-up fires within minutes of a form submission — at 2am on a Sunday just as reliably as at 9am on a Monday.' },
-                { icon:'fa-arrows-rotate',title:'Leads nurtured until ready',     desc:'Most leads are not ready to buy the same day they enquire. Nurture sequences keep you front of mind until they are.' },
-                { icon:'fa-user-check',   title:'Your team only touches warm leads', desc:'Automation qualifies and warms leads first. Your team speaks to prospects who are already interested and ready to talk.' },
-              ].map(c => (
-                <div key={c.title}
-                  style={{ padding:'28px 24px', background:'#fff', borderRadius:14, border:'1px solid var(--color-border)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:16 }}>
-                    <i className={`fa-solid ${c.icon}`} style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h4 style={{ margin:'0 0 8px', fontFamily:J, fontWeight:700, fontSize:15, color:'var(--color-navy)' }}>{c.title}</h4>
-                  <p style={{ margin:0, fontSize:13, lineHeight:1.65, color:'var(--color-text-muted)', fontFamily:I }}>{c.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 5. BEFORE / AFTER TABLE ══════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'#fff', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:52 }}>
-              <Pill text="What Changes When You Automate" />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Before and After Marketing Automation
-              </h2>
-              <p style={{ fontSize:16, color:'var(--color-text-muted)', fontFamily:I, maxWidth:560, margin:'0 auto', lineHeight:1.7 }}>
-                This is what the same business looks like with and without a properly built automation system.
-              </p>
-            </div>
-
-            <div className="ma-ba-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:24, borderRadius:16, overflow:'hidden', boxShadow:'0 8px 40px rgba(0,0,0,.08)', border:'1px solid var(--color-border)' }}>
-              {/* Without */}
-              <div style={{ background:'#F8F8F8', padding:'36px 32px' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:28, paddingBottom:20, borderBottom:'1px solid rgba(0,0,0,.08)' }}>
-                  <div style={{ width:36, height:36, borderRadius:8, background:'rgba(239,68,68,.1)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-xmark" style={{ color:'#EF4444', fontSize:16, fontWeight:900 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:17, color:'#6B7280' }}>Without Marketing Automation</h3>
-                </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
-                  {BEFORE_ROWS.map((row, i) => (
-                    <div key={i} style={{ display:'flex', gap:12, alignItems:'flex-start' }}>
-                      <div style={{ width:22, height:22, borderRadius:'50%', background:'rgba(239,68,68,.12)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, marginTop:1 }}>
-                        <i className="fa-solid fa-xmark" style={{ color:'#EF4444', fontSize:10 }} />
-                      </div>
-                      <p style={{ margin:0, fontFamily:I, fontSize:14, color:'#6B7280', lineHeight:1.6 }}>{row}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* With ISM */}
-              <div style={{ background:'#EEF5FF', padding:'36px 32px' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:28, paddingBottom:20, borderBottom:'1px solid rgba(30,77,195,.12)' }}>
-                  <div style={{ width:36, height:36, borderRadius:8, background:'rgba(34,197,94,.15)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-check" style={{ color:'#16A34A', fontSize:16, fontWeight:900 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:17, color:'var(--color-navy)' }}>With ISM Marketing Automation</h3>
-                </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
-                  {AFTER_ROWS.map((row, i) => (
-                    <div key={i} style={{ display:'flex', gap:12, alignItems:'flex-start' }}>
-                      <div style={{ width:22, height:22, borderRadius:'50%', background:'rgba(34,197,94,.18)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0, marginTop:1 }}>
-                        <i className="fa-solid fa-check" style={{ color:'#16A34A', fontSize:10 }} />
-                      </div>
-                      <p style={{ margin:0, fontFamily:I, fontSize:14, color:'var(--color-navy)', lineHeight:1.6, fontWeight:500 }}>{row}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 6. SERVICES GRID ═════════════════════════════════════════════ */}
-        <section id="ma-services" className="ma-section" style={{ background:'var(--color-bg-soft)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Our Marketing Automation Services" />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Every Automation Service You Need. One In-House Team to Build All of It.
-              </h2>
-              <p style={{ fontSize:16, color:'var(--color-text-muted)', fontFamily:I, maxWidth:640, margin:'0 auto', lineHeight:1.7 }}>
-                From GoHighLevel setup and CRM configuration to AI chatbots and SMS sequences — we build the full automation stack your business needs.
-              </p>
-            </div>
-            <div className="ma-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
-              {SERVICES.map(svc => (
-                <div key={svc.title}
-                  style={{ position:'relative', padding:'28px 24px', background:'#fff', borderRadius:14, border:'1px solid var(--color-border)', borderLeft:'3px solid var(--color-primary)', boxShadow:'0 2px 12px rgba(0,0,0,.04)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.12)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 2px 12px rgba(0,0,0,.04)'; }}
-                >
-                  {svc.isNew && (
-                    <div style={{ position:'absolute', top:16, right:16 }}>
-                      <Pill text="New" purple />
-                    </div>
-                  )}
-                  {svc.isAgency && (
-                    <div style={{ position:'absolute', top:16, right:16 }}>
-                      <Pill text="Agency" amber />
-                    </div>
-                  )}
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:16 }}>
-                    <i className={`fa-solid ${svc.icon}`} style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:'0 0 10px', fontFamily:J, fontWeight:700, fontSize:16, color:'var(--color-navy)', lineHeight:1.3 }}>{svc.title}</h3>
-                  <p style={{ margin:'0 0 20px', fontSize:13, lineHeight:1.7, color:'var(--color-text-muted)', fontFamily:I }}>{svc.desc}</p>
-                  <a href={svc.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:13, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', fontFamily:J }}>
-                    {svc.cta} →
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 7. PLATFORMS ═════════════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'#fff', padding:'80px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:48 }}>
-              <Pill text="Platforms We Build Automation On" />
-              <h3 style={{ margin:'0', fontFamily:J, fontWeight:900, fontSize:'clamp(22px,2.2vw,36px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                We Build and Integrate Automation Across Every Major Platform
-              </h3>
-            </div>
-            <div className="ma-platforms-grid" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:16 }}>
-              {PLATFORMS.map(p => (
-                <div key={p.name}
-                  style={{ padding:'20px 16px', background:'var(--color-bg-soft)', borderRadius:12, border:'1px solid var(--color-border)', textAlign:'center', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 12px 32px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <div style={{ width:44, height:44, borderRadius:10, background:p.color, display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 12px', flexShrink:0 }}>
-                    <span style={{ fontFamily:J, fontSize:12, fontWeight:900, color:'#fff', letterSpacing:'-.5px' }}>{p.abbr}</span>
-                  </div>
-                  <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', marginBottom:4 }}>{p.name}</div>
-                  <div style={{ fontFamily:I, fontSize:11, color:'var(--color-text-muted)', lineHeight:1.4 }}>{p.role}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 8. PROCESS ═══════════════════════════════════════════════════ */}
-        <section id="ma-how" className="ma-section" style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="How We Build Your Automation System" amber />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'#fff' }}>
-                From Your First Call to a Pipeline That Runs Itself
-              </h2>
-              <p style={{ fontSize:16, color:'rgba(255,255,255,.70)', fontFamily:I, maxWidth:560, margin:'0 auto' }}>
-                Four steps. Built for your specific business, not a generic template someone copied from a tutorial.
-              </p>
-            </div>
-            <div className="ma-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {TIMELINE_STEPS.map((step, i) => (
-                <div key={step.num}
-                  style={{ position:'relative', padding:'32px 24px', background:'rgba(255,255,255,.07)', borderRadius:14, border:'1px solid rgba(255,255,255,.12)', transition:'transform .22s, background .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.background='rgba(255,255,255,.11)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.background='rgba(255,255,255,.07)'; }}
-                >
-                  {i < TIMELINE_STEPS.length - 1 && (
-                    <div className="ma-step-arrow" style={{ position:'absolute', top:40, right:-13, zIndex:2 }}>
-                      <i className="fa-solid fa-chevron-right" style={{ color:'var(--ism-amber)', fontSize:14 }} />
-                    </div>
-                  )}
-                  <div style={{ fontFamily:J, fontSize:32, fontWeight:900, color:'var(--ism-amber)', lineHeight:1, marginBottom:16 }}>{step.num}</div>
-                  <h4 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:700, fontSize:15, color:'#fff', lineHeight:1.3 }}>{step.title}</h4>
-                  <p style={{ margin:0, fontSize:13, lineHeight:1.65, color:'rgba(255,255,255,.68)', fontFamily:I }}>{step.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign:'center', marginTop:52 }}>
-              <p style={{ fontSize:15, color:'rgba(255,255,255,.72)', fontFamily:I, maxWidth:600, margin:'0 auto 24px', lineHeight:1.7 }}>
-                Book a Free Automation Audit — We will map your current lead journey and show you exactly where automation would make the biggest difference.
-              </p>
+            <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
               <a href="/contact"
-                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:14, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Book a Free Automation Audit Call →
+                Start Automating My Business
+              </a>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+              >
+                Get a Free Automation Audit
               </a>
             </div>
           </div>
         </section>
 
-        {/* ══ 9. WHO THIS IS FOR ═══════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'var(--ism-blue-50,#F0F5FF)', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:48 }}>
-              <Pill text="Who We Build Automation For" />
-              <h2 style={{ margin:'0', fontFamily:J, fontWeight:900, fontSize:'clamp(24px,2.5vw,38px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                Whether You Run a Business or an Agency, We Have Built This Before.
-              </h2>
-            </div>
-            <div className="ma-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:32 }}>
-              {/* Businesses */}
-              <div style={{ padding:'40px 36px', background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', boxShadow:'0 4px 20px rgba(0,0,0,.05)', transition:'transform .22s, box-shadow .22s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 4px 20px rgba(0,0,0,.05)'; }}
-              >
-                <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:24 }}>
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(30,77,195,.1)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-building" style={{ color:'var(--color-primary)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:18, color:'var(--color-navy)' }}>For Businesses</h3>
-                </div>
-                <ul style={{ margin:'0 0 28px', padding:0, listStyle:'none', display:'flex', flexDirection:'column', gap:12 }}>
-                  {BUSINESS_PAINS.map(item => (
-                    <li key={item} style={{ display:'flex', gap:10, fontSize:14, color:'var(--color-text-muted)', fontFamily:I, lineHeight:1.6 }}>
-                      <i className="fa-solid fa-circle-check" style={{ color:'var(--color-primary)', flexShrink:0, marginTop:3, fontSize:13 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a href="/contact"
-                  style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'13px 22px', background:'var(--color-primary)', color:'#fff', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:13, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='#1840A0'; (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.transform=''; }}
-                >
-                  Book a Free Automation Audit for Businesses →
-                </a>
+        {/* ══ REVIEWS BAR ══════════════════════════════════════════════════ */}
+        <div style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:56, flexWrap:'wrap' }}>
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/google-review-icon.webp" alt="Google" width={44} height={44} style={{ width:44, height:44, objectFit:'contain', display:'block', flexShrink:0 }} />
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>150+</span> Google Reviews</div>
               </div>
-
-              {/* Agencies */}
-              <div style={{ padding:'40px 36px', background:'var(--color-navy)', borderRadius:16, border:'1px solid rgba(255,255,255,.06)', boxShadow:'0 4px 24px rgba(0,0,0,.14)', transition:'transform .22s, box-shadow .22s' }}
-                onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 20px 50px rgba(0,0,0,.22)'; }}
-                onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow='0 4px 24px rgba(0,0,0,.14)'; }}
-              >
-                <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:24 }}>
-                  <div style={{ width:44, height:44, borderRadius:10, background:'rgba(255,176,0,.15)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <i className="fa-solid fa-briefcase" style={{ color:'var(--ism-amber)', fontSize:20 }} />
-                  </div>
-                  <h3 style={{ margin:0, fontFamily:J, fontWeight:900, fontSize:18, color:'#fff' }}>For Agencies</h3>
-                </div>
-                <ul style={{ margin:'0 0 28px', padding:0, listStyle:'none', display:'flex', flexDirection:'column', gap:12 }}>
-                  {AGENCY_PAINS.map(item => (
-                    <li key={item} style={{ display:'flex', gap:10, fontSize:14, color:'rgba(255,255,255,.78)', fontFamily:I, lineHeight:1.6 }}>
-                      <i className="fa-solid fa-circle-check" style={{ color:'var(--ism-amber)', flexShrink:0, marginTop:3, fontSize:13 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a href="/contact"
-                  style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'13px 22px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:13, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.opacity='.88'; (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-2px)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.opacity='1'; (e.currentTarget as HTMLAnchorElement).style.transform=''; }}
-                >
-                  Book a Free Call for Agencies →
-                </a>
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ width:44, height:44, borderRadius:10, background:'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}><span style={{ fontFamily:J, fontSize:15, fontWeight:900, color:'#fff' }}>C</span></div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>100+</span> Clutch Reviews</div>
+              </div>
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ display:'flex' }}>{['#4F46E5','#0EA5E9','#10B981','#F59E0B','#EF4444','#8B5CF6'].map((c,i)=>(<div key={i} style={{ width:38, height:38, borderRadius:'50%', border:'2px solid var(--color-bg-soft)', marginLeft:i===0?0:-10, background:c, display:'flex', alignItems:'center', justifyContent:'center', zIndex:6-i, position:'relative', flexShrink:0 }}><i className="fa-solid fa-user" style={{ fontSize:14, color:'#fff' }} /></div>))}</div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>1,000+</span> Client Reviews</div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* ══ 10. RESULTS ══════════════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'#fff', padding:'100px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Real Results" />
-              <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(24px,2.5vw,38px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-                What Happens When Your Pipeline Stops Relying on Manual Follow-Up
+        {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
+        <section className="auto-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
+                Why Automation Is the <span style={{ color:'var(--ism-amber)' }}>Foundation</span> of Scalable Growth
               </h2>
-              <p style={{ fontSize:16, color:'var(--color-text-muted)', fontFamily:I, maxWidth:560, margin:'0 auto', lineHeight:1.7 }}>
-                Real outcomes from automation systems our in-house team built and deployed.
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
+                The fastest-growing businesses are not the ones with the biggest teams — they are the ones with the best systems.
               </p>
             </div>
-            <div className="ma-results-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:28 }}>
-              {RESULTS.map(r => (
-                <div key={r.headline}
-                  style={{ padding:'36px 32px', background:'var(--color-bg-soft)', borderRadius:16, border:'1px solid rgba(30,77,195,.1)', transition:'transform .22s, box-shadow .22s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.transform='translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow='0 16px 40px rgba(30,77,195,.10)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.transform=''; (e.currentTarget as HTMLDivElement).style.boxShadow=''; }}
-                >
-                  <span style={{ display:'inline-block', fontSize:10, fontWeight:700, letterSpacing:'.1em', color:'var(--color-primary)', textTransform:'uppercase', fontFamily:I, marginBottom:16 }}>{r.tag}</span>
-                  <h3 style={{ margin:'0 0 16px', fontFamily:J, fontWeight:900, fontSize:'clamp(20px,1.8vw,28px)', color:'var(--color-navy)', lineHeight:1.2, letterSpacing:'-0.3px' }}>{r.headline}</h3>
-                  <p style={{ margin:'0 0 24px', fontSize:14, lineHeight:1.75, color:'var(--color-text-muted)', fontFamily:I }}>{r.body}</p>
-                  <div style={{ display:'flex', gap:20, borderTop:'1px solid rgba(30,77,195,.1)', paddingTop:20, marginBottom:20 }}>
-                    {r.metrics.map(m => (
-                      <div key={m.label} style={{ flex:1 }}>
-                        <div style={{ fontFamily:J, fontWeight:900, fontSize:22, color:'var(--color-primary)' }}>{m.val}</div>
-                        <div style={{ fontSize:11, color:'var(--color-text-muted)', fontFamily:I, marginTop:2, lineHeight:1.4 }}>{m.label}</div>
-                      </div>
-                    ))}
+
+            <div className="auto-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center', marginBottom:52 }}>
+
+              <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
+                {[
+                  { num:'01', title:'79% of leads are lost because follow-up is too slow', text:'The average business takes 47 hours to follow up with a new lead. Businesses that respond within five minutes are nine times more likely to convert.' },
+                  { num:'02', title:'Automation follows up with every lead, every time, without exception', text:'Manual follow-up works — until your team is busy. Automation removes that variable completely.' },
+                  { num:'03', title:'Automation does not replace your team — it frees them', text:'The goal is to make sure your team focuses on conversations with qualified leads, not manual data entry and repetitive follow-up tasks.' },
+                  { num:'04', title:'The businesses growing fastest have the best systems', text:'More leads, more clients, more revenue — without a proportional increase in overhead or team size.' },
+                ].map(item => (
+                  <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div>
+                      <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
+                      <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
+                    </div>
                   </div>
-                  <a href="#" style={{ fontSize:13, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', fontFamily:J }}>Read Full Case Study →</a>
+                ))}
+              </div>
+
+              <div className="auto-strategy-mosaic" style={{ position:'relative', height:460 }}>
+                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+              </div>
+
+            </div>
+
+            <div style={{ textAlign:'center' }}>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
+              >
+                Get a Free Automation Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+              </a>
+            </div>
+
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .auto-strategy-section { padding: 56px 0 !important; }
+              .auto-strategy-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+              .auto-strategy-mosaic { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .auto-strategy-section { padding: 44px 0 !important; }
+            }
+          `}</style>
+        </section>
+
+        {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
+        <div id="auto-results"><ClientResults /></div>
+
+        {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="auto-cta-banner-grid">
+              <div />
+              <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
+                  Are your leads getting <span style={{ color:'var(--ism-amber)' }}>followed up fast enough?</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
+                  Get a free audit and find out how much revenue you are leaving on the table from slow or inconsistent follow-up.
+                </p>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get My Free Automation Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                </a>
+              </div>
+            </div>
+            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg" alt="Automation Expert" style={{ position:'absolute', bottom:0, left:0, height:'100%', width:'100%', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+            </div>
+          </div>
+          <style>{`@media (max-width: 900px) { .auto-cta-banner-grid { grid-template-columns: 1fr !important; } .auto-cta-banner-grid > div:first-child { display: none !important; } }`}</style>
+        </section>
+
+        {/* ══ IMAGE + TEXT SECTION ════════════════════════════════════════ */}
+        <section style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+            <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
+              Automation Systems That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
+            </h2>
+            <div className="auto-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
+              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="Automation Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+              <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                  The goal of automation is not to remove the human element from your business. It is to make sure the human element shows up where it matters most — in conversations with qualified leads and in delivering great work — rather than in manual data entry and repetitive follow-up tasks.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  Every automation we build is designed around your specific business processes. We do not install templates and hand them over. We map your actual workflow, build around it, test it thoroughly, and stay involved to make sure it keeps performing.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  From your first lead form submission to the review request after a job is completed — every step in between can be automated, personalised, and improved. We build the complete system.
+                </p>
+                <div style={{ marginTop:8 }}>
+                  <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                    onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                    onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                  >
+                    Start Building My System <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>{`@media (max-width: 768px) { .auto-imgtext-grid { grid-template-columns: 1fr !important; } }`}</style>
+        </section>
+
+        {/* ══ TESTIMONIALS ════════════════════════════════════════════════ */}
+        <Testimonials />
+
+        {/* ══ SERVICES GRID ════════════════════════════════════════════════ */}
+        <section className="auto-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:56 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
+                Our Complete <span style={{ color:'var(--ism-amber)' }}>Automation Services</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                From lead follow-up to full business automation — we build the systems that run your business 24/7.
+              </p>
+            </div>
+            <div className="auto-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
+              {SERVICES.map((s,i)=>(
+                <div key={i} className={`auto-svc-cell auto-svc-cell-${i}`}
+                  style={{ padding:'36px 32px', borderRight:(i+1)%3===0?'none':'1px solid #E8EAF0', borderBottom:i<6?'1px solid #E8EAF0':'none', background:'#fff', transition:'background .18s', cursor:'default' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.background='#F7F8FD'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.background='#fff'; }}
+                >
+                  <div style={{ display:'flex', alignItems:'flex-start', gap:14, marginBottom:18 }}>
+                    <div style={{ width:46, height:46, borderRadius:10, background:'var(--ism-blue-50,rgba(30,77,195,.08))', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                      <i className={s.icon} style={{ fontSize:20, color:'var(--color-primary)' }} />
+                    </div>
+                    <h3 style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'var(--color-navy)', margin:0, lineHeight:1.3, paddingTop:6 }}>{s.title}</h3>
+                  </div>
+                  <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.80, margin:'0 0 22px' }}>{s.desc}</p>
+                  <a href={s.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.03em', transition:'gap .18s' }}
+                    onMouseEnter={e=>(e.currentTarget.style.gap='10px')}
+                    onMouseLeave={e=>(e.currentTarget.style.gap='6px')}
+                  >
+                    Learn more <i className="fa-solid fa-arrow-right" style={{ fontSize:10 }} />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style>{`
+            @media (max-width: 900px) { .auto-svc-grid { grid-template-columns: repeat(2,1fr) !important; } .auto-svc-cell-1,.auto-svc-cell-3,.auto-svc-cell-5,.auto-svc-cell-7 { border-right: none !important; } .auto-svc-cell-0,.auto-svc-cell-1,.auto-svc-cell-2,.auto-svc-cell-3,.auto-svc-cell-4,.auto-svc-cell-5,.auto-svc-cell-6,.auto-svc-cell-7 { border-bottom: 1px solid #E8EAF0 !important; } .auto-svc-cell-8 { border-bottom: none !important; border-right: none !important; } }
+            @media (max-width: 560px) { .auto-svc-grid { grid-template-columns: 1fr !important; } .auto-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; } .auto-svc-cell-8 { border-bottom: none !important; } }
+          `}</style>
+        </section>
+
+        {/* ══ DARK NAVY ════════════════════════════════════════════════════ */}
+        <section className="auto-section" style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div className="auto-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
+              <div>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
+                  Why Automation Is a{' '}
+                  <span style={{ color:'var(--ism-amber)' }}>Smart Investment</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
+                  Build Systems That Scale Without Adding Headcount
+                </p>
+                <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Speed to lead is everything.</strong> Businesses that respond within five minutes are 9× more likely to convert a lead than those that wait 30 minutes. Automation makes five-minute response happen every time, automatically.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Consistency beats effort.</strong> Manual follow-up works — until your team is busy. Automation follows up with every lead, every time, without exception. No leads fall through the cracks.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>The cost of not automating is real.</strong> Every lead that does not get followed up fast enough costs you money. Every manual task takes time away from higher-value work. Automation fixes both.
+                  </p>
+                </div>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
+                >
+                  Build My Automation System →
+                </a>
+              </div>
+              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="Automation ROI" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ TIMELINE ══════════════════════════════════════════════════════ */}
+        <section className="auto-section" style={{ padding:'100px 0', background:'#fff' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:64 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                Isuremedia&apos;s Process for <span style={{ color:'var(--ism-amber)' }}>Automation That Works</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                From audit to launch — a clear, systematic approach to building automation that lasts.
+              </p>
+            </div>
+            <div className="auto-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
+              <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
+              {TIMELINE_STEPS.map((step,i)=>(
+                <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
+                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                    <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
+                  </div>
+                  <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>
+                  <p style={{ fontFamily:I, fontSize:13, color:'var(--color-text-muted)', lineHeight:1.65, margin:0 }}>{step.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign:'center', marginTop:56 }}>
+              <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
+              >
+                Get a Free Automation Audit
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ PRICING ═══════════════════════════════════════════════════════ */}
+        <section className="auto-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                Start with the right scope{' '}
+                <span style={{ color:'var(--ism-amber)' }}>for your business.</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Every plan includes a dedicated automation specialist and full documentation.
+              </p>
+            </div>
+            <div className="auto-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>STARTER</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Lead Follow-Up</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Automated lead nurture and follow-up for small businesses.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['CRM setup & lead capture','3-step email follow-up sequence','SMS follow-up automation','Appointment booking integration','Basic pipeline setup','Monthly performance report'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 24px rgba(255,176,0,.40)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+                >
+                  Get Started
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'2px solid var(--color-primary)', padding:'36px 32px', transform:'scale(1.04)', boxShadow:'0 16px 56px rgba(30,77,195,.18)', position:'relative', transition:'all .22s' }}>
+                <div style={{ position:'absolute', top:-14, left:'50%', transform:'translateX(-50%)', background:'var(--ism-amber)', borderRadius:100, padding:'5px 18px', whiteSpace:'nowrap' }}>
+                  <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase' }}>Most Popular</span>
+                </div>
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Full Automation System</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Complete CRM, automation, and GoHighLevel setup for growing businesses.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['Full GoHighLevel build & setup','Multi-channel nurture sequences','Appointment booking & reminders','Pipeline & CRM automation','Review request automation','Monthly optimisation report'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Start Growing
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>ENTERPRISE</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Agency & Enterprise</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Custom automation builds for agencies and complex multi-location businesses.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['Custom workflow architecture','AI chatbot & conversation flows','API & third-party integrations','Multi-location CRM setup','White-label reporting','Dedicated automation manager'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+                >
+                  Talk to Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ WHY DIFFERENT ════════════════════════════════════════════════ */}
+        <section className="auto-section" style={{ padding:'100px 0', background:'#fff' }}>
+          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
+                Why Our Automation Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Growth</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Systems built around your business — not templates dropped in and left running.
+              </p>
+            </div>
+            <div className="auto-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
+              {DIFFERENTIATORS.map((d,i)=>(
+                <div key={i} style={{ background:d.dark?'var(--color-navy)':'var(--color-bg-soft)', borderRadius:16, border:`1px solid ${d.dark?'transparent':'var(--color-border)'}`, padding:'36px 30px', transition:'all .22s' }}
+                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+                >
+                  <div style={{ width:48, height:48, borderRadius:12, background:d.dark?'rgba(255,176,0,.15)':'rgba(30,77,195,.10)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:20 }}>
+                    <i className={d.icon} style={{ fontSize:20, color:d.dark?'var(--ism-amber)':'var(--color-primary)' }} />
+                  </div>
+                  <h3 style={{ fontFamily:J, fontSize:18, fontWeight:800, color:d.dark?'#fff':'var(--color-navy)', margin:'0 0 10px' }}>{d.title}</h3>
+                  <p style={{ fontFamily:I, fontSize:14, color:d.dark?'rgba(255,255,255,.7)':'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>{d.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ══ 11. INDUSTRIES ═══════════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'var(--color-bg-soft)', padding:'80px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px', textAlign:'center' }}>
-            <Pill text="Industries We Serve" />
-            <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(22px,2.2vw,36px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
-              We Have Built Automation Systems Across These Industries.
-            </h2>
-            <p style={{ fontSize:15, color:'var(--color-text-muted)', fontFamily:I, maxWidth:640, margin:'0 auto 36px', lineHeight:1.7 }}>
-              An HVAC company needs same-day booking automation. A law firm needs a 30-day nurture sequence. An e-commerce brand needs cart abandonment flows. We build for the specifics, not a template.
-            </p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:10, justifyContent:'center', marginBottom:28 }}>
-              {INDUSTRIES.map(ind => (
-                <span key={ind}
-                  style={{ padding:'8px 20px', background:'#fff', border:'1px solid var(--color-border)', borderRadius:100, fontSize:13, color:'var(--color-navy)', fontFamily:I, fontWeight:600, cursor:'pointer', transition:'all .18s' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLSpanElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLSpanElement).style.color='#fff'; (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-primary)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLSpanElement).style.background='#fff'; (e.currentTarget as HTMLSpanElement).style.color='var(--color-navy)'; (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-border)'; }}
-                >{ind}</span>
-              ))}
+        {/* ══ FAQ ══════════════════════════════════════════════════════════ */}
+        <FAQAccordion />
+
+        {/* ══ READY FOR RESULTS CTA ════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'60px 28px' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="auto-rfr-grid">
+            <div style={{ position:'absolute', top:'-30%', right:'30%', width:500, height:500, background:'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:20 }}>
+                <div style={{ width:28, height:3, background:'var(--ism-amber)', borderRadius:2 }} />
+                <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.12em', textTransform:'uppercase' }}>Your Growth Starts Here</span>
+              </div>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
+                Ready to stop doing it manually<br />and start <span style={{ color:'var(--ism-amber)' }}>scaling automatically?</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
+                Whether you need a simple follow-up sequence or a complete business automation system — we build it around your process, test it thoroughly, and make sure it delivers results. Talk to us today and we will map out exactly what your business should be automating first.
+              </p>
+              <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.55)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get My Free Automation Audit
+                </a>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
+                >
+                  Talk to Our Team
+                </a>
+              </div>
             </div>
-            <p style={{ fontSize:14, color:'var(--color-text-muted)', fontFamily:I }}>
-              Not on this list?{' '}
-              <a href="/contact" style={{ color:'var(--color-primary)', fontWeight:700, textDecoration:'none' }}>Book a call — if your business generates leads, we can almost certainly build automation for it. →</a>
-            </p>
-          </div>
-        </section>
-
-        {/* ══ 12. FAQ ══════════════════════════════════════════════════════ */}
-        <FAQSection />
-
-        {/* ══ 13. BOTTOM CTA ═══════════════════════════════════════════════ */}
-        <section className="ma-section" style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'100px 0', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', width:800, height:800, background:'radial-gradient(circle,rgba(255,255,255,.04) 0%,transparent 60%)', pointerEvents:'none' }} />
-          <div style={{ maxWidth:800, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
-            <h2 style={{ margin:'0 0 16px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,3vw,44px)', color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px' }}>
-              Ready to Build a Pipeline That Works While You Sleep?
-            </h2>
-            <p style={{ fontSize:16, color:'rgba(255,255,255,.72)', fontFamily:I, margin:'0 auto 36px', maxWidth:560, lineHeight:1.75 }}>
-              Book a free 30-minute automation audit call. We will review your current lead follow-up process, identify where leads are falling through, and show you exactly what an automation system would look like for your specific business.
-            </p>
-            <a href="/contact"
-              style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 32px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:800, fontSize:15, textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 8px 28px rgba(255,176,0,.45)', transition:'all .18s' }}
-              onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform='translateY(-3px)'; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 14px 36px rgba(255,176,0,.60)'; }}
-              onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.transform=''; (e.currentTarget as HTMLAnchorElement).style.boxShadow='0 8px 28px rgba(255,176,0,.45)'; }}
-            >
-              Book a Free Automation Audit Call →
-            </a>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:'10px 28px', justifyContent:'center', marginTop:32 }}>
-              {['No contract required','GoHighLevel certified team','AI chatbots and workflows included','White-label ready for agencies'].map(b => (
-                <span key={b} style={{ display:'flex', alignItems:'center', gap:6, fontSize:13, color:'rgba(255,255,255,.60)', fontFamily:I }}>
-                  <i className="fa-solid fa-circle-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                  {b}
-                </span>
-              ))}
+            <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Client" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
+          <style>{`@media (max-width: 900px) { .auto-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; } }`}</style>
         </section>
 
       </main>
       <Footer />
+
       <style>{`
-        @keyframes ma-pulse {
-          0%,100% { box-shadow: 0 0 0 3px rgba(34,197,94,.25); }
-          50%      { box-shadow: 0 0 0 7px rgba(34,197,94,.08); }
-        }
-        @keyframes ma-ticker {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        @keyframes ma-step-in {
-          from { opacity: 0; transform: translateX(8px); }
-          to   { opacity: 1; transform: translateX(0); }
-        }
-        @media (max-width: 640px) {
-          .ma-hero    { padding: 56px 0 44px !important; }
-          .ma-section { padding-top: 60px !important; padding-bottom: 60px !important; }
-        }
-        @media (max-width: 900px) {
-          .ma-hero-grid      { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .ma-stats-row      { grid-template-columns: 1fr 1fr !important; }
-          .ma-callouts       { grid-template-columns: 1fr 1fr !important; }
-          .ma-ba-grid        { grid-template-columns: 1fr !important; }
-          .ma-svc-grid       { grid-template-columns: 1fr 1fr !important; }
-          .ma-platforms-grid { grid-template-columns: repeat(3,1fr) !important; }
-          .ma-timeline       { grid-template-columns: 1fr 1fr !important; }
-          .ma-split          { grid-template-columns: 1fr !important; }
-          .ma-results-grid   { grid-template-columns: 1fr !important; }
-          .ma-faq-grid       { grid-template-columns: 1fr !important; }
-          .ma-step-arrow     { display: none !important; }
-        }
-        @media (max-width: 600px) {
-          .ma-svc-grid       { grid-template-columns: 1fr !important; }
-          .ma-callouts       { grid-template-columns: 1fr !important; }
-          .ma-timeline       { grid-template-columns: 1fr !important; }
-          .ma-platforms-grid { grid-template-columns: repeat(2,1fr) !important; }
-        }
+        @media (max-width: 900px)  { .auto-plan-grid { grid-template-columns: 1fr !important; } .auto-plan-grid > *:nth-child(2) { transform: none !important; } }
+        @media (max-width: 900px)  { .auto-split { grid-template-columns: 1fr !important; gap: 36px !important; } }
+        @media (max-width: 900px)  { .auto-diff-grid { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 540px)  { .auto-diff-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 900px)  { .auto-timeline { grid-template-columns: 1fr !important; gap: 40px !important; } .auto-timeline > *:not(:last-child)::after { content:''; display:block; width:2px; height:32px; background:var(--ism-amber); margin:20px auto 0; } }
+        @media (max-width: 900px)  { .auto-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+        @media (max-width: 640px)  { .auto-hero { padding: 56px 0 44px !important; } .auto-section { padding-top: 60px !important; padding-bottom: 60px !important; } }
       `}</style>
     </>
   );

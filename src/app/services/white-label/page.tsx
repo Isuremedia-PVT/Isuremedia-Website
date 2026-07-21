@@ -3,128 +3,120 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Testimonials from '@/components/Testimonials';
+import ClientResults from '@/components/ClientResults';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-/* ── DATA ─────────────────────────────────────────────────────────────── */
-
-const STATS = [
-  { num: '38+',  label: 'Agency Partners',       sub: 'Trusting ISM as their silent white label delivery team' },
-  { num: '10',   label: 'White Label Services',   sub: 'SEO, PPC, web, content, design, GHL, and more' },
-  { num: '40+',  label: 'In-House Specialists',   sub: 'We do not outsource either. Everything stays in-house.' },
-  { num: 'Zero', label: 'Direct Client Contact',  sub: 'We never reach out to your clients. Ever. Guaranteed.' },
-];
-
-const COMPARISON_ROWS = [
-  { factor: 'Speed to start',        fl: 'Slow. Sourcing and briefing takes weeks.',              ih: 'Very slow. Recruiting takes 2–3 months.',          ism: 'Fast. Onboarded in days, not weeks.',                          flBad: true,  ihBad: true  },
-  { factor: 'Quality consistency',   fl: 'Variable. Different freelancers, different standards.', ih: 'Consistent once trained and settled in.',          ism: 'Consistent. Same team, same process, every delivery.',        flBad: true,  ihBad: false },
-  { factor: 'Brand confidentiality', fl: 'Risky. Freelancers often work with competing clients.', ih: 'Safe. Internal team, no outside exposure.',        ism: 'Guaranteed. Zero ISM branding on any deliverable.',           flBad: true,  ihBad: false },
-  { factor: 'Service range',         fl: 'Narrow. Each freelancer covers one specialism.',        ih: 'Limited by who you can afford to hire.',           ism: 'Full stack. SEO, PPC, web, content, design, GoHighLevel.',    flBad: true,  ihBad: true  },
-  { factor: 'Cost model',            fl: 'Low per task, high in management time and overhead.',   ih: 'High. Salary, benefits, tools, and training.',     ism: 'Predictable per deliverable. Pay for what you need.',         flBad: true,  ihBad: true  },
-  { factor: 'Scalability',           fl: 'Hard. More freelancers means more coordination.',       ih: 'Slow. Every hire adds months of runway cost.',     ism: 'Instant. Scale up or down based on your client load.',        flBad: true,  ihBad: true  },
-  { factor: 'Accountability',        fl: 'Shared. Handoffs break. Nobody owns the outcome.',      ih: 'Clear. One team, one owner.',                      ism: 'Clear. One account manager. You always know where things stand.', flBad: true, ihBad: false },
-];
+/* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
-  { num:'01', icon:'fa-magnifying-glass', title:'White-Label SEO',                    desc:'Full-service SEO delivered silently under your brand — audits, technical fixes, on-page optimisation, link building, and branded monthly reports.',               href:'/services/white-label/seo' },
-  { num:'02', icon:'fa-chart-bar',        title:'White-Label PPC',                    desc:'Google Ads, Meta Ads, and paid social campaigns managed and reported under your brand. Your clients see your agency on every report and every dashboard.',          href:'/services/white-label/ppc' },
-  { num:'03', icon:'fa-hashtag',          title:'White-Label Social Media',           desc:'Organic and paid social — content calendars, creative assets, scheduling, and performance reporting delivered under your brand for every client account.',          href:'/services/white-label/social-media-marketing' },
-  { num:'04', icon:'fa-code',             title:'White-Label Web Development',        desc:'Website builds, landing pages, redesigns, and migrations delivered silently under your agency label. Your clients never know ISM touched their site.',              href:'/services/white-label/web-development' },
-  { num:'05', icon:'fa-bolt',             title:'White-Label GoHighLevel Support',    desc:'GHL sub-account setup, funnel builds, automation workflows, CRM configuration, and ongoing support delivered without a word about ISM to your clients.',           href:'/services/white-label/gohighlevel-support' },
-  { num:'06', icon:'fa-file-lines',       title:'White-Label Content Marketing',      desc:'Blog writing, website copy, and content calendars for your clients — delivered white-labeled, on brief, and on time. Content that builds authority under your brand.',href:'/services/white-label/content-marketing' },
-  { num:'07', icon:'fa-link',             title:'White-Label Link Building',          desc:'White-hat outreach-based link acquisition delivered silently under your brand. Real editorial placements on real sites. No PBNs. No spam.',                        href:'/services/white-label/link-building' },
-  { num:'08', icon:'fa-palette',          title:'White-Label Graphic Design',         desc:'On-demand design production for your client accounts — social creatives, ad assets, brand collateral, and presentations with zero ISM branding.',                  href:'/services/white-label/graphic-design' },
-  { num:'09', icon:'fa-users',            title:'Dedicated Agency Pods',              desc:'A fully dedicated team of specialists assigned to your agency for consistent monthly capacity across multiple client accounts — without the overhead of hiring.',    href:'/services/white-label/dedicated-agency-pods' },
-  { num:'10', icon:'fa-chart-line',       title:'White-Label Reporting & Dashboards', desc:'Branded client performance dashboards and monthly reports delivered under your agency name. Your clients log into your branded portal and see your name throughout.',href:'/services/white-label/reporting-dashboards' },
+  {
+    title: 'White-Label SEO',
+    icon: 'fa-solid fa-magnifying-glass',
+    desc: 'Full SEO delivery under your brand. We run technical SEO, on-page optimisation, content production, and link building for your clients. Your clients see your name on everything. We have no footprint in the relationship.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label PPC',
+    icon: 'fa-solid fa-chart-bar',
+    desc: 'We manage Google Ads, Meta Ads, LinkedIn Ads, and YouTube campaigns for your clients. Every ad account, every report, and every communication goes out under your brand. You retain the client relationship — we deliver the results.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label Web Development',
+    icon: 'fa-solid fa-code',
+    desc: 'We build websites, landing pages, and sales funnels under your agency brand. Whether your clients need WordPress, Webflow, Shopify, or custom development, we handle the full build and hand it over ready to launch.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label GoHighLevel',
+    icon: 'fa-solid fa-bolt',
+    desc: 'We set up and manage complete GoHighLevel systems for your clients — CRM, pipelines, automations, funnels, and booking calendars — all delivered under your brand. No GHL expertise required on your end.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label Content Marketing',
+    icon: 'fa-solid fa-pen-nib',
+    desc: 'SEO blog content, website copy, and content strategy delivered under your brand. We research, write, and optimise content for your clients that ranks on Google and converts visitors into leads.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label Social Media',
+    icon: 'fa-solid fa-share-nodes',
+    desc: 'We manage social media content, scheduling, and community management for your clients. Graphics, captions, and posting calendars all produced and delivered under your agency brand.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label Email Marketing',
+    icon: 'fa-solid fa-envelope',
+    desc: 'Email campaigns, sequences, and automations built and managed for your clients under your brand. From strategy and copywriting to template design and performance reporting — we handle everything.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'White-Label Graphic Design',
+    icon: 'fa-solid fa-palette',
+    desc: 'Ad creatives, social graphics, brand assets, and marketing materials produced by our in-house design team under your agency brand. Fast turnaround, unlimited revisions, and a dedicated designer for your account.',
+    href: '/services/white-label',
+  },
+  {
+    title: 'Dedicated Agency Pods',
+    icon: 'fa-solid fa-users',
+    desc: 'For agencies that need consistent, high-volume delivery, we assign a dedicated pod of specialists to your account. Your pod works exclusively on your clients — SEO specialists, PPC managers, designers, and web developers — all available under your brand.',
+    href: '/services/white-label',
+  },
 ];
 
 const TIMELINE_STEPS = [
-  { num:1, title:'Onboarding and Setup',           desc:'You brief us on your agency\'s process, templates, preferred communication style, and client reporting format. We set up your white label account, branded templates, and assign your dedicated account manager. One to two days, not weeks.' },
-  { num:2, title:'You Win the Client, We Brief In', desc:'When a client comes on board, you pass the brief through our agreed process. We ask only what we need to deliver properly. You manage the client relationship entirely. We never reach out to your clients. Your email, your phone, your voice — always.' },
-  { num:3, title:'We Deliver Under Your Brand',    desc:'Work is completed to agreed timelines and handed back in your branded format. Reports have your logo. Files have no ISM footprint. You review and submit to your client as if your team built every part of it. Because as far as your client is concerned, you did.' },
-  { num:4, title:'Review, Scale, and Repeat',      desc:'Monthly check-ins with your account manager to review what is working and plan ahead. Add new services or new clients at any time. Scale down if your load changes. No long contracts forcing you to pay for capacity you are not using.' },
+  { num: 1, period: 'Agency Onboarding', desc: 'We learn your service offerings, your client base, your pricing, and your delivery standards. We sign an NDA and set up white-label reporting templates so everything that goes to your clients looks like it came from you.' },
+  { num: 2, period: 'Client Kickoff', desc: 'When you bring us a new client, we gather everything we need — access, goals, competitors, and history. You stay in the client relationship. We work behind the scenes from day one.' },
+  { num: 3, period: 'Campaign Build', desc: 'Our specialists build and launch the campaign — SEO strategy, ad accounts, website build, or automation setup — following the standards we agreed on during onboarding. You review and approve before anything goes live for your client.' },
+  { num: 4, period: 'Delivery & Reporting', desc: 'Work is delivered on schedule. Monthly reports go out under your brand with your logo. Clients see performance data presented by your agency. We prepare the reports — you send them.' },
+  { num: 5, period: 'Scale Together', desc: 'As you win more clients, we scale with you. Add new services, increase volume, or bring on a dedicated pod. Your growth is not limited by your team size.' },
 ];
 
-const GUARANTEES = [
-  { icon:'fa-user-slash',     title:'No client contact',     desc:'We never reach out to your clients directly. Your client relationships are yours. Full stop. We sign NDAs if required.' },
-  { icon:'fa-eye-slash',      title:'No ISM branding',       desc:'Nothing we deliver has our name on it unless you explicitly want it. Every report, dashboard, and file carries your brand.' },
-  { icon:'fa-clock',          title:'Agreed timelines',      desc:'We agree deadlines before work starts. If something changes, your account manager tells you before it becomes your problem.' },
-  { icon:'fa-chart-simple',   title:'Transparent reporting', desc:'You see exactly what was done and what results it produced. Nothing vague. Nothing hidden behind jargon or vanity metrics.' },
-];
-
-const RESULTS = [
-  {
-    industry: 'UK Digital Agency',
-    badge: 'White Label SEO + PPC',
-    metric: '12→31',
-    metricLabel: 'Active clients in 8 months',
-    period: 'Zero new hires',
-    desc: 'A UK-based digital agency was capped at 12 clients because their team could not take on more SEO and PPC work without quality dropping. With ISM as their white label partner, they scaled to 31 active clients in 8 months while maintaining client satisfaction scores above 90%.',
-  },
-  {
-    industry: 'US Solo Consultant',
-    badge: 'Full White Label Suite',
-    metric: '6-fig',
-    metricLabel: 'Agency revenue in 12 months',
-    period: 'Team of one throughout',
-    desc: 'A solo marketing consultant was winning clients who needed full-service delivery. Using ISM white label — SEO, PPC, web development, and content — they took on projects at full agency scale while staying a team of one. Revenue crossed six figures within 12 months of the partnership starting.',
-  },
-];
-
-const AGENCY_TYPES = [
-  'Full-Service Digital Agencies', 'SEO Agencies', 'PPC and Paid Media Agencies',
-  'Web Design and Dev Agencies', 'Social Media Agencies', 'Content Marketing Agencies',
-  'Branding and Creative Agencies', 'Freelancers Scaling to Agency', 'Marketing Consultants',
-  'PR Agencies Adding Digital', 'IT and Tech Companies', 'Business Growth Consultancies',
+const DIFFERENTIATORS = [
+  { dark: true,  icon: 'fa-solid fa-tag',            title: 'Zero White-Label Footprint',              desc: 'We do not appear anywhere in your client relationship. No Isuremedia branding on reports, no ISM email addresses in communications, no mentions of us to your clients. Everything is built, delivered, and reported under your agency brand — your clients stay yours.' },
+  { dark: false, icon: 'fa-solid fa-users',          title: '40+ In-House Specialists',                desc: 'We do not subcontract your client work to freelancers. Our 40+ in-house team covers SEO, PPC, web development, GoHighLevel, design, copywriting, and social media. The specialists working on your clients are our full-time employees — quality controlled and accountable.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Contracts. No Commitments.',           desc: 'We do not lock agency partners into long-term contracts. You bring us work when you need us, pause when you do not, and scale up when your client base grows. There are no minimum commitments and no cancellation fees.' },
+  { dark: false, icon: 'fa-solid fa-shield-halved',  title: 'NDA on Every Engagement',                 desc: 'We sign a non-disclosure agreement on every agency partnership before work begins. Your client list, your pricing, your systems, and your relationships are confidential. We take that seriously and have never had a breach in over eight years of white-label work.' },
+  { dark: false, icon: 'fa-solid fa-gauge-high',     title: 'Fast Turnaround, Consistent Quality',     desc: 'Agencies need reliable delivery. We set clear turnaround timelines for every service and hit them. Our quality control process means you review deliverables that are already at a high standard — not rough drafts that need significant rework before you can pass them to clients.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'One Dedicated Agency Manager',            desc: 'You do not manage a rotating team of people on our side. You have one dedicated agency account manager who knows your client accounts, understands your standards, and is your single point of contact. Any issue gets resolved fast.' },
 ];
 
 const FAQS = [
-  { q:'Will my clients ever find out that ISM is doing the work?', a:'No. We operate completely silently. Every deliverable carries your agency branding. We never reach out to your clients, never mention ISM in any deliverable, and never do anything that could reveal the existence of the partnership. We sign NDAs before any work begins if you require it. Your client sees only your agency throughout the entire engagement.' },
-  { q:'What white label digital marketing services do you offer?', a:'We offer ten white label services: SEO, PPC, social media marketing, web development, GoHighLevel support, content marketing, link building, graphic design, dedicated agency pods, and branded client reporting and dashboards. You can use one service or all ten. Each can be scaled independently based on your client load.' },
-  { q:'How does the briefing and handover process work?', a:'During onboarding we set up branded templates and a briefing process that fits how your agency already works. When you have a new client or project, you send us a brief using the agreed format. We ask only what we need to deliver properly, complete the work to agreed timelines, and hand it back in your branded format ready to submit to your client.' },
-  { q:'Do you offer dedicated agency pods for consistent capacity?', a:'Yes. Dedicated pods give you a fixed team assigned exclusively to your accounts. The same specialists work on your clients every month, meaning they learn your standards, your clients, and your preferred way of working. Ideal for agencies with high-volume consistent workloads where you need the same quality month to month.' },
-  { q:'Can I start with just one service for one client?', a:'Yes. There is no minimum volume. Many agencies start by white labeling a single service for a single client to experience the process before scaling. Start with white label SEO for one client, see how the delivery and reporting works, then add PPC for another client next month. The model is designed to start small and scale at your pace.' },
-  { q:'What is the difference between white label and digital marketing reseller services?', a:'White label means we produce the work and you present it as your own agency output — your clients see only your brand throughout. ISM operates as white label only. Nothing we deliver has our branding unless you specifically request it. If you prefer a reseller arrangement where ISM branding is used, that can be discussed separately.' },
-  { q:'How does white label reporting and branded dashboards work?', a:'We produce monthly performance reports using your agency\'s name, logo, and colour scheme. For live dashboards, we set up reporting portals under your agency\'s domain or subdomain. Your clients log in and see your brand throughout — rankings and traffic for SEO, ROAS and CPL for PPC.' },
-  { q:'How quickly can we start?', a:'Most white label partnerships are ready to start within 3 to 5 business days of the initial call. Onboarding covers your agency\'s process, templates, reporting preferences, and communication style. Once done, the first client briefs can come in immediately. There is no long setup process or complex integration required on your end.' },
+  { q: 'What is white-label marketing?', a: 'White-label marketing is when one company delivers marketing services that another company sells under its own brand. As an agency, you sell SEO, PPC, web design, or automation to your clients — and we deliver that work behind the scenes, under your brand. Your clients never know we exist.' },
+  { q: 'Will my clients know you are doing the work?', a: 'No. We operate with zero white-label footprint. All reports, documents, and deliverables go out under your agency brand. We sign NDAs on every engagement. Your client relationships remain exclusively yours.' },
+  { q: 'Which services can you white-label?', a: 'We white-label SEO, PPC, web development, GoHighLevel setup and automation, content marketing, social media management, email marketing, graphic design, and link building. If you sell it, we can almost certainly deliver it.' },
+  { q: 'How do I brief you on a new client?', a: 'We give you a simple client intake form that captures everything we need — goals, competitors, access credentials, and history. Once we have that, we start without you needing to stay involved in the day-to-day work. You focus on the client relationship while we focus on the delivery.' },
+  { q: 'What does the reporting look like?', a: 'Reports are produced monthly and delivered in your brand — your logo, your colours, your agency name. We prepare the full report covering performance, work completed, and next steps. You send it to your client. Most of our agency partners send reports to their clients without modification.' },
+  { q: 'Can you handle large client volumes?', a: 'Yes. We have agency partners who deliver thirty or more active clients through us at any given time. For high-volume agencies, we offer dedicated pods — a team assigned exclusively to your account rather than shared across multiple agencies. This gives you consistent quality and faster turnaround at scale.' },
+  { q: 'Do you offer white-label GoHighLevel support?', a: 'Yes. GoHighLevel is one of our strongest areas. We set up full GHL systems for your clients — CRM, funnels, automations, calendars, and pipelines — all configured to your agency standards. We also offer ongoing GHL management and support for clients who need changes or additions after the initial build.' },
+  { q: 'What industries do your white-label clients serve?', a: 'Our agency partners serve virtually every industry — home services, healthcare, legal, SaaS, e-commerce, real estate, finance, education, and more. Our team has worked across all of them, so the specialists assigned to your clients already understand the industry context.' },
 ];
 
-/* ── COMPONENTS ───────────────────────────────────────────────────────── */
-
-function Pill({ text, amber }: { text: string; amber?: boolean }) {
-  return (
-    <div style={{ display:'inline-flex', alignItems:'center', gap:8, background: amber ? 'rgba(255,176,0,.10)' : 'var(--ism-blue-50)', border:`1px solid ${amber ? 'rgba(255,176,0,.30)' : 'var(--ism-blue-100)'}`, borderRadius:100, padding:'6px 18px', marginBottom:20 }}>
-      <span style={{ width:7, height:7, borderRadius:'50%', background: amber ? 'var(--ism-amber)' : 'var(--color-primary)', display:'inline-block' }} />
-      <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color: amber ? 'var(--ism-amber)' : 'var(--color-primary)', letterSpacing:'.09em', textTransform:'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
-
+/* ── FAQ 2-COL ────────────────────────────────────────────────────── */
 function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section className="wl-section" style={{ padding:'100px 0', background:'#F0F5FF' }}>
+    <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
         <div className="wl-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
-          {/* Left sticky */}
           <div style={{ position:'sticky', top:100 }}>
-            <Pill text="FAQ" />
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
-              Questions agencies ask before starting a white label partnership.
+              Questions About <span style={{ color:'var(--ism-amber)' }}>White-Label</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              Honest answers about confidentiality, delivery, pricing, and how the partnership actually works.
+              Honest answers before you decide. No spin, no buzzwords.
             </p>
-            <a href="/contact"
-              style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
-              onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
-              onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+            <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Scale My Agency — Book a Call →
+              Get Started →
             </a>
           </div>
-          {/* Right accordion */}
           <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
             {FAQS.map((faq, i) => (
               <div key={i} style={{ background:'#fff', borderRadius:12, border:`1px solid ${open===i ? 'var(--color-primary)' : 'var(--color-border)'}`, overflow:'hidden', transition:'border-color .2s' }}>
@@ -147,7 +139,7 @@ function FAQAccordion() {
   );
 }
 
-/* ══ PAGE ═════════════════════════════════════════════════════════════════ */
+/* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function WhiteLabelPage() {
   return (
     <>
@@ -155,320 +147,248 @@ export default function WhiteLabelPage() {
       <main>
 
         {/* ══ 1. HERO ══════════════════════════════════════════════════════ */}
-        <section className="wl-hero" style={{ background:'#fff', padding:'80px 0 72px', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-10%', right:'-5%', width:600, height:600, background:'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
-          <div style={{ position:'absolute', bottom:'-10%', left:'-4%', width:400, height:400, background:'radial-gradient(circle,rgba(255,176,0,.04) 0%,transparent 65%)', pointerEvents:'none' }} />
+        <section className="wl-hero" style={{ background:'linear-gradient(160deg,#EDF2FF 0%,#F7F8FA 48%,#FFFBEB 100%)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
+          <div style={{ position:'absolute', top:'-10%', right:'-6%', width:720, height:720, background:'radial-gradient(circle,rgba(30,77,195,.13) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', bottom:'-15%', left:'-5%', width:560, height:560, background:'radial-gradient(circle,rgba(255,176,0,.11) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:'20%', left:'50%', transform:'translateX(-50%)', width:900, height:400, background:'radial-gradient(ellipse,rgba(30,77,195,.04) 0%,transparent 70%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
+          <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
 
-          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px' }}>
-            <div className="wl-hero-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, alignItems:'center' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
+            <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
+              Sell More. Deliver More.<br />
+              Without Hiring<br />
+              <span style={{ color:'var(--ism-amber)' }}>a Single Person.</span>
+            </h1>
 
-              {/* LEFT */}
-              <div>
-                {/* Breadcrumb */}
-                <div style={{ display:'flex', alignItems:'center', gap:7, fontFamily:I, fontSize:13, color:'var(--color-text-muted)', marginBottom:20 }}>
-                  <a href="/" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Home</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <a href="/services" style={{ color:'var(--color-text-muted)', textDecoration:'none', transition:'color .15s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.color='var(--color-primary)')}
-                    onMouseLeave={e=>(e.currentTarget.style.color='var(--color-text-muted)')}>Services</a>
-                  <i className="fa-solid fa-chevron-right" style={{ fontSize:9, opacity:.5 }} />
-                  <span style={{ color:'var(--color-primary)', fontWeight:600 }}>White Label</span>
-                </div>
+            <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
+              Scale your agency without scaling your headcount. Our US-based strategy team and 40+ in-house specialists handle delivery under your brand — so you can focus on winning clients and growing revenue.
+            </p>
 
-                {/* Label pill with pulse */}
-                <div style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'6px 18px', borderRadius:100, background:'rgba(30,77,195,.07)', border:'1px solid rgba(30,77,195,.15)', fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.05em', marginBottom:24 }}>
-                  <span style={{ width:8, height:8, borderRadius:'50%', background:'#22C55E', display:'inline-block', boxShadow:'0 0 0 3px rgba(34,197,94,.25)', animation:'wl-pulse 2s infinite' }} />
-                  WHITE LABEL DIGITAL MARKETING SERVICES
-                </div>
-
-                <h1 style={{ fontFamily:J, fontSize:'clamp(26px,2.8vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-1px', lineHeight:1.1, margin:'0 0 20px' }}>
-                  White Label Digital Marketing for Agencies That Want to{' '}
-                  <span style={{ color:'var(--ism-amber)', position:'relative', display:'inline-block' }}>
-                    Scale Without Hiring
-                    <svg style={{ position:'absolute', bottom:-4, left:0, width:'100%' }} height="6" viewBox="0 0 280 6" preserveAspectRatio="none">
-                      <path d="M2 4 Q70 1 140 4 Q210 7 278 2" stroke="var(--ism-amber)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                    </svg>
-                  </span>
-                </h1>
-
-                <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.78, margin:'0 0 32px', maxWidth:460 }}>
-                  SEO, PPC, web development, content, GoHighLevel, design, and more — all delivered under your brand. Your clients see your agency name. We do the work. You take the credit.
-                </p>
-
-                {/* CTAs */}
-                <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap', marginBottom:28 }}>
-                  <a href="/contact"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
-                    onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
-                  >
-                    Scale My Agency — Book a Call →
-                  </a>
-                  <a href="#wl-how"
-                    style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s', whiteSpace:'nowrap' }}
-                    onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
-                    onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
-                  >
-                    See How It Works ↓
-                  </a>
-                </div>
-
-                {/* Trust badges */}
-                <div style={{ display:'flex', alignItems:'center', gap:'6px 16px', flexWrap:'wrap', fontFamily:I, fontSize:13, color:'var(--color-text-muted)' }}>
-                  {['38+ agencies trust ISM as their white label partner','We never contact your clients. Ever.','10 services. All under one roof.'].map((b,i)=>(
-                    <span key={i} style={{ display:'inline-flex', alignItems:'center', gap:6 }}>
-                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                      {b}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* RIGHT — Brand Split Visual */}
-              <div style={{ position:'relative' }}>
-                {/* Floating NDA badge */}
-                <div style={{ position:'absolute', top:-18, right:-6, zIndex:10, background:'var(--ism-amber)', borderRadius:12, padding:'10px 16px', boxShadow:'0 8px 28px rgba(255,176,0,.50)' }}>
-                  <div style={{ fontFamily:J, fontSize:10, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase', marginBottom:2 }}>Guaranteed</div>
-                  <div style={{ fontFamily:J, fontSize:16, fontWeight:900, color:'var(--color-navy)', lineHeight:1 }}>NDA Ready</div>
-                </div>
-
-                <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 32px 80px rgba(30,77,195,.18)', border:'1px solid rgba(0,0,0,.08)', background:'var(--color-navy)' }}>
-                  {/* Browser chrome */}
-                  <div style={{ background:'rgba(255,255,255,.06)', padding:'10px 14px', display:'flex', alignItems:'center', gap:8, borderBottom:'1px solid rgba(255,255,255,.08)' }}>
-                    <div style={{ display:'flex', gap:5 }}>
-                      {['#FF5F57','#FEBC2E','#28C840'].map(c=><div key={c} style={{ width:11, height:11, borderRadius:'50%', background:c }} />)}
-                    </div>
-                    <div style={{ flex:1, background:'rgba(255,255,255,.08)', borderRadius:6, padding:'5px 12px', fontFamily:I, fontSize:11, color:'rgba(255,255,255,.45)', border:'1px solid rgba(255,255,255,.1)', textAlign:'left' }}>
-                      🔒 White Label Delivery — Client Report Portal
-                    </div>
-                  </div>
-
-                  {/* Two panels */}
-                  <div style={{ padding:'20px 20px 16px' }}>
-                    <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:14 }}>
-                      {/* What client sees */}
-                      <div style={{ padding:'18px 16px', background:'rgba(255,255,255,.06)', borderRadius:10, border:'1px solid rgba(255,255,255,.1)' }}>
-                        <div style={{ fontSize:9, color:'rgba(255,255,255,.4)', fontFamily:I, letterSpacing:'.08em', textTransform:'uppercase' as const, marginBottom:10 }}>What your client sees</div>
-                        <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:10 }}>
-                          <div style={{ width:30, height:30, borderRadius:7, background:'var(--ism-amber)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                            <i className="fa-solid fa-building" style={{ color:'var(--color-navy)', fontSize:13 }} />
-                          </div>
-                          <div>
-                            <div style={{ fontSize:13, fontWeight:700, color:'#fff', fontFamily:J, lineHeight:1.2 }}>Your Agency</div>
-                            <div style={{ fontSize:10, color:'rgba(255,255,255,.45)', fontFamily:I }}>Your brand. Everywhere.</div>
-                          </div>
-                        </div>
-                        <div style={{ padding:'8px 10px', background:'rgba(255,255,255,.05)', borderRadius:6, border:'1px solid rgba(255,255,255,.08)' }}>
-                          <div style={{ fontSize:9, color:'rgba(255,255,255,.35)', fontFamily:I, marginBottom:3 }}>Monthly Report</div>
-                          <div style={{ fontSize:10, fontWeight:600, color:'rgba(255,255,255,.7)', fontFamily:J }}>From: hello@youragency.com</div>
-                          <div style={{ fontSize:9, color:'rgba(255,255,255,.3)', fontFamily:I, marginTop:3 }}>Your logo · Your colours · Your name</div>
-                        </div>
-                      </div>
-                      {/* Who does the work */}
-                      <div style={{ padding:'18px 16px', background:'rgba(30,77,195,.2)', borderRadius:10, border:'1px solid rgba(30,77,195,.35)' }}>
-                        <div style={{ fontSize:9, color:'rgba(255,255,255,.4)', fontFamily:I, letterSpacing:'.08em', textTransform:'uppercase' as const, marginBottom:10 }}>Who does the work</div>
-                        <div style={{ display:'flex', alignItems:'center', gap:8, marginBottom:10 }}>
-                          <div style={{ width:30, height:30, borderRadius:7, background:'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                            <i className="fa-solid fa-users" style={{ color:'#fff', fontSize:12 }} />
-                          </div>
-                          <div>
-                            <div style={{ fontSize:13, fontWeight:700, color:'#fff', fontFamily:J, lineHeight:1.2 }}>ISM Team</div>
-                            <div style={{ fontSize:10, color:'rgba(255,255,255,.45)', fontFamily:I }}>40+ in-house specialists</div>
-                          </div>
-                        </div>
-                        <div style={{ display:'flex', flexWrap:'wrap', gap:4 }}>
-                          {['SEO','PPC','Web','Content','Design','GHL'].map(s=>(
-                            <span key={s} style={{ padding:'2px 7px', background:'rgba(30,77,195,.4)', color:'rgba(255,255,255,.75)', borderRadius:4, fontSize:9, fontFamily:I, fontWeight:600 }}>{s}</span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    {/* Flow */}
-                    <div style={{ display:'flex', flexDirection:'column', gap:6, marginBottom:12 }}>
-                      {[
-                        { left:'Your client pays you', right:'You brief ISM privately' },
-                        { left:'ISM delivers under your brand', right:'Your client sees only you' },
-                      ].map((row,i)=>(
-                        <div key={i} style={{ display:'flex', alignItems:'center', gap:8, padding:'8px 12px', background:'rgba(255,255,255,.04)', borderRadius:7, border:'1px solid rgba(255,255,255,.06)' }}>
-                          <span style={{ fontSize:11, color:'rgba(255,255,255,.6)', fontFamily:I, flex:1 }}>{row.left}</span>
-                          <i className="fa-solid fa-arrow-right" style={{ color:'var(--ism-amber)', fontSize:10, flexShrink:0 }} />
-                          <span style={{ fontSize:11, color:'rgba(255,255,255,.6)', fontFamily:I, flex:1, textAlign:'right' as const }}>{row.right}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div style={{ textAlign:'center', padding:'9px 14px', background:'rgba(255,176,0,.08)', borderRadius:8, border:'1px solid rgba(255,176,0,.18)' }}>
-                      <i className="fa-solid fa-shield-halved" style={{ color:'var(--ism-amber)', fontSize:11, marginRight:6 }} />
-                      <span style={{ fontSize:11, color:'var(--ism-amber)', fontFamily:I, fontWeight:600 }}>ISM is never mentioned to your clients. Ever.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
+              >
+                Start White-Labeling Today
+              </a>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+              >
+                Get a Free Agency Consultation
+              </a>
             </div>
           </div>
         </section>
 
-        {/* ══ TICKER ═══════════════════════════════════════════════════════ */}
-        <div style={{ background:'#0A1628', borderBottom:'2px solid var(--ism-amber)', overflow:'hidden', padding:'13px 0' }}>
-          <div style={{ display:'flex', gap:0, animation:'wl-ticker 30s linear infinite', whiteSpace:'nowrap' }}>
-            {[...Array(2)].map((_,ri)=>(
-              <div key={ri} style={{ display:'flex', flexShrink:0 }}>
-                {['UK Agency 12→31 clients in 8 months','US consultant built 6-figure agency in 12 months','Zero ISM branding on any deliverable. Ever.','38+ agencies trust ISM as their white label partner','10 services under one roof. SEO, PPC, Web, Content, Design, GHL','3–5 day onboarding. No long setup process.'].map((text,i)=>(
-                  <span key={i} style={{ fontFamily:J, fontSize:12, fontWeight:600, color:'#fff', padding:'0 32px', display:'inline-flex', alignItems:'center', gap:10 }}>
-                    <span style={{ color:'var(--ism-amber)' }}>✓</span>{text}
-                    <span style={{ color:'rgba(255,255,255,.25)', marginLeft:8 }}>◆</span>
-                  </span>
-                ))}
+        {/* ══ REVIEWS BAR ══════════════════════════════════════════════════ */}
+        <div style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
+          <div style={{ maxWidth:1280, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:56, flexWrap:'wrap' }}>
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/google-review-icon.webp" alt="Google" width={44} height={44} style={{ width:44, height:44, objectFit:'contain', display:'block', flexShrink:0 }} />
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>150+</span> Google Reviews</div>
               </div>
-            ))}
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ width:44, height:44, borderRadius:10, background:'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}><span style={{ fontFamily:J, fontSize:15, fontWeight:900, color:'#fff' }}>C</span></div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>100+</span> Clutch Reviews</div>
+              </div>
+            </div>
+            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+              <div style={{ display:'flex' }}>{['#4F46E5','#0EA5E9','#10B981','#F59E0B','#EF4444','#8B5CF6'].map((c,i)=>(<div key={i} style={{ width:38, height:38, borderRadius:'50%', border:'2px solid var(--color-bg-soft)', marginLeft:i===0?0:-10, background:c, display:'flex', alignItems:'center', justifyContent:'center', zIndex:6-i, position:'relative', flexShrink:0 }}><i className="fa-solid fa-user" style={{ fontSize:14, color:'#fff' }} /></div>))}</div>
+              <div>
+                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
+                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>1,000+</span> Client Reviews</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* ══ 2. STATS ════════════════════════════════════════════════════ */}
-        <section style={{ background:'linear-gradient(135deg,#1840A0,#2F5FE8)', padding:'64px 0' }}>
-          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
-            <div className="wl-stats-row" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)' }}>
-              {STATS.map((s,i)=>(
-                <div key={i} style={{ padding:'0 32px', textAlign:'center', borderRight: i<3 ? '1px solid rgba(255,255,255,.18)' : 'none' }}>
-                  <div style={{ fontFamily:J, fontSize:'clamp(34px,4vw,52px)', fontWeight:900, color: i===3 ? 'var(--ism-amber)' : '#fff', lineHeight:1, marginBottom:10 }}>{s.num}</div>
-                  <div style={{ fontFamily:J, fontSize:14, fontWeight:700, color:'#fff', marginBottom:5 }}>{s.label}</div>
-                  <div style={{ fontFamily:I, fontSize:12, color:'rgba(255,255,255,.55)', lineHeight:1.4 }}>{s.sub}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
+        <section className="wl-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
 
-        {/* ══ 3. SCALING TRAP ═════════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="The Scaling Trap" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                You can sell more than your team can deliver.{' '}
-                <span style={{ color:'var(--ism-amber)' }}>Most agencies are stuck there.</span>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
+                Why White-Label Is the <span style={{ color:'var(--ism-amber)' }}>Fastest Way</span> to Scale Your Agency
               </h2>
-              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 auto', maxWidth:680 }}>
-                You win a new client. Then another. Suddenly the work is more than your team can handle without something slipping. Hiring is slow, risky, and expensive. Freelancers are unreliable. Turning down work means leaving revenue on the table.
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
+                Hiring is expensive, slow, and risky. Here is why the fastest-growing agencies use white-label fulfilment instead.
               </p>
             </div>
-            <div className="wl-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:24 }}>
-              {/* Without white label */}
-              <div style={{ background:'#fff', borderRadius:16, padding:32, border:'1px solid var(--color-border)', boxShadow:'0 4px 24px rgba(0,0,0,.05)' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:24 }}>
-                  <div style={{ width:32, height:32, borderRadius:8, background:'rgba(239,68,68,.10)', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                    <i className="fa-solid fa-xmark" style={{ color:'#EF4444', fontSize:14 }} />
+
+            <div className="wl-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center', marginBottom:52 }}>
+
+              <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
+                {[
+                  { num:'01', title:'Hiring your way to scale is expensive and slow', text:'A full-time SEO specialist costs £40,000–£60,000 a year before overheads. A PPC manager, a developer, a designer — costs compound fast.' },
+                  { num:'02', title:'White-label fulfilment flips the economics of agency growth', text:'With a fulfilment partner, every new client adds revenue without adding headcount, management overhead, or fixed costs.' },
+                  { num:'03', title:'Clients care about results — not who delivered them', text:'Your clients hired your agency for outcomes. As long as the work is excellent and delivered under your brand, they never need to know how it was done.' },
+                  { num:'04', title:'White-label unlocks services you cannot deliver in-house', text:'With the right fulfilment partner, you can say yes to SEO, PPC, web development, GoHighLevel, content, and design without building individual in-house capability.' },
+                ].map(item => (
+                  <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div>
+                      <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
+                      <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
+                    </div>
                   </div>
-                  <span style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'var(--color-navy)' }}>Without a white label partner</span>
-                </div>
-                <ul style={{ listStyle:'none', margin:0, padding:0, display:'flex', flexDirection:'column', gap:14 }}>
-                  {['Turn down clients because your team is full','Quality drops when you stretch capacity','Hire too fast, then have to let people go','Spend more time coordinating freelancers than delivering','Miss deadlines during busy periods'].map((item,i)=>(
-                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:12, fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.5 }}>
-                      <i className="fa-solid fa-xmark" style={{ color:'#EF4444', fontSize:12, marginTop:3, flexShrink:0 }} />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                ))}
               </div>
-              {/* With ISM */}
-              <div style={{ background:'var(--color-navy)', borderRadius:16, padding:32, boxShadow:'0 8px 32px rgba(0,35,83,.20)' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:24 }}>
-                  <div style={{ width:32, height:32, borderRadius:8, background:'rgba(34,197,94,.20)', display:'flex', alignItems:'center', justifyContent:'center' }}>
-                    <i className="fa-solid fa-check" style={{ color:'#22C55E', fontSize:14 }} />
-                  </div>
-                  <span style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'#fff' }}>With ISM as your white label partner</span>
+
+              <div className="wl-strategy-mosaic" style={{ position:'relative', height:460 }}>
+                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
                 </div>
-                <ul style={{ listStyle:'none', margin:0, padding:0, display:'flex', flexDirection:'column', gap:14 }}>
-                  {['Say yes to every client who is the right fit','Scale instantly without a single new hire','Predictable delivery cost per client','One brief, one team, one point of contact','Delivered on time, under your brand, every time'].map((item,i)=>(
-                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:12, fontFamily:I, fontSize:15, color:'rgba(255,255,255,.88)', lineHeight:1.5 }}>
-                      <i className="fa-solid fa-check" style={{ color:'#22C55E', fontSize:12, marginTop:3, flexShrink:0 }} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+              </div>
+
+            </div>
+
+            <div style={{ textAlign:'center' }}>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
+              >
+                Start White-Labeling with Isuremedia <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+              </a>
+            </div>
+
+          </div>
+          <style>{`
+            @media (max-width: 768px) {
+              .wl-strategy-section { padding: 56px 0 !important; }
+              .wl-strategy-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+              .wl-strategy-mosaic { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .wl-strategy-section { padding: 44px 0 !important; }
+            }
+          `}</style>
+        </section>
+
+        {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
+        <div id="wl-results"><ClientResults /></div>
+
+        {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="wl-cta-banner-grid">
+              <div />
+              <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
+                  Ready to deliver more without <span style={{ color:'var(--ism-amber)' }}>hiring more?</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
+                  Talk to us and find out how quickly we can start delivering for your clients under your brand.
+                </p>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get My Free Agency Consultation <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                </a>
+              </div>
+            </div>
+            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg" alt="Agency Partner" style={{ position:'absolute', bottom:0, left:0, height:'100%', width:'100%', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+            </div>
+          </div>
+          <style>{`@media (max-width: 900px) { .wl-cta-banner-grid { grid-template-columns: 1fr !important; } .wl-cta-banner-grid > div:first-child { display: none !important; } }`}</style>
+        </section>
+
+        {/* ══ IMAGE + TEXT SECTION ════════════════════════════════════════ */}
+        <section style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+            <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
+              White-Label Fulfilment Built to <span style={{ color:'var(--ism-amber)' }}>Grow Your Agency</span>
+            </h2>
+            <div className="wl-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
+              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="White Label Agency Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+              <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                  Isuremedia has been a white-label fulfilment partner for marketing agencies since 2017. We have delivered under hundreds of agency brands across the US, UK, Canada, and Australia — and not one client has ever found out we were involved.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  Our process is built around making you look good. Reports are professional and branded. Delivery is on time. Work is high quality. When your client asks about their results, you have everything you need to answer confidently — because we have put it all together for you.
+                </p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  You retain full ownership of the client relationship. We support you silently. That is the model — and it is why agency partners stay with us for years.
+                </p>
+                <div style={{ marginTop:8 }}>
+                  <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                    onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                    onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                  >
+                    Start Delivering Under Your Brand <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <style>{`@media (max-width: 768px) { .wl-imgtext-grid { grid-template-columns: 1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 4. COMPARISON TABLE ══════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:48 }}>
-              <Pill text="Your Options for Scaling" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                Why agencies choose white label over freelancers and in-house hiring.
-              </h2>
-              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Before you decide how to scale, here is an honest comparison of your three options.
-              </p>
-            </div>
-            <div style={{ overflowX:'auto' }}>
-              <table style={{ width:'100%', borderCollapse:'collapse', minWidth:640 }}>
-                <thead>
-                  <tr>
-                    <th style={{ padding:'16px 20px', background:'var(--color-bg-soft)', textAlign:'left', fontFamily:J, fontWeight:700, fontSize:13, color:'var(--color-text-muted)', border:'1px solid var(--color-border)', borderBottom:'2px solid var(--color-border)', width:'22%' }}>Factor</th>
-                    <th style={{ padding:'16px 20px', background:'#FFF7ED', textAlign:'left', fontFamily:J, fontWeight:700, fontSize:13, color:'#92400E', border:'1px solid var(--color-border)', borderBottom:'2px solid var(--color-border)', width:'26%' }}>Freelancers</th>
-                    <th style={{ padding:'16px 20px', background:'#F0FDF4', textAlign:'left', fontFamily:J, fontWeight:700, fontSize:13, color:'#166534', border:'1px solid var(--color-border)', borderBottom:'2px solid var(--color-border)', width:'26%' }}>Hiring In-House</th>
-                    <th style={{ padding:'16px 20px', background:'var(--color-primary)', textAlign:'left', fontFamily:J, fontWeight:700, fontSize:13, color:'#fff', border:'1px solid var(--color-primary)', borderBottom:'2px solid var(--color-primary)', width:'26%' }}>ISM White Label ✓</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {COMPARISON_ROWS.map((row,i)=>(
-                    <tr key={row.factor} style={{ background: i%2===0 ? '#fff' : 'var(--color-bg-soft)' }}>
-                      <td style={{ padding:'16px 20px', fontFamily:J, fontWeight:600, fontSize:13, color:'var(--color-navy)', border:'1px solid var(--color-border)', verticalAlign:'top' }}>{row.factor}</td>
-                      <td style={{ padding:'16px 20px', fontFamily:I, fontSize:13, color: row.flBad ? '#92400E' : 'var(--color-text-muted)', border:'1px solid var(--color-border)', verticalAlign:'top', background: row.flBad ? 'rgba(251,191,36,.06)' : 'transparent' }}>
-                        <span style={{ display:'flex', gap:6, alignItems:'flex-start' }}>
-                          <i className={`fa-solid ${row.flBad ? 'fa-triangle-exclamation' : 'fa-check'}`} style={{ color: row.flBad ? '#F59E0B' : '#16A34A', fontSize:11, marginTop:2, flexShrink:0 }} />
-                          {row.fl}
-                        </span>
-                      </td>
-                      <td style={{ padding:'16px 20px', fontFamily:I, fontSize:13, color: row.ihBad ? '#92400E' : 'var(--color-text-muted)', border:'1px solid var(--color-border)', verticalAlign:'top', background: row.ihBad ? 'rgba(251,191,36,.06)' : 'transparent' }}>
-                        <span style={{ display:'flex', gap:6, alignItems:'flex-start' }}>
-                          <i className={`fa-solid ${row.ihBad ? 'fa-triangle-exclamation' : 'fa-check'}`} style={{ color: row.ihBad ? '#F59E0B' : '#16A34A', fontSize:11, marginTop:2, flexShrink:0 }} />
-                          {row.ih}
-                        </span>
-                      </td>
-                      <td style={{ padding:'16px 20px', fontFamily:I, fontSize:13, color:'#1E3A6E', border:'1px solid rgba(30,77,195,.15)', verticalAlign:'top', background:'rgba(30,77,195,.05)' }}>
-                        <span style={{ display:'flex', gap:6, alignItems:'flex-start' }}>
-                          <i className="fa-solid fa-check" style={{ color:'var(--color-primary)', fontSize:11, marginTop:2, flexShrink:0 }} />
-                          <strong style={{ fontWeight:600 }}>{row.ism}</strong>
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+        {/* ══ TESTIMONIALS ════════════════════════════════════════════════ */}
+        <Testimonials />
 
-        {/* ══ 5. SERVICE CARDS ════════════════════════════════════════════ */}
+        {/* ══ SERVICES GRID ════════════════════════════════════════════════ */}
         <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Our White Label Services" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                Every white label digital marketing service under one roof.
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
+                Our Complete <span style={{ color:'var(--ism-amber)' }}>White-Label Services</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Pick one service or all of them. Everything runs under your agency brand with the same quality standard regardless of volume.
+                Every service delivered under your brand — zero white-label footprint.
               </p>
             </div>
-            <div className="wl-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:20 }}>
+            <div className="wl-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
               {SERVICES.map((s,i)=>(
-                <div key={i} style={{ background:'#fff', borderRadius:16, border:'1.5px solid var(--color-border)', padding:'28px 24px', transition:'all .22s', position:'relative' }}
-                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-3px)'; el.style.boxShadow='0 12px 40px rgba(30,77,195,.10)'; el.style.borderColor='rgba(30,77,195,.25)'; }}
-                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; el.style.borderColor='var(--color-border)'; }}
+                <div key={i} className={`wl-svc-cell wl-svc-cell-${i}`}
+                  style={{ padding:'36px 32px', borderRight:(i+1)%3===0?'none':'1px solid #E8EAF0', borderBottom:i<6?'1px solid #E8EAF0':'none', background:'#fff', transition:'background .18s', cursor:'default' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.background='#F7F8FD'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.background='#fff'; }}
                 >
-                  <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.09em', textTransform:'uppercase' as const, marginBottom:10 }}>{s.num}</div>
-                  <div style={{ width:40, height:40, borderRadius:10, background:'rgba(30,77,195,.08)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:14 }}>
-                    <i className={`fa-solid ${s.icon}`} style={{ color:'var(--color-primary)', fontSize:18 }} />
+                  <div style={{ display:'flex', alignItems:'flex-start', gap:14, marginBottom:18 }}>
+                    <div style={{ width:46, height:46, borderRadius:10, background:'var(--ism-blue-50,rgba(30,77,195,.08))', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                      <i className={s.icon} style={{ fontSize:20, color:'var(--color-primary)' }} />
+                    </div>
+                    <h3 style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'var(--color-navy)', margin:0, lineHeight:1.3, paddingTop:6 }}>{s.title}</h3>
                   </div>
-                  <h3 style={{ fontFamily:J, fontSize:17, fontWeight:800, color:'var(--color-navy)', margin:'0 0 10px', lineHeight:1.25 }}>{s.title}</h3>
-                  <p style={{ fontFamily:I, fontSize:13, color:'var(--color-text-muted)', lineHeight:1.72, margin:'0 0 18px' }}>{s.desc}</p>
-                  <a href={s.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.04em', transition:'gap .18s' }}
+                  <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.80, margin:'0 0 22px' }}>{s.desc}</p>
+                  <a href={s.href} style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.03em', transition:'gap .18s' }}
                     onMouseEnter={e=>(e.currentTarget.style.gap='10px')}
                     onMouseLeave={e=>(e.currentTarget.style.gap='6px')}
                   >
@@ -478,251 +398,246 @@ export default function WhiteLabelPage() {
               ))}
             </div>
           </div>
+          <style>{`
+            @media (max-width: 900px) { .wl-svc-grid { grid-template-columns: repeat(2,1fr) !important; } .wl-svc-cell-1,.wl-svc-cell-3,.wl-svc-cell-5,.wl-svc-cell-7 { border-right: none !important; } .wl-svc-cell-0,.wl-svc-cell-1,.wl-svc-cell-2,.wl-svc-cell-3,.wl-svc-cell-4,.wl-svc-cell-5,.wl-svc-cell-6,.wl-svc-cell-7 { border-bottom: 1px solid #E8EAF0 !important; } .wl-svc-cell-8 { border-bottom: none !important; border-right: none !important; } }
+            @media (max-width: 560px) { .wl-svc-grid { grid-template-columns: 1fr !important; } .wl-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; } .wl-svc-cell-8 { border-bottom: none !important; } }
+          `}</style>
         </section>
 
-        {/* ══ 6. PROCESS ══════════════════════════════════════════════════ */}
-        <section id="wl-how" className="wl-section" style={{ padding:'100px 0', background:'#fff' }}>
+        {/* ══ DARK NAVY ════════════════════════════════════════════════════ */}
+        <section className="wl-section" style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div className="wl-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
+              <div>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
+                  Why White-Label Is a{' '}
+                  <span style={{ color:'var(--ism-amber)' }}>Smart Agency Strategy</span>
+                </h2>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
+                  Scale Revenue Without Scaling Overhead
+                </p>
+                <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>You keep the margin.</strong> You charge your client rate. We charge our white-label rate. The difference is your profit — no employee costs, no benefits, no management time.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>You can say yes to more clients.</strong> Without a fulfilment partner, every new client means more work. With white-label, more clients means more revenue — without more stress.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Your clients get a senior specialist team.</strong> The work is done by experienced in-house specialists — not junior staff or freelancers. Your clients get better results than most agencies can deliver in-house.
+                  </p>
+                </div>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
+                >
+                  Scale My Agency Now →
+                </a>
+              </div>
+              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/Artboard.png" alt="Agency Scale" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ TIMELINE ══════════════════════════════════════════════════════ */}
+        <section className="wl-section" style={{ padding:'100px 0', background:'#fff' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:64 }}>
-              <Pill text="How the Partnership Works" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                From your first client brief to delivery under your brand.
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                How We Deliver <span style={{ color:'var(--ism-amber)' }}>Under Your Brand</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Four steps. Your clients never see the seam.
+                A clean, simple process from agency onboarding to client delivery.
               </p>
             </div>
-            <div className="wl-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:0, position:'relative' }}>
-              <div style={{ position:'absolute', top:28, left:'12.5%', width:'75%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
+            <div className="wl-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
+              <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
-                <div key={i} style={{ textAlign:'center', padding:'0 20px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background: i===0 ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0 ? 'rgba(255,176,0,.40)' : 'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
-                    <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color: i===0 ? 'var(--color-navy)' : '#fff' }}>{step.num}</span>
+                <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
+                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                    <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
-                  <div style={{ fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.title}</div>
+                  <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>
                   <p style={{ fontFamily:I, fontSize:13, color:'var(--color-text-muted)', lineHeight:1.65, margin:0 }}>{step.desc}</p>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* ══ 7. WHO THIS IS FOR ══════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Who This Is For" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                If you run an agency of any size, there is a model here that fits.
-              </h2>
-              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Three types of agencies use ISM as their white label partner — each for different reasons.
-              </p>
-            </div>
-            <div className="wl-who-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
-              {[
-                {
-                  icon:'fa-seedling', label:'Growing Agencies', iconBg:'rgba(30,77,195,.08)', iconColor:'var(--color-primary)',
-                  points:['Winning more clients than your team can serve without something slipping','Want to expand into services you do not yet offer in-house','Hiring feels too risky given how quickly your client load can shift','Need delivery capacity this month, not in three months after a hire'],
-                  cta:'Book a Call for Growing Agencies →',
-                },
-                {
-                  icon:'fa-building-columns', label:'Established Agencies', iconBg:'rgba(255,176,0,.10)', iconColor:'var(--ism-amber)',
-                  points:['Have in-house staff but need overflow capacity without new headcount','Want to add a new service line without the risk of hiring a specialist','Current outsourcing model is fragmented across too many individual freelancers','Want one reliable partner rather than five who each handle one thing'],
-                  cta:'Book a Call for Established Agencies →',
-                },
-                {
-                  icon:'fa-rocket', label:'Freelancers Scaling Up', iconBg:'rgba(168,85,247,.08)', iconColor:'#9333EA',
-                  points:['Winning clients whose scope is larger than you can deliver solo','Need to look and deliver like a full agency without the overheads of running one','Want a fulfillment partner who makes your capability look far larger than your headcount','Not ready to hire yet but absolutely ready to grow your revenue'],
-                  cta:'Book a Call for Freelancers Scaling →',
-                },
-              ].map(col=>(
-                <div key={col.label} style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 28px', transition:'all .22s', display:'flex', flexDirection:'column' }}
-                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
-                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
-                >
-                  <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:24 }}>
-                    <div style={{ width:42, height:42, borderRadius:10, background:col.iconBg, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                      <i className={`fa-solid ${col.icon}`} style={{ color:col.iconColor, fontSize:18 }} />
-                    </div>
-                    <h3 style={{ margin:0, fontFamily:J, fontWeight:800, fontSize:17, color:'var(--color-navy)' }}>{col.label}</h3>
-                  </div>
-                  <ul style={{ margin:'0 0 28px', padding:0, listStyle:'none', display:'flex', flexDirection:'column', gap:12, flex:1 }}>
-                    {col.points.map(pt=>(
-                      <li key={pt} style={{ display:'flex', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6 }}>
-                        <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', flexShrink:0, marginTop:3, fontSize:11 }} />
-                        {pt}
-                      </li>
-                    ))}
-                  </ul>
-                  <a href="/contact"
-                    style={{ display:'inline-flex', alignItems:'center', gap:6, padding:'12px 20px', background:'var(--ism-amber)', color:'var(--color-navy)', borderRadius:8, fontFamily:J, fontWeight:700, fontSize:13, textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase' as const, alignSelf:'flex-start', boxShadow:'0 4px 16px rgba(255,176,0,.30)', transition:'all .18s' }}
-                    onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 24px rgba(255,176,0,.45)'; }}
-                    onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 4px 16px rgba(255,176,0,.30)'; }}
-                  >
-                    {col.cta}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 8. GUARANTEES ═══════════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:60 }}>
-              <Pill text="What We Guarantee" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 6px', maxWidth:640, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
-                Four things every ISM white label partner{' '}
-                <span style={{ color:'var(--ism-amber)' }}>can count on.</span>
-              </h2>
-            </div>
-            <div className="wl-guarantee-grid" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24 }}>
-              {GUARANTEES.map((g,i)=>(
-                <div key={i} style={{ background:'var(--color-bg-soft)', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 30px', textAlign:'center', transition:'all .22s' }}
-                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
-                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
-                >
-                  <div style={{ width:52, height:52, borderRadius:14, background:'rgba(30,77,195,.08)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 18px' }}>
-                    <i className={`fa-solid ${g.icon}`} style={{ color:'var(--color-primary)', fontSize:22 }} />
-                  </div>
-                  <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.09em', textTransform:'uppercase' as const, marginBottom:8 }}>Guarantee {String(i+1).padStart(2,'0')}</div>
-                  <h4 style={{ fontFamily:J, fontWeight:800, fontSize:16, color:'var(--color-navy)', margin:'0 0 12px', lineHeight:1.3 }}>{g.title}</h4>
-                  <p style={{ fontFamily:I, fontSize:13, color:'var(--color-text-muted)', lineHeight:1.65, margin:0 }}>{g.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 9. RESULTS ══════════════════════════════════════════════════ */}
-        <section id="wl-results" className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
-            <div style={{ textAlign:'center', marginBottom:60 }}>
-              <Pill text="Real Results" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 6px' }}>
-                What agencies have built with ISM as their{' '}
-                <span style={{ color:'var(--ism-amber)', fontStyle:'italic' }}>white label partner.</span>
-              </h2>
-              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Outcomes from real agency partnerships. Numbers from actual accounts, not projected averages.
-              </p>
-            </div>
-            <div className="wl-results-grid" style={{ display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:24 }}>
-              {RESULTS.map((r,i)=>(
-                <div key={i} style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'32px', transition:'all .22s' }}
-                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
-                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
-                >
-                  <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:16 }}>
-                    <div>
-                      <div style={{ fontFamily:J, fontSize:13, fontWeight:800, color:'var(--color-navy)', marginBottom:3 }}>{r.industry}</div>
-                      <div style={{ fontFamily:I, fontSize:12, color:'var(--color-text-muted)' }}>{r.period}</div>
-                    </div>
-                    <div style={{ background:'rgba(30,77,195,.09)', border:'1px solid rgba(30,77,195,.15)', borderRadius:100, padding:'3px 12px', fontFamily:J, fontSize:10, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.06em', textTransform:'uppercase' as const, whiteSpace:'nowrap' }}>{r.badge}</div>
-                  </div>
-                  <div style={{ fontFamily:J, fontSize:'clamp(32px,4vw,52px)', fontWeight:900, color:'var(--color-primary)', lineHeight:1, marginBottom:4 }}>{r.metric}</div>
-                  <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', marginBottom:20 }}>{r.metricLabel}</div>
-                  <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.72, margin:'0 0 20px' }}>{r.desc}</p>
-                  <a href="#" style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.04em', transition:'gap .18s' }}
-                    onMouseEnter={e=>(e.currentTarget.style.gap='10px')}
-                    onMouseLeave={e=>(e.currentTarget.style.gap='6px')}
-                  >
-                    Read Full Case Study <i className="fa-solid fa-arrow-right" style={{ fontSize:10 }} />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ══ 10. AGENCY TYPES ════════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'80px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px', textAlign:'center' }}>
-            <Pill text="Agencies We Partner With" />
-            <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.5vw,38px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-              We have worked as the white label partner for these types of agencies.
-            </h2>
-            <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', maxWidth:600, margin:'0 auto 36px', lineHeight:1.7 }}>
-              Every agency has a different client mix and different delivery expectations. We adapt to how you work, not the other way around.
-            </p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:10, justifyContent:'center', marginBottom:28 }}>
-              {AGENCY_TYPES.map(t=>(
-                <span key={t} style={{ padding:'8px 18px', background:'var(--color-bg-soft)', border:'1px solid var(--color-border)', borderRadius:100, fontSize:13, color:'var(--color-navy)', fontFamily:I, fontWeight:500, transition:'all .18s', cursor:'default' }}
-                  onMouseEnter={e=>{ (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-primary)'; (e.currentTarget as HTMLSpanElement).style.color='var(--color-primary)'; }}
-                  onMouseLeave={e=>{ (e.currentTarget as HTMLSpanElement).style.borderColor='var(--color-border)'; (e.currentTarget as HTMLSpanElement).style.color='var(--color-navy)'; }}
-                >{t}</span>
-              ))}
-            </div>
-            <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)' }}>
-              Not on this list?{' '}
-              <a href="/contact" style={{ color:'var(--color-primary)', fontWeight:600, textDecoration:'none' }}>Book a call. If you sell marketing services to clients, we can almost certainly help. →</a>
-            </p>
-          </div>
-        </section>
-
-        {/* ══ 11. FAQ ═════════════════════════════════════════════════════ */}
-        <FAQAccordion />
-
-        {/* ══ 12. BOTTOM CTA ══════════════════════════════════════════════ */}
-        <section className="wl-section" style={{ padding:'100px 0', background:'linear-gradient(135deg,#1840A0,#2F5FE8)', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-20%', right:'-5%', width:500, height:500, background:'radial-gradient(circle,rgba(255,176,0,.08) 0%,transparent 65%)', pointerEvents:'none' }} />
-          <div style={{ maxWidth:800, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
-            <h2 style={{ fontFamily:J, fontWeight:900, fontSize:'clamp(28px,3.5vw,48px)', color:'#fff', letterSpacing:'-0.5px', lineHeight:1.12, margin:'0 0 20px' }}>
-              Ready to scale your agency<br className="wl-cta-br" /> without hiring anyone new?
-            </h2>
-            <p style={{ fontFamily:I, fontSize:17, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:'0 auto 36px', maxWidth:540 }}>
-              Book a free 30-minute call. We will talk through your current capacity, what services your clients need, and show you exactly how a white label partnership with ISM would work for your agency.
-            </p>
-            <div style={{ display:'flex', gap:12, justifyContent:'center', flexWrap:'wrap', marginBottom:28 }}>
-              <a href="/contact"
-                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
+            <div style={{ textAlign:'center', marginTop:56 }}>
+              <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Scale My Agency — Book a Call →
+                Start White-Labeling Today
               </a>
             </div>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:'6px 24px', justifyContent:'center' }}>
-              {['No contract lock-in','Your brand on everything','We never contact your clients','10 services under one roof'].map(b=>(
-                <span key={b} style={{ display:'flex', alignItems:'center', gap:6, fontSize:13, color:'rgba(255,255,255,.65)', fontFamily:I }}>
-                  <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11 }} />
-                  {b}
-                </span>
+          </div>
+        </section>
+
+        {/* ══ PRICING ═══════════════════════════════════════════════════════ */}
+        <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                White-label options built{' '}
+                <span style={{ color:'var(--ism-amber)' }}>around your agency.</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Every engagement includes NDA, branded reporting, and a dedicated agency account manager.
+              </p>
+            </div>
+            <div className="wl-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>STARTER</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Single Service</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>One white-label service for agencies just getting started with outsourcing.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['One service (SEO, PPC, or web)','White-label branded reporting','NDA and client confidentiality','Dedicated agency contact','Monthly strategy updates','Flexible month-to-month terms'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 24px rgba(255,176,0,.40)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+                >
+                  Get Started
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'2px solid var(--color-primary)', padding:'36px 32px', transform:'scale(1.04)', boxShadow:'0 16px 56px rgba(30,77,195,.18)', position:'relative', transition:'all .22s' }}>
+                <div style={{ position:'absolute', top:-14, left:'50%', transform:'translateX(-50%)', background:'var(--ism-amber)', borderRadius:100, padding:'5px 18px', whiteSpace:'nowrap' }}>
+                  <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase' }}>Most Popular</span>
+                </div>
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Multi-Service</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Multiple white-label services for agencies scaling across channels.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['2-4 services white-labeled','Full-service branded reporting','Priority turnaround times','Shared Slack channel access','Bi-weekly strategy calls','Volume pricing available'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Start Scaling
+                </a>
+              </div>
+
+              <div style={{ background:'#fff', borderRadius:16, border:'1px solid var(--color-border)', padding:'36px 32px', transition:'all .22s' }}
+                onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+              >
+                <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>AGENCY POD</div>
+                <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Dedicated Pod</div>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>A dedicated team of specialists assigned exclusively to your agency.</p>
+                <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
+                  {['Dedicated full-service team','Unlimited client volume','White-label dashboard access','Weekly account reviews','Custom SLA & turnaround times','Full NDA & brand protection'].map((f,i)=>(
+                    <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
+                      <i className="fa-solid fa-check" style={{ color:'var(--ism-amber)', fontSize:11, marginTop:3, flexShrink:0 }} />{f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="/contact" style={{ display:'block', textAlign:'center', padding:'14px 24px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
+                  onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
+                  onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
+                >
+                  Talk to Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ══ WHY DIFFERENT ════════════════════════════════════════════════ */}
+        <section className="wl-section" style={{ padding:'100px 0', background:'#fff' }}>
+          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
+                Why Agencies Choose Isuremedia as Their <span style={{ color:'var(--ism-amber)' }}>White-Label Partner</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Built for agencies who want to scale without the headaches.
+              </p>
+            </div>
+            <div className="wl-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
+              {DIFFERENTIATORS.map((d,i)=>(
+                <div key={i} style={{ background:d.dark?'var(--color-navy)':'var(--color-bg-soft)', borderRadius:16, border:`1px solid ${d.dark?'transparent':'var(--color-border)'}`, padding:'36px 30px', transition:'all .22s' }}
+                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform='translateY(-4px)'; el.style.boxShadow='0 16px 48px rgba(30,77,195,.12)'; }}
+                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLDivElement; el.style.transform=''; el.style.boxShadow=''; }}
+                >
+                  <div style={{ width:48, height:48, borderRadius:12, background:d.dark?'rgba(255,176,0,.15)':'rgba(30,77,195,.10)', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:20 }}>
+                    <i className={d.icon} style={{ fontSize:20, color:d.dark?'var(--ism-amber)':'var(--color-primary)' }} />
+                  </div>
+                  <h3 style={{ fontFamily:J, fontSize:18, fontWeight:800, color:d.dark?'#fff':'var(--color-navy)', margin:'0 0 10px' }}>{d.title}</h3>
+                  <p style={{ fontFamily:I, fontSize:14, color:d.dark?'rgba(255,255,255,.7)':'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>{d.desc}</p>
+                </div>
               ))}
             </div>
           </div>
+        </section>
+
+        {/* ══ FAQ ══════════════════════════════════════════════════════════ */}
+        <FAQAccordion />
+
+        {/* ══ READY FOR RESULTS CTA ════════════════════════════════════════ */}
+        <section style={{ background:'#fff', padding:'60px 28px' }}>
+          <div style={{ maxWidth:1200, margin:'0 auto', background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="wl-rfr-grid">
+            <div style={{ position:'absolute', top:'-30%', right:'30%', width:500, height:500, background:'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:20 }}>
+                <div style={{ width:28, height:3, background:'var(--ism-amber)', borderRadius:2 }} />
+                <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.12em', textTransform:'uppercase' }}>Your Growth Starts Here</span>
+              </div>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
+                Ready to scale your agency<br />without <span style={{ color:'var(--ism-amber)' }}>adding headcount?</span>
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
+                Whether you need one service white-labelled or a full dedicated agency pod, we can start delivering under your brand within days. Talk to us today and we will tell you exactly how it works.
+              </p>
+              <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.55)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Start White-Labeling Today
+                </a>
+                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
+                  onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
+                  onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
+                >
+                  Talk to Our Team
+                </a>
+              </div>
+            </div>
+            <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Agency Partner" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+            </div>
+          </div>
+          <style>{`@media (max-width: 900px) { .wl-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; } }`}</style>
         </section>
 
       </main>
       <Footer />
 
       <style>{`
-        @keyframes wl-pulse { 0%,100%{box-shadow:0 0 0 3px rgba(34,197,94,.25)} 50%{box-shadow:0 0 0 6px rgba(34,197,94,.10)} }
-        @keyframes wl-ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-        @media (max-width: 640px) {
-          .wl-hero    { padding: 56px 0 44px !important; }
-          .wl-section { padding-top: 60px !important; padding-bottom: 60px !important; }
-          .wl-cta-br  { display: none; }
-        }
-        @media (max-width: 900px) {
-          .wl-hero-grid      { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .wl-stats-row      { grid-template-columns: 1fr 1fr !important; }
-          .wl-split          { grid-template-columns: 1fr !important; }
-          .wl-svc-grid       { grid-template-columns: 1fr 1fr !important; }
-          .wl-timeline       { grid-template-columns: 1fr 1fr !important; }
-          .wl-who-grid       { grid-template-columns: 1fr !important; }
-          .wl-guarantee-grid { grid-template-columns: 1fr 1fr !important; }
-          .wl-results-grid   { grid-template-columns: 1fr !important; }
-          .wl-faq-grid       { grid-template-columns: 1fr !important; }
-        }
-        @media (max-width: 600px) {
-          .wl-svc-grid       { grid-template-columns: 1fr !important; }
-          .wl-guarantee-grid { grid-template-columns: 1fr !important; }
-          .wl-stats-row      { grid-template-columns: 1fr 1fr !important; }
-          .wl-timeline       { grid-template-columns: 1fr !important; }
-        }
+        @media (max-width: 900px)  { .wl-plan-grid { grid-template-columns: 1fr !important; } .wl-plan-grid > *:nth-child(2) { transform: none !important; } }
+        @media (max-width: 900px)  { .wl-split { grid-template-columns: 1fr !important; gap: 36px !important; } }
+        @media (max-width: 900px)  { .wl-diff-grid { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 540px)  { .wl-diff-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 900px)  { .wl-timeline { grid-template-columns: 1fr !important; gap: 40px !important; } .wl-timeline > *:not(:last-child)::after { content:''; display:block; width:2px; height:32px; background:var(--ism-amber); margin:20px auto 0; } }
+        @media (max-width: 900px)  { .wl-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+        @media (max-width: 640px)  { .wl-hero { padding: 56px 0 44px !important; } .wl-section { padding-top: 60px !important; padding-bottom: 60px !important; } }
       `}</style>
     </>
   );

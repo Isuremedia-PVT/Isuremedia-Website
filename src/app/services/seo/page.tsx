@@ -15,61 +15,74 @@ const SERVICES = [
   {
     title: 'Technical SEO',
     icon: 'fa-solid fa-gear',
-    color: '#1E4DC3',
-    desc: 'We fix the foundations first. Deep crawl audits, Core Web Vitals, indexing blockers, and site architecture Google can understand and rank.',
+    desc: 'Your website needs to be built in a way Google can read, crawl, and rank. We fix the things under the surface that hold your site back — slow load times, broken pages, crawl errors, and messy site structure. Most businesses do not know these issues exist until they see the rankings they are missing.',
     href: '/services/seo/technical-seo',
   },
   {
     title: 'On-Page SEO',
     icon: 'fa-solid fa-file-lines',
-    color: '#F59E0B',
-    desc: 'Every page optimised for the real intent behind the search — title tags, headings, internal links, and content structure aligned to what Google rewards.',
+    desc: 'Every page on your site needs to be set up for the right search. We work on your headings, page copy, title tags, meta descriptions, and internal links so Google knows exactly what each page is about and who it should show it to.',
     href: '/services/seo/on-page-seo',
   },
   {
-    title: 'Link Building & Digital PR',
-    icon: 'fa-solid fa-link',
-    color: '#10B981',
-    desc: '7,000+ backlinks built across 150+ clients — zero penalties. Contextual, niche-relevant links through guest posts, digital PR, and niche edits.',
-    href: '/services/seo/link-building',
-  },
-  {
-    title: 'Local SEO & Google Business Profile',
+    title: 'Local SEO',
     icon: 'fa-solid fa-location-dot',
-    color: '#EF4444',
-    desc: 'Dominate the local 3-pack and Maps. Robert Morrison D.C. saw GBP views grow +577% and phone calls +878% in 6 months.',
+    desc: 'If your customers are in a specific city or area, you need to show up when they search nearby. We set up and manage your Google Business Profile, build local citations, and create location-specific pages so your business appears when local buyers are looking.',
     href: '/services/seo/local-seo',
-  },
-  {
-    title: 'AEO & AI Search Optimisation',
-    icon: 'fa-solid fa-robot',
-    color: '#8B5CF6',
-    desc: 'Get cited in Google AI Overviews, ChatGPT, and Perplexity answers. We optimise your content to appear in AI-generated answers — not just blue links.',
-    href: '/services/seo/aeo',
   },
   {
     title: 'E-Commerce SEO',
     icon: 'fa-solid fa-cart-shopping',
-    color: '#F97316',
-    desc: 'Product and category page optimisation that drives buyers, not browsers. Garnus India grew conversions from 6 to 45/month — a 650% increase.',
+    desc: 'Product pages and category pages need to rank for searches where people are ready to buy. We optimise your store structure, product descriptions, and site architecture so the people landing on your pages are already looking to purchase.',
+    href: '/services/seo/on-page-seo',
+  },
+  {
+    title: 'Link Building',
+    icon: 'fa-solid fa-link',
+    desc: 'Google ranks websites higher when trusted sites link to them. We build those links through real outreach and digital PR, not shortcuts that get sites penalised. Every link we earn adds to your authority and holds up long term.',
+    href: '/services/seo/link-building',
+  },
+  {
+    title: 'Keyword Research & Content Strategy',
+    icon: 'fa-solid fa-pen-nib',
+    desc: 'Ranking on the wrong searches brings the wrong people. We research exactly what your customers type into Google at every stage of the buying process and build your content strategy around those searches. The right keywords, in the right content, on the right pages.',
+    href: '/services/seo/on-page-seo',
+  },
+  {
+    title: 'SEO Audits',
+    icon: 'fa-solid fa-magnifying-glass-chart',
+    desc: 'Before anything else, you need to know where you actually stand. Our SEO audit covers your technical health, on-page setup, backlink profile, and keyword gaps. You get a clear report showing exactly what is holding your rankings back and what to fix first.',
+    href: '/services/seo/technical-seo',
+  },
+  {
+    title: 'AI SEO (AEO and GEO)',
+    icon: 'fa-solid fa-robot',
+    desc: 'Google AI Overviews, ChatGPT, and Perplexity are now part of how people search. We structure your content so these tools cite your business in their answers. Most agencies are still only optimising for traditional Google results. We cover both.',
+    href: '/services/seo/aeo',
+  },
+  {
+    title: 'White-Label SEO',
+    icon: 'fa-solid fa-tag',
+    desc: 'If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients get the results. Your brand gets the credit. No white-label footprint, no subcontracting.',
     href: '/services/seo/on-page-seo',
   },
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Complete Digital Strategy',     desc: 'Full competitor analysis, keyword research, and a custom 90-day roadmap tailored to your industry and goals.', icon: 'fa-solid fa-map' },
-  { num: 2, period: 'Technical Foundation',           desc: 'Site audit, Core Web Vitals fixes, crawl structure, schema markup — building the base everything else depends on.', icon: 'fa-solid fa-gear' },
-  { num: 3, period: 'Content & Link Building',        desc: 'Topical authority content, on-page optimisation, and editorial backlinks to accelerate ranking velocity.', icon: 'fa-solid fa-file-pen' },
-  { num: 4, period: 'Scale & Compound',               desc: "Rankings accelerate, traffic compounds. We scale what's working and report on revenue impact every single month.", icon: 'fa-solid fa-chart-line' },
+  { num: 1, period: 'Site Audit & Business Discovery',                     desc: 'Before we plan anything, we look at everything. We run a full audit of your site covering technical health, current rankings, content gaps, and your backlink profile. You get a clear picture of where things stand before any work starts.' },
+  { num: 2, period: 'Keyword Research & Strategy',                          desc: 'We map out exactly what your buyers are searching for at every stage, from first search to ready to buy. Every keyword we target is chosen because real people search for it and because ranking for it brings people who are close to making a decision.' },
+  { num: 3, period: 'Technical, Content & Link Building — All at Once',     desc: 'Technical fixes go live. Content goes up. Link building outreach runs in parallel. Every campaign also includes AI Search and AEO optimisation from day one so you show up in Google, ChatGPT, and Perplexity.' },
+  { num: 4, period: 'Monthly Reporting & Refinement',                       desc: 'Every month you get a plain report covering your traffic, rankings, leads, and everything we worked on. No vanity metrics. We review what moved, what did not, and tell you exactly what we are doing next.' },
+  { num: 5, period: 'Scale What Is Working',                                desc: 'Once your core keywords are ranking and traffic is growing, we expand. New keyword clusters, new content, deeper link authority, and broader AI search coverage. The work compounds month by month.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-microchip',   title: 'AI & AI-First Ready',         desc: 'We optimise for ChatGPT, Perplexity, and Google AI Overviews — not just traditional search. Your brand appears everywhere customers look.' },
-  { dark: false, icon: 'fa-solid fa-users',        title: 'In-House Team Only',          desc: 'No outsourcing, no freelancers. Every campaign is run by our own specialists who know your business inside out.' },
-  { dark: false, icon: 'fa-solid fa-chart-line',  title: 'Revenue-Backed Reporting',    desc: 'We don\'t report vanity metrics. We show you traffic growth, lead volume, and measurable revenue impact every month.' },
-  { dark: false, icon: 'fa-solid fa-shield-check', title: 'Niche Experience (12+)',      desc: 'HVAC, e-commerce, SaaS, legal, dental — we\'ve ranked sites in 12+ industries and know what Google rewards in your space.' },
-  { dark: false, icon: 'fa-solid fa-handshake',   title: 'No Lock-In Contracts',        desc: 'Month-to-month engagements. You stay because results keep coming, not because you\'re contractually obligated to.' },
-  { dark: false, icon: 'fa-solid fa-tag',          title: 'White-Label Ready',           desc: 'Agencies trust us to deliver under their brand. Full NDA, white-label reports, and a seamless client experience.' },
+  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'Flexible Plans for Every Budget',        desc: 'SEO should not be something only large companies can afford. We build plans around what your business actually needs right now, not a fixed package with services you do not need. Whether you are a small business getting started or an established company looking to scale, you get a campaign built for your goals and your budget.' },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'We Get You Found in AI Search',          desc: 'People are no longer just typing into Google. They are asking ChatGPT, Perplexity, and Google AI Overviews for answers, and those tools recommend specific businesses. We structure your content, build your authority, and position your brand so AI systems read it, trust it, and cite it.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',  title: 'You Are Free to Leave Any Time',         desc: 'We do not hold clients with long contracts because we do not need to. Our work speaks for itself every month, and clients stay because the results keep coming. There are no penalties, no minimum terms, and no awkward exit process.' },
+  { dark: false, icon: 'fa-solid fa-shield-halved', title: 'We Only Use White Hat SEO',              desc: 'There are SEO agencies that use shortcuts to get fast results. Those shortcuts often end in Google penalties that can take months or years to recover from. Every link we build, every piece of content we publish, and every optimisation we make follows Google\'s guidelines so your rankings are safe and built to last.' },
+  { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',  desc: 'You will never wonder what we are working on. Every month you get a clear report covering your traffic, keyword rankings, leads, and a full breakdown of work completed. You keep direct access to your Google Analytics and Search Console at all times — your data belongs to you, not us.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'Regular Updates, One Dedicated Contact', desc: 'When you work with us, you get one person assigned to your account from day one. That person knows your business, tracks your campaign, and is your direct line for any question or update. You will never be passed around or left waiting.' },
 ];
 
 const INDUSTRIES = [
@@ -80,14 +93,14 @@ const INDUSTRIES = [
 
 
 const FAQS = [
-  { q: 'How long does SEO take to show results?', a: 'Most clients see meaningful ranking improvements within 3–6 months. For competitive niches, expect 6–12 months for significant traffic growth. The results compound over time unlike paid ads.' },
-  { q: 'Do you guarantee first-page rankings?', a: 'No ethical SEO agency can guarantee specific rankings — Google\'s algorithm is outside anyone\'s control. What we guarantee is a transparent process, consistent effort, and a track record of getting clients to page 1.' },
-  { q: 'What makes ISM different from other SEO agencies?', a: 'Three things: we don\'t outsource, we don\'t lock you in, and we report on revenue — not just rankings. We\'ve ranked 300+ sites across 12+ industries.' },
-  { q: 'Do you do black-hat SEO?', a: 'Never. 100% white-hat methods only. PBNs, link farms, and cloaking create short-term gains and long-term penalties. We build authority that lasts.' },
-  { q: 'Can you work with my existing team / developer?', a: 'Yes. We integrate with your team seamlessly. We provide clear technical specs, implementation guides, and can work directly in your CMS.' },
-  { q: 'What does a typical SEO retainer include?', a: 'Monthly deliverables vary by plan, but typically include: technical fixes, content production, link building, rank tracking, and a detailed performance report with next-month priorities.' },
-  { q: 'Do you offer white-label SEO for agencies?', a: 'Yes. We work with 20+ agencies under white-label. Full NDA, client-ready reports under your branding, and a dedicated account manager for partner agencies.' },
-  { q: 'How do you handle AI search like ChatGPT and Perplexity?', a: 'We use Answer Engine Optimisation (AEO) — entity optimisation, structured data, FAQ schema, and brand citation building so your business appears inside AI-generated answers, not just blue links.' },
+  { q: 'How long does SEO take to show results?', a: 'Most businesses start seeing movement in rankings within three to six months. Meaningful traffic and lead growth usually follows at six to nine months. The timeline depends on how competitive your industry is, the current state of your website, and how consistently the work is done. We tell you what to expect honestly at the start, not after you have signed.' },
+  { q: 'How is ISureMedia different from other SEO agencies?', a: 'Three things. We never outsource. Every part of your campaign is handled by our in-house team. We run technical SEO, content, and link building together at the same time because that is how results compound. And we include AI Search optimisation on every campaign because search has changed and we work accordingly.' },
+  { q: 'Do you offer white-label SEO for agencies?', a: 'Yes. If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work. We have no footprint in the relationship.' },
+  { q: 'What does your SEO audit cover?', a: 'Technical health including site speed, crawlability, Core Web Vitals, and indexation. On-page including keyword mapping, title tags, headings, and internal linking. Off-page including your backlink profile, toxic links, and competitor link gap. You get a prioritised action plan, not just a list of issues.' },
+  { q: 'How much does SEO cost?', a: 'It depends on the size of your site, how competitive your industry is, and what the campaign needs to do. We do not have fixed packages because copy-paste packages produce copy-paste results. We will review your site for free and give you a honest picture of what a campaign would cost and what it would produce.' },
+  { q: 'Do you do local SEO for small businesses?', a: 'Yes. Local SEO is one of our core services. We work on your Google Business Profile, local citations, location pages, and map pack rankings. It works particularly well for service businesses, professional practices, and any business that serves a specific area.' },
+  { q: 'Can SEO and paid ads work together?', a: 'Yes, and they work better together than either does alone. Paid ads get you in front of buyers immediately. SEO builds the long-term foundation that keeps traffic coming without ongoing ad spend. The businesses growing fastest are usually doing both.' },
+  { q: 'What happens if my rankings drop?', a: 'Rankings fluctuate. Google updates its algorithm regularly and competitor activity affects rankings too. When movement happens, we investigate immediately, identify the cause, and adjust the strategy. You are told what happened and what we are doing about it, not left to find out from a dashboard.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */
@@ -108,13 +121,12 @@ function FAQAccordion() {
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
         <div className="seo-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           {/* Left */}
-          <div style={{ position:'sticky', top:100 }}>
-            <Pill text="FAQ" />
+          <div className="seo-faq-sticky" style={{ position:'sticky', top:100 }}>
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
-              Honest answers to what every client asks us.
+              Questions About <span style={{ color:'var(--ism-amber)' }}>SEO</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              No spin. No buzzwords. Just the truth about how SEO works and what we do differently.
+              Honest answers before you decide. No spin, no buzzwords.
             </p>
             <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
@@ -154,25 +166,28 @@ export default function SEOPage() {
       <main>
 
         {/* ══ 1. HERO ══════════════════════════════════════════════════════ */}
-        <section className="seo-hero" style={{ background:'var(--color-bg-soft)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-15%', right:'-8%', width:700, height:700, background:'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents:'none' }} />
-          <div style={{ position:'absolute', bottom:'-10%', left:'-5%', width:500, height:500, background:'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents:'none' }} />
+        <section className="seo-hero" style={{ background:'linear-gradient(160deg,#EDF2FF 0%,#F7F8FA 48%,#FFFBEB 100%)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
+          {/* Blue glow top-right */}
+          <div style={{ position:'absolute', top:'-10%', right:'-6%', width:720, height:720, background:'radial-gradient(circle,rgba(30,77,195,.13) 0%,transparent 60%)', pointerEvents:'none' }} />
+          {/* Amber glow bottom-left */}
+          <div style={{ position:'absolute', bottom:'-15%', left:'-5%', width:560, height:560, background:'radial-gradient(circle,rgba(255,176,0,.11) 0%,transparent 60%)', pointerEvents:'none' }} />
+          {/* Subtle center bloom */}
+          <div style={{ position:'absolute', top:'20%', left:'50%', transform:'translateX(-50%)', width:900, height:400, background:'radial-gradient(ellipse,rgba(30,77,195,.04) 0%,transparent 70%)', pointerEvents:'none' }} />
+          {/* Decorative dot grid top-left */}
+          <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
+          {/* Decorative dot grid bottom-right */}
+          <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
 
           <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
 
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
-              Rank on Google. Rank in AI Search. Rank{' '}
-              <span style={{ color:'var(--ism-amber)', position:'relative', display:'inline-block' }}>
-                everywhere
-                <svg style={{ position:'absolute', bottom:-6, left:0, width:'100%' }} height="8" viewBox="0 0 220 8" preserveAspectRatio="none">
-                  <path d="M2 6 Q55 1 110 5 Q165 8 218 2" stroke="var(--ism-amber)" strokeWidth="3" fill="none" strokeLinecap="round" />
-                </svg>
-              </span>
-              {' '}your customers look.
+              Rank on Google.<br />
+              Show Up in AI Search.<br />
+              <span style={{ color:'var(--ism-amber)' }}>Grow Your Business.</span>
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              Search has changed. Google still matters — but your customers now find answers on ChatGPT, Perplexity, Google AI Overviews, and voice assistants too. We build the SEO engine that covers all of it.
+              We get your business to Page&nbsp;1 on Google and into AI Search results. From there, the right people find you, contact you, and buy from you.
             </p>
 
             {/* CTAs */}
@@ -182,14 +197,14 @@ export default function SEOPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Get Started →
+                Start Growing Organically
               </a>
-              <a href="#seo-results"
+              <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
                 onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
                 onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
               >
-                See SEO Results
+                Claim Free Audit Now
               </a>
             </div>
 
@@ -197,7 +212,7 @@ export default function SEOPage() {
         </section>
 
         {/* ══ 1b. REVIEWS BAR ══════════════════════════════════════════════ */}
-        <div style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
+        <div className="seo-reviews-bar" style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
           <div style={{ maxWidth:1280, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:56, flexWrap:'wrap' }}>
 
             {/* Google */}
@@ -220,7 +235,7 @@ export default function SEOPage() {
             </div>
 
             {/* Divider */}
-            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div className="seo-reviews-divider" style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
 
             {/* Clutch */}
             <div style={{ display:'flex', alignItems:'center', gap:16 }}>
@@ -240,7 +255,7 @@ export default function SEOPage() {
             </div>
 
             {/* Divider */}
-            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
+            <div className="seo-reviews-divider" style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
 
             {/* Client count */}
             <div style={{ display:'flex', alignItems:'center', gap:16 }}>
@@ -267,51 +282,73 @@ export default function SEOPage() {
         </div>
 
         {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
-        <section style={{ background:'#fff', padding:'88px 0' }}>
+        <section className="seo-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
 
             {/* Heading */}
-            <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
-              A Strategy-First Digital Marketing Agency to Grow Your Business
-            </h2>
+            <div style={{ textAlign:'center', marginBottom:60 }}>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
+                Why SEO Should Be the <span style={{ color:'var(--ism-amber)' }}>Foundation</span> of Your Growth
+              </h2>
+              <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
+                Organic search is the largest single source of traffic on the internet. Here is what the data says about what that means for your business.
+              </p>
+            </div>
 
-            {/* Two-col layout */}
-            <div className="seo-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center', marginBottom:48 }}>
+            {/* Two-col */}
+            <div className="seo-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center', marginBottom:52 }}>
 
-              {/* Left — text */}
-              <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Our results-driven digital marketing company maps your fastest path to growth by providing you with a custom strategy. We start with a deep audit to help us build a channel-by-channel plan to increase your qualified leads and revenue.
-                </p>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Isuremedia is a versatile and full-service digital marketing agency that doesn&apos;t rely on smoke and mirrors to attract new clients. Instead, we use our deep search engine optimisation (SEO) expertise and artificial intelligence (AI)-driven strategies to help businesses achieve long-term, sustainable growth.
-                </p>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Invest in our affordable digital marketing services and get maximum return on your investment.
-                </p>
+              {/* Left — 4 numbered points */}
+              <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
+                {[
+                  { num:'01', title:'Most of your customers start with a search', text:'53% of all website traffic comes from organic search, more than paid ads, social, and email combined. That is why we start every campaign by understanding what your customers are typing before we do anything else.' },
+                  { num:'02', title:'Being on Page 2 is basically being invisible', text:'The #1 result on Google gets 39.8% of all clicks. Position 2 gets 18.7%. Page 2 gets less than 1%. Getting you to page one is not the goal we work toward. It is the minimum we work from.' },
+                  { num:'03', title:'Organic leads convert better', text:'Organic leads convert at nearly 9 times the rate of outbound. The people finding you through search already want what you sell. We make sure those are the exact searches your site shows up for.' },
+                  { num:'04', title:'AI Search Is the Biggest Shift Since Google Itself', text:'Getting cited inside ChatGPT, Perplexity, and Google AI Overviews is now as important as ranking on page one. We make sure our clients show up in both places.' },
+                ].map(item => (
+                  <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div>
+                      <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
+                      <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
 
-              {/* Right — video thumbnail */}
-              <div style={{ position:'relative', borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.14)', cursor:'pointer' }}
-                onMouseEnter={e=>{ (e.currentTarget.querySelector('.seo-play-btn') as HTMLElement).style.transform='translate(-50%,-50%) scale(1.10)'; }}
-                onMouseLeave={e=>{ (e.currentTarget.querySelector('.seo-play-btn') as HTMLElement).style.transform='translate(-50%,-50%) scale(1)'; }}
-              >
-                <div style={{ width:'100%', aspectRatio:'16/9', background:'linear-gradient(135deg,#2D5016 0%,#4A7C24 40%,#6B9E3A 70%,#8BC34A 100%)', display:'flex', alignItems:'center', justifyContent:'center', position:'relative' }}>
-                  <div style={{ position:'absolute', inset:0, display:'flex', flexDirection:'column', justifyContent:'center', padding:'28px 32px' }}>
-                    <p style={{ fontFamily:J, fontSize:'clamp(18px,2.2vw,26px)', fontWeight:900, color:'var(--ism-amber)', lineHeight:1.25, margin:'0 0 8px' }}>
-                      Turning Complex Digital Marketing
-                    </p>
-                    <p style={{ fontFamily:J, fontSize:'clamp(18px,2.2vw,26px)', fontWeight:900, color:'#fff', lineHeight:1.25, margin:0 }}>
-                      Into Real Growth
-                    </p>
-                  </div>
-                  <div style={{ position:'absolute', bottom:14, left:14, background:'rgba(0,0,0,.60)', borderRadius:6, padding:'6px 14px' }}>
-                    <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color:'#fff', letterSpacing:'.04em' }}>Client Testimonial</span>
-                  </div>
+              {/* Right — Image mosaic */}
+              <div className="seo-strategy-mosaic" style={{ position:'relative', height:460 }}>
+
+                {/* Image 1 — large, right */}
+                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
                 </div>
-                <div className="seo-play-btn" style={{ position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', width:60, height:60, borderRadius:'50%', background:'rgba(255,255,255,.92)', display:'flex', alignItems:'center', justifyContent:'center', boxShadow:'0 6px 20px rgba(0,0,0,.25)', transition:'transform .18s' }}>
-                  <i className="fa-solid fa-play" style={{ color:'var(--color-primary)', fontSize:20, marginLeft:4 }} />
+
+                {/* Image 2 — tall, left */}
+                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
                 </div>
+
+                {/* Image 3 — small top-left */}
+                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+
+                {/* Image 4 — small bottom-center */}
+                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+
+                {/* Image 5 — small bottom-right */}
+                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                </div>
+
               </div>
 
             </div>
@@ -319,18 +356,23 @@ export default function SEOPage() {
             {/* CTA */}
             <div style={{ textAlign:'center' }}>
               <a href="/contact"
-                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
-                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
-                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
               >
-                Grow My Business Now <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                Claim Your Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
               </a>
             </div>
 
           </div>
           <style>{`
             @media (max-width: 768px) {
-              .seo-strategy-grid { grid-template-columns: 1fr !important; }
+              .seo-strategy-section { padding: 56px 0 !important; }
+              .seo-strategy-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+              .seo-strategy-mosaic { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .seo-strategy-section { padding: 44px 0 !important; }
             }
           `}</style>
         </section>
@@ -341,36 +383,36 @@ export default function SEOPage() {
         </div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
-        <section style={{ background:'#fff', padding:'90px 28px 72px' }}>
+        <section className="seo-cta-banner" style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
 
             {/* Card — no shadow, image overflows upward via section padding-top */}
-            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:380 }} className="seo-cta-banner-grid">
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="seo-cta-banner-grid">
 
               {/* Left col — empty space for the absolute image */}
               <div />
 
               {/* Right — text */}
-              <div style={{ padding:'64px 64px 64px 40px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
-                <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 20px' }}>
-                  You&apos;ve Finally Found<br />the Right SEO Agency With Answers
+              <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
+                  Your next customer is searching right now. Are you <span style={{ color:'var(--ism-amber)' }}>showing up?</span>
                 </h2>
-                <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 40px', maxWidth:460 }}>
-                  Isuremedia has the SEO solutions you&apos;ve been searching for. Don&apos;t let another day go by where your competitors are looking down on you. It&apos;s time to be discovered!
+                <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
+                  Get a free SEO audit and find out why your site is not getting the traffic it should.
                 </p>
                 <a href="/contact"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                 >
-                  Increase My Leads Now <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                  Run My Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                 </a>
               </div>
 
             </div>
 
             {/* Image — positioned absolute, bottom:0 aligns woman's feet with card bottom, height overflows upward */}
-            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 90px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
+            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
@@ -385,14 +427,17 @@ export default function SEOPage() {
               .seo-cta-banner-grid { grid-template-columns: 1fr !important; }
               .seo-cta-banner-grid > div:first-child { display: none !important; }
             }
+            @media (max-width: 768px) {
+              .seo-cta-banner { padding: 44px 20px 36px !important; }
+            }
           `}</style>
         </section>
 
         {/* ══ 3b. IMAGE + TEXT SECTION ════════════════════════════════════ */}
-        <section style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
+        <section className="seo-imgtext-section" style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
             <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
-              Proven SEO Strategies That Drive Real Business Growth
+              Proven SEO Strategies That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
             </h2>
             <div className="seo-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
 
@@ -409,13 +454,13 @@ export default function SEOPage() {
               {/* Right — text */}
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Our results-driven SEO strategies are built around your business goals — not vanity metrics. We analyse your market, competitors, and audience to craft a channel-by-channel plan that drives qualified traffic and revenue.
+                  SEO builds on itself in a way most channels do not. The content you publish today keeps earning rankings next month and next year. The links you build today add to your authority permanently. Every piece of work compounds.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  From technical foundations to link authority and AI search visibility, every service we deliver is designed to compound over time. You don&apos;t just rank — you dominate.
+                  The businesses that start SEO earliest are the hardest to displace later. The longer you wait, the more ground your competitors cover. This is one of the few marketing decisions where starting sooner has a compounding advantage that never goes away.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Whether you&apos;re a local business, an e-commerce brand, or a SaaS company, we have the industry-specific experience to accelerate your growth from day one.
+                  Isuremedia handles all of this for you — the rankings, the AI citations, and making sure every visitor landing on your site is someone who already wants what you sell.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact"
@@ -432,7 +477,11 @@ export default function SEOPage() {
           </div>
           <style>{`
             @media (max-width: 768px) {
-              .seo-imgtext-grid { grid-template-columns: 1fr !important; }
+              .seo-imgtext-section { padding: 56px 0 !important; }
+              .seo-imgtext-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+            }
+            @media (max-width: 480px) {
+              .seo-imgtext-section { padding: 44px 0 !important; }
             }
           `}</style>
         </section>
@@ -441,15 +490,14 @@ export default function SEOPage() {
         <Testimonials />
 
         {/* ══ 4. SERVICES GRID ════════════════════════════════════════════ */}
-        <section className="seo-section" style={{ padding:'100px 0', background:'#fff' }}>
+        <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Our Services" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                Every SEO service you need.
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
+                Our Complete <span style={{ color:'var(--ism-amber)' }}>SEO Services</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every service is connected — technical fixes enable rankings, rankings drive traffic, content converts it.
+                Show up higher on Google and get more of the right people to your website.
               </p>
             </div>
             <div className="seo-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
@@ -459,7 +507,7 @@ export default function SEOPage() {
                   style={{
                     padding:'36px 32px',
                     borderRight: (i+1)%3 === 0 ? 'none' : '1px solid #E8EAF0',
-                    borderBottom: i < 3 ? '1px solid #E8EAF0' : 'none',
+                    borderBottom: i < 6 ? '1px solid #E8EAF0' : 'none',
                     background:'#fff',
                     transition:'background .18s',
                     cursor:'default',
@@ -469,8 +517,8 @@ export default function SEOPage() {
                 >
                   {/* Icon + Title */}
                   <div style={{ display:'flex', alignItems:'flex-start', gap:14, marginBottom:18 }}>
-                    <div style={{ width:46, height:46, borderRadius:10, background:`${s.color}18`, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                      <i className={s.icon} style={{ fontSize:20, color:s.color }} />
+                    <div style={{ width:46, height:46, borderRadius:10, background:'var(--ism-blue-50,rgba(30,77,195,.08))', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
+                      <i className={s.icon} style={{ fontSize:20, color:'var(--color-primary)' }} />
                     </div>
                     <h3 style={{ fontFamily:J, fontSize:16, fontWeight:800, color:'var(--color-navy)', margin:0, lineHeight:1.3, paddingTop:6 }}>{s.title}</h3>
                   </div>
@@ -478,7 +526,7 @@ export default function SEOPage() {
                   <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.80, margin:'0 0 22px' }}>{s.desc}</p>
                   {/* Link */}
                   <a href={s.href}
-                    style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:s.color, textDecoration:'none', letterSpacing:'.03em', transition:'gap .18s' }}
+                    style={{ display:'inline-flex', alignItems:'center', gap:6, fontFamily:J, fontSize:12, fontWeight:700, color:'var(--color-primary)', textDecoration:'none', letterSpacing:'.03em', transition:'gap .18s' }}
                     onMouseEnter={e=>(e.currentTarget.style.gap='10px')}
                     onMouseLeave={e=>(e.currentTarget.style.gap='6px')}
                   >
@@ -491,14 +539,15 @@ export default function SEOPage() {
           <style>{`
             @media (max-width: 900px) {
               .seo-svc-grid { grid-template-columns: repeat(2,1fr) !important; }
-              .seo-svc-cell-1, .seo-svc-cell-3, .seo-svc-cell-5 { border-right: none !important; }
-              .seo-svc-cell-0, .seo-svc-cell-1, .seo-svc-cell-2, .seo-svc-cell-3 { border-bottom: 1px solid #E8EAF0 !important; }
-              .seo-svc-cell-4, .seo-svc-cell-5 { border-bottom: none !important; }
+              .seo-svc-cell-1, .seo-svc-cell-3, .seo-svc-cell-5, .seo-svc-cell-7 { border-right: none !important; }
+              .seo-svc-cell-0, .seo-svc-cell-1, .seo-svc-cell-2, .seo-svc-cell-3,
+              .seo-svc-cell-4, .seo-svc-cell-5, .seo-svc-cell-6, .seo-svc-cell-7 { border-bottom: 1px solid #E8EAF0 !important; }
+              .seo-svc-cell-8 { border-bottom: none !important; border-right: none !important; }
             }
             @media (max-width: 560px) {
               .seo-svc-grid { grid-template-columns: 1fr !important; }
               .seo-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; }
-              .seo-svc-cell-5 { border-bottom: none !important; }
+              .seo-svc-cell-8 { border-bottom: none !important; }
             }
           `}</style>
         </section>
@@ -509,41 +558,33 @@ export default function SEOPage() {
             <div className="seo-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
               {/* Left */}
               <div>
-                {/* Pill */}
-                <div style={{ display:'inline-flex', alignItems:'center', gap:7, padding:'5px 16px', borderRadius:100, border:'1.5px solid rgba(255,176,0,.5)', fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.08em', textTransform:'uppercase', marginBottom:22 }}>
-                  <span style={{ width:6, height:6, borderRadius:'50%', background:'var(--ism-amber)', display:'inline-block' }} />
-                  THE FUTURE OF SEARCH IS HERE
-                </div>
-
-                <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 20px', lineHeight:1.12 }}>
-                  Your customers are finding answers inside AI —{' '}
-                  <span style={{ color:'var(--ism-amber)' }}>not just Google.</span>
+                <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
+                  Why SEO Is a{' '}
+                  <span style={{ color:'var(--ism-amber)' }}>Great Investment</span>
                 </h2>
 
-                <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.68)', lineHeight:1.78, margin:'0 0 32px' }}>
-                  40% of Gen Z searches on AI tools first. If you&apos;re not visible in these surfaces, you&apos;re losing customers you never knew you had.
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
+                  Turn Your Website Into Your Best-Performing Sales Channel
                 </p>
 
-                {/* Points */}
-                <div style={{ display:'flex', flexDirection:'column', gap:14, marginBottom:36 }}>
-                  {[
-                    { icon:'fa-solid fa-robot',      text:'Get cited in Google AI Overviews & featured snippets' },
-                    { icon:'fa-solid fa-bolt',        text:'Appear in ChatGPT, Perplexity, and Gemini answers'   },
-                    { icon:'fa-solid fa-microphone',  text:'Optimised for Siri, Alexa & Google Assistant'        },
-                  ].map((item,i)=>(
-                    <div key={i} style={{ display:'flex', alignItems:'center', gap:12 }}>
-                      <i className={item.icon} style={{ fontSize:14, color:'var(--ism-amber)', flexShrink:0 }} />
-                      <span style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.80)', lineHeight:1.6 }}>{item.text}</span>
-                    </div>
-                  ))}
+                <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Most marketing stops when you stop paying.</strong> A ranked page keeps sending traffic every day — no ongoing cost per click, no budget required.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Organic leads convert 9× better than outbound.</strong> The people finding you through search already want what you sell — the intent is there before they land.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>AI Search has changed where answers come from.</strong> We build for Google and AI — ChatGPT, Perplexity, AI Overviews — so you show up in both places.
+                  </p>
                 </div>
 
-                <a href="/services/seo/aeo"
+                <a href="/contact"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
                 >
-                  Talk to an AEO Expert →
+                  Start Building Your SEO Asset →
                 </a>
               </div>
 
@@ -564,18 +605,17 @@ export default function SEOPage() {
         <section className="seo-section" style={{ padding:'100px 0', background:'#fff' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:64 }}>
-              <Pill text="Our Process" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 10px' }}>
-                4 months to measurable growth.
+              <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
+                ISureMedia&apos;s Proven SEO System for <span style={{ color:'var(--ism-amber)' }}>Measurable Growth</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Month by month, no guesswork.
+                Your First Step Toward Bigger Rankings and Better Business
               </p>
             </div>
-            <div className="seo-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:0, position:'relative' }}>
-              <div style={{ position:'absolute', top:28, left:'12.5%', width:'75%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
+            <div className="seo-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
+              <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
-                <div key={i} style={{ textAlign:'center', padding:'0 20px', position:'relative', zIndex:1 }}>
+                <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
                   <div style={{ width:56, height:56, borderRadius:'50%', background: i===0 ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0 ? 'rgba(255,176,0,.40)' : 'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
@@ -584,6 +624,16 @@ export default function SEOPage() {
                 </div>
               ))}
             </div>
+            {/* CTA */}
+            <div style={{ textAlign:'center', marginTop:56 }}>
+              <a href="/contact"
+                style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
+                onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
+                onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
+              >
+                Get a Free SEO Audit
+              </a>
+            </div>
           </div>
         </section>
 
@@ -591,7 +641,6 @@ export default function SEOPage() {
         <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:60 }}>
-              <Pill text="Plans" />
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
                 Start with the right scope{' '}
                 <span style={{ color:'var(--ism-amber)' }}>for your goals.</span>
@@ -677,11 +726,12 @@ export default function SEOPage() {
         <section className="seo-section" style={{ padding:'100px 0', background:'#fff' }}>
           <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:60 }}>
-              <Pill text="Why Choose Us" />
-              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 6px', maxWidth:640, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
-                What makes us different from{' '}
-                <span style={{ color:'var(--ism-amber)' }}>every other SEO agency.</span>
+              <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
+                Why Our SEO Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Growth</span> for Your Business
               </h2>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
+                Get the organic traffic your business deserves.
+              </p>
             </div>
             <div className="seo-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
               {DIFFERENTIATORS.map((d,i)=>(
@@ -719,36 +769,34 @@ export default function SEOPage() {
               </div>
 
               <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
-                Ready for{' '}
-                <span style={{ color:'var(--ism-amber)' }}>Results?</span>
+                Ready to rank higher<br />and bring in <span style={{ color:'var(--ism-amber)' }}>more customers?</span>
               </h2>
 
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you run a local business, a growing brand, or a digital agency, the question is the same. Are you getting the growth your marketing should be delivering? If not, you are in the right place. Talk to us today and we will help you identify and achieve your biggest growth opportunities.
+                Whether you are a local business, a growing brand, or a marketing agency, the question is the same. Are your best customers finding you on Google? If not, that is exactly what we fix. Talk to us today and we will show you where the opportunity is.
               </p>
 
               {/* Buttons */}
-              <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+              <div className="seo-rfr-btns" style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
                 <a href="/contact"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.55)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                 >
-                  Get My Free Proposal
+                  Get My Free SEO Audit
                 </a>
-                <span style={{ fontFamily:I, fontSize:13, color:'rgba(255,255,255,.50)', fontWeight:600 }}>or</span>
-                <a href="tel:+917300007650"
+                <a href="/contact"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
                 >
-                  <i className="fa-solid fa-phone" style={{ fontSize:12 }} /> Call +91-730-000-7650
+                  Talk to Our Team
                 </a>
               </div>
             </div>
 
             {/* Right — image only */}
-            <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
+            <div className="seo-rfr-img" style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png"
@@ -761,6 +809,10 @@ export default function SEOPage() {
           <style>{`
             @media (max-width: 900px) {
               .seo-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; }
+              .seo-rfr-img { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .seo-rfr-grid { padding: 32px 20px !important; }
             }
           `}</style>
         </section>
@@ -844,6 +896,34 @@ export default function SEOPage() {
         /* Bottom CTA <br> tag — hide forced break on mobile */
         @media (max-width: 640px) {
           .seo-cta-br { display: none; }
+        }
+
+        /* Reviews bar dividers hidden when wrapping */
+        @media (max-width: 600px) {
+          .seo-reviews-bar { padding: 24px 20px !important; }
+          .seo-reviews-divider { display: none !important; }
+        }
+
+        /* Hero section padding on mobile */
+        @media (max-width: 480px) {
+          .seo-hero { padding: 48px 0 36px !important; }
+        }
+
+        /* Plan grid: unscale featured card on mobile */
+        @media (max-width: 768px) {
+          .seo-plan-grid > *:nth-child(2) { transform: none !important; }
+        }
+
+        /* CTA section inner padding */
+        @media (max-width: 480px) {
+          .seo-rfr-grid { padding: 32px 20px !important; }
+          .seo-rfr-btns { flex-direction: column !important; align-items: stretch !important; }
+          .seo-rfr-btns a { justify-content: center !important; width: 100% !important; box-sizing: border-box !important; }
+        }
+
+        /* FAQ sticky left: disable sticky on mobile */
+        @media (max-width: 900px) {
+          .seo-faq-sticky { position: static !important; }
         }
       `}</style>
     </>

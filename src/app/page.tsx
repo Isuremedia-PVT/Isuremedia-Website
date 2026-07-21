@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ClientsMarquee from '@/components/ClientsMarquee';
+import HomeVideoSection from '@/components/HomeVideoSection';
 import ProblemStatement from '@/components/ProblemStatement';
 import ClientResults from '@/components/ClientResults';
 import Services from '@/components/Services';
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <ClientsMarquee />
+        <HomeVideoSection />
         <ProblemStatement />
         <ClientResults />
         <TrustVideo />

@@ -49,12 +49,6 @@ const RELATED = [
   { icon: 'fa-solid fa-code-branch', title: 'n8n Automation', desc: 'Self-hosted automation with full customisation and no per-task pricing for high-volume workflows.', href: '/services/automation/n8n' },
 ];
 
-const Pill = ({ label }: { label: string }) => (
-  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
-    <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-    <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' as const }}>{label}</span>
-  </div>
-);
 
 export default function ZapierPage() {
   return (
@@ -89,7 +83,6 @@ export default function ZapierPage() {
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', textAlign: 'center', position: 'relative' }}>
-            <Pill label="Zapier Automation" />
             <h1 style={{ fontFamily: J, fontSize: 'clamp(32px,4.5vw,62px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.08, margin: '0 auto 24px', maxWidth: 900 }}>
               Zapier Workflows That Connect Your Tools and Save Hours Every Week
             </h1>
@@ -115,7 +108,6 @@ export default function ZapierPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
             <div>
-              <Pill label="What Zapier Can Automate" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 20 }}>
                 Every Tool Talking to Every Other Tool
               </h2>
@@ -147,7 +139,6 @@ export default function ZapierPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Key Benefits" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why Zapier Workflows Pay for Themselves</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Properly built Zapier workflows eliminate hours of manual work every week and keep your data consistent across every tool.</p>
             </div>
@@ -171,7 +162,6 @@ export default function ZapierPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="What's Included" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>10 Custom Zaps and Everything Around Them</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>From the initial audit to team training and ongoing support — we handle the full lifecycle of your Zapier automations.</p>
             </div>
@@ -192,7 +182,6 @@ export default function ZapierPage() {
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <Pill label="Our Process" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Audit to Documented Workflows in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>We map, build, test, and document every workflow so your team can manage them confidently long after handover.</p>
             </div>
@@ -216,7 +205,6 @@ export default function ZapierPage() {
         <section style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
-              <Pill label="Related Services" />
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair Zapier With These Services</h2>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>

@@ -199,12 +199,32 @@ export default function Navbar() {
   const [activeServiceTab, setActiveServiceTab] = useState(0);
   const [mobileOpen, setMobileOpen]       = useState(false);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [visible, setVisible]             = useState(true);
+  const [scrolled, setScrolled]           = useState(false);
+  const timer      = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastScrollY = useRef(0);
+  const headerRef  = useRef<HTMLElement>(null);
 
   const openNav  = (key: string) => { if (timer.current) clearTimeout(timer.current); setOpenMenu(key); };
   const closeNav = ()            => { timer.current = setTimeout(() => setOpenMenu(null), 280); };
 
-  useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 10);
+      if (y < 80) {
+        setVisible(true);
+      } else {
+        setVisible(y < lastScrollY.current);
+      }
+      lastScrollY.current = y;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (timer.current) clearTimeout(timer.current);
+    };
+  }, []);
 
   /* ── Shared dropdown wrapper ── */
   const Dropdown = ({ children, wide = false }: { children: React.ReactNode; wide?: boolean }) => (
@@ -218,7 +238,7 @@ export default function Navbar() {
   );
 
   return (
-    <header style={{ position: 'sticky', top: 0, zIndex: 9999, background: '#fff', borderBottom: '1px solid #E2E8F0', boxShadow: '0 1px 10px rgba(0,0,0,.05)' }}>
+    <header ref={headerRef} style={{ position: 'sticky', top: 0, zIndex: 9999, background: '#fff', borderBottom: '1px solid #E2E8F0', boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,.10)' : '0 1px 10px rgba(0,0,0,.05)', transform: visible ? 'translateY(0)' : 'translateY(-100%)', transition: 'transform 0.35s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s' }}>
 
       {/* ── Top utility bar ── */}
       <div className="nav-top-bar" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '7px 0' }}>
@@ -274,7 +294,7 @@ export default function Navbar() {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 28px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 62 }}>
 
         {/* ── Logo ── */}
-        <a href="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
+        <a href="/" className="nav-logo" style={{ textDecoration: 'none', flexShrink: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="Isuremedia" style={{ height: 52, width: 'auto', display: 'block' }} />
         </a>
@@ -544,7 +564,7 @@ export default function Navbar() {
 
       {/* ── Mobile Menu ── */}
       {mobileOpen && (
-        <div style={{ background: '#fff', borderTop: '1px solid #E2E8F0', padding: '12px 20px 20px', boxShadow: '0 8px 24px rgba(0,0,0,.08)' }}>
+        <div className="nav-mobile-menu" style={{ background: '#fff', borderTop: '1px solid #E2E8F0', padding: '12px 20px 20px', boxShadow: '0 8px 24px rgba(0,0,0,.08)' }}>
           {navItems.map(item => {
             const hasDropdown = item.type !== 'link' && item.type !== 'contact';
             const isExpanded  = mobileSection === item.type;
@@ -638,6 +658,10 @@ export default function Navbar() {
         .nav-svc-link:hover .nav-svc-text { color: var(--color-primary) !important; }
         @media (max-width: 768px) {
           .nav-top-bar { display: none !important; }
+        }
+        @media (max-width: 480px) {
+          .nav-logo img { height: 42px !important; }
+          .nav-mobile-menu { padding: 10px 16px 16px !important; }
         }
       `}</style>
     </header>
