@@ -35,7 +35,7 @@ const CASES = [
 
 export default function ClientResults() {
   return (
-    <section style={{ padding: '80px 0 88px', background: 'var(--color-bg-soft)', position: 'relative', overflow: 'hidden' }}>
+    <section className="cr-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)', position: 'relative', overflow: 'hidden' }}>
       {/* bg glow */}
       <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 560, height: 560, background: 'radial-gradient(circle,rgba(30,77,195,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '5%', left: '-5%', width: 440, height: 440, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
@@ -119,12 +119,12 @@ export default function ClientResults() {
 
         {/* ── Bottom CTA ── */}
         <div style={{ textAlign: 'center' }}>
-          <a href="/contact"
+          <a href="/case-studies"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '18px 48px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.06em', textTransform: 'uppercase', boxShadow: '0 8px 28px rgba(255,176,0,.42)', transition: 'all .18s', whiteSpace: 'nowrap' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 36px rgba(255,176,0,.50)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,176,0,.42)'; }}
           >
-            Work With a Trusted Marketing Agency <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            View More Case Studies <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
           </a>
         </div>
 
@@ -133,6 +133,11 @@ export default function ClientResults() {
       <style>{`
         @media (max-width: 760px) {
           .cr-grid { grid-template-columns: 1fr !important; }
+          .cr-section { padding: 56px 0 !important; }
+        }
+        @media (max-width: 480px) {
+          .cr-section { padding: 44px 0 !important; }
+          .cr-cta-btn { padding: 14px 24px !important; white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
         }
       `}</style>
     </section>

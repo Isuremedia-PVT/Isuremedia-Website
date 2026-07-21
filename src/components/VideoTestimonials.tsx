@@ -40,15 +40,11 @@ export default function VideoTestimonials() {
   const [playing, setPlaying] = useState<string | null>(null);
 
   return (
-    <section style={{ padding: '92px 0 48px', background: '#fff' }}>
+    <section className="vt-section" style={{ padding: '92px 0 48px', background: '#fff' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
-          <h4 style={{ fontFamily: J, fontSize: 13, fontWeight: 600, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', display: 'inline-block', flexShrink: 0 }} />
-            Video Reviews
-          </h4>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
             Watch What Our{' '}
             <span style={{ color: 'var(--color-primary)' }}>Clients Say</span>
@@ -59,7 +55,7 @@ export default function VideoTestimonials() {
         </div>
 
         {/* Video cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 24 }}>
+        <div className="vt-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
           {videos.map(v => (
             <div
               key={v.id}
@@ -113,7 +109,7 @@ export default function VideoTestimonials() {
         </div>
 
         {/* Bottom CTA */}
-        <div style={{ textAlign: 'center', marginTop: 44 }}>
+        <div className="vt-cta" style={{ textAlign: 'center', marginTop: 44 }}>
           <a href="#cta"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
@@ -123,6 +119,17 @@ export default function VideoTestimonials() {
           </a>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .vt-section { padding: 56px 0 36px !important; }
+          .vt-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .vt-section { padding: 44px 0 28px !important; }
+          .vt-cta a { width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
+        }
+      `}</style>
     </section>
   );
 }

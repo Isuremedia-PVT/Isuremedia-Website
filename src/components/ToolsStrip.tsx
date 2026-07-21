@@ -22,35 +22,57 @@ const tools = [
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 
 export default function ToolsStrip() {
-  const doubled = [...tools, ...tools];
+  const row1 = [...tools, ...tools];
+
+  const card = (t: { name: string; src: string }, i: number) => (
+    <div key={i} style={{
+      flexShrink: 0,
+      background: '#fff',
+      border: '1.5px solid var(--color-border)',
+      borderRadius: 16,
+      padding: '14px 28px',
+      boxShadow: '0 2px 12px rgba(0,0,0,.05)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: 82,
+      minWidth: 178,
+      transition: 'box-shadow .2s, border-color .2s, transform .2s',
+    }}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={t.src}
+        alt={t.name}
+        width={158}
+        height={52}
+        style={{ objectFit: 'contain', display: 'block', height: 46, width: 'auto', maxWidth: 158 }}
+      />
+    </div>
+  );
 
   return (
-    <div style={{ padding: '36px 0', background: 'var(--color-bg-soft)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)', overflow: 'hidden' }}>
+    <div style={{ padding: '52px 0 48px', background: 'var(--color-bg-soft)', overflow: 'hidden', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
 
-      <p style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-text-heading)', textAlign: 'center', marginBottom: 22 }}>
-        Tools We Use
-      </p>
-
-      {/* Scrolling track */}
-      <div style={{ overflow: 'hidden', position: 'relative' }}>
-        {/* Fade edges */}
-        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 80, background: 'linear-gradient(to right,#F7F8FA,transparent)', zIndex: 2, pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 80, background: 'linear-gradient(to left,#F7F8FA,transparent)', zIndex: 2, pointerEvents: 'none' }} />
-
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center', animation: 'ism-marquee 45s linear infinite', width: 'max-content' }}>
-          {doubled.map((t, i) => (
-            <div key={i} style={{ flexShrink: 0, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 12, padding: '10px 18px', boxShadow: '0 1px 4px rgba(0,0,0,.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 64, minWidth: 140 }}>
-              <img
-                src={t.src}
-                alt={t.name}
-                width={120}
-                height={40}
-                style={{ objectFit: 'contain', display: 'block' }}
-              />
-            </div>
-          ))}
+      {/* ── Header ── */}
+      <div style={{ textAlign: 'center', marginBottom: 32, padding: '0 28px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18, maxWidth: 380, margin: '0 auto 10px' }}>
+          <div style={{ flex: 1, height: 1, background: 'linear-gradient(to right, transparent, var(--color-border))' }} />
+          <p style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.08em', textTransform: 'uppercase', whiteSpace: 'nowrap', margin: 0 }}>
+            Tools We Use
+          </p>
+          <div style={{ flex: 1, height: 1, background: 'linear-gradient(to left, transparent, var(--color-border))' }} />
         </div>
       </div>
+
+      {/* ── Single row — scrolls left ── */}
+      <div style={{ overflow: 'hidden', position: 'relative' }}>
+        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to right, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to left, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center', animation: 'ism-marquee 50s linear infinite', width: 'max-content' }}>
+          {row1.map((t, i) => card(t, i))}
+        </div>
+      </div>
+
     </div>
   );
 }

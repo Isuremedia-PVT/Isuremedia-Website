@@ -12,17 +12,11 @@ export default function TrustVideo() {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <section style={{ padding: '96px 0', background: '#fff' }}>
+    <section className="tv-section" style={{ padding: '96px 0', background: '#fff' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         {/* ── Centered Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 52 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', flexShrink: 0, display: 'inline-block' }} />
-            <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.12em', textTransform: 'uppercase', color: 'var(--color-primary)' }}>
-              Trusted Worldwide
-            </span>
-          </div>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3vw,42px)', fontWeight: 800, color: 'var(--color-text-heading)', lineHeight: 1.15, letterSpacing: '-0.5px' }}>
             Grow with a <span style={{ color: 'var(--color-primary)' }}>Results-Driven</span> Marketing Agency
           </h2>
@@ -80,7 +74,7 @@ export default function TrustVideo() {
             <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
               Isuremedia works with clients of every size, from local businesses and startups to established brands, multi location companies, and enterprise clients, across the US, UK, Canada, and beyond. We have worked across every major industry and offer clear pricing that works for any budget. Our terms are month to month because we genuinely believe in the quality of our work.
             </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
+            <div className="tv-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
               <a href="#cta"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.30)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
@@ -102,7 +96,13 @@ export default function TrustVideo() {
       </div>
       <style>{`
         @media (max-width: 768px) {
-          .tv-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .tv-section { padding: 56px 0 !important; }
+          .tv-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+          .tv-btns { flex-direction: column !important; align-items: stretch !important; }
+          .tv-btns a { width: 100% !important; justify-content: center !important; box-sizing: border-box !important; }
+        }
+        @media (max-width: 480px) {
+          .tv-section { padding: 44px 0 !important; }
         }
       `}</style>
     </section>

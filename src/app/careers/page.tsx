@@ -107,18 +107,6 @@ const ROLES = [
 
 /* ── COMPONENTS ───────────────────────────────────────────────────────── */
 
-function Pill({ text, amber }: { text: string; amber?: boolean }) {
-  const bg     = amber ? 'rgba(255,176,0,.10)' : 'var(--ism-blue-50)';
-  const border = amber ? 'rgba(255,176,0,.30)' : 'var(--ism-blue-100)';
-  const dot    = amber ? 'var(--ism-amber)'    : 'var(--color-primary)';
-  const color  = amber ? 'var(--ism-amber)'    : 'var(--color-primary)';
-  return (
-    <div style={{ display:'inline-flex', alignItems:'center', gap:8, background:bg, border:`1px solid ${border}`, borderRadius:100, padding:'6px 18px', marginBottom:20 }}>
-      <span style={{ width:7, height:7, borderRadius:'50%', background:dot, display:'inline-block' }} />
-      <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color, letterSpacing:'.09em', textTransform:'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
 
 /* ══ PAGE ═════════════════════════════════════════════════════════════════ */
 export default function CareersPage() {
@@ -264,7 +252,6 @@ export default function CareersPage() {
             <div className="cr-why-grid" style={{ display:'grid', gridTemplateColumns:'420px 1fr', gap:72, alignItems:'start' }}>
               {/* Left sticky heading */}
               <div style={{ position:'sticky', top:100 }}>
-                <Pill text="Why IsureMedia" />
                 <h2 style={{ fontFamily:J, fontSize:'clamp(26px,2.8vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', lineHeight:1.12, margin:'0 0 24px' }}>
                   Join a Workplace Where You Are Constantly Challenged to Be Better.
                 </h2>
@@ -297,7 +284,6 @@ export default function CareersPage() {
         <section className="cr-section" style={{ background:'#fff', padding:'100px 0' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:56 }}>
-              <Pill text="Life at IsureMedia" />
               <h2 style={{ margin:'0', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
                 What You Can Expect When You Join Us
               </h2>
@@ -331,7 +317,6 @@ export default function CareersPage() {
         <section id="cr-openings" className="cr-section" style={{ background:'var(--color-bg-soft)', padding:'100px 0' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:52 }}>
-              <Pill text="Current Openings" />
               <h2 style={{ margin:'0 0 12px', fontFamily:J, fontWeight:900, fontSize:'clamp(26px,2.5vw,40px)', lineHeight:1.15, letterSpacing:'-0.5px', color:'var(--color-navy)' }}>
                 We Are Hiring Right Now
               </h2>

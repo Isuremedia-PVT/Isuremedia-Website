@@ -185,14 +185,6 @@ function matchesFilters(study: Study, svc: string, ind: string): boolean {
 
 /* ── COMPONENTS ───────────────────────────────────────────────────────── */
 
-function Pill({ text, amber }: { text: string; amber?: boolean }) {
-  return (
-    <div style={{ display:'inline-flex', alignItems:'center', gap:8, background: amber ? 'rgba(255,176,0,.10)' : 'var(--ism-blue-50)', border:`1px solid ${amber ? 'rgba(255,176,0,.30)' : 'var(--ism-blue-100)'}`, borderRadius:100, padding:'6px 18px', marginBottom:20 }}>
-      <span style={{ width:7, height:7, borderRadius:'50%', background: amber ? 'var(--ism-amber)' : 'var(--color-primary)', display:'inline-block' }} />
-      <span style={{ fontFamily:J, fontSize:12, fontWeight:700, color: amber ? 'var(--ism-amber)' : 'var(--color-primary)', letterSpacing:'.09em', textTransform:'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
 
 function ServiceTag({ svc }: { svc: string }) {
   const style = SVC_STYLE[svc] ?? { color:'var(--color-text-muted)', bg:'var(--color-bg-soft)' };
@@ -288,7 +280,6 @@ export default function CaseStudiesPage() {
             </div>
 
             <div style={{ maxWidth:640, marginBottom:40 }}>
-              <Pill text="Case Studies" />
               <h1 style={{ fontFamily:J, fontWeight:900, fontSize:'clamp(32px,4vw,56px)', color:'var(--color-navy)', letterSpacing:'-1.5px', lineHeight:1.05, margin:'0 0 16px' }}>
                 Real Campaigns.<br />Documented Results.
               </h1>

@@ -37,14 +37,10 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
+    <section className="faq-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
 
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
-          <h4 style={{ fontFamily: J, fontSize: 13, fontWeight: 600, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
-            <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--ism-amber)', display: 'inline-block' }} />
-            FAQ
-          </h4>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
             Answers Before You Decide
           </h2>
@@ -86,6 +82,16 @@ export default function FAQ() {
           </a>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .faq-section { padding: 56px 0 !important; }
+        }
+        @media (max-width: 480px) {
+          .faq-section { padding: 44px 0 !important; }
+          .faq-section button { padding: 16px 18px !important; }
+        }
+      `}</style>
     </section>
   );
 }

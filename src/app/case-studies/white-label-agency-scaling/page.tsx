@@ -5,14 +5,6 @@ import Footer from '@/components/Footer';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-function Pill({ text }: { text: string }) {
-  return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 20 }}>
-      <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-      <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' as const }}>{text}</span>
-    </div>
-  );
-}
 
 export default function WhiteLabelCaseStudyPage() {
   return (
@@ -63,7 +55,6 @@ export default function WhiteLabelCaseStudyPage() {
         {/* 2. THE CHALLENGE */}
         <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <Pill text="The Challenge" />
             <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 24px' }}>
               Capped at Capacity With No Safe Way to Scale
             </h2>
@@ -76,7 +67,6 @@ export default function WhiteLabelCaseStudyPage() {
         {/* 3. WHAT WE DID */}
         <section style={{ background: '#fff', padding: '80px 0' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <Pill text="What We Did" />
             <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
               Became Their Invisible Delivery Team
             </h2>
@@ -103,7 +93,6 @@ export default function WhiteLabelCaseStudyPage() {
         {/* 4. THE RESULTS */}
         <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <Pill text="The Results" />
             <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
               Growth Without Operational Risk
             </h2>
