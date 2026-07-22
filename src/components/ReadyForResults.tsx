@@ -6,7 +6,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 export default function ReadyForResults() {
   return (
     <section style={{ background: '#fff', padding: '72px 0 80px' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div className="rfr-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
 

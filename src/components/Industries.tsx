@@ -50,7 +50,7 @@ export default function Industries() {
 
   return (
     <section id="industries" className="ind-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 600, margin: '0 auto 48px' }}>

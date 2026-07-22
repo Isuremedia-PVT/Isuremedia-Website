@@ -14,7 +14,7 @@ const stats = [
 export default function Stats() {
   return (
     <section style={{ padding: '56px 0', background: '#fff' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
         <div className="stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1, background: 'var(--color-border)', borderRadius: 16, overflow: 'hidden', boxShadow: 'var(--sh-sm)' }}>
           {stats.map((s, i) => (
             <div key={i} style={{ background: '#fff', padding: '40px 24px', textAlign: 'center' }}>

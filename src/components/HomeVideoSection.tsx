@@ -17,7 +17,7 @@ export default function HomeVideoSection() {
       <div style={{ position: 'absolute', top: '-20%', left: '-10%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(255,176,0,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div className="hvs-container" style={{ maxWidth: 1080, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
+      <div className="hvs-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
 
         {/* Heading */}
         <div style={{ textAlign: 'center', marginBottom: 52 }}>
@@ -97,7 +97,7 @@ export default function HomeVideoSection() {
       <style>{`
         @media (max-width: 768px) {
           .hvs-section { padding: 60px 0 !important; }
-          .hvs-container { padding: 0 20px !important; }
+          .hvs-container { padding: 0 20px !important; max-width: 100% !important; }
         }
         @media (max-width: 480px) {
           .hvs-section { padding: 44px 0 !important; }

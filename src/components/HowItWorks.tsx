@@ -15,7 +15,7 @@ export default function HowItWorks() {
   return (
     <section className="hiw-section" style={{ padding: '96px 0 100px', background: '#fff', position: 'relative', overflow: 'hidden' }}>
 
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 28px', position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
 
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 72 }}>

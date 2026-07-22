@@ -6,7 +6,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 export default function CTASection() {
   return (
     <section id="cta" className="cta-section" style={{ padding: '88px 0', background: '#fff', overflow: 'visible' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', display: 'grid', gridTemplateColumns: '1fr 360px', alignItems: 'center', gap: 40, overflow: 'visible', minHeight: 240 }}>
 

@@ -85,8 +85,9 @@ export default function ServicesPage() {
 
         {/* ── HERO ── */}
         <section style={{ background: 'var(--color-bg-soft)', padding: '72px 0', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: -80, right: -60, width: 460, height: 460, background: 'rgba(30,77,195,0.18)', borderRadius: '58% 42% 50% 50% / 46% 58% 42% 54%', filter: 'blur(50px)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', bottom: -60, left: -50, width: 360, height: 360, background: 'rgba(255,176,0,0.13)', borderRadius: '46% 54% 62% 38% / 54% 46% 54% 46%', filter: 'blur(44px)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: '25%', left: '40%', width: 260, height: 260, background: 'rgba(30,77,195,0.08)', borderRadius: '50% 50% 38% 62% / 62% 38% 62% 38%', filter: 'blur(38px)', pointerEvents: 'none' }} />
 
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative' }}>
             <div className="svc-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', minHeight: 480 }}>

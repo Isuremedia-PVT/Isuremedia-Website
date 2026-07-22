@@ -111,7 +111,7 @@ export default function Services() {
 
   return (
     <section id="services" className="svc-section" style={{ padding: '100px 0 110px', background: '#fff' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', maxWidth: 700, margin: '0 auto 56px' }}>

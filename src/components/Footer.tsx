@@ -73,7 +73,7 @@ export default function Footer() {
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(30,77,195,.18) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '5%', left: '-5%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,176,0,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px', position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
 
         {/* ── Main grid ── */}
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '280px repeat(4,1fr)', gap: 48, paddingBottom: 56, borderBottom: '1px solid rgba(255,255,255,.08)' }}>

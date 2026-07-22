@@ -41,7 +41,7 @@ export default function VideoTestimonials() {
 
   return (
     <section className="vt-section" style={{ padding: '92px 0 48px', background: '#fff' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
