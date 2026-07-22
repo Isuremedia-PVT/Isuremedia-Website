@@ -53,7 +53,7 @@ export default function Testimonials() {
 
   return (
     <section className="tsm-section" style={{ padding: '48px 0 88px', background: 'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: 14, lineHeight: 1.20 }}>

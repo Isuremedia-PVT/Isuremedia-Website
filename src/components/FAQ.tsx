@@ -38,7 +38,7 @@ export default function FAQ() {
 
   return (
     <section className="faq-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>

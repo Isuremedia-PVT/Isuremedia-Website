@@ -13,7 +13,7 @@ export default function TrustVideo() {
 
   return (
     <section className="tv-section" style={{ padding: '96px 0', background: '#fff' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         {/* ── Centered Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 52 }}>

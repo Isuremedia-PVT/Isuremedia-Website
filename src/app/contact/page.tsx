@@ -7,61 +7,76 @@ import Footer from '@/components/Footer';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const services = [
-  'Website Development',
-  'SEO & Content',
-  'Google / Meta Ads',
-  'Social Media Marketing',
-  'Marketing Automation',
-  'White Label Services',
-  'Other',
+const SERVICE_OPTIONS = [
+  'SEO',
+  'Paid ads',
+  'Websites and funnels',
+  'Marketing automation',
+  'White-label fulfillment',
+  'Content and creative',
+  "Not sure yet — let's talk",
 ];
 
-const contactInfo = [
+const STEPS = [
+  {
+    num: '01',
+    title: 'Start the Conversation.',
+    body: 'Come as you are. Bring your goals, your challenges, or just the feeling that your business deserves more. We will help you build from there.',
+  },
+  {
+    num: '02',
+    title: 'See the Transformation.',
+    body: 'We bring the right expertise, the right strategy, and the full execution to help every business and agency we work with reach their real potential.',
+  },
+  {
+    num: '03',
+    title: 'Never Stop Growing.',
+    body: 'The market will keep changing. Your competition will keep pushing. We make sure you stay ahead, keep winning, and never stop growing.',
+  },
+];
+
+const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-location-dot',
-    title: 'India Office',
-    lines: ['1st Floor, Chandra Complex, Gas Godam Road,', 'Haldwani, Uttarakhand 263139, India'],
+    label: 'India Office',
+    lines: ['Chandra Complex, Gas Godam Road', 'Haldwani, Uttarakhand, India'],
   },
   {
     icon: 'fa-solid fa-location-dot',
-    title: 'USA Office',
+    label: 'USA Office',
     lines: ['30 N, Gould St., Suite B,', 'Sheridan, 82801, Wyoming, United States'],
   },
   {
     icon: 'fa-solid fa-phone',
-    title: 'Phone',
+    label: 'Phone',
     lines: ['+91 70110 41363', '+1 646-588-1430'],
-    href: 'tel:+917011041363',
+    hrefs: ['tel:+917011041363', 'tel:+16465881430'],
   },
   {
     icon: 'fa-solid fa-envelope',
-    title: 'Email',
+    label: 'Email',
     lines: ['hello@isuremedia.com'],
-    href: 'mailto:hello@isuremedia.com',
+    hrefs: ['mailto:hello@isuremedia.com'],
   },
   {
     icon: 'fa-solid fa-clock',
-    title: 'Working Hours',
-    lines: ['Mon – Fri: 9:00 AM – 7:00 PM IST', 'Sat: 10:00 AM – 4:00 PM IST'],
+    label: 'Working Hours',
+    lines: ['Mon – Fri: 9 AM – 7 PM IST', 'Sat: 10 AM – 4 PM IST'],
   },
 ];
 
-const socials = [
-  { icon: 'fa-brands fa-linkedin-in', href: '#', label: 'LinkedIn' },
-  { icon: 'fa-brands fa-facebook-f', href: '#', label: 'Facebook' },
-  { icon: 'fa-brands fa-instagram', href: '#', label: 'Instagram' },
-  { icon: 'fa-brands fa-x-twitter', href: '#', label: 'X / Twitter' },
-  { icon: 'fa-brands fa-youtube', href: '#', label: 'YouTube' },
-];
-
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', website: '', message: '' });
+  const [services, setServices] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  }
+
+  function toggleSvc(s: string) {
+    setServices(prev => prev.includes(s) ? prev.filter(x => x !== s) : [...prev, s]);
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -75,191 +90,255 @@ export default function ContactPage() {
       <Navbar />
       <main>
 
-        {/* ── Hero Banner ── */}
-        <section style={{ background: 'linear-gradient(130deg,#1840A0 0%,#1E4DC3 40%,#2F5FE8 75%,#3B6CF5 100%)', padding: '88px 28px 72px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: '-15%', right: '-5%', width: 480, height: 480, background: 'radial-gradient(circle,rgba(255,176,0,.12) 0%,transparent 65%)', pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 360, height: 360, background: 'radial-gradient(circle,rgba(30,77,195,.25) 0%,transparent 65%)', pointerEvents: 'none' }} />
-          <div style={{ position: 'relative', zIndex: 1, maxWidth: 720, margin: '0 auto' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 16px', borderRadius: 100, background: 'rgba(255,176,0,.15)', border: '1px solid rgba(255,176,0,.35)', fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 20 }}>
-              <i className="fa-solid fa-headset" /> Get In Touch
-            </span>
-            <h1 style={{ color: '#fff', marginBottom: 16 }}>Let&apos;s Grow Your Business Together</h1>
-            <p style={{ fontFamily: I, fontSize: 18, color: 'rgba(255,255,255,.82)', lineHeight: 1.75, maxWidth: 580, margin: '0 auto' }}>
-              Tell us about your project and we&apos;ll get back to you within 24 hours with a custom strategy — no fluff, no commitment.
-            </p>
+        {/* ══ 01. HERO ═════════════════════════════════════════════════════ */}
+        <section className="ct-hero-section" style={{ background: 'linear-gradient(135deg,#EEF2FF 0%,#E8EFFF 55%,#EEF2FF 100%)', padding: '72px 0 80px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: -80, right: -60, width: 460, height: 460, background: 'rgba(30,77,195,0.18)', borderRadius: '58% 42% 50% 50% / 46% 58% 42% 54%', filter: 'blur(50px)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', bottom: -60, left: -50, width: 360, height: 360, background: 'rgba(30,77,195,0.10)', borderRadius: '46% 54% 62% 38% / 54% 46% 54% 46%', filter: 'blur(44px)', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', top: '30%', left: '40%', width: 280, height: 280, background: 'rgba(255,176,0,0.10)', borderRadius: '50% 50% 38% 62% / 62% 38% 62% 38%', filter: 'blur(40px)', pointerEvents: 'none' }} />
+
+          <div className="ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
+            <div className="ct-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', minHeight: 380 }}>
+
+              {/* LEFT */}
+              <div>
+                <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(32px,4.5vw,60px)', color: 'var(--color-navy)', lineHeight: 1.06, letterSpacing: '-0.5px', marginBottom: 20 }}>
+                  Get in Touch
+                </h1>
+                <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 40 }}>
+                  Your proposal is one form away. Your answers are one call away.
+                </p>
+                <div className="ct-hero-btns" style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+                  <a href="#proposal-form"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
+                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
+                  >
+                    Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                  </a>
+                  <a href="#proposal-form"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 4px 16px rgba(30,77,195,.25)', transition: 'all .18s', whiteSpace: 'nowrap' }}
+                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = 'var(--color-primary-hover)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.background = 'var(--color-primary)'; }}
+                  >
+                    Book a Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                  </a>
+                </div>
+              </div>
+
+              {/* RIGHT — quick info cards */}
+              <div className="ct-quick-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                {[
+                  { icon: 'fa-solid fa-location-dot', title: 'India Office', text: 'Haldwani, Uttarakhand' },
+                  { icon: 'fa-solid fa-location-dot', title: 'USA Office', text: 'Sheridan, Wyoming' },
+                  { icon: 'fa-solid fa-phone', title: 'Call Us', text: '+91 70110 41363' },
+                  { icon: 'fa-solid fa-envelope', title: 'Email', text: 'hello@isuremedia.com' },
+                ].map(c => (
+                  <div key={c.title} style={{ background: '#fff', borderRadius: 14, padding: '20px 18px', boxShadow: '0 2px 16px rgba(30,77,195,.08)', border: '1px solid var(--color-border)' }}>
+                    <div style={{ width: 42, height: 42, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
+                      <i className={c.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
+                    </div>
+                    <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.07em', textTransform: 'uppercase', marginBottom: 5 }}>{c.title}</p>
+                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.5, wordBreak: 'break-word' }}>{c.text}</p>
+                  </div>
+                ))}
+              </div>
+
+            </div>
           </div>
         </section>
 
-        {/* ── Main Content ── */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '72px 28px 88px' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 420px', gap: 48, alignItems: 'start' }} className="contact-grid">
+        {/* ══ 02. FORM + RIGHT PANEL ════════════════════════════════════════ */}
+        <section id="proposal-form" className="ct-section-pad" style={{ background: '#F7F8FA', padding: '80px 0 96px', borderTop: '1px solid var(--color-border)' }}>
+          <div className="contact-grid ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 400px', gap: 48, alignItems: 'start' }}>
 
-            {/* ── Contact Form ── */}
-            <div style={{ background: '#fff', borderRadius: 20, padding: '44px 40px', boxShadow: 'var(--sh-lg)', border: '1px solid var(--color-border)' }}>
+            {/* ── Form Card ── */}
+            <div className="ct-form-card" style={{ background: '#fff', borderRadius: 24, padding: '48px 44px', boxShadow: '0 4px 32px rgba(0,0,0,.07)', border: '1px solid var(--color-border)' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '48px 20px' }}>
                   <div style={{ width: 72, height: 72, borderRadius: '50%', background: '#E8F5EE', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px' }}>
                     <i className="fa-solid fa-check" style={{ fontSize: 30, color: '#0E9B6E' }} />
                   </div>
-                  <h2 style={{ marginBottom: 12 }}>Message Received!</h2>
+                  <h2 style={{ fontFamily: J, fontWeight: 900, color: 'var(--color-navy)', marginBottom: 12 }}>Proposal Request Received!</h2>
                   <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                    Thank you for reaching out. Our team will review your query and get back to you within <strong>24 hours</strong>.
+                    We&apos;ll review your details and get back to you within <strong>24 hours</strong> with a custom proposal.
                   </p>
                   <button
-                    onClick={() => { setSubmitted(false); setForm({ name: '', email: '', phone: '', service: '', message: '' }); }}
-                    style={{ marginTop: 28, display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', border: 'none', cursor: 'pointer', transition: 'background .15s' }}
-                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-primary-hover)')}
-                    onMouseLeave={e => (e.currentTarget.style.background = 'var(--color-primary)')}
+                    onClick={() => { setSubmitted(false); setForm({ name: '', email: '', phone: '', website: '', message: '' }); setServices([]); }}
+                    style={{ marginTop: 28, display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', border: 'none', cursor: 'pointer' }}
                   >
-                    Send Another Message <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                    Submit Another <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
                   </button>
                 </div>
               ) : (
                 <>
-                  <h2 style={{ marginBottom: 6 }}>Send Us a Message</h2>
-                  <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', marginBottom: 32 }}>Fill in the form and we&apos;ll craft a custom plan for you.</p>
+                  <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2.4vw,30px)', color: 'var(--color-navy)', lineHeight: 1.15, letterSpacing: '-0.3px', marginBottom: 8 }}>
+                    Experience Measurable Growth.
+                  </h2>
+                  <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.7, marginBottom: 28 }}>
+                    Choose ISureMedia and give your business the growth it deserves.
+                  </p>
+
 
                   <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
 
-                    {/* Name + Email */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
-                      <Field label="Full Name" required>
-                        <input
-                          name="name" value={form.name} onChange={handleChange} required
-                          placeholder="John Smith"
-                          style={inputStyle}
+                      <Field label="Full name" required>
+                        <input name="name" value={form.name} onChange={handleChange} required placeholder="Harish Pandey" style={inp}
                           onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-primary)')}
-                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                        />
+                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} />
                       </Field>
-                      <Field label="Email Address" required>
-                        <input
-                          name="email" type="email" value={form.email} onChange={handleChange} required
-                          placeholder="john@company.com"
-                          style={inputStyle}
+                      <Field label="Email" required>
+                        <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="harish@yourbusiness.com" style={inp}
                           onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-primary)')}
-                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                        />
+                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} />
                       </Field>
                     </div>
 
-                    {/* Phone + Service */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }} className="form-row">
-                      <Field label="Phone Number">
-                        <input
-                          name="phone" type="tel" value={form.phone} onChange={handleChange}
-                          placeholder="+1 234 567 8900"
-                          style={inputStyle}
+                      <Field label="Phone" note="Optional">
+                        <input name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+1 555 000 0000" style={inp}
                           onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-primary)')}
-                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                        />
+                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} />
                       </Field>
-                      <Field label="Service Interested In">
-                        <select
-                          name="service" value={form.service} onChange={handleChange}
-                          style={{ ...inputStyle, color: form.service ? 'var(--color-text-body)' : 'var(--color-text-muted)' }}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                        <label style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)' }}>
+                          Website <span style={{ fontFamily: I, fontSize: 12, fontWeight: 400, color: 'var(--color-text-muted)' }}>Optional</span>
+                        </label>
+                        <input name="website" value={form.website} onChange={handleChange} placeholder="yourbusiness.com" style={inp}
                           onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-primary)')}
-                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
-                        >
-                          <option value="" disabled>Select a service…</option>
-                          {services.map(s => <option key={s} value={s}>{s}</option>)}
-                        </select>
-                      </Field>
+                          onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')} />
+                        <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-text-muted)', lineHeight: 1.5, margin: 0 }}>
+                          Your website helps us prepare something useful before we reach out.
+                        </p>
+                      </div>
                     </div>
 
-                    {/* Message */}
-                    <Field label="Your Message" required>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)' }}>
+                        I need help with <span style={{ color: '#E53E3E' }}>*</span>
+                      </label>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                        {SERVICE_OPTIONS.map(s => {
+                          const active = services.includes(s);
+                          return (
+                            <button key={s} type="button" onClick={() => toggleSvc(s)} className="ct-pill"
+                              style={{ padding: '8px 14px', borderRadius: 8, border: `1.5px solid ${active ? 'var(--color-primary)' : 'var(--color-border)'}`, background: active ? '#EEF2FF' : '#F7F8FA', color: active ? 'var(--color-primary)' : 'var(--color-text-muted)', fontFamily: J, fontSize: 13, fontWeight: active ? 700 : 500, cursor: 'pointer', transition: 'all .15s' }}>
+                              {s}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div>
                       <textarea
-                        name="message" value={form.message} onChange={handleChange} required
-                        placeholder="Tell us about your business goals, current challenges, and what you'd like to achieve…"
-                        rows={5}
-                        style={{ ...inputStyle, resize: 'vertical', minHeight: 130 }}
+                        name="message" value={form.message} onChange={handleChange}
+                        placeholder="What should we know before we reach out?"
+                        rows={4}
+                        style={{ ...inp, resize: 'vertical', minHeight: 110, width: '100%', boxSizing: 'border-box' as const }}
                         onFocus={e => (e.currentTarget.style.borderColor = 'var(--color-primary)')}
                         onBlur={e => (e.currentTarget.style.borderColor = 'var(--color-border)')}
                       />
-                    </Field>
+                      <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-text-muted)', marginTop: 4 }}>
+                        Optional. Your goals, your situation, anything relevant.
+                      </p>
+                    </div>
 
-                    <button
-                      type="submit" disabled={loading}
+                    <button type="submit" disabled={loading}
                       style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, padding: '16px 32px', borderRadius: 10, fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-navy)', background: loading ? '#e0aa00' : 'var(--ism-amber)', border: 'none', cursor: loading ? 'not-allowed' : 'pointer', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.30)', letterSpacing: '.03em' }}
                       onMouseEnter={e => { if (!loading) e.currentTarget.style.background = 'var(--color-accent-hover)'; }}
                       onMouseLeave={e => { if (!loading) e.currentTarget.style.background = 'var(--ism-amber)'; }}
                     >
                       {loading
                         ? <><i className="fa-solid fa-circle-notch fa-spin" /> Sending…</>
-                        : <><i className="fa-solid fa-paper-plane" /> Send Message</>}
+                        : <>Send my free proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} /></>}
                     </button>
 
-                    <p style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', textAlign: 'center', marginTop: -4 }}>
-                      <i className="fa-solid fa-lock" style={{ fontSize: 10, marginRight: 5, color: 'var(--color-primary)' }} />
-                      Your information is 100% confidential and never shared.
+                    <p style={{ fontFamily: I, fontSize: 12.5, color: 'var(--color-text-muted)', textAlign: 'center', marginTop: -4 }}>
+                      No long-term contracts · No pitch on the first call · Month to month
                     </p>
+
+                    <div style={{ textAlign: 'center', marginTop: -8 }}>
+                      <a href="#proposal-form" style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none' }}>
+                        Prefer to talk? Book a free call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
+                      </a>
+                    </div>
+
                   </form>
                 </>
               )}
             </div>
 
-            {/* ── Sidebar ── */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+            {/* ── Right Panel ── */}
+            <div className="ct-right-panel">
+              <div className="ct-panel-inner" style={{ background: 'linear-gradient(145deg,#0F2070 0%,#1E4DC3 55%,#2558E0 100%)', borderRadius: 24, padding: '40px 32px', boxShadow: '0 8px 40px rgba(30,77,195,.22)', position: 'sticky', top: 24 }}>
+                <h3 style={{ fontFamily: J, fontWeight: 900, fontSize: 20, color: '#fff', lineHeight: 1.3, letterSpacing: '-0.2px', marginBottom: 32 }}>
+                  The growth you want is one call away.
+                </h3>
 
-              {/* Contact Info Card */}
-              <div style={{ background: '#fff', borderRadius: 20, padding: '32px 28px', boxShadow: 'var(--sh-md)', border: '1px solid var(--color-border)' }}>
-                <h3 style={{ marginBottom: 24 }}>Contact Information</h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-                  {contactInfo.map(item => (
-                    <div key={item.title} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                      <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <i className={item.icon} style={{ fontSize: 15, color: 'var(--color-primary)' }} />
+                {STEPS.map((step, i) => (
+                  <div key={step.num} style={{ display: 'flex', gap: 14 }}>
+                    <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                      <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'rgba(255,176,0,0.18)', border: '1.5px solid rgba(255,176,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: J, fontSize: 10, fontWeight: 800, color: 'var(--ism-amber)', letterSpacing: '.04em' }}>
+                        {step.num}
                       </div>
-                      <div>
-                        <p style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 4 }}>{item.title}</p>
-                        {item.href
-                          ? item.lines.map(line => (
-                              <a key={line} href={item.href} style={{ display: 'block', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)', textDecoration: 'none', lineHeight: 1.6, transition: 'color .15s' }}
-                                onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
-                                onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-body)')}
-                              >{line}</a>
-                            ))
-                          : item.lines.map(line => (
-                              <p key={line} style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>{line}</p>
-                            ))
-                        }
-                      </div>
+                      {i < STEPS.length - 1 && (
+                        <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,.14)', marginTop: 5, marginBottom: 5 }} />
+                      )}
                     </div>
-                  ))}
-                </div>
+                    <div style={{ paddingTop: 4, paddingBottom: i < STEPS.length - 1 ? 0 : 28 }}>
+                      <p style={{ fontFamily: J, fontSize: 13.5, fontWeight: 800, color: '#fff', marginBottom: 5, lineHeight: 1.3 }}>
+                        Step {step.num}: {step.title}
+                      </p>
+                      <p style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.70)', lineHeight: 1.65, margin: '0 0 16px' }}>
+                        {step.body}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+
+                <a href="#proposal-form"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
+                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
+                >
+                  Skip the wait. Book a 30-minute call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
+                </a>
               </div>
-
-              {/* Social Card */}
-              <div style={{ background: 'linear-gradient(135deg,#1840A0 0%,#2F5FE8 100%)', borderRadius: 20, padding: '28px', boxShadow: 'var(--sh-md)' }}>
-                <p style={{ fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', marginBottom: 6 }}>Follow Us</p>
-                <p style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.75)', marginBottom: 20 }}>Stay updated with tips, case studies & results.</p>
-                <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                  {socials.map(s => (
-                    <a key={s.icon} href={s.href} aria-label={s.label}
-                      style={{ width: 38, height: 38, borderRadius: 9, background: 'rgba(255,255,255,.14)', border: '1px solid rgba(255,255,255,.22)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 14, textDecoration: 'none', transition: 'all .18s' }}
-                      onMouseEnter={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.color = 'var(--color-navy)'; e.currentTarget.style.borderColor = 'var(--ism-amber)'; }}
-                      onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,.14)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'rgba(255,255,255,.22)'; }}
-                    >
-                      <i className={s.icon} />
-                    </a>
-                  ))}
-                </div>
-              </div>
-
-
             </div>
+
           </div>
         </section>
 
-        {/* ── Map Section ── */}
-        <section style={{ background: '#fff', padding: '0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 28px 80px' }}>
-            <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: 'var(--sh-md)', border: '1px solid var(--color-border)' }}>
+        {/* ══ 03. CONTACT INFO + MAP ════════════════════════════════════════ */}
+        <section className="ct-section-pad" style={{ background: '#fff', padding: '80px 0 88px', borderTop: '1px solid var(--color-border)' }}>
+          <div className="ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+
+            {/* Info grid */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1.2fr 1fr 1fr 1.1fr', gap: 20, marginBottom: 64 }} className="cinfo-grid">
+              {CONTACT_INFO.map(item => (
+                <div key={item.label} style={{ background: '#fff', borderRadius: 16, padding: '28px 24px', border: '1px solid var(--color-border)', borderTop: '3px solid var(--color-primary)', boxShadow: '0 4px 20px rgba(30,77,195,.07)' }}>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                    <i className={item.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
+                  </div>
+                  <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>{item.label}</p>
+                  {item.lines.map((line, li) =>
+                    item.hrefs?.[li]
+                      ? <a key={li} href={item.hrefs[li]} style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none', lineHeight: 1.7, transition: 'color .15s' }}
+                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
+                          onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-muted)')}>{line}</a>
+                      : <p key={li} style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>{line}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Map */}
+            <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,.08)', border: '1px solid var(--color-border)' }}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.8383285634397!2d79.51780867541577!3d29.218339775327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09a5a5a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2sHaldwani%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
-                height="380"
+                height="420"
                 style={{ border: 0, display: 'block' }}
                 allowFullScreen
                 loading="lazy"
@@ -267,6 +346,7 @@ export default function ContactPage() {
                 title="ISureMedia Office Location"
               />
             </div>
+
           </div>
         </section>
 
@@ -274,29 +354,62 @@ export default function ContactPage() {
       <Footer />
 
       <style>{`
-        @media (max-width: 900px) {
-          .contact-grid { grid-template-columns: 1fr !important; }
+        /* ─── Large tablet (≤1100px) ─── */
+        @media (max-width: 1100px) {
+          .contact-grid { grid-template-columns: 1fr 320px !important; gap: 28px !important; }
+          .cinfo-grid { grid-template-columns: repeat(3,1fr) !important; }
         }
-        @media (max-width: 600px) {
+
+        /* ─── Tablet (≤860px) ─── */
+        @media (max-width: 860px) {
+          .ct-hero-section { padding: 48px 0 52px !important; }
+          .ct-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; min-height: unset !important; }
+          .ct-quick-cards { grid-template-columns: repeat(4,1fr) !important; gap: 12px !important; }
+          .contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+          .ct-panel-inner { position: static !important; }
+          .cinfo-grid { grid-template-columns: repeat(3,1fr) !important; }
+        }
+
+        /* ─── Mobile (≤640px) ─── */
+        @media (max-width: 640px) {
+          .ct-container { padding: 0 20px !important; }
+          .ct-hero-section { padding: 40px 0 44px !important; }
+          .ct-section-pad { padding: 52px 0 60px !important; }
+          .ct-hero-btns { flex-direction: column !important; align-items: stretch !important; }
+          .ct-hero-btns a { justify-content: center !important; }
+          .ct-quick-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
           .form-row { grid-template-columns: 1fr !important; }
+          .cinfo-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+          .ct-form-card { padding: 24px 18px !important; border-radius: 16px !important; }
+          .ct-panel-inner { padding: 28px 22px !important; border-radius: 18px !important; }
+          .ct-pill { padding: 7px 11px !important; font-size: 12px !important; }
+        }
+
+        /* ─── Small mobile (≤400px) ─── */
+        @media (max-width: 400px) {
+          .ct-quick-cards { grid-template-columns: 1fr 1fr !important; }
+          .cinfo-grid { grid-template-columns: 1fr !important; }
+          .ct-pill { font-size: 11px !important; padding: 6px 10px !important; }
         }
       `}</style>
     </>
   );
 }
 
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
+function Field({ label, required, note, children }: { label: string; required?: boolean; note?: string; children: React.ReactNode }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
       <label style={{ fontFamily: 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)', fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)' }}>
-        {label}{required && <span style={{ color: '#E53E3E', marginLeft: 3 }}>*</span>}
+        {label}
+        {required && <span style={{ color: '#E53E3E', marginLeft: 3 }}>*</span>}
+        {note && <span style={{ fontFamily: 'var(--font-inter,Inter,sans-serif)', fontSize: 12, fontWeight: 400, color: 'var(--color-text-muted)', marginLeft: 6 }}>{note}</span>}
       </label>
       {children}
     </div>
   );
 }
 
-const inputStyle: React.CSSProperties = {
+const inp: React.CSSProperties = {
   width: '100%',
   padding: '12px 14px',
   borderRadius: 9,
@@ -307,5 +420,5 @@ const inputStyle: React.CSSProperties = {
   background: '#FAFBFF',
   outline: 'none',
   transition: 'border-color .18s',
-  appearance: 'none' as const,
+  boxSizing: 'border-box',
 };

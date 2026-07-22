@@ -9,7 +9,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 const SLIDES = [
   { img: '/images/banner01.png', alt: 'Isuremedia' },
   { img: '/images/banner02.png', alt: 'Client 1' },
-  { img: 'https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/gary-singleton-img.png', alt: 'Client 2' },
+  { img: '/images/banner03.png', alt: 'Client 2' },
 ];
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
   }, [active, goTo]);
 
   return (
-    <section style={{ background: 'linear-gradient(to right, #FAF9F9 0%, #FFF8E8 60%, #FAF9F9 100%)', padding: '20px 0 28px', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ background: 'linear-gradient(135deg, #F8F9FF 0%, #FDF6E8 45%, #FFFDF5 100%)', padding: '20px 0 28px', position: 'relative', overflow: 'hidden' }}>
 
       {/* Subtle bg glow */}
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
@@ -86,7 +86,7 @@ export default function Hero() {
       <style>{`
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 24px !important; }
-          .hero-container { padding: 0 20px !important; }
+          .hero-container { padding: 0 20px !important; max-width: 100% !important; }
         }
         @media (max-width: 480px) {
           .hero-btns { flex-direction: column !important; align-items: stretch !important; }

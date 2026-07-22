@@ -13,7 +13,7 @@ export default function ProblemStatement() {
       <div style={{ position: 'absolute', right: '-5%', top: '-20%', width: 600, height: 600, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', left: '-8%', bottom: '-30%', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle,rgba(0,35,83,.35) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div className="ps-container" style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px', position: 'relative', zIndex: 1 }}>
+      <div className="ps-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
 
         {/* Label */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 22 }}>
@@ -73,7 +73,7 @@ export default function ProblemStatement() {
       </div>
       <style>{`
         @media (max-width: 768px) {
-          .ps-container { padding: 0 20px !important; }
+          .ps-container { padding: 0 20px !important; max-width: 100% !important; }
         }
       `}</style>
     </section>

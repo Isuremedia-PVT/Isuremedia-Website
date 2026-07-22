@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Testimonials from '@/components/Testimonials';
 import ClientResults from '@/components/ClientResults';
+import ReviewsStrip from '@/components/ReviewsStrip';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -160,8 +161,9 @@ export default function WebsitesPage() {
 
         {/* ══ 1. HERO ══════════════════════════════════════════════════════ */}
         <section className="web-hero" style={{ background:'linear-gradient(160deg,#EDF2FF 0%,#F7F8FA 48%,#FFFBEB 100%)', padding:'96px 0 64px', position:'relative', overflow:'hidden' }}>
-          <div style={{ position:'absolute', top:'-10%', right:'-6%', width:720, height:720, background:'radial-gradient(circle,rgba(30,77,195,.13) 0%,transparent 60%)', pointerEvents:'none' }} />
-          <div style={{ position:'absolute', bottom:'-15%', left:'-5%', width:560, height:560, background:'radial-gradient(circle,rgba(255,176,0,.11) 0%,transparent 60%)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:-80, right:-60, width:460, height:460, background:'rgba(30,77,195,0.18)', borderRadius:'58% 42% 50% 50% / 46% 58% 42% 54%', filter:'blur(50px)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', bottom:-60, left:-50, width:360, height:360, background:'rgba(255,176,0,0.13)', borderRadius:'46% 54% 62% 38% / 54% 46% 54% 46%', filter:'blur(44px)', pointerEvents:'none' }} />
+          <div style={{ position:'absolute', top:'25%', left:'38%', width:260, height:260, background:'rgba(30,77,195,0.08)', borderRadius:'50% 50% 38% 62% / 62% 38% 62% 38%', filter:'blur(38px)', pointerEvents:'none' }} />
           <div style={{ position:'absolute', top:'20%', left:'50%', transform:'translateX(-50%)', width:900, height:400, background:'radial-gradient(ellipse,rgba(30,77,195,.04) 0%,transparent 70%)', pointerEvents:'none' }} />
           <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
           <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
@@ -197,34 +199,7 @@ export default function WebsitesPage() {
         </section>
 
         {/* ══ REVIEWS BAR ══════════════════════════════════════════════════ */}
-        <div style={{ background:'var(--color-bg-soft)', borderTop:'1px solid var(--color-border)', borderBottom:'1px solid var(--color-border)', padding:'32px 28px' }}>
-          <div style={{ maxWidth:1280, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:56, flexWrap:'wrap' }}>
-            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/google-review-icon.webp" alt="Google" width={44} height={44} style={{ width:44, height:44, objectFit:'contain', display:'block', flexShrink:0 }} />
-              <div>
-                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
-                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>150+</span> Google Reviews</div>
-              </div>
-            </div>
-            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
-            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
-              <div style={{ width:44, height:44, borderRadius:10, background:'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}><span style={{ fontFamily:J, fontSize:15, fontWeight:900, color:'#fff' }}>C</span></div>
-              <div>
-                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
-                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>100+</span> Clutch Reviews</div>
-              </div>
-            </div>
-            <div style={{ width:1, height:52, background:'var(--color-border)', flexShrink:0 }} />
-            <div style={{ display:'flex', alignItems:'center', gap:16 }}>
-              <div style={{ display:'flex' }}>{['#4F46E5','#0EA5E9','#10B981','#F59E0B','#EF4444','#8B5CF6'].map((c,i)=>(<div key={i} style={{ width:38, height:38, borderRadius:'50%', border:'2px solid var(--color-bg-soft)', marginLeft:i===0?0:-10, background:c, display:'flex', alignItems:'center', justifyContent:'center', zIndex:6-i, position:'relative', flexShrink:0 }}><i className="fa-solid fa-user" style={{ fontSize:14, color:'#fff' }} /></div>))}</div>
-              <div>
-                <div style={{ display:'flex', gap:2, marginBottom:4 }}>{[...Array(5)].map((_,i)=>(<i key={i} className="fa-solid fa-star" style={{ color:'var(--ism-amber)', fontSize:14 }} />))}</div>
-                <div style={{ fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)' }}><span style={{ fontSize:18, fontWeight:900 }}>1,000+</span> Client Reviews</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ReviewsStrip />
 
         {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
         <section className="web-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
