@@ -37,8 +37,8 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section className="faq-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+    <section className="faq-section" style={{ padding: '88px 0', background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #eff6ff 100%)' }}>
+      <div className="ism-container">
 
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
@@ -85,10 +85,10 @@ export default function FAQ() {
 
       <style>{`
         @media (max-width: 768px) {
-          .faq-section { padding: 56px 0 !important; }
+          .faq-section { padding: 44px 0 !important; }
         }
         @media (max-width: 480px) {
-          .faq-section { padding: 44px 0 !important; }
+          .faq-section { padding: 32px 0 !important; }
           .faq-section button { padding: 16px 18px !important; }
         }
       `}</style>

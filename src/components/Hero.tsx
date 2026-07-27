@@ -30,13 +30,14 @@ export default function Hero() {
   }, [active, goTo]);
 
   return (
-    <section style={{ background: 'linear-gradient(135deg, #F8F9FF 0%, #FDF6E8 45%, #FFFDF5 100%)', padding: '20px 0 28px', position: 'relative', overflow: 'hidden' }}>
+    <section style={{ background: '#ffffff', padding: '20px 0 28px', position: 'relative', overflow: 'hidden' }}>
 
-      {/* Subtle bg glow */}
-      <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
+      {/* Decorative blobs */}
+      <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 740, height: 740, background: 'radial-gradient(circle,rgba(30,77,195,.14) 0%,transparent 65%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', bottom: '-10%', left: '-8%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
       <div className="hero-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
-        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: 48, alignItems: 'center', minHeight: 520 }}>
+        <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '40% 60%', gap: 48, alignItems: 'center', minHeight: 520 }}>
 
           {/* ── LEFT ── */}
           <div>
@@ -83,7 +84,21 @@ export default function Hero() {
 
         </div>
       </div>
+
+      {/* Curved bottom edge */}
+      <svg
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+        style={{ position: 'absolute', left: 0, bottom: -1, width: '100%', height: 70, display: 'block' }}
+        aria-hidden
+      >
+        <path d="M0,0 Q720,110 1440,0 L1440,100 L0,100 Z" fill="#F7F8FA" />
+      </svg>
+
       <style>{`
+        @media (max-width: 1023px) {
+          .hero-grid { grid-template-columns: 45% 55% !important; min-height: 420px !important; }
+        }
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 24px !important; }
           .hero-container { padding: 0 20px !important; max-width: 100% !important; }

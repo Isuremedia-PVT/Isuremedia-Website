@@ -96,11 +96,11 @@ export default function HomeVideoSection() {
 
       <style>{`
         @media (max-width: 768px) {
-          .hvs-section { padding: 60px 0 !important; }
+          .hvs-section { padding: 48px 0 !important; }
           .hvs-container { padding: 0 20px !important; max-width: 100% !important; }
         }
         @media (max-width: 480px) {
-          .hvs-section { padding: 44px 0 !important; }
+          .hvs-section { padding: 36px 0 !important; }
         }
       `}</style>
     </section>

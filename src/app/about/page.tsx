@@ -7,13 +7,6 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const STATS = [
-  { num: '[X]+',  label: 'Years of Expertise' },
-  { num: '400+',  label: 'Clients Worldwide' },
-  { num: '$50M+', label: 'Measurable Growth Tracked' },
-  { num: '40+',   label: 'In-House Specialists' },
-];
-
 const VALUES = [
   {
     icon: 'fa-solid fa-users',
@@ -143,28 +136,6 @@ export default function AboutPage() {
         </section>
 
         <ReviewsStrip />
-
-        {/* ══ 02. STATS STRIP ══════════════════════════════════════════════ */}
-        <section style={{ background: '#fff', borderBottom: '1px solid var(--color-border)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-            <div className="about-stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
-              {STATS.map((s, i) => (
-                <div key={i} style={{ padding: '52px 24px', textAlign: 'center', borderRight: i < 3 ? '1px solid var(--color-border)' : 'none' }}>
-                  <div style={{ fontFamily: J, fontSize: 'clamp(36px,4vw,56px)', fontWeight: 900, lineHeight: 1.05, color: 'var(--color-primary)', marginBottom: 8, letterSpacing: '-1px' }}>{s.num}</div>
-                  <div style={{ width: 28, height: 3, background: 'var(--ism-amber)', borderRadius: 2, margin: '0 auto 10px' }} />
-                  <div style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', fontWeight: 500 }}>{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            @media (max-width: 640px) {
-              .about-stats-grid { grid-template-columns: repeat(2,1fr) !important; }
-              .about-stats-grid > div:nth-child(2) { border-right: none !important; }
-              .about-stats-grid > div:nth-child(3) { border-right: 1px solid var(--color-border) !important; }
-            }
-          `}</style>
-        </section>
 
         {/* ══ 03. OUR STORY ════════════════════════════════════════════════ */}
         <section style={{ padding: '96px 0 112px', background: '#F7F8FA', position: 'relative' }}>

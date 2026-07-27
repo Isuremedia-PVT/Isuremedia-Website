@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
@@ -12,10 +14,12 @@ const steps = [
 ];
 
 export default function HowItWorks() {
-  return (
-    <section className="hiw-section" style={{ padding: '96px 0 100px', background: '#fff', position: 'relative', overflow: 'hidden' }}>
+  const [hovered, setHovered] = useState<number | null>(null);
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
+  return (
+    <section className="hiw-section" style={{ padding: '96px 0 100px', background: 'linear-gradient(135deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
+
+      <div className="ism-container" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 72 }}>
@@ -31,7 +35,7 @@ export default function HowItWorks() {
         {/* ── Timeline ── */}
         <div style={{ position: 'relative' }}>
 
-          {/* Connecting line — runs through circle centers (top: 28px = half of 56px circle) */}
+          {/* Connecting line */}
           <div className="hiw-line" style={{
             position: 'absolute',
             top: 28,
@@ -40,44 +44,60 @@ export default function HowItWorks() {
             height: 2,
             background: 'linear-gradient(to right, var(--ism-amber) 0%, var(--ism-amber) 10%, var(--color-navy) 22%, var(--color-navy) 100%)',
             zIndex: 0,
-            opacity: 0.45,
+            opacity: 0.35,
           }} />
 
           <div className="hiw-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 0, position: 'relative', zIndex: 1 }}>
-            {steps.map((s, i) => (
-              <div key={s.num} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 14px', textAlign: 'center' }}>
+            {steps.map((s, i) => {
+              const isFirst   = i === 0;
+              const isHov     = hovered === i;
+              /* on hover: amber ↔ blue swap */
+              const circleBg  = isHov
+                ? (isFirst ? 'var(--color-primary)' : 'var(--ism-amber)')
+                : (isFirst ? 'var(--ism-amber)'     : 'var(--color-primary)');
+              const shadow    = isHov
+                ? (isFirst ? '0 8px 28px rgba(30,77,195,.40)'  : '0 8px 28px rgba(255,176,0,.55)')
+                : (isFirst ? '0 6px 22px rgba(255,176,0,.45)'  : '0 6px 22px rgba(30,77,195,.22)');
 
-                {/* Circle */}
-                <div style={{
-                  width: 56, height: 56,
-                  borderRadius: '50%',
-                  background: i === 0 ? 'var(--ism-amber)' : 'var(--color-primary)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: J, fontSize: 20, fontWeight: 800, color: '#fff',
-                  marginBottom: 24,
-                  boxShadow: i === 0
-                    ? '0 6px 22px rgba(255,176,0,.45)'
-                    : '0 6px 22px rgba(30,77,195,.22)',
-                  border: '3px solid #fff',
-                  position: 'relative', zIndex: 2,
-                  flexShrink: 0,
-                  transition: 'transform .2s',
-                }} className="hiw-circle">
-                  {s.num}
+              return (
+                <div key={s.num} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 14px', textAlign: 'center' }}>
+
+                  {/* Circle */}
+                  <div
+                    onMouseEnter={() => setHovered(i)}
+                    onMouseLeave={() => setHovered(null)}
+                    style={{
+                      width: 56, height: 56,
+                      borderRadius: '50%',
+                      background: circleBg,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontFamily: J, fontSize: 20, fontWeight: 800, color: '#fff',
+                      marginBottom: 24,
+                      boxShadow: shadow,
+                      border: '3px solid #fff',
+                      position: 'relative', zIndex: 2,
+                      flexShrink: 0,
+                      transition: 'background .22s ease, box-shadow .22s ease, transform .22s ease',
+                      cursor: 'default',
+                      transform: isHov ? 'scale(1.14)' : 'scale(1)',
+                    }}
+                  >
+                    {s.num}
+                  </div>
+
+                  {/* Title */}
+                  <div style={{ fontFamily: J, fontSize: 14.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 10, lineHeight: 1.3 }}>
+                    {s.title}
+                  </div>
+
+                  {/* Description */}
+                  <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
+                    {s.text}
+                  </div>
+
                 </div>
-
-                {/* Title */}
-                <div style={{ fontFamily: J, fontSize: 14.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 10, lineHeight: 1.3 }}>
-                  {s.title}
-                </div>
-
-                {/* Description */}
-                <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  {s.text}
-                </div>
-
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -85,25 +105,23 @@ export default function HowItWorks() {
         <div style={{ marginTop: 68, textAlign: 'center' }}>
           <a href="#cta"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '16px 40px', borderRadius: 10, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .20s', boxShadow: '0 6px 28px rgba(255,176,0,.38)' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.color = 'var(--color-navy)'; e.currentTarget.style.transform = ''; }}
           >
-            Book Your Free Discovery Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            Book Your Free Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
           </a>
         </div>
 
       </div>
 
       <style>{`
-        .hiw-circle:hover { transform: scale(1.12); }
         @media (max-width: 900px) {
-          .hiw-section { padding: 64px 0 72px !important; }
+          .hiw-section { padding: 48px 0 44px !important; }
           .hiw-grid { grid-template-columns: repeat(2,1fr) !important; gap: 36px !important; }
-          /* Hide connecting line on mobile — doesn't work with multi-row layout */
           .hiw-line { display: none !important; }
         }
         @media (max-width: 520px) {
-          .hiw-section { padding: 48px 0 56px !important; }
+          .hiw-section { padding: 36px 0 32px !important; }
           .hiw-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
         }
       `}</style>

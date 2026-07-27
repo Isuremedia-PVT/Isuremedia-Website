@@ -10,91 +10,148 @@ const tabs = [
     id: 'web', label: 'Websites & Funnels', icon: 'fa-solid fa-globe',
     href: '/services/websites-funnels',
     title: 'Websites & Funnels Built to Convert',
-    desc: 'We design and build websites, landing pages, and sales funnels that turn visitors into leads and customers. Whether you need a new site, a GoHighLevel funnel build, or a full redesign, every project is built around one goal: more conversions from the traffic you already have.',
+    desc: 'We design and build websites, landing pages, and sales funnels that turn visitors into leads and customers. Every project is built around one goal: more conversions from the traffic you already have.',
     stat: '3x', statLabel: 'Higher Conversion Rate',
-    img: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80',
     cta: 'Explore Web & Funnel Services',
-    highlights: [
-      'Conversion-first design on every project',
-      'GoHighLevel funnels & CRM setup included',
-      'WordPress, Shopify & Webflow specialists',
+    highlights: ['Conversion-first design on every project', 'GoHighLevel funnels & CRM setup included', 'WordPress, Shopify & Webflow specialists'],
+    subServices: [
+      { name: 'Business Websites', href: '/services/websites-funnels' },
+      { name: 'Landing Pages', href: '/services/websites-funnels/landing-pages' },
+      { name: 'Sales Funnels', href: '/services/websites-funnels' },
+      { name: 'GoHighLevel Funnels & Automation', href: '/services/websites-funnels/gohighlevel-funnels' },
+      { name: 'WordPress Website Design', href: '/services/websites-funnels/wordpress-design' },
+      { name: 'Shopify Website Design', href: '/services/websites-funnels/shopify-design' },
+      { name: 'E-commerce Website Design', href: '/services/websites-funnels' },
+      { name: 'Website Redesign', href: '/services/websites-funnels' },
+      { name: 'Conversion Rate Optimization (CRO)', href: '/services/websites-funnels/cro' },
+      { name: 'Webflow Development', href: '/services/websites-funnels' },
+      { name: 'AI-Powered Website Personalization', href: '/services/websites-funnels' },
+      { name: 'Website Maintenance & Support', href: '/services/websites-funnels' },
     ],
-    subServices: ['Business Websites', 'Landing Pages', 'Sales Funnels', 'GoHighLevel Funnels & Automation', 'WordPress Website Design', 'Shopify Website Design', 'E-commerce Website Design', 'Website Redesign', 'Conversion Rate Optimization (CRO)', 'Webflow Development', 'AI-Powered Website Personalization', 'Website Maintenance & Support'],
   },
   {
     id: 'seo', label: 'SEO', icon: 'fa-solid fa-magnifying-glass',
     href: '/services/seo',
-    title: 'SEO Built for Long-Term Growth.',
-    desc: 'We build an organic traffic engine that compounds over time. Our team blends technical SEO, content strategy, and authority link building to help you rank for high-intent keywords and attract qualified leads month after month.',
+    title: 'SEO Built for Long-Term Growth',
+    desc: 'We build an organic traffic engine that compounds over time — blending technical SEO, content strategy, and authority link building to rank for high-intent keywords month after month.',
     stat: '225%', statLabel: 'Avg. Traffic Growth',
-    img: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
     cta: 'Explore Our SEO Services',
-    highlights: [
-      'Local, national & e-commerce SEO covered',
-      'AI SEO & Answer Engine Optimization ready',
-      'White-label options for growing agencies',
+    highlights: ['Local, national & e-commerce SEO covered', 'AI SEO & Answer Engine Optimization ready', 'White-label options for growing agencies'],
+    subServices: [
+      { name: 'Technical SEO', href: '/services/seo/technical-seo' },
+      { name: 'On-Page SEO', href: '/services/seo/on-page-seo' },
+      { name: 'Local SEO', href: '/services/seo/local-seo' },
+      { name: 'Google Business Profile Optimization', href: '/services/seo' },
+      { name: 'E-commerce SEO', href: '/services/seo' },
+      { name: 'AI SEO', href: '/services/seo/ai-seo' },
+      { name: 'AEO (Answer Engine Optimization)', href: '/services/seo/aeo' },
+      { name: 'Link Building', href: '/services/seo/link-building' },
+      { name: 'SEO Content Strategy', href: '/services/seo' },
+      { name: 'YouTube SEO', href: '/services/seo' },
+      { name: 'International SEO', href: '/services/seo' },
+      { name: 'SEO Audits', href: '/services/seo/seo-audits' },
+      { name: 'White-Label SEO', href: '/services/white-label/white-label-seo' },
     ],
-    subServices: ['Technical SEO', 'On-Page SEO', 'Local SEO', 'Google Business Profile Optimization', 'E-commerce SEO', 'AI SEO', 'AEO (Answer Engine Optimization)', 'Link Building', 'SEO Content Strategy', 'YouTube SEO', 'International SEO', 'SEO Audits', 'White-Label SEO'],
   },
   {
     id: 'ppc', label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar',
     href: '/services/ppc-paid-marketing',
-    title: 'Paid Ads That Bring You Customers.',
-    desc: 'We make every ad dollar accountable. We plan, build, and optimize paid campaigns across Google, Meta, LinkedIn, and YouTube, targeting the right people at the right moment so paid advertising becomes the most predictable part of your growth.',
+    title: 'Paid Ads That Bring You Customers',
+    desc: 'We make every ad dollar accountable. We plan, build, and optimise paid campaigns across Google, Meta, LinkedIn, and YouTube — targeting the right people at the right moment.',
     stat: '5.2x', statLabel: 'Average ROAS',
-    img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80',
     cta: 'Explore PPC Services',
-    highlights: [
-      'Google, Meta, LinkedIn & YouTube ads',
-      'Full-funnel strategy, not just campaign setup',
-      'Transparent reporting with real attribution',
+    highlights: ['Google, Meta, LinkedIn & YouTube ads', 'Full-funnel strategy, not just campaign setup', 'Transparent reporting with real attribution'],
+    subServices: [
+      { name: 'Google Ads', href: '/services/ppc/google-ads' },
+      { name: 'Meta Ads (Facebook & Instagram)', href: '/services/ppc/meta-ads' },
+      { name: 'PPC Management', href: '/services/ppc-paid-marketing' },
+      { name: 'Retargeting & Remarketing', href: '/services/ppc/retargeting-remarketing' },
+      { name: 'Google Shopping Ads', href: '/services/ppc-paid-marketing' },
+      { name: 'LinkedIn Ads', href: '/services/ppc-paid-marketing' },
+      { name: 'YouTube Ads', href: '/services/ppc-paid-marketing' },
+      { name: 'Microsoft / Bing Ads', href: '/services/ppc-paid-marketing' },
+      { name: 'Programmatic Advertising', href: '/services/ppc-paid-marketing' },
+      { name: 'Paid Social Media Advertising', href: '/services/ppc-paid-marketing' },
+      { name: 'Conversion Tracking & Analytics Setup', href: '/services/ppc-paid-marketing' },
+      { name: 'Funnel Strategy & Tracking Setup', href: '/services/ppc/funnel-strategy-tracking' },
+      { name: 'White-Label PPC', href: '/services/white-label/white-label-ppc' },
     ],
-    subServices: ['Google Ads', 'Meta Ads (Facebook & Instagram)', 'PPC Management', 'Retargeting & Remarketing', 'Google Shopping Ads', 'LinkedIn Ads', 'YouTube Ads', 'Microsoft / Bing Ads', 'Programmatic Advertising', 'Paid Social Media Advertising', 'Conversion Tracking & Analytics Setup', 'Funnel Strategy & Tracking Setup', 'White-Label PPC'],
   },
   {
     id: 'creative', label: 'Content & Creative', icon: 'fa-solid fa-palette',
     href: '/services/content-creative',
-    title: 'Content & Creative That Makes People Choose You.',
-    desc: 'Good content does more than look good. We create copy, graphics, videos, and social content that attracts the right audience and moves them toward a buying decision, whether they find you through search, social, or paid ads.',
+    title: 'Content & Creative That Makes People Choose You',
+    desc: 'Good content does more than look good. We create copy, graphics, videos, and social content that attracts the right audience and moves them toward a buying decision.',
     stat: '2x', statLabel: 'Better Engagement',
-    img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&q=80',
     cta: 'Explore Content & Creative Services',
-    highlights: [
-      'Copy, graphics, video & social under one roof',
-      'Built to convert, not just to look good',
-      'AI-enhanced production for faster turnaround',
+    highlights: ['Copy, graphics, video & social under one roof', 'Built to convert, not just to look good', 'AI-enhanced production for faster turnaround'],
+    subServices: [
+      { name: 'Social Media Content & Management', href: '/services/content-creative/social-media-content' },
+      { name: 'SEO Blog Writing', href: '/services/content-creative/seo-blog-writing' },
+      { name: 'Website Copywriting', href: '/services/content-creative/website-copywriting' },
+      { name: 'Graphic Design', href: '/services/content-creative/graphic-design' },
+      { name: 'Short Form Video Content', href: '/services/content-creative' },
+      { name: 'Video Marketing & Editing', href: '/services/content-creative' },
+      { name: 'Ad Creative Design', href: '/services/content-creative/ad-creative-design' },
+      { name: 'Email Marketing', href: '/services/content-creative/email-marketing' },
+      { name: 'LinkedIn Content & Personal Branding', href: '/services/content-creative' },
+      { name: 'Brand Identity & Visual Design', href: '/services/content-creative' },
+      { name: 'UGC Content for Ads', href: '/services/content-creative' },
+      { name: 'Infographic Design', href: '/services/content-creative' },
+      { name: 'Content Marketing', href: '/services/content-creative' },
+      { name: 'AI Content Production', href: '/services/content-creative/ai-content-production' },
     ],
-    subServices: ['Social Media Content & Management', 'SEO Blog Writing', 'Website Copywriting', 'Graphic Design', 'Short Form Video Content', 'Video Marketing & Editing', 'Ad Creative Design', 'Email Marketing', 'LinkedIn Content & Personal Branding', 'Brand Identity & Visual Design', 'UGC Content for Ads', 'Infographic Design', 'Content Marketing', 'AI Content Production'],
   },
   {
     id: 'whitelabel', label: 'White Label', icon: 'fa-solid fa-tag',
     href: '/services/white-label',
-    title: 'White-Label Fulfillment Built to Grow Your Agency.',
-    desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists in India handle delivery. From SEO and PPC to web builds and GoHighLevel setups, everything ships under your brand.',
+    title: 'White-Label Fulfillment Built to Grow Your Agency',
+    desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists handle delivery — everything shipped under your brand.',
     stat: '40+', statLabel: 'In-House Specialists',
-    img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80',
     cta: 'Explore White Label Services',
-    highlights: [
-      'US-based strategy + 40+ offshore specialists',
-      'Everything delivered under your brand',
-      'Scalable pods for growing agencies',
+    highlights: ['US-based strategy + 40+ offshore specialists', 'Everything delivered under your brand', 'Scalable pods for growing agencies'],
+    subServices: [
+      { name: 'White-Label SEO', href: '/services/white-label/white-label-seo' },
+      { name: 'White-Label PPC', href: '/services/white-label/white-label-ppc' },
+      { name: 'White-Label Web Development', href: '/services/white-label/white-label-web-design' },
+      { name: 'White-Label GoHighLevel Support', href: '/services/white-label' },
+      { name: 'White-Label Marketing Automation', href: '/services/white-label/white-label-automation' },
+      { name: 'White-Label Content Marketing', href: '/services/white-label/white-label-content' },
+      { name: 'White-Label Social Media Marketing', href: '/services/white-label' },
+      { name: 'White-Label Email Marketing', href: '/services/white-label' },
+      { name: 'White-Label Copywriting', href: '/services/white-label' },
+      { name: 'White-Label Graphic Design', href: '/services/white-label' },
+      { name: 'White-Label Link Building', href: '/services/white-label' },
+      { name: 'Dedicated Agency Pods', href: '/services/white-label' },
+      { name: 'White-Label Reporting & Dashboards', href: '/services/white-label' },
     ],
-    subServices: ['White-Label SEO', 'White-Label PPC', 'White-Label Web Development', 'White-Label GoHighLevel Support', 'White-Label Marketing Automation', 'White-Label Content Marketing', 'White-Label Social Media Marketing', 'White-Label Email Marketing', 'White-Label Copywriting', 'White-Label Graphic Design', 'White-Label Link Building', 'Dedicated Agency Pods', 'White-Label Reporting & Dashboards'],
   },
   {
     id: 'automation', label: 'Marketing Automation', icon: 'fa-solid fa-robot',
     href: '/services/marketing-automation',
-    title: 'Automation That Grows Your Business 24/7.',
-    desc: 'We build the automation systems that keep your business moving without you managing every step. Lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically. Whether you are on GoHighLevel, Kajabi, HubSpot, or building from the ground up, we own it from setup to results.',
+    title: 'Automation That Grows Your Business 24/7',
+    desc: 'We build automation systems that keep your business moving without you managing every step — lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically.',
     stat: '62%', statLabel: 'Lower Lead Cost',
-    img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80',
     cta: 'Explore Automation Services',
-    highlights: [
-      'GoHighLevel, HubSpot, Kajabi & more supported',
-      'Lead follow-up, booking & CRM fully automated',
-      'Make, Zapier, n8n & custom API integrations',
+    highlights: ['GoHighLevel, HubSpot, Kajabi & more supported', 'Lead follow-up, booking & CRM fully automated', 'Make, Zapier, n8n & custom API integrations'],
+    subServices: [
+      { name: 'GoHighLevel Setup & Automation', href: '/services/automation/gohighlevel' },
+      { name: 'CRM Setup & Management', href: '/services/automation/crm-setup' },
+      { name: 'Lead Nurture Workflows', href: '/services/marketing-automation' },
+      { name: 'Email Marketing Automation', href: '/services/marketing-automation' },
+      { name: 'Appointment Booking Systems', href: '/services/marketing-automation' },
+      { name: 'Sales Pipeline Automation', href: '/services/marketing-automation' },
+      { name: 'SMS & WhatsApp Automation', href: '/services/marketing-automation' },
+      { name: 'AI Chatbot & Conversation Automation', href: '/services/automation/ai-chatbot' },
+      { name: 'Make (Integromat) Automation', href: '/services/automation/make-integromat' },
+      { name: 'Zapier Workflow Automation', href: '/services/automation/zapier' },
+      { name: 'n8n Workflow Automation', href: '/services/automation/n8n' },
+      { name: 'Reputation Management Automation', href: '/services/marketing-automation' },
+      { name: 'E-commerce Automation', href: '/services/marketing-automation' },
+      { name: 'Social Media Automation', href: '/services/marketing-automation' },
+      { name: 'API Integration', href: '/services/marketing-automation' },
+      { name: 'Reporting & Dashboard Automation', href: '/services/marketing-automation' },
     ],
-    subServices: ['GoHighLevel Setup & Automation', 'CRM Setup & Management', 'Lead Nurture Workflows', 'Email Marketing Automation', 'Appointment Booking Systems', 'Sales Pipeline Automation', 'SMS & WhatsApp Automation', 'AI Chatbot & Conversation Automation', 'Make (Integromat) Automation', 'Zapier Workflow Automation', 'n8n Workflow Automation', 'Reputation Management Automation', 'E-commerce Automation', 'Social Media Automation', 'API Integration', 'Reporting & Dashboard Automation', 'White-Label GoHighLevel Support'],
   },
 ];
 
@@ -110,118 +167,114 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="svc-section" style={{ padding: '100px 0 110px', background: '#fff' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+    <section id="services" className="svc-section" style={{ padding: '100px 0 110px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+
+      {/* Decorative blobs */}
+      <div aria-hidden style={{ position: 'absolute', top: '-80px', right: '-120px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
+      <div aria-hidden style={{ position: 'absolute', bottom: '-60px', left: '-80px', width: 380, height: 380, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
+
+      <div className="ism-container" style={{ position: 'relative' }}>
 
         {/* ── Header ── */}
-        <div style={{ textAlign: 'center', maxWidth: 700, margin: '0 auto 56px' }}>
+        <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 52px' }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 16, lineHeight: 1.15, letterSpacing: '-0.5px' }}>
-            Digital Marketing Services Built<br />to Grow Your Business.
+            Digital Marketing Services Built<br />to Grow Your <span style={{ color: 'var(--ism-amber)' }}>Business</span>.
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-            Get found on Google and in AI search. Turn ad spend into revenue. Build websites, funnels, and automations that convert — every service built to grow your business.
+            Get found on Google and in AI search. Turn ad spend into revenue. Build websites, funnels, and automations that convert.
           </p>
         </div>
 
-        {/* ── Tabs ── */}
-        <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 8, marginBottom: 40 }}>
-          {tabs.map(t => {
-            const isActive = t.id === activeId;
-            return (
-              <button key={t.id} onClick={() => switchTab(t.id)}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 8,
-                  padding: '10px 20px', borderRadius: 10,
-                  fontFamily: J, fontSize: 13.5, fontWeight: 600,
-                  cursor: 'pointer',
-                  border: `1.5px solid ${isActive ? 'var(--color-primary)' : 'var(--color-border)'}`,
-                  background: isActive ? 'var(--color-primary)' : '#fff',
-                  color: isActive ? '#fff' : 'var(--color-text-muted)',
-                  transition: 'all .22s cubic-bezier(.4,0,.2,1)',
-                  boxShadow: isActive ? '0 4px 20px rgba(30,77,195,.22)' : '0 1px 4px rgba(0,0,0,.04)',
-                  transform: isActive ? 'translateY(-2px)' : 'none',
-                  whiteSpace: 'nowrap',
-                }}
-                onMouseEnter={e => { if (!isActive) { e.currentTarget.style.borderColor = 'var(--color-primary)'; e.currentTarget.style.color = 'var(--color-primary)'; e.currentTarget.style.boxShadow = '0 2px 12px rgba(30,77,195,.12)'; } }}
-                onMouseLeave={e => { if (!isActive) { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text-muted)'; e.currentTarget.style.boxShadow = '0 1px 4px rgba(0,0,0,.04)'; } }}
-              >
-                <i className={t.icon} style={{ fontSize: 12, color: isActive ? 'var(--ism-amber)' : 'inherit' }} />
-                {t.label}
-              </button>
-            );
-          })}
+        {/* ── Tab bar ── */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44 }}>
+          <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 6, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '6px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+            {tabs.map(t => {
+              const isActive = t.id === activeId;
+              return (
+                <button key={t.id} onClick={() => switchTab(t.id)}
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 7,
+                    padding: '9px 18px', borderRadius: 10,
+                    fontFamily: J, fontSize: 13, fontWeight: 600,
+                    cursor: 'pointer', border: 'none',
+                    background: isActive ? 'var(--color-primary)' : 'transparent',
+                    color: isActive ? '#fff' : 'var(--color-text-muted)',
+                    transition: 'all .20s',
+                    boxShadow: isActive ? '0 4px 16px rgba(30,77,195,.25)' : 'none',
+                    whiteSpace: 'nowrap',
+                  }}
+                  onMouseEnter={e => { if (!isActive) e.currentTarget.style.background = '#F0F4FF'; }}
+                  onMouseLeave={e => { if (!isActive) e.currentTarget.style.background = 'transparent'; }}
+                >
+                  <i className={t.icon} style={{ fontSize: 11, color: isActive ? 'var(--ism-amber)' : 'var(--color-primary)', transition: 'color .2s' }} />
+                  {t.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        {/* ── Pane ── */}
-        <div key={animKey} className="svc-pane svc-fadein" style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1.05fr',
-          borderRadius: 22,
+        {/* ── Card ── */}
+        <div key={animKey} className="svc-card svc-fadein" style={{
+          position: 'relative',
+          background: '#e5f7fc',
+          borderRadius: 28,
+          padding: '56px 60px 64px',
+          maxWidth: 1240,
+          margin: '0 auto',
+          border: '1px solid rgba(30,77,195,.08)',
           overflow: 'hidden',
-          boxShadow: '0 24px 64px rgba(0,35,83,.18)',
         }}>
 
-          {/* LEFT — dark */}
-          <div className="svc-left" style={{ padding: '52px 48px', background: 'linear-gradient(145deg, rgb(31,78,195) 0%, rgb(0,74,255) 100%)', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
-            {/* bg glow */}
-            <div style={{ position: 'absolute', top: '-15%', right: '-10%', width: 320, height: 320, background: 'radial-gradient(circle,rgba(255,176,0,.10) 0%,transparent 65%)', pointerEvents: 'none' }} />
-            <div style={{ position: 'absolute', bottom: '-20%', left: '-10%', width: 280, height: 280, background: 'radial-gradient(circle,rgba(30,77,195,.35) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          {/* Decorative blobs */}
+          <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-60px', width: 240, height: 240, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.10) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div aria-hidden style={{ position: 'absolute', bottom: '-90px', left: '-50px', width: 280, height: 280, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-            {/* Eyebrow */}
-            <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.12em', textTransform: 'uppercase', color: 'var(--ism-amber)', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8, position: 'relative' }}>
-              <span style={{ width: 16, height: 2, background: 'var(--ism-amber)', borderRadius: 2, display: 'inline-block' }} />
-              {active.label}
-            </p>
+          {/* Top: copy (+ checklist + CTA) on the left, photo on the right */}
+          <div className="svc-top" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 48, alignItems: 'stretch', position: 'relative' }}>
 
-            {/* Title */}
-            <h3 style={{ fontFamily: J, fontSize: 'clamp(22px,2vw,30px)', fontWeight: 800, color: '#fff', marginBottom: 14, lineHeight: 1.22, letterSpacing: '-0.4px', position: 'relative' }}>
-              {active.title}
-            </h3>
+            <div className="svc-copy">
+              <h3 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,30px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 14, lineHeight: 1.22, letterSpacing: '-0.3px' }}>
+                {active.title}
+              </h3>
 
-            {/* Short desc — first sentence only */}
-            <p style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.60)', lineHeight: 1.72, marginBottom: 36, position: 'relative', maxWidth: 380 }}>
-              {active.desc.split('.')[0]}.
-            </p>
-
-            {/* Stat hero */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 16, background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.12)', borderRadius: 16, padding: '18px 24px', marginBottom: 36, alignSelf: 'flex-start', position: 'relative', backdropFilter: 'blur(4px)' }}>
-              <div>
-                <div style={{ fontFamily: J, fontSize: 44, fontWeight: 900, color: 'var(--ism-amber)', lineHeight: 1, letterSpacing: '-2px' }}>{active.stat}</div>
-                <div style={{ fontFamily: I, fontSize: 10.5, color: 'rgba(255,255,255,.55)', marginTop: 5, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.07em' }}>{active.statLabel}</div>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <a href={active.href}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '14px 28px', borderRadius: 10, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 4px 24px rgba(255,176,0,.35)', whiteSpace: 'nowrap', alignSelf: 'flex-start', position: 'relative' }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
-            >
-              {active.cta} <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-            </a>
-          </div>
-
-          {/* RIGHT — services grid */}
-          <div className="svc-right" style={{ padding: '44px 36px', background: '#fff', borderLeft: '1px solid var(--color-border)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 22 }}>
-              <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', gap: 8, margin: 0 }}>
-                <span style={{ width: 16, height: 2, background: 'var(--ism-amber)', borderRadius: 2, display: 'inline-block', flexShrink: 0 }} />
-                Services Included
+              <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 28, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                {active.desc}
               </p>
-              <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', background: 'rgba(30,77,195,.08)', border: '1px solid rgba(30,77,195,.12)', borderRadius: 20, padding: '3px 10px' }}>
-                {active.subServices.length}
-              </span>
+
+              {/* Checklist intro */}
+              <p style={{ fontFamily: I, fontSize: 12.5, fontWeight: 600, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '.06em', marginBottom: 16 }}>
+                Everything included in {active.label}
+              </p>
+
+              {/* Checklist — scrollable list, ~5 visible at a time */}
+              <div className="svc-checklist-wrap">
+                <div className="svc-checklist">
+                  {active.subServices.map(s => (
+                    <a key={s.name} href={s.href} className="svc-check-item">
+                      <span className="svc-check-dot" />
+                      <span>{s.name}</span>
+                    </a>
+                  ))}
+                </div>
+                <div className="svc-checklist-fade" aria-hidden />
+              </div>
+
+              {/* CTA */}
+              <a href={active.href} className="svc-cta-pill">
+                {active.cta} <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+              </a>
             </div>
 
-            <div className="svc-pills-scroll" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, maxHeight: 390, overflowY: 'auto' }}>
-              {active.subServices.map(s => (
-                <a key={s} href="#contact" className="svc-pill"
-                  style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px', borderRadius: 10, textDecoration: 'none', background: 'var(--color-bg-soft)', border: '1px solid var(--color-border)', transition: 'all .15s' }}
-                >
-                  <span className="svc-pill-dot" style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--ism-amber)', flexShrink: 0, transition: 'all .15s' }} />
-                  <span className="svc-pill-text" style={{ fontFamily: I, fontSize: 12, fontWeight: 500, color: 'var(--color-navy)', lineHeight: 1.35 }}>{s}</span>
-                </a>
-              ))}
+            {/* Photo + floating badges */}
+            <div className="svc-photo-wrap">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img key={active.id} src={`https://picsum.photos/seed/${active.id}client/500/620`} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block', boxShadow: '0 20px 50px rgba(0,35,83,.18)' }} />
+              <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
+              <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
+              <div className="svc-rating">
+                <i className="fa-solid fa-star" /><i className="fa-solid fa-star" /><i className="fa-solid fa-star" /><i className="fa-solid fa-star" /><i className="fa-solid fa-star" />
+              </div>
             </div>
           </div>
 
@@ -229,22 +282,69 @@ export default function Services() {
       </div>
 
       <style>{`
-        .svc-fadein { animation: svcFade .35s cubic-bezier(.4,0,.2,1) both; }
-        @keyframes svcFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
-        .svc-pill:hover { background: var(--color-primary) !important; border-color: var(--color-primary) !important; }
-        .svc-pill:hover .svc-pill-dot { background: #fff !important; }
-        .svc-pill:hover .svc-pill-text { color: #fff !important; }
-        .svc-pills-scroll { scrollbar-width: none; }
-        .svc-pills-scroll::-webkit-scrollbar { display: none; }
-        @media (max-width: 768px) {
-          .svc-section { padding: 60px 0 70px !important; }
-          .svc-pane { grid-template-columns: 1fr !important; }
-          .svc-left, .svc-right { padding: 28px 22px !important; }
-          .svc-right { border-left: none !important; border-top: 1px solid var(--color-border); }
-          .svc-pills-scroll { grid-template-columns: 1fr !important; max-height: 280px !important; }
+        .svc-fadein { animation: svcFade .32s cubic-bezier(.4,0,.2,1) both; }
+        @keyframes svcFade { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+
+        .svc-photo-wrap { position: relative; height: 100%; }
+        .svc-pin { position: absolute; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #fff; color: #fff; }
+        .svc-pin-a { top: -14px; right: 34px; width: 38px; height: 38px; background: var(--color-primary); box-shadow: 0 8px 18px rgba(30,77,195,.40); font-size: 14px; }
+        .svc-pin-b { top: 92px; right: -14px; width: 30px; height: 30px; background: var(--ism-amber); box-shadow: 0 8px 18px rgba(255,176,0,.40); font-size: 11px; }
+        .svc-rating { position: absolute; bottom: -16px; left: 20px; background: #fff; border-radius: 12px; padding: 9px 14px; display: flex; align-items: center; gap: 3px; box-shadow: 0 10px 24px rgba(0,35,83,.16); }
+        .svc-rating i { color: var(--ism-amber); font-size: 11px; }
+
+        .svc-checklist-wrap { position: relative; margin-bottom: 28px; }
+        .svc-checklist {
+          max-height: 280px; overflow-y: auto; padding-right: 4px; padding-bottom: 4px;
+          display: flex; flex-direction: column; gap: 10px;
+          scrollbar-width: none;
+        }
+        .svc-checklist::-webkit-scrollbar { display: none; }
+        .svc-checklist-fade {
+          position: absolute; left: 0; right: 4px; bottom: 0; height: 36px;
+          background: linear-gradient(to bottom, rgba(229,247,252,0) 0%, #e5f7fc 90%);
+          pointer-events: none; border-radius: 0 0 12px 12px;
+        }
+
+        .svc-check-item {
+          display: flex; align-items: center; gap: 12px;
+          text-decoration: none; flex-shrink: 0;
+          padding: 14px 18px; border-radius: 12px;
+          background: #fff;
+          border: 1px solid rgba(30,77,195,.08);
+          transition: background .18s, border-color .18s, transform .18s;
+        }
+        .svc-check-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary); flex-shrink: 0; transition: background .18s; }
+        .svc-check-item span { font-family: ${I}; font-size: 14px; font-weight: 700; color: var(--color-navy); line-height: 1.3; }
+        .svc-check-item:hover {
+          background: linear-gradient(135deg,#FFC229 0%,#FFB000 100%);
+          border-color: transparent;
+          transform: translateX(4px);
+        }
+        .svc-check-item:hover .svc-check-dot { background: var(--color-navy); }
+
+        .svc-cta-pill {
+          display: inline-flex; align-items: center; gap: 10px;
+          background: linear-gradient(135deg,#FFC229 0%,#FFB000 100%); color: var(--color-navy);
+          font-family: ${J}; font-weight: 800; font-size: 13px;
+          letter-spacing: .03em; text-transform: uppercase;
+          padding: 16px 34px; border-radius: 100px;
+          text-decoration: none; white-space: nowrap;
+          box-shadow: 0 10px 30px rgba(255,176,0,.35);
+          transition: all .18s;
+        }
+        .svc-cta-pill:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(255,176,0,.45); }
+
+        @media (max-width: 900px) {
+          .svc-section { padding: 48px 0 56px !important; }
+          .svc-card { padding: 40px 28px 48px !important; }
+          .svc-top { grid-template-columns: minmax(0,1fr) !important; gap: 24px !important; }
+          .svc-photo-wrap { order: -1; margin-bottom: 12px; height: auto; aspect-ratio: 16/9; }
         }
         @media (max-width: 480px) {
-          .svc-section { padding: 48px 0 52px !important; }
+          .svc-section { padding: 36px 0 40px !important; }
+          .svc-card { padding: 32px 18px 40px !important; }
+          .svc-check-item { padding: 12px 14px !important; }
+          .svc-cta-pill { white-space: normal !important; text-align: center; padding: 14px 22px !important; }
         }
       `}</style>
     </section>

@@ -6,21 +6,15 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 export default function CTASection() {
   return (
     <section id="cta" className="cta-section" style={{ padding: '88px 0', background: '#fff', overflow: 'visible' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container">
 
         <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', display: 'grid', gridTemplateColumns: '1fr 360px', alignItems: 'center', gap: 40, overflow: 'visible', minHeight: 240 }}>
 
           {/* Decorative glow */}
-          <div style={{ position: 'absolute', right: '30%', top: '-10%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
+          <div className="cta-glow" style={{ position: 'absolute', right: '30%', top: '-10%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
 
           {/* ── Left: Text + Buttons ── */}
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <div style={{ width: 28, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
-              <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'rgba(255,255,255,.75)', letterSpacing: '.12em', textTransform: 'uppercase', margin: 0 }}>
-                Your Growth Starts Here
-              </p>
-            </div>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.10, marginBottom: 20 }}>
               Ready for <span style={{ color: 'var(--ism-amber)' }}>Results?</span>
             </h2>
@@ -37,7 +31,7 @@ export default function CTASection() {
                 Get My Free Proposal
               </a>
 
-              <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.55)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
+              <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
 
               <a href="tel:+16465881430"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
@@ -68,13 +62,14 @@ export default function CTASection() {
         @media (max-width: 768px) {
           .cta-card { padding: 40px 28px !important; grid-template-columns: 1fr !important; }
           .cta-person { display: none !important; }
-          .cta-section { padding: 56px 0 !important; }
+          .cta-section { padding: 44px 0 !important; }
         }
         @media (max-width: 480px) {
-          .cta-section { padding: 44px 0 !important; }
+          .cta-section { padding: 32px 0 !important; }
           .cta-card { padding: 32px 20px !important; }
+          .cta-glow { display: none !important; }
           .cta-btns { flex-direction: column !important; align-items: stretch !important; }
-          .cta-btns a { justify-content: center !important; width: 100% !important; box-sizing: border-box !important; }
+          .cta-btns a { justify-content: center !important; width: 100% !important; box-sizing: border-box !important; white-space: normal !important; text-align: center !important; padding: 14px 18px !important; }
         }
       `}</style>
     </section>

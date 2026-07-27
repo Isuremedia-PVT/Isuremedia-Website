@@ -3,7 +3,7 @@
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const LOGO_STRIP = 'https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/logo_strip_home.png';
+const LOGO_STRIP = '/images/partner.webp';
 
 
 const CASES = [
@@ -35,12 +35,9 @@ const CASES = [
 
 export default function ClientResults() {
   return (
-    <section className="cr-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)', position: 'relative', overflow: 'hidden' }}>
-      {/* bg glow */}
-      <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 560, height: 560, background: 'radial-gradient(circle,rgba(30,77,195,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
-      <div style={{ position: 'absolute', bottom: '5%', left: '-5%', width: 440, height: 440, background: 'radial-gradient(circle,rgba(255,176,0,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
+    <section className="cr-section" style={{ padding: '88px 0', background: 'linear-gradient(175deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container">
 
         {/* ── Partner Logos Strip ── */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 56 }}>
@@ -65,7 +62,7 @@ export default function ClientResults() {
             <div key={i} style={{ background: '#fff', borderRadius: 18, overflow: 'hidden', boxShadow: '0 4px 28px rgba(0,35,83,.10)', border: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column' }}>
 
               {/* Thumbnail */}
-              <div style={{ position: 'relative', height: 230, overflow: 'hidden', flexShrink: 0 }}>
+              <div className="cr-thumb" style={{ position: 'relative', height: 230, overflow: 'hidden', flexShrink: 0 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={c.img} alt={c.client}
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
@@ -119,7 +116,7 @@ export default function ClientResults() {
 
         {/* ── Bottom CTA ── */}
         <div style={{ textAlign: 'center' }}>
-          <a href="/case-studies"
+          <a href="/case-studies" className="cr-cta-btn"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '18px 48px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.06em', textTransform: 'uppercase', boxShadow: '0 8px 28px rgba(255,176,0,.42)', transition: 'all .18s', whiteSpace: 'nowrap' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 36px rgba(255,176,0,.50)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,176,0,.42)'; }}
@@ -133,11 +130,12 @@ export default function ClientResults() {
       <style>{`
         @media (max-width: 760px) {
           .cr-grid { grid-template-columns: 1fr !important; }
-          .cr-section { padding: 56px 0 !important; }
+          .cr-section { padding: 44px 0 !important; }
         }
         @media (max-width: 480px) {
-          .cr-section { padding: 44px 0 !important; }
+          .cr-section { padding: 32px 0 !important; }
           .cr-cta-btn { padding: 14px 24px !important; white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
+          .cr-thumb { height: 200px !important; }
         }
       `}</style>
     </section>

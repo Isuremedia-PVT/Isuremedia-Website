@@ -41,7 +41,7 @@ export default function VideoTestimonials() {
 
   return (
     <section className="vt-section" style={{ padding: '92px 0 48px', background: '#fff' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container">
 
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
@@ -121,12 +121,15 @@ export default function VideoTestimonials() {
       </div>
 
       <style>{`
+        @media (max-width: 1023px) {
+          .vt-grid { grid-template-columns: repeat(2,1fr) !important; }
+        }
         @media (max-width: 768px) {
-          .vt-section { padding: 56px 0 36px !important; }
+          .vt-section { padding: 44px 0 28px !important; }
           .vt-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
-          .vt-section { padding: 44px 0 28px !important; }
+          .vt-section { padding: 32px 0 20px !important; }
           .vt-cta a { width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
         }
       `}</style>

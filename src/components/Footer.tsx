@@ -67,13 +67,13 @@ const legalLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '72px 0 0', position: 'relative', overflow: 'hidden' }}>
+    <footer className="ftr-section" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '72px 0 0', position: 'relative', overflow: 'hidden' }}>
 
       {/* Subtle bg glow top-right */}
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 500, height: 500, background: 'radial-gradient(circle,rgba(30,77,195,.18) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '5%', left: '-5%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,176,0,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
+      <div className="ism-container" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* ── Main grid ── */}
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '280px repeat(4,1fr)', gap: 48, paddingBottom: 56, borderBottom: '1px solid rgba(255,255,255,.08)' }}>
@@ -176,10 +176,13 @@ export default function Footer() {
       </div>
       <style>{`
         @media (max-width: 900px) {
-          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+          .ftr-section { padding: 48px 0 0 !important; }
+          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; padding-bottom: 36px !important; }
+          .footer-grid > div:first-child { grid-column: span 2 !important; }
         }
         @media (max-width: 540px) {
-          .footer-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+          .ftr-section { padding: 36px 0 0 !important; }
+          .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; padding-bottom: 28px !important; }
         }
       `}</style>
     </footer>
