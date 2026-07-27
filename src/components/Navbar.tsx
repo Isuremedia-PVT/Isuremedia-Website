@@ -353,7 +353,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, overflow: 'hidden' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, overflow: 'hidden' }}
                   >
                     {/* Icon tab row */}
                     <div style={{ display: 'flex', borderBottom: '1px solid #E2E8F0', background: '#FAFBFF' }}>
@@ -407,7 +407,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 24px 28px' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 24px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Our Results</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 10 }}>
@@ -454,7 +454,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 220px', gap: 24 }}>
@@ -523,7 +523,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 760, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
+                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 760, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Hire a Specialist</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10 }}>
@@ -564,7 +564,7 @@ export default function Navbar() {
 
       {/* ── Mobile Menu ── */}
       {mobileOpen && (
-        <div className="nav-mobile-menu" style={{ background: '#fff', borderTop: '1px solid #E2E8F0', padding: '12px 20px 20px', boxShadow: '0 8px 24px rgba(0,0,0,.08)' }}>
+        <div className="nav-mobile-menu" style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: '#fff', borderTop: '1px solid #E2E8F0', padding: '12px 20px 20px', boxShadow: '0 8px 24px rgba(0,0,0,.08)', overflowY: 'auto', maxHeight: 'calc(100vh - 62px)', zIndex: 9998 }}>
           {navItems.map(item => {
             const hasDropdown = item.type !== 'link' && item.type !== 'contact';
             const isExpanded  = mobileSection === item.type;
@@ -656,8 +656,10 @@ export default function Navbar() {
         .nav-svc-link:hover { background: var(--ism-blue-50, #EFF4FF); }
         .nav-svc-link:hover .nav-svc-icon { color: var(--color-primary) !important; }
         .nav-svc-link:hover .nav-svc-text { color: var(--color-primary) !important; }
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .nav-top-bar { display: none !important; }
+        }
+        @media (max-width: 768px) {
           .nav-main-row { padding: 0 20px !important; }
         }
         @media (max-width: 480px) {

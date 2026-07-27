@@ -88,7 +88,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main style={{ overflowX: 'hidden' }}>
 
         {/* ══ 01. HERO ═════════════════════════════════════════════════════ */}
         <section className="ct-hero-section" style={{ background: 'linear-gradient(135deg,#EEF2FF 0%,#E8EFFF 55%,#EEF2FF 100%)', padding: '72px 0 80px', position: 'relative', overflow: 'hidden' }}>
@@ -109,14 +109,14 @@ export default function ContactPage() {
                 </p>
                 <div className="ct-hero-btns" style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
                   <a href="#proposal-form"
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                   >
                     Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
                   </a>
                   <a href="#proposal-form"
-                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 4px 16px rgba(30,77,195,.25)', transition: 'all .18s', whiteSpace: 'nowrap' }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 4px 16px rgba(30,77,195,.25)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = 'var(--color-primary-hover)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.background = 'var(--color-primary)'; }}
                   >
@@ -215,7 +215,7 @@ export default function ContactPage() {
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                       <label style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)' }}>
-                        I need help with <span style={{ color: '#E53E3E' }}>*</span>
+                        I am interested in <span style={{ color: '#E53E3E' }}>*</span>
                       </label>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                         {SERVICE_OPTIONS.map(s => {
@@ -298,7 +298,7 @@ export default function ContactPage() {
                 ))}
 
                 <a href="#proposal-form"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                 >

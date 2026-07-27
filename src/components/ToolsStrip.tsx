@@ -51,7 +51,7 @@ export default function ToolsStrip() {
   );
 
   return (
-    <div style={{ padding: '52px 0 48px', background: 'var(--color-bg-soft)', overflow: 'hidden', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
+    <div className="ts-section" style={{ padding: '52px 0 48px', background: 'var(--color-bg-soft)', overflow: 'hidden' }}>
 
       {/* ── Header ── */}
       <div style={{ textAlign: 'center', marginBottom: 32, padding: '0 28px' }}>
@@ -66,13 +66,22 @@ export default function ToolsStrip() {
 
       {/* ── Single row — scrolls left ── */}
       <div style={{ overflow: 'hidden', position: 'relative' }}>
-        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to right, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to left, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div className="ts-fade" style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to right, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
+        <div className="ts-fade" style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to left, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', animation: 'ism-marquee 50s linear infinite', width: 'max-content' }}>
           {row1.map((t, i) => card(t, i))}
         </div>
       </div>
 
+      <style>{`
+        @media (max-width: 768px) {
+          .ts-section { padding: 32px 0 28px !important; }
+        }
+        @media (max-width: 480px) {
+          .ts-section { padding: 24px 0 20px !important; }
+          .ts-fade { width: 48px !important; }
+        }
+      `}</style>
     </div>
   );
 }

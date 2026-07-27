@@ -7,18 +7,114 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const industries = [
-  { icon: 'fa-solid fa-house',              title: 'Real Estate',              text: 'Buyers research everything online before they call anyone. We help developers, brokers, and property platforms get in front of serious buyers and generate quality leads.' },
-  { icon: 'fa-solid fa-cart-shopping',      title: 'E-Commerce',               text: 'For online stores, we handle SEO, paid ads, email, and creative together. So when one channel has a bad week, your store keeps running. No gaps, no panic.' },
-  { icon: 'fa-solid fa-bullhorn',           title: 'Marketing Agencies',       text: 'If your clients need more than your team can deliver right now, we step in. We handle SEO, PPC, web builds, content, and more — all under your brand.' },
-  { icon: 'fa-solid fa-person-chalkboard',  title: 'Coaches & Consultants',    text: 'Whether you are a business coach, a consultant, or a course creator, we help you reach the right people consistently and turn interest into paying clients.' },
-  { icon: 'fa-solid fa-scale-balanced',     title: 'Law Firms',                text: 'People searching for a lawyer are already ready to hire someone. We make sure they find you first — from Google rankings to paid ads and online reputation.' },
-  { icon: 'fa-solid fa-wrench',             title: 'Home Services',            text: 'Whether you run an HVAC company, a cleaning service, or a contracting firm, your customers are searching right now. We make sure your business shows up.' },
-  { icon: 'fa-solid fa-graduation-cap',     title: 'Education & Courses',      text: 'Getting the right students to enrol takes more than just ads. We help education brands attract the right people and turn interest into actual sign-ups.' },
-  { icon: 'fa-solid fa-heart-pulse',        title: 'Health & Wellness',        text: 'We help clinics, wellness brands, and health coaches build an online presence that earns trust, brings in the right clients, and keeps them coming back.' },
-  { icon: 'fa-solid fa-laptop-code',        title: 'SaaS & Tech',              text: 'Long sales cycles and hard-to-explain products make marketing tough. We help SaaS and tech companies keep their pipeline full without relying on referrals.' },
-  { icon: 'fa-solid fa-coins',              title: 'Finance & Fintech',        text: 'Finance is one of the most competitive spaces online. We help financial advisors and fintech companies cut through the noise and reach the right people.' },
-  { icon: 'fa-solid fa-utensils',           title: 'Restaurants & Hospitality', text: 'We help restaurants, hotels, and hospitality brands show up in local search, run the right ads, and build a name people actually remember.' },
-  { icon: 'fa-solid fa-car',               title: 'Automotive',               text: 'Car buyers research for weeks before they walk into a showroom. We help dealerships show up consistently so they are the first place buyers think of.' },
+  {
+    icon: 'fa-solid fa-house',
+    tag: 'Property & Realty',
+    title: 'Real Estate',
+    text: 'We help developers, brokers, and property platforms get in front of serious buyers and generate quality leads.',
+    img: 'https://picsum.photos/seed/realestate/600/800',
+    bg: 'linear-gradient(155deg,#001a3d 0%,#002353 45%,#1E4DC3 100%)',
+    shine: 'rgba(30,77,195,0.40)',
+  },
+  {
+    icon: 'fa-solid fa-cart-shopping',
+    tag: 'Online Retail',
+    title: 'E-Commerce',
+    text: 'We handle SEO, paid ads, email, and creative together so your store keeps running even when one channel dips.',
+    img: 'https://picsum.photos/seed/ecommerce/600/800',
+    bg: 'linear-gradient(155deg,#001d42 0%,#0a2d66 45%,#2f67e8 100%)',
+    shine: 'rgba(47,103,232,0.38)',
+  },
+  {
+    icon: 'fa-solid fa-bullhorn',
+    tag: 'White-Label Services',
+    title: 'Marketing Agencies',
+    text: 'SEO, PPC, web builds, content, and more — all delivered under your brand when your team needs backup.',
+    img: 'https://picsum.photos/seed/agency/600/800',
+    bg: 'linear-gradient(155deg,#0a1f4e 0%,#133280 45%,#1E4DC3 100%)',
+    shine: 'rgba(30,77,195,0.40)',
+  },
+  {
+    icon: 'fa-solid fa-person-chalkboard',
+    tag: 'Personal Brand',
+    title: 'Coaches & Consultants',
+    text: 'We help coaches, consultants, and course creators reach the right people and turn interest into paying clients.',
+    img: 'https://picsum.photos/seed/coaching/600/800',
+    bg: 'linear-gradient(155deg,#000f24 0%,#062a5c 45%,#1840A0 100%)',
+    shine: 'rgba(24,64,160,0.40)',
+  },
+  {
+    icon: 'fa-solid fa-scale-balanced',
+    tag: 'Legal Industry',
+    title: 'Law Firms',
+    text: 'We make sure high-intent legal searchers find you first — from Google rankings to paid ads and reputation.',
+    img: 'https://picsum.photos/seed/legal/600/800',
+    bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#0f3d7a 100%)',
+    shine: 'rgba(0,35,83,0.50)',
+  },
+  {
+    icon: 'fa-solid fa-wrench',
+    tag: 'Local Services',
+    title: 'Home Services',
+    text: 'HVAC, cleaning, contracting — your customers are searching right now. We make sure your business shows up.',
+    img: 'https://picsum.photos/seed/homeservices/600/800',
+    bg: 'linear-gradient(155deg,#1E4DC3 0%,#2563eb 50%,#3b82f6 100%)',
+    shine: 'rgba(37,99,235,0.38)',
+  },
+  {
+    icon: 'fa-solid fa-graduation-cap',
+    tag: 'EdTech & Training',
+    title: 'Education & Courses',
+    text: 'We help education brands attract the right students and turn interest into actual sign-ups and enrolments.',
+    img: 'https://picsum.photos/seed/education/600/800',
+    bg: 'linear-gradient(155deg,#001630 0%,#08305f 45%,#3b82f6 100%)',
+    shine: 'rgba(59,130,246,0.35)',
+  },
+  {
+    icon: 'fa-solid fa-heart-pulse',
+    tag: 'Clinics & Wellness',
+    title: 'Health & Wellness',
+    text: 'We help clinics and wellness brands build an online presence that earns trust and brings in the right clients.',
+    img: 'https://picsum.photos/seed/wellness/600/800',
+    bg: 'linear-gradient(155deg,#001833 0%,#002353 45%,#1840A0 100%)',
+    shine: 'rgba(24,64,160,0.45)',
+  },
+  {
+    icon: 'fa-solid fa-laptop-code',
+    tag: 'Software & Tech',
+    title: 'SaaS & Tech',
+    text: 'We help SaaS and tech companies keep their pipeline full without relying solely on word-of-mouth referrals.',
+    img: 'https://picsum.photos/seed/saas/600/800',
+    bg: 'linear-gradient(155deg,#0a0f1e 0%,#0f1f3d 45%,#1E4DC3 100%)',
+    shine: 'rgba(30,77,195,0.42)',
+  },
+  {
+    icon: 'fa-solid fa-coins',
+    tag: 'Fintech & Advisory',
+    title: 'Finance & Fintech',
+    text: 'We help financial advisors and fintech companies cut through noise and reach the right high-intent audience.',
+    img: 'https://picsum.photos/seed/finance/600/800',
+    bg: 'linear-gradient(155deg,#000c1c 0%,#052350 45%,#1E4DC3 100%)',
+    shine: 'rgba(30,77,195,0.42)',
+  },
+  {
+    icon: 'fa-solid fa-utensils',
+    tag: 'Food & Hospitality',
+    title: 'Restaurants & Hospitality',
+    text: 'We help restaurants, hotels, and hospitality brands show up in local search and build a name people remember.',
+    img: 'https://picsum.photos/seed/restaurant/600/800',
+    bg: 'linear-gradient(155deg,#001533 0%,#1E4DC3 55%,#2f67e8 100%)',
+    shine: 'rgba(30,77,195,0.38)',
+  },
+  {
+    icon: 'fa-solid fa-car',
+    tag: 'Auto Dealers',
+    title: 'Automotive',
+    text: 'We help dealerships show up consistently so they are the first place buyers think of after weeks of research.',
+    img: 'https://picsum.photos/seed/automotive/600/800',
+    bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#1E4DC3 100%)',
+    shine: 'rgba(0,35,83,0.55)',
+  },
 ];
 
 export default function Industries() {
@@ -41,7 +137,7 @@ export default function Industries() {
 
   useEffect(() => {
     if (!emblaApi) return;
-    const id = setInterval(() => { if (!paused.current) emblaApi.scrollNext(); }, 3200);
+    const id = setInterval(() => { if (!paused.current) emblaApi.scrollNext(); }, 3500);
     return () => clearInterval(id);
   }, [emblaApi]);
 
@@ -49,100 +145,151 @@ export default function Industries() {
   const next = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section id="industries" className="ind-section" style={{ padding: '88px 0', background: 'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+    <section id="industries" className="ind-section" style={{ padding: '96px 0 80px', background: '#fff', position: 'relative' }}>
 
-        {/* Header */}
-        <div style={{ textAlign: 'center', maxWidth: 600, margin: '0 auto 48px' }}>
-          <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
-            Industries We&apos;ve{' '}
-            <span style={{ color: 'var(--ism-amber)' }}>Worked With</span>
-          </h2>
-          <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-            We deliver tailored digital marketing solutions for a wide range of industries, helping businesses and agencies scale faster and smarter.
-          </p>
-        </div>
+      {/* Header */}
+      <div className="ind-header" style={{ maxWidth: 700, margin: '0 auto 56px', padding: '0 24px', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: J, fontSize: 'clamp(30px,3.8vw,46px)', fontWeight: 800, color: 'var(--color-text-heading)', lineHeight: 1.15, marginBottom: 18 }}>
+          Built for Your{' '}
+          <span style={{ color: 'var(--color-primary)' }}>Industry</span>
+        </h2>
+        <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>
+          We deliver tailored digital marketing solutions for a wide range of industries, helping businesses and agencies scale faster and smarter.
+        </p>
+      </div>
 
-        {/* Carousel */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+      {/* Carousel — full width */}
+      <div style={{ position: 'relative' }}>
 
-          <button onClick={prev} aria-label="Previous"
-            style={{ width: 44, height: 44, borderRadius: '50%', flexShrink: 0, background: '#fff', border: '1.5px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: 'var(--sh-sm)', transition: 'all .18s' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = '#fff'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = 'var(--color-border)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = 'var(--color-primary)'; }}
-          >
-            <i className="fa-solid fa-chevron-left" style={{ fontSize: 13, color: 'var(--color-primary)', transition: 'color .18s' }} />
-          </button>
+        {/* Left arrow */}
+        <button onClick={prev} aria-label="Previous"
+          style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 10, width: 48, height: 48, borderRadius: '50%', background: '#fff', border: '1.5px solid #e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 4px 16px rgba(0,0,0,.10)', transition: 'all .2s' }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = '#fff'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = '#e2e8f0'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = 'var(--color-primary)'; }}
+        >
+          <i className="fa-solid fa-chevron-left" style={{ fontSize: 14, color: 'var(--color-primary)', transition: 'color .2s' }} />
+        </button>
 
-          <div style={{ flex: 1, minWidth: 0, overflow: 'hidden' }}
-            onMouseEnter={() => { paused.current = true; }}
-            onMouseLeave={() => { paused.current = false; }}
-          >
-          {/* Embla viewport */}
-          <div ref={emblaRef} style={{ overflow: 'hidden' }}>
-            {/* Embla container — negative margin offsets first slide padding */}
-            <div style={{ display: 'flex', marginLeft: '-20px' }}>
-              {industries.map(ind => (
-                /* Embla slide — flex: 0 0 25% + paddingLeft creates the gap */
-                <div key={ind.title} className="ind-slide" style={{ flex: '0 0 25%', minWidth: 0, paddingLeft: '20px', boxSizing: 'border-box' }}>
-                  <div
-                    style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 16, padding: '28px 22px', height: '100%', transition: 'all .22s', boxSizing: 'border-box' }}
-                    onMouseEnter={e => { const el = e.currentTarget; el.style.borderColor = 'var(--color-primary)'; el.style.boxShadow = '0 8px 28px rgba(30,77,195,.14)'; el.style.background = 'var(--ism-blue-50,#EFF4FF)'; }}
-                    onMouseLeave={e => { const el = e.currentTarget; el.style.borderColor = 'var(--color-border)'; el.style.boxShadow = ''; el.style.background = '#fff'; }}
-                  >
-                    <div style={{ width: 48, height: 48, borderRadius: 12, background: 'var(--ism-blue-50,#EFF4FF)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, border: '1px solid var(--ism-blue-100,#C7D7FD)' }}>
-                      <i className={ind.icon} style={{ fontSize: 20, color: 'var(--color-primary)' }} />
-                    </div>
-                    <div style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: 10, lineHeight: 1.30 }}>{ind.title}</div>
-                    <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.72 }}>{ind.text}</div>
+        {/* Embla */}
+        <div
+          ref={emblaRef}
+          className="ind-embla"
+          style={{ overflow: 'hidden', padding: '20px 0 84px' }}
+          onMouseEnter={() => { paused.current = true; }}
+          onMouseLeave={() => { paused.current = false; }}
+        >
+          <div style={{ display: 'flex', marginLeft: '-12px' }}>
+            {industries.map(ind => (
+              <div key={ind.title} className="ind-slide" style={{ flex: '0 0 25%', minWidth: 0, paddingLeft: '12px', boxSizing: 'border-box' }}>
+                <div className="ind-card" style={{ borderRadius: 20, overflow: 'hidden', position: 'relative', height: 420, boxShadow: '0 4px 24px rgba(0,0,0,.14)', transition: 'transform .30s cubic-bezier(.22,1,.36,1), box-shadow .30s', cursor: 'pointer', background: ind.bg }}>
+
+                  {/* Photo */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={ind.img} alt="" aria-hidden loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+
+                  {/* Brand color tint over photo */}
+                  <div aria-hidden style={{ position: 'absolute', inset: 0, background: ind.bg, opacity: 0.40, mixBlendMode: 'overlay' }} />
+
+                  {/* Large ghost icon bg */}
+                  <div aria-hidden style={{ position: 'absolute', right: -16, bottom: -16, fontSize: 160, color: '#fff', opacity: .08, lineHeight: 1, pointerEvents: 'none', userSelect: 'none', transform: 'rotate(-8deg)' }}>
+                    <i className={ind.icon} />
                   </div>
+
+                  {/* Shine */}
+                  <div aria-hidden style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '50%', background: `radial-gradient(ellipse at 65% 0%, ${ind.shine} 0%, transparent 72%)`, pointerEvents: 'none' }} />
+
+                  {/* Bottom fade for text */}
+                  <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,.70) 0%, rgba(0,0,0,.18) 50%, transparent 100%)', pointerEvents: 'none' }} className="ind-overlay" />
+
+                  {/* Tag */}
+                  <div style={{ position: 'absolute', top: 20, left: 20 }}>
+                    <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'rgba(255,255,255,.90)', background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.22)', borderRadius: 100, padding: '5px 13px', letterSpacing: '.08em', textTransform: 'uppercase', backdropFilter: 'blur(8px)' }}>
+                      {ind.tag}
+                    </span>
+                  </div>
+
+                  {/* Icon badge */}
+                  <div style={{ position: 'absolute', top: 18, right: 20, width: 44, height: 44, borderRadius: '50%', background: 'rgba(255,255,255,.15)', border: '1px solid rgba(255,255,255,.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', backdropFilter: 'blur(8px)' }}>
+                    <i className={ind.icon} style={{ fontSize: 17, color: '#fff' }} />
+                  </div>
+
+                  {/* Content */}
+                  <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '22px 22px 24px' }}>
+                    <div style={{ width: 32, height: 3, borderRadius: 2, background: 'var(--ism-amber)', marginBottom: 12, transition: 'width .28s' }} className="ind-line" />
+                    <h3 style={{ fontFamily: J, fontSize: 19, fontWeight: 800, color: '#fff', marginBottom: 0, lineHeight: 1.25 }}>{ind.title}</h3>
+                    <p className="ind-desc" style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.78)', lineHeight: 1.70, margin: 0, marginTop: 10, maxHeight: 0, opacity: 0, overflow: 'hidden', transition: 'max-height .30s ease, opacity .28s ease' }}>
+                      {ind.text}
+                    </p>
+                  </div>
+
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-          </div>
-
-          <button onClick={next} aria-label="Next"
-            style={{ width: 44, height: 44, borderRadius: '50%', flexShrink: 0, background: '#fff', border: '1.5px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: 'var(--sh-sm)', transition: 'all .18s' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = '#fff'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = 'var(--color-border)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = 'var(--color-primary)'; }}
-          >
-            <i className="fa-solid fa-chevron-right" style={{ fontSize: 13, color: 'var(--color-primary)', transition: 'color .18s' }} />
-          </button>
-
         </div>
 
-        {/* Dots */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 6, marginTop: 24, alignItems: 'center' }}>
-          {Array.from({ length: snapCount }).map((_, i) => (
-            <button key={i} onClick={() => emblaApi?.scrollTo(i)} aria-label={`Slide ${i + 1}`}
-              style={{ width: i === selected ? 24 : 8, height: 8, borderRadius: 4, border: 'none', cursor: 'pointer', background: i === selected ? 'var(--ism-amber)' : 'var(--color-border)', transition: 'all .25s', padding: 0 }}
-            />
-          ))}
-        </div>
+        {/* Right arrow */}
+        <button onClick={next} aria-label="Next"
+          style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 10, width: 48, height: 48, borderRadius: '50%', background: '#fff', border: '1.5px solid #e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 4px 16px rgba(0,0,0,.10)', transition: 'all .2s' }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = '#fff'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = '#e2e8f0'; (e.currentTarget.querySelector('i') as HTMLElement).style.color = 'var(--color-primary)'; }}
+        >
+          <i className="fa-solid fa-chevron-right" style={{ fontSize: 14, color: 'var(--color-primary)', transition: 'color .2s' }} />
+        </button>
+      </div>
 
-        {/* CTA */}
-        <div style={{ textAlign: 'center', marginTop: 36 }}>
-          <a href="#"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.30)' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
-          >
-            View All Industries <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-          </a>
-        </div>
+      {/* Dots */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 6, marginTop: -48, alignItems: 'center' }}>
+        {Array.from({ length: snapCount }).map((_, i) => (
+          <button key={i} onClick={() => emblaApi?.scrollTo(i)} aria-label={`Slide ${i + 1}`}
+            style={{ width: i === selected ? 28 : 8, height: 8, borderRadius: 4, border: 'none', cursor: 'pointer', background: i === selected ? 'var(--color-primary)' : '#cbd5e1', transition: 'all .25s', padding: 0 }}
+          />
+        ))}
+      </div>
 
+      {/* CTA */}
+      <div style={{ textAlign: 'center', marginTop: 44 }}>
+        <a href="/industries"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '14px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 4px 20px rgba(255,176,0,.30)' }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,176,0,.40)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,176,0,.30)'; }}
+        >
+          View All Industries <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+        </a>
       </div>
 
       <style>{`
         .ind-slide { flex: 0 0 25% !important; }
         @media (max-width: 1023px) { .ind-slide { flex: 0 0 50% !important; } }
         @media (max-width: 600px)  { .ind-slide { flex: 0 0 100% !important; } }
+        @media (max-width: 768px)  { .ind-section { padding: 48px 0 40px !important; } }
+        @media (max-width: 480px)  { .ind-section { padding: 36px 0 32px !important; } }
+
+        .ind-card:hover { transform: translateY(-6px); box-shadow: 0 20px 56px rgba(0,0,0,.30) !important; }
+        .ind-card:hover .ind-overlay { background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.40) 55%, rgba(0,0,0,.08) 100%) !important; }
+        .ind-card:hover .ind-desc { max-height: 120px !important; opacity: 1 !important; }
+        .ind-card:hover .ind-line { width: 52px !important; }
+
+        /* Touch devices have no hover — always reveal the description */
+        @media (hover: none) {
+          .ind-overlay { background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.40) 55%, rgba(0,0,0,.08) 100%) !important; }
+          .ind-desc { max-height: 120px !important; opacity: 1 !important; }
+          .ind-line { width: 52px !important; }
+        }
+
+        @media (max-width: 1023px) {
+          .ind-embla { padding: 20px 56px 84px !important; }
+        }
+        @media (max-width: 600px) {
+          [aria-label="Previous"], [aria-label="Next"] { display: none !important; }
+          .ind-embla { padding: 20px 20px 84px !important; }
+        }
         @media (max-width: 768px) {
-          .ind-section { padding: 56px 0 !important; }
+          .ind-header { margin: 0 auto 32px !important; }
         }
         @media (max-width: 480px) {
-          .ind-section { padding: 44px 0 !important; }
+          .ind-card { height: 340px !important; }
+          .ind-header { margin: 0 auto 24px !important; }
         }
       `}</style>
     </section>

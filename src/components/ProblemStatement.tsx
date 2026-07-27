@@ -3,7 +3,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 export default function ProblemStatement() {
   return (
-    <section style={{
+    <section className="ps-section" style={{
       background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)',
       padding: '72px 0 68px',
       position: 'relative',
@@ -63,7 +63,7 @@ export default function ProblemStatement() {
           fontSize: 'clamp(30px, 3.4vw, 50px)',
           fontWeight: 700,
           lineHeight: 1.15,
-          color: 'rgba(255,255,255,.52)',
+          color: 'rgba(255,255,255,.78)',
           letterSpacing: '-0.5px',
           marginBottom: 0,
         }}>
@@ -73,7 +73,11 @@ export default function ProblemStatement() {
       </div>
       <style>{`
         @media (max-width: 768px) {
+          .ps-section { padding: 44px 0 40px !important; }
           .ps-container { padding: 0 20px !important; max-width: 100% !important; }
+        }
+        @media (max-width: 480px) {
+          .ps-section { padding: 36px 0 32px !important; }
         }
       `}</style>
     </section>

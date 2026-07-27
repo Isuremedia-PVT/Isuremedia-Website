@@ -13,7 +13,7 @@ export default function TrustVideo() {
 
   return (
     <section className="tv-section" style={{ padding: '96px 0', background: '#fff' }}>
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container">
 
         {/* ── Centered Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 52 }}>
@@ -96,13 +96,13 @@ export default function TrustVideo() {
       </div>
       <style>{`
         @media (max-width: 768px) {
-          .tv-section { padding: 56px 0 !important; }
-          .tv-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+          .tv-section { padding: 44px 0 !important; }
+          .tv-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .tv-btns { flex-direction: column !important; align-items: stretch !important; }
           .tv-btns a { width: 100% !important; justify-content: center !important; box-sizing: border-box !important; }
         }
         @media (max-width: 480px) {
-          .tv-section { padding: 44px 0 !important; }
+          .tv-section { padding: 32px 0 !important; }
         }
       `}</style>
     </section>
