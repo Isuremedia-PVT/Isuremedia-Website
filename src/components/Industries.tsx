@@ -145,7 +145,7 @@ export default function Industries() {
   const next = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <section id="industries" className="ind-section" style={{ padding: '96px 0 80px', background: '#fff', position: 'relative' }}>
+    <section id="industries" className="ind-section" style={{ padding: '64px 0 64px', background: '#fff', position: 'relative' }}>
 
       {/* Header */}
       <div className="ind-header" style={{ maxWidth: 700, margin: '0 auto 56px', padding: '0 24px', textAlign: 'center' }}>

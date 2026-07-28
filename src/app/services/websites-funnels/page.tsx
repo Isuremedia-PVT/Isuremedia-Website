@@ -321,7 +321,7 @@ export default function WebsitesPage() {
             <div className="web-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/Artboard.png" alt="Website Growth Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/sales-funnel-illustration.webp" alt="Website Growth Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
@@ -423,7 +423,7 @@ export default function WebsitesPage() {
               </div>
               <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/Artboard.png" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/global-growth-illustration.webp" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
             </div>
           </div>

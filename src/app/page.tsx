@@ -35,7 +35,7 @@ export default function Home() {
         <VideoTestimonials />
         <Testimonials />
         <FAQ />
-        <CTASection />
+        <CTASection imageWidth={460} />
       </main>
       <Footer />
     </>

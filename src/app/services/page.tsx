@@ -96,7 +96,7 @@ export default function ServicesPage() {
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/Artboard.png"
+                  src="/images/global-growth-illustration.webp"
                   alt="Isuremedia Services"
                   style={{ width: '100%', maxWidth: 560, height: 'auto', display: 'block', objectFit: 'contain' }}
                 />
@@ -219,7 +219,7 @@ export default function ServicesPage() {
           <style>{`@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:540px){.why-grid{grid-template-columns:1fr!important;}}`}</style>
         </section>
 
-        <CTASection />
+        <CTASection image="/result_footer/global-growth-illustration.webp" />
       </main>
       <Footer />
     </>

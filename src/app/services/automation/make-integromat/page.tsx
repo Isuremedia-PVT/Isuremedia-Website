@@ -226,7 +226,7 @@ export default function MakeIntegromatPage() {
           </div>
         </section>
 
-        <CTASection />
+        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
       </main>
       <Footer />
     </>

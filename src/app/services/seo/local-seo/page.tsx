@@ -158,17 +158,6 @@ export default function LocalSEOPage() {
       <Navbar />
       <main>
 
-        {/* ── Breadcrumb ── */}
-        <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '12px 0' }}>
-          <div className="ism-container" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <a href="/" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Home</a>
-            <i className="fa-solid fa-chevron-right" style={{ fontSize: 9, color: 'var(--color-text-muted)' }} />
-            <a href="/services/seo" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>SEO</a>
-            <i className="fa-solid fa-chevron-right" style={{ fontSize: 9, color: 'var(--color-text-muted)' }} />
-            <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-primary)', fontWeight: 500 }}>Local SEO</span>
-          </div>
-        </div>
-
         {/* ══ 01. HERO ══════════════════════════════════════════════ */}
         <section className="lseo-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
@@ -301,7 +290,7 @@ export default function LocalSEOPage() {
         </section>
 
         {/* ══ 04. WHAT IS LOCAL SEO ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
+        <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="lseo-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
             <div className="lseo-whatis-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.85fr)', gap: 64, alignItems: 'center' }}>
@@ -325,7 +314,7 @@ export default function LocalSEOPage() {
                   </p>
                 </div>
               </div>
-              <div className="lseo-score-wrap" style={{ position: 'relative', height: 340, borderRadius: 20, background: 'var(--color-bg-soft)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'visible' }}>
+              <div className="lseo-score-wrap" style={{ position: 'relative', height: 340, borderRadius: 20, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'visible' }}>
                 {/* Decorative background rings */}
                 <div aria-hidden style={{ position: 'absolute', width: 260, height: 260, borderRadius: '50%', border: '1px dashed var(--ism-blue-100)' }} />
 
@@ -655,7 +644,7 @@ export default function LocalSEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection />
+        <CTASection image="/result_footer/seo-strategy-illustration.webp" />
       </main>
       <Footer />
     </>

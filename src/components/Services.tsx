@@ -167,7 +167,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="svc-section" style={{ padding: '100px 0 110px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+    <section id="services" className="svc-section" style={{ padding: '64px 0 72px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
 
       {/* Decorative blobs */}
       <div aria-hidden style={{ position: 'absolute', top: '-80px', right: '-120px', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />

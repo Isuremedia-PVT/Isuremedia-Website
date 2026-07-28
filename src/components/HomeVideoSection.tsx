@@ -11,7 +11,7 @@ export default function HomeVideoSection() {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <section className="hvs-section" style={{ background: '#fff', padding: '96px 0', position: 'relative', overflow: 'hidden' }}>
+    <section className="hvs-section" style={{ background: '#fff', padding: '64px 0', position: 'relative', overflow: 'hidden' }}>
 
       {/* Background glows */}
       <div style={{ position: 'absolute', top: '-20%', left: '-10%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(255,176,0,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />

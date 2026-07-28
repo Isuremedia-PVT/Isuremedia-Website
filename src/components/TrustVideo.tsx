@@ -12,7 +12,7 @@ export default function TrustVideo() {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <section className="tv-section" style={{ padding: '96px 0', background: '#fff' }}>
+    <section className="tv-section" style={{ padding: '64px 0', background: '#fff' }}>
       <div className="ism-container">
 
         {/* ── Centered Header ── */}

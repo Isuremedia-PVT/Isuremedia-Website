@@ -82,7 +82,7 @@ export default function Testimonials() {
   );
 
   return (
-    <section className="tsm-section" style={{ padding: '48px 0 88px', background: '#fff' }}>
+    <section className="tsm-section" style={{ padding: '48px 0 64px', background: '#fff' }}>
       <div className="ism-container">
 
         <div style={{ textAlign: 'center', marginBottom: 48 }}>

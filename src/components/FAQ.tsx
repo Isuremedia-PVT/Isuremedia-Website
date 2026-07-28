@@ -37,7 +37,7 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section className="faq-section" style={{ padding: '88px 0', background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #eff6ff 100%)' }}>
+    <section className="faq-section" style={{ padding: '64px 0', background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #eff6ff 100%)' }}>
       <div className="ism-container">
 
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
