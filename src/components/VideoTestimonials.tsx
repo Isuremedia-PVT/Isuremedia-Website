@@ -40,7 +40,7 @@ export default function VideoTestimonials() {
   const [playing, setPlaying] = useState<string | null>(null);
 
   return (
-    <section className="vt-section" style={{ padding: '92px 0 48px', background: '#fff' }}>
+    <section className="vt-section" style={{ padding: '64px 0 48px', background: '#fff' }}>
       <div className="ism-container">
 
         {/* Header */}

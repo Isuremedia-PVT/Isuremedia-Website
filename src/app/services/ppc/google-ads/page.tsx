@@ -249,7 +249,7 @@ export default function GoogleAdsPage() {
           </div>
         </section>
 
-        <CTASection />
+        <CTASection image="/result_footer/ppc-advertising-illustration.webp" />
       </main>
       <Footer />
     </>

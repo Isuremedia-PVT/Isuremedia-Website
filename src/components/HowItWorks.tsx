@@ -17,7 +17,7 @@ export default function HowItWorks() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="hiw-section" style={{ padding: '96px 0 100px', background: 'linear-gradient(135deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
+    <section className="hiw-section" style={{ padding: '64px 0 72px', background: 'linear-gradient(135deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
 
       <div className="ism-container" style={{ position: 'relative', zIndex: 1 }}>
 

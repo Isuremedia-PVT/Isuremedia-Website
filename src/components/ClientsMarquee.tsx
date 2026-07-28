@@ -5,10 +5,32 @@ import { useEffect, useState } from 'react';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const clients = [1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map(n => ({
-  name: `Client ${n}`,
-  src: `/company_logo/${n}.webp`,
-}));
+const clients = [
+  // Newest clients first
+  { name: 'Fourth Strategies', src: '/company_logo/fourth-strategies.webp' },
+  { name: 'Dot Com Media', src: '/company_logo/dot-com-media.webp' },
+  { name: 'Positive Approach Coaching', src: '/company_logo/positive-approach-coaching.webp' },
+  { name: 'Gestion Portail Santé', src: '/company_logo/gestion-portail-sante.webp' },
+  { name: 'Think Holistic Fitness', src: '/company_logo/think-holistic-fitness.webp' },
+  { name: 'CareGenius', src: '/company_logo/caregenius.webp' },
+  { name: 'Blue Moth', src: '/company_logo/blue-moth.webp' },
+  { name: 'Leadium', src: '/company_logo/leadium.png' },
+  // Existing clients
+  { name: 'Andrea Petrone', src: '/company_logo/andrea-petrone.webp' },
+  { name: 'Business Growth Machine', src: '/company_logo/business-growth-machine.webp' },
+  { name: 'Dog Trainer Sales Club', src: '/company_logo/dog-trainer-sales-club.webp' },
+  { name: 'Dr. Robert Morrison', src: '/company_logo/dr-robert-morrison.webp' },
+  { name: 'Outdoorscapes', src: '/company_logo/outdoorscapes.webp' },
+  { name: 'Jurissa International Bank', src: '/company_logo/jurissa-international-bank.webp' },
+  { name: 'AgentMate', src: '/company_logo/agentmate.webp' },
+  { name: 'Mi Amor', src: '/company_logo/mi-amor.webp' },
+  { name: 'ProMailShop', src: '/company_logo/promailshop.webp' },
+  { name: 'Salesley', src: '/company_logo/salesley.webp' },
+  { name: 'Scrubs4U', src: '/company_logo/scrubs4u.webp' },
+  { name: 'TyCan', src: '/company_logo/tycan.webp' },
+  { name: 'Tortlink', src: '/company_logo/tortlink.webp' },
+  { name: 'Uttarakhand Business Listing', src: '/company_logo/uttarakhand-business-listing.webp' },
+];
 
 export default function ClientsMarquee() {
   const row = [...clients, ...clients];

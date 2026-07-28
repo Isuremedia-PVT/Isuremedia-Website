@@ -377,7 +377,7 @@ export default function SEOPage() {
               <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/Artboard.png"
+                  src="/images/seo-strategy-illustration.webp"
                   alt="SEO Growth Strategy"
                   style={{ width:'100%', display:'block', objectFit:'cover' }}
                 />
@@ -524,7 +524,7 @@ export default function SEOPage() {
               <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/Artboard.png"
+                  src="/images/ai-seo-illustration.webp"
                   alt="AI Search Optimisation"
                   style={{ width:'100%', display:'block', objectFit:'cover' }}
                 />

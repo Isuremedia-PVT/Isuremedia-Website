@@ -3,9 +3,9 @@
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-export default function CTASection() {
+export default function CTASection({ image = '/result_footer/ready_for_result.png', imageWidth = 320 }: { image?: string; imageWidth?: number }) {
   return (
-    <section id="cta" className="cta-section" style={{ padding: '88px 0', background: '#fff', overflow: 'visible' }}>
+    <section id="cta" className="cta-section" style={{ padding: '64px 0', background: '#fff', overflow: 'visible' }}>
       <div className="ism-container">
 
         <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', display: 'grid', gridTemplateColumns: '1fr 360px', alignItems: 'center', gap: 40, overflow: 'visible', minHeight: 240 }}>
@@ -45,10 +45,10 @@ export default function CTASection() {
           </div>
 
           {/* ── Right: Person image (overflows top) ── */}
-          <div className="cta-person" style={{ position: 'absolute', right: 40, bottom: 0, width: 320, zIndex: 3, pointerEvents: 'none' }}>
+          <div className="cta-person" style={{ position: 'absolute', right: 40, bottom: 0, width: imageWidth, zIndex: 3, pointerEvents: 'none' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/katherine-koralewski-img.png"
+              src={image}
               alt="Isuremedia team"
               style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', objectPosition: 'bottom' }}
             />

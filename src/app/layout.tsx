@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.webp",
+  },
 };
 
 export default function RootLayout({
