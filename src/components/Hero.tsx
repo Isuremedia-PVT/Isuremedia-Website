@@ -36,7 +36,7 @@ export default function Hero() {
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 740, height: 740, background: 'radial-gradient(circle,rgba(30,77,195,.14) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-10%', left: '-8%', width: 600, height: 600, background: 'radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div className="hero-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container hero-container">
         <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '40% 60%', gap: 48, alignItems: 'center', minHeight: 520 }}>
 
           {/* ── LEFT ── */}
@@ -46,18 +46,18 @@ export default function Hero() {
             </h1>
 
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, marginBottom: 28 }}>
-              We deliver measurable results for businesses that want to grow and agencies that want to scale. Complete digital marketing and white label fulfilment, in one place.
+              We deliver <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>measurable results</span> for businesses that want to grow and agencies that want to scale. Complete digital marketing and white label fulfilment, in one place.
             </p>
 
             <div className="hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 24 }}>
-              <a href="#contact"
+              <a href="/contact" className="hero-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
                 Scale My Agency
               </a>
-              <a href="#contact"
+              <a href="/contact" className="hero-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(30,77,195,.25)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}
@@ -98,6 +98,8 @@ export default function Hero() {
       <style>{`
         @media (max-width: 1023px) {
           .hero-grid { grid-template-columns: 45% 55% !important; min-height: 420px !important; }
+          .hero-btns { flex-wrap: nowrap !important; gap: 10px !important; }
+          .hero-btn { padding: 13px 20px !important; font-size: 12.5px !important; }
         }
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 24px !important; }

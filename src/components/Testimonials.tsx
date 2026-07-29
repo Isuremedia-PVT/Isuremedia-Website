@@ -90,17 +90,17 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 460, margin: '0 auto', lineHeight: 1.75 }}>
-            Real results from businesses and agencies who have trusted us.
+            Real results from businesses and agencies who have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trusted us</span>.
           </p>
         </div>
 
-        <div className="tsm-carousel-wrap" style={{ position: 'relative', padding: '0 52px' }}
+        <div className="tsm-carousel-wrap" style={{ position: 'relative', padding: '0 64px' }}
           onMouseEnter={() => autoplay.current.stop()}
           onMouseLeave={() => autoplay.current.play()}
         >
           <NavBtn dir="prev" onClick={prev} />
           <div ref={emblaRef} style={{ overflow: 'hidden' }}>
-            <div style={{ display: 'flex', gap: 20 }}>
+            <div style={{ display: 'flex' }}>
               {testimonials.map((t, i) => (
                 <div key={i} className="tsm-slide">
                   <div className="tsm-card" style={{ background: '#fff', borderRadius: 20, padding: '32px 30px', height: '100%', display: 'flex', flexDirection: 'column', boxShadow: '0 4px 20px rgba(0,35,83,.06)', border: '1px solid var(--color-border)', boxSizing: 'border-box' }}>
@@ -161,10 +161,11 @@ export default function Testimonials() {
       </div>
 
       <style>{`
-        .tsm-slide { flex: 0 0 calc(50% - 10px); min-width: 0; }
-        @media (max-width: 639px)  { .tsm-slide { flex: 0 0 100%; } }
+        .tsm-slide { flex: 0 0 calc(50% - 14px); min-width: 0; margin-right: 28px; }
+        @media (max-width: 639px)  { .tsm-slide { flex: 0 0 100%; margin-right: 0; } }
         @media (max-width: 768px) {
           .tsm-section { padding: 32px 0 48px !important; }
+          .tsm-carousel-wrap { padding: 0 44px !important; }
         }
         @media (max-width: 640px) {
           .tsm-carousel-wrap { padding: 0 !important; }

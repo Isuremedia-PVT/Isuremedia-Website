@@ -40,11 +40,23 @@ const VALUES = [
   },
 ];
 
+const TEAM = [
+  { name: 'Pooja',           role: 'HR Head',              img: 'https://randomuser.me/api/portraits/women/44.jpg' },
+  { name: 'Sumit',           role: 'CTO',                  img: 'https://randomuser.me/api/portraits/men/11.jpg'   },
+  { name: 'Tyler Brown',     role: 'Sales Manager',        img: 'https://randomuser.me/api/portraits/men/67.jpg'   },
+  { name: 'Pradeep Mehta',   role: 'Sr. Project Manager',  img: 'https://randomuser.me/api/portraits/men/23.jpg'   },
+  { name: 'Rahul Verma',     role: 'Sr. Project Manager',  img: 'https://randomuser.me/api/portraits/men/51.jpg'   },
+  { name: 'Devashish Joshi', role: 'PPC Manager',          img: 'https://randomuser.me/api/portraits/men/8.jpg'    },
+  { name: 'Gayatri Bera',    role: 'Project Manager',      img: 'https://randomuser.me/api/portraits/women/29.jpg' },
+  { name: 'Vedansh Kandpal', role: 'Tech Lead',            img: 'https://randomuser.me/api/portraits/men/76.jpg'   },
+  { name: 'Suraj Joshi',     role: 'Creative Manager',     img: 'https://randomuser.me/api/portraits/men/45.jpg'   },
+];
+
 const HOW_BUILT = [
   {
     icon: 'fa-solid fa-building',
     title: 'Everything In-House. Zero Outsourcing.',
-    body: 'Every piece of work ISureMedia delivers is produced by our in-house team. We do not pass your campaigns to freelancers, subcontractors, or white-label providers. The strategist who plans your campaign is on the same team as the specialist who executes it. That kind of ownership is not standard in this industry. For us it is non-negotiable.',
+    body: 'Every piece of work Isuremedia delivers is produced by our in-house team. We do not pass your campaigns to freelancers, subcontractors, or white-label providers. The strategist who plans your campaign is on the same team as the specialist who executes it. That kind of ownership is not standard in this industry. For us it is non-negotiable.',
   },
   {
     icon: 'fa-solid fa-earth-americas',
@@ -54,7 +66,7 @@ const HOW_BUILT = [
   {
     icon: 'fa-solid fa-bolt',
     title: 'GoHighLevel Is Our Platform.',
-    body: 'GoHighLevel is not something we recommend and leave you to figure out. It is the platform ISureMedia runs on itself. CRM, automation, funnels, appointment systems, and follow-up sequences. We configure it for our own business and for every client that needs it. That depth of experience shows in how we build and how fast we move.',
+    body: 'GoHighLevel is not something we recommend and leave you to figure out. It is the platform Isuremedia runs on itself. CRM, automation, funnels, appointment systems, and follow-up sequences. We configure it for our own business and for every client that needs it. That depth of experience shows in how we build and how fast we move.',
   },
   {
     icon: 'fa-solid fa-calendar-check',
@@ -76,7 +88,7 @@ export default function AboutPage() {
           <div style={{ position: 'absolute', top: -40, left: -60, width: 380, height: 380, background: 'rgba(30,77,195,0.10)', borderRadius: '38% 62% 46% 54% / 60% 44% 56% 40%', filter: 'blur(44px)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: -60, left: '32%', width: 300, height: 300, background: 'rgba(255,176,0,0.12)', borderRadius: '54% 46% 38% 62% / 46% 54% 46% 54%', filter: 'blur(38px)', pointerEvents: 'none' }} />
 
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div className="about-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', minHeight: 400 }}>
 
               {/* LEFT */}
@@ -87,7 +99,7 @@ export default function AboutPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.80, maxWidth: 500, marginBottom: 40 }}>
-                  ISureMedia is an end-to-end digital marketing agency and white-label fulfillment partner. Built for businesses that want results and agencies that want to scale without hiring.
+                  Isuremedia is an end-to-end digital marketing agency and white-label fulfillment partner. Built for businesses that want results and agencies that want to scale without hiring.
                 </p>
 
                 <a href="/contact"
@@ -105,7 +117,7 @@ export default function AboutPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
-                  alt="ISureMedia team"
+                  alt="Isuremedia team"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', borderRadius: 16, display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.18)' }}
                 />
                 <div style={{ position: 'absolute', bottom: 32, left: -24, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -138,10 +150,10 @@ export default function AboutPage() {
         <ReviewsStrip />
 
         {/* ══ 03. OUR STORY ════════════════════════════════════════════════ */}
-        <section style={{ padding: '96px 0 112px', background: '#F7F8FA', position: 'relative' }}>
+        <section style={{ padding: '48px 0 64px', background: '#F7F8FA', position: 'relative' }}>
           <div style={{ position: 'absolute', bottom: '5%', right: '2%', width: 440, height: 440, background: 'radial-gradient(circle,rgba(30,77,195,.05) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div className="about-story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
 
               {/* ── LEFT — sticky image stack ── */}
@@ -155,7 +167,7 @@ export default function AboutPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
-                    alt="ISureMedia team at work"
+                    alt="Isuremedia team at work"
                     style={{ width: '100%', height: 420, objectFit: 'cover', display: 'block' }}
                   />
                 </div>
@@ -165,7 +177,7 @@ export default function AboutPage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
-                    alt="ISureMedia strategy session"
+                    alt="Isuremedia strategy session"
                     style={{ width: '100%', height: 190, objectFit: 'cover', display: 'block' }}
                   />
                 </div>
@@ -209,13 +221,13 @@ export default function AboutPage() {
                     num: '02',
                     color: '#9A6800',
                     bg: 'rgba(255,176,0,.12)',
-                    text: 'Some businesses try to figure it out themselves. Some hire an agency and hope for the best. Whatever the path, most of them hit the same wall. The results are not matching the effort. The strategy is unclear or missing completely. There is no way to tell what is working and what is not.',
+                    text: 'Some businesses try to figure it out themselves. Some hire an agency and hope for the best. Some build a small team and give it a go. Some have no idea where to even start. Whatever the path, most of them hit the same wall. The results are not matching the effort. The strategy is unclear or missing completely. There is no way to tell what is working and what is not. And growing the business feels like it should be simpler than this.',
                   },
                   {
                     num: '03',
                     color: 'var(--color-primary)',
                     bg: 'rgba(30,77,195,.07)',
-                    text: 'That is the moment businesses and agencies find ISM. We come in wherever you are. We look at your goals, your market, and what needs to happen to move your business forward. Then we build a clear strategy and bring in the right experts to execute it.',
+                    text: 'That is the moment businesses and agencies find ISM. We come in wherever you are. Just getting started, stuck in the middle, or ready to grow faster than your current setup allows. We look at your goals, your market, and what actually needs to happen to move your business forward. Then we build a clear strategy and bring in the right experts to execute it.',
                   },
                 ].map((step, idx) => (
                   <div key={idx} style={{ display: 'flex', gap: 20, marginBottom: 32, position: 'relative' }}>
@@ -238,9 +250,9 @@ export default function AboutPage() {
                   <div style={{ position: 'absolute', bottom: -32, left: -16, width: 140, height: 140, background: 'rgba(255,176,0,.05)', borderRadius: '50%', pointerEvents: 'none' }} />
                   <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 22, marginBottom: 14, display: 'block' }} />
                   <p style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.65, margin: '0 0 14px' }}>
-                    SEO, paid ads, content, web, design, automation — every area covered by someone who knows it well. All connected to one plan. All pointed at your growth.
+                    SEO, paid ads, content, web development, design, automation. Every area covered by someone who knows it well. All of it connected to one plan. All of it pointed at your growth. You always know what is being done, why it is being done, and what it is producing. No guessing. No chasing people for updates. No wondering if the strategy is right. Just clear, structured, measurable growth. And a team that owns the outcome the way you would want to own it yourself.
                   </p>
-                  <div style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.42)', letterSpacing: '.06em', textTransform: 'uppercase' }}>ISureMedia</div>
+                  <div style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.42)', letterSpacing: '.06em', textTransform: 'uppercase' }}>Isuremedia</div>
                 </div>
 
                 {/* Trust pills */}
@@ -266,8 +278,8 @@ export default function AboutPage() {
         </section>
 
         {/* ══ 04. WHAT WE BELIEVE ══════════════════════════════════════════ */}
-        <section style={{ padding: '96px 0 112px', background: '#F0F2F8', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <section style={{ padding: '64px 0', background: '#F0F2F8', position: 'relative', overflow: 'hidden' }}>
+          <div className="ism-container">
 
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(24px,2.8vw,42px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, maxWidth: 700, margin: '0 auto' }}>
@@ -276,42 +288,44 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            {/* Vision + Mission */}
-            <div className="about-vm-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, marginBottom: 48 }}>
-
-              <div style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '48px 44px', position: 'relative', overflow: 'hidden' }}>
+            {/* Vision — photo left, card right */}
+            <div className="about-vm-block" style={{ position: 'relative', display: 'flex', alignItems: 'center', minHeight: 380, marginBottom: 72 }}>
+              <div style={{ background: 'var(--color-primary)', borderRadius: 24, padding: '56px 56px 56px 380px', width: '100%', position: 'relative', overflow: 'hidden', zIndex: 1 }}>
                 <div style={{ position: 'absolute', top: -40, right: -40, width: 200, height: 200, background: 'rgba(255,255,255,.05)', borderRadius: '50%', pointerEvents: 'none' }} />
-                <div style={{ position: 'absolute', bottom: -56, left: -32, width: 240, height: 240, background: 'rgba(255,255,255,.03)', borderRadius: '50%', pointerEvents: 'none' }} />
-                <div style={{ width: 52, height: 52, borderRadius: 13, background: 'rgba(255,255,255,.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-                  <i className="fa-solid fa-rocket" style={{ color: '#fff', fontSize: 22 }} />
-                </div>
                 <div style={{ display: 'inline-block', background: 'var(--ism-amber)', borderRadius: 6, padding: '3px 12px', marginBottom: 18 }}>
                   <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Vision</span>
                 </div>
-                <h3 style={{ fontFamily: J, fontSize: 'clamp(17px,1.8vw,24px)', fontWeight: 800, color: '#fff', lineHeight: 1.35, marginBottom: 16, letterSpacing: '-0.3px' }}>
+                <h3 style={{ fontFamily: J, fontSize: 'clamp(19px,2.1vw,28px)', fontWeight: 800, color: '#fff', lineHeight: 1.30, marginBottom: 16, letterSpacing: '-0.3px' }}>
                   1,000 Businesses and Agencies Powered by 2030.
                 </h3>
-                <p style={{ fontFamily: I, fontSize: 15, color: 'rgba(255,255,255,.80)', lineHeight: 1.82, margin: 0 }}>
+                <p style={{ fontFamily: I, fontSize: 15, color: 'rgba(255,255,255,.80)', lineHeight: 1.82, margin: 0, maxWidth: 520 }}>
                   To power the digital growth of 1,000 businesses and agencies worldwide by 2030, through expert strategy and dedicated execution that turns digital presence into structured, measurable, and sustainable growth.
                 </p>
               </div>
+              <div className="about-vm-photo" style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Isuremedia vision" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+            </div>
 
-              <div style={{ background: '#fff', borderRadius: 20, padding: '48px 44px', border: '1px solid var(--color-border)', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: -40, right: -40, width: 200, height: 200, background: 'rgba(30,77,195,.04)', borderRadius: '50%', pointerEvents: 'none' }} />
-                <div style={{ width: 52, height: 52, borderRadius: 13, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-                  <i className="fa-solid fa-compass" style={{ color: 'var(--color-primary)', fontSize: 22 }} />
-                </div>
+            {/* Mission — card left, photo right */}
+            <div className="about-vm-block about-vm-block-rev" style={{ position: 'relative', display: 'flex', alignItems: 'center', minHeight: 380, marginBottom: 48 }}>
+              <div style={{ background: 'var(--color-navy)', borderRadius: 24, padding: '56px 380px 56px 56px', width: '100%', position: 'relative', overflow: 'hidden', zIndex: 1 }}>
+                <div style={{ position: 'absolute', bottom: -56, left: -32, width: 240, height: 240, background: 'rgba(255,255,255,.03)', borderRadius: '50%', pointerEvents: 'none' }} />
                 <div style={{ display: 'inline-block', background: 'var(--ism-amber)', borderRadius: 6, padding: '3px 12px', marginBottom: 18 }}>
                   <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Mission</span>
                 </div>
-                <h3 style={{ fontFamily: J, fontSize: 'clamp(17px,1.8vw,24px)', fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.35, marginBottom: 16, letterSpacing: '-0.3px' }}>
+                <h3 style={{ fontFamily: J, fontSize: 'clamp(19px,2.1vw,28px)', fontWeight: 800, color: '#fff', lineHeight: 1.30, marginBottom: 16, letterSpacing: '-0.3px' }}>
                   Digital Growth Made Simple, Structured, and Measurable.
                 </h3>
-                <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: 0 }}>
+                <p style={{ fontFamily: I, fontSize: 15, color: 'rgba(255,255,255,.75)', lineHeight: 1.82, margin: 0, maxWidth: 520 }}>
                   To make digital growth simple, structured, and measurable for every business and agency we work with, through dedicated experts and clear strategy built around what actually matters to them.
                 </p>
               </div>
-
+              <div className="about-vm-photo" style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Isuremedia mission" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
             </div>
 
             {/* 6 Value Cards — 3×2 */}
@@ -346,10 +360,6 @@ export default function AboutPage() {
           </div>
 
           <style>{`
-            @media (max-width: 960px) {
-              .about-vm-grid { grid-template-columns: 1fr !important; }
-              .about-values-grid { grid-template-columns: repeat(2,1fr) !important; }
-            }
             @media (max-width: 560px) {
               .about-values-grid { grid-template-columns: 1fr !important; }
             }
@@ -357,16 +367,16 @@ export default function AboutPage() {
         </section>
 
         {/* ══ 05. HOW WE ARE BUILT ═════════════════════════════════════════ */}
-        <section style={{ padding: '96px 0 112px', background: '#fff', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ padding: '64px 0', background: '#fff', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-8%', left: '-4%', width: 480, height: 480, background: 'radial-gradient(circle,rgba(255,176,0,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-8%', right: '-4%', width: 480, height: 480, background: 'radial-gradient(circle,rgba(30,77,195,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
+          <div className="ism-container" style={{ position: 'relative', zIndex: 1 }}>
 
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(24px,2.8vw,42px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, maxWidth: 680, margin: '0 auto 16px' }}>
                 <span style={{ color: 'var(--ism-amber)' }}>Four Things</span> That Make{' '}
-                <span style={{ color: 'var(--color-primary)' }}>ISureMedia</span> Different.
+                <span style={{ color: 'var(--color-primary)' }}>Isuremedia</span> Different.
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 520, margin: '0 auto', lineHeight: 1.75 }}>
                 These are not marketing lines. They are the structural decisions that shape how every piece of work gets done.
@@ -422,97 +432,12 @@ export default function AboutPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. VIDEO TESTIMONIAL ════════════════════════════════════════ */}
-        <section style={{ padding: '100px 0 112px', background: '#fff', position: 'relative', overflow: 'hidden' }}>
-
-          {/* Dot grid texture */}
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(30,77,195,.045) 1px, transparent 1px)', backgroundSize: '28px 28px', pointerEvents: 'none' }} />
-
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
-
-            {/* Rule label */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 72 }}>
-              <div style={{ flex: 1, height: 1, background: 'var(--color-border)' }} />
-              <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.14em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>Do Not Take Our Word for It</span>
-              <div style={{ flex: 1, height: 1, background: 'var(--color-border)' }} />
-            </div>
-
-            <div className="about-video-grid" style={{ display: 'grid', gridTemplateColumns: '420px 1fr', gap: 80, alignItems: 'center' }}>
-
-              {/* ── LEFT: Quote ── */}
-              <div>
-                {/* Giant decorative quote mark */}
-                <div style={{ fontFamily: 'Georgia,"Times New Roman",serif', fontSize: 160, lineHeight: 0.75, color: 'var(--ism-amber)', marginBottom: 16, userSelect: 'none' }}>&ldquo;</div>
-
-                <p style={{ fontFamily: J, fontSize: 'clamp(18px,1.9vw,24px)', fontWeight: 700, color: 'var(--color-navy)', lineHeight: 1.58, margin: '0 0 36px', letterSpacing: '-0.3px' }}>
-                  [One sentence pulled verbatim from the client video — pending.]
-                </p>
-
-                <div style={{ width: 44, height: 4, background: 'var(--ism-amber)', borderRadius: 2, marginBottom: 32 }} />
-
-                {/* Client row */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 18 }}>
-                  <div style={{ width: 54, height: 54, borderRadius: '50%', background: 'linear-gradient(135deg, var(--color-primary) 0%, #3B6CF5 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, boxShadow: '0 6px 20px rgba(30,77,195,.30)' }}>
-                    <i className="fa-solid fa-user" style={{ color: '#fff', fontSize: 20 }} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: J, fontSize: 16, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.2, marginBottom: 4 }}>[Client Name]</div>
-                    <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>[Company Name]</div>
-                  </div>
-                </div>
-
-                {/* Stars */}
-                <div style={{ display: 'flex', gap: 4, marginBottom: 28 }}>
-                  {[...Array(5)].map((_, i) => (
-                    <i key={i} className="fa-solid fa-star" style={{ color: 'var(--ism-amber)', fontSize: 17 }} />
-                  ))}
-                </div>
-
-                {/* Google verified badge */}
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: '#F7F8FA', border: '1px solid var(--color-border)', borderRadius: 10, padding: '10px 18px' }}>
-                  <span style={{ fontFamily: 'Arial,sans-serif', fontWeight: 700, fontSize: 17, lineHeight: 1 }}>
-                    <span style={{ color: '#4285F4' }}>G</span><span style={{ color: '#EA4335' }}>o</span><span style={{ color: '#FBBC05' }}>o</span><span style={{ color: '#4285F4' }}>g</span><span style={{ color: '#34A853' }}>l</span><span style={{ color: '#EA4335' }}>e</span>
-                  </span>
-                  <span style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', fontWeight: 500 }}>Verified Review</span>
-                </div>
-              </div>
-
-              {/* ── RIGHT: Video ── */}
-              <div style={{ position: 'relative' }}>
-                {/* Amber shadow box behind video */}
-                <div style={{ position: 'absolute', top: 18, left: 18, right: -18, bottom: -18, background: 'var(--ism-amber)', borderRadius: 24, opacity: 0.15 }} />
-                {/* Blue shadow box */}
-                <div style={{ position: 'absolute', top: 8, left: 8, right: -8, bottom: -8, background: 'var(--color-primary)', borderRadius: 24, opacity: 0.10 }} />
-                <div style={{ borderRadius: 20, overflow: 'hidden', position: 'relative', paddingTop: '56.25%', boxShadow: '0 28px 72px rgba(0,35,83,.18)' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-                    title="Client Testimonial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-                  />
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <style>{`
-            @media (max-width: 960px) {
-              .about-video-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
-            }
-            @media (max-width: 768px) {
-              .about-video-grid { padding: 0 !important; }
-            }
-          `}</style>
-        </section>
-
         {/* ══ 07. MEET THE FOUNDER ═════════════════════════════════════════ */}
-        <section style={{ padding: '96px 0 112px', background: 'linear-gradient(160deg, #EEF2FF 0%, #F7F8FA 55%, #FFFBF0 100%)', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ padding: '64px 0', background: 'linear-gradient(160deg, #EEF2FF 0%, #F7F8FA 55%, #FFFBF0 100%)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-8%', right: '-6%', width: 520, height: 520, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: 440, height: 440, background: 'radial-gradient(circle,rgba(255,176,0,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
 
             <div className="about-founder-grid" style={{ display: 'grid', gridTemplateColumns: '400px 1fr', gap: 72, alignItems: 'center' }}>
 
@@ -525,18 +450,18 @@ export default function AboutPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80"
-                  alt="Harish Pandey — Founder, ISureMedia"
+                  alt="Harish Pandey — Founder, Isuremedia"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 480, borderRadius: 20, objectFit: 'cover', objectPosition: 'center top', display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.18)' }}
                 />
 
-                {/* ISureMedia chip — top left */}
+                {/* Isuremedia chip — top left */}
                 <div style={{ position: 'absolute', top: -14, left: 28, zIndex: 2, background: 'var(--color-primary)', borderRadius: 8, padding: '8px 16px', boxShadow: '0 4px 18px rgba(30,77,195,.38)' }}>
-                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>ISureMedia</span>
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Isuremedia</span>
                 </div>
 
                 {/* Founder badge — bottom right */}
                 <div style={{ position: 'absolute', bottom: -20, right: -20, zIndex: 2, background: 'var(--ism-amber)', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 28px rgba(255,176,0,.45)', textAlign: 'center' }}>
-                  <div style={{ fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.3 }}>Founder<br />ISureMedia</div>
+                  <div style={{ fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.3 }}>Founder<br />Isuremedia</div>
                 </div>
               </div>
 
@@ -544,7 +469,7 @@ export default function AboutPage() {
               <div style={{ paddingTop: 4 }}>
 
                 <div style={{ fontFamily: J, fontSize: 'clamp(28px,3.2vw,48px)', fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1.08, letterSpacing: '-0.6px', marginBottom: 8 }}>Harish Pandey</div>
-                <div style={{ fontFamily: I, fontSize: 15, color: 'var(--color-primary)', fontWeight: 600, marginBottom: 26 }}>Founder, ISureMedia</div>
+                <div style={{ fontFamily: I, fontSize: 15, color: 'var(--color-primary)', fontWeight: 600, marginBottom: 26 }}>Founder, Isuremedia</div>
 
                 {/* Credential pills */}
                 <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 32 }}>
@@ -561,7 +486,7 @@ export default function AboutPage() {
                 </div>
 
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: '0 0 32px' }}>
-                  Harish built ISureMedia around one conviction: that a business owner should always know what their marketing is producing and who is accountable for it. He designed the agency as a fully in-house operation from the start, with US-facing strategy and India-based execution, because he believed that combination could deliver serious results at a cost that works for growing businesses. Every part of how ISM operates reflects what he learned working across SEO, paid advertising, automation, and web development about what actually moves a business forward.
+                  Harish built Isuremedia around one conviction: that a business owner should always know what their marketing is producing and who is accountable for it. He designed the agency as a fully in-house operation from the start, with US-facing strategy and India-based execution, because he believed that combination could deliver serious results at a cost that works for growing businesses. Every part of how ISM operates reflects what he learned working across SEO, paid advertising, automation, and web development about what actually moves a business forward.
                 </p>
 
                 {/* Quote card — dark navy for contrast */}
@@ -587,18 +512,64 @@ export default function AboutPage() {
           `}</style>
         </section>
 
+        {/* ══ 08. MEET THE TEAM ════════════════════════════════════════════ */}
+        <section style={{ padding: '64px 0', background: '#fff' }}>
+          <div className="ism-container">
+
+            {/* Heading */}
+            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(28px,3.2vw,44px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 56, display: 'flex', alignItems: 'center', gap: 18 }}>
+              <span style={{ width: 48, height: 3, background: 'var(--color-navy)', borderRadius: 2, flexShrink: 0 }} />
+              Our Team
+            </h2>
+
+            {/* Team grid — 5 per row, last row left-aligned */}
+            <div className="about-team-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 24 }}>
+              {TEAM.map((m) => (
+                <div key={m.name} className="about-team-card" style={{ flex: '0 0 calc((100% - 96px) / 5)', background: '#fff', border: '1px solid var(--color-border)', borderRadius: 4, overflow: 'hidden', transition: 'background .18s, border-color .18s' }}>
+                  <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={m.img}
+                      alt={m.name}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                    />
+                  </div>
+                  <div style={{ padding: '14px 16px 18px' }}>
+                    <div className="about-team-name" style={{ fontFamily: J, fontSize: 12.5, fontWeight: 800, letterSpacing: '.04em', textTransform: 'uppercase', color: 'var(--color-navy)', transition: 'color .18s' }}>{m.name}</div>
+                    <div className="about-team-role" style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-text-muted)', marginTop: 4, transition: 'color .18s' }}>{m.role}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+          <style>{`
+            .about-team-card:hover { background: var(--ism-amber) !important; border-color: transparent !important; }
+            .about-team-card:hover .about-team-name { color: #fff !important; }
+            .about-team-card:hover .about-team-role { color: rgba(255,255,255,.85) !important; }
+            @media (max-width: 1024px) {
+              .about-team-card { flex-basis: calc((100% - 48px) / 3) !important; }
+            }
+            @media (max-width: 768px) {
+              .about-team-grid { gap: 12px !important; }
+              .about-team-card { flex-basis: calc(50% - 6px) !important; }
+            }
+          `}</style>
+        </section>
+
         {/* ══ 09. ENDING CTA ═══════════════════════════════════════════════ */}
-        <section className="about-cta-section" style={{ padding: '80px 0 96px', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <section className="about-cta-section" style={{ padding: '64px 0', background: '#fff' }}>
+          <div className="ism-container">
 
             {/* Blue card */}
-            <div style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', borderRadius: 24, padding: '64px 72px', position: 'relative', overflow: 'hidden' }}>
+            <div className="about-cta-card" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', borderRadius: 24, padding: '56px 60px', position: 'relative', overflow: 'hidden' }}>
 
               {/* Decorative glows */}
               <div style={{ position: 'absolute', top: '-30%', right: '-8%', width: 520, height: 520, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
               <div style={{ position: 'absolute', bottom: '-40%', left: '-5%', width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle,rgba(0,35,83,.30) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-              <div className="about-cta-inner" style={{ display: 'grid', gridTemplateColumns: '1fr 420px', gap: 72, alignItems: 'center', position: 'relative', zIndex: 1 }}>
+              <div className="about-cta-inner" style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 40, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
                 {/* ── LEFT ── */}
                 <div>
@@ -654,15 +625,23 @@ export default function AboutPage() {
           </div>
 
           <style>{`
+            @media (max-width: 1024px) {
+              .about-cta-card { padding: 30px !important; }
+              .about-cta-inner { grid-template-columns: 1fr 300px !important; gap: 24px !important; }
+            }
             @media (max-width: 900px) {
-              .about-cta-inner { grid-template-columns: 1fr !important; gap: 40px !important; }
+              .about-cta-inner { grid-template-columns: 1fr !important; gap: 24px !important; }
             }
             @media (max-width: 768px) {
-              .about-cta-section > div { padding: 0 20px !important; }
-              .about-cta-section [style*="padding: 64px"] { padding: 36px 24px !important; }
+              .about-cta-card { padding: 24px 16px !important; border-radius: 18px !important; }
+              .about-cta-inner { display: flex !important; flex-direction: column !important; gap: 20px !important; }
+              .about-cta-inner > div:last-child { display: block !important; order: -1 !important; width: 100% !important; height: 260px !important; min-height: 260px !important; border-radius: 14px !important; }
               .about-cta-btns { flex-direction: column !important; align-items: stretch !important; }
               .about-cta-btns a { justify-content: center !important; }
-              .about-cta-inner > div:last-child { display: none !important; }
+            }
+            @media (max-width: 480px) {
+              .about-cta-card { padding: 20px 14px !important; }
+              .about-cta-inner > div:last-child { height: 220px !important; min-height: 220px !important; }
             }
           `}</style>
         </section>
@@ -675,10 +654,8 @@ export default function AboutPage() {
             .about-hero-grid       { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
             .about-story-grid      { grid-template-columns: 1fr 1fr !important; gap: 48px !important; }
             .about-story-grid > div:first-child { position: relative !important; top: 0 !important; padding-bottom: 56px !important; }
-            .about-vm-grid         { grid-template-columns: 1fr 1fr !important; }
             .about-values-grid     { grid-template-columns: repeat(2,1fr) !important; }
             .about-built-grid      { grid-template-columns: 1fr 1fr !important; }
-            .about-video-grid      { grid-template-columns: 1fr 320px !important; gap: 36px !important; }
             .about-founder-grid    { grid-template-columns: 320px 1fr !important; gap: 48px !important; }
             .about-cta-inner       { grid-template-columns: 1fr 320px !important; gap: 40px !important; }
           }
@@ -705,29 +682,23 @@ export default function AboutPage() {
             .about-story-grid > div:first-child { position: relative !important; top: 0 !important; padding-bottom: 48px !important; }
 
             /* vision/mission */
-            .about-vm-grid         { grid-template-columns: 1fr !important; }
+            .about-vm-block        { flex-direction: column !important; min-height: unset !important; }
+            .about-vm-block > div:first-child { padding: 40px 32px !important; }
+            .about-vm-photo        { position: relative !important; left: auto !important; right: auto !important; top: auto !important; transform: none !important; width: 100% !important; height: 260px !important; order: -1; margin-bottom: 20px !important; }
             .about-values-grid     { grid-template-columns: 1fr !important; }
 
             /* how built */
             .about-built-grid      { grid-template-columns: 1fr !important; }
 
-            /* video */
-            .about-video-grid      { grid-template-columns: 1fr !important; gap: 32px !important; }
-
             /* founder */
             .about-founder-grid    { grid-template-columns: 1fr !important; gap: 48px !important; }
 
-            /* section padding reduction */
-            section[style*="padding: 96px"] { padding: 60px 0 72px !important; }
-            section[style*="padding: 100px"] { padding: 60px 0 72px !important; }
           }
 
           /* ── Small mobile (≤480px) ── */
           @media (max-width: 480px) {
             .about-stats-grid      { grid-template-columns: repeat(2,1fr) !important; }
             .about-stats-grid > div { padding: 28px 12px !important; }
-            section[style*="padding: 96px"] { padding: 48px 0 56px !important; }
-            section[style*="padding: 100px"] { padding: 48px 0 56px !important; }
           }
         `}</style>
 

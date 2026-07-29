@@ -93,13 +93,88 @@ p  { font-family: var(--font-inter, 'Inter', sans-serif); }
 }
 
 /* ── Shared section container: desktop 40px / mobile 20px ── */
-.ism-container {
+.ism-container,
+.container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+  width: 100%;
 }
 @media (max-width: 768px) {
-  .ism-container { padding: 0 20px !important; }
+  .ism-container,
+  .container { padding: 0 20px !important; }
+}
+
+/*
+  ── Site-wide breakpoint standard ──
+  Mobile: 350–768px | Tablet: 769–1024px | Desktop: >1024px
+
+  Most pages build their own page-width wrapper inline (max-width: 1280/1240/1200px)
+  instead of using .ism-container directly. This catches those wrappers so every
+  page gets the same mobile/tablet side padding without editing each file.
+*/
+@media (max-width: 768px) {
+  div[style*="max-width: 1280px"],
+  div[style*="max-width: 1240px"],
+  div[style*="max-width: 1200px"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  div[style*="max-width: 1280px"],
+  div[style*="max-width: 1240px"],
+  div[style*="max-width: 1200px"] {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   UNIFIED SITE-WIDE SECTION SPACING SYSTEM
+   Enforces exact, consistent section spacing across ALL pages for Desktop, Tablet & Mobile.
+   - Desktop (>1024px)     : 64px top / 64px bottom
+   - Tablet (769-1024px)   : 48px top / 48px bottom
+   - Mobile (481-768px)    : 36px top / 36px bottom
+   - Small Mobile (<=480px): 28px top / 28px bottom
+   ══════════════════════════════════════════════════════════════════ */
+
+/* Desktop Default (>1024px) */
+section:not(.rs-section):not(.hero-section):not(.about-hero-section) {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+/* Tablet (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section:not(.rs-section):not(.hero-section):not(.about-hero-section) {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+/* Mobile (481px – 768px) */
+@media (max-width: 768px) {
+  section:not(.rs-section):not(.hero-section):not(.about-hero-section) {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  section:not(.rs-section):not(.hero-section):not(.about-hero-section) {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+}
+
+/* Prevent inner margins from adding extra top/bottom gap to section padding */
+section > *:first-child {
+  margin-top: 0 !important;
+}
+section > *:last-child {
+  margin-bottom: 0 !important;
 }
 
 /* ── Scrollbar ── */

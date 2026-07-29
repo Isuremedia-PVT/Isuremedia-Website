@@ -1,6 +1,6 @@
 export default function ReviewsStrip() {
   return (
-    <section style={{ background: '#F7F8FA', padding: '16px 0' }}>
+    <section className="rs-section" style={{ background: '#F7F8FA', padding: '16px 0' }}>
       <div className="rs-wrap" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div className="rs-grid" style={{ display: 'grid', gridTemplateColumns: 'auto 1px auto 1px auto', alignItems: 'center', justifyContent: 'center' }}>
@@ -31,11 +31,12 @@ export default function ReviewsStrip() {
       </div>
 
       <style>{`
-        @media (max-width: 1023px) {
-          .rs-item { padding: 8px 12px !important; }
-          .rs-img { height: 68px !important; }
+        @media (max-width: 1024px) and (min-width: 769px) {
+          .rs-grid { grid-template-columns: 1fr 1px 1fr 1px 1fr !important; }
+          .rs-item { padding: 8px 16px !important; }
+          .rs-img { height: auto !important; width: 100% !important; max-height: 92px !important; }
         }
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .rs-wrap { padding: 0 8px !important; }
           .rs-grid { grid-template-columns: 1fr 1fr 1fr !important; }
           .rs-divider { display: none !important; }

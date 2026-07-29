@@ -269,7 +269,7 @@ export default function Navbar() {
 
       {/* ── Top utility bar ── */}
       <div className="nav-top-bar" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '7px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div className="ism-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
           {/* Left — social icons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -318,7 +318,7 @@ export default function Navbar() {
       </div>
 
       {/* ── Main nav row ── */}
-      <div className="nav-main-row" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 62 }}>
+      <div className="ism-container nav-main-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 62 }}>
 
         {/* ── Logo ── */}
         <a href="/" className="nav-logo" style={{ textDecoration: 'none', flexShrink: 0 }}>

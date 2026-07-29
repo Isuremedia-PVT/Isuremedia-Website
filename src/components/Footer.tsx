@@ -160,7 +160,7 @@ export default function Footer() {
         {/* ── Bottom bar ── */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 0', flexWrap: 'wrap', gap: 12 }}>
           <p style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.65)', margin: 0 }}>
-            All rights are reserved by ISUREMEDIA PVT. LTD. | Copyright © 2026
+            All rights are reserved by Isuremedia PVT. LTD. | Copyright © 2026
           </p>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
             {legalLinks.map(item => (
