@@ -45,7 +45,7 @@ export default function FAQ() {
             Answers Before You Decide
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-            Everything you need to know before working with us.
+            Everything you need to know <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>before working with us</span>.
           </p>
         </div>
 

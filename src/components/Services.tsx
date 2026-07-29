@@ -238,7 +238,7 @@ export default function Services() {
                 {active.title}
               </h3>
 
-              <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 28, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+              <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 28 }}>
                 {active.desc}
               </p>
 
@@ -294,7 +294,7 @@ export default function Services() {
 
         .svc-checklist-wrap { position: relative; margin-bottom: 28px; }
         .svc-checklist {
-          max-height: 280px; overflow-y: auto; padding-right: 4px; padding-bottom: 4px;
+          max-height: 224px; overflow-y: auto; padding-right: 4px; padding-bottom: 4px;
           display: flex; flex-direction: column; gap: 10px;
           scrollbar-width: none;
         }

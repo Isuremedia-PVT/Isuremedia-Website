@@ -28,7 +28,7 @@ export default function HowItWorks() {
             <span style={{ color: 'var(--ism-amber)' }}>Unpredictable Results.</span>
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 460, margin: '0 auto', lineHeight: 1.75 }}>
-            We keep it simple so you stay focused on growth.
+            We keep it simple so you stay <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>focused on growth</span>.
           </p>
         </div>
 

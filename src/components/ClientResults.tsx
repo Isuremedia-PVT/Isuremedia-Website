@@ -8,7 +8,7 @@ const LOGO_STRIP = '/images/partner.webp';
 
 const CASES = [
   {
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80',
+    img: '/images/casestudy-dummy.png',
     client: 'Qualis Roofing',
     quote: 'Since we started working with ISM, our SEO return on investment is in the 800% range.',
     stats: [
@@ -16,11 +16,11 @@ const CASES = [
       { val: '+68%',   label: 'Organic Conversions',     sub: 'in 6 months',    icon: 'fa-solid fa-users'      },
     ],
     body: 'Qualis partnered with ISM to improve local visibility throughout the Dallas–Fort Worth area. By optimising location and service pages and publishing targeted blog posts around high-potential keywords, the campaign delivered a +427% increase in top 10 organic keywords year over year and a +68% boost in organic conversions.',
-    link: '#',
+    link: '/case-studies',
     linkLabel: "Read Qualis Roofing's Case Study",
   },
   {
-    img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80',
+    img: '/images/casestudy-dummy.png',
     client: 'TruckAC+',
     quote: 'ISM is handling business the way they said they would in the beginning.',
     stats: [
@@ -28,7 +28,7 @@ const CASES = [
       { val: '+1,092', label: 'Website Purchases', sub: 'in 6 months',    icon: 'fa-solid fa-cart-shopping' },
     ],
     body: "ISM rebuilt TruckAC+'s paid media strategy across social, PPC and programmatic channels. The full-funnel approach generated a 23X return on ad spend, +$350K in ad revenue and +1,000 purchases in six months, exceeding performance benchmarks and seasonal goals.",
-    link: '#',
+    link: '/case-studies',
     linkLabel: "Read TruckAC+'s Case Study",
   },
 ];
@@ -57,39 +57,30 @@ export default function ClientResults() {
         </div>
 
         {/* ── Case Study Cards ── */}
-        <div className="cr-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 52 }}>
+        <div className="cr-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 28, marginBottom: 52 }}>
           {CASES.map((c, i) => (
             <div key={i} style={{ background: '#fff', borderRadius: 18, boxShadow: '0 4px 28px rgba(0,35,83,.10)', border: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column', gap: 18, padding: '24px 24px 26px' }}>
 
-              {/* Header row: heading + quote left, thumbnail right */}
-              <div className="cr-header" style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', alignItems: 'stretch', gap: 16 }}>
+              {/* Header row: heading left, thumbnail right */}
+              <div className="cr-header" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,3fr) minmax(0,7fr)', alignItems: 'flex-start', gap: 16 }}>
                 <div style={{ minWidth: 0 }}>
-                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--ism-amber)', textTransform: 'uppercase', letterSpacing: '.08em' }}>Case Study</span>
-                  <h3 style={{ fontFamily: J, fontSize: 'clamp(20px,2.2vw,26px)', fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1.18, marginTop: 6, marginBottom: 14 }}>{c.client}</h3>
+                  <h3 style={{ fontFamily: J, fontSize: 'clamp(20px,2.2vw,26px)', fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1.18, marginBottom: 14 }}>{c.client}</h3>
 
                   {/* Quote */}
-                  <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 22, display: 'block', marginBottom: 8 }} />
-                  <p style={{ fontFamily: I, fontSize: 14.5, color: 'var(--color-navy)', lineHeight: 1.6, margin: '0 0 8px', fontWeight: 500 }}>{c.quote}</p>
-                  <span style={{ fontFamily: I, fontSize: 12.5, color: 'var(--color-text-muted)' }}>– {c.client}</span>
+                  <div style={{ background: '#FFF7E8', borderRadius: 12, padding: '14px 16px' }}>
+                    <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 18, display: 'block', marginBottom: 6 }} />
+                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', lineHeight: 1.55, margin: 0 }}>
+                      {c.quote} <span style={{ color: 'var(--ism-amber)', fontWeight: 700 }}>– {c.client}</span>
+                    </p>
+                  </div>
                 </div>
 
-                {/* Thumbnail — static image, not a real video, decorative play icon only */}
-                <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 190 }}>
-                  {/* amber faceted-corner border frame — same shape for any image dropped in later */}
-                  <div style={{ position: 'absolute', inset: 0, background: 'var(--ism-amber)', clipPath: 'polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%)' }} />
-                  <div style={{ position: 'absolute', inset: 4, overflow: 'hidden', boxShadow: '0 8px 22px rgba(0,35,83,.18)', clipPath: 'polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%)' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={c.img} alt={c.client}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                    />
-                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,35,83,.20)' }} />
-                    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 52, height: 52, borderRadius: '50%', background: 'rgba(255,255,255,.94)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 16px rgba(0,0,0,.22)', cursor: 'pointer', transition: 'transform .18s' }}
-                      onMouseEnter={e => (e.currentTarget.style.transform = 'translate(-50%,-50%) scale(1.10)')}
-                      onMouseLeave={e => (e.currentTarget.style.transform = 'translate(-50%,-50%) scale(1)')}
-                    >
-                      <i className="fa-solid fa-play" style={{ color: 'var(--color-primary)', fontSize: 17, marginLeft: 2 }} />
-                    </div>
-                  </div>
+                {/* Thumbnail — pre-designed dummy image (border/shape already baked in) */}
+                <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 260 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={c.img} alt={c.client}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                  />
                 </div>
               </div>
 
@@ -140,15 +131,20 @@ export default function ClientResults() {
 
       <style>{`
         @media (max-width: 760px) {
-          .cr-grid { grid-template-columns: 1fr !important; }
+          .cr-grid { grid-template-columns: minmax(0,1fr) !important; }
           .cr-section { padding: 44px 0 !important; }
         }
-        @media (max-width: 560px) {
-          .cr-header { grid-template-columns: 1fr !important; }
+        @media (max-width: 1024px) {
+          .cr-header { grid-template-columns: minmax(0,1fr) !important; }
+          .cr-thumb { height: 220px !important; }
+          .cr-cta-btn { padding: 15px 36px !important; font-size: 13px !important; }
+        }
+        @media (max-width: 760px) {
+          .cr-cta-btn { padding: 14px 30px !important; font-size: 12.5px !important; }
         }
         @media (max-width: 480px) {
           .cr-section { padding: 32px 0 !important; }
-          .cr-cta-btn { padding: 14px 24px !important; white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
+          .cr-cta-btn { padding: 13px 24px !important; font-size: 12.5px !important; white-space: normal !important; text-align: center !important; width: 100% !important; box-sizing: border-box !important; justify-content: center !important; }
           .cr-thumb { height: 160px !important; }
         }
       `}</style>

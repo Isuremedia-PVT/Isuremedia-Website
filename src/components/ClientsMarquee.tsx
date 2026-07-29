@@ -74,7 +74,7 @@ export default function ClientsMarquee() {
           </div>
         </div>
 
-        {/* RIGHT — single-logo slide (mobile/tablet) */}
+        {/* RIGHT — single-logo slide (mobile) */}
         <div className="cm-single" style={{ flex: 1, minWidth: 0, display: 'none', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -91,6 +91,10 @@ export default function ClientsMarquee() {
         @keyframes cmSlideFade { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
         .cm-single-img { animation: cmSlideFade .4s ease both; }
 
+        @media (max-width: 1024px) and (min-width: 769px) {
+          .cm-row { align-items: stretch !important; min-height: 76px !important; }
+          .cm-label { width: 220px !important; padding: 14px 20px !important; }
+        }
         @media (max-width: 768px) {
           .cm-row { align-items: stretch !important; min-height: 76px !important; }
           .cm-label { width: 50% !important; padding: 14px 16px !important; }

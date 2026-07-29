@@ -69,20 +69,20 @@ export default function TrustVideo() {
           {/* ── Right: Paragraphs + CTA ── */}
           <div>
             <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 20 }}>
-              Isuremedia is a results driven digital marketing and white label agency that has been driving measurable growth for businesses and agencies since 2017. We focus entirely on outcomes, so everything we build for a client has a clear goal behind it and a team that answers for the result.
+              Isuremedia is a results driven digital marketing and white label agency that has been <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>driving measurable growth</span> for businesses and agencies since 2017. We focus entirely on outcomes, so everything we build for a client has a clear goal behind it and a team that answers for the result.
             </p>
             <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-              Isuremedia works with clients of every size, from local businesses and startups to established brands, multi location companies, and enterprise clients, across the US, UK, Canada, and beyond. We have worked across every major industry and offer clear pricing that works for any budget. Our terms are month to month because we genuinely believe in the quality of our work.
+              Isuremedia works with clients of every size, from local businesses and startups to established brands, multi location companies, and enterprise clients, across the US, UK, Canada, and beyond. We have worked across every major industry and offer clear pricing that works for any budget. Our terms are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>month to month</span> because we genuinely believe in the quality of our work.
             </p>
             <div className="tv-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-              <a href="#cta"
+              <a href="#cta" className="tv-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.30)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
                 Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
               </a>
-              <a href="#contact"
+              <a href="/contact" className="tv-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(30,77,195,.30)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}
@@ -95,6 +95,11 @@ export default function TrustVideo() {
         </div>
       </div>
       <style>{`
+        @media (max-width: 1024px) {
+          .tv-grid { gap: 40px !important; }
+          .tv-btns { flex-wrap: nowrap !important; gap: 10px !important; }
+          .tv-btn { padding: 13px 20px !important; font-size: 12.5px !important; }
+        }
         @media (max-width: 768px) {
           .tv-section { padding: 44px 0 !important; }
           .tv-grid { grid-template-columns: 1fr !important; gap: 32px !important; }

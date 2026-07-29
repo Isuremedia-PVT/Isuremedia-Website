@@ -23,8 +23,8 @@ export default function Home() {
       <main>
         <Hero />
         <ReviewsStrip />
-        <ClientsMarquee />
         <HomeVideoSection />
+        <ClientsMarquee />
         <ProblemStatement />
         <ClientResults />
         <TrustVideo />

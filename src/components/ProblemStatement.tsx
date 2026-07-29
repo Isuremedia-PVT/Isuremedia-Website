@@ -13,23 +13,7 @@ export default function ProblemStatement() {
       <div style={{ position: 'absolute', right: '-5%', top: '-20%', width: 600, height: 600, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', left: '-8%', bottom: '-30%', width: 500, height: 500, borderRadius: '50%', background: 'radial-gradient(circle,rgba(0,35,83,.35) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
-      <div className="ps-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
-
-        {/* Label */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 22 }}>
-          <div style={{ width: 28, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
-          <p style={{
-            fontFamily: J,
-            fontSize: 11,
-            fontWeight: 700,
-            color: 'var(--ism-amber)',
-            letterSpacing: '.12em',
-            textTransform: 'uppercase',
-            margin: 0,
-          }}>
-            The Truth
-          </p>
-        </div>
+      <div className="ism-container ps-container" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* Heading white */}
         <h2 style={{

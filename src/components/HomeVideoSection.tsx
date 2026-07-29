@@ -26,12 +26,12 @@ export default function HomeVideoSection() {
             <span style={{ color: 'var(--ism-amber)' }}>our word for it.</span>
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: '0 auto', maxWidth: 540 }}>
-            Watch how we&apos;ve helped businesses like yours grow rankings, leads, and revenue — month after month.
+            Watch how we&apos;ve helped businesses like yours grow rankings, leads, and revenue <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>month after month</span>.
           </p>
         </div>
 
         {/* Video card */}
-        <div style={{ position: 'relative', borderRadius: 20, overflow: 'hidden', boxShadow: '0 32px 80px rgba(0,0,0,.50)', border: '1px solid rgba(255,255,255,.08)' }}>
+        <div style={{ position: 'relative', borderRadius: 20, overflow: 'hidden', boxShadow: '0 16px 40px rgba(0,0,0,.18)', border: '1px solid rgba(255,255,255,.08)' }}>
           <div style={{ aspectRatio: '16/9', position: 'relative', background: '#000' }}>
 
             {playing ? (
