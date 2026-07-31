@@ -58,7 +58,7 @@ export default function N8nPage() {
 
         {/* BREADCRUMB */}
         <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '14px 0' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <nav style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' as const }}>
               {[
                 { label: 'Home', href: '/' },
@@ -137,7 +137,7 @@ export default function N8nPage() {
 
         {/* KEY BENEFITS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why n8n Is the Automation Platform for Serious Teams</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Unlimited runs, full customisation, and total data ownership — n8n is built for teams that take automation seriously.</p>
@@ -160,7 +160,7 @@ export default function N8nPage() {
 
         {/* WHAT'S INCLUDED */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>From Server Setup to 10 Live Workflows</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>We handle everything from infrastructure to workflow delivery and team handover.</p>
@@ -180,7 +180,7 @@ export default function N8nPage() {
 
         {/* PROCESS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Setup to Deployed Workflows in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>Infrastructure first, then workflows — ensuring your n8n environment is production-ready before the first automation goes live.</p>
@@ -203,7 +203,7 @@ export default function N8nPage() {
 
         {/* RELATED SERVICES */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair n8n With These Services</h2>
             </div>

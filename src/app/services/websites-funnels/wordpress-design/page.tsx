@@ -57,7 +57,7 @@ export default function WordPressDesignPage() {
 
         {/* ── BREADCRUMB ── */}
         <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '14px 0' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <nav style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
               {[
                 { label: 'Home', href: '/' },
@@ -144,7 +144,7 @@ export default function WordPressDesignPage() {
 
         {/* ── KEY BENEFITS ── */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
@@ -171,7 +171,7 @@ export default function WordPressDesignPage() {
 
         {/* ── WHAT'S INCLUDED ── */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
@@ -195,7 +195,7 @@ export default function WordPressDesignPage() {
 
         {/* ── PROCESS ── */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
@@ -222,7 +222,7 @@ export default function WordPressDesignPage() {
 
         {/* ── RELATED SERVICES ── */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
                 <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />

@@ -75,12 +75,12 @@ export default function VideoTestimonials() {
                   <>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                      src={`https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`}
                       alt={v.name}
                       loading="lazy"
                       width={480}
                       height={270}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
                     />
                     {/* Dark overlay */}
                     <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,35,83,.30)' }} />

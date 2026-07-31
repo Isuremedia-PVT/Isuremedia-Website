@@ -239,7 +239,7 @@ export default function LocalSEOPage() {
           <style>{`
             @media (max-width: 900px) {
               .lseo-hero-grid { grid-template-columns: minmax(0,1fr) !important; gap: 60px !important; }
-              .lseo-hero-photo { order: -1; margin: 0 12px 24px; }
+              .lseo-hero-photo { margin: 0 12px 24px; }
             }
             @media (max-width: 480px) {
               .lseo-hero { padding: 48px 0 64px !important; }
@@ -301,12 +301,12 @@ export default function LocalSEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     When someone searches for a local business, Google shows a map and three results at the top of the page. Those three spots get the majority of clicks and calls. Local SEO is everything that goes into{' '}
-                    <span style={{ background: 'rgba(255,176,0,.25)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>earning one of those spots</span>{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>earning one of those spots</span>{' '}
                     for your business.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unlike broader SEO, local SEO targets customers in a specific area. A plumber in Dallas, a dentist in Melbourne, a law firm in Toronto — local SEO makes sure{' '}
-                    <span style={{ background: 'rgba(255,176,0,.25)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right people in the right location</span>{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right people in the right location</span>{' '}
                     find your business when they search.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

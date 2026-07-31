@@ -58,7 +58,7 @@ export default function ZapierPage() {
 
         {/* BREADCRUMB */}
         <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '14px 0' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <nav style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' as const }}>
               {[
                 { label: 'Home', href: '/' },
@@ -137,7 +137,7 @@ export default function ZapierPage() {
 
         {/* KEY BENEFITS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why Zapier Workflows Pay for Themselves</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Properly built Zapier workflows eliminate hours of manual work every week and keep your data consistent across every tool.</p>
@@ -160,7 +160,7 @@ export default function ZapierPage() {
 
         {/* WHAT'S INCLUDED */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>10 Custom Zaps and Everything Around Them</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>From the initial audit to team training and ongoing support — we handle the full lifecycle of your Zapier automations.</p>
@@ -180,7 +180,7 @@ export default function ZapierPage() {
 
         {/* PROCESS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Audit to Documented Workflows in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>We map, build, test, and document every workflow so your team can manage them confidently long after handover.</p>
@@ -203,7 +203,7 @@ export default function ZapierPage() {
 
         {/* RELATED SERVICES */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair Zapier With These Services</h2>
             </div>

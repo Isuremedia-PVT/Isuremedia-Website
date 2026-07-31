@@ -53,7 +53,7 @@ export default function HomeVideoSection() {
                 />
 
                 {/* Dark overlay */}
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(10,15,40,.85) 0%, rgba(10,15,40,.25) 50%, rgba(10,15,40,.10) 100%)' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(8,12,32,.96) 0%, rgba(8,12,32,.80) 32%, rgba(8,12,32,.20) 60%, rgba(8,12,32,.10) 100%)' }} />
 
                 {/* Play button */}
                 <button
@@ -61,26 +61,27 @@ export default function HomeVideoSection() {
                   aria-label="Play video"
                   style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                 >
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+                  <div className="hvs-play-wrap" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
                     <div
+                      className="hvs-play-btn"
                       style={{ width: 80, height: 80, background: 'var(--ism-amber)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 40px rgba(255,176,0,.55)', transition: 'transform .22s, box-shadow .22s' }}
                       onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = 'scale(1.10)'; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 12px 52px rgba(255,176,0,.75)'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform = ''; (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 40px rgba(255,176,0,.55)'; }}
                     >
                       <i className="fa-solid fa-play" style={{ fontSize: 26, color: 'var(--color-navy)', marginLeft: 5 }} />
                     </div>
-                    <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.75)', letterSpacing: '.04em' }}>Watch now — 4:12</span>
+                    <span className="hvs-watch-label" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.75)', letterSpacing: '.04em' }}>Watch now — 4:12</span>
                   </div>
                 </button>
 
                 {/* Bottom overlay text */}
-                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '32px 36px' }}>
+                <div className="hvs-caption" style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '32px 36px' }}>
                   <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                     <div>
-                      <p style={{ fontFamily: J, fontSize: 'clamp(16px,2vw,26px)', fontWeight: 900, color: '#fff', margin: '0 0 4px', lineHeight: 1.25 }}>
+                      <p style={{ fontFamily: J, fontSize: 'clamp(14px,2vw,26px)', fontWeight: 900, color: '#fff', margin: '0 0 4px', lineHeight: 1.3 }}>
                         How Isuremedia delivers results
                       </p>
-                      <p style={{ fontFamily: J, fontSize: 'clamp(16px,2vw,26px)', fontWeight: 900, color: 'var(--ism-amber)', margin: 0, lineHeight: 1.25 }}>
+                      <p style={{ fontFamily: J, fontSize: 'clamp(14px,2vw,26px)', fontWeight: 900, color: 'var(--ism-amber)', margin: 0, lineHeight: 1.3 }}>
                         for businesses worldwide.
                       </p>
                     </div>
@@ -98,6 +99,10 @@ export default function HomeVideoSection() {
         @media (max-width: 768px) {
           .hvs-section { padding: 48px 0 !important; }
           .hvs-container { padding: 0 20px !important; max-width: 100% !important; }
+          .hvs-caption { padding: 18px 20px !important; }
+          .hvs-watch-label { display: none !important; }
+          .hvs-play-btn { width: 56px !important; height: 56px !important; }
+          .hvs-play-wrap { gap: 0 !important; }
         }
         @media (max-width: 480px) {
           .hvs-section { padding: 36px 0 !important; }

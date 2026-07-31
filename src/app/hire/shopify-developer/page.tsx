@@ -50,7 +50,7 @@ export default function HireShopifyDeveloper() {
 
       {/* Breadcrumb */}
       <div style={{ background: 'var(--color-bg-soft)', borderBottom: '1px solid var(--color-border)', padding: '12px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', margin: 0 }}>
             <a href="/" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>Home</a>
             <span style={{ margin: '0 8px', opacity: 0.5 }}>›</span>
@@ -93,7 +93,7 @@ export default function HireShopifyDeveloper() {
 
       {/* What You Get */}
       <section style={{ background: '#fff', padding: '80px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ marginBottom: 16 }}>What You Get When You Hire From ISM</h2>
             <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', maxWidth: 560, margin: '0 auto' }}>Shopify expertise that drives real store performance.</p>
@@ -114,7 +114,7 @@ export default function HireShopifyDeveloper() {
 
       {/* Skills & Expertise */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <div className="skills-inner" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
             <div>
               <h2 style={{ marginBottom: 16 }}>Skills & Expertise</h2>
@@ -142,7 +142,7 @@ export default function HireShopifyDeveloper() {
 
       {/* Engagement Models */}
       <section style={{ background: '#fff', padding: '80px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ marginBottom: 16 }}>Engagement Models</h2>
             <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', maxWidth: 500, margin: '0 auto' }}>Flexible options for every stage of your store's growth.</p>
@@ -164,7 +164,7 @@ export default function HireShopifyDeveloper() {
 
       {/* Why ISM */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ marginBottom: 16 }}>Why Hire From Isuremedia?</h2>
             <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', maxWidth: 520, margin: '0 auto' }}>We are your long-term Shopify hiring partner.</p>
@@ -185,7 +185,7 @@ export default function HireShopifyDeveloper() {
 
       {/* Process */}
       <section id="how-it-works" style={{ background: '#fff', padding: '80px 0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+        <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ marginBottom: 16 }}>How the Process Works</h2>
             <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', maxWidth: 480, margin: '0 auto' }}>From brief to first commit in as little as 48 hours.</p>

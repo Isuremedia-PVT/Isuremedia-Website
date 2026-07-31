@@ -1,148 +1,90 @@
 'use client';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
-const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
-const I = 'var(--font-inter,Inter,sans-serif)';
-
+import CaseStudyDetail from '@/components/CaseStudyDetail';
 
 export default function HvacCaseStudyPage() {
   return (
-    <>
-      <Navbar />
-      <main>
-
-        {/* 1. HERO */}
-        <section style={{ background: '#fff', padding: '80px 0 64px' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            {/* Breadcrumb */}
-            <nav style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24, flexWrap: 'wrap' as const }}>
-              <a href="/" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Home</a>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>{'>'}</span>
-              <a href="/case-studies" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Case Studies</a>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>{'>'}</span>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-primary)', fontWeight: 600 }}>GoHighLevel Automation — HVAC</span>
-            </nav>
-
-            {/* Tags row */}
-            <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 8, marginBottom: 4 }}>
-              {['Home Services / HVAC', 'GoHighLevel + PPC', 'USA', '90 days'].map((tag) => (
-                <span key={tag} style={{ padding: '4px 14px', borderRadius: 100, background: 'var(--color-bg-soft)', border: '1px solid var(--color-border)', fontSize: 12, fontFamily: I, color: 'var(--color-text-muted)', fontWeight: 600 }}>{tag}</span>
-              ))}
-            </div>
-
-            {/* H1 */}
-            <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(28px,3.2vw,52px)', color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.08, margin: '20px 0 32px' }}>
-              340% More Booked Jobs in 90 Days. Without Spending More on Ads.
-            </h1>
-
-            {/* Three-metric strip */}
-            <div className="cs-metrics" style={{ display: 'flex', gap: 16 }}>
-              {[
-                { num: '+340%', label: 'Booked Jobs' },
-                { num: '<90 sec', label: 'Avg Lead Response' },
-                { num: '$0', label: 'Extra Ad Spend' },
-              ].map((m) => (
-                <div key={m.label} style={{ flex: 1, padding: '28px 24px', background: 'linear-gradient(135deg,#1840A0,#2F5FE8)', borderRadius: 14, textAlign: 'center' as const }}>
-                  <div style={{ fontFamily: J, fontWeight: 900, fontSize: 40, color: 'var(--ism-amber)' }}>{m.num}</div>
-                  <div style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.75)', marginTop: 8 }}>{m.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2. THE CHALLENGE */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 24px' }}>
-              Great Ads. Broken Follow-Up. Lost Revenue.
-            </h2>
-            <p style={{ maxWidth: 720, fontFamily: I, fontSize: 16, lineHeight: 1.85, color: 'var(--color-text-muted)', margin: 0 }}>
-              [Company] was running Google Ads and getting leads — but they were converting at around 15% of what they should have been. The problem was not the ads. The problem was follow-up. When someone searches for an HVAC company, they contact three or four businesses and hire whoever calls back first. [Company]&apos;s team was calling back within a few hours when they had time. By then, the lead had already booked with a competitor.
-            </p>
-          </div>
-        </section>
-
-        {/* 3. WHAT WE DID */}
-        <section style={{ background: '#fff', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
-              A Full GoHighLevel Build — From Zero to Automated
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
-              {[
-                'Set up a GoHighLevel account from scratch — CRM, pipelines, automation, and lead source tagging',
-                'Built a trigger automation: when a new lead submits a form on any source, an SMS fires within 90 seconds',
-                'Built a follow-up sequence: SMS day 0, email day 0, call reminder day 1, SMS nudge day 3 if no response',
-                'Added a booking automation — a Calendly-style widget integrated into the CRM so leads could book immediately without a phone call',
-                'Added no-show follow-up automation for appointments that did not convert',
-                'Connected all lead sources (Google Ads, website form, LSA) to the same CRM pipeline',
-              ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' as const }}>
-                  <div style={{ width: 22, height: 22, borderRadius: '50%', background: 'rgba(30,77,195,.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                    <i className="fa-solid fa-check" style={{ color: 'var(--color-primary)', fontSize: 11 }} />
-                  </div>
-                  <p style={{ fontFamily: I, fontSize: 15, lineHeight: 1.7, color: 'var(--color-text-muted)', margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 4. THE RESULTS */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
-              The Numbers After 90 Days
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
-              {[
-                'Booked jobs increased by 340% from the same monthly ad spend',
-                'Average lead response time went from 3+ hours to under 90 seconds',
-                'Booking rate from new leads went from 15% to 47%',
-                'No-show rate dropped 40% after appointment reminder sequences were in place',
-                'Ad spend was not increased — the only variable that changed was the follow-up system',
-              ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' as const }}>
-                  <div style={{ width: 22, height: 22, borderRadius: '50%', background: 'rgba(255,176,0,.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                    <i className="fa-solid fa-chart-line" style={{ color: 'var(--ism-amber)', fontSize: 11 }} />
-                  </div>
-                  <p style={{ fontFamily: I, fontSize: 15, lineHeight: 1.7, color: 'var(--color-navy)', fontWeight: 600, margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 5. BOTTOM CTA */}
-        <section style={{ background: 'linear-gradient(135deg,#1840A0,#2F5FE8)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 680, margin: '0 auto', padding: '0 40px', textAlign: 'center' as const }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(24px,2.5vw,38px)', color: '#fff', letterSpacing: '-0.5px', margin: '0 0 20px' }}>
-              Running ads but not converting enough leads?
-            </h2>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.72)', lineHeight: 1.75, margin: '0 0 36px' }}>
-              We will audit your follow-up system and show you where it is breaking.
-            </p>
-            <a
-              href="/services/marketing-automation"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' as const, boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = ''; }}
-            >
-              Book a Free Automation Audit &rarr;
-            </a>
-          </div>
-        </section>
-
-      </main>
-      <Footer />
-      <style>{`
-        @media (max-width: 768px) {
-          .cs-metrics { flex-direction: column !important; }
-          .cs-content  { padding: 48px 0 !important; }
-        }
-      `}</style>
-    </>
+    <CaseStudyDetail data={{
+      client: 'Apex HVAC Services',
+      leadIn: 'Every missed call was a missed job.',
+      hook: 'Now every lead gets a response in under 90 seconds.',
+      intro: 'Apex runs HVAC service and installation crews across three counties, generating leads through Google Ads and their Google Local Services listing. Follow-up was manual and inconsistent — often hours late, long enough for the customer to already book with a competitor.',
+      meta: {
+        industry: 'Home Services / HVAC',
+        location: 'United States',
+        duration: '90 Days',
+        services: 'Marketing Automation & CRM',
+      },
+      heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
+      resultHeadline: [
+        { text: 'Every new lead ' },
+        { text: 'now gets an instant SMS and a booking link', highlight: true },
+        { text: ' the moment they submit a form. No staff involvement. No delay.' },
+      ],
+      stats: [
+        { val: '+340%', label: 'Booked Jobs', sub: 'in 90 days' },
+        { val: '<90 sec', label: 'Avg Lead Response', sub: 'down from 3+ hours' },
+        { val: '47%', label: 'Booking Rate', sub: 'up from 15%' },
+        { val: '$0', label: 'Extra Ad Spend', sub: 'same monthly budget' },
+      ],
+      quote: "ISureMedia built exactly what we needed. Leads used to sit in an inbox for hours — now the system responds before the customer has even put their phone down.",
+      quoteBy: 'Apex HVAC Services',
+      quoteRole: 'Operations Manager, United States',
+      problemHeading: 'Great ads. Broken follow-up. Lost revenue.',
+      problemIntro: 'Apex was generating a healthy volume of leads from Google Ads and their Local Services listing, but almost half of them went nowhere. The problem was never the ads — it was everything that happened after the click.',
+      problems: [
+        { title: 'Response times measured in hours', body: 'Leads were checked manually a few times a day. By the time someone called back, the customer had already booked with whichever competitor answered first.' },
+        { title: 'No shared pipeline across sources', body: 'Google Ads, the website form, and the Local Services listing each fed leads into a different inbox with no shared view of who had been contacted.' },
+        { title: 'No-shows with no recovery', body: 'Booked appointments with no reminder sequence meant a meaningful share of jobs never actually happened.' },
+        { title: 'Zero visibility into what was working', body: 'There was no reporting on response time, booking rate, or source quality — decisions were made on gut feel, not data.' },
+      ],
+      overviewTags: [
+        { label: 'Marketing Automation', tone: 'blue' },
+        { label: 'CRM', tone: 'blue' },
+        { label: 'GoHighLevel', tone: 'amber' },
+      ],
+      overviewHeading: 'What was needed.',
+      overviewBody: [
+        'Apex needed a single CRM that every lead source fed into, with automated follow-up fast enough to beat the competition to the phone — without adding headcount or asking the ad budget to work any harder.',
+        'ISureMedia scoped, built, and launched the full system in under three weeks.',
+      ],
+      overviewImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=700&q=80',
+      didHeading: 'Built to fix the follow-up problem completely, not partially.',
+      didIntro: 'Every lead, regardless of source, is validated, tagged, and routed into the same automated sequence the moment it arrives.',
+      process: [
+        { label: 'Foundation', title: 'One CRM, every lead source', body: 'Google Ads, the website form, and the Local Services listing were all connected into a single GoHighLevel pipeline with source tagging on every contact.' },
+        { label: 'Response', title: 'Instant automated follow-up', body: 'A new lead triggers an SMS within 90 seconds, followed by a same-day email, a call reminder for the team the next day, and a nudge on day three if there is still no response.' },
+        { label: 'Recovery', title: 'Booking and no-show automation', body: 'A booking widget lets leads schedule immediately without a phone call, and a no-show sequence automatically re-engages appointments that did not convert.' },
+      ],
+      impactHeading: 'What is now possible that was not before.',
+      impactIntro: 'The same ad spend, the same team, and a completely different outcome once follow-up stopped depending on someone being at their desk.',
+      impactCards: [
+        { label: 'Zero Missed Leads', title: 'Every lead gets an instant reply', body: 'Response fires regardless of the time of day or how busy the office is.' },
+        { label: 'Faster Than Competitors', title: 'Beating rivals to the phone', body: 'Sub-90-second response time means Apex is calling back before most competitors have even seen the lead.' },
+        { label: 'Fewer No-Shows', title: 'Reminder sequences recover jobs', body: 'Automated reminders cut the no-show rate by 40% without any extra staff time.' },
+        { label: 'Clear Reporting', title: 'One dashboard, real-time data', body: 'Response time, booking rate, and source quality are now visible on a single dashboard, updated in real time.' },
+      ],
+      nextHeading: 'Already planned. Already architected.',
+      nextIntro: 'The CRM foundation built for Apex opens up further automation that needs no re-engineering to unlock.',
+      nextCards: [
+        { title: 'Review generation on job completion', body: 'A completed job in the CRM can automatically trigger a review request, tying reputation growth directly to work performed rather than a manual ask.' },
+        { title: 'Seasonal re-engagement campaigns', body: 'Past customers can be automatically segmented and re-engaged ahead of seasonal maintenance windows, using data that already lives in the CRM.' },
+      ],
+      ctaEyebrow: 'Your Growth Starts Here',
+      ctaHeading: [
+        { text: 'Running ads but not ' },
+        { text: 'converting enough leads?', highlight: true },
+      ],
+      ctaBody: [
+        { text: 'Slow follow-up is the most common reason good ad spend gets wasted. If leads are not being contacted in minutes, ' },
+        { text: 'that is exactly what we fix', highlight: true },
+        { text: '. Talk to us today and we will show you where the leak is.' },
+      ],
+      ctaPrimaryLabel: 'Get My Free Automation Audit',
+      ctaPrimaryHref: '/services/marketing-automation',
+      ctaSecondaryLabel: 'Talk to Our Team',
+      ctaSecondaryHref: '/contact',
+      ctaImage: '/result_footer/marketing-automation-illustration.webp',
+    }} />
   );
 }

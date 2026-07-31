@@ -58,7 +58,7 @@ export default function MakeIntegromatPage() {
 
         {/* BREADCRUMB */}
         <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '14px 0' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <nav style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' as const }}>
               {[
                 { label: 'Home', href: '/' },
@@ -137,7 +137,7 @@ export default function MakeIntegromatPage() {
 
         {/* KEY BENEFITS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Why Make Is the Right Choice for Advanced Automation</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>Make gives you power, flexibility, and cost efficiency that simpler automation tools simply cannot match.</p>
@@ -160,7 +160,7 @@ export default function MakeIntegromatPage() {
 
         {/* WHAT'S INCLUDED */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>5 Complex Scenarios and Full Support</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>From architecture through monitoring setup — every engagement delivers production-ready Make scenarios.</p>
@@ -180,7 +180,7 @@ export default function MakeIntegromatPage() {
 
         {/* PROCESS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Map to Monitored Scenarios in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>We plan before we build, test before we launch, and document everything for your team.</p>
@@ -203,7 +203,7 @@ export default function MakeIntegromatPage() {
 
         {/* RELATED SERVICES */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair Make With These Services</h2>
             </div>

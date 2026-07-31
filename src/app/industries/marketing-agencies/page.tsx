@@ -130,7 +130,7 @@ export default function MarketingAgenciesPage() {
 
         {/* ── What We Do ── */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 60 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -159,7 +159,7 @@ export default function MarketingAgenciesPage() {
 
         {/* ── Services We Use ── */}
         <section style={{ padding: '72px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 40 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -183,7 +183,7 @@ export default function MarketingAgenciesPage() {
 
         {/* ── Process ── */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 60 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -209,7 +209,7 @@ export default function MarketingAgenciesPage() {
 
         {/* ── Related Services ── */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 52 }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,36px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Related Services</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', marginTop: 12 }}>Explore the white-label services your agency can offer today.</p>

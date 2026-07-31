@@ -54,7 +54,7 @@ function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+      <div className="ism-container">
         <div className="ppc-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           <div style={{ position:'sticky', top:100 }}>
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
@@ -99,7 +99,7 @@ export default function PPCPage() {
           <div style={{ position:'absolute', top:'25%', left:'38%', width:260, height:260, background:'rgba(30,77,195,0.08)', borderRadius:'50% 50% 38% 62% / 62% 38% 62% 38%', filter:'blur(38px)', pointerEvents:'none' }} />
           <div style={{ position:'absolute', top:32, left:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(30,77,195,.18) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
           <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
-          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
+          <div className="ism-container" style={{ textAlign:'center', position:'relative' }}>
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
               Get in Front of the Right People.<br />
               Spend Less. Convert More.<br />
@@ -126,7 +126,7 @@ export default function PPCPage() {
 
         {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
         <section className="ppc-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+          <div className="ism-container">
 
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
@@ -209,7 +209,7 @@ export default function PPCPage() {
 
         {/* CTA BANNER */}
         <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
+          <div className="ism-container" style={{ position:'relative' }}>
             <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="ppc-cta-banner-grid">
               <div />
               <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
@@ -230,7 +230,7 @@ export default function PPCPage() {
 
         {/* IMAGE + TEXT */}
         <section style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+          <div className="ism-container">
             <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
               Paid Ad Campaigns That Deliver <span style={{ color:'var(--ism-amber)' }}>Real, Measurable Results</span>
             </h2>
@@ -259,7 +259,7 @@ export default function PPCPage() {
 
         {/* SERVICES GRID */}
         <section style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:56 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>Our Complete <span style={{ color:'var(--ism-amber)' }}>PPC Services</span></h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>Every ad dollar spent with a clear goal: more customers at a lower cost.</p>
@@ -288,7 +288,7 @@ export default function PPCPage() {
 
         {/* DARK NAVY */}
         <section style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div className="ppc-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
               <div>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>Why PPC Is a{' '}<span style={{ color:'var(--ism-amber)' }}>Smart Investment</span></h2>
@@ -313,7 +313,7 @@ export default function PPCPage() {
 
         {/* TIMELINE */}
         <section style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:64 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>Isuremedia&apos;s Proven PPC System for <span style={{ color:'var(--ism-amber)' }}>Measurable Growth</span></h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>Your First Step Toward Better Campaigns and Better Returns</p>
@@ -341,7 +341,7 @@ export default function PPCPage() {
 
         {/* PRICING */}
         <section style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>Start with the right plan{' '}<span style={{ color:'var(--ism-amber)' }}>for your goals.</span></h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>Every plan includes a dedicated PPC manager and monthly reporting.</p>
@@ -382,7 +382,7 @@ export default function PPCPage() {
 
         {/* WHY DIFFERENT */}
         <section style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>Why Our PPC Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Returns</span> for Your Business</h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>Get the paid traffic that actually turns into revenue.</p>
@@ -409,8 +409,9 @@ export default function PPCPage() {
         <FAQAccordion />
 
         {/* READY FOR RESULTS */}
-        <section style={{ background:'#fff', padding:'60px 28px' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="ppc-rfr-grid">
+        <section style={{ background:'#fff', padding:'60px 0' }}>
+          <div className="ism-container">
+          <div style={{ background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="ppc-rfr-grid">
             <div style={{ position:'absolute', top:'-30%', right:'30%', width:500, height:500, background:'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
             <div>
               <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:20 }}>
@@ -437,6 +438,7 @@ export default function PPCPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Client" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
+          </div>
           </div>
           <style>{`@media(max-width:900px){.ppc-rfr-grid{grid-template-columns:1fr!important;padding:40px 28px!important;}}`}</style>
         </section>
