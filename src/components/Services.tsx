@@ -8,6 +8,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 const tabs = [
   {
     id: 'web', label: 'Websites & Funnels', icon: 'fa-solid fa-globe',
+    img: '/services/website-and-funnels.webp',
     href: '/services/websites-funnels',
     title: 'Websites & Funnels Built to Convert',
     desc: 'We design and build websites, landing pages, and sales funnels that turn visitors into leads and customers. Every project is built around one goal: more conversions from the traffic you already have.',
@@ -31,6 +32,7 @@ const tabs = [
   },
   {
     id: 'seo', label: 'SEO', icon: 'fa-solid fa-magnifying-glass',
+    img: '/services/seo.webp',
     href: '/services/seo',
     title: 'SEO Built for Long-Term Growth',
     desc: 'We build an organic traffic engine that compounds over time — blending technical SEO, content strategy, and authority link building to rank for high-intent keywords month after month.',
@@ -55,6 +57,7 @@ const tabs = [
   },
   {
     id: 'ppc', label: 'PPC / Paid Ads', icon: 'fa-solid fa-chart-bar',
+    img: '/services/ppc.webp',
     href: '/services/ppc-paid-marketing',
     title: 'Paid Ads That Bring You Customers',
     desc: 'We make every ad dollar accountable. We plan, build, and optimise paid campaigns across Google, Meta, LinkedIn, and YouTube — targeting the right people at the right moment.',
@@ -79,6 +82,7 @@ const tabs = [
   },
   {
     id: 'creative', label: 'Content & Creative', icon: 'fa-solid fa-palette',
+    img: '/services/content-creative.webp',
     href: '/services/content-creative',
     title: 'Content & Creative That Makes People Choose You',
     desc: 'Good content does more than look good. We create copy, graphics, videos, and social content that attracts the right audience and moves them toward a buying decision.',
@@ -104,6 +108,7 @@ const tabs = [
   },
   {
     id: 'whitelabel', label: 'White Label', icon: 'fa-solid fa-tag',
+    img: '/services/white-label.webp',
     href: '/services/white-label',
     title: 'White-Label Fulfillment Built to Grow Your Agency',
     desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists handle delivery — everything shipped under your brand.',
@@ -128,6 +133,7 @@ const tabs = [
   },
   {
     id: 'automation', label: 'Marketing Automation', icon: 'fa-solid fa-robot',
+    img: '/services/marketing-automation.webp',
     href: '/services/marketing-automation',
     title: 'Automation That Grows Your Business 24/7',
     desc: 'We build automation systems that keep your business moving without you managing every step — lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically.',
@@ -217,21 +223,25 @@ export default function Services() {
         {/* ── Card ── */}
         <div key={animKey} className="svc-card svc-fadein" style={{
           position: 'relative',
-          background: '#e5f7fc',
+          background: 'rgba(248,255,226,0.46)',
           borderRadius: 28,
           padding: '56px 60px 64px',
           maxWidth: 1240,
           margin: '0 auto',
-          border: '1px solid rgba(30,77,195,.08)',
+          border: '1px solid rgba(180,210,80,.20)',
           overflow: 'hidden',
         }}>
 
+          {/* Grid pattern background */}
+          <div aria-hidden className="svc-grid-bg" />
+
           {/* Decorative blobs */}
-          <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-60px', width: 240, height: 240, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.10) 0%,transparent 65%)', pointerEvents: 'none' }} />
-          <div aria-hidden style={{ position: 'absolute', bottom: '-90px', left: '-50px', width: 280, height: 280, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div aria-hidden style={{ position: 'absolute', top: '-60px', right: '-60px', width: 240, height: 240, borderRadius: '50%', background: 'radial-gradient(circle,rgba(30,77,195,.08) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div aria-hidden style={{ position: 'absolute', bottom: '-90px', left: '-50px', width: 280, height: 280, borderRadius: '50%', background: 'radial-gradient(circle,rgba(255,176,0,.14) 0%,transparent 65%)', pointerEvents: 'none' }} />
+          <div aria-hidden style={{ position: 'absolute', top: '40%', left: '38%', width: 320, height: 320, borderRadius: '50%', background: 'radial-gradient(circle,rgba(120,200,80,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
           {/* Top: copy (+ checklist + CTA) on the left, photo on the right */}
-          <div className="svc-top" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 48, alignItems: 'stretch', position: 'relative' }}>
+          <div className="svc-top" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 48, alignItems: 'stretch', position: 'relative', zIndex: 1 }}>
 
             <div className="svc-copy">
               <h3 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,30px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 14, lineHeight: 1.22, letterSpacing: '-0.3px' }}>
@@ -269,7 +279,7 @@ export default function Services() {
             {/* Photo + floating badges */}
             <div className="svc-photo-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img key={active.id} src={`https://picsum.photos/seed/${active.id}client/500/620`} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block', boxShadow: '0 20px 50px rgba(0,35,83,.18)' }} />
+              <img key={active.id} src={active.img} alt={active.label} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block' }} />
               <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
               <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
               <div className="svc-rating">
@@ -301,8 +311,43 @@ export default function Services() {
         .svc-checklist::-webkit-scrollbar { display: none; }
         .svc-checklist-fade {
           position: absolute; left: 0; right: 4px; bottom: 0; height: 36px;
-          background: linear-gradient(to bottom, rgba(229,247,252,0) 0%, #e5f7fc 90%);
+          background: linear-gradient(to bottom, rgba(248,255,226,0) 0%, rgba(248,255,226,0.85) 90%);
           pointer-events: none; border-radius: 0 0 12px 12px;
+        }
+
+        /* ── Light circles pattern background ── */
+        .svc-grid-bg {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          z-index: 0;
+          border-radius: 28px;
+          overflow: hidden;
+        }
+        /* Tiling circle rings */
+        .svc-grid-bg::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%235a9e20' stroke-width='0.8' stroke-opacity='0.18'/%3E%3Ccircle cx='50' cy='50' r='24' fill='none' stroke='%235a9e20' stroke-width='0.6' stroke-opacity='0.12'/%3E%3Ccircle cx='50' cy='50' r='10' fill='none' stroke='%235a9e20' stroke-width='0.5' stroke-opacity='0.09'/%3E%3C/svg%3E");
+          background-size: 100px 100px;
+          mask-image: radial-gradient(ellipse 95% 92% at 50% 50%, black 20%, transparent 85%);
+          -webkit-mask-image: radial-gradient(ellipse 95% 92% at 50% 50%, black 20%, transparent 85%);
+        }
+        /* Large soft glow rings */
+        .svc-grid-bg::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(circle 280px at 15% 50%,  rgba(140,210,55,.10) 0%, transparent 70%),
+            radial-gradient(circle 220px at 85% 50%,  rgba(255,200,50,.08) 0%, transparent 70%),
+            radial-gradient(circle 360px at 50% 50%,  rgba(120,195,45,.06) 0%, transparent 68%);
+          animation: svcGlow 9s ease-in-out infinite alternate;
+        }
+        @keyframes svcGlow {
+          0%   { opacity: .55; transform: scale(1);    }
+          100% { opacity: 1;   transform: scale(1.06); }
         }
 
         .svc-check-item {

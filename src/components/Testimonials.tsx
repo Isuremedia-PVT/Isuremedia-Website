@@ -7,7 +7,7 @@ import Autoplay from 'embla-carousel-autoplay';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const testimonials = [
+export const testimonials = [
   {
     name: 'Eichelle Williams', reviews: '2 reviews',
     pre: 'Harish, Rahul and Pradeep have been so helpful to our team! ',
@@ -46,7 +46,7 @@ const testimonials = [
   },
 ];
 
-const AVATAR_COLORS = ['#1E4DC3', '#FFB000', '#0E9B6E', '#8B5CF6', '#EF4444', '#0EA5E9'];
+export const AVATAR_COLORS = ['#1E4DC3', '#FFB000', '#0E9B6E', '#8B5CF6', '#EF4444', '#0EA5E9'];
 const SLIDE_COUNT = Math.ceil(testimonials.length / 2);
 
 export default function Testimonials() {

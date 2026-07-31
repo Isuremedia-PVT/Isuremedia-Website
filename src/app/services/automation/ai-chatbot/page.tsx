@@ -58,7 +58,7 @@ export default function AIChatbotPage() {
 
         {/* BREADCRUMB */}
         <div style={{ background: '#fff', borderBottom: '1px solid var(--color-border)', padding: '14px 0' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <nav style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' as const }}>
               {[
                 { label: 'Home', href: '/' },
@@ -137,7 +137,7 @@ export default function AIChatbotPage() {
 
         {/* KEY BENEFITS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>How an AI Chatbot Transforms Your Lead Flow</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>More qualified leads, faster response times, and automatic bookings — without adding headcount.</p>
@@ -160,7 +160,7 @@ export default function AIChatbotPage() {
 
         {/* WHAT'S INCLUDED */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Strategy to Deployment and Ongoing Optimisation</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>A complete AI chatbot engagement — from initial strategy through monthly performance reviews.</p>
@@ -180,7 +180,7 @@ export default function AIChatbotPage() {
 
         {/* PROCESS */}
         <section style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>Strategy to Live Chatbot in Four Steps</h2>
               <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 520, margin: '0 auto' }}>A structured build process that ensures your chatbot is trained, tested, and converting before it ever goes live.</p>
@@ -203,7 +203,7 @@ export default function AIChatbotPage() {
 
         {/* RELATED SERVICES */}
         <section style={{ padding: '100px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px' }}>Pair AI Chatbot With These Services</h2>
             </div>

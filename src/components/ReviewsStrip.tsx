@@ -1,7 +1,7 @@
 export default function ReviewsStrip() {
   return (
     <section className="rs-section" style={{ background: '#F7F8FA', padding: '16px 0' }}>
-      <div className="rs-wrap" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+      <div className="ism-container rs-wrap" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
         <div className="rs-grid" style={{ display: 'grid', gridTemplateColumns: 'auto 1px auto 1px auto', alignItems: 'center', justifyContent: 'center' }}>
 

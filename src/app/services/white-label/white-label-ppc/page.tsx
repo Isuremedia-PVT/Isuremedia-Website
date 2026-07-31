@@ -89,7 +89,7 @@ export default function WhiteLabelPPCPage() {
 
         {/* ── What Is It ── */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div className="split-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
@@ -128,7 +128,7 @@ export default function WhiteLabelPPCPage() {
 
         {/* ── Key Benefits ── */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 60 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -157,7 +157,7 @@ export default function WhiteLabelPPCPage() {
 
         {/* ── What's Included ── */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 56 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -182,7 +182,7 @@ export default function WhiteLabelPPCPage() {
 
         {/* ── Process ── */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 60 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginBottom: 18 }}>
                 <div style={{ width: 36, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -208,7 +208,7 @@ export default function WhiteLabelPPCPage() {
 
         {/* ── Related Services ── */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 52 }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.4vw,36px)', color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Related Services</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', marginTop: 12 }}>Explore other services that complement your white-label PPC offering.</p>

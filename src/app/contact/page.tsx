@@ -96,7 +96,7 @@ export default function ContactPage() {
           <div style={{ position: 'absolute', bottom: -60, left: -50, width: 360, height: 360, background: 'rgba(30,77,195,0.10)', borderRadius: '46% 54% 62% 38% / 54% 46% 54% 46%', filter: 'blur(44px)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', top: '30%', left: '40%', width: 280, height: 280, background: 'rgba(255,176,0,0.10)', borderRadius: '50% 50% 38% 62% / 62% 38% 62% 38%', filter: 'blur(40px)', pointerEvents: 'none' }} />
 
-          <div className="ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
+          <div className="ism-container ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative', zIndex: 1 }}>
             <div className="ct-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', minHeight: 380 }}>
 
               {/* LEFT */}
@@ -149,7 +149,7 @@ export default function ContactPage() {
 
         {/* ══ 02. FORM + RIGHT PANEL ════════════════════════════════════════ */}
         <section id="proposal-form" className="ct-section-pad" style={{ background: '#F7F8FA', padding: '80px 0 96px', borderTop: '1px solid var(--color-border)' }}>
-          <div className="contact-grid ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 400px', gap: 48, alignItems: 'start' }}>
+          <div className="contact-grid ism-container ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', display: 'grid', gridTemplateColumns: '1fr 400px', gap: 48, alignItems: 'start' }}>
 
             {/* ── Form Card ── */}
             <div className="ct-form-card" style={{ background: '#fff', borderRadius: 24, padding: '48px 44px', boxShadow: '0 4px 32px rgba(0,0,0,.07)', border: '1px solid var(--color-border)' }}>
@@ -312,7 +312,7 @@ export default function ContactPage() {
 
         {/* ══ 03. CONTACT INFO + MAP ════════════════════════════════════════ */}
         <section className="ct-section-pad" style={{ background: '#fff', padding: '80px 0 88px', borderTop: '1px solid var(--color-border)' }}>
-          <div className="ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
             {/* Info grid */}
             <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1.2fr 1fr 1fr 1.1fr', gap: 20, marginBottom: 64 }} className="cinfo-grid">

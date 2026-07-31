@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { resultCards } from '@/components/ResultsStrip';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -8,9 +9,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ─── Dropdown data ─── */
 const companyLinks = [
   { icon: 'fa-solid fa-circle-info',  label: 'About Us',   href: '/about'      },
-  { icon: 'fa-solid fa-layer-group',  label: 'Portfolio',  href: '/portfolio'  },
   { icon: 'fa-solid fa-briefcase',    label: 'Careers',    href: '/careers'    },
-  { icon: 'fa-solid fa-handshake',    label: 'Affiliates', href: '/affiliates' },
 ];
 
 const serviceCategories = [
@@ -107,57 +106,8 @@ const serviceCategories = [
   },
 ];
 
-const resultCards = [
-  {
-    label: 'Case Studies',
-    stat: '+360%', statLabel: 'Organic Traffic',
-    overlay: 'linear-gradient(160deg,rgba(24,64,160,.88) 0%,rgba(30,77,195,.75) 100%)',
-    img: 'https://picsum.photos/seed/analytics/400/300',
-    icon: 'fa-solid fa-chart-line',
-    shape1: '#1E4DC3', shape2: '#FFB000',
-    href: '/case-studies',
-  },
-  {
-    label: 'Client Testimonials',
-    stat: '200+', statLabel: 'Happy Clients',
-    overlay: 'linear-gradient(160deg,rgba(13,107,78,.88) 0%,rgba(14,155,110,.75) 100%)',
-    img: 'https://picsum.photos/seed/team/400/300',
-    icon: 'fa-solid fa-star',
-    shape1: '#0E9B6E', shape2: '#FFB000',
-    href: '/testimonials',
-  },
-  {
-    label: 'Design Portfolio',
-    stat: '500+', statLabel: 'Projects Done',
-    overlay: 'linear-gradient(160deg,rgba(47,47,110,.90) 0%,rgba(76,76,200,.78) 100%)',
-    img: 'https://picsum.photos/seed/design/400/300',
-    icon: 'fa-solid fa-layer-group',
-    shape1: '#4C4CC8', shape2: '#FFB000',
-    href: '/portfolio',
-  },
-  {
-    label: 'Industries Served',
-    stat: '50+', statLabel: 'Industries',
-    overlay: 'linear-gradient(160deg,rgba(160,92,0,.90) 0%,rgba(212,134,10,.78) 100%)',
-    img: 'https://picsum.photos/seed/business/400/300',
-    icon: 'fa-solid fa-briefcase',
-    shape1: '#D4860A', shape2: '#1E4DC3',
-    href: '/industries',
-  },
-  {
-    label: 'Video Testimonials',
-    stat: '95%', statLabel: 'Satisfaction',
-    overlay: 'linear-gradient(160deg,rgba(15,25,65,.92) 0%,rgba(24,64,160,.80) 100%)',
-    img: 'https://picsum.photos/seed/camera/400/300',
-    icon: 'fa-solid fa-circle-play',
-    shape1: '#1840A0', shape2: '#FFB000',
-    href: '/testimonials',
-  },
-];
-
 const resourceLinks = [
   { icon: 'fa-solid fa-newspaper',  label: 'Blog',       href: '/blog'      },
-  { icon: 'fa-solid fa-book-open',  label: 'Guides',     href: '/guides'    },
   { icon: 'fa-solid fa-gift',       label: 'Free Tools', href: '/freetools' },
 ];
 

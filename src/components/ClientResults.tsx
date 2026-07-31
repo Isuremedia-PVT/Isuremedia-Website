@@ -10,26 +10,28 @@ const CASES = [
   {
     img: '/images/casestudy-dummy.png',
     client: 'Qualis Roofing',
+    intro: 'Local visibility had been flat for months despite steady content and ad spend.',
     quote: 'Since we started working with ISM, our SEO return on investment is in the 800% range.',
     stats: [
       { val: '+427%',  label: 'Top 10 Organic Keywords', sub: 'year over year', icon: 'fa-solid fa-chart-line' },
       { val: '+68%',   label: 'Organic Conversions',     sub: 'in 6 months',    icon: 'fa-solid fa-users'      },
     ],
     body: 'Qualis partnered with ISM to improve local visibility throughout the Dallas–Fort Worth area. By optimising location and service pages and publishing targeted blog posts around high-potential keywords, the campaign delivered a +427% increase in top 10 organic keywords year over year and a +68% boost in organic conversions.',
-    link: '/case-studies',
+    link: '/case-studies/ecommerce-seo-organic-traffic',
     linkLabel: "Read Qualis Roofing's Case Study",
   },
   {
     img: '/images/casestudy-dummy.png',
-    client: 'TruckAC+',
-    quote: 'ISM is handling business the way they said they would in the beginning.',
+    client: 'Apex HVAC Services',
+    intro: 'Every missed call was a missed job, and follow-up was taking hours.',
+    quote: 'We tripled our booked jobs without spending a single extra dollar on ads.',
     stats: [
-      { val: '+$350K', label: 'Ad Revenue',        sub: 'ROAS optimised', icon: 'fa-solid fa-dollar-sign'   },
-      { val: '+1,092', label: 'Website Purchases', sub: 'in 6 months',    icon: 'fa-solid fa-cart-shopping' },
+      { val: '+340%',   label: 'Booked Jobs',       sub: 'in 90 days',    icon: 'fa-solid fa-screwdriver-wrench' },
+      { val: '<90 sec', label: 'Avg Lead Response', sub: 'down from 3+ hours', icon: 'fa-solid fa-stopwatch'     },
     ],
-    body: "ISM rebuilt TruckAC+'s paid media strategy across social, PPC and programmatic channels. The full-funnel approach generated a 23X return on ad spend, +$350K in ad revenue and +1,000 purchases in six months, exceeding performance benchmarks and seasonal goals.",
-    link: '/case-studies',
-    linkLabel: "Read TruckAC+'s Case Study",
+    body: 'Apex was spending steadily on Google Ads but converting poorly because follow-up was taking hours. ISM rebuilt their entire lead response system with automated routing and instant follow-up — same ad budget, triple the booked jobs.',
+    link: '/case-studies/hvac-gohighlevel-automation',
+    linkLabel: "Read Apex HVAC's Case Study",
   },
 ];
 
@@ -64,15 +66,10 @@ export default function ClientResults() {
               {/* Header row: heading left, thumbnail right */}
               <div className="cr-header" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,3fr) minmax(0,7fr)', alignItems: 'flex-start', gap: 16 }}>
                 <div style={{ minWidth: 0 }}>
-                  <h3 style={{ fontFamily: J, fontSize: 'clamp(20px,2.2vw,26px)', fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1.18, marginBottom: 14 }}>{c.client}</h3>
+                  <h3 style={{ fontFamily: J, fontSize: 'clamp(20px,2.2vw,26px)', fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1.18, marginBottom: 12 }}>{c.client}</h3>
 
-                  {/* Quote */}
-                  <div style={{ background: '#FFF7E8', borderRadius: 12, padding: '14px 16px' }}>
-                    <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 18, display: 'block', marginBottom: 6 }} />
-                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', lineHeight: 1.55, margin: 0 }}>
-                      {c.quote} <span style={{ color: 'var(--ism-amber)', fontWeight: 700 }}>– {c.client}</span>
-                    </p>
-                  </div>
+                  {/* Short intro paragraph */}
+                  <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{c.intro}</p>
                 </div>
 
                 {/* Thumbnail — pre-designed dummy image (border/shape already baked in) */}
@@ -84,10 +81,18 @@ export default function ClientResults() {
                 </div>
               </div>
 
+              {/* Quote — full width */}
+              <div style={{ background: '#FFF7E8', borderRadius: 12, padding: '18px 20px' }}>
+                <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 18, display: 'block', marginBottom: 6 }} />
+                <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-navy)', lineHeight: 1.65, margin: 0 }}>
+                  {c.quote} <span style={{ color: 'var(--ism-amber)', fontWeight: 700 }}>– {c.client}</span>
+                </p>
+              </div>
+
               {/* Stats */}
-              <div style={{ display: 'flex', alignItems: 'center', background: 'var(--color-bg-soft)', border: '1px solid var(--color-border)', borderRadius: 14, padding: '18px 20px' }}>
+              <div className="cr-stats" style={{ display: 'flex', alignItems: 'center', background: 'var(--color-bg-soft)', border: '1px solid var(--color-border)', borderRadius: 14, padding: '18px 20px' }}>
                 {c.stats.map((s, j) => (
-                  <div key={j} style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, paddingLeft: j > 0 ? 20 : 0, marginLeft: j > 0 ? 20 : 0, borderLeft: j > 0 ? '1px solid var(--color-border)' : 'none' }}>
+                  <div key={j} className="cr-stat" style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, paddingLeft: j > 0 ? 20 : 0, marginLeft: j > 0 ? 20 : 0, borderLeft: j > 0 ? '1px solid var(--color-border)' : 'none' }}>
                     <div style={{ width: 44, height: 44, borderRadius: '50%', background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <i className={s.icon} style={{ color: '#fff', fontSize: 16 }} />
                     </div>
@@ -138,6 +143,8 @@ export default function ClientResults() {
           .cr-header { grid-template-columns: minmax(0,1fr) !important; }
           .cr-thumb { height: 220px !important; }
           .cr-cta-btn { padding: 15px 36px !important; font-size: 13px !important; }
+          .cr-stats { flex-direction: column !important; align-items: stretch !important; gap: 14px !important; }
+          .cr-stat  { padding-left: 0 !important; margin-left: 0 !important; border-left: none !important; }
         }
         @media (max-width: 760px) {
           .cr-cta-btn { padding: 14px 30px !important; font-size: 12.5px !important; }

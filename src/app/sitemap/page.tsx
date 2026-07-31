@@ -103,7 +103,7 @@ export default function SitemapPage() {
 
         {/* ── SITEMAP GRID ── */}
         <section style={{ padding: '80px 0 120px', background: '#fff' }}>
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
+          <div className="ism-container">
             <div className="sitemap-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 40 }}>
               {SITEMAP.map((group, i) => (
                 <div key={i}>

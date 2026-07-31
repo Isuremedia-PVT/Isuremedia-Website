@@ -119,7 +119,7 @@ function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-      <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+      <div className="ism-container">
         <div className="seo-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           {/* Left */}
           <div className="seo-faq-sticky" style={{ position:'sticky', top:100 }}>
@@ -177,7 +177,7 @@ export default function SEOPage() {
           {/* Decorative dot grid bottom-right */}
           <div style={{ position:'absolute', bottom:32, right:32, width:160, height:160, backgroundImage:'radial-gradient(circle,rgba(255,176,0,.25) 1px,transparent 1px)', backgroundSize:'20px 20px', pointerEvents:'none', opacity:.5 }} />
 
-          <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
+          <div className="ism-container" style={{ textAlign:'center', position:'relative' }}>
 
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
               Rank on Google.<br />
@@ -215,7 +215,7 @@ export default function SEOPage() {
 
         {/* ══ 2. STRATEGY SECTION ══════════════════════════════════════════ */}
         <section className="seo-strategy-section" style={{ background:'#fff', padding:'88px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+          <div className="ism-container">
 
             {/* Heading */}
             <div style={{ textAlign:'center', marginBottom:60 }}>
@@ -316,7 +316,7 @@ export default function SEOPage() {
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
         <section className="seo-cta-banner" style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
+          <div className="ism-container" style={{ position:'relative' }}>
 
             {/* Card — no shadow, image overflows upward via section padding-top */}
             <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="seo-cta-banner-grid">
@@ -367,7 +367,7 @@ export default function SEOPage() {
 
         {/* ══ 3b. IMAGE + TEXT SECTION ════════════════════════════════════ */}
         <section className="seo-imgtext-section" style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 28px' }}>
+          <div className="ism-container">
             <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
               Proven SEO Strategies That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
             </h2>
@@ -423,7 +423,7 @@ export default function SEOPage() {
 
         {/* ══ 4. SERVICES GRID ════════════════════════════════════════════ */}
         <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:56 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
                 Our Complete <span style={{ color:'var(--ism-amber)' }}>SEO Services</span>
@@ -486,7 +486,7 @@ export default function SEOPage() {
 
         {/* ══ 5. AEO — DARK ═══════════════════════════════════════════════ */}
         <section className="seo-section" style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div className="seo-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
               {/* Left */}
               <div>
@@ -535,7 +535,7 @@ export default function SEOPage() {
 
         {/* ══ 6. TIMELINE ══════════════════════════════════════════════════ */}
         <section className="seo-section" style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:64 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
                 ISureMedia&apos;s Proven SEO System for <span style={{ color:'var(--ism-amber)' }}>Measurable Growth</span>
@@ -571,7 +571,7 @@ export default function SEOPage() {
 
         {/* ══ 8. PRICING PLANS ════════════════════════════════════════════ */}
         <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
                 Start with the right scope{' '}
@@ -656,7 +656,7 @@ export default function SEOPage() {
 
         {/* ══ 9. WHY DIFFERENT ════════════════════════════════════════════ */}
         <section className="seo-section" style={{ padding:'100px 0', background:'#fff' }}>
-          <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
+          <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
                 Why Our SEO Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Growth</span> for Your Business
@@ -686,8 +686,9 @@ export default function SEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. READY FOR RESULTS CTA ═══════════════════════════════════ */}
-        <section style={{ background:'#fff', padding:'60px 28px' }}>
-          <div style={{ maxWidth:1200, margin:'0 auto', background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="seo-rfr-grid">
+        <section style={{ background:'#fff', padding:'60px 0' }}>
+          <div className="ism-container">
+          <div style={{ background:'var(--color-primary)', borderRadius:24, padding:'60px 64px', display:'grid', gridTemplateColumns:'1fr 420px', gap:48, alignItems:'center', position:'relative', overflow:'hidden' }} className="seo-rfr-grid">
 
             {/* Glow */}
             <div style={{ position:'absolute', top:'-30%', right:'30%', width:500, height:500, background:'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents:'none' }} />
@@ -737,6 +738,7 @@ export default function SEOPage() {
               />
             </div>
 
+          </div>
           </div>
           <style>{`
             @media (max-width: 900px) {

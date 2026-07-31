@@ -15,43 +15,18 @@ export default function ProblemStatement() {
 
       <div className="ism-container ps-container" style={{ position: 'relative', zIndex: 1 }}>
 
-        {/* Heading white */}
+        {/* Single semantic heading — three visual lines, one h2 for SEO/a11y */}
         <h2 style={{
           fontFamily: J,
           fontSize: 'clamp(30px, 3.4vw, 50px)',
           fontWeight: 700,
           lineHeight: 1.15,
-          color: '#fff',
           letterSpacing: '-0.5px',
-          marginBottom: 2,
+          margin: 0,
         }}>
-          You are not short on marketing.
-        </h2>
-
-        {/* Amber heading */}
-        <h2 style={{
-          fontFamily: J,
-          fontSize: 'clamp(30px, 3.4vw, 50px)',
-          fontWeight: 700,
-          lineHeight: 1.15,
-          color: 'var(--ism-amber)',
-          letterSpacing: '-0.5px',
-          marginBottom: 2,
-        }}>
-          You are short on results.
-        </h2>
-
-        {/* Ghost heading */}
-        <h2 style={{
-          fontFamily: J,
-          fontSize: 'clamp(30px, 3.4vw, 50px)',
-          fontWeight: 700,
-          lineHeight: 1.15,
-          color: 'rgba(255,255,255,.78)',
-          letterSpacing: '-0.5px',
-          marginBottom: 0,
-        }}>
-          We cover every corner of your digital growth.
+          <span style={{ display: 'block', color: '#fff' }}>You are not short on marketing.</span>
+          <span style={{ display: 'block', color: 'var(--ism-amber)' }}>You are short on results.</span>
+          <span style={{ display: 'block', color: 'rgba(255,255,255,.78)' }}>We cover every corner of your digital growth.</span>
         </h2>
 
       </div>

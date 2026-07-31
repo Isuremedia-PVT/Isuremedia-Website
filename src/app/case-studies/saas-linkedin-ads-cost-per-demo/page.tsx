@@ -1,147 +1,90 @@
 'use client';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
-const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
-const I = 'var(--font-inter,Inter,sans-serif)';
-
+import CaseStudyDetail from '@/components/CaseStudyDetail';
 
 export default function SaaSLinkedInCaseStudyPage() {
   return (
-    <>
-      <Navbar />
-      <main>
-
-        {/* 1. HERO */}
-        <section style={{ background: '#fff', padding: '80px 0 64px' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            {/* Breadcrumb */}
-            <nav style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 24, flexWrap: 'wrap' as const }}>
-              <a href="/" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Home</a>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>{'>'}</span>
-              <a href="/case-studies" style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none' }}>Case Studies</a>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>{'>'}</span>
-              <span style={{ fontFamily: I, fontSize: 13, color: 'var(--color-primary)', fontWeight: 600 }}>SaaS LinkedIn Ads</span>
-            </nav>
-
-            {/* Tags row */}
-            <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 8, marginBottom: 4 }}>
-              {['SaaS', 'LinkedIn Ads + Google Search', 'USA', '90 days'].map((tag) => (
-                <span key={tag} style={{ padding: '4px 14px', borderRadius: 100, background: 'var(--color-bg-soft)', border: '1px solid var(--color-border)', fontSize: 12, fontFamily: I, color: 'var(--color-text-muted)', fontWeight: 600 }}>{tag}</span>
-              ))}
-            </div>
-
-            {/* H1 */}
-            <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(28px,3.2vw,52px)', color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.08, margin: '20px 0 32px' }}>
-              Cost Per Demo Down 61% in 90 Days. Same Budget.
-            </h1>
-
-            {/* Three-metric strip */}
-            <div className="cs-metrics" style={{ display: 'flex', gap: 16 }}>
-              {[
-                { num: '$158', label: 'Cost Per Demo (was $440+)' },
-                { num: '-61%', label: 'CPD Reduction' },
-                { num: '+82%', label: 'Demo Volume' },
-              ].map((m) => (
-                <div key={m.label} style={{ flex: 1, padding: '28px 24px', background: 'linear-gradient(135deg,#1840A0,#2F5FE8)', borderRadius: 14, textAlign: 'center' as const }}>
-                  <div style={{ fontFamily: J, fontWeight: 900, fontSize: 40, color: 'var(--ism-amber)' }}>{m.num}</div>
-                  <div style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.75)', marginTop: 8 }}>{m.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2. THE CHALLENGE */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 24px' }}>
-              Scaling the Wrong Thing — High Spend, Low-Quality Demos
-            </h2>
-            <p style={{ maxWidth: 720, fontFamily: I, fontSize: 16, lineHeight: 1.85, color: 'var(--color-text-muted)', margin: 0 }}>
-              [SaaS Company] was running LinkedIn Ads with a monthly budget of $8,000 and generating around 18 demos per month — a cost per demo of over $440. More critically, many of those demos were from companies too small to be viable customers. The marketing team was frustrated because increasing budget was simply scaling the wrong thing.
-            </p>
-          </div>
-        </section>
-
-        {/* 3. WHAT WE DID */}
-        <section style={{ background: '#fff', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
-              Rebuilt Targeting, Creative, and Landing Pages From the Ground Up
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
-              {[
-                'Audited all active audiences and identified the disconnect: they were targeting job function instead of job title plus company size combined',
-                'Rebuilt LinkedIn targeting to Director/VP/C-Suite plus company size 50-500 employees across 3 specific industries',
-                'Rewrote all ad copy to filter out unqualified leads — new ads mentioned company size and use case directly so only the right people clicked',
-                'Rebuilt the landing page: replaced the generic request-a-demo page with a page specific to each target industry',
-                'Added Google Search campaigns targeting high-intent branded and competitor terms to capture demand LinkedIn was generating',
-                'Set up proper attribution through HubSpot so demo quality could be tracked through to closed-won revenue',
-              ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' as const }}>
-                  <div style={{ width: 22, height: 22, borderRadius: '50%', background: 'rgba(30,77,195,.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                    <i className="fa-solid fa-check" style={{ color: 'var(--color-primary)', fontSize: 11 }} />
-                  </div>
-                  <p style={{ fontFamily: I, fontSize: 15, lineHeight: 1.7, color: 'var(--color-text-muted)', margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 4. THE RESULTS */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 40px' }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(22px,2vw,32px)', color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 32px' }}>
-              Better Leads, Lower Cost, More Pipeline
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 16 }}>
-              {[
-                'Cost per demo dropped from $440+ to $158 — a 61% reduction',
-                'Demo volume increased from 18 to 33 per month at the same total budget',
-                'Demo-to-close rate improved as lead quality improved — fewer wasted sales hours',
-                'Pipeline influenced by paid increased 190% quarter on quarter',
-              ].map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' as const }}>
-                  <div style={{ width: 22, height: 22, borderRadius: '50%', background: 'rgba(255,176,0,.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                    <i className="fa-solid fa-chart-line" style={{ color: 'var(--ism-amber)', fontSize: 11 }} />
-                  </div>
-                  <p style={{ fontFamily: I, fontSize: 15, lineHeight: 1.7, color: 'var(--color-navy)', fontWeight: 600, margin: 0 }}>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 5. BOTTOM CTA */}
-        <section style={{ background: 'linear-gradient(135deg,#1840A0,#2F5FE8)', padding: '80px 0' }}>
-          <div style={{ maxWidth: 680, margin: '0 auto', padding: '0 40px', textAlign: 'center' as const }}>
-            <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(24px,2.5vw,38px)', color: '#fff', letterSpacing: '-0.5px', margin: '0 0 20px' }}>
-              Running LinkedIn Ads and not happy with the lead quality?
-            </h2>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.72)', lineHeight: 1.75, margin: '0 0 36px' }}>
-              We will audit your targeting, creative, and landing pages and show you exactly what to fix.
-            </p>
-            <a
-              href="/services/ppc-paid-marketing"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' as const, boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = ''; }}
-            >
-              Book a Free PPC Audit Call &rarr;
-            </a>
-          </div>
-        </section>
-
-      </main>
-      <Footer />
-      <style>{`
-        @media (max-width: 768px) {
-          .cs-metrics { flex-direction: column !important; }
-          .cs-content  { padding: 48px 0 !important; }
-        }
-      `}</style>
-    </>
+    <CaseStudyDetail data={{
+      client: 'TruckAC+',
+      leadIn: 'Paid media was live everywhere, but none of it was tied together.',
+      hook: 'Now every channel feeds one full-funnel strategy.',
+      intro: 'TruckAC+ sells aftermarket climate control units for commercial trucking fleets, running paid social, PPC, and programmatic campaigns independently with no shared measurement or retargeting strategy between them.',
+      meta: {
+        industry: 'E-Commerce / Automotive Parts',
+        location: 'United States',
+        duration: '6 Months',
+        services: 'Paid Media & Funnel Strategy',
+      },
+      heroImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80',
+      resultHeadline: [
+        { text: 'A rebuilt full-funnel paid strategy ' },
+        { text: 'generated a 23X return on ad spend', highlight: true },
+        { text: ', adding over $350K in ad revenue in six months.' },
+      ],
+      stats: [
+        { val: '+$350K', label: 'Ad Revenue', sub: 'ROAS optimised' },
+        { val: '+1,092', label: 'Website Purchases', sub: 'in 6 months' },
+        { val: '23X', label: 'Return on Ad Spend', sub: 'blended across channels' },
+        { val: '3', label: 'Channels Unified', sub: 'social, PPC, programmatic' },
+      ],
+      quote: 'ISM is handling business the way they said they would in the beginning.',
+      quoteBy: 'TruckAC+',
+      quoteRole: 'Marketing Director, United States',
+      problemHeading: 'Three channels, three strategies, no shared funnel.',
+      problemIntro: 'TruckAC+ was spending steadily across social, PPC, and programmatic, but each channel was run in isolation with no shared audience data or retargeting logic connecting them.',
+      problems: [
+        { title: 'No cross-channel retargeting', body: 'A visitor who clicked a social ad and left was invisible to the PPC and programmatic campaigns, so the same buyer was never re-engaged consistently.' },
+        { title: 'Attribution told an incomplete story', body: 'Each platform reported its own last-click numbers, making it impossible to see which channel actually drove a sale versus which one got the credit.' },
+        { title: 'Creative was not matched to funnel stage', body: 'The same broad product ads ran to cold and warm audiences alike, wasting spend on messaging that was not built for where the buyer actually was.' },
+        { title: 'Seasonal demand was not planned for', body: 'Fleet buying cycles are seasonal, but budget pacing stayed flat year-round instead of flexing to match demand.' },
+      ],
+      overviewTags: [
+        { label: 'Paid Social', tone: 'blue' },
+        { label: 'PPC', tone: 'blue' },
+        { label: 'Programmatic', tone: 'amber' },
+      ],
+      overviewHeading: 'What was needed.',
+      overviewBody: [
+        'TruckAC+ needed one funnel strategy spanning all three channels, with shared audience data, stage-matched creative, and a single source of truth for what was actually driving revenue.',
+        'ISureMedia rebuilt tracking, retargeting, and creative as one connected system over six months.',
+      ],
+      overviewImage: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80',
+      didHeading: 'Rebuilt as one connected funnel, not three separate campaigns.',
+      didIntro: 'Every channel now feeds a shared pool of audience and attribution data instead of operating as its own silo.',
+      process: [
+        { label: 'Foundation', title: 'Unified tracking and attribution', body: 'A shared measurement layer was built across social, PPC, and programmatic so every touchpoint rolled up to one true picture of what drove each sale.' },
+        { label: 'Audience', title: 'Cross-channel retargeting', body: 'Visitors from any channel were pooled into shared retargeting audiences, so a click on social could be followed up through PPC and programmatic instead of going cold.' },
+        { label: 'Creative', title: 'Stage-matched ad creative', body: 'Cold, warm, and retargeting audiences each received creative built for that stage, replacing the single generic product ad running everywhere.' },
+      ],
+      impactHeading: 'What is now possible that was not before.',
+      impactIntro: 'A full-funnel approach across three previously disconnected channels exceeded both performance benchmarks and seasonal targets.',
+      impactCards: [
+        { label: 'One True Number', title: 'Shared attribution across channels', body: 'A single shared attribution model now shows exactly which channel and creative combination is driving each sale.' },
+        { label: 'No Cold Retargeting Gaps', title: 'Consistent follow-up everywhere', body: 'A buyer who engages on any channel is now followed consistently across all three instead of disappearing after one click.' },
+        { label: 'Demand-Matched Budget', title: 'Spend flexes with the season', body: 'Spend now paces up and down with seasonal fleet buying cycles instead of running flat year-round.' },
+        { label: 'Stage-Matched Creative', title: 'Messaging built for the buyer', body: 'Cold, warm, and retargeting audiences each see messaging built for where they actually are in the funnel.' },
+      ],
+      nextHeading: 'Already planned. Already architected.',
+      nextIntro: 'The shared measurement and audience layer built for TruckAC+ opens up further growth that needs no rebuilding to unlock.',
+      nextCards: [
+        { title: 'Lifecycle email integration', body: 'The same audience data can feed lifecycle email flows, extending the funnel past the ad click into post-purchase and repeat-buyer campaigns.' },
+        { title: 'New product line expansion', body: 'The unified funnel structure is ready to onboard new product lines without rebuilding tracking or retargeting from scratch.' },
+      ],
+      ctaEyebrow: 'Your Growth Starts Here',
+      ctaHeading: [
+        { text: 'Running paid media on multiple channels ' },
+        { text: 'with no shared strategy?', highlight: true },
+      ],
+      ctaBody: [
+        { text: 'Disconnected channels usually mean wasted spend and no clear picture of what is actually working — ' },
+        { text: 'that is exactly what we fix', highlight: true },
+        { text: '. Talk to us today and we will show you how it all connects.' },
+      ],
+      ctaPrimaryLabel: 'Get My Free Ads Audit',
+      ctaPrimaryHref: '/services/ppc-paid-marketing',
+      ctaSecondaryLabel: 'Talk to Our Team',
+      ctaSecondaryHref: '/contact',
+      ctaImage: '/result_footer/ppc-advertising-illustration.webp',
+    }} />
   );
 }
