@@ -226,7 +226,7 @@ export default function ZapierPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
+        <CTASection image="/result_footer/Zapier Workflow Automation_.webp" />
       </main>
       <Footer />
     </>

@@ -226,7 +226,7 @@ export default function CRMSetupPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
+        <CTASection image="/result_footer/crm.webp" />
       </main>
       <Footer />
     </>

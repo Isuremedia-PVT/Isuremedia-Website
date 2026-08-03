@@ -46,7 +46,7 @@ export default function MeridianCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Meridian needed one clear funnel — a single offer, a short qualifying form, and an automated booking flow — replacing a site that was trying to be everything at once.',
-        'ISureMedia redesigned and relaunched the funnel over a 90-day engagement.',
+        'Isuremedia redesigned and relaunched the funnel over a 90-day engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=700&q=80',
       didHeading: 'Rebuilt around one offer and one path to a call.',
@@ -84,7 +84,7 @@ export default function MeridianCaseStudyPage() {
       ctaPrimaryHref: '/services/websites-funnels',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/sales-funnel-illustration.webp',
+      ctaImage: '/result_footer/sales funnel.webp',
     }} />
   );
 }

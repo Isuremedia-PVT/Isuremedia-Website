@@ -16,85 +16,79 @@ const SERVICES = [
   {
     title: 'Business Websites',
     icon: 'fa-solid fa-globe',
-    desc: 'Your website is the first thing most buyers see. We build professional, fast-loading business websites that make the right impression and move visitors toward taking action — whether that is calling you, booking an appointment, or requesting a quote.',
+    desc: 'Your website is where most buyers decide whether to contact you or move on to a competitor. We build custom sites that load fast, rank on Google, look right on every device, and guide visitors toward the one action you need. No templates, no off-the-shelf themes, no shortcuts.',
     href: '/services/websites-funnels',
   },
   {
     title: 'Landing Pages',
     icon: 'fa-solid fa-file-lines',
-    desc: 'A landing page has one job — get the visitor to take one action. We design and build high-converting landing pages for paid ads, email campaigns, and organic traffic. Every element is built around your offer and your audience.',
+    desc: 'A landing page exists for one reason: to get a specific person to take a specific action. Every extra link or distraction reduces its conversion rate. We build standalone pages around a single goal — a call booking, a form, or a sale — with no exits and no distractions.',
     href: '/services/websites-funnels',
   },
   {
     title: 'Sales Funnels',
     icon: 'fa-solid fa-filter',
-    desc: 'A funnel takes someone from not knowing you exist to becoming a paying customer. We map out the entire journey, build the pages, connect the automations, and test everything before traffic goes live.',
+    desc: 'Most businesses send all their traffic to a homepage and hope for the best. A sales funnel moves someone from first visit to buying decision through a sequence of pages. We build multi-step funnels connected to your CRM so every lead is captured, tracked, and followed up automatically.',
     href: '/services/websites-funnels',
   },
   {
-    title: 'GoHighLevel Funnels & Automation',
+    title: 'GoHighLevel Funnels and Automation',
     icon: 'fa-solid fa-bolt',
-    desc: 'GoHighLevel is one of the most powerful all-in-one platforms for agencies and service businesses. We build complete GHL setups — funnels, CRM, automations, pipelines, and calendars — so everything works from day one.',
-    href: '/services/websites-funnels',
-  },
-  {
-    title: 'WordPress Website Design',
-    icon: 'fa-brands fa-wordpress',
-    desc: 'WordPress powers nearly half the web for a reason. We build WordPress sites that are fast, secure, easy to manage, and built for search. You get a professional site you can update yourself without needing a developer every time.',
-    href: '/services/websites-funnels',
-  },
-  {
-    title: 'Shopify & E-Commerce',
-    icon: 'fa-solid fa-cart-shopping',
-    desc: 'Selling online requires more than a product page. We build Shopify stores and e-commerce sites designed to reduce cart abandonment, increase average order value, and make buying as easy as possible for your customers.',
+    desc: 'GoHighLevel is the platform Isuremedia runs on, and the platform we build for our clients. Whether starting from scratch or rebuilding an existing account, we handle the full setup — funnel builds, automation workflows, CRM configuration, and booking systems — so your site and CRM work as one.',
     href: '/services/websites-funnels',
   },
   {
     title: 'Website Redesign',
     icon: 'fa-solid fa-pen-ruler',
-    desc: 'If your current site looks outdated, loads slowly, or just does not convert, a redesign is often the highest-ROI move you can make. We audit what you have, identify exactly what is holding it back, and build a better version.',
+    desc: 'An outdated website that loads slowly or never converts is actively costing you leads every day. We rebuild existing sites from the ground up, keeping what works and fixing what does not — a faster, higher-converting site on the same domain with no rankings lost.',
     href: '/services/websites-funnels',
   },
   {
     title: 'Conversion Rate Optimization',
     icon: 'fa-solid fa-chart-line',
-    desc: 'More traffic is not always the answer. If your site already gets visitors but they are not converting, CRO is what moves the needle. We analyse your pages, test changes, and improve the percentage of visitors who take the action you want.',
+    desc: 'You are already getting traffic. The question is why more of it is not converting. We run heatmaps, session recordings, and UX audits to find where visitors drop off and fix it — the highest-ROI work most businesses never do.',
     href: '/services/websites-funnels',
   },
   {
-    title: 'Webflow Development',
+    title: 'Website Maintenance and Support',
+    icon: 'fa-solid fa-shield-halved',
+    desc: 'A website that is not maintained gets slower and more vulnerable as plugins and platforms update around it. We handle ongoing maintenance so your site stays fast and secure every month — updates, backups, security monitoring, and small fixes, all handled for you.',
+    href: '/services/websites-funnels',
+  },
+  {
+    title: 'ClickFunnels and Kajabi Builds',
     icon: 'fa-solid fa-layer-group',
-    desc: 'Webflow gives you a visually stunning, fully custom site without the complexity of traditional code. We build pixel-perfect Webflow sites for brands that need something distinctive — fast, scalable, and easy for your team to manage.',
+    desc: 'If your business already runs on ClickFunnels or Kajabi, we build inside your existing platform — course launches, membership sites, sales pages, and onboarding sequences, built for conversion, not just aesthetics.',
     href: '/services/websites-funnels',
   },
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Discovery & Strategy', desc: 'We start by understanding your business, your customers, and what success looks like. We map out the site structure, page goals, and conversion strategy before any design work begins.' },
-  { num: 2, period: 'Design & Wireframes', desc: 'You see exactly how the site will look and flow before a single line of code is written. We present wireframes and design mockups and refine them until everything feels right.' },
-  { num: 3, period: 'Development & Build', desc: 'We build your site using the right platform for your needs — WordPress, Webflow, Shopify, or a custom stack. Everything is built for speed, mobile responsiveness, and conversion.' },
-  { num: 4, period: 'Launch & Testing', desc: 'Before anything goes live, we run through a full QA checklist — speed tests, mobile checks, form testing, link checks, and browser compatibility. Nothing launches broken.' },
-  { num: 5, period: 'Optimise & Scale', desc: 'After launch we track performance — where people drop off, what pages convert best, and what to improve. We run tests and make changes that keep improving your results over time.' },
+  { num: 1, period: 'Discovery and Scoping', desc: 'Before we open a design tool, we understand your business — who your buyers are, what your current site does well and does not, and what the finished project needs to achieve. You get a full written scope before any work starts. No surprises mid-build, no scope creep.' },
+  { num: 2, period: 'Strategy and Wireframes', desc: 'We map out every page before we design it. Wireframes show you the layout, flow, CTA placement, and content structure — establishing what each page is supposed to make the visitor do next. Strategy comes first because a beautiful page with the wrong structure does not convert.' },
+  { num: 3, period: 'Design and Content', desc: 'Design and copy are built together, not separately, because one shapes the other. You review and approve every page before development begins — nothing moves forward until you are satisfied.' },
+  { num: 4, period: 'Development and CRM Connection', desc: 'Every page is built to spec, tested across devices, and connected to your CRM and automation systems before it goes live. Load times, Core Web Vitals, and schema markup are all checked. We do not hand you a website and leave you to figure out why the forms are not working.' },
+  { num: 5, period: 'Launch, Review, and Ongoing Support', desc: 'We do a full pre-launch review, fix anything that needs fixing, and go live. After launch, we monitor performance and make adjustments based on what the data shows. The work does not stop at launch.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-bullseye',      title: 'Built for Conversions, Not Just Looks',   desc: 'A beautiful website that does not convert is just an expensive brochure. Every site we build is designed around one outcome — getting your visitors to take the action that grows your business. We combine design, copy, and structure to make that happen.' },
-  { dark: false, icon: 'fa-solid fa-bolt',           title: 'GoHighLevel and Funnel Specialists',      desc: 'Most web agencies build sites. We build systems. Our team includes specialists in GoHighLevel, ClickFunnels, and sales funnel strategy. If you need a site that connects to your CRM, automations, and pipeline — we know how to make it all work together.' },
-  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Contracts. Month to Month.',           desc: 'We do not lock clients into long-term agreements because we do not need to. The results we deliver are what keep clients with us. You are free to pause or cancel any ongoing support with 30 days notice — no penalty, no awkward conversations.' },
-  { dark: false, icon: 'fa-solid fa-mobile-screen',  title: 'Mobile-First by Default',                 desc: 'More than half of all web traffic comes from mobile. Every site we build is designed and tested on mobile first. You will never get a site from us that looks great on desktop but falls apart on a phone.' },
-  { dark: false, icon: 'fa-solid fa-gauge-high',     title: 'Performance Built In from the Start',     desc: 'Slow sites lose visitors before they even read your headline. We build for speed from the start — optimised images, clean code, and hosting recommendations that keep load times low and Core Web Vitals scores high.' },
-  { dark: false, icon: 'fa-solid fa-headset',        title: 'One Contact. No Handoffs.',               desc: 'You work with one project manager who knows your business from day one. No being passed between departments, no repeating yourself to different people. One person owns your project and you can reach them directly.' },
+  { dark: true,  icon: 'fa-solid fa-headset',           title: 'Your Own Dedicated Build Team',           desc: 'The same designers, developers, and GoHighLevel specialists who plan your project are the ones building it. No handoffs, no project managers relaying messages to contractors you never meet — one team accountable from brief to launch.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',       title: 'No Long-Term Contracts',                  desc: 'We earn your business every month by delivering work that performs. No 12-month retainers, no penalties for leaving, no pressure to stay locked in — you stay because the results are there.' },
+  { dark: false, icon: 'fa-solid fa-layer-group',        title: 'Design, Dev, and Automation Together',    desc: 'Most agencies do design, then development, then ask you to sort out the CRM yourself. We run all three at the same time — designed, built, and connected to GoHighLevel as one project by one team.' },
+  { dark: false, icon: 'fa-solid fa-bolt',               title: 'CRM-Connected From Day One',              desc: 'Every website and funnel we build is connected to your CRM before it goes live. Leads go straight into your pipeline, trigger follow-up sequences, and book onto your calendar without you lifting a finger.' },
+  { dark: false, icon: 'fa-solid fa-eye',                title: 'Full Visibility Into Everything We Do',   desc: 'You know what we are working on at every stage. Every month you get a plain report covering what was built and what is coming next. You own all the accounts, files, and access from day one.' },
+  { dark: false, icon: 'fa-solid fa-magnifying-glass',   title: 'We Only Use White Hat SEO',               desc: 'Every website we build is SEO-ready from the ground up — fast load times, clean code, heading structure, schema markup, and mobile optimization built in, not charged as extras.' },
 ];
 
 const FAQS = [
-  { q: 'How long does a website build take?', a: 'A standard business website typically takes three to six weeks from kickoff to launch. More complex builds — e-commerce stores, custom integrations, or multi-page funnel setups — can take six to twelve weeks. We give you a timeline at the start and keep you updated throughout. Nothing surprises you.' },
-  { q: 'Which platform do you build on?', a: 'We build on WordPress, Webflow, Shopify, GoHighLevel, and custom stacks. The platform we recommend depends on your goals, your technical team, and how you plan to manage the site after launch. We help you make the right choice for your situation, not just what is easiest for us.' },
-  { q: 'Do you do GoHighLevel funnel builds?', a: 'Yes. GoHighLevel is one of our core specialisms. We build complete GHL setups — funnels, automations, CRM pipelines, calendars, email and SMS sequences. If you are a business using GHL or an agency that needs GHL built for clients, we handle the full build and configuration.' },
-  { q: 'Can you redesign my existing website?', a: 'Yes. Website redesigns make up a significant part of our work. We start by auditing your current site — what is working, what is not, and what is holding your conversions back. The redesign is built around fixing those specific problems, not just changing how things look.' },
-  { q: 'Will I be able to update the site myself?', a: 'Yes. We build sites so that the people who own them can make content updates without needing a developer. We provide documentation and a walkthrough after launch so you know exactly how to make changes. If you ever need help, your contact is still available.' },
-  { q: 'Do you build e-commerce websites?', a: 'Yes. We build Shopify stores and WooCommerce sites for businesses selling products online. We handle the product setup, payment integration, shipping configuration, and the design work that makes your store easy to buy from. For existing stores, we also do CRO work to improve what you already have.' },
-  { q: 'What is conversion rate optimisation?', a: 'CRO is the process of improving your website so a higher percentage of visitors take the action you want — buying, booking, calling, or signing up. We analyse where people leave, what they click, and what the data shows, then make changes and test them to see what works better.' },
-  { q: 'Do you offer website maintenance after launch?', a: 'Yes. We offer ongoing maintenance plans that cover security updates, plugin and platform updates, uptime monitoring, and regular backups. You can also add CRO, content updates, or design changes to your plan as your business grows.' },
+  { q: 'How long does a website build take?', a: 'A standard business website takes four to eight weeks from brief to launch. Landing pages and single-page funnels can be done in two to three. GoHighLevel builds depend on complexity, but we give you a timeline at the scoping stage before any work starts.' },
+  { q: 'How much does a website cost?', a: 'It depends on what you need — a five-page business website is a different project from a multi-step funnel connected to GoHighLevel. We do not have fixed packages because those produce generic websites. We scope your project and tell you exactly what it costs before we start.' },
+  { q: 'Do you build websites on WordPress?', a: 'Yes. Most business websites we build are on WordPress because it gives you full ownership of your content after launch. We also build on Next.js for faster performance, and directly in GoHighLevel for clients who need CRM integration from the ground up.' },
+  { q: 'Will my website rank on Google?', a: 'Every website we build is SEO-ready from day one — fast load times, clean code, heading structure, schema markup, and mobile optimisation built in. That means the technical foundation is right; full ongoing SEO is a separate campaign on top of it.' },
+  { q: 'Can you rebuild my existing website without losing my Google rankings?', a: 'Yes. Bad migrations can damage rankings significantly. We handle redirects, preserve your URL structure where possible, and monitor Search Console closely around launch. A rebuild done correctly should improve your rankings, not hurt them.' },
+  { q: 'What is GoHighLevel and do I need it?', a: 'A CRM and marketing automation platform that connects to your website and handles lead capture, follow-up, appointment booking, and pipeline management. If you want your website to do more than collect forms and leave the follow-up to you, it is the right tool.' },
+  { q: 'Do you offer website maintenance after launch?', a: 'Yes. Ongoing monthly maintenance covering updates, security monitoring, backups, speed checks, and small content changes. Your website should get better over time, not drift toward breaking — we monitor it so you do not have to.' },
+  { q: 'Do you offer white-label website builds for agencies?', a: 'Yes. If you run a marketing agency and need design or development delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work — same quality, fully white-labeled.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */
@@ -115,18 +109,18 @@ function FAQAccordion() {
       <div className="ism-container">
         <div className="web-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
           {/* Left */}
-          <div style={{ position:'sticky', top:100 }}>
+          <div className="web-faq-sticky" style={{ position:'sticky', top:100 }}>
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
               Questions About <span style={{ color:'var(--ism-amber)' }}>Websites & Funnels</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              Honest answers before you decide. No spin, no buzzwords.
+              Honest answers before you decide.
             </p>
             <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Talk to Our Team →
             </a>
           </div>
           {/* Right accordion */}
@@ -170,13 +164,12 @@ export default function WebsitesPage() {
 
           <div className="ism-container" style={{ textAlign:'center', position:'relative' }}>
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
-              Websites That Win.<br />
-              Funnels That Convert.<br />
-              <span style={{ color:'var(--ism-amber)' }}>Results You Can Measure.</span>
+              Websites and Funnels Built to Convert.<br />
+              <span style={{ color:'var(--ism-amber)' }}>Strategy, Design, and Automation. All in One Place.</span>
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We design and build websites, landing pages, and sales funnels that turn your traffic into leads and customers — every page built around one goal: more conversions.
+              We build custom websites, landing pages, GoHighLevel funnels, and sales systems that connect to your CRM from day one — built around one outcome: turning more of your existing traffic into real leads and paying customers.
             </p>
 
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
@@ -185,14 +178,14 @@ export default function WebsitesPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Start My Website Project
+                Book a Free Discovery Call
               </a>
-              <a href="/contact"
+              <a href="/portfolio"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
                 onMouseEnter={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='var(--color-primary)'; (e.currentTarget as HTMLAnchorElement).style.color='#fff'; }}
                 onMouseLeave={e=>{ (e.currentTarget as HTMLAnchorElement).style.background='transparent'; (e.currentTarget as HTMLAnchorElement).style.color='var(--color-primary)'; }}
               >
-                Get a Free Proposal
+                See Our Work
               </a>
             </div>
           </div>
@@ -207,10 +200,10 @@ export default function WebsitesPage() {
 
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
-                Why Your Website Is Your <span style={{ color:'var(--ism-amber)' }}>Most Important</span> Marketing Asset
+                Why Your Website Is Your <span style={{ color:'var(--ism-amber)' }}>Most Important Marketing Asset</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
-                Your website is where every marketing dollar lands. Here is what the data says about what that means for your business.
+                The data behind what a well-built website actually does for your business.
               </p>
             </div>
 
@@ -218,10 +211,10 @@ export default function WebsitesPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'The average website converts less than 2% of visitors', text:'A well-built site with the right copy, structure, and calls to action can convert at 5%, 8%, or higher — using the exact same traffic. That difference is worth more than any ad campaign.' },
-                  { num:'02', title:'Every marketing channel sends people to your website', text:'Whether someone finds you through Google, a paid ad, social media, or a referral — they land on your site. If it does not convert them, every dollar you spend getting them there is underperforming.' },
-                  { num:'03', title:'Mobile traffic is the majority — and most sites lose it', text:'More than half of all web traffic comes from mobile devices. A site that looks great on desktop but struggles on mobile loses more than half its potential customers before they even read your offer.' },
-                  { num:'04', title:'A sales funnel converts cold traffic into paying customers', text:'A funnel takes someone from not knowing you to becoming a customer. When every page is built around one goal and connected to the next step, conversion rates climb significantly.' },
+                  { num:'01', title:'Most buyers have already decided before they call', text:'Research consistently shows buyers do roughly 70 to 80 percent of their research online before ever speaking to a business. Your website is not a digital brochure — it is where buying decisions are made or lost, often without you knowing it happened.' },
+                  { num:'02', title:'First impressions happen in under three seconds', text:'Website design and navigation influence 94 percent of first impressions. Visitors decide whether to stay or leave before reading a single word. A slow or confusing website does not just lose a visitor — it loses a buyer who had already found you.' },
+                  { num:'03', title:'Most websites have a traffic problem. Few have a conversion problem they have diagnosed.', text:'The average website converts about two to three percent of visitors — 97 out of every 100 people who find your site leave without doing anything. A site built around conversion turns traffic you are already paying for into leads.' },
+                  { num:'04', title:'GoHighLevel has changed what a website can do on its own', text:'When your website is connected to GoHighLevel, it does not just collect leads — it books appointments, sends follow-up sequences, and routes prospects to your calendar without manual work. A website built around automation works around the clock.' },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
@@ -259,12 +252,15 @@ export default function WebsitesPage() {
             </div>
 
             <div style={{ textAlign:'center' }}>
+              <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 auto 22px', maxWidth:560 }}>
+                Isuremedia builds every website and funnel around one question: what is this page supposed to make the visitor do? Everything else follows from the answer.
+              </p>
               <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
               >
-                Get a Free Website Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                Claim Free Website Audit Now <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
               </a>
             </div>
 
@@ -285,16 +281,24 @@ export default function WebsitesPage() {
         <div id="web-results"><ClientResults /></div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
-        <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
-          <div className="ism-container" style={{ position:'relative' }}>
-            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="web-cta-banner-grid">
-              <div />
+        <section style={{ background:'#fff', padding:'52px 28px' }}>
+          <div className="ism-container" >
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'340px 1fr', minHeight:280, clipPath:'inset(-150px 0px 0px 0px round 24px)' }} className="web-cta-banner-grid">
+
+              <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
+                  alt="Web Expert"
+                  style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', height:'128%', width:'auto', maxWidth:'none', objectFit:'contain', objectPosition:'bottom center', display:'block' }}
+                />
+              </div>
               <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
-                  Is your current website losing you <span style={{ color:'var(--ism-amber)' }}>customers every day?</span>
+                  Your website should be doing <span style={{ color:'var(--ism-amber)' }}>more work</span> than it is.
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Get a free website audit and find out exactly what is stopping your visitors from converting.
+                  Get a free website audit and find out what is stopping your visitors from turning into leads.
                 </p>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -303,10 +307,6 @@ export default function WebsitesPage() {
                   Get My Free Website Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                 </a>
               </div>
-            </div>
-            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg" alt="Web Expert" style={{ position:'absolute', bottom:0, left:0, height:'100%', width:'100%', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           <style>{`@media (max-width: 900px) { .web-cta-banner-grid { grid-template-columns: 1fr !important; } .web-cta-banner-grid > div:first-child { display: none !important; } }`}</style>
@@ -321,17 +321,17 @@ export default function WebsitesPage() {
             <div className="web-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/sales-funnel-illustration.webp" alt="Website Growth Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/website &funnels.webp" alt="Website Growth Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Most websites look fine but perform poorly. The gap between a site that looks good and a site that converts consistently comes down to structure, copy, speed, and how clearly it communicates what you do and why someone should choose you.
+                  Most websites look fine but perform poorly. The gap between a site that looks good and one that converts comes down to structure, copy, speed, and how clearly it communicates why someone should choose you.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  We do not design websites and then hand them over and wish you luck. We stay involved through launch and beyond — tracking how pages perform, running A/B tests, and making improvements based on real data.
+                  We do not design websites, hand them over, and wish you luck. We stay involved through launch and beyond — tracking how pages perform and making improvements based on real data.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Whether you need a single landing page or a full multi-step sales funnel, we build it the same way — around your customer, around your offer, and around the result you are trying to achieve.
+                  Whether you need a single landing page or a full multi-step funnel, we build it the same way — around your customer, your offer, and the result you are trying to achieve.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -355,16 +355,16 @@ export default function WebsitesPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:56 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 12px' }}>
-                Our Complete <span style={{ color:'var(--ism-amber)' }}>Web & Funnel Services</span>
+                Our Complete <span style={{ color:'var(--ism-amber)' }}>Websites and Funnels Services</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every service built around one goal — more conversions from the traffic you already have.
+                Everything your business needs to get found online, convert visitors, and close more customers.
               </p>
             </div>
             <div className="web-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
               {SERVICES.map((s,i)=>(
                 <div key={i} className={`web-svc-cell web-svc-cell-${i}`}
-                  style={{ padding:'36px 32px', borderRight:(i+1)%3===0?'none':'1px solid #E8EAF0', borderBottom:i<6?'1px solid #E8EAF0':'none', background:'#fff', transition:'background .18s', cursor:'default' }}
+                  style={{ padding:'36px 32px', borderRight:((i+1)%3===0||i===SERVICES.length-1)?'none':'1px solid #E8EAF0', borderBottom:i<6?'1px solid #E8EAF0':'none', background:'#fff', transition:'background .18s', cursor:'default' }}
                   onMouseEnter={e=>{ (e.currentTarget as HTMLDivElement).style.background='#F7F8FD'; }}
                   onMouseLeave={e=>{ (e.currentTarget as HTMLDivElement).style.background='#fff'; }}
                 >
@@ -386,8 +386,8 @@ export default function WebsitesPage() {
             </div>
           </div>
           <style>{`
-            @media (max-width: 900px) { .web-svc-grid { grid-template-columns: repeat(2,1fr) !important; } .web-svc-cell-1,.web-svc-cell-3,.web-svc-cell-5,.web-svc-cell-7 { border-right: none !important; } .web-svc-cell-0,.web-svc-cell-1,.web-svc-cell-2,.web-svc-cell-3,.web-svc-cell-4,.web-svc-cell-5,.web-svc-cell-6,.web-svc-cell-7 { border-bottom: 1px solid #E8EAF0 !important; } .web-svc-cell-8 { border-bottom: none !important; border-right: none !important; } }
-            @media (max-width: 560px) { .web-svc-grid { grid-template-columns: 1fr !important; } .web-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; } .web-svc-cell-8 { border-bottom: none !important; } }
+            @media (max-width: 900px) { .web-svc-grid { grid-template-columns: repeat(2,1fr) !important; } .web-svc-cell-1,.web-svc-cell-3 { border-right: none !important; } }
+            @media (max-width: 560px) { .web-svc-grid { grid-template-columns: 1fr !important; } .web-svc-cell { border-right: none !important; border-bottom: 1px solid #E8EAF0 !important; } .web-svc-cell-7 { border-bottom: none !important; } }
           `}</style>
         </section>
 
@@ -398,32 +398,35 @@ export default function WebsitesPage() {
               <div>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
                   Why a Great Website Is a{' '}
-                  <span style={{ color:'var(--ism-amber)' }}>Growth Investment</span>
+                  <span style={{ color:'var(--ism-amber)' }}>Great Investment</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
-                  Turn Your Website Into Your Highest-ROI Marketing Channel
+                  Turn Your Biggest Marketing Asset Into Your Best-Performing Sales Channel
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>A 1% improvement in conversion rate can double your revenue.</strong> The same traffic. The same ad budget. Just a site that converts more of the people already visiting.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Most businesses treat their website as a cost, not an investment.</strong> A poor one actively costs you money every day — every visitor who lands on a slow, unclear site and calls your competitor instead is revenue you paid to attract and did not capture.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>Every other marketing channel sends people to your site.</strong> SEO, paid ads, email, social — they all send people to a page. If that page does not convert, the whole funnel underperforms.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>A website built around conversion changes that equation.</strong> The same traffic, handled properly, generates two or three times more enquiries without an extra penny on ads or SEO — the most cost-effective growth lever there is.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>The best websites keep getting better.</strong> With CRO, your site improves month over month based on data. It compounds just like SEO does.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>When your website is connected to GoHighLevel, it stops being a brochure and starts being a sales system.</strong> Leads are captured, qualified, and booked onto your calendar automatically, so your team only talks to people who are already serious.
+                  </p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Isuremedia builds every project around one question: will this make more visitors take action?</strong> A website that converts, a funnel that qualifies, and a CRM that follows up — working together, every other marketing effort becomes more effective.
                   </p>
                 </div>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
                 >
-                  Build My Converting Website →
+                  Book a Free Discovery Call →
                 </a>
               </div>
               <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/global-growth-illustration.webp" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/ready_for_result.png" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
             </div>
           </div>
@@ -434,10 +437,10 @@ export default function WebsitesPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:64 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
-                Isuremedia&apos;s Proven Process for <span style={{ color:'var(--ism-amber)' }}>Websites That Convert</span>
+                How We Build Your <span style={{ color:'var(--ism-amber)' }}>Website or Funnel</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                From first conversation to live site — here is exactly how we work.
+                From your first brief to a live, converting site. Here is exactly what to expect.
               </p>
             </div>
             <div className="web-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
@@ -457,7 +460,7 @@ export default function WebsitesPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Start My Website Project
+                Book a Free Discovery Call
               </a>
             </div>
           </div>
@@ -550,10 +553,10 @@ export default function WebsitesPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
-                Why Businesses Choose Isuremedia for <span style={{ color:'var(--ism-amber)' }}>Their Website</span>
+                Why Our Website and Funnel Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Results</span> for Your Business
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                We build sites that work — not just sites that look good.
+                Get a website that actually brings in customers.
               </p>
             </div>
             <div className="web-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
@@ -587,10 +590,10 @@ export default function WebsitesPage() {
                 <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--ism-amber)', letterSpacing:'.12em', textTransform:'uppercase' }}>Your Growth Starts Here</span>
               </div>
               <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
-                Ready to turn your website into<br />your <span style={{ color:'var(--ism-amber)' }}>best sales tool?</span>
+                Ready to turn your website<br /><span style={{ color:'var(--ism-amber)' }}>into your best lead source?</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you need a new site from scratch, a funnel built, or an existing site redesigned to convert better — we build it around results. Talk to us today and we will tell you exactly what your website needs.
+                Whether you need a new website, a funnel that converts, or a GoHighLevel system that runs your pipeline automatically, the question is the same. Is your website bringing in the leads it should? If not, talk to us and we will help you turn your site into your strongest sales channel.
               </p>
               <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -609,7 +612,7 @@ export default function WebsitesPage() {
             </div>
             <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Client" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+              <img src="/result_footer/website &funnels.webp" alt="Websites and Funnels" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           </div>
@@ -625,7 +628,7 @@ export default function WebsitesPage() {
         @media (max-width: 900px)  { .web-diff-grid { grid-template-columns: 1fr 1fr !important; } }
         @media (max-width: 540px)  { .web-diff-grid { grid-template-columns: 1fr !important; } }
         @media (max-width: 900px)  { .web-timeline { grid-template-columns: 1fr !important; gap: 40px !important; } .web-timeline > *:not(:last-child)::after { content:''; display:block; width:2px; height:32px; background:var(--ism-amber); margin:20px auto 0; } }
-        @media (max-width: 900px)  { .web-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+        @media (max-width: 900px)  { .web-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } .web-faq-sticky { position: static !important; } }
         @media (max-width: 640px)  { .web-hero { padding: 56px 0 44px !important; } .web-section { padding-top: 60px !important; padding-bottom: 60px !important; } }
       `}</style>
     </>

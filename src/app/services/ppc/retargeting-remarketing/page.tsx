@@ -249,7 +249,7 @@ export default function RetargetingRemarketingPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/ppc-advertising-illustration.webp" />
+        <CTASection image="/result_footer/Retargeting & Remarketing_.webp" />
       </main>
       <Footer />
     </>

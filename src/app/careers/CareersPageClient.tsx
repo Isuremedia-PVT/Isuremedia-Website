@@ -30,8 +30,8 @@ const JOB_SCHEMA = JSON.stringify({
     {
       '@type': 'JobPosting',
       title: 'Business Development Executive',
-      description: 'Join ISureMedia as a Business Development Executive. Work on US and UK client accounts across digital marketing services.',
-      hiringOrganization: { '@type': 'Organization', name: 'ISureMedia', sameAs: 'https://isuremedia.com' },
+      description: 'Join Isuremedia as a Business Development Executive. Work on US and UK client accounts across digital marketing services.',
+      hiringOrganization: { '@type': 'Organization', name: 'Isuremedia', sameAs: 'https://isuremedia.com' },
       jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: 'Haldwani', addressRegion: 'Uttarakhand', addressCountry: 'IN' } },
       jobLocationType: 'TELECOMMUTE',
       employmentType: 'FULL_TIME',
@@ -40,8 +40,8 @@ const JOB_SCHEMA = JSON.stringify({
     {
       '@type': 'JobPosting',
       title: 'Business Development Manager',
-      description: 'Join ISureMedia as a Business Development Manager. Lead sales and client acquisition across US and UK markets.',
-      hiringOrganization: { '@type': 'Organization', name: 'ISureMedia', sameAs: 'https://isuremedia.com' },
+      description: 'Join Isuremedia as a Business Development Manager. Lead sales and client acquisition across US and UK markets.',
+      hiringOrganization: { '@type': 'Organization', name: 'Isuremedia', sameAs: 'https://isuremedia.com' },
       jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: 'Haldwani', addressRegion: 'Uttarakhand', addressCountry: 'IN' } },
       jobLocationType: 'TELECOMMUTE',
       employmentType: 'FULL_TIME',
@@ -161,7 +161,7 @@ export default function CareersPageClient() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
-                  alt="ISureMedia team"
+                  alt="Isuremedia team"
                   style={{ width: '100%', height: 480, objectFit: 'cover', borderRadius: 20, display: 'block', boxShadow: '0 28px 72px rgba(0,35,83,.16)' }}
                 />
                 <div style={{ position: 'absolute', top: 20, right: 20, background: 'var(--ism-amber)', borderRadius: 10, padding: '10px 18px', boxShadow: '0 6px 18px rgba(255,176,0,.45)' }}>
@@ -231,7 +231,7 @@ export default function CareersPageClient() {
                 A Place Where the Work<br />Makes <span style={{ color: 'var(--color-primary)' }}>You Better.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 520, lineHeight: 1.75 }}>
-                At ISureMedia, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>when people grow, the company grows</span>. That is not a philosophy — it is how we make decisions every day.
+                At Isuremedia, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>when people grow, the company grows</span>. That is not a philosophy — it is how we make decisions every day.
               </p>
             </div>
 
@@ -333,7 +333,7 @@ export default function CareersPageClient() {
                 The Team Behind <span style={{ color: 'var(--color-primary)' }}>the Work.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 500, margin: '0 auto', lineHeight: 1.75 }}>
-                <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Real people, real accounts, one office</span>. This is what working at ISureMedia actually looks like.
+                <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Real people, real accounts, one office</span>. This is what working at Isuremedia actually looks like.
               </p>
             </div>
 
@@ -479,7 +479,7 @@ export default function CareersPageClient() {
 
                     <div>
                       <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>
-                        Tell us about yourself and why ISureMedia *
+                        Tell us about yourself and why Isuremedia *
                       </label>
                       <textarea
                         {...inp()}
@@ -603,7 +603,7 @@ export default function CareersPageClient() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80"
-                  alt="Join ISureMedia"
+                  alt="Join Isuremedia"
                   style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 16, display: 'block', boxShadow: '0 16px 48px rgba(0,0,0,.25)' }}
                 />
               </div>

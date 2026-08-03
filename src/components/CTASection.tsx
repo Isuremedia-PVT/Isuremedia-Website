@@ -3,18 +3,30 @@
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-export default function CTASection({ image = '/result_footer/ready_for_result.png', imageWidth = 320 }: { image?: string; imageWidth?: number }) {
+export default function CTASection({ image = '/result_footer/ready_for_result.png', imageWidth = 320, overflowTop = 0 }: { image?: string; imageWidth?: number; overflowTop?: number }) {
+  // bleed is expressed as a fraction of the person column's own width, so it scales
+  // smoothly with the fluid clamp() below instead of being pinned to a fixed px value
+  // that only holds above one breakpoint and snaps to 0 below it.
+  const bleed = imageWidth > 0 ? overflowTop / imageWidth : 0;
+  const minPersonWidth = Math.min(220, imageWidth);
+  const personSize = `clamp(${minPersonWidth}px, 30vw, ${imageWidth}px)`;
+  const cardPadTop = 40;
+  // the card's own top padding only buys back part of the bleed height — once overflowTop
+  // exceeds it, the head pokes past the section's box too, so give the section enough
+  // top padding to always contain the peak bleed (at imageWidth) plus a clearance buffer.
+  const sectionPadTop = bleed ? Math.max(64, overflowTop - cardPadTop + 48) : 64;
+
   return (
-    <section id="cta" className="cta-section" style={{ padding: '64px 0', background: '#fff', overflow: 'visible' }}>
+    <section id="cta" className={`cta-section${bleed ? ' cta-bleed' : ''}`} style={{ paddingTop: sectionPadTop, paddingBottom: 64, background: '#fff', overflow: bleed ? 'visible' : 'hidden' }}>
       <div className="ism-container">
 
-        <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', display: 'grid', gridTemplateColumns: '1fr 360px', alignItems: 'center', gap: 40, overflow: 'visible', minHeight: 240 }}>
+        <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: `${cardPadTop}px 60px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
 
           {/* Decorative glow */}
           <div className="cta-glow" style={{ position: 'absolute', right: '30%', top: '-10%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
 
           {/* ── Left: Text + Buttons ── */}
-          <div style={{ position: 'relative', zIndex: 2 }}>
+          <div style={{ position: 'relative', zIndex: 2, alignSelf: 'center' }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.10, marginBottom: 20 }}>
               Ready for <span style={{ color: 'var(--ism-amber)' }}>Results?</span>
             </h2>
@@ -31,7 +43,7 @@ export default function CTASection({ image = '/result_footer/ready_for_result.pn
                 Get My Free Proposal
               </a>
 
-              <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
+              <span className="cta-or" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
 
               <a href="tel:+16465881430" className="cta-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
@@ -44,13 +56,14 @@ export default function CTASection({ image = '/result_footer/ready_for_result.pn
             </div>
           </div>
 
-          {/* ── Right: Person image (overflows top) ── */}
-          <div className="cta-person" style={{ position: 'absolute', right: 40, bottom: 0, width: imageWidth, zIndex: 3, pointerEvents: 'none' }}>
+          {/* ── Right: Illustration image, flush to the card's bottom edge, head bleeding above the top when overflowTop is set — scales with viewport, no fixed breakpoint ── */}
+          <div className="cta-person" style={{ position: 'relative', zIndex: 3, width: personSize, aspectRatio: '1 / 1', overflow: bleed ? 'visible' : 'hidden', marginBottom: -cardPadTop }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
+              className="cta-person-img"
               src={image}
               alt="Isuremedia team"
-              style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', objectPosition: 'bottom' }}
+              style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: `${100 + bleed * 100}%`, display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
             />
           </div>
 
@@ -60,15 +73,16 @@ export default function CTASection({ image = '/result_footer/ready_for_result.pn
 
       <style>{`
         @media (max-width: 1024px) {
-          .cta-card { padding: 30px !important; gap: 24px !important; grid-template-columns: 1fr 300px !important; }
+          .cta-card { padding: 34px 30px !important; gap: 24px !important; }
+          .cta-person { margin-bottom: -34px !important; }
           .cta-para { max-width: 100% !important; }
           .cta-btns { flex-wrap: nowrap !important; gap: 10px !important; }
           .cta-btn { padding: 13px 22px !important; font-size: 12.5px !important; }
-          .cta-person { width: 300px !important; right: -42px !important; }
         }
         @media (max-width: 768px) {
           .cta-card { padding: 24px 16px !important; grid-template-columns: 1fr !important; }
-          .cta-person { display: block !important; position: static !important; right: auto !important; bottom: auto !important; width: 220px !important; margin: 0 auto 20px !important; order: -1; }
+          .cta-person { display: block !important; position: static !important; width: 220px !important; height: 220px !important; aspect-ratio: auto !important; margin: 0 auto 20px !important; order: -1; overflow: hidden !important; }
+          .cta-person-img { position: static !important; left: auto !important; transform: none !important; width: 100% !important; max-width: 220px !important; height: auto !important; }
           .cta-section { padding: 36px 0 !important; }
           .cta-btn { padding: 12px 22px !important; font-size: 12.5px !important; }
         }
@@ -78,6 +92,7 @@ export default function CTASection({ image = '/result_footer/ready_for_result.pn
           .cta-glow { display: none !important; }
           .cta-btns { flex-direction: column !important; align-items: stretch !important; }
           .cta-btns a { justify-content: center !important; width: 100% !important; box-sizing: border-box !important; white-space: normal !important; text-align: center !important; }
+          .cta-or { text-align: center !important; align-self: center !important; }
           .cta-btn { padding: 13px 18px !important; font-size: 12.5px !important; }
         }
       `}</style>

@@ -175,7 +175,7 @@ export default function ContactPage() {
                     Experience Measurable Growth.
                   </h2>
                   <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.7, marginBottom: 28 }}>
-                    Choose ISureMedia and give your business the growth it deserves.
+                    Choose Isuremedia and give your business the growth it deserves.
                   </p>
 
 
@@ -343,7 +343,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ISureMedia Office Location"
+                title="Isuremedia Office Location"
               />
             </div>
 

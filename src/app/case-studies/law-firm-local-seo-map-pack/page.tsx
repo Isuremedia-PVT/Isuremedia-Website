@@ -46,7 +46,7 @@ export default function LawFirmCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Whitfield & Cole needed a complete local SEO foundation — a fully optimised Google Business Profile, dedicated practice-area pages, and a system for consistently generating reviews from real clients.',
-        'ISureMedia rebuilt all three in parallel over a five-month engagement.',
+        'Isuremedia rebuilt all three in parallel over a five-month engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
       didHeading: 'Rebuilt the local SEO foundation practice area by practice area.',
@@ -84,7 +84,7 @@ export default function LawFirmCaseStudyPage() {
       ctaPrimaryHref: '/services/seo/local-seo',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/seo-analytics-illustration.webp',
+      ctaImage: '/result_footer/local seo.webp',
     }} />
   );
 }

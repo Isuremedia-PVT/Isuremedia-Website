@@ -249,7 +249,7 @@ export default function WordPressDesignPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/sales-funnel-illustration.webp" />
+        <CTASection image="/result_footer/website &funnels.webp" />
       </main>
       <Footer />
     </>

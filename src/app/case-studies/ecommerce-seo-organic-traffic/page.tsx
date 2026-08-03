@@ -46,7 +46,7 @@ export default function EcommerceSEOCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Qualis needed the technical foundation fixed before any amount of new content would matter, followed by a content and internal linking strategy that actually fed authority to the pages driving jobs.',
-        'ISureMedia audited, rebuilt, and scaled the strategy across eight months of compounding work.',
+        'Isuremedia audited, rebuilt, and scaled the strategy across eight months of compounding work.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=700&q=80',
       didHeading: 'Fixed the technical foundation first, then built content on top of it.',
@@ -84,7 +84,7 @@ export default function EcommerceSEOCaseStudyPage() {
       ctaPrimaryHref: '/services/seo',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/seo-strategy-illustration.webp',
+      ctaImage: '/result_footer/Seo (2).webp',
     }} />
   );
 }

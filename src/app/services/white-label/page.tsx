@@ -16,85 +16,85 @@ const SERVICES = [
   {
     title: 'White-Label SEO',
     icon: 'fa-solid fa-magnifying-glass',
-    desc: 'SEO is one of the highest-value recurring services an agency can offer. We handle the full SEO delivery for your clients: technical audits, on-page optimisation, link building, content strategy, and monthly reporting — every deliverable branded as your agency. Your clients see your name on the rankings report, not ours.',
+    desc: 'SEO is one of the highest-value recurring services an agency can offer, and one of the hardest to deliver without a dedicated team. We handle the full SEO delivery for your clients — technical audits, on-page optimisation, link building, content strategy, and monthly reporting — branded as your agency.',
     href: '/services/white-label/white-label-seo',
   },
   {
     title: 'White-Label PPC',
     icon: 'fa-solid fa-chart-bar',
-    desc: 'We manage Google Ads, Meta Ads, and LinkedIn campaigns for your agency clients, with all reporting and communication going out under your brand. Your clients get a properly managed paid ads service. You get recurring management revenue without a PPC specialist on staff.',
+    desc: 'Running paid ads for clients requires platform certifications, daily account management, and creative that converts. We manage Google, Meta, and LinkedIn campaigns for your agency clients, all reporting under your brand — recurring revenue without a PPC specialist on staff.',
     href: '/services/white-label/white-label-ppc',
   },
   {
     title: 'White-Label Web Development',
     icon: 'fa-solid fa-code',
-    desc: 'We deliver website builds, landing pages, redesigns, and migrations under your agency label. Clean handover, documented code, and no surprises on the delivery timeline. Your client gets a professional website. Your agency gets the credit.',
+    desc: 'Website projects are often where agencies lose money — scoped badly, delivered late, handed off to a freelancer who disappears. We deliver builds, landing pages, and redesigns under your agency label, with clean handover and no surprises on the timeline.',
     href: '/services/white-label/white-label-web-design',
   },
   {
     title: 'White-Label GoHighLevel',
     icon: 'fa-solid fa-bolt',
-    desc: 'We set up and configure GoHighLevel sub-accounts, build funnels and automation workflows, configure CRMs, and provide ongoing support under your agency brand. You offer GoHighLevel as a service. We deliver it. Your clients never see our name in the account.',
+    desc: 'GoHighLevel is one of the fastest-growing platforms in the agency market, and clients increasingly ask for it by name. We set up sub-accounts, build funnels and automation, and configure CRMs under your agency brand — your clients never see our name in the account.',
     href: '/services/white-label/white-label-automation',
   },
   {
     title: 'White-Label Content Marketing',
     icon: 'fa-solid fa-pen-nib',
-    desc: 'We produce SEO blog writing, website copy, email newsletters, and social media content for your agency clients — delivered on brief, on time, and under your brand. Every piece matches the client\'s brand voice because we brief properly before we write anything.',
+    desc: 'Content is one of the first things agencies get asked for and one of the hardest to scale. We produce SEO blog writing, website copy, and social content for your agency clients, delivered on brief and under your brand — matching each client\'s voice.',
     href: '/services/white-label/white-label-content',
   },
   {
     title: 'White-Label Link Building',
     icon: 'fa-solid fa-link',
-    desc: 'We run white-hat, outreach-based link acquisition campaigns for your agency clients: real editorial placements on real sites, with transparent reporting that goes to your client under your agency branding. No PBNs, no link farms, no tactics that create a penalty risk your agency would have to explain.',
+    desc: 'Link building is one of the most requested and most commonly outsourced SEO services. We run white-hat, outreach-based campaigns — real editorial placements with transparent reporting under your agency branding. No PBNs, no penalty risk.',
     href: '/services/white-label',
   },
   {
     title: 'White-Label Graphic Design',
     icon: 'fa-solid fa-palette',
-    desc: 'Social media creatives, ad assets, brand collateral, email templates, presentation decks, and infographics — all produced to spec and delivered with zero ISureMedia branding on any asset. Your clients get design work that looks like it came from your internal team. Because as far as they know, it did.',
+    desc: 'On-demand design production for your client accounts — social creatives, ad assets, brand collateral, and presentation decks, produced to spec with zero Isuremedia branding on any asset.',
     href: '/services/white-label',
   },
   {
     title: 'White-Label Reporting & Dashboards',
     icon: 'fa-solid fa-chart-line',
-    desc: 'We produce branded client reports covering SEO performance, paid ad results, website analytics, and campaign summaries — formatted to your agency template and delivered to your clients as your work. Every metric your clients care about, in a report that carries your brand.',
+    desc: 'Monthly reporting is where agency relationships are won or lost. We produce branded client reports covering SEO, paid ads, and website analytics, formatted to your template and delivered as your work.',
     href: '/services/white-label',
   },
   {
     title: 'Dedicated Agency Pods',
     icon: 'fa-solid fa-users',
-    desc: 'A fixed team of specialists assigned to your agency — the same writers, designers, SEO specialists, or developers working on your accounts every month. The output and reliability of an in-house team, without the cost or commitment of hiring one.',
+    desc: 'Project-by-project outsourcing creates inconsistency — a different person on every brief, no institutional knowledge. A dedicated pod is a fixed team assigned to your agency, giving you the output of an in-house team without the cost of hiring one.',
     href: '/services/white-label',
   },
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Discovery Call & Setup', desc: 'We start with a call to understand your agency, your clients, and how you work. We cover briefing processes, project management tools, reporting preferences, and NDA terms. Nothing starts until the workflow fits how your agency already operates.' },
-  { num: 2, period: 'First Brief & Onboarding', desc: 'Your first project is treated as a calibration. We follow your brief closely, check in during production, and make sure the output matches your standards before delivery. The goal is to establish the benchmark everything else is measured against.' },
-  { num: 3, period: 'Ongoing Delivery', desc: 'Once the workflow is established, delivery runs on a predictable schedule. You send briefs, we deliver work, you review and send to your client. Reports go out branded as your agency. You always have a direct contact who knows your accounts.' },
-  { num: 4, period: 'Review & Scale', desc: 'Monthly we review what is working and what your agency needs next. If you win a new client, we add the service. If a service pauses, it pauses. The partnership grows with your agency, not locked into a fixed model.' },
+  { num: 1, period: 'Discovery Call & Setup', desc: 'We start with a call to understand your agency, your current clients, and how you work — briefing processes, project management tools, reporting preferences. Nothing starts until we have a workflow that fits how your agency operates, with branding and NDA terms agreed first.' },
+  { num: 2, period: 'First Brief & Onboarding', desc: 'Your first project is treated as a calibration. We follow your brief closely, check in during production, and make sure output matches your standards before delivery. The goal is to establish the standard everything else is measured against.' },
+  { num: 3, period: 'Ongoing Delivery', desc: 'Once the workflow is established, delivery runs on a predictable schedule — you send briefs, we deliver work, you review and send to your client. Reports go out branded as your agency, and you always have a direct contact who knows your accounts.' },
+  { num: 4, period: 'Review & Scale', desc: 'Monthly we review what is working and what your agency needs next. If you win a new client and need to add a service, we add it; if a service needs to pause, it pauses. The partnership grows with your agency, not a fixed model.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-eye-slash',      title: 'Your Clients Never Discover Us',          desc: 'We never contact your clients, never appear on any deliverable, and never do anything that could reveal the existence of this partnership. Every report, every asset, and every communication goes out under your agency brand. We sign NDAs before any work begins. Your clients only ever see your agency.' },
-  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Long-Term Contracts',                  desc: 'Start with one client and scale as your agency grows. Pause or stop any service when you need to. There are no minimum commitments, no penalties for changing scope, and no pressure to stay. We earn the next month by delivering on this one.' },
-  { dark: false, icon: 'fa-solid fa-users',          title: 'The Same Specialists, Every Month',       desc: 'We do not rotate through different people. Your accounts are handled by the same writers, SEO specialists, designers, or developers each time. They know your clients, they know your standards, and the work gets better over time rather than starting from scratch with every delivery.' },
-  { dark: false, icon: 'fa-solid fa-building',       title: 'Every Service Delivered In-House',        desc: 'We do not outsource your work to another white-label provider. Everything is done by our in-house team. That means consistent quality, direct accountability, and no third-party handoffs creating risk for your agency or your clients.' },
-  { dark: false, icon: 'fa-solid fa-sliders',        title: 'We Adapt to How You Work',                desc: 'We fit into your briefing process, your project management tools, and your reporting templates — not the other way around. If you use Asana, we use Asana. If you have a specific report format your clients expect, we produce reports in that format.' },
-  { dark: false, icon: 'fa-solid fa-arrows-up-down', title: 'Scale Up or Down Anytime',                desc: 'Add a new service when a client asks for it. Increase capacity when you win a new account. Reduce scope when a client pauses. White-label fulfillment should flex with your agency, not commit you to fixed costs you carry whether the work is there or not.' },
+  { dark: true,  icon: 'fa-solid fa-eye-slash',      title: 'Your Clients Never Discover Us',          desc: 'We never contact your clients, appear on any deliverable, or do anything that could reveal this partnership. Every report and asset goes out under your agency brand, and we sign NDAs if you need one. Your clients only ever see your agency.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Long-Term Contracts',                  desc: 'Start with one client and scale as your agency grows. Pause or stop any service when you need to — no minimum commitments, no penalties for changing scope. We earn the next month by delivering on this one.' },
+  { dark: false, icon: 'fa-solid fa-users',          title: 'The Same Specialists Work on Your Accounts', desc: 'We do not rotate through different people every month. The same writers, SEO specialists, or developers handle your accounts each time — they know your clients and standards, and the work gets better over time.' },
+  { dark: false, icon: 'fa-solid fa-building',       title: 'Every Service Delivered In-House',        desc: 'We do not outsource your work to another white-label provider. Everything is done by our in-house team, meaning consistent quality and no third-party handoffs creating risk for your agency.' },
+  { dark: false, icon: 'fa-solid fa-sliders',        title: 'We Adapt to How You Work',                desc: 'We fit into your briefing process, project management tools, and reporting templates, not the other way around. If you use Asana, we use Asana — the partnership is built around how your agency already operates.' },
+  { dark: false, icon: 'fa-solid fa-arrows-up-down', title: 'Scale Up or Down Anytime',                desc: 'Add a new service when a client asks for it, increase capacity when you win an account, reduce scope when a client pauses. White-label fulfillment flexes with your agency, not fixed costs you carry regardless.' },
 ];
 
 const FAQS = [
-  { q: 'Will my clients ever find out that ISureMedia is doing the work?', a: 'No. We operate completely silently. Every deliverable carries your agency branding. We never reach out to your clients, never mention ISureMedia in any report or deliverable, and never do anything that could reveal the existence of this partnership. We sign NDAs before any work begins if you require one. Your clients only ever see your agency throughout the entire engagement.' },
-  { q: 'How do the briefs and handovers work?', a: 'During onboarding we set up a briefing process that fits how your agency already works. We adapt to your project management tools, your brief templates, and your communication preferences. You send us the brief the way you normally would, we deliver the work the way your clients expect to receive it. The workflow is designed to feel like an extension of your internal team, not an external supplier.' },
-  { q: 'What services can you deliver white-label?', a: 'SEO, PPC, web development, GoHighLevel setup and automation, content marketing, link building, graphic design, white-label reporting and dashboards, and dedicated agency pods. You can use one service or all of them, and each can be scaled independently based on your client load.' },
-  { q: 'How quickly can you turn around work?', a: 'It depends on the service and scope. SEO reports and content pieces typically turn around in five to seven business days. Website builds take two to six weeks depending on complexity. Ad campaign setup takes one to two weeks. For time-sensitive projects, tell us the deadline when you send the brief and we build the schedule around it.' },
-  { q: 'Can I start with just one client?', a: 'Yes. Most agency partnerships start with one client and grow from there. There is no minimum client number to work with us. Start with one, prove the quality and the process, and scale from there when you are ready.' },
-  { q: 'Do you work with freelancers who are building toward agency?', a: 'Yes. Some of our strongest partners started as solo consultants. White-label fulfillment is what lets a one-person operation pitch and win full-service agency contracts without having a full-service team behind them. If you are building toward agency scale, this is one of the most practical ways to get there.' },
-  { q: 'How do you handle reporting?', a: 'Reports go out on the schedule your clients expect, in the format they are used to receiving, branded as your agency. We produce SEO performance reports, paid ad reports, website analytics summaries, and campaign overviews. If you have a specific template your clients have been receiving, send it to us and we produce to that format.' },
-  { q: 'What if a deliverable does not meet our standard?', a: 'You review everything before it goes to your client. If something needs to change, we change it. We do not charge for revision rounds. Our goal is to produce work that passes your review without needing significant changes, which is why the briefing and onboarding process matters so much at the start.' },
-  { q: 'How is pricing structured?', a: 'It depends on the service and volume. Some services are priced per project, some per month, and dedicated pods are priced based on the skill mix and hours needed. We give you an honest range on the call, and confirm the full pricing before any work begins. There are no hidden fees.' },
+  { q: 'Will my clients ever find out that Isuremedia is doing the work?', a: 'No. We operate completely silently. Every deliverable carries your agency branding, and we never reach out to your clients or mention Isuremedia anywhere. We sign NDAs before any work begins if you require one — your clients only ever see your agency.' },
+  { q: 'How do the briefs and handovers work?', a: 'During onboarding we set up a briefing process that fits how your agency already works — your project management tools, brief templates, and communication preferences. The workflow is designed to feel like an extension of your internal team, not an external supplier.' },
+  { q: 'What services can you deliver white-label?', a: 'SEO, PPC, web development, GoHighLevel setup and automation, content marketing, link building, graphic design, white-label reporting, and dedicated agency pods. Use one service or all of them, scaled independently based on your client load.' },
+  { q: 'How quickly can you turn around work?', a: 'It depends on the service. SEO reports and content pieces typically turn around in five to seven business days, website builds take two to six weeks, and ad campaign setup takes one to two weeks. Tell us your deadline and we build the schedule around it.' },
+  { q: 'Can I start with just one client?', a: 'Yes. Most agency partnerships start with one client and grow from there. There is no minimum — start with one, prove the quality, and scale when you are ready.' },
+  { q: 'Do you work with freelancers who are building toward agency?', a: 'Yes. Some of our strongest partners started as solo consultants. White-label fulfillment lets a one-person operation pitch and win full-service contracts without having a full-service team behind them.' },
+  { q: 'How do you handle reporting?', a: 'Reports go out on the schedule your clients expect, in the format they are used to, branded as your agency — SEO performance, paid ad results, and campaign overviews. Send us your template and we will match it.' },
+  { q: 'What if a deliverable does not meet our standard?', a: 'You review everything before it goes to your client. If something needs to change, we change it — we do not charge for revision rounds. Proper briefing upfront is why most work passes review without significant changes.' },
+  { q: 'How is pricing structured?', a: 'It depends on the service and volume — some priced per project, some per month, pods priced on skill mix and hours. We give you an honest range on the call and confirm full pricing before any work begins. No hidden fees.' },
 ];
 
 /* ── FAQ 2-COL ────────────────────────────────────────────────────── */
@@ -104,18 +104,18 @@ function FAQAccordion() {
     <section className="wl-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
       <div style={{ maxWidth:1200, margin:'0 auto', padding:'0 24px' }}>
         <div className="wl-faq-grid" style={{ display:'grid', gridTemplateColumns:'380px 1fr', gap:64, alignItems:'start' }}>
-          <div style={{ position:'sticky', top:100 }}>
+          <div className="wl-faq-sticky" style={{ position:'sticky', top:100 }}>
             <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,40px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', marginBottom:14, marginTop:0, lineHeight:1.15 }}>
               Questions agencies ask before starting a <span style={{ color:'var(--ism-amber)' }}>white-label partnership.</span>
             </h2>
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
-              Phrased exactly as agency owners ask. The confidentiality question comes first because it matters most.
+              Honest answers before you decide.
             </p>
             <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Book a Free Agency Call →
             </a>
           </div>
           <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
@@ -158,12 +158,12 @@ export default function WhiteLabelPage() {
 
           <div style={{ maxWidth:1280, margin:'0 auto', padding:'0 24px', textAlign:'center', position:'relative' }}>
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
-              Scale Your Agency<br />Without Hiring.<br />
-              <span style={{ color:'var(--ism-amber)' }}>Your Brand on Everything.</span>
+              Scale Your Agency Without Hiring.<br />
+              <span style={{ color:'var(--ism-amber)' }}>Your Brand on Everything. Your Clients Never Know We Exist.</span>
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:560, margin:'0 auto 36px' }}>
-              We are the in-house team your agency does not have to hire. SEO, PPC, web development, GoHighLevel, content, and more — delivered completely under your brand. Your clients deal with you. We handle everything else.
+              We are the in-house team your agency does not have to hire. Isuremedia delivers SEO, PPC, web development, GoHighLevel setup, content marketing, graphic design, and more, completely under your agency brand. Your clients deal with you — we handle the delivery, with no footprint anywhere your clients can see.
             </p>
 
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:40 }}>
@@ -210,7 +210,7 @@ export default function WhiteLabelPage() {
                 Why White-Label Fulfillment <span style={{ color:'var(--ism-amber)' }}>Drives Agency Growth</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:620, margin:'0 auto', lineHeight:1.75 }}>
-                The numbers behind what a white-label partnership actually does for your agency. Written for agency owners, not end-business clients.
+                The numbers behind what a white-label partnership actually does for your agency.
               </p>
             </div>
 
@@ -218,10 +218,10 @@ export default function WhiteLabelPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Most agencies lose profitable clients because they cannot deliver the services the client needs', text:'An agency limited by its headcount says no when a client asks for SEO, PPC, or web development it cannot deliver. White-label fulfillment means the answer is always yes — delivered properly, by specialists.' },
-                  { num:'02', title:'Hiring is the most expensive and slowest way to add service capacity', text:'A senior SEO specialist costs upwards of $80,000 a year before benefits and management time. A white-label partnership adds the same capacity immediately, scales with your client load, and stops when you need it to.' },
-                  { num:'03', title:'Agency profit margins shrink when fulfillment costs scale with revenue', text:'The agencies with the strongest margins keep overhead lean and use white-label partners for delivery. When fulfillment is variable rather than fixed, every new client adds revenue without adding a proportional cost.' },
-                  { num:'04', title:'Your clients trust your agency brand, not the tools or contractors behind it', text:'As long as the work is delivered well and your brand is on everything, your clients do not need to know how you produce it. White-label fulfillment lets you deliver enterprise-level work without an enterprise-level team.' },
+                  { num:'01', title:'Most agencies lose profitable clients because they cannot deliver the services the client needs', text:'An agency limited by its own headcount either says no when a client asks for SEO and loses the account, or scrambles to find a freelancer and hopes for the best. White-label fulfillment means the answer is always yes, delivered properly, by specialists.' },
+                  { num:'02', title:'Hiring is the most expensive and slowest way to add service capacity', text:'A senior SEO specialist costs upwards of $80,000 a year before benefits and the months it takes to get them productive. A white-label partnership adds the same capacity immediately, scales with your client load, and stops when you need it to.' },
+                  { num:'03', title:'Agency profit margins shrink when fulfilment costs scale with revenue', text:'The agencies with the strongest margins keep overhead lean and use white-label partners for delivery. When fulfilment is variable rather than fixed, every new client adds revenue without a proportional cost — that is how agencies scale without burning out.' },
+                  { num:'04', title:'Your clients trust your agency brand, not the tools or contractors behind it', text:'The agency relationship is built on trust in you and your name. As long as the work is delivered well, your clients do not need to know how you produce it. White-label fulfillment lets you deliver enterprise-level work without an enterprise-level team.' },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
@@ -260,7 +260,7 @@ export default function WhiteLabelPage() {
 
             <div style={{ background:'var(--ism-blue-50,#EEF2FF)', borderRadius:14, padding:'22px 28px', marginBottom:36, border:'1px solid rgba(30,77,195,.14)' }}>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-navy)', lineHeight:1.80, margin:0, fontStyle:'italic' }}>
-                ISureMedia works as the silent delivery arm for agencies across the US, UK, and Canada. Your strategy. Your client relationships. Our execution. Every deliverable carries your brand.
+                Isuremedia works as the silent delivery arm for agencies across the US, UK, and Canada. Your strategy. Your client relationships. Our execution. Every deliverable carries your brand.
               </p>
             </div>
             <div style={{ textAlign:'center' }}>
@@ -290,16 +290,24 @@ export default function WhiteLabelPage() {
         <div id="wl-results"><ClientResults /></div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
-        <section style={{ background:'#fff', padding:'70px 28px 52px', overflow:'hidden' }}>
+        <section style={{ background:'#fff', padding:'52px 28px' }}>
           <div style={{ maxWidth:1200, margin:'0 auto', position:'relative' }}>
-            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'380px 1fr', minHeight:300 }} className="wl-cta-banner-grid">
-              <div />
+            <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'340px 1fr', minHeight:280, clipPath:'inset(-150px 0px 0px 0px round 24px)' }} className="wl-cta-banner-grid">
+
+              <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
+                  alt="White Label"
+                  style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', height:'128%', width:'auto', maxWidth:'none', objectFit:'contain', objectPosition:'bottom center', display:'block' }}
+                />
+              </div>
               <div style={{ padding:'40px 52px 40px 32px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
-                  Find out what your agency could be delivering <span style={{ color:'var(--ism-amber)' }}>under your own name.</span>
+                  What could your agency be delivering <span style={{ color:'var(--ism-amber)' }}>under your own name?</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Book a free agency call. Tell us what services your clients are asking for and we will show you exactly how the partnership would work.
+                  Book a free agency call and see how the partnership would work for your clients.
                 </p>
                 <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -308,10 +316,6 @@ export default function WhiteLabelPage() {
                   Book My Free Agency Call <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                 </a>
               </div>
-            </div>
-            <div style={{ position:'absolute', bottom:0, left:0, width:400, height:'calc(100% + 62px)', pointerEvents:'none', borderBottomLeftRadius:24, overflow:'hidden' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg" alt="Agency Partner" style={{ position:'absolute', bottom:0, left:0, height:'100%', width:'100%', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           <style>{`@media (max-width: 900px) { .wl-cta-banner-grid { grid-template-columns: 1fr !important; } .wl-cta-banner-grid > div:first-child { display: none !important; } }`}</style>
@@ -326,20 +330,17 @@ export default function WhiteLabelPage() {
             <div className="wl-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/white-label-partnership-illustration.webp" alt="White Label Agency Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/white label.webp" alt="White Label Agency Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  The question every agency owner asks at some point is: should I hire for this or find another way? The answer almost always depends on how many clients you have for this service right now, and how confident you are that number is going to stay that way.
+                  The question every agency owner asks at some point is: should I hire for this or find another way? It almost always depends on how many clients you have for this service right now, and how confident you are that number stays that way.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>Hiring is a bet.</strong> You are betting the client load will stay consistent enough to justify a salary, benefits, management overhead, and the months it takes to get someone productive. White-label fulfillment is a variable cost that scales with your revenue. You pay for what your clients need this month.
+                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>Hiring is a bet</strong> on client load staying consistent enough to justify a salary and the months it takes someone to get productive. <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>White-label fulfillment is a variable cost that scales with your revenue instead</strong> — you pay for what your clients need this month, and add capacity when you win a new account.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>There is also a positioning argument.</strong> An agency that can say yes to any digital marketing service a client asks for is a more valuable partner than one that refers them elsewhere. The moment you send a client to another agency for SEO or PPC, you have introduced a competitor into your client relationship.
-                </p>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  The agencies that grow fastest are not always the ones with the biggest internal teams. They are the ones that have worked out how to deliver more, consistently, without the overhead holding back the margin.
+                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>There is also a positioning argument.</strong> An agency that can say yes to any service a client asks for is more valuable than one that refers them elsewhere. The moment you do, you introduce a competitor into your client relationship — white-label keeps everything under your control.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -405,7 +406,7 @@ export default function WhiteLabelPage() {
             <div className="wl-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
               <div>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
-                  Why White-Label Is a{' '}
+                  Why White-Label Fulfillment Is a{' '}
                   <span style={{ color:'var(--ism-amber)' }}>Great Investment for Your Agency</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
@@ -413,13 +414,10 @@ export default function WhiteLabelPage() {
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>White-label fulfillment is a variable cost.</strong> You pay for what your clients need this month. You stop paying when a client pauses. You add capacity when you win a new account. The cost structure mirrors the revenue structure — the only model that makes sense for services businesses.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Isuremedia works as the silent delivery arm for agencies who want to offer more without hiring more.</strong> Your strategy, your client relationships, our execution — every deliverable carries your brand.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>An agency that says yes to everything is a more valuable partner.</strong> The moment you send a client to another agency for a service you cannot deliver, you have introduced a competitor into your client relationship. White-label keeps everything in-house, under your brand, under your control.
-                  </p>
-                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>The agencies that grow fastest are not the ones with the biggest teams.</strong> They are the ones that have worked out how to deliver more, consistently, without the overhead holding back the margin.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>The agencies that grow fastest are not always the ones with the biggest internal teams.</strong> They are the ones that have worked out how to deliver more, consistently, without the overhead holding back the margin.
                   </p>
                 </div>
                 <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
@@ -431,7 +429,7 @@ export default function WhiteLabelPage() {
               </div>
               <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/marketing-automation-illustration.webp" alt="Agency Scale" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/images/Automation.webp" alt="Agency Scale" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
             </div>
           </div>
@@ -558,7 +556,7 @@ export default function WhiteLabelPage() {
           <div style={{ maxWidth:1100, margin:'0 auto', padding:'0 24px' }}>
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
-                Why Agencies Choose ISureMedia for <span style={{ color:'var(--ism-amber)' }}>White-Label Fulfillment</span>
+                Why Agencies Choose Isuremedia for <span style={{ color:'var(--ism-amber)' }}>White-Label Fulfillment</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
                 Get a white-label partner your agency can actually depend on.
@@ -597,7 +595,7 @@ export default function WhiteLabelPage() {
                 Ready to deliver more services<br /><span style={{ color:'var(--ism-amber)' }}>under your own brand?</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you are a solo consultant, a growing agency, or an established firm that keeps turning down work it cannot deliver — talk to us today. We will help you deliver more services, win bigger clients, and grow without the overhead.
+                Whether you are a solo consultant, a growing agency, or an established firm that keeps turning down work it cannot deliver, the question is the same. Are you getting the revenue your agency is capable of? If not, talk to us and we will help you deliver more services, win bigger clients, and grow without the overhead.
               </p>
               <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
                 <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
@@ -616,7 +614,7 @@ export default function WhiteLabelPage() {
             </div>
             <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/files/jeff-vosburg-img.png" alt="Agency Partner" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+              <img src="/result_footer/white label.webp" alt="White Label Partnership" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           <style>{`@media (max-width: 900px) { .wl-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; } }`}</style>
@@ -631,7 +629,7 @@ export default function WhiteLabelPage() {
         @media (max-width: 900px)  { .wl-diff-grid { grid-template-columns: 1fr 1fr !important; } }
         @media (max-width: 540px)  { .wl-diff-grid { grid-template-columns: 1fr !important; } }
         @media (max-width: 900px)  { .wl-timeline { grid-template-columns: 1fr !important; gap: 40px !important; } .wl-timeline > *:not(:last-child)::after { content:''; display:block; width:2px; height:32px; background:var(--ism-amber); margin:20px auto 0; } }
-        @media (max-width: 900px)  { .wl-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }
+        @media (max-width: 900px)  { .wl-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } .wl-faq-sticky { position: static !important; } }
         @media (max-width: 640px)  { .wl-hero { padding: 56px 0 44px !important; } .wl-section { padding-top: 60px !important; padding-bottom: 60px !important; } }
       `}</style>
     </>

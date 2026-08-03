@@ -249,7 +249,7 @@ export default function GoHighLevelFunnelsPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/sales-funnel-illustration.webp" />
+        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" />
       </main>
       <Footer />
     </>

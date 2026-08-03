@@ -46,7 +46,7 @@ export default function BloomBrightCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Bloom & Bright needed their brand voice rebuilt from research on their actual customers, a content calendar driven by real buyer questions, and a repurposing system so every piece of content worked harder.',
-        'ISureMedia rebuilt the voice, calendar, and distribution system over a five-month engagement.',
+        'Isuremedia rebuilt the voice, calendar, and distribution system over a five-month engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=700&q=80',
       didHeading: 'Rebuilt the voice first, then the calendar around it.',
@@ -84,7 +84,7 @@ export default function BloomBrightCaseStudyPage() {
       ctaPrimaryHref: '/services/content-creative',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/content-creative-illustration.webp',
+      ctaImage: '/result_footer/SEO Blog Writing.webp',
     }} />
   );
 }

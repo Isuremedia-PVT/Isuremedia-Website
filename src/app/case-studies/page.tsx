@@ -63,6 +63,20 @@ const CASES: CaseStudy[] = [
     linkLabel: "Read Meridian's Case Study",
   },
   {
+    service: 'Websites & Funnels',
+    img: DUMMY_IMG,
+    client: 'Airtopia',
+    intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
+    quote: 'Isuremedia built exactly what we needed and did it properly.',
+    stats: [
+      { val: '80-90%', label: 'Less Manual Data Work', sub: 'post-deployment', icon: 'fa-solid fa-arrow-trend-down' },
+      { val: '130+',   label: 'Engineering Hours',      sub: 'delivered in 3 weeks', icon: 'fa-solid fa-code' },
+    ],
+    body: 'Airtopia ran ROLLER for venue operations and GoHighLevel for customer marketing, with no connection between them and staff bridging the gap by hand every week. We built a production-grade, multi-tenant integration platform that syncs every booking, membership, and waiver to GoHighLevel in real time, with new venues onboarding through an admin panel and zero engineering work.',
+    link: '/case-studies/roller-gohighlevel-venue-integration',
+    linkLabel: "Read Airtopia's Case Study",
+  },
+  {
     service: 'SEO & Organic Growth',
     img: DUMMY_IMG,
     client: 'Qualis Roofing',

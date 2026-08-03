@@ -48,7 +48,7 @@ export default function Home() {
         <VideoTestimonials />
         <Testimonials />
         <FAQ />
-        <CTASection imageWidth={460} />
+        <CTASection imageWidth={460} overflowTop={140} />
       </main>
       <Footer />
     </>

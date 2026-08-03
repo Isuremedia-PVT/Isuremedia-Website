@@ -226,7 +226,7 @@ export default function GoHighLevelSetupPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
+        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" />
       </main>
       <Footer />
     </>

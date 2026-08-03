@@ -46,7 +46,7 @@ export default function MiAmorCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Mi Amor needed a complete funnel rebuild — faster load times, a clearer offer above the fold, and a streamlined checkout — not a cosmetic redesign layered on top of the same slow foundation.',
-        'ISureMedia rebuilt the funnel end to end over a 90-day engagement.',
+        'Isuremedia rebuilt the funnel end to end over a 90-day engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700&q=80',
       didHeading: 'Rebuilt the funnel end to end, not just the homepage.',
@@ -84,7 +84,7 @@ export default function MiAmorCaseStudyPage() {
       ctaPrimaryHref: '/services/websites-funnels',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/sales-funnel-illustration.webp',
+      ctaImage: '/result_footer/cro.webp',
     }} />
   );
 }
