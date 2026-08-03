@@ -226,7 +226,7 @@ export default function N8nPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
+        <CTASection image="/result_footer/Automation.webp" />
       </main>
       <Footer />
     </>

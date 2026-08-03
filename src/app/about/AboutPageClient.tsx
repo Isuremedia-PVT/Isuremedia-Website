@@ -642,8 +642,8 @@ export default function AboutPageClient() {
                 <div style={{ borderRadius: 18, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,.28)', height: '100%', minHeight: 380 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://cdn.prod.website-files.com/66d9c104656f7f65acbcf21e/66ed8b5d07fad07c035adabf_woman%20in%20a%20conference%20room.avif"
-                    alt="Client"
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80"
+                    alt="Isuremedia team collaborating"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />
                 </div>

@@ -315,7 +315,7 @@ export default function Services() {
           pointer-events: none; border-radius: 0 0 12px 12px;
         }
 
-        /* ── Light circles pattern background ── */
+        /* ── Corner circle arcs + box brackets ── */
         .svc-grid-bg {
           position: absolute;
           inset: 0;
@@ -323,31 +323,34 @@ export default function Services() {
           z-index: 0;
           border-radius: 28px;
           overflow: hidden;
+          /* Large concentric arc rings at top-left and bottom-right corners */
+          background-image:
+            radial-gradient(circle 360px at 0% 0%,   transparent 340px, rgba(80,155,25,.055) 341px, rgba(80,155,25,.055) 343px, transparent 344px),
+            radial-gradient(circle 260px at 0% 0%,   transparent 242px, rgba(80,155,25,.040) 242px, rgba(80,155,25,.040) 244px, transparent 245px),
+            radial-gradient(circle 165px at 0% 0%,   transparent 149px, rgba(80,155,25,.030) 149px, rgba(80,155,25,.030) 151px, transparent 152px),
+            radial-gradient(circle 320px at 100% 100%, transparent 302px, rgba(80,155,25,.048) 302px, rgba(80,155,25,.048) 304px, transparent 305px),
+            radial-gradient(circle 220px at 100% 100%, transparent 204px, rgba(80,155,25,.035) 204px, rgba(80,155,25,.035) 206px, transparent 207px),
+            radial-gradient(circle 128px at 100% 100%, transparent 114px, rgba(80,155,25,.025) 114px, rgba(80,155,25,.025) 116px, transparent 117px);
         }
-        /* Tiling circle rings */
+        /* Top-left corner bracket box */
         .svc-grid-bg::before {
           content: '';
           position: absolute;
-          inset: 0;
-          background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%235a9e20' stroke-width='0.8' stroke-opacity='0.18'/%3E%3Ccircle cx='50' cy='50' r='24' fill='none' stroke='%235a9e20' stroke-width='0.6' stroke-opacity='0.12'/%3E%3Ccircle cx='50' cy='50' r='10' fill='none' stroke='%235a9e20' stroke-width='0.5' stroke-opacity='0.09'/%3E%3C/svg%3E");
-          background-size: 100px 100px;
-          mask-image: radial-gradient(ellipse 95% 92% at 50% 50%, black 20%, transparent 85%);
-          -webkit-mask-image: radial-gradient(ellipse 95% 92% at 50% 50%, black 20%, transparent 85%);
+          top: 26px; left: 26px;
+          width: 52px; height: 52px;
+          border-top:  1.5px solid rgba(80,155,25,.12);
+          border-left: 1.5px solid rgba(80,155,25,.12);
+          border-radius: 6px 0 0 0;
         }
-        /* Large soft glow rings */
+        /* Bottom-right corner bracket box */
         .svc-grid-bg::after {
           content: '';
           position: absolute;
-          inset: 0;
-          background:
-            radial-gradient(circle 280px at 15% 50%,  rgba(140,210,55,.10) 0%, transparent 70%),
-            radial-gradient(circle 220px at 85% 50%,  rgba(255,200,50,.08) 0%, transparent 70%),
-            radial-gradient(circle 360px at 50% 50%,  rgba(120,195,45,.06) 0%, transparent 68%);
-          animation: svcGlow 9s ease-in-out infinite alternate;
-        }
-        @keyframes svcGlow {
-          0%   { opacity: .55; transform: scale(1);    }
-          100% { opacity: 1;   transform: scale(1.06); }
+          bottom: 26px; right: 26px;
+          width: 52px; height: 52px;
+          border-bottom: 1.5px solid rgba(80,155,25,.10);
+          border-right:  1.5px solid rgba(80,155,25,.10);
+          border-radius: 0 0 6px 0;
         }
 
         .svc-check-item {

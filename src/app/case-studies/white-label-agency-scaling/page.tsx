@@ -46,7 +46,7 @@ export default function WhiteLabelCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Northline needed a delivery partner that could plug in behind their brand completely invisibly, following their existing account structure and reporting format so clients never knew delivery had moved.',
-        'ISureMedia onboarded, standardised, and scaled delivery across eight months of growth.',
+        'Isuremedia onboarded, standardised, and scaled delivery across eight months of growth.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=700&q=80',
       didHeading: 'Built as an invisible extension of Northline\'s own team.',
@@ -84,7 +84,7 @@ export default function WhiteLabelCaseStudyPage() {
       ctaPrimaryHref: '/services/white-label',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/white-label-partnership-illustration.webp',
+      ctaImage: '/result_footer/white label.webp',
     }} />
   );
 }

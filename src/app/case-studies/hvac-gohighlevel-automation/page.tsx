@@ -27,7 +27,7 @@ export default function HvacCaseStudyPage() {
         { val: '47%', label: 'Booking Rate', sub: 'up from 15%' },
         { val: '$0', label: 'Extra Ad Spend', sub: 'same monthly budget' },
       ],
-      quote: "ISureMedia built exactly what we needed. Leads used to sit in an inbox for hours — now the system responds before the customer has even put their phone down.",
+      quote: "Isuremedia built exactly what we needed. Leads used to sit in an inbox for hours — now the system responds before the customer has even put their phone down.",
       quoteBy: 'Apex HVAC Services',
       quoteRole: 'Operations Manager, United States',
       problemHeading: 'Great ads. Broken follow-up. Lost revenue.',
@@ -46,7 +46,7 @@ export default function HvacCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Apex needed a single CRM that every lead source fed into, with automated follow-up fast enough to beat the competition to the phone — without adding headcount or asking the ad budget to work any harder.',
-        'ISureMedia scoped, built, and launched the full system in under three weeks.',
+        'Isuremedia scoped, built, and launched the full system in under three weeks.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=700&q=80',
       didHeading: 'Built to fix the follow-up problem completely, not partially.',
@@ -84,7 +84,7 @@ export default function HvacCaseStudyPage() {
       ctaPrimaryHref: '/services/marketing-automation',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/marketing-automation-illustration.webp',
+      ctaImage: '/result_footer/GoHighLevel Funnels & Automation.webp',
     }} />
   );
 }

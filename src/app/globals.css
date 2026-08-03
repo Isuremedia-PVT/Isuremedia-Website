@@ -2,7 +2,7 @@
 @source "../**/*.{tsx,ts,jsx,js}";
 
 /* ══════════════════════════════════════════════
-   ISureMedia Official Brand Token System
+   Isuremedia Official Brand Token System
    Source: ISM_Brand_Colour_Palette_single page_final.docx
           ISM_Typography_System_final.docx
 ══════════════════════════════════════════════ */
@@ -247,7 +247,8 @@ a[style*="text-transform:uppercase"] {
    ══════════════════════════════════════════════════════════════════ */
 
 /* Exclude all hero sections ([class*="hero"]) from global padding overrides so SVG waves don't cover buttons */
-section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]) {
+/* .cta-bleed (CTA banners whose photo intentionally overflows above the card) also excluded — they need extra top padding so the bled image isn't clipped */
+section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-bleed) {
   padding-top: 64px !important;
   padding-bottom: 64px !important;
 }

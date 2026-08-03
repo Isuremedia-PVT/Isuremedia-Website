@@ -249,7 +249,7 @@ export default function MetaAdsPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/ppc-advertising-illustration.webp" />
+        <CTASection image="/result_footer/meta ads.webp" />
       </main>
       <Footer />
     </>

@@ -46,7 +46,7 @@ export default function FernOakCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Fern & Oak needed a consistent visual identity across product photography, ad creative, and social — with a repeatable system for new launches, not another one-off photoshoot.',
-        'ISureMedia rebuilt the full visual library over a four-month engagement.',
+        'Isuremedia rebuilt the full visual library over a four-month engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&q=80',
       didHeading: 'Rebuilt the visual identity as one repeatable system.',
@@ -84,7 +84,7 @@ export default function FernOakCaseStudyPage() {
       ctaPrimaryHref: '/services/content-creative',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/content-creative-illustration.webp',
+      ctaImage: '/result_footer/ads creative.webp',
     }} />
   );
 }

@@ -46,7 +46,7 @@ export default function SummitGrowthCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Summit needed a development partner that could plug in completely invisibly behind their brand, following their design handoffs and delivering to the same quality bar regardless of project volume.',
-        'ISureMedia onboarded and scaled delivery capacity over a six-month engagement.',
+        'Isuremedia onboarded and scaled delivery capacity over a six-month engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=700&q=80',
       didHeading: 'Built as an invisible extension of Summit\'s own dev team.',
@@ -84,7 +84,7 @@ export default function SummitGrowthCaseStudyPage() {
       ctaPrimaryHref: '/services/white-label',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/white-label-partnership-illustration.webp',
+      ctaImage: '/result_footer/white label.webp',
     }} />
   );
 }

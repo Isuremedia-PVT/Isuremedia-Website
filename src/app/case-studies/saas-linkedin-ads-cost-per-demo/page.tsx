@@ -46,7 +46,7 @@ export default function SaaSLinkedInCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'TruckAC+ needed one funnel strategy spanning all three channels, with shared audience data, stage-matched creative, and a single source of truth for what was actually driving revenue.',
-        'ISureMedia rebuilt tracking, retargeting, and creative as one connected system over six months.',
+        'Isuremedia rebuilt tracking, retargeting, and creative as one connected system over six months.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80',
       didHeading: 'Rebuilt as one connected funnel, not three separate campaigns.',
@@ -84,7 +84,7 @@ export default function SaaSLinkedInCaseStudyPage() {
       ctaPrimaryHref: '/services/ppc-paid-marketing',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/ppc-advertising-illustration.webp',
+      ctaImage: '/result_footer/LinkedIn Ads.webp',
     }} />
   );
 }

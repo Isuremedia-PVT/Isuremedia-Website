@@ -226,7 +226,7 @@ export default function AIChatbotPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/marketing-automation-illustration.webp" />
+        <CTASection image="/result_footer/ai chatbaoat.webp" />
       </main>
       <Footer />
     </>

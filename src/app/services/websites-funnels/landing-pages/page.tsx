@@ -230,7 +230,7 @@ export default function LandingPagesPage() {
           <style>{`@media(max-width:860px){ .related-grid{ grid-template-columns:1fr !important; } } @media(max-width:1100px) and (min-width:861px){ .related-grid{ grid-template-columns:repeat(2,1fr) !important; } }`}</style>
         </section>
 
-        <CTASection image="/result_footer/sales-funnel-illustration.webp" />
+        <CTASection image="/result_footer/Landing Pages.webp" />
       </main>
       <Footer />
     </>

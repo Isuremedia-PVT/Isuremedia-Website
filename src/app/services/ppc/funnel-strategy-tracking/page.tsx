@@ -249,7 +249,7 @@ export default function FunnelStrategyTrackingPage() {
           </div>
         </section>
 
-        <CTASection image="/result_footer/ppc-advertising-illustration.webp" />
+        <CTASection image="/result_footer/Funnel Strategy & Tracking Setup.webp" />
       </main>
       <Footer />
     </>

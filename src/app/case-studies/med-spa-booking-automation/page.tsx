@@ -46,7 +46,7 @@ export default function BloomAestheticsCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Bloom Aesthetics needed automated reminders and treatment-specific rebooking sequences that ran on their own, without depending on staff to trigger every step by hand.',
-        'ISureMedia built and launched the full automation system over a 90-day engagement.',
+        'Isuremedia built and launched the full automation system over a 90-day engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=700&q=80',
       didHeading: 'Built to run the entire booking lifecycle on its own.',
@@ -84,7 +84,7 @@ export default function BloomAestheticsCaseStudyPage() {
       ctaPrimaryHref: '/services/marketing-automation',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/marketing-automation-illustration.webp',
+      ctaImage: '/result_footer/Appointment Booking Systems.webp',
     }} />
   );
 }

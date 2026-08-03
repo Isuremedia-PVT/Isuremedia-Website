@@ -46,7 +46,7 @@ export default function CoastalSupplyCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'Coastal Supply needed product and category pages rebuilt around real buyer search intent, backed by a content cluster that fed authority directly into the pages that drive revenue.',
-        'ISureMedia rebuilt the content and technical foundation over a nine-month engagement.',
+        'Isuremedia rebuilt the content and technical foundation over a nine-month engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=700&q=80',
       didHeading: 'Rebuilt product and category pages around real buyer intent.',
@@ -84,7 +84,7 @@ export default function CoastalSupplyCaseStudyPage() {
       ctaPrimaryHref: '/services/seo',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/seo-analytics-illustration.webp',
+      ctaImage: '/result_footer/onpage.webp',
     }} />
   );
 }

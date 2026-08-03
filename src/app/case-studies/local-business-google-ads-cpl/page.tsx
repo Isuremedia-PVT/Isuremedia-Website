@@ -46,7 +46,7 @@ export default function BrightPathCaseStudyPage() {
       overviewHeading: 'What was needed.',
       overviewBody: [
         'BrightPath needed campaigns split by procedure value, each pointing to a dedicated landing page, with call tracking that finally showed which keyword was driving real appointments.',
-        'ISureMedia rebuilt the campaign structure and landing pages over a 60-day engagement.',
+        'Isuremedia rebuilt the campaign structure and landing pages over a 60-day engagement.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=700&q=80',
       didHeading: 'Rebuilt around procedure value, not one generic campaign.',
@@ -84,7 +84,7 @@ export default function BrightPathCaseStudyPage() {
       ctaPrimaryHref: '/services/ppc-paid-marketing',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
-      ctaImage: '/result_footer/ppc-advertising-illustration.webp',
+      ctaImage: '/result_footer/google ads.webp',
     }} />
   );
 }
