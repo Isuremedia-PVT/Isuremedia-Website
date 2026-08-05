@@ -28,7 +28,7 @@ const SERVICES = [
   {
     title: 'Sales Funnels',
     icon: 'fa-solid fa-filter',
-    desc: 'Most businesses send all their traffic to a homepage and hope for the best. A sales funnel moves someone from first visit to buying decision through a sequence of pages. We build multi-step funnels connected to your CRM so every lead is captured, tracked, and followed up automatically.',
+    desc: <>Most businesses send all their traffic to a homepage and hope for the best. A sales funnel moves someone from first visit to buying decision through a sequence of pages. We build multi-step funnels connected to your CRM so every lead is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>captured, tracked, and followed up</span> automatically.</>,
     href: '/services/websites-funnels',
   },
   {
@@ -64,7 +64,7 @@ const SERVICES = [
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Discovery and Scoping', desc: 'Before we open a design tool, we understand your business — who your buyers are, what your current site does well and does not, and what the finished project needs to achieve. You get a full written scope before any work starts. No surprises mid-build, no scope creep.' },
+  { num: 1, period: 'Discovery and Scoping', desc: <>Before we open a design tool, we understand your business — who your buyers are, what your current site does well and does not, and what the finished project needs to achieve. You get a full written scope before any work starts. No surprises mid-build, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no scope creep</span>.</> },
   { num: 2, period: 'Strategy and Wireframes', desc: 'We map out every page before we design it. Wireframes show you the layout, flow, CTA placement, and content structure — establishing what each page is supposed to make the visitor do next. Strategy comes first because a beautiful page with the wrong structure does not convert.' },
   { num: 3, period: 'Design and Content', desc: 'Design and copy are built together, not separately, because one shapes the other. You review and approve every page before development begins — nothing moves forward until you are satisfied.' },
   { num: 4, period: 'Development and CRM Connection', desc: 'Every page is built to spec, tested across devices, and connected to your CRM and automation systems before it goes live. Load times, Core Web Vitals, and schema markup are all checked. We do not hand you a website and leave you to figure out why the forms are not working.' },
@@ -72,7 +72,7 @@ const TIMELINE_STEPS = [
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-headset',           title: 'Your Own Dedicated Build Team',           desc: 'The same designers, developers, and GoHighLevel specialists who plan your project are the ones building it. No handoffs, no project managers relaying messages to contractors you never meet — one team accountable from brief to launch.' },
+  { dark: true,  icon: 'fa-solid fa-headset',           title: 'Your Own Dedicated Build Team',           desc: <>The same designers, developers, and GoHighLevel specialists who plan your project are the ones building it. No handoffs, no project managers relaying messages to contractors you never meet — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one team accountable</span> from brief to launch.</> },
   { dark: false, icon: 'fa-solid fa-circle-check',       title: 'No Long-Term Contracts',                  desc: 'We earn your business every month by delivering work that performs. No 12-month retainers, no penalties for leaving, no pressure to stay locked in — you stay because the results are there.' },
   { dark: false, icon: 'fa-solid fa-layer-group',        title: 'Design, Dev, and Automation Together',    desc: 'Most agencies do design, then development, then ask you to sort out the CRM yourself. We run all three at the same time — designed, built, and connected to GoHighLevel as one project by one team.' },
   { dark: false, icon: 'fa-solid fa-bolt',               title: 'CRM-Connected From Day One',              desc: 'Every website and funnel we build is connected to your CRM before it goes live. Leads go straight into your pipeline, trigger follow-up sequences, and book onto your calendar without you lifting a finger.' },
@@ -81,7 +81,7 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'How long does a website build take?', a: 'A standard business website takes four to eight weeks from brief to launch. Landing pages and single-page funnels can be done in two to three. GoHighLevel builds depend on complexity, but we give you a timeline at the scoping stage before any work starts.' },
+  { q: 'How long does a website build take?', a: <>A standard business website takes <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>four to eight weeks</span> from brief to launch. Landing pages and single-page funnels can be done in two to three. GoHighLevel builds depend on complexity, but we give you a timeline at the scoping stage before any work starts.</> },
   { q: 'How much does a website cost?', a: 'It depends on what you need — a five-page business website is a different project from a multi-step funnel connected to GoHighLevel. We do not have fixed packages because those produce generic websites. We scope your project and tell you exactly what it costs before we start.' },
   { q: 'Do you build websites on WordPress?', a: 'Yes. Most business websites we build are on WordPress because it gives you full ownership of your content after launch. We also build on Next.js for faster performance, and directly in GoHighLevel for clients who need CRM integration from the ground up.' },
   { q: 'Will my website rank on Google?', a: 'Every website we build is SEO-ready from day one — fast load times, clean code, heading structure, schema markup, and mobile optimisation built in. That means the technical foundation is right; full ongoing SEO is a separate campaign on top of it.' },
@@ -169,7 +169,7 @@ export default function WebsitesPage() {
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We build custom websites, landing pages, GoHighLevel funnels, and sales systems that connect to your CRM from day one — built around one outcome: turning more of your existing traffic into real leads and paying customers.
+              We build custom websites, landing pages, GoHighLevel funnels, and sales systems that connect to your CRM from day one — built around one outcome: turning more of your existing traffic into <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>real leads and paying customers</span>.
             </p>
 
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
@@ -213,7 +213,7 @@ export default function WebsitesPage() {
                 {[
                   { num:'01', title:'Most buyers have already decided before they call', text:'Research consistently shows buyers do roughly 70 to 80 percent of their research online before ever speaking to a business. Your website is not a digital brochure — it is where buying decisions are made or lost, often without you knowing it happened.' },
                   { num:'02', title:'First impressions happen in under three seconds', text:'Website design and navigation influence 94 percent of first impressions. Visitors decide whether to stay or leave before reading a single word. A slow or confusing website does not just lose a visitor — it loses a buyer who had already found you.' },
-                  { num:'03', title:'Most websites have a traffic problem. Few have a conversion problem they have diagnosed.', text:'The average website converts about two to three percent of visitors — 97 out of every 100 people who find your site leave without doing anything. A site built around conversion turns traffic you are already paying for into leads.' },
+                  { num:'03', title:'Most websites have a traffic problem. Few have a conversion problem they have diagnosed.', text:<>The average website converts about two to three percent of visitors — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>97 out of every 100</span> people who find your site leave without doing anything. A site built around conversion turns traffic you are already paying for into leads.</> },
                   { num:'04', title:'GoHighLevel has changed what a website can do on its own', text:'When your website is connected to GoHighLevel, it does not just collect leads — it books appointments, sends follow-up sequences, and routes prospects to your calendar without manual work. A website built around automation works around the clock.' },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
@@ -298,7 +298,7 @@ export default function WebsitesPage() {
                   Your website should be doing <span style={{ color:'var(--ism-amber)' }}>more work</span> than it is.
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Get a free website audit and find out what is stopping your visitors from turning into leads.
+                  Get a free website audit and find out what is stopping your visitors from <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turning into leads</span>.
                 </p>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -325,7 +325,7 @@ export default function WebsitesPage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Most websites look fine but perform poorly. The gap between a site that looks good and one that converts comes down to structure, copy, speed, and how clearly it communicates why someone should choose you.
+                  Most websites <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>look fine but perform poorly</span>. The gap between a site that looks good and one that converts comes down to structure, copy, speed, and how clearly it communicates why someone should choose you.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   We do not design websites, hand them over, and wish you luck. We stay involved through launch and beyond — tracking how pages perform and making improvements based on real data.
@@ -408,7 +408,7 @@ export default function WebsitesPage() {
                     <strong style={{ color:'#fff', fontWeight:700 }}>Most businesses treat their website as a cost, not an investment.</strong> A poor one actively costs you money every day — every visitor who lands on a slow, unclear site and calls your competitor instead is revenue you paid to attract and did not capture.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>A website built around conversion changes that equation.</strong> The same traffic, handled properly, generates two or three times more enquiries without an extra penny on ads or SEO — the most cost-effective growth lever there is.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>A website built around conversion changes that equation.</strong> The same traffic, handled properly, generates <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>two or three times more enquiries</span> without an extra penny on ads or SEO — the most cost-effective growth lever there is.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
                     <strong style={{ color:'#fff', fontWeight:700 }}>When your website is connected to GoHighLevel, it stops being a brochure and starts being a sales system.</strong> Leads are captured, qualified, and booked onto your calendar automatically, so your team only talks to people who are already serious.
@@ -475,7 +475,7 @@ export default function WebsitesPage() {
                 <span style={{ color:'var(--ism-amber)' }}>for your goals.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every project includes a dedicated project manager and post-launch support.
+                Every project includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated project manager</span> and post-launch support.
               </p>
             </div>
             <div className="web-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>
@@ -593,7 +593,7 @@ export default function WebsitesPage() {
                 Ready to turn your website<br /><span style={{ color:'var(--ism-amber)' }}>into your best lead source?</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you need a new website, a funnel that converts, or a GoHighLevel system that runs your pipeline automatically, the question is the same. Is your website bringing in the leads it should? If not, talk to us and we will help you turn your site into your strongest sales channel.
+                Whether you need a new website, a funnel that converts, or a GoHighLevel system that runs your pipeline automatically, the question is the same. Is your website bringing in the leads it should? If not, talk to us and we will help you turn your site into your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>strongest sales channel</span>.
               </p>
               <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}

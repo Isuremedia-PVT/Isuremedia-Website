@@ -44,12 +44,12 @@ const RANKING_FACTORS = [
 ];
 
 const GBP_ITEMS = [
-  { icon: 'fa-solid fa-clipboard-check', title: 'Full profile setup and optimisation', desc: 'We make sure every section of your profile is complete — business categories, service descriptions, attributes, hours, and contact details. Nothing left blank, nothing left to chance.' },
-  { icon: 'fa-solid fa-camera', title: 'Photo and video management', desc: 'Profiles with photos receive significantly more clicks and direction requests. We manage your photo library and keep it current with real images of your business, team, and work.' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Google Posts and updates', desc: 'Regular posts signal to Google that your business is active. We publish updates, offers, and announcements consistently so your profile stays fresh in both rankings and first impressions.' },
-  { icon: 'fa-solid fa-comments', title: 'Q and A management', desc: 'The questions section on your GBP gets populated whether you manage it or not. We pre-populate it with the questions your customers actually ask and make sure the answers represent your business accurately.' },
-  { icon: 'fa-solid fa-reply', title: 'Review response strategy', desc: 'Responding to reviews is a ranking signal and a trust signal. We help you build a response process that keeps your profile active and shows potential customers that your business is attentive.' },
-  { icon: 'fa-solid fa-list', title: 'Service and product listings', desc: 'Every service you offer can be listed with a description and pricing indicator. We set these up properly so your profile communicates exactly what you do to both Google and the visitor.' },
+  { icon: 'fa-solid fa-clipboard-check', title: 'Full profile setup and optimisation', desc: 'We make sure every section of your profile is complete — business categories, service descriptions, attributes, hours, and contact details. Nothing left blank, nothing left to chance.', img: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=500&q=80' },
+  { icon: 'fa-solid fa-camera', title: 'Photo and video management', desc: 'Profiles with photos receive significantly more clicks and direction requests. We manage your photo library and keep it current with real images of your business, team, and work.', img: 'https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=500&q=80' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Google Posts and updates', desc: 'Regular posts signal to Google that your business is active. We publish updates, offers, and announcements consistently so your profile stays fresh in both rankings and first impressions.', img: 'https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?w=500&q=80' },
+  { icon: 'fa-solid fa-comments', title: 'Q and A management', desc: 'The questions section on your GBP gets populated whether you manage it or not. We pre-populate it with the questions your customers actually ask and make sure the answers represent your business accurately.', img: 'https://images.unsplash.com/photo-1766066014237-00645c74e9c6?w=500&q=80' },
+  { icon: 'fa-solid fa-reply', title: 'Review response strategy', desc: 'Responding to reviews is a ranking signal and a trust signal. We help you build a response process that keeps your profile active and shows potential customers that your business is attentive.', img: 'https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=500&q=80' },
+  { icon: 'fa-solid fa-list', title: 'Service and product listings', desc: 'Every service you offer can be listed with a description and pricing indicator. We set these up properly so your profile communicates exactly what you do to both Google and the visitor.', img: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=500&q=80' },
 ];
 
 const SERVICES = [
@@ -64,11 +64,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops — any business with one physical location that wants more foot traffic and phone calls from nearby customers.' },
-  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers — businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.' },
-  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Businesses with two or more locations need local SEO handled per location. Each site needs its own GBP, its own citations, and its own local page to rank independently in its area.' },
-  { icon: 'fa-solid fa-sitemap', title: 'Franchises', desc: 'Franchise owners need visibility at the local level, not just brand-wide. We handle local SEO for individual franchise locations so each one performs in its own market.' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem — not a product or service problem. We fix what is holding your rankings back.' },
+  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops — any business with one physical location that wants more foot traffic and phone calls from nearby customers.', img: 'https://images.unsplash.com/photo-1766758196132-c81bdd247238?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers — businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
+  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Businesses with two or more locations need local SEO handled per location. Each site needs its own GBP, its own citations, and its own local page to rank independently in its area.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
+  { icon: 'fa-solid fa-sitemap', title: 'Franchises', desc: 'Franchise owners need visibility at the local level, not just brand-wide. We handle local SEO for individual franchise locations so each one performs in its own market.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem — not a product or service problem. We fix what is holding your rankings back.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
 ];
 
 const WHY_ISM = [
@@ -434,23 +434,36 @@ export default function LocalSEOPage() {
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
-              {RANKING_FACTORS.map(f => (
-                <div key={f.title} style={{ background: '#fff', borderRadius: 16, padding: '28px 26px', border: '1px solid var(--color-border)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 12 }}>
-                    <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                      <i className={f.icon} style={{ color: 'var(--color-primary)', fontSize: 18 }} />
+              {RANKING_FACTORS.map((f, i) => {
+                const hl = i === 0;
+                return (
+                  <div key={f.title} className={hl ? 'ranking-card ranking-card-hl' : 'ranking-card'} style={{ background: hl ? 'linear-gradient(135deg,#1840A0,#2F5FE8)' : '#fff', borderRadius: 16, padding: '28px 26px', border: hl ? 'none' : '1px solid var(--color-border)', boxShadow: hl ? '0 16px 36px rgba(24,64,160,.28)' : 'none', transition: 'transform .2s ease, box-shadow .2s ease, background .25s ease, border-color .25s ease' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 12 }}>
+                      <div style={{ width: 46, height: 46, position: 'relative', flexShrink: 0 }}>
+                        <div className="ranking-card-diamond" style={{ position: 'absolute', inset: 0, borderRadius: 12, border: `2px solid ${hl ? 'rgba(255,255,255,.5)' : 'var(--ism-blue-100)'}`, transform: 'rotate(45deg)', transition: 'border-color .25s ease' }} />
+                        <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <i className={`ranking-card-icon ${f.icon}`} style={{ color: hl ? '#fff' : 'var(--color-primary)', fontSize: 17, transition: 'color .25s ease' }} />
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="ranking-card-title" style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: hl ? '#fff' : 'var(--color-navy)', margin: 0, lineHeight: 1.3, transition: 'color .25s ease' }}>{f.title}</h3>
+                        <span className="ranking-card-badge" style={{ fontFamily: J, fontSize: 10.5, fontWeight: 700, color: hl ? 'var(--ism-amber)' : 'var(--color-accent-hover)', letterSpacing: '.05em', textTransform: 'uppercase', transition: 'color .25s ease' }}>{f.impact}</span>
+                      </div>
                     </div>
-                    <div>
-                      <h3 style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: 'var(--color-navy)', margin: 0, lineHeight: 1.3 }}>{f.title}</h3>
-                      <span style={{ fontFamily: J, fontSize: 10.5, fontWeight: 700, color: 'var(--color-accent-hover)', letterSpacing: '.05em', textTransform: 'uppercase' }}>{f.impact}</span>
-                    </div>
+                    <p className="ranking-card-desc" style={{ fontFamily: I, fontSize: 14, color: hl ? 'rgba(255,255,255,.85)' : 'var(--color-text-muted)', lineHeight: 1.72, margin: 0, transition: 'color .25s ease' }}>{f.desc}</p>
                   </div>
-                  <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.72, margin: 0 }}>{f.desc}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <style>{`
+            .ranking-card:not(.ranking-card-hl):hover{ transform: translateY(-4px); box-shadow: 0 16px 36px rgba(24,64,160,.28) !important; background: linear-gradient(135deg,#1840A0,#2F5FE8) !important; border-color: transparent !important; }
+            .ranking-card:not(.ranking-card-hl):hover .ranking-card-diamond{ border-color: rgba(255,255,255,.5) !important; }
+            .ranking-card:not(.ranking-card-hl):hover .ranking-card-icon{ color: #fff !important; }
+            .ranking-card:not(.ranking-card-hl):hover .ranking-card-title{ color: #fff !important; }
+            .ranking-card:not(.ranking-card-hl):hover .ranking-card-badge{ color: var(--ism-amber) !important; }
+            .ranking-card:not(.ranking-card-hl):hover .ranking-card-desc{ color: rgba(255,255,255,.85) !important; }
+            .ranking-card-hl:hover{ transform: translateY(-4px); box-shadow: 0 20px 44px rgba(24,64,160,.36); }
             @media (max-width:700px){ .ranking-grid{ grid-template-columns:1fr !important; } }
           `}</style>
         </section>
@@ -468,17 +481,29 @@ export default function LocalSEOPage() {
             <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia does with your GBP</p>
             <div className="gbp-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {GBP_ITEMS.map(g => (
-                <div key={g.title} style={{ background: 'var(--color-bg-soft)', borderRadius: 16, padding: '28px 24px', border: '1px solid var(--color-border)' }}>
-                  <div style={{ width: 46, height: 46, borderRadius: 12, background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                    <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 18 }} />
+                <div key={g.title} className="gbp-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
+                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={g.img} alt="" className="gbp-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   </div>
-                  <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                  <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
+                  <div style={{ padding: '22px 24px 26px' }}>
+                    <div className="gbp-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
+                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
+                    </div>
+                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
           <style>{`
+            .gbp-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+            .gbp-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
+            .gbp-card-img{ transition: transform .4s ease; }
+            .gbp-card:hover .gbp-card-img{ transform: scale(1.08); }
+            .gbp-card:hover .gbp-card-icon{ background: var(--ism-amber); }
+            .gbp-card:hover .gbp-card-icon i{ color: var(--color-navy) !important; }
             @media (max-width:900px){ .gbp-grid{ grid-template-columns:repeat(2,1fr) !important; } }
             @media (max-width:600px){ .gbp-grid{ grid-template-columns:1fr !important; } }
           `}</style>
@@ -492,18 +517,23 @@ export default function LocalSEOPage() {
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Everything Your Business Needs to Rank, Get Found, and Get Calls.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
-              {SERVICES.map(s => (
-                <div key={s.title} style={{ background: '#fff', borderRadius: 16, padding: '28px 22px', border: '1px solid var(--color-border)' }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                    <i className={s.icon} style={{ color: 'var(--color-primary)', fontSize: 17 }} />
+              {SERVICES.map((s, i) => {
+                const variant = WHY_MATTERS_VARIANTS[i % 3];
+                return (
+                  <div key={s.title} className="services-card" style={{ background: variant.cardBg, borderRadius: 16, padding: '28px 22px', border: variant.dark ? 'none' : '1px solid var(--color-border)' }}>
+                    <div style={{ width: 44, height: 44, borderRadius: 12, background: variant.iconBg, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                      <i className={s.icon} style={{ color: variant.iconColor, fontSize: 17 }} />
+                    </div>
+                    <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: variant.textColor, marginBottom: 8, lineHeight: 1.3 }}>{s.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13, color: variant.descColor, lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
                   </div>
-                  <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{s.title}</h3>
-                  <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <style>{`
+            .services-card{ transition: transform .22s ease, box-shadow .22s ease; }
+            .services-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.14); }
             @media (max-width:1100px){ .services-grid{ grid-template-columns:repeat(2,1fr) !important; } }
             @media (max-width:600px){ .services-grid{ grid-template-columns:1fr !important; } }
           `}</style>
@@ -518,17 +548,26 @@ export default function LocalSEOPage() {
             </div>
             <div className="who-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {WHO_FOR.map(w => (
-                <div key={w.title} style={{ background: 'var(--color-bg-soft)', borderRadius: 16, padding: '30px 26px', border: '1px solid var(--color-border)' }}>
-                  <div style={{ width: 50, height: 50, borderRadius: 14, background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 18 }}>
-                    <i className={w.icon} style={{ color: 'var(--color-primary)', fontSize: 19 }} />
+                <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
+                  <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
+                    <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
+                      <i className={w.icon} style={{ color: 'var(--color-navy)', fontSize: 18 }} />
+                    </div>
+                    <h3 style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>{w.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.82)', lineHeight: 1.62, margin: 0 }}>{w.desc}</p>
                   </div>
-                  <h3 style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8 }}>{w.title}</h3>
-                  <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{w.desc}</p>
                 </div>
               ))}
             </div>
           </div>
           <style>{`
+            .who-card-img{ transition: transform .45s ease; }
+            .who-card{ transition: transform .22s ease, box-shadow .22s ease; }
+            .who-card:hover{ transform: translateY(-5px); box-shadow: 0 20px 44px rgba(0,35,83,.22); }
+            .who-card:hover .who-card-img{ transform: scale(1.08); }
             @media (max-width:900px){ .who-grid{ grid-template-columns:repeat(2,1fr) !important; } }
             @media (max-width:600px){ .who-grid{ grid-template-columns:1fr !important; } }
           `}</style>
@@ -568,29 +607,63 @@ export default function LocalSEOPage() {
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Businesses Choose Isuremedia for Local SEO</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Results You Can See. Reporting You Can Understand.</p>
             </div>
-            <div className="why-ism-split" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.85fr)', gap: 40, alignItems: 'stretch' }}>
-              <div className="why-ism-list" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16 }}>
-                {WHY_ISM.map(b => (
-                  <div key={b.title} style={{ background: '#fff', borderRadius: 14, padding: '20px 20px', border: '1px solid var(--color-border)' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-                      <div style={{ width: 32, height: 32, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <i className={b.icon} style={{ color: 'var(--color-primary)', fontSize: 13 }} />
-                      </div>
-                      <h3 style={{ fontFamily: J, fontSize: 13.5, fontWeight: 700, color: 'var(--color-navy)', margin: 0, lineHeight: 1.3 }}>{b.title}</h3>
+            <div className="why-ism-bento" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16 }}>
+              {WHY_ISM.slice(0, 2).map(b => (
+                <div key={b.title} className="why-ism-card" style={{ background: '#fff', borderRadius: 16, padding: '24px 26px', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'flex-start', gap: 18 }}>
+                  <div style={{ width: 52, height: 52, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <i className={b.icon} style={{ color: 'var(--color-primary)', fontSize: 20 }} />
+                  </div>
+                  <div>
+                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 6, lineHeight: 1.3 }}>{b.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>{b.desc}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="why-ism-bento-row" style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
+                {(() => { const b = WHY_ISM[2]; return (
+                  <div key={b.title} className="why-ism-card" style={{ background: '#fff', borderRadius: 16, padding: '24px 22px', border: '1px solid var(--color-border)' }}>
+                    <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                      <i className={b.icon} style={{ color: 'var(--color-accent-hover)', fontSize: 18 }} />
                     </div>
+                    <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 6, lineHeight: 1.3 }}>{b.title}</h3>
                     <p style={{ fontFamily: I, fontSize: 12.5, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>{b.desc}</p>
                   </div>
-                ))}
+                ); })()}
+
+                <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="https://picsum.photos/seed/lseowhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+
+                {(() => { const b = WHY_ISM[3]; return (
+                  <div key={b.title} className="why-ism-card" style={{ background: '#fff', borderRadius: 16, padding: '24px 22px', border: '1px solid var(--color-border)' }}>
+                    <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                      <i className={b.icon} style={{ color: 'var(--color-primary)', fontSize: 18 }} />
+                    </div>
+                    <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 6, lineHeight: 1.3 }}>{b.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 12.5, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>{b.desc}</p>
+                  </div>
+                ); })()}
               </div>
-              <div style={{ position: 'relative', borderRadius: 20, overflow: 'hidden', minHeight: 320 }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/lseowhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-              </div>
+
+              {WHY_ISM.slice(4, 6).map(b => (
+                <div key={b.title} className="why-ism-card" style={{ background: '#fff', borderRadius: 16, padding: '24px 26px', border: '1px solid var(--color-border)', display: 'flex', alignItems: 'flex-start', gap: 18 }}>
+                  <div style={{ width: 52, height: 52, borderRadius: 12, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <i className={b.icon} style={{ color: 'var(--color-primary)', fontSize: 20 }} />
+                  </div>
+                  <div>
+                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 6, lineHeight: 1.3 }}>{b.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>{b.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <style>{`
-            @media(max-width:900px){ .why-ism-split{ grid-template-columns:minmax(0,1fr) !important; } }
-            @media(max-width:560px){ .why-ism-list{ grid-template-columns:1fr !important; } }
+            .why-ism-card{ transition: transform .2s ease, box-shadow .2s ease; }
+            .why-ism-card:hover{ transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,35,83,.10); }
+            @media(max-width:900px){ .why-ism-bento{ grid-template-columns:1fr !important; } .why-ism-bento-row{ grid-template-columns:1fr !important; } }
           `}</style>
         </section>
 

@@ -16,7 +16,7 @@ const SERVICES = [
   {
     title: 'SEO Blog Writing',
     icon: 'fa-solid fa-pen-nib',
-    desc: 'Most businesses publish blog content that nobody finds because it was never built to rank. Every article starts with keyword research and search intent mapping so the content targets searches your buyers are actually making. No keyword stuffing, no filler — long-form articles that rank, get read, and build topical authority.',
+    desc: <>Most businesses publish blog content that nobody finds because it was never built to rank. Every article starts with keyword research and search intent mapping so the content targets searches your buyers are actually making. No keyword stuffing, no filler — long-form articles that rank, get read, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build topical authority</span>.</>,
     href: '/services/content-creative',
   },
   {
@@ -48,7 +48,7 @@ const SERVICES = [
 const TIMELINE_STEPS = [
   { num: 1, period: 'Brief, Discovery, and Strategy', desc: 'Before we write a word or open a design file, we understand your business, audience, and what the piece needs to do. For content, we do keyword research and map a calendar; for creative work, we study your brand and competitors first. You get a clear plan before any production begins.' },
   { num: 2, period: 'Production', desc: 'Our writers, designers, and editors work to the brief. Every piece is built around a specific goal — rank for this keyword, hit this click-through rate, communicate this brand value. First drafts are reviewed internally before they reach you, already checked and polished.' },
-  { num: 3, period: 'Review and Approval', desc: 'You review every piece before it is published or handed over. If something needs to change, we change it — one or two revision rounds as standard. Our goal is to get it right, not hit a delivery number. Nothing goes live without your sign-off.' },
+  { num: 3, period: 'Review and Approval', desc: <>You review every piece before it is published or handed over. If something needs to change, we change it — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one or two revision rounds</span> as standard. Our goal is to get it right, not hit a delivery number. Nothing goes live without your sign-off.</> },
   { num: 4, period: 'Performance Tracking and Iteration', desc: 'After content is published or creatives go live, we track what performs — which articles are ranking, which ads are converting, what needs refreshing. Content and creative are not set-and-forget assets. We monitor, report, and improve every month.' },
 ];
 
@@ -56,7 +56,7 @@ const DIFFERENTIATORS = [
   { dark: true,  icon: 'fa-solid fa-people-group',  title: 'Writers, Designers, and Editors Under One Roof', desc: 'Your SEO content, ad creatives, brand design, and video all come from the same team, so your voice and visual style stay consistent across every channel. No briefing three different agencies and hoping they talk to each other.' },
   { dark: false, icon: 'fa-solid fa-circle-check',  title: 'No Long-Term Contracts',                          desc: 'We earn your business every month by producing content that performs. No 12-month retainers, no penalties for pausing, no pressure to stay — you stay because the results are there.' },
   { dark: false, icon: 'fa-solid fa-paintbrush',     title: 'Built for Your Brand, Not a Template',            desc: 'We learn your brand voice, visual style, and audience before we produce anything. Every piece matches how you communicate, not how a generic agency template does. If we need to match an existing brand, we match it exactly.' },
-  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Assisted Production for Scale',                desc: 'For clients who need volume, we use AI to speed up production without removing human judgment. Every piece is still planned, shaped, and approved by a real editor or designer — more output at the same quality, not lower quality.' },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Assisted Production for Scale',                desc: <>For clients who need volume, we use AI to speed up production without removing human judgment. Every piece is still planned, shaped, and approved by a real editor or designer — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>more output at the same quality</span>, not lower quality.</> },
   { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',          desc: 'You know what is being produced, when it lands, and what it is trying to achieve. Monthly reports cover output and performance, and you always have access to your own files and analytics.' },
   { dark: false, icon: 'fa-solid fa-building',       title: 'White-Label Content for Agencies',                desc: 'If you run a marketing agency, we produce content and creative for your clients under your brand — blog content, ad creatives, social posts, and design, all published as your work. No Isuremedia footprint.' },
 ];
@@ -66,7 +66,7 @@ const FAQS = [
   { q: 'Do you use AI to write content?', a: 'We use AI to speed up parts of production where it makes sense, but every piece is still planned, written, and edited by a human who knows your industry and brand. The output sounds like your brand, not a language model, and AI-assisted production lets us deliver more without dropping quality.' },
   { q: 'Can you match our existing brand voice and visual style?', a: 'Yes. Before we produce anything, we study your existing content, design assets, and brand guidelines — building them as part of the work if you do not have any. Your audience will not be able to tell that an agency was involved.' },
   { q: 'What formats do you cover?', a: 'SEO blog writing, website copywriting, ad copy, email newsletters, social media captions and creative, graphic design, ad creative design, video production and editing, and full brand identity including logo, colour system, and typography. One team handles all of it.' },
-  { q: 'How quickly can you turn around content?', a: 'Most pieces come back within five to seven business days. Ad creatives and social graphics are usually faster; brand identity projects depend on scope. If you have a launch deadline, tell us and we will build the schedule around it.' },
+  { q: 'How quickly can you turn around content?', a: <>Most pieces come back within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>five to seven business days</span>. Ad creatives and social graphics are usually faster; brand identity projects depend on scope. If you have a launch deadline, tell us and we will build the schedule around it.</> },
   { q: 'How many revision rounds are included?', a: 'Two rounds as standard. Most work is finalised within one or two because we do the research and briefing properly upfront. If something needs more work, we do not charge extra for it.' },
   { q: 'Do you handle content distribution or just production?', a: 'Both. For clients who need a full content marketing service, we manage the publishing calendar, scheduling, and analytics tracking on top of production. For clients who want to manage distribution themselves, we hand over assets ready to publish.' },
   { q: 'Do you offer white-label content for agencies?', a: 'Yes. We produce blog content, ad creatives, social posts, and design assets for agency clients under your brand. Your clients see your name on everything — we have no footprint in the relationship.' },
@@ -139,7 +139,7 @@ export default function ContentCreativePage() {
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We write, design, and produce every content asset your marketing needs — SEO blog content that ranks, ad creatives that stop the scroll, graphic design that fits your brand, videos that convert. All in-house, all built to perform.
+              We write, design, and produce every content asset your marketing needs — SEO blog content that ranks, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>ad creatives that stop the scroll</span>, graphic design that fits your brand, videos that convert. All in-house, all built to perform.
             </p>
 
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
@@ -223,7 +223,7 @@ export default function ContentCreativePage() {
 
             <div style={{ textAlign:'center' }}>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 auto 22px', maxWidth:560 }}>
-                Isuremedia produces every content format your marketing needs. Same team. Same brand voice. Consistent quality across every channel.
+                Isuremedia produces every content format your marketing needs. Same team. Same brand voice. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Consistent quality across every channel</span>.
               </p>
               <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -268,7 +268,7 @@ export default function ContentCreativePage() {
                   See what better <span style={{ color:'var(--ism-amber)' }}>content and creative</span> could do for your marketing.
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Book a free consultation. Tell us what you are trying to grow and we will show you what would make it work.
+                  Book a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>free consultation</span>. Tell us what you are trying to grow and we will show you what would make it work.
                 </p>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -295,7 +295,7 @@ export default function ContentCreativePage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Good content does two things at once — it attracts the right people and moves them toward a decision. Blog posts that rank bring in people already searching for what you sell. Ad creative that hits the right pain stops the scroll. Both compound over time.
+                  Good content does two things at once — it attracts the right people and moves them toward a decision. Blog posts that rank bring in people already searching for what you sell. Ad creative that hits the right pain <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stops the scroll</span>. Both compound over time.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   We do not just produce content — we build content engines. Strategy, production, distribution, and measurement work together so every piece serves a purpose and the output gets sharper every month.
@@ -378,7 +378,7 @@ export default function ContentCreativePage() {
                     <strong style={{ color:'#fff', fontWeight:700 }}>Every channel you run depends on content and creative to work.</strong> Traffic without compelling copy does not convert. Ads with weak visuals waste budget. Funnels with generic writing leak leads.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>The businesses growing fastest treat content as a core asset, not a support function.</strong> A single well-structured article can rank and convert for years. Ad creatives that perform keep your cost per acquisition down, and a strong brand identity means people trust you before they have even spoken to your team.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>The businesses growing fastest treat content as a core asset, not a support function.</strong> A single well-structured article can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>rank and convert for years</span>. Ad creatives that perform keep your cost per acquisition down, and a strong brand identity means people trust you before they have even spoken to your team.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
                     <strong style={{ color:'#fff', fontWeight:700 }}>Cheap content gets you cheap results.</strong> Businesses that outsource to the lowest bidder get generic output that does not rank, convert, or look like it belongs to any particular brand. The ones investing in quality built around their specific audience are the ones building something durable.
@@ -477,7 +477,7 @@ export default function ContentCreativePage() {
                 </div>
                 <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH</div>
                 <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Full Content Programme</div>
-                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full content strategy — SEO, social, email, and creative — for growing brands.</p>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full content strategy — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>SEO, social, email, and creative</span> — for growing brands.</p>
                 <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
                   {['8+ SEO blog posts per month','Social media management (4 platforms)','Email marketing campaigns','Ad creative design','Short-form video content','Monthly strategy & performance review'].map((f,i)=>(
                     <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
@@ -563,7 +563,7 @@ export default function ContentCreativePage() {
                 Ready to publish content<br /><span style={{ color:'var(--ism-amber)' }}>that actually gets results?</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you need SEO content that ranks, ad creatives that stop the scroll, or a brand that people remember, the question is the same. Is your content pulling its weight? If not, talk to us and we will help you build a content engine that grows your business.
+                Whether you need SEO content that ranks, ad creatives that stop the scroll, or a brand that people remember, the question is the same. Is your content pulling its weight? If not, talk to us and we will help you build a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>content engine that grows your business</span>.
               </p>
               <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
