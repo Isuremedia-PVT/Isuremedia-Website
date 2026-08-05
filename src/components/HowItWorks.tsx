@@ -5,7 +5,7 @@ import { useState } from 'react';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const steps = [
+const defaultSteps = [
   { num: 1, title: 'Discovery Call',   text: 'We ask the right questions and figure out exactly what you need. No assumptions, no generic solutions.' },
   { num: 2, title: 'Your Growth Plan', text: 'We build a clear plan — what we do, when, and what to expect. You approve before anything moves.' },
   { num: 3, title: 'Onboarding',       text: 'Tools, reporting, and team introductions. Everyone on our side knows your business before they touch it.' },
@@ -13,22 +13,44 @@ const steps = [
   { num: 5, title: 'Review & Scale',   text: "We cut what isn't working, build on what is, and plan what's next — every month." },
 ];
 
-export default function HowItWorks() {
+interface HowItWorksProps {
+  title?: string;
+  subtitle?: string;
+  highlightWord?: string;
+  steps?: typeof defaultSteps;
+  ctaText?: string;
+  ctaHref?: string;
+  backgroundColor?: string;
+  titleColor?: string;
+}
+
+export default function HowItWorks({
+  title = 'Predictable Process.',
+  subtitle = 'We keep it simple so you stay focused on growth.',
+  highlightWord = 'Unpredictable Results.',
+  steps = defaultSteps,
+  ctaText = 'Book Your Free Call',
+  ctaHref = '#cta',
+  backgroundColor = 'linear-gradient(135deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)',
+  titleColor = 'var(--ism-amber)',
+}: HowItWorksProps) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="hiw-section" style={{ padding: '64px 0 72px', background: 'linear-gradient(135deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
+    <section className="hiw-section" style={{ padding: '64px 0 72px', background: backgroundColor, position: 'relative', overflow: 'hidden' }}>
 
       <div className="ism-container" style={{ position: 'relative', zIndex: 1 }}>
 
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', marginBottom: 72 }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.2vw,46px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 14, lineHeight: 1.18, letterSpacing: '-0.5px' }}>
-            Predictable Process.{' '}
-            <span style={{ color: 'var(--ism-amber)' }}>Unpredictable Results.</span>
+            {title}{' '}
+            <span style={{ color: titleColor }}>
+              {highlightWord}
+            </span>
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 460, margin: '0 auto', lineHeight: 1.75 }}>
-            We keep it simple so you stay <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>focused on growth</span>.
+            {subtitle}
           </p>
         </div>
 
@@ -47,7 +69,7 @@ export default function HowItWorks() {
             opacity: 0.35,
           }} />
 
-          <div className="hiw-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 0, position: 'relative', zIndex: 1 }}>
+          <div className="hiw-grid" style={{ display: 'grid', gridTemplateColumns: `repeat(${steps.length},1fr)`, gap: 0, position: 'relative', zIndex: 1 }}>
             {steps.map((s, i) => {
               const isFirst   = i === 0;
               const isHov     = hovered === i;
@@ -103,12 +125,12 @@ export default function HowItWorks() {
 
         {/* ── CTA ── */}
         <div style={{ marginTop: 68, textAlign: 'center' }}>
-          <a href="#cta"
+          <a href={ctaHref}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '16px 40px', borderRadius: 10, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .20s', boxShadow: '0 6px 28px rgba(255,176,0,.38)' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.color = 'var(--color-navy)'; e.currentTarget.style.transform = ''; }}
           >
-            Book Your Free Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            {ctaText} <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
           </a>
         </div>
 
