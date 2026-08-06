@@ -59,7 +59,7 @@ const SERVICES = [
     title: 'AI SEO (AEO and GEO)',
     icon: 'fa-solid fa-robot',
     desc: 'Google AI Overviews, ChatGPT, and Perplexity are now part of how people search. We structure your content so these tools cite your business in their answers. Most agencies still only optimise for traditional Google results. We cover both.',
-    href: '/services/seo/aeo',
+    href: '/services/seo/ai-seo',
   },
   {
     title: 'White-Label SEO',
@@ -249,38 +249,9 @@ export default function SEOPage() {
               </div>
 
               {/* Right — Image mosaic */}
-              <div className="seo-strategy-mosaic" style={{ position:'relative', height:460 }}>
-
-                {/* Image 1 — large, right */}
-                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-
-                {/* Image 2 — tall, left */}
-                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-
-                {/* Image 3 — small top-left */}
-                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-
-                {/* Image 4 — small bottom-center */}
-                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-
-                {/* Image 5 — small bottom-right */}
-                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="SEO" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-
+              <div className="seo-strategy-mosaic" style={{ position:'relative', height:460, borderRadius:20, overflow:'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/main-services/Why SEO Should Be the Foundation of Your Growth.webp" alt="Why SEO Should Be the Foundation of Your Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -372,12 +343,12 @@ export default function SEOPage() {
             <div className="seo-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
 
               {/* Left — image */}
-              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+              <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/Seo (2).webp"
-                  alt="SEO Growth Strategy"
-                  style={{ width:'100%', display:'block', objectFit:'cover' }}
+                  src="/main-services/Proven SEO Strategies That Drive Real Business Growth.webp"
+                  alt="Proven SEO Strategies That Drive Real Business Growth"
+                  style={{ width:'100%', display:'block', objectFit:'contain' }}
                 />
               </div>
 
@@ -519,12 +490,12 @@ export default function SEOPage() {
               </div>
 
               {/* Right — image */}
-              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+              <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/AI seo.webp"
-                  alt="AI Search Optimisation"
-                  style={{ width:'100%', display:'block', objectFit:'cover' }}
+                  src="/main-services/Why SEO Is a Great Investment.webp"
+                  alt="Why SEO Is a Great Investment"
+                  style={{ width:'100%', display:'block', objectFit:'contain' }}
                 />
               </div>
             </div>

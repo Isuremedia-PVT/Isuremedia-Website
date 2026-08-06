@@ -45,7 +45,7 @@ const SERVICES_USED = [
   { label: 'Meta Ads',       href: '/services/ppc/meta-ads'                       },
   { label: 'Google Ads',     href: '/services/ppc/google-ads'                     },
   { label: 'SEO',            href: '/services/seo'                                },
-  { label: 'Shopify Design', href: '/services/websites-funnels/shopify-design'    },
+  { label: 'Shopify Design', href: '/services/websites-funnels'    },
   { label: 'Email Marketing',href: '/services/content-creative'                   },
   { label: 'CRO',            href: '/services/websites-funnels'                   },
 ];
@@ -60,7 +60,7 @@ const PROCESS = [
 const RELATED = [
   { href: '/services/ppc/meta-ads',                   icon: 'fa-brands fa-meta',            title: 'Meta Ads',       desc: 'Facebook and Instagram campaigns built to drive purchases, retarget browsers, and scale ROAS.' },
   { href: '/services/seo',                             icon: 'fa-solid fa-magnifying-glass',  title: 'SEO',            desc: 'Organic growth strategies that build long-term traffic and reduce reliance on paid channels.' },
-  { href: '/services/websites-funnels/shopify-design', icon: 'fa-solid fa-store',             title: 'Shopify Design', desc: 'Conversion-focused Shopify stores designed to increase AOV, reduce bounce, and close more sales.' },
+  { href: '/services/websites-funnels', icon: 'fa-solid fa-store',             title: 'Shopify Design', desc: 'Conversion-focused Shopify stores designed to increase AOV, reduce bounce, and close more sales.' },
 ];
 
 export default function EcommercePage() {

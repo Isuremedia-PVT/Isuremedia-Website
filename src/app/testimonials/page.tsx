@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -26,28 +27,68 @@ const REVIEW_IMAGES = [
   '/review/review-regine-villariza.webp',
 ];
 
-const CLIENT_LOGOS = [
-  '/company_logo/fourth-strategies.webp',
-  '/company_logo/dot-com-media.webp',
-  '/company_logo/positive-approach-coaching.webp',
-  '/company_logo/gestion-portail-sante.webp',
-  '/company_logo/think-holistic-fitness.webp',
-  '/company_logo/caregenius.webp',
-  '/company_logo/blue-moth.webp',
-  '/company_logo/leadium.png',
-  '/company_logo/andrea-petrone.webp',
-  '/company_logo/business-growth-machine.webp',
-  '/company_logo/dog-trainer-sales-club.webp',
-  '/company_logo/dr-robert-morrison.webp',
-  '/company_logo/outdoorscapes.webp',
-  '/company_logo/jurissa-international-bank.webp',
-  '/company_logo/agentmate.webp',
-  '/company_logo/mi-amor.webp',
-  '/company_logo/promailshop.webp',
-  '/company_logo/salesley.webp',
-  '/company_logo/scrubs4u.webp',
-  '/company_logo/tycan.webp',
+const VIDEO_TESTIMONIALS = [
+  { id: 'fw3mbpKINlk', name: 'Jonathan', company: 'businesswarrior.com', quote: "You guys have been awesome. Just the technical availability, the implementation, the communication, you guys have just hit all the high marks." },
+  { id: 'gGU8SC3epSI', name: 'Jennifer', company: 'Positive Approach Life & ADHD Coaching', quote: "They were very professional. They have multiple people working on your project so you really feel like you're working with a team." },
+  { id: 'FOKInCr5fDA', name: 'Sheri Hess', company: 'Laughing Chameleon Marketing', quote: "They have been invaluable to me." },
+  { id: '_TU_JzMgeQY', name: 'Henry Johnson', company: 'www.frtdesk.com', quote: "I think you guys have been fantastic" },
+  { id: '4L1w810IJSU', name: 'Kiro Ghobrial', company: 'Care Genius', quote: "Really appreciate them. Highly Recommend" },
+  { id: 'eBYRm27STIQ', name: 'Judith Christelle Kamdem Simo', company: 'Écosystème Bien-être et Succès', quote: "What impresses me the most is that I ask for one thing and they always go further." },
+  { id: 'fahX52XsGWM', name: 'Ty Brown', company: 'Tythedogguy', quote: "There is no one I have found that does a better job, cares more about a client, does it for a reasonable fee and is willing to just do anything and work with any project to make sure that he's making his clients happy." },
+  { id: 'orSfNgD-jgk', name: 'Ed Owens', company: 'Grief Recovery Institute', quote: "They are very accessible, very timely in their response, very customer service focussed, and it's been a pleasure to work with Isuremedia." },
+  { id: 'x6gMIYAIZOw', name: 'Scott Gilbert', company: 'Aesthetic Flight', quote: "My best review is the fact that I will be making use of their services again." },
+  { id: 'jb_JU0Z8jLc', name: 'Ashish Saxena', company: 'Home Optima', quote: "These folks are super knowledgeable and their just attitude to help out, find solutions to very unique problems actually just has been outstanding." },
+  { id: 'tkC6FZ40Iao', name: 'Jason Aquino', company: "DJ's & MC's", quote: "We're very happy with working with ISUREMEDIA, and we'll be reaching out to them again for other projects in the future." },
+  { id: 'WmHC5eZeUl4', name: 'Tony Gravley', company: 'K9 Next Generation', quote: "I have no idea how they keep up the pace that they do, but they really really do." },
+  { id: 'PzNaA-ehMbc', name: 'Mike MC', company: 'Lead Gains', quote: "Thank you very much for this guidance and for this help." },
+  { id: 'itCkmJ0lcQI', name: 'Stephen Petrucci', company: 'Systemized AI Growth Consultancy', quote: "It saved me a lot of time and a lot of stress, and the quality of work I was blown away with." },
+  { id: 'iYc9lywnv4M', name: 'Curtis Tofa', company: 'Commanders Rebellion', quote: "Massive thanks to Isuremedia. Thank you for all the support that you have given me so far and I look forward to building wonders and doing things together in the future." },
+  { id: '8IfNfNSmDRs', name: 'Tony Zito', company: 'Zito Marketing Strategies', quote: "I've been through several different VA's, tried different services and they knew more about Go High Level than anybody i have come acros." },
+  { id: '6xvWqLQ_k7Y', name: 'Juan De Los Santos', company: 'Innovat3 Solutions', quote: "Isuremedia really is filled with experts." },
+  { id: 'eQ8kni-hnt0', name: 'Rebecca Korn', company: 'RISE REIGN RULE', quote: "The ways that they have supported my business, the ways that they have pushed back in certain ways, creative evolutions and the understanding with really hearing me has been something of true dream working with them." },
+  { id: '921GSv9XECQ', name: 'Yamuna Bihari', company: 'Yamuna Coach', quote: "I would definitely recommend any business owners specially online business owners who have tech needs to outsource their technicess." },
+  { id: 'ZZ-rvEpIoV4', name: 'David', company: 'Agentmate.IO', quote: "And yeah, just feels good to have that confidence and I know that I've got a team." },
+  { id: 'w3J5yy3VpwQ', name: 'David Goldstein', company: 'Sales Fusion', quote: "I am so glad that we met and you've been amazingly helpful." },
+  { id: 'gNd2O1YVioo', name: 'William Haas', company: 'Vyve Wellness', quote: "The thing that I liked the most working with them was they really took an opportunity to understand my business and knock out some strategy to show me how we might optimise what we already had in place." },
+  { id: 'dg3ka4EWF38', name: 'Tammy', company: 'TC Brand Consulting', quote: "He does his best and tries to work as closely with every client he works with." },
+  { id: '_ihNcOZaL0U', name: 'Andrea Petrone', company: '', quote: "And in another words he's super reliable and it's the most important thing when you hire a web-developer and designer." },
+  { id: 'Q8nar6McoZs', name: 'Jodi', company: '', quote: "He's my Go-to-guy. If there's anything that is just a bit too technical or bit too difficult, I just give him a shoutout and he's onto it straight away. Puts all the pieces together so I don't have to worry about that." },
 ];
+
+function VideoEmbed({ videoId, title }: { videoId: string; title: string }) {
+  const [playing, setPlaying] = useState(false);
+  return (
+    <div style={{ borderRadius: 20, overflow: 'hidden', position: 'relative', paddingTop: '56.25%', boxShadow: '0 28px 72px rgba(0,35,83,.18)', background: '#000' }}>
+      {playing ? (
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=1`}
+          title={title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
+        />
+      ) : (
+        <button
+          onClick={() => setPlaying(true)}
+          aria-label={`Play ${title}`}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none', padding: 0, cursor: 'pointer', background: 'none' }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+            alt={title}
+            loading="lazy"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+          <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 68, height: 68, borderRadius: '50%', background: 'rgba(255,176,0,.92)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,.35)' }}>
+            <i className="fa-solid fa-play" style={{ color: 'var(--color-navy)', fontSize: 22, marginLeft: 4 }} />
+          </span>
+        </button>
+      )}
+    </div>
+  );
+}
 
 const TRUST_BARS = [
   {
@@ -210,9 +251,9 @@ export default function TestimonialsPage() {
               <div style={{ flex: 1, height: 1, background: 'var(--color-border)' }} />
             </div>
 
-            {Array.from({ length: 20 }).flatMap((_, idx) => {
+            {VIDEO_TESTIMONIALS.flatMap((t, idx) => {
               const block = (
-              <div key={idx} className="tm-video-grid" style={{ display: 'grid', gridTemplateColumns: '420px 1fr', gap: 80, alignItems: 'center', marginBottom: idx < 19 ? 96 : 0 }}>
+              <div key={idx} className="tm-video-grid" style={{ display: 'grid', gridTemplateColumns: '420px 1fr', gap: 80, alignItems: 'center', marginBottom: idx < VIDEO_TESTIMONIALS.length - 1 ? 96 : 0 }}>
 
                 {/* ── LEFT: Quote ── */}
                 <div>
@@ -220,7 +261,7 @@ export default function TestimonialsPage() {
                   <div style={{ fontFamily: 'Georgia,"Times New Roman",serif', fontSize: 160, lineHeight: 0.75, color: 'var(--ism-amber)', marginBottom: 16, userSelect: 'none' }}>&ldquo;</div>
 
                   <p style={{ fontFamily: J, fontSize: 'clamp(18px,1.9vw,24px)', fontWeight: 700, color: 'var(--color-navy)', lineHeight: 1.58, margin: '0 0 36px', letterSpacing: '-0.3px' }}>
-                    [One sentence pulled verbatim from the client video — pending.]
+                    {t.quote}
                   </p>
 
                   <div style={{ width: 44, height: 4, background: 'var(--ism-amber)', borderRadius: 2, marginBottom: 32 }} />
@@ -231,25 +272,19 @@ export default function TestimonialsPage() {
                       <i className="fa-solid fa-user" style={{ color: '#fff', fontSize: 20 }} />
                     </div>
                     <div>
-                      <div style={{ fontFamily: J, fontSize: 16, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.2, marginBottom: 4 }}>[Client Name]</div>
-                      <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>[Company Name]</div>
+                      <div style={{ fontFamily: J, fontSize: 16, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.2, marginBottom: 4 }}>{t.name}</div>
+                      {t.company && (
+                        <div style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)' }}>{t.company}</div>
+                      )}
                     </div>
                   </div>
 
                   {/* Stars */}
-                  <div style={{ display: 'flex', gap: 4, marginBottom: 28 }}>
+                  <div style={{ display: 'flex', gap: 4 }}>
                     {[...Array(5)].map((_, i) => (
                       <i key={i} className="fa-solid fa-star" style={{ color: 'var(--ism-amber)', fontSize: 17 }} />
                     ))}
                   </div>
-
-                  {/* Client logo */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={CLIENT_LOGOS[idx % CLIENT_LOGOS.length]}
-                    alt="Client logo"
-                    style={{ height: 44, width: 'auto', maxWidth: 160, objectFit: 'contain', display: 'block' }}
-                  />
                 </div>
 
                 {/* ── RIGHT: Video ── */}
@@ -258,23 +293,14 @@ export default function TestimonialsPage() {
                   <div style={{ position: 'absolute', top: 18, left: 18, right: -18, bottom: -18, background: 'var(--ism-amber)', borderRadius: 24, opacity: 0.15 }} />
                   {/* Blue shadow box */}
                   <div style={{ position: 'absolute', top: 8, left: 8, right: -8, bottom: -8, background: 'var(--color-primary)', borderRadius: 24, opacity: 0.10 }} />
-                  <div style={{ borderRadius: 20, overflow: 'hidden', position: 'relative', paddingTop: '56.25%', boxShadow: '0 28px 72px rgba(0,35,83,.18)' }}>
-                    <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-                      title={`Client Testimonial Video ${idx + 1}`}
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-                    />
-                  </div>
+                  <VideoEmbed videoId={t.id} title={`${t.name} — client testimonial`} />
                 </div>
 
               </div>
               );
               const items = [block];
-              if (idx === 6 || idx === 13) {
-                items.push(<div key={`vbar-${idx}`} style={{ margin: '96px 0' }}><TrustBar index={[6, 13].indexOf(idx) + 1} /></div>);
+              if (idx === 8 || idx === 17) {
+                items.push(<div key={`vbar-${idx}`} style={{ margin: '96px 0' }}><TrustBar index={[8, 17].indexOf(idx) + 1} /></div>);
               }
               return items;
             })}

@@ -226,27 +226,9 @@ export default function WebsitesPage() {
                 ))}
               </div>
 
-              <div className="web-strategy-mosaic" style={{ position:'relative', height:460 }}>
-                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
+              <div className="web-strategy-mosaic" style={{ position:'relative', height:460, borderRadius:20, overflow:'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/main-services/Why Your Website Is Your Most Important Marketing Asset.webp" alt="Why Your Website Is Your Most Important Marketing Asset" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -319,7 +301,7 @@ export default function WebsitesPage() {
               Websites and Funnels That <span style={{ color:'var(--ism-amber)' }}>Work Harder</span> for Your Business
             </h2>
             <div className="web-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
-              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+              <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/website &funnels.webp" alt="Website Growth Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
@@ -424,9 +406,9 @@ export default function WebsitesPage() {
                   Book a Free Discovery Call →
                 </a>
               </div>
-              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+              <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/ready_for_result.png" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Why a Great Website Is a Growth Investment.webp" alt="Website Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>

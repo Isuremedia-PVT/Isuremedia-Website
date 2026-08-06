@@ -14,14 +14,22 @@ const companyLinks = [
 
 const serviceCategories = [
   {
-    label: 'Websites & Funnels', icon: 'fa-solid fa-globe', mainHref: '/services/websites-funnels',
+    label: 'Web Development', icon: 'fa-solid fa-code', mainHref: '/services/websites-funnels',
     items: [
       { label: 'Landing Pages',                         href: '/services/websites-funnels/landing-pages'        },
       { label: 'GoHighLevel Funnels & Automation',      href: '/services/websites-funnels/gohighlevel-funnels'  },
       { label: 'ClickFunnels',                           href: '/services/websites-funnels/clickfunnels'         },
-      { label: 'Conversion Rate Optimisation (CRO)',     href: '/services/websites-funnels/cro'                  },
-      { label: 'Shopify Design',                         href: '/services/websites-funnels/shopify-design'       },
-      { label: 'WordPress Design',                       href: '/services/websites-funnels/wordpress-design'     },
+      { label: 'Business Websites',                      href: '/services/websites-funnels/business-websites'    },
+      { label: 'Sales Funnels',                           href: '/services/websites-funnels/sales-funnels'        },
+      { label: 'Kajabi',                                  href: '/services/websites-funnels/kajabi'               },
+      { label: 'WordPress Development',                   href: '/services/websites-funnels/wordpress'            },
+      { label: 'Shopify Development',                     href: '/services/websites-funnels/shopify'              },
+      { label: 'GoHighLevel Development',                 href: '/services/websites-funnels/gohighlevel-development' },
+      { label: 'PHP / Laravel Development',               href: '/services/websites-funnels/php-laravel'          },
+      { label: 'Node.js Development',                     href: '/services/websites-funnels/node'                 },
+      { label: 'Python Development',                      href: '/services/websites-funnels/python'               },
+      { label: 'AI Development',                          href: '/services/websites-funnels/ai-development'       },
+      { label: 'Wix Development',                         href: '/services/websites-funnels/wix'                  },
     ],
   },
   {
@@ -31,10 +39,7 @@ const serviceCategories = [
       { label: 'On-Page SEO',                       href: '/services/seo/on-page-seo'   },
       { label: 'Local SEO',                         href: '/services/seo/local-seo'     },
       { label: 'Link Building',                     href: '/services/seo/link-building' },
-      { label: 'SEO Audits',                        href: '/services/seo/seo-audits'    },
       { label: 'AI SEO',                            href: '/services/seo/ai-seo'        },
-      { label: 'AEO (Answer Engine Optimisation)',  href: '/services/seo/aeo'           },
-      { label: 'White-Label SEO',                   href: '/services/white-label/white-label-seo' },
     ],
   },
   {
@@ -42,8 +47,8 @@ const serviceCategories = [
     items: [
       { label: 'Google Ads',                         href: '/services/ppc/google-ads'              },
       { label: 'Meta Ads (Facebook & Instagram)',    href: '/services/ppc/meta-ads'                },
-      { label: 'Retargeting & Remarketing',          href: '/services/ppc/retargeting-remarketing' },
-      { label: 'Funnel Strategy & Tracking Setup',   href: '/services/ppc/funnel-strategy-tracking'},
+      { label: 'TikTok Ads',                          href: '/services/ppc/tiktok-ads'              },
+      { label: 'YouTube Ads',                         href: '/services/ppc/youtube-ads'             },
     ],
   },
   {
@@ -51,11 +56,9 @@ const serviceCategories = [
     items: [
       { label: 'SEO Blog Writing',                    href: '/services/content-creative/seo-blog-writing'    },
       { label: 'Graphic Design',                       href: '/services/content-creative/graphic-design'      },
-      { label: 'Social Media Content & Management',   href: '/services/content-creative/social-media-content'},
-      { label: 'Email Marketing',                      href: '/services/content-creative/email-marketing'     },
       { label: 'Ad Creative Design',                   href: '/services/content-creative/ad-creative-design'  },
-      { label: 'Website Copywriting',                  href: '/services/content-creative/website-copywriting' },
-      { label: 'AI Content Production',                href: '/services/content-creative/ai-content-production' },
+      { label: 'Brand Identity & Visual Design',       href: '/services/content-creative/brand-identity'      },
+      { label: 'Video Marketing & Editing',            href: '/services/content-creative/video-marketing'     },
     ],
   },
   {
@@ -65,7 +68,7 @@ const serviceCategories = [
       { label: 'White-Label PPC',                       href: '/services/white-label/white-label-ppc'        },
       { label: 'White-Label Web Development',           href: '/services/white-label/white-label-web-design' },
       { label: 'White-Label GoHighLevel Support',       href: '/services/white-label/white-label-automation' },
-      { label: 'White-Label Content Marketing',         href: '/services/white-label/white-label-content'    },
+      { label: 'Dedicated Agency Pods',                 href: '/services/white-label/dedicated-agency-pods'  },
     ],
   },
   {
@@ -77,32 +80,30 @@ const serviceCategories = [
       { label: 'Make Automation',                            href: '/services/automation/make-integromat' },
       { label: 'n8n Workflow Automation',                    href: '/services/automation/n8n'             },
       { label: 'AI Chatbot & Conversation Automation',       href: '/services/automation/ai-chatbot'      },
+      { label: 'Appointment Booking Systems',                href: '/services/automation/appointment-booking' },
+      { label: 'Lead Nurture Workflows',                     href: '/services/automation/lead-nurture-workflows' },
+      { label: 'Sales Pipeline Automation',                  href: '/services/automation/sales-pipeline-automation' },
+      { label: 'Email Marketing',                             href: '/services/automation/email-marketing' },
+      { label: 'API Integration',                             href: '/services/automation/api-integration' },
+      { label: 'Zoho',                                        href: '/services/automation/zoho'            },
     ],
   },
 ];
 
 const resourceLinks = [
   { icon: 'fa-solid fa-newspaper',  label: 'Blog',       href: '/blog'      },
-  { icon: 'fa-solid fa-gift',       label: 'Free Tools', href: '/freetools' },
+  { icon: 'fa-solid fa-gift',       label: 'Free Tools', href: 'https://templates.isuremedia.com/' },
 ];
 
 const whitelabelCategories = [
   {
-    heading: 'Marketing',
+    heading: 'Services',
     items: [
-      { icon: 'fa-solid fa-magnifying-glass', label: 'White-Label SEO',        href: '/services/white-label/white-label-seo'        },
-      { icon: 'fa-solid fa-chart-bar',        label: 'White-Label PPC',        href: '/services/white-label/white-label-ppc'        },
-      { icon: 'fa-solid fa-pen-nib',          label: 'White-Label Content',    href: '/services/white-label/white-label-content'    },
-      { icon: 'fa-solid fa-tag',              label: 'White-Label Overview',   href: '/services/white-label'                        },
-    ],
-  },
-  {
-    heading: 'Design & Tech',
-    items: [
-      { icon: 'fa-solid fa-globe',            label: 'White-Label Web Design', href: '/services/white-label/white-label-web-design' },
-      { icon: 'fa-solid fa-robot',            label: 'White-Label Automation', href: '/services/white-label/white-label-automation' },
-      { icon: 'fa-solid fa-bullhorn',         label: 'For Agencies',           href: '/industries/marketing-agencies'               },
-      { icon: 'fa-solid fa-handshake',        label: 'Affiliate Partners',     href: '/affiliates'                                  },
+      { icon: 'fa-solid fa-magnifying-glass', label: 'White-Label SEO',                  href: '/services/white-label/white-label-seo'        },
+      { icon: 'fa-solid fa-chart-bar',        label: 'White-Label PPC',                  href: '/services/white-label/white-label-ppc'        },
+      { icon: 'fa-solid fa-globe',            label: 'White-Label Web Development',      href: '/services/white-label/white-label-web-design' },
+      { icon: 'fa-solid fa-robot',            label: 'White-Label GoHighLevel Support',  href: '/services/white-label/white-label-automation' },
+      { icon: 'fa-solid fa-users',            label: 'Dedicated Agency Pods',            href: '/services/white-label/dedicated-agency-pods'  },
     ],
   },
 ];
@@ -127,7 +128,8 @@ const navItems = [
 ];
 
 /* Reusable CTA card shown in the right panel of each dropdown */
-function CtaCard({ heading, sub, btnLabel }: { heading: string; sub: string; btnLabel: string }) {
+function CtaCard({ heading, sub, btnLabel, href = '#cta' }: { heading: string; sub: string; btnLabel: string; href?: string }) {
+  const isExternal = href.startsWith('http');
   return (
     <div style={{ background: 'linear-gradient(135deg,#EFF4FF 0%,#E0E9FF 100%)', borderRadius: 14, padding: '24px 20px', border: '1px solid #C7D7FD', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
       <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -135,7 +137,8 @@ function CtaCard({ heading, sub, btnLabel }: { heading: string; sub: string; btn
       </div>
       <p style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.35, margin: 0 }}>{heading}</p>
       <p style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', lineHeight: 1.60, margin: 0 }}>{sub}</p>
-      <a href="#cta"
+      <a href={href}
+        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
         style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '10px 18px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 600, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', transition: 'all .15s', alignSelf: 'flex-start', marginTop: 4 }}
         onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
         onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
@@ -409,27 +412,22 @@ export default function Navbar() {
                     style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 220px', gap: 24 }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 220px', gap: 24 }}>
 
-                      {whitelabelCategories.map(cat => (
-                        <div key={cat.heading}>
-                          <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: 10 }}>{cat.heading}</p>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                            {cat.items.map(l => (
-                              <a key={l.label} href={l.href}
-                                style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
-                                onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
-                                onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
-                              >
-                                <div style={{ width: 28, height: 28, borderRadius: 7, background: '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                  <i className={l.icon} style={{ fontSize: 11, color: 'var(--color-primary)' }} />
-                                </div>
-                                <span style={{ fontFamily: I, fontSize: 13, fontWeight: 500, color: 'var(--color-text-heading)', lineHeight: 1.3 }}>{l.label}</span>
-                              </a>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
+                      <div className="wl-nav-items-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, alignContent: 'start', alignSelf: 'start' }}>
+                        {whitelabelCategories.flatMap(cat => cat.items).map(l => (
+                          <a key={l.label} href={l.href}
+                            style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
+                            onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                            onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                          >
+                            <div style={{ width: 28, height: 28, borderRadius: 7, background: '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                              <i className={l.icon} style={{ fontSize: 11, color: 'var(--color-primary)' }} />
+                            </div>
+                            <span style={{ fontFamily: I, fontSize: 13, fontWeight: 500, color: 'var(--color-text-heading)', lineHeight: 1.3 }}>{l.label}</span>
+                          </a>
+                        ))}
+                      </div>
 
                       {/* CTA card */}
                       <div>
@@ -452,6 +450,7 @@ export default function Navbar() {
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                         {resourceLinks.map(l => (
                           <a key={l.label} href={l.href}
+                            {...(l.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                             style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 12px', borderRadius: 10, textDecoration: 'none', transition: 'background .15s' }}
                             onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                             onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -465,7 +464,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div style={{ paddingLeft: 24, minWidth: 220 }}>
-                      <CtaCard heading="Get Valuable Marketing Insights" sub="Explore our free resources, guides, and tools." btnLabel="Explore Freebies" />
+                      <CtaCard heading="Get Valuable Marketing Insights" sub="Explore our free resources, guides, and tools." btnLabel="Explore Freebies" href="https://templates.isuremedia.com/" />
                     </div>
                   </Dropdown>
                 )}

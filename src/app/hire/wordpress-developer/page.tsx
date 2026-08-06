@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'Custom WordPress Website Development',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/wordpress/hire word press Custom Websites.webp',
     desc: <>Get a WordPress website built around your business, your goals, and the people you are trying to reach. Not a template adapted to fit, a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>proper build from the ground up</span>.</>,
     bullets: [
       'Custom website architecture and CMS setup',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'WooCommerce Development',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/wordpress/WooCommerce.webp',
     desc: <>Turn your WordPress site into <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a store that actually sells</span>. From product architecture and checkout flows to payment gateways and conversion improvements, every part of your WooCommerce store gets built to perform.</>,
     bullets: [
       'WooCommerce store setup and customization',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'WordPress Theme Development',
-    img: '/services/content-creative.webp',
+    img: '/hire/wordpress/Theme Dev.webp',
     desc: <>Get a theme that reflects your brand and performs the way your visitors expect. Custom-built or fully reworked, the result is a fast, responsive, visually consistent experience that <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>holds up across every device</span>.</>,
     bullets: [
       'Custom theme development from scratch',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'Plugin Development and Customization',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/wordpress/_Plugin Dev.webp',
     desc: <>When the plugins available do not do exactly what you need, a custom-built one will. Get WordPress doing things <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no off-the-shelf solution can handle</span> for your specific situation.</>,
     bullets: [
       'Custom plugin development for specific business logic',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'WordPress Migration Services',
-    img: '/services/white-label.webp',
+    img: '/hire/wordpress/Migrations.webp',
     desc: <>Moving to WordPress from another platform, or moving between hosts, without losing data, SEO rankings, or functionality requires more than a basic export and import. The migration is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>planned, tested, and executed</span> without the usual risks.</>,
     bullets: [
       'Platform-to-WordPress migrations',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'Speed and Performance Optimization',
-    img: '/services/seo.webp',
+    img: '/hire/wordpress/Speed & Performance.webp',
     desc: <>A slow WordPress site loses visitors before they see what you offer. Get <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Core Web Vitals scores</span> that actually reflect well on your business and load times that do not drive people away.</>,
     bullets: [
       'Core Web Vitals audit and optimization',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'AI-Ready WordPress Development',
-    img: '/services/ppc.webp',
+    img: '/hire/wordpress/AI-Ready.webp',
     desc: <>WordPress sites built today need to work not just in traditional search but in <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI-powered search results</span>, voice queries, and answer engines. Get a site structured to show up where your customers are actually looking in 2026 and beyond.</>,
     bullets: [
       'Schema markup and structured data implementation',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'API and Third-Party Integrations',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/wordpress/API & Integrations.webp',
     desc: <>Your WordPress site works better when it talks to the rest of your business. Connect it to your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>CRM, marketing platform, payment processor</span>, or any third-party system that your operations depend on.</>,
     bullets: [
       'CRM integrations (HubSpot, Zoho, Salesforce)',
@@ -519,7 +519,7 @@ export default function HireWordPressDeveloper() {
                   {/* Right Column — Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block' }} />
+                    <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', borderRadius: 20, display: 'block' }} />
                     <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
                     <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
                     <div className="svc-rating">
