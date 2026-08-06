@@ -38,12 +38,6 @@ const SERVICES = [
     href: '/services/white-label/white-label-automation',
   },
   {
-    title: 'White-Label Content Marketing',
-    icon: 'fa-solid fa-pen-nib',
-    desc: 'Content is one of the first things agencies get asked for and one of the hardest to scale. We produce SEO blog writing, website copy, and social content for your agency clients, delivered on brief and under your brand — matching each client\'s voice.',
-    href: '/services/white-label/white-label-content',
-  },
-  {
     title: 'White-Label Link Building',
     icon: 'fa-solid fa-link',
     desc: 'Link building is one of the most requested and most commonly outsourced SEO services. We run white-hat, outreach-based campaigns — real editorial placements with transparent reporting under your agency branding. No PBNs, no penalty risk.',
@@ -65,7 +59,7 @@ const SERVICES = [
     title: 'Dedicated Agency Pods',
     icon: 'fa-solid fa-users',
     desc: 'Project-by-project outsourcing creates inconsistency — a different person on every brief, no institutional knowledge. A dedicated pod is a fixed team assigned to your agency, giving you the output of an in-house team without the cost of hiring one.',
-    href: '/services/white-label',
+    href: '/services/white-label/dedicated-agency-pods',
   },
 ];
 
@@ -233,27 +227,9 @@ export default function WhiteLabelPage() {
                 ))}
               </div>
 
-              <div className="wl-strategy-mosaic" style={{ position:'relative', height:460 }}>
-                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
+              <div className="wl-strategy-mosaic" style={{ position:'relative', height:460, borderRadius:20, overflow:'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/main-services/Why White-Label Fulfillment Drives Agency Growth.webp" alt="Why White-Label Fulfillment Drives Agency Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -328,9 +304,9 @@ export default function WhiteLabelPage() {
               White-Label Fulfilment Built to <span style={{ color:'var(--ism-amber)' }}>Grow Your Agency</span>
             </h2>
             <div className="wl-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
-              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+              <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/white label.webp" alt="White Label Agency Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/White-Label Fulfilment Built to Grow Your Agency.webp" alt="White-Label Fulfilment Built to Grow Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
@@ -427,9 +403,9 @@ export default function WhiteLabelPage() {
                   Book a Free Agency Call →
                 </a>
               </div>
-              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+              <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/Automation.webp" alt="Agency Scale" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Why White-Label Fulfillment Is a Great Investment for Your Agency.webp" alt="Why White-Label Fulfillment Is a Great Investment for Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>

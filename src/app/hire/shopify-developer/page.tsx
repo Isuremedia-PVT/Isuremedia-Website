@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'Custom Shopify Store Development',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/shopify/Shopify Developer  custom store.webp',
     desc: <>Get a Shopify store built around your products, your brand, and the way your customers shop. Every page, every flow, and every feature built to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>convert visitors into buyers</span>.</>,
     bullets: [
       'Custom Shopify store setup and architecture',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Shopify Theme Development',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/shopify/theme dev.webp',
     desc: <>Get a theme that matches your brand exactly and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>loads fast on every device</span>. Custom-built or fully reworked, the result is a store that looks right and performs the way your customers expect.</>,
     bullets: [
       'Custom Shopify theme development from scratch',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'Shopify Plus Development',
-    img: '/services/content-creative.webp',
+    img: '/hire/shopify/Shopify Plus.webp',
     desc: <>Take full advantage of what Shopify Plus offers. From checkout customization and automation to B2B features and multi-store management, Shopify Plus builds require a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>different level of technical expertise</span>.</>,
     bullets: [
       'Shopify Plus store setup and configuration',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'Shopify App Development',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/shopify/app dev.webp',
     desc: <>When the Shopify App Store does not have exactly what your store needs, a custom app does. Get the specific functionality your store requires <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without the performance drag</span> of generic solutions.</>,
     bullets: [
       'Custom private app development',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Shopify Migration Services',
-    img: '/services/white-label.webp',
+    img: '/hire/shopify/Migrations.webp',
     desc: <>Moving from WooCommerce, Magento, or any other platform to Shopify without losing products, SEO rankings, order history, or customer data takes more than a basic data export. Every migration is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>planned, tested, and executed properly</span>.</>,
     bullets: [
       'WooCommerce to Shopify migrations',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'Speed and Performance Optimization',
-    img: '/services/seo.webp',
+    img: '/hire/shopify/performance.webp',
     desc: <>A slow Shopify store loses customers before they reach the cart. Get <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Core Web Vitals scores</span> and load times that match what customers expect from a store they trust enough to buy from.</>,
     bullets: [
       'Core Web Vitals audit and optimization',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'Checkout Optimization',
-    img: '/services/ppc.webp',
+    img: '/hire/shopify/cheackout.webp',
     desc: <>Checkout is where most Shopify stores lose the customers they worked hard to attract. Get a checkout experience that <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>reduces friction, builds confidence</span>, and finishes more sales.</>,
     bullets: [
       'Checkout flow audit and friction reduction',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'Integrations and Third-Party Connections',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/shopify/integrayions.webp',
     desc: <>Your Shopify store works better when it connects properly to the tools your business depends on. Get <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>clean, reliable integrations</span> that keep inventory, orders, customers, and marketing in sync.</>,
     bullets: [
       'CRM integrations (HubSpot, Klaviyo, Salesforce)',
@@ -521,7 +521,7 @@ export default function HireShopifyDeveloper() {
                   {/* Right Column — Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block' }} />
+                    <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', borderRadius: 20, display: 'block' }} />
                     <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
                     <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
                     <div className="svc-rating">

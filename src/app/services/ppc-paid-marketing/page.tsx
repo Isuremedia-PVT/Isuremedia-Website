@@ -13,9 +13,8 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 const SERVICES = [
   { title: 'Google Ads', icon: 'fa-brands fa-google', desc: 'Google Ads puts your business at the top of search results for the exact searches your buyers are typing right now. We build campaigns from scratch or audit and rebuild existing ones, covering Search, Display, Shopping, and Performance Max, structured around your target cost per lead.', href: '/services/ppc/google-ads' },
   { title: 'Meta Ads', icon: 'fa-solid fa-share-nodes', desc: 'Facebook and Instagram advertising reaches people who are not actively searching but are the exact type of person who buys what you sell — interests, behaviours, lookalikes, and life events. We write the copy, build the creatives, and run split tests until the cost per result is where it needs to be.', href: '/services/ppc/meta-ads' },
-  { title: 'LinkedIn Ads', icon: 'fa-brands fa-linkedin', desc: 'LinkedIn is the only platform where you can target buyers by job title, company size, industry, and seniority. We run LinkedIn campaigns for lead generation, content promotion, and retargeting, built around the longer sales cycles B2B advertising requires.', href: '/services/ppc/google-ads' },
-  { title: 'Retargeting & Remarketing', icon: 'fa-solid fa-rotate-left', desc: <>Most first-time visitors do not buy or enquire. We build retargeting campaigns across Google, Meta, and LinkedIn that show tailored ads to people who have already visited your site or watched your videos — the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>lowest cost per conversion</span> of any paid channel.</>, href: '/services/ppc/retargeting-remarketing' },
-  { title: 'Funnel Strategy & Conversion Tracking', icon: 'fa-solid fa-filter', desc: 'Running ads without proper tracking is guessing with your budget. We set up end-to-end conversion tracking so you know which ads and keywords produce real customers, not just clicks, and build the landing pages your ads send traffic to.', href: '/services/ppc/funnel-strategy-tracking' },
+  { title: 'TikTok Ads', icon: 'fa-brands fa-tiktok', desc: 'TikTok reaches audiences other platforms cannot, with ad formats built for a feed people watch rather than scroll past. We produce native-feeling creative and manage campaigns built around your target cost per result.', href: '/services/ppc/tiktok-ads' },
+  { title: 'YouTube Ads', icon: 'fa-brands fa-youtube', desc: 'Video ads across the platform people already spend hours on — skippable in-stream, non-skippable, and Shorts placements built to drive awareness and direct response depending on your goal.', href: '/services/ppc/youtube-ads' },
 ];
 
 const TIMELINE_STEPS = [
@@ -153,27 +152,9 @@ export default function PPCPage() {
                 ))}
               </div>
 
-              <div className="ppc-strategy-mosaic" style={{ position:'relative', height:460 }}>
-                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
+              <div className="ppc-strategy-mosaic" style={{ position:'relative', height:460, borderRadius:20, overflow:'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/main-services/Why Paid Ads Are Your Fastest Path to Revenue.webp" alt="Why Paid Ads Are Your Fastest Path to Revenue" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -244,9 +225,9 @@ export default function PPCPage() {
               Paid Ad Campaigns That Deliver <span style={{ color:'var(--ism-amber)' }}>Real, Measurable Results</span>
             </h2>
             <div className="ppc-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
-              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+              <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/ppc.webp" alt="PPC Results" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Paid Ad Campaigns That Deliver Real, Measurable Results.webp" alt="Paid Ad Campaigns That Deliver Real, Measurable Results" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>Every campaign we run is built around one metric — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>return, not clicks or impressions</span>. We track cost per lead, cost per acquisition, and revenue per dollar spent.</p>
@@ -312,9 +293,9 @@ export default function PPCPage() {
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; }} onMouseLeave={e=>{ e.currentTarget.style.transform=''; }}
                 >Get a Free PPC Audit →</a>
               </div>
-              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+              <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/seo-analytics-illustration.webp" alt="PPC Strategy" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Why PPC Is a Smart Investment.webp" alt="Why PPC Is a Smart Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>

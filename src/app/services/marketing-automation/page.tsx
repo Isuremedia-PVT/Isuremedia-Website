@@ -208,27 +208,9 @@ export default function AutomationPage() {
                 ))}
               </div>
 
-              <div className="auto-strategy-mosaic" style={{ position:'relative', height:460 }}>
-                <div style={{ position:'absolute', top:30, right:0, width:260, height:320, borderRadius:20, overflow:'hidden', boxShadow:'0 20px 56px rgba(0,0,0,.14)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:60, left:0, width:192, height:300, borderRadius:20, overflow:'hidden', boxShadow:'0 16px 44px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', top:0, left:52, width:120, height:112, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:0, left:140, width:172, height:125, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 28px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
-                <div style={{ position:'absolute', bottom:18, right:0, width:118, height:108, borderRadius:14, overflow:'hidden', boxShadow:'0 8px 24px rgba(0,0,0,.12)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://www.42connect.com/wp-content/uploads/2025/09/meyers-roman.jpg" alt="" style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                </div>
+              <div className="auto-strategy-mosaic" style={{ position:'relative', height:460, borderRadius:20, overflow:'hidden' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/main-services/Why Marketing Automation Drives Business Growth.webp" alt="Why Marketing Automation Drives Business Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -301,9 +283,9 @@ export default function AutomationPage() {
               Automation Systems That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
             </h2>
             <div className="auto-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
-              <div style={{ borderRadius:14, overflow:'hidden', boxShadow:'0 16px 56px rgba(0,0,0,.10)' }}>
+              <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/Automation.webp" alt="Automation Growth" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Automation Systems That Drive Real Business Growth.webp" alt="Automation Systems That Drive Real Business Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
@@ -406,9 +388,9 @@ export default function AutomationPage() {
                   Book a Free Automation Audit →
                 </a>
               </div>
-              <div style={{ borderRadius:16, overflow:'hidden', boxShadow:'0 24px 72px rgba(0,0,0,.35)' }}>
+              <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/seo-analytics-illustration.webp" alt="Automation ROI" style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                <img src="/main-services/Why Marketing Automation Is a Great Investment.webp" alt="Why Marketing Automation Is a Great Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>
