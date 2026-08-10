@@ -25,12 +25,6 @@ const SITEMAP = [
     icon: 'fa-solid fa-building',
     links: [
       { label: 'All Industries',          href: '/industries' },
-      { label: 'HVAC & Home Services',    href: '/industries/hvac' },
-      { label: 'Legal & Law Firms',       href: '/industries/legal' },
-      { label: 'E-Commerce',              href: '/industries/ecommerce' },
-      { label: 'Real Estate',             href: '/industries/real-estate' },
-      { label: 'Healthcare',              href: '/industries/healthcare' },
-      { label: 'SaaS & Technology',       href: '/industries/saas' },
     ],
   },
   {
@@ -54,7 +48,6 @@ const SITEMAP = [
       { label: 'Portfolio',          href: '/portfolio' },
       { label: 'Testimonials',       href: '/testimonials' },
       { label: 'Careers',            href: '/careers' },
-      { label: 'Affiliates',         href: '/affiliates' },
       { label: 'Contact',            href: '/contact' },
     ],
   },
@@ -62,7 +55,6 @@ const SITEMAP = [
     section: 'Resources',
     icon: 'fa-solid fa-book-open',
     links: [
-      { label: 'Free Guides',        href: '/guides' },
       { label: 'Blog',               href: '/blog' },
       { label: 'Case Studies',       href: '/case-studies' },
     ],

@@ -175,7 +175,9 @@ export default function ClickFunnelsPage() {
                   </span>
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design, build, and optimise funnels and pages inside ClickFunnels — from opt-in pages and sales pages to full multi-step funnel sequences — so your account is actually producing the results the platform was built to deliver.
+                  We design, build, and optimise funnels and pages inside ClickFunnels — from opt-in pages and sales pages to{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>full multi-step funnel sequences</span>{' '}
+                  — so your account is actually producing the results the platform was built to deliver.
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
                   <a href="/contact"
@@ -188,7 +190,7 @@ export default function ClickFunnelsPage() {
               </div>
               <div className="cf-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/clickfunnelshero/640/720" alt="ClickFunnels funnel build" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/clickfunnelshero/640/720" alt="ClickFunnels funnel build" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-diagram-project" style={{ color: '#fff', fontSize: 22 }} />
                 </div>
@@ -238,7 +240,9 @@ export default function ClickFunnelsPage() {
                   ClickFunnels gives you everything you need to build high-converting funnels — the page builder, the checkout system, the upsell sequences, the email follow-up, the analytics. But knowing what the platform can do and knowing how to build a funnel that actually converts are two different things.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Most ClickFunnels users build funnels that look right but underperform — because the copy is not matched to the audience, the structure does not follow conversion logic, or the automation sequences are incomplete. The platform is capable. The build is the problem.
+                  Most ClickFunnels users build funnels that{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>look right but underperform</span>{' '}
+                  — because the copy is not matched to the audience, the structure does not follow conversion logic, or the automation sequences are incomplete. The platform is capable. The build is the problem.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -672,7 +676,7 @@ export default function ClickFunnelsPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/click funnel.webp" />
+        <CTASection image="/result_footer/click funnel.webp" description={<>ClickFunnels is only as good as what's built inside it. If your funnel is leaking leads at the opt-in, stalling at checkout, or just not converting the way it should, we can fix it. Let's build you a funnel that actually turns clicks into <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>paying customers</span>.</>} heading="Ready to Build" headingHighlight="Funnels That Convert?" primaryLabel="Build My Funnel" secondaryLabel="Talk to a Funnel Expert" />
       </main>
       <Footer />
     </>

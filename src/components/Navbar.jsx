@@ -420,32 +420,19 @@ export default function Navbar() {
                     style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 220px', gap: 24 }}>
-
-                      <div className="wl-nav-items-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, alignContent: 'start', alignSelf: 'start' }}>
-                        {whitelabelCategories.flatMap(cat => cat.items).map(l => (
-                          <a key={l.label} href={l.href}
-                            style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
-                            onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
-                            onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
-                          >
-                            <div style={{ width: 28, height: 28, borderRadius: 7, background: '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                              <i className={l.icon} style={{ fontSize: 11, color: 'var(--color-primary)' }} />
-                            </div>
-                            <span style={{ fontFamily: I, fontSize: 13, fontWeight: 500, color: 'var(--color-text-heading)', lineHeight: 1.3 }}>{l.label}</span>
-                          </a>
-                        ))}
-                      </div>
-
-                      {/* CTA card */}
-                      <div>
-                        <CtaCard
-                          heading="Scale Your Agency Without Hiring"
-                          sub="Our 40+ in house specialists handle delivery under your brand."
-                          btnLabel="Get Started"
-                        />
-                      </div>
-
+                    <div className="wl-nav-items-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, alignContent: 'start', alignSelf: 'start' }}>
+                      {whitelabelCategories.flatMap(cat => cat.items).map(l => (
+                        <a key={l.label} href={l.href}
+                          style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
+                          onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                          onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                        >
+                          <div style={{ width: 28, height: 28, borderRadius: 7, background: '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                            <i className={l.icon} style={{ fontSize: 11, color: 'var(--color-primary)' }} />
+                          </div>
+                          <span style={{ fontFamily: I, fontSize: 13, fontWeight: 500, color: 'var(--color-text-heading)', lineHeight: 1.3 }}>{l.label}</span>
+                        </a>
+                      ))}
                     </div>
                   </div>
                 )}

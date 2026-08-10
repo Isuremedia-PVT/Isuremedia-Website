@@ -10,6 +10,36 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
+/* ── Related case studies (SEO) ──────────────────────────────────────── */
+const RELATED_CASES = [
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Garden Solution Landscapes',
+    intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
+    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation — and it shows up in the numbers every month.',
+    stats: [
+      { val: '800%', label: 'Organic Traffic Growth', sub: 'in 4 months', icon: 'fa-solid fa-chart-line' },
+      { val: '348',  label: 'Quality Backlinks',      sub: 'up from 54',  icon: 'fa-solid fa-link'      },
+    ],
+    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel — delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
+    link: '/case-studies/ecommerce-seo-organic-traffic',
+    linkLabel: "Read Garden Solution Landscapes's Case Study",
+  },
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Brown Legal Immigration',
+    intro: '100% of search traffic came from the map pack. The website was invisible.',
+    quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
+    stats: [
+      { val: '86%', label: 'Keywords on Page 1',   sub: '12 of 14 tracked',           icon: 'fa-solid fa-magnifying-glass-chart' },
+      { val: '3',   label: 'AI Platforms Ranking', sub: 'Google, ChatGPT, Perplexity', icon: 'fa-solid fa-robot' },
+    ],
+    body: 'Brown Legal Immigration had strong local visibility through their Google Business Profile, but the website carried zero organic search presence. We built SEO and AEO in parallel — new practice-area content, technical fixes, and off-page authority — taking 86% of tracked keywords to page one and earning citations across Google AI Overview, ChatGPT, and Perplexity within three months.',
+    link: '/case-studies/law-firm-local-seo-map-pack',
+    linkLabel: "Read Brown Legal Immigration's Case Study",
+  },
+];
+
 /* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
@@ -164,6 +194,7 @@ function FAQAccordion() {
 
 /* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function SEOPage() {
+  const [hoveredStep, setHoveredStep] = useState(null);
   return (
     <>
       <Navbar />
@@ -286,7 +317,7 @@ export default function SEOPage() {
 
         {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
         <div id="seo-results">
-          <ClientResults />
+          <ClientResults cases={RELATED_CASES} heading="Related SEO Results" />
         </div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
@@ -515,7 +546,11 @@ export default function SEOPage() {
               <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
                 <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background: i===0 ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0 ? 'rgba(255,176,0,.40)' : 'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                  <div
+                    onMouseEnter={()=>setHoveredStep(i)}
+                    onMouseLeave={()=>setHoveredStep(null)}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0 ? 'var(--ism-amber)' : 'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0 ? 'rgba(255,176,0,.40)' : 'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                  >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
                   <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>

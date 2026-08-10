@@ -182,7 +182,8 @@ export default function AIChatbotPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and deploy AI chatbots that engage your website visitors, qualify inbound leads, handle routine enquiries, and book appointments automatically — 24 hours a day, 7 days a week — so your team only steps in for the conversations that need a human.
+                  We build and deploy AI chatbots that engage your website visitors, qualify inbound leads, handle routine enquiries, and book appointments automatically —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>24 hours a day, 7 days a week</span> — so your team only steps in for the conversations that need a human.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -198,7 +199,7 @@ export default function AIChatbotPage() {
               {/* Right — photo + floating badges */}
               <div className="chatbot-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/chatbothero/640/720" alt="AI chatbot lead qualification" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/ai-chatbot.webp" alt="AI chatbot lead qualification" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-comment-dots" style={{ color: '#fff', fontSize: 22 }} />
@@ -266,7 +267,8 @@ export default function AIChatbotPage() {
                   A lead comes in at 9 PM on a Tuesday. Your office is closed. The enquiry sits in an inbox. By 9 AM Wednesday when someone picks it up, the prospect has already spoken to a competitor who responded within minutes. This happens more often than most businesses realise — and it is a silent, consistent revenue leak.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia builds AI chatbots that are properly trained, properly integrated, and properly handoff-configured — so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
+                  Isuremedia builds AI chatbots that are{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>properly trained, properly integrated, and properly handoff-configured</span> — so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -509,26 +511,6 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. COST OF INACTION ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>This Is Happening on Your Website Right Now.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  The majority of website traffic happens outside business hours — evenings, weekends, early mornings. Every enquiry that arrives during those hours and receives no response is a lead at risk, handed to whichever competitor answers first.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  57% of companies say chatbots deliver significant ROI within the first year, with an average return of $3.50 for every $1 spent and a 67% increase in sales through chatbot assistance. Those are returns businesses without one are simply not capturing.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Hiring extra staff to cover evenings, weekends, and overflow hours is expensive and still leaves gaps. A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality — scaling human support by the same ratio simply is not economical.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* ══ 09. OUR AI CHATBOT SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -733,7 +715,7 @@ export default function AIChatbotPage() {
         <ChatbotFAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/ai chatbaoat.webp" />
+        <CTASection image="/result_footer/ai chatbaoat.webp" description={<>Leads don't wait for business hours, and neither should your response. An AI chatbot qualifies visitors, answers their questions, and books appointments the moment they show up on your site. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>capture leads around the clock</span>.</>} heading="Ready for Leads Handled" headingHighlight="Around the Clock?" primaryLabel="Build My AI Chatbot" secondaryLabel="Talk to a Chatbot Specialist" />
       </main>
       <Footer />
     </>

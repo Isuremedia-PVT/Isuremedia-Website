@@ -169,7 +169,8 @@ export default function PythonDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Python applications, data pipelines, and automation scripts — built to specification, tested, and maintained.
+                  We design and build custom Python applications, data pipelines, and automation scripts —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to specification, tested, and maintained</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function PythonDevelopmentPage() {
 
               <div className="python-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/pythondevhero/640/720" alt="Python development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/python-development.webp" alt="Python development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-python" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function PythonDevelopmentPage() {
                   Most homegrown automation scripts have no monitoring, no error handling, and no one who notices when they quietly stop working.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds Python applications and pipelines that are tested, monitored, and documented — reliable enough to actually depend on.
+                  ISureMedia builds Python applications and pipelines that are tested, monitored, and documented —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>reliable enough to actually depend on</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function PythonDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" />
+        <CTASection image="/result_footer/Api.webp" description={<>Whether you&apos;re drowning in manual reporting, chasing an automation that keeps breaking, or building something AI-integrated, the question is the same. Is your data actually reliable, or just working until it isn&apos;t? If you&apos;re unsure, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automation you can actually trust</span>.</>} heading="Ready to Automate" headingHighlight="the Busywork?" primaryLabel="Start My Python Project" secondaryLabel="Talk to a Python Developer" />
       </main>
       <Footer />
     </>

@@ -6,7 +6,12 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 export default function CTASection({
   image = '/result_footer/ready_for_result.png',
   imageWidth = 320,
-  overflowTop = 0
+  overflowTop = 0,
+  primaryLabel = 'Get My Free Proposal',
+  secondaryLabel = 'Call +1 646-588-1430',
+  description,
+  heading = 'Ready for',
+  headingHighlight = 'Results?'
 }) {
   // bleed is expressed as a fraction of the person column's own width, so it scales
   // smoothly with the fluid clamp() below instead of being pinned to a fixed px value
@@ -32,10 +37,10 @@ export default function CTASection({
           {/* ── Left: Text + Buttons ── */}
           <div style={{ position: 'relative', zIndex: 2, alignSelf: 'center' }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,42px)', fontWeight: 900, color: '#fff', letterSpacing: '-0.5px', lineHeight: 1.10, marginBottom: 20 }}>
-              Ready for <span style={{ color: 'var(--ism-amber)' }}>Results?</span>
+              {heading} <span style={{ color: 'var(--ism-amber)' }}>{headingHighlight}</span>
             </h2>
             <p className="cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, maxWidth: 620, marginBottom: 36 }}>
-              Whether you run a local business, a growing brand, or a digital agency, the question is the same. Are you getting the growth your marketing should be delivering? If not, you are in the right place. Talk to us today and we will help you identify and <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>achieve your biggest growth opportunities</span>.
+              {description || <>Whether you run a local business, a growing brand, or a digital agency, the question is the same. Are you getting the growth your marketing should be delivering? If not, you are in the right place. Talk to us today and we will help you identify and <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>achieve your biggest growth opportunities</span>.</>}
             </p>
 
             <div className="cta-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -44,7 +49,7 @@ export default function CTASection({
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
-                Get My Free Proposal
+                {primaryLabel}
               </a>
 
               <span className="cta-or" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
@@ -55,7 +60,7 @@ export default function CTASection({
                 onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}
               >
                 <i className="fa-solid fa-phone" style={{ fontSize: 12 }} />
-                Call +1 646-588-1430
+                {secondaryLabel}
               </a>
             </div>
           </div>

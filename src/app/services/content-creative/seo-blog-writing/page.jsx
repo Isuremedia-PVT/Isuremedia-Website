@@ -169,7 +169,9 @@ export default function SEOBlogWritingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We research, write, and optimise blog content that targets the keywords your customers search, satisfies intent properly, and builds topical authority — so every post compounds instead of disappearing after week one.
+                  We research, write, and optimise blog content that targets the keywords your customers search, satisfies intent properly, and builds topical authority — so{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every post compounds instead of disappearing</span>{' '}
+                  after week one.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +186,7 @@ export default function SEOBlogWritingPage() {
 
               <div className="blog-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/seoblogwritinghero/640/720" alt="SEO blog writing" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/seo-blog-writing.webp" alt="SEO blog writing" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-pen-nib" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +248,8 @@ export default function SEOBlogWritingPage() {
                   A blog post continues generating traffic and leads for an average of 3.5 years. Companies with active blogs generate 67% more leads and 55% more traffic than non-blogging competitors.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The problem isn&apos;t that blog content doesn&apos;t work — it&apos;s that most of it doesn&apos;t rank. ISureMedia writes SEO blog content that&apos;s built to rank from the start.
+                  The problem isn&apos;t that blog content doesn&apos;t work — it&apos;s that most of it doesn&apos;t rank. ISureMedia writes SEO blog content that&apos;s{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to rank from the start</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +682,7 @@ export default function SEOBlogWritingPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/SEO Blog Writing.webp" />
+        <CTASection image="/result_footer/SEO Blog Writing.webp" description={<>Whether your blog already exists but isn&apos;t ranking, or you haven&apos;t published a single post yet, the question is the same. Is your content actually generating search traffic, or just sitting there? Talk to us today and we will help you build the content programme that turns every post into <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>traffic that keeps compounding</span>.</>} heading="Ready to" headingHighlight="Start Ranking?" primaryLabel="Get My Free Content Strategy Call" secondaryLabel="Talk to an SEO Writer" />
       </main>
       <Footer />
     </>

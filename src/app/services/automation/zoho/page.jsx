@@ -169,7 +169,8 @@ export default function ZohoPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We set up and configure Zoho CRM and the Zoho One suite around how your business actually operates — properly migrated, automated, and adopted by your team.
+                  We set up and configure Zoho CRM and the Zoho One suite{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>around how your business actually operates</span> — properly migrated, automated, and adopted by your team.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function ZohoPage() {
 
               <div className="zoho-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/zohohero/640/720" alt="Zoho CRM setup" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/zoho-crm.webp" alt="Zoho CRM setup" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-layer-group" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function ZohoPage() {
                   Most businesses sign up for Zoho, import some contacts, and leave the rest on default. The team works around it instead of through it, and it never becomes the system it should be.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia configures Zoho around your actual sales process — migrated cleanly, automated properly, and trained into the team so it actually gets used.
+                  ISureMedia configures Zoho around your actual sales process —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>migrated cleanly, automated properly</span>, and trained into the team so it actually gets used.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function ZohoPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Automation.webp" />
+        <CTASection image="/result_footer/Automation.webp" description={<>Big CRMs promise enterprise features but charge enterprise prices for tools you will rarely touch. A properly configured Zoho setup gives you that same power at a fraction of the cost. Talk to us today and we will show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get enterprise results on a lean budget</span>.</>} heading="Tired of Zoho on" headingHighlight="Default Settings?" primaryLabel="Set Up My Zoho System" secondaryLabel="Book a Zoho Consultation" />
       </main>
       <Footer />
     </>

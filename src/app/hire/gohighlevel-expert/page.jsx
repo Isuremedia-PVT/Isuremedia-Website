@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'CRM Setup and Configuration',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/expert_ghl/ghl expert crm setup.png',
     desc: <>A GHL account that is not properly structured from the start causes problems for every automation built on top of it. Get a CRM <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built around your actual sales process</span>, with the right pipelines, stages, custom fields, tags, and contact organization to support the way your business actually works.</>,
     bullets: [
       'Pipeline and stage architecture aligned to your sales process',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Workflow Automation',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/expert_ghl/workflow.png',
     desc: 'Workflows are where GHL delivers the most value and where most accounts fall short. Get automations built with proper logic, tested before they go live, and documented so your team understands what each one does and why.',
     bullets: [
       'Lead nurture and follow-up sequences',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'Funnel and Website Development',
-    img: '/services/content-creative.webp',
+    img: '/hire/expert_ghl/funnel.png',
     desc: 'GHL funnels and websites built with the right structure convert better than most third-party alternatives because they are directly connected to the CRM. No disconnect between the page and the pipeline.',
     bullets: [
       'Landing pages and opt-in funnels',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'AI Chatbot and Conversation AI',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/expert_ghl/ai chatboat.png',
     desc: 'GHL\'s AI features have moved well beyond basic chatbots. Get Conversation AI configured to qualify leads, answer questions, and book appointments automatically, with training specific to your business, your offers, and the way your customers actually communicate.',
     bullets: [
       'Conversation AI setup and training',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Email and SMS Campaigns',
-    img: '/services/white-label.webp',
+    img: '/hire/expert_ghl/email and ss.png',
     desc: 'GHL handles all broadcast and drip communication in one place. Get campaigns built with proper segmentation, deliverability optimization, and the right timing logic to keep leads engaged without burning your list.',
     bullets: [
       'Email campaign setup and broadcast scheduling',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'White-Label SaaS Configuration',
-    img: '/services/seo.webp',
+    img: '/hire/expert_ghl/whitelabel_.png',
     desc: 'Agencies using GHL SaaS Mode can offer a fully branded CRM platform to their clients. Get SaaS Mode configured properly from the start, with billing integration, sub-account provisioning, snapshot deployment, and the onboarding experience your clients will see.',
     bullets: [
       'SaaS Mode setup and white-label domain configuration',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'Platform Migrations',
-    img: '/services/ppc.webp',
+    img: '/hire/expert_ghl/megrations.png',
     desc: 'Moving from HubSpot, ActiveCampaign, ClickFunnels, Kajabi, or any other platform to GHL without losing data, automations, or funnel logic requires more than an export and import. Every migration is mapped, tested, and documented before the old system is switched off.',
     bullets: [
       'HubSpot to GoHighLevel migration',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'Custom Reporting and Dashboards',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/expert_ghl/reporting.png',
     desc: 'The default GHL reports tell you what happened. Custom dashboards tell you why and what to do about it. Get a reporting setup built around the specific metrics your business needs to track, visible to the right people at the right level.',
     bullets: [
       'Custom dashboard design and configuration',
@@ -330,7 +330,7 @@ export default function HireGoHighLevelExpert() {
             {/* Right Column: Image */}
             <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', height: '100%', minHeight: 400 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/services/website-and-funnels.webp" alt="WordPress Development" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+              <img src="/hire/banner/ghlexpert.webp" alt="GoHighLevel Expert" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
             </div>
 
           </div>
@@ -824,44 +824,17 @@ export default function HireGoHighLevelExpert() {
                   ))}
                 </div>
                 
-                {/* Button */}
-                <a href="/contact"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                    padding: '16px 24px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 800,
-                    color: i === 2 ? 'var(--color-primary)' : 'var(--color-navy)',
-                    background: i === 2 ? 'transparent' : 'var(--ism-amber)',
-                    textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase',
-                    border: i === 2 ? '2px solid var(--color-primary)' : '2px solid var(--ism-amber)',
-                    transition: 'all .18s',
-                    boxShadow: i === 2 ? 'none' : '0 6px 20px rgba(255,176,0,.25)',
-                    width: '100%'
-                  }}
-                  onMouseEnter={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--color-accent-hover)';
-                      e.currentTarget.style.borderColor = 'var(--color-accent-hover)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    } else {
-                      e.currentTarget.style.background = 'var(--color-primary)';
-                      e.currentTarget.style.color = '#fff';
-                    }
-                  }}
-                  onMouseLeave={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--ism-amber)';
-                      e.currentTarget.style.borderColor = 'var(--ism-amber)';
-                      e.currentTarget.style.transform = '';
-                    } else {
-                      e.currentTarget.style.background = 'transparent';
-                      e.currentTarget.style.color = 'var(--color-primary)';
-                    }
-                  }}
-                >
-                  {i === 0 ? 'Start Project' : i === 1 ? 'Start Retainer' : 'Talk to Us'}
-                </a>
               </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: 44 }}>
+            <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.50)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
+            >
+              Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            </a>
           </div>
 
           <style>{`

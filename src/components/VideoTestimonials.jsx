@@ -46,11 +46,11 @@ export default function VideoTestimonials() {
         {/* Header */}
         <div style={{ textAlign: 'center', maxWidth: 580, margin: '0 auto 52px' }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
-            Watch What Our{' '}
-            <span style={{ color: 'var(--color-primary)' }}>Clients Say</span>
+            Real Clients.{' '}
+            <span style={{ color: 'var(--color-primary)' }}>Real Results.</span>
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-            Businesses and agencies share the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>results they&apos;ve seen</span> working with Isuremedia.
+            Watch how businesses and agencies grow with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>the right digital marketing partner</span>.
           </p>
         </div>
 

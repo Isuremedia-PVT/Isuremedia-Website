@@ -10,6 +10,36 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
+/* ── Related case studies (PPC / Paid Ads) ───────────────────────────── */
+const RELATED_CASES = [
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Scrubs4U',
+    intro: 'Purchases were inconsistent and rising acquisition costs made it hard to scale profitably.',
+    quote: 'A 7.9% increase in ad spend delivered a 173.6% increase in revenue and 154% higher ROAS.',
+    stats: [
+      { val: '3.54x',   label: 'All-Time ROAS',  sub: 'across full engagement', icon: 'fa-solid fa-chart-line' },
+      { val: '+173.6%', label: 'Revenue Growth', sub: 'same 30-day window YoY', icon: 'fa-solid fa-dollar-sign' },
+    ],
+    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization — growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
+    link: '/case-studies/ecommerce-meta-ads-roas-scaling',
+    linkLabel: "Read Scrubs4U's Case Study",
+  },
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Global Allianz',
+    intro: 'Lead volume was inconsistent and Cost Per Lead was too high to scale profitably.',
+    quote: 'With only a 33% increase in ad spend, lead volume grew 1,309% while Cost Per Lead dropped over 90%.',
+    stats: [
+      { val: '+1,309%', label: 'Lead Volume Growth', sub: '22 → 310 leads',  icon: 'fa-solid fa-users' },
+      { val: '−90.5%',  label: 'Cost Per Lead',      sub: '$72.99 → $6.91', icon: 'fa-solid fa-arrow-trend-down' },
+    ],
+    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting — growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
+    link: '/case-studies/immigration-meta-ads-lead-generation',
+    linkLabel: "Read Global Allianz's Case Study",
+  },
+];
+
 const SERVICES = [
   { title: 'Google Ads', icon: 'fa-brands fa-google', desc: 'Google Ads puts your business at the top of search results for the exact searches your buyers are typing right now. We build campaigns from scratch or audit and rebuild existing ones, covering Search, Display, Shopping, and Performance Max, structured around your target cost per lead.', href: '/services/ppc/google-ads' },
   { title: 'Meta Ads', icon: 'fa-solid fa-share-nodes', desc: 'Facebook and Instagram advertising reaches people who are not actively searching but are the exact type of person who buys what you sell — interests, behaviours, lookalikes, and life events. We write the copy, build the creatives, and run split tests until the cost per result is where it needs to be.', href: '/services/ppc/meta-ads' },
@@ -84,6 +114,7 @@ function FAQAccordion() {
 }
 
 export default function PPCPage() {
+  const [hoveredStep, setHoveredStep] = useState(null);
   return (
     <>
       <Navbar />
@@ -187,7 +218,7 @@ export default function PPCPage() {
         </section>
 
         {/* CLIENT RESULTS */}
-        <ClientResults />
+        <ClientResults cases={RELATED_CASES} heading="Related PPC Results" />
 
         {/* CTA BANNER */}
         <section style={{ background:'#fff', padding:'52px 28px' }}>
@@ -311,7 +342,11 @@ export default function PPCPage() {
               <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
                 <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                  <div
+                    onMouseEnter={()=>setHoveredStep(i)}
+                    onMouseLeave={()=>setHoveredStep(null)}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                  >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
                   <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>

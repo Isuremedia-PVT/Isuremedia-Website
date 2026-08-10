@@ -169,7 +169,8 @@ export default function MetaAdsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and manage Meta Ads campaigns across Facebook and Instagram that reach the right audience, stop the scroll, and convert interest into leads, sales, and customers.
+                  We build and manage Meta Ads campaigns across Facebook and Instagram that reach the right audience,{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>stop the scroll, and convert interest</span> into leads, sales, and customers.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function MetaAdsPage() {
 
               <div className="mads-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/metaadshero/640/720" alt="Meta Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/metaadshero/640/720" alt="Meta Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-share-nodes" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function MetaAdsPage() {
                   Most businesses have boosted a post, spent a few hundred dollars, and wondered what happened to the money. That is not Meta Ads. That is wasted budget.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Real Meta advertising is built on campaign structure, audience strategy, creative testing, and ongoing optimisation. ISureMedia builds campaigns that are built to perform, not just to spend.
+                  Real Meta advertising is built on campaign structure, audience strategy, creative testing, and ongoing optimisation. ISureMedia builds campaigns that are{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to perform, not just to spend</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function MetaAdsPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/meta ads.webp" />
+        <CTASection image="/result_footer/meta ads.webp" description={<>Facebook and Instagram reward creative that stops the scroll, but most brands are still running ads that blend into the feed and burn budget without a payoff. We build Meta campaigns around hooks, audiences, and offers that actually convert. Reach out and let's <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your feed traffic into paying customers</span>.</>} heading="Time to" headingHighlight="Stop the Scroll?" primaryLabel="Scale My Meta Ads" secondaryLabel="Talk to a Meta Ads Expert" />
       </main>
       <Footer />
     </>

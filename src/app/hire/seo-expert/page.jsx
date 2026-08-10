@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'Technical SEO',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/seo/seo custom  tenical seo.webp',
     desc: <>If your site has crawl errors, slow load times, poor mobile performance, or structural issues that search engines cannot read properly, rankings suffer regardless of how good your content is. A technical SEO audit finds every issue and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fixes it at the root</span>.</>,
     bullets: [
       'Full technical SEO audit and priority issue identification',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Keyword Research and Strategy',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/seo/Keyword Strategy.webp',
     desc: 'Ranking for the wrong keywords drives traffic that never converts. A proper keyword strategy maps what your ideal customers actually search for, at every stage of their decision, and builds a roadmap that targets queries with real commercial value.',
     bullets: [
       'Commercial and transactional keyword identification',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'On-Page SEO',
-    img: '/services/content-creative.webp',
+    img: '/hire/seo/B On-Page SEO.webp',
     desc: 'Every page on your site is an opportunity to rank for a specific query. On-page SEO ensures each page is structured, written, and tagged in a way that makes it as easy as possible for Google to understand what it is about and why it should rank.',
     bullets: [
       'Title tag and meta description optimization',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'Content Strategy and Optimization',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/seo/Content Strategy.webp',
     desc: 'Content that ranks is not just content that contains keywords. It is content that answers the question better than anything else on the first page. ISureMedia\'s SEO experts plan, brief, and optimize content that earns rankings and keeps visitors reading.',
     bullets: [
       'E-E-A-T content framework and guidelines',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Link Building',
-    img: '/services/white-label.webp',
+    img: '/hire/seo/link bulding.webp',
     desc: 'Backlinks from authoritative, relevant sites are still one of the most significant ranking factors. ISureMedia\'s approach to link building is manual, relationship-based, and focused on links that actually move rankings, not volume metrics.',
     bullets: [
       'White-hat outreach and digital PR',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'Local SEO',
-    img: '/services/seo.webp',
+    img: '/hire/seo/local seo.webp',
     desc: 'For businesses with a local customer base, showing up in Google\'s local pack and map results is often more valuable than ranking nationally. Local SEO covers every signal Google uses to decide which businesses to show for location-based searches.',
     bullets: [
       'Google Business Profile setup, optimization, and management',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'eCommerce SEO',
-    img: '/services/ppc.webp',
+    img: '/hire/seo/ecommers seo.webp',
     desc: 'eCommerce SEO has specific challenges that standard SEO does not. Product pages, category architecture, duplicate content, and structured data for products all need specialist attention to rank well and convert the traffic that arrives.',
     bullets: [
       'Product page SEO and structured data for Google Shopping',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'AI Search Optimization',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/seo/ai search.webp',
     desc: 'Google AI Overviews, ChatGPT, Perplexity, and Gemini are changing how people find businesses. Optimizing for AI search means your business gets cited and recommended in AI-generated answers, not just traditional search results.',
     bullets: [
       'Answer Engine Optimization (AEO) strategy and implementation',
@@ -330,7 +330,7 @@ export default function HireSeoExpert() {
             {/* Right Column: Image */}
             <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', height: '100%', minHeight: 400 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/services/website-and-funnels.webp" alt="WordPress Development" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+              <img src="/hire/banner/SEO expert.webp" alt="SEO Expert" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
             </div>
 
           </div>
@@ -824,44 +824,17 @@ export default function HireSeoExpert() {
                   ))}
                 </div>
                 
-                {/* Button */}
-                <a href="/contact"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                    padding: '16px 24px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 800,
-                    color: i === 2 ? 'var(--color-primary)' : 'var(--color-navy)',
-                    background: i === 2 ? 'transparent' : 'var(--ism-amber)',
-                    textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase',
-                    border: i === 2 ? '2px solid var(--color-primary)' : '2px solid var(--ism-amber)',
-                    transition: 'all .18s',
-                    boxShadow: i === 2 ? 'none' : '0 6px 20px rgba(255,176,0,.25)',
-                    width: '100%'
-                  }}
-                  onMouseEnter={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--color-accent-hover)';
-                      e.currentTarget.style.borderColor = 'var(--color-accent-hover)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    } else {
-                      e.currentTarget.style.background = 'var(--color-primary)';
-                      e.currentTarget.style.color = '#fff';
-                    }
-                  }}
-                  onMouseLeave={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--ism-amber)';
-                      e.currentTarget.style.borderColor = 'var(--ism-amber)';
-                      e.currentTarget.style.transform = '';
-                    } else {
-                      e.currentTarget.style.background = 'transparent';
-                      e.currentTarget.style.color = 'var(--color-primary)';
-                    }
-                  }}
-                >
-                  {i === 0 ? 'Start Project' : i === 1 ? 'Start Retainer' : 'Talk to Us'}
-                </a>
               </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: 44 }}>
+            <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.50)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
+            >
+              Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            </a>
           </div>
 
           <style>{`

@@ -49,7 +49,11 @@ export const testimonials = [
 export const AVATAR_COLORS = ['#1E4DC3', '#FFB000', '#0E9B6E', '#8B5CF6', '#EF4444', '#0EA5E9'];
 const SLIDE_COUNT = Math.ceil(testimonials.length / 2);
 
-export default function Testimonials() {
+export default function Testimonials({
+  heading = 'What Our Clients Say',
+  subheading = <>Real results from businesses and agencies who have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trusted us</span>.</>,
+  showTrustBar = true
+}) {
   const autoplay = useRef(Autoplay({ delay: 4500, stopOnInteraction: false }));
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'start', slidesToScroll: 1 },
@@ -90,10 +94,10 @@ export default function Testimonials() {
 
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', marginBottom: 14, lineHeight: 1.20 }}>
-            What Our Clients Say
+            {heading}
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 460, margin: '0 auto', lineHeight: 1.75 }}>
-            Real results from businesses and agencies who have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trusted us</span>.
+            {subheading}
           </p>
         </div>
 
@@ -143,24 +147,26 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div className="tsm-trust-bar" style={{ marginTop: 52, background: 'var(--color-primary)', borderRadius: 16, padding: '32px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
-          <div>
-            <div style={{ fontFamily: J, fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
-              200+ agencies and businesses have{' '}
-              <span style={{ color: 'var(--ism-amber)' }}>trusted Isuremedia.</span>
+        {showTrustBar && (
+          <div className="tsm-trust-bar" style={{ marginTop: 52, background: 'var(--color-primary)', borderRadius: 16, padding: '32px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 24 }}>
+            <div>
+              <div style={{ fontFamily: J, fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
+                200+ agencies and businesses have{' '}
+                <span style={{ color: 'var(--ism-amber)' }}>trusted Isuremedia.</span>
+              </div>
+              <div style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.78)' }}>
+                From startups to enterprise brands, across every industry.
+              </div>
             </div>
-            <div style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.78)' }}>
-              From startups to enterprise brands, across every industry.
-            </div>
+            <a href="#cta"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
+            >
+              Join Them <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+            </a>
           </div>
-          <a href="#cta"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
-          >
-            Join Them <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-          </a>
-        </div>
+        )}
       </div>
 
       <style>{`

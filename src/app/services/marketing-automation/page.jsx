@@ -10,6 +10,36 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
+/* ── Related case studies (Marketing Automation) ─────────────────────── */
+const RELATED_CASES = [
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Mentara Health',
+    intro: 'Exam content was managed with no clear hierarchy — no way to organise by certification type, section, or case scenario.',
+    quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',
+    stats: [
+      { val: '5-Level',       label: 'Content Hierarchy', sub: 'category to question',       icon: 'fa-solid fa-sitemap' },
+      { val: 'Clone-Enabled', label: 'Every Level',       sub: 'exam, section & question',   icon: 'fa-solid fa-clone' },
+    ],
+    body: 'Mentara Health needed a structured way to manage exam content for a healthcare certification platform — organised by category, exam, section, case study, and question, with support for real-world scenario-based assessment. We built a fully structured five-level content hierarchy with clone functionality at every level and progressive, case-based assessments.',
+    link: '/case-studies/healthcare-exam-platform-development',
+    linkLabel: "Read Mentara Health's Case Study",
+  },
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Hijrah Walks Expeditions',
+    intro: 'Group size changes the price — but GoHighLevel checkout links can\'t do that natively.',
+    quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
+    stats: [
+      { val: '12×', label: 'Monthly Expeditions', sub: 'managed automatically', icon: 'fa-solid fa-route' },
+      { val: '0',   label: 'Manual Invoices',      sub: 'sent by the team',     icon: 'fa-solid fa-file-invoice-dollar' },
+    ],
+    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing — neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
+    link: '/case-studies/travel-agency-payment-automation',
+    linkLabel: "Read Hijrah Walks's Case Study",
+  },
+];
+
 /* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
@@ -130,6 +160,7 @@ function FAQAccordion() {
 
 /* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function AutomationPage() {
+  const [hoveredStep, setHoveredStep] = useState(null);
   return (
     <>
       <Navbar />
@@ -243,7 +274,7 @@ export default function AutomationPage() {
         </section>
 
         {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
-        <div id="auto-results"><ClientResults /></div>
+        <div id="auto-results"><ClientResults cases={RELATED_CASES} heading="Related Marketing Automation Results" /></div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
         <section style={{ background:'#fff', padding:'52px 28px' }}>
@@ -403,7 +434,11 @@ export default function AutomationPage() {
               <div style={{ position:'absolute', top:28, left:'12.5%', width:'75%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
                 <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                  <div
+                    onMouseEnter={()=>setHoveredStep(i)}
+                    onMouseLeave={()=>setHoveredStep(null)}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                  >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
                   <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>

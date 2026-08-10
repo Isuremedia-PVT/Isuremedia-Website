@@ -172,7 +172,8 @@ export default function TechnicalSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We fix the technical issues stopping your website from ranking — crawl errors, slow load times, broken structure, and missing signals. Get found, get indexed, get results.
+                  We fix the technical issues stopping your website from ranking — crawl errors, slow load times, broken structure, and missing signals.{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Get found, get indexed, get results</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -187,7 +188,7 @@ export default function TechnicalSEOPage() {
 
               <div className="tseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/technicalseohero/640/720" alt="Technical SEO audit" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/technicalseohero/640/720" alt="Technical SEO audit" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-gauge-high" style={{ color: '#fff', fontSize: 22 }} />
@@ -249,7 +250,9 @@ export default function TechnicalSEOPage() {
                   Google does not see your website the way a visitor does. It reads code, crawls structure, measures speed, and checks signals most people never think about — and if any are broken, your rankings suffer no matter how good your content is.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia finds every technical issue holding your site back and fixes it, so your website works as hard for your rankings as it does for your visitors.
+                  ISureMedia{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>finds every technical issue holding your site back</span>{' '}
+                  and fixes it, so your website works as hard for your rankings as it does for your visitors.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +682,7 @@ export default function TechnicalSEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Seo (2).webp" />
+        <CTASection image="/result_footer/Seo (2).webp" description={<>Google cannot rank what it cannot crawl, read, or trust — and crawl errors, slow load times, and broken structure are silently capping your rankings right now. Content and links only work as well as the site underneath them. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fix the foundation your rankings depend on</span>.</>} heading="Time to Fix" headingHighlight="the Foundation" primaryLabel="Get My Free Technical SEO Audit" secondaryLabel="Talk to a Technical SEO Expert" />
       </main>
       <Footer />
     </>

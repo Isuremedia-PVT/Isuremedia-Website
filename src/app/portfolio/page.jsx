@@ -17,24 +17,46 @@ const TABS = [
 ];
 
 const PROJECTS = [
-  {
-    name: 'ShopEasy E-Commerce Platform',
-    category: 'Web Development',
-    tag: 'Web Design',
-    date: 'August 23, 2025',
-    desc: 'Boosted online sales 200% with lightning-fast, mobile-friendly checkout flows.',
-    img: 'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=1000&q=80',
-    href: '/case-studies',
-  },
-  {
-    name: 'Peak HVAC Services Portal',
-    category: 'Web Design',
-    tag: 'Web Design',
-    date: 'July 14, 2025',
-    desc: 'Redesigned booking portal that generated +360% organic traffic and 3x more bookings.',
-    img: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1000&q=80',
-    href: '/case-studies',
-  },
+  // ── Web Development — WordPress (Website) ──
+  { name: 'Tortlink', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A legal services website built on WordPress with a clean, credibility-first design.', img: '/portfolio/web-development/tortlink.webp', href: 'https://tortlink.com/' },
+  { name: 'Marie Guerin', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A professional portfolio site built to present the client’s work and services clearly.', img: '/portfolio/web-development/marie-guerin.webp', href: 'https://marieguerin.ca/' },
+  { name: 'Andrea Petrone', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A personal and professional site built on WordPress with a modern, minimal layout.', img: '/portfolio/web-development/andrea-petrone.webp', href: 'https://www.andreapetrone.com/' },
+  { name: 'Get Client Access', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A client management platform built on WordPress for streamlined client onboarding.', img: '/portfolio/web-development/get-client-access.webp', href: 'https://getclientaccess.com/' },
+  { name: 'Brown Legal Immigration', category: 'Website', tag: 'Web Design', date: '2025', desc: 'An immigration law firm website designed to build trust and drive consultation requests.', img: '/portfolio/web-development/brown-legal-immigration.webp', href: 'https://brownlegalimmigration.com/' },
+  { name: 'Next Generation K9', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A dog training services website with service pages, booking, and a clear brand voice.', img: '/portfolio/web-development/next-generation-k9.webp', href: 'https://nextgenerationk9.com/' },
+  { name: 'Geomatrix', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A technology and mapping services site built on WordPress with a technical, professional feel.', img: '/portfolio/web-development/geomatrix.webp', href: 'https://geomatrix.co.in/' },
+  { name: 'Park City', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A community and tourism website showcasing local attractions and services.', img: '/portfolio/web-development/park-city.webp', href: 'https://onlineparkcity.wpenginepowered.com/' },
+  { name: 'Jurissa Bank', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A financial services website built on WordPress with a secure, trustworthy design.', img: '/portfolio/web-development/jurissa-bank.webp', href: 'https://jurissabank.com/' },
+
+  // ── Web Development — GoHighLevel (Website + Landing Page) ──
+  { name: 'Innovat3 Solutions', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A business solutions platform built on GoHighLevel with funnels and CRM integration.', img: '/portfolio/web-development/innovat3-solutions.webp', href: 'https://www.innovat3solutions.com/' },
+  { name: 'Rise Reign Rule', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A coaching and business growth site built on GoHighLevel with lead capture funnels.', img: '/portfolio/web-development/rise-reign-rule.webp', href: 'https://risereignrule.com/' },
+  { name: 'Dahya Dentistry', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A dental practice site with GoHighLevel-powered booking and patient management.', img: '/portfolio/web-development/dahya-dentistry.webp', href: 'https://dahyadentistry.com/' },
+  { name: 'The Lauterjung Law Office', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A law firm landing page built on GoHighLevel with intake automation and lead tracking.', img: '/portfolio/web-development/lauterjung-law-office.webp', href: 'https://app.arcboost.com/v2/preview/8LNHWVdjMSFO4cmAk5ka' },
+  { name: 'Online Health Care', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A healthcare services landing page built on GoHighLevel with appointment scheduling.', img: '/portfolio/web-development/online-health-care.webp', href: 'https://app.innovat3solutions.com/v2/preview/3cHo9h8ZnkdP9m9B2a8v' },
+  { name: 'Confident Dental Care', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A dental practice landing page with automated booking and follow-up built into GoHighLevel.', img: '/portfolio/web-development/confident-dental-care.webp', href: 'https://app.innovat3solutions.com/v2/preview/qnIYZy4lPtFVL4XAiVhb' },
+  { name: 'Attornia', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A legal services landing page built on GoHighLevel with lead routing automation.', img: '/portfolio/web-development/attornia.webp', href: 'https://app.innovat3solutions.com/v2/preview/AuBRkKspAjiU84St4z7z' },
+  { name: 'Soccer Training Academy', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A sports training program landing page with GoHighLevel-powered enrollment funnels.', img: '/portfolio/web-development/soccer-training-academy.webp', href: 'https://app.innovat3solutions.com/v2/preview/YrREUbvi5dXzeih0Raww' },
+  { name: 'Law Offices of Bradford L. Treusch', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A law firm landing page built on GoHighLevel with automated client intake.', img: '/portfolio/web-development/law-offices-bradford-treusch.webp', href: 'https://app.arcboost.com/v2/preview/OMYjnXzK6fGM3LZ6GIM7' },
+
+  // ── Web Development — Ecommerce ──
+  { name: 'Happy Haves', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A lifestyle retail e-commerce store built for a smooth, mobile-first shopping experience.', img: '/portfolio/web-development/happy-haves.webp', href: 'https://www.happyhaves.com/' },
+  { name: 'Cape Diablo', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A product retail store built with conversion-focused product and checkout pages.', img: '/portfolio/web-development/cape-diablo.webp', href: 'https://www.capediablo.com/' },
+  { name: 'Fused Fine Jewelry', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A luxury jewelry retailer’s online store with a premium, high-end design.', img: '/portfolio/web-development/fused-fine-jewelry.webp', href: 'https://fusedfinejewelrynyc.com/' },
+  { name: 'Mi Amor Pup', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A pet products e-commerce store built for easy browsing and fast checkout.', img: '/portfolio/web-development/mi-amor-pup.webp', href: 'https://miamorpup.com/' },
+  { name: 'Garnus', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A retail e-commerce store built with a clean product catalogue and checkout flow.', img: '/portfolio/web-development/garnus.webp', href: 'https://garnusindia.com/' },
+
+  // ── Web Development — Custom ──
+  { name: 'GHL to CS Conversation', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration connecting GoHighLevel conversations to an external support system.', img: '/portfolio/web-development/ghl-cs-conversation.webp', href: '/contact' },
+  { name: 'Google Review Automation', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom-built review management tool for automating Google review requests.', img: '/portfolio/web-development/google-review.webp', href: '/contact' },
+  { name: 'GHL to Club Planner', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration syncing GoHighLevel with a club scheduling platform.', img: '/portfolio/web-development/ghl-to-club-planner.webp', href: '/contact' },
+  { name: 'GHL to CareStack', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration connecting GoHighLevel with CareStack dental practice software.', img: '/portfolio/web-development/ghl-to-carestack.webp', href: '/contact' },
+  { name: 'Data Visualization Dashboard', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom Node.js analytics and reporting dashboard built for real-time data visualization.', img: '/portfolio/web-development/data-visualization.webp', href: '/contact' },
+  { name: 'GHL to SolarQuotes', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration connecting GoHighLevel with SolarQuotes for solar businesses.', img: '/portfolio/web-development/ghl-to-solarquotes.webp', href: '/contact' },
+  { name: 'HRMS', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom-built human resources management system for internal team operations.', img: '/portfolio/web-development/hrms.webp', href: '/contact' },
+  { name: 'Cadd Kampus', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom educational platform built for course delivery and student management.', img: '/portfolio/web-development/cadd-kampus.webp', href: '/contact' },
+  { name: 'Cocoon Baby', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom-built site for a baby products and services business.', img: '/portfolio/web-development/cocoon-baby.webp', href: '/contact' },
+
   {
     name: 'FitFlow Mobile App Launch',
     category: 'Funnels & Growth',
@@ -69,15 +91,6 @@ const PROJECTS = [
     date: 'March 28, 2025',
     desc: 'Custom real estate platform with interactive listing filters and lead automation.',
     img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1000&q=80',
-    href: '/case-studies',
-  },
-  {
-    name: 'Luminary Legal Advisory',
-    category: 'Web Design',
-    tag: 'Web Design',
-    date: 'February 15, 2025',
-    desc: 'Modern legal practice site driving 186% more consultation requests in 90 days.',
-    img: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1000&q=80',
     href: '/case-studies',
   },
   {
@@ -128,7 +141,7 @@ export default function PortfolioPage() {
 
               {/* RIGHT — image */}
               <div className="port-hero-img-wrap" style={{ position: 'relative' }}>
-                <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 28px 72px rgba(0,35,83,.16)' }}>
+                <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/banner/portfolio.webp"
@@ -228,8 +241,10 @@ export default function PortfolioPage() {
 
             {/* Project grid — 2 cards per row */}
             <div className="port-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 44 }}>
-              {filteredProjects.map((p, i) => (
-                <a key={i} href={p.href} className="port-card">
+              {filteredProjects.map((p, i) => {
+                const isExternal = p.href.startsWith('http');
+                return (
+                <a key={i} href={p.href} className="port-card" {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                   {/* Image wrap */}
                   <div className="port-card-img-wrap">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -261,7 +276,8 @@ export default function PortfolioPage() {
                     </p>
                   </div>
                 </a>
-              ))}
+                );
+              })}
             </div>
           </div>
 

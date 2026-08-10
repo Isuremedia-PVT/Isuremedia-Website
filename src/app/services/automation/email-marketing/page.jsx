@@ -169,7 +169,8 @@ export default function EmailMarketingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build segmented, automated email marketing systems — welcome sequences, abandoned cart flows, and newsletters — that turn a list sitting idle into a channel that consistently converts.
+                  We build segmented, automated email marketing systems — welcome sequences, abandoned cart flows, and newsletters — that turn a list sitting idle into{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a channel that consistently converts</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function EmailMarketingPage() {
 
               <div className="email-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/emailmarketinghero/640/720" alt="Email marketing automation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/email-marketing.webp" alt="Email marketing automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-envelope" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function EmailMarketingPage() {
                   Most businesses have a list of leads and customers that gets an occasional newsletter, and nothing else. That is not an email program. That is a wasted asset.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds segmented, automated email systems — built to convert continuously, not just when someone remembers to hit send.
+                  ISureMedia builds segmented, automated email systems —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to convert continuously</span>, not just when someone remembers to hit send.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function EmailMarketingPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Automation.webp" />
+        <CTASection image="/result_footer/Automation.webp" description={<>If your email list mostly just sits there while other channels do the heavy lifting, you are leaving revenue on the table. The right automated sequences turn subscribers into repeat buyers without extra effort from your team. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your list into a revenue channel</span>.</>} heading="Ready to Turn Your List Into" headingHighlight="Revenue?" primaryLabel="Build My Email Engine" secondaryLabel="Talk to an Email Strategist" />
       </main>
       <Footer />
     </>

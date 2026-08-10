@@ -172,7 +172,8 @@ export default function GoogleAdsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and manage Google Ads campaigns that bring the right people to your business — with every pound and dollar spent tracked, optimised, and accountable to real results.
+                  We build and manage Google Ads campaigns that bring the right people to your business — with every pound and dollar spent{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>tracked, optimised, and accountable</span> to real results.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -187,7 +188,7 @@ export default function GoogleAdsPage() {
 
               <div className="gads-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/googleadshero/640/720" alt="Google Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/googleadshero/640/720" alt="Google Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-google" style={{ color: '#fff', fontSize: 22 }} />
@@ -249,7 +250,8 @@ export default function GoogleAdsPage() {
                   Google Ads works — but only when campaigns are built properly, managed actively, and optimised around outcomes that actually matter, not just impressions and clicks.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia manages Google Ads from strategy through to results — the right keywords, the right bids, ads that get clicked, and landing pages that convert.
+                  ISureMedia manages Google Ads{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from strategy through to results</span> — the right keywords, the right bids, ads that get clicked, and landing pages that convert.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -682,7 +684,7 @@ export default function GoogleAdsPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/google ads.webp" />
+        <CTASection image="/result_footer/google ads.webp" description={<>Search is where buyers already show up looking for what you sell, but only if your campaigns are structured to catch that intent instead of wasting spend on the wrong clicks. We build and manage Google Ads accounts around real purchase signals, not vanity impressions. Let's turn your search traffic into <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>booked revenue, not wasted clicks</span>.</>} heading="Ready to" headingHighlight="Own the Search Results?" primaryLabel="Launch My Google Ads Campaign" secondaryLabel="Talk to a PPC Specialist" />
       </main>
       <Footer />
     </>

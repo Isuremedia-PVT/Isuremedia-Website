@@ -169,7 +169,8 @@ export default function PhpLaravelDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Laravel applications and APIs — internal tools, platforms, and systems that don&apos;t exist as off-the-shelf software.
+                  We design and build custom Laravel applications and APIs — internal tools, platforms, and{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>systems that don&apos;t exist as off-the-shelf software</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function PhpLaravelDevelopmentPage() {
 
               <div className="php-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/phplaravelhero/640/720" alt="PHP Laravel development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/php-development.webp" alt="PHP Laravel development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-laravel" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function PhpLaravelDevelopmentPage() {
                   Most custom software projects that go over budget or timeline started without the data model, user flows, and edge cases properly defined in writing.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia scopes precisely before writing a line of code — then builds it in Laravel, tested and documented.
+                  ISureMedia{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes precisely before writing a line of code</span> — then builds it in Laravel, tested and documented.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function PhpLaravelDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" />
+        <CTASection image="/result_footer/Api.webp" description={<>Whether you need a custom internal tool, a data-heavy platform, or an API serving multiple systems, the question is the same. Is your software actually built to your specification, or bent to fit someone else&apos;s template? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build software that fits your business exactly</span>.</>} heading="Ready for Software" headingHighlight="Built Right?" primaryLabel="Start My Laravel Project" secondaryLabel="Talk to a Laravel Developer" />
       </main>
       <Footer />
     </>

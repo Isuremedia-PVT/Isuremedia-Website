@@ -172,7 +172,9 @@ export default function GraphicDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We produce the graphics, visuals, and marketing design assets your business needs — social graphics, decks, email templates, and more — delivered on time, on brand, and at the quality your marketing needs to work.
+                  We produce the graphics, visuals, and marketing design assets your business needs — social graphics, decks, email templates, and more —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered on time, on brand</span>{' '}
+                  and at the quality your marketing needs to work.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -187,7 +189,7 @@ export default function GraphicDesignPage() {
 
               <div className="gfx-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/graphicdesignhero/640/720" alt="Graphic design" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/graphic-design.webp" alt="Graphic design" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-palette" style={{ color: '#fff', fontSize: 22 }} />
@@ -249,7 +251,8 @@ export default function GraphicDesignPage() {
                   The content calendar stalls because the graphics aren&apos;t ready. The brand looks different on the website, the social feed, and the sales deck. None of these are marketing failures — they are design supply failures.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia provides the design output your marketing operation needs — consistent, on-brand, and delivered at the speed your campaigns require.
+                  ISureMedia provides the design output your marketing operation needs — consistent, on-brand, and{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered at the speed your campaigns require</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -682,7 +685,7 @@ export default function GraphicDesignPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/graphic.webp" />
+        <CTASection image="/result_footer/graphic.webp" description={<>Whether your content calendar is stalling on unfinished graphics or your brand looks different on every channel, the question is the same. Is your design output keeping pace with your marketing? Talk to us today and we will help you build the design pipeline that keeps every asset <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>consistent, on-brand, and on time</span>.</>} heading="Let's Design" headingHighlight="Every Asset You Need" primaryLabel="Get My Free Design Consultation" secondaryLabel="Talk to a Designer" />
       </main>
       <Footer />
     </>
