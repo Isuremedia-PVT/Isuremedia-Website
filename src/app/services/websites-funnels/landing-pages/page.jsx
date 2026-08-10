@@ -170,7 +170,8 @@ export default function LandingPagesPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build landing pages that turn ad clicks, email traffic, and campaign visitors into leads, bookings, and sales — with every element tested, optimised, and built around one clear goal.
+                  We design and build landing pages that turn ad clicks, email traffic, and campaign visitors into leads, bookings, and sales — with every element tested, optimised, and{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around one clear goal</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -185,7 +186,7 @@ export default function LandingPagesPage() {
 
               <div className="lp-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/landingpagehero/640/720" alt="Landing page design" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/landing-pages-development.webp" alt="Landing page design" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-bullseye" style={{ color: '#fff', fontSize: 22 }} />
@@ -247,7 +248,8 @@ export default function LandingPagesPage() {
                   Every click from a Google Ads or Meta campaign costs money. If that click lands on a homepage — with navigation, multiple messages, and ten different places to go — the visitor is confused and leaves. The money is gone. Nothing converts.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  A landing page removes that friction. One message. One offer. One action. When the page is built properly, the same traffic that was barely converting starts producing leads at two, three, or five times the rate.
+                  A landing page removes that friction. One message. One offer. One action. When the page is built properly, the same traffic that was barely converting starts producing leads at{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>two, three, or five times the rate</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -684,7 +686,7 @@ export default function LandingPagesPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Landing Pages.webp" />
+        <CTASection image="/result_footer/Landing Pages.webp" description={<>Every ad click and email visit costs you money, and a generic page wastes it. A landing page built around one clear goal is what turns that traffic into leads and sales. Talk to us today and let's build you a page designed to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>convert every visitor who lands on it</span>.</>} heading="Stop Wasting" headingHighlight="Ad Spend." primaryLabel="Build My Landing Page" secondaryLabel="Talk to a Conversion Expert" />
       </main>
       <Footer />
     </>

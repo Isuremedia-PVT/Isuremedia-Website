@@ -10,6 +10,36 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
+/* ── Related case studies (Websites & Funnels) ───────────────────────── */
+const RELATED_CASES = [
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Airtopia',
+    intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
+    quote: 'Isuremedia built exactly what we needed and did it properly.',
+    stats: [
+      { val: '80-90%', label: 'Less Manual Data Work', sub: 'post-deployment',      icon: 'fa-solid fa-arrow-trend-down' },
+      { val: '130+',   label: 'Engineering Hours',     sub: 'delivered in 3 weeks', icon: 'fa-solid fa-code' },
+    ],
+    body: 'Airtopia ran ROLLER for venue operations and GoHighLevel for customer marketing, with no connection between them and staff bridging the gap by hand every week. We built a production-grade, multi-tenant integration platform that syncs every booking, membership, and waiver to GoHighLevel in real time, with new venues onboarding through an admin panel and zero engineering work.',
+    link: '/case-studies/roller-gohighlevel-venue-integration',
+    linkLabel: "Read Airtopia's Case Study",
+  },
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Isuremedia — AdOS Platform',
+    intro: 'Managing 100+ campaigns across 20–25 Meta ad accounts manually was consuming 20 hours a week.',
+    quote: 'A single developer delivered a full-stack AI platform in about a month, cutting manual campaign management time by 60-75%.',
+    stats: [
+      { val: '60-75%',  label: 'Less Manual Effort',     sub: 'down from 20 hrs/week',      icon: 'fa-solid fa-clock' },
+      { val: '<60 sec', label: 'Full Account Analysis', sub: 'via AI, was hours manually', icon: 'fa-solid fa-robot' },
+    ],
+    body: 'Isuremedia manages 20-25 Meta ad accounts and 100+ campaigns, and manual monitoring was consuming 20 hours a week. We built AdOS, an internal AI-powered advertising platform integrating the Meta Graph API with Claude and GPT-4o — cutting manual effort by 60-75% and running full account analysis in under a minute.',
+    link: '/case-studies/ados-internal-ai-advertising-platform',
+    linkLabel: "Read the AdOS Case Study",
+  },
+];
+
 /* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
@@ -151,6 +181,7 @@ function FAQAccordion() {
 
 /* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function WebsitesPage() {
+  const [hoveredStep, setHoveredStep] = useState(null);
   return (
     <>
       <Navbar />
@@ -264,7 +295,7 @@ export default function WebsitesPage() {
         </section>
 
         {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
-        <div id="web-results"><ClientResults /></div>
+        <div id="web-results"><ClientResults cases={RELATED_CASES} heading="Related Website & Funnel Results" /></div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
         <section style={{ background:'#fff', padding:'52px 28px' }}>
@@ -424,7 +455,11 @@ export default function WebsitesPage() {
               <div style={{ position:'absolute', top:28, left:'10%', width:'80%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
                 <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                  <div
+                    onMouseEnter={()=>setHoveredStep(i)}
+                    onMouseLeave={()=>setHoveredStep(null)}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                  >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
                   <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>

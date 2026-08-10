@@ -172,7 +172,8 @@ export default function OnPageSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We optimise every element of your web pages — content, keywords, headings, meta tags, internal links — so Google understands what you offer and ranks you for searches that bring real customers.
+                  We optimise every element of your web pages — content, keywords, headings, meta tags, internal links — so Google understands what you offer and{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ranks you for searches that bring real customers</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -187,7 +188,7 @@ export default function OnPageSEOPage() {
 
               <div className="opseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/onpageseohero/640/720" alt="On-page SEO optimisation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/onpageseohero/640/720" alt="On-page SEO optimisation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-heading" style={{ color: '#fff', fontSize: 22 }} />
@@ -249,7 +250,8 @@ export default function OnPageSEOPage() {
                   Good content is not enough on its own. If your pages are not structured the way Google expects, they will not rank — even if what you have written is genuinely better than your competitors.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia goes through every page that matters to your business and optimises it properly — the right keywords in the right places, structured the way search engines and real visitors both want to read it.
+                  ISureMedia goes through every page that matters to your business and optimises it properly —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right keywords in the right places</span>, structured the way search engines and real visitors both want to read it.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function OnPageSEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/onpage.webp" />
+        <CTASection image="/result_footer/onpage.webp" description={<>Good content stuck on page two is usually a page structure problem, not a content problem. Titles, headings, internal links, and keyword targeting all decide whether Google rewards what you have already built. Get in touch and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your existing pages into ranking pages</span>.</>} heading="Ready to Rank" headingHighlight="Higher?" primaryLabel="Get My Free On-Page SEO Audit" secondaryLabel="Talk to an SEO Strategist" />
       </main>
       <Footer />
     </>

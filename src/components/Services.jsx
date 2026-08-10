@@ -127,7 +127,7 @@ const tabs = [
       { name: 'White-Label Copywriting', href: '/services/white-label' },
       { name: 'White-Label Graphic Design', href: '/services/white-label' },
       { name: 'White-Label Link Building', href: '/services/white-label' },
-      { name: 'Dedicated Agency Pods', href: '/services/white-label' },
+      { name: 'Dedicated Agency Pods', href: '/services/white-label/dedicated-agency-pods' },
       { name: 'White-Label Reporting & Dashboards', href: '/services/white-label' },
     ],
   },

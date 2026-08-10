@@ -178,7 +178,8 @@ export default function LocalSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We put your business where local customers are looking — Google Search, Google Maps, Google Business Profile, and AI search results. Get found, get calls, get customers.
+                  We put your business where local customers are looking — Google Search, Google Maps, Google Business Profile, and AI search results.{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Get found, get calls, get customers</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -194,7 +195,7 @@ export default function LocalSEOPage() {
               {/* Right — photo + floating badges */}
               <div className="lseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/localseohero/640/720" alt="Local business owner" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/localseohero/640/720" alt="Local business owner" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-map-location-dot" style={{ color: '#fff', fontSize: 22 }} />
@@ -262,7 +263,9 @@ export default function LocalSEOPage() {
                   Most local businesses lose customers to competitors who simply show up higher on Google. Your product or service may be better. But if you are not visible when someone nearby searches, it does not matter.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia helps you fix that. We handle everything that goes into ranking locally so you can focus on running your business.
+                  Isuremedia helps you fix that. We{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle everything that goes into ranking locally</span>{' '}
+                  so you can focus on running your business.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -713,7 +716,7 @@ export default function LocalSEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/local seo.webp" />
+        <CTASection image="/result_footer/local seo.webp" description={<>Whether you run a single storefront, a service-area business, or a growing multi-location brand, nearby customers are searching for you right now. The question is whether Google is putting your business in front of them or a competitor's. Reach out today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>win the local map pack in your area</span>.</>} heading="Ready to Win" headingHighlight="Your Local Market?" primaryLabel="Run My Free Local SEO Audit" secondaryLabel="Call +1 646-588-1430" />
       </main>
       <Footer />
     </>

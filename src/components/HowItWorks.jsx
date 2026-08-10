@@ -9,15 +9,15 @@ const HL = { background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6
 const defaultSteps = [
   { num: 1, title: 'Discovery Call',   text: <>We ask the right questions and figure out exactly what you need. <span style={HL}>No assumptions, no generic solutions.</span></> },
   { num: 2, title: 'Your Growth Plan', text: <>We build a clear plan — what we do, when, and what to expect. <span style={HL}>You approve before anything moves.</span></> },
-  { num: 3, title: 'Onboarding',       text: <>Tools, reporting, and team introductions. <span style={HL}>Everyone on our side knows your business</span> before they touch it.</> },
-  { num: 4, title: 'Execution',        text: <>Work starts. Regular updates, a direct line to your account manager, and <span style={HL}>nothing ships without a quality check</span>.</> },
-  { num: 5, title: 'Review & Scale',   text: <>We cut what isn&apos;t working, build on what is, and <span style={HL}>plan what&apos;s next — every month</span>.</> },
+  { num: 3, title: 'Onboarding',       text: <>We get everything in place before work begins. Your goals are briefed across the team, reporting is connected, and nothing moves until <span style={HL}>we are all pointing in the same direction</span>.</> },
+  { num: 4, title: 'Execution',        text: <>You always know where things stand. Regular updates come to you without you having to ask, and <span style={HL}>nothing leaves our side without a quality check first</span>.</> },
+  { num: 5, title: 'The Payoff',       text: <>The numbers come in and we build on them. What is working gets more investment. What is not gets replaced. <span style={HL}>Most clients see a meaningful shift within the first 90 days</span>.</> },
 ];
 
 export default function HowItWorks({
-  title = 'Predictable Process.',
-  subtitle = 'We keep it simple so you stay focused on growth.',
-  highlightWord = 'Unpredictable Results.',
+  title = 'The Process Behind Real, Measurable',
+  subtitle = 'Start now and build a business that performs every single month.',
+  highlightWord = 'Growth',
   steps = defaultSteps,
   ctaText = 'Book Your Free Call',
   ctaHref = '#cta',

@@ -330,7 +330,7 @@ export default function HireShopifyDeveloper() {
             {/* Right Column: Image */}
             <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', height: '100%', minHeight: 400 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/services/website-and-funnels.webp" alt="WordPress Development" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+              <img src="/hire/banner/shopify.webp" alt="Shopify Developer" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
             </div>
 
           </div>
@@ -824,44 +824,17 @@ export default function HireShopifyDeveloper() {
                   ))}
                 </div>
                 
-                {/* Button */}
-                <a href="/contact"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                    padding: '16px 24px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 800,
-                    color: i === 2 ? 'var(--color-primary)' : 'var(--color-navy)',
-                    background: i === 2 ? 'transparent' : 'var(--ism-amber)',
-                    textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase',
-                    border: i === 2 ? '2px solid var(--color-primary)' : '2px solid var(--ism-amber)',
-                    transition: 'all .18s',
-                    boxShadow: i === 2 ? 'none' : '0 6px 20px rgba(255,176,0,.25)',
-                    width: '100%'
-                  }}
-                  onMouseEnter={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--color-accent-hover)';
-                      e.currentTarget.style.borderColor = 'var(--color-accent-hover)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    } else {
-                      e.currentTarget.style.background = 'var(--color-primary)';
-                      e.currentTarget.style.color = '#fff';
-                    }
-                  }}
-                  onMouseLeave={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--ism-amber)';
-                      e.currentTarget.style.borderColor = 'var(--ism-amber)';
-                      e.currentTarget.style.transform = '';
-                    } else {
-                      e.currentTarget.style.background = 'transparent';
-                      e.currentTarget.style.color = 'var(--color-primary)';
-                    }
-                  }}
-                >
-                  {i === 0 ? 'Start Project' : i === 1 ? 'Start Retainer' : 'Talk to Us'}
-                </a>
               </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: 44 }}>
+            <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.50)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
+            >
+              Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            </a>
           </div>
 
           <style>{`

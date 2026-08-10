@@ -158,7 +158,8 @@ export default function WhiteLabelSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 540, marginBottom: 36 }}>
-                  We handle the fulfilment. ISureMedia delivers technical audits, on-page optimisation, content, link building, local SEO, and AI search optimisation — plus white-label reporting — invisible to your clients, and built to the standard your agency&apos;s reputation depends on.
+                  We handle the fulfilment. ISureMedia delivers technical audits, on-page optimisation, content, link building, local SEO, and AI search optimisation — plus white-label reporting —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>invisible to your clients</span>, and built to the standard your agency&apos;s reputation depends on.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -173,7 +174,7 @@ export default function WhiteLabelSEOPage() {
 
               <div className="wlseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/wlseohero/640/720" alt="Agency team reviewing SEO reports" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/white-label-seo.png" alt="Agency team reviewing SEO reports" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-user-secret" style={{ color: '#fff', fontSize: 22 }} />
@@ -240,7 +241,8 @@ export default function WhiteLabelSEOPage() {
                   Building a capable in-house SEO team — a technical specialist, content strategist, link builder, local SEO manager, and reporting analyst — can exceed $300,000 a year in combined salaries before tools and overhead. For most agencies, that investment only makes sense at a client volume that requires the infrastructure before the revenue exists to justify it.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The alternative is white-label fulfilment. You sell the SEO, you own the client relationship, and we handle delivery — technical audits, on-page work, content, links, local SEO, and monthly reporting — under your brand. Your clients see your agency&apos;s name. They never see ours. Agencies using this model report 40 to 60% gross margins on SEO retainers after markup.
+                  The alternative is white-label fulfilment. You sell the SEO, you own the client relationship, and we handle delivery — technical audits, on-page work, content, links, local SEO, and monthly reporting — under your brand. Your clients see your agency&apos;s name. They never see ours. Agencies using this model report{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>40 to 60% gross margins</span> on SEO retainers after markup.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -661,7 +663,7 @@ export default function WhiteLabelSEOPage() {
         <FAQAccordion />
 
         {/* ══ 13. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/white label.webp" />
+        <CTASection image="/result_footer/white label.webp" description={<>Clients want rankings and traffic, not excuses about bandwidth. Our white-label SEO team delivers the strategy, content, and links under your agency&rsquo;s name, so you can offer real results without building an in-house department. Reach out and we&rsquo;ll show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>expand your SEO offer risk-free</span>.</>} heading="Ready to Scale" headingHighlight="Your SEO Retainers?" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Talk to Our Partnerships Team" />
       </main>
       <Footer />
     </>

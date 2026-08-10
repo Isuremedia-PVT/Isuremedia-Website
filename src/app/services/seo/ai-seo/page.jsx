@@ -177,7 +177,9 @@ export default function AISEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  ChatGPT, Perplexity, Google AI Overviews, and Gemini are now where buying decisions start. We optimise your business to be the answer those platforms recommend — not the one they ignore.
+                  ChatGPT, Perplexity, Google AI Overviews, and Gemini are now where buying decisions start. We optimise your business to{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>be the answer those platforms recommend</span>{' '}
+                  — not the one they ignore.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -193,7 +195,7 @@ export default function AISEOPage() {
               {/* Right — photo + floating badges */}
               <div className="aiseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/aiseohero/640/720" alt="AI search visibility" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/aiseohero/640/720" alt="AI search visibility" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-robot" style={{ color: '#fff', fontSize: 22 }} />
@@ -261,7 +263,9 @@ export default function AISEOPage() {
                   AI Overviews now appear on 60% of US Google searches. ChatGPT crossed 900 million weekly users in early 2026. Perplexity, Gemini, and Copilot are handling hundreds of millions of queries every week. When someone asks one of these platforms who the best option is in your category, your business either shows up or it does not. Most businesses are not showing up — not because they are not good enough, but because their online presence is not structured in a way AI systems can read, trust, and cite.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia fixes that. We optimise your content, your entity signals, your structured data, and your authority so AI platforms have every reason to recommend your business over competitors.
+                  Isuremedia fixes that. We optimise your content, your entity signals, your structured data, and your authority so AI platforms have{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every reason to recommend your business</span>{' '}
+                  over competitors.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -734,7 +738,7 @@ export default function AISEOPage() {
         <FAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/AI seo.webp" />
+        <CTASection image="/result_footer/AI seo.webp" description={<>ChatGPT, Perplexity, and Google AI Overviews are answering your customers' questions right now — with or without your business in the answer. The only question is whether you show up as the recommendation or stay invisible. Talk to us today and let's <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get your business cited by AI</span>.</>} heading="Ready to Get" headingHighlight="Cited by AI?" primaryLabel="Get My Free AI Visibility Audit" secondaryLabel="Talk to an AI Search Expert" />
       </main>
       <Footer />
     </>

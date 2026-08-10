@@ -169,7 +169,8 @@ export default function WhiteLabelWebDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and develop websites, landing pages, e-commerce builds, and web applications for agencies — delivered under your brand, invisible to your clients, with project management and QA included.
+                  We design and develop websites, landing pages, e-commerce builds, and web applications for agencies —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered under your brand, invisible to your clients</span>, with project management and QA included.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function WhiteLabelWebDesignPage() {
 
               <div className="wlweb-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/wlwebdesignhero/640/720" alt="White-label web development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/white-label-web-design.webp" alt="White-label web development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-code" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function WhiteLabelWebDesignPage() {
                   Turning that work away means the client goes to a developer directly. Referring it out means losing control of quality, timelines, and the client experience.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds websites for agencies under their brand — from brief to launch, project-managed by us, QA&apos;d before delivery. Your agency delivers the website. We build it.
+                  ISureMedia builds websites for agencies under their brand —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from brief to launch, project-managed by us</span>, QA&apos;d before delivery. Your agency delivers the website. We build it.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function WhiteLabelWebDesignPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/white label.webp" />
+        <CTASection image="/result_footer/white label.webp" description={<>Turning down a web design project because your team is stretched thin costs you revenue and, eventually, the client relationship too. Our white-label design team works quietly behind your brand so you can say yes to every site, funnel, and redesign that comes your way. Let&rsquo;s talk about <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scaling your web design capacity without hiring</span>.</>} heading="Stop Turning Away" headingHighlight="Website Projects" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Talk to Our Web Team" />
       </main>
       <Footer />
     </>

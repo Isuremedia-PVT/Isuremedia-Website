@@ -10,6 +10,36 @@ import ReviewsStrip from '@/components/ReviewsStrip';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
+/* ── Related case studies (Content & Creative) ───────────────────────── */
+const RELATED_CASES = [
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
+    intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
+    quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
+    stats: [
+      { val: '0 → 800+', label: 'Followers',        sub: 'in 7 months',              icon: 'fa-solid fa-users' },
+      { val: '1',        label: 'Podcast Recording', sub: 'became weeks of content', icon: 'fa-solid fa-video' },
+    ],
+    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content — growing the account from 0 to 800+ engaged followers in 7 months.',
+    link: '/case-studies/plastic-surgeon-instagram-brand-growth',
+    linkLabel: "Read Dr. Golshani's Case Study",
+  },
+  {
+    img: '/images/casestudy-dummy.png',
+    client: 'Garnus India',
+    intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
+    quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
+    stats: [
+      { val: '0 → 447', label: 'Followers',     sub: 'fully organic, in 6 months', icon: 'fa-solid fa-users' },
+      { val: '50-60k+', label: 'Organic Views', sub: 'across the period',          icon: 'fa-solid fa-eye' },
+    ],
+    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy — growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
+    link: '/case-studies/ecommerce-instagram-organic-growth-garnus',
+    linkLabel: "Read Garnus India's Case Study",
+  },
+];
+
 /* ── DATA ─────────────────────────────────────────────────────────── */
 
 const SERVICES = [
@@ -118,6 +148,7 @@ function FAQAccordion() {
 
 /* ══ PAGE ═════════════════════════════════════════════════════════════ */
 export default function ContentCreativePage() {
+  const [hoveredStep, setHoveredStep] = useState(null);
   return (
     <>
       <Navbar />
@@ -231,7 +262,7 @@ export default function ContentCreativePage() {
         </section>
 
         {/* ══ 3. CLIENT RESULTS ════════════════════════════════════════════ */}
-        <div id="cc-results"><ClientResults /></div>
+        <div id="cc-results"><ClientResults cases={RELATED_CASES} heading="Related Content & Creative Results" /></div>
 
         {/* ══ CTA BANNER ═══════════════════════════════════════════════════ */}
         <section style={{ background:'#fff', padding:'52px 28px' }}>
@@ -391,7 +422,11 @@ export default function ContentCreativePage() {
               <div style={{ position:'absolute', top:28, left:'12.5%', width:'75%', height:2, background:'linear-gradient(90deg,var(--ism-amber),var(--color-primary))', zIndex:0 }} />
               {TIMELINE_STEPS.map((step,i)=>(
                 <div key={i} style={{ textAlign:'center', padding:'0 16px', position:'relative', zIndex:1 }}>
-                  <div style={{ width:56, height:56, borderRadius:'50%', background:i===0?'var(--ism-amber)':'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow:`0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff' }}>
+                  <div
+                    onMouseEnter={()=>setHoveredStep(i)}
+                    onMouseLeave={()=>setHoveredStep(null)}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                  >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
                   <div style={{ fontFamily:J, fontSize:12, fontWeight:800, color:'var(--color-navy)', marginBottom:10, lineHeight:1.3 }}>{step.period}</div>

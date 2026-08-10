@@ -178,7 +178,8 @@ export default function ZapierPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Custom Zapier automations that link your CRM, forms, email, and apps — no code, no delays, no manual copying between systems.
+                  Custom Zapier automations that link your CRM, forms, email, and apps —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no code, no delays, no manual copying</span> between systems.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -194,7 +195,7 @@ export default function ZapierPage() {
               {/* Right — photo + floating badges */}
               <div className="zap-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/zapierautomationhero/640/720" alt="Zapier workflow automation setup" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/zapier-workflow-automation.webp" alt="Zapier workflow automation setup" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-plug" style={{ color: '#fff', fontSize: 22 }} />
@@ -262,7 +263,8 @@ export default function ZapierPage() {
                   Most businesses run on a stack of disconnected tools — a CRM that does not talk to their email platform, a form that dumps leads into a spreadsheet, a Slack channel that misses half the notifications. The result is manual work, delays, and human error every single day.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Zapier connects over 7,000 apps through a visual workflow builder. We design and build automations that eliminate the manual steps between your tools — so your team spends time on work that matters, not copying data between systems.
+                  Zapier connects over 7,000 apps through a visual workflow builder. We design and build automations that{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>eliminate the manual steps between your tools</span> — so your team spends time on work that matters, not copying data between systems.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -463,66 +465,6 @@ export default function ZapierPage() {
             .zap-factor-card-hl:hover{ transform: translateY(-4px); box-shadow: 0 20px 44px rgba(24,64,160,.36); }
             @media (max-width:700px){ .zap-factor-grid{ grid-template-columns:1fr !important; } }
           `}</style>
-        </section>
-
-        {/* ══ 07. WHAT'S INCLUDED ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>10 Custom Zaps and Everything Around Them.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                From the initial audit to team training and ongoing support — we handle the full lifecycle of your Zapier automations.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia builds into your Zapier account</p>
-            <div className="zap-included-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {ZAP_INCLUDED_CARDS.map(g => (
-                <div key={g.title} className="zap-included-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="zap-included-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="zap-included-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .zap-included-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .zap-included-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .zap-included-card-img{ transition: transform .4s ease; }
-            .zap-included-card:hover .zap-included-card-img{ transform: scale(1.08); }
-            .zap-included-card:hover .zap-included-card-icon{ background: var(--ism-amber); }
-            .zap-included-card:hover .zap-included-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .zap-included-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .zap-included-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 08. COST OF INACTION ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Manual Data Entry Is Quietly Expensive.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Every lead copied by hand from a form into a CRM, every notification someone has to remember to send, every invoice created manually — it all adds up to hours of team time every week that could go toward actual revenue-generating work.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Disconnected tools also introduce human error. A lead that never makes it into the CRM, a notification that never fires, a follow-up email that gets forgotten — these are not one-off mistakes, they are the predictable result of relying on people to do what software should be doing.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  The longer manual processes stay in place, the more they cost — in wasted time, missed leads, and inconsistent customer experience.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* ══ 09. OUR ZAPIER AUTOMATION SERVICES ══════════════════════════════════════════════ */}
@@ -729,7 +671,7 @@ export default function ZapierPage() {
         <ZapierFAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Zapier Workflow Automation_.webp" />
+        <CTASection image="/result_footer/Zapier Workflow Automation_.webp" description={<>Whether you are drowning in manual data entry or just tired of copying leads between apps by hand, the fix is the same. A properly built Zapier workflow eliminates the busywork for good. Talk to us today and we will show you exactly how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>automate the work that's eating your week</span>.</>} heading="Ready to" headingHighlight="Automate the Busywork?" primaryLabel="Build My Zapier Workflows" secondaryLabel="Talk to an Automation Expert" />
       </main>
       <Footer />
     </>

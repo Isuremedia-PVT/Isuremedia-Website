@@ -219,6 +219,36 @@ export default function CaseStudyDetail({
           </div>
         </section>
 
+        {/* METRICS COMPARISON TABLE (optional — before/after KPI table for PPC etc.) */}
+        {d.metricsTable && (
+          <section>
+            <div className="ism-container">
+              <Eyebrow>Performance Comparison</Eyebrow>
+              <h2 style={{ fontFamily: J, fontWeight: 800, color: NAVY, letterSpacing: '-0.4px', marginBottom: 14, maxWidth: 760 }}>{d.metricsTable.heading}</h2>
+              {d.metricsTable.intro && <p style={{ color: MUTED, lineHeight: 1.8, maxWidth: 680, marginBottom: 20 }}>{d.metricsTable.intro}</p>}
+
+              <div className="csd-table-scroll" style={{ overflowX: 'auto', marginTop: 20 }}>
+                <div className="csd-kw-table" style={{ border: `1px solid ${BORDER}`, borderRadius: 14, overflow: 'hidden', boxShadow: 'var(--sh-xs)', minWidth: 560 }}>
+                  <div className="csd-kw-row" style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr 1fr 1.3fr', background: 'var(--color-bg-soft)' }}>
+                    {['KPI', d.metricsTable.beforeLabel || 'Before', d.metricsTable.afterLabel || 'After', 'Change'].map((h, i) => (
+                      <div key={i} style={{ padding: '13px 18px', fontFamily: J, fontSize: 11, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '.08em', color: MUTED }}>{h}</div>
+                    ))}
+                  </div>
+                  {d.metricsTable.rows.map((r, i) => (
+                    <div key={i} className="csd-kw-row" style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr 1fr 1.3fr', borderTop: `1px solid ${BORDER}`, background: i % 2 === 0 ? '#fff' : 'var(--color-bg-soft)' }}>
+                      <div style={{ padding: '13px 18px', fontFamily: J, fontSize: 13.5, fontWeight: 700, color: NAVY }}>{r.label}</div>
+                      <div style={{ padding: '13px 18px', fontFamily: I, fontSize: 13, color: MUTED }}>{r.before}</div>
+                      <div style={{ padding: '13px 18px', fontFamily: I, fontSize: 13, color: 'var(--color-primary)', fontWeight: 700 }}>{r.after}</div>
+                      <div style={{ padding: '13px 18px', fontFamily: I, fontSize: 12.5, color: r.improved === false ? '#B45309' : '#1E9E5A', fontWeight: 700 }}>{r.change}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {d.metricsTable.note && <p style={{ color: MUTED, lineHeight: 1.7, marginTop: 16, fontSize: 13.5 }}>{d.metricsTable.note}</p>}
+            </div>
+          </section>
+        )}
+
         {/* KEYWORD RANKINGS TABLE (optional) */}
         {d.keywordTable && (
           <section>

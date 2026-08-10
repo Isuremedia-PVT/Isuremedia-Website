@@ -169,7 +169,9 @@ export default function AiDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build custom AI features, chatbots, and workflow automation grounded in your actual business data — scoped properly, tested, and built to keep working.
+                  We build custom AI features, chatbots, and workflow automation{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>grounded in your actual business data</span>{' '}
+                  — scoped properly, tested, and built to keep working.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +186,7 @@ export default function AiDevelopmentPage() {
 
               <div className="ai-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/aidevhero/640/720" alt="AI development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/ai-development.webp" alt="AI development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-robot" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +248,8 @@ export default function AiDevelopmentPage() {
                   Most disappointing AI projects started with the technology, not the problem — a chatbot bolted on because everyone else has one, not because it solves anything specific.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia scopes the actual use case first, then builds AI grounded in your real data — tested, monitored, and built to keep working.
+                  ISureMedia{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes the actual use case first</span>, then builds AI grounded in your real data — tested, monitored, and built to keep working.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +682,7 @@ export default function AiDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/ai chatbaoat.webp" />
+        <CTASection image="/result_footer/ai chatbaoat.webp" description={<>Generic chatbots and off-the-shelf automation rarely hold up once real customers start using them. What you need is AI that is actually built around your business, your data, and your process. Talk to us and we will help you design and ship <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI that keeps working</span>.</>} heading="Time to Put AI" headingHighlight="to Work." primaryLabel="Launch My AI Feature" secondaryLabel="Talk to an AI Developer" />
       </main>
       <Footer />
     </>

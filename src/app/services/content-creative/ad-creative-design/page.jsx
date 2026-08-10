@@ -182,7 +182,9 @@ export default function AdCreativeDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design performance ad creative for Meta, Google, LinkedIn, and other paid channels — static images, carousel sets, video thumbnails, display banners, and UGC-style visuals — built around messaging frameworks that drive conversions and refreshed frequently enough to prevent creative fatigue from killing your campaign performance.
+                  We design performance ad creative for Meta, Google, LinkedIn, and other paid channels — static images, carousel sets, video thumbnails, display banners, and UGC-style visuals —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around messaging frameworks that drive conversions</span>{' '}
+                  and refreshed frequently enough to prevent creative fatigue from killing your campaign performance.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -198,7 +200,7 @@ export default function AdCreativeDesignPage() {
               {/* Right — photo + floating badges */}
               <div className="acd-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/adcreativehero2/640/720" alt="Ad creative design in production" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/ad-creative-design.webp" alt="Ad creative design in production" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-rectangle-ad" style={{ color: '#fff', fontSize: 22 }} />
@@ -266,7 +268,8 @@ export default function AdCreativeDesignPage() {
                   Creative is the single most impactful element in any paid campaign — responsible for 56% of all auction outcomes on Meta, more than bid strategy, audience targeting, and placements combined. Your targeting gets your ad in front of the right person. Your creative decides what they do next.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia produces ad creative that is built for performance — designed around the specific objective, the specific audience, and the specific platform — and refreshed at the cadence your campaigns need to keep ROAS climbing rather than decaying.
+                  Isuremedia produces ad creative that is built for performance — designed around the specific objective, the specific audience, and the specific platform — and refreshed at the cadence your campaigns need to{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>keep ROAS climbing rather than decaying</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -740,7 +743,7 @@ export default function AdCreativeDesignPage() {
         <FAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/ads creative.webp" />
+        <CTASection image="/result_footer/ads creative.webp" description={<>Whether your campaigns are stuck on a ROAS plateau or your best creative is already showing signs of fatigue, the underlying question is the same. Is your ad creative doing its job, or just spending your budget? Talk to us today and we will help you build the ad sets that <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keep every campaign converting</span>.</>} heading="Tired of" headingHighlight="Creative Fatigue?" primaryLabel="Get My Free Creative Audit" secondaryLabel="Talk to a Creative Strategist" />
       </main>
       <Footer />
     </>

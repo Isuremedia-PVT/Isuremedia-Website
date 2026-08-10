@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'CRM Workflow Design and Automation',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/marketing_automtion/marketing automation expert crm_.png',
     desc: <>Most CRMs are full of contacts that nobody is acting on because the workflow logic was never built properly. Get a CRM automation system designed around how your sales process actually works, with triggers that fire when they should and actions that move leads forward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual intervention</span>.</>,
     bullets: [
       'Pipeline stage automation and movement triggers',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Lead Nurture Sequences',
-    img: '/services/website-and-funnels.webp',
+    img: '/hire/marketing_automtion/Lead Nurturing.png',
     desc: 'Generic time-based email sequences treat every lead the same and convert poorly. Get nurture sequences built around what each lead actually does, designed to move them through a buying decision at their own pace with the right message at the right stage.',
     bullets: [
       'Behaviour-triggered nurture sequences',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'Email and SMS Campaign Automation',
-    img: '/services/content-creative.webp',
+    img: '/hire/marketing_automtion/email and sms.png',
     desc: 'Broadcast and drip communication across email and SMS, built with proper segmentation, timing logic, and deliverability setup so the right messages reach the right people and actually land in the inbox.',
     bullets: [
       'Email campaign architecture and automation builds',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'AI-Powered Automation and Behavioural Logic',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/marketing_automtion/ai automations.png',
     desc: 'AI changes what automation can do. Instead of rules based on time, AI-powered systems respond to behaviour, adapt to engagement signals, and make decisions about what to send and when based on what each contact is actually doing. The result is automation that gets more effective as it runs, not automation that stays static.',
     bullets: [
       'AI lead scoring and engagement signal tracking',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Lead Scoring and Qualification',
-    img: '/services/white-label.webp',
+    img: '/hire/marketing_automtion/lead scroing.png',
     desc: 'Your sales team should spend time on leads most likely to close, not manually sorting through every contact to figure out who is ready. Get a lead scoring system that tracks the right signals, weights them properly, and puts the best leads in front of the right person automatically.',
     bullets: [
       'Lead scoring model design and configuration',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'Cross-Platform Integrations',
-    img: '/services/seo.webp',
+    img: '/hire/marketing_automtion/Integrations.png',
     desc: 'Your tools only work as a system when they are properly connected. Get your CRM, email platform, website, ads, booking system, payment processor, and any other tool your business runs on sharing data properly and triggering actions across each other.',
     bullets: [
       'CRM and email platform integration',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'Customer Retention and Lifecycle Automation',
-    img: '/services/ppc.webp',
+    img: '/hire/marketing_automtion/retention.png',
     desc: 'Acquiring a customer is only the start. The businesses that grow most efficiently keep their customers engaged, buying again, and referring others. Get lifecycle automation built for every stage after the sale.',
     bullets: [
       'Post-purchase onboarding and activation sequences',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'Attribution and Automation Reporting',
-    img: '/services/marketing-automation.webp',
+    img: '/hire/marketing_automtion/reporting.png',
     desc: 'Automation you cannot measure is automation you cannot improve. Get reporting set up to show which campaigns produce leads that convert, which automations drive pipeline movement, and what the actual revenue impact of your marketing system is.',
     bullets: [
       'Campaign attribution and revenue tracking setup',
@@ -330,7 +330,7 @@ export default function HireMarketingAutomationExpert() {
             {/* Right Column: Image */}
             <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', height: '100%', minHeight: 400 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/services/website-and-funnels.webp" alt="WordPress Development" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
+              <img src="/hire/banner/Marketing automation.webp" alt="Marketing Automation Expert" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} />
             </div>
 
           </div>
@@ -824,44 +824,17 @@ export default function HireMarketingAutomationExpert() {
                   ))}
                 </div>
                 
-                {/* Button */}
-                <a href="/contact"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                    padding: '16px 24px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 800,
-                    color: i === 2 ? 'var(--color-primary)' : 'var(--color-navy)',
-                    background: i === 2 ? 'transparent' : 'var(--ism-amber)',
-                    textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase',
-                    border: i === 2 ? '2px solid var(--color-primary)' : '2px solid var(--ism-amber)',
-                    transition: 'all .18s',
-                    boxShadow: i === 2 ? 'none' : '0 6px 20px rgba(255,176,0,.25)',
-                    width: '100%'
-                  }}
-                  onMouseEnter={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--color-accent-hover)';
-                      e.currentTarget.style.borderColor = 'var(--color-accent-hover)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                    } else {
-                      e.currentTarget.style.background = 'var(--color-primary)';
-                      e.currentTarget.style.color = '#fff';
-                    }
-                  }}
-                  onMouseLeave={e => {
-                    if (i !== 2) {
-                      e.currentTarget.style.background = 'var(--ism-amber)';
-                      e.currentTarget.style.borderColor = 'var(--ism-amber)';
-                      e.currentTarget.style.transform = '';
-                    } else {
-                      e.currentTarget.style.background = 'transparent';
-                      e.currentTarget.style.color = 'var(--color-primary)';
-                    }
-                  }}
-                >
-                  {i === 0 ? 'Start Project' : i === 1 ? 'Start Retainer' : 'Talk to Us'}
-                </a>
               </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: 44 }}>
+            <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.50)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
+            >
+              Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+            </a>
           </div>
 
           <style>{`

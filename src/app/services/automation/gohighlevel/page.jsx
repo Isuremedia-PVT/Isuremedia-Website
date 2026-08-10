@@ -177,7 +177,8 @@ export default function GoHighLevelSetupPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Complete GoHighLevel configuration from sub-account structure to funnels, CRM, and automated follow-up systems — built to scale with you.
+                  Complete GoHighLevel configuration from sub-account structure to funnels, CRM, and automated follow-up systems —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to scale with you</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -193,7 +194,7 @@ export default function GoHighLevelSetupPage() {
               {/* Right — photo + floating badges */}
               <div className="ghl-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/gohighlevelhero/640/720" alt="GoHighLevel setup and automation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/gohighlevel-setup-automation.webp" alt="GoHighLevel setup and automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-gears" style={{ color: '#fff', fontSize: 22 }} />
@@ -261,7 +262,8 @@ export default function GoHighLevelSetupPage() {
                   Most businesses purchase GoHighLevel and spend weeks figuring out where to start. A rushed setup leads to broken automations, confused teams, and missed revenue. A proper GHL setup is an architecture exercise.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia has configured GHL for agencies, home service businesses, coaches, and enterprises. We know what works, what breaks, and how to build a system your team will actually use.
+                  Isuremedia has configured GHL for agencies, home service businesses, coaches, and enterprises. We know what works, what breaks, and how to{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>build a system your team will actually use</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -462,46 +464,6 @@ export default function GoHighLevelSetupPage() {
             .ghl-factor-card:not(.ghl-factor-card-hl):hover .ghl-factor-card-desc{ color: rgba(255,255,255,.85) !important; }
             .ghl-factor-card-hl:hover{ transform: translateY(-4px); box-shadow: 0 20px 44px rgba(24,64,160,.36); }
             @media (max-width:700px){ .ghl-factor-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 07. WHAT'S INCLUDED IN EVERY SETUP ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Everything You Need, Nothing Left Out.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every GHL setup engagement covers the full stack — no add-ons, no surprises. Here is what is built into your account before we hand it over.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia builds into your account</p>
-            <div className="ghl-included-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {GHL_INCLUDED_CARDS.map(g => (
-                <div key={g.title} className="ghl-included-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="ghl-included-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="ghl-included-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .ghl-included-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .ghl-included-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .ghl-included-card-img{ transition: transform .4s ease; }
-            .ghl-included-card:hover .ghl-included-card-img{ transform: scale(1.08); }
-            .ghl-included-card:hover .ghl-included-card-icon{ background: var(--ism-amber); }
-            .ghl-included-card:hover .ghl-included-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .ghl-included-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .ghl-included-grid{ grid-template-columns:1fr !important; } }
           `}</style>
         </section>
 
@@ -709,7 +671,7 @@ export default function GoHighLevelSetupPage() {
         <GHLFAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" />
+        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" description={<>A GoHighLevel account with default settings and half-built funnels will not grow your business on its own. A properly configured setup turns it into the engine that runs your marketing end to end. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a GoHighLevel system built to scale</span>.</>} heading="Ready for a GoHighLevel System Built to" headingHighlight="Scale?" primaryLabel="Fix My GoHighLevel Setup" secondaryLabel="Book a GHL Strategy Call" />
       </main>
       <Footer />
     </>

@@ -37,17 +37,21 @@ export default function Home() {
         <ReviewsStrip />
         <HomeVideoSection />
         <ClientsMarquee />
+        <ClientResults heading="This Is What Good Marketing Does" />
         <ProblemStatement />
-        <ClientResults />
         <TrustVideo />
         <Services />
         <Industries />
         <HowItWorks />
         <ToolsStrip />
         <VideoTestimonials />
-        <Testimonials />
+        <Testimonials
+          heading="Trusted by Businesses and Agencies Worldwide."
+          subheading="From local businesses to white-label agency partners, here is what our clients say about working with us."
+          showTrustBar={false}
+        />
         <FAQ />
-        <CTASection imageWidth={460} overflowTop={140} />
+        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" />
       </main>
       <Footer />
     </>

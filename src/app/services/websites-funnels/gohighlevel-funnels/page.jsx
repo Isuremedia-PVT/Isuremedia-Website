@@ -163,7 +163,8 @@ export default function GoHighLevelFunnelsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build, configure, and automate GoHighLevel for service businesses and agencies — CRM, funnels, pipelines, booking, and workflows — set up by people who know it inside out.
+                  We build, configure, and automate GoHighLevel for service businesses and agencies — CRM, funnels, pipelines, booking, and workflows — set up by{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>people who know it inside out</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -178,7 +179,7 @@ export default function GoHighLevelFunnelsPage() {
 
               <div className="ghl-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/ghlfunnelshero/640/720" alt="GoHighLevel setup" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/gohighlevel-funnels-development.webp" alt="GoHighLevel setup" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-gears" style={{ color: '#fff', fontSize: 22 }} />
@@ -240,7 +241,8 @@ export default function GoHighLevelFunnelsPage() {
                   GHL replaces your CRM, funnel builder, email tool, SMS platform, booking system, and reporting — all in one place. The reality for most subscribers is different: half-finished automations, disconnected funnels, and a calendar that doesn&apos;t sync.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia is a GoHighLevel certified partner. We set up and automate GHL properly — for businesses running their own operations, and agencies managing it for clients.
+                  ISureMedia is a{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GoHighLevel certified partner</span>. We set up and automate GHL properly — for businesses running their own operations, and agencies managing it for clients.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -643,7 +645,7 @@ export default function GoHighLevelFunnelsPage() {
         <FAQAccordion />
 
         {/* ══ 13. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" />
+        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" description={<>Whether you subscribed to GoHighLevel and never got it running, or you&apos;re building a system from scratch, the question is the same. Is your business actually running on autopilot, or are leads still slipping through the cracks? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn GHL into a system that works for you</span>.</>} heading="Ready to Put GHL" headingHighlight="On Autopilot?" primaryLabel="Build My GoHighLevel System" secondaryLabel="Talk to a GHL Expert" />
       </main>
       <Footer />
     </>

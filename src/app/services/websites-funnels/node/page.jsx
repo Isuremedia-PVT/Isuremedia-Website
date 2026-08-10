@@ -169,7 +169,8 @@ export default function NodeDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Node.js applications and APIs — real-time features, scalable backends, and full-stack platforms built to specification.
+                  We design and build custom Node.js applications and APIs —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>real-time features, scalable backends</span>, and full-stack platforms built to specification.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function NodeDevelopmentPage() {
 
               <div className="node-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/nodedevhero/640/720" alt="Node.js development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/nodejs-development.webp" alt="Node.js development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-node-js" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function NodeDevelopmentPage() {
                   Most custom Node.js projects that struggle with scaling or maintenance started coding before the service architecture and data flow were properly defined.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia architects before writing code — then builds it tested, documented, and ready to scale.
+                  ISureMedia{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>architects before writing code</span> — then builds it tested, documented, and ready to scale.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function NodeDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" />
+        <CTASection image="/result_footer/Api.webp" description={<>Whether your app needs real-time chat, live notifications, or an API serving multiple platforms, the question is the same. Is your backend actually architected to handle real load, or just holding together? If it&apos;s the latter, let&apos;s fix that. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Node.js application that scales</span>.</>} heading="Built for" headingHighlight="Real-Time Scale?" primaryLabel="Start My Node.js Build" secondaryLabel="Talk to a Backend Developer" />
       </main>
       <Footer />
     </>

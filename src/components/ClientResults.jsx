@@ -6,7 +6,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 const LOGO_STRIP = '/images/partner.webp';
 
 
-const CASES = [
+const DEFAULT_CASES = [
   {
     img: '/images/casestudy-dummy.png',
     client: 'Garden Solution Landscapes',
@@ -22,45 +22,51 @@ const CASES = [
   },
   {
     img: '/images/casestudy-dummy.png',
-    client: 'Apex HVAC Services',
-    intro: 'Every missed call was a missed job, and follow-up was taking hours.',
-    quote: 'We tripled our booked jobs without spending a single extra dollar on ads.',
+    client: 'Hijrah Walks Expeditions',
+    intro: 'Group size changes the price — but GoHighLevel checkout links can\'t do that natively.',
+    quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
     stats: [
-      { val: '+340%',   label: 'Booked Jobs',       sub: 'in 90 days',    icon: 'fa-solid fa-screwdriver-wrench' },
-      { val: '<90 sec', label: 'Avg Lead Response', sub: 'down from 3+ hours', icon: 'fa-solid fa-stopwatch'     },
+      { val: '12×', label: 'Monthly Expeditions', sub: 'managed automatically', icon: 'fa-solid fa-route' },
+      { val: '0',   label: 'Manual Invoices',      sub: 'sent by the team',     icon: 'fa-solid fa-file-invoice-dollar' },
     ],
-    body: 'Apex was spending steadily on Google Ads but converting poorly because follow-up was taking hours. ISM rebuilt their entire lead response system with automated routing and instant follow-up — same ad budget, triple the booked jobs.',
-    link: '/case-studies/hvac-gohighlevel-automation',
-    linkLabel: "Read Apex HVAC's Case Study",
+    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing — neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
+    link: '/case-studies/travel-agency-payment-automation',
+    linkLabel: "Read Hijrah Walks's Case Study",
   },
 ];
 
-export default function ClientResults() {
+export default function ClientResults({
+  cases = DEFAULT_CASES,
+  heading = 'Our Clients Get Results',
+  showLogos = true,
+}) {
   return (
     <section className="cr-section" style={{ padding: '64px 0', background: 'linear-gradient(175deg, #dbeafe 0%, #eff6ff 35%, #ffffff 100%)', position: 'relative', overflow: 'hidden' }}>
 
       <div className="ism-container">
 
         {/* ── Partner Logos Strip ── */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 56 }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={LOGO_STRIP}
-            alt="Partner certifications"
-            style={{ maxWidth: '100%', height: 'auto', display: 'block', opacity: 0.88 }}
-          />
-        </div>
+        {showLogos && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 56 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={LOGO_STRIP}
+              alt="Partner certifications"
+              style={{ maxWidth: '100%', height: 'auto', display: 'block', opacity: 0.88 }}
+            />
+          </div>
+        )}
 
         {/* ── Section Heading ── */}
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
           <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(26px,3vw,40px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', lineHeight: 1.2 }}>
-            Our Clients Get Results
+            {heading}
           </h2>
         </div>
 
         {/* ── Case Study Cards ── */}
         <div className="cr-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 28, marginBottom: 52 }}>
-          {CASES.map((c, i) => (
+          {cases.map((c, i) => (
             <div key={i} style={{ background: '#fff', borderRadius: 18, boxShadow: '0 4px 28px rgba(0,35,83,.10)', border: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column', gap: 18, padding: '24px 24px 26px' }}>
 
               {/* Header row: heading left, thumbnail right */}
@@ -72,8 +78,8 @@ export default function ClientResults() {
                   <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{c.intro}</p>
                 </div>
 
-                {/* Thumbnail — pre-designed dummy image (border/shape already baked in) */}
-                <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 260 }}>
+                {/* Thumbnail — matches this case study's own hero image */}
+                <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={c.img} alt={c.client}
                     style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}

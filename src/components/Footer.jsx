@@ -23,17 +23,11 @@ const cols = [
       { label: 'Case Studies',  href: '/case-studies'   },
       { label: 'Testimonials',  href: '/testimonials'   },
       { label: 'Careers',       href: '/careers'        },
-      { label: 'Affiliates',    href: '/affiliates'     },
     ],
   },
   {
     title: 'Industries',
     links: [
-      { label: 'HVAC & Home Services', href: '/industries/hvac-home-services' },
-      { label: 'E-Commerce',           href: '/industries/ecommerce'          },
-      { label: 'SaaS & Tech',          href: '/industries/saas-tech'          },
-      { label: 'Marketing Agencies',   href: '/industries/marketing-agencies' },
-      { label: 'Real Estate',          href: '/industries/real-estate'        },
       { label: 'All Industries',       href: '/industries'                    },
     ],
   },
@@ -41,7 +35,6 @@ const cols = [
     title: 'Resources',
     links: [
       { label: 'Blog',          href: '/blog'           },
-      { label: 'Guides',        href: '/guides'         },
       { label: 'Free Tools',    href: '/freetools'      },
       { label: 'Privacy Policy',href: '/privacy-policy' },
       { label: 'Terms of Service', href: '/terms'       },
@@ -63,6 +56,8 @@ const legalLinks = [
   { label: 'Privacy Policy', href: '/privacy-policy' },
   { label: 'Terms',          href: '/terms'          },
   { label: 'Cookie Policy',  href: '/cookie-policy'  },
+  { label: 'Refund Policy',  href: '/refund-policy'  },
+  { label: 'GDPR',           href: '/gdpr'           },
 ];
 
 export default function Footer() {
@@ -124,9 +119,9 @@ export default function Footer() {
             <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
               {socials.map(s => (
                 <a key={s.icon} href={s.href}
-                  style={{ width: 34, height: 34, borderRadius: 8, background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.22)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 13, textDecoration: 'none', transition: 'all .18s' }}
-                  onMouseEnter={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.color = 'var(--color-navy)'; e.currentTarget.style.borderColor = 'var(--ism-amber)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,.12)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = 'rgba(255,255,255,.22)'; }}
+                  style={{ width: 34, height: 34, borderRadius: 8, background: 'var(--ism-amber)', border: '1px solid var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-navy)', fontSize: 13, textDecoration: 'none', transition: 'all .18s' }}
+                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 16px rgba(255,176,0,.45)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
                 >
                   <i className={s.icon} />
                 </a>

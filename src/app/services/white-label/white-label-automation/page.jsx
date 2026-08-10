@@ -182,7 +182,8 @@ export default function WhiteLabelAutomationPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We provide white-label GoHighLevel setup, configuration, and ongoing technical support for agencies and SaaS resellers — handling the platform work your clients generate under your brand, so you focus on growing the agency while your clients get expert GHL support fast.
+                  We provide white-label GoHighLevel setup, configuration, and ongoing technical support for agencies and SaaS resellers — handling the platform work your clients generate under your brand, so{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>you focus on growing the agency</span> while your clients get expert GHL support fast.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -198,7 +199,7 @@ export default function WhiteLabelAutomationPage() {
               {/* Right — photo + floating badges */}
               <div className="wla-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/wlaghlsupporthero/640/720" alt="White-label GoHighLevel support for agencies" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/white-label-gohighlevel-support.png" alt="White-label GoHighLevel support for agencies" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-headset" style={{ color: '#fff', fontSize: 22 }} />
@@ -266,7 +267,8 @@ export default function WhiteLabelAutomationPage() {
                   The GoHighLevel white-label opportunity is real. Agencies on SaaS Pro are reselling GHL-powered platforms at $97 to $497 per client per month and keeping 70 to 85% margin. At 30 clients that is $2,000 to $3,000 per month in net recurring revenue from the platform alone.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The constraint is not the platform. It is the support load. ISureMedia handles GHL client support under your brand — your clients submit requests to your support channel, we respond, resolve, and deliver at the standard your clients expect. You get the margin. We handle the platform work.
+                  The constraint is not the platform. It is the support load. ISureMedia handles{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GHL client support under your brand</span> — your clients submit requests to your support channel, we respond, resolve, and deliver at the standard your clients expect. You get the margin. We handle the platform work.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -467,66 +469,6 @@ export default function WhiteLabelAutomationPage() {
             .wla-factor-card-hl:hover{ transform: translateY(-4px); box-shadow: 0 20px 44px rgba(24,64,160,.36); }
             @media (max-width:700px){ .wla-factor-grid{ grid-template-columns:1fr !important; } }
           `}</style>
-        </section>
-
-        {/* ══ 07. EVERYTHING WE HANDLE UNDER YOUR BRAND ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>From Sub-Account Setup to Ongoing Support — All Under Your Agency Name.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every request your clients send, delivered within your agreed onboarding timeline and ready for the client handover you present.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia Handles For Your Agency</p>
-            <div className="wla-sub-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {SUB_SERVICES.map(g => (
-                <div key={g.title} className="wla-sub-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="wla-sub-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="wla-sub-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .wla-sub-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .wla-sub-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .wla-sub-card-img{ transition: transform .4s ease; }
-            .wla-sub-card:hover .wla-sub-card-img{ transform: scale(1.08); }
-            .wla-sub-card:hover .wla-sub-card-icon{ background: var(--ism-amber); }
-            .wla-sub-card:hover .wla-sub-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .wla-sub-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .wla-sub-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 08. COST OF INACTION ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What an Unmanaged Support Queue Is Costing Your Agency.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Every hour spent inside a client&apos;s GHL sub-account is an hour not spent selling or growing the agency. At scale, that support load consumes the time that should be going to the activities that actually build the business.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  A sales process that closes clients faster than the onboarding team can set them up creates a backlog that damages the first impression — and a first impression, once damaged, is expensive to repair.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Clients whose automations break or whose calendars stop syncing do not blame GoHighLevel. They blame the agency that sold it to them. Every unresolved support ticket is a small, compounding risk to the client relationship.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* ══ 09. OUR WHITE-LABEL GHL SUPPORT SERVICES ══════════════════════════════════════════════ */}
@@ -736,7 +678,7 @@ export default function WhiteLabelAutomationPage() {
         <AutomationFAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/white label.webp" />
+        <CTASection image="/result_footer/white label.webp" description={<>Every new GHL client you onboard shouldn&rsquo;t mean another support ticket pile-up for your team. Our white-label automation specialists build and maintain funnels, workflows, and integrations under your brand, freeing your hours for the work that actually grows your agency. Let&rsquo;s talk about how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>handle more clients without the support drag</span>.</>} heading="Ready to Offload" headingHighlight="the GHL Support Load?" primaryLabel="Start White-Label GHL Support" secondaryLabel="Call +1 646-588-1430" />
       </main>
       <Footer />
     </>

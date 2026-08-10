@@ -169,7 +169,8 @@ export default function ShopifyDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build fast, conversion-focused Shopify stores — from first launch to Shopify Plus scale, without the app bloat that slows most stores down.
+                  We design and build{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>fast, conversion-focused Shopify stores</span> — from first launch to Shopify Plus scale, without the app bloat that slows most stores down.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function ShopifyDevelopmentPage() {
 
               <div className="shopify-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/hire/shopify/Shopify Developer  custom store.webp" alt="Shopify development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/shopify-development.webp" alt="Shopify development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-shopify" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function ShopifyDevelopmentPage() {
                   Most Shopify stores accumulate apps over time until the storefront is slow, cluttered, and nobody remembers what half of them do.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds lean, fast Shopify stores — and helps existing stores cut the bloat that&apos;s quietly costing them conversions.
+                  ISureMedia builds{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>lean, fast Shopify stores</span> — and helps existing stores cut the bloat that&apos;s quietly costing them conversions.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -454,18 +456,12 @@ export default function ShopifyDevelopmentPage() {
               {SERVICES.map((s, i) => {
                 const variant = WHY_MATTERS_VARIANTS[i % 3];
                 return (
-                  <div key={s.title} className="services-card" style={{ background: variant.cardBg, borderRadius: 16, overflow: 'hidden', border: variant.dark ? 'none' : '1px solid var(--color-border)' }}>
-                    <div className="services-card-img" style={{ width: '100%', height: 130, overflow: 'hidden' }}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={s.img} alt={s.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <div key={s.title} className="services-card" style={{ background: variant.cardBg, borderRadius: 16, padding: '28px 22px', border: variant.dark ? 'none' : '1px solid var(--color-border)' }}>
+                    <div style={{ width: 44, height: 44, borderRadius: 12, background: variant.iconBg, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                      <i className={s.icon} style={{ color: variant.iconColor, fontSize: 17 }} />
                     </div>
-                    <div style={{ padding: '20px 22px 24px' }}>
-                      <div style={{ width: 40, height: 40, borderRadius: 10, background: variant.iconBg, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
-                        <i className={s.icon} style={{ color: variant.iconColor, fontSize: 16 }} />
-                      </div>
-                      <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: variant.textColor, marginBottom: 8, lineHeight: 1.3 }}>{s.title}</h3>
-                      <p style={{ fontFamily: I, fontSize: 13, color: variant.descColor, lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
-                    </div>
+                    <h3 style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: variant.textColor, marginBottom: 8, lineHeight: 1.3 }}>{s.title}</h3>
+                    <p style={{ fontFamily: I, fontSize: 13, color: variant.descColor, lineHeight: 1.65, margin: 0 }}>{s.desc}</p>
                   </div>
                 );
               })}
@@ -474,8 +470,6 @@ export default function ShopifyDevelopmentPage() {
           <style>{`
             .services-card{ transition: transform .22s ease, box-shadow .22s ease; }
             .services-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.14); }
-            .services-card-img img{ transition: transform .4s ease; }
-            .services-card:hover .services-card-img img{ transform: scale(1.08); }
             @media (max-width:1100px){ .services-grid{ grid-template-columns:repeat(2,1fr) !important; } }
             @media (max-width:600px){ .services-grid{ grid-template-columns:1fr !important; } }
           `}</style>
@@ -687,7 +681,7 @@ export default function ShopifyDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/website.webp" />
+        <CTASection image="/result_footer/website.webp" description={<>Whether you&apos;re launching a new store, drowning in app overload, or watching checkout friction cost you sales, the question is the same. Is your store actually built to convert, or just built to look good? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Shopify store that actually sells</span>.</>} heading="Ready to Build" headingHighlight="a Store That Sells?" primaryLabel="Build My Shopify Store" secondaryLabel="Talk to a Shopify Expert" />
       </main>
       <Footer />
     </>

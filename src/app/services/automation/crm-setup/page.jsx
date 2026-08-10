@@ -178,7 +178,8 @@ export default function CRMSetupPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We configure, customise, and manage CRM systems for service businesses and agencies — so every lead is tracked, every follow-up happens, and your sales team always knows exactly where every opportunity stands without manual data entry.
+                  We configure, customise, and manage CRM systems for service businesses and agencies — so{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every lead is tracked, every follow-up happens</span>, and your sales team always knows exactly where every opportunity stands without manual data entry.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -194,7 +195,7 @@ export default function CRMSetupPage() {
               {/* Right — photo + floating badges */}
               <div className="crm-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/crmsetuphero/640/720" alt="CRM setup and sales pipeline configuration" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/crm-setup.webp" alt="CRM setup and sales pipeline configuration" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-sitemap" style={{ color: '#fff', fontSize: 22 }} />
@@ -262,7 +263,8 @@ export default function CRMSetupPage() {
                   One in four small and medium businesses still use spreadsheets to manage their leads and contacts. Of the businesses that have a CRM, 79% of opportunity-related data never gets entered — because the setup created friction, the team was not trained properly, or the system does not match the way the business actually works.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  A CRM that nobody uses is not just a wasted subscription. It creates false confidence — you think leads are being tracked when they are not. Isuremedia configures CRMs that your team actually uses, built around your sales process, not a generic template.
+                  A CRM that nobody uses is not just a wasted subscription. It creates false confidence — you think leads are being tracked when they are not. Isuremedia configures CRMs that your team actually uses,{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around your sales process</span>, not a generic template.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -505,26 +507,6 @@ export default function CRMSetupPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. COST OF INACTION ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>A CRM Nobody Trusts Is Worse Than No CRM at All.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  A CRM that nobody uses is not just a wasted subscription. It creates false confidence — you think leads are being tracked when they are not, and you think follow-ups are happening when they are not.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Somewhere in that gap, customers who should have been closed are calling a competitor who answered first. Of businesses that have a CRM, 79% of opportunity-related data never gets entered — the leak is silent and it compounds every week it goes unfixed.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  These are not platform problems. They are configuration and ownership problems, and they get more expensive to fix the longer a CRM is left to decay unmanaged.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* ══ 09. OUR CRM SETUP SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -729,7 +711,7 @@ export default function CRMSetupPage() {
         <CRMFAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/crm.webp" />
+        <CTASection image="/result_footer/crm.webp" description={<>A CRM that your team avoids logging into is worse than no CRM at all. When it is set up around how your sales process actually works, everyone uses it and your pipeline stays accurate. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a CRM your team will trust</span>.</>} heading="Tired of a" headingHighlight="Messy CRM?" primaryLabel="Fix My CRM" secondaryLabel="Talk to a CRM Specialist" />
       </main>
       <Footer />
     </>

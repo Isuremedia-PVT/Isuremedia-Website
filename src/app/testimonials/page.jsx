@@ -163,7 +163,7 @@ export default function TestimonialsPage() {
 
               {/* RIGHT — image */}
               <div className="tsm-hero-img-wrap" style={{ position: 'relative' }}>
-                <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 28px 72px rgba(0,35,83,.16)' }}>
+                <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/banner/testimonial.webp"

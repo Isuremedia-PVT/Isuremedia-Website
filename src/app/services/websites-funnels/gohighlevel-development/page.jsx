@@ -93,7 +93,7 @@ const FAQS = [
 const RELATED = [
   { icon: 'fa-solid fa-diagram-project', title: 'GoHighLevel Funnels & Automation', desc: 'Full-funnel builds with automated follow-up and booking.', href: '/services/websites-funnels/gohighlevel-funnels' },
   { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead and deal organised.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-globe', title: 'White-Label GoHighLevel Support', desc: 'GHL build and support delivered under your agency’s brand.', href: '/services/white-label/white-label-gohighlevel-support' },
+  { icon: 'fa-solid fa-globe', title: 'White-Label GoHighLevel Support', desc: 'GHL build and support delivered under your agency’s brand.', href: '/services/white-label/white-label-automation' },
 ];
 
 function FAQAccordion() {
@@ -169,7 +169,8 @@ export default function GoHighLevelDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build custom GoHighLevel websites, funnels, CRM pipelines, and automations — configured around your actual sales process, not a generic template.
+                  We build custom GoHighLevel websites, funnels, CRM pipelines, and automations —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>configured around your actual sales process</span>, not a generic template.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function GoHighLevelDevelopmentPage() {
 
               <div className="ghldev-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/ghldevhero/640/720" alt="GoHighLevel development" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/gohighlevel-development.webp" alt="GoHighLevel development" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-robot" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function GoHighLevelDevelopmentPage() {
                   Most GHL accounts get set up from a default snapshot, tweaked lightly, and never properly configured around the actual business or sales process.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds GoHighLevel sites, funnels, and automations custom — tested, trained into the team, and built to actually be used.
+                  ISureMedia builds GoHighLevel sites, funnels, and automations custom — tested, trained into the team, and{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to actually be used</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function GoHighLevelDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" />
+        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" description={<>Most GoHighLevel accounts are running on a generic snapshot that was never built around how the business actually sells. Your site, funnels, pipelines, and automations should be configured around your real sales process, not a template. Talk to us and we will help you get a GoHighLevel setup that is <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built right from day one</span>.</>} heading="One Platform." headingHighlight="Built Right." primaryLabel="Build My GoHighLevel System" secondaryLabel="Talk to a GHL Developer" />
       </main>
       <Footer />
     </>

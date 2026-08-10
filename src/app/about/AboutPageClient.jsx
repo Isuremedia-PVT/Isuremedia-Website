@@ -601,12 +601,6 @@ export default function AboutPageClient() {
 
                 {/* ── LEFT ── */}
                 <div>
-                  {/* Eyebrow */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 22 }}>
-                    <div style={{ width: 28, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
-                    <span style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.12em', textTransform: 'uppercase' }}>Your Growth Starts Here</span>
-                  </div>
-
                   {/* Heading */}
                   <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(26px,3vw,46px)', color: '#fff', lineHeight: 1.12, letterSpacing: '-0.5px', marginBottom: 22 }}>
                     Ready to rank higher<br />

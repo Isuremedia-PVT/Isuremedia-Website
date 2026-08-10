@@ -8,50 +8,19 @@ import CTASection from '@/components/CTASection';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const DUMMY_IMG = '/images/casestudy-dummy.png';
-
-/* ── The 6 core services ─────────────────────────────────────────────── */
+/* ── Services represented by a live case study ───────────────────────── */
 const SERVICES = [
   { label: 'Websites & Funnels',     icon: 'fa-solid fa-globe',            href: '/services/websites-funnels'     },
-  { label: 'SEO',                  icon: 'fa-solid fa-magnifying-glass', href: '/services/seo'                  },
-  { label: 'PPC / Paid Ads',       icon: 'fa-solid fa-bars-staggered',   href: '/services/ppc-paid-marketing'   },
+  { label: 'SEO',                    icon: 'fa-solid fa-magnifying-glass', href: '/services/seo'                  },
+  { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/services/ppc-paid-marketing'   },
   { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/services/content-creative'     },
-  { label: 'White Label',            icon: 'fa-solid fa-tag',              href: '/services/white-label'          },
   { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/services/marketing-automation' },
 ];
 
 const CASES = [
   {
     service: 'Websites & Funnels',
-    img: DUMMY_IMG,
-    client: 'Mi Amor',
-    intro: 'A slow, outdated website was quietly costing them customers every single day.',
-    quote: 'The new funnel our team built converts almost twice as well as our old site ever did.',
-    stats: [
-      { val: '+112%', label: 'Conversion Rate', sub: 'after relaunch',  icon: 'fa-solid fa-bolt' },
-      { val: '-38%',  label: 'Bounce Rate',      sub: 'first 90 days',  icon: 'fa-solid fa-arrow-trend-down' },
-    ],
-    body: 'Mi Amor came to us with a slow, outdated site that visitors were bouncing from within seconds. We rebuilt the entire funnel — faster load times, a clearer offer, and a streamlined checkout — and conversions nearly doubled within the first quarter.',
-    link: '/case-studies/website-relaunch-conversion-rate',
-    linkLabel: "Read Mi Amor's Case Study",
-  },
-  {
-    service: 'Websites & Funnels',
-    img: DUMMY_IMG,
-    client: 'Meridian Wealth Partners',
-    intro: 'A brochure-style site was generating almost no qualified consultation requests.',
-    quote: 'We finally have a website that brings in the right kind of client instead of just looking nice.',
-    stats: [
-      { val: '+186%', label: 'Consultation Requests', sub: 'in 90 days',   icon: 'fa-solid fa-calendar-check' },
-      { val: '-44%',  label: 'Cost Per Lead',          sub: 'same ad spend', icon: 'fa-solid fa-arrow-trend-down' },
-    ],
-    body: "Meridian's old site described the firm well but gave visitors no clear next step. We rebuilt it around a single lead-gen funnel — a clear offer, a short qualification form, and an automated booking flow — and consultation requests nearly tripled.",
-    link: '/case-studies/lead-gen-website-funnel',
-    linkLabel: "Read Meridian's Case Study",
-  },
-  {
-    service: 'Websites & Funnels',
-    img: DUMMY_IMG,
+    img: '/images/casestudy-dummy.png',
     client: 'Airtopia',
     intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
     quote: 'Isuremedia built exactly what we needed and did it properly.',
@@ -64,8 +33,22 @@ const CASES = [
     linkLabel: "Read Airtopia's Case Study",
   },
   {
-    service: 'SEO & Organic Growth',
-    img: DUMMY_IMG,
+    service: 'Websites & Funnels',
+    img: '/images/casestudy-dummy.png',
+    client: 'Isuremedia — AdOS Platform',
+    intro: 'Managing 100+ campaigns across 20–25 Meta ad accounts manually was consuming 20 hours a week.',
+    quote: 'A single developer delivered a full-stack AI platform in about a month, cutting manual campaign management time by 60-75%.',
+    stats: [
+      { val: '60-75%', label: 'Less Manual Effort', sub: 'down from 20 hrs/week',      icon: 'fa-solid fa-clock' },
+      { val: '<60 sec', label: 'Full Account Analysis', sub: 'via AI, was hours manually', icon: 'fa-solid fa-robot' },
+    ],
+    body: 'Isuremedia manages 20-25 Meta ad accounts and 100+ campaigns, and manual monitoring was consuming 20 hours a week. We built AdOS, an internal AI-powered advertising platform integrating the Meta Graph API with Claude and GPT-4o — cutting manual effort by 60-75% and running full account analysis in under a minute.',
+    link: '/case-studies/ados-internal-ai-advertising-platform',
+    linkLabel: "Read the AdOS Case Study",
+  },
+  {
+    service: 'SEO',
+    img: '/images/casestudy-dummy.png',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
     quote: 'What Isuremedia built is a website and profile that finally reflect our reputation — and it shows up in the numbers every month.',
@@ -78,8 +61,8 @@ const CASES = [
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
-    service: 'SEO & Organic Growth',
-    img: DUMMY_IMG,
+    service: 'SEO',
+    img: '/images/casestudy-dummy.png',
     client: 'Brown Legal Immigration',
     intro: '100% of search traffic came from the map pack. The website was invisible.',
     quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
@@ -92,130 +75,88 @@ const CASES = [
     linkLabel: "Read Brown Legal Immigration's Case Study",
   },
   {
-    service: 'SEO & Organic Growth',
-    img: DUMMY_IMG,
-    client: 'Coastal Supply Co.',
-    intro: 'Product pages were invisible on Google despite genuinely strong products.',
-    quote: 'Organic is now our single biggest source of new customers, and it keeps compounding.',
+    service: 'Marketing Automation',
+    img: '/images/casestudy-dummy.png',
+    client: 'Mentara Health',
+    intro: 'Exam content was managed with no clear hierarchy — no way to organise by certification type, section, or case scenario.',
+    quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',
     stats: [
-      { val: '+312%', label: 'Organic Revenue', sub: 'year over year', icon: 'fa-solid fa-dollar-sign' },
-      { val: '9→2',   label: 'Avg Ranking Position', sub: 'top category terms', icon: 'fa-solid fa-arrow-up-right-dots' },
+      { val: '5-Level', label: 'Content Hierarchy', sub: 'category to question', icon: 'fa-solid fa-sitemap' },
+      { val: 'Clone-Enabled', label: 'Every Level', sub: 'exam, section & question', icon: 'fa-solid fa-clone' },
     ],
-    body: "Coastal Supply's product pages were thin and rarely ranked past page two. We rebuilt product and category content around real buyer search intent and built a supporting content cluster, and organic revenue grew 312% year over year.",
-    link: '/case-studies/dtc-ecommerce-seo-content',
-    linkLabel: "Read Coastal Supply's Case Study",
-  },
-  {
-    service: 'PPC / Paid Marketing',
-    img: DUMMY_IMG,
-    client: 'TruckAC+',
-    intro: 'Paid media was live everywhere, but none of it was tied into one funnel.',
-    quote: 'ISM is handling business the way they said they would in the beginning.',
-    stats: [
-      { val: '+$350K', label: 'Ad Revenue',        sub: 'ROAS optimised', icon: 'fa-solid fa-dollar-sign'   },
-      { val: '+1,092', label: 'Website Purchases', sub: 'in 6 months',    icon: 'fa-solid fa-cart-shopping' },
-    ],
-    body: "ISM rebuilt TruckAC+'s paid media strategy across social, PPC and programmatic channels. The full-funnel approach generated a 23X return on ad spend, +$350K in ad revenue and +1,000 purchases in six months, exceeding performance benchmarks and seasonal goals.",
-    link: '/case-studies/saas-linkedin-ads-cost-per-demo',
-    linkLabel: "Read TruckAC+'s Case Study",
-  },
-  {
-    service: 'PPC / Paid Marketing',
-    img: DUMMY_IMG,
-    client: 'BrightPath Dental',
-    intro: 'Google Ads were generating clicks, but most calls were the wrong kind of patient.',
-    quote: 'Our front desk stopped dreading the phone — the leads coming in now are the right fit.',
-    stats: [
-      { val: '-52%', label: 'Cost Per Qualified Lead', sub: 'in 60 days', icon: 'fa-solid fa-arrow-trend-down' },
-      { val: '+96%', label: 'Booked Appointments', sub: 'from ad traffic', icon: 'fa-solid fa-calendar-check' },
-    ],
-    body: "BrightPath's ads were bringing in volume, but targeting and vague copy meant most calls fell through. We rebuilt targeting around high-value procedures and matched every ad to a dedicated landing page, cutting cost per qualified lead by more than half.",
-    link: '/case-studies/local-business-google-ads-cpl',
-    linkLabel: "Read BrightPath's Case Study",
-  },
-  {
-    service: 'Content & Creative',
-    img: DUMMY_IMG,
-    client: 'Bloom & Bright Co.',
-    intro: 'Content was still going out every week, but engagement had been sliding for months.',
-    quote: 'Every piece of content actually sounds like us now, not like generic marketing copy.',
-    stats: [
-      { val: '+3.4x', label: 'Blog Organic Traffic', sub: 'in 5 months',           icon: 'fa-solid fa-pen-nib' },
-      { val: '+61%',  label: 'Social Engagement',    sub: 'quarter over quarter',  icon: 'fa-solid fa-heart'   },
-    ],
-    body: "Bloom & Bright's blog and social content had gone stale, and engagement was sliding. We rebuilt their content calendar around real buyer questions and refreshed their brand voice — a 3.4x lift in blog traffic and a 61% jump in social engagement followed in under six months.",
-    link: '/case-studies/content-marketing-blog-traffic',
-    linkLabel: "Read Bloom & Bright's Case Study",
-  },
-  {
-    service: 'Content & Creative',
-    img: DUMMY_IMG,
-    client: 'Fern & Oak Interiors',
-    intro: 'Product photography and ad creative looked homemade next to bigger competitors.',
-    quote: 'Our ads finally look like the premium brand we actually are.',
-    stats: [
-      { val: '+2.6x', label: 'Ad Click-Through Rate', sub: 'after creative refresh', icon: 'fa-solid fa-images' },
-      { val: '-31%',  label: 'Cost Per Purchase',      sub: 'same ad spend',        icon: 'fa-solid fa-arrow-trend-down' },
-    ],
-    body: "Fern & Oak's product shots and ad creative were inconsistent and did not match the quality of the products themselves. We rebuilt their entire visual library — photography, ad templates, and social graphics — and click-through rate more than doubled.",
-    link: '/case-studies/ecommerce-creative-refresh',
-    linkLabel: "Read Fern & Oak's Case Study",
-  },
-  {
-    service: 'White Label',
-    img: DUMMY_IMG,
-    client: 'Northline Digital',
-    intro: 'Capped at 12 clients with a full team and no room left to grow.',
-    quote: 'ISM became our invisible delivery team — our clients have no idea the work is outsourced.',
-    stats: [
-      { val: '12→31', label: 'Active Client Accounts', sub: 'in 8 months',        icon: 'fa-solid fa-layer-group' },
-      { val: '0',     label: 'Missed Deadlines',        sub: 'since day one',     icon: 'fa-regular fa-clock'     },
-    ],
-    body: 'Northline Digital was capped at 12 clients with a full internal team. ISM became their white label delivery engine for SEO and PPC, letting them scale to 31 active accounts in eight months without hiring a single extra person.',
-    link: '/case-studies/white-label-agency-scaling',
-    linkLabel: "Read Northline Digital's Case Study",
-  },
-  {
-    service: 'White Label',
-    img: DUMMY_IMG,
-    client: 'Summit Growth Partners',
-    intro: 'Won a run of larger web design projects with nowhere near enough dev capacity.',
-    quote: 'ISM lets us say yes to projects we would have had to turn down six months ago.',
-    stats: [
-      { val: '+140%', label: 'Web Project Capacity', sub: 'no new hires', icon: 'fa-solid fa-layer-group' },
-      { val: '100%',  label: 'On-Time Delivery',      sub: 'across all projects', icon: 'fa-regular fa-clock' },
-    ],
-    body: 'Summit Growth Partners was winning larger web design retainers than their small dev team could deliver on time. ISM became their white-label development team, taking projects from design handoff to launch under the Summit brand.',
-    link: '/case-studies/white-label-web-development-capacity',
-    linkLabel: "Read Summit Growth's Case Study",
+    body: 'Mentara Health needed a structured way to manage exam content for a healthcare certification platform — organised by category, exam, section, case study, and question, with support for real-world scenario-based assessment. We built a fully structured five-level content hierarchy with clone functionality at every level and progressive, case-based assessments.',
+    link: '/case-studies/healthcare-exam-platform-development',
+    linkLabel: "Read Mentara Health's Case Study",
   },
   {
     service: 'Marketing Automation',
-    img: DUMMY_IMG,
-    client: 'Apex HVAC Services',
-    intro: 'Every missed call was a missed job, and follow-up was taking hours.',
-    quote: 'We tripled our booked jobs without spending a single extra dollar on ads.',
+    img: '/images/casestudy-dummy.png',
+    client: 'Hijrah Walks Expeditions',
+    intro: 'Group size changes the price — but GoHighLevel checkout links can\'t do that natively.',
+    quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
     stats: [
-      { val: '+340%',   label: 'Booked Jobs',       sub: 'in 90 days',    icon: 'fa-solid fa-screwdriver-wrench' },
-      { val: '<90 sec', label: 'Avg Lead Response', sub: 'down from 3hr', icon: 'fa-solid fa-stopwatch'          },
+      { val: '12×', label: 'Monthly Expeditions', sub: 'managed automatically', icon: 'fa-solid fa-route' },
+      { val: '0',   label: 'Manual Invoices',      sub: 'sent by the team',     icon: 'fa-solid fa-file-invoice-dollar' },
     ],
-    body: 'Apex was spending steadily on Google Ads but converting poorly because follow-up was taking hours. We rebuilt their entire lead response system with automated routing and instant follow-up — same ad budget, triple the booked jobs.',
-    link: '/case-studies/hvac-gohighlevel-automation',
-    linkLabel: "Read Apex HVAC's Case Study",
+    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing — neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
+    link: '/case-studies/travel-agency-payment-automation',
+    linkLabel: "Read Hijrah Walks's Case Study",
   },
   {
-    service: 'Marketing Automation',
-    img: DUMMY_IMG,
-    client: 'Bloom Aesthetics',
-    intro: 'A med spa was losing a quarter of its booked appointments to no-shows every month.',
-    quote: 'Rebooking used to be a full-time job. Now it just happens on its own.',
+    service: 'PPC / Paid Ads',
+    img: '/images/casestudy-dummy.png',
+    client: 'Scrubs4U',
+    intro: 'Purchases were inconsistent and rising acquisition costs made it hard to scale profitably.',
+    quote: 'A 7.9% increase in ad spend delivered a 173.6% increase in revenue and 154% higher ROAS.',
     stats: [
-      { val: '-61%', label: 'No-Show Rate',       sub: 'in 90 days',     icon: 'fa-solid fa-calendar-check' },
-      { val: '+74%', label: 'Rebooking Rate',     sub: 'post-treatment', icon: 'fa-solid fa-rotate' },
+      { val: '3.54x',   label: 'All-Time ROAS',     sub: 'across full engagement', icon: 'fa-solid fa-chart-line' },
+      { val: '+173.6%', label: 'Revenue Growth',    sub: 'same 30-day window YoY', icon: 'fa-solid fa-dollar-sign' },
     ],
-    body: 'Bloom Aesthetics had no reminder or rebooking system beyond staff memory. ISM built an automated appointment reminder and post-treatment rebooking sequence in GoHighLevel, cutting no-shows by 61% and driving a 74% rebooking rate.',
-    link: '/case-studies/med-spa-booking-automation',
-    linkLabel: "Read Bloom Aesthetics' Case Study",
+    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization — growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
+    link: '/case-studies/ecommerce-meta-ads-roas-scaling',
+    linkLabel: "Read Scrubs4U's Case Study",
+  },
+  {
+    service: 'PPC / Paid Ads',
+    img: '/images/casestudy-dummy.png',
+    client: 'Global Allianz',
+    intro: 'Lead volume was inconsistent and Cost Per Lead was too high to scale profitably.',
+    quote: 'With only a 33% increase in ad spend, lead volume grew 1,309% while Cost Per Lead dropped over 90%.',
+    stats: [
+      { val: '+1,309%', label: 'Lead Volume Growth', sub: '22 → 310 leads',    icon: 'fa-solid fa-users' },
+      { val: '−90.5%',  label: 'Cost Per Lead',      sub: '$72.99 → $6.91',   icon: 'fa-solid fa-arrow-trend-down' },
+    ],
+    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting — growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
+    link: '/case-studies/immigration-meta-ads-lead-generation',
+    linkLabel: "Read Global Allianz's Case Study",
+  },
+  {
+    service: 'Content & Creative',
+    img: '/images/casestudy-dummy.png',
+    client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
+    intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
+    quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
+    stats: [
+      { val: '0 → 800+', label: 'Followers',       sub: 'in 7 months',                    icon: 'fa-solid fa-users' },
+      { val: '1',        label: 'Podcast Recording', sub: 'became weeks of content',       icon: 'fa-solid fa-video' },
+    ],
+    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content — growing the account from 0 to 800+ engaged followers in 7 months.',
+    link: '/case-studies/plastic-surgeon-instagram-brand-growth',
+    linkLabel: "Read Dr. Golshani's Case Study",
+  },
+  {
+    service: 'Content & Creative',
+    img: '/images/casestudy-dummy.png',
+    client: 'Garnus India',
+    intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
+    quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
+    stats: [
+      { val: '0 → 447', label: 'Followers',      sub: 'fully organic, in 6 months', icon: 'fa-solid fa-users' },
+      { val: '50-60k+', label: 'Organic Views',  sub: 'across the period',          icon: 'fa-solid fa-eye' },
+    ],
+    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy — growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
+    link: '/case-studies/ecommerce-instagram-organic-growth-garnus',
+    linkLabel: "Read Garnus India's Case Study",
   },
 ];
 
@@ -236,8 +177,8 @@ function CaseCard({
           <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{c.intro}</p>
         </div>
 
-        {/* Thumbnail — pre-designed dummy image (border/shape already baked in) */}
-        <div className="cs-thumb" style={{ position: 'relative', width: '100%', height: 260 }}>
+        {/* Thumbnail — matches this case study's own hero image */}
+        <div className="cs-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={c.img} alt={c.client}
             style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
@@ -323,7 +264,7 @@ export default function CaseStudiesPage() {
 
               {/* RIGHT — image */}
               <div className="cs-hero-img-wrap" style={{ position: 'relative' }}>
-                <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 28px 72px rgba(0,35,83,.16)' }}>
+                <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/banner/casr study.webp"
@@ -456,7 +397,7 @@ export default function CaseStudiesPage() {
           .cs-grid { grid-template-columns: minmax(0,1fr) !important; }
         }
         @media (max-width: 480px) {
-          .cs-thumb { height: 140px !important; }
+          .cs-thumb { height: 160px !important; }
           .cs-hero-section { padding: 48px 0 72px !important; }
         }
         @media (max-width: 640px) {

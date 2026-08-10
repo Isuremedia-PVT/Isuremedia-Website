@@ -169,7 +169,8 @@ export default function ApiIntegrationPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build API integrations that connect your CRM, e-commerce platform, and business tools — so data flows automatically, accurately, and in real time.
+                  We build API integrations that connect your CRM, e-commerce platform, and business tools — so data flows{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>automatically, accurately, and in real time</span>.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function ApiIntegrationPage() {
 
               <div className="api-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/apiintegrationhero/640/720" alt="API integration" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/api-integration.webp" alt="API integration" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-plug" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function ApiIntegrationPage() {
                   Copy-pasting between your CRM, spreadsheets, and other tools costs time and eventually introduces an error that costs a lot more — a missed order, a duplicate contact, a lost lead.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds API integrations that connect your systems properly — mapped, tested, and monitored, so data moves automatically and accurately.
+                  ISureMedia builds API integrations that connect your systems properly —{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>mapped, tested, and monitored</span>, so data moves automatically and accurately.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function ApiIntegrationPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" />
+        <CTASection image="/result_footer/Api.webp" description={<>When your CRM, your invoicing tool, and your marketing platform can't share data, someone on your team ends up doing it by hand, copying fields between tabs all day. A solid API integration closes that gap for good. Talk to us today and we will help you make your systems <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>work as one connected system</span>.</>} heading="Ready for Systems That" headingHighlight="Actually Talk?" primaryLabel="Connect My Systems" secondaryLabel="Talk to an Integration Expert" />
       </main>
       <Footer />
     </>

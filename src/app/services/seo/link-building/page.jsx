@@ -178,7 +178,9 @@ export default function LinkBuildingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We earn high-quality backlinks from real, relevant websites that tell Google your site is worth ranking. More referring domains, stronger domain authority, higher rankings — done the right way.
+                  We earn{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>high-quality backlinks from real, relevant websites</span>{' '}
+                  that tell Google your site is worth ranking. More referring domains, stronger domain authority, higher rankings — done the right way.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -194,7 +196,7 @@ export default function LinkBuildingPage() {
               {/* Right — photo + floating badges */}
               <div className="lb-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/linkbuildinghero/640/720" alt="Link building outreach" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/linkbuildinghero/640/720" alt="Link building outreach" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-link" style={{ color: '#fff', fontSize: 22 }} />
@@ -262,7 +264,9 @@ export default function LinkBuildingPage() {
                   Content and on-page SEO can only take your rankings so far. When two pages are equally optimised, the one with stronger backlinks wins. Backlinks are still a confirmed top-three Google ranking factor in 2026 — and the gap between your site and your competitors is measured in referring domains.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia builds backlinks the right way. No link farms. No private blog networks. No paid placements on sites that exist only to sell links. Every link we build is editorially placed on a real, relevant website — the kind Google trusts and rewards.
+                  Isuremedia builds backlinks the right way. No link farms. No private blog networks. No paid placements on sites that exist only to sell links. Every link we build is{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>editorially placed on a real, relevant website</span>{' '}
+                  — the kind Google trusts and rewards.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -714,7 +718,7 @@ export default function LinkBuildingPage() {
         <LinkFAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/- Link Building.webp" />
+        <CTASection image="/result_footer/- Link Building.webp" description={<>Every day your competitors keep earning links, the gap in domain authority gets harder to close. Content and on-page work can only take rankings so far without it. Reach out and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build the backlink profile Google actually trusts</span>.</>} heading="Ready to Earn" headingHighlight="Real Authority?" primaryLabel="Claim My Free Backlink Audit" secondaryLabel="Talk to a Link Building Specialist" />
       </main>
       <Footer />
     </>

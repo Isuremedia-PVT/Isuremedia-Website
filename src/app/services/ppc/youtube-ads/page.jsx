@@ -169,7 +169,8 @@ export default function YouTubeAdsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and manage YouTube Ads campaigns across in-stream, in-feed, and Shorts that earn attention, build trust, and convert viewers into leads and customers.
+                  We build and manage YouTube Ads campaigns across in-stream, in-feed, and Shorts that{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>earn attention, build trust, and convert viewers</span> into leads and customers.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -184,7 +185,7 @@ export default function YouTubeAdsPage() {
 
               <div className="yads-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/youtubeadshero/640/720" alt="YouTube Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="https://picsum.photos/seed/youtubeadshero/640/720" alt="YouTube Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-youtube" style={{ color: '#fff', fontSize: 22 }} />
@@ -246,7 +247,8 @@ export default function YouTubeAdsPage() {
                   Most businesses have run a video ad, watched the skip rate climb, and wondered what happened to the budget. That is not a YouTube strategy. That is an unearned five seconds.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Real YouTube advertising is built on hook strategy, audience targeting, and proper conversion tracking. ISureMedia builds campaigns that are built to be watched, not just to be shown.
+                  Real YouTube advertising is built on hook strategy, audience targeting, and proper conversion tracking. ISureMedia builds campaigns that are{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to be watched, not just to be shown</span>.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -679,7 +681,7 @@ export default function YouTubeAdsPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/google ads.webp" />
+        <CTASection image="/result_footer/google ads.webp" description={<>Video builds trust faster than any static banner ever will, but only when the right message reaches the right viewer at the right moment in their watch session. We craft YouTube campaigns that target intent, not just impressions, so your budget works harder. Let's help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>convert watch time into loyal customers</span>.</>} heading="Ready for More" headingHighlight="Watch-Time Revenue?" primaryLabel="Start My YouTube Ad Campaign" secondaryLabel="Talk to a Video Ads Expert" />
       </main>
       <Footer />
     </>

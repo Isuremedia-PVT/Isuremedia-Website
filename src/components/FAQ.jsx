@@ -78,7 +78,7 @@ export default function FAQ() {
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; }}
           >
-            Talk to Our Team <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+            Talk to Us <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
           </a>
         </div>
       </div>

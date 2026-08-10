@@ -178,7 +178,8 @@ export default function N8nPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Self-hosted or cloud n8n workflows with full customisation, no vendor lock-in, and unlimited runs.
+                  Self-hosted or cloud n8n workflows with{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>full customisation, no vendor lock-in</span>, and unlimited runs.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -194,7 +195,7 @@ export default function N8nPage() {
               {/* Right — photo + floating badges */}
               <div className="n8n-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/n8nautomationhero/640/720" alt="n8n self-hosted workflow automation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block', boxShadow: '0 30px 70px rgba(0,35,83,.18)' }} />
+                <img src="/banner/n8n-automation.webp" alt="n8n self-hosted workflow automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-server" style={{ color: '#fff', fontSize: 22 }} />
@@ -262,7 +263,8 @@ export default function N8nPage() {
                   SaaS automation tools come with pricing models that penalise you for growth. The more tasks you run, the more you pay. For engineering teams, agencies, and data-heavy businesses, this model becomes expensive fast. n8n removes that ceiling entirely.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  As an open-source workflow automation platform, n8n can be self-hosted on your own infrastructure, extended with custom JavaScript or Python code nodes, and integrated with any API — no integration marketplace dependency required.
+                  As an open-source workflow automation platform, n8n can be{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>, extended with custom JavaScript or Python code nodes, and integrated with any API — no integration marketplace dependency required.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -465,66 +467,6 @@ export default function N8nPage() {
             .n8n-factor-card-hl:hover{ transform: translateY(-4px); box-shadow: 0 20px 44px rgba(24,64,160,.36); }
             @media (max-width:700px){ .n8n-factor-grid{ grid-template-columns:1fr !important; } }
           `}</style>
-        </section>
-
-        {/* ══ 07. WHAT'S INCLUDED ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>From Server Setup to 10 Live Workflows.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                We handle everything from infrastructure to workflow delivery and team handover.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia builds into your n8n instance</p>
-            <div className="n8n-included-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {N8N_INCLUDED_CARDS.map(g => (
-                <div key={g.title} className="n8n-included-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="n8n-included-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="n8n-included-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .n8n-included-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .n8n-included-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .n8n-included-card-img{ transition: transform .4s ease; }
-            .n8n-included-card:hover .n8n-included-card-img{ transform: scale(1.08); }
-            .n8n-included-card:hover .n8n-included-card-icon{ background: var(--ism-amber); }
-            .n8n-included-card:hover .n8n-included-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .n8n-included-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .n8n-included-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 08. COST OF INACTION ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Per-Task Pricing Punishes Growth.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  SaaS automation platforms bill by the task. As your business grows and your automations run more often, your bill grows with it — sometimes faster than the value the automation delivers.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Vendor lock-in compounds the problem. Workflows built entirely inside a proprietary platform are expensive and slow to migrate later, and you have no control over how or where your data is processed.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  Self-hosted n8n removes both problems at once — unlimited runs at no per-execution cost, and full ownership of your data and infrastructure from day one.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* ══ 09. OUR N8N SERVICES ══════════════════════════════════════════════ */}
@@ -731,7 +673,7 @@ export default function N8nPage() {
         <N8nFAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Automation.webp" />
+        <CTASection image="/result_footer/Automation.webp" description={<>If off-the-shelf automation tools keep hitting walls you can't get around, you need something built for full control. n8n gives your team the flexibility to build exactly the workflow your process demands. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automations with no limits</span>.</>} heading="Ready for Full" headingHighlight="Workflow Control?" primaryLabel="Build My n8n Workflows" secondaryLabel="Talk to an n8n Specialist" />
       </main>
       <Footer />
     </>
