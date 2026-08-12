@@ -9,7 +9,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ═══════════════════════════════════════════
-   DATA — All copy from the final document
+   DATA, All copy from the final document
 ═══════════════════════════════════════════ */
 
 const trustChips = [
@@ -30,7 +30,7 @@ const whyWPCards = [
   { icon: 'fa-solid fa-mouse', title: 'User Experience Drives Conversion', desc: <>Design is not decoration. It is user flow, clarity, and friction reduction. Good design <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>makes actions obvious</span> and simple.</> },
   { icon: 'fa-solid fa-mobile', title: 'Responsive Design is Mandatory', desc: <>Half your visitors are on mobile. Design must work <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>at 320px and 1440px</span>. A responsive designer knows how to design for every viewport.</> },
   { icon: 'fa-solid fa-bolt', title: 'Brand System Consistency', desc: <>Design is not random. Colors, typography, spacing, and components follow a system. Consistency <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>builds recognition and professionalism</span>.</> },
-  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Goals', desc: <>Every design decision should serve a business goal. CTA placement, visual hierarchy, color psychology — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>all connected to conversion</span>.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Goals', desc: <>Every design decision should serve a business goal. CTA placement, visual hierarchy, color psychology, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>all connected to conversion</span>.</> },
   { icon: 'fa-solid fa-brain', title: 'Design Psychology and Behavior', desc: <>Designers understand how users scan pages, where eyes go, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>what makes people act</span>. This knowledge drives results.</> },
 ];
 
@@ -229,9 +229,9 @@ export default function HireWebDesigner() {
       <Navbar />
 
       {/* ════════════════════════════════════════
-          SECTION 01 — HERO (Centered like Image 1)
+          SECTION 01, HERO (Centered like Image 1)
       ════════════════════════════════════════ */}
-      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'visible' }}>
+      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'hidden' }}>
         {/* Soft background glows matching Image 1 */}
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: 550, height: 550, background: 'radial-gradient(circle, rgba(255, 235, 179, 0.45) 0%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 650, height: 650, background: 'radial-gradient(circle, rgba(210, 225, 255, 0.55) 0%, transparent 65%)', pointerEvents: 'none' }} />
@@ -285,7 +285,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 03 — OVERVIEW (Deliver Perfectly Layout)
+          SECTION 03, OVERVIEW (Deliver Perfectly Layout)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="ism-container">
@@ -343,7 +343,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 04 — WHY WORDPRESS (Smart Framework Style)
+          SECTION 04, WHY WORDPRESS (Smart Framework Style)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
@@ -413,7 +413,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 05 — SERVICES (Homepage Style)
+          SECTION 05, SERVICES (Homepage Style)
       ════════════════════════════════════════ */}
       <section id="services" className="svc-section" style={{ padding: '64px 0 72px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
         {/* Decorative blobs */}
@@ -432,8 +432,8 @@ export default function HireWebDesigner() {
           </div>
 
           {/* Tab bar */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44, maxWidth: '100%', overflowX: 'auto' }}>
-            <div style={{ display: 'inline-flex', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+          <div style={{ marginBottom: 44, overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <div style={{ display: 'flex', width: 'max-content', margin: '0 auto', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
               {servicesTabs.map((t, i) => {
                 const isActive = activeService === i;
                 return (
@@ -497,7 +497,7 @@ export default function HireWebDesigner() {
                       EVERYTHING INCLUDED IN {svc.title}
                     </p>
 
-                    {/* Checklist — scrollable single-column list matching homepage */}
+                    {/* Checklist, scrollable single-column list matching homepage */}
                     <div className="svc-checklist-wrap">
                       <div className="svc-checklist">
                         {svc.bullets.map(b => (
@@ -516,7 +516,7 @@ export default function HireWebDesigner() {
                     </a>
                   </div>
 
-                  {/* Right Column — Photo + floating badges */}
+                  {/* Right Column, Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', borderRadius: 20, display: 'block' }} />
@@ -535,7 +535,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 06 — TECHNOLOGIES AND TOOLS
+          SECTION 06, TECHNOLOGIES AND TOOLS
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -606,9 +606,9 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 07 — MID-PAGE CTA
+          SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'hidden' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>
@@ -641,7 +641,7 @@ export default function HireWebDesigner() {
             <div className="wp-cta-person" style={{ position: 'relative', zIndex: 3, width: '100%', height: '100%', minHeight: 200, overflow: 'visible', marginBottom: -24 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/result_footer/ready_for_result.png"
+                src="/result_footer/ready_for_result.webp"
                 alt="WordPress Developer CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '150%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
@@ -669,7 +669,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 08 — WHY ISUREMEDIA
+          SECTION 08, WHY ISUREMEDIA
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -766,7 +766,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 09 — ENGAGEMENT MODELS
+          SECTION 09, ENGAGEMENT MODELS
       ════════════════════════════════════════ */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '96px 0' }}>
         <div className="ism-container">
@@ -851,7 +851,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 10 — HOW IT WORKS (Using HowItWorks Component)
+          SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
       <HowItWorks 
         title="From Your First Message to Work Starting"
@@ -871,7 +871,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 11 — FAQ
+          SECTION 11, FAQ
       ════════════════════════════════════════ */}
       <section className="wp-faq-section" style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
         <div className="ism-container">
@@ -948,7 +948,7 @@ export default function HireWebDesigner() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 12 — ENDING CTA
+          SECTION 12, ENDING CTA
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">

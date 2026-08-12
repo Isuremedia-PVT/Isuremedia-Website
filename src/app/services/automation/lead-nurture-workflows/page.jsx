@@ -36,7 +36,7 @@ const LNW_CARD_VARIANTS = [
 
 const LNW_KEY_FACTORS = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Lead Scoring Setup', impact: 'Highest impact', desc: 'We define what makes a lead hot, warm, or cold based on real behavior, so every sequence responds to genuine engagement.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Sequence and Branch Logic Mapping', impact: 'High impact', desc: 'Every path is mapped before we build — what happens on an open, a click, a form fill, or silence, all planned out clearly.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Sequence and Branch Logic Mapping', impact: 'High impact', desc: 'Every path is mapped before we build, what happens on an open, a click, a form fill, or silence, all planned out clearly.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Email and SMS Copywriting', impact: 'High impact', desc: 'Messaging written to move a lead forward at each stage, not generic templates that read like everyone else’s inbox.' },
   { icon: 'fa-solid fa-plug', title: 'CRM Integration', impact: 'High impact', desc: 'Sequences connected directly to your CRM so lead status, scores, and stage changes stay in sync automatically.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Trigger and Delay Configuration', impact: 'Medium impact', desc: 'Precise timing between touches, so leads get followed up with quickly without being overwhelmed with messages.' },
@@ -47,7 +47,7 @@ const LNW_KEY_FACTORS = [
 
 const LNW_INCLUDED_CARDS = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Lead Scoring Model', desc: 'A scoring model built around your actual buying signals, so hot leads get flagged the moment they show intent.', img: 'https://picsum.photos/seed/lnw-included-1/500/400' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Sequence Mapping', desc: 'Every branch documented before we build — triggers, delays, conditions, and disqualification paths all planned.', img: 'https://picsum.photos/seed/lnw-included-2/500/400' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Sequence Mapping', desc: 'Every branch documented before we build, triggers, delays, conditions, and disqualification paths all planned.', img: 'https://picsum.photos/seed/lnw-included-2/500/400' },
   { icon: 'fa-solid fa-pen-nib', title: 'Email and SMS Copy', desc: 'Messaging written for each stage of the sequence, tested against real subject lines and send times.', img: 'https://picsum.photos/seed/lnw-included-3/500/400' },
   { icon: 'fa-solid fa-plug', title: 'CRM Integration', desc: 'Your CRM, forms, and nurture platform connected so lead scores and stages update automatically.', img: 'https://picsum.photos/seed/lnw-included-4/500/400' },
   { icon: 'fa-solid fa-vial', title: 'Testing and Validation', desc: 'End-to-end QA on every branch and trigger using real scenarios before anything touches live leads.', img: 'https://picsum.photos/seed/lnw-included-5/500/400' },
@@ -76,7 +76,7 @@ const LNW_WHO_FOR = [
 
 const LNW_WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'We start with scoring, not templates', desc: 'Every engagement begins by defining what a hot lead actually looks like for your business, so the sequence responds to real signals.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Branching logic, not generic drips', desc: 'Our sequences split based on real behavior — opens, clicks, form fills, silence — instead of sending the same five emails to everyone.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Branching logic, not generic drips', desc: 'Our sequences split based on real behavior, opens, clicks, form fills, silence, instead of sending the same five emails to everyone.' },
   { icon: 'fa-solid fa-plug', title: 'Built into your CRM, not bolted on', desc: 'Sequences read and write lead status directly in your CRM, so sales always sees an accurate, current picture.' },
   { icon: 'fa-solid fa-flask', title: 'We test and optimize continuously', desc: 'Subject lines, send times, and messaging get tested on an ongoing basis instead of being set once and forgotten.' },
   { icon: 'fa-solid fa-file-lines', title: 'We document every sequence', desc: 'Triggers, branches, and delays are documented clearly, so your team can manage and adjust sequences without starting over.' },
@@ -85,16 +85,16 @@ const LNW_WHY_ISM = [
 
 const LNW_PROCESS = [
   { n: '01', title: 'Audit and Scoring Setup', desc: 'We map your current follow-up process and build a lead scoring model based on your real buying signals.' },
-  { n: '02', title: 'Map Sequences and Triggers', desc: 'Every branch is documented before we build — triggers, delays, conditions, and disqualification paths all planned.' },
+  { n: '02', title: 'Map Sequences and Triggers', desc: 'Every branch is documented before we build, triggers, delays, conditions, and disqualification paths all planned.' },
   { n: '03', title: 'Write and Build', desc: 'Email and SMS copy written for each stage, then built out as live, connected sequences in your platform.' },
   { n: '04', title: 'Test', desc: 'End-to-end QA on every branch and trigger using real scenarios before anything touches live leads.' },
   { n: '05', title: 'Launch and Optimize', desc: 'Sequences go live, then get tuned on an ongoing basis based on open rates, clicks, and conversion data.' },
 ];
 
 const LNW_FAQS = [
-  { q: 'How is this different from a regular drip email campaign?', a: 'A drip campaign sends the same fixed sequence of emails to everyone on a timer, regardless of what they do. A lead nurture workflow branches — it responds to opens, clicks, form fills, and silence, and routes each lead down a different path based on their actual behavior and score, until they convert or get disqualified.' },
+  { q: 'How is this different from a regular drip email campaign?', a: 'A drip campaign sends the same fixed sequence of emails to everyone on a timer, regardless of what they do. A lead nurture workflow branches, it responds to opens, clicks, form fills, and silence, and routes each lead down a different path based on their actual behavior and score, until they convert or get disqualified.' },
   { q: 'Which platforms do you build lead nurture workflows on?', a: 'We build on ActiveCampaign, HubSpot, GoHighLevel, and Klaviyo, depending on what you already use or what fits your business best. We recommend the platform that matches your lead volume and sales process rather than pushing one tool for everyone.' },
-  { q: 'How do you decide how leads get scored?', a: 'We define scoring around your real buying signals during the audit — email opens, link clicks, page visits, form fills, and time since last engagement. Points accumulate toward thresholds that move a lead from cold to warm to sales-ready, and the model gets refined as we see real data.' },
+  { q: 'How do you decide how leads get scored?', a: 'We define scoring around your real buying signals during the audit, email opens, link clicks, page visits, form fills, and time since last engagement. Points accumulate toward thresholds that move a lead from cold to warm to sales-ready, and the model gets refined as we see real data.' },
   { q: 'Do you use email, SMS, or both?', a: 'It depends on your audience and how they respond. Many workflows combine both, layering a text follow-up alongside email for leads who are more responsive to a text message, especially for time-sensitive touches like booking reminders or hot-lead alerts.' },
   { q: 'How fast do sequences trigger after a lead comes in?', a: 'Most first-touch triggers fire within minutes of a form fill or new lead event, since response speed is one of the biggest factors in conversion. Later touches use deliberately configured delays so leads get followed up with consistently without feeling spammed.' },
   { q: 'What happens when a lead does not respond at all?', a: 'Leads that show no engagement after a defined number of touches move into a re-engagement branch or get marked disqualified and removed from active nurture, so your reporting and sales team are only looking at leads that are still realistically in play.' },
@@ -102,7 +102,7 @@ const LNW_FAQS = [
   { q: 'How long does it take to launch a lead nurture workflow?', a: 'A typical engagement covering scoring setup, sequence mapping, copywriting, CRM integration, and testing moves from audit to a fully live and documented workflow in two to four weeks, depending on how many branches and touchpoints are involved.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function LNWFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -166,7 +166,7 @@ export default function LeadNurtureWorkflowsPage() {
           <div className="ism-container">
             <div className="lnw-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Leads That Get Followed Up With Automatically,{' '}
@@ -179,7 +179,7 @@ export default function LeadNurtureWorkflowsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Automated, branching email and SMS sequences that follow up based on real behavior and lead score —{' '}
+                  Automated, branching email and SMS sequences that follow up based on real behavior and lead score,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>until a lead converts or gets disqualified</span>, not just one round of drip emails.
                 </p>
 
@@ -193,7 +193,7 @@ export default function LeadNurtureWorkflowsPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="lnw-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/lead-nurture-workflows.webp" alt="Lead nurture automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -261,10 +261,10 @@ export default function LeadNurtureWorkflowsPage() {
                   Leads Go Cold Because Nobody Follows Up Consistently.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most leads do not buy on the first touch — but most businesses only send one or two follow-ups before moving on. A rep gets busy, an email gets forgotten, and a lead who was genuinely interested simply goes quiet and finds a competitor instead.
+                  Most leads do not buy on the first touch, but most businesses only send one or two follow-ups before moving on. A rep gets busy, an email gets forgotten, and a lead who was genuinely interested simply goes quiet and finds a competitor instead.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  We build branching nurture workflows that follow up automatically based on what a lead actually does — opens, clicks, form fills, and time delays — so every lead gets{' '}
+                  We build branching nurture workflows that follow up automatically based on what a lead actually does, opens, clicks, form fills, and time delays, so every lead gets{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>consistent attention until they convert</span> or clearly disqualify themselves.
                 </p>
                 <a href="/contact"
@@ -312,11 +312,11 @@ export default function LeadNurtureWorkflowsPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>It branches based on opens, clicks, form fills, and time delays</span>, so every lead follows the path that fits their actual behavior.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    A lead score builds in the background as engagement happens —{' '}
+                    A lead score builds in the background as engagement happens,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hot leads get routed to sales automatically, cold leads move into re-engagement</span>. Nobody has to remember to check in or guess who is ready.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    We design and build the scoring, sequences, and integrations that keep every lead followed up with consistently — until they convert or clearly disqualify.
+                    We design and build the scoring, sequences, and integrations that keep every lead followed up with consistently, until they convert or clearly disqualify.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function LeadNurtureWorkflowsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Lead Score */}
+                {/* Floating badge, Lead Score */}
                 <div className="lnw-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-star" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -343,7 +343,7 @@ export default function LeadNurtureWorkflowsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Sequences Live */}
+                {/* Floating badge, Sequences Live */}
                 <div className="lnw-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-diagram-project" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -354,7 +354,7 @@ export default function LeadNurtureWorkflowsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Response Rate */}
+                {/* Floating badge, Response Rate */}
                 <div className="lnw-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-up" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -365,7 +365,7 @@ export default function LeadNurtureWorkflowsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Time to Convert */}
+                {/* Floating badge, Time to Convert */}
                 <div className="lnw-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-clock" style={{ color: 'var(--color-primary)', fontSize: 12 }} />

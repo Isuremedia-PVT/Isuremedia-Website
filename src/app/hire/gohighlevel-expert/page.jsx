@@ -9,7 +9,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ═══════════════════════════════════════════
-   DATA — All copy from the final document
+   DATA, All copy from the final document
 ═══════════════════════════════════════════ */
 
 const trustChips = [
@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'CRM Setup and Configuration',
-    img: '/hire/expert_ghl/ghl expert crm setup.png',
+    img: '/hire/expert_ghl/ghl expert crm setup.webp',
     desc: <>A GHL account that is not properly structured from the start causes problems for every automation built on top of it. Get a CRM <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built around your actual sales process</span>, with the right pipelines, stages, custom fields, tags, and contact organization to support the way your business actually works.</>,
     bullets: [
       'Pipeline and stage architecture aligned to your sales process',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Workflow Automation',
-    img: '/hire/expert_ghl/workflow.png',
+    img: '/hire/expert_ghl/workflow.webp',
     desc: 'Workflows are where GHL delivers the most value and where most accounts fall short. Get automations built with proper logic, tested before they go live, and documented so your team understands what each one does and why.',
     bullets: [
       'Lead nurture and follow-up sequences',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'Funnel and Website Development',
-    img: '/hire/expert_ghl/funnel.png',
+    img: '/hire/expert_ghl/funnel.webp',
     desc: 'GHL funnels and websites built with the right structure convert better than most third-party alternatives because they are directly connected to the CRM. No disconnect between the page and the pipeline.',
     bullets: [
       'Landing pages and opt-in funnels',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'AI Chatbot and Conversation AI',
-    img: '/hire/expert_ghl/ai chatboat.png',
+    img: '/hire/expert_ghl/ai chatboat.webp',
     desc: 'GHL\'s AI features have moved well beyond basic chatbots. Get Conversation AI configured to qualify leads, answer questions, and book appointments automatically, with training specific to your business, your offers, and the way your customers actually communicate.',
     bullets: [
       'Conversation AI setup and training',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Email and SMS Campaigns',
-    img: '/hire/expert_ghl/email and ss.png',
+    img: '/hire/expert_ghl/email and ss.webp',
     desc: 'GHL handles all broadcast and drip communication in one place. Get campaigns built with proper segmentation, deliverability optimization, and the right timing logic to keep leads engaged without burning your list.',
     bullets: [
       'Email campaign setup and broadcast scheduling',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'White-Label SaaS Configuration',
-    img: '/hire/expert_ghl/whitelabel_.png',
+    img: '/hire/expert_ghl/whitelabel_.webp',
     desc: 'Agencies using GHL SaaS Mode can offer a fully branded CRM platform to their clients. Get SaaS Mode configured properly from the start, with billing integration, sub-account provisioning, snapshot deployment, and the onboarding experience your clients will see.',
     bullets: [
       'SaaS Mode setup and white-label domain configuration',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'Platform Migrations',
-    img: '/hire/expert_ghl/megrations.png',
+    img: '/hire/expert_ghl/megrations.webp',
     desc: 'Moving from HubSpot, ActiveCampaign, ClickFunnels, Kajabi, or any other platform to GHL without losing data, automations, or funnel logic requires more than an export and import. Every migration is mapped, tested, and documented before the old system is switched off.',
     bullets: [
       'HubSpot to GoHighLevel migration',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'Custom Reporting and Dashboards',
-    img: '/hire/expert_ghl/reporting.png',
+    img: '/hire/expert_ghl/reporting.webp',
     desc: 'The default GHL reports tell you what happened. Custom dashboards tell you why and what to do about it. Get a reporting setup built around the specific metrics your business needs to track, visible to the right people at the right level.',
     bullets: [
       'Custom dashboard design and configuration',
@@ -231,9 +231,9 @@ export default function HireGoHighLevelExpert() {
       <Navbar />
 
       {/* ════════════════════════════════════════
-          SECTION 01 — HERO (Centered like Image 1)
+          SECTION 01, HERO (Centered like Image 1)
       ════════════════════════════════════════ */}
-      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'visible' }}>
+      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'hidden' }}>
         {/* Soft background glows matching Image 1 */}
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: 550, height: 550, background: 'radial-gradient(circle, rgba(255, 235, 179, 0.45) 0%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 650, height: 650, background: 'radial-gradient(circle, rgba(210, 225, 255, 0.55) 0%, transparent 65%)', pointerEvents: 'none' }} />
@@ -287,7 +287,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 03 — OVERVIEW (Deliver Perfectly Layout)
+          SECTION 03, OVERVIEW (Deliver Perfectly Layout)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="ism-container">
@@ -345,7 +345,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 04 — WHY WORDPRESS (Smart Framework Style)
+          SECTION 04, WHY WORDPRESS (Smart Framework Style)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
@@ -415,7 +415,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 05 — SERVICES (Homepage Style)
+          SECTION 05, SERVICES (Homepage Style)
       ════════════════════════════════════════ */}
       <section id="services" className="svc-section" style={{ padding: '64px 0 72px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
         {/* Decorative blobs */}
@@ -434,8 +434,8 @@ export default function HireGoHighLevelExpert() {
           </div>
 
           {/* Tab bar */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44, maxWidth: '100%', overflowX: 'auto' }}>
-            <div style={{ display: 'inline-flex', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+          <div style={{ marginBottom: 44, overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <div style={{ display: 'flex', width: 'max-content', margin: '0 auto', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
               {servicesTabs.map((t, i) => {
                 const isActive = activeService === i;
                 return (
@@ -499,7 +499,7 @@ export default function HireGoHighLevelExpert() {
                       EVERYTHING INCLUDED IN {svc.title}
                     </p>
 
-                    {/* Checklist — scrollable single-column list matching homepage */}
+                    {/* Checklist, scrollable single-column list matching homepage */}
                     <div className="svc-checklist-wrap">
                       <div className="svc-checklist">
                         {svc.bullets.map(b => (
@@ -518,7 +518,7 @@ export default function HireGoHighLevelExpert() {
                     </a>
                   </div>
 
-                  {/* Right Column — Photo + floating badges */}
+                  {/* Right Column, Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', borderRadius: 20, display: 'block' }} />
@@ -537,7 +537,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 06 — TECHNOLOGIES AND TOOLS
+          SECTION 06, TECHNOLOGIES AND TOOLS
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -608,9 +608,9 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 07 — MID-PAGE CTA
+          SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'hidden' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>
@@ -643,7 +643,7 @@ export default function HireGoHighLevelExpert() {
             <div className="wp-cta-person" style={{ position: 'relative', zIndex: 3, width: '100%', height: '100%', minHeight: 200, overflow: 'visible', marginBottom: -24 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/result_footer/ready_for_result.png"
+                src="/result_footer/ready_for_result.webp"
                 alt="WordPress Developer CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '150%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
@@ -671,7 +671,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 08 — WHY ISUREMEDIA
+          SECTION 08, WHY ISUREMEDIA
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -768,7 +768,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 09 — ENGAGEMENT MODELS
+          SECTION 09, ENGAGEMENT MODELS
       ════════════════════════════════════════ */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '96px 0' }}>
         <div className="ism-container">
@@ -853,7 +853,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 10 — HOW IT WORKS (Using HowItWorks Component)
+          SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
       <HowItWorks 
         title="From Your First Message to Work Starting"
@@ -873,7 +873,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 11 — FAQ
+          SECTION 11, FAQ
       ════════════════════════════════════════ */}
       <section className="wp-faq-section" style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
         <div className="ism-container">
@@ -950,7 +950,7 @@ export default function HireGoHighLevelExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 12 — ENDING CTA
+          SECTION 12, ENDING CTA
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">

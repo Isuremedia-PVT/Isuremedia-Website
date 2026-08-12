@@ -27,11 +27,11 @@ export default function Scrubs4UCaseStudyPage() {
         { val: '+173.6%', label: 'Revenue Growth', sub: 'same 30-day window YoY' },
         { val: '−11.6%', label: 'Cost Per Purchase', sub: 'down to $39.53' },
       ],
-      quote: '[Client quote pending — replace with Scrubs4U\'s actual testimonial]',
+      quote: '[Client quote pending, replace with Scrubs4U\'s actual testimonial]',
       quoteBy: 'Scrubs4U',
       quoteRole: 'E-commerce Team',
       problemHeading: 'Inconsistent purchase volume, creative fatigue, and rising acquisition costs.',
-      problemIntro: 'Scrubs4U was already running Meta Ads, but purchase volume was inconsistent, existing creatives had fatigued, and acquisition costs were climbing — making it difficult to scale spend without losing efficiency.',
+      problemIntro: 'Scrubs4U was already running Meta Ads, but purchase volume was inconsistent, existing creatives had fatigued, and acquisition costs were climbing, making it difficult to scale spend without losing efficiency.',
       problems: [
         { title: 'Inconsistent purchase volume', body: 'Purchases fluctuated month to month with no reliable, repeatable pattern to scale from.' },
         { title: 'Creative fatigue', body: 'The same creative assets had been shown repeatedly, causing performance to decline as audiences became fatigued.' },
@@ -45,12 +45,12 @@ export default function Scrubs4UCaseStudyPage() {
       ],
       overviewHeading: 'What was needed.',
       overviewBody: [
-        'Scrubs4U needed a system built on continuous optimization rather than one-time changes — restructured campaigns, refined audience targeting, and a steady pipeline of new creative to prevent fatigue from eroding performance.',
+        'Scrubs4U needed a system built on continuous optimization rather than one-time changes, restructured campaigns, refined audience targeting, and a steady pipeline of new creative to prevent fatigue from eroding performance.',
         'Isuremedia rebuilt the account around weekly analysis, creative and audience testing, and disciplined scaling of whatever was proven to work.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80',
       didHeading: 'Built around continuous optimization, not one-time changes.',
-      didIntro: 'Every part of the account — campaigns, creative, and audiences — was treated as something to keep testing and improving, not something to set and leave.',
+      didIntro: 'Every part of the account, campaigns, creative, and audiences, was treated as something to keep testing and improving, not something to set and leave.',
       process: [
         { label: 'Campaigns', title: 'Restructuring & budget optimization', body: 'Campaigns were restructured with refined audience targeting and optimized budget allocation to improve efficiency from the foundation up.' },
         { label: 'Creative', title: 'New angles, video & static testing', body: 'New marketing angles were introduced alongside video creatives and static image variations, testing emotional versus product-focused messaging.' },
@@ -62,7 +62,7 @@ export default function Scrubs4UCaseStudyPage() {
         { label: 'Revenue', title: '173.6% increase in revenue', body: 'Revenue grew from $9,620.49 to $26,325.81 across the same 30-day comparison window one year apart.' },
         { label: 'ROAS', title: '154% improvement in ROAS', body: 'Return on ad spend climbed from 2.26x to 5.74x with only a 7.9% increase in spend.' },
         { label: 'Cost Efficiency', title: '11.6% lower cost per purchase', body: 'CPA dropped from $44.73 to $39.53 even as purchase volume increased.' },
-        { label: 'Engagement', title: 'Higher CTR, lower CPC & CPM', body: 'CTR rose 30.8% to 2.38%, while CPC fell to $0.45 and CPM to $10.80 — cheaper, more engaging traffic.' },
+        { label: 'Engagement', title: 'Higher CTR, lower CPC & CPM', body: 'CTR rose 30.8% to 2.38%, while CPC fell to $0.45 and CPM to $10.80, cheaper, more engaging traffic.' },
       ],
       metricsTable: {
         heading: 'One Year of Optimization, Side by Side',

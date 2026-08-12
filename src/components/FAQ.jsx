@@ -2,18 +2,18 @@
 
 import { useState } from 'react';
 
-/* FAQ — Soft White background */
+/* FAQ, Soft White background */
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const faqs = [
   {
     q: 'How is Isuremedia different from other digital marketing agencies?',
-    a: 'Unlike traditional agencies that specialise in one or two areas, Isuremedia is a full service agency. We handle every aspect of your digital marketing under one roof — SEO, PPC, web, content, CRM, and automation — with one accountable team that owns your results. No fragmented vendors, no finger-pointing.',
+    a: 'Unlike traditional agencies that specialise in one or two areas, Isuremedia is a full service agency. We handle every aspect of your digital marketing under one roof, SEO, PPC, web, content, CRM, and automation, with one accountable team that owns your results. No fragmented vendors, no finger-pointing.',
   },
   {
     q: 'Do you offer white label services for agencies?',
-    a: 'Yes — we are a white label partner for 50+ agencies worldwide. We execute campaigns under your brand, maintain strict confidentiality with your clients, and deliver agency-quality results with branded reports and dashboards.',
+    a: 'Yes, we are a white label partner for 50+ agencies worldwide. We execute campaigns under your brand, maintain strict confidentiality with your clients, and deliver agency-quality results with branded reports and dashboards.',
   },
   {
     q: 'What is the minimum contract term?',
@@ -25,11 +25,11 @@ const faqs = [
   },
   {
     q: 'Do you guarantee results?',
-    a: 'We set clear, data driven KPIs at the start of every engagement and report on them transparently every month. We\'ve consistently delivered an average traffic growth of 225% and ROI of 340%+ across our clients. If we\'re not hitting targets, we talk — no hiding.',
+    a: 'We set clear, data driven KPIs at the start of every engagement and report on them transparently every month. We\'ve consistently delivered an average traffic growth of 225% and ROI of 340%+ across our clients. If we\'re not hitting targets, we talk, no hiding.',
   },
   {
     q: 'What services are included in white label fulfillment?',
-    a: 'Our white label programme covers SEO, PPC, web design, content creation, social media management, and marketing automation — all delivered under your brand with client ready reports.',
+    a: 'Our white label programme covers SEO, PPC, web design, content creation, social media management, and marketing automation, all delivered under your brand with client ready reports.',
   },
 ];
 

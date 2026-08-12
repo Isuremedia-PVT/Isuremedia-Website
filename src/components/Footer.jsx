@@ -44,11 +44,12 @@ const cols = [
 ];
 
 const socials = [
-  { icon: 'fa-brands fa-linkedin-in',  href: '#' },
-  { icon: 'fa-brands fa-facebook-f',   href: '#' },
-  { icon: 'fa-brands fa-instagram',    href: '#' },
-  { icon: 'fa-brands fa-x-twitter',    href: '#' },
-  { icon: 'fa-brands fa-youtube',      href: '#' },
+  { icon: 'fa-brands fa-linkedin-in',  href: 'https://www.linkedin.com/company/isuremedia/' },
+  { icon: 'fa-brands fa-facebook-f',   href: 'https://www.facebook.com/Isuremedia2017/' },
+  { icon: 'fa-brands fa-instagram',    href: 'https://www.instagram.com/isuremedia/' },
+  { icon: 'fa-brands fa-x-twitter',    href: 'https://x.com/isuremedia_' },
+  { icon: 'fa-brands fa-youtube',      href: 'https://www.youtube.com/channel/UC5DR1JBq-Sf2QOlzvQsLeKw' },
+  { icon: 'fa-brands fa-tumblr',       href: 'https://isuremedia.tumblr.com/' },
 ];
 
 const legalLinks = [
@@ -82,20 +83,11 @@ export default function Footer() {
             </p>
 
             {/* India Address */}
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 10 }}>
-              <i className="fa-solid fa-location-dot" style={{ fontSize: 11, color: 'var(--ism-amber)', marginTop: 3, flexShrink: 0 }} />
-              <p style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.75)', lineHeight: 1.70, margin: 0 }}>
-                1st Floor, Chandra Complex, Gas Godam Road,<br />
-                Haldwani, Uttarakhand 263139, India
-              </p>
-            </div>
-
-            {/* USA Address */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 16 }}>
               <i className="fa-solid fa-location-dot" style={{ fontSize: 11, color: 'var(--ism-amber)', marginTop: 3, flexShrink: 0 }} />
-              <p style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.75)', lineHeight: 1.70, margin: 0 }}>
-                30 N, Gould St., Suite B,<br />
-                Sheridan, 82801, Wyoming, United States
+              <p style={{ fontFamily: I, fontSize: 10, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, margin: 0 }}>
+                First Floor, Chandra Complex, Gas Godam Road, Chhadayal Nayabad,<br />
+                Near Riya Palace, Haldwani, Nainital, Uttarakhand 263139, India
               </p>
             </div>
 
@@ -103,9 +95,10 @@ export default function Footer() {
             {[
               { href: 'tel:+917011041363',          icon: 'fa-solid fa-phone',    label: '+91 70110 41363' },
               { href: 'tel:+16465881430',            icon: 'fa-solid fa-phone',    label: '+1 646-588-1430' },
-              { href: 'mailto:hello@isuremedia.com', icon: 'fa-solid fa-envelope', label: 'hello@isuremedia.com' },
+              { href: 'mailto:info@isuremedia.com',  icon: 'fa-solid fa-envelope', label: 'info@isuremedia.com' },
+              { href: 'https://api.whatsapp.com/send?phone=917011041363', icon: 'fa-brands fa-whatsapp', label: 'WhatsApp Us', external: true },
             ].map(c => (
-              <a key={c.label} href={c.href}
+              <a key={c.label} href={c.href} {...(c.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 style={{ fontFamily: I, fontSize: 12, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 9, transition: 'color .15s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
@@ -118,7 +111,7 @@ export default function Footer() {
             {/* Socials */}
             <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
               {socials.map(s => (
-                <a key={s.icon} href={s.href}
+                <a key={s.icon} href={s.href} target="_blank" rel="noopener noreferrer"
                   style={{ width: 34, height: 34, borderRadius: 8, background: 'var(--ism-amber)', border: '1px solid var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-navy)', fontSize: 13, textDecoration: 'none', transition: 'all .18s' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 16px rgba(255,176,0,.45)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}

@@ -37,7 +37,7 @@ const WHY_MATTERS_VARIANTS = [
 const FAILURE_MODES = [
   { icon: 'fa-solid fa-swatchbook', title: 'Default template with no real design work', impact: 'Most common', desc: 'An unmodified Kajabi theme with the stock colors and layout tells buyers the course wasn’t built with any real intention.' },
   { icon: 'fa-solid fa-filter-circle-xmark', title: 'No sales funnel strategy behind the course', impact: 'High impact', desc: 'A product page with no lead-in, no order bumps, and no follow-up sequence relies entirely on traffic to make sales.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Course structure that confuses students', impact: 'High impact', desc: 'Modules and lessons dropped in without a clear path leave students lost, and lost students don’t finish — or refer.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Course structure that confuses students', impact: 'High impact', desc: 'Modules and lessons dropped in without a clear path leave students lost, and lost students don’t finish, or refer.' },
   { icon: 'fa-solid fa-envelope-circle-check', title: 'No automation set up after purchase', impact: 'Ongoing', desc: 'A buyer who gets no welcome sequence, no onboarding, and no follow-up is a buyer who churns quietly.' },
 ];
 
@@ -80,9 +80,9 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'What is Kajabi and why do businesses use it?', a: 'Kajabi is an all-in-one platform for hosting courses, membership sites, and coaching programs, along with the marketing tools to sell them. It’s popular because it combines course hosting, email marketing, and checkout in one place — but it still needs to be built properly to perform.' },
+  { q: 'What is Kajabi and why do businesses use it?', a: 'Kajabi is an all-in-one platform for hosting courses, membership sites, and coaching programs, along with the marketing tools to sell them. It’s popular because it combines course hosting, email marketing, and checkout in one place, but it still needs to be built properly to perform.' },
   { q: 'Can you migrate my existing course into Kajabi?', a: 'Yes. We regularly migrate courses, students, and content from Teachable, Thinkific, Podia, and other platforms into Kajabi cleanly, without losing student progress or data.' },
-  { q: 'Do you design the sales funnel too, not just the site?', a: 'Yes. A Kajabi build from us includes the sales page, checkout flow, order bumps and upsells, and the automation sequence that follows a purchase — not just the site itself.' },
+  { q: 'Do you design the sales funnel too, not just the site?', a: 'Yes. A Kajabi build from us includes the sales page, checkout flow, order bumps and upsells, and the automation sequence that follows a purchase, not just the site itself.' },
   { q: 'How long does a Kajabi build take?', a: 'A focused course site and checkout funnel typically takes three to five weeks. Larger builds with multiple products, a membership area, or a full migration take longer.' },
   { q: 'Do you set up email automation inside Kajabi?', a: 'Yes. We build welcome sequences, nurture sequences, and post-purchase automation using Kajabi’s built-in email and automation tools.' },
   { q: 'Can you build a membership site in Kajabi?', a: 'Yes. We structure membership areas with proper content release schedules and a clean member experience designed to reduce cancellations.' },
@@ -169,7 +169,7 @@ export default function KajabiPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build custom Kajabi sites, sales funnels, and automation — course architecture, checkout, and email sequences done properly,{' '}
+                  We build custom Kajabi sites, sales funnels, and automation, course architecture, checkout, and email sequences done properly,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not left as a default template</span>.
                 </p>
 
@@ -249,7 +249,7 @@ export default function KajabiPage() {
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds Kajabi sites and funnels with{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an actual strategy behind them</span>{' '}
-                  — course architecture, checkout design, and automation, done properly from the start.
+                 , course architecture, checkout design, and automation, done properly from the start.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,7 +292,7 @@ export default function KajabiPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Kajabi gives you the hosting, checkout, and email tools —{' '}
+                    Kajabi gives you the hosting, checkout, and email tools,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the strategy and design still have to be built</span> on top of it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -300,7 +300,7 @@ export default function KajabiPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a checkout designed to convert</span>, not the default page left untouched.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Development means scoping your course and offer first, then building the site, funnel, and automation to match — tested before launch, not after.
+                    Development means scoping your course and offer first, then building the site, funnel, and automation to match, tested before launch, not after.
                   </p>
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function KajabiPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>A Kajabi Site Built to Sell, Not Just Host Your Course.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Structure, checkout, and automation — the difference between a course that sells itself and one that just sits there.
+                Structure, checkout, and automation, the difference between a course that sells itself and one that just sits there.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -406,7 +406,7 @@ export default function KajabiPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Kajabi Sites to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Kajabi Sites to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most disappointing Kajabi launches trace back to one of these four causes.
               </p>

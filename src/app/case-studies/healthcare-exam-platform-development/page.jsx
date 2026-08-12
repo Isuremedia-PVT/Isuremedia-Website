@@ -6,7 +6,7 @@ export default function MentaraHealthCaseStudyPage() {
   return (
     <CaseStudyDetail data={{
       client: 'Mentara Health',
-      leadIn: 'Exam content was managed with no clear hierarchy — no way to organise by certification type, section, or case scenario.',
+      leadIn: 'Exam content was managed with no clear hierarchy, no way to organise by certification type, section, or case scenario.',
       hook: 'Now a five-level content structure mirrors exactly how healthcare professionals are trained and assessed.',
       intro: <>Mentara Health operates a healthcare certification and training platform where administrators create, manage, and publish structured exam content. The previous system had <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no clear hierarchy between categories, sections, case studies, and questions</span>, making progressive, case-based assessment difficult to build and maintain.</>,
       meta: {
@@ -17,8 +17,8 @@ export default function MentaraHealthCaseStudyPage() {
       },
       heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80',
       resultHeadline: [
-        { text: 'A five-level content hierarchy — ' },
-        { text: 'Category, Exam, Section, Case Study, and Question — now mirrors real certification program design', highlight: true },
+        { text: 'A five-level content hierarchy, ' },
+        { text: 'Category, Exam, Section, Case Study, and Question, now mirrors real certification program design', highlight: true },
         { text: ', with clone functionality at every level.' },
       ],
       stats: [
@@ -27,7 +27,7 @@ export default function MentaraHealthCaseStudyPage() {
         { val: 'Clone-Enabled', label: 'Every Level', sub: 'exam, section & question' },
         { val: '2', label: 'Question Types', sub: 'single & multiple choice' },
       ],
-      quote: '[Client quote pending — replace with Mentara Health\'s actual testimonial]',
+      quote: '[Client quote pending, replace with Mentara Health\'s actual testimonial]',
       quoteBy: 'Mentara Health',
       quoteRole: 'Platform Team',
       problemHeading: 'A basic platform with no structured workflow for managing exam content.',
@@ -45,8 +45,8 @@ export default function MentaraHealthCaseStudyPage() {
       ],
       overviewHeading: 'What was needed.',
       overviewBody: [
-        'Mentara Health needed a robust content management flow that mirrored how healthcare professionals actually learn and are assessed — through progressive, case-based evaluation, with support for multiple certification programs and content reuse through cloning.',
-        'Isuremedia designed and implemented a fully structured exam content management system introducing a five-level hierarchy — Category, Exam, Section, Case Study, and Questions — with Visits nested inside each case study.',
+        'Mentara Health needed a robust content management flow that mirrored how healthcare professionals actually learn and are assessed, through progressive, case-based evaluation, with support for multiple certification programs and content reuse through cloning.',
+        'Isuremedia designed and implemented a fully structured exam content management system introducing a five-level hierarchy, Category, Exam, Section, Case Study, and Questions, with Visits nested inside each case study.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=700&q=80',
       didHeading: 'Built as a five-level hierarchy that mirrors real certification program design.',

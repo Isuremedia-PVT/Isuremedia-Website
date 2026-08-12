@@ -18,10 +18,10 @@ const GROW_ITEMS = [
 
 
 const CAROUSEL_SLIDES = [
-  { img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=85', caption: 'Real work. Real clients. Every single day.', sub: 'US & UK accounts across SEO, PPC, web, content and automation.' },
-  { img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85', caption: 'One office. One team. No silos.', sub: 'Everyone working toward the same outcome for the same clients.' },
-  { img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=85', caption: 'Build your career on accounts that actually matter.', sub: 'The feedback loop here is fast. You grow because the stakes are real.' },
-  { img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=85', caption: 'Come do the best work of your career.', sub: 'Haldwani, Uttarakhand — serving markets across the US and UK.' },
+  { img: '/career-about/Team image for GMB 1.webp', caption: 'Real work. Real clients. Every single day.', sub: 'US & UK accounts across SEO, PPC, web, content and automation.' },
+  { img: '/career-about/linkdin post (1).webp', caption: 'One office. One team. No silos.', sub: 'Everyone working toward the same outcome for the same clients.' },
+  { img: '/career-about/IMG_8914.webp', caption: 'Build your career on accounts that actually matter.', sub: 'The feedback loop here is fast. You grow because the stakes are real.' },
+  { img: '/career-about/IMG_6278.webp', caption: 'Come do the best work of your career.', sub: 'Haldwani, Uttarakhand, serving markets across the US and UK.' },
 ];
 
 const JOB_SCHEMA = JSON.stringify({
@@ -134,7 +134,7 @@ export default function CareersPageClient() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 480, marginBottom: 36 }}>
-                  We work with businesses and agencies across the US, UK, and India — covering SEO, paid media, web, content, and automation. If you want to build your career on <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>real accounts with real outcomes</span>, read on.
+                  We work with businesses and agencies across the US, UK, and India, covering SEO, paid media, web, content, and automation. If you want to build your career on <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>real accounts with real outcomes</span>, read on.
                 </p>
 
                 <div className="car-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -178,12 +178,12 @@ export default function CareersPageClient() {
           `}</style>
         </section>
 
-        {/* ══ 02. CULTURE STATEMENT — split layout ═════════════════════════ */}
+        {/* ══ 02. CULTURE STATEMENT, split layout ═════════════════════════ */}
         <section style={{ background: '#fff', padding: '96px 0 104px', borderBottom: '1px solid var(--color-border)' }}>
           <div className="ism-container">
             <div className="car-culture-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
 
-              {/* LEFT — big statement */}
+              {/* LEFT, big statement */}
               <div>
                 <div style={{ width: 48, height: 5, background: 'var(--ism-amber)', borderRadius: 3, marginBottom: 32 }} />
                 <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(28px,3.2vw,50px)', color: 'var(--color-navy)', lineHeight: 1.08, letterSpacing: '-0.5px', margin: 0 }}>
@@ -192,7 +192,7 @@ export default function CareersPageClient() {
                 </h2>
               </div>
 
-              {/* RIGHT — values */}
+              {/* RIGHT, values */}
               <div style={{ paddingTop: 16 }}>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, marginBottom: 32 }}>
                   Good work comes from good people in a good environment. We have spent a lot of time building a place where the work is real, the people are honest, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>getting better at your craft</span> is something the job actively supports.
@@ -222,7 +222,7 @@ export default function CareersPageClient() {
           <style>{`@media (max-width: 768px) { .car-culture-grid { grid-template-columns: 1fr !important; gap: 40px !important; } }`}</style>
         </section>
 
-        {/* ══ 03. WHAT YOU GET — 4-column horizontal ═══════════════════════ */}
+        {/* ══ 03. WHAT YOU GET, 4-column horizontal ═══════════════════════ */}
         <section style={{ background: '#F7F8FA', padding: '96px 0 112px' }}>
           <div className="ism-container">
 
@@ -231,7 +231,7 @@ export default function CareersPageClient() {
                 A Place Where the Work<br />Makes <span style={{ color: 'var(--color-primary)' }}>You Better.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 520, lineHeight: 1.75 }}>
-                At Isuremedia, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>when people grow, the company grows</span>. That is not a philosophy — it is how we make decisions every day.
+                At Isuremedia, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>when people grow, the company grows</span>. That is not a philosophy, it is how we make decisions every day.
               </p>
             </div>
 
@@ -262,22 +262,22 @@ export default function CareersPageClient() {
           `}</style>
         </section>
 
-        {/* ══ 04. IMAGE CAROUSEL — full bleed + floating card ══════════════ */}
-        <section className="car-carousel-section" style={{ position: 'relative', height: 580, overflow: 'hidden', background: '#0D1B3E' }}>
+        {/* ══ 04. IMAGE CAROUSEL, full bleed + floating card ══════════════ */}
+        <section className="car-carousel-section" style={{ position: 'relative', height: 740, overflow: 'hidden', background: '#0D1B3E' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             key={slideIdx}
             src={CAROUSEL_SLIDES[slideIdx].img}
             alt={CAROUSEL_SLIDES[slideIdx].caption}
-            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: slideFading ? 0 : 1, transition: 'opacity .3s ease' }}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', opacity: slideFading ? 0 : 1, transition: 'opacity .3s ease' }}
           />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(5,15,50,.55) 0%, transparent 60%)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '45%', background: 'linear-gradient(to top, rgba(5,15,50,.45) 0%, transparent 100%)', pointerEvents: 'none' }} />
 
-          {/* Floating caption card — container aligned */}
+          {/* Floating caption card, container aligned */}
           <div className="car-carousel-caption-wrap" style={{ position: 'absolute', bottom: 40, left: 0, right: 0, pointerEvents: 'none' }}>
             <div className="ism-container">
-          <div className="car-carousel-card" style={{ width: 360, background: '#fff', borderRadius: 20, padding: '28px 32px', boxShadow: '0 24px 64px rgba(0,0,0,.22)', opacity: slideFading ? 0 : 1, transition: 'opacity .3s ease', pointerEvents: 'all' }}>
+          <div className="car-carousel-card" style={{ width: 360, marginLeft: 'auto', background: 'rgba(255,255,255,.82)', backdropFilter: 'blur(18px)', WebkitBackdropFilter: 'blur(18px)', border: '1px solid rgba(255,255,255,.6)', borderRadius: 20, padding: '28px 32px', boxShadow: '0 24px 64px rgba(0,0,0,.22)', opacity: slideFading ? 0 : 1, transition: 'opacity .3s ease', pointerEvents: 'all' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <div style={{ width: 20, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
@@ -313,12 +313,12 @@ export default function CareersPageClient() {
           </div>
           <style>{`
             @media (max-width: 768px) {
-              .car-carousel-section { height: 460px !important; }
+              .car-carousel-section { height: 520px !important; }
               .car-carousel-caption-wrap { bottom: 20px !important; }
-              .car-carousel-card { width: 100% !important; box-sizing: border-box !important; padding: 22px 20px !important; }
+              .car-carousel-card { width: 100% !important; margin-left: 0 !important; box-sizing: border-box !important; padding: 22px 20px !important; }
             }
             @media (max-width: 480px) {
-              .car-carousel-section { height: 420px !important; }
+              .car-carousel-section { height: 480px !important; }
             }
           `}</style>
         </section>
@@ -337,17 +337,17 @@ export default function CareersPageClient() {
               </p>
             </div>
 
-            {/* Row 1 — 4 images */}
+            {/* Row 1, 4 images */}
             <div className="car-mosaic-row1" style={{ display: 'grid', gridTemplateColumns: '1.3fr 0.85fr 1.7fr 0.95fr', gap: 10, marginBottom: 10 }}>
               {[
-                { src: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=85', h: 280 },
-                { src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&q=85', h: 280 },
-                { src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=85', h: 280 },
-                { src: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&q=85', h: 280 },
+                { src: '/career-about/IMG_2490.webp', h: 280, pos: 'center 25%' },
+                { src: '/career-about/IMG_3490.webp', h: 280, pos: 'center 12%' },
+                { src: '/career-about/IMG_9299.webp', h: 280, pos: 'center 20%' },
+                { src: '/career-about/IMG_3508.webp', h: 280, pos: 'center 12%' },
               ].map((img, i) => (
                 <div key={i} style={{ borderRadius: 14, overflow: 'hidden', height: img.h }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={img.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform .4s ease' }}
+                  <img src={img.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.pos, display: 'block', transition: 'transform .4s ease' }}
                     onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.04)'; }}
                     onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
                   />
@@ -355,27 +355,29 @@ export default function CareersPageClient() {
               ))}
             </div>
 
-            {/* Row 2 — 1 wide + 2 stacked */}
+            {/* Row 2, 1 wide image + 2 reels */}
             <div className="car-mosaic-row2" style={{ display: 'grid', gridTemplateColumns: '2.2fr 1fr', gap: 10 }}>
               {/* Wide image */}
               <div style={{ borderRadius: 14, overflow: 'hidden', height: 360 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1100&q=85" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform .4s ease' }}
+                <img src="/career-about/IMG_3431.webp" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', transition: 'transform .4s ease' }}
                   onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.03)'; }}
                   onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
                 />
               </div>
-              {/* 2 stacked */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {/* 2 reels */}
+              <div className="car-mosaic-reels" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, height: 360 }}>
                 {[
-                  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&q=85',
-                  'https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=85',
-                ].map((src, i) => (
-                  <div key={i} style={{ borderRadius: 14, overflow: 'hidden', flex: 1 }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform .4s ease' }}
-                      onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.05)'; }}
-                      onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
+                  '6TjB6hfkjrY',
+                  'PRmw5j6mx1A',
+                ].map((id, i) => (
+                  <div key={i} style={{ borderRadius: 14, overflow: 'hidden', height: '100%', background: '#000' }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${id}`}
+                      title={`Isuremedia Reel ${i + 1}`}
+                      style={{ width: '100%', height: '100%', display: 'block', border: 'none' }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
                     />
                   </div>
                 ))}
@@ -384,7 +386,7 @@ export default function CareersPageClient() {
 
           </div>
           <style>{`
-            @media (max-width: 1024px) { .car-mosaic-row1 { grid-template-columns: 1fr 1fr !important; } .car-mosaic-row2 { grid-template-columns: 1fr !important; } }
+            @media (max-width: 1024px) { .car-mosaic-row1 { grid-template-columns: 1fr 1fr !important; } .car-mosaic-row2 { grid-template-columns: 1fr !important; } .car-mosaic-reels { height: 420px !important; } }
             @media (max-width: 480px) { .car-mosaic-row1 { grid-template-columns: 1fr !important; } }
           `}</style>
         </section>
@@ -422,7 +424,7 @@ export default function CareersPageClient() {
                 </div>
               </div>
 
-              {/* RIGHT — Form */}
+              {/* RIGHT, Form */}
               <div>
                 {formRole && (
                   <div style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'rgba(30,77,195,.07)', border: '1px solid rgba(30,77,195,.16)', borderRadius: 10, padding: '12px 16px', marginBottom: 28 }}>
@@ -467,7 +469,7 @@ export default function CareersPageClient() {
                         <option value="">Select a role</option>
                         <option value="Business Development Executive">Business Development Executive</option>
                         <option value="Business Development Manager">Business Development Manager</option>
-                        <option value="Open application — no specific role listed">Open application — no specific role listed</option>
+                        <option value="Open application, no specific role listed">Open application, no specific role listed</option>
                       </select>
                     </div>
 
@@ -551,7 +553,7 @@ export default function CareersPageClient() {
           `}</style>
         </section>
 
-        {/* ══ 06. STAY CONNECTED — CTA card style ══════════════════════════ */}
+        {/* ══ 06. STAY CONNECTED, CTA card style ══════════════════════════ */}
         <section style={{ padding: '88px 0', background: '#fff' }}>
           <div className="ism-container">
 
@@ -598,7 +600,7 @@ export default function CareersPageClient() {
                 </div>
               </div>
 
-              {/* RIGHT — image */}
+              {/* RIGHT, image */}
               <div className="car-cta-img" style={{ position: 'relative', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

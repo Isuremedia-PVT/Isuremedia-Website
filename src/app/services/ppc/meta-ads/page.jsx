@@ -20,11 +20,11 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-users', title: 'An audience you can’t reach anywhere else', desc: 'Interests, behaviours, life events, job titles, and connections — a specificity no other platform matches at this scale.' },
+  { icon: 'fa-solid fa-users', title: 'An audience you can’t reach anywhere else', desc: 'Interests, behaviours, life events, job titles, and connections, a specificity no other platform matches at this scale.' },
   { icon: 'fa-solid fa-route', title: 'Reach across the full customer journey', desc: 'Awareness reaches cold audiences, consideration warms them up, conversion brings them to a decision, retargeting brings them back.' },
-  { icon: 'fa-solid fa-photo-film', title: 'Visual creative that builds brand and drives action', desc: 'Images, video, carousels, Reels, Stories — built for visual storytelling text-only formats can’t replicate.' },
-  { icon: 'fa-solid fa-rotate-left', title: 'Retargeting that converts browsers into buyers', desc: 'Someone who visits and leaves isn’t lost — retargeting consistently produces the highest ROAS of any Meta campaign type.' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Scalable reach that compounds with data', desc: 'Meta’s algorithm gets smarter as it collects conversion data — lower cost per result and better ROAS as it learns.' },
+  { icon: 'fa-solid fa-photo-film', title: 'Visual creative that builds brand and drives action', desc: 'Images, video, carousels, Reels, Stories, built for visual storytelling text-only formats can’t replicate.' },
+  { icon: 'fa-solid fa-rotate-left', title: 'Retargeting that converts browsers into buyers', desc: 'Someone who visits and leaves isn’t lost, retargeting consistently produces the highest ROAS of any Meta campaign type.' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Scalable reach that compounds with data', desc: 'Meta’s algorithm gets smarter as it collects conversion data, lower cost per result and better ROAS as it learns.' },
   { icon: 'fa-solid fa-globe', title: '3.98 billion people, precisely defined', desc: 'A plumber targeting homeowners within ten miles. A brand reaching a specific age and interest group. That precision is uniquely Meta’s.' },
 ];
 
@@ -42,21 +42,21 @@ const CREATIVE = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Meta Ads Audit', desc: 'Campaign structure, targeting, creative performance, pixel tracking, and spend efficiency — what to fix first.' },
-  { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right objectives, ad set structure, Conversions API, and creative framework — set up to learn from day one.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Meta Ads Audit', desc: 'Campaign structure, targeting, creative performance, pixel tracking, and spend efficiency, what to fix first.' },
+  { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right objectives, ad set structure, Conversions API, and creative framework, set up to learn from day one.' },
   { icon: 'fa-solid fa-crosshairs', title: 'Audience Research & Targeting', desc: 'Cold, warm, and lookalike audience strategy, plus Advantage Plus placements to let the algorithm find responders.' },
-  { icon: 'fa-solid fa-photo-film', title: 'Ad Creative Strategy & Production', desc: 'Creative brief, ad copy, and visual assets — static, video hooks, carousels, Reels — built around the scroll-stopping hook.' },
+  { icon: 'fa-solid fa-photo-film', title: 'Ad Creative Strategy & Production', desc: 'Creative brief, ad copy, and visual assets, static, video hooks, carousels, Reels, built around the scroll-stopping hook.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Conversions API & Tracking Setup', desc: 'Server-side tracking alongside the pixel for accurate data in a post-iOS14 environment.' },
-  { icon: 'fa-solid fa-rotate-left', title: 'Retargeting Campaigns', desc: 'Built from website visitors, video viewers, and engagers — served the offer most likely to convert them.' },
+  { icon: 'fa-solid fa-rotate-left', title: 'Retargeting Campaigns', desc: 'Built from website visitors, video viewers, and engagers, served the offer most likely to convert them.' },
   { icon: 'fa-solid fa-people-group', title: 'Lookalike Audience Campaigns', desc: 'Built from your best customers to find cold audiences who behave similarly, extending your reach.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Reach, clicks, cost per result, ROAS, and creative performance — in plain English, with next month’s plan.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Reach, clicks, cost per result, ROAS, and creative performance, in plain English, with next month’s plan.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-arrow-trend-down', title: 'Tried Meta Ads without results', desc: 'Boosted posts and poorly structured campaigns waste budget. The problem is almost always structure or creative, not the platform.', img: 'https://picsum.photos/seed/mads-whofor-tried/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Advantage Plus Shopping is one of the most effective e-commerce channels available — we run it alongside retargeting.', img: 'https://picsum.photos/seed/mads-whofor-ecom/700/620' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Advantage Plus Shopping is one of the most effective e-commerce channels available, we run it alongside retargeting.', img: 'https://picsum.photos/seed/mads-whofor-ecom/700/620' },
   { icon: 'fa-solid fa-location-dot', title: 'Local businesses reaching their community', desc: 'Location-based targeting for restaurants, gyms, salons, and clinics driving local awareness and foot traffic.', img: 'https://picsum.photos/seed/mads-whofor-local/700/620' },
-  { icon: 'fa-solid fa-camera', title: 'A visually compelling product or service', desc: 'Food, fashion, fitness, beauty, home, travel — products that photograph well can create desire before anyone searches.', img: 'https://picsum.photos/seed/mads-whofor-visual/700/620' },
+  { icon: 'fa-solid fa-camera', title: 'A visually compelling product or service', desc: 'Food, fashion, fitness, beauty, home, travel, products that photograph well can create desire before anyone searches.', img: 'https://picsum.photos/seed/mads-whofor-visual/700/620' },
   { icon: 'fa-solid fa-rocket', title: 'B2C launching a new product', desc: 'The fastest channel for getting a new offer in front of a large, targeted audience for reach and conversion together.', img: 'https://picsum.photos/seed/mads-whofor-launch/700/620' },
   { icon: 'fa-solid fa-filter', title: 'Need a full-funnel approach', desc: 'Awareness, consideration, and conversion managed together so budget is allocated across the whole journey.', img: 'https://picsum.photos/seed/mads-whofor-funnel/700/620' },
 ];
@@ -65,14 +65,14 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-certificate', title: 'We are a Meta Business Partner', desc: 'Recognised by Meta for advertising expertise, performance standards, and managed spend across client accounts.' },
   { icon: 'fa-solid fa-photo-film', title: 'We lead with creative, not just targeting', desc: 'In 2026, creative is what makes Meta campaigns perform. Every decision is backed by a testing framework, not guesswork.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We track what actually matters', desc: 'Conversions API tracking so your data is accurate in a post-iOS14 environment, and Meta’s algorithm can optimise properly.' },
-  { icon: 'fa-solid fa-filter', title: 'We manage the full funnel', desc: 'Awareness, consideration, and conversion built together — always building the audience that feeds future results.' },
+  { icon: 'fa-solid fa-filter', title: 'We manage the full funnel', desc: 'Awareness, consideration, and conversion built together, always building the audience that feeds future results.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we spent, what it returned, what creative performed best, and what we’re doing differently next month.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the campaigns are delivering, not because you are contractually obligated to.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Audit & Goal Alignment', desc: 'We audit your account or start fresh, reviewing pixel setup and existing creative performance before building anything.' },
-  { n: '02', title: 'Strategy & Campaign Build', desc: 'Objectives, ad sets, audiences, and creative framework — Conversions API implemented and verified before launch.' },
+  { n: '02', title: 'Strategy & Campaign Build', desc: 'Objectives, ad sets, audiences, and creative framework, Conversions API implemented and verified before launch.' },
   { n: '03', title: 'Creative Development & Launch', desc: 'Hooks, ad copy, and visual direction developed around the strongest hypothesis, with a testing plan from day one.' },
   { n: '04', title: 'Creative Testing', desc: 'In the first four to six weeks we systematically test hooks, formats, and offers to find what converts.' },
   { n: '05', title: 'Scaling & Ongoing Management', desc: 'Budget scaled into what performs, with new creative rotated and retargeting expanded as pixel data grows.' },
@@ -85,8 +85,8 @@ const FAQS = [
   { q: 'How long does it take to see results?', a: 'Most campaigns exit the learning phase within seven to fourteen days. Consistently strong results are typically achieved by month two to three.' },
   { q: 'Why did my Meta Ads not work before?', a: 'Usually creative that doesn’t stop the scroll, audiences too narrow or broad, no proper tracking, or traffic sent to a homepage instead of a dedicated landing page.' },
   { q: 'What is the Meta Conversions API and why does it matter?', a: 'Server-side tracking that works alongside the pixel. Without it, Meta’s bidding optimises on incomplete data and campaigns perform below their potential.' },
-  { q: 'What is Advantage Plus and should I be using it?', a: 'Meta’s AI-driven campaign type. Advantage Plus Shopping delivers an average ROAS of 4.52x versus 3.70x for manual campaigns — we use it where it genuinely outperforms.' },
-  { q: 'Can Meta Ads work alongside Google Ads?', a: 'Yes, and they work better together. Google captures demand; Meta creates it — reaching your audience at every stage of the buying journey.' },
+  { q: 'What is Advantage Plus and should I be using it?', a: 'Meta’s AI-driven campaign type. Advantage Plus Shopping delivers an average ROAS of 4.52x versus 3.70x for manual campaigns, we use it where it genuinely outperforms.' },
+  { q: 'Can Meta Ads work alongside Google Ads?', a: 'Yes, and they work better together. Google captures demand; Meta creates it, reaching your audience at every stage of the buying journey.' },
   { q: 'How do you measure success on Meta?', a: 'Cost per lead, cost per sale, ROAS, and revenue, alongside reach, frequency, CTR, and creative performance for the full picture.' },
 ];
 
@@ -292,14 +292,14 @@ export default function MetaAdsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Google targets people who are actively searching. Meta targets{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>people based on who they are</span> — before they search, while they browse, and after they visit your site.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>people based on who they are</span>, before they search, while they browse, and after they visit your site.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     With 3.98 billion monthly active users across Facebook, Instagram, and Messenger, Meta gives businesses access to{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>one of the largest advertising audiences</span> in the world.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Management is making that reach as efficient and profitable as possible — the right audience, the right creative, tracked properly and optimised consistently.
+                    Management is making that reach as efficient and profitable as possible, the right audience, the right creative, tracked properly and optimised consistently.
                   </p>
                 </div>
               </div>
@@ -407,7 +407,7 @@ export default function MetaAdsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>In Meta Ads, Creative Is the Campaign.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Meta&apos;s algorithm now finds the audience for you. The ad you show is more important than the audience you target — here is how we build for that.
+                Meta&apos;s algorithm now finds the audience for you. The ad you show is more important than the audience you target, here is how we build for that.
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -450,7 +450,7 @@ export default function MetaAdsPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our Meta Ads Management Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Creative, Targeting, and Optimisation — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Creative, Targeting, and Optimisation, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

@@ -19,12 +19,12 @@ const MAKE_BRIDGE_ITEMS = [
 ];
 
 const MAKE_WHY_MATTERS = [
-  { icon: 'fa-solid fa-code-branch', title: 'Complex logic support', desc: 'Branching paths, conditional routers, iterators, and aggregators — Make handles multi-path scenarios that simple trigger-based tools simply cannot.' },
-  { icon: 'fa-solid fa-shuffle', title: 'Data transformation', desc: 'Parse, format, and transform data mid-workflow using built-in functions — map JSON, clean strings, calculate values on the fly.' },
+  { icon: 'fa-solid fa-code-branch', title: 'Complex logic support', desc: 'Branching paths, conditional routers, iterators, and aggregators, Make handles multi-path scenarios that simple trigger-based tools simply cannot.' },
+  { icon: 'fa-solid fa-shuffle', title: 'Data transformation', desc: 'Parse, format, and transform data mid-workflow using built-in functions, map JSON, clean strings, calculate values on the fly.' },
   { icon: 'fa-solid fa-coins', title: 'Lower cost at scale', desc: 'Make charges per operation rather than per Zap, making it significantly cheaper for high-volume or complex automation needs.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Full visual canvas control', desc: 'Every module, filter, router, and error handler is visible on one canvas — the full flow of data through your scenario, at a glance.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Full visual canvas control', desc: 'Every module, filter, router, and error handler is visible on one canvas, the full flow of data through your scenario, at a glance.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Built-in error handling', desc: 'Error handlers and alerts are built into every scenario so a failed step gets caught and flagged instead of silently breaking your workflow.' },
-  { icon: 'fa-solid fa-clock', title: 'Scheduled and batch operations', desc: 'Run large batch jobs on a schedule — nightly syncs, weekly reports, bulk updates — without anyone triggering them manually.' },
+  { icon: 'fa-solid fa-clock', title: 'Scheduled and batch operations', desc: 'Run large batch jobs on a schedule, nightly syncs, weekly reports, bulk updates, without anyone triggering them manually.' },
 ];
 
 const MAKE_CARD_VARIANTS = [
@@ -35,7 +35,7 @@ const MAKE_CARD_VARIANTS = [
 
 const MAKE_KEY_FACTORS = [
   { icon: 'fa-solid fa-map', title: 'Scenario Mapping and Architecture', impact: 'Highest impact', desc: 'We document every data source, transformation step, and output destination before building a single module, so the scenario matches how your business actually operates.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Complex Scenario Builds', impact: 'High impact', desc: 'Branching paths, routers, iterators, and aggregators built and tested against real data — not just the happy path.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Complex Scenario Builds', impact: 'High impact', desc: 'Branching paths, routers, iterators, and aggregators built and tested against real data, not just the happy path.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Error Handling and Alerts', impact: 'High impact', desc: 'Every scenario ships with error handlers and alerts, so a failed step gets flagged and fixed instead of failing silently for weeks.' },
   { icon: 'fa-solid fa-shuffle', title: 'Data Transformation Setup', impact: 'High impact', desc: 'Parsing, formatting, and transformation logic built into the scenario itself, so messy source data becomes clean, usable output.' },
   { icon: 'fa-solid fa-calendar-days', title: 'Scheduling Configuration', impact: 'Medium impact', desc: 'Batch jobs, nightly syncs, and recurring reports scheduled to run automatically at the right cadence for your business.' },
@@ -75,8 +75,8 @@ const MAKE_WHO_FOR = [
 
 const MAKE_WHY_ISM = [
   { icon: 'fa-solid fa-map', title: 'We map before we build', desc: 'Every data source, transformation step, and output destination is documented before a single module goes live, so nothing gets discovered mid-build.' },
-  { icon: 'fa-solid fa-code-branch', title: 'We handle complex logic other agencies avoid', desc: 'Branching paths, iterators, aggregators, and conditional routing are our default, not an upsell — this is what Make is built for.' },
-  { icon: 'fa-solid fa-sliders', title: 'We build in the platform that fits your budget', desc: 'Make, Zapier, or n8n — we recommend the platform that fits your complexity and volume, not the one that is easiest for us to sell.' },
+  { icon: 'fa-solid fa-code-branch', title: 'We handle complex logic other agencies avoid', desc: 'Branching paths, iterators, aggregators, and conditional routing are our default, not an upsell, this is what Make is built for.' },
+  { icon: 'fa-solid fa-sliders', title: 'We build in the platform that fits your budget', desc: 'Make, Zapier, or n8n, we recommend the platform that fits your complexity and volume, not the one that is easiest for us to sell.' },
   { icon: 'fa-solid fa-file-lines', title: 'Full documentation and handover', desc: 'Every scenario is documented clearly so your team understands exactly how it works, not left guessing when something needs to change.' },
   { icon: 'fa-solid fa-bell', title: 'Monitoring and alerts included', desc: 'We set up monitoring so failures get flagged immediately, not discovered weeks later when the data has already gone stale.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts. You stay because your automations are running reliably, not because you signed something months ago.' },
@@ -101,7 +101,7 @@ const MAKE_FAQS = [
   { q: 'How long does a Make automation project take?', a: 'A typical engagement covering five complex scenarios moves from mapping to monitored, documented automations in three to four weeks, depending on complexity.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function MakeFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function MakeIntegromatPage() {
           <div className="ism-container">
             <div className="make-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Make Automations That Handle Complex Workflows With{' '}
@@ -178,7 +178,7 @@ export default function MakeIntegromatPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Advanced automation scenarios built in Make (formerly Integromat) —{' '}
+                  Advanced automation scenarios built in Make (formerly Integromat),{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>multi-step, conditional, and data-transform workflows</span> that handle real-world complexity without breaking.
                 </p>
 
@@ -192,7 +192,7 @@ export default function MakeIntegromatPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="make-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/make-automation.webp" alt="Make automation scenario design" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -263,7 +263,7 @@ export default function MakeIntegromatPage() {
                   Zapier is excellent for simple A-to-B automations. But when your workflows need branching logic, data lookups, array iteration, or API calls mid-scenario, Zapier quickly becomes limiting or prohibitively expensive. That is where Make (formerly Integromat) becomes the right choice.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Make uses a visual canvas that shows the full flow of data through your scenario — every module, filter, router, and error handler visible at a glance. We build scenarios that{' '}
+                  Make uses a visual canvas that shows the full flow of data through your scenario, every module, filter, router, and error handler visible at a glance. We build scenarios that{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle real-world complexity without breaking</span> when edge cases appear.
                 </p>
                 <a href="/contact"
@@ -312,11 +312,11 @@ export default function MakeIntegromatPage() {
                     that basic automation simply cannot.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Every scenario is built on a canvas that shows the full flow of data — every module, filter, router, and error handler visible at a glance. We design scenarios that{' '}
+                    Every scenario is built on a canvas that shows the full flow of data, every module, filter, router, and error handler visible at a glance. We design scenarios that{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle real-world complexity without breaking when edge cases appear</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Because Make charges per operation rather than per Zap, it is often significantly cheaper at scale for high-volume or complex automation needs — making it the right choice once your workflows outgrow simple triggers.
+                    Because Make charges per operation rather than per Zap, it is often significantly cheaper at scale for high-volume or complex automation needs, making it the right choice once your workflows outgrow simple triggers.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function MakeIntegromatPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Scenarios Built */}
+                {/* Floating badge, Scenarios Built */}
                 <div className="make-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-diagram-project" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -343,7 +343,7 @@ export default function MakeIntegromatPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Error Alerts */}
+                {/* Floating badge, Error Alerts */}
                 <div className="make-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-triangle-exclamation" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -354,7 +354,7 @@ export default function MakeIntegromatPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Data Synced */}
+                {/* Floating badge, Data Synced */}
                 <div className="make-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-shuffle" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -365,7 +365,7 @@ export default function MakeIntegromatPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Uptime */}
+                {/* Floating badge, Uptime */}
                 <div className="make-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-signal" style={{ color: 'var(--color-primary)', fontSize: 12 }} />

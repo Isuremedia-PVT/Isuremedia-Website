@@ -34,9 +34,9 @@ const WHY_MATTERS_VARIANTS = [
 
 const RANKING_FACTORS = [
   { icon: 'fa-solid fa-map-location-dot', title: 'Google Business Profile', impact: 'Highest impact', desc: 'Your GBP is the single most important factor in local rankings. Google looks at how complete your profile is, whether your business category is accurate, how often you post updates, and how many photos you have. An incomplete or unoptimised GBP costs you visibility every single day.' },
-  { icon: 'fa-solid fa-address-card', title: 'NAP Consistency', impact: 'High impact', desc: 'Your name, address, and phone number need to be identical everywhere your business appears online — your website, Google, directories, social profiles. Any mismatch sends a trust signal to Google that your information is unreliable.' },
+  { icon: 'fa-solid fa-address-card', title: 'NAP Consistency', impact: 'High impact', desc: 'Your name, address, and phone number need to be identical everywhere your business appears online, your website, Google, directories, social profiles. Any mismatch sends a trust signal to Google that your information is unreliable.' },
   { icon: 'fa-solid fa-star', title: 'Reviews and Ratings', impact: 'High impact', desc: 'Google looks at how many reviews you have, how recent they are, your average rating, and whether you respond to them. 97% of consumers read reviews before choosing a local business. Your review profile affects both your rankings and whether someone clicks once they find you.' },
-  { icon: 'fa-solid fa-list-check', title: 'Local Citations', impact: 'Medium impact', desc: 'A citation is any mention of your business online — in directories, data aggregators, local listings, and industry platforms. The more consistent and widespread your citations are, the stronger the signal to Google that your business is established in your area.' },
+  { icon: 'fa-solid fa-list-check', title: 'Local Citations', impact: 'Medium impact', desc: 'A citation is any mention of your business online, in directories, data aggregators, local listings, and industry platforms. The more consistent and widespread your citations are, the stronger the signal to Google that your business is established in your area.' },
   { icon: 'fa-solid fa-file-lines', title: 'On-Page Local Signals', impact: 'Medium impact', desc: 'Your website needs to tell Google where you operate. That means location keywords in page titles, headings, and body content, your address in the footer, local schema markup, and dedicated pages for each service area or location you cover.' },
   { icon: 'fa-solid fa-link', title: 'Local Link Authority', impact: 'Medium impact', desc: 'Links from local news outlets, business associations, chambers of commerce, and community organisations build geographic authority for your website. These carry strong local relevance signals that generic links cannot replicate.' },
   { icon: 'fa-solid fa-location-crosshairs', title: 'Proximity and User Experience', impact: 'Contextual', desc: 'Google factors in how close the searcher is to your business. Alongside proximity, your website load speed and mobile experience affect rankings. 70% of local searches happen on mobile. A slow or difficult site loses customers before they ever contact you.' },
@@ -44,7 +44,7 @@ const RANKING_FACTORS = [
 ];
 
 const GBP_ITEMS = [
-  { icon: 'fa-solid fa-clipboard-check', title: 'Full profile setup and optimisation', desc: 'We make sure every section of your profile is complete — business categories, service descriptions, attributes, hours, and contact details. Nothing left blank, nothing left to chance.', img: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=500&q=80' },
+  { icon: 'fa-solid fa-clipboard-check', title: 'Full profile setup and optimisation', desc: 'We make sure every section of your profile is complete, business categories, service descriptions, attributes, hours, and contact details. Nothing left blank, nothing left to chance.', img: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=500&q=80' },
   { icon: 'fa-solid fa-camera', title: 'Photo and video management', desc: 'Profiles with photos receive significantly more clicks and direction requests. We manage your photo library and keep it current with real images of your business, team, and work.', img: 'https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=500&q=80' },
   { icon: 'fa-solid fa-bullhorn', title: 'Google Posts and updates', desc: 'Regular posts signal to Google that your business is active. We publish updates, offers, and announcements consistently so your profile stays fresh in both rankings and first impressions.', img: 'https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?w=500&q=80' },
   { icon: 'fa-solid fa-comments', title: 'Q and A management', desc: 'The questions section on your GBP gets populated whether you manage it or not. We pre-populate it with the questions your customers actually ask and make sure the answers represent your business accurately.', img: 'https://images.unsplash.com/photo-1766066014237-00645c74e9c6?w=500&q=80' },
@@ -54,9 +54,9 @@ const GBP_ITEMS = [
 
 const SERVICES = [
   { icon: 'fa-solid fa-map-location-dot', title: 'Google Business Profile Optimisation', desc: 'Your GBP is the most visible part of your local presence. We set it up completely, optimise every section, manage your photos and posts, handle Q and A, and keep it active so Google keeps ranking it.' },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Local SEO Audit', desc: 'Before we touch anything, we audit your current local presence — your GBP, citations, on-page signals, competitor rankings, and review profile. You get a clear picture of where you stand and exactly what needs fixing.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Local SEO Audit', desc: 'Before we touch anything, we audit your current local presence, your GBP, citations, on-page signals, competitor rankings, and review profile. You get a clear picture of where you stand and exactly what needs fixing.' },
   { icon: 'fa-solid fa-building-columns', title: 'Citation Building and Management', desc: 'We build and manage your business listings across directories, data aggregators, and local platforms. Every listing is checked for NAP consistency so your information is accurate everywhere it appears.' },
-  { icon: 'fa-solid fa-file-lines', title: 'On-Page Local SEO', desc: 'We optimise your website for local search — location keywords, page titles, headings, local schema markup, and dedicated service area pages. Your site becomes a strong local signal, not just a brochure.' },
+  { icon: 'fa-solid fa-file-lines', title: 'On-Page Local SEO', desc: 'We optimise your website for local search, location keywords, page titles, headings, local schema markup, and dedicated service area pages. Your site becomes a strong local signal, not just a brochure.' },
   { icon: 'fa-solid fa-star', title: 'Review Generation', desc: 'We help you build a consistent review strategy that increases your volume, improves your rating, and generates the kind of keyword-rich reviews that feed local rankings. More reviews, more trust, more calls.' },
   { icon: 'fa-solid fa-link', title: 'Local Link Building', desc: 'We earn links from local news sites, business directories, associations, and community organisations in your area. These build the geographic authority that puts you above competitors who rely on generic backlinks.' },
   { icon: 'fa-solid fa-location-dot', title: 'Location and Service Area Pages', desc: 'If you serve multiple areas or have more than one location, we build and optimise dedicated pages for each. Each page targets the right local keywords and gives Google a clear signal about where you operate.' },
@@ -64,24 +64,24 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops — any business with one physical location that wants more foot traffic and phone calls from nearby customers.', img: 'https://images.unsplash.com/photo-1766758196132-c81bdd247238?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers — businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
+  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops, any business with one physical location that wants more foot traffic and phone calls from nearby customers.', img: 'https://images.unsplash.com/photo-1766758196132-c81bdd247238?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers, businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
   { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Businesses with two or more locations need local SEO handled per location. Each site needs its own GBP, its own citations, and its own local page to rank independently in its area.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
   { icon: 'fa-solid fa-sitemap', title: 'Franchises', desc: 'Franchise owners need visibility at the local level, not just brand-wide. We handle local SEO for individual franchise locations so each one performs in its own market.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem — not a product or service problem. We fix what is holding your rankings back.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem, not a product or service problem. We fix what is holding your rankings back.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-user-tie', title: 'We handle everything in-house', desc: 'No subcontractors. No outsourced work. Your local SEO is handled by the same team start to finish — the people who built the strategy are the people doing the work.' },
-  { icon: 'fa-solid fa-robot', title: 'We cover AI search, not just Google', desc: 'Most local SEO agencies are still optimising for the Google of three years ago. We make sure your business shows up in Google AI Overviews, ChatGPT, and Perplexity — where more local searches are heading every month.' },
+  { icon: 'fa-solid fa-user-tie', title: 'We handle everything in-house', desc: 'No subcontractors. No outsourced work. Your local SEO is handled by the same team start to finish, the people who built the strategy are the people doing the work.' },
+  { icon: 'fa-solid fa-robot', title: 'We cover AI search, not just Google', desc: 'Most local SEO agencies are still optimising for the Google of three years ago. We make sure your business shows up in Google AI Overviews, ChatGPT, and Perplexity, where more local searches are heading every month.' },
   { icon: 'fa-solid fa-sliders', title: 'Flexible plans for every budget', desc: 'Local SEO should not be out of reach for a small business. We offer plans that work at different budgets and scale as your results grow. No long contracts, no surprise fees.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Full visibility into everything we do', desc: 'You get regular reports in plain English — not dashboards full of numbers that mean nothing. You will always know what we are working on, what has improved, and what is coming next.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Full visibility into everything we do', desc: 'You get regular reports in plain English, not dashboards full of numbers that mean nothing. You will always know what we are working on, what has improved, and what is coming next.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts because we believe the results speak for themselves. You stay because it is working, not because you signed something twelve months ago.' },
   { icon: 'fa-solid fa-headset', title: 'One dedicated contact', desc: 'You will not be passed between account managers or left waiting for replies. You have one person who knows your business, answers your questions, and is responsible for your results.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Local SEO Audit', desc: 'We start by auditing your full local presence — your GBP, citations, on-page signals, competitor rankings, and review profile. This tells us exactly where you stand and what is holding you back before we touch anything.' },
+  { n: '01', title: 'Local SEO Audit', desc: 'We start by auditing your full local presence, your GBP, citations, on-page signals, competitor rankings, and review profile. This tells us exactly where you stand and what is holding you back before we touch anything.' },
   { n: '02', title: 'Strategy and Setup', desc: 'Based on the audit, we build a local SEO plan specific to your business, your location, and your competitors. We set up or optimise your GBP, fix citation inconsistencies, and make the on-page changes your site needs.' },
   { n: '03', title: 'Citation Building and Content', desc: 'We build your citations across the right directories and platforms, create or optimise your service area pages, and develop the local content that tells Google exactly where you operate and what you offer.' },
   { n: '04', title: 'Review and Authority Building', desc: 'We implement your review generation strategy and begin building local links from relevant sources in your area. This is where your local authority starts compounding over time.' },
@@ -91,17 +91,17 @@ const PROCESS = [
 const FAQS = [
   { q: 'How long does local SEO take to show results?', a: 'Map pack visibility can improve in two to four weeks for less competitive searches. Meaningful organic ranking improvements typically take three to six months. Local SEO is not instant, but the results compound over time and keep delivering without ongoing ad spend.' },
   { q: 'What is the Google local pack and why does it matter?', a: 'The local pack is the map with three business listings that appears at the top of Google when someone searches with local intent. Businesses in it get 126% more traffic and 93% more calls than those ranked below it. Getting into the local pack is the primary goal of local SEO.' },
-  { q: 'Do I need a physical address to do local SEO?', a: 'No. Service-area businesses — plumbers, electricians, cleaners, contractors — can rank in local search without a public-facing address. You define your service area in Google and we optimise around that.' },
-  { q: 'What is the difference between local SEO and regular SEO?', a: 'Regular SEO targets national or global search rankings. Local SEO targets customers in a specific geographic area. It uses different signals — your GBP, NAP consistency, local citations, proximity — and produces different results: calls, visits, and local leads rather than general website traffic.' },
+  { q: 'Do I need a physical address to do local SEO?', a: 'No. Service-area businesses, plumbers, electricians, cleaners, contractors, can rank in local search without a public-facing address. You define your service area in Google and we optimise around that.' },
+  { q: 'What is the difference between local SEO and regular SEO?', a: 'Regular SEO targets national or global search rankings. Local SEO targets customers in a specific geographic area. It uses different signals, your GBP, NAP consistency, local citations, proximity, and produces different results: calls, visits, and local leads rather than general website traffic.' },
   { q: 'How important are Google reviews for local SEO?', a: 'Very important. Review volume, recency, your average rating, and your response rate are all ranking signals. 97% of consumers read reviews before choosing a local business and 78% will not consider a business rated below four stars. Reviews affect both where you rank and whether someone contacts you once they find you.' },
-  { q: 'What is NAP consistency and why does it matter?', a: 'NAP stands for name, address, and phone number. Google cross-references your business information across hundreds of sources online. If your details are inconsistent — different phone numbers, abbreviated addresses — it signals untrustworthiness and hurts your rankings.' },
+  { q: 'What is NAP consistency and why does it matter?', a: 'NAP stands for name, address, and phone number. Google cross-references your business information across hundreds of sources online. If your details are inconsistent, different phone numbers, abbreviated addresses, it signals untrustworthiness and hurts your rankings.' },
   { q: 'Can local SEO help my business show up in AI search results?', a: 'Yes. Google AI Overviews, ChatGPT, and Perplexity are increasingly surfacing local business recommendations. Businesses with optimised GBPs, strong review profiles, structured data, and clear service descriptions are the ones appearing in these AI answers. We include AI search optimisation in our local SEO work.' },
   { q: 'How much does local SEO cost?', a: 'Local SEO pricing varies depending on your location, the competitiveness of your industry, and how many locations you have. We offer flexible plans that work at different budgets. The best starting point is a free audit so we can give you an honest picture of what your situation requires.' },
-  { q: 'Do you work with businesses that have multiple locations?', a: 'Yes. Multi-location businesses need local SEO handled per location — separate GBPs, separate citations, separate local pages. We have experience managing local SEO across multiple locations and can scale the work accordingly.' },
-  { q: 'What happens if I stop doing local SEO?', a: 'Your rankings will gradually decline as competitors continue optimising and your GBP becomes stale. Local SEO is not a one-time fix. It requires ongoing attention to maintain and build on rankings. That said, the authority you build does not disappear overnight — it fades slowly, not instantly.' },
+  { q: 'Do you work with businesses that have multiple locations?', a: 'Yes. Multi-location businesses need local SEO handled per location, separate GBPs, separate citations, separate local pages. We have experience managing local SEO across multiple locations and can scale the work accordingly.' },
+  { q: 'What happens if I stop doing local SEO?', a: 'Your rankings will gradually decline as competitors continue optimising and your GBP becomes stale. Local SEO is not a one-time fix. It requires ongoing attention to maintain and build on rankings. That said, the authority you build does not disappear overnight, it fades slowly, not instantly.' },
 ];
 
-/* ── FAQ 2-COL — matches the main /services/seo page layout ── */
+/* ── FAQ 2-COL, matches the main /services/seo page layout ── */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function LocalSEOPage() {
           <div className="ism-container">
             <div className="lseo-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Get Found by People Searching in Your{' '}
@@ -178,7 +178,7 @@ export default function LocalSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We put your business where local customers are looking — Google Search, Google Maps, Google Business Profile, and AI search results.{' '}
+                  We put your business where local customers are looking, Google Search, Google Maps, Google Business Profile, and AI search results.{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Get found, get calls, get customers</span>.
                 </p>
 
@@ -192,7 +192,7 @@ export default function LocalSEOPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="lseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://picsum.photos/seed/localseohero/640/720" alt="Local business owner" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
@@ -313,7 +313,7 @@ export default function LocalSEOPage() {
                     for your business.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Unlike broader SEO, local SEO targets customers in a specific area. A plumber in Dallas, a dentist in Melbourne, a law firm in Toronto — local SEO makes sure{' '}
+                    Unlike broader SEO, local SEO targets customers in a specific area. A plumber in Dallas, a dentist in Melbourne, a law firm in Toronto, local SEO makes sure{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right people in the right location</span>{' '}
                     find your business when they search.
                   </p>
@@ -334,7 +334,7 @@ export default function LocalSEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — GBP */}
+                {/* Floating badge, GBP */}
                 <div className="lseo-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-store" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -345,7 +345,7 @@ export default function LocalSEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Reviews */}
+                {/* Floating badge, Reviews */}
                 <div className="lseo-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-star" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -356,7 +356,7 @@ export default function LocalSEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Traffic */}
+                {/* Floating badge, Traffic */}
                 <div className="lseo-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-up" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -367,7 +367,7 @@ export default function LocalSEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Map Pack */}
+                {/* Floating badge, Map Pack */}
                 <div className="lseo-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-location-dot" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -477,7 +477,7 @@ export default function LocalSEOPage() {
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Get It Right and Everything Else Gets Easier.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                When someone searches for a local business, the first thing they see is not your website. It is your Google Business Profile — your name, rating, photos, hours, reviews, and a button to call or get directions. That first impression decides whether they contact you or scroll past.
+                When someone searches for a local business, the first thing they see is not your website. It is your Google Business Profile, your name, rating, photos, hours, reviews, and a button to call or get directions. That first impression decides whether they contact you or scroll past.
                 A complete, optimised GBP makes customers 2.7 times more likely to view your business as reputable and 70% more likely to visit. GBP actions have increased 41% year over year. Most businesses are leaving this entirely unmanaged.
               </p>
             </div>

@@ -23,7 +23,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-robot', title: 'AI is a feature, not a product', desc: 'The businesses winning with AI are embedding it into real workflows, not bolting on a chatbot for the sake of having one.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'RAG systems make AI actually know your business', desc: 'Retrieval-augmented generation grounds responses in your actual data, not just what a general model was trained on.' },
   { icon: 'fa-solid fa-gears', title: 'Automation that used to need a person, now doesn’t', desc: 'Document processing, categorisation, and drafting tasks that took hours can be handled by a properly built AI workflow.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Evaluation prevents AI from quietly getting worse', desc: 'Model and prompt changes need testing against real cases — without evaluation, quality drift goes unnoticed.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Evaluation prevents AI from quietly getting worse', desc: 'Model and prompt changes need testing against real cases, without evaluation, quality drift goes unnoticed.' },
   { icon: 'fa-solid fa-sack-dollar', title: 'Cost control matters as much as capability', desc: 'Poorly architected AI features can rack up API costs fast. We architect for efficiency alongside performance.' },
   { icon: 'fa-solid fa-plug', title: 'AI works best integrated, not standalone', desc: 'A chatbot with no access to your CRM or data is a toy. AI that reads and writes to your actual systems is a tool.' },
 ];
@@ -43,7 +43,7 @@ const FAILURE_MODES = [
 
 const SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'AI Strategy & Use Case Scoping', desc: 'Identifying where AI genuinely adds value in your business, and defining the scope before building anything.' },
-  { icon: 'fa-solid fa-robot', title: 'Custom AI Chatbot & Assistant Development', desc: 'Trained on your business, integrated with your systems, built for a specific job — not a generic chat widget.' },
+  { icon: 'fa-solid fa-robot', title: 'Custom AI Chatbot & Assistant Development', desc: 'Trained on your business, integrated with your systems, built for a specific job, not a generic chat widget.' },
   { icon: 'fa-solid fa-code', title: 'LLM Integration Into Existing Applications', desc: 'Adding AI capability into software you already have, rather than building something separate.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'RAG System Development', desc: 'Retrieval-augmented generation built on your actual documents and data for grounded, accurate responses.' },
   { icon: 'fa-solid fa-gears', title: 'AI Workflow & Process Automation', desc: 'Document processing, categorisation, and drafting workflows automated with AI where it genuinely saves time.' },
@@ -53,16 +53,16 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-headset', title: 'Businesses wanting to automate support or FAQs', desc: 'A properly trained AI assistant that actually knows your business, not a generic chatbot.', img: 'https://picsum.photos/seed/ai-whofor-support/700/620' },
-  { icon: 'fa-solid fa-file-lines', title: 'Businesses with document-heavy workflows', desc: 'Processing, categorising, or summarising documents at a volume that makes manual work impractical.', img: 'https://picsum.photos/seed/ai-whofor-docs/700/620' },
-  { icon: 'fa-solid fa-code', title: 'Software teams wanting to add AI features', desc: 'Existing applications that need AI capability added without a ground-up rebuild.', img: 'https://picsum.photos/seed/ai-whofor-software/700/620' },
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Businesses wanting AI that knows their data', desc: 'RAG systems that ground AI responses in your actual documents, not just general training data.', img: 'https://picsum.photos/seed/ai-whofor-rag/700/620' },
-  { icon: 'fa-solid fa-gears', title: 'Teams spending hours on repetitive AI-suited tasks', desc: 'Drafting, categorising, and processing tasks that follow a pattern an AI workflow can handle reliably.', img: 'https://picsum.photos/seed/ai-whofor-repetitive/700/620' },
-  { icon: 'fa-solid fa-flask', title: 'Businesses that tried AI and it didn’t work', desc: 'Most failed AI projects trace back to scope, grounding, or evaluation — all fixable without starting over.', img: 'https://picsum.photos/seed/ai-whofor-failed/700/620' },
+  { icon: 'fa-solid fa-headset', title: 'Businesses wanting to automate support or FAQs', desc: 'A properly trained AI assistant that actually knows your business, not a generic chatbot.', img: '/services-six-card/Web Development Section/AI Development/Businesses wanting to automate.webp' },
+  { icon: 'fa-solid fa-file-lines', title: 'Businesses with document-heavy workflows', desc: 'Processing, categorising, or summarising documents at a volume that makes manual work impractical.', img: '/services-six-card/Web Development Section/AI Development/Businesses with document-.webp' },
+  { icon: 'fa-solid fa-code', title: 'Software teams wanting to add AI features', desc: 'Existing applications that need AI capability added without a ground-up rebuild.', img: '/services-six-card/Web Development Section/AI Development/Software teams wanting to add.webp' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Businesses wanting AI that knows their data', desc: 'RAG systems that ground AI responses in your actual documents, not just general training data.', img: '/services-six-card/Web Development Section/AI Development/Businesses wanting AI that.webp' },
+  { icon: 'fa-solid fa-gears', title: 'Teams spending hours on repetitive AI-suited tasks', desc: 'Drafting, categorising, and processing tasks that follow a pattern an AI workflow can handle reliably.', img: '/services-six-card/Web Development Section/AI Development/Teams spending hours on.webp' },
+  { icon: 'fa-solid fa-flask', title: 'Businesses that tried AI and it didn’t work', desc: 'Most failed AI projects trace back to scope, grounding, or evaluation, all fixable without starting over.', img: "/services-six-card/Web Development Section/AI Development/Businesses that tried Al and it didn't work.webp" },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'We scope the use case before building anything', desc: 'A specific problem AI is solving, defined before development — not AI for the sake of AI.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'We scope the use case before building anything', desc: 'A specific problem AI is solving, defined before development, not AI for the sake of AI.' },
   { icon: 'fa-solid fa-database', title: 'We ground AI in your actual data', desc: 'RAG and proper data integration so responses reflect your business, not just general knowledge.' },
   { icon: 'fa-solid fa-vial', title: 'We evaluate output quality continuously', desc: 'Structured testing against real cases so quality doesn’t quietly drift as the system evolves.' },
   { icon: 'fa-solid fa-sack-dollar', title: 'We architect for cost efficiency', desc: 'API usage optimised from the start so AI features stay sustainable at scale.' },
@@ -81,13 +81,13 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'How do I know if AI is actually the right solution for my problem?', a: 'We start every project by scoping the specific use case. If a simpler automation or workflow tool solves it better, we’ll tell you that instead.' },
-  { q: 'What is RAG and why does it matter?', a: 'Retrieval-augmented generation grounds AI responses in your actual documents and data, rather than relying only on the model’s general training — producing far more accurate, business-specific answers.' },
+  { q: 'What is RAG and why does it matter?', a: 'Retrieval-augmented generation grounds AI responses in your actual documents and data, rather than relying only on the model’s general training, producing far more accurate, business-specific answers.' },
   { q: 'Can you add AI features to our existing application?', a: 'Yes. We regularly integrate AI capability into existing software rather than building something separate.' },
   { q: 'How do you prevent AI from producing inaccurate or embarrassing outputs?', a: 'Through grounding in real data, structured prompt engineering, and an evaluation process that tests outputs against real cases before and after launch.' },
   { q: 'Will AI features be expensive to run?', a: 'It depends on usage and architecture. We design for cost efficiency from the start and monitor spend on an ongoing basis so there are no surprises.' },
   { q: 'How long does an AI feature take to build?', a: 'A focused chatbot or workflow automation might take three to five weeks. RAG systems and deeper integrations typically take longer.' },
   { q: 'Do you provide ongoing support after launch?', a: 'Yes, on a month-to-month basis, covering performance monitoring, evaluation, and refinement as the system evolves.' },
-  { q: 'We tried building an AI chatbot ourselves and it didn’t work well. Can you fix it?', a: 'Yes. Most underperforming AI features trace back to scope, grounding, or evaluation gaps — all fixable without starting from scratch.' },
+  { q: 'We tried building an AI chatbot ourselves and it didn’t work well. Can you fix it?', a: 'Yes. Most underperforming AI features trace back to scope, grounding, or evaluation gaps, all fixable without starting from scratch.' },
 ];
 
 const RELATED = [
@@ -171,7 +171,7 @@ export default function AiDevelopmentPage() {
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We build custom AI features, chatbots, and workflow automation{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>grounded in your actual business data</span>{' '}
-                  — scoped properly, tested, and built to keep working.
+                 , scoped properly, tested, and built to keep working.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -245,11 +245,11 @@ export default function AiDevelopmentPage() {
                   &ldquo;We Should Add AI&rdquo; Is Not a Use Case.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most disappointing AI projects started with the technology, not the problem — a chatbot bolted on because everyone else has one, not because it solves anything specific.
+                  Most disappointing AI projects started with the technology, not the problem, a chatbot bolted on because everyone else has one, not because it solves anything specific.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes the actual use case first</span>, then builds AI grounded in your real data — tested, monitored, and built to keep working.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes the actual use case first</span>, then builds AI grounded in your real data, tested, monitored, and built to keep working.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -293,7 +293,7 @@ export default function AiDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     RAG systems{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ground AI responses in your actual data</span> — not just what a general model happens to know.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ground AI responses in your actual data</span>, not just what a general model happens to know.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Proper integration means{' '}
@@ -370,7 +370,7 @@ export default function AiDevelopmentPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>AI Built to Solve a Specific Problem, Not to Chase a Trend.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Grounded, integrated, and evaluated — the difference between AI that works and AI that just looks impressive in a demo.
+                Grounded, integrated, and evaluated, the difference between AI that works and AI that just looks impressive in a demo.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -406,7 +406,7 @@ export default function AiDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes AI Projects to Underdeliver — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes AI Projects to Underdeliver, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most disappointing AI features trace back to one of these four causes.
               </p>
@@ -521,7 +521,7 @@ export default function AiDevelopmentPage() {
                   A free strategy session, before you commit to anything.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

@@ -100,7 +100,7 @@ const TRUST_BARS = [
   },
   {
     line: <>4.5/5 average rating across <span style={{ color: 'var(--ism-amber)' }}>270+ verified reviews.</span></>,
-    sub: 'Google, Upwork, and Clutch — real feedback, real results.',
+    sub: 'Google, Upwork, and Clutch, real feedback, real results.',
   },
   {
     line: <>98% of clients <span style={{ color: 'var(--ism-amber)' }}>stay with us year after year.</span></>,
@@ -150,7 +150,7 @@ export default function TestimonialsPage() {
                   What Our <span style={{ color: 'var(--color-primary)' }}>Clients</span> Say
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 18, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 36, maxWidth: 520 }}>
-                  Don&apos;t take our word for it. Hear directly from the businesses we&apos;ve helped grow — from local trades to global SaaS companies.
+                  Don&apos;t take our word for it. Hear directly from the businesses we&apos;ve helped grow, from local trades to global SaaS companies.
                 </p>
                 <div className="tsm-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                   <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -161,7 +161,7 @@ export default function TestimonialsPage() {
                 </div>
               </div>
 
-              {/* RIGHT — image */}
+              {/* RIGHT, image */}
               <div className="tsm-hero-img-wrap" style={{ position: 'relative' }}>
                 <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -205,7 +205,7 @@ export default function TestimonialsPage() {
                 Straight From Our Clients
               </h2>
               <p style={{ fontFamily: I, color: 'var(--color-text-muted)', maxWidth: 500, margin: '0 auto' }}>
-                Real reviews, screenshotted straight from the source — no edits, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no cherry-picking</span>.
+                Real reviews, screenshotted straight from the source, no edits, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no cherry-picking</span>.
               </p>
             </div>
 
@@ -298,7 +298,7 @@ export default function TestimonialsPage() {
                   <div style={{ position: 'absolute', top: 18, left: 18, right: -18, bottom: -18, background: 'var(--ism-amber)', borderRadius: 24, opacity: 0.15 }} />
                   {/* Blue shadow box */}
                   <div style={{ position: 'absolute', top: 8, left: 8, right: -8, bottom: -8, background: 'var(--color-primary)', borderRadius: 24, opacity: 0.10 }} />
-                  <VideoEmbed videoId={t.id} title={`${t.name} — client testimonial`} />
+                  <VideoEmbed videoId={t.id} title={`${t.name}, client testimonial`} />
                 </div>
 
               </div>

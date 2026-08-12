@@ -12,7 +12,7 @@ export default function HirePageTemplate(props) {
   return (
     <>
       {/* ════════════════════════════════════════
-          SECTION 01 — HERO
+          SECTION 01, HERO
       ════════════════════════════════════════ */}
       <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'visible' }}>
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: 550, height: 550, background: 'radial-gradient(circle, rgba(255, 235, 179, 0.45) 0%, transparent 65%)', pointerEvents: 'none' }} />

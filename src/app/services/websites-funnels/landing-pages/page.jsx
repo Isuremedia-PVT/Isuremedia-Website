@@ -15,7 +15,7 @@ const BRIDGE_ITEMS = [
   'Design that builds trust and removes friction',
   'CTA placement and form optimisation',
   'A/B testing setup and variant production',
-  'Platform-agnostic build — Webflow, WordPress, GoHighLevel, Unbounce',
+  'Platform-agnostic build, Webflow, WordPress, GoHighLevel, Unbounce',
   'CRM and tracking integration',
 ];
 
@@ -23,9 +23,9 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-arrow-trend-up', title: 'More leads from the same ad spend', desc: 'Doubling your landing page conversion rate doubles your leads without doubling your budget. Optimising the landing page produces more leads per pound spent than any other campaign improvement.' },
   { icon: 'fa-solid fa-coins', title: 'Lower cost per lead', desc: 'When more of your traffic converts, your cost per lead falls. A campaign that was barely profitable becomes clearly profitable. A campaign that was profitable becomes significantly more so.' },
   { icon: 'fa-solid fa-message', title: 'Message consistency from ad to page', desc: 'When the landing page message matches the ad that brought the visitor there, bounce rates drop and conversion rates rise. We build every landing page to match the specific ad or campaign it serves.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Better data for campaign optimisation', desc: "A high-converting landing page with proper tracking gives you clean conversion data that feeds back into your ad platform's algorithm — lower CPC, better targeting, higher-quality leads." },
-  { icon: 'fa-solid fa-bullseye', title: 'Purpose-built pages for every campaign', desc: 'A single homepage cannot serve every campaign effectively. A product launch, a lead magnet, a webinar registration — each needs its own page, built for the specific visitor and offer.' },
-  { icon: 'fa-solid fa-gauge-high', title: 'The page is the most leveraged variable', desc: 'You can spend more on ads or improve targeting — both improve results at the margins. Improving the conversion rate of the page multiplies results across the entire campaign.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Better data for campaign optimisation', desc: "A high-converting landing page with proper tracking gives you clean conversion data that feeds back into your ad platform's algorithm, lower CPC, better targeting, higher-quality leads." },
+  { icon: 'fa-solid fa-bullseye', title: 'Purpose-built pages for every campaign', desc: 'A single homepage cannot serve every campaign effectively. A product launch, a lead magnet, a webinar registration, each needs its own page, built for the specific visitor and offer.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'The page is the most leveraged variable', desc: 'You can spend more on ads or improve targeting, both improve results at the margins. Improving the conversion rate of the page multiplies results across the entire campaign.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -39,61 +39,61 @@ const ANATOMY = [
   { icon: 'fa-solid fa-align-left', title: 'A subheadline that expands the offer', impact: 'High impact', desc: 'The headline creates the hook. The subheadline answers the immediate follow-up question: what exactly am I getting, and why does it matter to me?' },
   { icon: 'fa-solid fa-image', title: 'A hero image or video that serves the conversion', impact: 'High impact', desc: 'The visual above the fold exists to reinforce the message, not to decorate the page. The wrong image adds noise. The right image adds conviction.' },
   { icon: 'fa-solid fa-star', title: 'Social proof close to the top', impact: 'High impact', desc: 'Trust must be established before the visitor reaches the form. Testimonials, ratings, and logos placed near the top of the page, not buried where most visitors never scroll.' },
-  { icon: 'fa-solid fa-hand-pointer', title: 'A single, clear CTA', impact: 'Highest impact', desc: 'One button. One action. The CTA text names what the visitor gets, not what they do — "Get" outperforms "Submit" every time. Above the fold, repeated at the bottom.' },
+  { icon: 'fa-solid fa-hand-pointer', title: 'A single, clear CTA', impact: 'Highest impact', desc: 'One button. One action. The CTA text names what the visitor gets, not what they do, "Get" outperforms "Submit" every time. Above the fold, repeated at the bottom.' },
   { icon: 'fa-solid fa-list-check', title: 'A form that asks for the minimum', impact: 'Medium impact', desc: 'Every field you add reduces completion rates. We design forms that ask for only what is absolutely necessary for the next step.' },
-  { icon: 'fa-solid fa-ban', title: 'Friction removal — no navigation, no distractions', impact: 'Medium impact', desc: 'No header navigation, no footer links, no competing offers. Everything on the page points to one action. Every exit point removed is a potential conversion saved.' },
+  { icon: 'fa-solid fa-ban', title: 'Friction removal, no navigation, no distractions', impact: 'Medium impact', desc: 'No header navigation, no footer links, no competing offers. Everything on the page points to one action. Every exit point removed is a potential conversion saved.' },
   { icon: 'fa-solid fa-clock', title: 'Urgency or specificity where genuine', impact: 'Contextual', desc: 'Specific numbers, timelines, and outcomes convert better than vague promises. Genuine urgency is presented clearly, without manufactured pressure.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-compass', title: 'Strategy and Offer Development', desc: 'We define the offer, audience, conversion goal, and message hierarchy before any design begins — so the landing page promise matches the ad from the start.' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Copywriting', desc: 'We write all copy — headline, subheadline, offer description, social proof framing, objection handling, and CTA — matched to the voice of your audience.' },
-  { icon: 'fa-solid fa-object-group', title: 'Design and Development', desc: 'We design and build on the platform that fits your campaign — Webflow, WordPress, GoHighLevel, Unbounce, or a custom build.' },
+  { icon: 'fa-solid fa-compass', title: 'Strategy and Offer Development', desc: 'We define the offer, audience, conversion goal, and message hierarchy before any design begins, so the landing page promise matches the ad from the start.' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Copywriting', desc: 'We write all copy, headline, subheadline, offer description, social proof framing, objection handling, and CTA, matched to the voice of your audience.' },
+  { icon: 'fa-solid fa-object-group', title: 'Design and Development', desc: 'We design and build on the platform that fits your campaign, Webflow, WordPress, GoHighLevel, Unbounce, or a custom build.' },
   { icon: 'fa-solid fa-flask', title: 'A/B Testing Setup and Variant Production', desc: 'We set up testing infrastructure and produce the variants needed to test headline, hero image, CTA text, form length, and social proof placement.' },
-  { icon: 'fa-solid fa-plug', title: 'Form Optimisation and CRM Integration', desc: 'We design low-friction forms connected to your CRM — GoHighLevel, HubSpot, or whatever you use — with automation triggered the moment a lead comes in.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Conversion Tracking and Analytics Setup', desc: 'GA4, Google Ads conversion tracking, Meta pixel events, and any other platform your campaign runs on — clean data that makes optimisation accurate.' },
+  { icon: 'fa-solid fa-plug', title: 'Form Optimisation and CRM Integration', desc: 'We design low-friction forms connected to your CRM, GoHighLevel, HubSpot, or whatever you use, with automation triggered the moment a lead comes in.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Conversion Tracking and Analytics Setup', desc: 'GA4, Google Ads conversion tracking, Meta pixel events, and any other platform your campaign runs on, clean data that makes optimisation accurate.' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Post-Launch Optimisation', desc: 'A landing page is not finished at launch. We monitor conversion rate, bounce rate, and form completion, and make iterative improvements from real data.' },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Landing Page Audits', desc: 'For existing pages underperforming, we audit message match, offer clarity, trust signals, friction points, and CTA — with a prioritised fix list.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Landing Page Audits', desc: 'For existing pages underperforming, we audit message match, offer clarity, trust signals, friction points, and CTA, with a prioritised fix list.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-bullhorn', title: 'Businesses running Google Ads or Meta Ads', desc: 'Every paid campaign deserves a dedicated landing page matched to the specific ad. Sending traffic to a homepage wastes a significant percentage of every budget.', img: 'https://picsum.photos/seed/lp-whofor-ads/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Businesses launching a new offer, product, or service', desc: 'A new offer needs a page that presents it cleanly, handles objections, and builds trust with new visitors. A homepage update is not sufficient.', img: 'https://picsum.photos/seed/lp-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Businesses running lead generation campaigns', desc: 'Free audits, consultations, content downloads, webinar registrations — any campaign built around capturing leads needs a page that removes every barrier.', img: 'https://picsum.photos/seed/lp-whofor-leadgen/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with underperforming landing pages', desc: 'If your page is getting traffic but not converting, the problem is almost always message match, trust signal placement, form friction, or CTA clarity.', img: 'https://picsum.photos/seed/lp-whofor-underperform/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies that need landing pages built for clients', desc: 'Landing page design and development as part of our white-label services. Same quality, your brand on the deliverables, scalable across your client base.', img: 'https://picsum.photos/seed/lp-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses running product-specific campaigns', desc: 'A product launch, seasonal offer, or category campaign all benefit from a dedicated landing page rather than a standard product page.', img: 'https://picsum.photos/seed/lp-whofor-ecom/700/620' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Businesses running Google Ads or Meta Ads', desc: 'Every paid campaign deserves a dedicated landing page matched to the specific ad. Sending traffic to a homepage wastes a significant percentage of every budget.', img: '/services-six-card/Web Development Section/Landing Page section/Businesses running Google Ads and meta ads.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Businesses launching a new offer, product, or service', desc: 'A new offer needs a page that presents it cleanly, handles objections, and builds trust with new visitors. A homepage update is not sufficient.', img: '/services-six-card/Web Development Section/Landing Page section/Businesses launching a new offer, product, or service.webp' },
+  { icon: 'fa-solid fa-users', title: 'Businesses running lead generation campaigns', desc: 'Free audits, consultations, content downloads, webinar registrations, any campaign built around capturing leads needs a page that removes every barrier.', img: '/services-six-card/Web Development Section/Landing Page section/Businesses running lead generation campaigns.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with underperforming landing pages', desc: 'If your page is getting traffic but not converting, the problem is almost always message match, trust signal placement, form friction, or CTA clarity.', img: '/services-six-card/Web Development Section/Landing Page section/businesses with underperforming landing pages.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies that need landing pages built for clients', desc: 'Landing page design and development as part of our white-label services. Same quality, your brand on the deliverables, scalable across your client base.', img: '/services-six-card/Web Development Section/Landing Page section/Agencies that need landing pages built for clients.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses running product-specific campaigns', desc: 'A product launch, seasonal offer, or category campaign all benefit from a dedicated landing page rather than a standard product page.', img: '/services-six-card/Web Development Section/Landing Page section/E-commerce businesses running product-specific campaigns.webp' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-lightbulb', title: 'We start with the offer and the message', desc: 'Most agencies start with design. We start with the offer, audience, and message, because a beautifully designed page with the wrong message does not convert.' },
-  { icon: 'fa-solid fa-link', title: 'We match the page to the ad', desc: 'Every landing page we build is matched to the specific ad, email, or campaign driving traffic to it — built in from the start on every project.' },
+  { icon: 'fa-solid fa-link', title: 'We match the page to the ad', desc: 'Every landing page we build is matched to the specific ad, email, or campaign driving traffic to it, built in from the start on every project.' },
   { icon: 'fa-solid fa-flask-vial', title: 'We build in testing from day one', desc: 'We set up A/B testing infrastructure on every project so improving the page after launch is systematic, not guesswork.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We connect everything', desc: 'CRM integration, conversion tracking, ad platform pixel events, automation triggers — every lead is captured, followed up with, and attributed correctly.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We connect everything', desc: 'CRM integration, conversion tracking, ad platform pixel events, automation triggers, every lead is captured, followed up with, and attributed correctly.' },
   { icon: 'fa-solid fa-chart-line', title: 'We optimise after launch', desc: 'We do not hand over a page and call the project complete. A page that has been running and tested for three months always outperforms the launch version.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing optimisation arrangements are month to month. You stay because the page is improving, not because you signed a retainer.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Strategy & Offer Alignment', desc: 'We define the offer, audience, conversion goal, and campaign it serves, and review the ad creative to keep the message consistent from click to conversion.' },
-  { n: '02', title: 'Copy Development', desc: 'We write the full page copy — headline, subheadline, offer description, social proof framing, objection handling, and CTA — reviewed before design begins.' },
+  { n: '02', title: 'Copy Development', desc: 'We write the full page copy, headline, subheadline, offer description, social proof framing, objection handling, and CTA, reviewed before design begins.' },
   { n: '03', title: 'Design & Build', desc: 'We design against the approved copy and strategy, and build the page on your chosen platform, integrated with your CRM and conversion tracking.' },
-  { n: '04', title: 'QA & Pre-Launch', desc: 'We test across devices and browsers — loading speed, mobile layout, form submission, CRM integration, and conversion tracking — before going live.' },
+  { n: '04', title: 'QA & Pre-Launch', desc: 'We test across devices and browsers, loading speed, mobile layout, form submission, CRM integration, and conversion tracking, before going live.' },
   { n: '05', title: 'Launch & A/B Testing Setup', desc: 'The page launches. A/B testing infrastructure is set up and initial variants are produced, queued for testing once traffic accumulates.' },
   { n: '06', title: 'Post-Launch Monitoring', desc: 'We monitor conversion rate, bounce rate, and form completion, implement test winners, and keep improving the page as data accumulates.' },
 ];
 
 const FAQS = [
-  { q: 'What is the difference between a landing page and a website page?', a: 'A website page is part of a larger site and serves multiple purposes. A landing page is standalone, has no navigation, serves a single campaign, and has one goal — converting a specific visitor with a specific offer.' },
+  { q: 'What is the difference between a landing page and a website page?', a: 'A website page is part of a larger site and serves multiple purposes. A landing page is standalone, has no navigation, serves a single campaign, and has one goal, converting a specific visitor with a specific offer.' },
   { q: 'What conversion rate should I expect from a landing page?', a: 'The average landing page converts at 2 to 5% of visitors. Top-performing pages convert at 10% or higher. A realistic first-launch target is 4 to 8%, improving over time as A/B testing produces winners.' },
   { q: 'How long does it take to build a landing page?', a: 'A standard landing page takes five to ten business days from strategy to launch. Pages with complex integrations or custom design typically take two to three weeks.' },
   { q: 'Do I need a different landing page for each campaign?', a: 'Ideally, yes. Each campaign has a different audience, message, and offer. At a minimum, each distinct offer should have its own dedicated landing page.' },
-  { q: 'What platform do you build landing pages on?', a: 'We build on the platform that fits your campaign and tech stack — Webflow, WordPress, GoHighLevel, Unbounce, or a custom build — recommending the right one for your situation.' },
+  { q: 'What platform do you build landing pages on?', a: 'We build on the platform that fits your campaign and tech stack, Webflow, WordPress, GoHighLevel, Unbounce, or a custom build, recommending the right one for your situation.' },
   { q: 'Can you build landing pages for my GoHighLevel account?', a: 'Yes. We build GoHighLevel landing pages regularly, connected directly to your pipelines, forms, automations, and booking calendars.' },
-  { q: 'Do you write the copy or do I provide it?', a: 'We write the copy. It is the primary driver of conversion rate — headline, offer description, social proof framing, and CTA text are all written by our team.' },
-  { q: 'How do you improve a landing page that is not converting?', a: 'We start with a full audit — message match, offer clarity, social proof placement, form friction, and CTA effectiveness — then implement fixes ranked by likely impact.' },
+  { q: 'Do you write the copy or do I provide it?', a: 'We write the copy. It is the primary driver of conversion rate, headline, offer description, social proof framing, and CTA text are all written by our team.' },
+  { q: 'How do you improve a landing page that is not converting?', a: 'We start with a full audit, message match, offer clarity, social proof placement, form friction, and CTA effectiveness, then implement fixes ranked by likely impact.' },
   { q: 'What does A/B testing a landing page involve?', a: 'Running two versions simultaneously and measuring which converts higher. Common variables: headline, hero image, CTA text, form length, and social proof placement.' },
-  { q: 'Can you also help with the ad creative that drives traffic to the page?', a: 'Yes. We produce ad creative across Google Ads, Meta Ads, and LinkedIn as part of our PPC services — built in the same team, with the same message, for better consistency.' },
+  { q: 'Can you also help with the ad creative that drives traffic to the page?', a: 'Yes. We produce ad creative across Google Ads, Meta Ads, and LinkedIn as part of our PPC services, built in the same team, with the same message, for better consistency.' },
 ];
 
 function FAQAccordion() {
@@ -170,7 +170,7 @@ export default function LandingPagesPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build landing pages that turn ad clicks, email traffic, and campaign visitors into leads, bookings, and sales — with every element tested, optimised, and{' '}
+                  We design and build landing pages that turn ad clicks, email traffic, and campaign visitors into leads, bookings, and sales, with every element tested, optimised, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around one clear goal</span>.
                 </p>
 
@@ -245,7 +245,7 @@ export default function LandingPagesPage() {
                   Sending Paid Traffic to Your Homepage Is Costing You Most of What You Spend.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Every click from a Google Ads or Meta campaign costs money. If that click lands on a homepage — with navigation, multiple messages, and ten different places to go — the visitor is confused and leaves. The money is gone. Nothing converts.
+                  Every click from a Google Ads or Meta campaign costs money. If that click lands on a homepage, with navigation, multiple messages, and ten different places to go, the visitor is confused and leaves. The money is gone. Nothing converts.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A landing page removes that friction. One message. One offer. One action. When the page is built properly, the same traffic that was barely converting starts producing leads at{' '}
@@ -300,7 +300,7 @@ export default function LandingPagesPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>convert at a higher rate</span> than any other page on your site.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The average landing page converts between 2 and 5% of visitors. Top-performing landing pages convert at 10 to 12% or higher. The difference is almost never the offer — it is almost always the page.
+                    The average landing page converts between 2 and 5% of visitors. Top-performing landing pages convert at 10 to 12% or higher. The difference is almost never the offer, it is almost always the page.
                   </p>
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default function LandingPagesPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Page Your Traffic Lands On Is the Most Leveraged Variable in Your Campaign.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                A campaign sending 1,000 visitors per month to a page that converts at 3% produces 30 leads. The same campaign sending the same 1,000 visitors to a page that converts at 8% produces 80 leads — almost three times the leads on the same ad spend.
+                A campaign sending 1,000 visitors per month to a page that converts at 3% produces 30 leads. The same campaign sending the same 1,000 visitors to a page that converts at 8% produces 80 leads, almost three times the leads on the same ad spend.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -662,7 +662,7 @@ export default function LandingPagesPage() {
               {[
                 { icon: 'fa-solid fa-diagram-project', title: 'ClickFunnels', desc: 'Fast-launching funnel builds for offers, webinars, and lead generation.', href: '/services/websites-funnels/clickfunnels' },
                 { icon: 'fa-solid fa-robot', title: 'GoHighLevel Funnels', desc: 'Full funnel and automation builds inside GoHighLevel.', href: '/services/websites-funnels/gohighlevel-funnels' },
-                { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Send the right traffic to the page — search campaigns built around your target cost per lead.', href: '/services/ppc/google-ads' },
+                { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Send the right traffic to the page, search campaigns built around your target cost per lead.', href: '/services/ppc/google-ads' },
               ].map((r, i) => (
                 <a key={i} href={r.href} style={{ display: 'block', background: '#fff', borderRadius: 16, border: '1px solid var(--color-border)', padding: '32px 28px', textDecoration: 'none', transition: 'all .22s' }}
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 44px rgba(30,77,195,.12)'; el.style.borderColor = 'var(--color-primary)'; }}

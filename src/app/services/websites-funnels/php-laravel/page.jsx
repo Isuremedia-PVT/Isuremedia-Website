@@ -42,7 +42,7 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Specification', desc: 'Existing codebase review or new project scoping — architecture, database, and requirements defined in writing.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Specification', desc: 'Existing codebase review or new project scoping, architecture, database, and requirements defined in writing.' },
   { icon: 'fa-solid fa-code', title: 'Custom Laravel Application Development', desc: 'Bespoke web applications built to your exact specification, from internal tools to customer-facing platforms.' },
   { icon: 'fa-solid fa-database', title: 'Database Design & API Development', desc: 'Relational data models and RESTful or GraphQL APIs built to serve web, mobile, and third-party consumers.' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Legacy PHP Refactoring', desc: 'Outdated PHP codebases modernised and migrated to Laravel without disrupting live operations.' },
@@ -53,19 +53,19 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-building', title: 'Businesses needing custom internal tools', desc: 'Booking systems, inventory management, or workflow tools that don’t exist as off-the-shelf software.', img: 'https://picsum.photos/seed/php-whofor-internal/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Startups building a data-heavy platform', desc: 'Multi-user applications where the data model and relationships are core to the product itself.', img: 'https://picsum.photos/seed/php-whofor-startup/700/620' },
-  { icon: 'fa-solid fa-code-branch', title: 'Businesses with a legacy PHP codebase', desc: 'Outdated applications that need modernising without a full rebuild or disruption to live operations.', img: 'https://picsum.photos/seed/php-whofor-legacy/700/620' },
-  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: 'https://picsum.photos/seed/php-whofor-api/700/620' },
-  { icon: 'fa-solid fa-user-shield', title: 'Applications requiring complex user roles', desc: 'Multi-tenant platforms, admin dashboards, and permission-gated systems built on solid authentication.', img: 'https://picsum.photos/seed/php-whofor-roles/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a page builder', desc: 'When a CMS or no-code tool has hit its ceiling, custom development is the next step.', img: 'https://picsum.photos/seed/php-whofor-outgrown/700/620' },
+  { icon: 'fa-solid fa-building', title: 'Businesses needing custom internal tools', desc: 'Booking systems, inventory management, or workflow tools that don’t exist as off-the-shelf software.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Businesses needing custom internal tools.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Startups building a data-heavy platform', desc: 'Multi-user applications where the data model and relationships are core to the product itself.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Startups building a data-heavy platform for.webp' },
+  { icon: 'fa-solid fa-code-branch', title: 'Businesses with a legacy PHP codebase', desc: 'Outdated applications that need modernising without a full rebuild or disruption to live operations.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Businesses with a legacy PHP.webp' },
+  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Businesses needing an API for.webp' },
+  { icon: 'fa-solid fa-user-shield', title: 'Applications requiring complex user roles', desc: 'Multi-tenant platforms, admin dashboards, and permission-gated systems built on solid authentication.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Applications requiring complex user roles.webp' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a page builder', desc: 'When a CMS or no-code tool has hit its ceiling, custom development is the next step.', img: '/services-six-card/Web Development Section/PHP Laravel Development/Businesses that have outgrown a page builder.webp' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-file-circle-check', title: 'We scope before we build anything', desc: 'A written technical specification, agreed before development begins, is what prevents scope disputes later.' },
   { icon: 'fa-solid fa-database', title: 'We design the database to scale', desc: 'Architecture decisions made with growth in mind, not just what the first version needs.' },
   { icon: 'fa-solid fa-vial', title: 'We build with test coverage', desc: 'Automated tests that catch regressions before they reach production, not after a client reports them.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'We follow Laravel and OWASP security practices', desc: 'Security isn’t an add-on — it’s built into how we architect and code from the first line.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'We follow Laravel and OWASP security practices', desc: 'Security isn’t an add-on, it’s built into how we architect and code from the first line.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English documentation', desc: 'How the application is structured, what each part does, and how to make future changes.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing maintenance is month to month. You stay because the application keeps working, not because of a contract.' },
 ];
@@ -80,9 +80,9 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'Why choose Laravel over building on a CMS or website builder?', a: 'Laravel is suited to applications with complex logic, custom workflows, or data models a CMS can’t accommodate — internal tools, platforms, and multi-user systems.' },
+  { q: 'Why choose Laravel over building on a CMS or website builder?', a: 'Laravel is suited to applications with complex logic, custom workflows, or data models a CMS can’t accommodate, internal tools, platforms, and multi-user systems.' },
   { q: 'Can you work with our existing legacy PHP codebase?', a: 'Yes. We audit existing code first and recommend whether refactoring, gradual migration, or a rebuild is the right approach.' },
-  { q: 'How long does a custom Laravel application take to build?', a: 'Depends heavily on scope — a focused internal tool might take four to six weeks, while a full platform can take several months.' },
+  { q: 'How long does a custom Laravel application take to build?', a: 'Depends heavily on scope, a focused internal tool might take four to six weeks, while a full platform can take several months.' },
   { q: 'Do you build the API separately from the frontend?', a: 'Often, yes. An API-first approach lets the same backend serve a website, mobile app, and third-party integrations.' },
   { q: 'What does your technical specification process involve?', a: 'We define the data model, user flows, integrations, and edge cases in writing, agreed by you before any development begins.' },
   { q: 'Do you provide ongoing support after launch?', a: 'Yes, on a month-to-month basis, covering security patches, bug fixes, and new feature development.' },
@@ -169,7 +169,7 @@ export default function PhpLaravelDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Laravel applications and APIs — internal tools, platforms, and{' '}
+                  We design and build custom Laravel applications and APIs, internal tools, platforms, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>systems that don&apos;t exist as off-the-shelf software</span>.
                 </p>
 
@@ -248,7 +248,7 @@ export default function PhpLaravelDevelopmentPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes precisely before writing a line of code</span> — then builds it in Laravel, tested and documented.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>scopes precisely before writing a line of code</span>, then builds it in Laravel, tested and documented.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -296,7 +296,7 @@ export default function PhpLaravelDevelopmentPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Custom development means{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no working around a platform&apos;s limitations</span> — the logic is built exactly to specification.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no working around a platform&apos;s limitations</span>, the logic is built exactly to specification.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Proper development means scoping precisely, architecting for growth, and testing before anything ships.
@@ -405,7 +405,7 @@ export default function PhpLaravelDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Custom Software Projects to Fail — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Custom Software Projects to Fail, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most custom development horror stories trace back to one of these four causes.
               </p>
@@ -520,7 +520,7 @@ export default function PhpLaravelDevelopmentPage() {
                   A free technical consultation, before you commit to anything.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

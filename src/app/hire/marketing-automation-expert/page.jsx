@@ -9,7 +9,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ═══════════════════════════════════════════
-   DATA — All copy from the final document
+   DATA, All copy from the final document
 ═══════════════════════════════════════════ */
 
 const trustChips = [
@@ -48,7 +48,7 @@ const servicesTabs = [
 const servicesData = [
   {
     num: '01', title: 'CRM Workflow Design and Automation',
-    img: '/hire/marketing_automtion/marketing automation expert crm_.png',
+    img: '/hire/marketing_automtion/marketing automation expert crm_.webp',
     desc: <>Most CRMs are full of contacts that nobody is acting on because the workflow logic was never built properly. Get a CRM automation system designed around how your sales process actually works, with triggers that fire when they should and actions that move leads forward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual intervention</span>.</>,
     bullets: [
       'Pipeline stage automation and movement triggers',
@@ -61,7 +61,7 @@ const servicesData = [
   },
   {
     num: '02', title: 'Lead Nurture Sequences',
-    img: '/hire/marketing_automtion/Lead Nurturing.png',
+    img: '/hire/marketing_automtion/Lead Nurturing.webp',
     desc: 'Generic time-based email sequences treat every lead the same and convert poorly. Get nurture sequences built around what each lead actually does, designed to move them through a buying decision at their own pace with the right message at the right stage.',
     bullets: [
       'Behaviour-triggered nurture sequences',
@@ -74,7 +74,7 @@ const servicesData = [
   },
   {
     num: '03', title: 'Email and SMS Campaign Automation',
-    img: '/hire/marketing_automtion/email and sms.png',
+    img: '/hire/marketing_automtion/email and sms.webp',
     desc: 'Broadcast and drip communication across email and SMS, built with proper segmentation, timing logic, and deliverability setup so the right messages reach the right people and actually land in the inbox.',
     bullets: [
       'Email campaign architecture and automation builds',
@@ -87,7 +87,7 @@ const servicesData = [
   },
   {
     num: '04', title: 'AI-Powered Automation and Behavioural Logic',
-    img: '/hire/marketing_automtion/ai automations.png',
+    img: '/hire/marketing_automtion/ai automations.webp',
     desc: 'AI changes what automation can do. Instead of rules based on time, AI-powered systems respond to behaviour, adapt to engagement signals, and make decisions about what to send and when based on what each contact is actually doing. The result is automation that gets more effective as it runs, not automation that stays static.',
     bullets: [
       'AI lead scoring and engagement signal tracking',
@@ -100,7 +100,7 @@ const servicesData = [
   },
   {
     num: '05', title: 'Lead Scoring and Qualification',
-    img: '/hire/marketing_automtion/lead scroing.png',
+    img: '/hire/marketing_automtion/lead scroing.webp',
     desc: 'Your sales team should spend time on leads most likely to close, not manually sorting through every contact to figure out who is ready. Get a lead scoring system that tracks the right signals, weights them properly, and puts the best leads in front of the right person automatically.',
     bullets: [
       'Lead scoring model design and configuration',
@@ -113,7 +113,7 @@ const servicesData = [
   },
   {
     num: '06', title: 'Cross-Platform Integrations',
-    img: '/hire/marketing_automtion/Integrations.png',
+    img: '/hire/marketing_automtion/Integrations.webp',
     desc: 'Your tools only work as a system when they are properly connected. Get your CRM, email platform, website, ads, booking system, payment processor, and any other tool your business runs on sharing data properly and triggering actions across each other.',
     bullets: [
       'CRM and email platform integration',
@@ -126,7 +126,7 @@ const servicesData = [
   },
   {
     num: '07', title: 'Customer Retention and Lifecycle Automation',
-    img: '/hire/marketing_automtion/retention.png',
+    img: '/hire/marketing_automtion/retention.webp',
     desc: 'Acquiring a customer is only the start. The businesses that grow most efficiently keep their customers engaged, buying again, and referring others. Get lifecycle automation built for every stage after the sale.',
     bullets: [
       'Post-purchase onboarding and activation sequences',
@@ -139,7 +139,7 @@ const servicesData = [
   },
   {
     num: '08', title: 'Attribution and Automation Reporting',
-    img: '/hire/marketing_automtion/reporting.png',
+    img: '/hire/marketing_automtion/reporting.webp',
     desc: 'Automation you cannot measure is automation you cannot improve. Get reporting set up to show which campaigns produce leads that convert, which automations drive pipeline movement, and what the actual revenue impact of your marketing system is.',
     bullets: [
       'Campaign attribution and revenue tracking setup',
@@ -211,7 +211,7 @@ const faqs = [
   { q: 'Which platforms do your specialists work with?', a: 'ISureMedia\'s specialists work across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, Mailchimp, Salesforce, and the integration tools that connect them including Zapier, Make, and n8n. GoHighLevel is ISureMedia\'s primary platform, which means the depth of knowledge there is significantly higher than on platforms touched occasionally.' },
   { q: 'Do you work white label for agencies?', a: 'Yes. Everything ISureMedia produces goes out under your agency name. No ISureMedia branding anywhere, no contact with your clients, and nothing that suggests the work came from anyone other than you.' },
   { q: 'Is there a long term contract?', a: 'No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, no lock-in of any kind.' },
-  { q: 'What does AI marketing automation actually do that regular automation does not?', a: 'Rule-based automation fires on fixed triggers — time delays, form fills, specific actions. AI automation responds to behavioural patterns across multiple signals, scores leads dynamically, adapts send timing based on individual engagement history, and uses conversational AI to qualify leads without human involvement. The practical difference is a system that improves as it runs rather than one that stays static.' },
+  { q: 'What does AI marketing automation actually do that regular automation does not?', a: 'Rule-based automation fires on fixed triggers, time delays, form fills, specific actions. AI automation responds to behavioural patterns across multiple signals, scores leads dynamically, adapts send timing based on individual engagement history, and uses conversational AI to qualify leads without human involvement. The practical difference is a system that improves as it runs rather than one that stays static.' },
   { q: 'Can you fix an automation system that was set up badly?', a: 'Yes. Auditing and restructuring partially built or incorrectly built automation systems is a regular part of what ISureMedia handles. The process starts with a full audit of what exists, what is working, what is not, and what the underlying process needs to look like before any rebuild begins.' },
   { q: 'What happens to the system after the project is complete?', a: 'For project-based work, you receive full documentation and a handover session. Post-delivery support is agreed as part of the project scope so there are no grey areas. For retainer clients, ongoing monitoring, adjustments, and improvements are part of the monthly engagement.' },
   { q: 'Can you migrate our existing automation from one platform to another?', a: 'Yes. Migrations between platforms including HubSpot, ActiveCampaign, Klaviyo, and GoHighLevel are handled regularly. Contact data, sequence logic, scoring models, and integration connections are all mapped and rebuilt in the destination platform with a test phase before the old system is switched off.' },
@@ -231,9 +231,9 @@ export default function HireMarketingAutomationExpert() {
       <Navbar />
 
       {/* ════════════════════════════════════════
-          SECTION 01 — HERO (Centered like Image 1)
+          SECTION 01, HERO (Centered like Image 1)
       ════════════════════════════════════════ */}
-      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'visible' }}>
+      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'hidden' }}>
         {/* Soft background glows matching Image 1 */}
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: 550, height: 550, background: 'radial-gradient(circle, rgba(255, 235, 179, 0.45) 0%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 650, height: 650, background: 'radial-gradient(circle, rgba(210, 225, 255, 0.55) 0%, transparent 65%)', pointerEvents: 'none' }} />
@@ -287,7 +287,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 03 — OVERVIEW (Deliver Perfectly Layout)
+          SECTION 03, OVERVIEW (Deliver Perfectly Layout)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="ism-container">
@@ -345,7 +345,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 04 — WHY WORDPRESS (Smart Framework Style)
+          SECTION 04, WHY WORDPRESS (Smart Framework Style)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
@@ -415,7 +415,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 05 — SERVICES (Homepage Style)
+          SECTION 05, SERVICES (Homepage Style)
       ════════════════════════════════════════ */}
       <section id="services" className="svc-section" style={{ padding: '64px 0 72px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
         {/* Decorative blobs */}
@@ -434,8 +434,8 @@ export default function HireMarketingAutomationExpert() {
           </div>
 
           {/* Tab bar */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44, maxWidth: '100%', overflowX: 'auto' }}>
-            <div style={{ display: 'inline-flex', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+          <div style={{ marginBottom: 44, overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <div style={{ display: 'flex', width: 'max-content', margin: '0 auto', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
               {servicesTabs.map((t, i) => {
                 const isActive = activeService === i;
                 return (
@@ -499,7 +499,7 @@ export default function HireMarketingAutomationExpert() {
                       EVERYTHING INCLUDED IN {svc.title}
                     </p>
 
-                    {/* Checklist — scrollable single-column list matching homepage */}
+                    {/* Checklist, scrollable single-column list matching homepage */}
                     <div className="svc-checklist-wrap">
                       <div className="svc-checklist">
                         {svc.bullets.map(b => (
@@ -518,7 +518,7 @@ export default function HireMarketingAutomationExpert() {
                     </a>
                   </div>
 
-                  {/* Right Column — Photo + floating badges */}
+                  {/* Right Column, Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', borderRadius: 20, display: 'block' }} />
@@ -537,7 +537,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 06 — TECHNOLOGIES AND TOOLS
+          SECTION 06, TECHNOLOGIES AND TOOLS
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -608,9 +608,9 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 07 — MID-PAGE CTA
+          SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'hidden' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>
@@ -643,7 +643,7 @@ export default function HireMarketingAutomationExpert() {
             <div className="wp-cta-person" style={{ position: 'relative', zIndex: 3, width: '100%', height: '100%', minHeight: 200, overflow: 'visible', marginBottom: -24 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/result_footer/ready_for_result.png"
+                src="/result_footer/ready_for_result.webp"
                 alt="WordPress Developer CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '150%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
@@ -671,7 +671,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 08 — WHY ISUREMEDIA
+          SECTION 08, WHY ISUREMEDIA
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -768,7 +768,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 09 — ENGAGEMENT MODELS
+          SECTION 09, ENGAGEMENT MODELS
       ════════════════════════════════════════ */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '96px 0' }}>
         <div className="ism-container">
@@ -853,7 +853,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 10 — HOW IT WORKS (Using HowItWorks Component)
+          SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
       <HowItWorks 
         title="From Your First Message to Work Starting"
@@ -873,7 +873,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 11 — FAQ
+          SECTION 11, FAQ
       ════════════════════════════════════════ */}
       <section className="wp-faq-section" style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
         <div className="ism-container">
@@ -950,7 +950,7 @@ export default function HireMarketingAutomationExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 12 — ENDING CTA
+          SECTION 12, ENDING CTA
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">

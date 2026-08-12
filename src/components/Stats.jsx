@@ -1,4 +1,4 @@
-/* Stats — White background
+/* Stats, White background
    Spec: Stat/Number → Plus Jakarta Sans 800 / 64px / 1.10
    On white bg: Digital Blue (#1E4DC3) per visual hierarchy */
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
@@ -18,7 +18,7 @@ export default function Stats() {
         <div className="stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1, background: 'var(--color-border)', borderRadius: 16, overflow: 'hidden', boxShadow: 'var(--sh-sm)' }}>
           {stats.map((s, i) => (
             <div key={i} style={{ background: '#fff', padding: '40px 24px', textAlign: 'center' }}>
-              {/* Stat/Number — 64px / 800 / 1.10 */}
+              {/* Stat/Number, 64px / 800 / 1.10 */}
               <div style={{
                 fontFamily: J,
                 fontSize: 'clamp(40px, 4.5vw, 64px)',

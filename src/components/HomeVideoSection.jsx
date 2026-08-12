@@ -70,7 +70,7 @@ export default function HomeVideoSection() {
                     >
                       <i className="fa-solid fa-play" style={{ fontSize: 26, color: 'var(--color-navy)', marginLeft: 5 }} />
                     </div>
-                    <span className="hvs-watch-label" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.75)', letterSpacing: '.04em' }}>Watch now — 4:12</span>
+                    <span className="hvs-watch-label" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.75)', letterSpacing: '.04em' }}>Watch now, 4:12</span>
                   </div>
                 </button>
 

@@ -14,7 +14,7 @@ const SERVICE_OPTIONS = [
   'Marketing automation',
   'White-label fulfillment',
   'Content and creative',
-  "Not sure yet — let's talk",
+  "Not sure yet, let's talk",
 ];
 
 const STEPS = [
@@ -39,7 +39,7 @@ const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-location-dot',
     label: 'India Office',
-    lines: ['Chandra Complex, Gas Godam Road', 'Haldwani, Uttarakhand, India'],
+    lines: ['First Floor, Chandra Complex, Gas Godam Road,', 'Chhadayal Nayabad, Near Riya Palace,', 'Haldwani, Nainital, Uttarakhand 263139, India'],
   },
   {
     icon: 'fa-solid fa-location-dot',
@@ -55,8 +55,15 @@ const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-envelope',
     label: 'Email',
-    lines: ['hello@isuremedia.com'],
-    hrefs: ['mailto:hello@isuremedia.com'],
+    lines: ['info@isuremedia.com'],
+    hrefs: ['mailto:info@isuremedia.com'],
+  },
+  {
+    icon: 'fa-brands fa-whatsapp',
+    label: 'WhatsApp',
+    lines: ['Chat with us'],
+    hrefs: ['https://api.whatsapp.com/send?phone=917011041363'],
+    external: true,
   },
   {
     icon: 'fa-solid fa-clock',
@@ -115,7 +122,7 @@ export default function ContactPage() {
                   >
                     Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
                   </a>
-                  <a href="#proposal-form"
+                  <a href="/appointment"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 4px 16px rgba(30,77,195,.25)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = 'var(--color-primary-hover)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.background = 'var(--color-primary)'; }}
@@ -125,13 +132,13 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* RIGHT — quick info cards */}
+              {/* RIGHT, quick info cards */}
               <div className="ct-quick-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                 {[
                   { icon: 'fa-solid fa-location-dot', title: 'India Office', text: 'Haldwani, Uttarakhand' },
                   { icon: 'fa-solid fa-location-dot', title: 'USA Office', text: 'Sheridan, Wyoming' },
                   { icon: 'fa-solid fa-phone', title: 'Call Us', text: '+91 70110 41363' },
-                  { icon: 'fa-solid fa-envelope', title: 'Email', text: 'hello@isuremedia.com' },
+                  { icon: 'fa-solid fa-envelope', title: 'Email', text: 'info@isuremedia.com' },
                 ].map(c => (
                   <div key={c.title} style={{ background: '#fff', borderRadius: 14, padding: '20px 18px', boxShadow: '0 2px 16px rgba(30,77,195,.08)', border: '1px solid var(--color-border)' }}>
                     <div style={{ width: 42, height: 42, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
@@ -259,7 +266,7 @@ export default function ContactPage() {
                     </p>
 
                     <div style={{ textAlign: 'center', marginTop: -8 }}>
-                      <a href="#proposal-form" style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none' }}>
+                      <a href="/appointment" style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none' }}>
                         Prefer to talk? Book a free call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
                       </a>
                     </div>
@@ -297,7 +304,7 @@ export default function ContactPage() {
                   </div>
                 ))}
 
-                <a href="#proposal-form"
+                <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
@@ -324,7 +331,7 @@ export default function ContactPage() {
                   <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>{item.label}</p>
                   {item.lines.map((line, li) =>
                     item.hrefs?.[li]
-                      ? <a key={li} href={item.hrefs[li]} style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none', lineHeight: 1.7, transition: 'color .15s' }}
+                      ? <a key={li} href={item.hrefs[li]} {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none', lineHeight: 1.7, transition: 'color .15s' }}
                           onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                           onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-text-muted)')}>{line}</a>
                       : <p key={li} style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>{line}</p>

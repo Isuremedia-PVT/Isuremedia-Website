@@ -22,7 +22,7 @@ const BRIDGE_ITEMS = [
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-layer-group', title: 'One suite, every business function', desc: 'CRM, invoicing, support, and marketing in a single connected ecosystem instead of five disconnected subscriptions.' },
   { icon: 'fa-solid fa-sack-dollar', title: 'Enterprise features at a fraction of the cost', desc: 'Zoho delivers capability comparable to Salesforce or HubSpot at a price point accessible to small and mid-sized businesses.' },
-  { icon: 'fa-solid fa-gears', title: 'Deep customisation without custom development', desc: 'Custom modules, fields, and workflows built through configuration — no need for a dedicated development team.' },
+  { icon: 'fa-solid fa-gears', title: 'Deep customisation without custom development', desc: 'Custom modules, fields, and workflows built through configuration, no need for a dedicated development team.' },
   { icon: 'fa-solid fa-robot', title: 'Automation built into the core platform', desc: 'Workflow rules, blueprints, and macros automate follow-ups, approvals, and data updates without third-party tools.' },
   { icon: 'fa-solid fa-chart-simple', title: 'Reporting that shows the whole business', desc: 'Zoho Analytics connects data across modules and apps into dashboards that reflect actual business performance.' },
   { icon: 'fa-solid fa-plug', title: 'Native integrations across the Zoho ecosystem', desc: 'Books, Desk, Campaigns, and Forms all connect natively, keeping data consistent without custom integration work.' },
@@ -42,7 +42,7 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Zoho Audit & Strategy', desc: 'Current setup, modules in use, and process gaps — what to configure and what to leave alone.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Zoho Audit & Strategy', desc: 'Current setup, modules in use, and process gaps, what to configure and what to leave alone.' },
   { icon: 'fa-solid fa-sliders', title: 'CRM Setup & Customisation', desc: 'Pipelines, modules, layouts, and fields configured around how your team actually sells.' },
   { icon: 'fa-solid fa-layer-group', title: 'Zoho One & App-Suite Integration', desc: 'Books, Desk, Campaigns, and Forms connected into one consistent, working ecosystem.' },
   { icon: 'fa-solid fa-robot', title: 'Workflow & Blueprint Automation', desc: 'Follow-ups, approvals, and data updates automated through native Zoho workflow tools.' },
@@ -66,7 +66,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-file-import', title: 'We migrate data cleanly', desc: 'De-duplicated, properly mapped migration so the new system starts with data your team can actually trust.' },
   { icon: 'fa-solid fa-robot', title: 'We build automation into the setup from day one', desc: 'Workflow rules and blueprints configured so the CRM does work for your team, not the other way around.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'We train the team, not just build the system', desc: 'Adoption is the actual goal. We make sure your team knows how to use what’s been built for them.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English documentation and support', desc: 'What was configured, why, and how to make future changes — documented clearly, not buried in settings.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English documentation and support', desc: 'What was configured, why, and how to make future changes, documented clearly, not buried in settings.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing support is month to month. You stay because the system is working, not because of a contract.' },
 ];
 
@@ -80,12 +80,12 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'What is the difference between Zoho CRM and Zoho One?', a: 'Zoho CRM is the standalone sales and pipeline tool. Zoho One is the full suite — CRM plus Books, Desk, Campaigns, Forms, and dozens of other connected apps.' },
+  { q: 'What is the difference between Zoho CRM and Zoho One?', a: 'Zoho CRM is the standalone sales and pipeline tool. Zoho One is the full suite, CRM plus Books, Desk, Campaigns, Forms, and dozens of other connected apps.' },
   { q: 'Can you migrate us from another CRM to Zoho?', a: 'Yes. We handle migration from Salesforce, HubSpot, spreadsheets, or any other system, with data cleaned and mapped correctly into Zoho’s structure.' },
   { q: 'How long does a Zoho setup take?', a: 'A standard CRM configuration typically takes two to three weeks. Full Zoho One implementations with multiple connected apps usually take four to six weeks.' },
   { q: 'Do you provide training for our team?', a: 'Yes. Team training is included in every setup, covering day-to-day use of whatever modules and workflows were configured.' },
-  { q: 'Can Zoho really replace Salesforce or HubSpot?', a: 'For most small and mid-sized businesses, yes — Zoho delivers comparable core functionality at a significantly lower cost, when properly configured.' },
-  { q: 'What if our sales process is unusual or complex?', a: 'Zoho’s customisation options — custom modules, fields, and blueprints — are built for exactly this. We configure around your actual process, not a generic template.' },
+  { q: 'Can Zoho really replace Salesforce or HubSpot?', a: 'For most small and mid-sized businesses, yes, Zoho delivers comparable core functionality at a significantly lower cost, when properly configured.' },
+  { q: 'What if our sales process is unusual or complex?', a: 'Zoho’s customisation options, custom modules, fields, and blueprints, are built for exactly this. We configure around your actual process, not a generic template.' },
   { q: 'Do you offer ongoing support after setup?', a: 'Yes, on a month-to-month basis for continued configuration changes, troubleshooting, and optimisation as your business evolves.' },
   { q: 'Can Zoho integrate with our other tools?', a: 'Yes. Beyond native Zoho ecosystem apps, we build custom API integrations for tools outside the Zoho suite where needed.' },
 ];
@@ -170,7 +170,7 @@ export default function ZohoPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We set up and configure Zoho CRM and the Zoho One suite{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>around how your business actually operates</span> — properly migrated, automated, and adopted by your team.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>around how your business actually operates</span>, properly migrated, automated, and adopted by your team.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -247,7 +247,7 @@ export default function ZohoPage() {
                   Most businesses sign up for Zoho, import some contacts, and leave the rest on default. The team works around it instead of through it, and it never becomes the system it should be.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia configures Zoho around your actual sales process —{' '}
+                  ISureMedia configures Zoho around your actual sales process,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>migrated cleanly, automated properly</span>, and trained into the team so it actually gets used.
                 </p>
                 <a href="/contact"
@@ -296,7 +296,7 @@ export default function ZohoPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     It delivers{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>capability comparable to Salesforce or HubSpot</span> at a fraction of the cost — when it&apos;s properly configured.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>capability comparable to Salesforce or HubSpot</span> at a fraction of the cost, when it&apos;s properly configured.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Implementation is building it around your process, migrating your data cleanly, and training your team so it actually gets used.
@@ -405,7 +405,7 @@ export default function ZohoPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Zoho Implementations to Fail — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Zoho Implementations to Fail, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most businesses have a Zoho account that never became what it was supposed to be. These are the reasons why.
               </p>
@@ -450,7 +450,7 @@ export default function ZohoPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our Zoho Implementation Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Setup, Migration, Automation, and Training — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Setup, Migration, Automation, and Training, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -520,7 +520,7 @@ export default function ZohoPage() {
                   A free consultation will show you what your current setup is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

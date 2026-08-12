@@ -15,14 +15,14 @@ const BRIDGE_ITEMS = [
   'Custom API connections where no native integration exists',
   'Webhook configuration for real-time data flow',
   'Data validation and error-handling logic',
-  'Middleware setup — Zapier, Make, or custom endpoints',
+  'Middleware setup, Zapier, Make, or custom endpoints',
   'Ongoing monitoring and integration maintenance',
 ];
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Data stops living in silos', desc: 'Your CRM, e-commerce platform, accounting software, and marketing tools all speak to each other automatically, instead of requiring manual exports and imports.' },
   { icon: 'fa-solid fa-clock', title: 'Hours of manual entry disappear', desc: 'Copy-pasting data between systems is time your team could spend on work that actually grows the business.' },
-  { icon: 'fa-solid fa-triangle-exclamation', title: 'Human error stops entering the picture', desc: 'A missed field, a typo, a forgotten update — manual data transfer introduces errors that automated sync eliminates entirely.' },
+  { icon: 'fa-solid fa-triangle-exclamation', title: 'Human error stops entering the picture', desc: 'A missed field, a typo, a forgotten update, manual data transfer introduces errors that automated sync eliminates entirely.' },
   { icon: 'fa-solid fa-bolt', title: 'Real-time data, not end-of-day batches', desc: 'Webhook-based integrations move data the moment it changes, so every system reflects reality immediately.' },
   { icon: 'fa-solid fa-puzzle-piece', title: 'Custom connections where none exist natively', desc: 'Not every platform has a native integration. Custom API work connects the specific tools your business actually runs on.' },
   { icon: 'fa-solid fa-chart-line', title: 'A foundation that scales with you', desc: 'Properly built integrations keep working as your data volume and tool stack grow, instead of breaking under load.' },
@@ -37,12 +37,12 @@ const WHY_MATTERS_VARIANTS = [
 const FAILURE_MODES = [
   { icon: 'fa-solid fa-diagram-project', title: 'No data mapping before the build starts', impact: 'Most common', desc: 'Connecting two systems without first mapping which fields correspond to which produces integrations that break the moment either platform changes.' },
   { icon: 'fa-solid fa-rotate', title: 'One-way sync where two-way was needed', impact: 'High impact', desc: 'Data updated in one system but not reflected back in the other creates a growing gap between what each platform believes is true.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'No error handling for failed syncs', impact: 'High impact', desc: 'APIs fail — rate limits, downtime, malformed data. Without proper error handling, failed syncs go unnoticed until something is visibly wrong.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'No error handling for failed syncs', impact: 'High impact', desc: 'APIs fail, rate limits, downtime, malformed data. Without proper error handling, failed syncs go unnoticed until something is visibly wrong.' },
   { icon: 'fa-solid fa-screwdriver-wrench', title: 'No one monitoring it after launch', impact: 'Ongoing', desc: 'Platforms update their APIs. An integration that isn’t monitored eventually breaks silently, and nobody knows until data goes missing.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Integration Audit & Strategy', desc: 'Mapping your current tool stack, data flow, and gaps — what needs to connect, and how.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Integration Audit & Strategy', desc: 'Mapping your current tool stack, data flow, and gaps, what needs to connect, and how.' },
   { icon: 'fa-solid fa-diagram-project', title: 'Data Mapping & Field Alignment', desc: 'Precise mapping of which fields correspond across systems before any connection is built.' },
   { icon: 'fa-solid fa-plug', title: 'CRM & Platform Integrations', desc: 'Connecting your CRM to e-commerce, accounting, support, and marketing platforms for unified data.' },
   { icon: 'fa-solid fa-code', title: 'Custom API Development', desc: 'Bespoke API connections built where no native integration exists between your specific tools.' },
@@ -56,17 +56,17 @@ const WHO_FOR = [
   { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with disconnected platforms', desc: 'Shopify, inventory, accounting, and email marketing all need to talk to each other for accurate, real-time operations.', img: 'https://picsum.photos/seed/api-whofor-ecom/700/620' },
   { icon: 'fa-solid fa-building', title: 'Businesses running multiple CRMs or tools', desc: 'Sales, support, and marketing teams using different platforms need data flowing between them automatically.', img: 'https://picsum.photos/seed/api-whofor-multi/700/620' },
   { icon: 'fa-solid fa-file-invoice-dollar', title: 'Businesses with manual data entry bottlenecks', desc: 'If someone is copy-pasting data between systems daily, that role has just become an automation project.', img: 'https://picsum.photos/seed/api-whofor-manual/700/620' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Businesses using niche or custom software', desc: 'Platforms without a native integration ecosystem still need to connect — custom API work bridges the gap.', img: 'https://picsum.photos/seed/api-whofor-niche/700/620' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Businesses using niche or custom software', desc: 'Platforms without a native integration ecosystem still need to connect, custom API work bridges the gap.', img: 'https://picsum.photos/seed/api-whofor-niche/700/620' },
   { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses scaling past spreadsheet workflows', desc: 'What worked at a smaller size breaks down as volume grows. Proper integrations replace fragile manual processes.', img: 'https://picsum.photos/seed/api-whofor-scale/700/620' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Businesses that have been burned by data errors', desc: 'Missed orders, duplicate contacts, and mismatched records caused by manual transfer are a solvable problem.', img: 'https://picsum.photos/seed/api-whofor-errors/700/620' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-diagram-project', title: 'We map data before we build anything', desc: 'Every field, every direction of sync, every edge case identified before a single connection goes live.' },
-  { icon: 'fa-solid fa-code', title: 'We build custom where native doesn’t exist', desc: 'Not limited to off-the-shelf integrations — we write custom API connections for the tools your business actually runs on.' },
+  { icon: 'fa-solid fa-code', title: 'We build custom where native doesn’t exist', desc: 'Not limited to off-the-shelf integrations, we write custom API connections for the tools your business actually runs on.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We build in error handling from day one', desc: 'Failed syncs are caught and flagged, not discovered weeks later when data has quietly gone missing.' },
   { icon: 'fa-solid fa-bolt', title: 'We prefer real-time over batch wherever possible', desc: 'Webhook-driven sync means your systems reflect reality the moment it changes, not hours later.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English documentation', desc: 'What connects to what, how data flows, and what to do if something looks wrong — documented clearly.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English documentation', desc: 'What connects to what, how data flows, and what to do if something looks wrong, documented clearly.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing monitoring and maintenance is month to month. You stay because it keeps working, not because of a contract.' },
 ];
 
@@ -80,7 +80,7 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'What platforms can you integrate?', a: 'Most CRMs, e-commerce platforms, accounting software, email marketing tools, and business applications with an API — including custom or niche software without a native integration.' },
+  { q: 'What platforms can you integrate?', a: 'Most CRMs, e-commerce platforms, accounting software, email marketing tools, and business applications with an API, including custom or niche software without a native integration.' },
   { q: 'What is the difference between a native integration and a custom API build?', a: 'A native integration uses a pre-built connection the platform already offers. A custom build is written specifically for tools that don’t have one, using each platform’s API directly.' },
   { q: 'Do you use Zapier or Make, or build directly?', a: 'Both, depending on complexity. Simple, lower-volume flows often use Zapier or Make. High-volume or complex logic is usually better served by a direct API build.' },
   { q: 'What happens if a platform changes its API?', a: 'This is exactly why ongoing monitoring matters. We track platform API changes and update integrations proactively, rather than waiting for something to break.' },
@@ -169,7 +169,7 @@ export default function ApiIntegrationPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build API integrations that connect your CRM, e-commerce platform, and business tools — so data flows{' '}
+                  We build API integrations that connect your CRM, e-commerce platform, and business tools, so data flows{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>automatically, accurately, and in real time</span>.
                 </p>
 
@@ -244,10 +244,10 @@ export default function ApiIntegrationPage() {
                   Every Manual Data Transfer Is a Future Mistake Waiting to Happen.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Copy-pasting between your CRM, spreadsheets, and other tools costs time and eventually introduces an error that costs a lot more — a missed order, a duplicate contact, a lost lead.
+                  Copy-pasting between your CRM, spreadsheets, and other tools costs time and eventually introduces an error that costs a lot more, a missed order, a duplicate contact, a lost lead.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds API integrations that connect your systems properly —{' '}
+                  ISureMedia builds API integrations that connect your systems properly,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>mapped, tested, and monitored</span>, so data moves automatically and accurately.
                 </p>
                 <a href="/contact"
@@ -292,7 +292,7 @@ export default function ApiIntegrationPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     API integration means your platforms{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>update each other automatically</span> — no exports, no imports, no manual reconciliation.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>update each other automatically</span>, no exports, no imports, no manual reconciliation.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Where native integrations don&apos;t exist, we build{' '}
@@ -405,7 +405,7 @@ export default function ApiIntegrationPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes API Integrations to Fail — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes API Integrations to Fail, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most businesses have had an integration break silently at some point. These are the reasons why.
               </p>
@@ -450,7 +450,7 @@ export default function ApiIntegrationPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our API Integration Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Custom Builds, and Ongoing Reliability — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Custom Builds, and Ongoing Reliability, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

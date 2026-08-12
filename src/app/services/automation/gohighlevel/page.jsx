@@ -19,8 +19,8 @@ const GHL_BRIDGE_ITEMS = [
 ];
 
 const GHL_WHY_MATTERS = [
-  { icon: 'fa-solid fa-gears', title: 'Full-system configuration', desc: 'Every module of GoHighLevel configured to your business — from sub-account structure to pipelines, calendars, and reputation management.' },
-  { icon: 'fa-solid fa-tag', title: 'White-label ready', desc: 'We set up your GHL environment fully white-labelled — your brand, your domain, your client-facing experience from day one.' },
+  { icon: 'fa-solid fa-gears', title: 'Full-system configuration', desc: 'Every module of GoHighLevel configured to your business, from sub-account structure to pipelines, calendars, and reputation management.' },
+  { icon: 'fa-solid fa-tag', title: 'White-label ready', desc: 'We set up your GHL environment fully white-labelled, your brand, your domain, your client-facing experience from day one.' },
   { icon: 'fa-solid fa-robot', title: 'Automations included', desc: 'Email and SMS follow-up sequences, missed-call text-back, nurture workflows, and booking flows all built and tested before handover.' },
   { icon: 'fa-solid fa-layer-group', title: 'One platform instead of five', desc: 'CRM, funnels, calendars, and automations all live inside a single account instead of five disconnected tools that do not talk to each other.' },
   { icon: 'fa-solid fa-sitemap', title: 'Built for how your business runs', desc: 'We have configured GHL for agencies, home service businesses, coaches, and enterprises. The setup fits your model, not a generic default.' },
@@ -35,12 +35,12 @@ const GHL_CARD_VARIANTS = [
 
 const GHL_KEY_FACTORS = [
   { icon: 'fa-solid fa-sitemap', title: 'Sub-Account Setup and Structure', impact: 'Highest impact', desc: 'How your sub-accounts are structured determines whether your GHL environment scales cleanly or turns into a mess as you add clients or locations.' },
-  { icon: 'fa-solid fa-filter', title: 'Funnel Builds', impact: 'High impact', desc: 'Funnels built to your actual offer and audience, not a generic template — from lead capture through to booked appointment or sale.' },
+  { icon: 'fa-solid fa-filter', title: 'Funnel Builds', impact: 'High impact', desc: 'Funnels built to your actual offer and audience, not a generic template, from lead capture through to booked appointment or sale.' },
   { icon: 'fa-solid fa-database', title: 'CRM Pipeline Configuration', impact: 'High impact', desc: 'Deal stages, contact properties, and pipeline views configured so leads flow through your system exactly the way your team sells.' },
   { icon: 'fa-solid fa-envelope-open-text', title: 'Email and SMS Automations', impact: 'High impact', desc: 'Follow-up sequences, missed-call text-back, and nurture workflows that keep leads warm without anyone manually sending a message.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Calendar and Booking Setup', impact: 'Medium impact', desc: 'Booking flows that let leads self-schedule directly into your calendar, with reminders and confirmations handled automatically.' },
   { icon: 'fa-solid fa-star', title: 'Reputation Management', impact: 'Medium impact', desc: 'Automated review requests and response workflows that keep your rating strong without your team having to chase every review manually.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Configuration', impact: 'Contextual', desc: 'Your brand, your domain, your client-facing experience — configured so nothing in the account looks or feels off-the-shelf.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Configuration', impact: 'Contextual', desc: 'Your brand, your domain, your client-facing experience, configured so nothing in the account looks or feels off-the-shelf.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Team Training', impact: 'Growing fast', desc: 'A live walkthrough with your team so everyone knows exactly how to use the account before we hand it over.' },
 ];
 
@@ -60,7 +60,7 @@ const GHL_SERVICES = [
   { icon: 'fa-solid fa-envelope-open-text', title: 'Email and SMS Automations', desc: 'Automated lead nurture sequences, missed-call text-back, and follow-up flows that run without manual input.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Calendar and Booking Setup', desc: 'Appointment booking built directly into your funnels and pipelines, with reminders configured automatically.' },
   { icon: 'fa-solid fa-star', title: 'Reputation Management', desc: 'Review generation and response workflows that keep your online reputation strong and current.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Configuration', desc: 'Your GHL environment fully white-labelled — your brand, your domain, your client-facing experience.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Configuration', desc: 'Your GHL environment fully white-labelled, your brand, your domain, your client-facing experience.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Team Training', desc: 'A live walkthrough and handover doc so your team knows exactly how the account works from day one.' },
 ];
 
@@ -74,9 +74,9 @@ const GHL_WHO_FOR = [
 
 const GHL_WHY_ISM = [
   { icon: 'fa-solid fa-user-tie', title: 'We handle everything in-house', desc: 'No subcontractors, no outsourced build. The same team that designs your account architecture builds, tests, and hands it over.' },
-  { icon: 'fa-solid fa-briefcase', title: 'Experience across agencies and industries', desc: 'We have configured GHL for agencies, home service businesses, coaches, and enterprises — we know what works and what breaks.' },
+  { icon: 'fa-solid fa-briefcase', title: 'Experience across agencies and industries', desc: 'We have configured GHL for agencies, home service businesses, coaches, and enterprises, we know what works and what breaks.' },
   { icon: 'fa-solid fa-sliders', title: 'Flexible plans for every budget', desc: 'A properly configured GHL account should not be out of reach. We offer plans that scale with your team and your client list.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Reporting you can actually understand', desc: 'Clear visibility into what is live, what is working, and what is coming next — not a dashboard full of numbers with no context.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Reporting you can actually understand', desc: 'Clear visibility into what is live, what is working, and what is coming next, not a dashboard full of numbers with no context.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts. You stay because the account is working, not because you signed something months ago.' },
   { icon: 'fa-solid fa-headset', title: 'One dedicated contact', desc: 'You will not be passed between account managers. One person knows your setup, answers your questions, and owns your results.' },
 ];
@@ -91,16 +91,16 @@ const GHL_PROCESS = [
 
 const GHL_FAQS = [
   { q: 'What exactly does a GoHighLevel setup include?', a: 'Sub-account structure, CRM and pipeline configuration, funnel builds, email and SMS automations, calendar and booking setup, reputation management, white-label configuration, and full team training. Every engagement covers the full stack.' },
-  { q: 'Can you white-label GoHighLevel for my agency?', a: 'Yes. We configure your GHL environment fully white-labelled — your brand, your domain, and a client-facing experience that never shows GoHighLevel branding.' },
+  { q: 'Can you white-label GoHighLevel for my agency?', a: 'Yes. We configure your GHL environment fully white-labelled, your brand, your domain, and a client-facing experience that never shows GoHighLevel branding.' },
   { q: 'How long does a GoHighLevel setup take?', a: 'Most setups move from discovery to go-live in two to four weeks, depending on how many funnels, automations, and sub-accounts are involved.' },
   { q: 'Do you migrate us from another CRM or funnel builder?', a: 'Yes. During discovery we review what you are moving from and plan the migration alongside the new build so nothing gets lost in the switch.' },
   { q: 'Will my team know how to use the account?', a: 'Every setup ends with a live walkthrough and a handover doc written in plain language, so your team is confident using the account from day one.' },
   { q: 'Do you build the funnels and automations, or just the account structure?', a: 'Both. Sub-account structure is the foundation, but every engagement includes funnel builds, automations, and calendar setup built and tested before handover.' },
   { q: 'Do you offer support after the account goes live?', a: 'Yes. We stay available after go-live to fix issues and answer questions as your team gets used to running the account day to day.' },
-  { q: 'How much does a GoHighLevel setup cost?', a: 'Pricing depends on the number of sub-accounts, funnels, and automations involved. We offer flexible plans that scale with your business — a discovery call is the best starting point.' },
+  { q: 'How much does a GoHighLevel setup cost?', a: 'Pricing depends on the number of sub-accounts, funnels, and automations involved. We offer flexible plans that scale with your business, a discovery call is the best starting point.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function GHLFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -164,10 +164,10 @@ export default function GoHighLevelSetupPage() {
           <div className="ism-container">
             <div className="ghl-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
-                  GoHighLevel Setup Done Right — Built to{' '}
+                  GoHighLevel Setup Done Right, Built to{' '}
                   <span style={{ position: 'relative', display: 'inline-block' }}>
                     Scale.
                     <svg viewBox="0 0 100 12" preserveAspectRatio="none" style={{ position: 'absolute', left: 0, bottom: -6, width: '100%', height: 10 }} aria-hidden>
@@ -177,7 +177,7 @@ export default function GoHighLevelSetupPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Complete GoHighLevel configuration from sub-account structure to funnels, CRM, and automated follow-up systems —{' '}
+                  Complete GoHighLevel configuration from sub-account structure to funnels, CRM, and automated follow-up systems,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to scale with you</span>.
                 </p>
 
@@ -191,7 +191,7 @@ export default function GoHighLevelSetupPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="ghl-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/gohighlevel-setup-automation.webp" alt="GoHighLevel setup and automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -265,7 +265,7 @@ export default function GoHighLevelSetupPage() {
                   Isuremedia has configured GHL for agencies, home service businesses, coaches, and enterprises. We know what works, what breaks, and how to{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>build a system your team will actually use</span>.
                 </p>
-                <a href="/contact"
+                <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
@@ -308,14 +308,14 @@ export default function GoHighLevelSetupPage() {
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     GoHighLevel is one of the most powerful all-in-one platforms available, but out of the box it is just software. A proper setup is{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an architecture exercise, not a checkbox</span>{' '}
-                    — sub-accounts, pipelines, funnels, and automations all need deliberate design.
+                   , sub-accounts, pipelines, funnels, and automations all need deliberate design.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    We configure every module around your business — CRM and pipeline architecture, automated lead nurture, reputation management, and calendar booking — so{' '}
+                    We configure every module around your business, CRM and pipeline architecture, automated lead nurture, reputation management, and calendar booking, so{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your account works the way your business actually operates</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Whether you want it fully white-labelled to resell to clients or configured purely for internal use, the same discipline applies — structure it right the first time, and everything after that gets easier.
+                    Whether you want it fully white-labelled to resell to clients or configured purely for internal use, the same discipline applies, structure it right the first time, and everything after that gets easier.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function GoHighLevelSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Automations Live */}
+                {/* Floating badge, Automations Live */}
                 <div className="ghl-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-robot" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -342,7 +342,7 @@ export default function GoHighLevelSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Response Time */}
+                {/* Floating badge, Response Time */}
                 <div className="ghl-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bolt" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -353,7 +353,7 @@ export default function GoHighLevelSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Pipeline Stages */}
+                {/* Floating badge, Pipeline Stages */}
                 <div className="ghl-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-sitemap" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -364,7 +364,7 @@ export default function GoHighLevelSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Contacts Synced */}
+                {/* Floating badge, Contacts Synced */}
                 <div className="ghl-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-database" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -391,7 +391,7 @@ export default function GoHighLevelSetupPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Why Our GHL Setup Delivers Results.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                We do not just activate GoHighLevel — we build a system that runs your follow-ups, manages your pipeline, and scales with your team.
+                We do not just activate GoHighLevel, we build a system that runs your follow-ups, manages your pipeline, and scales with your team.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -542,7 +542,7 @@ export default function GoHighLevelSetupPage() {
                   See what one properly built GHL account replaces.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

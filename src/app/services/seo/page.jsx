@@ -13,20 +13,20 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (SEO) ──────────────────────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
-    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation — and it shows up in the numbers every month.',
+    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
     stats: [
       { val: '800%', label: 'Organic Traffic Growth', sub: 'in 4 months', icon: 'fa-solid fa-chart-line' },
       { val: '348',  label: 'Quality Backlinks',      sub: 'up from 54',  icon: 'fa-solid fa-link'      },
     ],
-    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel — delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
+    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel, delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
     link: '/case-studies/ecommerce-seo-organic-traffic',
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Brown Legal Immigration',
     intro: '100% of search traffic came from the map pack. The website was invisible.',
     quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
@@ -34,7 +34,7 @@ const RELATED_CASES = [
       { val: '86%', label: 'Keywords on Page 1',   sub: '12 of 14 tracked',           icon: 'fa-solid fa-magnifying-glass-chart' },
       { val: '3',   label: 'AI Platforms Ranking', sub: 'Google, ChatGPT, Perplexity', icon: 'fa-solid fa-robot' },
     ],
-    body: 'Brown Legal Immigration had strong local visibility through their Google Business Profile, but the website carried zero organic search presence. We built SEO and AEO in parallel — new practice-area content, technical fixes, and off-page authority — taking 86% of tracked keywords to page one and earning citations across Google AI Overview, ChatGPT, and Perplexity within three months.',
+    body: 'Brown Legal Immigration had strong local visibility through their Google Business Profile, but the website carried zero organic search presence. We built SEO and AEO in parallel, new practice-area content, technical fixes, and off-page authority, taking 86% of tracked keywords to page one and earning citations across Google AI Overview, ChatGPT, and Perplexity within three months.',
     link: '/case-studies/law-firm-local-seo-map-pack',
     linkLabel: "Read Brown Legal Immigration's Case Study",
   },
@@ -46,7 +46,7 @@ const SERVICES = [
   {
     title: 'Technical SEO',
     icon: 'fa-solid fa-gear',
-    desc: 'Your website needs to be built in a way Google can read, crawl, and rank. We fix what holds your site back — slow load times, broken pages, crawl errors, and messy structure. Most businesses do not know these issues exist until they see the rankings they are missing.',
+    desc: 'Your website needs to be built in a way Google can read, crawl, and rank. We fix what holds your site back, slow load times, broken pages, crawl errors, and messy structure. Most businesses do not know these issues exist until they see the rankings they are missing.',
     href: '/services/seo/technical-seo',
   },
   {
@@ -76,7 +76,7 @@ const SERVICES = [
   {
     title: 'Keyword Research & Content Strategy',
     icon: 'fa-solid fa-pen-nib',
-    desc: 'Ranking on the wrong searches brings the wrong people. We research what your customers type into Google at every stage of the buying process and build your content strategy around those searches — the right keywords, in the right content, on the right pages.',
+    desc: 'Ranking on the wrong searches brings the wrong people. We research what your customers type into Google at every stage of the buying process and build your content strategy around those searches, the right keywords, in the right content, on the right pages.',
     href: '/services/seo/on-page-seo',
   },
   {
@@ -102,18 +102,18 @@ const SERVICES = [
 const TIMELINE_STEPS = [
   { num: 1, period: 'Site Audit & Business Discovery',                     desc: 'We run a full audit of your site covering technical health, current rankings, content gaps, and backlink profile. You get a clear picture of where things stand before any work starts.' },
   { num: 2, period: 'Keyword Research & Strategy',                          desc: 'We map out what your buyers are searching for at every stage, from first search to ready to buy. Every keyword we target is one real people search for and that brings people close to a decision.' },
-  { num: 3, period: 'Technical, Content & Link Building — All at Once',     desc: 'Technical fixes go live, content goes up, and link building runs in parallel. Every campaign also includes AI Search and AEO optimisation from day one so you show up in Google, ChatGPT, and Perplexity.' },
-  { num: 4, period: 'Monthly Reporting & Refinement',                       desc: <>Every month you get a plain report covering traffic, rankings, leads, and everything we worked on. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No vanity metrics</span> — just what moved, what did not, and what we are doing next.</> },
-  { num: 5, period: 'Scale What Is Working',                                desc: 'Once your core keywords are ranking and traffic is growing, we expand — new keyword clusters, new content, deeper link authority, and broader AI search coverage. The work compounds month by month.' },
+  { num: 3, period: 'Technical, Content & Link Building, All at Once',     desc: 'Technical fixes go live, content goes up, and link building runs in parallel. Every campaign also includes AI Search and AEO optimisation from day one so you show up in Google, ChatGPT, and Perplexity.' },
+  { num: 4, period: 'Monthly Reporting & Refinement',                       desc: <>Every month you get a plain report covering traffic, rankings, leads, and everything we worked on. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No vanity metrics</span>, just what moved, what did not, and what we are doing next.</> },
+  { num: 5, period: 'Scale What Is Working',                                desc: 'Once your core keywords are ranking and traffic is growing, we expand, new keyword clusters, new content, deeper link authority, and broader AI search coverage. The work compounds month by month.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'Flexible Plans for Every Budget',        desc: 'SEO should not be something only large companies can afford. We build plans around what your business needs right now, not a fixed package with services you do not need — a campaign built for your goals and your budget.' },
+  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'Flexible Plans for Every Budget',        desc: 'SEO should not be something only large companies can afford. We build plans around what your business needs right now, not a fixed package with services you do not need, a campaign built for your goals and your budget.' },
   { dark: false, icon: 'fa-solid fa-robot',          title: 'We Get You Found in AI Search',          desc: <>People are asking ChatGPT, Perplexity, and Google AI Overviews for answers, and those tools recommend specific businesses. We structure your content and build your authority so AI systems read it, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trust it, and cite it</span>.</> },
   { dark: false, icon: 'fa-solid fa-circle-check',  title: 'You Are Free to Leave Any Time',         desc: 'We do not hold clients with long contracts because we do not need to. Our work speaks for itself every month. There are no penalties, no minimum terms, and no awkward exit process.' },
   { dark: false, icon: 'fa-solid fa-shield-halved', title: 'We Only Use White Hat SEO',              desc: 'Some agencies use shortcuts that end in Google penalties taking months or years to recover from. Every link we build and every optimisation we make follows Google\'s guidelines so your rankings are safe and built to last.' },
-  { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',  desc: 'Every month you get a clear report covering traffic, keyword rankings, leads, and a full breakdown of completed work. You keep direct access to Google Analytics and Search Console at all times — your data belongs to you.' },
-  { dark: false, icon: 'fa-solid fa-headset',        title: 'Regular Updates, One Dedicated Contact', desc: 'You get one person assigned to your account from day one. That person knows your business, tracks your campaign, and is your direct line for any question or update — never passed around or left waiting.' },
+  { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',  desc: 'Every month you get a clear report covering traffic, keyword rankings, leads, and a full breakdown of completed work. You keep direct access to Google Analytics and Search Console at all times, your data belongs to you.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'Regular Updates, One Dedicated Contact', desc: 'You get one person assigned to your account from day one. That person knows your business, tracks your campaign, and is your direct line for any question or update, never passed around or left waiting.' },
 ];
 
 const INDUSTRIES = [
@@ -125,13 +125,13 @@ const INDUSTRIES = [
 
 const FAQS = [
   { q: 'How long does SEO take to show results?', a: <>Most businesses see ranking movement within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>three to six months</span>, with meaningful traffic and leads following at six to nine. The timeline depends on how competitive your industry is and the current state of your site. We tell you what to expect honestly at the start.</> },
-  { q: 'How is Isuremedia different from other SEO agencies?', a: 'Three things. We never outsource — your campaign is handled entirely in-house. We run technical SEO, content, and link building together because that is how results compound. And we include AI Search optimisation on every campaign because search has changed.' },
-  { q: 'Do you offer white-label SEO for agencies?', a: 'Yes. If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work — we have no footprint in the relationship.' },
+  { q: 'How is Isuremedia different from other SEO agencies?', a: 'Three things. We never outsource, your campaign is handled entirely in-house. We run technical SEO, content, and link building together because that is how results compound. And we include AI Search optimisation on every campaign because search has changed.' },
+  { q: 'Do you offer white-label SEO for agencies?', a: 'Yes. If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work, we have no footprint in the relationship.' },
   { q: 'What does your SEO audit cover?', a: 'Technical health (speed, crawlability, Core Web Vitals, indexation), on-page (keyword mapping, title tags, headings, internal linking), and off-page (backlink profile, toxic links, competitor gaps). You get a prioritised action plan, not just a list of issues.' },
   { q: 'How much does SEO cost?', a: 'It depends on your site size, how competitive your industry is, and what the campaign needs to do. We do not have fixed packages because copy-paste packages produce copy-paste results. We review your site for free and give you an honest picture of cost and outcome.' },
-  { q: 'Do you do local SEO for small businesses?', a: 'Yes. Local SEO is one of our core services — Google Business Profile, local citations, location pages, and map pack rankings. It works particularly well for service businesses and any business that serves a specific area.' },
+  { q: 'Do you do local SEO for small businesses?', a: 'Yes. Local SEO is one of our core services, Google Business Profile, local citations, location pages, and map pack rankings. It works particularly well for service businesses and any business that serves a specific area.' },
   { q: 'Can SEO and paid ads work together?', a: 'Yes, and they work better together than either does alone. Paid ads get you in front of buyers immediately; SEO builds the long-term foundation that keeps traffic coming without ongoing ad spend. The fastest-growing businesses usually do both.' },
-  { q: 'What happens if my rankings drop?', a: 'Rankings fluctuate — Google updates its algorithm regularly and competitor activity affects rankings too. When movement happens, we investigate immediately, identify the cause, and adjust the strategy. You are told what happened and what we are doing about it.' },
+  { q: 'What happens if my rankings drop?', a: 'Rankings fluctuate, Google updates its algorithm regularly and competitor activity affects rankings too. When movement happens, we investigate immediately, identify the cause, and adjust the strategy. You are told what happened and what we are doing about it.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */
@@ -220,7 +220,7 @@ export default function SEOPage() {
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We get your business to Page&nbsp;1 on Google and into AI Search results — so the right people <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>find you, contact you, and buy</span>.
+              We get your business to Page&nbsp;1 on Google and into AI Search results, so the right people <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>find you, contact you, and buy</span>.
             </p>
 
             {/* CTAs */}
@@ -264,17 +264,17 @@ export default function SEOPage() {
             {/* Two-col */}
             <div className="seo-strategy-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center', marginBottom:52 }}>
 
-              {/* Left — 4 numbered points */}
+              {/* Left, 4 numbered points */}
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Most customers start with a search', text:<>53% of all website traffic comes from organic search — more than paid ads, social, and email combined. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That is where we start every campaign</span>.</> },
+                  { num:'01', title:'Most customers start with a search', text:<>53% of all website traffic comes from organic search, more than paid ads, social, and email combined. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That is where we start every campaign</span>.</> },
                   { num:'02', title:'Page 2 is basically invisible', text:<>The #1 result gets <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>39.8% of all clicks</span>. Page 2 gets under 1%. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Page one is our minimum, not our goal</span>.</> },
-                  { num:'03', title:'Organic leads convert better', text:<>Organic leads convert at nearly 9x the rate of outbound — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>people already want what you sell before they click</span>.</> },
+                  { num:'03', title:'Organic leads convert better', text:<>Organic leads convert at nearly 9x the rate of outbound, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>people already want what you sell before they click</span>.</> },
                   { num:'04', title:'AI search is the next big shift', text:<>Getting cited in ChatGPT, Perplexity, and AI Overviews now matters as much as ranking on page one. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>We make sure our clients show up in both places</span>.</> },
                   { num:'05', title:'Rankings compound instead of resetting', text:<>Paid traffic stops the moment you stop paying. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Organic rankings keep working long after the campaign that built them</span>.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
-                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
                     <div>
                       <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
                       <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
@@ -283,7 +283,7 @@ export default function SEOPage() {
                 ))}
               </div>
 
-              {/* Right — Image mosaic */}
+              {/* Right, Image mosaic */}
               <div className="seo-strategy-mosaic" style={{ position:'relative', height:600, borderRadius:20, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/main-services/Why SEO Should Be the Foundation of Your Growth.webp" alt="Why SEO Should Be the Foundation of Your Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
@@ -324,10 +324,10 @@ export default function SEOPage() {
         <section className="seo-cta-banner cta-bleed" style={{ background:'#fff', padding:'118px 28px 64px', overflow:'visible' }}>
           <div className="ism-container">
 
-            {/* Card — image bleeds above the card on desktop only; left/right/bottom stay clipped to the box via clip-path (overflow-x/y can't do "one side only" without silently clipping both) */}
+            {/* Card, image bleeds above the card on desktop only; left/right/bottom stay clipped to the box via clip-path (overflow-x/y can't do "one side only" without silently clipping both) */}
             <div style={{ background:'#F5F5E6', borderRadius:24, display:'grid', gridTemplateColumns:'340px 1fr', minHeight:280, clipPath:'inset(-180px 0px 0px 0px round 24px)' }} className="seo-cta-banner-grid">
 
-              {/* Left col — image flush to the bottom, head bleeding above the card */}
+              {/* Left col, image flush to the bottom, head bleeding above the card */}
               <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -337,7 +337,7 @@ export default function SEOPage() {
                 />
               </div>
 
-              {/* Right — text */}
+              {/* Right, text */}
               <div style={{ padding:'44px 52px 44px 36px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
                   Your next customer is searching right now. Are you <span style={{ color:'var(--ism-amber)' }}>showing up?</span>
@@ -377,7 +377,7 @@ export default function SEOPage() {
             </h2>
             <div className="seo-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
 
-              {/* Left — image */}
+              {/* Left, image */}
               <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -387,16 +387,16 @@ export default function SEOPage() {
                 />
               </div>
 
-              {/* Right — text */}
+              {/* Right, text */}
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
                   SEO builds on itself in a way most channels do not. Content you publish today <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keeps earning rankings next year</span>, and links you build today add to your authority permanently. Every piece of work compounds.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The businesses that start SEO earliest are hardest to displace later</span> — the longer you wait, the more ground competitors cover. Few marketing decisions have a compounding advantage that never goes away.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The businesses that start SEO earliest are hardest to displace later</span>, the longer you wait, the more ground competitors cover. Few marketing decisions have a compounding advantage that never goes away.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Isuremedia handles all of this — the rankings, the AI citations, and making sure every visitor landing on your site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>already wants what you sell</span>.
+                  Isuremedia handles all of this, the rankings, the AI citations, and making sure every visitor landing on your site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>already wants what you sell</span>.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact"
@@ -488,7 +488,7 @@ export default function SEOPage() {
           `}</style>
         </section>
 
-        {/* ══ 5. AEO — DARK ═══════════════════════════════════════════════ */}
+        {/* ══ 5. AEO, DARK ═══════════════════════════════════════════════ */}
         <section className="seo-section" style={{ background:'var(--color-navy)', padding:'90px 0', color:'#fff' }}>
           <div className="ism-container">
             <div className="seo-split" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:60, alignItems:'center' }}>
@@ -505,7 +505,7 @@ export default function SEOPage() {
 
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>Most marketing stops when you stop paying.</strong> A ranked page keeps sending traffic every day with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no ongoing cost per click</span> — and organic leads convert 9× better than outbound, because we build for Google and AI search alike.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Most marketing stops when you stop paying.</strong> A ranked page keeps sending traffic every day with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no ongoing cost per click</span>, and organic leads convert 9× better than outbound, because we build for Google and AI search alike.
                   </p>
                 </div>
 
@@ -518,7 +518,7 @@ export default function SEOPage() {
                 </a>
               </div>
 
-              {/* Right — image */}
+              {/* Right, image */}
               <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -591,7 +591,7 @@ export default function SEOPage() {
               >
                 <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>LOCAL SEO</div>
                 <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Local SEO</div>
-                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Ideal for service businesses — HVAC, dental, legal, restaurants.</p>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Ideal for service businesses, HVAC, dental, legal, restaurants.</p>
                 <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
                   {['GBP optimisation & management','Local citation building','On-page geo-targeting','Review acquisition strategy','Monthly ranking report','Competitor gap analysis'].map((f,i)=>(
                     <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
@@ -601,14 +601,14 @@ export default function SEOPage() {
                 </ul>
               </div>
 
-              {/* GROWTH SEO — Featured */}
+              {/* GROWTH SEO, Featured */}
               <div style={{ background:'#fff', borderRadius:16, border:'2px solid var(--color-primary)', padding:'36px 32px', transform:'scale(1.04)', boxShadow:'0 16px 56px rgba(30,77,195,.18)', position:'relative', transition:'all .22s' }}>
                 <div style={{ position:'absolute', top:-14, left:'50%', transform:'translateX(-50%)', background:'var(--ism-amber)', borderRadius:100, padding:'5px 18px', whiteSpace:'nowrap' }}>
                   <span style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-navy)', letterSpacing:'.08em', textTransform:'uppercase' }}>Most Popular</span>
                 </div>
                 <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH SEO</div>
                 <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Growth SEO</div>
-                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full SEO campaign — technical + content + links + monthly reporting.</p>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full SEO campaign, technical + content + links + monthly reporting.</p>
                 <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
                   {['Full technical SEO audit & fixes','On-page & content optimisation','Link building & digital PR','AI & AEO optimisation','Advanced rank tracking','Monthly strategy call + report'].map((f,i)=>(
                     <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>
@@ -720,7 +720,7 @@ export default function SEOPage() {
               </div>
             </div>
 
-            {/* Right — image only */}
+            {/* Right, image only */}
             <div className="seo-rfr-img" style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -814,12 +814,12 @@ export default function SEOPage() {
           .seo-svc-illus { border-left: none !important; border-top: 1.5px solid #E8EAF0 !important; min-height: 110px; }
         }
 
-        /* Hero trust badge row — tighten on small screens */
+        /* Hero trust badge row, tighten on small screens */
         @media (max-width: 480px) {
           .seo-trust-badges { gap: 6px 10px !important; font-size: 12px !important; }
         }
 
-        /* Bottom CTA <br> tag — hide forced break on mobile */
+        /* Bottom CTA <br> tag, hide forced break on mobile */
         @media (max-width: 640px) {
           .seo-cta-br { display: none; }
         }

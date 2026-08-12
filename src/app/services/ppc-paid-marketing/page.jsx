@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (PPC / Paid Ads) ───────────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Scrubs4U',
     intro: 'Purchases were inconsistent and rising acquisition costs made it hard to scale profitably.',
     quote: 'A 7.9% increase in ad spend delivered a 173.6% increase in revenue and 154% higher ROAS.',
@@ -21,12 +21,12 @@ const RELATED_CASES = [
       { val: '3.54x',   label: 'All-Time ROAS',  sub: 'across full engagement', icon: 'fa-solid fa-chart-line' },
       { val: '+173.6%', label: 'Revenue Growth', sub: 'same 30-day window YoY', icon: 'fa-solid fa-dollar-sign' },
     ],
-    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization — growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
+    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization, growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
     link: '/case-studies/ecommerce-meta-ads-roas-scaling',
     linkLabel: "Read Scrubs4U's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Global Allianz',
     intro: 'Lead volume was inconsistent and Cost Per Lead was too high to scale profitably.',
     quote: 'With only a 33% increase in ad spend, lead volume grew 1,309% while Cost Per Lead dropped over 90%.',
@@ -34,7 +34,7 @@ const RELATED_CASES = [
       { val: '+1,309%', label: 'Lead Volume Growth', sub: '22 → 310 leads',  icon: 'fa-solid fa-users' },
       { val: '−90.5%',  label: 'Cost Per Lead',      sub: '$72.99 → $6.91', icon: 'fa-solid fa-arrow-trend-down' },
     ],
-    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting — growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
+    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting, growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
     link: '/case-studies/immigration-meta-ads-lead-generation',
     linkLabel: "Read Global Allianz's Case Study",
   },
@@ -42,38 +42,38 @@ const RELATED_CASES = [
 
 const SERVICES = [
   { title: 'Google Ads', icon: 'fa-brands fa-google', desc: 'Google Ads puts your business at the top of search results for the exact searches your buyers are typing right now. We build campaigns from scratch or audit and rebuild existing ones, covering Search, Display, Shopping, and Performance Max, structured around your target cost per lead.', href: '/services/ppc/google-ads' },
-  { title: 'Meta Ads', icon: 'fa-solid fa-share-nodes', desc: 'Facebook and Instagram advertising reaches people who are not actively searching but are the exact type of person who buys what you sell — interests, behaviours, lookalikes, and life events. We write the copy, build the creatives, and run split tests until the cost per result is where it needs to be.', href: '/services/ppc/meta-ads' },
+  { title: 'Meta Ads', icon: 'fa-solid fa-share-nodes', desc: 'Facebook and Instagram advertising reaches people who are not actively searching but are the exact type of person who buys what you sell, interests, behaviours, lookalikes, and life events. We write the copy, build the creatives, and run split tests until the cost per result is where it needs to be.', href: '/services/ppc/meta-ads' },
   { title: 'TikTok Ads', icon: 'fa-brands fa-tiktok', desc: 'TikTok reaches audiences other platforms cannot, with ad formats built for a feed people watch rather than scroll past. We produce native-feeling creative and manage campaigns built around your target cost per result.', href: '/services/ppc/tiktok-ads' },
-  { title: 'YouTube Ads', icon: 'fa-brands fa-youtube', desc: 'Video ads across the platform people already spend hours on — skippable in-stream, non-skippable, and Shorts placements built to drive awareness and direct response depending on your goal.', href: '/services/ppc/youtube-ads' },
+  { title: 'YouTube Ads', icon: 'fa-brands fa-youtube', desc: 'Video ads across the platform people already spend hours on, skippable in-stream, non-skippable, and Shorts placements built to drive awareness and direct response depending on your goal.', href: '/services/ppc/youtube-ads' },
 ];
 
 const TIMELINE_STEPS = [
   { num: 1, period: 'Audit and Business Discovery',       desc: 'If you already have campaigns running, we audit account structure, keyword targeting, ad copy, and tracking to see what your spend is actually producing. If starting fresh, we research your competitors and what searches are worth bidding on before we spend a penny.' },
-  { num: 2, period: 'Campaign Strategy and Build',        desc: 'We build every campaign from the strategy down — target audiences, keyword groups, bid strategies, and the landing pages each ad sends traffic to. You review and approve the strategy before any budget is committed.' },
-  { num: 3, period: 'Launch and First 30 Days',           desc: 'The first month is a data collection phase as much as a delivery phase. We launch, monitor daily, and adjust as the campaign gathers real performance data — acting on it immediately rather than waiting for a monthly review.' },
-  { num: 4, period: 'Optimise, Test, and Improve',        desc: <>Every two weeks we run a formal optimisation pass — new negative keywords, paused underperforming variations, and more budget to what works. We also run structured <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>A/B tests</span> so the campaign keeps improving rather than plateauing.</> },
+  { num: 2, period: 'Campaign Strategy and Build',        desc: 'We build every campaign from the strategy down, target audiences, keyword groups, bid strategies, and the landing pages each ad sends traffic to. You review and approve the strategy before any budget is committed.' },
+  { num: 3, period: 'Launch and First 30 Days',           desc: 'The first month is a data collection phase as much as a delivery phase. We launch, monitor daily, and adjust as the campaign gathers real performance data, acting on it immediately rather than waiting for a monthly review.' },
+  { num: 4, period: 'Optimise, Test, and Improve',        desc: <>Every two weeks we run a formal optimisation pass, new negative keywords, paused underperforming variations, and more budget to what works. We also run structured <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>A/B tests</span> so the campaign keeps improving rather than plateauing.</> },
   { num: 5, period: 'Monthly Reporting and Scaling',      desc: 'Every month you get a plain report covering every campaign and exactly what we are doing next. When a campaign consistently hits your cost per lead target, we scale it; when something is not working, we tell you what and why.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-headset',      title: 'Your Own Dedicated PPC Team',                          desc: 'The same paid ads specialists who set up your campaigns watch them every day. One point of contact who knows your account, targets, and industry — no account managers relaying messages to people you have never spoken to.' },
-  { dark: false, icon: 'fa-solid fa-circle-check', title: 'No Long-Term Contracts',                               desc: 'We earn your business every month with campaigns that produce results. No 12-month agreements, no penalties for pausing — you stay because the numbers make sense.' },
+  { dark: true,  icon: 'fa-solid fa-headset',      title: 'Your Own Dedicated PPC Team',                          desc: 'The same paid ads specialists who set up your campaigns watch them every day. One point of contact who knows your account, targets, and industry, no account managers relaying messages to people you have never spoken to.' },
+  { dark: false, icon: 'fa-solid fa-circle-check', title: 'No Long-Term Contracts',                               desc: 'We earn your business every month with campaigns that produce results. No 12-month agreements, no penalties for pausing, you stay because the numbers make sense.' },
   { dark: false, icon: 'fa-solid fa-layer-group',  title: 'Every Ad Platform Under One Roof',                     desc: 'Google, Meta, and LinkedIn are all managed by the same team with the same goal. Budget is allocated based on where your buyers are and what produces the strongest return, not what one specialist prefers.' },
-  { dark: false, icon: 'fa-solid fa-chart-line',   title: 'Tracking That Shows Real Revenue, Not Just Clicks',    desc: <>We set up conversion tracking that connects every campaign to actual leads and sales. You see <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>cost per customer</span>, not just per click — if it is not making sense, we fix it or reallocate.</> },
-  { dark: false, icon: 'fa-solid fa-eye',          title: 'Full Visibility Into Everything We Do',                desc: 'Every month you get a plain report covering spend, leads, cost per lead, and what we are testing next. You always have direct access to your own ad accounts — your data belongs to you.' },
-  { dark: false, icon: 'fa-solid fa-bullseye',     title: 'We Only Spend Where It Works',                         desc: 'We do not let campaigns run on autopilot while budget drains into irrelevant clicks. Every account gets regular reviews, negative keyword updates, and creative refreshes — waste compounds fast, we stop it before it starts.' },
+  { dark: false, icon: 'fa-solid fa-chart-line',   title: 'Tracking That Shows Real Revenue, Not Just Clicks',    desc: <>We set up conversion tracking that connects every campaign to actual leads and sales. You see <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>cost per customer</span>, not just per click, if it is not making sense, we fix it or reallocate.</> },
+  { dark: false, icon: 'fa-solid fa-eye',          title: 'Full Visibility Into Everything We Do',                desc: 'Every month you get a plain report covering spend, leads, cost per lead, and what we are testing next. You always have direct access to your own ad accounts, your data belongs to you.' },
+  { dark: false, icon: 'fa-solid fa-bullseye',     title: 'We Only Spend Where It Works',                         desc: 'We do not let campaigns run on autopilot while budget drains into irrelevant clicks. Every account gets regular reviews, negative keyword updates, and creative refreshes, waste compounds fast, we stop it before it starts.' },
 ];
 
 const FAQS = [
-  { q: 'How quickly will I see results from PPC?',                              a: <>You will see traffic the same day a campaign goes live. Meaningful lead volume usually comes within the first <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>two to four weeks</span> as the campaign learns. The first 30 days is partly a testing phase — campaigns typically reach their most efficient performance between months two and three.</> },
-  { q: 'How much should I budget for paid ads?',                                a: 'It depends on your industry, target cost per lead, and how competitive your market is. We look at what competitors are spending, what your customer is worth, and recommend a budget that makes commercial sense — never more than you need.' },
-  { q: 'Do you manage the ad budget or does it go directly to the platform?',   a: 'Your ad budget goes directly to Google, Meta, or LinkedIn. We charge a management fee for running the campaigns — we never hold your ad spend or invoice on top of our fee.' },
-  { q: 'What platforms do you run ads on?',                                    a: 'Google Ads, Meta Ads (Facebook and Instagram), LinkedIn Ads, and retargeting across Google and Meta. The recommendation depends on where your buyers spend their time and your sales cycle — we tell you honestly which will produce the best return.' },
-  { q: 'Can I see exactly what my budget is being spent on?',                  a: 'Yes. You always have direct access to your ad accounts. We share monthly reports covering spend by campaign, cost per lead, and results — nothing hidden behind a dashboard we control.' },
+  { q: 'How quickly will I see results from PPC?',                              a: <>You will see traffic the same day a campaign goes live. Meaningful lead volume usually comes within the first <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>two to four weeks</span> as the campaign learns. The first 30 days is partly a testing phase, campaigns typically reach their most efficient performance between months two and three.</> },
+  { q: 'How much should I budget for paid ads?',                                a: 'It depends on your industry, target cost per lead, and how competitive your market is. We look at what competitors are spending, what your customer is worth, and recommend a budget that makes commercial sense, never more than you need.' },
+  { q: 'Do you manage the ad budget or does it go directly to the platform?',   a: 'Your ad budget goes directly to Google, Meta, or LinkedIn. We charge a management fee for running the campaigns, we never hold your ad spend or invoice on top of our fee.' },
+  { q: 'What platforms do you run ads on?',                                    a: 'Google Ads, Meta Ads (Facebook and Instagram), LinkedIn Ads, and retargeting across Google and Meta. The recommendation depends on where your buyers spend their time and your sales cycle, we tell you honestly which will produce the best return.' },
+  { q: 'Can I see exactly what my budget is being spent on?',                  a: 'Yes. You always have direct access to your ad accounts. We share monthly reports covering spend by campaign, cost per lead, and results, nothing hidden behind a dashboard we control.' },
   { q: 'What if the campaigns are not performing?',                            a: 'We optimise continuously, not just monthly. If a keyword is wasting budget, it gets paused; if a creative is not converting, we test a new version. You are told what is happening and what we are changing.' },
-  { q: 'Do you write the ad copy and build the landing pages?',                a: 'Yes. We write all ad copy and can build or optimise the landing pages your ads send traffic to — a well-targeted ad to a weak landing page wastes most of its budget, so we handle both.' },
+  { q: 'Do you write the ad copy and build the landing pages?',                a: 'Yes. We write all ad copy and can build or optimise the landing pages your ads send traffic to, a well-targeted ad to a weak landing page wastes most of its budget, so we handle both.' },
   { q: 'Can you take over existing campaigns that are not working?',           a: 'Yes, regularly. We audit your account, identify what is wasting budget and what is worth keeping, restructure properly, and turn it around. The audit is free, and we tell you honestly if it is worth rebuilding.' },
-  { q: 'Do you offer white-label PPC management for agencies?',                a: 'Yes. If you run a marketing agency and need paid ads managed for your clients, we handle the full delivery under your brand — you present the results, we do the work. No footprint, no contact with your clients.' },
+  { q: 'Do you offer white-label PPC management for agencies?',                a: 'Yes. If you run a marketing agency and need paid ads managed for your clients, we handle the full delivery under your brand, you present the results, we do the work. No footprint, no contact with your clients.' },
   { q: 'What is your management fee structure?',                              a: 'We charge a management fee based on the scope of the account, not a percentage of ad spend, so we have no incentive to push your budget higher than it needs to be. We scope the work upfront and tell you exactly what it covers.' },
 ];
 
@@ -133,7 +133,7 @@ export default function PPCPage() {
               <span style={{ color:'var(--ism-amber)' }}>Stop Paying for Clicks That Do Not Convert.</span>
             </h1>
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We manage Google Ads, Meta Ads, LinkedIn Ads, and retargeting campaigns for businesses that want <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>leads and revenue</span> from their ad spend, not just impressions — built around your cost per lead target, managed by the same in-house team from setup to results.
+              We manage Google Ads, Meta Ads, LinkedIn Ads, and retargeting campaigns for businesses that want <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>leads and revenue</span> from their ad spend, not just impressions, built around your cost per lead target, managed by the same in-house team from setup to results.
             </p>
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
               <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
@@ -168,14 +168,14 @@ export default function PPCPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Your buyers are searching right now', text:<>Google handles 8.5 billion searches a day. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Paid search puts you at the top the same day you launch</span> — organic rankings take months.</> },
+                  { num:'01', title:'Your buyers are searching right now', text:<>Google handles 8.5 billion searches a day. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Paid search puts you at the top the same day you launch</span>, organic rankings take months.</> },
                   { num:'02', title:'Paid clicks convert better than organic', text:<>A high-intent search click is closer to booking than a blog visitor. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The intent is already there before they land</span>.</> },
-                  { num:'03', title:'You control exactly who sees your ads', text:<>Audiences, locations, timing, and spend — all adjustable in real time. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No other channel gives you that level of control</span>.</> },
+                  { num:'03', title:'You control exactly who sees your ads', text:<>Audiences, locations, timing, and spend, all adjustable in real time. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No other channel gives you that level of control</span>.</> },
                   { num:'04', title:'A bad setup wastes more than no PPC at all', text:<>Most failed campaigns were never managed properly. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That gap is the difference between losing and 4–5x return</span>.</> },
                   { num:'05', title:'Data from paid ads sharpens everything else', text:<>Every click teaches you what your buyers actually respond to. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That same data makes your SEO, content, and offers better too</span>.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
-                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
                     <div>
                       <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
                       <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
@@ -262,9 +262,9 @@ export default function PPCPage() {
                 <img src="/main-services/Paid Ad Campaigns That Deliver Real, Measurable Results.webp" alt="Paid Ad Campaigns That Deliver Real, Measurable Results" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>Every campaign we run is built around one metric — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>return, not clicks or impressions</span>. We track cost per lead, cost per acquisition, and revenue per dollar spent.</p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>Every campaign we run is built around one metric, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>return, not clicks or impressions</span>. We track cost per lead, cost per acquisition, and revenue per dollar spent.</p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}><span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Most businesses running ads are paying too much for the wrong people</span>. We fix that by tightening audience targeting, rewriting ad creative, and restructuring campaigns around conversion data rather than vanity metrics.</p>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>Isuremedia manages campaigns across Google Search, Shopping, Meta, LinkedIn, YouTube, and programmatic networks — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one team, one dashboard</span>, all optimised toward the same goal.</p>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>Isuremedia manages campaigns across Google Search, Shopping, Meta, LinkedIn, YouTube, and programmatic networks, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one team, one dashboard</span>, all optimised toward the same goal.</p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                     onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; }} onMouseLeave={e=>{ e.currentTarget.style.transform=''; }}
@@ -316,7 +316,7 @@ export default function PPCPage() {
                 <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>Why Paid Advertising Is a{' '}<span style={{ color:'var(--ism-amber)' }}>Great Investment</span></h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>Turn Your Ad Spend Into a Predictable Customer Acquisition Channel</p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
-                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}><strong style={{ color:'#fff', fontWeight:700 }}>The businesses that scale fastest are almost always running paid ads alongside organic growth.</strong> Paid gives you an immediate answer, with results <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span>, while SEO compounds in the background — and Isuremedia tracks every campaign to the revenue it produces, not impressions or clicks.</p>
+                  <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}><strong style={{ color:'#fff', fontWeight:700 }}>The businesses that scale fastest are almost always running paid ads alongside organic growth.</strong> Paid gives you an immediate answer, with results <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span>, while SEO compounds in the background, and Isuremedia tracks every campaign to the revenue it produces, not impressions or clicks.</p>
                 </div>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; }} onMouseLeave={e=>{ e.currentTarget.style.transform=''; }}

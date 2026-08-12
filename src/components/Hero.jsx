@@ -7,9 +7,9 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 
 const SLIDES = [
-  { img: '/images/banner01.png', alt: 'Isuremedia' },
-  { img: '/images/banner02.png', alt: 'Client 1' },
-  { img: '/images/banner03.png', alt: 'Client 2' },
+  { img: '/images/banner01.webp', alt: 'Isuremedia' },
+  { img: '/images/banner02.webp', alt: 'Client 1' },
+  { img: '/images/banner03.webp', alt: 'Client 2' },
 ];
 
 export default function Hero() {
@@ -68,7 +68,7 @@ export default function Hero() {
 
           </div>
 
-          {/* ── RIGHT — Image Slider ── */}
+          {/* ── RIGHT, Image Slider ── */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
 
             {/* eslint-disable-next-line @next/next/no-img-element */}

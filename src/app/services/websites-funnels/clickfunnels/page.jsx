@@ -16,7 +16,7 @@ const BRIDGE_ITEMS = [
   'ClickFunnels 2.0 website and blog builds',
   'Email automation sequences connected to funnel actions',
   'Custom design beyond standard ClickFunnels templates',
-  'Third-party integration — Stripe, Zapier, CRM connections',
+  'Third-party integration, Stripe, Zapier, CRM connections',
   'Post-launch testing and conversion optimisation',
 ];
 
@@ -25,7 +25,7 @@ const GAINS = [
   { icon: 'fa-solid fa-cart-shopping', title: 'One-Click Upsells and Order Bumps', desc: 'ClickFunnels’ upsell system is one of its most powerful features and one of the most commonly underused. Built properly, it increases average order value from every transaction.' },
   { icon: 'fa-solid fa-flask', title: 'Built-In A/B Split Testing', desc: 'Every funnel can be tested and improved continuously. We use the platform’s native split testing to find what converts best and keep improving after launch.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Purpose-Built for Coaches and Course Creators', desc: 'Course creators, consultants, and businesses running application funnels for high-ticket offers get a platform designed specifically around their sales process.' },
-  { icon: 'fa-solid fa-people-group', title: 'Unmatched Community and Template Library', desc: 'The platform’s community, training resources, and funnel template library are unmatched in the funnel builder market — a foundation we build on, not around.' },
+  { icon: 'fa-solid fa-people-group', title: 'Unmatched Community and Template Library', desc: 'The platform’s community, training resources, and funnel template library are unmatched in the funnel builder market, a foundation we build on, not around.' },
   { icon: 'fa-solid fa-money-bill-trend-up', title: 'Built for Direct-Response Marketers', desc: 'ClickFunnels was designed by direct-response marketers who understand conversion, not by designers who understand aesthetics. That bias toward conversion is in every template.' },
 ];
 
@@ -41,33 +41,33 @@ const KEY_FACTORS = [
   { icon: 'fa-solid fa-cart-shopping', title: 'Complete Upsell Sequences', impact: 'High impact', desc: 'ClickFunnels’ upsell system is one of its most powerful features and one of the most underused. A complete offer stack increases average order value from every transaction.' },
   { icon: 'fa-solid fa-gears', title: 'Fully Configured Automation', impact: 'High impact', desc: 'Incomplete automation sequences are one of the most common reasons a live funnel fails to follow up properly with leads who do not convert immediately.' },
   { icon: 'fa-solid fa-palette', title: 'Custom Design Beyond Templates', impact: 'Medium impact', desc: 'Standard ClickFunnels templates provide structure. Custom visual design that matches your brand builds the trust generic templates cannot.' },
-  { icon: 'fa-solid fa-plug', title: 'Third-Party Integrations', impact: 'Medium impact', desc: 'Stripe, Zapier, CRM connections — a funnel that is not properly connected to the rest of your business loses leads between systems.' },
+  { icon: 'fa-solid fa-plug', title: 'Third-Party Integrations', impact: 'Medium impact', desc: 'Stripe, Zapier, CRM connections, a funnel that is not properly connected to the rest of your business loses leads between systems.' },
   { icon: 'fa-solid fa-flask', title: 'A/B Split Testing', impact: 'Growing fast', desc: 'ClickFunnels has A/B testing built into every funnel. Used properly, it is what separates a funnel that launches well from one that keeps improving.' },
   { icon: 'fa-solid fa-screwdriver-wrench', title: 'Post-Launch Optimisation', impact: 'Contextual', desc: 'The funnel that launches is version one. Ongoing testing and refinement is what determines performance at month three, not just at launch.' },
 ];
 
 const FUNNEL_TYPES = [
-  { icon: 'fa-solid fa-user-plus', title: 'Lead Generation Funnels', desc: 'A high-converting opt-in page that captures contact details in exchange for a lead magnet or offer — followed by a thank you page, immediate delivery, and an email follow-up sequence. The foundation of most service business funnels.', img: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=500&q=80' },
-  { icon: 'fa-solid fa-file-lines', title: 'Sales Page Funnels', desc: 'A full sales page presenting your core offer — headline, offer stack, social proof, objection handling, clear CTA — followed by an order form, confirmation page, and post-purchase sequence.', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80' },
-  { icon: 'fa-solid fa-video', title: 'Webinar Funnels', desc: 'A registration page, confirmation page, reminder sequence, webinar delivery page, and post-webinar sales sequence — built as both live and evergreen automated funnels.', img: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=500&q=80' },
-  { icon: 'fa-solid fa-clipboard-check', title: 'Application Funnels', desc: 'For high-ticket services, an application form pre-qualifies prospects before booking only qualified leads onto your calendar — reducing no-shows and increasing close rates.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'Upsell and Order Bump Sequences', desc: 'One-click upsells, downsells, and order bumps connected to every purchase flow — complete offer stacks that increase average order value from every transaction.', img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=500&q=80' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Membership Site Funnels', desc: 'ClickFunnels membership areas connected to purchase — delivering course content, resources, or programme materials with access triggered automatically on purchase.', img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&q=80' },
+  { icon: 'fa-solid fa-user-plus', title: 'Lead Generation Funnels', desc: 'A high-converting opt-in page that captures contact details in exchange for a lead magnet or offer, followed by a thank you page, immediate delivery, and an email follow-up sequence. The foundation of most service business funnels.', img: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=500&q=80' },
+  { icon: 'fa-solid fa-file-lines', title: 'Sales Page Funnels', desc: 'A full sales page presenting your core offer, headline, offer stack, social proof, objection handling, clear CTA, followed by an order form, confirmation page, and post-purchase sequence.', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80' },
+  { icon: 'fa-solid fa-video', title: 'Webinar Funnels', desc: 'A registration page, confirmation page, reminder sequence, webinar delivery page, and post-webinar sales sequence, built as both live and evergreen automated funnels.', img: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=500&q=80' },
+  { icon: 'fa-solid fa-clipboard-check', title: 'Application Funnels', desc: 'For high-ticket services, an application form pre-qualifies prospects before booking only qualified leads onto your calendar, reducing no-shows and increasing close rates.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'Upsell and Order Bump Sequences', desc: 'One-click upsells, downsells, and order bumps connected to every purchase flow, complete offer stacks that increase average order value from every transaction.', img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=500&q=80' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'Membership Site Funnels', desc: 'ClickFunnels membership areas connected to purchase, delivering course content, resources, or programme materials with access triggered automatically on purchase.', img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&q=80' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-route', title: 'Funnel Strategy and Architecture', desc: 'Before any page is built, we map the complete funnel — every stage, every offer, every upsell and downsell, and every automation trigger. Strategy defines the build.' },
-  { icon: 'fa-solid fa-palette', title: 'Custom Funnel Design', desc: 'We design funnels that go beyond the standard ClickFunnels template look — custom visual design, brand-consistent layouts, and conversion-optimised page structure.' },
-  { icon: 'fa-solid fa-layer-group', title: 'Full Funnel Build', desc: 'We build every page in the funnel inside ClickFunnels — opt-in, sales, order form, upsell, downsell, thank you, and confirmation pages, all connected and tested before launch.' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Copywriting', desc: 'We write all copy across the funnel — headline, sales page copy, offer description, objection handling, CTA text, and email sequences.' },
-  { icon: 'fa-solid fa-envelope-open-text', title: 'Email Automation Sequences', desc: 'We build the follow-up sequences connected to every funnel action — opt-in welcome, pre-purchase nurture, post-purchase onboarding, and re-engagement.' },
+  { icon: 'fa-solid fa-route', title: 'Funnel Strategy and Architecture', desc: 'Before any page is built, we map the complete funnel, every stage, every offer, every upsell and downsell, and every automation trigger. Strategy defines the build.' },
+  { icon: 'fa-solid fa-palette', title: 'Custom Funnel Design', desc: 'We design funnels that go beyond the standard ClickFunnels template look, custom visual design, brand-consistent layouts, and conversion-optimised page structure.' },
+  { icon: 'fa-solid fa-layer-group', title: 'Full Funnel Build', desc: 'We build every page in the funnel inside ClickFunnels, opt-in, sales, order form, upsell, downsell, thank you, and confirmation pages, all connected and tested before launch.' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Copywriting', desc: 'We write all copy across the funnel, headline, sales page copy, offer description, objection handling, CTA text, and email sequences.' },
+  { icon: 'fa-solid fa-envelope-open-text', title: 'Email Automation Sequences', desc: 'We build the follow-up sequences connected to every funnel action, opt-in welcome, pre-purchase nurture, post-purchase onboarding, and re-engagement.' },
   { icon: 'fa-solid fa-cart-shopping', title: 'Upsell and Order Bump Configuration', desc: 'We design the upsell offer pages, write the upsell copy, set the pricing, and connect the payment flow so the upsell sequence captures revenue without friction.' },
-  { icon: 'fa-solid fa-plug', title: 'Third-Party Integrations', desc: 'We connect your funnel to Stripe, PayPal, Zapier, your CRM, and your email platform — so leads and customers flow into the right systems automatically.' },
+  { icon: 'fa-solid fa-plug', title: 'Third-Party Integrations', desc: 'We connect your funnel to Stripe, PayPal, Zapier, your CRM, and your email platform, so leads and customers flow into the right systems automatically.' },
   { icon: 'fa-solid fa-flask', title: 'Funnel Audit, Optimisation and A/B Testing', desc: 'We audit underperforming funnels and set up systematic A/B testing on headlines, offer framing, CTA text, and structure so performance keeps improving after launch.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Subscribers Whose Funnels Aren’t Converting', desc: 'If your funnel is live but conversion is lower than expected, the problem is almost always copy, structure, or the upsell sequence — not the platform. We audit and rebuild what isn’t working.', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Subscribers Whose Funnels Aren’t Converting', desc: 'If your funnel is live but conversion is lower than expected, the problem is almost always copy, structure, or the upsell sequence, not the platform. We audit and rebuild what isn’t working.', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80' },
   { icon: 'fa-solid fa-rocket', title: 'Businesses Building Their First Funnel', desc: 'Getting the strategy and structure right from the start is significantly more efficient than launching quickly and rebuilding after poor results.', img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Course Creators and Coaches Launching Programmes', desc: 'A programme launch is a defined window with a defined audience. A properly built launch funnel makes the most of it.', img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80' },
   { icon: 'fa-solid fa-cart-shopping', title: 'E-Commerce Businesses Adding Funnel Offers', desc: 'Adding a product-specific funnel with upsell and order bump sequences increases average order value without additional traffic spend.', img: 'https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?w=700&q=80' },
@@ -76,33 +76,33 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-diagram-project', title: 'We Know ClickFunnels Inside Out', desc: 'We build inside ClickFunnels regularly — funnels, membership sites, order forms, upsell sequences, and ClickFunnels 2.0 websites. We know what the platform can do and where its limits are.' },
-  { icon: 'fa-solid fa-route', title: 'We Lead With Strategy', desc: 'Every project starts with a strategy session — mapping the offer, the audience, the funnel stages, and automation sequences before a single page is designed.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We Know ClickFunnels Inside Out', desc: 'We build inside ClickFunnels regularly, funnels, membership sites, order forms, upsell sequences, and ClickFunnels 2.0 websites. We know what the platform can do and where its limits are.' },
+  { icon: 'fa-solid fa-route', title: 'We Lead With Strategy', desc: 'Every project starts with a strategy session, mapping the offer, the audience, the funnel stages, and automation sequences before a single page is designed.' },
   { icon: 'fa-solid fa-pen-nib', title: 'We Write the Copy', desc: 'The most common reason funnels underperform is weak copy, not weak design. We write all funnel copy matched to the offer, the audience, and the stage.' },
-  { icon: 'fa-solid fa-plug', title: 'We Handle Integrations End to End', desc: 'Payment gateways, CRM connections, email platforms, Zapier automations — every integration is configured so your funnel connects to the tools your business runs on.' },
-  { icon: 'fa-solid fa-flask', title: 'We Optimise After Launch', desc: 'ClickFunnels has built-in A/B testing. We use it. The funnel that launches is version one — we test, analyse, and improve it continuously.' },
+  { icon: 'fa-solid fa-plug', title: 'We Handle Integrations End to End', desc: 'Payment gateways, CRM connections, email platforms, Zapier automations, every integration is configured so your funnel connects to the tools your business runs on.' },
+  { icon: 'fa-solid fa-flask', title: 'We Optimise After Launch', desc: 'ClickFunnels has built-in A/B testing. We use it. The funnel that launches is version one, we test, analyse, and improve it continuously.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to Month, No Lock-In', desc: 'Ongoing optimisation arrangements are month to month. You stay because the funnel is improving, not because you signed a retainer.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Strategy and Offer Mapping', desc: 'We define the offer, the audience, the funnel type, the stages, the upsell and downsell sequence, and the automation triggers before any design begins.' },
-  { n: '02', title: 'Copy Development', desc: 'We write all funnel copy — opt-in page, sales page, upsell pages, email sequences, and order form copy. Copy is approved before design begins.' },
+  { n: '02', title: 'Copy Development', desc: 'We write all funnel copy, opt-in page, sales page, upsell pages, email sequences, and order form copy. Copy is approved before design begins.' },
   { n: '03', title: 'Design, Build and Integration', desc: 'We design and build every funnel page inside ClickFunnels, connect payment gateways, configure automations, and set up every third-party integration.' },
-  { n: '04', title: 'Pre-Launch Testing', desc: 'We test the complete funnel end to end — form submissions, payment flows, upsell triggers, email delivery, and automation sequences — before traffic is sent.' },
+  { n: '04', title: 'Pre-Launch Testing', desc: 'We test the complete funnel end to end, form submissions, payment flows, upsell triggers, email delivery, and automation sequences, before traffic is sent.' },
   { n: '05', title: 'Launch and Ongoing Optimisation', desc: 'The funnel goes live. We set up A/B testing on the highest-leverage elements and make data-driven improvements in the weeks after launch.' },
 ];
 
 const FAQS = [
-  { q: 'Do I need an existing ClickFunnels account to work with you?', a: 'Yes — we build inside your ClickFunnels account, not a separate platform. If you do not have an account yet, we can help you determine whether ClickFunnels is the right platform for your specific offer before you subscribe.' },
-  { q: 'Can you improve my existing ClickFunnels funnel rather than building a new one?', a: 'Yes. We start with an audit of your existing funnel — every page, every conversion metric, every automation sequence — and identify the highest-impact improvements. In many cases, targeted changes produce significant conversion lifts without a full rebuild.' },
+  { q: 'Do I need an existing ClickFunnels account to work with you?', a: 'Yes, we build inside your ClickFunnels account, not a separate platform. If you do not have an account yet, we can help you determine whether ClickFunnels is the right platform for your specific offer before you subscribe.' },
+  { q: 'Can you improve my existing ClickFunnels funnel rather than building a new one?', a: 'Yes. We start with an audit of your existing funnel, every page, every conversion metric, every automation sequence, and identify the highest-impact improvements. In many cases, targeted changes produce significant conversion lifts without a full rebuild.' },
   { q: 'What is the difference between ClickFunnels and GoHighLevel?', a: 'ClickFunnels is purpose-built for funnel creation and direct-response marketing. GoHighLevel is a more complete all-in-one platform that includes CRM, SMS automation, and pipeline management alongside funnel building. For businesses that primarily need high-converting funnel sequences, ClickFunnels is the stronger option.' },
   { q: 'Do you write the copy for the funnel?', a: 'Yes. Copy is included in every ClickFunnels project we take on. The design and structure determine whether visitors reach the CTA. The copy determines whether they say yes. We write both.' },
   { q: 'Can you build a membership site inside ClickFunnels?', a: 'Yes. ClickFunnels includes a membership area feature that delivers course content, programme materials, or member resources with access granted automatically on purchase.' },
-  { q: 'What integrations can you connect to ClickFunnels?', a: 'We connect Stripe, PayPal, Razorpay, Zapier, GoHighLevel, HubSpot, Mailchimp, ActiveCampaign, and other tools your business uses — either natively or through Zapier.' },
+  { q: 'What integrations can you connect to ClickFunnels?', a: 'We connect Stripe, PayPal, Razorpay, Zapier, GoHighLevel, HubSpot, Mailchimp, ActiveCampaign, and other tools your business uses, either natively or through Zapier.' },
   { q: 'Can you build inside ClickFunnels 2.0 specifically?', a: 'Yes. ClickFunnels 2.0 is a significant rebuild of the original platform with a new editor, website functionality, and improved email tools. We build on it and know both versions well.' },
-  { q: 'How long does it take to build a ClickFunnels funnel?', a: 'A standard lead generation or sales funnel takes one to two weeks from strategy to launch. Complex builds — webinar funnels, membership sites, multi-product offer stacks — typically take two to four weeks.' },
-  { q: 'Do you provide white-label ClickFunnels services for agencies?', a: 'Yes. We build ClickFunnels funnels for agency clients under your brand — same quality, no Isuremedia references, scalable across your client accounts.' },
-  { q: 'What happens after the funnel launches?', a: 'We set up A/B testing on the highest-leverage elements and monitor performance — conversion rate, upsell take rate, and email engagement. Ongoing optimisation arrangements are month to month.' },
+  { q: 'How long does it take to build a ClickFunnels funnel?', a: 'A standard lead generation or sales funnel takes one to two weeks from strategy to launch. Complex builds, webinar funnels, membership sites, multi-product offer stacks, typically take two to four weeks.' },
+  { q: 'Do you provide white-label ClickFunnels services for agencies?', a: 'Yes. We build ClickFunnels funnels for agency clients under your brand, same quality, no Isuremedia references, scalable across your client accounts.' },
+  { q: 'What happens after the funnel launches?', a: 'We set up A/B testing on the highest-leverage elements and monitor performance, conversion rate, upsell take rate, and email engagement. Ongoing optimisation arrangements are month to month.' },
 ];
 
 function FAQAccordion() {
@@ -175,9 +175,9 @@ export default function ClickFunnelsPage() {
                   </span>
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design, build, and optimise funnels and pages inside ClickFunnels — from opt-in pages and sales pages to{' '}
+                  We design, build, and optimise funnels and pages inside ClickFunnels, from opt-in pages and sales pages to{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>full multi-step funnel sequences</span>{' '}
-                  — so your account is actually producing the results the platform was built to deliver.
+                 , so your account is actually producing the results the platform was built to deliver.
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
                   <a href="/contact"
@@ -237,12 +237,12 @@ export default function ClickFunnelsPage() {
                   ClickFunnels Is a Powerful Platform. Getting It Right Is a Different Skill.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  ClickFunnels gives you everything you need to build high-converting funnels — the page builder, the checkout system, the upsell sequences, the email follow-up, the analytics. But knowing what the platform can do and knowing how to build a funnel that actually converts are two different things.
+                  ClickFunnels gives you everything you need to build high-converting funnels, the page builder, the checkout system, the upsell sequences, the email follow-up, the analytics. But knowing what the platform can do and knowing how to build a funnel that actually converts are two different things.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Most ClickFunnels users build funnels that{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>look right but underperform</span>{' '}
-                  — because the copy is not matched to the audience, the structure does not follow conversion logic, or the automation sequences are incomplete. The platform is capable. The build is the problem.
+                 , because the copy is not matched to the audience, the structure does not follow conversion logic, or the automation sequences are incomplete. The platform is capable. The build is the problem.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -287,10 +287,10 @@ export default function ClickFunnelsPage() {
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     ClickFunnels is a funnel builder, not just a page builder. Every build we do inside the platform is designed as{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a complete connected sequence</span>{' '}
-                    — from the first page a visitor lands on through to purchase, upsell, and confirmation.
+                   , from the first page a visitor lands on through to purchase, upsell, and confirmation.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    ClickFunnels remains the number one sales funnel software in the world by user adoption. Its templates are designed by direct-response marketers who understand conversion, not just designers who understand aesthetics — and{' '}
+                    ClickFunnels remains the number one sales funnel software in the world by user adoption. Its templates are designed by direct-response marketers who understand conversion, not just designers who understand aesthetics, and{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>out-convert generic landing page builder templates by 15 to 25% on average</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -359,7 +359,7 @@ export default function ClickFunnelsPage() {
             <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Platform Built for Direct Response. When It&apos;s Right, Nothing Else Competes.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                ClickFunnels&apos; template library, one-click upsell system, and built-in split testing were purpose-built for direct response marketing — not adapted from a general website builder. When the build matches the platform&apos;s strengths, results follow.
+                ClickFunnels&apos; template library, one-click upsell system, and built-in split testing were purpose-built for direct response marketing, not adapted from a general website builder. When the build matches the platform&apos;s strengths, results follow.
               </p>
             </div>
             <div className="gains-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -479,7 +479,7 @@ export default function ClickFunnelsPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our ClickFunnels Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Design, Build, and Optimisation — All Inside Your Account.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Design, Build, and Optimisation, All Inside Your Account.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

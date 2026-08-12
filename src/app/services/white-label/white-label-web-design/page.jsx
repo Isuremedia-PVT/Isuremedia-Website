@@ -10,19 +10,19 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'WordPress websites — bespoke design and development',
+  'WordPress websites, bespoke design and development',
   'Next.js and React builds for performance-critical projects',
   'Landing pages and campaign pages',
-  'E-commerce builds — WooCommerce and Shopify',
+  'E-commerce builds, WooCommerce and Shopify',
   'GoHighLevel funnels and website builds',
   'Website redesigns and migrations',
-  'Full project management — brief to launch',
+  'Full project management, brief to launch',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-diagram-project', title: 'We project-manage every build', desc: 'Design, development, QA, staging, and launch — your agency has one point of contact for the whole project.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We project-manage every build', desc: 'Design, development, QA, staging, and launch, your agency has one point of contact for the whole project.' },
   { icon: 'fa-solid fa-file-signature', title: 'Scope defined in writing before work begins', desc: 'Page count, integrations, responsibilities, and timeline signed off before the first design file is opened.' },
-  { icon: 'fa-solid fa-object-group', title: 'Design and development as one team', desc: 'Every design decision is made with the build in mind — no translation loss between design and development.' },
+  { icon: 'fa-solid fa-object-group', title: 'Design and development as one team', desc: 'Every design decision is made with the build in mind, no translation loss between design and development.' },
   { icon: 'fa-solid fa-clipboard-check', title: 'QA before every delivery', desc: 'Desktop and mobile, all browsers, all form submissions and integrations tested before it reaches your agency.' },
   { icon: 'fa-solid fa-eye-slash', title: 'No ISureMedia reference anywhere', desc: 'Code, file names, staging URLs, and communications cleared before delivery. Your clients never discover otherwise.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no volume commitment', desc: 'Bring us projects and maintenance clients when you have them. No retainer minimums, no penalty for quieter months.' },
@@ -42,52 +42,52 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-brands fa-wordpress', title: 'WordPress Websites', desc: 'Bespoke sites built for performance — clean code, mobile-first layouts, and a CMS interface clients can actually manage.' },
-  { icon: 'fa-brands fa-react', title: 'Next.js and React Builds', desc: 'For performance-critical projects — server-side rendering and edge-optimised delivery for sub-second load times.' },
+  { icon: 'fa-brands fa-wordpress', title: 'WordPress Websites', desc: 'Bespoke sites built for performance, clean code, mobile-first layouts, and a CMS interface clients can actually manage.' },
+  { icon: 'fa-brands fa-react', title: 'Next.js and React Builds', desc: 'For performance-critical projects, server-side rendering and edge-optimised delivery for sub-second load times.' },
   { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages & Campaign Pages', desc: 'Single-purpose pages for lead capture, launches, and events, connected to the client’s CRM and automation.' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-Commerce — WooCommerce & Shopify', desc: 'Product catalogue setup, payment gateways, shipping rules, and abandoned cart configuration included.' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-Commerce, WooCommerce & Shopify', desc: 'Product catalogue setup, payment gateways, shipping rules, and abandoned cart configuration included.' },
   { icon: 'fa-solid fa-robot', title: 'GoHighLevel Website & Funnel Builds', desc: 'Properly designed and built GHL sites taking full advantage of native CRM and automation connectivity.' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Redesigns & Migrations', desc: 'Outdated or outgrown sites rebuilt with SEO value, content, and domain authority preserved.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Ongoing Maintenance & Care Plans', desc: 'Plugin updates, security and uptime monitoring, and content changes — under your agency’s brand.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Ongoing Maintenance & Care Plans', desc: 'Plugin updates, security and uptime monitoring, and content changes, under your agency’s brand.' },
   { icon: 'fa-solid fa-list-check', title: 'Full Project Management', desc: 'Brief to launch, one point of contact on our side, so you manage the client relationship, not our team.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Marketing & SEO agencies whose clients need websites', desc: 'Turning it down risks the relationship. Referring it out risks the experience. Say yes and deliver it under your brand.', img: 'https://picsum.photos/seed/wlweb-whofor-marketing/700/620' },
-  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build — delivered under your agency’s name.', img: 'https://picsum.photos/seed/wlweb-whofor-branding/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire — timelines still met.', img: 'https://picsum.photos/seed/wlweb-whofor-capacity/700/620' },
+  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build, delivered under your agency’s name.', img: 'https://picsum.photos/seed/wlweb-whofor-branding/700/620' },
+  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire, timelines still met.', img: 'https://picsum.photos/seed/wlweb-whofor-capacity/700/620' },
   { icon: 'fa-solid fa-bullhorn', title: 'PR and comms agencies expanding into digital', desc: 'Adds digital delivery capability to a communications-led proposition without in-house technical resource.', img: 'https://picsum.photos/seed/wlweb-whofor-pr/700/620' },
-  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer — retain the margin and relationship.', img: 'https://picsum.photos/seed/wlweb-whofor-freelance/700/620' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured — say yes anyway.', img: 'https://picsum.photos/seed/wlweb-whofor-outside/700/620' },
+  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer, retain the margin and relationship.', img: 'https://picsum.photos/seed/wlweb-whofor-freelance/700/620' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured, say yes anyway.', img: 'https://picsum.photos/seed/wlweb-whofor-outside/700/620' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-diagram-project', title: 'We project-manage every build', desc: 'You brief us, we handle the rest. One point of contact — you are not chasing progress or translating between design and dev.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We project-manage every build', desc: 'You brief us, we handle the rest. One point of contact, you are not chasing progress or translating between design and dev.' },
   { icon: 'fa-solid fa-file-signature', title: 'Scope defined in writing before work begins', desc: 'A written specification signed off by the agency before any work begins eliminates scope disputes before they start.' },
-  { icon: 'fa-solid fa-object-group', title: 'Design and development as one team', desc: 'No translation loss — the site the client sees at launch looks like the design that was approved.' },
-  { icon: 'fa-solid fa-clipboard-check', title: 'QA before every delivery', desc: 'Desktop and mobile, all browsers, all integrations tested — ready to present, not a build you check yourself.' },
+  { icon: 'fa-solid fa-object-group', title: 'Design and development as one team', desc: 'No translation loss, the site the client sees at launch looks like the design that was approved.' },
+  { icon: 'fa-solid fa-clipboard-check', title: 'QA before every delivery', desc: 'Desktop and mobile, all browsers, all integrations tested, ready to present, not a build you check yourself.' },
   { icon: 'fa-solid fa-eye-slash', title: 'No ISureMedia reference anywhere', desc: 'Code, file names, staging URLs, and communications cleared. The website that goes live is your agency’s work.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month arrangements', desc: 'No volume commitments, no retainer minimums, no penalty for months with lower output.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Partner Discovery Call', desc: 'Your typical project types, platforms, and volume — a fulfilment structure and margin model proposed for your scope.' },
+  { n: '01', title: 'Partner Discovery Call', desc: 'Your typical project types, platforms, and volume, a fulfilment structure and margin model proposed for your scope.' },
   { n: '02', title: 'Agency Onboarding', desc: 'Brand standards, briefing format, and support preferences established, with your dedicated project contact assigned.' },
-  { n: '03', title: 'Brief & Scope Definition', desc: 'A written specification agreed by your agency before work begins — the document that prevents scope disputes.' },
+  { n: '03', title: 'Brief & Scope Definition', desc: 'A written specification agreed by your agency before work begins, the document that prevents scope disputes.' },
   { n: '04', title: 'Design Phase', desc: 'Wireframes and visual design delivered for your agency’s review and approval before development begins.' },
   { n: '05', title: 'Development & Integration', desc: 'Code, CMS configuration, and integrations built, reviewed on staging at agreed milestones.' },
   { n: '06', title: 'QA, Delivery & Launch', desc: 'Full QA across devices and browsers, delivered for final review, launched on your confirmation.' },
 ];
 
 const FAQS = [
-  { q: 'Will my clients know you built the website?', a: 'No. Every deliverable — code, file structure, staging URL, CMS login — is cleared of ISureMedia references before delivery.' },
+  { q: 'Will my clients know you built the website?', a: 'No. Every deliverable, code, file structure, staging URL, CMS login, is cleared of ISureMedia references before delivery.' },
   { q: 'What platforms do you build on?', a: 'WordPress is our primary platform, plus Next.js and React for performance-critical builds, Shopify and WooCommerce for e-commerce, and GoHighLevel for CRM-integrated sites.' },
   { q: 'Do we manage the project or do you?', a: 'We manage the build. You manage the client relationship. Your agency has one contact who coordinates everything on our side.' },
   { q: 'What happens if a client requests significant changes mid-build?', a: 'Changes outside the written specification are scoped as additional work, quoted, and added with your agency’s approval.' },
   { q: 'What does QA involve before you deliver to our agency?', a: 'Full build tested across desktop and mobile on all major browsers, every integration verified live, and performance benchmarks measured and met.' },
   { q: 'Can you migrate an existing website to a new platform?', a: 'Yes. Migrations from Wix, Squarespace, or old WordPress builds are handled with redirect mapping and pre-launch SEO verification.' },
-  { q: 'Do you offer post-launch maintenance for our clients?', a: 'Yes, as a white-label care plan under your agency’s brand — creating recurring revenue from clients who’d otherwise generate none after launch.' },
-  { q: 'What is the typical margin structure?', a: 'Most agencies mark up white-label development 40 to 60% above wholesale cost — a $3,000 build typically retails at $4,500 to $5,000.' },
+  { q: 'Do you offer post-launch maintenance for our clients?', a: 'Yes, as a white-label care plan under your agency’s brand, creating recurring revenue from clients who’d otherwise generate none after launch.' },
+  { q: 'What is the typical margin structure?', a: 'Most agencies mark up white-label development 40 to 60% above wholesale cost, a $3,000 build typically retails at $4,500 to $5,000.' },
 ];
 
 const RELATED = [
@@ -169,7 +169,7 @@ export default function WhiteLabelWebDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and develop websites, landing pages, e-commerce builds, and web applications for agencies —{' '}
+                  We design and develop websites, landing pages, e-commerce builds, and web applications for agencies,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered under your brand, invisible to your clients</span>, with project management and QA included.
                 </p>
 
@@ -247,7 +247,7 @@ export default function WhiteLabelWebDesignPage() {
                   Turning that work away means the client goes to a developer directly. Referring it out means losing control of quality, timelines, and the client experience.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds websites for agencies under their brand —{' '}
+                  ISureMedia builds websites for agencies under their brand,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from brief to launch, project-managed by us</span>, QA&apos;d before delivery. Your agency delivers the website. We build it.
                 </p>
                 <a href="/appointment"
@@ -295,11 +295,11 @@ export default function WhiteLabelWebDesignPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no ISureMedia reference anywhere</span> in the final product.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    WordPress, Next.js, Shopify, WooCommerce, GoHighLevel —{' '}
+                    WordPress, Next.js, Shopify, WooCommerce, GoHighLevel,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>on platform and off</span>, whatever your clients ask for.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Your agency captures website revenue without carrying the development overhead — you manage the client relationship, we manage the build.
+                    Your agency captures website revenue without carrying the development overhead, you manage the client relationship, we manage the build.
                   </p>
                 </div>
               </div>
@@ -405,7 +405,7 @@ export default function WhiteLabelWebDesignPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes White-Label Web Builds to Fail — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes White-Label Web Builds to Fail, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most agencies have had a bad experience with a development partner. These are the reasons why.
               </p>
@@ -450,7 +450,7 @@ export default function WhiteLabelWebDesignPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Every Type of Web Build Your Agency Clients Ask For</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>WordPress, Next.js, Shopify, WooCommerce, GoHighLevel — On Platform and Off.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>WordPress, Next.js, Shopify, WooCommerce, GoHighLevel, On Platform and Off.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

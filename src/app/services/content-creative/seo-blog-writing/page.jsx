@@ -13,7 +13,7 @@ const BRIDGE_ITEMS = [
   'Keyword research and search intent analysis for every brief',
   'Content strategy and topical cluster planning',
   'Long-form, SEO-optimised blog post writing',
-  'On-page SEO — title tags, meta descriptions, header structure, internal linking',
+  'On-page SEO, title tags, meta descriptions, header structure, internal linking',
   'Content refresh and update for underperforming posts',
   'AI SEO and AEO optimisation for AI search visibility',
   'Monthly content calendars and publishing schedules',
@@ -21,9 +21,9 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-arrow-trend-up', title: 'Traffic that compounds over time', desc: 'Sites with 400+ indexed blog posts generate 4.2x more leads than those with fewer than 100. The blog is a growing asset, not a campaign.' },
-  { icon: 'fa-solid fa-dollar-sign', title: 'Leads at a lower cost per acquisition', desc: 'Organic visitors have already searched, read, and formed an opinion of your expertise — they convert at a higher rate.' },
+  { icon: 'fa-solid fa-dollar-sign', title: 'Leads at a lower cost per acquisition', desc: 'Organic visitors have already searched, read, and formed an opinion of your expertise, they convert at a higher rate.' },
   { icon: 'fa-solid fa-layer-group', title: 'Topical authority that lifts all rankings', desc: 'A topic cluster builds the kind of domain expertise Google uses to rank you more easily for new terms too.' },
-  { icon: 'fa-solid fa-robot', title: 'Visibility in AI search', desc: 'AI search visitors convert at 4x to 5x the rate of traditional search traffic — someone closer to a buying decision.' },
+  { icon: 'fa-solid fa-robot', title: 'Visibility in AI search', desc: 'AI search visitors convert at 4x to 5x the rate of traditional search traffic, someone closer to a buying decision.' },
   { icon: 'fa-solid fa-share-nodes', title: 'Content that fuels every other channel', desc: 'A well-researched post becomes the source for email, social, ad copy, and sales enablement material.' },
   { icon: 'fa-solid fa-chart-line', title: '$7.65 return for every $1 spent', desc: 'Content marketing ROI averages $7.65 per $1 spent, compared to $1.80 for paid advertising, at 62% lower cost per lead.' },
 ];
@@ -42,21 +42,21 @@ const WHY_NOT_RANK = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword Research & Intent Analysis', desc: 'A map of the questions your customers are asking at every stage of the buying journey — not just a list of terms.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword Research & Intent Analysis', desc: 'A map of the questions your customers are asking at every stage of the buying journey, not just a list of terms.' },
   { icon: 'fa-solid fa-layer-group', title: 'Content Strategy & Topical Clusters', desc: 'Cornerstone articles supported by a network of related posts, building topical authority systematically.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Long-Form SEO Blog Writing', desc: 'Researched to the specific intent, structured for the format Google and readers both expect. We write for depth.' },
-  { icon: 'fa-solid fa-code', title: 'On-Page SEO Optimisation', desc: 'Title tag, meta description, headers, internal linking, alt text, and schema — applied to every post before publication.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Content Briefs for In-House Writers', desc: 'Keyword, intent, structure, headers, and key points — everything a writer needs without SEO expertise of their own.' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Content Refresh & Updating', desc: 'Updating underperforming posts can boost organic traffic by an average of 106% — we find and fix what’s close to ranking.' },
+  { icon: 'fa-solid fa-code', title: 'On-Page SEO Optimisation', desc: 'Title tag, meta description, headers, internal linking, alt text, and schema, applied to every post before publication.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Content Briefs for In-House Writers', desc: 'Keyword, intent, structure, headers, and key points, everything a writer needs without SEO expertise of their own.' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Content Refresh & Updating', desc: 'Updating underperforming posts can boost organic traffic by an average of 106%, we find and fix what’s close to ranking.' },
   { icon: 'fa-solid fa-robot', title: 'AI Search & AEO Optimisation', desc: 'Clear definitions, direct answers, and structured data so AI systems can cite your content accurately.' },
   { icon: 'fa-solid fa-calendar-days', title: 'Monthly Content Calendars', desc: 'Topics, keywords, publishing dates, and internal linking planned so the programme runs consistently.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-clock', title: 'Can’t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI — a managed service removes the time constraint.', img: 'https://picsum.photos/seed/blog-whofor-inhouse/700/620' },
+  { icon: 'fa-solid fa-user-clock', title: 'Can’t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI, a managed service removes the time constraint.', img: 'https://picsum.photos/seed/blog-whofor-inhouse/700/620' },
   { icon: 'fa-solid fa-chart-line', title: 'Blog exists but generates little traffic', desc: 'If posts aren’t ranking, the strategy or the optimisation needs attention. We audit and build a programme that works.', img: 'https://picsum.photos/seed/blog-whofor-existing/700/620' },
   { icon: 'fa-solid fa-flag', title: 'Entering a new market or launching a service', desc: 'A targeted programme builds topical authority in a new area before paid campaigns drive traffic to unranked pages.', img: 'https://picsum.photos/seed/blog-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references — scalable across multiple accounts.', img: 'https://picsum.photos/seed/blog-whofor-agency/700/620' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references, scalable across multiple accounts.', img: 'https://picsum.photos/seed/blog-whofor-agency/700/620' },
   { icon: 'fa-solid fa-robot', title: 'Targeting AI search visibility', desc: 'For businesses whose customers research with AI tools, content structured for citation is a real competitive edge.', img: 'https://picsum.photos/seed/blog-whofor-ai/700/620' },
   { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce building informational funnels', desc: 'A reader who finds your post answering their question is far more likely to buy than a cold ad viewer.', img: 'https://picsum.photos/seed/blog-whofor-ecom/700/620' },
 ];
@@ -65,7 +65,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We research before we write a word', desc: 'Every brief starts with keyword research and intent analysis. Writing comes after the research is done, not alongside it.' },
   { icon: 'fa-solid fa-bullseye', title: 'We write for intent, not keyword density', desc: 'Every post is structured around whether it satisfies the searcher better than what’s already on page one.' },
   { icon: 'fa-solid fa-layer-group', title: 'We build authority strategies, not one-off posts', desc: 'A cluster of interconnected posts consistently outranks single posts in a competitive niche.' },
-  { icon: 'fa-solid fa-code', title: 'We optimise every post before publishing', desc: 'Title tag, meta description, headers, internal linking, schema — part of the editorial process, not an afterthought.' },
+  { icon: 'fa-solid fa-code', title: 'We optimise every post before publishing', desc: 'Title tag, meta description, headers, internal linking, schema, part of the editorial process, not an afterthought.' },
   { icon: 'fa-solid fa-robot', title: 'We write for AI search, not just Google', desc: 'Content cited in ChatGPT, Perplexity, or AI Overviews converts at 4x to 5x traditional organic search.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because traffic is growing and leads are coming, not because you signed a twelve-month contract.' },
 ];
@@ -73,20 +73,20 @@ const WHY_ISM = [
 const PROCESS = [
   { n: '01', title: 'Keyword Research & Mapping', desc: 'The keyword landscape for your business, mapped into the topical clusters that build authority most efficiently.' },
   { n: '02', title: 'Strategy & Calendar Planning', desc: 'Topical clusters, cornerstone articles, supporting posts, internal linking plan, and publishing calendar.' },
-  { n: '03', title: 'Content Brief Development', desc: 'Keyword, intent, target length, headers, key points, and competitive differentiation — the blueprint for every post.' },
+  { n: '03', title: 'Content Brief Development', desc: 'Keyword, intent, target length, headers, key points, and competitive differentiation, the blueprint for every post.' },
   { n: '04', title: 'Writing & Editorial Review', desc: 'Written to the brief, in your brand’s voice, reviewed for accuracy, flow, and SEO before delivery.' },
   { n: '05', title: 'On-Page SEO & Optimisation', desc: 'Title tag, meta description, header hierarchy, internal linking, alt text, and schema before publication.' },
-  { n: '06', title: 'Monitoring & Iteration', desc: 'Rankings and engagement tracked for every post — what’s gaining traction, what needs updating, what’s next.' },
+  { n: '06', title: 'Monitoring & Iteration', desc: 'Rankings and engagement tracked for every post, what’s gaining traction, what needs updating, what’s next.' },
 ];
 
 const FAQS = [
   { q: 'How long does it take for blog content to rank on Google?', a: 'Most content takes three to six months to reach its ranking potential. A programme running twelve months produces significantly more traffic than one running for three.' },
   { q: 'How long should SEO blog posts be?', a: 'For most informational queries, 1,500 to 2,500 words is the effective range. Long-form content of 2,000+ words gets 3x more backlinks on average, but intent decides length, not a target count.' },
-  { q: 'Can you write content that also works for AI search like ChatGPT and Perplexity?', a: 'Yes. We structure content for AI citation — clear definitions, direct answers, and proper schema markup.' },
+  { q: 'Can you write content that also works for AI search like ChatGPT and Perplexity?', a: 'Yes. We structure content for AI citation, clear definitions, direct answers, and proper schema markup.' },
   { q: 'Do you do keyword research or do we provide the topics?', a: 'Both. We typically conduct research and recommend topics, but we can validate and refine client-provided topics too.' },
   { q: 'What is a topical cluster and why does it matter?', a: 'A group of interlinked pieces covering a subject comprehensively. Sites with strong topical authority rank more easily for new terms in that area.' },
   { q: 'Can you write in our brand’s voice and tone?', a: 'Yes. We develop a voice and tone brief before writing begins, based on your existing content and guidelines.' },
-  { q: 'What is content refreshing and when does it make sense?', a: 'Updating existing posts with ranking potential but underperforming — can increase organic traffic by an average of 106%.' },
+  { q: 'What is content refreshing and when does it make sense?', a: 'Updating existing posts with ranking potential but underperforming, can increase organic traffic by an average of 106%.' },
   { q: 'How many posts per month do we need to see results?', a: 'Four to eight well-researched, properly optimised posts per month is the effective range for most businesses.' },
 ];
 
@@ -169,7 +169,7 @@ export default function SEOBlogWritingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We research, write, and optimise blog content that targets the keywords your customers search, satisfies intent properly, and builds topical authority — so{' '}
+                  We research, write, and optimise blog content that targets the keywords your customers search, satisfies intent properly, and builds topical authority, so{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every post compounds instead of disappearing</span>{' '}
                   after week one.
                 </p>
@@ -248,7 +248,7 @@ export default function SEOBlogWritingPage() {
                   A blog post continues generating traffic and leads for an average of 3.5 years. Companies with active blogs generate 67% more leads and 55% more traffic than non-blogging competitors.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The problem isn&apos;t that blog content doesn&apos;t work — it&apos;s that most of it doesn&apos;t rank. ISureMedia writes SEO blog content that&apos;s{' '}
+                  The problem isn&apos;t that blog content doesn&apos;t work, it&apos;s that most of it doesn&apos;t rank. ISureMedia writes SEO blog content that&apos;s{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to rank from the start</span>.
                 </p>
                 <a href="/contact"
@@ -292,12 +292,12 @@ export default function SEOBlogWritingPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    What makes SEO blog writing distinct is the research that comes before the writing —{' '}
+                    What makes SEO blog writing distinct is the research that comes before the writing,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>search intent analysis</span> that determines structure, length, and angle.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     In 2026, SEO blog writing also means visibility in{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>AI search</span> — the answers ChatGPT, Perplexity, and Google AI Overviews surface for direct questions.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>AI search</span>, the answers ChatGPT, Perplexity, and Google AI Overviews surface for direct questions.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A post written with proper intent analysis satisfies the specific need that caused someone to search in the first place. We write for both readers and rankings.
@@ -408,7 +408,7 @@ export default function SEOBlogWritingPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Why Most Blog Content Does Not Rank.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                The content reads well, the topics are relevant, the posts publish on schedule — but the rankings never come. Four specific reasons why.
+                The content reads well, the topics are relevant, the posts publish on schedule, but the rankings never come. Four specific reasons why.
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>

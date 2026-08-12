@@ -27,7 +27,7 @@ export default function GarnusIndiaCaseStudyPage() {
         { val: '4-5', label: 'Influencer Collabs', sub: 'home, kitchen & lifestyle niche' },
         { val: '0', label: 'Paid Reach Used', sub: 'entirely organic growth' },
       ],
-      quote: '[Client quote pending — replace with Garnus India\'s actual testimonial]',
+      quote: '[Client quote pending, replace with Garnus India\'s actual testimonial]',
       quoteBy: 'Garnus India',
       quoteRole: 'E-commerce Brand Team',
       problemHeading: 'Launching a product brand into a crowded space, with no audience to start.',
@@ -45,12 +45,12 @@ export default function GarnusIndiaCaseStudyPage() {
       ],
       overviewHeading: 'What was needed.',
       overviewBody: [
-        'Garnus India needed a distinct, personality-led content style that stopped the scroll rather than blending into a category full of similar wooden-product brands — creative-first, not just product shots.',
+        'Garnus India needed a distinct, personality-led content style that stopped the scroll rather than blending into a category full of similar wooden-product brands, creative-first, not just product shots.',
         'Isuremedia built a content and influencer strategy combining playful, relatable creatives, festive and sale campaigns, and mid-tier creator partnerships to build awareness from the ground up.',
       ],
       overviewImage: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=700&q=80',
       didHeading: 'Built around a recognisable voice, not just a content calendar.',
-      didIntro: 'Every part of the strategy — creative style, campaigns, and partnerships — was designed to make Garnus India recognisable in a category full of near-identical products.',
+      didIntro: 'Every part of the strategy, creative style, campaigns, and partnerships, was designed to make Garnus India recognisable in a category full of near-identical products.',
       process: [
         { label: 'Voice', title: 'Personality-led creative & consistency', body: 'Built a distinct, playful, relatable content style that stood out from typical product shots, maintained with a steady posting rhythm and active engagement.' },
         { label: 'Campaigns', title: 'Festive & sale campaign creatives', body: 'Ran themed social campaigns around festive seasons, offers, and sales to spike attention and reach at the moments buyers were most active.' },

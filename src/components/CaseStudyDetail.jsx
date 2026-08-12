@@ -219,7 +219,7 @@ export default function CaseStudyDetail({
           </div>
         </section>
 
-        {/* METRICS COMPARISON TABLE (optional — before/after KPI table for PPC etc.) */}
+        {/* METRICS COMPARISON TABLE (optional, before/after KPI table for PPC etc.) */}
         {d.metricsTable && (
           <section>
             <div className="ism-container">

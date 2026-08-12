@@ -24,7 +24,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-robot', title: 'The language of AI and machine learning', desc: 'Nearly every major AI and ML framework is Python-first, making it the natural choice for AI-integrated applications.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Readable, maintainable code', desc: 'Python’s syntax favours clarity, which translates to applications that are easier to maintain and extend over time.' },
   { icon: 'fa-solid fa-boxes-stacked', title: 'A massive library ecosystem', desc: 'PyPI’s package ecosystem accelerates development across web, data, automation, and AI use cases.' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Automation scripting that saves real hours', desc: 'Repetitive manual tasks — data entry, reporting, file processing — automated reliably with Python scripts.' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Automation scripting that saves real hours', desc: 'Repetitive manual tasks, data entry, reporting, file processing, automated reliably with Python scripts.' },
   { icon: 'fa-solid fa-database', title: 'Strong for data pipelines and ETL', desc: 'Moving, transforming, and analysing data between systems is one of Python’s core strengths.' },
 ];
 
@@ -42,7 +42,7 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Specification', desc: 'Existing codebase review or new project scoping — architecture and requirements defined in writing.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Specification', desc: 'Existing codebase review or new project scoping, architecture and requirements defined in writing.' },
   { icon: 'fa-solid fa-code', title: 'Custom Python Application Development', desc: 'Bespoke applications and services built to your exact specification.' },
   { icon: 'fa-brands fa-python', title: 'Django & Flask Web Applications', desc: 'Full-featured web applications built on Python’s leading frameworks.' },
   { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Data Pipeline & Automation Development', desc: 'Scripts and pipelines that automate data movement, transformation, and reporting reliably.' },
@@ -81,9 +81,9 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'Why choose Python over another language?', a: 'Python is particularly strong for data processing, automation, and AI-integrated applications, with a mature ecosystem and readable, maintainable code.' },
-  { q: 'Can you automate our manual reporting or data entry processes?', a: 'Yes. This is one of the most common and highest-ROI Python projects — reliable scripts that eliminate hours of repetitive manual work.' },
-  { q: 'How long does a custom Python project take to build?', a: 'Depends heavily on scope — a focused automation script might take one to two weeks, while a full application can take several months.' },
-  { q: 'Do you build applications with Django or Flask?', a: 'Yes, depending on the project’s needs — Django for full-featured platforms with built-in admin and structure, Flask for lighter, more flexible builds.' },
+  { q: 'Can you automate our manual reporting or data entry processes?', a: 'Yes. This is one of the most common and highest-ROI Python projects, reliable scripts that eliminate hours of repetitive manual work.' },
+  { q: 'How long does a custom Python project take to build?', a: 'Depends heavily on scope, a focused automation script might take one to two weeks, while a full application can take several months.' },
+  { q: 'Do you build applications with Django or Flask?', a: 'Yes, depending on the project’s needs, Django for full-featured platforms with built-in admin and structure, Flask for lighter, more flexible builds.' },
   { q: 'What does your technical specification process involve?', a: 'We define the architecture, data model, and edge cases in writing, agreed by you before any development begins.' },
   { q: 'Do you provide ongoing support after launch?', a: 'Yes, on a month-to-month basis, covering security patches, bug fixes, and new feature development.' },
   { q: 'Can you integrate our application with AI or machine learning tools?', a: 'Yes. Python’s AI and ML ecosystem makes it a natural fit for applications that need to connect to or build on these capabilities.' },
@@ -169,7 +169,7 @@ export default function PythonDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Python applications, data pipelines, and automation scripts —{' '}
+                  We design and build custom Python applications, data pipelines, and automation scripts,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to specification, tested, and maintained</span>.
                 </p>
 
@@ -247,7 +247,7 @@ export default function PythonDevelopmentPage() {
                   Most homegrown automation scripts have no monitoring, no error handling, and no one who notices when they quietly stop working.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds Python applications and pipelines that are tested, monitored, and documented —{' '}
+                  ISureMedia builds Python applications and pipelines that are tested, monitored, and documented,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>reliable enough to actually depend on</span>.
                 </p>
                 <a href="/contact"
@@ -292,7 +292,7 @@ export default function PythonDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Python&apos;s ecosystem for{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>data processing and automation</span> is unmatched — and it&apos;s the language nearly every AI framework is built on.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>data processing and automation</span> is unmatched, and it&apos;s the language nearly every AI framework is built on.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Readable syntax means{' '}
@@ -405,7 +405,7 @@ export default function PythonDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Python Projects to Fail — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Python Projects to Fail, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most Python automation horror stories trace back to one of these four causes.
               </p>
@@ -520,7 +520,7 @@ export default function PythonDevelopmentPage() {
                   A free technical consultation, before you commit to anything.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

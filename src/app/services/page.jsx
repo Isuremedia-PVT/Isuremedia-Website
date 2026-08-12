@@ -36,7 +36,7 @@ const SERVICES = [
   {
     icon: 'fa-solid fa-tag',
     title: 'White-Label Fulfillment',
-    desc: 'Unbranded delivery for agencies. SEO, PPC, web dev, content, GHL builds — delivered under your brand with NDA-protected confidentiality.',
+    desc: 'Unbranded delivery for agencies. SEO, PPC, web dev, content, GHL builds, delivered under your brand with NDA-protected confidentiality.',
     href: '/services/white-label',
   },
   {
@@ -58,7 +58,7 @@ const WHY = [
   {
     icon: 'fa-solid fa-layer-group',
     title: 'Full-Service Under One Roof',
-    desc: 'SEO, paid ads, web builds, content, automation — one team handles it all. No hand-offs. No gaps. No agencies blaming each other.',
+    desc: 'SEO, paid ads, web builds, content, automation, one team handles it all. No hand-offs. No gaps. No agencies blaming each other.',
   },
   {
     icon: 'fa-solid fa-chart-line',
@@ -92,7 +92,7 @@ export default function ServicesPage() {
           <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative' }}>
             <div className="svc-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', minHeight: 480 }}>
 
-              {/* Left — image only */}
+              {/* Left, image only */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 />
               </div>
 
-              {/* Right — text */}
+              {/* Right, text */}
               <div>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
                   <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
@@ -112,7 +112,7 @@ export default function ServicesPage() {
                   One Agency. Every Digital Service You&apos;ll Ever Need.
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 36, maxWidth: 520 }}>
-                  Strategy, execution, and growth — all under one roof. From websites and SEO to paid ads, content, automation, and white-label fulfillment, Isuremedia covers the full digital marketing stack so you never have to juggle agencies again.
+                  Strategy, execution, and growth, all under one roof. From websites and SEO to paid ads, content, automation, and white-label fulfillment, Isuremedia covers the full digital marketing stack so you never have to juggle agencies again.
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
                   <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -219,7 +219,7 @@ export default function ServicesPage() {
           <style>{`@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:540px){.why-grid{grid-template-columns:1fr!important;}}`}</style>
         </section>
 
-        <CTASection image="/result_footer/ready_for_result.png" />
+        <CTASection image="/result_footer/ready_for_result.webp" />
       </main>
       <Footer />
     </>

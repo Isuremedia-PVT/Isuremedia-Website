@@ -15,7 +15,7 @@ export default function ProblemStatement() {
 
       <div className="ism-container ps-container" style={{ position: 'relative', zIndex: 1 }}>
 
-        {/* Single semantic heading — three visual lines, one h2 for SEO/a11y */}
+        {/* Single semantic heading, three visual lines, one h2 for SEO/a11y */}
         <h2 style={{
           fontFamily: J,
           fontSize: 'clamp(30px, 3.4vw, 50px)',

@@ -19,12 +19,12 @@ const N8N_BRIDGE_ITEMS = [
 ];
 
 const N8N_WHY_MATTERS = [
-  { icon: 'fa-brands fa-github', title: 'Open-source and customisable', desc: 'n8n is fully open-source — extend it with custom code nodes, build your own integrations, and modify behaviour to fit your exact workflow.' },
+  { icon: 'fa-brands fa-github', title: 'Open-source and customisable', desc: 'n8n is fully open-source, extend it with custom code nodes, build your own integrations, and modify behaviour to fit your exact workflow.' },
   { icon: 'fa-solid fa-infinity', title: 'No per-task pricing', desc: 'Self-hosted n8n runs unlimited tasks at no per-execution cost. High-volume automation becomes cost-effective from day one.' },
   { icon: 'fa-solid fa-lock', title: 'Full data ownership', desc: 'Your data never leaves your infrastructure. Self-hosted n8n gives you complete control over security, compliance, and data residency.' },
   { icon: 'fa-solid fa-plug', title: '400+ native integrations', desc: 'A large library of built-in app connections covers most of what you need out of the box, with room to extend further.' },
   { icon: 'fa-solid fa-code', title: 'Custom code nodes for any logic', desc: 'Drop into JavaScript or Python whenever the built-in nodes are not enough, so no workflow is limited by the platform.' },
-  { icon: 'fa-solid fa-satellite-dish', title: 'Webhook and HTTP request nodes', desc: 'Trigger workflows from any external event and call any API directly — no marketplace dependency required.' },
+  { icon: 'fa-solid fa-satellite-dish', title: 'Webhook and HTTP request nodes', desc: 'Trigger workflows from any external event and call any API directly, no marketplace dependency required.' },
 ];
 
 const N8N_CARD_VARIANTS = [
@@ -66,7 +66,7 @@ const N8N_SERVICES = [
 
 const N8N_WHO_FOR = [
   { icon: 'fa-solid fa-code', title: 'Engineering teams needing custom logic', desc: 'When built-in nodes are not enough, custom JavaScript or Python code nodes let engineering teams build exactly the logic they need.', img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume — self-hosted n8n removes that ceiling.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume, self-hosted n8n removes that ceiling.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
   { icon: 'fa-solid fa-database', title: 'Data-heavy businesses transforming large volumes', desc: 'High-volume data transformation and syncing is where per-execution pricing on other platforms becomes expensive fast.', img: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=700&q=80' },
   { icon: 'fa-solid fa-shield-halved', title: 'Businesses requiring full data ownership', desc: 'Regulated industries and businesses with strict data residency requirements need automation that never sends data through a third-party server.', img: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?w=700&q=80' },
   { icon: 'fa-solid fa-server', title: 'Teams wanting to self-host for security', desc: 'Self-hosting on your own infrastructure gives your security team full visibility and control over exactly how automation runs.', img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80' },
@@ -74,7 +74,7 @@ const N8N_WHO_FOR = [
 ];
 
 const N8N_WHY_ISM = [
-  { icon: 'fa-solid fa-server', title: 'We handle the infrastructure, not just the workflows', desc: 'Server setup, SSL, authentication, and backups are configured properly before a single workflow goes live — the foundation matters as much as the automation.' },
+  { icon: 'fa-solid fa-server', title: 'We handle the infrastructure, not just the workflows', desc: 'Server setup, SSL, authentication, and backups are configured properly before a single workflow goes live, the foundation matters as much as the automation.' },
   { icon: 'fa-brands fa-github', title: 'We build with the open-source ecosystem, not around it', desc: 'Custom code nodes, community integrations, and direct API access mean no workflow is limited by what is available off the shelf.' },
   { icon: 'fa-solid fa-lock', title: 'We respect your data ownership requirements', desc: 'For businesses that need full control over where their data lives, self-hosted n8n is configured to keep everything on your infrastructure.' },
   { icon: 'fa-solid fa-file-lines', title: 'Full documentation and handover', desc: 'Every workflow is documented clearly so your team understands exactly how it works, not left guessing when something needs to change.' },
@@ -84,7 +84,7 @@ const N8N_WHY_ISM = [
 
 const N8N_PROCESS = [
   { n: '01', title: 'Setup', desc: 'n8n deployed on your server or cloud environment with SSL, authentication, and backup configuration.' },
-  { n: '02', title: 'Design', desc: 'Workflow architecture mapped — triggers, actions, error paths, and retry logic all planned before building.' },
+  { n: '02', title: 'Design', desc: 'Workflow architecture mapped, triggers, actions, error paths, and retry logic all planned before building.' },
   { n: '03', title: 'Build', desc: 'All ten workflows built inside your n8n instance, tested with real data, and error handling verified.' },
   { n: '04', title: 'Test', desc: 'Every workflow tested end to end against real scenarios and edge cases before it goes anywhere near live data.' },
   { n: '05', title: 'Deploy and Support', desc: 'Workflows activated, monitoring alerts configured, documentation delivered, and ongoing support in place.' },
@@ -92,7 +92,7 @@ const N8N_PROCESS = [
 
 const N8N_FAQS = [
   { q: 'What is n8n and how is it different from Zapier or Make?', a: 'n8n is an open-source workflow automation platform that can be self-hosted on your own infrastructure. Unlike Zapier or Make, it has no per-task pricing ceiling and can be extended with custom JavaScript or Python code nodes for logic those platforms cannot handle.' },
-  { q: 'Do we need our own server to use n8n?', a: 'Self-hosting gives you full data ownership and unlimited runs at no per-execution cost, and is what we recommend for most businesses. n8n also offers a cloud version if you prefer not to manage infrastructure — we can configure either.' },
+  { q: 'Do we need our own server to use n8n?', a: 'Self-hosting gives you full data ownership and unlimited runs at no per-execution cost, and is what we recommend for most businesses. n8n also offers a cloud version if you prefer not to manage infrastructure, we can configure either.' },
   { q: 'Is n8n secure enough for sensitive data?', a: 'Yes, when self-hosted properly. We configure SSL, authentication, and backups as part of every setup, so your data never leaves your own infrastructure and you retain full control over security and compliance.' },
   { q: 'Can n8n integrate with tools that do not have a native connector?', a: 'Yes. n8n supports HTTP request nodes and webhooks for any API, alongside its library of 400+ native integrations, so custom or niche tools are never a blocker.' },
   { q: 'How many workflows are included in a typical engagement?', a: 'Most engagements start with ten custom workflows, scoped during the design stage. Additional workflows can be added as your automation needs grow.' },
@@ -101,7 +101,7 @@ const N8N_FAQS = [
   { q: 'How long does an n8n project take?', a: 'A typical engagement covering server setup and ten custom workflows moves from setup to deployed, monitored workflows in three to four weeks, depending on complexity.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function N8nFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function N8nPage() {
           <div className="ism-container">
             <div className="n8n-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   n8n Automations for Teams Who Want Full{' '}
@@ -192,7 +192,7 @@ export default function N8nPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="n8n-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/n8n-automation.webp" alt="n8n self-hosted workflow automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -264,7 +264,7 @@ export default function N8nPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   As an open-source workflow automation platform, n8n can be{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>, extended with custom JavaScript or Python code nodes, and integrated with any API — no integration marketplace dependency required.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>, extended with custom JavaScript or Python code nodes, and integrated with any API, no integration marketplace dependency required.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -309,7 +309,7 @@ export default function N8nPage() {
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     n8n is an open-source workflow automation platform that can be{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>{' '}
-                    — your data never has to leave your servers.
+                   , your data never has to leave your servers.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Where SaaS automation tools charge per task and cap what you can build, n8n can be{' '}
@@ -317,7 +317,7 @@ export default function N8nPage() {
                     for logic that off-the-shelf platforms simply cannot handle.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    With 400+ native integrations plus webhook and HTTP request nodes for anything else, n8n connects to any API — no integration marketplace dependency required, and no ceiling on how much you can run.
+                    With 400+ native integrations plus webhook and HTTP request nodes for anything else, n8n connects to any API, no integration marketplace dependency required, and no ceiling on how much you can run.
                   </p>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function N8nPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Integrations */}
+                {/* Floating badge, Integrations */}
                 <div className="n8n-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-plug" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -344,7 +344,7 @@ export default function N8nPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Data Control */}
+                {/* Floating badge, Data Control */}
                 <div className="n8n-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-lock" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -355,7 +355,7 @@ export default function N8nPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Cost Per Task */}
+                {/* Floating badge, Cost Per Task */}
                 <div className="n8n-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-infinity" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -366,7 +366,7 @@ export default function N8nPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Hosting */}
+                {/* Floating badge, Hosting */}
                 <div className="n8n-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-server" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -393,7 +393,7 @@ export default function N8nPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Why n8n Is the Automation Platform for Serious Teams.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Unlimited runs, full customisation, and total data ownership — n8n is built for teams that take automation seriously.
+                Unlimited runs, full customisation, and total data ownership, n8n is built for teams that take automation seriously.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -431,7 +431,7 @@ export default function N8nPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Goes Into Every n8n Build.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Infrastructure first, then workflows — these are the factors Isuremedia builds into every n8n engagement.
+                Infrastructure first, then workflows, these are the factors Isuremedia builds into every n8n engagement.
               </p>
             </div>
             <div className="n8n-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -635,7 +635,7 @@ export default function N8nPage() {
                 Setup to Deployed Workflows in <span style={{ color: 'var(--ism-amber)' }}>Five Steps</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>
-                Infrastructure first, then workflows — ensuring your n8n environment is production-ready before the first automation goes live.
+                Infrastructure first, then workflows, ensuring your n8n environment is production-ready before the first automation goes live.
               </p>
             </div>
             <div className="n8n-timeline" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 0, position: 'relative' }}>

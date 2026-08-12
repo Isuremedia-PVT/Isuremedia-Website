@@ -12,7 +12,7 @@ const INDUSTRIES = [
   { icon: 'fa-solid fa-wrench',            tag: 'Home Services',   title: 'HVAC & Home Services',        desc: 'Local SEO, Google Ads, and automated follow-up so every call turns into a booked job.', href: '/contact', img: '1607472586893-edb57bdc0e39' },
   { icon: 'fa-solid fa-cart-shopping',      tag: 'Online Retail',  title: 'E-Commerce',                  desc: 'We handle SEO, paid ads, email, and creative together so your store keeps running even when one channel dips.', href: '/contact', img: '1441986300917-64674bd600d8' },
   { icon: 'fa-solid fa-microchip',          tag: 'Software',       title: 'SaaS & Tech',                 desc: 'Content, LinkedIn Ads, and nurture sequences built to fill your pipeline with qualified demos.', href: '/contact', img: '1518770660439-4636190af475' },
-  { icon: 'fa-solid fa-bullhorn',           tag: 'Agency Partners',title: 'Marketing Agencies',          desc: 'White-label fulfillment under your brand — NDA-protected, deadline-reliable, and built to scale with you.', href: '/contact', img: '1522202176988-66273c2fd55f' },
+  { icon: 'fa-solid fa-bullhorn',           tag: 'Agency Partners',title: 'Marketing Agencies',          desc: 'White-label fulfillment under your brand, NDA-protected, deadline-reliable, and built to scale with you.', href: '/contact', img: '1522202176988-66273c2fd55f' },
   { icon: 'fa-solid fa-house',              tag: 'Property',       title: 'Real Estate',                 desc: 'Local SEO, Google Ads, and CRM automation that keep your pipeline full of ready buyers and sellers.', href: '/contact', img: '1560518883-ce09059eeffa' },
   { icon: 'fa-solid fa-scale-balanced',     tag: 'Legal',          title: 'Law Firms & Legal Services',  desc: 'Local SEO and a steady flow of reviews that build trust before a prospective client ever calls.', href: '/contact', img: '1505664194779-8beaceb93744' },
   { icon: 'fa-solid fa-stethoscope',        tag: 'Healthcare',     title: 'Healthcare & Medical Clinics',desc: 'Patient acquisition and appointment automation built around trust-first, compliance-conscious marketing.', href: '/contact', img: '1519494026892-80bbd2d6fd0d' },
@@ -55,7 +55,7 @@ const WHY = [
   {
     icon: 'fa-solid fa-book-open',
     title: 'Proven Playbooks',
-    desc: 'Every industry engagement starts from a battle-tested playbook refined across hundreds of client campaigns — not a blank-slate guess.',
+    desc: 'Every industry engagement starts from a battle-tested playbook refined across hundreds of client campaigns, not a blank-slate guess.',
   },
   {
     icon: 'fa-solid fa-user-tie',
@@ -99,7 +99,7 @@ export default function IndustriesPage() {
                 </div>
               </div>
 
-              {/* RIGHT — image */}
+              {/* RIGHT, image */}
               <div className="ind-hero-img-wrap" style={{ position: 'relative' }}>
                 <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}

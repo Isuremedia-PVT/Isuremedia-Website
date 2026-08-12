@@ -36,7 +36,7 @@ const SPA_CARD_VARIANTS = [
 
 const SPA_KEY_FACTORS = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Pipeline Audit and Discovery', impact: 'Highest impact', desc: 'We map your current stages, review historical deal flow, and find exactly where opportunities stall or get forgotten.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Stage-Trigger Mapping', impact: 'High impact', desc: 'Every stage change is mapped to the exact task, alert, or sequence it should fire — planned out before anything is built.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Stage-Trigger Mapping', impact: 'High impact', desc: 'Every stage change is mapped to the exact task, alert, or sequence it should fire, planned out before anything is built.' },
   { icon: 'fa-solid fa-list-check', title: 'Task and Reminder Automation', impact: 'High impact', desc: 'Reps get the next action automatically created and assigned, so follow-up never depends on memory.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Deal-Aging Alerts', impact: 'High impact', desc: 'Opportunities sitting untouched past a set threshold get flagged to the rep and their manager automatically.' },
   { icon: 'fa-solid fa-chart-line', title: 'Forecasting Setup', impact: 'Medium impact', desc: 'Reporting and forecast views built on clean, automatically updated pipeline data instead of manual guesswork.' },
@@ -46,7 +46,7 @@ const SPA_KEY_FACTORS = [
 ];
 
 const SPA_SERVICES = [
-  { icon: 'fa-solid fa-diagram-project', title: 'Stage-Trigger Automation', desc: 'Deal-stage changes automatically fire the next task, alert, or sequence — no manual updates required.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Stage-Trigger Automation', desc: 'Deal-stage changes automatically fire the next task, alert, or sequence, no manual updates required.' },
   { icon: 'fa-solid fa-list-check', title: 'Task and Reminder Automation', desc: 'Reps get the next action created and assigned automatically the moment a deal needs attention.' },
   { icon: 'fa-solid fa-paper-plane', title: 'Follow-Up Sequencing', desc: 'Email and task sequences tied to deal stage keep every opportunity moving without a rep chasing it manually.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Deal-Aging Alerts', desc: 'Stalled opportunities get flagged to reps and managers before they go quiet for good.' },
@@ -68,7 +68,7 @@ const SPA_WHO_FOR = [
 const SPA_WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We audit before we automate', desc: 'Every engagement starts by mapping your current pipeline and finding exactly where deals stall or go cold.' },
   { icon: 'fa-solid fa-diagram-project', title: 'We build triggers, not just reminders', desc: 'Our automations move deals forward based on real stage logic, not generic follow-up emails on a timer.' },
-  { icon: 'fa-solid fa-plug', title: 'We integrate with your existing CRM', desc: 'HubSpot, Pipedrive, GoHighLevel, or another platform — we build inside the CRM your team already knows.' },
+  { icon: 'fa-solid fa-plug', title: 'We integrate with your existing CRM', desc: 'HubSpot, Pipedrive, GoHighLevel, or another platform, we build inside the CRM your team already knows.' },
   { icon: 'fa-solid fa-file-lines', title: 'We document every automation', desc: 'Every trigger, task, and sequence is documented clearly, so nothing lives as tribal knowledge in one person’s head.' },
   { icon: 'fa-solid fa-chalkboard-user', title: 'We train your team on what we build', desc: 'A live walkthrough and clear documentation mean your reps and managers can manage the system after handover.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts. You stay because deals are moving faster, not because you signed something months ago.' },
@@ -84,16 +84,16 @@ const SPA_PROCESS = [
 
 const SPA_FAQS = [
   { q: 'Which CRMs do you build sales pipeline automation in?', a: 'We build inside the CRM you already use, most commonly HubSpot, Pipedrive, and GoHighLevel. We audit your existing setup first and design automations around your actual stages and fields rather than forcing you onto a new platform.' },
-  { q: 'How fast do follow-up reminders fire after a stage changes?', a: 'Stage-change triggers fire immediately. The moment a deal moves stage, the next task or reminder is created and assigned to the right rep — there is no batch delay or manual step in between.' },
+  { q: 'How fast do follow-up reminders fire after a stage changes?', a: 'Stage-change triggers fire immediately. The moment a deal moves stage, the next task or reminder is created and assigned to the right rep, there is no batch delay or manual step in between.' },
   { q: 'Does this replace our sales reps?', a: 'No. Automation handles the reminders, task creation, and follow-up sequencing so reps never forget a step, but the actual selling, relationship building, and closing still happens with your team.' },
   { q: 'What happens if a deal skips a stage or moves backward?', a: 'We build logic for both scenarios during the mapping phase, so a deal that jumps stages or moves back still triggers the correct tasks and alerts instead of falling through a gap.' },
-  { q: 'Is this compatible with HubSpot, Pipedrive, and GoHighLevel?', a: 'Yes. We have built pipeline automation across all three, along with several other CRMs. The underlying logic is the same — audit, map stages, build triggers — the implementation just adapts to each platform’s automation tools.' },
+  { q: 'Is this compatible with HubSpot, Pipedrive, and GoHighLevel?', a: 'Yes. We have built pipeline automation across all three, along with several other CRMs. The underlying logic is the same, audit, map stages, build triggers, the implementation just adapts to each platform’s automation tools.' },
   { q: 'What if our pipeline stages are messy or inconsistent right now?', a: 'That is common, and it is part of what the audit catches. CRM cleanup and stage standardisation happen before we automate, since automation built on inconsistent data just automates the mess.' },
   { q: 'Can you set up deal-aging alerts for opportunities that go quiet?', a: 'Yes. We configure alerts that flag any deal sitting untouched past a threshold you set, notifying both the rep and their manager so stalled opportunities get addressed instead of forgotten.' },
   { q: 'How long does a sales pipeline automation project take?', a: 'A typical engagement covering the audit, stage-trigger mapping, automation build, testing, and documentation moves from audit to a fully live pipeline in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function SPAFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -157,7 +157,7 @@ export default function SalesPipelineAutomationPage() {
           <div className="ism-container">
             <div className="spa-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Sales Pipelines That Move Deals Forward on Their{' '}
@@ -184,7 +184,7 @@ export default function SalesPipelineAutomationPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="spa-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/sales-pipeline-automation.webp" alt="Sales pipeline automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -256,7 +256,7 @@ export default function SalesPipelineAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build automation directly into your CRM that moves deals forward,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits — so momentum does not depend on any one person’s memory.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one person’s memory.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -303,11 +303,11 @@ export default function SalesPipelineAutomationPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Stage changes trigger tasks, reminders, and follow-up sequences automatically</span>, with nobody needing to remember to make it happen.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Deals that sit untouched get flagged before they go cold —{' '}
+                    Deals that sit untouched get flagged before they go cold,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no more opportunities quietly dying at the bottom of a rep’s task list</span>. A stalled deal gets surfaced to the rep and their manager the moment it crosses your threshold.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    We design and build the automations that keep every deal moving — stage triggers, reminders, follow-up sequencing, and forecasting — so your pipeline reflects what is actually happening, not what someone remembered to log.
+                    We design and build the automations that keep every deal moving, stage triggers, reminders, follow-up sequencing, and forecasting, so your pipeline reflects what is actually happening, not what someone remembered to log.
                   </p>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export default function SalesPipelineAutomationPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Stages Automated */}
+                {/* Floating badge, Stages Automated */}
                 <div className="spa-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-diagram-project" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -334,7 +334,7 @@ export default function SalesPipelineAutomationPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Response Time */}
+                {/* Floating badge, Response Time */}
                 <div className="spa-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bolt" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -345,7 +345,7 @@ export default function SalesPipelineAutomationPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Forecast Accuracy */}
+                {/* Floating badge, Forecast Accuracy */}
                 <div className="spa-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-chart-line" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -356,7 +356,7 @@ export default function SalesPipelineAutomationPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Rep Admin Time */}
+                {/* Floating badge, Rep Admin Time */}
                 <div className="spa-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-down" style={{ color: 'var(--color-primary)', fontSize: 12 }} />

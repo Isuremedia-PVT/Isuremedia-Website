@@ -20,7 +20,7 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-brands fa-wix', title: 'Managed hosting and security included', desc: 'Wix handles infrastructure, SSL, and uptime natively — no separate hosting to manage or secure.' },
+  { icon: 'fa-brands fa-wix', title: 'Managed hosting and security included', desc: 'Wix handles infrastructure, SSL, and uptime natively, no separate hosting to manage or secure.' },
   { icon: 'fa-solid fa-bolt', title: 'Fast to launch for the right project', desc: 'For straightforward business websites, Wix can go from brief to live faster than a custom-coded build.' },
   { icon: 'fa-solid fa-pen-to-square', title: 'Genuinely easy for clients to edit themselves', desc: 'The visual editor is one of the most approachable in the industry for non-technical teams making content changes.' },
   { icon: 'fa-solid fa-puzzle-piece', title: 'Wix Studio adds real design flexibility', desc: 'Wix Studio removes many of the constraints of classic Wix, closing the gap with custom-coded sites.' },
@@ -42,8 +42,8 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Wix Site Audit', desc: 'Speed, SEO configuration, and design — what to fix first on an existing Wix site.' },
-  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Wix Website Design', desc: 'A bespoke, on-brand design built properly in the editor — not a stock template with a logo swap.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Wix Site Audit', desc: 'Speed, SEO configuration, and design, what to fix first on an existing Wix site.' },
+  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Wix Website Design', desc: 'A bespoke, on-brand design built properly in the editor, not a stock template with a logo swap.' },
   { icon: 'fa-brands fa-wix', title: 'Wix Studio Development', desc: 'Advanced builds using Wix Studio for greater design flexibility and functionality.' },
   { icon: 'fa-solid fa-cart-shopping', title: 'Wix E-Commerce Setup', desc: 'Product catalogue, payments, and shipping configured properly for straightforward online stores.' },
   { icon: 'fa-solid fa-gauge-high', title: 'SEO & Speed Optimisation', desc: 'Meta configuration, image optimisation, and app cleanup to bring load times and rankings up.' },
@@ -56,7 +56,7 @@ const WHO_FOR = [
   { icon: 'fa-solid fa-store', title: 'Small businesses needing a straightforward website', desc: 'A brochure or service site that needs to launch quickly and be easy for the owner to update.', img: 'https://picsum.photos/seed/wix-whofor-small/700/620' },
   { icon: 'fa-solid fa-cart-shopping', title: 'Small online stores with a limited catalogue', desc: 'Wix Stores handles straightforward product ranges well without the overhead of a bigger platform.', img: 'https://picsum.photos/seed/wix-whofor-store/700/620' },
   { icon: 'fa-solid fa-users', title: 'Teams wanting to edit content themselves', desc: 'Wix’s visual editor is genuinely approachable for non-technical staff making day-to-day changes.', img: 'https://picsum.photos/seed/wix-whofor-team/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing Wix sites with slow load times', desc: 'Most Wix performance issues come from unoptimised images or excess apps — both fixable without a rebuild.', img: 'https://picsum.photos/seed/wix-whofor-slow/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing Wix sites with slow load times', desc: 'Most Wix performance issues come from unoptimised images or excess apps, both fixable without a rebuild.', img: 'https://picsum.photos/seed/wix-whofor-slow/700/620' },
   { icon: 'fa-solid fa-palette', title: 'Businesses wanting design flexibility without code', desc: 'Wix Studio closes much of the gap with custom-coded sites for businesses that want more control.', img: 'https://picsum.photos/seed/wix-whofor-design/700/620' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Businesses migrating on or off the platform', desc: 'Moving onto Wix for simplicity, or off it once the business has outgrown what it can offer.', img: 'https://picsum.photos/seed/wix-whofor-migrate/700/620' },
 ];
@@ -81,11 +81,11 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'Why choose Wix over WordPress or a custom build?', a: 'Wix suits straightforward business websites that need to launch quickly and stay easy for non-technical teams to edit, with hosting and security managed for you.' },
-  { q: 'Can you fix my existing slow Wix site?', a: 'Yes. Most performance issues come from unoptimised images or too many apps — both fixable without rebuilding the entire site.' },
+  { q: 'Can you fix my existing slow Wix site?', a: 'Yes. Most performance issues come from unoptimised images or too many apps, both fixable without rebuilding the entire site.' },
   { q: 'What is the difference between classic Wix and Wix Studio?', a: 'Wix Studio offers significantly more design flexibility and control, closing much of the gap with custom-coded websites, while still being no-code.' },
   { q: 'How long does a Wix website build take?', a: 'A standard business website typically takes two to three weeks. E-commerce stores usually take three to four weeks depending on catalogue size.' },
   { q: 'Will I be able to update the site myself?', a: 'Yes. Wix’s visual editor is genuinely approachable, and we can provide training so your team can manage day-to-day content changes.' },
-  { q: 'Can you migrate my site to or from Wix?', a: 'Yes, in both directions — onto Wix from another platform for simplicity, or off Wix onto WordPress or a custom build as needs grow.' },
+  { q: 'Can you migrate my site to or from Wix?', a: 'Yes, in both directions, onto Wix from another platform for simplicity, or off Wix onto WordPress or a custom build as needs grow.' },
   { q: 'Is Wix good for e-commerce?', a: 'For straightforward catalogues, yes. For large or highly specialised catalogues we’ll advise if Shopify or another platform fits better.' },
   { q: 'Do you offer ongoing maintenance after launch?', a: 'Yes, on a month-to-month basis, covering content updates, app management, and support.' },
 ];
@@ -169,7 +169,7 @@ export default function WixDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Wix and Wix Studio websites —{' '}
+                  We design and build custom Wix and Wix Studio websites,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>properly optimised for speed and SEO</span>, and genuinely easy for your team to manage themselves.
                 </p>
 
@@ -247,7 +247,7 @@ export default function WixDevelopmentPage() {
                   Most self-built Wix sites start from a default template, get lightly adjusted, and never quite feel like the brand they represent.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia designs custom Wix and Wix Studio sites — properly optimised for speed and SEO, and{' '}
+                  ISureMedia designs custom Wix and Wix Studio sites, properly optimised for speed and SEO, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>genuinely easy for your team to manage</span>.
                 </p>
                 <a href="/contact"
@@ -292,7 +292,7 @@ export default function WixDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Wix handles{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hosting, security, and infrastructure</span> natively — the platform isn&apos;t the bottleneck.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hosting, security, and infrastructure</span> natively, the platform isn&apos;t the bottleneck.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A custom build with{' '}
@@ -405,7 +405,7 @@ export default function WixDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Wix Sites to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Wix Sites to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most Wix frustration traces back to one of these four causes.
               </p>
@@ -450,7 +450,7 @@ export default function WixDevelopmentPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our Wix Development Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Optimisation, and Ongoing Care — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Optimisation, and Ongoing Care, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -520,7 +520,7 @@ export default function WixDevelopmentPage() {
                   A free consultation will show you what your current site is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

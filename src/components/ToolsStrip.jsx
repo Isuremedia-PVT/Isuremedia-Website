@@ -64,7 +64,7 @@ export default function ToolsStrip() {
         </div>
       </div>
 
-      {/* ── Single row — scrolls left ── */}
+      {/* ── Single row, scrolls left ── */}
       <div style={{ overflow: 'hidden', position: 'relative' }}>
         <div className="ts-fade" style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to right, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />
         <div className="ts-fade" style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 100, background: 'linear-gradient(to left, var(--color-bg-soft), transparent)', zIndex: 2, pointerEvents: 'none' }} />

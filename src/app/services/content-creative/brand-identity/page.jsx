@@ -20,11 +20,11 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-fingerprint', title: 'A brand people actually recognize', desc: 'A defined identity system means your business looks like the same business everywhere — building recognition instead of resetting it at every touchpoint.' },
-  { icon: 'fa-solid fa-star', title: 'Instant credibility with new prospects', desc: 'A polished, considered identity signals professionalism before a single word is read — trust starts on sight.' },
+  { icon: 'fa-solid fa-fingerprint', title: 'A brand people actually recognize', desc: 'A defined identity system means your business looks like the same business everywhere, building recognition instead of resetting it at every touchpoint.' },
+  { icon: 'fa-solid fa-star', title: 'Instant credibility with new prospects', desc: 'A polished, considered identity signals professionalism before a single word is read, trust starts on sight.' },
   { icon: 'fa-solid fa-swatchbook', title: 'One system, not one-off decisions', desc: 'Documented color, type, and logo usage rules mean nobody on your team has to guess what "on-brand" looks like.' },
   { icon: 'fa-solid fa-arrows-to-circle', title: 'A brand that scales without fragmenting', desc: 'As you add channels, hires, and partners, documented guidelines keep everything coherent instead of drifting apart.' },
-  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'A logo that shifts shape, colors that change by channel — prospects register it as a business that isn’t fully in control.' },
+  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'A logo that shifts shape, colors that change by channel, prospects register it as a business that isn’t fully in control.' },
   { icon: 'fa-solid fa-handshake', title: '23% average revenue increase', desc: 'Consistent visual branding increases revenue by an average of 23% through recognition, trust, and perceived quality.' },
 ];
 
@@ -35,30 +35,30 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const RANKING_ITEMS = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Brand Discovery & Positioning', impact: 'Foundation first', desc: 'A workshop that defines who you serve, what you stand for, and how you want to be perceived — before any visual work begins.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Brand Discovery & Positioning', impact: 'Foundation first', desc: 'A workshop that defines who you serve, what you stand for, and how you want to be perceived, before any visual work begins.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Logo Design & Refinement', impact: 'Core mark', desc: 'Concept directions explored, refined, and finalized into a mark that works at every size and in every context.' },
-  { icon: 'fa-solid fa-palette', title: 'Color Palette Development', impact: 'Systemized', desc: 'A primary and supporting palette with exact values — not "the blue we used last time," but a documented system.' },
+  { icon: 'fa-solid fa-palette', title: 'Color Palette Development', impact: 'Systemized', desc: 'A primary and supporting palette with exact values, not "the blue we used last time," but a documented system.' },
   { icon: 'fa-solid fa-font', title: 'Typography System', impact: 'Defined hierarchy', desc: 'Heading, body, and accent type pairings with clear hierarchy rules for every format your brand appears in.' },
-  { icon: 'fa-solid fa-book', title: 'Brand Guideline Documentation', impact: 'Fully documented', desc: 'A single reference document covering logo usage, color, type, spacing, imagery, and tone — for anyone who touches the brand.' },
+  { icon: 'fa-solid fa-book', title: 'Brand Guideline Documentation', impact: 'Fully documented', desc: 'A single reference document covering logo usage, color, type, spacing, imagery, and tone, for anyone who touches the brand.' },
   { icon: 'fa-solid fa-comments', title: 'Brand Voice & Messaging', impact: 'Voice aligned', desc: 'Tone, vocabulary, and messaging pillars aligned with the visual identity so the brand sounds like it looks.' },
   { icon: 'fa-solid fa-id-card', title: 'Stationery & Template Design', impact: 'Ready to use', desc: 'Business cards, letterhead, email signatures, and social templates built on the new system from day one.' },
   { icon: 'fa-solid fa-people-group', title: 'Rollout & Team Training', impact: 'Adoption included', desc: 'A rollout plan and walkthrough so every team member applies the new identity correctly from launch.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-rocket', title: 'New Brand Identity (Startups)', desc: 'A complete identity system built from zero — logo, palette, typography, and guidelines for a brand launching for the first time.' },
+  { icon: 'fa-solid fa-rocket', title: 'New Brand Identity (Startups)', desc: 'A complete identity system built from zero, logo, palette, typography, and guidelines for a brand launching for the first time.' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Rebrand / Identity Refresh', desc: 'A full overhaul for businesses whose branding has become dated, inconsistent, or misaligned with where the company is now.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Logo Design & Refinement', desc: 'A standalone engagement to design or refine the core mark, wordmark, and icon system.' },
   { icon: 'fa-solid fa-book-open', title: 'Brand Guideline Documents', desc: 'A documented reference for an identity that already exists but was never formally written down.' },
-  { icon: 'fa-solid fa-comments', title: 'Brand Voice & Messaging', desc: 'Tone, vocabulary, and messaging pillars developed to align with — and reinforce — the visual identity.' },
+  { icon: 'fa-solid fa-comments', title: 'Brand Voice & Messaging', desc: 'Tone, vocabulary, and messaging pillars developed to align with, and reinforce, the visual identity.' },
   { icon: 'fa-solid fa-id-card', title: 'Stationery & Social Templates', desc: 'Business cards, letterhead, email signatures, and social media templates built on the new system.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Brand Design for Agencies', desc: 'Full identity systems built for your clients under your agency’s brand — no ISureMedia references.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Brand Design for Agencies', desc: 'Full identity systems built for your clients under your agency’s brand, no ISureMedia references.' },
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Brand Audit & Consistency Review', desc: 'An audit of how your brand currently appears across every channel, with a clear plan to fix what’s inconsistent.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isn’t a brand system — we build the one you’ll still be using in five years.', img: 'https://picsum.photos/seed/brd-whofor-startup/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesn’t match the business you’ve become — a refreshed identity closes that gap.', img: 'https://picsum.photos/seed/brd-whofor-outgrown/700/620' },
+  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isn’t a brand system, we build the one you’ll still be using in five years.', img: 'https://picsum.photos/seed/brd-whofor-startup/700/620' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesn’t match the business you’ve become, a refreshed identity closes that gap.', img: 'https://picsum.photos/seed/brd-whofor-outgrown/700/620' },
   { icon: 'fa-solid fa-compass-drafting', title: 'Companies rebranding after a pivot', desc: 'A change in offer, market, or ownership deserves a visual identity that reflects the business you are now.', img: 'https://picsum.photos/seed/brd-whofor-pivot/700/620' },
   { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label identity work', desc: 'Client rebrand requests that exceed internal capacity are handled under your brand, start to finish.', img: 'https://picsum.photos/seed/brd-whofor-agency/700/620' },
   { icon: 'fa-solid fa-shuffle', title: 'Businesses with inconsistent branding', desc: 'If your website, social, and print materials look like three different companies, a documented system fixes it once.', img: 'https://picsum.photos/seed/brd-whofor-inconsistent/700/620' },
@@ -66,37 +66,37 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-bullseye', title: 'We start with positioning, not just a logo', desc: 'Every identity begins with who you serve and what you stand for — the visuals follow the strategy, not the other way around.' },
+  { icon: 'fa-solid fa-bullseye', title: 'We start with positioning, not just a logo', desc: 'Every identity begins with who you serve and what you stand for, the visuals follow the strategy, not the other way around.' },
   { icon: 'fa-solid fa-swatchbook', title: 'We build systems, not one-off assets', desc: 'Logo, color, and type are designed together as one coherent system built to extend to every future format.' },
   { icon: 'fa-solid fa-book', title: 'We document everything so the brand can scale', desc: 'A written guideline means the identity survives new hires, new agencies, and new channels without drifting.' },
   { icon: 'fa-solid fa-comments', title: 'We align visuals with brand voice', desc: 'Tone and messaging are developed alongside the visual system so the brand sounds like it looks.' },
-  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Full identity systems delivered for your clients under your brand — no ISureMedia references, scalable across accounts.' },
+  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Full identity systems delivered for your clients under your brand, no ISureMedia references, scalable across accounts.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the identity work holds up, not because you are contractually committed.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Discovery & Positioning Workshop', desc: 'Defining who you serve, what you stand for, and how you want to be perceived before any visual work starts.' },
   { n: '02', title: 'Concept Design', desc: 'Multiple logo and visual directions explored, grounded in the positioning work from step one.' },
-  { n: '03', title: 'Refinement', desc: 'The chosen direction refined — logo, color, and typography tightened until the system is ready to document.' },
+  { n: '03', title: 'Refinement', desc: 'The chosen direction refined, logo, color, and typography tightened until the system is ready to document.' },
   { n: '04', title: 'Guideline Documentation', desc: 'Every rule for using the brand correctly written down in a single reference document.' },
   { n: '05', title: 'Rollout & Team Training', desc: 'A rollout plan and walkthrough so every team member and vendor applies the identity correctly from day one.' },
   { n: '06', title: 'Ongoing Brand Support', desc: 'For retainer clients, continued support as the system extends to new formats, campaigns, and channels.' },
 ];
 
 const FAQS = [
-  { q: 'What is the difference between brand identity and graphic design?', a: 'Brand identity creates or overhauls your visual system itself — logo, color palette, typography, and guidelines. Graphic design produces the day-to-day assets that live within that system once it already exists.' },
+  { q: 'What is the difference between brand identity and graphic design?', a: 'Brand identity creates or overhauls your visual system itself, logo, color palette, typography, and guidelines. Graphic design produces the day-to-day assets that live within that system once it already exists.' },
   { q: 'How many logo concepts do we get?', a: 'Typically three distinct concept directions in the first round, refined based on your feedback until one direction is finalized.' },
   { q: 'Do you handle full rebrands, not just new brands?', a: 'Yes. We work with startups building a first identity and with established businesses replacing branding that has become dated or inconsistent.' },
   { q: 'How long does a full brand identity take?', a: 'Logo refinement alone: two to three weeks. A full identity system with guidelines: four to six weeks. Full rebrands with rollout support: six to eight weeks.' },
-  { q: 'What is included in the brand guideline document?', a: 'Logo usage rules, color values, typography hierarchy, spacing, imagery direction, and voice guidelines — everything needed for anyone to apply the brand correctly.' },
+  { q: 'What is included in the brand guideline document?', a: 'Logo usage rules, color values, typography hierarchy, spacing, imagery direction, and voice guidelines, everything needed for anyone to apply the brand correctly.' },
   { q: 'Do you design business cards and other stationery?', a: 'Yes. Business cards, letterhead, email signatures, and social templates are designed as part of a full identity rollout.' },
   { q: 'Do you offer white-label brand identity work for agencies?', a: 'Yes. We build full identity systems for your clients under your agency’s brand, with no ISureMedia references.' },
-  { q: 'Who owns the source files and final logo?', a: 'You do. Final delivery includes editable source files and every exported format — the identity is yours outright.' },
+  { q: 'Who owns the source files and final logo?', a: 'You do. Final delivery includes editable source files and every exported format, the identity is yours outright.' },
 ];
 
 const RELATED = [
   { icon: 'fa-solid fa-palette', title: 'Graphic Design', desc: 'Ongoing design production that applies your brand system correctly across every channel.', href: '/services/content-creative/graphic-design' },
-  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'Ad creative built on your new identity system — consistent across every platform.', href: '/services/content-creative/ad-creative-design' },
+  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'Ad creative built on your new identity system, consistent across every platform.', href: '/services/content-creative/ad-creative-design' },
   { icon: 'fa-solid fa-pen-nib', title: 'Content & Creative Hub', desc: 'Explore the full range of content and creative services under one roof.', href: '/services/content-creative' },
 ];
 
@@ -173,7 +173,7 @@ export default function BrandIdentityPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build complete visual identity systems — logo, color, typography, and documented guidelines — that{' '}
+                  We build complete visual identity systems, logo, color, typography, and documented guidelines, that{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hold up across your website, social, print</span>{' '}
                   and every future hire who has to use them.
                 </p>
@@ -249,12 +249,12 @@ export default function BrandIdentityPage() {
                   Most Businesses Have a Logo. Few Have an Actual Brand System.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  The color changes depending on who exported the last file. Nobody agrees on the exact font. The logo appears squashed, stretched, or on a background it was never designed for. None of these are small issues — they are the symptoms of a business that never built a real identity system in the first place.
+                  The color changes depending on who exported the last file. Nobody agrees on the exact font. The logo appears squashed, stretched, or on a background it was never designed for. None of these are small issues, they are the symptoms of a business that never built a real identity system in the first place.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds the complete identity system your business needs —{' '}
+                  ISureMedia builds the complete identity system your business needs,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>discovered, designed, documented, and rolled out</span>{' '}
-                  — so every future asset starts from the same solid foundation.
+                 , so every future asset starts from the same solid foundation.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -298,14 +298,14 @@ export default function BrandIdentityPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Consistent visual branding increases revenue by an average of{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23%</span> — brand recognition, trust, and perceived quality are all shaped by how consistently a business presents itself.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23%</span>, brand recognition, trust, and perceived quality are all shaped by how consistently a business presents itself.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A logo without a system signals a business{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span> — prospects notice it even when they can&apos;t name it.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span>, prospects notice it even when they can&apos;t name it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    A real identity system means every future logo placement, color choice, and typography decision is already made — nobody has to reinvent it.
+                    A real identity system means every future logo placement, color choice, and typography decision is already made, nobody has to reinvent it.
                   </p>
                 </div>
               </div>
@@ -375,7 +375,7 @@ export default function BrandIdentityPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What a Real Brand Identity System Actually Produces.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                A logo alone doesn&apos;t build recognition — a documented system used consistently does.
+                A logo alone doesn&apos;t build recognition, a documented system used consistently does.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>

@@ -17,7 +17,7 @@ const TABS = [
 ];
 
 const PROJECTS = [
-  // ── Web Development — WordPress (Website) ──
+  // ── Web Development, WordPress (Website) ──
   { name: 'Tortlink', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A legal services website built on WordPress with a clean, credibility-first design.', img: '/portfolio/web-development/tortlink.webp', href: 'https://tortlink.com/' },
   { name: 'Marie Guerin', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A professional portfolio site built to present the client’s work and services clearly.', img: '/portfolio/web-development/marie-guerin.webp', href: 'https://marieguerin.ca/' },
   { name: 'Andrea Petrone', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A personal and professional site built on WordPress with a modern, minimal layout.', img: '/portfolio/web-development/andrea-petrone.webp', href: 'https://www.andreapetrone.com/' },
@@ -28,7 +28,7 @@ const PROJECTS = [
   { name: 'Park City', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A community and tourism website showcasing local attractions and services.', img: '/portfolio/web-development/park-city.webp', href: 'https://onlineparkcity.wpenginepowered.com/' },
   { name: 'Jurissa Bank', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A financial services website built on WordPress with a secure, trustworthy design.', img: '/portfolio/web-development/jurissa-bank.webp', href: 'https://jurissabank.com/' },
 
-  // ── Web Development — GoHighLevel (Website + Landing Page) ──
+  // ── Web Development, GoHighLevel (Website + Landing Page) ──
   { name: 'Innovat3 Solutions', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A business solutions platform built on GoHighLevel with funnels and CRM integration.', img: '/portfolio/web-development/innovat3-solutions.webp', href: 'https://www.innovat3solutions.com/' },
   { name: 'Rise Reign Rule', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A coaching and business growth site built on GoHighLevel with lead capture funnels.', img: '/portfolio/web-development/rise-reign-rule.webp', href: 'https://risereignrule.com/' },
   { name: 'Dahya Dentistry', category: 'Website', tag: 'Web Design', date: '2025', desc: 'A dental practice site with GoHighLevel-powered booking and patient management.', img: '/portfolio/web-development/dahya-dentistry.webp', href: 'https://dahyadentistry.com/' },
@@ -39,14 +39,14 @@ const PROJECTS = [
   { name: 'Soccer Training Academy', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A sports training program landing page with GoHighLevel-powered enrollment funnels.', img: '/portfolio/web-development/soccer-training-academy.webp', href: 'https://app.innovat3solutions.com/v2/preview/YrREUbvi5dXzeih0Raww' },
   { name: 'Law Offices of Bradford L. Treusch', category: 'Landing Page', tag: 'Web Design', date: '2025', desc: 'A law firm landing page built on GoHighLevel with automated client intake.', img: '/portfolio/web-development/law-offices-bradford-treusch.webp', href: 'https://app.arcboost.com/v2/preview/OMYjnXzK6fGM3LZ6GIM7' },
 
-  // ── Web Development — Ecommerce ──
+  // ── Web Development, Ecommerce ──
   { name: 'Happy Haves', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A lifestyle retail e-commerce store built for a smooth, mobile-first shopping experience.', img: '/portfolio/web-development/happy-haves.webp', href: 'https://www.happyhaves.com/' },
   { name: 'Cape Diablo', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A product retail store built with conversion-focused product and checkout pages.', img: '/portfolio/web-development/cape-diablo.webp', href: 'https://www.capediablo.com/' },
   { name: 'Fused Fine Jewelry', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A luxury jewelry retailer’s online store with a premium, high-end design.', img: '/portfolio/web-development/fused-fine-jewelry.webp', href: 'https://fusedfinejewelrynyc.com/' },
   { name: 'Mi Amor Pup', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A pet products e-commerce store built for easy browsing and fast checkout.', img: '/portfolio/web-development/mi-amor-pup.webp', href: 'https://miamorpup.com/' },
   { name: 'Garnus', category: 'Ecommerce Store', tag: 'Web Design', date: '2025', desc: 'A retail e-commerce store built with a clean product catalogue and checkout flow.', img: '/portfolio/web-development/garnus.webp', href: 'https://garnusindia.com/' },
 
-  // ── Web Development — Custom ──
+  // ── Web Development, Custom ──
   { name: 'GHL to CS Conversation', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration connecting GoHighLevel conversations to an external support system.', img: '/portfolio/web-development/ghl-cs-conversation.webp', href: '/contact' },
   { name: 'Google Review Automation', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom-built review management tool for automating Google review requests.', img: '/portfolio/web-development/google-review.webp', href: '/contact' },
   { name: 'GHL to Club Planner', category: 'Custom Development', tag: 'Web Design', date: '2025', desc: 'A custom integration syncing GoHighLevel with a club scheduling platform.', img: '/portfolio/web-development/ghl-to-club-planner.webp', href: '/contact' },
@@ -128,7 +128,7 @@ export default function PortfolioPage() {
                   Our Work Speaks for Itself
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 18, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 36, maxWidth: 520 }}>
-                  From high-converting websites to revenue-driving funnels and SEO campaigns — browse a selection of projects we&apos;ve delivered for clients across the globe.
+                  From high-converting websites to revenue-driving funnels and SEO campaigns, browse a selection of projects we&apos;ve delivered for clients across the globe.
                 </p>
                 <div className="port-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                   <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -139,7 +139,7 @@ export default function PortfolioPage() {
                 </div>
               </div>
 
-              {/* RIGHT — image */}
+              {/* RIGHT, image */}
               <div className="port-hero-img-wrap" style={{ position: 'relative' }}>
                 <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -177,7 +177,7 @@ export default function PortfolioPage() {
         <section className="port-filter-section" style={{ padding: '88px 0 120px', background: '#fff' }}>
           <div className="ism-container">
 
-            {/* Filter Tabs — matching screenshot style */}
+            {/* Filter Tabs, matching screenshot style */}
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 64 }}>
               <div
                 className="port-tab-bar"
@@ -239,7 +239,7 @@ export default function PortfolioPage() {
               </div>
             </div>
 
-            {/* Project grid — 2 cards per row */}
+            {/* Project grid, 2 cards per row */}
             <div className="port-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 44 }}>
               {filteredProjects.map((p, i) => {
                 const isExternal = p.href.startsWith('http');

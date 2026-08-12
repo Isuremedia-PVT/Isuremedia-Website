@@ -18,7 +18,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
-  description: "Isuremedia is a full-service digital marketing agency and white-label fulfillment partner. SEO, PPC, web design, content, and marketing automation delivered by an in-house team — for businesses that want measurable growth and agencies that want to scale without hiring.",
+  description: "Isuremedia is a full-service digital marketing agency and white-label fulfillment partner. SEO, PPC, web design, content, and marketing automation delivered by an in-house team, for businesses that want measurable growth and agencies that want to scale without hiring.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
@@ -51,7 +51,7 @@ export default function Home() {
           showTrustBar={false}
         />
         <FAQ />
-        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" />
+        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" cardPadTop={28} cardPadX={48} />
       </main>
       <Footer />
     </>
