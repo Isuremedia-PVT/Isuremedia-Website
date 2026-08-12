@@ -25,7 +25,7 @@ const APB_WHY_MATTERS = [
   { icon: 'fa-solid fa-clock', title: 'Saves hours of admin time', desc: 'No more phone tag or back-and-forth texts to find a time that works. Clients book themselves against real-time availability.' },
   { icon: 'fa-solid fa-credit-card', title: 'Deposits collected upfront', desc: 'Payment or deposit collection at the time of booking protects your calendar from no-shows and last-minute cancellations.' },
   { icon: 'fa-solid fa-users', title: 'Syncs every staff calendar', desc: 'Multiple staff members and locations stay in sync automatically, so double-bookings and scheduling conflicts stop happening.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Books around the clock', desc: 'Your booking page works nights, weekends, and holidays — capturing appointments even when the phones are off.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Books around the clock', desc: 'Your booking page works nights, weekends, and holidays, capturing appointments even when the phones are off.' },
 ];
 
 const APB_CARD_VARIANTS = [
@@ -75,7 +75,7 @@ const APB_WHO_FOR = [
 ];
 
 const APB_WHY_ISM = [
-  { icon: 'fa-solid fa-plug', title: 'We integrate with what you already use', desc: 'Your existing calendar and CRM stay in place — we connect the booking system to them instead of forcing a rip-and-replace.' },
+  { icon: 'fa-solid fa-plug', title: 'We integrate with what you already use', desc: 'Your existing calendar and CRM stay in place, we connect the booking system to them instead of forcing a rip-and-replace.' },
   { icon: 'fa-solid fa-bell', title: 'We reduce no-shows with tested sequences', desc: 'Reminder timing and messaging are built from what has actually reduced no-show rates across other client accounts, not guesswork.' },
   { icon: 'fa-solid fa-calendar-days', title: 'We sync multiple staff and locations correctly', desc: 'Complex multi-staff, multi-location calendars are set up and tested so double-bookings and conflicts do not happen after launch.' },
   { icon: 'fa-solid fa-credit-card', title: 'We set up deposit collection to protect your time', desc: 'Payment or deposit collection is configured at booking, so no-shows carry a real cost instead of costing you a free slot.' },
@@ -93,7 +93,7 @@ const APB_PROCESS = [
 
 const APB_FAQS = [
   { q: 'Which booking tools do you support?', a: 'We build and integrate booking systems using Calendly, GoHighLevel, Acuity, and similar platforms, choosing whichever fits your existing tech stack and calendar setup best.' },
-  { q: 'How do reminders actually reduce no-shows?', a: 'A sequenced set of confirmation and reminder messages — sent by SMS and email at set intervals before the appointment — keeps the booking top of mind and gives clients an easy way to reschedule instead of simply not showing up.' },
+  { q: 'How do reminders actually reduce no-shows?', a: 'A sequenced set of confirmation and reminder messages, sent by SMS and email at set intervals before the appointment, keeps the booking top of mind and gives clients an easy way to reschedule instead of simply not showing up.' },
   { q: 'Can the booking system collect deposits or payments?', a: 'Yes. We can configure deposit or full payment collection at the time of booking, which protects your calendar and gives clients a reason to follow through on the appointment.' },
   { q: 'Do you support multiple staff members and locations?', a: 'Yes. We set up and sync calendars across every staff member and location so clients always see accurate, real-time availability no matter where they book from.' },
   { q: 'Will this integrate with our existing CRM?', a: 'In most cases, yes. Bookings can sync directly into your CRM so every appointment is tied to the correct contact record without any manual data entry.' },
@@ -102,7 +102,7 @@ const APB_FAQS = [
   { q: 'How long does it take to launch a booking system?', a: 'A typical engagement covering audit, booking page design, calendar sync, reminders, and testing moves from audit to launch in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function APBFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -166,7 +166,7 @@ export default function AppointmentBookingPage() {
           <div className="ism-container">
             <div className="apb-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Booking Systems That Fill Your Calendar Without the{' '}
@@ -180,7 +180,7 @@ export default function AppointmentBookingPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   Automated online booking, calendar sync, and reminder sequences that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>fill your calendar and cut no-shows</span> — without another round of scheduling texts and calls.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>fill your calendar and cut no-shows</span>, without another round of scheduling texts and calls.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -193,7 +193,7 @@ export default function AppointmentBookingPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="apb-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/appointment-booking.webp" alt="Appointment booking automation" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -261,11 +261,11 @@ export default function AppointmentBookingPage() {
                   Every Missed Call Is a Booking You Didn't Get.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most service businesses still book appointments through a string of texts, calls, and back-and-forth emails — and every round trip is a chance for the client to lose interest, book a competitor, or simply forget. Add in no-shows from clients who never got a proper reminder, and the calendar leaks revenue every single week.
+                  Most service businesses still book appointments through a string of texts, calls, and back-and-forth emails, and every round trip is a chance for the client to lose interest, book a competitor, or simply forget. Add in no-shows from clients who never got a proper reminder, and the calendar leaks revenue every single week.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build booking systems that let clients see real availability and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>book themselves in seconds</span>, then keep them accountable with automated reminders — so your calendar fills up and stays full, without anyone on your team chasing a booking by hand.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>book themselves in seconds</span>, then keep them accountable with automated reminders, so your calendar fills up and stays full, without anyone on your team chasing a booking by hand.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -312,11 +312,11 @@ export default function AppointmentBookingPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>see real-time availability across every staff member and location and book themselves in seconds</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Automated confirmation and reminder sequences fire the moment a booking is made —{' '}
+                    Automated confirmation and reminder sequences fire the moment a booking is made,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no manual texts, no forgotten reminder calls, no missed appointments</span>. Clients get exactly what they need to show up, and can reschedule themselves if they cannot.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    We design and build the booking flow that eliminates the manual steps between a client wanting an appointment and it landing on your calendar — sync, reminders, deposits, and follow-up — so your team spends time serving clients, not scheduling them.
+                    We design and build the booking flow that eliminates the manual steps between a client wanting an appointment and it landing on your calendar, sync, reminders, deposits, and follow-up, so your team spends time serving clients, not scheduling them.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function AppointmentBookingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Reminder Delivery */}
+                {/* Floating badge, Reminder Delivery */}
                 <div className="apb-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bell" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -343,7 +343,7 @@ export default function AppointmentBookingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Staff Calendars Synced */}
+                {/* Floating badge, Staff Calendars Synced */}
                 <div className="apb-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-calendar-days" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -354,7 +354,7 @@ export default function AppointmentBookingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Deposit Collection */}
+                {/* Floating badge, Deposit Collection */}
                 <div className="apb-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-credit-card" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -365,7 +365,7 @@ export default function AppointmentBookingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — No-Show Rate */}
+                {/* Floating badge, No-Show Rate */}
                 <div className="apb-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-down" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -540,7 +540,7 @@ export default function AppointmentBookingPage() {
               <div style={{ position: 'relative', maxWidth: 560 }}>
                 <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Your calendar is still filling up through texts and phone tag.</h3>
                 <p style={{ fontFamily: I, fontSize: 14.5, color: 'rgba(255,255,255,.80)', lineHeight: 1.65, margin: 0 }}>
-                  Find out how many hours a week — and how many missed appointments — automated booking could save you.
+                  Find out how many hours a week, and how many missed appointments, automated booking could save you.
                 </p>
               </div>
               <a href="/contact" className="apb-mid-cta-btn"

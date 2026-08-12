@@ -4,14 +4,16 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 export default function CTASection({
-  image = '/result_footer/ready_for_result.png',
+  image = '/result_footer/ready_for_result.webp',
   imageWidth = 320,
   overflowTop = 0,
   primaryLabel = 'Get My Free Proposal',
   secondaryLabel = 'Call +1 646-588-1430',
   description,
   heading = 'Ready for',
-  headingHighlight = 'Results?'
+  headingHighlight = 'Results?',
+  cardPadTop = 40,
+  cardPadX = 60
 }) {
   // bleed is expressed as a fraction of the person column's own width, so it scales
   // smoothly with the fluid clamp() below instead of being pinned to a fixed px value
@@ -19,8 +21,7 @@ export default function CTASection({
   const bleed = imageWidth > 0 ? overflowTop / imageWidth : 0;
   const minPersonWidth = Math.min(220, imageWidth);
   const personSize = `clamp(${minPersonWidth}px, 30vw, ${imageWidth}px)`;
-  const cardPadTop = 40;
-  // the card's own top padding only buys back part of the bleed height — once overflowTop
+  // the card's own top padding only buys back part of the bleed height, once overflowTop
   // exceeds it, the head pokes past the section's box too, so give the section enough
   // top padding to always contain the peak bleed (at imageWidth) plus a clearance buffer.
   const sectionPadTop = bleed ? Math.max(64, overflowTop - cardPadTop + 48) : 64;
@@ -29,7 +30,7 @@ export default function CTASection({
     <section id="cta" className={`cta-section${bleed ? ' cta-bleed' : ''}`} style={{ paddingTop: sectionPadTop, paddingBottom: 64, background: '#fff', overflow: bleed ? 'visible' : 'hidden' }}>
       <div className="ism-container">
 
-        <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: `${cardPadTop}px 60px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
+        <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: `${cardPadTop}px ${cardPadX}px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
 
           {/* Decorative glow */}
           <div className="cta-glow" style={{ position: 'absolute', right: '30%', top: '-10%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
@@ -65,7 +66,7 @@ export default function CTASection({
             </div>
           </div>
 
-          {/* ── Right: Illustration image, flush to the card's bottom edge, head bleeding above the top when overflowTop is set — scales with viewport, no fixed breakpoint ── */}
+          {/* ── Right: Illustration image, flush to the card's bottom edge, head bleeding above the top when overflowTop is set, scales with viewport, no fixed breakpoint ── */}
           <div className="cta-person" style={{ position: 'relative', zIndex: 3, width: personSize, aspectRatio: '1 / 1', overflow: bleed ? 'visible' : 'hidden', marginBottom: -cardPadTop }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

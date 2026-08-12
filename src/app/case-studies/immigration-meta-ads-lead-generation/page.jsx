@@ -27,7 +27,7 @@ export default function GlobalAllianzCaseStudyPage() {
         { val: '−90.5%', label: 'Cost Per Lead', sub: '$72.99 → $6.91' },
         { val: '+57.9%', label: 'CTR Improvement', sub: '1.40% → 2.21%' },
       ],
-      quote: '[Client quote pending — replace with Global Allianz\'s actual testimonial]',
+      quote: '[Client quote pending, replace with Global Allianz\'s actual testimonial]',
       quoteBy: 'Global Allianz',
       quoteRole: 'Immigration Legal Services Team',
       problemHeading: 'Inconsistent lead volume and a Cost Per Lead too high to scale.',
@@ -50,7 +50,7 @@ export default function GlobalAllianzCaseStudyPage() {
       ],
       overviewImage: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80',
       didHeading: 'Built around trust-building creative and continuous refinement.',
-      didIntro: 'Every part of the account — campaigns, audiences, and creative — was rebuilt around what Spanish-speaking immigration prospects actually needed to see to take the next step.',
+      didIntro: 'Every part of the account, campaigns, audiences, and creative, was rebuilt around what Spanish-speaking immigration prospects actually needed to see to take the next step.',
       process: [
         { label: 'Campaigns', title: 'Restructuring & lead form refinement', body: 'Lead generation campaigns were restructured with optimized budget allocation and refined lead forms designed to attract higher-quality inquiries.' },
         { label: 'Creative', title: 'Spanish-language, trust-building messaging', body: 'Educational static and video creatives in Spanish focused on real immigration pain points, payment plans, and attorney support, testing emotional, urgency, and informational angles.' },
@@ -62,7 +62,7 @@ export default function GlobalAllianzCaseStudyPage() {
         { label: 'Lead Volume', title: '1,309% increase in leads', body: 'Leads grew from 22 to 310 in the same 2-month comparison window two years apart.' },
         { label: 'Cost Efficiency', title: '90.5% lower Cost Per Lead', body: 'CPL dropped from $72.99 to $6.91 even as lead volume grew dramatically.' },
         { label: 'Engagement', title: '57.9% higher CTR', body: 'Click-through rate improved from 1.40% to 2.21% as trust-building creative resonated more strongly.' },
-        { label: 'Traffic Cost', title: 'Lower CPC and CPM', body: 'CPC fell 44.2% to $0.82 and CPM fell 12.4% to $18.02 — cheaper, more efficient reach.' },
+        { label: 'Traffic Cost', title: 'Lower CPC and CPM', body: 'CPC fell 44.2% to $0.82 and CPM fell 12.4% to $18.02, cheaper, more efficient reach.' },
       ],
       metricsTable: {
         heading: 'Two Years of Optimization, Side by Side',

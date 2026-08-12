@@ -55,14 +55,15 @@ const VALUES = [
 
 const TEAM = [
   { name: 'Pooja',           role: 'HR Head',              img: 'https://randomuser.me/api/portraits/women/44.jpg' },
-  { name: 'Sumit',           role: 'CTO',                  img: 'https://randomuser.me/api/portraits/men/11.jpg'   },
+  { name: 'Sumit',           role: 'CTO',                  img: '/career-about/team/sumit.webp' },
   { name: 'Tyler Brown',     role: 'Sales Manager',        img: 'https://randomuser.me/api/portraits/men/67.jpg'   },
-  { name: 'Pradeep Mehta',   role: 'Sr. Project Manager',  img: 'https://randomuser.me/api/portraits/men/23.jpg'   },
-  { name: 'Rahul Verma',     role: 'Sr. Project Manager',  img: 'https://randomuser.me/api/portraits/men/51.jpg'   },
-  { name: 'Devashish Joshi', role: 'PPC Manager',          img: 'https://randomuser.me/api/portraits/men/8.jpg'    },
-  { name: 'Gayatri Bera',    role: 'Project Manager',      img: 'https://randomuser.me/api/portraits/women/29.jpg' },
-  { name: 'Vedansh Kandpal', role: 'Tech Lead',            img: 'https://randomuser.me/api/portraits/men/76.jpg'   },
-  { name: 'Suraj Joshi',     role: 'Creative Manager',     img: 'https://randomuser.me/api/portraits/men/45.jpg'   },
+  { name: 'Pradeep Mehta',   role: 'Sr. Project Manager',  img: '/career-about/team/pradeep.webp' },
+  { name: 'Rahul Verma',     role: 'Sr. Project Manager',  img: '/career-about/team/rahul.webp' },
+  { name: 'Devashish Joshi', role: 'PPC & SEO Manager',    img: '/career-about/team/devashish.webp' },
+  { name: 'Gayatri Bera',    role: 'Project Manager',      img: '/career-about/team/gayatri.webp' },
+  { name: 'Vedansh Kandpal', role: 'Tech Lead',            img: '/career-about/team/vedansh.webp' },
+  { name: 'Suraj Joshi',     role: 'Creative Manager',     img: '/career-about/team/suraj.webp' },
+  { name: 'Deepti',          role: 'HR Manager',           img: '/career-about/team/deepti.webp' },
 ];
 
 const HOW_BUILT = [
@@ -168,7 +169,7 @@ export default function AboutPageClient() {
           <div className="ism-container">
             <div className="about-story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
 
-              {/* ── LEFT — sticky image stack ── */}
+              {/* ── LEFT, sticky image stack ── */}
               <div style={{ position: 'sticky', top: 100 }}>
 
                 {/* Decorative bg block */}
@@ -213,7 +214,7 @@ export default function AboutPageClient() {
 
               </div>
 
-              {/* ── RIGHT — scrolling content ── */}
+              {/* ── RIGHT, scrolling content ── */}
               <div style={{ paddingTop: 8, paddingBottom: 32 }}>
 
                 <h2 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(24px,2.6vw,40px)', color: 'var(--color-navy)', lineHeight: 1.15, letterSpacing: '-0.5px', marginBottom: 48 }}>
@@ -307,7 +308,7 @@ export default function AboutPageClient() {
               </h2>
             </div>
 
-            {/* Vision — photo left, card right */}
+            {/* Vision, photo left, card right */}
             <div className="about-vm-block" style={{ position: 'relative', display: 'flex', alignItems: 'center', minHeight: 380, marginBottom: 72 }}>
               <div style={{ background: 'var(--color-primary)', borderRadius: 24, padding: '56px 56px 56px 380px', width: '100%', position: 'relative', overflow: 'hidden', zIndex: 1 }}>
                 <div style={{ position: 'absolute', top: -40, right: -40, width: 200, height: 200, background: 'rgba(255,255,255,.05)', borderRadius: '50%', pointerEvents: 'none' }} />
@@ -331,7 +332,7 @@ export default function AboutPageClient() {
               </div>
             </div>
 
-            {/* Mission — card left, photo right */}
+            {/* Mission, card left, photo right */}
             <div className="about-vm-block about-vm-block-rev" style={{ position: 'relative', display: 'flex', alignItems: 'center', minHeight: 380, marginBottom: 48 }}>
               <div style={{ background: 'var(--color-navy)', borderRadius: 24, padding: '56px 380px 56px 56px', width: '100%', position: 'relative', overflow: 'hidden', zIndex: 1 }}>
                 <div style={{ position: 'absolute', bottom: -56, left: -32, width: 240, height: 240, background: 'rgba(255,255,255,.03)', borderRadius: '50%', pointerEvents: 'none' }} />
@@ -355,7 +356,7 @@ export default function AboutPageClient() {
               </div>
             </div>
 
-            {/* 6 Value Cards — 3×2 */}
+            {/* 6 Value Cards, 3×2 */}
             <div className="about-values-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {VALUES.map((v, i) => (
                 <div
@@ -477,16 +478,16 @@ export default function AboutPageClient() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=80"
-                  alt="Harish Pandey — Founder, Isuremedia"
+                  alt="Harish Pandey, Founder, Isuremedia"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 480, borderRadius: 20, objectFit: 'cover', objectPosition: 'center top', display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.18)' }}
                 />
 
-                {/* Isuremedia chip — top left */}
+                {/* Isuremedia chip, top left */}
                 <div style={{ position: 'absolute', top: -14, left: 28, zIndex: 2, background: 'var(--color-primary)', borderRadius: 8, padding: '8px 16px', boxShadow: '0 4px 18px rgba(30,77,195,.38)' }}>
                   <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Isuremedia</span>
                 </div>
 
-                {/* Founder badge — bottom right */}
+                {/* Founder badge, bottom right */}
                 <div style={{ position: 'absolute', bottom: -20, right: -20, zIndex: 2, background: 'var(--ism-amber)', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 28px rgba(255,176,0,.45)', textAlign: 'center' }}>
                   <div style={{ fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.3 }}>Founder<br />Isuremedia</div>
                 </div>
@@ -516,13 +517,13 @@ export default function AboutPageClient() {
                   Harish built Isuremedia around one conviction: that a business owner should always know what their marketing is producing and who is accountable for it. He designed the agency as a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fully in-house operation</span> from the start, with US-facing strategy and India-based execution, because he believed that combination could deliver serious results at a cost that works for growing businesses. Every part of how ISM operates reflects what he learned working across SEO, paid advertising, automation, and web development about what actually moves a business forward.
                 </p>
 
-                {/* Quote card — dark navy for contrast */}
+                {/* Quote card, dark navy for contrast */}
                 <div style={{ background: 'var(--color-navy)', borderRadius: 18, padding: '30px 32px', position: 'relative', overflow: 'hidden' }}>
                   <div style={{ position: 'absolute', top: -24, right: -24, width: 110, height: 110, background: 'rgba(255,255,255,.04)', borderRadius: '50%', pointerEvents: 'none' }} />
                   <div style={{ position: 'absolute', bottom: -32, left: -16, width: 140, height: 140, background: 'rgba(255,176,0,.05)', borderRadius: '50%', pointerEvents: 'none' }} />
                   <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 20, marginBottom: 14, display: 'block' }} />
                   <p style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.65, margin: '0 0 14px', fontStyle: 'italic' }}>
-                    &ldquo;[One plain sentence from Harish in his own words — pending.]&rdquo;
+                    &ldquo;[One plain sentence from Harish in his own words, pending.]&rdquo;
                   </p>
                   <div style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.42)', letterSpacing: '.03em' }}>Harish Pandey, Founder</div>
                 </div>
@@ -549,7 +550,7 @@ export default function AboutPageClient() {
               Our Team
             </h2>
 
-            {/* Team grid — 5 per row, last row left-aligned */}
+            {/* Team grid, 5 per row, last row left-aligned */}
             <div className="about-team-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 24 }}>
               {TEAM.map((m) => (
                 <div key={m.name} className="about-team-card" style={{ flex: '0 0 calc((100% - 96px) / 5)', background: '#fff', border: '1px solid var(--color-border)', borderRadius: 4, overflow: 'hidden', transition: 'background .18s, border-color .18s' }}>
@@ -636,7 +637,7 @@ export default function AboutPageClient() {
                   </div>
                 </div>
 
-                {/* ── RIGHT — Image only ── */}
+                {/* ── RIGHT, Image only ── */}
                 <div style={{ borderRadius: 18, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,.28)', height: '100%', minHeight: 380 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img

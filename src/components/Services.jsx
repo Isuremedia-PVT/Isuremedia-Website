@@ -35,7 +35,7 @@ const tabs = [
     img: '/services/seo.webp',
     href: '/services/seo',
     title: 'SEO Built for Long-Term Growth',
-    desc: 'We build an organic traffic engine that compounds over time — blending technical SEO, content strategy, and authority link building to rank for high-intent keywords month after month.',
+    desc: 'We build an organic traffic engine that compounds over time, blending technical SEO, content strategy, and authority link building to rank for high-intent keywords month after month.',
     stat: '225%', statLabel: 'Avg. Traffic Growth',
     cta: 'Explore Our SEO Services',
     highlights: ['Local, national & e-commerce SEO covered', 'AI SEO & Answer Engine Optimization ready', 'White-label options for growing agencies'],
@@ -60,7 +60,7 @@ const tabs = [
     img: '/services/ppc.webp',
     href: '/services/ppc-paid-marketing',
     title: 'Paid Ads That Bring You Customers',
-    desc: 'We make every ad dollar accountable. We plan, build, and optimise paid campaigns across Google, Meta, LinkedIn, and YouTube — targeting the right people at the right moment.',
+    desc: 'We make every ad dollar accountable. We plan, build, and optimise paid campaigns across Google, Meta, LinkedIn, and YouTube, targeting the right people at the right moment.',
     stat: '5.2x', statLabel: 'Average ROAS',
     cta: 'Explore PPC Services',
     highlights: ['Google, Meta, LinkedIn & YouTube ads', 'Full-funnel strategy, not just campaign setup', 'Transparent reporting with real attribution'],
@@ -111,7 +111,7 @@ const tabs = [
     img: '/services/white-label.webp',
     href: '/services/white-label',
     title: 'White-Label Fulfillment Built to Grow Your Agency',
-    desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists handle delivery — everything shipped under your brand.',
+    desc: 'Scale your agency without hiring. Our US-based strategy team runs the plan while our 40+ in-house specialists handle delivery, everything shipped under your brand.',
     stat: '40+', statLabel: 'In-House Specialists',
     cta: 'Explore White Label Services',
     highlights: ['US-based strategy + 40+ offshore specialists', 'Everything delivered under your brand', 'Scalable pods for growing agencies'],
@@ -136,7 +136,7 @@ const tabs = [
     img: '/services/marketing-automation.webp',
     href: '/services/marketing-automation',
     title: 'Automation That Grows Your Business 24/7',
-    desc: 'We build automation systems that keep your business moving without you managing every step — lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically.',
+    desc: 'We build automation systems that keep your business moving without you managing every step, lead follow-up, appointment booking, CRM workflows, email and SMS sequences, all running automatically.',
     stat: '62%', statLabel: 'Lower Lead Cost',
     cta: 'Explore Automation Services',
     highlights: ['GoHighLevel, HubSpot, Kajabi & more supported', 'Lead follow-up, booking & CRM fully automated', 'Make, Zapier, n8n & custom API integrations'],
@@ -257,7 +257,7 @@ export default function Services() {
                 Everything included in {active.label}
               </p>
 
-              {/* Checklist — scrollable list, ~5 visible at a time */}
+              {/* Checklist, scrollable list, ~5 visible at a time */}
               <div className="svc-checklist-wrap">
                 <div className="svc-checklist">
                   {active.subServices.map(s => (

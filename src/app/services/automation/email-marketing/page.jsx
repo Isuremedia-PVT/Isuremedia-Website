@@ -14,18 +14,18 @@ const BRIDGE_ITEMS = [
   'Automated nurture and welcome sequences',
   'Abandoned cart and win-back automations',
   'Newsletter design, copywriting, and scheduling',
-  'Deliverability setup — SPF, DKIM, DMARC',
+  'Deliverability setup, SPF, DKIM, DMARC',
   'A/B testing on subject lines and send times',
   'Monthly reporting on opens, clicks, and revenue',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-sack-dollar', title: 'The highest ROI channel in marketing', desc: 'Email consistently returns more per dollar spent than any paid channel — an owned audience you never pay to reach twice.' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'The highest ROI channel in marketing', desc: 'Email consistently returns more per dollar spent than any paid channel, an owned audience you never pay to reach twice.' },
   { icon: 'fa-solid fa-layer-group', title: 'Segmentation turns a list into a system', desc: 'One message to everyone underperforms. Behaviour-based segments mean every subscriber gets the message relevant to them.' },
   { icon: 'fa-solid fa-robot', title: 'Automation works while you don’t', desc: 'Welcome series, abandoned cart, and win-back flows run continuously, converting leads and recovering revenue on autopilot.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Deliverability decides whether any of this works', desc: 'The best email ever written is worthless in a spam folder. Proper authentication and sending practices protect inbox placement.' },
   { icon: 'fa-solid fa-flask', title: 'Testing compounds over time', desc: 'Subject lines, send times, and content tested consistently produce a system that gets measurably better every quarter.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Revenue attribution, not vanity metrics', desc: 'Open rates are a start. What matters is which emails actually produce clicks, bookings, and sales — tracked and reported.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Revenue attribution, not vanity metrics', desc: 'Open rates are a start. What matters is which emails actually produce clicks, bookings, and sales, tracked and reported.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -42,14 +42,14 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Email Marketing Audit', desc: 'List health, segmentation, deliverability, and current automation performance — what to fix first.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Email Marketing Audit', desc: 'List health, segmentation, deliverability, and current automation performance, what to fix first.' },
   { icon: 'fa-solid fa-layer-group', title: 'List Segmentation & Strategy', desc: 'Behaviour, purchase history, and engagement-based segments so every send reaches the right audience.' },
   { icon: 'fa-solid fa-hand-wave', title: 'Welcome & Nurture Sequences', desc: 'Automated sequences that introduce new subscribers to your brand and move them toward a first purchase.' },
   { icon: 'fa-solid fa-cart-arrow-down', title: 'Abandoned Cart & Win-Back Flows', desc: 'Automated recovery sequences that bring back lost carts and re-engage subscribers who’ve gone quiet.' },
   { icon: 'fa-solid fa-newspaper', title: 'Newsletter Design & Copywriting', desc: 'On-brand templates and copy written to be read, not skimmed and deleted.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Deliverability & Authentication Setup', desc: 'SPF, DKIM, and DMARC configured properly so your emails land in the inbox, not the spam folder.' },
   { icon: 'fa-solid fa-flask', title: 'A/B Testing Framework', desc: 'Subject lines, send times, and content tested systematically to improve performance over time.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Opens, clicks, and revenue attributed by campaign — in plain English, with next month’s plan.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Opens, clicks, and revenue attributed by campaign, in plain English, with next month’s plan.' },
 ];
 
 const WHO_FOR = [
@@ -62,11 +62,11 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-layer-group', title: 'We segment before we send anything', desc: 'The right message to the right subscriber, every time — not one blast to everyone regardless of relevance.' },
+  { icon: 'fa-solid fa-layer-group', title: 'We segment before we send anything', desc: 'The right message to the right subscriber, every time, not one blast to everyone regardless of relevance.' },
   { icon: 'fa-solid fa-robot', title: 'We build automation that runs itself', desc: 'Welcome, abandoned cart, and win-back flows configured once, converting and recovering revenue continuously afterward.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We protect your deliverability', desc: 'Proper authentication and sending practices monitored continuously so your emails keep landing in the inbox.' },
   { icon: 'fa-solid fa-flask', title: 'We test relentlessly', desc: 'Subject lines, send times, and content tested on a rolling basis for compounding performance gains.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we sent, what it returned, and what we’re doing differently next month — reported clearly.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we sent, what it returned, and what we’re doing differently next month, reported clearly.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the program is delivering, not because you are contractually obligated to.' },
 ];
 
@@ -81,7 +81,7 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'Do I need a large list for email marketing to work?', a: 'No. A smaller, well-segmented, engaged list consistently outperforms a large, unsegmented one. We focus on quality and relevance over raw size.' },
-  { q: 'What platforms do you work with?', a: 'Klaviyo, Mailchimp, GoHighLevel, and ActiveCampaign are the most common — we work within your existing platform or recommend one suited to your business.' },
+  { q: 'What platforms do you work with?', a: 'Klaviyo, Mailchimp, GoHighLevel, and ActiveCampaign are the most common, we work within your existing platform or recommend one suited to your business.' },
   { q: 'How long before automated flows start producing results?', a: 'Welcome and abandoned cart flows typically start generating revenue within the first week of going live, since they trigger off real-time behaviour immediately.' },
   { q: 'Why are my open rates declining?', a: 'Usually deliverability issues, list fatigue from over-sending unsegmented content, or authentication problems. We diagnose the specific cause before recommending a fix.' },
   { q: 'What is SPF, DKIM, and DMARC and why does it matter?', a: 'Email authentication protocols that prove your emails are legitimate. Without them properly configured, inbox providers increasingly route your emails to spam.' },
@@ -169,7 +169,7 @@ export default function EmailMarketingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build segmented, automated email marketing systems — welcome sequences, abandoned cart flows, and newsletters — that turn a list sitting idle into{' '}
+                  We build segmented, automated email marketing systems, welcome sequences, abandoned cart flows, and newsletters, that turn a list sitting idle into{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a channel that consistently converts</span>.
                 </p>
 
@@ -247,7 +247,7 @@ export default function EmailMarketingPage() {
                   Most businesses have a list of leads and customers that gets an occasional newsletter, and nothing else. That is not an email program. That is a wasted asset.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds segmented, automated email systems —{' '}
+                  ISureMedia builds segmented, automated email systems,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to convert continuously</span>, not just when someone remembers to hit send.
                 </p>
                 <a href="/contact"
@@ -292,7 +292,7 @@ export default function EmailMarketingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unlike paid channels, email is{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an audience you own outright</span> — no algorithm change or rising CPM can take it away.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an audience you own outright</span>, no algorithm change or rising CPM can take it away.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Automated flows mean{' '}
@@ -369,7 +369,7 @@ export default function EmailMarketingPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Owned, Automated, and Still the Highest-Converting Channel You Have.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                No ad auction, no algorithm change, no rising CPMs — just an audience you already own, converting continuously.
+                No ad auction, no algorithm change, no rising CPMs, just an audience you already own, converting continuously.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -405,7 +405,7 @@ export default function EmailMarketingPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Email Marketing to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Email Marketing to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most businesses have tried email marketing already. These are the reasons it didn&apos;t work.
               </p>
@@ -450,7 +450,7 @@ export default function EmailMarketingPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our Email Marketing Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Automation, Copy, and Deliverability — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Automation, Copy, and Deliverability, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

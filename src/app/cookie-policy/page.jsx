@@ -17,7 +17,7 @@ const SECTIONS = [
   },
   {
     title: 'Types of Cookies We Use',
-    body: 'We use the following types of cookies: (1) Essential Cookies — these are necessary for the website to function and cannot be switched off. They are usually set in response to actions you take, such as setting your privacy preferences or filling in forms. (2) Analytics Cookies — these allow us to count visits and traffic sources so we can measure and improve the performance of our site. We use Google Analytics for this purpose. (3) Preference Cookies — these enable the website to remember choices you make, such as your language preference or region, to provide a more personalised experience. (4) Marketing Cookies — these may be set through our site by advertising partners to build a profile of your interests and show relevant adverts on other sites.',
+    body: 'We use the following types of cookies: (1) Essential Cookies, these are necessary for the website to function and cannot be switched off. They are usually set in response to actions you take, such as setting your privacy preferences or filling in forms. (2) Analytics Cookies, these allow us to count visits and traffic sources so we can measure and improve the performance of our site. We use Google Analytics for this purpose. (3) Preference Cookies, these enable the website to remember choices you make, such as your language preference or region, to provide a more personalised experience. (4) Marketing Cookies, these may be set through our site by advertising partners to build a profile of your interests and show relevant adverts on other sites.',
   },
   {
     title: 'Third-Party Cookies',
@@ -29,7 +29,7 @@ const SECTIONS = [
   },
   {
     title: 'Contact Us',
-    body: 'If you have any questions about our use of cookies or this Cookie Policy, please contact us at: hello@isuremedia.com. Isuremedia Pvt. Ltd., India. We update this policy periodically to reflect changes in our cookie usage or applicable regulations. The date at the top of this page indicates when this policy was last revised.',
+    body: 'If you have any questions about our use of cookies or this Cookie Policy, please contact us at: info@isuremedia.com. Isuremedia Pvt. Ltd., India. We update this policy periodically to reflect changes in our cookie usage or applicable regulations. The date at the top of this page indicates when this policy was last revised.',
   },
 ];
 

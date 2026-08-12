@@ -11,7 +11,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
   'Dedicated team assignment matched to your service mix',
-  'Direct access to your pod — no account-manager relay',
+  'Direct access to your pod, no account-manager relay',
   'A single point of contact across every project',
   'Institutional knowledge retained across your full client base',
   'Flexible pod sizing as your agency scales up or down',
@@ -25,7 +25,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-gauge-high', title: 'Faster turnaround from day one', desc: 'Once a pod is calibrated to your process, briefs move straight to execution instead of a lengthy onboarding on every project.' },
   { icon: 'fa-solid fa-comments', title: 'Direct access, no relay', desc: 'You talk to the people doing the work, not a generalist account manager repeating your brief to someone else.' },
   { icon: 'fa-solid fa-scale-balanced', title: 'Predictable cost, not project variance', desc: 'A fixed monthly pod cost is easier to plan around than quoting, negotiating, and re-briefing a new vendor for every project.' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Scales with your agency', desc: 'Add capacity when you win new clients, hold steady when things are quiet — a pod flexes with your agency instead of forcing a hiring decision.' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Scales with your agency', desc: 'Add capacity when you win new clients, hold steady when things are quiet, a pod flexes with your agency instead of forcing a hiring decision.' },
 ];
 
 const CARD_VARIANTS = [
@@ -35,14 +35,14 @@ const CARD_VARIANTS = [
 ];
 
 const KEY_FACTORS = [
-  { icon: 'fa-solid fa-users-gear', title: 'Pod Composition Matched to Your Mix', impact: 'Highest impact', desc: 'A pod built around the services your agency actually sells — SEO, PPC, development, design, or a blend — not a generic bench assigned at random.' },
-  { icon: 'fa-solid fa-user-tie', title: 'A Dedicated Project Manager', impact: 'High impact', desc: 'One person who owns your pod, tracks every brief, and is accountable for delivery — your single point of contact, not a rotating queue.' },
+  { icon: 'fa-solid fa-users-gear', title: 'Pod Composition Matched to Your Mix', impact: 'Highest impact', desc: 'A pod built around the services your agency actually sells, SEO, PPC, development, design, or a blend, not a generic bench assigned at random.' },
+  { icon: 'fa-solid fa-user-tie', title: 'A Dedicated Project Manager', impact: 'High impact', desc: 'One person who owns your pod, tracks every brief, and is accountable for delivery, your single point of contact, not a rotating queue.' },
   { icon: 'fa-solid fa-file-lines', title: 'Documented SOPs for Your Brand', impact: 'High impact', desc: 'Your standards, tone, and process written down and followed by the pod, so quality does not depend on who happens to pick up a brief.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'Consistent Quality Control', impact: 'High impact', desc: 'Every deliverable reviewed against your standards before it reaches you, by a process that stays the same project to project.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Agreed Response Times', impact: 'Medium impact', desc: 'Turnaround expectations set at the start of the partnership, so your pod is never a bottleneck on a client deadline.' },
-  { icon: 'fa-solid fa-chalkboard-user', title: 'A Calibration Period', impact: 'Medium impact', desc: 'The first project is treated as a benchmark — closely reviewed and adjusted until output matches exactly what your agency expects.' },
+  { icon: 'fa-solid fa-chalkboard-user', title: 'A Calibration Period', impact: 'Medium impact', desc: 'The first project is treated as a benchmark, closely reviewed and adjusted until output matches exactly what your agency expects.' },
   { icon: 'fa-solid fa-chart-line', title: 'Monthly Performance Review', impact: 'Contextual', desc: 'A regular check-in on what is working, what needs adjusting, and whether your pod size still matches your current client load.' },
-  { icon: 'fa-solid fa-arrows-up-down', title: 'Flexible Scaling', impact: 'Growing fast', desc: 'Add capacity when you win a client, scale back when work slows — your pod size tracks your agency, not a fixed contract.' },
+  { icon: 'fa-solid fa-arrows-up-down', title: 'Flexible Scaling', impact: 'Growing fast', desc: 'Add capacity when you win a client, scale back when work slows, your pod size tracks your agency, not a fixed contract.' },
 ];
 
 const SERVICES = [
@@ -52,13 +52,13 @@ const SERVICES = [
   { icon: 'fa-solid fa-palette', title: 'Content & Creative Pod', desc: 'Writers and designers assigned to your accounts, producing on-brand content and assets month after month.' },
   { icon: 'fa-solid fa-bolt', title: 'GoHighLevel & Automation Pod', desc: 'A dedicated team for sub-account setup, funnel builds, and automation support across your GHL clients.' },
   { icon: 'fa-solid fa-layer-group', title: 'Multi-Discipline Pod', desc: 'A blended team spanning SEO, PPC, dev, and design for agencies that need full-service delivery under one roof.' },
-  { icon: 'fa-solid fa-clipboard-check', title: 'Reporting & QA Built In', desc: 'Every pod includes its own quality control and client-ready reporting — not an extra service bolted on later.' },
+  { icon: 'fa-solid fa-clipboard-check', title: 'Reporting & QA Built In', desc: 'Every pod includes its own quality control and client-ready reporting, not an extra service bolted on later.' },
   { icon: 'fa-solid fa-arrows-up-down', title: 'Flex Capacity on Demand', desc: 'Temporary capacity added to your existing pod for launches, campaigns, or seasonal spikes without a new hire.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-user-group', title: 'Agencies outgrowing freelancer management', desc: 'Briefing, chasing, and re-briefing a different freelancer on every project is a full-time job in itself. A pod removes that overhead entirely.', img: 'https://picsum.photos/seed/pods-whofor-freelancers/700/620' },
-  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work — SEO, PPC, or development — every month, a dedicated pod is more efficient than sourcing per project.', img: 'https://picsum.photos/seed/pods-whofor-volume/700/620' },
+  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work, SEO, PPC, or development, every month, a dedicated pod is more efficient than sourcing per project.', img: 'https://picsum.photos/seed/pods-whofor-volume/700/620' },
   { icon: 'fa-solid fa-sack-dollar', title: 'Agencies wanting predictable delivery cost', desc: 'A fixed monthly pod cost is easier to build into client pricing than quoting a new vendor for every project that comes in.', img: 'https://picsum.photos/seed/pods-whofor-cost/700/620' },
   { icon: 'fa-solid fa-rocket', title: 'Agencies scaling faster than they can hire', desc: 'When client growth is outpacing your ability to hire and train, a pod gives you bench strength without the recruitment timeline.', img: 'https://picsum.photos/seed/pods-whofor-scale/700/620' },
   { icon: 'fa-solid fa-brain', title: 'Agencies that keep losing institutional knowledge', desc: 'Every time a freelancer leaves, their context leaves with them. A fixed pod retains what it learns about your clients over time.', img: 'https://picsum.photos/seed/pods-whofor-knowledge/700/620' },
@@ -67,33 +67,33 @@ const WHO_FOR = [
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-users', title: 'We assign real people, not a project queue', desc: 'Your pod is a named team, not whoever happens to be free when a brief comes in.' },
-  { icon: 'fa-solid fa-comments', title: 'Direct access to your pod', desc: 'You communicate with the people doing the work — no account manager relaying instructions back and forth.' },
+  { icon: 'fa-solid fa-comments', title: 'Direct access to your pod', desc: 'You communicate with the people doing the work, no account manager relaying instructions back and forth.' },
   { icon: 'fa-solid fa-file-lines', title: 'SOPs documented from day one', desc: 'Your standards are written down and followed, so quality does not depend on institutional memory living in one person\'s head.' },
   { icon: 'fa-solid fa-chart-line', title: 'Monthly review and flex built in', desc: 'Pod size and scope reviewed monthly against your actual client load, not locked to what you signed up for on day one.' },
-  { icon: 'fa-solid fa-building', title: 'Delivered fully in-house', desc: 'Your pod is not a further layer of outsourcing — every person on it is part of the Isuremedia team.' },
+  { icon: 'fa-solid fa-building', title: 'Delivered fully in-house', desc: 'Your pod is not a further layer of outsourcing, every person on it is part of the Isuremedia team.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You keep the pod because it is working, not because you are contractually stuck with it.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Discovery & Pod Sizing', desc: 'We review your current client base, service mix, and volume to define the right pod size and composition.' },
   { n: '02', title: 'Pod Assignment', desc: 'A named team is assigned to your agency, briefed on your brand, tools, and reporting standards.' },
-  { n: '03', title: 'Calibration Project', desc: 'Your first project is treated as a benchmark — closely reviewed until output matches your exact standards.' },
+  { n: '03', title: 'Calibration Project', desc: 'Your first project is treated as a benchmark, closely reviewed until output matches your exact standards.' },
   { n: '04', title: 'Ongoing Delivery', desc: 'Briefs flow directly to your pod on a predictable schedule, with a dedicated project manager tracking every deliverable.' },
   { n: '05', title: 'Monthly Review & Scale', desc: 'A regular check-in on performance, with pod size adjusted up or down to match your current client load.' },
 ];
 
 const FAQS = [
-  { q: 'What is a dedicated agency pod, exactly?', a: 'A fixed team — a project manager plus specialists in the disciplines you need — assigned permanently to your agency, instead of a different freelancer or vendor sourced for every individual project.' },
+  { q: 'What is a dedicated agency pod, exactly?', a: 'A fixed team, a project manager plus specialists in the disciplines you need, assigned permanently to your agency, instead of a different freelancer or vendor sourced for every individual project.' },
   { q: 'How is this different from project-based white-label outsourcing?', a: 'Project-based outsourcing sources whoever is available for each brief. A pod is the same people every time, which means less re-briefing, more consistency, and institutional knowledge that compounds instead of resetting.' },
-  { q: 'How big is a typical pod?', a: 'Sized to your actual volume — a small agency might start with a project manager and one specialist, while a larger agency running multiple services might have a multi-discipline pod of four or five people.' },
+  { q: 'How big is a typical pod?', a: 'Sized to your actual volume, a small agency might start with a project manager and one specialist, while a larger agency running multiple services might have a multi-discipline pod of four or five people.' },
   { q: 'Can our pod cover more than one service?', a: 'Yes. Multi-discipline pods spanning SEO, PPC, development, and design are common for agencies that need full-service delivery under one team.' },
-  { q: 'What happens if our client volume changes?', a: 'Pod size is reviewed monthly and adjusted up or down to match your current client load — you are never paying for capacity you are not using, or short-staffed when you win new business.' },
+  { q: 'What happens if our client volume changes?', a: 'Pod size is reviewed monthly and adjusted up or down to match your current client load, you are never paying for capacity you are not using, or short-staffed when you win new business.' },
   { q: 'Do we get a dedicated project manager?', a: 'Yes. Every pod has a named project manager who is your single point of contact and is accountable for everything your pod delivers.' },
   { q: 'How long does it take to get a pod up and running?', a: 'Most pods are assigned and ready for a calibration project within one to two weeks of the discovery call, depending on the disciplines and size required.' },
   { q: 'Will our clients know a pod is delivering the work?', a: 'No. Every deliverable goes out under your agency brand with no Isuremedia references, and we sign NDAs if your agency requires one.' },
 ];
 
-/* ── FAQ 2-COL — matches the White-Label GHL Support page layout ── */
+/* ── FAQ 2-COL, matches the White-Label GHL Support page layout ── */
 function PodsFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -157,7 +157,7 @@ export default function DedicatedAgencyPodsPage() {
           <div className="ism-container">
             <div className="pod-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   A Fixed Team for Your Agency, Not a Different Freelancer{' '}
@@ -170,12 +170,12 @@ export default function DedicatedAgencyPodsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  A dedicated pod is a fixed team assigned to your agency —{' '}
+                  A dedicated pod is a fixed team assigned to your agency,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the same specialists on your accounts every month</span>, giving you the output of an in-house team without the cost of hiring one.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
-                  <a href="/contact"
+                  <a href="/appointment"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
@@ -184,10 +184,10 @@ export default function DedicatedAgencyPodsPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="pod-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/banner/dedicated-agency-pods-team.png" alt="Dedicated agency pod team" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/dedicated-agency-pods-team.webp" alt="Dedicated agency pod team" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-users" style={{ color: '#fff', fontSize: 22 }} />
@@ -252,13 +252,13 @@ export default function DedicatedAgencyPodsPage() {
                   Project-by-Project Outsourcing Creates Inconsistency.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  A different freelancer on every brief means re-explaining your brand, your standards, and your client context every single time — and a quality bar that shifts depending on who picked up the work.
+                  A different freelancer on every brief means re-explaining your brand, your standards, and your client context every single time, and a quality bar that shifts depending on who picked up the work.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A dedicated pod is a fixed team assigned to your agency, giving you{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the output of an in-house team</span> — consistent people, retained knowledge, direct communication — without the cost of hiring one.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the output of an in-house team</span>, consistent people, retained knowledge, direct communication, without the cost of hiring one.
                 </p>
-                <a href="/contact"
+                <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
@@ -300,14 +300,14 @@ export default function DedicatedAgencyPodsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A dedicated pod is{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the same named team assigned to your agency every month</span> — not a pool of freelancers sourced fresh for every brief.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the same named team assigned to your agency every month</span>, not a pool of freelancers sourced fresh for every brief.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your pod{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>knows your brand, your standards, and your clients</span> — context that compounds instead of resetting with every new vendor.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>knows your brand, your standards, and your clients</span>, context that compounds instead of resetting with every new vendor.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    You get a dedicated project manager, agreed response times, and direct access to the people doing the work — the structure of an in-house team, without the overhead of hiring one.
+                    You get a dedicated project manager, agreed response times, and direct access to the people doing the work, the structure of an in-house team, without the overhead of hiring one.
                   </p>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export default function DedicatedAgencyPodsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Named Team */}
+                {/* Floating badge, Named Team */}
                 <div className="pod-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-user-tie" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -334,7 +334,7 @@ export default function DedicatedAgencyPodsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Onboarding */}
+                {/* Floating badge, Onboarding */}
                 <div className="pod-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-chalkboard-user" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -345,7 +345,7 @@ export default function DedicatedAgencyPodsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Flexible Scaling */}
+                {/* Floating badge, Flexible Scaling */}
                 <div className="pod-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrows-up-down" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -356,7 +356,7 @@ export default function DedicatedAgencyPodsPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Reviewed Monthly */}
+                {/* Floating badge, Reviewed Monthly */}
                 <div className="pod-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-chart-line" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -401,7 +401,7 @@ export default function DedicatedAgencyPodsPage() {
               })}
             </div>
             <div style={{ textAlign: 'center' }}>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
@@ -534,7 +534,7 @@ export default function DedicatedAgencyPodsPage() {
                   A partner discovery call will show you exactly what a dedicated pod would look like for your agency.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>
@@ -642,7 +642,7 @@ export default function DedicatedAgencyPodsPage() {
             </div>
             {/* CTA */}
             <div style={{ textAlign: 'center', marginTop: 56 }}>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', boxShadow: '0 6px 22px rgba(255,176,0,.38)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 22px rgba(255,176,0,.38)'; }}

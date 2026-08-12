@@ -19,7 +19,7 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Higher rankings across your most important pages', desc: 'Each high-quality referring domain strengthens your domain authority and improves rankings across your entire site — not just the specific page the link points to.' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Higher rankings across your most important pages', desc: 'Each high-quality referring domain strengthens your domain authority and improves rankings across your entire site, not just the specific page the link points to.' },
   { icon: 'fa-solid fa-chart-line', title: 'Rankings that compound over time', desc: 'Unlike paid ads that stop working the moment you stop paying, authority compounds. Every link you earn adds to a backlink profile that keeps working for you month after month.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Faster results from other SEO work', desc: 'Content and on-page optimisation perform significantly better on a domain with authority behind it. Link building multiplies the return on every other SEO investment you make.' },
   { icon: 'fa-solid fa-robot', title: 'Visibility in AI search', desc: '73% of SEO professionals believe backlinks influence AI search visibility. Domains with strong backlink profiles are more likely to be cited by Google AI Overviews, ChatGPT, and Perplexity as authoritative sources.' },
@@ -36,19 +36,19 @@ const CARD_VARIANTS = [
 const LINK_FACTORS = [
   { icon: 'fa-solid fa-newspaper', title: 'Editorial Links', impact: 'Highest value', desc: 'Links earned within the content of a real article on a credible, relevant website. These carry the most weight with Google because they represent a genuine editorial decision by a real publisher to reference your site.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Guest Post Placements', impact: 'High value', desc: 'Original content written by Isuremedia and published on relevant industry websites with a contextual link back to your site. Guest posts on sites with a Domain Rating of 50 or above generate 5.2 times more ranking impact than lower-authority placements.' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Digital PR Links', impact: 'High value', desc: 'Links earned through data-driven content, original research, or newsworthy stories that journalists and publishers choose to reference. Digital PR is now the top-rated link building strategy among SEO professionals — it earns multiple links per campaign and builds brand authority alongside ranking authority.' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Digital PR Links', impact: 'High value', desc: 'Links earned through data-driven content, original research, or newsworthy stories that journalists and publishers choose to reference. Digital PR is now the top-rated link building strategy among SEO professionals, it earns multiple links per campaign and builds brand authority alongside ranking authority.' },
   { icon: 'fa-solid fa-link-slash', title: 'Niche Edits', impact: 'Medium value', desc: 'Contextual links inserted into already-published, already-ranking articles on relevant websites. These benefit from the existing authority of the page and can produce ranking improvements faster than new content placements.' },
   { icon: 'fa-solid fa-building-columns', title: 'Resource and Directory Links', impact: 'Supporting value', desc: 'Links from high-quality, curated industry directories and resource pages. These build a natural and diverse backlink profile that looks healthy to Google and provides a consistent base of authority.' },
   { icon: 'fa-solid fa-shield-halved', title: 'What We Never Build', impact: 'Zero tolerance', desc: 'Links from private blog networks, paid link schemes, irrelevant websites, auto-generated directories, or any source that violates Google&apos;s link spam guidelines. These create risk, not authority, and the ranking gains they produce rarely last.' },
 ];
 
 const OFFERINGS = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Backlink Audit & Competitor Gap Analysis', desc: 'We start by auditing your existing backlink profile — identifying your strongest links, flagging harmful ones, and mapping the gap between your domain authority and your top competitors.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Backlink Audit & Competitor Gap Analysis', desc: 'We start by auditing your existing backlink profile, identifying your strongest links, flagging harmful ones, and mapping the gap between your domain authority and your top competitors.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80' },
   { icon: 'fa-solid fa-handshake', title: 'Editorial Outreach', desc: 'We identify relevant, high-authority websites in your industry and pitch content ideas that earn genuine editorial placements built around your target keywords and pages.', img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80' },
   { icon: 'fa-solid fa-pen-nib', title: 'Guest Post Campaigns', desc: 'We research, write, and place original content on real industry publications with editorial standards and genuine readership, each with a contextual, keyword-relevant link back to your site.', img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&q=80' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Digital PR and Data-Led Campaigns', desc: 'We create original research, data studies, or newsworthy content assets and pitch them to relevant journalists and publications — earning the highest-authority links available.', img: 'https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?w=500&q=80' },
-  { icon: 'fa-solid fa-link-slash', title: 'Niche Edits and Link Insertions', desc: 'We secure placements inside already-published, already-ranking content on relevant websites — a fast and effective way to build authority without waiting for new content to mature.', img: 'https://images.unsplash.com/photo-1754548930574-6a995e5eb5a7?w=500&q=80' },
-  { icon: 'fa-solid fa-font', title: 'Anchor Text Strategy & Link Monitoring', desc: 'We manage your anchor text profile deliberately and monitor your backlink profile continuously — handling disavow submissions where harmful links appear so your profile stays clean.', img: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?w=500&q=80' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Digital PR and Data-Led Campaigns', desc: 'We create original research, data studies, or newsworthy content assets and pitch them to relevant journalists and publications, earning the highest-authority links available.', img: 'https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?w=500&q=80' },
+  { icon: 'fa-solid fa-link-slash', title: 'Niche Edits and Link Insertions', desc: 'We secure placements inside already-published, already-ranking content on relevant websites, a fast and effective way to build authority without waiting for new content to mature.', img: 'https://images.unsplash.com/photo-1754548930574-6a995e5eb5a7?w=500&q=80' },
+  { icon: 'fa-solid fa-font', title: 'Anchor Text Strategy & Link Monitoring', desc: 'We manage your anchor text profile deliberately and monitor your backlink profile continuously, handling disavow submissions where harmful links appear so your profile stays clean.', img: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?w=500&q=80' },
 ];
 
 const SERVICES = [
@@ -59,31 +59,31 @@ const SERVICES = [
   { icon: 'fa-solid fa-link-slash', title: 'Niche Edits and Link Insertions', desc: 'We secure placements inside already-published, already-ranking content on relevant websites for fast, effective authority gains.' },
   { icon: 'fa-solid fa-font', title: 'Anchor Text Strategy', desc: 'We manage your anchor text profile deliberately, varying anchor text across placements to build a natural, Google-safe backlink profile.' },
   { icon: 'fa-solid fa-chart-line', title: 'Link Monitoring & Disavow Management', desc: 'We monitor your backlink profile continuously for lost links and new spammy links, handling disavow submissions so your profile stays clean.' },
-  { icon: 'fa-solid fa-clone', title: 'White-Label Link Building', desc: 'For agencies, we provide fully white-label link building delivered under your brand — no references to Isuremedia, full quality standards, scalable across your client base.' },
+  { icon: 'fa-solid fa-clone', title: 'White-Label Link Building', desc: 'For agencies, we provide fully white-label link building delivered under your brand, no references to Isuremedia, full quality standards, scalable across your client base.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses whose rankings have plateaued', desc: 'If your content is well-optimised but rankings are stuck, the missing variable is almost always domain authority. On-page SEO creates the conditions for ranking. Link building provides the authority signal that pushes you past competitors.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
   { icon: 'fa-solid fa-seedling', title: 'New websites building authority from scratch', desc: 'A new domain with no backlinks starts at a significant disadvantage against established competitors. Consistent link building accelerates the authority-building process and compresses the time it takes to achieve competitive rankings.', img: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?w=700&q=80' },
-  { icon: 'fa-solid fa-chess', title: 'Businesses in competitive markets', desc: 'In competitive industries — legal, finance, health, real estate, home services — the top-ranking businesses have strong backlink profiles. Competing without one means fighting with one hand tied behind your back.', img: 'https://images.unsplash.com/photo-1523875194681-bedd468c58bf?w=700&q=80' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Businesses penalised for bad links in the past', desc: 'If a previous agency built spammy links that damaged your rankings, the first step is a full backlink audit and disavow campaign — followed by a clean, white-hat link building program that rebuilds your profile properly.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
+  { icon: 'fa-solid fa-chess', title: 'Businesses in competitive markets', desc: 'In competitive industries, legal, finance, health, real estate, home services, the top-ranking businesses have strong backlink profiles. Competing without one means fighting with one hand tied behind your back.', img: 'https://images.unsplash.com/photo-1523875194681-bedd468c58bf?w=700&q=80' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Businesses penalised for bad links in the past', desc: 'If a previous agency built spammy links that damaged your rankings, the first step is a full backlink audit and disavow campaign, followed by a clean, white-hat link building program that rebuilds your profile properly.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
   { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce targeting category and product pages', desc: 'Category and product pages are high-value ranking targets that almost always need external link authority to compete. Link building on these pages directly affects revenue.', img: 'https://images.unsplash.com/photo-1531058240690-006c446962d8?w=700&q=80' },
   { icon: 'fa-solid fa-clone', title: 'Agencies needing white-label link building', desc: 'Isuremedia provides white-label link building for agencies at scale. Same quality standards, your brand on the deliverables, no client-facing Isuremedia references.', img: 'https://images.unsplash.com/photo-1766758196132-c81bdd247238?w=700&q=80' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-shield-halved', title: 'We only build white-hat links', desc: 'Every link we place is editorially earned on a real website with genuine traffic and editorial standards. We do not use private blog networks, link farms, or any method that violates Google&apos;s guidelines. Your rankings are built to last.' },
-  { icon: 'fa-solid fa-eye', title: 'You see every placement before it goes live', desc: 'Before any outreach goes out, you review and approve the target sites. You know exactly where your links are being placed and why — no black-box processes, no surprises.' },
+  { icon: 'fa-solid fa-eye', title: 'You see every placement before it goes live', desc: 'Before any outreach goes out, you review and approve the target sites. You know exactly where your links are being placed and why, no black-box processes, no surprises.' },
   { icon: 'fa-solid fa-robot', title: 'We cover AI search authority too', desc: '73% of SEO professionals believe backlinks influence AI search visibility. We build the kind of editorial authority that makes your domain one that AI systems cite and recommend.' },
   { icon: 'fa-solid fa-medal', title: 'Quality over volume, every time', desc: 'We would rather build five high-authority links per month than fifty low-quality ones. Targeted, high-authority links create compounding authority that holds through algorithm updates.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Full transparency on every link', desc: 'You receive a detailed monthly report covering every link built — the URL, the referring domain metrics, the anchor text, and the target page. Nothing is hidden.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Full transparency on every link', desc: 'You receive a detailed monthly report covering every link built, the URL, the referring domain metrics, the anchor text, and the target page. Nothing is hidden.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Link building takes time to compound. But we do not lock you in because we believe the results speak for themselves. Stay because rankings are improving, not because you signed a contract.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Backlink Audit & Strategy', desc: 'We audit your existing backlink profile, identify harmful links, benchmark your domain authority against your top competitors, and map the exact link building strategy your site needs.' },
-  { n: '02', title: 'Target Site Research', desc: 'We identify the most relevant, highest-authority websites in your industry for outreach — sites with real traffic, real editorial standards, and genuine relevance. No bulk databases, no automated lists.' },
-  { n: '03', title: 'Content Creation', desc: 'We write the content that earns the links — guest posts, digital PR assets, data studies, or linkable resources — each meeting the editorial standards of the target publication.' },
+  { n: '02', title: 'Target Site Research', desc: 'We identify the most relevant, highest-authority websites in your industry for outreach, sites with real traffic, real editorial standards, and genuine relevance. No bulk databases, no automated lists.' },
+  { n: '03', title: 'Content Creation', desc: 'We write the content that earns the links, guest posts, digital PR assets, data studies, or linkable resources, each meeting the editorial standards of the target publication.' },
   { n: '04', title: 'Outreach & Placement', desc: 'We conduct manual outreach to editors, publishers, and journalists using personalised pitches. Once placements are secured, we send everything to you for review before it goes live.' },
   { n: '05', title: 'Reporting & Monitoring', desc: 'You receive a monthly report covering every link built, referring domain metrics, anchor text used, and impact on your target pages. We monitor your profile continuously for lost links and new spam.' },
 ];
@@ -93,15 +93,15 @@ const FAQS = [
   { q: 'What is the difference between good and bad link building?', a: 'Good link building earns editorially placed links on real, relevant websites with genuine traffic and editorial standards. Bad link building buys links from private blog networks, low-quality directories, or irrelevant sites that exist solely to sell links. Good links build authority that compounds over time. Bad links create a penalty risk that can damage your rankings significantly.' },
   { q: 'How long does it take to see results from link building?', a: 'Individual links typically index within two to six weeks. Measurable ranking improvements from a link building campaign typically appear within three to four months as the authority compounds across your domain.' },
   { q: 'How many links do I need?', a: 'This depends entirely on your target keywords and the backlink profiles of the sites currently ranking for them. We audit your competitors&apos; backlink profiles at the start of every engagement so you know exactly what volume of link building is required to close the gap.' },
-  { q: 'Will link building get my site penalised?', a: 'White-hat, editorially earned links do not get sites penalised. Spammy link building — private blog networks, paid link schemes, link farms — creates penalty risk. Isuremedia builds only white-hat links, and we monitor your backlink profile for any harmful links that may appear from other sources.' },
-  { q: 'What types of links do you build?', a: 'We build editorial links, guest post placements, digital PR links, niche edits, and resource links — depending on what your site needs and what will have the most impact for your target keywords. Every link type is white-hat, manually placed, and editorially earned.' },
+  { q: 'Will link building get my site penalised?', a: 'White-hat, editorially earned links do not get sites penalised. Spammy link building, private blog networks, paid link schemes, link farms, creates penalty risk. Isuremedia builds only white-hat links, and we monitor your backlink profile for any harmful links that may appear from other sources.' },
+  { q: 'What types of links do you build?', a: 'We build editorial links, guest post placements, digital PR links, niche edits, and resource links, depending on what your site needs and what will have the most impact for your target keywords. Every link type is white-hat, manually placed, and editorially earned.' },
   { q: 'Do you provide white-label link building for agencies?', a: 'Yes. We build links for agency clients under your brand with no Isuremedia references. Same quality standards, same transparent reporting, fully scalable across your client base.' },
   { q: 'How do you measure the quality of a link?', a: 'We assess each potential link placement on Domain Rating, organic traffic to the referring site, topical relevance to your industry, editorial standards of the publication, and anchor text appropriateness. A site with strong metrics but no relevance to your industry is a weak link regardless of its Domain Rating.' },
   { q: 'Can link building help with AI search visibility?', a: 'Yes. 73% of SEO professionals believe backlinks influence AI search results. Domains with strong editorial backlink profiles are more likely to be cited as authoritative sources in Google AI Overviews, ChatGPT, and Perplexity responses.' },
   { q: 'What happens to my rankings if I stop link building?', a: 'The links you have earned do not disappear when you stop building. Your domain authority holds in the short to medium term. However, competitors who continue building will gradually close the gap and overtake you over time.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function LinkFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function LinkBuildingPage() {
           <div className="ism-container">
             <div className="lb-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Build the Authority That Gets Your Site to{' '}
@@ -180,7 +180,7 @@ export default function LinkBuildingPage() {
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We earn{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>high-quality backlinks from real, relevant websites</span>{' '}
-                  that tell Google your site is worth ranking. More referring domains, stronger domain authority, higher rankings — done the right way.
+                  that tell Google your site is worth ranking. More referring domains, stronger domain authority, higher rankings, done the right way.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -193,7 +193,7 @@ export default function LinkBuildingPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="lb-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://picsum.photos/seed/linkbuildinghero/640/720" alt="Link building outreach" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
@@ -261,12 +261,12 @@ export default function LinkBuildingPage() {
                   Your Competitors Are Outranking You Because Their Site Has More Authority.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Content and on-page SEO can only take your rankings so far. When two pages are equally optimised, the one with stronger backlinks wins. Backlinks are still a confirmed top-three Google ranking factor in 2026 — and the gap between your site and your competitors is measured in referring domains.
+                  Content and on-page SEO can only take your rankings so far. When two pages are equally optimised, the one with stronger backlinks wins. Backlinks are still a confirmed top-three Google ranking factor in 2026, and the gap between your site and your competitors is measured in referring domains.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia builds backlinks the right way. No link farms. No private blog networks. No paid placements on sites that exist only to sell links. Every link we build is{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>editorially placed on a real, relevant website</span>{' '}
-                  — the kind Google trusts and rewards.
+                 , the kind Google trusts and rewards.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -311,15 +311,15 @@ export default function LinkBuildingPage() {
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A backlink is a link from another website to yours. When a reputable, relevant website links to your page, Google treats it as{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a vote of confidence</span>{' '}
-                    — a signal that your content is trustworthy, authoritative, and worth showing to people who search for what you offer.
+                   , a signal that your content is trustworthy, authoritative, and worth showing to people who search for what you offer.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Link building is the process of earning those links systematically. Not by buying them from link farms or publishing on low-quality directories — but by{' '}
+                    Link building is the process of earning those links systematically. Not by buying them from link farms or publishing on low-quality directories, but by{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>placing content on real websites that Google already trusts</span>{' '}
                     so that trust transfers to your domain.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The more high-quality referring domains pointing to your site, the stronger your domain authority — and the more competitive your pages become across every keyword you target. Link building does not just improve one ranking. It raises the ceiling for your entire site.
+                    The more high-quality referring domains pointing to your site, the stronger your domain authority, and the more competitive your pages become across every keyword you target. Link building does not just improve one ranking. It raises the ceiling for your entire site.
                   </p>
                 </div>
               </div>
@@ -335,7 +335,7 @@ export default function LinkBuildingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Domain Authority */}
+                {/* Floating badge, Domain Authority */}
                 <div className="lb-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-building-columns" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -346,7 +346,7 @@ export default function LinkBuildingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Placements */}
+                {/* Floating badge, Placements */}
                 <div className="lb-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-link" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -357,7 +357,7 @@ export default function LinkBuildingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Referring Domains */}
+                {/* Floating badge, Referring Domains */}
                 <div className="lb-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-up" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -368,7 +368,7 @@ export default function LinkBuildingPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Toxic Links */}
+                {/* Floating badge, Toxic Links */}
                 <div className="lb-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-shield-halved" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -433,7 +433,7 @@ export default function LinkBuildingPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Quality and Relevance Are What Google Actually Rewards.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Not all links are equal. A single link from a trusted, relevant publication does more for your rankings than a hundred links from low-quality directories. Bad links — from link farms, paid networks, or irrelevant sites — do not just fail to help. They can actively hurt your rankings. Isuremedia builds only white-hat, editorially placed links.
+                Not all links are equal. A single link from a trusted, relevant publication does more for your rankings than a hundred links from low-quality directories. Bad links, from link farms, paid networks, or irrelevant sites, do not just fail to help. They can actively hurt your rankings. Isuremedia builds only white-hat, editorially placed links.
               </p>
             </div>
             <div className="lb-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>

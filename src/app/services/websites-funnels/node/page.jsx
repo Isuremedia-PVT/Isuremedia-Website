@@ -11,7 +11,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
   'Custom Node.js application and API development',
-  'Real-time features — chat, notifications, live updates',
+  'Real-time features, chat, notifications, live updates',
   'Next.js and React frontend development',
   'Database design and integration',
   'Third-party API and webhook integration',
@@ -20,7 +20,7 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-brands fa-node-js', title: 'Built for real-time, high-concurrency applications', desc: 'Node’s event-driven architecture handles thousands of simultaneous connections efficiently — ideal for chat, live data, and notifications.' },
+  { icon: 'fa-brands fa-node-js', title: 'Built for real-time, high-concurrency applications', desc: 'Node’s event-driven architecture handles thousands of simultaneous connections efficiently, ideal for chat, live data, and notifications.' },
   { icon: 'fa-solid fa-bolt', title: 'One language, frontend to backend', desc: 'JavaScript across the entire stack means faster development and fewer context switches between teams and codebases.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Fast, lightweight, and scalable', desc: 'Non-blocking I/O keeps applications responsive under load without heavy server infrastructure.' },
   { icon: 'fa-solid fa-boxes-stacked', title: 'A massive open-source ecosystem', desc: 'npm’s package ecosystem accelerates development without reinventing common functionality.' },
@@ -42,7 +42,7 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Architecture', desc: 'Existing codebase review or new project scoping — service architecture and data flow defined in writing.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical Audit & Architecture', desc: 'Existing codebase review or new project scoping, service architecture and data flow defined in writing.' },
   { icon: 'fa-solid fa-code', title: 'Custom Node.js Application Development', desc: 'Bespoke backend applications and services built to your exact specification.' },
   { icon: 'fa-solid fa-bolt', title: 'Real-Time Feature Development', desc: 'Chat, live notifications, and real-time dashboards built on WebSockets or similar technology.' },
   { icon: 'fa-brands fa-react', title: 'Next.js & React Frontend Development', desc: 'Modern, fast frontends built to consume your Node.js backend seamlessly.' },
@@ -82,7 +82,7 @@ const PROCESS = [
 const FAQS = [
   { q: 'Why choose Node.js over other backend technologies?', a: 'Node.js excels at real-time, high-concurrency applications and lets teams use JavaScript across the entire stack, speeding up development and reducing context-switching.' },
   { q: 'Do you build the frontend as well as the backend?', a: 'Yes. We build full-stack applications with Next.js or React frontends consuming a Node.js backend, or backend-only if you have an existing frontend team.' },
-  { q: 'How long does a custom Node.js application take to build?', a: 'Depends heavily on scope — a focused API or tool might take four to six weeks, while a full platform can take several months.' },
+  { q: 'How long does a custom Node.js application take to build?', a: 'Depends heavily on scope, a focused API or tool might take four to six weeks, while a full platform can take several months.' },
   { q: 'Can you add real-time features to our existing application?', a: 'Yes. We regularly add WebSocket-based real-time features like chat, notifications, and live dashboards to existing applications.' },
   { q: 'What does your technical specification process involve?', a: 'We define the architecture, data model, user flows, and integrations in writing, agreed by you before any development begins.' },
   { q: 'Do you provide ongoing support after launch?', a: 'Yes, on a month-to-month basis, covering security patches, bug fixes, and new feature development.' },
@@ -169,7 +169,7 @@ export default function NodeDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build custom Node.js applications and APIs —{' '}
+                  We design and build custom Node.js applications and APIs,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>real-time features, scalable backends</span>, and full-stack platforms built to specification.
                 </p>
 
@@ -248,7 +248,7 @@ export default function NodeDevelopmentPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>architects before writing code</span> — then builds it tested, documented, and ready to scale.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>architects before writing code</span>, then builds it tested, documented, and ready to scale.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -405,7 +405,7 @@ export default function NodeDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Node.js Projects to Struggle — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Node.js Projects to Struggle, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most Node.js frustration traces back to one of these four causes.
               </p>
@@ -520,7 +520,7 @@ export default function NodeDevelopmentPage() {
                   A free technical consultation, before you commit to anything.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

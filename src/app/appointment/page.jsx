@@ -23,14 +23,14 @@ const CALL_TYPES = [
 ];
 
 const EXPECT_STEPS = [
-  { num: '01', title: 'Pick a Slot.', body: 'Choose the date and time that works for you. No long waits — slots are available within 24 hours.' },
-  { num: '02', title: 'We Prepare.', body: 'Before the call we review your business, your goals, and prepare real, actionable ideas — not a generic pitch.' },
+  { num: '01', title: 'Pick a Slot.', body: 'Choose the date and time that works for you. No long waits, slots are available within 24 hours.' },
+  { num: '02', title: 'We Prepare.', body: 'Before the call we review your business, your goals, and prepare real, actionable ideas, not a generic pitch.' },
   { num: '03', title: 'You Get Clarity.', body: 'Walk away with a clear growth plan, honest recommendations, and next steps you can act on immediately.' },
 ];
 
 const CONTACT_QUICK = [
   { icon: 'fa-solid fa-phone',    label: 'Call Us',  text: '+91 70110 41363', href: 'tel:+917011041363' },
-  { icon: 'fa-solid fa-envelope', label: 'Email',    text: 'hello@isuremedia.com', href: 'mailto:hello@isuremedia.com' },
+  { icon: 'fa-solid fa-envelope', label: 'Email',    text: 'info@isuremedia.com', href: 'mailto:info@isuremedia.com' },
   { icon: 'fa-solid fa-clock',    label: 'Hours',    text: 'Mon–Fri 9 AM – 7 PM IST' },
   { icon: 'fa-solid fa-globe',    label: 'Time Zone', text: 'All timings are IST (UTC+5:30)' },
 ];
@@ -156,7 +156,7 @@ export default function AppointmentPage() {
                   Book a Free Strategy Call.
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 40 }}>
-                  Pick a time that works for you. We show up prepared — with real ideas for your business, not a generic pitch.
+                  Pick a time that works for you. We show up prepared, with real ideas for your business, not a generic pitch.
                 </p>
 
                 {/* CTA Buttons */}
@@ -192,7 +192,7 @@ export default function AppointmentPage() {
                 </div>
               </div>
 
-              {/* RIGHT — quick info */}
+              {/* RIGHT, quick info */}
               <div className="appt-quick-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                 {CONTACT_QUICK.map(c => (
                   <div key={c.label} style={{ background: '#fff', borderRadius: 14, padding: '20px 18px', boxShadow: '0 2px 16px rgba(30,77,195,.08)', border: '1px solid var(--color-border)' }}>
@@ -370,7 +370,7 @@ export default function AppointmentPage() {
                     <div style={{ marginBottom: 28 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
                         <p style={{ fontFamily: J, fontSize: 12, fontWeight: 700, letterSpacing: '.07em', textTransform: 'uppercase', color: 'var(--color-primary)', margin: 0 }}>Select Time</p>
-                        <span style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>— {formatDate(selDate)}</span>
+                        <span style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>, {formatDate(selDate)}</span>
                       </div>
                       <div className="time-slot-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 8 }}>
                         {TIME_SLOTS.map(t => {

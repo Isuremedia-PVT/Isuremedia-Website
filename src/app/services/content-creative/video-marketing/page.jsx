@@ -20,11 +20,11 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-video', title: 'The highest-performing content format', desc: 'Video consistently outperforms static posts and text on every major platform — more reach, more watch time, more action taken.' },
+  { icon: 'fa-solid fa-video', title: 'The highest-performing content format', desc: 'Video consistently outperforms static posts and text on every major platform, more reach, more watch time, more action taken.' },
   { icon: 'fa-solid fa-chart-line', title: 'Retention that compounds', desc: 'A well-edited video holds attention through the pattern interrupts, pacing, and hooks that keep viewers watching to the end.' },
-  { icon: 'fa-solid fa-closed-captioning', title: 'Captioned for silent viewing', desc: 'The majority of social video is watched with the sound off — without captions, the message never lands.' },
-  { icon: 'fa-solid fa-mobile-screen', title: 'Built for the platform, not just posted to it', desc: 'A vertical Reel edited like a landscape ad underperforms — every format is cut for how and where it will actually be watched.' },
-  { icon: 'fa-solid fa-share-nodes', title: '12x more shared than text and images', desc: 'Video is shared far more than any other content type — the format that travels furthest on its own.' },
+  { icon: 'fa-solid fa-closed-captioning', title: 'Captioned for silent viewing', desc: 'The majority of social video is watched with the sound off, without captions, the message never lands.' },
+  { icon: 'fa-solid fa-mobile-screen', title: 'Built for the platform, not just posted to it', desc: 'A vertical Reel edited like a landscape ad underperforms, every format is cut for how and where it will actually be watched.' },
+  { icon: 'fa-solid fa-share-nodes', title: '12x more shared than text and images', desc: 'Video is shared far more than any other content type, the format that travels furthest on its own.' },
   { icon: 'fa-solid fa-bullseye', title: 'A consistent presence, not a one-off post', desc: 'One great video is a moment. A structured editing pipeline is a channel that keeps showing up.' },
 ];
 
@@ -35,62 +35,62 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const WHAT_WE_DESIGN = [
-  { icon: 'fa-solid fa-mobile-screen-button', title: 'Short-Form Social Editing', impact: 'Daily output', desc: 'Reels, TikToks, and Shorts cut for retention — hooks, pacing, and captions built for a feed scrolling past in seconds.' },
-  { icon: 'fa-brands fa-youtube', title: 'YouTube Video Editing', impact: 'Long-form', desc: 'Full-length videos edited for watch time and structure — cuts, pacing, graphics, and chapters that keep viewers on the video.' },
-  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Video Production', impact: 'Performance-first', desc: 'Video ad creative built to perform in paid feeds — hooks tested for scroll-stop, structured for conversion, not just cut for looks.' },
-  { icon: 'fa-solid fa-quote-right', title: 'Testimonial & Case Study Editing', impact: 'High trust', desc: 'Raw client interviews turned into polished proof assets — the social proof that actually gets watched to the end.' },
+  { icon: 'fa-solid fa-mobile-screen-button', title: 'Short-Form Social Editing', impact: 'Daily output', desc: 'Reels, TikToks, and Shorts cut for retention, hooks, pacing, and captions built for a feed scrolling past in seconds.' },
+  { icon: 'fa-brands fa-youtube', title: 'YouTube Video Editing', impact: 'Long-form', desc: 'Full-length videos edited for watch time and structure, cuts, pacing, graphics, and chapters that keep viewers on the video.' },
+  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Video Production', impact: 'Performance-first', desc: 'Video ad creative built to perform in paid feeds, hooks tested for scroll-stop, structured for conversion, not just cut for looks.' },
+  { icon: 'fa-solid fa-quote-right', title: 'Testimonial & Case Study Editing', impact: 'High trust', desc: 'Raw client interviews turned into polished proof assets, the social proof that actually gets watched to the end.' },
   { icon: 'fa-solid fa-closed-captioning', title: 'Motion Graphics & Captions', impact: 'Always captioned', desc: 'Animated captions, lower thirds, and motion graphics that make every video watchable with the sound off.' },
-  { icon: 'fa-solid fa-clone', title: 'Content Repurposing', impact: '10x output', desc: 'One podcast or webinar turned into a full month of short-form clips — maximum output from content you already recorded.' },
-  { icon: 'fa-solid fa-image', title: 'Thumbnail Design', impact: 'Click-through', desc: 'Thumbnails designed to earn the click — tested layouts, legible text, and imagery that stands out in a crowded feed.' },
-  { icon: 'fa-solid fa-file-signature', title: 'Video Strategy & Scripting', impact: 'Structured', desc: 'Hooks, structure, and scripts built before the camera rolls — so every video is edited from a plan, not guesswork.' },
+  { icon: 'fa-solid fa-clone', title: 'Content Repurposing', impact: '10x output', desc: 'One podcast or webinar turned into a full month of short-form clips, maximum output from content you already recorded.' },
+  { icon: 'fa-solid fa-image', title: 'Thumbnail Design', impact: 'Click-through', desc: 'Thumbnails designed to earn the click, tested layouts, legible text, and imagery that stands out in a crowded feed.' },
+  { icon: 'fa-solid fa-file-signature', title: 'Video Strategy & Scripting', impact: 'Structured', desc: 'Hooks, structure, and scripts built before the camera rolls, so every video is edited from a plan, not guesswork.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-calendar-check', title: 'Short-Form Editing Retainer', desc: 'A fixed monthly volume of Reels, TikToks, and Shorts — the predictable supply that keeps a social channel posting daily.' },
-  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Video Production', desc: 'Video ad creative for paid campaigns — hooks and structure built to perform, not just look good.' },
-  { icon: 'fa-brands fa-youtube', title: 'YouTube Channel Editing', desc: 'Full-length video editing on a recurring schedule — from raw footage to a published, on-brand upload.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Short-Form Editing Retainer', desc: 'A fixed monthly volume of Reels, TikToks, and Shorts, the predictable supply that keeps a social channel posting daily.' },
+  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Video Production', desc: 'Video ad creative for paid campaigns, hooks and structure built to perform, not just look good.' },
+  { icon: 'fa-brands fa-youtube', title: 'YouTube Channel Editing', desc: 'Full-length video editing on a recurring schedule, from raw footage to a published, on-brand upload.' },
   { icon: 'fa-solid fa-quote-right', title: 'Testimonial / Case Study Video', desc: 'Client interviews and case studies edited into polished proof assets for the website and sales process.' },
   { icon: 'fa-solid fa-clone', title: 'Content Repurposing Service', desc: 'Long-form podcasts, webinars, and interviews turned into a month of short-form clips for social.' },
   { icon: 'fa-solid fa-closed-captioning', title: 'Motion Graphics & Captions', desc: 'Animated captions, lower thirds, and branded motion graphics applied consistently across every video.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Video for Agencies', desc: 'Video editing delivered for your clients under your brand — no ISureMedia references, scalable across accounts.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Video for Agencies', desc: 'Video editing delivered for your clients under your brand, no ISureMedia references, scalable across accounts.' },
   { icon: 'fa-solid fa-file-signature', title: 'Video Strategy & Scripting', desc: 'Hooks, outlines, and scripts developed before filming so every shoot produces content that is easy to edit and easy to watch.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-mobile-screen-button', title: 'Brands posting daily social content', desc: 'Consistent short-form posting requires an editing pipeline, not a single editor working around other priorities.', img: 'https://picsum.photos/seed/vid-whofor-daily/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint — we scale to match demand.', img: 'https://picsum.photos/seed/vid-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative — we keep the pipeline fed so testing never stalls.', img: 'https://picsum.photos/seed/vid-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has — once they are edited into something worth sharing.', img: 'https://picsum.photos/seed/vid-whofor-coach/700/620' },
-  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content — we turn the backlog into a pipeline.', img: 'https://picsum.photos/seed/vid-whofor-footage/700/620' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint, we scale to match demand.', img: 'https://picsum.photos/seed/vid-whofor-agency/700/620' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative, we keep the pipeline fed so testing never stalls.', img: 'https://picsum.photos/seed/vid-whofor-ecom/700/620' },
+  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has, once they are edited into something worth sharing.', img: 'https://picsum.photos/seed/vid-whofor-coach/700/620' },
+  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content, we turn the backlog into a pipeline.', img: 'https://picsum.photos/seed/vid-whofor-footage/700/620' },
   { icon: 'fa-solid fa-display', title: 'SaaS companies needing demo and explainer videos', desc: 'Product walkthroughs and explainer videos that make a feature clear in under sixty seconds, not five minutes.', img: 'https://picsum.photos/seed/vid-whofor-saas/700/620' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-mobile-screen-button', title: 'We edit for the platform, not just the footage', desc: 'A vertical Reel, a YouTube upload, and a paid ad are cut differently — each is edited for how it will actually be watched.' },
-  { icon: 'fa-solid fa-closed-captioning', title: 'We caption everything for silent viewing', desc: 'Every video is captioned by default — the message lands whether the sound is on or off.' },
+  { icon: 'fa-solid fa-mobile-screen-button', title: 'We edit for the platform, not just the footage', desc: 'A vertical Reel, a YouTube upload, and a paid ad are cut differently, each is edited for how it will actually be watched.' },
+  { icon: 'fa-solid fa-closed-captioning', title: 'We caption everything for silent viewing', desc: 'Every video is captioned by default, the message lands whether the sound is on or off.' },
   { icon: 'fa-solid fa-swatchbook', title: 'We keep brand consistency across every video', desc: 'Fonts, colours, lower thirds, and pacing stay consistent so every video looks like it came from the same channel.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We work within your existing content system', desc: 'Video editing connects to the content calendar and campaign strategy — it isn’t handled in isolation from the rest of marketing.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We work within your existing content system', desc: 'Video editing connects to the content calendar and campaign strategy, it isn’t handled in isolation from the rest of marketing.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Structured turnaround times', desc: 'Short-form clips within 24 to 48 hours. Long-form edits with a clear timeline agreed at brief stage.' },
-  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Video editing for agency clients delivered under your brand — scalable across accounts with no ISureMedia references.' },
+  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Video editing for agency clients delivered under your brand, scalable across accounts with no ISureMedia references.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Brief & Content Audit', desc: 'Reviewing your raw footage, existing channels, and recurring video needs so no brief starts from scratch.' },
   { n: '02', title: 'Scripting & Outline', desc: 'Hooks, structure, and talking points confirmed before editing begins, for videos that need a script.' },
   { n: '03', title: 'Editing', desc: 'Cuts, pacing, captions, and motion graphics applied to the platform and objective the video is built for.' },
-  { n: '04', title: 'Revision', desc: 'Revisions included — pacing, captions, or structure refined until the video meets the brief.' },
+  { n: '04', title: 'Revision', desc: 'Revisions included, pacing, captions, or structure refined until the video meets the brief.' },
   { n: '05', title: 'Final Delivery', desc: 'Files delivered in every required format and aspect ratio, ready to publish or hand to your team.' },
   { n: '06', title: 'Asset Library Management', desc: 'For retainer clients, every raw and edited file is organised and accessible for future reuse.' },
 ];
 
 const FAQS = [
-  { q: 'What raw footage do you need from us?', a: 'Whatever you already have — phone footage, camera footage, screen recordings, webinars, or podcast recordings. We can also advise on simple filming setups if you are starting from scratch.' },
+  { q: 'What raw footage do you need from us?', a: 'Whatever you already have, phone footage, camera footage, screen recordings, webinars, or podcast recordings. We can also advise on simple filming setups if you are starting from scratch.' },
   { q: 'How fast can you turn around a video?', a: 'Short-form clips within 24 to 48 hours. Long-form YouTube edits take three to five business days. Full campaign video sets take five to ten business days.' },
   { q: 'Do you write scripts for our videos?', a: 'Yes, when needed. We can develop hooks, outlines, and full scripts before filming, or edit from footage you have already recorded.' },
   { q: 'Can you turn our existing webinars or podcasts into short clips?', a: 'Yes. Repurposing long-form recordings into a month of short-form clips is one of our most requested services.' },
-  { q: 'Do you provide captions and subtitles?', a: 'Every video is captioned by default — the majority of social video is watched with the sound off, so captions are never an add-on.' },
+  { q: 'Do you provide captions and subtitles?', a: 'Every video is captioned by default, the majority of social video is watched with the sound off, so captions are never an add-on.' },
   { q: 'Do you offer white-label video editing for agencies?', a: 'Yes. Video delivered for your clients under your brand, with no ISureMedia references, scalable across accounts.' },
-  { q: 'How do you handle revisions?', a: 'Revisions are included in every project — not an add-on cost — until the video meets the brief.' },
+  { q: 'How do you handle revisions?', a: 'Revisions are included in every project, not an add-on cost, until the video meets the brief.' },
   { q: 'Do you deliver source files?', a: 'Yes. Final delivery includes project files alongside exported final videos in every required format. You own the files.' },
 ];
 
@@ -173,7 +173,7 @@ export default function VideoMarketingPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We edit the short-form, ad, and YouTube video content that keeps a channel performing — Reels, TikToks, Shorts, testimonials, and ad creative,{' '}
+                  We edit the short-form, ad, and YouTube video content that keeps a channel performing, Reels, TikToks, Shorts, testimonials, and ad creative,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered consistently without an in-house editor</span>.
                 </p>
 
@@ -245,13 +245,13 @@ export default function VideoMarketingPage() {
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(24px,2.8vw,40px)', color: 'var(--color-navy)', lineHeight: 1.2, letterSpacing: '-0.4px', marginBottom: 24 }}>
-                  Video Is the Highest-Performing Format — and the Hardest to Produce Consistently.
+                  Video Is the Highest-Performing Format, and the Hardest to Produce Consistently.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Everyone knows video outperforms static content. Few teams can keep up with editing it — the raw footage piles up, the content calendar stalls, and the videos that do get posted are inconsistent in quality and pacing.
+                  Everyone knows video outperforms static content. Few teams can keep up with editing it, the raw footage piles up, the content calendar stalls, and the videos that do get posted are inconsistent in quality and pacing.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia provides the editing capacity your video content needs — short-form, long-form, and ad creative, delivered consistently and{' '}
+                  ISureMedia provides the editing capacity your video content needs, short-form, long-form, and ad creative, delivered consistently and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>cut for the platform it&apos;s built for</span>.
                 </p>
                 <a href="/contact"
@@ -296,11 +296,11 @@ export default function VideoMarketingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Edited, captioned video sees{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>up to 80% higher watch time</span> than raw or uncaptioned uploads — the edit is what turns footage into content that performs.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>up to 80% higher watch time</span> than raw or uncaptioned uploads, the edit is what turns footage into content that performs.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Video is shared{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>12x more than text and images combined</span> — but only when it&apos;s cut and captioned for how people actually watch.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>12x more than text and images combined</span>, but only when it&apos;s cut and captioned for how people actually watch.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unedited footage sitting on a hard drive produces nothing. A structured editing pipeline is what turns raw video into a channel that keeps growing.
@@ -373,7 +373,7 @@ export default function VideoMarketingPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Consistent Video Actually Produces.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Video doesn&apos;t replace a strong offer — but it determines how many people ever see it.
+                Video doesn&apos;t replace a strong offer, but it determines how many people ever see it.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>

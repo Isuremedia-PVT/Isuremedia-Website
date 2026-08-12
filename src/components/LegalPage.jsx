@@ -8,24 +8,24 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 function Block({ b }) {
   if (b.type === 'p') {
-    return <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px' }}>{b.text}</p>;
+    return <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px', overflowWrap: 'anywhere' }}>{b.text}</p>;
   }
   if (b.type === 'h3') {
-    return <h3 style={{ fontFamily: J, fontSize: 19, fontWeight: 800, color: 'var(--color-navy)', margin: '30px 0 14px' }}>{b.text}</h3>;
+    return <h3 style={{ fontFamily: J, fontSize: 19, fontWeight: 800, color: 'var(--color-navy)', margin: '30px 0 14px', overflowWrap: 'anywhere' }}>{b.text}</h3>;
   }
   if (b.type === 'h4') {
-    return <h4 style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: 'var(--color-navy)', margin: '22px 0 10px' }}>{b.text}</h4>;
+    return <h4 style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: 'var(--color-navy)', margin: '22px 0 10px', overflowWrap: 'anywhere' }}>{b.text}</h4>;
   }
   if (b.type === 'ul') {
     return (
-      <ul style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px', paddingLeft: 22 }}>
+      <ul style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px', paddingLeft: 22, overflowWrap: 'anywhere' }}>
         {b.items.map((it, i) => <li key={i} style={{ marginBottom: 8 }}>{it}</li>)}
       </ul>
     );
   }
   if (b.type === 'ol') {
     return (
-      <ol style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px', paddingLeft: 22 }}>
+      <ol style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, margin: '0 0 18px', paddingLeft: 22, overflowWrap: 'anywhere' }}>
         {b.items.map((it, i) => <li key={i} style={{ marginBottom: 8 }}>{it}</li>)}
       </ol>
     );
@@ -63,7 +63,7 @@ export default function LegalPage({
 
         {/* ── CONTENT ── */}
         <section style={{ padding: '80px 0 120px', background: '#fff' }}>
-          <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 40px' }}>
+          <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 40px', overflowWrap: 'anywhere' }}>
             {intro && (
               <div style={{ marginBottom: 56 }}>
                 {typeof intro === 'string'

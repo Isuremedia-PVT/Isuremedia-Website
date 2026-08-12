@@ -29,7 +29,7 @@ const industries = [
     icon: 'fa-solid fa-bullhorn',
     tag: 'White-Label Services',
     title: 'Marketing Agencies',
-    text: 'SEO, PPC, web builds, content, and more — all delivered under your brand when your team needs backup.',
+    text: 'SEO, PPC, web builds, content, and more, all delivered under your brand when your team needs backup.',
     img: '/industries/marketing-agencies.webp',
     bg: 'linear-gradient(155deg,#0a1f4e 0%,#133280 45%,#1E4DC3 100%)',
     shine: 'rgba(30,77,195,0.40)',
@@ -47,7 +47,7 @@ const industries = [
     icon: 'fa-solid fa-scale-balanced',
     tag: 'Legal Industry',
     title: 'Law Firms',
-    text: 'We make sure high-intent legal searchers find you first — from Google rankings to paid ads and reputation.',
+    text: 'We make sure high-intent legal searchers find you first, from Google rankings to paid ads and reputation.',
     img: '/industries/law-firms.webp',
     bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#0f3d7a 100%)',
     shine: 'rgba(0,35,83,0.50)',
@@ -56,7 +56,7 @@ const industries = [
     icon: 'fa-solid fa-wrench',
     tag: 'Local Services',
     title: 'Home Services',
-    text: 'HVAC, cleaning, contracting — your customers are searching right now. We make sure your business shows up.',
+    text: 'HVAC, cleaning, contracting, your customers are searching right now. We make sure your business shows up.',
     img: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=80',
     bg: 'linear-gradient(155deg,#1E4DC3 0%,#2563eb 50%,#3b82f6 100%)',
     shine: 'rgba(37,99,235,0.38)',
@@ -158,7 +158,7 @@ export default function Industries() {
         </p>
       </div>
 
-      {/* Carousel — full width */}
+      {/* Carousel, full width */}
       <div style={{ position: 'relative' }}>
 
         {/* Left arrow */}
@@ -270,7 +270,7 @@ export default function Industries() {
         .ind-card:hover .ind-desc { max-height: 120px !important; opacity: 1 !important; }
         .ind-card:hover .ind-line { width: 52px !important; }
 
-        /* Touch devices have no hover — always reveal the description */
+        /* Touch devices have no hover, always reveal the description */
         @media (hover: none) {
           .ind-overlay { background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.40) 55%, rgba(0,0,0,.08) 100%) !important; }
           .ind-desc { max-height: 120px !important; opacity: 1 !important; }

@@ -11,7 +11,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
   'Custom Shopify theme design and development',
-  'Store setup — products, collections, and checkout',
+  'Store setup, products, collections, and checkout',
   'Payment gateway and shipping configuration',
   'App integration for reviews, upsells, and subscriptions',
   'Speed optimisation for higher conversion rates',
@@ -21,9 +21,9 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-brands fa-shopify', title: 'Built specifically for e-commerce', desc: 'Unlike general-purpose platforms adapted for selling, Shopify was built from the ground up for online retail.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Hosting, security, and PCI compliance handled', desc: 'Shopify manages infrastructure and payment security natively — one less thing your team needs to worry about.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Hosting, security, and PCI compliance handled', desc: 'Shopify manages infrastructure and payment security natively, one less thing your team needs to worry about.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Fast by default, faster with the right build', desc: 'A well-configured Shopify store loads quickly out of the box, and even faster with proper theme optimisation.' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'A massive app ecosystem for every need', desc: 'Reviews, subscriptions, upsells, loyalty programs — thousands of apps extend functionality without custom development.' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'A massive app ecosystem for every need', desc: 'Reviews, subscriptions, upsells, loyalty programs, thousands of apps extend functionality without custom development.' },
   { icon: 'fa-solid fa-chart-line', title: 'Scales from first sale to enterprise volume', desc: 'Shopify Plus supports high-volume, multi-currency, and multi-storefront operations as the business grows.' },
   { icon: 'fa-solid fa-cart-shopping', title: 'Checkout conversion built into the platform', desc: 'Shopify’s checkout is continuously optimised and consistently converts better than most custom-built alternatives.' },
 ];
@@ -42,8 +42,8 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Shopify Store Audit', desc: 'Speed, conversion, app usage, and checkout flow — what to fix first on an existing store.', img: '/hire/shopify/Shopify Developer  custom store.webp' },
-  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Theme Design & Development', desc: 'Bespoke storefront design built as a fast, on-brand Shopify theme — not a generic template.', img: '/hire/shopify/theme dev.webp' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Shopify Store Audit', desc: 'Speed, conversion, app usage, and checkout flow, what to fix first on an existing store.', img: '/hire/shopify/Shopify Developer  custom store.webp' },
+  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Theme Design & Development', desc: 'Bespoke storefront design built as a fast, on-brand Shopify theme, not a generic template.', img: '/hire/shopify/theme dev.webp' },
   { icon: 'fa-solid fa-store', title: 'Store Setup & Configuration', desc: 'Products, collections, variants, and checkout configured properly from the start.', img: '/hire/shopify/app dev.webp' },
   { icon: 'fa-solid fa-credit-card', title: 'Payment & Shipping Setup', desc: 'Gateways, tax rules, and shipping configuration set up to match your fulfilment process.', img: '/hire/shopify/cheackout.webp' },
   { icon: 'fa-solid fa-puzzle-piece', title: 'App Integration', desc: 'Reviews, upsells, subscriptions, and loyalty apps integrated cleanly, without bloating the storefront.', img: '/hire/shopify/integrayions.webp' },
@@ -54,7 +54,7 @@ const SERVICES = [
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-cart-shopping', title: 'Brands launching a new online store', desc: 'A properly built Shopify store from day one avoids the rebuild most fast-launched stores eventually need.', img: 'https://picsum.photos/seed/shopify-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing stores with slow load times or low conversion', desc: 'Most Shopify performance issues trace back to app bloat or unoptimised imagery — both fixable without a rebuild.', img: 'https://picsum.photos/seed/shopify-whofor-slow/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing stores with slow load times or low conversion', desc: 'Most Shopify performance issues trace back to app bloat or unoptimised imagery, both fixable without a rebuild.', img: 'https://picsum.photos/seed/shopify-whofor-slow/700/620' },
   { icon: 'fa-solid fa-boxes-stacked', title: 'Growing catalogues outgrowing a DIY theme', desc: 'A free or purchased theme that worked at 50 products often breaks down visually and functionally at 500.', img: 'https://picsum.photos/seed/shopify-whofor-catalogue/700/620' },
   { icon: 'fa-solid fa-arrow-up-right-dots', title: 'High-volume brands considering Shopify Plus', desc: 'Multi-currency, multi-storefront, and high-traffic operations that need enterprise-grade infrastructure.', img: 'https://picsum.photos/seed/shopify-whofor-plus/700/620' },
   { icon: 'fa-solid fa-repeat', title: 'Subscription and recurring-revenue brands', desc: 'Subscription apps and checkout flows configured properly for recurring billing and retention.', img: 'https://picsum.photos/seed/shopify-whofor-sub/700/620' },
@@ -63,10 +63,10 @@ const WHO_FOR = [
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-gauge-high', title: 'We build for conversion, not just looks', desc: 'Every design decision considers checkout flow, mobile experience, and load time alongside visual appeal.' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'We choose apps carefully', desc: 'Only the apps the store actually needs — fewer scripts, faster load times, less to manage long term.' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'We choose apps carefully', desc: 'Only the apps the store actually needs, fewer scripts, faster load times, less to manage long term.' },
   { icon: 'fa-solid fa-mobile-screen', title: 'We build mobile-first', desc: 'Tested thoroughly on mobile, where most Shopify traffic and sales actually happen.' },
   { icon: 'fa-solid fa-chart-line', title: 'We optimise checkout continuously', desc: 'Small, tested changes to reduce friction at the point where stores lose the most revenue.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What was built, why, and how it’s performing — reported clearly, not buried in technical jargon.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What was built, why, and how it’s performing, reported clearly, not buried in technical jargon.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing maintenance is month to month. You stay because the store keeps performing, not because of a contract.' },
 ];
 
@@ -81,7 +81,7 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'Why choose Shopify over WooCommerce or another platform?', a: 'Shopify offers managed hosting, security, and PCI compliance out of the box, with a purpose-built checkout that typically converts better than adapted, general-purpose platforms.' },
-  { q: 'Can you fix my existing slow Shopify store?', a: 'Yes. Most speed issues come from app bloat or unoptimised images — both fixable without rebuilding the entire store.' },
+  { q: 'Can you fix my existing slow Shopify store?', a: 'Yes. Most speed issues come from app bloat or unoptimised images, both fixable without rebuilding the entire store.' },
   { q: 'Do you build custom themes or use existing ones?', a: 'Both, depending on the project. We often start from a proven base theme and customise heavily, or build fully custom for brands with specific needs.' },
   { q: 'How long does a Shopify store build take?', a: 'A standard store typically takes three to five weeks depending on catalogue size and app integrations needed.' },
   { q: 'What is Shopify Plus and do I need it?', a: 'Shopify Plus is the enterprise tier for high-volume, multi-currency, or multi-storefront operations. Most growing stores don’t need it until they hit significant scale.' },
@@ -170,7 +170,7 @@ export default function ShopifyDevelopmentPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design and build{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>fast, conversion-focused Shopify stores</span> — from first launch to Shopify Plus scale, without the app bloat that slows most stores down.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>fast, conversion-focused Shopify stores</span>, from first launch to Shopify Plus scale, without the app bloat that slows most stores down.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -248,7 +248,7 @@ export default function ShopifyDevelopmentPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>lean, fast Shopify stores</span> — and helps existing stores cut the bloat that&apos;s quietly costing them conversions.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>lean, fast Shopify stores</span>, and helps existing stores cut the bloat that&apos;s quietly costing them conversions.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,7 +292,7 @@ export default function ShopifyDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Shopify handles{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hosting, security, and PCI compliance</span> natively — the platform isn&apos;t the bottleneck.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hosting, security, and PCI compliance</span> natively, the platform isn&apos;t the bottleneck.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A lean build with{' '}
@@ -405,7 +405,7 @@ export default function ShopifyDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Shopify Stores to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Shopify Stores to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most Shopify frustration traces back to one of these four causes.
               </p>
@@ -450,7 +450,7 @@ export default function ShopifyDevelopmentPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our Shopify Development Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Speed, and Ongoing Care — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Speed, and Ongoing Care, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -520,7 +520,7 @@ export default function ShopifyDevelopmentPage() {
                   A free consultation will show you what your current store is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

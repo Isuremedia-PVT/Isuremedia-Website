@@ -8,7 +8,7 @@ export default function ReviewsStrip() {
           {/* Google */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Google.png" alt="Google Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            <img src="/images/Google.webp" alt="Google Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
           </div>
 
           <div className="rs-divider" style={{ width: 1, height: 48, background: 'var(--color-border)', alignSelf: 'center', margin: '0 auto' }} />
@@ -16,7 +16,7 @@ export default function ReviewsStrip() {
           {/* Upwork */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/upwork.png" alt="Upwork Reviews" className="rs-img" style={{ height: 110, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            <img src="/images/upwork.webp" alt="Upwork Reviews" className="rs-img" style={{ height: 110, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
           </div>
 
           <div className="rs-divider" style={{ width: 1, height: 48, background: 'var(--color-border)', alignSelf: 'center', margin: '0 auto' }} />
@@ -24,7 +24,7 @@ export default function ReviewsStrip() {
           {/* Client Reviews */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Client.png" alt="Client Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            <img src="/images/Client.webp" alt="Client Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
           </div>
 
         </div>

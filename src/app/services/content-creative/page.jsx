@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (Content & Creative) ───────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/casestudy/seo-card-image-case-study-Dr_Daniel.webp',
     client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
     intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
     quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
@@ -21,12 +21,12 @@ const RELATED_CASES = [
       { val: '0 → 800+', label: 'Followers',        sub: 'in 7 months',              icon: 'fa-solid fa-users' },
       { val: '1',        label: 'Podcast Recording', sub: 'became weeks of content', icon: 'fa-solid fa-video' },
     ],
-    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content — growing the account from 0 to 800+ engaged followers in 7 months.',
+    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content, growing the account from 0 to 800+ engaged followers in 7 months.',
     link: '/case-studies/plastic-surgeon-instagram-brand-growth',
     linkLabel: "Read Dr. Golshani's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Garnus India',
     intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
     quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
@@ -34,7 +34,7 @@ const RELATED_CASES = [
       { val: '0 → 447', label: 'Followers',     sub: 'fully organic, in 6 months', icon: 'fa-solid fa-users' },
       { val: '50-60k+', label: 'Organic Views', sub: 'across the period',          icon: 'fa-solid fa-eye' },
     ],
-    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy — growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
+    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy, growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
     link: '/case-studies/ecommerce-instagram-organic-growth-garnus',
     linkLabel: "Read Garnus India's Case Study",
   },
@@ -46,13 +46,13 @@ const SERVICES = [
   {
     title: 'SEO Blog Writing',
     icon: 'fa-solid fa-pen-nib',
-    desc: <>Most businesses publish blog content that nobody finds because it was never built to rank. Every article starts with keyword research and search intent mapping so the content targets searches your buyers are actually making. No keyword stuffing, no filler — long-form articles that rank, get read, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build topical authority</span>.</>,
+    desc: <>Most businesses publish blog content that nobody finds because it was never built to rank. Every article starts with keyword research and search intent mapping so the content targets searches your buyers are actually making. No keyword stuffing, no filler, long-form articles that rank, get read, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build topical authority</span>.</>,
     href: '/services/content-creative',
   },
   {
     title: 'Graphic Design',
     icon: 'fa-solid fa-palette',
-    desc: 'Every marketing channel your business uses needs design that matches — social posts, email headers, ad banners, infographics, pitch decks, and presentation assets. We produce brand-aligned design across every format so your business looks consistent everywhere. No freelancers, no style inconsistency, no template-look design.',
+    desc: 'Every marketing channel your business uses needs design that matches, social posts, email headers, ad banners, infographics, pitch decks, and presentation assets. We produce brand-aligned design across every format so your business looks consistent everywhere. No freelancers, no style inconsistency, no template-look design.',
     href: '/services/content-creative',
   },
   {
@@ -77,30 +77,30 @@ const SERVICES = [
 
 const TIMELINE_STEPS = [
   { num: 1, period: 'Brief, Discovery, and Strategy', desc: 'Before we write a word or open a design file, we understand your business, audience, and what the piece needs to do. For content, we do keyword research and map a calendar; for creative work, we study your brand and competitors first. You get a clear plan before any production begins.' },
-  { num: 2, period: 'Production', desc: 'Our writers, designers, and editors work to the brief. Every piece is built around a specific goal — rank for this keyword, hit this click-through rate, communicate this brand value. First drafts are reviewed internally before they reach you, already checked and polished.' },
-  { num: 3, period: 'Review and Approval', desc: <>You review every piece before it is published or handed over. If something needs to change, we change it — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one or two revision rounds</span> as standard. Our goal is to get it right, not hit a delivery number. Nothing goes live without your sign-off.</> },
-  { num: 4, period: 'Performance Tracking and Iteration', desc: 'After content is published or creatives go live, we track what performs — which articles are ranking, which ads are converting, what needs refreshing. Content and creative are not set-and-forget assets. We monitor, report, and improve every month.' },
+  { num: 2, period: 'Production', desc: 'Our writers, designers, and editors work to the brief. Every piece is built around a specific goal, rank for this keyword, hit this click-through rate, communicate this brand value. First drafts are reviewed internally before they reach you, already checked and polished.' },
+  { num: 3, period: 'Review and Approval', desc: <>You review every piece before it is published or handed over. If something needs to change, we change it, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one or two revision rounds</span> as standard. Our goal is to get it right, not hit a delivery number. Nothing goes live without your sign-off.</> },
+  { num: 4, period: 'Performance Tracking and Iteration', desc: 'After content is published or creatives go live, we track what performs, which articles are ranking, which ads are converting, what needs refreshing. Content and creative are not set-and-forget assets. We monitor, report, and improve every month.' },
 ];
 
 const DIFFERENTIATORS = [
   { dark: true,  icon: 'fa-solid fa-people-group',  title: 'Writers, Designers, and Editors Under One Roof', desc: 'Your SEO content, ad creatives, brand design, and video all come from the same team, so your voice and visual style stay consistent across every channel. No briefing three different agencies and hoping they talk to each other.' },
-  { dark: false, icon: 'fa-solid fa-circle-check',  title: 'No Long-Term Contracts',                          desc: 'We earn your business every month by producing content that performs. No 12-month retainers, no penalties for pausing, no pressure to stay — you stay because the results are there.' },
+  { dark: false, icon: 'fa-solid fa-circle-check',  title: 'No Long-Term Contracts',                          desc: 'We earn your business every month by producing content that performs. No 12-month retainers, no penalties for pausing, no pressure to stay, you stay because the results are there.' },
   { dark: false, icon: 'fa-solid fa-paintbrush',     title: 'Built for Your Brand, Not a Template',            desc: 'We learn your brand voice, visual style, and audience before we produce anything. Every piece matches how you communicate, not how a generic agency template does. If we need to match an existing brand, we match it exactly.' },
-  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Assisted Production for Scale',                desc: <>For clients who need volume, we use AI to speed up production without removing human judgment. Every piece is still planned, shaped, and approved by a real editor or designer — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>more output at the same quality</span>, not lower quality.</> },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI-Assisted Production for Scale',                desc: <>For clients who need volume, we use AI to speed up production without removing human judgment. Every piece is still planned, shaped, and approved by a real editor or designer, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>more output at the same quality</span>, not lower quality.</> },
   { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',          desc: 'You know what is being produced, when it lands, and what it is trying to achieve. Monthly reports cover output and performance, and you always have access to your own files and analytics.' },
-  { dark: false, icon: 'fa-solid fa-building',       title: 'White-Label Content for Agencies',                desc: 'If you run a marketing agency, we produce content and creative for your clients under your brand — blog content, ad creatives, social posts, and design, all published as your work. No Isuremedia footprint.' },
+  { dark: false, icon: 'fa-solid fa-building',       title: 'White-Label Content for Agencies',                desc: 'If you run a marketing agency, we produce content and creative for your clients under your brand, blog content, ad creatives, social posts, and design, all published as your work. No Isuremedia footprint.' },
 ];
 
 const FAQS = [
   { q: 'Do you write SEO content or just general blog posts?', a: 'Every piece starts with keyword research and search intent analysis. We write for the searches your buyers are actually making, not just topics that sound relevant, structured for both Google and real readers. Every piece has a target keyword, a clear structure, and a purpose.' },
   { q: 'Do you use AI to write content?', a: 'We use AI to speed up parts of production where it makes sense, but every piece is still planned, written, and edited by a human who knows your industry and brand. The output sounds like your brand, not a language model, and AI-assisted production lets us deliver more without dropping quality.' },
-  { q: 'Can you match our existing brand voice and visual style?', a: 'Yes. Before we produce anything, we study your existing content, design assets, and brand guidelines — building them as part of the work if you do not have any. Your audience will not be able to tell that an agency was involved.' },
+  { q: 'Can you match our existing brand voice and visual style?', a: 'Yes. Before we produce anything, we study your existing content, design assets, and brand guidelines, building them as part of the work if you do not have any. Your audience will not be able to tell that an agency was involved.' },
   { q: 'What formats do you cover?', a: 'SEO blog writing, website copywriting, ad copy, email newsletters, social media captions and creative, graphic design, ad creative design, video production and editing, and full brand identity including logo, colour system, and typography. One team handles all of it.' },
   { q: 'How quickly can you turn around content?', a: <>Most pieces come back within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>five to seven business days</span>. Ad creatives and social graphics are usually faster; brand identity projects depend on scope. If you have a launch deadline, tell us and we will build the schedule around it.</> },
   { q: 'How many revision rounds are included?', a: 'Two rounds as standard. Most work is finalised within one or two because we do the research and briefing properly upfront. If something needs more work, we do not charge extra for it.' },
   { q: 'Do you handle content distribution or just production?', a: 'Both. For clients who need a full content marketing service, we manage the publishing calendar, scheduling, and analytics tracking on top of production. For clients who want to manage distribution themselves, we hand over assets ready to publish.' },
-  { q: 'Do you offer white-label content for agencies?', a: 'Yes. We produce blog content, ad creatives, social posts, and design assets for agency clients under your brand. Your clients see your name on everything — we have no footprint in the relationship.' },
-  { q: 'Can you produce content across different industries?', a: 'Yes, across every major industry including technology, e-commerce, legal, healthcare, home services, finance, and professional services. Our research and briefing process gets us up to speed before we write anything — no generic content that could apply to any business.' },
+  { q: 'Do you offer white-label content for agencies?', a: 'Yes. We produce blog content, ad creatives, social posts, and design assets for agency clients under your brand. Your clients see your name on everything, we have no footprint in the relationship.' },
+  { q: 'Can you produce content across different industries?', a: 'Yes, across every major industry including technology, e-commerce, legal, healthcare, home services, finance, and professional services. Our research and briefing process gets us up to speed before we write anything, no generic content that could apply to any business.' },
 ];
 
 /* ── FAQ 2-COL ────────────────────────────────────────────────────── */
@@ -170,11 +170,11 @@ export default function ContentCreativePage() {
             </h1>
 
             <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We write, design, and produce every content asset your marketing needs — SEO blog content that ranks, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>ad creatives that stop the scroll</span>, graphic design that fits your brand, videos that convert. All in-house, all built to perform.
+              We write, design, and produce every content asset your marketing needs, SEO blog content that ranks, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>ad creatives that stop the scroll</span>, graphic design that fits your brand, videos that convert. All in-house, all built to perform.
             </p>
 
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
@@ -219,7 +219,7 @@ export default function ContentCreativePage() {
                   { num:'05', title:'One asset, reused everywhere', text:<>A single well-made piece of content can become a blog post, five social posts, and an ad. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Good creative multiplies instead of getting used once</span>.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
-                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num} —</div>
+                    <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
                     <div>
                       <div style={{ fontFamily:J, fontSize:15, fontWeight:700, color:'var(--color-navy)', marginBottom:6, lineHeight:1.3 }}>{item.title}</div>
                       <div style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.78 }}>{item.text}</div>
@@ -239,7 +239,7 @@ export default function ContentCreativePage() {
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 auto 22px', maxWidth:560 }}>
                 Isuremedia produces every content format your marketing needs. Same team. Same brand voice. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Consistent quality across every channel</span>.
               </p>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 30px rgba(255,176,0,.52)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 24px rgba(255,176,0,.38)'; }}
@@ -284,7 +284,7 @@ export default function ContentCreativePage() {
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
                   Book a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>free consultation</span>. Tell us what you are trying to grow and we will show you what would make it work.
                 </p>
-                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
+                <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                 >
@@ -309,10 +309,10 @@ export default function ContentCreativePage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Good content does two things at once — it attracts the right people and moves them toward a decision. Blog posts that rank bring in people already searching for what you sell. Ad creative that hits the right pain <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stops the scroll</span>. Both compound over time.
+                  Good content does two things at once, it attracts the right people and moves them toward a decision. Blog posts that rank bring in people already searching for what you sell. Ad creative that hits the right pain <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stops the scroll</span>. Both compound over time.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  We do not just produce content — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we build content engines</span>. Strategy, production, distribution, and measurement work together so every piece serves a purpose and the output gets sharper every month.
+                  We do not just produce content, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we build content engines</span>. Strategy, production, distribution, and measurement work together so every piece serves a purpose and the output gets sharper every month.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   Whether you need one blog post a week or a hundred ad creatives a month, we scale to meet it <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without compromising on quality</span>.
@@ -389,10 +389,10 @@ export default function ContentCreativePage() {
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>Every channel you run depends on content and creative to work.</strong> A single well-structured article can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>rank and convert for years</span> — and Isuremedia produces every format, content, creative, and brand guidelines, under one roof, so everything stays consistent and keeps compounding.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Every channel you run depends on content and creative to work.</strong> A single well-structured article can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>rank and convert for years</span>, and Isuremedia produces every format, content, creative, and brand guidelines, under one roof, so everything stays consistent and keeps compounding.
                   </p>
                 </div>
-                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
+                <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
                 >
@@ -435,7 +435,7 @@ export default function ContentCreativePage() {
               ))}
             </div>
             <div style={{ textAlign:'center', marginTop:56 }}>
-              <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
+              <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.05em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
@@ -480,7 +480,7 @@ export default function ContentCreativePage() {
                 </div>
                 <div style={{ fontFamily:J, fontSize:11, fontWeight:700, color:'var(--color-primary)', letterSpacing:'.10em', textTransform:'uppercase', marginBottom:10 }}>GROWTH</div>
                 <div style={{ fontFamily:J, fontSize:22, fontWeight:900, color:'var(--color-navy)', marginBottom:8 }}>Full Content Programme</div>
-                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full content strategy — <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>SEO, social, email, and creative</span> — for growing brands.</p>
+                <p style={{ fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.6, margin:'0 0 24px' }}>Full content strategy, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>SEO, social, email, and creative</span>, for growing brands.</p>
                 <ul style={{ listStyle:'none', margin:'0 0 32px', padding:0, display:'flex', flexDirection:'column', gap:12 }}>
                   {['8+ SEO blog posts per month','Social media management (4 platforms)','Email marketing campaigns','Ad creative design','Short-form video content','Monthly strategy & performance review'].map((f,i)=>(
                     <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:10, fontFamily:I, fontSize:14, color:'var(--color-text-muted)', lineHeight:1.4 }}>

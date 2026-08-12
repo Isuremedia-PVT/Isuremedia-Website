@@ -23,7 +23,7 @@ const BRIDGE_ITEMS = [
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-certificate', title: 'Certification requirements', desc: 'Google Ads and Meta Blueprint certifications take real time to earn and maintain, and platforms change their requirements often. Most agencies cannot justify that investment for one or two paid media clients.' },
   { icon: 'fa-solid fa-calendar-days', title: 'Daily account management burden', desc: 'Bid adjustments, budget pacing, search term reviews, and audience refinement need daily attention. That is a full role, not a side task squeezed between other client work.' },
-  { icon: 'fa-solid fa-images', title: 'Creative production needs', desc: 'Ad creative that performs needs testing, iteration, and platform-specific formats — static, video, carousel. Most agencies without a dedicated media buyer do not have this pipeline either.' },
+  { icon: 'fa-solid fa-images', title: 'Creative production needs', desc: 'Ad creative that performs needs testing, iteration, and platform-specific formats, static, video, carousel. Most agencies without a dedicated media buyer do not have this pipeline either.' },
   { icon: 'fa-solid fa-arrows-spin', title: 'Platform algorithm changes', desc: 'Google and Meta update targeting, bidding, and delivery logic constantly. Campaigns optimised six months ago can quietly underperform without someone watching for the shift.' },
   { icon: 'fa-solid fa-heart-crack', title: 'Client retention risk from poor ad performance', desc: 'A client paying for ad management they are not confident in is a client who starts shopping for a new agency. Certified, hands-on management protects that relationship.' },
   { icon: 'fa-solid fa-sack-dollar', title: 'Margin without headcount', desc: 'Hiring an in-house PPC specialist is a five-figure annual commitment before a single dollar of ad spend is managed. White-label delivery gets you the margin without the payroll.' },
@@ -37,12 +37,12 @@ const CARD_VARIANTS = [
 
 const KEY_FACTORS = [
   { icon: 'fa-solid fa-medal', title: 'Certified Google, Meta & LinkedIn Specialists', impact: 'Highest impact', desc: 'Every account is managed by a certified specialist on the platform it runs on, not a generalist spreading attention across every channel at once.' },
-  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy Before Launch', impact: 'High impact', desc: 'No campaign goes live without a documented strategy — audience targeting, budget allocation, and platform selection matched to the client\'s actual goal.' },
+  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy Before Launch', impact: 'High impact', desc: 'No campaign goes live without a documented strategy, audience targeting, budget allocation, and platform selection matched to the client\'s actual goal.' },
   { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', impact: 'High impact', desc: 'Pixels, conversion events, and attribution configured correctly before spend begins, so every reported result reflects what actually happened.' },
   { icon: 'fa-solid fa-flask', title: 'Creative Testing', impact: 'High impact', desc: 'Multiple ad variants tested against each other on every active campaign, with underperformers rotated out based on real data, not guesswork.' },
   { icon: 'fa-solid fa-ban', title: 'Negative Keyword Hygiene', impact: 'Medium impact', desc: 'Search term reports reviewed on a schedule and negative keywords added continuously, keeping budget away from searches that were never going to convert.' },
-  { icon: 'fa-solid fa-file-shield', title: 'NDA-Protected Fulfillment', impact: 'Medium impact', desc: 'Every partnership is covered by a full NDA. We never contact your clients directly — all communication and delivery routes through your agency.' },
-  { icon: 'fa-solid fa-chart-bar', title: 'Branded Reporting', impact: 'Contextual', desc: 'Performance reports carry your logo, your colours, and your name — a polished document your clients see as coming from your agency.' },
+  { icon: 'fa-solid fa-file-shield', title: 'NDA-Protected Fulfillment', impact: 'Medium impact', desc: 'Every partnership is covered by a full NDA. We never contact your clients directly, all communication and delivery routes through your agency.' },
+  { icon: 'fa-solid fa-chart-bar', title: 'Branded Reporting', impact: 'Contextual', desc: 'Performance reports carry your logo, your colours, and your name, a polished document your clients see as coming from your agency.' },
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Monthly Optimization Reviews', impact: 'Growing fast', desc: 'Every account gets a monthly review covering performance trends, budget reallocation, and recommendations for the next optimisation cycle.' },
 ];
 
@@ -50,7 +50,7 @@ const SERVICES = [
   { icon: 'fa-brands fa-google', title: 'Google Ads Management', desc: 'Search, Display, Shopping, and Performance Max campaigns built, launched, and optimised inside the client\'s own ad account.' },
   { icon: 'fa-brands fa-meta', title: 'Meta Ads Management', desc: 'Facebook and Instagram campaigns across awareness, lead generation, and conversion objectives, managed daily.' },
   { icon: 'fa-brands fa-linkedin', title: 'LinkedIn Ads Management', desc: 'B2B lead generation and sponsored content campaigns for clients targeting decision-makers by role, industry, and company size.' },
-  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy & Audience Targeting', desc: 'A documented strategy for every campaign — platform selection, audience definition, and budget allocation before launch.' },
+  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy & Audience Targeting', desc: 'A documented strategy for every campaign, platform selection, audience definition, and budget allocation before launch.' },
   { icon: 'fa-solid fa-images', title: 'Ad Creative Production', desc: 'Static, video, and carousel ad creative produced and tested across variants to find what actually converts.' },
   { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', desc: 'Pixels, conversion events, and attribution configured correctly so every reported result is one you can trust.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'Landing Page Review & CRO Recommendations', desc: 'Landing pages reviewed against best practice and specific, actionable recommendations delivered to lift conversion rate.' },
@@ -67,29 +67,29 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-medal', title: 'Certified specialists managing every account', desc: 'Google Ads and Meta Blueprint certified specialists manage each account on the platform they are certified in — not a generalist across every channel.' },
-  { icon: 'fa-solid fa-building-shield', title: 'Campaigns run in the client\'s own ad account', desc: 'Every campaign runs inside the client\'s ad account, not ours — full ownership and historical data stay with your client, where it belongs.' },
-  { icon: 'fa-solid fa-user-secret', title: 'Full NDA protection — clients never know', desc: 'A signed NDA covers every partnership. We never reach out to your clients directly, and ISureMedia appears nowhere in any client-facing material.' },
-  { icon: 'fa-solid fa-chart-bar', title: 'Branded reporting with your logo and colours', desc: 'Every performance report is built in your agency\'s branding — logo, colours, and name — ready to send without any editing on your end.' },
+  { icon: 'fa-solid fa-medal', title: 'Certified specialists managing every account', desc: 'Google Ads and Meta Blueprint certified specialists manage each account on the platform they are certified in, not a generalist across every channel.' },
+  { icon: 'fa-solid fa-building-shield', title: 'Campaigns run in the client\'s own ad account', desc: 'Every campaign runs inside the client\'s ad account, not ours, full ownership and historical data stay with your client, where it belongs.' },
+  { icon: 'fa-solid fa-user-secret', title: 'Full NDA protection, clients never know', desc: 'A signed NDA covers every partnership. We never reach out to your clients directly, and ISureMedia appears nowhere in any client-facing material.' },
+  { icon: 'fa-solid fa-chart-bar', title: 'Branded reporting with your logo and colours', desc: 'Every performance report is built in your agency\'s branding, logo, colours, and name, ready to send without any editing on your end.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Scale the number of accounts up or down as your client base changes. No annual contract, no minimum ad spend commitment to us.' },
   { icon: 'fa-solid fa-headset', title: 'One dedicated contact for all accounts', desc: 'A single point of contact at ISureMedia coordinates every account under your agency, so you are never chasing different specialists for updates.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Brief', desc: 'We take a detailed brief from your agency — client goals, target audience, budget, platform preference, and any existing account history.' },
+  { n: '01', title: 'Brief', desc: 'We take a detailed brief from your agency, client goals, target audience, budget, platform preference, and any existing account history.' },
   { n: '02', title: 'Strategy', desc: 'Our certified team builds a full campaign strategy including platform selection, audience targeting, budget allocation, and creative direction.' },
   { n: '03', title: 'Launch', desc: 'Campaigns go live inside the client\'s own ad account. We handle all setup, conversion tracking, and initial creative delivery.' },
-  { n: '04', title: 'Optimize', desc: 'Daily monitoring and optimisation — bid adjustments, budget pacing, negative keywords, and creative testing based on real performance data.' },
+  { n: '04', title: 'Optimize', desc: 'Daily monitoring and optimisation, bid adjustments, budget pacing, negative keywords, and creative testing based on real performance data.' },
   { n: '05', title: 'Report', desc: 'A branded monthly performance report delivered under your agency\'s name, ready to present to the client without any editing.' },
 ];
 
 const FAQS = [
   { q: 'How does NDA protection actually work?', a: 'Every partnership is covered by a signed NDA before any work begins. We never contact your clients directly, never reference ISureMedia in any deliverable, and route all communication through your agency.' },
   { q: 'Which ad platforms do you support?', a: 'Google Ads (Search, Display, Shopping, Performance Max), Meta Ads (Facebook and Instagram), and LinkedIn Ads for B2B lead generation. Most partners use us for one or two platforms and expand from there.' },
-  { q: 'Do campaigns run in our ad account or the client\'s?', a: 'The client\'s own ad account, always. We are granted access to manage it, but the account, its history, and its data belong to the client — not to us or your agency.' },
+  { q: 'Do campaigns run in our ad account or the client\'s?', a: 'The client\'s own ad account, always. We are granted access to manage it, but the account, its history, and its data belong to the client, not to us or your agency.' },
   { q: 'How are the reports branded?', a: 'Every monthly report carries your agency\'s logo, colour scheme, and name. You can send it to the client as-is or layer your own commentary on top before it goes out.' },
-  { q: 'Is there a minimum ad spend?', a: 'We work with accounts across a wide range of budgets. There is a modest minimum monthly ad spend for us to manage an account effectively — this is confirmed on your discovery call based on the platform and goal.' },
-  { q: 'How fast can a campaign launch?', a: 'Once we have the brief and account access, most campaigns launch within three to five business days — faster if conversion tracking and creative are already in place.' },
+  { q: 'Is there a minimum ad spend?', a: 'We work with accounts across a wide range of budgets. There is a modest minimum monthly ad spend for us to manage an account effectively, this is confirmed on your discovery call based on the platform and goal.' },
+  { q: 'How fast can a campaign launch?', a: 'Once we have the brief and account access, most campaigns launch within three to five business days, faster if conversion tracking and creative are already in place.' },
   { q: 'Do you handle landing pages too?', a: 'We review landing pages against best practice and provide specific CRO recommendations. Landing page builds themselves are handled through our white-label web development service.' },
   { q: 'What if a client wants LinkedIn ads specifically?', a: 'LinkedIn is fully supported for B2B lead generation and sponsored content campaigns, managed by a specialist familiar with LinkedIn\'s targeting and bidding model, which behaves differently than Google or Meta.' },
   { q: 'How is pricing and margin structured?', a: 'You are quoted a wholesale white-label management fee per account, and you set your own client-facing price. Most agencies mark up 40 to 60% above the wholesale rate.' },
@@ -97,12 +97,12 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { href: '/services/white-label', icon: 'fa-solid fa-building', title: 'White-Label Hub', desc: 'Overview of all white-label services — SEO, PPC, content, web design, and automation under your brand.' },
+  { href: '/services/white-label', icon: 'fa-solid fa-building', title: 'White-Label Hub', desc: 'Overview of all white-label services, SEO, PPC, content, web design, and automation under your brand.' },
   { href: '/services/white-label/white-label-seo', icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Resell full-stack SEO services under your agency brand with branded reports and scalable delivery.' },
-  { href: '/services/ppc-paid-marketing', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business — Google, Meta, and LinkedIn campaigns.' },
+  { href: '/services/ppc-paid-marketing', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, Google, Meta, and LinkedIn campaigns.' },
 ];
 
-/* ── FAQ 2-COL — matches the sibling white-label pages layout ── */
+/* ── FAQ 2-COL, matches the sibling white-label pages layout ── */
 function WLPFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -166,7 +166,7 @@ export default function WhiteLabelPPCPage() {
           <div className="ism-container">
             <div className="wlp-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Google, Meta, and LinkedIn Ads.{' '}
@@ -179,7 +179,7 @@ export default function WhiteLabelPPCPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We provide white-label Google Ads, Meta Ads, and LinkedIn Ads management for agencies — certified specialists running campaigns inside your clients' own ad accounts, fully NDA-protected, with branded monthly reports so{' '}
+                  We provide white-label Google Ads, Meta Ads, and LinkedIn Ads management for agencies, certified specialists running campaigns inside your clients' own ad accounts, fully NDA-protected, with branded monthly reports so{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>you own the client relationship</span>.
                 </p>
 
@@ -193,10 +193,10 @@ export default function WhiteLabelPPCPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="wlp-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/banner/white-label-ppc.png" alt="White-label PPC management for agencies" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/white-label-ppc.webp" alt="White-label PPC management for agencies" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-bullseye" style={{ color: '#fff', fontSize: 22 }} />
@@ -264,7 +264,7 @@ export default function WhiteLabelPPCPage() {
                   Clients ask for Google Ads, Meta Ads, and LinkedIn Ads constantly. Turning that work away or referring it out risks the relationship and leaves margin on the table. Hiring an in-house PPC specialist and keeping up certifications is a slow, expensive way to say yes.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia manages Google, Meta, and LinkedIn campaigns for your clients under full NDA protection — inside the client's own ad account, reported under your brand.{' '}
+                  ISureMedia manages Google, Meta, and LinkedIn campaigns for your clients under full NDA protection, inside the client's own ad account, reported under your brand.{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>You keep the client relationship and the margin</span>. We run the campaigns.
                 </p>
                 <a href="/contact"
@@ -309,15 +309,15 @@ export default function WhiteLabelPPCPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     White-label PPC means every campaign runs{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>inside your client's own ad account</span>, not ours — full ownership and historical data stay exactly where the client expects them to.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>inside your client's own ad account</span>, not ours, full ownership and historical data stay exactly where the client expects them to.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The whole engagement is covered by a signed NDA, so{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your clients never know ISureMedia exists</span> — only your agency, delivering the result.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your clients never know ISureMedia exists</span>, only your agency, delivering the result.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Every account is managed by a Google or Meta certified specialist, and every monthly report is built in{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's own branding</span> — ready to send without any editing.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's own branding</span>, ready to send without any editing.
                   </p>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function WhiteLabelPPCPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Certified Specialists */}
+                {/* Floating badge, Certified Specialists */}
                 <div className="wlp-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-medal" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -344,7 +344,7 @@ export default function WhiteLabelPPCPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — NDA Protected */}
+                {/* Floating badge, NDA Protected */}
                 <div className="wlp-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-file-shield" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -355,7 +355,7 @@ export default function WhiteLabelPPCPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Ad Accounts Managed */}
+                {/* Floating badge, Ad Accounts Managed */}
                 <div className="wlp-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bullseye" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -366,7 +366,7 @@ export default function WhiteLabelPPCPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Report Turnaround */}
+                {/* Floating badge, Report Turnaround */}
                 <div className="wlp-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-file-lines" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -651,7 +651,7 @@ export default function WhiteLabelPPCPage() {
               ))}
             </div>
             <p style={{ textAlign: 'center', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.7, maxWidth: 780, margin: '48px auto 0' }}>
-              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> Campaign launch after brief and account access — three to five business days. Daily optimisation runs continuously across every active account. Branded reports delivered monthly, or on your preferred cadence.
+              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> Campaign launch after brief and account access, three to five business days. Daily optimisation runs continuously across every active account. Branded reports delivered monthly, or on your preferred cadence.
             </p>
             <div style={{ textAlign: 'center', marginTop: 40 }}>
               <a href="/contact"

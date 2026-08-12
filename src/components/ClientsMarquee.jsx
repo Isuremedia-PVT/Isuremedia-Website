@@ -14,7 +14,7 @@ const clients = [
   { name: 'Think Holistic Fitness', src: '/company_logo/think-holistic-fitness.webp' },
   { name: 'CareGenius', src: '/company_logo/caregenius.webp' },
   { name: 'Blue Moth', src: '/company_logo/blue-moth.webp' },
-  { name: 'Leadium', src: '/company_logo/leadium.png' },
+  { name: 'Leadium', src: '/company_logo/leadium.webp' },
   // Existing clients
   { name: 'Andrea Petrone', src: '/company_logo/andrea-petrone.webp' },
   { name: 'Business Growth Machine', src: '/company_logo/business-growth-machine.webp' },
@@ -45,7 +45,7 @@ export default function ClientsMarquee() {
     <div style={{ background: '#F2F3F5', padding: '0', overflow: 'hidden' }}>
       <div className="cm-row" style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'stretch', minHeight: 96 }}>
 
-        {/* LEFT — label */}
+        {/* LEFT, label */}
         <div className="cm-label" style={{ flexShrink: 0, width: 260, display: 'flex', alignItems: 'center', padding: '20px 40px', borderRight: '1px solid var(--color-border)', background: '#F2F3F5' }}>
           <div>
             <div className="cm-eyebrow" style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.4, marginBottom: 4 }}>Trusted by</div>
@@ -55,7 +55,7 @@ export default function ClientsMarquee() {
           </div>
         </div>
 
-        {/* RIGHT — continuous marquee (desktop) */}
+        {/* RIGHT, continuous marquee (desktop) */}
         <div className="cm-marquee" style={{ flex: 1, minWidth: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center' }}>
           <div className="cm-fade" style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 80, background: 'linear-gradient(to right,#F2F3F5,transparent)', zIndex: 2, pointerEvents: 'none' }} />
           <div className="cm-fade" style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 80, background: 'linear-gradient(to left,#F2F3F5,transparent)', zIndex: 2, pointerEvents: 'none' }} />
@@ -74,7 +74,7 @@ export default function ClientsMarquee() {
           </div>
         </div>
 
-        {/* RIGHT — single-logo slide (mobile) */}
+        {/* RIGHT, single-logo slide (mobile) */}
         <div className="cm-single" style={{ flex: 1, minWidth: 0, display: 'none', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

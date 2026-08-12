@@ -207,15 +207,15 @@ export default function Navbar() {
       <div className="nav-top-bar" style={{ background: 'linear-gradient(130deg, #1840A0 0%, #1E4DC3 40%, #2F5FE8 75%, #3B6CF5 100%)', padding: '7px 0' }}>
         <div className="ism-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
-          {/* Left — social icons */}
+          {/* Left, social icons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             {[
-              { icon: 'fa-brands fa-linkedin-in',  href: '#' },
-              { icon: 'fa-brands fa-facebook-f',   href: '#' },
-              { icon: 'fa-brands fa-instagram',    href: '#' },
-              { icon: 'fa-brands fa-x-twitter',    href: '#' },
+              { icon: 'fa-brands fa-linkedin-in',  href: 'https://www.linkedin.com/company/isuremedia/' },
+              { icon: 'fa-brands fa-facebook-f',   href: 'https://www.facebook.com/Isuremedia2017/' },
+              { icon: 'fa-brands fa-instagram',    href: 'https://www.instagram.com/isuremedia/' },
+              { icon: 'fa-brands fa-x-twitter',    href: 'https://x.com/isuremedia_' },
             ].map(s => (
-              <a key={s.icon} href={s.href}
+              <a key={s.icon} href={s.href} target="_blank" rel="noopener noreferrer"
                 style={{ color: '#fff', fontSize: 12, textDecoration: 'none', transition: 'color .15s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
@@ -225,7 +225,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Right — phone, email, CTA */}
+          {/* Right, phone, email, CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
             <a href="tel:+917300007650" style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
@@ -234,12 +234,12 @@ export default function Navbar() {
               <i className="fa-solid fa-phone" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
               +91-73-0000-7650
             </a>
-            <a href="mailto:hello@isuremedia.com" style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
+            <a href="mailto:info@isuremedia.com" style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
               onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
             >
               <i className="fa-solid fa-envelope" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
-              hello@isuremedia.com
+              info@isuremedia.com
             </a>
             <a href="#cta"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '5px 14px', borderRadius: 6, fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', textTransform: 'uppercase', transition: 'all .15s' }}
@@ -337,7 +337,7 @@ export default function Navbar() {
 
                     {/* Content area */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 260px', padding: '24px 28px 28px', gap: 24 }}>
-                      {/* Links grid — 3 cols */}
+                      {/* Links grid, 3 cols */}
                       <div>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
                           <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', margin: 0 }}>{serviceCategories[activeServiceTab].label}</p>

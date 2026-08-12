@@ -21,10 +21,10 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-filter', title: 'A single page is not a funnel', desc: 'One landing page with one call to action leaves revenue on the table. A real funnel gives every visitor a structured path toward a sale.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Tracking shows exactly where you lose people', desc: 'Without step-by-step analytics, drop-off is invisible. Proper funnel tracking tells you exactly where visitors leave — and why.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Tracking shows exactly where you lose people', desc: 'Without step-by-step analytics, drop-off is invisible. Proper funnel tracking tells you exactly where visitors leave, and why.' },
   { icon: 'fa-solid fa-cart-plus', title: 'Order bumps lift average order value instantly', desc: 'A well-placed order bump at checkout is one of the highest-ROI additions you can make, and most funnels never offer one.' },
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Upsells capture buyer momentum', desc: 'The moment right after a purchase is the highest-intent moment you’ll ever have with a customer. A funnel with no upsell wastes it.' },
-  { icon: 'fa-solid fa-arrows-split-up-and-left', title: 'The right platform depends on the funnel, not the trend', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built — the right choice depends on your offer and business, not what’s popular.' },
+  { icon: 'fa-solid fa-arrows-split-up-and-left', title: 'The right platform depends on the funnel, not the trend', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built, the right choice depends on your offer and business, not what’s popular.' },
   { icon: 'fa-solid fa-percent', title: 'A/B testing compounds gains over time', desc: 'Small, tested improvements to headlines, offers, and checkout flow stack up into a meaningfully better-converting funnel.' },
 ];
 
@@ -36,20 +36,20 @@ const WHY_MATTERS_VARIANTS = [
 
 const FAILURE_MODES = [
   { icon: 'fa-solid fa-signs-post', title: 'Traffic sent to a page with no clear next step', impact: 'Most common', desc: 'A pretty landing page with no defined path from click to sale converts far below what it should. We map the path before we design anything.' },
-  { icon: 'fa-solid fa-cart-plus', title: 'No order bump or upsell at the moment of highest intent', impact: 'High impact', desc: 'The instant after checkout is the best chance you’ll get to increase order value — and most funnels never take it.' },
+  { icon: 'fa-solid fa-cart-plus', title: 'No order bump or upsell at the moment of highest intent', impact: 'High impact', desc: 'The instant after checkout is the best chance you’ll get to increase order value, and most funnels never take it.' },
   { icon: 'fa-solid fa-chart-line', title: 'No tracking, so drop-off points are invisible', impact: 'High impact', desc: 'If you can’t see which step is losing visitors, you can’t fix it. Proper tracking is built in from day one, not added later.' },
   { icon: 'fa-solid fa-credit-card', title: 'Checkout friction losing buyers at the last step', impact: 'Ongoing', desc: 'Extra fields, confusing pricing, or a clunky payment flow lose buyers who were already ready to pay. We optimize checkout specifically.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-sitemap', title: 'Funnel Strategy & Architecture', desc: 'Mapping the full path from first click to sale — landing, offer, order bump, upsell/downsell, and thank you — before anything gets built.' },
+  { icon: 'fa-solid fa-sitemap', title: 'Funnel Strategy & Architecture', desc: 'Mapping the full path from first click to sale, landing, offer, order bump, upsell/downsell, and thank you, before anything gets built.' },
   { icon: 'fa-solid fa-file-lines', title: 'Landing/Offer Page Design', desc: 'Pages built around a single offer and a single action, designed to move visitors forward, not just inform them.' },
   { icon: 'fa-solid fa-cart-plus', title: 'Order Bump & Upsell Setup', desc: 'Additional offers placed at checkout and immediately after, structured to lift average order value without hurting conversion.' },
   { icon: 'fa-solid fa-credit-card', title: 'Checkout Flow Optimization', desc: 'Reducing friction, clarifying pricing, and streamlining payment so buyers who are ready to pay actually complete the purchase.' },
   { icon: 'fa-solid fa-chart-line', title: 'Funnel Tracking & Analytics', desc: 'Step-by-step tracking so you can see exactly where visitors convert, hesitate, or leave at every stage of the funnel.' },
   { icon: 'fa-solid fa-percent', title: 'A/B Testing & Optimization', desc: 'Structured testing of headlines, offers, and pages so the funnel keeps improving instead of staying static after launch.' },
-  { icon: 'fa-solid fa-layer-group', title: 'Platform Selection & Build', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built — we choose and build on the platform that actually fits your offer.' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Funnel Migration & Rebuilds', desc: 'Taking an underperforming funnel apart, finding what’s broken, and rebuilding it — on the same platform or a better-suited one.' },
+  { icon: 'fa-solid fa-layer-group', title: 'Platform Selection & Build', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built, we choose and build on the platform that actually fits your offer.' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Funnel Migration & Rebuilds', desc: 'Taking an underperforming funnel apart, finding what’s broken, and rebuilding it, on the same platform or a better-suited one.' },
 ];
 
 const WHO_FOR = [
@@ -62,8 +62,8 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-sitemap', title: 'We start with funnel strategy, not just pages', desc: 'The full path from click to sale is mapped before we design a single page — strategy first, execution second.' },
-  { icon: 'fa-solid fa-layer-group', title: 'We build on the platform that fits your business', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom — the platform is chosen to fit your funnel, not the other way around.' },
+  { icon: 'fa-solid fa-sitemap', title: 'We start with funnel strategy, not just pages', desc: 'The full path from click to sale is mapped before we design a single page, strategy first, execution second.' },
+  { icon: 'fa-solid fa-layer-group', title: 'We build on the platform that fits your business', desc: 'Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom, the platform is chosen to fit your funnel, not the other way around.' },
   { icon: 'fa-solid fa-chart-line', title: 'We set up proper tracking so you see what’s working', desc: 'Step-by-step analytics built in from day one, so drop-off points are visible instead of guessed at.' },
   { icon: 'fa-solid fa-percent', title: 'We test and iterate, not just launch and leave', desc: 'A/B testing continues after launch so the funnel keeps improving instead of sitting static.' },
   { icon: 'fa-solid fa-cart-plus', title: 'Order bump and upsell architecture built in from day one', desc: 'Revenue-lifting offers are part of the initial build, not an afterthought bolted on later.' },
@@ -71,22 +71,22 @@ const WHY_ISM = [
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Funnel Strategy & Mapping', desc: 'We map the full path from first click to sale — every step, offer, and decision point defined before anything is built.' },
+  { n: '01', title: 'Funnel Strategy & Mapping', desc: 'We map the full path from first click to sale, every step, offer, and decision point defined before anything is built.' },
   { n: '02', title: 'Offer & Page Design', desc: 'Landing, offer, order bump, upsell/downsell, and thank you pages designed around a single clear path forward.' },
-  { n: '03', title: 'Build & Platform Setup', desc: 'The funnel built on whichever platform fits — Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom.' },
+  { n: '03', title: 'Build & Platform Setup', desc: 'The funnel built on whichever platform fits, Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom.' },
   { n: '04', title: 'Tracking & Analytics Setup', desc: 'Step-by-step conversion tracking configured so every stage of the funnel is measurable from day one.' },
   { n: '05', title: 'Testing', desc: 'Headlines, offers, and pages tested against real traffic before we call the funnel finished.' },
   { n: '06', title: 'Launch & Optimize', desc: 'The funnel goes live, with ongoing A/B testing and refinement based on real performance data.' },
 ];
 
 const FAQS = [
-  { q: 'How is this different from your ClickFunnels service?', a: 'Our ClickFunnels service is specifically about building on the ClickFunnels platform. This service is platform-agnostic — we start with funnel strategy and architecture, then build on whichever platform genuinely fits your offer, which might be ClickFunnels, Kajabi, GoHighLevel, WordPress, or a custom build.' },
+  { q: 'How is this different from your ClickFunnels service?', a: 'Our ClickFunnels service is specifically about building on the ClickFunnels platform. This service is platform-agnostic, we start with funnel strategy and architecture, then build on whichever platform genuinely fits your offer, which might be ClickFunnels, Kajabi, GoHighLevel, WordPress, or a custom build.' },
   { q: 'Which platform is right for my funnel?', a: 'It depends on your offer, your existing tech stack, and how you sell. We assess your specific situation and recommend a platform based on fit, not on which one we happen to prefer.' },
   { q: 'What is an order bump?', a: 'An order bump is a small additional offer presented at checkout, right before a customer completes their purchase. It’s one of the highest-ROI additions to a funnel because it captures extra revenue at the moment someone is already buying.' },
-  { q: 'How do you track funnel performance?', a: 'We configure step-by-step conversion tracking across every stage of the funnel — landing page, offer, order bump, upsell, and checkout — so you can see exactly where visitors convert or drop off.' },
+  { q: 'How do you track funnel performance?', a: 'We configure step-by-step conversion tracking across every stage of the funnel, landing page, offer, order bump, upsell, and checkout, so you can see exactly where visitors convert or drop off.' },
   { q: 'Do you run the traffic and ads too, or just build the funnel?', a: 'We focus on funnel strategy and build. If you need paid traffic managed as well, we can coordinate with our PPC team, but this service is specifically the funnel itself.' },
   { q: 'How long does a funnel build take?', a: 'A straightforward funnel with a handful of steps typically takes three to five weeks. More complex funnels with multiple upsell paths or custom platform builds can take longer.' },
-  { q: 'Can you rebuild an existing funnel that isn’t converting?', a: 'Yes. We regularly take over underperforming funnels, diagnose where they’re losing visitors using tracking data, and rebuild the weak points — sometimes on the same platform, sometimes on a better-suited one.' },
+  { q: 'Can you rebuild an existing funnel that isn’t converting?', a: 'Yes. We regularly take over underperforming funnels, diagnose where they’re losing visitors using tracking data, and rebuild the weak points, sometimes on the same platform, sometimes on a better-suited one.' },
   { q: 'Do you provide ongoing optimization after launch?', a: 'Yes, on a month-to-month basis, covering A/B testing, tracking review, and refinements based on real performance data.' },
 ];
 
@@ -169,7 +169,7 @@ export default function SalesFunnelsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build strategic, multi-step sales funnels — landing page through order bump, upsell, and checkout —{' '}
+                  We build strategic, multi-step sales funnels, landing page through order bump, upsell, and checkout,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>designed to maximize revenue per visitor</span> on whatever platform fits your business.
                 </p>
 
@@ -244,11 +244,11 @@ export default function SalesFunnelsPage() {
                   A Landing Page Is Not a Funnel.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most businesses send paid traffic to a single page with a single call to action and no structured path to a sale — and lose revenue on order bumps and upsells they never offer.
+                  Most businesses send paid traffic to a single page with a single call to action and no structured path to a sale, and lose revenue on order bumps and upsells they never offer.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds strategic, multi-step funnels{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>grounded in tracking and testing</span> — on whichever platform genuinely fits your offer, not the one we happen to push everyone into.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>grounded in tracking and testing</span>, on whichever platform genuinely fits your offer, not the one we happen to push everyone into.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,14 +292,14 @@ export default function SalesFunnelsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A real funnel maps{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every step from first click to sale</span> — landing, offer, order bump, upsell/downsell, and thank you.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every step from first click to sale</span>, landing, offer, order bump, upsell/downsell, and thank you.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Proper build means{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>tracking configured from day one</span>, not bolted on after you notice conversion problems.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Strategy comes first, then the platform is chosen to fit — Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built.
+                    Strategy comes first, then the platform is chosen to fit, Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built.
                   </p>
                 </div>
               </div>
@@ -369,7 +369,7 @@ export default function SalesFunnelsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>A Real Funnel Outperforms a Single Landing Page, Every Time.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Structure, tracking, and testing — the difference between a page that just sits there and a funnel that keeps earning more.
+                Structure, tracking, and testing, the difference between a page that just sits there and a funnel that keeps earning more.
               </p>
             </div>
             <div className="sfn-why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -405,7 +405,7 @@ export default function SalesFunnelsPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Funnels to Underdeliver — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Funnels to Underdeliver, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most underperforming funnels trace back to one of these four causes.
               </p>

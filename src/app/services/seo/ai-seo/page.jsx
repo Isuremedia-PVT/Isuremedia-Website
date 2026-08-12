@@ -15,14 +15,14 @@ const BRIDGE_ITEMS = [
   'Entity clarity and knowledge graph optimisation',
   'FAQ and structured schema implementation',
   'E-E-A-T and authority signal strengthening',
-  'GEO — Generative Engine Optimisation for AI citation',
+  'GEO, Generative Engine Optimisation for AI citation',
 ];
 
 const SHIFT_GAINS = [
   { icon: 'fa-solid fa-magnifying-glass-location', title: 'Visibility where your customers are already searching', desc: 'Hundreds of millions of people now use AI platforms to research, compare, and find businesses. Being recommended there puts your business in front of buyers at the moment they are forming their decision.' },
-  { icon: 'fa-solid fa-bolt', title: 'Traffic that converts at a much higher rate', desc: 'AI search referral traffic converts at 14.2% on average — five times higher than standard organic traffic. The visitors who arrive from AI citations have already been pre-qualified by the AI’s recommendation.' },
+  { icon: 'fa-solid fa-bolt', title: 'Traffic that converts at a much higher rate', desc: 'AI search referral traffic converts at 14.2% on average, five times higher than standard organic traffic. The visitors who arrive from AI citations have already been pre-qualified by the AI’s recommendation.' },
   { icon: 'fa-solid fa-flag-checkered', title: 'A first-mover advantage that compounds', desc: 'The vast majority of local businesses have not taken any deliberate steps to optimise for AI search. Early movers in any category have a significant, time-limited window to establish presence before competitors catch up.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Resilience as search continues to evolve', desc: 'Businesses optimised for AI search are better positioned for every future platform shift. The signals that feed AI visibility — entity clarity, authoritative content, structured data, strong reviews — are durable across every search format.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Resilience as search continues to evolve', desc: 'Businesses optimised for AI search are better positioned for every future platform shift. The signals that feed AI visibility, entity clarity, authoritative content, structured data, strong reviews, are durable across every search format.' },
   { icon: 'fa-solid fa-award', title: 'Credibility by association', desc: 'When ChatGPT or Google recommends your business, it carries an implied endorsement. Visitors who find you through AI recommendations arrive with a higher level of trust than visitors who find you through a standard search result.' },
 ];
 
@@ -33,74 +33,74 @@ const CARD_VARIANTS = [
 ];
 
 const ANSWER_SOURCES = [
-  { icon: 'fa-solid fa-file-lines', title: 'Your website content', desc: 'AI platforms crawl and index your site. Content that directly answers specific questions — in clear, plain language, structured with headings and concise paragraphs — gets extracted and cited. Thin, vague, or keyword-stuffed content gets ignored.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Your website content', desc: 'AI platforms crawl and index your site. Content that directly answers specific questions, in clear, plain language, structured with headings and concise paragraphs, gets extracted and cited. Thin, vague, or keyword-stuffed content gets ignored.' },
   { icon: 'fa-solid fa-code', title: 'Structured data and schema markup', desc: 'Schema tells AI systems exactly what your content is about. FAQ schema, Service schema, LocalBusiness schema, and Review schema all feed into how AI platforms understand and classify your business. Sites without schema are harder for AI to interpret and trust.' },
-  { icon: 'fa-solid fa-map-location-dot', title: 'Your Google Business Profile', desc: 'For local and service-area queries, AI platforms — including Google AI Overviews — pull heavily from GBP data. Your categories, services, reviews, and Q and A all feed into whether you appear in AI-generated local recommendations.' },
-  { icon: 'fa-solid fa-newspaper', title: 'Third-party mentions and citations', desc: 'AI systems weigh how often and where your business is mentioned across the web — news sites, industry publications, directories, review platforms, and social profiles. Consistent, authoritative third-party mentions build entity trust that AI platforms rely on.' },
-  { icon: 'fa-solid fa-star', title: 'Reviews and ratings', desc: 'Review content — not just star ratings — feeds AI understanding of your business. AI platforms extract keywords from reviews to understand what services you actually deliver and how customers describe them.' },
+  { icon: 'fa-solid fa-map-location-dot', title: 'Your Google Business Profile', desc: 'For local and service-area queries, AI platforms, including Google AI Overviews, pull heavily from GBP data. Your categories, services, reviews, and Q and A all feed into whether you appear in AI-generated local recommendations.' },
+  { icon: 'fa-solid fa-newspaper', title: 'Third-party mentions and citations', desc: 'AI systems weigh how often and where your business is mentioned across the web, news sites, industry publications, directories, review platforms, and social profiles. Consistent, authoritative third-party mentions build entity trust that AI platforms rely on.' },
+  { icon: 'fa-solid fa-star', title: 'Reviews and ratings', desc: 'Review content, not just star ratings, feeds AI understanding of your business. AI platforms extract keywords from reviews to understand what services you actually deliver and how customers describe them.' },
   { icon: 'fa-solid fa-fingerprint', title: 'Entity clarity', desc: 'AI systems need to know unambiguously who your business is, what it does, where it operates, and how it relates to other entities on the web. Inconsistent NAP data, conflicting business descriptions, and missing knowledge graph signals make you harder to cite confidently.' },
-  { icon: 'fa-solid fa-medal', title: 'E-E-A-T signals', desc: 'Experience, Expertise, Authoritativeness, and Trustworthiness — Google’s framework that now feeds directly into AI Overview citations. Businesses and content creators who demonstrate genuine expertise are cited more frequently than those who do not.' },
+  { icon: 'fa-solid fa-medal', title: 'E-E-A-T signals', desc: 'Experience, Expertise, Authoritativeness, and Trustworthiness, Google’s framework that now feeds directly into AI Overview citations. Businesses and content creators who demonstrate genuine expertise are cited more frequently than those who do not.' },
 ];
 
 const PLATFORMS = [
   { icon: 'fa-brands fa-google', title: 'Google AI Overviews', desc: 'The most important AI surface for most businesses. AI Overviews now appear on 60% of US Google searches and are the first thing most users see. Being cited here means your business appears above every organic result on the page.', img: 'https://images.unsplash.com/photo-1586125674857-4eb86880905d?w=500&q=80' },
   { icon: 'fa-solid fa-comments', title: 'ChatGPT Search', desc: '883 million monthly users. 2.5 billion daily prompts. ChatGPT is now the fifth most visited website globally and processes queries that would previously have gone to Google. When someone asks ChatGPT for a recommendation in your category, you need to be in the answer.', img: 'https://images.unsplash.com/photo-1751448582395-27fc57293f1a?w=500&q=80' },
-  { icon: 'fa-solid fa-compass', title: 'Perplexity', desc: 'Perplexity’s 18 to 22% click-through rate on cited sources is materially higher than Google AI Overviews — the businesses it recommends get the traffic. Perplexity is disproportionately used by researchers, professionals, and high-value buyers, making citations here particularly valuable.', img: 'https://images.unsplash.com/photo-1778735940467-1335c201966d?w=500&q=80' },
-  { icon: 'fa-solid fa-wand-magic-sparkles', title: 'Google Gemini', desc: 'Google’s AI assistant surfaces across Search, Google Workspace, and Android. Gemini uses Google’s index and entity graph — the same signals that feed traditional Google rankings, plus structured data and GBP signals.', img: 'https://images.unsplash.com/photo-1762330465857-07e4c81c0dfa?w=500&q=80' },
+  { icon: 'fa-solid fa-compass', title: 'Perplexity', desc: 'Perplexity’s 18 to 22% click-through rate on cited sources is materially higher than Google AI Overviews, the businesses it recommends get the traffic. Perplexity is disproportionately used by researchers, professionals, and high-value buyers, making citations here particularly valuable.', img: 'https://images.unsplash.com/photo-1778735940467-1335c201966d?w=500&q=80' },
+  { icon: 'fa-solid fa-wand-magic-sparkles', title: 'Google Gemini', desc: 'Google’s AI assistant surfaces across Search, Google Workspace, and Android. Gemini uses Google’s index and entity graph, the same signals that feed traditional Google rankings, plus structured data and GBP signals.', img: 'https://images.unsplash.com/photo-1762330465857-07e4c81c0dfa?w=500&q=80' },
   { icon: 'fa-brands fa-microsoft', title: 'Microsoft Copilot', desc: 'Integrated into Bing, Windows, and Microsoft 365, Copilot handles hundreds of millions of queries per month with a heavy skew toward professional and enterprise users. High-value B2B and professional service businesses benefit significantly from Copilot visibility.', img: 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?w=500&q=80' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'AI Visibility Audit', desc: 'We test your business across Google AI Overviews, ChatGPT, Perplexity, and Gemini — using the actual queries your customers search for. You get a clear picture of where you are being cited, where you are invisible, and exactly what is causing each gap.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Answer-Ready Content Optimisation', desc: 'We restructure your existing content — or create new content — specifically for AI extraction. Clear question-and-answer formats, concise direct answers, proper heading structure, and the right content depth for AI platforms to parse and cite with confidence.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'AI Visibility Audit', desc: 'We test your business across Google AI Overviews, ChatGPT, Perplexity, and Gemini, using the actual queries your customers search for. You get a clear picture of where you are being cited, where you are invisible, and exactly what is causing each gap.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Answer-Ready Content Optimisation', desc: 'We restructure your existing content, or create new content, specifically for AI extraction. Clear question-and-answer formats, concise direct answers, proper heading structure, and the right content depth for AI platforms to parse and cite with confidence.' },
   { icon: 'fa-solid fa-code', title: 'AEO and FAQ Schema Implementation', desc: 'We implement FAQ schema, HowTo schema, Service schema, and other structured data types that directly feed AI understanding of your content. This makes your pages machine-readable in the way AI platforms require to cite them confidently.' },
-  { icon: 'fa-solid fa-fingerprint', title: 'Entity Optimisation and Knowledge Graph Signals', desc: 'We make sure your business is clearly and consistently defined across every platform where AI systems look for entity data — your website, Google Business Profile, industry directories, and social profiles. Inconsistent entity data is one of the most common reasons businesses are passed over in AI citations.' },
+  { icon: 'fa-solid fa-fingerprint', title: 'Entity Optimisation and Knowledge Graph Signals', desc: 'We make sure your business is clearly and consistently defined across every platform where AI systems look for entity data, your website, Google Business Profile, industry directories, and social profiles. Inconsistent entity data is one of the most common reasons businesses are passed over in AI citations.' },
   { icon: 'fa-solid fa-medal', title: 'E-E-A-T Authority Building', desc: 'We strengthen the Experience, Expertise, Authoritativeness, and Trustworthiness signals that Google and AI platforms use to decide which sources to trust. This includes author credibility signals, expert content development, and third-party citation building on relevant publications.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'GEO — Generative Engine Optimisation', desc: 'GEO is the discipline of structuring your online presence specifically for AI generation — making sure AI platforms can pull accurate, relevant, up-to-date information about your business and use it to construct confident recommendations.' },
-  { icon: 'fa-solid fa-map-location-dot', title: 'Google Business Profile for AI Search', desc: 'GBP is a primary data source for AI-generated local recommendations. We optimise every element of your GBP — categories, services, Q and A, review strategy — specifically for AI extraction, not just traditional local search.' },
-  { icon: 'fa-solid fa-chart-line', title: 'AI Search Monitoring and Reporting', desc: 'We track your visibility across AI platforms continuously — testing the queries that matter to your business and reporting on where you appear, where you do not, and what is changing month over month.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'GEO, Generative Engine Optimisation', desc: 'GEO is the discipline of structuring your online presence specifically for AI generation, making sure AI platforms can pull accurate, relevant, up-to-date information about your business and use it to construct confident recommendations.' },
+  { icon: 'fa-solid fa-map-location-dot', title: 'Google Business Profile for AI Search', desc: 'GBP is a primary data source for AI-generated local recommendations. We optimise every element of your GBP, categories, services, Q and A, review strategy, specifically for AI extraction, not just traditional local search.' },
+  { icon: 'fa-solid fa-chart-line', title: 'AI Search Monitoring and Reporting', desc: 'We track your visibility across AI platforms continuously, testing the queries that matter to your business and reporting on where you appear, where you do not, and what is changing month over month.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses whose organic traffic is declining', desc: 'If your rankings have held but traffic has dropped, AI Overviews are almost certainly taking clicks from your organic results. AI SEO addresses the root cause directly.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
   { icon: 'fa-solid fa-chess', title: 'Businesses in competitive markets', desc: 'In competitive industries, AI citations are becoming the new page-one position. Being recommended by ChatGPT or Google AI Overviews in a competitive category gives you a visibility edge that organic rankings alone cannot replicate.', img: 'https://images.unsplash.com/photo-1523875194681-bedd468c58bf?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Professional service businesses', desc: 'Lawyers, accountants, consultants, financial advisors, healthcare providers — professional services are heavily researched through AI tools before a contact decision is made. AI visibility in these categories has a direct and measurable impact on enquiry volume.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Local and service-area businesses', desc: 'AI platforms increasingly surface local recommendations for service queries. HVAC, plumbing, dental, legal, real estate — if your customers search locally, AI search is already part of their discovery process.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-server', title: 'B2B businesses and SaaS companies', desc: 'AI search adoption is highest among professional and technical buyers — the exact audience B2B businesses need to reach. Perplexity and ChatGPT are now primary research tools for procurement decisions in many industries.', img: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?w=700&q=80' },
+  { icon: 'fa-solid fa-briefcase', title: 'Professional service businesses', desc: 'Lawyers, accountants, consultants, financial advisors, healthcare providers, professional services are heavily researched through AI tools before a contact decision is made. AI visibility in these categories has a direct and measurable impact on enquiry volume.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Local and service-area businesses', desc: 'AI platforms increasingly surface local recommendations for service queries. HVAC, plumbing, dental, legal, real estate, if your customers search locally, AI search is already part of their discovery process.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
+  { icon: 'fa-solid fa-server', title: 'B2B businesses and SaaS companies', desc: 'AI search adoption is highest among professional and technical buyers, the exact audience B2B businesses need to reach. Perplexity and ChatGPT are now primary research tools for procurement decisions in many industries.', img: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?w=700&q=80' },
   { icon: 'fa-solid fa-rocket', title: 'Forward-thinking businesses that want first-mover advantage', desc: 'The vast majority of businesses in any category have not started AI SEO. The window to establish presence before competitors is open right now. Early movers compound their advantage over time as AI systems develop stronger associations with their brand.', img: 'https://images.unsplash.com/photo-1484383707950-89c8d3276e53?w=700&q=80' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'We test before we claim', desc: 'Before any engagement, we run your business through the actual queries your customers use across multiple AI platforms. You see exactly where you are visible and where you are not — before we start and after we deliver.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'We test before we claim', desc: 'Before any engagement, we run your business through the actual queries your customers use across multiple AI platforms. You see exactly where you are visible and where you are not, before we start and after we deliver.' },
   { icon: 'fa-solid fa-layer-group', title: 'We cover every major AI platform', desc: 'Google AI Overviews, ChatGPT, Perplexity, Gemini, and Copilot. Not just one surface. We optimise for the full AI search landscape so you are not building visibility on a single platform while missing the rest.' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'AI SEO is built into everything we do', desc: 'Every service Isuremedia delivers — local SEO, technical SEO, on-page SEO, link building, content — is now built with AI visibility in mind. AEO is not an add-on. It is embedded in the way we work across your entire search presence.' },
-  { icon: 'fa-solid fa-screwdriver-wrench', title: 'We do the implementation, not just the strategy', desc: 'Schema markup, entity optimisation, content restructuring, GBP optimisation for AI search — we handle the execution, not just the recommendations. If it needs to be done, we do it.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Plain English reporting on AI visibility', desc: 'AI search is new enough that most reporting is technical and hard to interpret. We track your AI visibility in plain English — which queries you appear for, which platforms cite you, and what has changed month over month.' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'AI SEO is built into everything we do', desc: 'Every service Isuremedia delivers, local SEO, technical SEO, on-page SEO, link building, content, is now built with AI visibility in mind. AEO is not an add-on. It is embedded in the way we work across your entire search presence.' },
+  { icon: 'fa-solid fa-screwdriver-wrench', title: 'We do the implementation, not just the strategy', desc: 'Schema markup, entity optimisation, content restructuring, GBP optimisation for AI search, we handle the execution, not just the recommendations. If it needs to be done, we do it.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Plain English reporting on AI visibility', desc: 'AI search is new enough that most reporting is technical and hard to interpret. We track your AI visibility in plain English, which queries you appear for, which platforms cite you, and what has changed month over month.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'AI search is evolving fast. We do not lock you into long contracts because the strategy needs to evolve with the platforms. You stay because your visibility is improving, not because you are obligated to.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'AI Visibility Audit', desc: 'We test your business across Google AI Overviews, ChatGPT, Perplexity, and Gemini using the actual queries your customers search. We map where you appear, where you do not, and what signals are causing each gap. This is the starting point for everything that follows.' },
-  { n: '02', title: 'Entity and Signal Audit', desc: 'We audit your entity clarity — how consistently and completely your business is defined across your website, GBP, directories, social profiles, and third-party mentions. We identify every inconsistency that reduces AI confidence in recommending your business.' },
-  { n: '03', title: 'Content and Schema Optimisation', desc: 'We restructure your key pages for AI extraction — answer-first content, proper heading structure, concise direct answers, FAQ schema, Service schema, and any other structured data your pages need. We also optimise your GBP specifically for AI-generated local recommendations.' },
-  { n: '04', title: 'Authority and E-E-A-T Signals', desc: 'We strengthen the trust signals AI platforms use to evaluate credibility — third-party citations on relevant publications, review strategy, author expertise signals, and entity associations across the web.' },
+  { n: '02', title: 'Entity and Signal Audit', desc: 'We audit your entity clarity, how consistently and completely your business is defined across your website, GBP, directories, social profiles, and third-party mentions. We identify every inconsistency that reduces AI confidence in recommending your business.' },
+  { n: '03', title: 'Content and Schema Optimisation', desc: 'We restructure your key pages for AI extraction, answer-first content, proper heading structure, concise direct answers, FAQ schema, Service schema, and any other structured data your pages need. We also optimise your GBP specifically for AI-generated local recommendations.' },
+  { n: '04', title: 'Authority and E-E-A-T Signals', desc: 'We strengthen the trust signals AI platforms use to evaluate credibility, third-party citations on relevant publications, review strategy, author expertise signals, and entity associations across the web.' },
   { n: '05', title: 'Monitoring and Ongoing Optimisation', desc: 'AI search changes fast. We monitor your visibility across platforms monthly, test new queries as your business evolves, and adjust your strategy as AI platforms update their citation logic and ranking signals.' },
 ];
 
 const FAQS = [
-  { q: 'What is the difference between AI SEO, AEO, and GEO?', a: 'AI SEO is the broad practice of optimising your online presence for AI-powered search platforms. AEO — Answer Engine Optimisation — focuses specifically on structuring content so AI systems extract it as a direct answer. GEO — Generative Engine Optimisation — focuses on making your brand a source that AI generation models cite when constructing responses. All three overlap significantly and Isuremedia works across all of them.' },
-  { q: 'Will AI SEO replace traditional SEO?', a: 'No. Traditional SEO and AI SEO work together. Google still handles the majority of searches and organic rankings still matter. AI SEO extends your visibility into the growing share of searches that are handled by AI platforms — it does not replace the work of ranking in traditional search results. The businesses winning in 2026 are doing both.' },
-  { q: 'How do I know if my business is being recommended in AI search?', a: 'You can test this manually by asking ChatGPT, Perplexity, and Google directly for recommendations in your category and location. A more complete picture comes from a structured AI visibility audit — testing the range of queries your customers actually use across multiple platforms. Isuremedia provides this as a free starting point.' },
-  { q: 'How long does it take to appear in AI search results?', a: 'Perplexity typically reflects optimisation changes within thirty to sixty days. Google AI Overviews and ChatGPT generally take longer — most businesses see measurable improvement within eight to twelve weeks of implementing core AI visibility signals. Timelines vary depending on how established your domain authority is and how competitive your category is.' },
-  { q: 'Can any business appear in AI search results or only big brands?', a: 'Any business can appear in AI search results. AI platforms do not inherently favour large brands — they favour businesses whose online presence is structured in a way they can read, trust, and cite. A well-optimised small business with clear entity signals and answer-ready content will consistently outperform a large brand with a poorly structured online presence.' },
+  { q: 'What is the difference between AI SEO, AEO, and GEO?', a: 'AI SEO is the broad practice of optimising your online presence for AI-powered search platforms. AEO, Answer Engine Optimisation, focuses specifically on structuring content so AI systems extract it as a direct answer. GEO, Generative Engine Optimisation, focuses on making your brand a source that AI generation models cite when constructing responses. All three overlap significantly and Isuremedia works across all of them.' },
+  { q: 'Will AI SEO replace traditional SEO?', a: 'No. Traditional SEO and AI SEO work together. Google still handles the majority of searches and organic rankings still matter. AI SEO extends your visibility into the growing share of searches that are handled by AI platforms, it does not replace the work of ranking in traditional search results. The businesses winning in 2026 are doing both.' },
+  { q: 'How do I know if my business is being recommended in AI search?', a: 'You can test this manually by asking ChatGPT, Perplexity, and Google directly for recommendations in your category and location. A more complete picture comes from a structured AI visibility audit, testing the range of queries your customers actually use across multiple platforms. Isuremedia provides this as a free starting point.' },
+  { q: 'How long does it take to appear in AI search results?', a: 'Perplexity typically reflects optimisation changes within thirty to sixty days. Google AI Overviews and ChatGPT generally take longer, most businesses see measurable improvement within eight to twelve weeks of implementing core AI visibility signals. Timelines vary depending on how established your domain authority is and how competitive your category is.' },
+  { q: 'Can any business appear in AI search results or only big brands?', a: 'Any business can appear in AI search results. AI platforms do not inherently favour large brands, they favour businesses whose online presence is structured in a way they can read, trust, and cite. A well-optimised small business with clear entity signals and answer-ready content will consistently outperform a large brand with a poorly structured online presence.' },
   { q: 'What is entity optimisation and why does it matter for AI search?', a: 'Entity optimisation is the process of ensuring your business is clearly and consistently defined across every platform where AI systems look for information. AI platforms need to know unambiguously who you are and what you do before they will cite you confidently. Inconsistent or missing entity signals are one of the most common reasons businesses are passed over in AI recommendations.' },
-  { q: 'Does AI SEO affect my traditional Google rankings?', a: 'The signals that feed AI visibility — strong content, structured data, entity clarity, authoritative backlinks, E-E-A-T signals — are the same signals that feed traditional Google rankings. AI SEO and traditional SEO share a foundation. Improving one almost always improves the other.' },
+  { q: 'Does AI SEO affect my traditional Google rankings?', a: 'The signals that feed AI visibility, strong content, structured data, entity clarity, authoritative backlinks, E-E-A-T signals, are the same signals that feed traditional Google rankings. AI SEO and traditional SEO share a foundation. Improving one almost always improves the other.' },
   { q: 'What schema types are most important for AI search visibility?', a: 'FAQ schema, Service schema, LocalBusiness schema, and Organization schema are the most impactful for most businesses. These help AI platforms parse your content, understand your services, and verify your business identity. We implement and validate all relevant schema types as part of our AI SEO work.' },
   { q: 'My traffic has been dropping but my rankings look fine. Is AI search the reason?', a: 'Quite possibly. When AI Overviews appear on a search result, click-through rates on organic results below them drop by 38%. Your ranking can stay the same while traffic falls because the AI Overview above you is taking the clicks instead. An AI visibility audit will show whether this is happening on your most important search terms.' },
-  { q: 'How do you measure success in AI search?', a: 'We track visibility across platforms — which queries trigger citations of your business, on which platforms, and how that changes month over month. We also track referral traffic from AI platforms and conversion rates from that traffic. AI search reporting is different from traditional rank tracking and we build it around the metrics that actually reflect business impact.' },
+  { q: 'How do you measure success in AI search?', a: 'We track visibility across platforms, which queries trigger citations of your business, on which platforms, and how that changes month over month. We also track referral traffic from AI platforms and conversion rates from that traffic. AI search reporting is different from traditional rank tracking and we build it around the metrics that actually reflect business impact.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -164,7 +164,7 @@ export default function AISEOPage() {
           <div className="ism-container">
             <div className="aiseo-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Get Your Business Into AI Search Results Before Your Competitors{' '}
@@ -179,7 +179,7 @@ export default function AISEOPage() {
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   ChatGPT, Perplexity, Google AI Overviews, and Gemini are now where buying decisions start. We optimise your business to{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>be the answer those platforms recommend</span>{' '}
-                  — not the one they ignore.
+                 , not the one they ignore.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -192,10 +192,10 @@ export default function AISEOPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="aiseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/aiseohero/640/720" alt="AI search visibility" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/ai seo.webp" alt="AI SEO" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-robot" style={{ color: '#fff', fontSize: 22 }} />
@@ -260,7 +260,7 @@ export default function AISEOPage() {
                   Your Business Might Already Be Invisible in AI Search and Not Know It.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  AI Overviews now appear on 60% of US Google searches. ChatGPT crossed 900 million weekly users in early 2026. Perplexity, Gemini, and Copilot are handling hundreds of millions of queries every week. When someone asks one of these platforms who the best option is in your category, your business either shows up or it does not. Most businesses are not showing up — not because they are not good enough, but because their online presence is not structured in a way AI systems can read, trust, and cite.
+                  AI Overviews now appear on 60% of US Google searches. ChatGPT crossed 900 million weekly users in early 2026. Perplexity, Gemini, and Copilot are handling hundreds of millions of queries every week. When someone asks one of these platforms who the best option is in your category, your business either shows up or it does not. Most businesses are not showing up, not because they are not good enough, but because their online presence is not structured in a way AI systems can read, trust, and cite.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia fixes that. We optimise your content, your entity signals, your structured data, and your authority so AI platforms have{' '}
@@ -308,17 +308,17 @@ export default function AISEOPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    AI SEO is the practice of optimising your online presence so AI-powered search platforms can find, understand, trust, and recommend your business. AEO — Answer Engine Optimisation — is a specific discipline within that, focused on{' '}
+                    AI SEO is the practice of optimising your online presence so AI-powered search platforms can find, understand, trust, and recommend your business. AEO, Answer Engine Optimisation, is a specific discipline within that, focused on{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>structuring your content so AI systems extract it as a direct answer</span>{' '}
                     to a user&apos;s question.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Traditional SEO targets keyword rankings in Google&apos;s blue-link results. AI SEO targets something different —{' '}
+                    Traditional SEO targets keyword rankings in Google&apos;s blue-link results. AI SEO targets something different,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the answers that ChatGPT, Perplexity, Google AI Overviews, and Gemini generate</span>{' '}
                     when someone asks a question related to your business or industry.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The distinction matters because AI search works differently. There is no page two. There is no position seven. AI platforms surface one answer, or a short list of sources, and the businesses cited in those answers get the attention. Everyone else gets nothing. AEO and GEO — Generative Engine Optimisation — are the disciplines that determine which businesses those platforms choose to recommend. Isuremedia does both.
+                    The distinction matters because AI search works differently. There is no page two. There is no position seven. AI platforms surface one answer, or a short list of sources, and the businesses cited in those answers get the attention. Everyone else gets nothing. AEO and GEO, Generative Engine Optimisation, are the disciplines that determine which businesses those platforms choose to recommend. Isuremedia does both.
                   </p>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function AISEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — ChatGPT */}
+                {/* Floating badge, ChatGPT */}
                 <div className="aiseo-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-comments" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -345,7 +345,7 @@ export default function AISEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — AI Overview */}
+                {/* Floating badge, AI Overview */}
                 <div className="aiseo-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-brands fa-google" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -356,7 +356,7 @@ export default function AISEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Perplexity */}
+                {/* Floating badge, Perplexity */}
                 <div className="aiseo-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-compass" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -367,7 +367,7 @@ export default function AISEOPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Gemini */}
+                {/* Floating badge, Gemini */}
                 <div className="aiseo-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-wand-magic-sparkles" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -394,7 +394,7 @@ export default function AISEOPage() {
             <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Gap Between AI-Visible and AI-Invisible Businesses Is Growing Every Month.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                This is not a future trend. It is happening right now, and the numbers make it clear. AI Overviews now appear on roughly 60% of US Google searches — up from 25% just twelve months ago. ChatGPT processes 2.5 billion prompts every day. AI search traffic converts at 14.2% compared to Google&apos;s 2.8% — five times higher per visit. The users arriving from AI search are not browsing. They are ready to act.
+                This is not a future trend. It is happening right now, and the numbers make it clear. AI Overviews now appear on roughly 60% of US Google searches, up from 25% just twelve months ago. ChatGPT processes 2.5 billion prompts every day. AI search traffic converts at 14.2% compared to Google&apos;s 2.8%, five times higher per visit. The users arriving from AI search are not browsing. They are ready to act.
                 At the same time, click-through rates on traditional organic results drop 38% when an AI Overview is present on the same page. That traffic is not disappearing. It is going to the businesses the AI cites instead.
               </p>
             </div>
@@ -433,7 +433,7 @@ export default function AISEOPage() {
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Understanding This Is What Separates Businesses That Get Cited from Those That Do Not.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                AI platforms do not guess. They pull information from specific, identifiable sources — and businesses that structure their online presence around those sources get recommended. Businesses that do not, stay invisible.
+                AI platforms do not guess. They pull information from specific, identifiable sources, and businesses that structure their online presence around those sources get recommended. Businesses that do not, stay invisible.
               </p>
             </div>
             <div className="answer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -516,12 +516,12 @@ export default function AISEOPage() {
                   That traffic does not disappear. It goes to the businesses the AI cites in the summary above the results.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  If your business is not one of them, you are losing traffic you used to get — silently, with no warning and no obvious explanation for why your numbers are declining.
+                  If your business is not one of them, you are losing traffic you used to get, silently, with no warning and no obvious explanation for why your numbers are declining.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                   AI search traffic converts at{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>14.2% on average</span>{' '}
-                  — five times higher than standard organic traffic. The visitors AI platforms send are pre-qualified and high-intent. Missing out on them is not just a traffic problem. It is a revenue problem.
+                 , five times higher than standard organic traffic. The visitors AI platforms send are pre-qualified and high-intent. Missing out on them is not just a traffic problem. It is a revenue problem.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                   The vast majority of local businesses have not taken any deliberate steps to optimise for AI search. That gap is closing fast. The businesses that move now establish presence before competitors catch up. The ones that wait are already behind.
@@ -738,7 +738,7 @@ export default function AISEOPage() {
         <FAQAccordion />
 
         {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/AI seo.webp" description={<>ChatGPT, Perplexity, and Google AI Overviews are answering your customers' questions right now — with or without your business in the answer. The only question is whether you show up as the recommendation or stay invisible. Talk to us today and let's <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get your business cited by AI</span>.</>} heading="Ready to Get" headingHighlight="Cited by AI?" primaryLabel="Get My Free AI Visibility Audit" secondaryLabel="Talk to an AI Search Expert" />
+        <CTASection image="/result_footer/AI seo.webp" description={<>ChatGPT, Perplexity, and Google AI Overviews are answering your customers' questions right now, with or without your business in the answer. The only question is whether you show up as the recommendation or stay invisible. Talk to us today and let's <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get your business cited by AI</span>.</>} heading="Ready to Get" headingHighlight="Cited by AI?" primaryLabel="Get My Free AI Visibility Audit" secondaryLabel="Talk to an AI Search Expert" />
       </main>
       <Footer />
     </>

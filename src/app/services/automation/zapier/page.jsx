@@ -20,8 +20,8 @@ const ZAP_BRIDGE_ITEMS = [
 
 const ZAP_WHY_MATTERS = [
   { icon: 'fa-solid fa-plug', title: 'Multi-app connectivity', desc: 'Connect your CRM, forms, email platform, Slack, Google Sheets, and hundreds more apps without writing a single line of code.' },
-  { icon: 'fa-solid fa-dollar-sign', title: 'Zero developer cost', desc: 'Zapier automations replace hours of manual work and eliminate the need for custom integrations — saving you time and developer budget.' },
-  { icon: 'fa-solid fa-bolt', title: 'Real-time triggers', desc: 'Every workflow fires the moment the trigger event happens — no batch delays, no manual exports, no missed notifications.' },
+  { icon: 'fa-solid fa-dollar-sign', title: 'Zero developer cost', desc: 'Zapier automations replace hours of manual work and eliminate the need for custom integrations, saving you time and developer budget.' },
+  { icon: 'fa-solid fa-bolt', title: 'Real-time triggers', desc: 'Every workflow fires the moment the trigger event happens, no batch delays, no manual exports, no missed notifications.' },
   { icon: 'fa-solid fa-route', title: 'Automatic lead routing', desc: 'New leads flow from your forms straight into your CRM with the right tags and pipeline stage, with no one copying data by hand.' },
   { icon: 'fa-solid fa-bell', title: 'Instant team alerts', desc: 'Slack or email notifications fire the moment a new deal, booking, or high-value lead comes in, so nothing sits unnoticed.' },
   { icon: 'fa-solid fa-file-invoice-dollar', title: 'Automated invoicing', desc: 'Invoices generate automatically from booking or deal confirmations, removing a manual finance step from every transaction.' },
@@ -35,7 +35,7 @@ const ZAP_CARD_VARIANTS = [
 
 const ZAP_KEY_FACTORS = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Workflow Audit and Discovery', impact: 'Highest impact', desc: 'We map your current tools, identify manual tasks, and find the highest-value automation opportunities before building anything.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', impact: 'High impact', desc: 'Every workflow is documented before we build — trigger events, actions, conditions, and error paths all planned out clearly.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', impact: 'High impact', desc: 'Every workflow is documented before we build, trigger events, actions, conditions, and error paths all planned out clearly.' },
   { icon: 'fa-solid fa-plug', title: 'App Connection Setup', impact: 'High impact', desc: 'Your CRM, forms, email platform, and other tools connected properly, with authentication and permissions configured correctly the first time.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Error Handling', impact: 'High impact', desc: 'Every Zap is built with error paths so a failed step gets flagged rather than silently dropping data.' },
   { icon: 'fa-solid fa-vial', title: 'Testing and Validation', impact: 'Medium impact', desc: 'End-to-end QA on every workflow using real data before it goes live on your actual apps.' },
@@ -46,7 +46,7 @@ const ZAP_KEY_FACTORS = [
 
 const ZAP_INCLUDED_CARDS = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Workflow Audit and Discovery', desc: 'We map your current tools, identify manual tasks, and find the highest-value automation opportunities.', img: 'https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=500&q=80' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', desc: 'Every workflow documented before we build — trigger events, actions, conditions, and error paths planned.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', desc: 'Every workflow documented before we build, trigger events, actions, conditions, and error paths planned.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80' },
   { icon: 'fa-solid fa-plug', title: 'App Connection Setup', desc: 'Your CRM, forms, email platform, and other tools connected with authentication configured correctly.', img: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=500&q=80' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Error Handling Setup', desc: 'Error paths built into every Zap so a failed step gets flagged instead of silently dropping data.', img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80' },
   { icon: 'fa-solid fa-vial', title: 'Testing and Validation', desc: 'End-to-end QA on every workflow with real data before it goes live on your actual apps.', img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80' },
@@ -55,7 +55,7 @@ const ZAP_INCLUDED_CARDS = [
 
 const ZAP_SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Workflow Audit and Discovery', desc: 'We map your tools and find the highest-value automation opportunities before building anything.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', desc: 'Every workflow documented before we build — trigger events, actions, and error paths planned.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Trigger and Action Mapping', desc: 'Every workflow documented before we build, trigger events, actions, and error paths planned.' },
   { icon: 'fa-solid fa-plug', title: 'App Connection Setup', desc: 'Your CRM, forms, email, and other tools connected with the right authentication and permissions.' },
   { icon: 'fa-solid fa-route', title: 'Lead Routing Automation', desc: 'Leads flow from forms into your CRM with the right tags and pipeline stage, automatically.' },
   { icon: 'fa-solid fa-bell', title: 'Instant Team Alerts', desc: 'Slack or email notifications the moment a new deal, booking, or high-value lead comes in.' },
@@ -76,7 +76,7 @@ const ZAP_WHO_FOR = [
 const ZAP_WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We audit before we automate', desc: 'Every engagement starts by mapping your current tools and manual tasks, so we build the workflows that actually save the most time.' },
   { icon: 'fa-solid fa-diagram-project', title: 'We document every workflow', desc: 'Trigger events, actions, conditions, and error paths are documented for every Zap, not left as tribal knowledge in one person’s head.' },
-  { icon: 'fa-solid fa-plug', title: 'We connect your full stack, not just two apps', desc: 'CRM, forms, email, Slack, invoicing — we build the workflows that link your entire operation, not just a single quick win.' },
+  { icon: 'fa-solid fa-plug', title: 'We connect your full stack, not just two apps', desc: 'CRM, forms, email, Slack, invoicing, we build the workflows that link your entire operation, not just a single quick win.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'We build in error handling from day one', desc: 'A Zap that fails silently is worse than no automation at all. We configure error paths so failures get flagged immediately.' },
   { icon: 'fa-solid fa-chalkboard-user', title: 'We train your team on what we build', desc: 'A live walkthrough and clear documentation mean your team can manage and extend the automations after we hand them over.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts. You stay because your workflows are saving time, not because you signed something months ago.' },
@@ -84,15 +84,15 @@ const ZAP_WHY_ISM = [
 
 const ZAP_PROCESS = [
   { n: '01', title: 'Audit', desc: 'We map your current tools, identify manual tasks, and find the highest-value automation opportunities.' },
-  { n: '02', title: 'Map', desc: 'Every workflow is documented before we build — trigger events, actions, conditions, and error paths all planned.' },
+  { n: '02', title: 'Map', desc: 'Every workflow is documented before we build, trigger events, actions, conditions, and error paths all planned.' },
   { n: '03', title: 'Build', desc: 'All Zaps built, tested, and connected to your live apps with full error handling configured.' },
   { n: '04', title: 'Test', desc: 'End-to-end QA on every workflow using real data before anything touches your live systems.' },
   { n: '05', title: 'Document and Train', desc: 'Clear documentation delivered and a live team walkthrough so your team can manage the workflows confidently.' },
 ];
 
 const ZAP_FAQS = [
-  { q: 'What is Zapier and how does it work?', a: 'Zapier connects over 7,000 apps through trigger-and-action workflows called Zaps. When something happens in one app — a form submission, a new deal, a booking — Zapier automatically performs an action in another app, such as adding a contact to your CRM or sending a Slack alert.' },
-  { q: 'Do we need any technical skill to use Zapier?', a: 'No. Zapier is built for non-technical teams — no code is required to connect apps or configure workflows. We handle the setup, testing, and documentation, so your team can manage the finished automations without needing to write anything.' },
+  { q: 'What is Zapier and how does it work?', a: 'Zapier connects over 7,000 apps through trigger-and-action workflows called Zaps. When something happens in one app, a form submission, a new deal, a booking, Zapier automatically performs an action in another app, such as adding a contact to your CRM or sending a Slack alert.' },
+  { q: 'Do we need any technical skill to use Zapier?', a: 'No. Zapier is built for non-technical teams, no code is required to connect apps or configure workflows. We handle the setup, testing, and documentation, so your team can manage the finished automations without needing to write anything.' },
   { q: 'How many Zaps are included in a typical engagement?', a: 'Most engagements start with ten custom Zaps, scoped during the audit stage based on where your team is losing the most time to manual work. Additional Zaps can be added as your needs grow.' },
   { q: 'What happens if a Zap fails?', a: 'We build error handling into every Zap, so failures are flagged rather than silently dropping data. You get notified when something needs attention instead of discovering the gap weeks later.' },
   { q: 'Can Zapier replace our developer for integrations?', a: 'For most standard app-to-app workflows, yes. Zapier eliminates the need for custom-coded integrations for routine tasks like lead routing, notifications, and data syncing, saving both time and developer budget.' },
@@ -101,7 +101,7 @@ const ZAP_FAQS = [
   { q: 'How long does a Zapier automation project take?', a: 'A typical engagement covering audit, ten custom Zaps, testing, and documentation moves from audit to fully documented workflows in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function ZapierFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function ZapierPage() {
           <div className="ism-container">
             <div className="zap-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Zapier Workflows That Connect Your Tools and Save Hours Every{' '}
@@ -178,7 +178,7 @@ export default function ZapierPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  Custom Zapier automations that link your CRM, forms, email, and apps —{' '}
+                  Custom Zapier automations that link your CRM, forms, email, and apps,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no code, no delays, no manual copying</span> between systems.
                 </p>
 
@@ -192,7 +192,7 @@ export default function ZapierPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="zap-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/zapier-workflow-automation.webp" alt="Zapier workflow automation setup" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -260,11 +260,11 @@ export default function ZapierPage() {
                   Every Tool Talking to Every Other Tool.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most businesses run on a stack of disconnected tools — a CRM that does not talk to their email platform, a form that dumps leads into a spreadsheet, a Slack channel that misses half the notifications. The result is manual work, delays, and human error every single day.
+                  Most businesses run on a stack of disconnected tools, a CRM that does not talk to their email platform, a form that dumps leads into a spreadsheet, a Slack channel that misses half the notifications. The result is manual work, delays, and human error every single day.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Zapier connects over 7,000 apps through a visual workflow builder. We design and build automations that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>eliminate the manual steps between your tools</span> — so your team spends time on work that matters, not copying data between systems.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>eliminate the manual steps between your tools</span>, so your team spends time on work that matters, not copying data between systems.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -311,11 +311,11 @@ export default function ZapierPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Connect your CRM, forms, email platform, Slack, and hundreds more apps without writing a single line of code</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Every workflow fires the moment the trigger event happens —{' '}
+                    Every workflow fires the moment the trigger event happens,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no batch delays, no manual exports, no missed notifications</span>. A lead fills out a form and is in your CRM before you have finished reading the notification.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    We design and build the automations that eliminate the manual steps between your tools — lead routing, deal alerts, invoicing, and follow-up sequences — so your team spends time on work that matters.
+                    We design and build the automations that eliminate the manual steps between your tools, lead routing, deal alerts, invoicing, and follow-up sequences, so your team spends time on work that matters.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function ZapierPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Apps Connected */}
+                {/* Floating badge, Apps Connected */}
                 <div className="zap-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-plug" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -342,7 +342,7 @@ export default function ZapierPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Response Time */}
+                {/* Floating badge, Response Time */}
                 <div className="zap-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bolt" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -353,7 +353,7 @@ export default function ZapierPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Manual Work Cut */}
+                {/* Floating badge, Manual Work Cut */}
                 <div className="zap-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-trend-down" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -364,7 +364,7 @@ export default function ZapierPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Error Rate */}
+                {/* Floating badge, Error Rate */}
                 <div className="zap-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-shield-halved" style={{ color: 'var(--color-primary)', fontSize: 12 }} />

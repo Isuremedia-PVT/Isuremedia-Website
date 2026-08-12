@@ -10,23 +10,23 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'Static image ad creative — single and multi-variant sets',
-  'Carousel ad design — product and story-based formats',
+  'Static image ad creative, single and multi-variant sets',
+  'Carousel ad design, product and story-based formats',
   'Video ad thumbnails and static frames for video campaigns',
-  'Display and banner ad sets — all standard IAB sizes',
+  'Display and banner ad sets, all standard IAB sizes',
   'UGC-style and native ad creative',
-  'LinkedIn ad creative — sponsored content and conversation ads',
-  'Creative strategy — messaging angles, hooks, and testing frameworks',
+  'LinkedIn ad creative, sponsored content and conversation ads',
+  'Creative strategy, messaging angles, hooks, and testing frameworks',
   'Creative refresh and fatigue management',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-chart-line', title: 'Creative quality drives the majority of ad lift', desc: 'Nielsen analysis found 47% of the incremental sales lift from advertising is attributable to creative quality — more than targeting, reach, and frequency combined.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Creative quality drives the majority of ad lift', desc: 'Nielsen analysis found 47% of the incremental sales lift from advertising is attributable to creative quality, more than targeting, reach, and frequency combined.' },
   { icon: 'fa-solid fa-hand', title: 'Stops the scroll before the message lands', desc: 'A visual or headline that does not create an immediate reason to stop is an impression that never became an engagement. Pattern interruption is what the first creative element is for.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Communicates the offer before the click-away', desc: 'Most ads have one to three seconds to communicate enough of the offer to earn a click. Visual hierarchy determines whether the most important information lands first or gets buried.' },
   { icon: 'fa-solid fa-route', title: 'Matches the audience’s position in the funnel', desc: 'A cold prospect needs a different creative than a warm retargeting audience. The same creative served to both produces results for neither.' },
   { icon: 'fa-solid fa-shuffle', title: 'Format diversity keeps performance alive', desc: 'An account running only static single-image ads fatigues faster than one running static, carousel, video, and UGC-style formats in rotation.' },
-  { icon: 'fa-solid fa-scale-balanced', title: 'Strong creative beats a stronger offer', desc: 'A strong offer with weak creative consistently underperforms a moderate offer with strong creative — true on Meta, Google Display, LinkedIn, and every paid channel.' },
+  { icon: 'fa-solid fa-scale-balanced', title: 'Strong creative beats a stronger offer', desc: 'A strong offer with weak creative consistently underperforms a moderate offer with strong creative, true on Meta, Google Display, LinkedIn, and every paid channel.' },
 ];
 
 const CARD_VARIANTS = [
@@ -36,27 +36,27 @@ const CARD_VARIANTS = [
 ];
 
 const KEY_FACTORS = [
-  { icon: 'fa-solid fa-chart-line', title: 'ROAS Plateauing', impact: 'Highest impact', desc: 'A ROAS plateau despite stable budgets is the earliest financial signal that creative effectiveness is declining — usually showing up before CTR or CPM move at all.' },
+  { icon: 'fa-solid fa-chart-line', title: 'ROAS Plateauing', impact: 'Highest impact', desc: 'A ROAS plateau despite stable budgets is the earliest financial signal that creative effectiveness is declining, usually showing up before CTR or CPM move at all.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'Meta Fatigue and Limited Labels', impact: 'High impact', desc: 'When Meta marks a creative as Creative Fatigue or Creative Limited in Ads Manager, the algorithm is telling you delivery is being throttled by audience saturation.' },
-  { icon: 'fa-solid fa-coins', title: 'CPM Rising While CTR Holds Steady', impact: 'High impact', desc: 'This pattern means the algorithm is paying more to reach the diminishing unconverted portion of the audience — a direct cost of creative fatigue.' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Frequency Rising Faster Than Usual', impact: 'Medium impact', desc: 'Rising frequency means the algorithm has concentrated delivery on fewer people — a sign that the creative pool has stopped reaching new audience segments.' },
+  { icon: 'fa-solid fa-coins', title: 'CPM Rising While CTR Holds Steady', impact: 'High impact', desc: 'This pattern means the algorithm is paying more to reach the diminishing unconverted portion of the audience, a direct cost of creative fatigue.' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Frequency Rising Faster Than Usual', impact: 'Medium impact', desc: 'Rising frequency means the algorithm has concentrated delivery on fewer people, a sign that the creative pool has stopped reaching new audience segments.' },
   { icon: 'fa-solid fa-calendar-week', title: 'The Week-2-to-Week-5 Decline', impact: 'Medium impact', desc: 'Creative that performs well at week two is often fatigued by week five. The Andromeda ranking system concentrates delivery on strong performers, accelerating their own burnout.' },
   { icon: 'fa-solid fa-robot', title: 'Algorithmic Concentration', impact: 'Contextual', desc: 'Meta’s Andromeda system gives the algorithm granular creative-level signal. The better a creative performs, the faster it gets shown to the same people repeatedly.' },
-  { icon: 'fa-solid fa-shuffle', title: 'Format Diversity Gaps', impact: 'Contextual', desc: 'Running the same static-to-carousel pipeline repeatedly does not solve creative decay — it accelerates it. Genuine format diversity is what prevents it.' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Wasted Impression Rate', impact: 'Growing fast', desc: '23% of all ad impressions are considered wasted due to overexposure and creative fatigue — budget spent reaching people who have already tuned the creative out.' },
+  { icon: 'fa-solid fa-shuffle', title: 'Format Diversity Gaps', impact: 'Contextual', desc: 'Running the same static-to-carousel pipeline repeatedly does not solve creative decay, it accelerates it. Genuine format diversity is what prevents it.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Wasted Impression Rate', impact: 'Growing fast', desc: '23% of all ad impressions are considered wasted due to overexposure and creative fatigue, budget spent reaching people who have already tuned the creative out.' },
 ];
 
 const FORMATS = [
   { icon: 'fa-solid fa-image', title: 'Static Image Ad Creative', desc: 'Single and multi-variant static sets designed to the platform’s visual norms, the campaign objective, and the audience’s position in the funnel.', img: 'https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=500&q=80' },
   { icon: 'fa-solid fa-images', title: 'Carousel Ad Design', desc: 'Product, story-based, and benefit-led carousels designed as a sequence where each frame advances the narrative or presents a new element of the offer.', img: 'https://images.unsplash.com/photo-1522152302542-71a8e5172aa1?w=500&q=80' },
   { icon: 'fa-solid fa-table-cells-large', title: 'Display and Banner Ad Sets', desc: 'Full sets in all standard IAB display sizes plus Google Responsive Display assets, with animated display ads in HTML5 where required.', img: 'https://images.unsplash.com/photo-1558698972-c50e325e6799?w=500&q=80' },
-  { icon: 'fa-solid fa-video', title: 'UGC-Style and Native Ad Creative', desc: 'Creative designed to look native to the platform rather than obviously branded — testimonial creative, founder-led formats, and native content treatments.', img: 'https://images.unsplash.com/photo-1620912189868-30778f884588?w=500&q=80' },
+  { icon: 'fa-solid fa-video', title: 'UGC-Style and Native Ad Creative', desc: 'Creative designed to look native to the platform rather than obviously branded, testimonial creative, founder-led formats, and native content treatments.', img: 'https://images.unsplash.com/photo-1620912189868-30778f884588?w=500&q=80' },
   { icon: 'fa-brands fa-linkedin', title: 'LinkedIn Ad Creative', desc: 'Sponsored Content ads, Document Ads, and Conversation Ad copy designed for the LinkedIn feed’s professional context and B2B audiences.', img: 'https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?w=500&q=80' },
   { icon: 'fa-solid fa-clapperboard', title: 'Video Ad Thumbnails and Static Frames', desc: 'Thumbnail design for YouTube and video campaigns, static frame ads, and end-card design for video creative across placements where video cannot run.', img: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-lightbulb', title: 'Creative Strategy and Messaging Framework', desc: 'The angles, hooks, and value propositions the creative set is built around — developed before any design begins.' },
+  { icon: 'fa-solid fa-lightbulb', title: 'Creative Strategy and Messaging Framework', desc: 'The angles, hooks, and value propositions the creative set is built around, developed before any design begins.' },
   { icon: 'fa-solid fa-image', title: 'Static Image Ad Creative', desc: 'Multi-variant static sets for A/B testing across hooks, value propositions, and visual approaches.' },
   { icon: 'fa-solid fa-images', title: 'Carousel Ad Design', desc: 'Sequenced carousel formats that consistently outperform single-image for consideration and comparison-stage audiences.' },
   { icon: 'fa-solid fa-table-cells-large', title: 'Display and Banner Ad Sets', desc: 'Full IAB size sets and Google Responsive Display assets, including animated HTML5 display ads where required.' },
@@ -69,43 +69,43 @@ const SERVICES = [
 const WHO_FOR = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Businesses running campaigns that are not converting', desc: 'If targeting is sound and budget is adequate but results are not there, the creative is almost certainly where the problem lives. We audit before we build.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
   { icon: 'fa-solid fa-arrow-trend-down', title: 'Advertisers experiencing creative fatigue', desc: 'If performance was strong and has declined without targeting or budget changes, fatigue is the most likely cause. We diagnose it and implement a rotation plan.', img: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?w=700&q=80' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster — which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds — at the volume e-commerce campaigns require.', img: 'https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?w=700&q=80' },
-  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to — not repurposed Meta creative.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand — same quality, client-specific application, no Isuremedia references.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster, which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds, at the volume e-commerce campaigns require.', img: 'https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?w=700&q=80' },
+  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to, not repurposed Meta creative.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
+  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand, same quality, client-specific application, no Isuremedia references.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-chart-line', title: 'We understand paid media, not just design', desc: 'How creative fatigue develops, how Andromeda scores creative quality, how format affects delivery — we design with platform mechanics in mind, not just visual output.' },
+  { icon: 'fa-solid fa-chart-line', title: 'We understand paid media, not just design', desc: 'How creative fatigue develops, how Andromeda scores creative quality, how format affects delivery, we design with platform mechanics in mind, not just visual output.' },
   { icon: 'fa-solid fa-lightbulb', title: 'We build messaging frameworks before we design', desc: 'A creative set built around one angle fatigues faster than one built around three or four distinct angles. The framework comes before the design.' },
-  { icon: 'fa-solid fa-vial', title: 'We design for testing from the start', desc: 'Clear variant differences on the specific element being tested, consistent everything else — producing clean test data instead of a test that tells you nothing.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We connect creative to campaign strategy', desc: 'The creative brief connects to the objective, the funnel stage, the audience temperature, and the landing page — so creative and campaign work as one system.' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'We manage refresh before fatigue sets in', desc: 'For retainer clients, new creative variants are in production before the existing set hits its fatigue window — no gap in performance.' },
+  { icon: 'fa-solid fa-vial', title: 'We design for testing from the start', desc: 'Clear variant differences on the specific element being tested, consistent everything else, producing clean test data instead of a test that tells you nothing.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We connect creative to campaign strategy', desc: 'The creative brief connects to the objective, the funnel stage, the audience temperature, and the landing page, so creative and campaign work as one system.' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'We manage refresh before fatigue sets in', desc: 'For retainer clients, new creative variants are in production before the existing set hits its fatigue window, no gap in performance.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing creative retainers are month to month. You stay because the creative is performing, not because you signed a contract.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Creative Audit', desc: 'For existing campaigns, we audit current creative — performance by asset, fatigue indicators, format diversity, and messaging angle coverage — before recommending what to build.' },
+  { n: '01', title: 'Creative Audit', desc: 'For existing campaigns, we audit current creative, performance by asset, fatigue indicators, format diversity, and messaging angle coverage, before recommending what to build.' },
   { n: '02', title: 'Messaging Framework', desc: 'We develop the specific angles, hooks, and value propositions the creative set will be built around, so the set has genuine variety from day one.' },
-  { n: '03', title: 'Brief and Format Selection', desc: 'We brief the creative set — formats, dimensions, copy direction, visual approach, and testing structure — based on platform, audience, and fatigue prevention.' },
+  { n: '03', title: 'Brief and Format Selection', desc: 'We brief the creative set, formats, dimensions, copy direction, visual approach, and testing structure, based on platform, audience, and fatigue prevention.' },
   { n: '04', title: 'Design and Production', desc: 'We produce the creative set to the brief, the brand system, and the platform’s visual norms, with clean multi-variant sets for testing.' },
   { n: '05', title: 'Test, Refresh, and Deliver', desc: 'Creative is delivered in every required format, monitored for fatigue indicators, and the next refresh cycle is already in production before ROAS declines.' },
 ];
 
 const FAQS = [
   { q: 'How often does ad creative need to be refreshed?', a: 'For audiences under 500,000, creative can fatigue in two to three weeks at moderate spend. For larger audiences, four to six weeks before fatigue becomes visible in ROAS. The Andromeda algorithm’s concentration of delivery on top performers means fatigue arrives faster than it used to.' },
-  { q: 'What is the difference between creative fatigue and creative failure?', a: 'Creative failure never performed — wrong message, wrong audience, wrong hierarchy. Creative fatigue performed well and then declined because the audience has seen it too many times. Failure requires a new approach. Fatigue requires new variants of an approach that was already working.' },
+  { q: 'What is the difference between creative fatigue and creative failure?', a: 'Creative failure never performed, wrong message, wrong audience, wrong hierarchy. Creative fatigue performed well and then declined because the audience has seen it too many times. Failure requires a new approach. Fatigue requires new variants of an approach that was already working.' },
   { q: 'Which formats perform best on Meta in 2026?', a: 'Video generates 20 to 40% higher conversion for products requiring demonstration. Static images deliver 40 to 60% lower CPMs. UGC-style creative outperforms polished branded creative in cold prospecting. The answer for most accounts is format diversity in rotation, not one optimal format.' },
-  { q: 'Do you write the ad copy or just design the visuals?', a: 'Both. Headline, primary text, and description copy are produced alongside the visual design as part of every brief — the hook in the headline and the visual hook need to work together.' },
+  { q: 'Do you write the ad copy or just design the visuals?', a: 'Both. Headline, primary text, and description copy are produced alongside the visual design as part of every brief, the hook in the headline and the visual hook need to work together.' },
   { q: 'Can you design for Google Display as well as Meta?', a: 'Yes. We produce full IAB display banner sets alongside Meta creative, ensuring consistent visual identity across channels running simultaneously.' },
   { q: 'What is UGC-style creative and why does it perform differently?', a: 'It mimics the visual style of organic content rather than a polished brand ad. It performs better in cold prospecting because it does not trigger the scroll-past response audiences apply to obvious ads.' },
-  { q: 'Can you produce creative for LinkedIn as well as Meta?', a: 'Yes. LinkedIn creative requires different visual treatment — credibility signals and professional pain-point framing. We produce it as distinct work, not repurposed Meta assets.' },
+  { q: 'Can you produce creative for LinkedIn as well as Meta?', a: 'Yes. LinkedIn creative requires different visual treatment, credibility signals and professional pain-point framing. We produce it as distinct work, not repurposed Meta assets.' },
   { q: 'Do you provide source files so we can make copy updates ourselves?', a: 'Yes. Source files are included with every delivery, so copy and offer updates can be made independently without briefing a new round.' },
   { q: 'How do you handle creative for different funnel stages?', a: 'Cold, warm, and hot creative have different jobs. Cold builds awareness. Warm addresses the objection that blocked the first conversion. Hot removes the last barrier with urgency or proof. We brief and design each stage separately.' },
-  { q: 'Can you audit our existing creative before we commission new work?', a: 'Yes. A creative audit is our standard starting point — reviewing performance by creative, fatigue indicators, format diversity, and messaging coverage before recommending what to build.' },
+  { q: 'Can you audit our existing creative before we commission new work?', a: 'Yes. A creative audit is our standard starting point, reviewing performance by creative, fatigue indicators, format diversity, and messaging coverage before recommending what to build.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -169,7 +169,7 @@ export default function AdCreativeDesignPage() {
           <div className="ism-container">
             <div className="acd-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Creative That Stops the Scroll and Converts the{' '}
@@ -182,7 +182,7 @@ export default function AdCreativeDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design performance ad creative for Meta, Google, LinkedIn, and other paid channels — static images, carousel sets, video thumbnails, display banners, and UGC-style visuals —{' '}
+                  We design performance ad creative for Meta, Google, LinkedIn, and other paid channels, static images, carousel sets, video thumbnails, display banners, and UGC-style visuals,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around messaging frameworks that drive conversions</span>{' '}
                   and refreshed frequently enough to prevent creative fatigue from killing your campaign performance.
                 </p>
@@ -197,7 +197,7 @@ export default function AdCreativeDesignPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="acd-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/ad-creative-design.webp" alt="Ad creative design in production" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -265,10 +265,10 @@ export default function AdCreativeDesignPage() {
                   Your Ad Budget Is Paying for Impressions. Your Creative Is Deciding Whether They Convert.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Creative is the single most impactful element in any paid campaign — responsible for 56% of all auction outcomes on Meta, more than bid strategy, audience targeting, and placements combined. Your targeting gets your ad in front of the right person. Your creative decides what they do next.
+                  Creative is the single most impactful element in any paid campaign, responsible for 56% of all auction outcomes on Meta, more than bid strategy, audience targeting, and placements combined. Your targeting gets your ad in front of the right person. Your creative decides what they do next.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Isuremedia produces ad creative that is built for performance — designed around the specific objective, the specific audience, and the specific platform — and refreshed at the cadence your campaigns need to{' '}
+                  Isuremedia produces ad creative that is built for performance, designed around the specific objective, the specific audience, and the specific platform, and refreshed at the cadence your campaigns need to{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>keep ROAS climbing rather than decaying</span>.
                 </p>
                 <a href="/contact"
@@ -312,16 +312,16 @@ export default function AdCreativeDesignPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Meta&apos;s Andromeda ranking system gives the algorithm significantly more granular signal on creative-level performance than its predecessor. When a creative performs well, the algorithm concentrates delivery on it — and{' '}
+                    Meta&apos;s Andromeda ranking system gives the algorithm significantly more granular signal on creative-level performance than its predecessor. When a creative performs well, the algorithm concentrates delivery on it, and{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a creative performing well at week two is often fatigued by week five</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     After just four repeated exposures to the same creative, the likelihood of conversion drops by approximately 45%.{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Click-through rates fall by 40% and conversion rates decline by as much as 60%</span>{' '}
-                    at similar frequency levels — and the decline shows up as a ROAS plateau before it shows up anywhere else.
+                    at similar frequency levels, and the decline shows up as a ROAS plateau before it shows up anywhere else.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The answer is not more volume of the same thing. Running the same static-to-carousel pipeline fifty times a month does not solve creative decay — it accelerates it. What prevents fatigue is genuine format diversity, a rotation of messaging angles, and a production system that delivers new variants before the existing ones exhaust their audience.
+                    The answer is not more volume of the same thing. Running the same static-to-carousel pipeline fifty times a month does not solve creative decay, it accelerates it. What prevents fatigue is genuine format diversity, a rotation of messaging angles, and a production system that delivers new variants before the existing ones exhaust their audience.
                   </p>
                 </div>
               </div>
@@ -337,7 +337,7 @@ export default function AdCreativeDesignPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — ROAS */}
+                {/* Floating badge, ROAS */}
                 <div className="acd-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-chart-line" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -348,7 +348,7 @@ export default function AdCreativeDesignPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — CTR */}
+                {/* Floating badge, CTR */}
                 <div className="acd-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrow-pointer" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -359,7 +359,7 @@ export default function AdCreativeDesignPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Fatigue Risk */}
+                {/* Floating badge, Fatigue Risk */}
                 <div className="acd-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-shuffle" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -370,7 +370,7 @@ export default function AdCreativeDesignPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Refresh */}
+                {/* Floating badge, Refresh */}
                 <div className="acd-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrows-rotate" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -397,7 +397,7 @@ export default function AdCreativeDesignPage() {
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Best Targeting Cannot Save a Creative That Fails to Stop the Scroll.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Most campaign performance problems are diagnosed as targeting or budget problems because those are the levers media buyers can adjust. Creative is often left unchanged while everything around it is optimised — even though it is doing most of the work.
+                Most campaign performance problems are diagnosed as targeting or budget problems because those are the levers media buyers can adjust. Creative is often left unchanged while everything around it is optimised, even though it is doing most of the work.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -435,7 +435,7 @@ export default function AdCreativeDesignPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Creative Fatigue Warning Signs to Watch For.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Creative fatigue is a silent threat — it rarely announces itself until budget has already been wasted. Every signal below is something Isuremedia actively monitors for every ad creative client.
+                Creative fatigue is a silent threat, it rarely announces itself until budget has already been wasted. Every signal below is something Isuremedia actively monitors for every ad creative client.
               </p>
             </div>
             <div className="factors-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -479,7 +479,7 @@ export default function AdCreativeDesignPage() {
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Performance Creative Across Every Format Your Campaigns Need.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Different platforms and different funnel stages call for different formats. We produce every one to the platform&apos;s exact specs — nothing stretched, cropped, or left underperforming.
+                Different platforms and different funnel stages call for different formats. We produce every one to the platform&apos;s exact specs, nothing stretched, cropped, or left underperforming.
               </p>
             </div>
             <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia Produces for Every Campaign</p>
@@ -526,10 +526,10 @@ export default function AdCreativeDesignPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23% of all ad impressions</span>{' '}
-                  are considered wasted due to overexposure and creative fatigue — budget spent reaching people who have already tuned the creative out.
+                  are considered wasted due to overexposure and creative fatigue, budget spent reaching people who have already tuned the creative out.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  The decline shows up as a ROAS plateau before it shows up in CTR or CPM — which means most advertisers do not catch it until significant budget has already been wasted. Running more of the same creative does not fix this. It accelerates it.
+                  The decline shows up as a ROAS plateau before it shows up in CTR or CPM, which means most advertisers do not catch it until significant budget has already been wasted. Running more of the same creative does not fix this. It accelerates it.
                 </p>
               </div>
             </div>
@@ -608,7 +608,7 @@ export default function AdCreativeDesignPage() {
               <div style={{ position: 'relative', maxWidth: 560 }}>
                 <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Find out whether your ad creative is helping or hurting your campaign performance.</h3>
                 <p style={{ fontFamily: I, fontSize: 14.5, color: 'rgba(255,255,255,.80)', lineHeight: 1.65, margin: 0 }}>
-                  A free creative audit will show you the specific issues affecting your existing creative — and what a properly built replacement set would look like.
+                  A free creative audit will show you the specific issues affecting your existing creative, and what a properly built replacement set would look like.
                 </p>
               </div>
               <a href="/contact" className="mid-cta-btn"
@@ -718,7 +718,7 @@ export default function AdCreativeDesignPage() {
               ))}
             </div>
             <p style={{ textAlign: 'center', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.7, maxWidth: 780, margin: '48px auto 0' }}>
-              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> Single-format creative sets — two to three business days. Multi-format campaign sets — three to five business days. Full creative systems with strategy and multiple format variants — five to seven business days.
+              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> Single-format creative sets, two to three business days. Multi-format campaign sets, three to five business days. Full creative systems with strategy and multiple format variants, five to seven business days.
             </p>
             {/* CTA */}
             <div style={{ textAlign: 'center', marginTop: 40 }}>

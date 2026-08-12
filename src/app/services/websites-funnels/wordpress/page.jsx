@@ -11,7 +11,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
   'Custom WordPress theme design and development',
-  'Page builder setup — Elementor, Divi, or custom blocks',
+  'Page builder setup, Elementor, Divi, or custom blocks',
   'WooCommerce store builds and configuration',
   'Site speed and Core Web Vitals optimisation',
   'Security hardening and malware protection setup',
@@ -21,10 +21,10 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-brands fa-wordpress', title: 'Powers over 40% of the internet', desc: 'The most widely used platform in the world, with an ecosystem of plugins and themes for nearly any business need.' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Full control over speed and performance', desc: 'Properly built WordPress sites load fast and pass Core Web Vitals — the platform isn’t the bottleneck, poor builds are.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Full control over speed and performance', desc: 'Properly built WordPress sites load fast and pass Core Web Vitals, the platform isn’t the bottleneck, poor builds are.' },
   { icon: 'fa-solid fa-cart-shopping', title: 'WooCommerce runs a third of all online stores', desc: 'A mature, flexible e-commerce platform that scales from a handful of products to full catalogues.' },
   { icon: 'fa-solid fa-pen-to-square', title: 'A CMS your team can actually manage', desc: 'Content, pages, and blog posts editable without a developer, once the site is built with a clean, understandable structure.' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'An ecosystem for nearly every function', desc: 'Booking, membership, forms, SEO, multilingual — a mature plugin ecosystem covers functionality most businesses need.' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'An ecosystem for nearly every function', desc: 'Booking, membership, forms, SEO, multilingual, a mature plugin ecosystem covers functionality most businesses need.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Security that depends entirely on the build', desc: 'WordPress’s popularity makes it a target. Properly hardened and maintained sites stay secure; neglected ones don’t.' },
 ];
 
@@ -36,14 +36,14 @@ const WHY_MATTERS_VARIANTS = [
 
 const FAILURE_MODES = [
   { icon: 'fa-solid fa-layer-group', title: 'Plugin bloat nobody ever cleans up', impact: 'Most common', desc: 'Every plugin added and never removed slows the site down and adds a security risk. We build lean and audit regularly.' },
-  { icon: 'fa-solid fa-gauge-high', title: 'No performance optimisation at build time', impact: 'High impact', desc: 'Unoptimised images, no caching, and heavy themes are the default outcome of a rushed build — and the main reason WordPress sites feel slow.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'No security hardening or update schedule', impact: 'High impact', desc: 'An unpatched WordPress site is a target. Regular updates and hardening are not optional maintenance — they’re the baseline.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'No performance optimisation at build time', impact: 'High impact', desc: 'Unoptimised images, no caching, and heavy themes are the default outcome of a rushed build, and the main reason WordPress sites feel slow.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'No security hardening or update schedule', impact: 'High impact', desc: 'An unpatched WordPress site is a target. Regular updates and hardening are not optional maintenance, they’re the baseline.' },
   { icon: 'fa-solid fa-code', title: 'Theme and plugin conflicts nobody tests for', impact: 'Ongoing', desc: 'Updates can silently break functionality. Sites without a testing process before updates go live discover this the hard way.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'WordPress Site Audit', desc: 'Performance, security, plugin health, and structure — what to fix first on an existing site.', img: '/hire/wordpress/hire word press Custom Websites.webp' },
-  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Theme Design & Development', desc: 'Bespoke designs built as clean, fast WordPress themes — not a generic template with your logo swapped in.', img: '/hire/wordpress/Theme Dev.webp' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'WordPress Site Audit', desc: 'Performance, security, plugin health, and structure, what to fix first on an existing site.', img: '/hire/wordpress/hire word press Custom Websites.webp' },
+  { icon: 'fa-solid fa-pen-ruler', title: 'Custom Theme Design & Development', desc: 'Bespoke designs built as clean, fast WordPress themes, not a generic template with your logo swapped in.', img: '/hire/wordpress/Theme Dev.webp' },
   { icon: 'fa-solid fa-cart-shopping', title: 'WooCommerce Store Builds', desc: 'Product catalogue, payment gateways, shipping rules, and checkout optimisation for online stores.', img: '/hire/wordpress/WooCommerce.webp' },
   { icon: 'fa-solid fa-gauge-high', title: 'Speed & Core Web Vitals Optimisation', desc: 'Caching, image optimisation, and code cleanup to bring load times and Core Web Vitals into the green.', img: '/hire/wordpress/Speed & Performance.webp' },
   { icon: 'fa-solid fa-shield-halved', title: 'Security Hardening', desc: 'Firewall configuration, login protection, and malware scanning to keep the site secure long-term.', img: '/hire/wordpress/API & Integrations.webp' },
@@ -53,16 +53,16 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Businesses needing a content-managed website', desc: 'Blogs, service pages, and regularly updated content are exactly what WordPress was built to manage well.', img: 'https://picsum.photos/seed/wp-whofor-content/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands wanting flexible ownership', desc: 'WooCommerce gives full control over the store without the transaction fees or platform lock-in of hosted solutions.', img: 'https://picsum.photos/seed/wp-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a slow or outdated WordPress site', desc: 'Most WordPress performance problems are fixable without a full rebuild — usually a plugin, theme, or hosting issue.', img: 'https://picsum.photos/seed/wp-whofor-slow/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Teams that want to manage content themselves', desc: 'A properly built WordPress site is editable by non-technical staff without breaking the design.', img: 'https://picsum.photos/seed/wp-whofor-team/700/620' },
-  { icon: 'fa-solid fa-building-columns', title: 'Membership and community-driven businesses', desc: 'WordPress’s plugin ecosystem supports membership gating, forums, and community features well.', img: 'https://picsum.photos/seed/wp-whofor-membership/700/620' },
-  { icon: 'fa-solid fa-triangle-exclamation', title: 'Businesses that have been hacked or hit with malware', desc: 'A common and solvable problem. We clean, harden, and put ongoing protection in place.', img: 'https://picsum.photos/seed/wp-whofor-hacked/700/620' },
+  { icon: 'fa-solid fa-store', title: 'Businesses needing a content-managed website', desc: 'Blogs, service pages, and regularly updated content are exactly what WordPress was built to manage well.', img: '/services-six-card/Web Development Section/Wordpress Development/Businesses needing a content- managed website.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands wanting flexible ownership', desc: 'WooCommerce gives full control over the store without the transaction fees or platform lock-in of hosted solutions.', img: '/services-six-card/Web Development Section/Wordpress Development/E-commerce brands wanting flexible Ownership.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a slow or outdated WordPress site', desc: 'Most WordPress performance problems are fixable without a full rebuild, usually a plugin, theme, or hosting issue.', img: '/services-six-card/Web Development Section/Wordpress Development/Businesses with a slow or outdated WordPress site.webp' },
+  { icon: 'fa-solid fa-users', title: 'Teams that want to manage content themselves', desc: 'A properly built WordPress site is editable by non-technical staff without breaking the design.', img: '/services-six-card/Web Development Section/Wordpress Development/Teams that want to manage content themselves.webp' },
+  { icon: 'fa-solid fa-building-columns', title: 'Membership and community-driven businesses', desc: 'WordPress’s plugin ecosystem supports membership gating, forums, and community features well.', img: '/services-six-card/Web Development Section/Wordpress Development/Membership and community- driven businesse.webp' },
+  { icon: 'fa-solid fa-triangle-exclamation', title: 'Businesses that have been hacked or hit with malware', desc: 'A common and solvable problem. We clean, harden, and put ongoing protection in place.', img: '/services-six-card/Web Development Section/Wordpress Development/Businesses that have been hacked or hit with malware.webp' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-code', title: 'We build lean, not bloated', desc: 'Only the plugins and code the site actually needs — fewer conflicts, faster load times, smaller attack surface.' },
+  { icon: 'fa-solid fa-code', title: 'We build lean, not bloated', desc: 'Only the plugins and code the site actually needs, fewer conflicts, faster load times, smaller attack surface.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Performance is part of the build, not an afterthought', desc: 'Caching, image optimisation, and clean code from day one, not bolted on after the site feels slow.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Security hardening on every build', desc: 'Firewall, login protection, and malware scanning configured as standard, not sold as an upsell.' },
   { icon: 'fa-solid fa-pen-to-square', title: 'A CMS your team can actually use', desc: 'Clean, understandable content structures so your team can manage the site without breaking it.' },
@@ -80,7 +80,7 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'Why choose WordPress over a website builder like Wix or Squarespace?', a: 'WordPress offers far greater flexibility, ownership of your data and hosting, and no platform lock-in — at the cost of needing proper setup, which is where we come in.' },
+  { q: 'Why choose WordPress over a website builder like Wix or Squarespace?', a: 'WordPress offers far greater flexibility, ownership of your data and hosting, and no platform lock-in, at the cost of needing proper setup, which is where we come in.' },
   { q: 'Can you fix my existing slow or hacked WordPress site?', a: 'Yes. Most performance and security issues are fixable without a full rebuild. We audit first and recommend the right level of work.' },
   { q: 'Do you build with page builders like Elementor, or custom code?', a: 'Both, depending on the project. Page builders suit sites the client wants to edit heavily themselves; custom code suits performance-critical or highly bespoke builds.' },
   { q: 'How long does a WordPress website take to build?', a: 'A standard five-to-eight page website typically takes three to four weeks. WooCommerce stores usually take four to six weeks depending on catalogue size.' },
@@ -169,7 +169,7 @@ export default function WordPressDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We design and build fast, secure WordPress websites and WooCommerce stores — lean, properly maintained, and{' '}
+                  We design and build fast, secure WordPress websites and WooCommerce stores, lean, properly maintained, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built for your team to actually manage</span>.
                 </p>
 
@@ -244,11 +244,11 @@ export default function WordPressDevelopmentPage() {
                   A Slow WordPress Site Isn&apos;t WordPress&apos;s Fault. It&apos;s the Build&apos;s.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Most slow, cluttered WordPress sites got that way from plugin bloat, no caching, and a theme that was never optimised — not from anything inherent to the platform.
+                  Most slow, cluttered WordPress sites got that way from plugin bloat, no caching, and a theme that was never optimised, not from anything inherent to the platform.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>lean, fast, secure WordPress sites</span> — and keeps them that way with proper ongoing maintenance.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>lean, fast, secure WordPress sites</span>, and keeps them that way with proper ongoing maintenance.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,7 +292,7 @@ export default function WordPressDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     WordPress powers over 40% of the internet, but{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the platform isn&apos;t what makes a site slow</span> — the build is.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the platform isn&apos;t what makes a site slow</span>, the build is.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A lean build with{' '}
@@ -405,7 +405,7 @@ export default function WordPressDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes WordPress Sites to Slow Down or Break — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes WordPress Sites to Slow Down or Break, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most WordPress complaints trace back to one of these four causes.
               </p>
@@ -450,7 +450,7 @@ export default function WordPressDevelopmentPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our WordPress Development Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Performance, and Ongoing Care — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, Build, Performance, and Ongoing Care, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -520,7 +520,7 @@ export default function WordPressDevelopmentPage() {
                   A free consultation will show you what your current site is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

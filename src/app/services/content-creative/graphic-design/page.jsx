@@ -10,7 +10,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'Social media graphics — posts, stories, covers, and templates',
+  'Social media graphics, posts, stories, covers, and templates',
   'Presentation and pitch deck design',
   'Email template design',
   'Digital and print marketing collateral',
@@ -20,9 +20,9 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-star', title: 'Higher perceived value', desc: 'A business whose visuals are professional and consistent is perceived as more capable and trustworthy — before a conversation happens.' },
+  { icon: 'fa-solid fa-star', title: 'Higher perceived value', desc: 'A business whose visuals are professional and consistent is perceived as more capable and trustworthy, before a conversation happens.' },
   { icon: 'fa-solid fa-chart-line', title: 'Better performance from every channel', desc: 'A well-designed email gets opened more. A professional social post stops the scroll. A coherent deck gets followed.' },
-  { icon: 'fa-solid fa-arrows-to-circle', title: 'A brand that scales without fragmenting', desc: 'As a business grows, design consistency becomes harder to maintain without a system — we keep every asset coherent.' },
+  { icon: 'fa-solid fa-arrows-to-circle', title: 'A brand that scales without fragmenting', desc: 'As a business grows, design consistency becomes harder to maintain without a system, we keep every asset coherent.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Speed on campaigns and launches', desc: 'When design capacity is reliable and predictable, campaign timelines stop slipping.' },
   { icon: 'fa-solid fa-percent', title: '23% average revenue increase', desc: 'Consistent visual branding increases revenue by an average of 23% through recognition, trust, and perceived quality.' },
   { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'Different fonts and colour treatments across channels signal a business that isn’t in control of its own presentation.' },
@@ -37,61 +37,61 @@ const WHY_MATTERS_VARIANTS = [
 const WHAT_WE_DESIGN = [
   { icon: 'fa-brands fa-instagram', title: 'Social Media Graphics', impact: 'Daily output', desc: 'Post graphics, story formats, carousel slides, and platform-specific templates your team can update without breaking the system.' },
   { icon: 'fa-solid fa-display', title: 'Presentation & Pitch Deck Design', impact: 'High impact', desc: 'Sales decks and investor presentations with visual hierarchy that makes content clear and the brand credible.' },
-  { icon: 'fa-solid fa-envelope-open-text', title: 'Email Template Design', impact: 'High impact', desc: 'HTML templates built for your platform and tested across clients — improving open-to-click rates.' },
+  { icon: 'fa-solid fa-envelope-open-text', title: 'Email Template Design', impact: 'High impact', desc: 'HTML templates built for your platform and tested across clients, improving open-to-click rates.' },
   { icon: 'fa-solid fa-file-image', title: 'Marketing Collateral', impact: 'Print-ready', desc: 'Brochures, flyers, one-pagers, and trade show graphics to print-ready specifications.' },
-  { icon: 'fa-solid fa-chart-pie', title: 'Infographics & Data Visualisation', impact: '3x more shared', desc: 'Complex data and process flows translated into clear, engaging graphics — shared 3x more than other content types.' },
+  { icon: 'fa-solid fa-chart-pie', title: 'Infographics & Data Visualisation', impact: '3x more shared', desc: 'Complex data and process flows translated into clear, engaging graphics, shared 3x more than other content types.' },
   { icon: 'fa-solid fa-rectangle-ad', title: 'Digital Display Advertising', impact: 'All ad platforms', desc: 'Banner sets in standard IAB sizes, animated display ads, and programmatic ad visuals in every required dimension.' },
   { icon: 'fa-solid fa-swatchbook', title: 'Brand Asset Production', impact: 'On-brand', desc: 'Applying your existing visual system correctly to new formats, campaigns, and contexts.' },
   { icon: 'fa-solid fa-file-lines', title: 'Document & Report Design', impact: 'Professional', desc: 'Annual reports, proposals, and case study documents formatted so the content is easy to navigate.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-calendar-check', title: 'Ongoing Design Retainer', desc: 'A fixed monthly allocation of design capacity — the predictable supply that eliminates the strategy-to-execution bottleneck.' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Campaign Design', desc: 'Full visual production for a campaign — key visual, ad set, social graphics, and email, designed as one coherent system.' },
-  { icon: 'fa-solid fa-display', title: 'Presentation & Deck Design', desc: 'Sales decks, pitch decks, and proposals — one-off projects or an ongoing template system.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Ongoing Design Retainer', desc: 'A fixed monthly allocation of design capacity, the predictable supply that eliminates the strategy-to-execution bottleneck.' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Campaign Design', desc: 'Full visual production for a campaign, key visual, ad set, social graphics, and email, designed as one coherent system.' },
+  { icon: 'fa-solid fa-display', title: 'Presentation & Deck Design', desc: 'Sales decks, pitch decks, and proposals, one-off projects or an ongoing template system.' },
   { icon: 'fa-brands fa-instagram', title: 'Social Media Design', desc: 'Regular graphic production to a consistent template system that keeps the feed visually coherent.' },
   { icon: 'fa-solid fa-file-image', title: 'Marketing Collateral Design', desc: 'Brochures, capability documents, and event graphics produced to print-ready specifications.' },
   { icon: 'fa-solid fa-chart-pie', title: 'Infographic & Data Visualisation', desc: 'Static and animated infographics that are significantly more shareable and memorable than text alone.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Design for Agencies', desc: 'Design assets produced for your clients under your brand — no ISureMedia references, scalable across accounts.' },
-  { icon: 'fa-solid fa-folder-open', title: 'Asset Library Management', desc: 'Every file we produce, organised and accessible — so past work can be updated or reused without starting over.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Design for Agencies', desc: 'Design assets produced for your clients under your brand, no ISureMedia references, scalable across accounts.' },
+  { icon: 'fa-solid fa-folder-open', title: 'Asset Library Management', desc: 'Every file we produce, organised and accessible, so past work can be updated or reused without starting over.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-layer-group', title: 'More work than design capacity', desc: 'When the calendar requires more output than one designer can produce, a partnership scales capacity without hiring overhead.', img: 'https://picsum.photos/seed/design-whofor-capacity/700/620' },
   { icon: 'fa-solid fa-shuffle', title: 'Inconsistent visuals across channels', desc: 'If your social, email, and sales materials look like different businesses, a managed partnership applies consistent standards.', img: 'https://picsum.photos/seed/design-whofor-inconsistent/700/620' },
-  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time — one partner with a structured process removes it.', img: 'https://picsum.photos/seed/design-whofor-freelancers/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint — we scale to match demand.', img: 'https://picsum.photos/seed/design-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window — dedicated capacity keeps it on schedule.', img: 'https://picsum.photos/seed/design-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-building', title: 'SMBs that can’t justify an in-house hire', desc: 'A full-time senior designer is significant overhead — a retainer provides senior capability at the scale you actually need.', img: 'https://picsum.photos/seed/design-whofor-smb/700/620' },
+  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time, one partner with a structured process removes it.', img: 'https://picsum.photos/seed/design-whofor-freelancers/700/620' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint, we scale to match demand.', img: 'https://picsum.photos/seed/design-whofor-agency/700/620' },
+  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window, dedicated capacity keeps it on schedule.', img: 'https://picsum.photos/seed/design-whofor-launch/700/620' },
+  { icon: 'fa-solid fa-building', title: 'SMBs that can’t justify an in-house hire', desc: 'A full-time senior designer is significant overhead, a retainer provides senior capability at the scale you actually need.', img: 'https://picsum.photos/seed/design-whofor-smb/700/620' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-bullseye', title: 'We design for outcomes, not just aesthetics', desc: 'Every asset is designed with the marketing goal in mind — conversion, trust, or engagement.' },
+  { icon: 'fa-solid fa-bullseye', title: 'We design for outcomes, not just aesthetics', desc: 'Every asset is designed with the marketing goal in mind, conversion, trust, or engagement.' },
   { icon: 'fa-solid fa-swatchbook', title: 'We work within your brand system', desc: 'When guidelines exist, we apply them correctly. When they don’t, we flag inconsistencies and keep everything coherent.' },
   { icon: 'fa-solid fa-diagram-project', title: 'We’re part of your full marketing operation', desc: 'The ad creative connects to campaign strategy, the email connects to the nurture sequence. Design isn’t isolated.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Structured delivery, predictable timelines', desc: 'Simple assets within 24 to 48 hours. Complex projects with a clear timeline agreed at brief stage.' },
-  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Design production for agency clients under your brand — your client’s brand applied correctly, scalable across accounts.' },
+  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Design production for agency clients under your brand, your client’s brand applied correctly, scalable across accounts.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the output is reliable and the quality is consistent, not because you are contractually committed.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Brief & Brand Onboarding', desc: 'Reviewing your guidelines, existing assets, and recurring design needs so no future brief starts from scratch.' },
   { n: '02', title: 'Brief & Scope Confirmation', desc: 'Asset type, dimensions, copy, objective, and deadline confirmed before design begins.' },
-  { n: '03', title: 'Initial Design', desc: 'The brand system and visual hierarchy applied to the objective — first drafts delivered within the agreed timeline.' },
-  { n: '04', title: 'Revision & Refinement', desc: 'Revisions included — layout, typography, imagery, or copy treatment refined until the asset meets the brief.' },
+  { n: '03', title: 'Initial Design', desc: 'The brand system and visual hierarchy applied to the objective, first drafts delivered within the agreed timeline.' },
+  { n: '04', title: 'Revision & Refinement', desc: 'Revisions included, layout, typography, imagery, or copy treatment refined until the asset meets the brief.' },
   { n: '05', title: 'Final Delivery', desc: 'Files delivered in all required formats, print-ready or sized correctly for every platform specified.' },
   { n: '06', title: 'Asset Library Management', desc: 'For retainer clients, every file produced is organised and accessible for future reuse or extension.' },
 ];
 
 const FAQS = [
-  { q: 'What types of graphic design do you produce?', a: 'Social media graphics, presentation decks, email templates, marketing collateral, infographics, display advertising, brand assets, and document design — the full range a marketing team regularly needs.' },
+  { q: 'What types of graphic design do you produce?', a: 'Social media graphics, presentation decks, email templates, marketing collateral, infographics, display advertising, brand assets, and document design, the full range a marketing team regularly needs.' },
   { q: 'Do you work from our existing brand guidelines?', a: 'Yes. When guidelines exist, we apply them correctly. When they’re incomplete, we flag the gaps and keep every asset visually coherent.' },
   { q: 'How fast can you turn around design work?', a: 'Simple assets within 24 to 48 hours. Deck redesigns take three to five business days. Full campaign systems take five to ten business days.' },
-  { q: 'How do you handle revisions?', a: 'Revisions are included in every project — not an add-on cost — until the asset meets the brief.' },
+  { q: 'How do you handle revisions?', a: 'Revisions are included in every project, not an add-on cost, until the asset meets the brief.' },
   { q: 'Do you provide source files?', a: 'Yes. Final delivery includes editable source files alongside exported final assets. You own the files.' },
-  { q: 'Can you produce design for print as well as digital?', a: 'Yes. Print files are produced to print-ready specifications — correct colour profile, bleed, trim marks, and resolution.' },
+  { q: 'Can you produce design for print as well as digital?', a: 'Yes. Print files are produced to print-ready specifications, correct colour profile, bleed, trim marks, and resolution.' },
   { q: 'Do you offer white-label design for agencies?', a: 'Yes. Assets produced for your clients under your brand, with no ISureMedia references, scalable across accounts.' },
-  { q: 'What is the difference between graphic design and brand identity?', a: 'Graphic design produces assets within an existing brand system. Brand identity creates or overhauls the system itself — logo, palette, typography, and guidelines.' },
+  { q: 'What is the difference between graphic design and brand identity?', a: 'Graphic design produces assets within an existing brand system. Brand identity creates or overhauls the system itself, logo, palette, typography, and guidelines.' },
 ];
 
 const RELATED = [
@@ -172,7 +172,7 @@ export default function GraphicDesignPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We produce the graphics, visuals, and marketing design assets your business needs — social graphics, decks, email templates, and more —{' '}
+                  We produce the graphics, visuals, and marketing design assets your business needs, social graphics, decks, email templates, and more,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered on time, on brand</span>{' '}
                   and at the quality your marketing needs to work.
                 </p>
@@ -248,10 +248,10 @@ export default function GraphicDesignPage() {
                   Most Businesses Have a Design Problem That Looks Like a Marketing Problem.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  The content calendar stalls because the graphics aren&apos;t ready. The brand looks different on the website, the social feed, and the sales deck. None of these are marketing failures — they are design supply failures.
+                  The content calendar stalls because the graphics aren&apos;t ready. The brand looks different on the website, the social feed, and the sales deck. None of these are marketing failures, they are design supply failures.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia provides the design output your marketing operation needs — consistent, on-brand, and{' '}
+                  ISureMedia provides the design output your marketing operation needs, consistent, on-brand, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered at the speed your campaigns require</span>.
                 </p>
                 <a href="/contact"
@@ -296,11 +296,11 @@ export default function GraphicDesignPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Consistent visual branding increases revenue by an average of{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23%</span> — brand recognition, trust, and perceived quality are all shaped by how consistently a business presents itself.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23%</span>, brand recognition, trust, and perceived quality are all shaped by how consistently a business presents itself.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Inconsistent design signals a business{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span> — prospects notice it even when they can&apos;t name it.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span>, prospects notice it even when they can&apos;t name it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Design quality is a signal. It tells prospects what the work they&apos;ll receive looks like, before they&apos;ve seen any of it.
@@ -373,7 +373,7 @@ export default function GraphicDesignPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Design Consistency Actually Produces.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Design does not replace a strong offer — but it determines how many people engage with it in the first place.
+                Design does not replace a strong offer, but it determines how many people engage with it in the first place.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>

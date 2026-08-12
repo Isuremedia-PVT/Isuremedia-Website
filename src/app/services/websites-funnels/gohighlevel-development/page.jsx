@@ -21,7 +21,7 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-robot', title: 'Website, CRM, and automation in one system', desc: 'GoHighLevel connects your site, pipeline, and follow-up in a single platform instead of stitching several tools together.' },
-  { icon: 'fa-solid fa-bolt', title: 'Built-in automation from day one', desc: 'Workflows, triggers, and pipelines are native to the platform — no need for a separate automation tool layered on top.' },
+  { icon: 'fa-solid fa-bolt', title: 'Built-in automation from day one', desc: 'Workflows, triggers, and pipelines are native to the platform, no need for a separate automation tool layered on top.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Booking and follow-up connected natively', desc: 'Calendar, forms, and CRM share data automatically, so every lead is captured and followed up without manual work.' },
   { icon: 'fa-solid fa-copy', title: 'Snapshots make rollouts repeatable', desc: 'A properly built snapshot lets an agency deploy a proven system to new clients in a fraction of the usual build time.' },
   { icon: 'fa-solid fa-sack-dollar', title: 'One platform, one subscription', desc: 'Replaces a CRM, email tool, funnel builder, and calendar app with a single monthly cost.' },
@@ -42,7 +42,7 @@ const FAILURE_MODES = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'GoHighLevel Audit & Strategy', desc: 'Current setup, automation coverage, and process gaps — what to configure and what to leave alone.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'GoHighLevel Audit & Strategy', desc: 'Current setup, automation coverage, and process gaps, what to configure and what to leave alone.' },
   { icon: 'fa-solid fa-pen-ruler', title: 'Custom Website & Funnel Design', desc: 'Bespoke GHL websites and funnels built around your brand, not a generic template.' },
   { icon: 'fa-solid fa-diagram-project', title: 'Pipeline & CRM Configuration', desc: 'Pipelines, custom fields, and tagging built to match how your team actually sells.' },
   { icon: 'fa-solid fa-robot', title: 'Automation & Workflow Build', desc: 'Triggers and workflows configured for follow-up, nurture, and internal notifications.' },
@@ -57,7 +57,7 @@ const WHO_FOR = [
   { icon: 'fa-solid fa-building', title: 'Businesses replacing multiple disconnected tools', desc: 'CRM, email, funnel builder, and calendar consolidated into one platform and one subscription.', img: 'https://picsum.photos/seed/ghl-whofor-consolidate/700/620' },
   { icon: 'fa-solid fa-robot', title: 'Businesses wanting CRM and automation together', desc: 'Pipeline management and follow-up automation working from the same data, natively connected.', img: 'https://picsum.photos/seed/ghl-whofor-automation/700/620' },
   { icon: 'fa-solid fa-rocket', title: 'Businesses launching a new funnel or offer', desc: 'A GHL funnel with proper tracking and automation built in from the first campaign.', img: 'https://picsum.photos/seed/ghl-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a GHL account left half-configured', desc: 'Most GHL frustration comes from an incomplete build, not the platform itself — usually fixable without starting over.', img: 'https://picsum.photos/seed/ghl-whofor-half/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a GHL account left half-configured', desc: 'Most GHL frustration comes from an incomplete build, not the platform itself, usually fixable without starting over.', img: 'https://picsum.photos/seed/ghl-whofor-half/700/620' },
   { icon: 'fa-solid fa-users', title: 'Businesses needing team training on the platform', desc: 'A properly configured GHL system only works if the team using it actually understands it.', img: 'https://picsum.photos/seed/ghl-whofor-training/700/620' },
 ];
 
@@ -80,7 +80,7 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'What is GoHighLevel and why would I use it over other platforms?', a: 'GoHighLevel combines a website builder, CRM, funnel builder, calendar, and automation engine into one platform — replacing several separate tools with a single subscription.' },
+  { q: 'What is GoHighLevel and why would I use it over other platforms?', a: 'GoHighLevel combines a website builder, CRM, funnel builder, calendar, and automation engine into one platform, replacing several separate tools with a single subscription.' },
   { q: 'Can you build custom snapshots for my agency?', a: 'Yes. We build proven, repeatable snapshots that let your agency deploy a working system to new clients quickly and consistently.' },
   { q: 'How long does a GoHighLevel build take?', a: 'A standard website and funnel build typically takes two to three weeks. Full CRM and automation builds usually take three to five weeks.' },
   { q: 'Do you provide training for our team?', a: 'Yes. Team training is included so your team can actually use and manage what’s been built.' },
@@ -169,7 +169,7 @@ export default function GoHighLevelDevelopmentPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build custom GoHighLevel websites, funnels, CRM pipelines, and automations —{' '}
+                  We build custom GoHighLevel websites, funnels, CRM pipelines, and automations,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>configured around your actual sales process</span>, not a generic template.
                 </p>
 
@@ -247,7 +247,7 @@ export default function GoHighLevelDevelopmentPage() {
                   Most GHL accounts get set up from a default snapshot, tweaked lightly, and never properly configured around the actual business or sales process.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds GoHighLevel sites, funnels, and automations custom — tested, trained into the team, and{' '}
+                  ISureMedia builds GoHighLevel sites, funnels, and automations custom, tested, trained into the team, and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to actually be used</span>.
                 </p>
                 <a href="/contact"
@@ -287,19 +287,19 @@ export default function GoHighLevelDevelopmentPage() {
             <div className="ghldev-whatis-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.85fr)', gap: 64, alignItems: 'center' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', lineHeight: 1.22, letterSpacing: '-0.4px', marginBottom: 20 }}>
-                  Website, CRM, and Automation — Actually Working Together.
+                  Website, CRM, and Automation, Actually Working Together.
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     GoHighLevel connects your site, pipeline, and follow-up into{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>one platform, one login</span> — instead of five disconnected tools.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>one platform, one login</span>, instead of five disconnected tools.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Properly built, it means{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every lead is captured and followed up</span> automatically, without manual work.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Development means configuring it around your actual process — and testing every automation before your team relies on it.
+                    Development means configuring it around your actual process, and testing every automation before your team relies on it.
                   </p>
                 </div>
               </div>
@@ -405,7 +405,7 @@ export default function GoHighLevelDevelopmentPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes GoHighLevel Builds to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes GoHighLevel Builds to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most GHL frustration traces back to one of these four causes.
               </p>
@@ -450,7 +450,7 @@ export default function GoHighLevelDevelopmentPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our GoHighLevel Development Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, CRM, Automation, and Ongoing Support — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Design, CRM, Automation, and Ongoing Support, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -520,7 +520,7 @@ export default function GoHighLevelDevelopmentPage() {
                   A free consultation will show you what your current setup is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

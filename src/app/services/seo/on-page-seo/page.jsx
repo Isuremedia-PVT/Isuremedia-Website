@@ -21,7 +21,7 @@ const BRIDGE_ITEMS = [
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Higher rankings for the searches that matter', desc: 'On-page optimisation aligns your pages with the exact terms your customers search for. Matched intent ranks higher.' },
   { icon: 'fa-solid fa-chart-line', title: 'More traffic from existing pages', desc: 'Optimising pages you already have is often the fastest way to increase organic traffic without creating anything new.' },
-  { icon: 'fa-solid fa-arrow-pointer', title: 'Better click-through rates', desc: 'Well-written, keyword-relevant title tags and meta descriptions get more clicks — even when rankings stay the same.' },
+  { icon: 'fa-solid fa-arrow-pointer', title: 'Better click-through rates', desc: 'Well-written, keyword-relevant title tags and meta descriptions get more clicks, even when rankings stay the same.' },
   { icon: 'fa-solid fa-bullseye', title: 'Content that satisfies search intent', desc: 'Google ranks for intent, not just keywords. On-page SEO makes sure your content answers what the searcher actually needs.' },
   { icon: 'fa-solid fa-link', title: 'Stronger internal linking and authority', desc: 'How your pages link to each other affects how Google distributes ranking authority across your site.' },
   { icon: 'fa-solid fa-robot', title: 'A foundation for AI search visibility', desc: 'Clearly structured pages that match intent are the pages AI systems pull from for AI-generated answers.' },
@@ -34,7 +34,7 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const COVERAGE = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword Research & Intent Mapping', impact: 'Foundation', desc: 'We identify the exact terms your customers use and the intent behind each — informational, comparison, or ready to buy.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword Research & Intent Mapping', impact: 'Foundation', desc: 'We identify the exact terms your customers use and the intent behind each, informational, comparison, or ready to buy.' },
   { icon: 'fa-solid fa-heading', title: 'Title Tags', impact: 'Highest impact', desc: 'Your single most important on-page ranking signal, and the first thing a searcher sees in Google results.' },
   { icon: 'fa-solid fa-align-left', title: 'Meta Descriptions', impact: 'Medium impact', desc: 'Doesn’t move rankings directly, but a strong meta description gets more clicks from the same position.' },
   { icon: 'fa-solid fa-list-ol', title: 'Heading Structure (H1, H2, H3)', impact: 'High impact', desc: 'Headings tell Google what your page is about and how it’s organised, ranking you for a wider set of related searches.' },
@@ -45,9 +45,9 @@ const COVERAGE = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'On-Page SEO Audit', desc: 'Every key page checked — keyword targeting, tags, headings, content depth, links, images, and schema.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'On-Page SEO Audit', desc: 'Every key page checked, keyword targeting, tags, headings, content depth, links, images, and schema.' },
   { icon: 'fa-solid fa-key', title: 'Keyword Research & Mapping', desc: 'We map keywords to the right pages so no two pages compete against each other for the same terms.' },
-  { icon: 'fa-solid fa-heading', title: 'Title Tag & Meta Optimisation', desc: 'Rewritten to include the right keywords, match intent, and improve click-through rates — often fast results.' },
+  { icon: 'fa-solid fa-heading', title: 'Title Tag & Meta Optimisation', desc: 'Rewritten to include the right keywords, match intent, and improve click-through rates, often fast results.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Content Optimisation', desc: 'We identify where content is thin or missing subtopics, and restructure it to rank more broadly.' },
   { icon: 'fa-solid fa-list-ol', title: 'Heading & Page Structure', desc: 'A clear hierarchy that signals the right topics to Google and reads naturally for visitors.' },
   { icon: 'fa-solid fa-link', title: 'Internal Linking Strategy', desc: 'We identify pages not receiving enough authority and implement a plan that strengthens the ones that matter.' },
@@ -65,32 +65,32 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-bullseye', title: 'We optimise for intent, not just keywords', desc: 'We match every page to the real intent behind the search — what keeps rankings once you earn them.' },
+  { icon: 'fa-solid fa-bullseye', title: 'We optimise for intent, not just keywords', desc: 'We match every page to the real intent behind the search, what keeps rankings once you earn them.' },
   { icon: 'fa-solid fa-robot', title: 'We cover AI search, not just Google', desc: 'On-page SEO built to work for Google AI Overviews, ChatGPT, and Perplexity, not just blue-link results.' },
   { icon: 'fa-solid fa-file-pen', title: 'We work on your existing pages first', desc: 'Most businesses need their existing pages to perform, not more content. We start with what you have.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What was changed, why it was changed, and what improved as a result — no jargon.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What was changed, why it was changed, and what improved as a result, no jargon.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because rankings are improving, not because you are locked in.' },
   { icon: 'fa-solid fa-headset', title: 'One dedicated contact', desc: 'One person who knows your site, your customers, and your SEO strategy.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'On-Page SEO Audit', desc: 'Every key page audited — keywords, tags, headings, content depth, links, images, and schema.' },
+  { n: '01', title: 'On-Page SEO Audit', desc: 'Every key page audited, keywords, tags, headings, content depth, links, images, and schema.' },
   { n: '02', title: 'Keyword Research & Mapping', desc: 'The highest-relevance, highest-intent terms mapped to the right pages, avoiding cannibalisation.' },
-  { n: '03', title: 'Optimisation', desc: 'Title tags, headings, content, internal links, images, and schema — highest-impact changes first.' },
+  { n: '03', title: 'Optimisation', desc: 'Title tags, headings, content, internal links, images, and schema, highest-impact changes first.' },
   { n: '04', title: 'Content Strengthening', desc: 'Thin or incomplete pages strengthened to fully satisfy the search intent they’re targeting.' },
   { n: '05', title: 'Monitoring & Updates', desc: 'Rankings, CTR, and traffic tracked for every optimised page, adjusted as intent shifts.' },
 ];
 
 const FAQS = [
-  { q: 'What is on-page SEO and why does it matter?', a: 'Optimising the visible elements of your pages — content, headings, tags, internal links, images — so search engines understand and rank each page for the right searches.' },
-  { q: 'What is the difference between on-page SEO and technical SEO?', a: 'Technical SEO works on backend infrastructure — crawlability, speed, schema. On-page SEO works on the content layer — keywords, headings, copy. Both are necessary.' },
+  { q: 'What is on-page SEO and why does it matter?', a: 'Optimising the visible elements of your pages, content, headings, tags, internal links, images, so search engines understand and rank each page for the right searches.' },
+  { q: 'What is the difference between on-page SEO and technical SEO?', a: 'Technical SEO works on backend infrastructure, crawlability, speed, schema. On-page SEO works on the content layer, keywords, headings, copy. Both are necessary.' },
   { q: 'How long does on-page SEO take to show results?', a: 'Title tag and meta changes often show CTR improvements within two to four weeks. Ranking improvements from content optimisation typically appear within four to ten weeks.' },
-  { q: 'Do you rewrite our existing content or just add keywords?', a: 'We optimise existing content rather than replacing it — improving coverage, strengthening thin sections, restructuring headings. We never stuff keywords.' },
-  { q: 'How many pages do you optimise at a time?', a: 'Depends on site size and goals. We prioritise by potential impact — highest-traffic, highest-value pages first — and work through them systematically.' },
-  { q: 'Can on-page SEO help pages that have never ranked?', a: 'Yes. Pages that have never ranked are often missing basic on-page signals — on-page SEO addresses all of them directly.' },
+  { q: 'Do you rewrite our existing content or just add keywords?', a: 'We optimise existing content rather than replacing it, improving coverage, strengthening thin sections, restructuring headings. We never stuff keywords.' },
+  { q: 'How many pages do you optimise at a time?', a: 'Depends on site size and goals. We prioritise by potential impact, highest-traffic, highest-value pages first, and work through them systematically.' },
+  { q: 'Can on-page SEO help pages that have never ranked?', a: 'Yes. Pages that have never ranked are often missing basic on-page signals, on-page SEO addresses all of them directly.' },
   { q: 'Does on-page SEO include content writing?', a: 'It includes content optimisation. Where pages need substantial new content, we work with our in-house content team to produce it.' },
   { q: 'Do I need on-page SEO if I am already doing link building?', a: 'Yes. Links build authority; on-page SEO determines what that authority is applied to. Both work together.' },
-  { q: 'How does on-page SEO help with AI search visibility?', a: 'AI systems pull answers from pages that are clearly structured, match intent, and directly answer questions — that groundwork is on-page SEO.' },
+  { q: 'How does on-page SEO help with AI search visibility?', a: 'AI systems pull answers from pages that are clearly structured, match intent, and directly answer questions, that groundwork is on-page SEO.' },
 ];
 
 const RELATED = [
@@ -172,7 +172,7 @@ export default function OnPageSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We optimise every element of your web pages — content, keywords, headings, meta tags, internal links — so Google understands what you offer and{' '}
+                  We optimise every element of your web pages, content, keywords, headings, meta tags, internal links, so Google understands what you offer and{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ranks you for searches that bring real customers</span>.
                 </p>
 
@@ -247,10 +247,10 @@ export default function OnPageSEOPage() {
                   Your Pages Might Be Invisible to Google for the Wrong Reasons.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Good content is not enough on its own. If your pages are not structured the way Google expects, they will not rank — even if what you have written is genuinely better than your competitors.
+                  Good content is not enough on its own. If your pages are not structured the way Google expects, they will not rank, even if what you have written is genuinely better than your competitors.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia goes through every page that matters to your business and optimises it properly —{' '}
+                  ISureMedia goes through every page that matters to your business and optimises it properly,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right keywords in the right places</span>, structured the way search engines and real visitors both want to read it.
                 </p>
                 <a href="/contact"
@@ -294,7 +294,7 @@ export default function OnPageSEOPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    On-page SEO optimises the visible elements of your pages — headings, content, title tags, images —{' '}
+                    On-page SEO optimises the visible elements of your pages, headings, content, title tags, images,{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>so search engines understand what they&apos;re about</span> and rank them for the right searches.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -302,7 +302,7 @@ export default function OnPageSEOPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>knows what those pages are about</span> and ranks them accordingly.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    It is where rankings are actually won or lost — the difference between a page on page three and one that gets found at the right moment.
+                    It is where rankings are actually won or lost, the difference between a page on page three and one that gets found at the right moment.
                   </p>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export default function OnPageSEOPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Rank for the Searches That Bring You Real Customers.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Over 76% of pages that appear in Google AI Overviews already rank in the top ten organically. Most businesses have pages that could rank much higher with targeted on-page work — the content is already there.
+                Over 76% of pages that appear in Google AI Overviews already rank in the top ten organically. Most businesses have pages that could rank much higher with targeted on-page work, the content is already there.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>

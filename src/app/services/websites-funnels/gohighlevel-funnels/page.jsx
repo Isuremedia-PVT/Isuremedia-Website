@@ -13,7 +13,7 @@ const BRIDGE_ITEMS = [
   'Full GoHighLevel account setup and configuration',
   'Funnel and landing page design and build inside GHL',
   'Pipeline and CRM setup and customisation',
-  'Workflow and automation build — email, SMS, and task automation',
+  'Workflow and automation build, email, SMS, and task automation',
   'Appointment booking and calendar configuration',
   'Reputation management and review automation',
   'White-label GHL setup for agencies and their clients',
@@ -22,10 +22,10 @@ const BRIDGE_ITEMS = [
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-users', title: 'CRM and contact management', desc: 'Every lead is captured and organised with the right tags, fields, and pipeline stage automatically. No leads fall through the cracks.' },
   { icon: 'fa-solid fa-diagram-project', title: 'Sales pipelines that match your process', desc: 'Custom stages from first enquiry to closed deal, with automated actions triggered at each stage change.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Appointment booking on autopilot', desc: 'Confirmation, reminder, and rescheduling sequences fire automatically — booking-to-show rates improve significantly.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Appointment booking on autopilot', desc: 'Confirmation, reminder, and rescheduling sequences fire automatically, booking-to-show rates improve significantly.' },
   { icon: 'fa-solid fa-bolt', title: 'Email and SMS automation', desc: 'New leads get followed up within five minutes. No-shows get re-booked. Every manual task that can be automated, is.' },
   { icon: 'fa-solid fa-star', title: 'Reputation management', desc: 'Review requests sent at the point of highest satisfaction, by text, consistently produce response rates manual asks never do.' },
-  { icon: 'fa-solid fa-chart-line', title: 'One dashboard for everything', desc: 'Pipeline revenue, source attribution, booking rates, and funnel conversion — no stitching reports across five tools.' },
+  { icon: 'fa-solid fa-chart-line', title: 'One dashboard for everything', desc: 'Pipeline revenue, source attribution, booking rates, and funnel conversion, no stitching reports across five tools.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -35,51 +35,51 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const BUILD = [
-  { icon: 'fa-solid fa-sliders', title: 'Full Account Setup', impact: 'Foundation', desc: 'Company settings, user permissions, connected domains, and email/SMS sending configuration — the foundation everything else is built on.' },
+  { icon: 'fa-solid fa-sliders', title: 'Full Account Setup', impact: 'Foundation', desc: 'Company settings, user permissions, connected domains, and email/SMS sending configuration, the foundation everything else is built on.' },
   { icon: 'fa-solid fa-rectangle-list', title: 'Funnel & Landing Page Design', impact: 'High impact', desc: 'Opt-in pages, sales pages, booking funnels, and thank you pages, connected directly to your CRM and automation workflows.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Pipeline & CRM Setup', impact: 'High impact', desc: 'Custom pipelines with the right stages, fields, tags, and automation triggers — your CRM becomes a live picture of your sales operation.' },
-  { icon: 'fa-solid fa-gears', title: 'Workflow & Automation Build', impact: 'Highest impact', desc: 'Follow-up, nurture, onboarding, and re-engagement sequences that run automatically — every manual task that can be automated, is.' },
-  { icon: 'fa-solid fa-calendar-days', title: 'Appointment Booking System', impact: 'High impact', desc: 'Booking pages, availability settings, round-robin, and reminder sequences — booking-to-show rates improve immediately.' },
-  { icon: 'fa-solid fa-envelope', title: 'Email & SMS Campaign Setup', impact: 'Medium impact', desc: 'Broadcast campaigns and drip sequences — welcome, nurture, and re-engagement — connected to the right segments.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Pipeline & CRM Setup', impact: 'High impact', desc: 'Custom pipelines with the right stages, fields, tags, and automation triggers, your CRM becomes a live picture of your sales operation.' },
+  { icon: 'fa-solid fa-gears', title: 'Workflow & Automation Build', impact: 'Highest impact', desc: 'Follow-up, nurture, onboarding, and re-engagement sequences that run automatically, every manual task that can be automated, is.' },
+  { icon: 'fa-solid fa-calendar-days', title: 'Appointment Booking System', impact: 'High impact', desc: 'Booking pages, availability settings, round-robin, and reminder sequences, booking-to-show rates improve immediately.' },
+  { icon: 'fa-solid fa-envelope', title: 'Email & SMS Campaign Setup', impact: 'Medium impact', desc: 'Broadcast campaigns and drip sequences, welcome, nurture, and re-engagement, connected to the right segments.' },
   { icon: 'fa-solid fa-star', title: 'Reputation Management Automation', impact: 'Medium impact', desc: 'Review request sequences that ask clients for reviews at the point of highest satisfaction, via SMS and email.' },
   { icon: 'fa-solid fa-tag', title: 'White-Label & Agency Setup', impact: 'For agencies', desc: 'Sub-account structure, agency branding, snapshot creation for repeatable deployments, and SaaS mode configuration.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'Businesses that subscribed to GHL but can’t get it working', desc: 'Most subscribers set up the basics and stop. We audit what’s there and build what’s missing, properly.', img: 'https://picsum.photos/seed/ghl-whofor-audit/700/620' },
-  { icon: 'fa-solid fa-house', title: 'Local service businesses', desc: 'HVAC, plumbing, dental, legal, real estate — GHL was built for exactly this, handling lead capture and follow-up automatically.', img: 'https://picsum.photos/seed/ghl-whofor-local/700/620' },
-  { icon: 'fa-solid fa-user-tie', title: 'Coaches and high-ticket service providers', desc: 'Application funnels, booking systems, and client nurture — GHL handles every stage of a high-ticket sales process.', img: 'https://picsum.photos/seed/ghl-whofor-coaches/700/620' },
+  { icon: 'fa-solid fa-house', title: 'Local service businesses', desc: 'HVAC, plumbing, dental, legal, real estate, GHL was built for exactly this, handling lead capture and follow-up automatically.', img: 'https://picsum.photos/seed/ghl-whofor-local/700/620' },
+  { icon: 'fa-solid fa-user-tie', title: 'Coaches and high-ticket service providers', desc: 'Application funnels, booking systems, and client nurture, GHL handles every stage of a high-ticket sales process.', img: 'https://picsum.photos/seed/ghl-whofor-coaches/700/620' },
   { icon: 'fa-solid fa-building', title: 'Marketing agencies managing multiple clients', desc: 'Snapshots, sub-accounts, and white-label branding built for managing every client from one place.', img: 'https://picsum.photos/seed/ghl-whofor-agencies/700/620' },
-  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses migrating from multiple tools', desc: 'Moving from HubSpot, ActiveCampaign, or Calendly to GHL — we manage the full migration, contacts and all.', img: 'https://picsum.photos/seed/ghl-whofor-migrate/700/620' },
-  { icon: 'fa-solid fa-cubes-stacked', title: 'Agencies reselling GHL as white-label SaaS', desc: 'Branded login, pricing plans, client onboarding — the infrastructure that makes a white-label GHL business viable.', img: 'https://picsum.photos/seed/ghl-whofor-saas/700/620' },
+  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses migrating from multiple tools', desc: 'Moving from HubSpot, ActiveCampaign, or Calendly to GHL, we manage the full migration, contacts and all.', img: 'https://picsum.photos/seed/ghl-whofor-migrate/700/620' },
+  { icon: 'fa-solid fa-cubes-stacked', title: 'Agencies reselling GHL as white-label SaaS', desc: 'Branded login, pricing plans, client onboarding, the infrastructure that makes a white-label GHL business viable.', img: 'https://picsum.photos/seed/ghl-whofor-saas/700/620' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-certificate', title: 'GoHighLevel certified partner', desc: 'Our team has demonstrated competency across the platform’s full feature set, not just the surface-level setup.' },
   { icon: 'fa-solid fa-star', title: 'GHL is our primary platform', desc: 'It’s the platform we run our own operations on and build most client systems with. We know what works before we promise it.' },
-  { icon: 'fa-solid fa-layer-group', title: 'We build the full system, not just parts', desc: 'Funnels, pipelines, automations, booking, and reporting — all integrated and tested together before handover.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Everything we build is documented', desc: 'You are not handed a black box — every automation and workflow is documented so your team can manage it.' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Post-build training and support', desc: 'A GHL account nobody can manage is not a finished project — we train your team and support what comes after.' },
+  { icon: 'fa-solid fa-layer-group', title: 'We build the full system, not just parts', desc: 'Funnels, pipelines, automations, booking, and reporting, all integrated and tested together before handover.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Everything we build is documented', desc: 'You are not handed a black box, every automation and workflow is documented so your team can manage it.' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'Post-build training and support', desc: 'A GHL account nobody can manage is not a finished project, we train your team and support what comes after.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the platform is running properly and the support is useful, not because you signed a contract.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Audit & Strategy', desc: 'We audit your existing account, or assess your needs from scratch, and map the full setup your business needs.' },
   { n: '02', title: 'Account Foundation', desc: 'Company settings, domains, email/SMS sending, and permissions configured correctly before anything is built on top.' },
-  { n: '03', title: 'Pipeline & CRM Build', desc: 'Custom pipelines with the right stages, fields, and triggers — your CRM organised the way your sales process works.' },
+  { n: '03', title: 'Pipeline & CRM Build', desc: 'Custom pipelines with the right stages, fields, and triggers, your CRM organised the way your sales process works.' },
   { n: '04', title: 'Funnel & Page Build', desc: 'Every funnel connected to the right pipeline stage and follow-up sequence, tested across devices before launch.' },
-  { n: '05', title: 'Automation Build', desc: 'Every workflow built and tested with real data — new lead follow-up, reminders, no-show recovery, onboarding.' },
+  { n: '05', title: 'Automation Build', desc: 'Every workflow built and tested with real data, new lead follow-up, reminders, no-show recovery, onboarding.' },
   { n: '06', title: 'Testing & Handover', desc: 'End-to-end testing of every component, full documentation, and training before you take it over.' },
 ];
 
 const FAQS = [
   { q: 'What is GoHighLevel and who is it for?', a: 'An all-in-one sales and marketing platform combining CRM, funnel builder, automation, booking, and reputation management. Built primarily for service businesses and marketing agencies.' },
   { q: 'Do I need to already be using GoHighLevel to work with you?', a: 'No. We set up new accounts from scratch, and audit and complete existing ones that aren’t being used effectively.' },
-  { q: 'What does a GoHighLevel setup typically include?', a: 'Account configuration, pipeline and CRM build, at least one funnel, follow-up automation, appointment booking, and review request automation — scoped to your business.' },
+  { q: 'What does a GoHighLevel setup typically include?', a: 'Account configuration, pipeline and CRM build, at least one funnel, follow-up automation, appointment booking, and review request automation, scoped to your business.' },
   { q: 'How is GoHighLevel different from ClickFunnels or HubSpot?', a: 'ClickFunnels lacks the CRM depth and native automation of GHL. HubSpot is powerful but significantly more expensive with no native funnels, SMS, or booking. GHL sits in the middle.' },
-  { q: 'Can you migrate my existing contacts and automations to GHL?', a: 'Yes. We manage migrations from HubSpot, ActiveCampaign, ClickFunnels, Infusionsoft, and others — transferring contacts and rebuilding automations before the old platform is decommissioned.' },
+  { q: 'Can you migrate my existing contacts and automations to GHL?', a: 'Yes. We manage migrations from HubSpot, ActiveCampaign, ClickFunnels, Infusionsoft, and others, transferring contacts and rebuilding automations before the old platform is decommissioned.' },
   { q: 'Do you set up GHL for agencies and their clients?', a: 'Yes. Agency-level accounts, sub-account structure, agency branding, snapshot creation, and SaaS mode configuration for agencies reselling GHL.' },
-  { q: 'What is a GHL snapshot and why does it matter?', a: 'A pre-built, reusable configuration package — pipelines, workflows, funnels, and calendar settings — deployable to a new client sub-account in minutes instead of built from scratch each time.' },
+  { q: 'What is a GHL snapshot and why does it matter?', a: 'A pre-built, reusable configuration package, pipelines, workflows, funnels, and calendar settings, deployable to a new client sub-account in minutes instead of built from scratch each time.' },
   { q: 'How long does GoHighLevel setup take?', a: 'A full setup for a service business typically takes two to four weeks. Agency sub-account structures and SaaS mode configurations take four to six weeks.' },
   { q: 'What support do you provide after setup is complete?', a: 'Training so your team can use and manage the system, full documentation, and ongoing month-to-month support for adjustments and troubleshooting.' },
 ];
@@ -163,7 +163,7 @@ export default function GoHighLevelFunnelsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build, configure, and automate GoHighLevel for service businesses and agencies — CRM, funnels, pipelines, booking, and workflows — set up by{' '}
+                  We build, configure, and automate GoHighLevel for service businesses and agencies, CRM, funnels, pipelines, booking, and workflows, set up by{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>people who know it inside out</span>.
                 </p>
 
@@ -238,11 +238,11 @@ export default function GoHighLevelFunnelsPage() {
                   Most GoHighLevel Subscribers Are Using 20% of What the Platform Can Do.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  GHL replaces your CRM, funnel builder, email tool, SMS platform, booking system, and reporting — all in one place. The reality for most subscribers is different: half-finished automations, disconnected funnels, and a calendar that doesn&apos;t sync.
+                  GHL replaces your CRM, funnel builder, email tool, SMS platform, booking system, and reporting, all in one place. The reality for most subscribers is different: half-finished automations, disconnected funnels, and a calendar that doesn&apos;t sync.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia is a{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GoHighLevel certified partner</span>. We set up and automate GHL properly — for businesses running their own operations, and agencies managing it for clients.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GoHighLevel certified partner</span>. We set up and automate GHL properly, for businesses running their own operations, and agencies managing it for clients.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -285,7 +285,7 @@ export default function GoHighLevelFunnelsPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    GoHighLevel replaces your CRM, email platform, SMS tool, funnel builder, booking software, and reputation management system — and{' '}
+                    GoHighLevel replaces your CRM, email platform, SMS tool, funnel builder, booking software, and reputation management system, and{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>connects them all</span> so data flows automatically.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -293,7 +293,7 @@ export default function GoHighLevelFunnelsPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>snapshot system</span> that deploys a fully configured setup in minutes.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The platform works best with a clear strategy behind it — the right pipelines, the right automations, the right funnels connected to the right follow-up. That is what we build.
+                    The platform works best with a clear strategy behind it, the right pipelines, the right automations, the right funnels connected to the right follow-up. That is what we build.
                   </p>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function GoHighLevelFunnelsPage() {
               })}
             </div>
             <div style={{ textAlign: 'center' }}>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
@@ -401,7 +401,7 @@ export default function GoHighLevelFunnelsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What ISureMedia Builds Inside Your GHL Account.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every component of your GHL setup, built, connected, and tested — not one piece bolted onto an incomplete account.
+                Every component of your GHL setup, built, connected, and tested, not one piece bolted onto an incomplete account.
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -484,7 +484,7 @@ export default function GoHighLevelFunnelsPage() {
                   A free strategy call will show you exactly what your current setup is missing.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>

@@ -21,12 +21,12 @@ const CRM_BRIDGE_ITEMS = [
 ];
 
 const CRM_WHY_MATTERS = [
-  { icon: 'fa-solid fa-eye', title: 'Complete visibility over your pipeline', desc: 'Every lead, every deal, every opportunity — visible in one place, at every stage of the sales process. Your sales team knows what to work on. Your management team knows where revenue is coming from and what is at risk.' },
-  { icon: 'fa-solid fa-bolt', title: 'Faster follow-up without manual effort', desc: 'A properly automated CRM triggers follow-up actions the moment a lead takes action — form fill, email open, stage change. No leads waiting in an inbox until Monday morning.' },
-  { icon: 'fa-solid fa-route', title: 'A sales process your team actually follows', desc: 'When the CRM is built around the way your team actually sells — not around how the software was designed to be demonstrated — adoption happens naturally.' },
-  { icon: 'fa-solid fa-chart-pie', title: 'Accurate forecasting and reporting', desc: 'A clean CRM tells you how much revenue is in the pipeline, what the close rate is at each stage, and where deals are getting stuck — reliable information instead of intuition.' },
+  { icon: 'fa-solid fa-eye', title: 'Complete visibility over your pipeline', desc: 'Every lead, every deal, every opportunity, visible in one place, at every stage of the sales process. Your sales team knows what to work on. Your management team knows where revenue is coming from and what is at risk.' },
+  { icon: 'fa-solid fa-bolt', title: 'Faster follow-up without manual effort', desc: 'A properly automated CRM triggers follow-up actions the moment a lead takes action, form fill, email open, stage change. No leads waiting in an inbox until Monday morning.' },
+  { icon: 'fa-solid fa-route', title: 'A sales process your team actually follows', desc: 'When the CRM is built around the way your team actually sells, not around how the software was designed to be demonstrated, adoption happens naturally.' },
+  { icon: 'fa-solid fa-chart-pie', title: 'Accurate forecasting and reporting', desc: 'A clean CRM tells you how much revenue is in the pipeline, what the close rate is at each stage, and where deals are getting stuck, reliable information instead of intuition.' },
   { icon: 'fa-solid fa-user-shield', title: 'Protection against team changes', desc: 'When a salesperson leaves, every contact history, every deal note, and every communication record stays in the CRM. Nothing walks out the door with them.' },
-  { icon: 'fa-solid fa-user-clock', title: 'More selling time, less admin', desc: 'Sales reps spend only 28 to 53% of their working week actually selling — the rest goes to administrative tasks. A properly automated CRM changes that ratio significantly.' },
+  { icon: 'fa-solid fa-user-clock', title: 'More selling time, less admin', desc: 'Sales reps spend only 28 to 53% of their working week actually selling, the rest goes to administrative tasks. A properly automated CRM changes that ratio significantly.' },
 ];
 
 const CRM_CARD_VARIANTS = [
@@ -36,23 +36,23 @@ const CRM_CARD_VARIANTS = [
 ];
 
 const CRM_KEY_FACTORS = [
-  { icon: 'fa-solid fa-sitemap', title: 'Pipeline Stages Do Not Match Reality', impact: 'Most common failure', desc: 'Most CRM setups use default pipeline stages — Lead, Proposal Sent, Closed Won, Closed Lost. For most businesses that bears almost no resemblance to what actually happens between a first enquiry and a closed deal. When the stages do not match reality, teams stop updating the CRM.' },
-  { icon: 'fa-solid fa-keyboard', title: 'Manual Data Entry Is Required for Everything', impact: 'High impact', desc: 'If updating the CRM requires a salesperson to manually type in notes, change stages, log calls, and update fields after every interaction, they will do it some of the time — and then less, and then not at all.' },
+  { icon: 'fa-solid fa-sitemap', title: 'Pipeline Stages Do Not Match Reality', impact: 'Most common failure', desc: 'Most CRM setups use default pipeline stages, Lead, Proposal Sent, Closed Won, Closed Lost. For most businesses that bears almost no resemblance to what actually happens between a first enquiry and a closed deal. When the stages do not match reality, teams stop updating the CRM.' },
+  { icon: 'fa-solid fa-keyboard', title: 'Manual Data Entry Is Required for Everything', impact: 'High impact', desc: 'If updating the CRM requires a salesperson to manually type in notes, change stages, log calls, and update fields after every interaction, they will do it some of the time, and then less, and then not at all.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Training Covers How, Not Why', impact: 'High impact', desc: 'Most CRM implementations include a training session on how to use the system. Few explain why each part works the way it does. When people do not understand the why, they find shortcuts that break the system.' },
   { icon: 'fa-solid fa-user-slash', title: 'Nobody Owns the CRM After Go-Live', impact: 'Growing risk', desc: 'CRM data decays. Contact details change, deals stall in the wrong stage, and custom fields get used inconsistently. A CRM that is not actively maintained becomes untrustworthy within months.' },
 ];
 
 const CRM_INCLUDED_CARDS = [
-  { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'We help you identify the right CRM for your business — GoHighLevel, HubSpot, Salesforce, Pipedrive, or another platform — based on your team size, sales process, budget, and existing tools.', img: 'https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=500&q=80' },
-  { icon: 'fa-solid fa-sitemap', title: 'Pipeline Design and Configuration', desc: 'Pipeline stages that match your actual sales process — from first enquiry through to closed deal, onboarding, and retention — with custom fields and stage-change triggers.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80' },
-  { icon: 'fa-solid fa-file-import', title: 'Contact and Lead Data Import', desc: 'We clean, format, and import your existing contact and lead data — deduplicating records, filling missing fields, and segmenting contacts into the right lists from day one.', img: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=500&q=80' },
+  { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'We help you identify the right CRM for your business, GoHighLevel, HubSpot, Salesforce, Pipedrive, or another platform, based on your team size, sales process, budget, and existing tools.', img: 'https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=500&q=80' },
+  { icon: 'fa-solid fa-sitemap', title: 'Pipeline Design and Configuration', desc: 'Pipeline stages that match your actual sales process, from first enquiry through to closed deal, onboarding, and retention, with custom fields and stage-change triggers.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80' },
+  { icon: 'fa-solid fa-file-import', title: 'Contact and Lead Data Import', desc: 'We clean, format, and import your existing contact and lead data, deduplicating records, filling missing fields, and segmenting contacts into the right lists from day one.', img: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=500&q=80' },
   { icon: 'fa-solid fa-robot', title: 'Automation of Manual Data Entry', desc: 'Form submissions that create contacts and start pipeline stages automatically, email integrations that log communication, and booking integrations that update deal records.', img: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=500&q=80' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Team Training and Adoption Support', desc: 'Training specific to your setup, your pipeline stages, and your sales process — including the why behind each part of the system so adoption is sustainable.', img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'Team Training and Adoption Support', desc: 'Training specific to your setup, your pipeline stages, and your sales process, including the why behind each part of the system so adoption is sustainable.', img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80' },
   { icon: 'fa-solid fa-broom', title: 'Ongoing CRM Management and Hygiene', desc: 'Monthly data quality reviews, contact deduplication, pipeline stage audits, automation monitoring, and configuration updates as your business evolves.', img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80' },
 ];
 
 const CRM_SERVICES = [
-  { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'The right CRM for your team size, sales process, budget, and existing tools — not just the most popular platform on the market.' },
+  { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'The right CRM for your team size, sales process, budget, and existing tools, not just the most popular platform on the market.' },
   { icon: 'fa-solid fa-sitemap', title: 'Pipeline Design and Configuration', desc: 'Custom stages, custom fields at each stage, required fields, and stage-change triggers that make the pipeline reflect reality.' },
   { icon: 'fa-solid fa-file-import', title: 'Contact and Lead Data Import', desc: 'Deduplicating records, filling missing fields, standardising formatting, and segmenting contacts from day one.' },
   { icon: 'fa-solid fa-tags', title: 'Custom Field and Segmentation Setup', desc: 'The custom fields, tags, and contact categories your business needs to filter, segment, and report on data meaningfully.' },
@@ -65,15 +65,15 @@ const CRM_SERVICES = [
 const CRM_WHO_FOR = [
   { icon: 'fa-solid fa-table-list', title: 'Businesses still managing leads in spreadsheets', desc: 'Spreadsheets break at scale. Leads get missed, follow-ups are inconsistent, and there is no single view of the pipeline. The transition is significantly smoother with professional setup.', img: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700&q=80' },
   { icon: 'fa-solid fa-ban', title: 'Businesses with a CRM their team does not use', desc: 'If the CRM is there but the team is working around it, the configuration is the problem. We audit what is there, rebuild what is not working, and train the team on the version that fits how they sell.', img: 'https://images.unsplash.com/photo-1568658176307-bfbd2873abda?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Service businesses managing long sales cycles', desc: 'Professional services, legal, financial, healthcare, real estate — businesses where a relationship might take weeks or months to convert need a CRM that tracks every stage accurately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Service businesses managing long sales cycles', desc: 'Professional services, legal, financial, healthcare, real estate, businesses where a relationship might take weeks or months to convert need a CRM that tracks every stage accurately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
   { icon: 'fa-solid fa-user-plus', title: 'Growing businesses adding salespeople', desc: 'When a second or third salesperson joins, informal lead management breaks. A properly configured CRM gives every team member the same view of every contact.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing delivery and new business', desc: 'Agencies need to track both the pipeline for new business and the status of existing client relationships — often in the same system, without creating complexity.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing delivery and new business', desc: 'Agencies need to track both the pipeline for new business and the status of existing client relationships, often in the same system, without creating complexity.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
   { icon: 'fa-solid fa-right-left', title: 'Businesses migrating from one CRM to another', desc: 'Moving from HubSpot to GoHighLevel, from Salesforce to something simpler, or from any other CRM. We manage the data transfer and verify everything before the old system is decommissioned.', img: 'https://images.unsplash.com/photo-1484383707950-89c8d3276e53?w=700&q=80' },
 ];
 
 const CRM_WHY_ISM = [
-  { icon: 'fa-solid fa-route', title: 'We build around your sales process, not a template', desc: 'Every CRM we configure starts with a discovery session — understanding how your team actually sells and what manual tasks are costing the most time.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'GoHighLevel is our primary CRM platform', desc: 'For businesses open to GoHighLevel, we configure the full CRM inside GHL — connected to funnels, automations, and booking. We also work with HubSpot, Salesforce, and Pipedrive.' },
+  { icon: 'fa-solid fa-route', title: 'We build around your sales process, not a template', desc: 'Every CRM we configure starts with a discovery session, understanding how your team actually sells and what manual tasks are costing the most time.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'GoHighLevel is our primary CRM platform', desc: 'For businesses open to GoHighLevel, we configure the full CRM inside GHL, connected to funnels, automations, and booking. We also work with HubSpot, Salesforce, and Pipedrive.' },
   { icon: 'fa-solid fa-robot', title: 'We eliminate manual data entry from the start', desc: 'A CRM that requires constant manual input will not be used consistently. We automate as much data capture as the platform allows.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'We provide training that drives adoption', desc: 'Training specific to your pipeline stages and workflows, including the why behind each configuration, so the team understands how the system works.' },
   { icon: 'fa-solid fa-broom', title: 'We manage it after go-live', desc: 'Setup without ongoing management produces a CRM that decays. We provide monthly data quality reviews, automation monitoring, and pipeline audits.' },
@@ -81,27 +81,27 @@ const CRM_WHY_ISM = [
 ];
 
 const CRM_PROCESS = [
-  { n: '01', title: 'Discovery and Process Mapping', desc: 'We map your actual sales process — every stage from first enquiry to closed deal and every piece of information your team needs about a contact. This becomes the blueprint for the configuration.' },
-  { n: '02', title: 'Platform Selection and Setup', desc: 'We configure the CRM foundation — account setup, user permissions, connected domains, and any third-party connections your business needs before any pipeline is built.' },
+  { n: '01', title: 'Discovery and Process Mapping', desc: 'We map your actual sales process, every stage from first enquiry to closed deal and every piece of information your team needs about a contact. This becomes the blueprint for the configuration.' },
+  { n: '02', title: 'Platform Selection and Setup', desc: 'We configure the CRM foundation, account setup, user permissions, connected domains, and any third-party connections your business needs before any pipeline is built.' },
   { n: '03', title: 'Pipeline and Field Configuration', desc: 'Pipeline stages, custom fields, contact categories, and tags built to match the sales process map. Every stage has a clear definition and every field serves a purpose.' },
-  { n: '04', title: 'Automation Build and Data Import', desc: 'We build the automations that eliminate manual data entry, then import your existing contact and lead data — cleaned, deduplicated, and segmented correctly.' },
+  { n: '04', title: 'Automation Build and Data Import', desc: 'We build the automations that eliminate manual data entry, then import your existing contact and lead data, cleaned, deduplicated, and segmented correctly.' },
   { n: '05', title: 'Training, Launch, and Management', desc: 'We train your team, launch the CRM, and monitor adoption in the first weeks. Ongoing management includes monthly data quality reviews and configuration updates.' },
 ];
 
 const CRM_FAQS = [
   { q: 'Which CRM platform do you recommend?', a: 'It depends on your business model, team size, and existing tools. For service businesses and agencies that want CRM, automation, funnels, and booking in one place, GoHighLevel is our primary recommendation. For deeper sales reporting, HubSpot is strong. For pure sales pipeline management, Pipedrive is worth considering. We assess your specific situation before recommending a platform.' },
-  { q: 'Do we need to move our existing contacts into the new CRM?', a: 'Yes — and we handle the migration. We clean, deduplicate, and format your existing contact data before importing it into the new CRM. Starting with accurate data is critical.' },
-  { q: 'What is a sales pipeline and how should it be configured?', a: 'A sales pipeline is the visual representation of your sales process — a series of stages each opportunity moves through from first contact to closed deal. It should match the actual steps your team takes. Most businesses need five to seven pipeline stages.' },
+  { q: 'Do we need to move our existing contacts into the new CRM?', a: 'Yes, and we handle the migration. We clean, deduplicate, and format your existing contact data before importing it into the new CRM. Starting with accurate data is critical.' },
+  { q: 'What is a sales pipeline and how should it be configured?', a: 'A sales pipeline is the visual representation of your sales process, a series of stages each opportunity moves through from first contact to closed deal. It should match the actual steps your team takes. Most businesses need five to seven pipeline stages.' },
   { q: 'How do we get the team to actually use the CRM?', a: 'Adoption comes from a CRM that is easier to use than not to use, and a team that understands why each part of the system works the way it does. We build with adoption in mind and train the team on the system we built, not a generic walkthrough.' },
   { q: 'Can the CRM integrate with our website and marketing tools?', a: 'Yes. We integrate the CRM with your website forms, email platform, ad tracking, booking system, payment gateway, and any other tools your business uses so contact data flows automatically.' },
-  { q: 'What is CRM hygiene and why does it matter?', a: 'CRM hygiene refers to the ongoing maintenance of data quality — removing duplicate contacts, updating stale records, and archiving deals that are no longer active. Poor hygiene produces unreliable reports and erodes trust in the system. We provide monthly hygiene management.' },
+  { q: 'What is CRM hygiene and why does it matter?', a: 'CRM hygiene refers to the ongoing maintenance of data quality, removing duplicate contacts, updating stale records, and archiving deals that are no longer active. Poor hygiene produces unreliable reports and erodes trust in the system. We provide monthly hygiene management.' },
   { q: 'How is GoHighLevel different from HubSpot or Salesforce?', a: 'GoHighLevel combines CRM with funnel building, email and SMS automation, appointment booking, and pipeline management in one platform at a price point below HubSpot or Salesforce. For most service businesses, GoHighLevel provides the best value for the level of capability it delivers.' },
-  { q: 'Can you help us if we already have a CRM that is not being used properly?', a: 'Yes. We audit the existing setup — pipeline stages, custom fields, automation, data quality, and team adoption — identify what is broken, and rebuild what is not working. Targeted reconfiguration and a fresh training session usually produce significantly better adoption.' },
+  { q: 'Can you help us if we already have a CRM that is not being used properly?', a: 'Yes. We audit the existing setup, pipeline stages, custom fields, automation, data quality, and team adoption, identify what is broken, and rebuild what is not working. Targeted reconfiguration and a fresh training session usually produce significantly better adoption.' },
   { q: 'How long does CRM setup take?', a: 'A standard CRM configuration and launch takes two to three weeks. Migrations from an existing CRM platform take three to four weeks depending on data volume and complexity.' },
   { q: 'What ongoing management do you provide after the CRM is set up?', a: 'Monthly data quality reviews, automation monitoring, pipeline stage audits, contact deduplication, and configuration updates as the business evolves. Ongoing management arrangements are month to month.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function CRMFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -165,7 +165,7 @@ export default function CRMSetupPage() {
           <div className="ism-container">
             <div className="crm-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   A CRM That Your Team Actually Uses and Your Sales Pipeline Actually{' '}
@@ -178,7 +178,7 @@ export default function CRMSetupPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We configure, customise, and manage CRM systems for service businesses and agencies — so{' '}
+                  We configure, customise, and manage CRM systems for service businesses and agencies, so{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every lead is tracked, every follow-up happens</span>, and your sales team always knows exactly where every opportunity stands without manual data entry.
                 </p>
 
@@ -192,7 +192,7 @@ export default function CRMSetupPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="crm-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/crm-setup.webp" alt="CRM setup and sales pipeline configuration" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -260,10 +260,10 @@ export default function CRMSetupPage() {
                   Most Businesses Are Either Managing Leads in Spreadsheets or in a CRM Nobody Uses.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  One in four small and medium businesses still use spreadsheets to manage their leads and contacts. Of the businesses that have a CRM, 79% of opportunity-related data never gets entered — because the setup created friction, the team was not trained properly, or the system does not match the way the business actually works.
+                  One in four small and medium businesses still use spreadsheets to manage their leads and contacts. Of the businesses that have a CRM, 79% of opportunity-related data never gets entered, because the setup created friction, the team was not trained properly, or the system does not match the way the business actually works.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  A CRM that nobody uses is not just a wasted subscription. It creates false confidence — you think leads are being tracked when they are not. Isuremedia configures CRMs that your team actually uses,{' '}
+                  A CRM that nobody uses is not just a wasted subscription. It creates false confidence, you think leads are being tracked when they are not. Isuremedia configures CRMs that your team actually uses,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around your sales process</span>, not a generic template.
                 </p>
                 <a href="/contact"
@@ -315,7 +315,7 @@ export default function CRMSetupPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>A CRM configured to fit the way your business works gets used</span>. One configured to match a generic template gets ignored.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    CRM management is the ongoing work of keeping the system clean, accurate, and useful as your business changes — updating pipeline stages as your process evolves and maintaining contact data quality.
+                    CRM management is the ongoing work of keeping the system clean, accurate, and useful as your business changes, updating pipeline stages as your process evolves and maintaining contact data quality.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function CRMSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Data Sync */}
+                {/* Floating badge, Data Sync */}
                 <div className="crm-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-arrows-rotate" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -342,7 +342,7 @@ export default function CRMSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Follow-Up Rate */}
+                {/* Floating badge, Follow-Up Rate */}
                 <div className="crm-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-envelope-open-text" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -353,7 +353,7 @@ export default function CRMSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Data Accuracy */}
+                {/* Floating badge, Data Accuracy */}
                 <div className="crm-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-check" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -364,7 +364,7 @@ export default function CRMSetupPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Adoption */}
+                {/* Floating badge, Adoption */}
                 <div className="crm-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-users" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -391,7 +391,7 @@ export default function CRMSetupPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Every Lead Tracked. Every Follow-Up Automated. Every Deal Visible.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Businesses that implement CRM properly increase lead conversion rates by up to 300%. Companies using CRM are 86% more likely to exceed their sales goals than those without one. The gap between a well-implemented CRM and a poorly implemented one is not the software — it is the configuration.
+                Businesses that implement CRM properly increase lead conversion rates by up to 300%. Companies using CRM are 86% more likely to exceed their sales goals than those without one. The gap between a well-implemented CRM and a poorly implemented one is not the software, it is the configuration.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -429,7 +429,7 @@ export default function CRMSetupPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Why Most CRM Implementations Fail.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                91% of businesses with more than ten employees use a CRM. But the majority are underperforming, because the implementation missed one or more of these four things. The problem is almost never the software — it is how it was set up.
+                91% of businesses with more than ten employees use a CRM. But the majority are underperforming, because the implementation missed one or more of these four things. The problem is almost never the software, it is how it was set up.
               </p>
             </div>
             <div className="crm-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -473,7 +473,7 @@ export default function CRMSetupPage() {
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Configuration That Fits Your Business. Management That Keeps It Accurate.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every engagement starts with discovery — understanding how your team actually sells before a single setting is touched.
+                Every engagement starts with discovery, understanding how your team actually sells before a single setting is touched.
               </p>
             </div>
             <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia builds into your CRM</p>

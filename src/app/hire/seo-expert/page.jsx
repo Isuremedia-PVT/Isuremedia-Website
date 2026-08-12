@@ -9,7 +9,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ═══════════════════════════════════════════
-   DATA — All copy from the final document
+   DATA, All copy from the final document
 ═══════════════════════════════════════════ */
 
 const trustChips = [
@@ -163,7 +163,7 @@ const techCategories = [
 
 const whyISMCards = [
   { icon: 'fa-solid fa-building', title: 'Every Expert Is In-House', desc: 'Your SEO is never subcontracted to a third party or handed to a junior with a task list. The specialist working on your campaign is part of the ISureMedia team, accountable for results from the first month.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Rankings and Revenue, Not Just Reports', desc: <>ISureMedia measures SEO success by <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>traffic, leads, and conversions</span> — not by keyword position reports that look good but tell you nothing about business impact. Every campaign is built around what you are actually trying to grow.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Rankings and Revenue, Not Just Reports', desc: <>ISureMedia measures SEO success by <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>traffic, leads, and conversions</span>, not by keyword position reports that look good but tell you nothing about business impact. Every campaign is built around what you are actually trying to grow.</> },
   { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Engagements run month to month and you can stop at any time. No penalties, no notice periods. The work continues because it is delivering measurable organic growth, not because you are locked into a 12-month commitment.' },
   { icon: 'fa-solid fa-code', title: 'AI Search Is Already Included', desc: 'ISureMedia\'s SEO experts optimize for traditional Google search and AI search simultaneously. Answer Engine Optimization, schema markup for AI Overviews, and entity building for ChatGPT and Perplexity visibility are part of every campaign, not a separate add-on.' },
   { icon: 'fa-solid fa-chart-line', title: 'Full Transparency on What Is Being Done', desc: 'Every month you receive a clear report covering what was done, what moved, what is planned next, and why. No jargon, no vanity metrics. If something is not working, you hear about it directly and the plan adjusts accordingly.' },
@@ -213,8 +213,8 @@ const faqs = [
   { q: 'What do you actually report on each month?', a: 'Every monthly report covers organic traffic, keyword ranking movements, new pages ranking, backlinks acquired, technical issues resolved, and the plan for the following month. No vanity metrics, no graphs that look impressive but mean nothing. You get clear data on what is moving and why.' },
   { q: 'Do you optimize for AI search results as well as Google?', a: 'Yes. ISureMedia\'s SEO work covers traditional Google rankings and AI search visibility across Google AI Overviews, ChatGPT, Perplexity, and Gemini. Answer Engine Optimization (AEO), schema markup, and entity building for AI systems are included in every campaign.' },
   { q: 'Can you recover a site that has been hit by a Google penalty?', a: 'Yes. Manual action recovery and algorithmic penalty recovery are both within scope. This starts with a full audit to identify the cause, followed by a remediation plan covering the specific issues Google has flagged. Recovery timelines vary depending on the type and severity of the penalty.' },
-  { q: 'How is ISureMedia different from other SEO agencies?', a: 'Three things. First, every specialist is in-house — your campaign is never subcontracted. Second, AI search optimization is included as standard, not a premium add-on. Third, reporting focuses on business outcomes, not keyword position reports that look good but do not tell you whether SEO is actually growing your business.' },
-  { q: 'Can I do SEO myself without hiring an expert?', a: 'For basic optimizations, yes. But competitive SEO — ranking against established sites with strong domain authority — requires technical depth, content strategy, and link building that takes significant time to learn and execute properly. Most businesses find that the opportunity cost of doing it themselves exceeds the cost of hiring a specialist who does it every day.' },
+  { q: 'How is ISureMedia different from other SEO agencies?', a: 'Three things. First, every specialist is in-house, your campaign is never subcontracted. Second, AI search optimization is included as standard, not a premium add-on. Third, reporting focuses on business outcomes, not keyword position reports that look good but do not tell you whether SEO is actually growing your business.' },
+  { q: 'Can I do SEO myself without hiring an expert?', a: 'For basic optimizations, yes. But competitive SEO, ranking against established sites with strong domain authority, requires technical depth, content strategy, and link building that takes significant time to learn and execute properly. Most businesses find that the opportunity cost of doing it themselves exceeds the cost of hiring a specialist who does it every day.' },
 ];
 
 
@@ -231,9 +231,9 @@ export default function HireSeoExpert() {
       <Navbar />
 
       {/* ════════════════════════════════════════
-          SECTION 01 — HERO (Centered like Image 1)
+          SECTION 01, HERO (Centered like Image 1)
       ════════════════════════════════════════ */}
-      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'visible' }}>
+      <section className="wp-hero" style={{ background: '#ffffff', padding: '92px 0 84px', position: 'relative', overflow: 'hidden' }}>
         {/* Soft background glows matching Image 1 */}
         <div style={{ position: 'absolute', top: '-10%', left: '-5%', width: 550, height: 550, background: 'radial-gradient(circle, rgba(255, 235, 179, 0.45) 0%, transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', top: '5%', right: '-8%', width: 650, height: 650, background: 'radial-gradient(circle, rgba(210, 225, 255, 0.55) 0%, transparent 65%)', pointerEvents: 'none' }} />
@@ -287,7 +287,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 03 — OVERVIEW (Deliver Perfectly Layout)
+          SECTION 03, OVERVIEW (Deliver Perfectly Layout)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="ism-container">
@@ -345,7 +345,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 04 — WHY WORDPRESS (Smart Framework Style)
+          SECTION 04, WHY WORDPRESS (Smart Framework Style)
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
@@ -415,7 +415,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 05 — SERVICES (Homepage Style)
+          SECTION 05, SERVICES (Homepage Style)
       ════════════════════════════════════════ */}
       <section id="services" className="svc-section" style={{ padding: '64px 0 72px', background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
         {/* Decorative blobs */}
@@ -434,8 +434,8 @@ export default function HireSeoExpert() {
           </div>
 
           {/* Tab bar */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44, maxWidth: '100%', overflowX: 'auto' }}>
-            <div style={{ display: 'inline-flex', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+          <div style={{ marginBottom: 44, overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+            <div style={{ display: 'flex', width: 'max-content', margin: '0 auto', flexWrap: 'nowrap', gap: 4, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '5px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
               {servicesTabs.map((t, i) => {
                 const isActive = activeService === i;
                 return (
@@ -499,7 +499,7 @@ export default function HireSeoExpert() {
                       EVERYTHING INCLUDED IN {svc.title}
                     </p>
 
-                    {/* Checklist — scrollable single-column list matching homepage */}
+                    {/* Checklist, scrollable single-column list matching homepage */}
                     <div className="svc-checklist-wrap">
                       <div className="svc-checklist">
                         {svc.bullets.map(b => (
@@ -518,7 +518,7 @@ export default function HireSeoExpert() {
                     </a>
                   </div>
 
-                  {/* Right Column — Photo + floating badges */}
+                  {/* Right Column, Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', borderRadius: 20, display: 'block' }} />
@@ -537,7 +537,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 06 — TECHNOLOGIES AND TOOLS
+          SECTION 06, TECHNOLOGIES AND TOOLS
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -608,9 +608,9 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 07 — MID-PAGE CTA
+          SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'hidden' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>
@@ -643,7 +643,7 @@ export default function HireSeoExpert() {
             <div className="wp-cta-person" style={{ position: 'relative', zIndex: 3, width: '100%', height: '100%', minHeight: 200, overflow: 'visible', marginBottom: -24 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/result_footer/ready_for_result.png"
+                src="/result_footer/ready_for_result.webp"
                 alt="WordPress Developer CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '150%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
@@ -671,7 +671,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 08 — WHY ISUREMEDIA
+          SECTION 08, WHY ISUREMEDIA
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
@@ -768,7 +768,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 09 — ENGAGEMENT MODELS
+          SECTION 09, ENGAGEMENT MODELS
       ════════════════════════════════════════ */}
       <section style={{ background: 'var(--color-bg-soft)', padding: '96px 0' }}>
         <div className="ism-container">
@@ -853,7 +853,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 10 — HOW IT WORKS (Using HowItWorks Component)
+          SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
       <HowItWorks 
         title="From Your First Message to Work Starting"
@@ -873,7 +873,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 11 — FAQ
+          SECTION 11, FAQ
       ════════════════════════════════════════ */}
       <section className="wp-faq-section" style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
         <div className="ism-container">
@@ -950,7 +950,7 @@ export default function HireSeoExpert() {
 
 
       {/* ════════════════════════════════════════
-          SECTION 12 — ENDING CTA
+          SECTION 12, ENDING CTA
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">

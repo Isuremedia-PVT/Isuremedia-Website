@@ -21,10 +21,10 @@ const BRIDGE_ITEMS = [
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-bolt', title: 'Immediate visibility at the top of Google', desc: 'Your business appears above organic results the moment your campaign goes live. No waiting for rankings to build.' },
-  { icon: 'fa-solid fa-user-check', title: 'Traffic from people ready to buy', desc: 'Every click comes from someone who typed a specific query — they told Google exactly what they want before arriving.' },
+  { icon: 'fa-solid fa-user-check', title: 'Traffic from people ready to buy', desc: 'Every click comes from someone who typed a specific query, they told Google exactly what they want before arriving.' },
   { icon: 'fa-solid fa-sliders', title: 'Full control over budget and spend', desc: 'You set the budget and the limits. No minimum spends, no long-term platform commitments. Every pound is tracked.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Measurable return on every campaign', desc: 'Results are measurable down to the conversion — you see exactly which keywords and ads are producing customers.' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Scalable as your business grows', desc: 'Performing campaigns can be scaled — more budget, more keywords — without rebuilding from scratch.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Measurable return on every campaign', desc: 'Results are measurable down to the conversion, you see exactly which keywords and ads are producing customers.' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Scalable as your business grows', desc: 'Performing campaigns can be scaled, more budget, more keywords, without rebuilding from scratch.' },
   { icon: 'fa-solid fa-globe', title: 'Reach at Google scale', desc: 'Google handles over 8 billion searches a day and dominates 80.2% of the global PPC market.' },
 ];
 
@@ -35,37 +35,37 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const CAMPAIGN_TYPES = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Google Search Campaigns', impact: 'Core', desc: 'Text ads at the top of search results for people actively searching for what you offer right now — the highest-intent traffic in digital advertising.' },
-  { icon: 'fa-solid fa-robot', title: 'Performance Max Campaigns', impact: 'AI-driven', desc: 'Runs across Search, Display, YouTube, Gmail, Maps, and Discover from one campaign — configured with the right signals so it works toward your actual goals.' },
-  { icon: 'fa-solid fa-images', title: 'Google Display Campaigns', impact: 'Remarketing', desc: 'Visual banner ads across millions of sites — best for remarketing to past visitors or building awareness before a direct conversion push.' },
-  { icon: 'fa-solid fa-bag-shopping', title: 'Google Shopping Campaigns', impact: 'E-commerce', desc: 'Product listing ads showing images, prices, and ratings directly in search — consistently outperform text ads for purchase intent.' },
-  { icon: 'fa-brands fa-youtube', title: 'YouTube Ads', impact: 'Awareness', desc: 'Video ads before, during, and after YouTube content — effective for brand building and reaching audiences not yet actively searching.' },
-  { icon: 'fa-solid fa-phone-volume', title: 'Local Services Ads', impact: 'Pay-per-lead', desc: 'A pay-per-lead format for local service businesses — you pay for verified leads, with a Google Guaranteed or Screened badge.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Google Search Campaigns', impact: 'Core', desc: 'Text ads at the top of search results for people actively searching for what you offer right now, the highest-intent traffic in digital advertising.' },
+  { icon: 'fa-solid fa-robot', title: 'Performance Max Campaigns', impact: 'AI-driven', desc: 'Runs across Search, Display, YouTube, Gmail, Maps, and Discover from one campaign, configured with the right signals so it works toward your actual goals.' },
+  { icon: 'fa-solid fa-images', title: 'Google Display Campaigns', impact: 'Remarketing', desc: 'Visual banner ads across millions of sites, best for remarketing to past visitors or building awareness before a direct conversion push.' },
+  { icon: 'fa-solid fa-bag-shopping', title: 'Google Shopping Campaigns', impact: 'E-commerce', desc: 'Product listing ads showing images, prices, and ratings directly in search, consistently outperform text ads for purchase intent.' },
+  { icon: 'fa-brands fa-youtube', title: 'YouTube Ads', impact: 'Awareness', desc: 'Video ads before, during, and after YouTube content, effective for brand building and reaching audiences not yet actively searching.' },
+  { icon: 'fa-solid fa-phone-volume', title: 'Local Services Ads', impact: 'Pay-per-lead', desc: 'A pay-per-lead format for local service businesses, you pay for verified leads, with a Google Guaranteed or Screened badge.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Google Ads Account Audit', desc: 'Campaign structure, keywords, Quality Scores, tracking, and wasted spend — a clear picture of what needs fixing.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Google Ads Account Audit', desc: 'Campaign structure, keywords, Quality Scores, tracking, and wasted spend, a clear picture of what needs fixing.' },
   { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right campaign types, keyword strategy, ad group structure, and landing page alignment, built to perform from day one.' },
-  { icon: 'fa-solid fa-key', title: 'Keyword & Negative Keyword Management', desc: 'A negative keyword list that prevents your ads appearing for irrelevant searches — one of the most impactful ways to cut waste.' },
+  { icon: 'fa-solid fa-key', title: 'Keyword & Negative Keyword Management', desc: 'A negative keyword list that prevents your ads appearing for irrelevant searches, one of the most impactful ways to cut waste.' },
   { icon: 'fa-solid fa-pen-nib', title: 'Ad Copy Creation & Testing', desc: 'Copy that clearly communicates your offer, with systematic A/B tests on headlines, descriptions, and CTAs.' },
-  { icon: 'fa-solid fa-scale-balanced', title: 'Bid Strategy & Budget Optimisation', desc: 'Manual CPC, Target CPA, Target ROAS, or Maximise Conversions — adjusted as your campaign generates real data.' },
-  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking & Goal Setup', desc: 'Clean tracking for every action that matters — form fills, calls, bookings, purchases — the foundation of Smart Bidding.' },
+  { icon: 'fa-solid fa-scale-balanced', title: 'Bid Strategy & Budget Optimisation', desc: 'Manual CPC, Target CPA, Target ROAS, or Maximise Conversions, adjusted as your campaign generates real data.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking & Goal Setup', desc: 'Clean tracking for every action that matters, form fills, calls, bookings, purchases, the foundation of Smart Bidding.' },
   { icon: 'fa-solid fa-arrow-up-right-from-square', title: 'Landing Page Review & CRO', desc: 'We identify headline mismatch, missing trust signals, and unclear CTAs, and work with your team to fix them.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Strategy Calls', desc: 'Spend, clicks, conversions, cost per conversion, and ROAS — in plain English, with a clear plan for next month.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Strategy Calls', desc: 'Spend, clicks, conversions, cost per conversion, and ROAS, in plain English, with a clear plan for next month.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Running ads that aren’t converting', desc: 'The problem is almost always structural — keyword targeting, landing pages, or tracking. We audit and fix what’s broken.', img: 'https://picsum.photos/seed/gads-whofor-notconverting/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Running ads that aren’t converting', desc: 'The problem is almost always structural, keyword targeting, landing pages, or tracking. We audit and fix what’s broken.', img: 'https://picsum.photos/seed/gads-whofor-notconverting/700/620' },
   { icon: 'fa-solid fa-flag', title: 'Never run Google Ads before', desc: 'Getting the structure and tracking right from the start, instead of learning from expensive mistakes.', img: 'https://picsum.photos/seed/gads-whofor-new/700/620' },
-  { icon: 'fa-solid fa-phone', title: 'Local service businesses needing calls', desc: 'Plumbers, lawyers, dentists, contractors — put your business at the top the same day someone searches nearby.', img: 'https://picsum.photos/seed/gads-whofor-local/700/620' },
+  { icon: 'fa-solid fa-phone', title: 'Local service businesses needing calls', desc: 'Plumbers, lawyers, dentists, contractors, put your business at the top the same day someone searches nearby.', img: 'https://picsum.photos/seed/gads-whofor-local/700/620' },
   { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Shopping and Search campaigns managed together for the best return across purchase-intent searches.', img: 'https://picsum.photos/seed/gads-whofor-ecom/700/620' },
   { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Preparing to scale', desc: 'A campaign that’s working, ready for more budget and new markets without performance degrading.', img: 'https://picsum.photos/seed/gads-whofor-scale/700/620' },
-  { icon: 'fa-solid fa-eye', title: 'Want transparent management', desc: 'Every spend decision explainable, every result attributable — no reports you can’t interpret.', img: 'https://picsum.photos/seed/gads-whofor-transparent/700/620' },
+  { icon: 'fa-solid fa-eye', title: 'Want transparent management', desc: 'Every spend decision explainable, every result attributable, no reports you can’t interpret.', img: 'https://picsum.photos/seed/gads-whofor-transparent/700/620' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-certificate', title: 'We are a Google Partner', desc: 'Our team meets Google’s standards for campaign performance, certified expertise, and managed spend.' },
-  { icon: 'fa-solid fa-bullseye', title: 'We optimise for revenue, not clicks', desc: 'Campaigns and bidding built around leads, calls, bookings, or sales — measured against those goals.' },
+  { icon: 'fa-solid fa-bullseye', title: 'We optimise for revenue, not clicks', desc: 'Campaigns and bidding built around leads, calls, bookings, or sales, measured against those goals.' },
   { icon: 'fa-solid fa-wallet', title: 'We manage your budget like it’s our own', desc: 'We review performance regularly and reallocate budget toward what’s actually producing results.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'Spend, conversions, cost per conversion, what we tested, what we changed, and the plan for next month.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because campaigns are producing results, not because you are contractually obligated to.' },
@@ -74,21 +74,21 @@ const WHY_ISM = [
 
 const PROCESS = [
   { n: '01', title: 'Audit & Goal Alignment', desc: 'We audit your existing account or review your goals, identifying wasted spend and quick wins before building anything.' },
-  { n: '02', title: 'Strategy & Campaign Build', desc: 'Campaign structure, keyword strategy, negative keywords, and bidding approach — conversion tracking verified first.' },
+  { n: '02', title: 'Strategy & Campaign Build', desc: 'Campaign structure, keyword strategy, negative keywords, and bidding approach, conversion tracking verified first.' },
   { n: '03', title: 'Ad Copy & Landing Pages', desc: 'Copy written and landing pages reviewed so every ad leads to a page matched to the search intent behind the click.' },
-  { n: '04', title: 'Launch & Initial Optimisation', desc: 'Close monitoring in the first two to four weeks — search terms, Quality Scores, CTR, and early conversion data.' },
-  { n: '05', title: 'Ongoing Management', desc: 'Bids adjusted, keywords refined, new ad copy tested every month — Google Ads is not a set-and-forget channel.' },
-  { n: '06', title: 'Monthly Report & Review', desc: 'Performance discussed, what we’re testing, and the plan for next month — you stay informed and in control.' },
+  { n: '04', title: 'Launch & Initial Optimisation', desc: 'Close monitoring in the first two to four weeks, search terms, Quality Scores, CTR, and early conversion data.' },
+  { n: '05', title: 'Ongoing Management', desc: 'Bids adjusted, keywords refined, new ad copy tested every month, Google Ads is not a set-and-forget channel.' },
+  { n: '06', title: 'Monthly Report & Review', desc: 'Performance discussed, what we’re testing, and the plan for next month, you stay informed and in control.' },
 ];
 
 const FAQS = [
-  { q: 'How much does Google Ads cost?', a: 'You set your own budget — there is no Google minimum. Most small and medium businesses start between $1,000 and $5,000 a month and scale based on results.' },
+  { q: 'How much does Google Ads cost?', a: 'You set your own budget, there is no Google minimum. Most small and medium businesses start between $1,000 and $5,000 a month and scale based on results.' },
   { q: 'How long does it take to see results?', a: 'Campaigns can go live within days and clicks appear in the first week. Meaningful optimisation takes four to six weeks, with strong performance typically by month three.' },
   { q: 'What is the difference between Google Ads and SEO?', a: 'SEO builds organic rankings over months and delivers free traffic once established. Google Ads puts you at the top immediately but requires ongoing spend. Many businesses run both.' },
   { q: 'Do I need a big budget to get results?', a: 'No. A well-structured campaign with a modest budget consistently outperforms a poorly structured one with a large budget.' },
-  { q: 'What is ROAS and what should I expect?', a: 'Return on Ad Spend — a 3:1 ROAS means $3 earned per $1 spent. The average across Google Ads is around 2:1; well-managed campaigns achieve 3:1 to 5:1 or higher.' },
-  { q: 'What is Performance Max and should I be using it?', a: 'Google’s AI-driven campaign type across all channels from one campaign. It can perform well with the right data and assets — we always run Search alongside it for keyword transparency.' },
-  { q: 'Can you take over management of an existing account?', a: 'Yes. We start with a full audit, then make changes progressively — improving what’s working, fixing what isn’t.' },
+  { q: 'What is ROAS and what should I expect?', a: 'Return on Ad Spend, a 3:1 ROAS means $3 earned per $1 spent. The average across Google Ads is around 2:1; well-managed campaigns achieve 3:1 to 5:1 or higher.' },
+  { q: 'What is Performance Max and should I be using it?', a: 'Google’s AI-driven campaign type across all channels from one campaign. It can perform well with the right data and assets, we always run Search alongside it for keyword transparency.' },
+  { q: 'Can you take over management of an existing account?', a: 'Yes. We start with a full audit, then make changes progressively, improving what’s working, fixing what isn’t.' },
   { q: 'Do you also manage Microsoft Advertising?', a: 'Yes. It reaches a different audience and can be a cost-effective complement, particularly for B2B and professional services.' },
 ];
 
@@ -172,7 +172,7 @@ export default function GoogleAdsPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and manage Google Ads campaigns that bring the right people to your business — with every pound and dollar spent{' '}
+                  We build and manage Google Ads campaigns that bring the right people to your business, with every pound and dollar spent{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>tracked, optimised, and accountable</span> to real results.
                 </p>
 
@@ -247,11 +247,11 @@ export default function GoogleAdsPage() {
                   Most Businesses Are Spending on Google Ads and Not Getting Enough Back.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Google Ads works — but only when campaigns are built properly, managed actively, and optimised around outcomes that actually matter, not just impressions and clicks.
+                  Google Ads works, but only when campaigns are built properly, managed actively, and optimised around outcomes that actually matter, not just impressions and clicks.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia manages Google Ads{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from strategy through to results</span> — the right keywords, the right bids, ads that get clicked, and landing pages that convert.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from strategy through to results</span>, the right keywords, the right bids, ads that get clicked, and landing pages that convert.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -298,7 +298,7 @@ export default function GoogleAdsPage() {
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>in front of buyers the same day</span> your campaign goes live.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    But running Google Ads and running them well are two different things — campaign types, bidding strategies, Quality Scores, Smart Bidding. Getting any of it wrong means{' '}
+                    But running Google Ads and running them well are two different things, campaign types, bidding strategies, Quality Scores, Smart Bidding. Getting any of it wrong means{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>paying for traffic that never converts</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -372,7 +372,7 @@ export default function GoogleAdsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Reach the People Who Are Already Looking for What You Sell.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Businesses earn an average of two dollars for every one dollar spent on Google Ads. The person clicking your ad already searched for what you offer — they went looking.
+                Businesses earn an average of two dollars for every one dollar spent on Google Ads. The person clicking your ad already searched for what you offer, they went looking.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -630,7 +630,7 @@ export default function GoogleAdsPage() {
               ))}
             </div>
             <p style={{ textAlign: 'center', fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', marginTop: 40 }}>
-              Campaigns can go live within one to two weeks. Initial performance data typically stabilises within four to six weeks — optimised, consistently improving performance is usually achieved by month three.
+              Campaigns can go live within one to two weeks. Initial performance data typically stabilises within four to six weeks, optimised, consistently improving performance is usually achieved by month three.
             </p>
             <div style={{ textAlign: 'center', marginTop: 24 }}>
               <a href="/contact"

@@ -20,12 +20,12 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-gauge-high', title: 'First impressions are made in seconds', desc: 'Visitors decide whether to trust your business almost instantly — a dated or clunky site costs you before you even get to make your pitch.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'First impressions are made in seconds', desc: 'Visitors decide whether to trust your business almost instantly, a dated or clunky site costs you before you even get to make your pitch.' },
   { icon: 'fa-solid fa-mobile-screen', title: 'Most of your traffic is on a phone', desc: 'If your site was designed desktop-first and mobile-adjusted, you are losing the majority of visitors right at the door.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'Structure is the foundation of SEO', desc: 'Clean code, proper headings, and fast pages are what let search engines find and rank you in the first place.' },
   { icon: 'fa-solid fa-arrow-trend-up', title: 'A site without a conversion path leaks leads', desc: 'Traffic without a clear next step just bounces. Every page needs a reason to click, call, or book.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Security and reliability build trust', desc: 'A site that\'s slow, broken, or insecure quietly tells visitors your business can\'t be trusted with their details either.' },
-  { icon: 'fa-solid fa-comments', title: 'Your website is your best salesperson', desc: 'It works around the clock, answers the same questions consistently, and never has an off day — if it\'s built right.' },
+  { icon: 'fa-solid fa-comments', title: 'Your website is your best salesperson', desc: 'It works around the clock, answers the same questions consistently, and never has an off day, if it\'s built right.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -35,7 +35,7 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const FAILURE_MODES = [
-  { icon: 'fa-solid fa-route', title: 'No clear conversion path', impact: 'Most common', desc: 'Visitors land, look around, and leave — because nothing on the page tells them what to do next.' },
+  { icon: 'fa-solid fa-route', title: 'No clear conversion path', impact: 'Most common', desc: 'Visitors land, look around, and leave, because nothing on the page tells them what to do next.' },
   { icon: 'fa-solid fa-hourglass-half', title: 'Slow load times losing visitors', impact: 'High impact', desc: 'Every extra second of load time pushes visitors back to the search results before they see anything.' },
   { icon: 'fa-solid fa-mobile-screen-button', title: 'Not mobile-optimized', impact: 'High impact', desc: 'A site that only works well on desktop is failing the majority of the people who actually visit it.' },
   { icon: 'fa-solid fa-square-question', title: 'Built on the wrong platform', impact: 'Ongoing', desc: 'A platform chosen for the wrong reasons creates limitations that compound as the business grows.' },
@@ -43,7 +43,7 @@ const FAILURE_MODES = [
 
 const SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Discovery & Site Strategy', desc: 'Understanding your business, audience, and goals before a single page gets designed.' },
-  { icon: 'fa-solid fa-palette', title: 'Custom Website Design', desc: 'A design built around your brand and your customers — not a reused template.' },
+  { icon: 'fa-solid fa-palette', title: 'Custom Website Design', desc: 'A design built around your brand and your customers, not a reused template.' },
   { icon: 'fa-solid fa-code', title: 'Responsive Development', desc: 'Built to look and work right on phones, tablets, and desktops, without compromise.' },
   { icon: 'fa-solid fa-layer-group', title: 'Platform Selection & Setup', desc: 'We match the platform to your actual needs, then set it up properly from the start.' },
   { icon: 'fa-solid fa-magnifying-glass', title: 'SEO-Ready Site Structure', desc: 'Clean code, proper headings, and fast pages that give search engines a reason to rank you.' },
@@ -53,7 +53,7 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'New businesses needing a first professional website', desc: 'A credible, conversion-ready site built right from day one — no starting from a DIY builder.', img: 'https://picsum.photos/seed/bwb-whofor-new/700/620' },
+  { icon: 'fa-solid fa-store', title: 'New businesses needing a first professional website', desc: 'A credible, conversion-ready site built right from day one, no starting from a DIY builder.', img: 'https://picsum.photos/seed/bwb-whofor-new/700/620' },
   { icon: 'fa-solid fa-clock-rotate-left', title: 'Businesses whose current site is outdated or slow', desc: 'A rebuild that fixes the speed, design, and structure problems dragging down your results.', img: 'https://picsum.photos/seed/bwb-whofor-outdated/700/620' },
   { icon: 'fa-solid fa-question', title: 'Businesses unsure which platform fits their needs', desc: 'We evaluate your actual requirements and recommend the platform that fits, not the one we push on everyone.', img: 'https://picsum.photos/seed/bwb-whofor-platform/700/620' },
   { icon: 'fa-solid fa-bullhorn', title: 'Service businesses needing lead-generation-focused sites', desc: 'A site built around getting the phone to ring and the contact form to fill up.', img: 'https://picsum.photos/seed/bwb-whofor-leadgen/700/620' },
@@ -63,10 +63,10 @@ const WHO_FOR = [
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-compass-drafting', title: 'We start with strategy, not templates', desc: 'Discovery comes before design, so the site is built around your business, not a generic layout.' },
-  { icon: 'fa-solid fa-layer-group', title: 'We pick the right platform for your actual needs', desc: 'Not just the one we push on everyone — the one that actually fits your business and budget.' },
+  { icon: 'fa-solid fa-layer-group', title: 'We pick the right platform for your actual needs', desc: 'Not just the one we push on everyone, the one that actually fits your business and budget.' },
   { icon: 'fa-solid fa-bolt', title: 'We build for speed and SEO from day one', desc: 'Performance and search-readiness are built in from the start, not bolted on after launch.' },
   { icon: 'fa-solid fa-mobile-screen', title: 'Mobile-first design, always', desc: 'Every layout starts on mobile and scales up, since that\'s where most of your visitors are.' },
-  { icon: 'fa-solid fa-headset', title: 'Post-launch support included', desc: 'Launch day isn\'t the finish line — we stick around to keep your site working and current.' },
+  { icon: 'fa-solid fa-headset', title: 'Post-launch support included', desc: 'Launch day isn\'t the finish line, we stick around to keep your site working and current.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the site keeps performing, not because of a contract that traps you.' },
 ];
 
@@ -80,10 +80,10 @@ const PROCESS = [
 ];
 
 const FAQS = [
-  { q: 'Which platform do you recommend, and why?', a: 'It depends on your business. We evaluate your budget, content needs, growth plans, and technical requirements, then recommend WordPress, Shopify, Webflow, or a custom build — whichever actually fits, not whichever we happen to push on everyone.' },
+  { q: 'Which platform do you recommend, and why?', a: 'It depends on your business. We evaluate your budget, content needs, growth plans, and technical requirements, then recommend WordPress, Shopify, Webflow, or a custom build, whichever actually fits, not whichever we happen to push on everyone.' },
   { q: 'How long does a business website take?', a: 'A typical custom business website takes four to eight weeks from discovery to launch, depending on scope, number of pages, and how quickly content and feedback come back to us.' },
-  { q: 'Do you write the copy?', a: 'We can write it fully, edit what you provide, or guide you through what to write. Most clients land somewhere in the middle — we handle structure and direction, you provide the business specifics.' },
-  { q: 'Is SEO included?', a: 'Yes. Every site we build ships with SEO-ready structure — clean code, proper headings, fast load times, and on-page basics in place. Ongoing SEO campaigns are a separate service if you want to go further.' },
+  { q: 'Do you write the copy?', a: 'We can write it fully, edit what you provide, or guide you through what to write. Most clients land somewhere in the middle, we handle structure and direction, you provide the business specifics.' },
+  { q: 'Is SEO included?', a: 'Yes. Every site we build ships with SEO-ready structure, clean code, proper headings, fast load times, and on-page basics in place. Ongoing SEO campaigns are a separate service if you want to go further.' },
   { q: 'What does ongoing support cover?', a: 'Content updates, plugin and platform maintenance, security monitoring, small design tweaks, and being available when something needs fixing or changing.' },
   { q: 'Can you redesign an existing site?', a: 'Yes, and it\'s one of our most common projects. We can rebuild on your current platform or migrate you to a better-fitting one if the old setup is holding you back.' },
   { q: 'Do you handle hosting and domain setup?', a: 'Yes. We can set up and manage hosting and domain configuration for you, or work within your existing setup if you prefer to keep it separate.' },
@@ -171,7 +171,7 @@ export default function BusinessWebsitesPage() {
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design and build custom, conversion-focused business websites on{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>whatever platform actually fits your needs</span>{' '}
-                  — not whichever one we happen to push on everyone.
+                 , not whichever one we happen to push on everyone.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -245,10 +245,10 @@ export default function BusinessWebsitesPage() {
                   Every Other Marketing Effort Depends on Your Website.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Ads, SEO, referrals, social — it all eventually sends people to your website. If it doesn&apos;t convert, everything upstream of it is wasted spend.
+                  Ads, SEO, referrals, social, it all eventually sends people to your website. If it doesn&apos;t convert, everything upstream of it is wasted spend.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  Most business websites fail to convert because they were built without strategy — a template filled in, not a site{' '}
+                  Most business websites fail to convert because they were built without strategy, a template filled in, not a site{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>designed around how customers actually decide</span>.
                 </p>
                 <a href="/contact"
@@ -293,11 +293,11 @@ export default function BusinessWebsitesPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Studies consistently show that{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>94% of first impressions are design-related</span> — visitors judge your credibility before reading a word.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>94% of first impressions are design-related</span>, visitors judge your credibility before reading a word.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Beyond 3 seconds of load time,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>visitor abandonment rises sharply</span> — speed isn&apos;t a nice-to-have, it&apos;s the entry fee.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>visitor abandonment rises sharply</span>, speed isn&apos;t a nice-to-have, it&apos;s the entry fee.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A proper business website means design, structure, and platform choices working together, not fighting each other.
@@ -370,7 +370,7 @@ export default function BusinessWebsitesPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>A Website That Works as Hard as You Do.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Design, speed, structure, and conversion path — the difference between a website that just exists and one that grows your business.
+                Design, speed, structure, and conversion path, the difference between a website that just exists and one that grows your business.
               </p>
             </div>
             <div className="bwb-why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -406,7 +406,7 @@ export default function BusinessWebsitesPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Business Websites to Underperform — and How We Prevent Each One.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Causes Business Websites to Underperform, and How We Prevent Each One.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
                 Most underperforming business websites trace back to one of these four causes.
               </p>

@@ -45,49 +45,49 @@ const COVERAGE = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical SEO Audit', desc: 'A comprehensive audit covering crawlability, indexation, speed, architecture, schema, and security — a prioritised report in plain English.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical SEO Audit', desc: 'A comprehensive audit covering crawlability, indexation, speed, architecture, schema, and security, a prioritised report in plain English.' },
   { icon: 'fa-solid fa-spider', title: 'Crawl & Indexation Fixes', desc: 'We fix robots.txt issues, sitemap errors, and crawl budget problems so every page you want ranking gets indexed.' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Core Web Vitals Optimisation', desc: 'LCP, INP, and CLS improvements through image optimisation, caching, and code cleanup — faster site, better rankings.' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Core Web Vitals Optimisation', desc: 'LCP, INP, and CLS improvements through image optimisation, caching, and code cleanup, faster site, better rankings.' },
   { icon: 'fa-solid fa-sitemap', title: 'Site Architecture & Internal Linking', desc: 'We restructure your hierarchy so Google understands your priority pages and distributes ranking authority correctly.' },
-  { icon: 'fa-solid fa-code', title: 'Schema Markup & Structured Data', desc: 'LocalBusiness, Service, FAQ, Review, and more — implemented and validated for rich results and AI recommendation.' },
+  { icon: 'fa-solid fa-code', title: 'Schema Markup & Structured Data', desc: 'LocalBusiness, Service, FAQ, Review, and more, implemented and validated for rich results and AI recommendation.' },
   { icon: 'fa-solid fa-clone', title: 'Duplicate Content & Canonical Tags', desc: 'We find duplicate content, implement canonical tags, and consolidate ranking signals currently being split.' },
   { icon: 'fa-solid fa-mobile-screen', title: 'Mobile SEO & HTTPS Compliance', desc: 'Mobile-first indexing fixes, plus a clean HTTPS implementation with a valid certificate and no mixed content.' },
-  { icon: 'fa-solid fa-eye', title: 'Ongoing Technical Monitoring', desc: 'New pages and Google updates introduce new issues — we monitor continuously so problems get caught early.' },
+  { icon: 'fa-solid fa-eye', title: 'Ongoing Technical Monitoring', desc: 'New pages and Google updates introduce new issues, we monitor continuously so problems get caught early.' },
 ];
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-arrow-trend-down', title: 'Rankings dropped after a Google update', desc: 'Most algorithm-related drops trace back to technical issues already present. A technical audit usually tells you why.', img: 'https://picsum.photos/seed/tseo-whofor-drop/700/620' },
   { icon: 'fa-solid fa-chart-line', title: 'Growing businesses adding pages regularly', desc: 'Every new page is a new technical risk. Technical SEO keeps your site clean as it grows.', img: 'https://picsum.photos/seed/tseo-whofor-growing/700/620' },
   { icon: 'fa-solid fa-pen-nib', title: 'Invested in content but not seeing results', desc: 'Good content on a technically broken site does not rank the way it should. The problem is often technical.', img: 'https://picsum.photos/seed/tseo-whofor-content/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce with large product catalogues', desc: 'Large sites accumulate technical debt fast — thin pages, duplication, pagination problems.', img: 'https://picsum.photos/seed/tseo-whofor-ecom/700/620' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce with large product catalogues', desc: 'Large sites accumulate technical debt fast, thin pages, duplication, pagination problems.', img: 'https://picsum.photos/seed/tseo-whofor-ecom/700/620' },
   { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Preparing for a site migration or redesign', desc: 'A poorly managed migration can wipe out years of ranking authority overnight. We protect rankings through the transition.', img: 'https://picsum.photos/seed/tseo-whofor-migration/700/620' },
   { icon: 'fa-solid fa-seedling', title: 'Any business serious about long-term growth', desc: 'Technical SEO is the foundation. Without it, every other SEO investment underperforms.', img: 'https://picsum.photos/seed/tseo-whofor-longterm/700/620' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-screwdriver-wrench', title: 'We fix issues, not just find them', desc: 'We handle the implementation — crawl fixes, schema, Core Web Vitals — not just a report handed to your developer.' },
-  { icon: 'fa-solid fa-layer-group', title: 'We work across every platform', desc: 'WordPress, Shopify, Webflow, Next.js, custom builds — we know the technical constraints specific to each.' },
+  { icon: 'fa-solid fa-screwdriver-wrench', title: 'We fix issues, not just find them', desc: 'We handle the implementation, crawl fixes, schema, Core Web Vitals, not just a report handed to your developer.' },
+  { icon: 'fa-solid fa-layer-group', title: 'We work across every platform', desc: 'WordPress, Shopify, Webflow, Next.js, custom builds, we know the technical constraints specific to each.' },
   { icon: 'fa-solid fa-robot', title: 'AI search is part of what we do', desc: 'Structured data and entity optimisation so your site appears in AI Overviews, ChatGPT, and Perplexity, not just blue links.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'We translate every finding and fix into plain language so you always know what was done and why.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the work is delivering, not because you are obligated to.' },
-  { icon: 'fa-solid fa-headset', title: 'One dedicated contact', desc: 'One person responsible for your technical SEO, not a rotating team — accountable for your results.' },
+  { icon: 'fa-solid fa-headset', title: 'One dedicated contact', desc: 'One person responsible for your technical SEO, not a rotating team, accountable for your results.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Full Technical Audit', desc: 'A comprehensive audit using industry-leading tools and manual review — crawlability, speed, architecture, schema, and security.' },
+  { n: '01', title: 'Full Technical Audit', desc: 'A comprehensive audit using industry-leading tools and manual review, crawlability, speed, architecture, schema, and security.' },
   { n: '02', title: 'Prioritised Action Plan', desc: 'Every finding ranked by its effect on rankings and traffic, so the highest-impact fixes happen first.' },
-  { n: '03', title: 'Implementation', desc: 'Crawl errors, canonical issues, schema, speed, internal linking, redirect chains — fixed directly by our team.' },
+  { n: '03', title: 'Implementation', desc: 'Crawl errors, canonical issues, schema, speed, internal linking, redirect chains, fixed directly by our team.' },
   { n: '04', title: 'Validation & Testing', desc: 'Every fix validated with Search Console, structured data testing tools, and crawl software.' },
   { n: '05', title: 'Ongoing Monitoring', desc: 'Continuous monitoring for new issues, tracking Core Web Vitals and indexation health as your site grows.' },
 ];
 
 const FAQS = [
-  { q: 'What is technical SEO and why does it matter?', a: 'Optimising the technical foundation of your website — structure, speed, code, and signals — so search engines can crawl, index, and rank it properly. It is the base everything else in SEO is built on.' },
+  { q: 'What is technical SEO and why does it matter?', a: 'Optimising the technical foundation of your website, structure, speed, code, and signals, so search engines can crawl, index, and rank it properly. It is the base everything else in SEO is built on.' },
   { q: 'How do I know if my site has technical SEO problems?', a: 'Rankings that dropped after a Google update, pages not appearing in search, slow load times, or content not generating traffic. An audit gives you the complete picture.' },
-  { q: 'What is the difference between technical SEO and on-page SEO?', a: 'On-page focuses on visible content — keywords, headings, copy. Technical SEO focuses on the backend — structure, speed, crawlability. Technical SEO creates the conditions for on-page SEO to work.' },
-  { q: 'What are Core Web Vitals and do they affect rankings?', a: 'Google’s measurements of page experience — load speed, interaction response, and layout stability. Sites that fail rank lower than technically equivalent sites that pass.' },
+  { q: 'What is the difference between technical SEO and on-page SEO?', a: 'On-page focuses on visible content, keywords, headings, copy. Technical SEO focuses on the backend, structure, speed, crawlability. Technical SEO creates the conditions for on-page SEO to work.' },
+  { q: 'What are Core Web Vitals and do they affect rankings?', a: 'Google’s measurements of page experience, load speed, interaction response, and layout stability. Sites that fail rank lower than technically equivalent sites that pass.' },
   { q: 'How long does it take to see results?', a: 'Crawl and indexation improvements are often visible within two to four weeks. Ranking improvements typically follow within six to twelve weeks.' },
-  { q: 'Do you handle the technical fixes or just provide a report?', a: 'We handle the implementation — crawl issues, schema markup, speed improvements, redirects, and more. We work directly with your team where custom development is required.' },
+  { q: 'Do you handle the technical fixes or just provide a report?', a: 'We handle the implementation, crawl issues, schema markup, speed improvements, redirects, and more. We work directly with your team where custom development is required.' },
   { q: 'What tools do you use for technical SEO audits?', a: 'Screaming Frog, Google Search Console, PageSpeed Insights, Ahrefs, and structured data testing tools alongside manual review.' },
   { q: 'Does technical SEO include optimisation for AI search results?', a: 'Yes. Structured data, entity signals, and answer-shaped content are now part of technical SEO.' },
   { q: 'How often does technical SEO need to be revisited?', a: 'It is ongoing. New pages, code changes, and algorithm changes all introduce new issues, so we provide continuous monitoring.' },
@@ -172,7 +172,7 @@ export default function TechnicalSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We fix the technical issues stopping your website from ranking — crawl errors, slow load times, broken structure, and missing signals.{' '}
+                  We fix the technical issues stopping your website from ranking, crawl errors, slow load times, broken structure, and missing signals.{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Get found, get indexed, get results</span>.
                 </p>
 
@@ -247,7 +247,7 @@ export default function TechnicalSEOPage() {
                   Your Website Might Be Working Against You Without You Knowing.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Google does not see your website the way a visitor does. It reads code, crawls structure, measures speed, and checks signals most people never think about — and if any are broken, your rankings suffer no matter how good your content is.
+                  Google does not see your website the way a visitor does. It reads code, crawls structure, measures speed, and checks signals most people never think about, and if any are broken, your rankings suffer no matter how good your content is.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia{' '}
@@ -295,11 +295,11 @@ export default function TechnicalSEOPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Search results aren&apos;t just the sites with the best content — they&apos;re the sites Google could{' '}
+                    Search results aren&apos;t just the sites with the best content, they&apos;re the sites Google could{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>actually crawl, understand, and trust</span>. Technical SEO is the work that makes sure your site is one of them.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    It&apos;s different from content SEO or link building — it works on{' '}
+                    It&apos;s different from content SEO or link building, it works on{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the foundation</span>: your site&apos;s structure, speed, code, and signals.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -682,7 +682,7 @@ export default function TechnicalSEOPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Seo (2).webp" description={<>Google cannot rank what it cannot crawl, read, or trust — and crawl errors, slow load times, and broken structure are silently capping your rankings right now. Content and links only work as well as the site underneath them. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fix the foundation your rankings depend on</span>.</>} heading="Time to Fix" headingHighlight="the Foundation" primaryLabel="Get My Free Technical SEO Audit" secondaryLabel="Talk to a Technical SEO Expert" />
+        <CTASection image="/result_footer/Seo (2).webp" description={<>Google cannot rank what it cannot crawl, read, or trust, and crawl errors, slow load times, and broken structure are silently capping your rankings right now. Content and links only work as well as the site underneath them. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fix the foundation your rankings depend on</span>.</>} heading="Time to Fix" headingHighlight="the Foundation" primaryLabel="Get My Free Technical SEO Audit" secondaryLabel="Talk to a Technical SEO Expert" />
       </main>
       <Footer />
     </>

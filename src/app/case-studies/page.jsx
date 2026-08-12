@@ -15,12 +15,13 @@ const SERVICES = [
   { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/services/ppc-paid-marketing'   },
   { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/services/content-creative'     },
   { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/services/marketing-automation' },
+  { label: 'White-Label',            icon: 'fa-solid fa-handshake',        href: '/services/white-label'          },
 ];
 
 const CASES = [
   {
     service: 'Websites & Funnels',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Airtopia',
     intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
     quote: 'Isuremedia built exactly what we needed and did it properly.',
@@ -34,35 +35,35 @@ const CASES = [
   },
   {
     service: 'Websites & Funnels',
-    img: '/images/casestudy-dummy.png',
-    client: 'Isuremedia — AdOS Platform',
+    img: '/images/casestudy-dummy.webp',
+    client: 'Isuremedia, AdOS Platform',
     intro: 'Managing 100+ campaigns across 20–25 Meta ad accounts manually was consuming 20 hours a week.',
     quote: 'A single developer delivered a full-stack AI platform in about a month, cutting manual campaign management time by 60-75%.',
     stats: [
       { val: '60-75%', label: 'Less Manual Effort', sub: 'down from 20 hrs/week',      icon: 'fa-solid fa-clock' },
       { val: '<60 sec', label: 'Full Account Analysis', sub: 'via AI, was hours manually', icon: 'fa-solid fa-robot' },
     ],
-    body: 'Isuremedia manages 20-25 Meta ad accounts and 100+ campaigns, and manual monitoring was consuming 20 hours a week. We built AdOS, an internal AI-powered advertising platform integrating the Meta Graph API with Claude and GPT-4o — cutting manual effort by 60-75% and running full account analysis in under a minute.',
+    body: 'Isuremedia manages 20-25 Meta ad accounts and 100+ campaigns, and manual monitoring was consuming 20 hours a week. We built AdOS, an internal AI-powered advertising platform integrating the Meta Graph API with Claude and GPT-4o, cutting manual effort by 60-75% and running full account analysis in under a minute.',
     link: '/case-studies/ados-internal-ai-advertising-platform',
     linkLabel: "Read the AdOS Case Study",
   },
   {
     service: 'SEO',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
-    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation — and it shows up in the numbers every month.',
+    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
     stats: [
       { val: '800%', label: 'Organic Traffic Growth', sub: 'in 4 months', icon: 'fa-solid fa-chart-line' },
       { val: '348',  label: 'Quality Backlinks',      sub: 'up from 54',  icon: 'fa-solid fa-link'      },
     ],
-    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel — delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
+    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel, delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
     link: '/case-studies/ecommerce-seo-organic-traffic',
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
     service: 'SEO',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Brown Legal Immigration',
     intro: '100% of search traffic came from the map pack. The website was invisible.',
     quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
@@ -70,41 +71,41 @@ const CASES = [
       { val: '86%', label: 'Keywords on Page 1', sub: '12 of 14 tracked', icon: 'fa-solid fa-magnifying-glass-chart' },
       { val: '3',   label: 'AI Platforms Ranking', sub: 'Google, ChatGPT, Perplexity', icon: 'fa-solid fa-robot' },
     ],
-    body: 'Brown Legal Immigration had strong local visibility through their Google Business Profile, but the website carried zero organic search presence. We built SEO and AEO in parallel — new practice-area content, technical fixes, and off-page authority — taking 86% of tracked keywords to page one and earning citations across Google AI Overview, ChatGPT, and Perplexity within three months.',
+    body: 'Brown Legal Immigration had strong local visibility through their Google Business Profile, but the website carried zero organic search presence. We built SEO and AEO in parallel, new practice-area content, technical fixes, and off-page authority, taking 86% of tracked keywords to page one and earning citations across Google AI Overview, ChatGPT, and Perplexity within three months.',
     link: '/case-studies/law-firm-local-seo-map-pack',
     linkLabel: "Read Brown Legal Immigration's Case Study",
   },
   {
     service: 'Marketing Automation',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Mentara Health',
-    intro: 'Exam content was managed with no clear hierarchy — no way to organise by certification type, section, or case scenario.',
+    intro: 'Exam content was managed with no clear hierarchy, no way to organise by certification type, section, or case scenario.',
     quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',
     stats: [
       { val: '5-Level', label: 'Content Hierarchy', sub: 'category to question', icon: 'fa-solid fa-sitemap' },
       { val: 'Clone-Enabled', label: 'Every Level', sub: 'exam, section & question', icon: 'fa-solid fa-clone' },
     ],
-    body: 'Mentara Health needed a structured way to manage exam content for a healthcare certification platform — organised by category, exam, section, case study, and question, with support for real-world scenario-based assessment. We built a fully structured five-level content hierarchy with clone functionality at every level and progressive, case-based assessments.',
+    body: 'Mentara Health needed a structured way to manage exam content for a healthcare certification platform, organised by category, exam, section, case study, and question, with support for real-world scenario-based assessment. We built a fully structured five-level content hierarchy with clone functionality at every level and progressive, case-based assessments.',
     link: '/case-studies/healthcare-exam-platform-development',
     linkLabel: "Read Mentara Health's Case Study",
   },
   {
     service: 'Marketing Automation',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Hijrah Walks Expeditions',
-    intro: 'Group size changes the price — but GoHighLevel checkout links can\'t do that natively.',
+    intro: 'Group size changes the price, but GoHighLevel checkout links can\'t do that natively.',
     quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
     stats: [
       { val: '12×', label: 'Monthly Expeditions', sub: 'managed automatically', icon: 'fa-solid fa-route' },
       { val: '0',   label: 'Manual Invoices',      sub: 'sent by the team',     icon: 'fa-solid fa-file-invoice-dollar' },
     ],
-    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing — neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
+    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing, neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
     link: '/case-studies/travel-agency-payment-automation',
     linkLabel: "Read Hijrah Walks's Case Study",
   },
   {
     service: 'PPC / Paid Ads',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Scrubs4U',
     intro: 'Purchases were inconsistent and rising acquisition costs made it hard to scale profitably.',
     quote: 'A 7.9% increase in ad spend delivered a 173.6% increase in revenue and 154% higher ROAS.',
@@ -112,13 +113,13 @@ const CASES = [
       { val: '3.54x',   label: 'All-Time ROAS',     sub: 'across full engagement', icon: 'fa-solid fa-chart-line' },
       { val: '+173.6%', label: 'Revenue Growth',    sub: 'same 30-day window YoY', icon: 'fa-solid fa-dollar-sign' },
     ],
-    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization — growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
+    body: 'Scrubs4U was already running Meta Ads, but creative fatigue and rising acquisition costs made it difficult to scale profitably. We rebuilt the account around continuous campaign, creative, and audience optimization, growing revenue 173.6% and ROAS 154% with only a 7.9% increase in spend.',
     link: '/case-studies/ecommerce-meta-ads-roas-scaling',
     linkLabel: "Read Scrubs4U's Case Study",
   },
   {
     service: 'PPC / Paid Ads',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Global Allianz',
     intro: 'Lead volume was inconsistent and Cost Per Lead was too high to scale profitably.',
     quote: 'With only a 33% increase in ad spend, lead volume grew 1,309% while Cost Per Lead dropped over 90%.',
@@ -126,13 +127,13 @@ const CASES = [
       { val: '+1,309%', label: 'Lead Volume Growth', sub: '22 → 310 leads',    icon: 'fa-solid fa-users' },
       { val: '−90.5%',  label: 'Cost Per Lead',      sub: '$72.99 → $6.91',   icon: 'fa-solid fa-arrow-trend-down' },
     ],
-    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting — growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
+    body: 'Global Allianz was already generating immigration leads through Meta Ads, but high cost per lead and inconsistent volume limited how far the firm could scale. We rebuilt the account around Spanish-language, trust-building creative and refined targeting, growing lead volume 1,309% while cutting Cost Per Lead by over 90%.',
     link: '/case-studies/immigration-meta-ads-lead-generation',
     linkLabel: "Read Global Allianz's Case Study",
   },
   {
     service: 'Content & Creative',
-    img: '/images/casestudy-dummy.png',
+    img: '/casestudy/seo-card-image-case-study-Dr_Daniel.webp',
     client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
     intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
     quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
@@ -140,13 +141,13 @@ const CASES = [
       { val: '0 → 800+', label: 'Followers',       sub: 'in 7 months',                    icon: 'fa-solid fa-users' },
       { val: '1',        label: 'Podcast Recording', sub: 'became weeks of content',       icon: 'fa-solid fa-video' },
     ],
-    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content — growing the account from 0 to 800+ engaged followers in 7 months.',
+    body: 'Dr. Golshani, a Beverly Hills plastic and reconstructive surgeon, was starting an Instagram presence from zero in a high-stakes, high-trust niche. We built a repeatable content engine that turned a single podcast recording into weeks of accuracy-first, client-approved content, growing the account from 0 to 800+ engaged followers in 7 months.',
     link: '/case-studies/plastic-surgeon-instagram-brand-growth',
     linkLabel: "Read Dr. Golshani's Case Study",
   },
   {
     service: 'Content & Creative',
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Garnus India',
     intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
     quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
@@ -154,9 +155,37 @@ const CASES = [
       { val: '0 → 447', label: 'Followers',      sub: 'fully organic, in 6 months', icon: 'fa-solid fa-users' },
       { val: '50-60k+', label: 'Organic Views',  sub: 'across the period',          icon: 'fa-solid fa-eye' },
     ],
-    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy — growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
+    body: 'Garnus India launched a natural wooden essentials brand into a crowded home-and-lifestyle category with zero existing audience. We built a personality-led content system and influencer strategy, growing the account from 0 to 447 followers and 50-60k+ organic views in 6 months, entirely organic.',
     link: '/case-studies/ecommerce-instagram-organic-growth-garnus',
     linkLabel: "Read Garnus India's Case Study",
+  },
+  {
+    service: 'White-Label',
+    img: '/images/casestudy-dummy.webp',
+    client: 'Innovat3 Solutions',
+    intro: 'One GoHighLevel agency account, run mostly by hand.',
+    quote: 'Isuremedia functions as our embedded build team, and that consistency is what let us keep signing clients.',
+    stats: [
+      { val: '1 → 3', label: 'Agencies Managed', sub: 'from a single account', icon: 'fa-solid fa-building' },
+      { val: '100+',  label: 'Websites Built',    sub: 'and still shipping',   icon: 'fa-solid fa-globe' },
+    ],
+    body: 'Innovat3 Solutions needed a white-label technical partner who could build and manage GoHighLevel infrastructure at the pace their sales team was signing clients across 25+ niches. We became their embedded build team, covering websites, custom integrations, sub-account setup, automation, and voice AI, scaling from one agency account to 3 agencies and 20+ live sub-accounts.',
+    link: '/case-studies/innovat3-multi-agency-ghl-scaling',
+    linkLabel: "Read Innovat3 Solutions's Case Study",
+  },
+  {
+    service: 'White-Label',
+    img: '/images/casestudy-dummy.webp',
+    client: 'Signature Pools',
+    intro: 'Facebook leads were reaching GoHighLevel. Nothing structured happened after that.',
+    quote: 'The pipeline finally reflects how we actually sell, and management can see exactly where every lead stands.',
+    stats: [
+      { val: '15',     label: 'Pipeline Stages',  sub: 'built in one week',        icon: 'fa-solid fa-sitemap' },
+      { val: '0',      label: 'Manual Handoffs',  sub: 'lead transfer now automatic', icon: 'fa-solid fa-arrow-right-arrow-left' },
+    ],
+    body: 'Signature Pools had leads flowing into GoHighLevel with no structured pipeline, no automated notifications, and no reporting outside the CRM. We redesigned the sales pipeline, built automated notifications and a one-click lead transfer process, and synced everything to a live Google Sheets report through Make, delivered in a single week.',
+    link: '/case-studies/signature-pools-lead-management-automation',
+    linkLabel: "Read Signature Pools's Case Study",
   },
 ];
 
@@ -177,7 +206,7 @@ function CaseCard({
           <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{c.intro}</p>
         </div>
 
-        {/* Thumbnail — matches this case study's own hero image */}
+        {/* Thumbnail, matches this case study's own hero image */}
         <div className="cs-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={c.img} alt={c.client}
@@ -186,7 +215,7 @@ function CaseCard({
         </div>
       </div>
 
-      {/* Quote — full width */}
+      {/* Quote, full width */}
       <div style={{ background: '#FFF7E8', borderRadius: 12, padding: '18px 20px' }}>
         <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 18, display: 'block', marginBottom: 6 }} />
         <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-navy)', lineHeight: 1.65, margin: 0 }}>
@@ -254,7 +283,7 @@ export default function CaseStudiesPage() {
                   Filter by service to see a real result from that exact type of engagement.
                 </p>
                 <div className="cs-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  <a href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                     Book a Free Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
@@ -262,7 +291,7 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
 
-              {/* RIGHT — image */}
+              {/* RIGHT, image */}
               <div className="cs-hero-img-wrap" style={{ position: 'relative' }}>
                 <div style={{ borderRadius: 20, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}

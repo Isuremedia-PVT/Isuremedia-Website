@@ -8,28 +8,28 @@ const LOGO_STRIP = '/images/partner.webp';
 
 const DEFAULT_CASES = [
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
-    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation — and it shows up in the numbers every month.',
+    quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
     stats: [
       { val: '800%', label: 'Organic Traffic Growth', sub: 'in 4 months', icon: 'fa-solid fa-chart-line' },
       { val: '348',  label: 'Quality Backlinks',      sub: 'up from 54',  icon: 'fa-solid fa-link'      },
     ],
-    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel — delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
+    body: 'Garden Solution Landscapes came to Isuremedia with a strong local reputation the website was not converting into traffic. We rebuilt the technical foundation, recovered from a mid-campaign hosting migration, and built out local SEO, link building, and AEO in parallel, delivering 800% organic traffic growth, a top map pack position, and live Google AI Overview citations within four months.',
     link: '/case-studies/ecommerce-seo-organic-traffic',
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.png',
+    img: '/images/casestudy-dummy.webp',
     client: 'Hijrah Walks Expeditions',
-    intro: 'Group size changes the price — but GoHighLevel checkout links can\'t do that natively.',
+    intro: 'Group size changes the price, but GoHighLevel checkout links can\'t do that natively.',
     quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
     stats: [
       { val: '12×', label: 'Monthly Expeditions', sub: 'managed automatically', icon: 'fa-solid fa-route' },
       { val: '0',   label: 'Manual Invoices',      sub: 'sent by the team',     icon: 'fa-solid fa-file-invoice-dollar' },
     ],
-    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing — neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
+    body: 'Hijrah Walks runs 12 monthly group expeditions with per-head group pricing and event-relative instalment billing, neither supported natively by GoHighLevel. We built a custom dynamic pricing engine and event-relative instalment workflows spanning the full yearly calendar, eliminating manual pricing and payment tracking entirely.',
     link: '/case-studies/travel-agency-payment-automation',
     linkLabel: "Read Hijrah Walks's Case Study",
   },
@@ -78,7 +78,7 @@ export default function ClientResults({
                   <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.65, margin: 0 }}>{c.intro}</p>
                 </div>
 
-                {/* Thumbnail — matches this case study's own hero image */}
+                {/* Thumbnail, matches this case study's own hero image */}
                 <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={c.img} alt={c.client}
@@ -87,7 +87,7 @@ export default function ClientResults({
                 </div>
               </div>
 
-              {/* Quote — full width */}
+              {/* Quote, full width */}
               <div style={{ background: '#FFF7E8', borderRadius: 12, padding: '18px 20px' }}>
                 <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 18, display: 'block', marginBottom: 6 }} />
                 <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-navy)', lineHeight: 1.65, margin: 0 }}>

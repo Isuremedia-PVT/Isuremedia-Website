@@ -20,12 +20,12 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-fire', title: 'The platform where trends become sales', desc: 'TikTok drives purchase decisions directly — 1 in 2 users say they’ve bought something after seeing it on the platform.' },
+  { icon: 'fa-solid fa-fire', title: 'The platform where trends become sales', desc: 'TikTok drives purchase decisions directly, 1 in 2 users say they’ve bought something after seeing it on the platform.' },
   { icon: 'fa-solid fa-video', title: 'Native creative outperforms polished ads', desc: 'Content that looks like it belongs in the feed consistently beats traditional, studio-produced advertising on TikTok.' },
-  { icon: 'fa-solid fa-users', title: 'A young, high-spending audience', desc: 'Gen Z and Millennial audiences at scale — increasingly the primary discovery channel for products and services.' },
+  { icon: 'fa-solid fa-users', title: 'A young, high-spending audience', desc: 'Gen Z and Millennial audiences at scale, increasingly the primary discovery channel for products and services.' },
   { icon: 'fa-solid fa-bolt', title: 'The algorithm rewards watch time, not follower count', desc: 'A brand-new account with the right hook can outperform an account with a million followers. Reach is earned by the content.' },
-  { icon: 'fa-solid fa-comments', title: 'Spark Ads borrow trust from real accounts', desc: 'Boosting organic or creator posts as ads keeps the comments, likes, and shares — social proof paid ads alone can’t buy.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Lower CPMs while the platform scales', desc: 'TikTok inventory remains cheaper than Meta and Google in most verticals — an efficiency window while it matures.' },
+  { icon: 'fa-solid fa-comments', title: 'Spark Ads borrow trust from real accounts', desc: 'Boosting organic or creator posts as ads keeps the comments, likes, and shares, social proof paid ads alone can’t buy.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Lower CPMs while the platform scales', desc: 'TikTok inventory remains cheaper than Meta and Google in most verticals, an efficiency window while it matures.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -42,14 +42,14 @@ const CREATIVE = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'TikTok Ads Audit', desc: 'Account structure, creative performance, pixel setup, and spend efficiency — what to fix first.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'TikTok Ads Audit', desc: 'Account structure, creative performance, pixel setup, and spend efficiency, what to fix first.' },
   { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right objectives, campaign structure, Events API, and Smart Performance setup from day one.' },
-  { icon: 'fa-solid fa-clapperboard', title: 'Native Video Creative Production', desc: 'Scripted, filmed, and edited to feel like organic TikTok content — not a repurposed ad from another platform.' },
+  { icon: 'fa-solid fa-clapperboard', title: 'Native Video Creative Production', desc: 'Scripted, filmed, and edited to feel like organic TikTok content, not a repurposed ad from another platform.' },
   { icon: 'fa-solid fa-bolt', title: 'Spark Ads & Creator Partnerships', desc: 'Boosting organic and creator content as paid ads, keeping the comments, likes, and social proof intact.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Pixel & Events API Tracking', desc: 'Server-side tracking alongside the pixel for accurate conversion data and better algorithm optimisation.' },
   { icon: 'fa-solid fa-crosshairs', title: 'Audience & Interest Targeting', desc: 'Interest, behaviour, and lookalike audience strategy layered with TikTok’s Smart Performance automation.' },
   { icon: 'fa-solid fa-flask', title: 'Creative Testing Framework', desc: 'Structured testing across hooks, formats, sounds, and CTAs to build a picture of what your audience responds to.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Reach, watch time, cost per result, and ROAS — in plain English, with next month’s creative plan.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Reach, watch time, cost per result, and ROAS, in plain English, with next month’s creative plan.' },
 ];
 
 const WHO_FOR = [
@@ -62,17 +62,17 @@ const WHO_FOR = [
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-clapperboard', title: 'We build creative for the platform, not around it', desc: 'Every ad is scripted and produced to feel native to TikTok — not a repurposed asset from another channel.' },
+  { icon: 'fa-solid fa-clapperboard', title: 'We build creative for the platform, not around it', desc: 'Every ad is scripted and produced to feel native to TikTok, not a repurposed asset from another channel.' },
   { icon: 'fa-solid fa-bolt', title: 'We understand what makes TikTok different', desc: 'Watch time and completion rate drive reach here, not follower count or polish. We build for that reality.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We track what actually matters', desc: 'Events API tracking alongside the pixel so TikTok’s algorithm can optimise on accurate conversion data.' },
-  { icon: 'fa-solid fa-flask', title: 'We test relentlessly', desc: 'Hooks, formats, sounds, and CTAs tested on a rolling basis — creative fatigue managed before it costs you.' },
+  { icon: 'fa-solid fa-flask', title: 'We test relentlessly', desc: 'Hooks, formats, sounds, and CTAs tested on a rolling basis, creative fatigue managed before it costs you.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we spent, what it returned, what creative performed best, and what we’re doing differently next month.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the campaigns are delivering, not because you are contractually obligated to.' },
 ];
 
 const PROCESS = [
   { n: '01', title: 'Audit & Goal Alignment', desc: 'We audit your account or start fresh, reviewing pixel setup and existing creative performance before building anything.' },
-  { n: '02', title: 'Strategy & Campaign Build', desc: 'Objectives, campaign structure, and audience approach — Events API implemented and verified before launch.' },
+  { n: '02', title: 'Strategy & Campaign Build', desc: 'Objectives, campaign structure, and audience approach, Events API implemented and verified before launch.' },
   { n: '03', title: 'Creative Development & Launch', desc: 'Native video concepts, hooks, and Spark Ads sourced or produced around the strongest hypothesis.' },
   { n: '04', title: 'Creative Testing', desc: 'In the first few weeks we systematically test hooks, formats, and sounds to find what converts.' },
   { n: '05', title: 'Scaling & Ongoing Management', desc: 'Budget scaled into what performs, with new creative rotated as fatigue signals appear.' },
@@ -82,8 +82,8 @@ const PROCESS = [
 const FAQS = [
   { q: 'Do I need creators to run TikTok Ads?', a: 'No, but native-style creative performs best regardless of source. We can produce it in-house, source creators, or boost your existing organic content as Spark Ads.' },
   { q: 'How much should I spend on TikTok Ads?', a: 'Most businesses start between $1,000 and $2,500 a month to gather enough data for the algorithm to optimise, scaling based on results.' },
-  { q: 'How is this different from Meta or Google Ads?', a: 'Creative style is the biggest difference — polished, sales-forward ads underperform native, feed-native content. Targeting and reporting mechanics also differ.' },
-  { q: 'What is a Spark Ad?', a: 'A paid ad format that boosts an existing organic post — yours or a creator’s — keeping its likes, comments, and shares intact for added trust.' },
+  { q: 'How is this different from Meta or Google Ads?', a: 'Creative style is the biggest difference, polished, sales-forward ads underperform native, feed-native content. Targeting and reporting mechanics also differ.' },
+  { q: 'What is a Spark Ad?', a: 'A paid ad format that boosts an existing organic post, yours or a creator’s, keeping its likes, comments, and shares intact for added trust.' },
   { q: 'How long does it take to see results?', a: 'Most campaigns exit the learning phase within seven to fourteen days, with clearer performance trends by week three or four.' },
   { q: 'What creative formats work best?', a: 'Product demos, unboxings, before/afters, and creator-style testimonials generally outperform traditional brand advertising on TikTok.' },
   { q: 'Can TikTok Ads work alongside Meta or Google Ads?', a: 'Yes. TikTok is often used for top-of-funnel reach and discovery, working alongside Meta and Google for retargeting and conversion.' },
@@ -247,7 +247,7 @@ export default function TikTokAdsPage() {
                   Repurposing a Meta or YouTube ad onto TikTok reads as an ad instantly, and gets scrolled past instantly. TikTok rewards content that looks like it belongs in the feed.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia builds native, creator-style creative and pairs it with proper campaign structure and tracking —{' '}
+                  ISureMedia builds native, creator-style creative and pairs it with proper campaign structure and tracking,{' '}
                   <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to earn watch time, not just impressions</span>.
                 </p>
                 <a href="/contact"
@@ -369,7 +369,7 @@ export default function TikTokAdsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Fastest-Growing Ad Platform, Built on Content That Doesn&apos;t Look Like Advertising.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Over a billion monthly active users and inventory costs still lower than Meta or Google in most verticals — an efficiency window that won&apos;t last forever.
+                Over a billion monthly active users and inventory costs still lower than Meta or Google in most verticals, an efficiency window that won&apos;t last forever.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -405,9 +405,9 @@ export default function TikTokAdsPage() {
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>On TikTok, Creative Isn&apos;t Part of the Campaign — It Is the Campaign.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>On TikTok, Creative Isn&apos;t Part of the Campaign, It Is the Campaign.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Targeting matters less here than on any other platform. What you show decides whether the algorithm keeps showing it — here is how we build for that.
+                Targeting matters less here than on any other platform. What you show decides whether the algorithm keeps showing it, here is how we build for that.
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -450,7 +450,7 @@ export default function TikTokAdsPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our TikTok Ads Management Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Native Creative, Targeting, and Optimisation — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Native Creative, Targeting, and Optimisation, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

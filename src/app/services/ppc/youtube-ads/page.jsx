@@ -14,18 +14,18 @@ const BRIDGE_ITEMS = [
   'In-stream, in-feed, and Shorts ad campaigns',
   'Video creative strategy, scripting, and production guidance',
   'Google Ads / YouTube tracking and conversion setup',
-  'Audience targeting — in-market, affinity, and remarketing',
+  'Audience targeting, in-market, affinity, and remarketing',
   'A/B testing across hooks, formats, and calls to action',
   'Monthly reporting and performance optimisation',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-tv', title: 'The second-largest search engine, in video form', desc: 'Over 2.5 billion monthly logged-in users searching for how-to content, reviews, and solutions — with intent already present.' },
-  { icon: 'fa-solid fa-route', title: 'Reach across the full customer journey', desc: 'Skippable in-stream for awareness, in-feed for consideration, Shorts for reach — one platform, every funnel stage.' },
-  { icon: 'fa-solid fa-photo-film', title: 'Video builds trust text and images can’t', desc: 'A demonstration, a testimonial, a face talking to camera — video does the selling static ad formats can’t replicate.' },
-  { icon: 'fa-solid fa-rotate-left', title: 'Remarketing that brings viewers back', desc: 'Anyone who watches your video becomes a remarketing audience — reachable again across YouTube, Search, and Display.' },
+  { icon: 'fa-solid fa-tv', title: 'The second-largest search engine, in video form', desc: 'Over 2.5 billion monthly logged-in users searching for how-to content, reviews, and solutions, with intent already present.' },
+  { icon: 'fa-solid fa-route', title: 'Reach across the full customer journey', desc: 'Skippable in-stream for awareness, in-feed for consideration, Shorts for reach, one platform, every funnel stage.' },
+  { icon: 'fa-solid fa-photo-film', title: 'Video builds trust text and images can’t', desc: 'A demonstration, a testimonial, a face talking to camera, video does the selling static ad formats can’t replicate.' },
+  { icon: 'fa-solid fa-rotate-left', title: 'Remarketing that brings viewers back', desc: 'Anyone who watches your video becomes a remarketing audience, reachable again across YouTube, Search, and Display.' },
   { icon: 'fa-solid fa-arrow-trend-up', title: 'Efficient CPMs relative to reach', desc: 'YouTube’s inventory delivers wide, engaged reach at a cost per view that’s hard to match at the same audience scale.' },
-  { icon: 'fa-solid fa-google', title: 'Backed by Google’s targeting engine', desc: 'The same intent, demographic, and remarketing data that powers Google Ads — applied to video.' },
+  { icon: 'fa-solid fa-google', title: 'Backed by Google’s targeting engine', desc: 'The same intent, demographic, and remarketing data that powers Google Ads, applied to video.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -42,14 +42,14 @@ const CREATIVE = [
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'YouTube Ads Audit', desc: 'Campaign structure, targeting, creative performance, conversion tracking, and spend efficiency — what to fix first.' },
-  { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right objectives, campaign types, and audience framework — set up to learn from day one.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'YouTube Ads Audit', desc: 'Campaign structure, targeting, creative performance, conversion tracking, and spend efficiency, what to fix first.' },
+  { icon: 'fa-solid fa-compass', title: 'Campaign Strategy & Setup', desc: 'The right objectives, campaign types, and audience framework, set up to learn from day one.' },
   { icon: 'fa-solid fa-crosshairs', title: 'Audience Research & Targeting', desc: 'In-market, affinity, custom intent, and remarketing audience strategy layered for maximum relevance.' },
-  { icon: 'fa-solid fa-photo-film', title: 'Video Creative Strategy & Scripting', desc: 'Creative brief and scripting guidance — in-stream, in-feed, and Shorts — built around the scroll-stopping hook.' },
+  { icon: 'fa-solid fa-photo-film', title: 'Video Creative Strategy & Scripting', desc: 'Creative brief and scripting guidance, in-stream, in-feed, and Shorts, built around the scroll-stopping hook.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Conversion Tracking Setup', desc: 'Google Ads and GA4 tracking configured so video views connect properly to leads, sales, and revenue.' },
   { icon: 'fa-solid fa-rotate-left', title: 'Remarketing Campaigns', desc: 'Built from video viewers and website visitors, served the offer most likely to bring them back and convert.' },
   { icon: 'fa-solid fa-clapperboard', title: 'In-Feed & Shorts Campaigns', desc: 'Discovery-style and vertical short-form ads placed where attention is highest across the platform.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Views, CPV, click-through, conversions, and creative performance — in plain English, with next month’s plan.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Views, CPV, click-through, conversions, and creative performance, in plain English, with next month’s plan.' },
 ];
 
 const WHO_FOR = [
@@ -65,7 +65,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-google', title: 'We manage YouTube inside the Google Ads ecosystem', desc: 'The same intent, demographic, and remarketing data that powers search campaigns, applied properly to video.' },
   { icon: 'fa-solid fa-clapperboard', title: 'We build for the skip button, not around it', desc: 'Every hook is built to earn the first five seconds. Creative decisions are backed by a testing framework, not guesswork.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We track what actually matters', desc: 'GA4 and Google Ads conversion tracking configured properly so video spend ties to real leads and revenue.' },
-  { icon: 'fa-solid fa-filter', title: 'We manage the full funnel', desc: 'Awareness, consideration, and conversion built together — always building the remarketing audience that feeds future results.' },
+  { icon: 'fa-solid fa-filter', title: 'We manage the full funnel', desc: 'Awareness, consideration, and conversion built together, always building the remarketing audience that feeds future results.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we spent, what it returned, what creative performed best, and what we’re doing differently next month.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the campaigns are delivering, not because you are contractually obligated to.' },
 ];
@@ -87,7 +87,7 @@ const FAQS = [
   { q: 'Do you handle video production?', a: 'We provide creative strategy and scripting guidance for every campaign, and can coordinate production for businesses that need it built from scratch.' },
   { q: 'Can YouTube Ads work alongside Google Search or Meta Ads?', a: 'Yes, and they work well together. YouTube builds awareness and remarketing pools that Search and Meta can then convert.' },
   { q: 'What is a Video Action campaign?', a: 'A conversion-focused YouTube campaign type optimised for leads or sales, using Google’s bidding automation across placements.' },
-  { q: 'How do you measure success on YouTube?', a: 'Cost per view, view rate, click-through rate, and conversions tied to revenue — not vanity view counts alone.' },
+  { q: 'How do you measure success on YouTube?', a: 'Cost per view, view rate, click-through rate, and conversions tied to revenue, not vanity view counts alone.' },
 ];
 
 const RELATED = [
@@ -296,7 +296,7 @@ export default function YouTubeAdsPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     With over 2.5 billion monthly logged-in users, YouTube gives businesses access to{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Google-level targeting in video form</span> — in-market, affinity, and remarketing audiences.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Google-level targeting in video form</span>, in-market, affinity, and remarketing audiences.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Management is building the hook that earns the watch, tracking it properly, and optimising toward the views that actually convert.
@@ -407,7 +407,7 @@ export default function YouTubeAdsPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>In YouTube Ads, the First Five Seconds Decide Everything.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                The skip button is always visible. The ad that earns the watch is the ad that gets the result — here is how we build for that.
+                The skip button is always visible. The ad that earns the watch is the ad that gets the result, here is how we build for that.
               </p>
             </div>
             <div className="ranking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -450,7 +450,7 @@ export default function YouTubeAdsPage() {
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our YouTube Ads Management Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Creative, Targeting, and Optimisation — All in One Place.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Strategy, Creative, Targeting, and Optimisation, All in One Place.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {

@@ -13,7 +13,7 @@ const BRIDGE_ITEMS = [
   'Chatbot strategy and conversation flow design',
   'AI chatbot build and platform configuration',
   'Training on your business, services, and FAQs',
-  'CRM integration — every conversation logged automatically',
+  'CRM integration, every conversation logged automatically',
   'Lead qualification and scoring within the conversation',
   'Appointment booking connected to your calendar',
   'Human handoff configuration for complex enquiries',
@@ -21,12 +21,12 @@ const BRIDGE_ITEMS = [
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-moon', title: 'Revenue recovered from after-hours leads', desc: 'The majority of website traffic happens outside business hours. A chatbot that engages, qualifies, and books immediately — at any hour — recovers revenue that was previously lost to timing alone.' },
+  { icon: 'fa-solid fa-moon', title: 'Revenue recovered from after-hours leads', desc: 'The majority of website traffic happens outside business hours. A chatbot that engages, qualifies, and books immediately, at any hour, recovers revenue that was previously lost to timing alone.' },
   { icon: 'fa-solid fa-user-clock', title: 'Team time redirected to higher-value work', desc: 'Chatbots save businesses an average of 30% on customer support costs. The time recovered can be redirected to complex conversations and work that genuinely requires human judgment.' },
-  { icon: 'fa-solid fa-filter', title: 'Lead quality improvement through consistent qualification', desc: 'A chatbot applies your qualification criteria consistently to every lead — no skipping questions, no shortcuts when the pipeline is full. Every lead that reaches your sales team has been through the same process.' },
-  { icon: 'fa-solid fa-bolt', title: 'Immediate response to every enquiry', desc: '68% of customers say quick responses are the most positive aspect of chatbots. The moment a visitor starts a conversation, they get a response — not a form into a queue, not a reply in three hours.' },
-  { icon: 'fa-solid fa-list-check', title: 'Lead qualification at scale', desc: 'A chatbot qualifies every lead against your criteria — budget, timeline, service fit, geography — and routes qualified leads to the right next step automatically.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Appointment booking without back-and-forth', desc: 'A qualified lead can book directly into your calendar within the conversation — no follow-up email chains, no scheduling back-and-forth. The call is booked before the conversation ends.' },
+  { icon: 'fa-solid fa-filter', title: 'Lead quality improvement through consistent qualification', desc: 'A chatbot applies your qualification criteria consistently to every lead, no skipping questions, no shortcuts when the pipeline is full. Every lead that reaches your sales team has been through the same process.' },
+  { icon: 'fa-solid fa-bolt', title: 'Immediate response to every enquiry', desc: '68% of customers say quick responses are the most positive aspect of chatbots. The moment a visitor starts a conversation, they get a response, not a form into a queue, not a reply in three hours.' },
+  { icon: 'fa-solid fa-list-check', title: 'Lead qualification at scale', desc: 'A chatbot qualifies every lead against your criteria, budget, timeline, service fit, geography, and routes qualified leads to the right next step automatically.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Appointment booking without back-and-forth', desc: 'A qualified lead can book directly into your calendar within the conversation, no follow-up email chains, no scheduling back-and-forth. The call is booked before the conversation ends.' },
 ];
 
 const CARD_VARIANTS = [
@@ -36,10 +36,10 @@ const CARD_VARIANTS = [
 ];
 
 const KEY_FACTORS = [
-  { icon: 'fa-solid fa-comments', title: 'Chatbot Strategy and Conversation Flow Design', impact: 'Highest impact', desc: 'Before any build begins, we map the full conversation strategy — what the chatbot handles, what it escalates, the qualification questions it asks, and the actions it triggers at each outcome.' },
-  { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', impact: 'High impact', desc: 'We build your chatbot on the platform that fits your business — GoHighLevel’s AI chatbot, a purpose-built AI agent on your website, or a channel-specific deployment.' },
-  { icon: 'fa-solid fa-book', title: 'Business Training and Knowledge Base Setup', impact: 'High impact', desc: 'We train the chatbot on your services, pricing ranges, process, FAQs, and qualification criteria — so responses feel genuine rather than generic.' },
-  { icon: 'fa-solid fa-database', title: 'CRM Integration and Lead Capture', impact: 'High impact', desc: 'Every chatbot conversation that produces a lead is automatically logged in your CRM — contact details captured, conversation summary recorded, pipeline stage updated.' },
+  { icon: 'fa-solid fa-comments', title: 'Chatbot Strategy and Conversation Flow Design', impact: 'Highest impact', desc: 'Before any build begins, we map the full conversation strategy, what the chatbot handles, what it escalates, the qualification questions it asks, and the actions it triggers at each outcome.' },
+  { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', impact: 'High impact', desc: 'We build your chatbot on the platform that fits your business, GoHighLevel’s AI chatbot, a purpose-built AI agent on your website, or a channel-specific deployment.' },
+  { icon: 'fa-solid fa-book', title: 'Business Training and Knowledge Base Setup', impact: 'High impact', desc: 'We train the chatbot on your services, pricing ranges, process, FAQs, and qualification criteria, so responses feel genuine rather than generic.' },
+  { icon: 'fa-solid fa-database', title: 'CRM Integration and Lead Capture', impact: 'High impact', desc: 'Every chatbot conversation that produces a lead is automatically logged in your CRM, contact details captured, conversation summary recorded, pipeline stage updated.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Integration', impact: 'Medium impact', desc: 'We connect the chatbot directly to your calendar system so qualified leads can book immediately within the conversation.' },
   { icon: 'fa-solid fa-list-check', title: 'Lead Qualification Logic', impact: 'Medium impact', desc: 'We configure the qualification questions and routing logic that determine what happens to each lead based on their answers.' },
   { icon: 'fa-solid fa-right-from-bracket', title: 'Human Handoff Configuration', impact: 'Contextual', desc: 'A clean handoff is the difference between a chatbot that frustrates and one that helps. We configure when and how the conversation is escalated with full context.' },
@@ -48,7 +48,7 @@ const KEY_FACTORS = [
 
 const CHANNELS = [
   { icon: 'fa-solid fa-globe', title: 'Website Deployment', desc: 'A trained AI agent embedded directly on your site that engages every visitor the moment they land, answering questions and qualifying leads instantly.', img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&q=80' },
-  { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp Business', desc: 'The same qualification and booking logic deployed inside WhatsApp — where a huge share of your customers already message you.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
+  { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp Business', desc: 'The same qualification and booking logic deployed inside WhatsApp, where a huge share of your customers already message you.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
   { icon: 'fa-solid fa-robot', title: 'GoHighLevel AI Chatbot', desc: 'Chatbot deployed directly inside your GHL account so every conversation, booking, and lead lives in one connected system, fully integrated with your CRM and pipelines.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80' },
   { icon: 'fa-brands fa-facebook-f', title: 'Facebook Messenger', desc: 'Capture and qualify leads coming from your Facebook page and ads without them ever having to leave the conversation.', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=80' },
   { icon: 'fa-brands fa-instagram', title: 'Instagram DM', desc: 'Turn Instagram enquiries into qualified, booked appointments automatically instead of getting lost in a crowded inbox.', img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&q=80' },
@@ -59,7 +59,7 @@ const SERVICES = [
   { icon: 'fa-solid fa-comments', title: 'Chatbot Strategy and Conversation Flow Design', desc: 'We map the conversation strategy around how your customers actually enquire, not a generic template.' },
   { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', desc: 'Built on the platform that fits your business, including all conversation flows, response logic, and escalation pathways.' },
   { icon: 'fa-solid fa-book', title: 'Business Training and Knowledge Base Setup', desc: 'Trained on your services, pricing, process, FAQs, and qualification criteria for responses that feel genuine.' },
-  { icon: 'fa-solid fa-database', title: 'CRM Integration and Lead Capture', desc: 'Every conversation that produces a lead is automatically logged — no manual import, no lost data.' },
+  { icon: 'fa-solid fa-database', title: 'CRM Integration and Lead Capture', desc: 'Every conversation that produces a lead is automatically logged, no manual import, no lost data.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Integration', desc: 'Connected directly to your calendar so qualified leads can book immediately within the conversation.' },
   { icon: 'fa-solid fa-list-check', title: 'Lead Qualification Logic', desc: 'Qualification questions and routing logic that send qualified leads to booking and complex enquiries to a human.' },
   { icon: 'fa-solid fa-right-from-bracket', title: 'Human Handoff Configuration', desc: 'Clear handoff pathways with full conversation context passed to the team member taking over.' },
@@ -67,10 +67,10 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching — any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week — pricing, availability, process — a chatbot handles those automatically and frees the team for conversations that need a human.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing — routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions — company size, budget, timeline, need — before routing to a sales rep produces significantly higher-quality conversations.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching, any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
+  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week, pricing, availability, process, a chatbot handles those automatically and frees the team for conversations that need a human.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing, routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
+  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions, company size, budget, timeline, need, before routing to a sales rep produces significantly higher-quality conversations.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
   { icon: 'fa-solid fa-bullhorn', title: 'Local service businesses running paid ad campaigns', desc: 'A paid ad that drives traffic to a landing page with a chatbot converts at a higher rate than one that drives to a contact form, because it provides immediate, interactive engagement.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
   { icon: 'fa-solid fa-building', title: 'High-volume businesses that cannot scale headcount', desc: 'A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality or speed. Scaling human support by the same ratio would require proportionally more headcount and cost.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
 ];
@@ -78,34 +78,40 @@ const WHO_FOR = [
 const WHY_ISM = [
   { icon: 'fa-solid fa-crosshairs', title: 'We design scope before we build anything', desc: 'The most common reason chatbot implementations fail is scope creep. We define the chatbot’s scope precisely before building anything, so what it does, it does excellently.' },
   { icon: 'fa-solid fa-book', title: 'We train on your business, not a generic knowledge base', desc: 'A chatbot that knows your services, pricing, process, and most common customer questions produces conversations that feel helpful rather than frustrating.' },
-  { icon: 'fa-solid fa-plug', title: 'We integrate with your full automation stack', desc: 'CRM updates, pipeline stage changes, booking confirmations, nurture sequence enrolment — the chatbot does not exist in isolation from your business.' },
+  { icon: 'fa-solid fa-plug', title: 'We integrate with your full automation stack', desc: 'CRM updates, pipeline stage changes, booking confirmations, nurture sequence enrolment, the chatbot does not exist in isolation from your business.' },
   { icon: 'fa-solid fa-right-from-bracket', title: 'We configure human handoff properly', desc: 'A chatbot that traps visitors in a conversation they cannot escape is worse than no chatbot. We configure clear, graceful handoff pathways with full context passed to the human.' },
   { icon: 'fa-solid fa-chart-line', title: 'We monitor and improve after launch', desc: 'We review performance data monthly and make conversation flow improvements, response updates, and qualification logic adjustments based on what the data shows.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing monitoring and optimisation is month to month. You stay because the chatbot is performing, not because you signed a contract.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Strategy and Scope Definition', desc: 'We define the chatbot’s scope — what it handles, what it escalates, the qualification questions it asks — and map conversation flows before any build begins.' },
-  { n: '02', title: 'Knowledge Base and Training Data Build', desc: 'We build the knowledge base — services, pricing ranges, process, geography, FAQs, and qualification criteria — that the chatbot draws on to answer questions.' },
-  { n: '03', title: 'Conversation Flow Build and Configuration', desc: 'Opening messages, question sequences, branching logic, qualification routing, booking integration, and human handoff configuration — every path is mapped and built.' },
+  { n: '01', title: 'Strategy and Scope Definition', desc: 'We define the chatbot’s scope, what it handles, what it escalates, the qualification questions it asks, and map conversation flows before any build begins.' },
+  { n: '02', title: 'Knowledge Base and Training Data Build', desc: 'We build the knowledge base, services, pricing ranges, process, geography, FAQs, and qualification criteria, that the chatbot draws on to answer questions.' },
+  { n: '03', title: 'Conversation Flow Build and Configuration', desc: 'Opening messages, question sequences, branching logic, qualification routing, booking integration, and human handoff configuration, every path is mapped and built.' },
   { n: '04', title: 'CRM and Integration Setup', desc: 'We connect the chatbot to your CRM, booking system, and nurture sequences, configuring the triggers that fire when each conversation outcome is reached.' },
-  { n: '05', title: 'Testing, Launch, and Monitoring', desc: 'We test every flow end to end, launch the chatbot, and monitor completion, capture, and booking rates in the first weeks — making immediate adjustments where needed.' },
+  { n: '05', title: 'Testing, Launch, and Monitoring', desc: 'We test every flow end to end, launch the chatbot, and monitor completion, capture, and booking rates in the first weeks, making immediate adjustments where needed.' },
 ];
 
 const FAQS = [
-  { q: 'What is the difference between an AI chatbot and a scripted chatbot?', a: 'A scripted chatbot follows a fixed decision tree — it can only respond to options it was explicitly programmed to handle. An AI chatbot uses a language model to understand natural language, maintain conversation context, and produce responses to questions it has not been explicitly scripted for.' },
-  { q: 'Will the chatbot frustrate visitors if it cannot answer a question?', a: 'Only if the handoff is not configured properly. We build chatbots with clear, graceful escalation pathways — when a question is outside scope, the chatbot acknowledges it clearly, collects contact details, and arranges a human follow-up with full conversation context.' },
-  { q: 'What platform do you build chatbots on?', a: 'We build on GoHighLevel’s AI chatbot for clients already on GHL — fully integrated with their CRM, pipelines, and booking system. We also build custom AI chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM.' },
-  { q: 'Can the chatbot book appointments directly?', a: 'Yes. We connect the chatbot to your calendar system — GoHighLevel calendar, Calendly, or another booking tool — so a qualified lead can book a call directly within the conversation.' },
-  { q: 'How do you train the chatbot to know about our business?', a: 'We build a knowledge base from the information you provide — your services, pricing ranges, process, geography, team, and most common customer questions. The knowledge base is updated whenever your services or pricing change.' },
+  { q: 'What is the difference between an AI chatbot and a scripted chatbot?', a: 'A scripted chatbot follows a fixed decision tree, it can only respond to options it was explicitly programmed to handle. An AI chatbot uses a language model to understand natural language, maintain conversation context, and produce responses to questions it has not been explicitly scripted for.' },
+  { q: 'Will the chatbot frustrate visitors if it cannot answer a question?', a: 'Only if the handoff is not configured properly. We build chatbots with clear, graceful escalation pathways, when a question is outside scope, the chatbot acknowledges it clearly, collects contact details, and arranges a human follow-up with full conversation context.' },
+  { q: 'What platform do you build chatbots on?', a: 'We build on GoHighLevel’s AI chatbot for clients already on GHL, fully integrated with their CRM, pipelines, and booking system. We also build custom AI chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM.' },
+  { q: 'Can the chatbot book appointments directly?', a: 'Yes. We connect the chatbot to your calendar system, GoHighLevel calendar, Calendly, or another booking tool, so a qualified lead can book a call directly within the conversation.' },
+  { q: 'How do you train the chatbot to know about our business?', a: 'We build a knowledge base from the information you provide, your services, pricing ranges, process, geography, team, and most common customer questions. The knowledge base is updated whenever your services or pricing change.' },
   { q: 'Can the chatbot qualify leads before they reach our sales team?', a: 'Yes. We configure the qualification questions that determine whether a lead matches your ideal customer profile and route qualified leads to booking and unqualified leads to a different outcome, all within the conversation.' },
   { q: 'What happens to leads who interact with the chatbot but do not book?', a: 'We configure the chatbot to capture contact details from every visitor who engages, regardless of whether they book. Those contacts are added to your CRM and enrolled in the appropriate nurture sequence.' },
   { q: 'How do we measure whether the chatbot is working?', a: 'We track conversation completion rates, lead capture rates, booking rates, and escalation rates, and review conversations to identify where visitors are dropping out. Monthly reporting covers all of this in plain English.' },
-  { q: 'Do customers actually use chatbots or do they prefer to speak to a human?', a: '62% of customers prefer chatbots over waiting for a human agent for straightforward questions. The preference for a human rises for complex or sensitive situations — which is exactly why we build clear human handoff into every chatbot we deploy.' },
-  { q: 'Can you build a chatbot that works on WhatsApp or Instagram DM?', a: 'Yes. We build chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM — engaging customers where they already are rather than asking them to navigate to a contact form.' },
+  { q: 'Do customers actually use chatbots or do they prefer to speak to a human?', a: '62% of customers prefer chatbots over waiting for a human agent for straightforward questions. The preference for a human rises for complex or sensitive situations, which is exactly why we build clear human handoff into every chatbot we deploy.' },
+  { q: 'Can you build a chatbot that works on WhatsApp or Instagram DM?', a: 'Yes. We build chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM, engaging customers where they already are rather than asking them to navigate to a contact form.' },
 ];
 
-/* ── FAQ 2-COL — matches the Local SEO page layout ── */
+const RELATED = [
+  { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Automation', desc: 'Turn qualified chatbot conversations into booked calls with a calendar system that removes the back-and-forth.', href: '/services/automation/appointment-booking' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that captures and organises every lead your chatbot qualifies.', href: '/services/automation/crm-setup' },
+  { icon: 'fa-solid fa-route', title: 'Lead Nurture Workflows', desc: 'Automated follow-up sequences that keep leads warm after the chatbot conversation ends.', href: '/services/automation/lead-nurture-workflows' },
+];
+
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function ChatbotFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -169,7 +175,7 @@ export default function AIChatbotPage() {
           <div className="ism-container">
             <div className="chatbot-hero-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.95fr)', gap: 56, alignItems: 'center', position: 'relative', zIndex: 1 }}>
 
-              {/* Left — copy */}
+              {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
                   Qualify Leads, Answer Questions, and Book Appointments Around the{' '}
@@ -182,8 +188,8 @@ export default function AIChatbotPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We build and deploy AI chatbots that engage your website visitors, qualify inbound leads, handle routine enquiries, and book appointments automatically —{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>24 hours a day, 7 days a week</span> — so your team only steps in for the conversations that need a human.
+                  We build and deploy AI chatbots that engage your website visitors, qualify inbound leads, handle routine enquiries, and book appointments automatically,{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>24 hours a day, 7 days a week</span>, so your team only steps in for the conversations that need a human.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -196,7 +202,7 @@ export default function AIChatbotPage() {
                 </div>
               </div>
 
-              {/* Right — photo + floating badges */}
+              {/* Right, photo + floating badges */}
               <div className="chatbot-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/banner/ai-chatbot.webp" alt="AI chatbot lead qualification" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
@@ -264,11 +270,11 @@ export default function AIChatbotPage() {
                   Every Lead That Arrives When Nobody Is Available Is a Lead That Goes Somewhere Else.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  A lead comes in at 9 PM on a Tuesday. Your office is closed. The enquiry sits in an inbox. By 9 AM Wednesday when someone picks it up, the prospect has already spoken to a competitor who responded within minutes. This happens more often than most businesses realise — and it is a silent, consistent revenue leak.
+                  A lead comes in at 9 PM on a Tuesday. Your office is closed. The enquiry sits in an inbox. By 9 AM Wednesday when someone picks it up, the prospect has already spoken to a competitor who responded within minutes. This happens more often than most businesses realise, and it is a silent, consistent revenue leak.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia builds AI chatbots that are{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>properly trained, properly integrated, and properly handoff-configured</span> — so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>properly trained, properly integrated, and properly handoff-configured</span>, so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -307,19 +313,19 @@ export default function AIChatbotPage() {
             <div className="chatbot-whatis-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.85fr)', gap: 64, alignItems: 'center' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', lineHeight: 1.22, letterSpacing: '-0.4px', marginBottom: 20 }}>
-                  Always-On Lead Qualification and Customer Engagement — Without Adding Headcount.
+                  Always-On Lead Qualification and Customer Engagement, Without Adding Headcount.
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    An AI chatbot is a software system that engages website visitors or messaging app users in a conversation — answering questions, collecting information, qualifying leads, and{' '}
+                    An AI chatbot is a software system that engages website visitors or messaging app users in a conversation, answering questions, collecting information, qualifying leads, and{' '}
                     <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>routing the right enquiries to the right people automatically</span>, without human intervention for routine interactions.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Modern AI chatbots use large language models to understand natural language, maintain context through a conversation, and produce responses that feel genuinely conversational. They can be{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>trained on your specific business</span> — your services, pricing, FAQs, and qualification criteria.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>trained on your specific business</span>, your services, pricing, FAQs, and qualification criteria.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Conversation automation goes beyond the chatbot itself. It includes the integration of chatbot interactions with your CRM, booking system, nurture sequences, and sales pipeline — so every conversation produces the right action in your business systems automatically.
+                    Conversation automation goes beyond the chatbot itself. It includes the integration of chatbot interactions with your CRM, booking system, nurture sequences, and sales pipeline, so every conversation produces the right action in your business systems automatically.
                   </p>
                 </div>
               </div>
@@ -335,7 +341,7 @@ export default function AIChatbotPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Response Time */}
+                {/* Floating badge, Response Time */}
                 <div className="chatbot-score-badge" style={{ position: 'absolute', top: 18, left: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-bolt" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -346,7 +352,7 @@ export default function AIChatbotPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Booking Rate */}
+                {/* Floating badge, Booking Rate */}
                 <div className="chatbot-score-badge" style={{ position: 'absolute', top: 30, right: -6, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(255,176,0,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-calendar-check" style={{ color: 'var(--ism-amber)', fontSize: 12 }} />
@@ -357,7 +363,7 @@ export default function AIChatbotPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — CRM Sync */}
+                {/* Floating badge, CRM Sync */}
                 <div className="chatbot-score-badge" style={{ position: 'absolute', bottom: 8, left: -10, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'rgba(30,158,90,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-database" style={{ color: '#1E9E5A', fontSize: 12 }} />
@@ -368,7 +374,7 @@ export default function AIChatbotPage() {
                   </div>
                 </div>
 
-                {/* Floating badge — Lead Quality */}
+                {/* Floating badge, Lead Quality */}
                 <div className="chatbot-score-badge" style={{ position: 'absolute', bottom: 24, right: 4, display: 'flex', alignItems: 'center', gap: 10, background: '#fff', borderRadius: 12, padding: '10px 14px', boxShadow: '0 10px 26px rgba(0,35,83,.16)' }}>
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     <i className="fa-solid fa-star" style={{ color: 'var(--color-primary)', fontSize: 12 }} />
@@ -433,7 +439,7 @@ export default function AIChatbotPage() {
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Honest Answer About What a Chatbot Can and Cannot Do.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                74% of AI chatbot implementations have been pulled offline or rolled back — almost always because the chatbot was built to do too much. A properly built chatbot is precise about its scope. These are the factors Isuremedia builds into every engagement.
+                74% of AI chatbot implementations have been pulled offline or rolled back, almost always because the chatbot was built to do too much. A properly built chatbot is precise about its scope. These are the factors Isuremedia builds into every engagement.
               </p>
             </div>
             <div className="chatbot-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -586,7 +592,7 @@ export default function AIChatbotPage() {
                   A free strategy call will show you exactly what an AI chatbot could handle for your business.
                 </p>
               </div>
-              <a href="/contact" className="mid-cta-btn"
+              <a href="/appointment" className="mid-cta-btn"
                 style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 8px 24px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(255,176,0,.45)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,176,0,.35)'; }}>
