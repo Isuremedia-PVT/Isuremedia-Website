@@ -523,7 +523,7 @@ export default function AboutPageClient() {
                   <div style={{ position: 'absolute', bottom: -32, left: -16, width: 140, height: 140, background: 'rgba(255,176,0,.05)', borderRadius: '50%', pointerEvents: 'none' }} />
                   <i className="fa-solid fa-quote-left" style={{ color: 'var(--ism-amber)', fontSize: 20, marginBottom: 14, display: 'block' }} />
                   <p style={{ fontFamily: J, fontSize: 16, fontWeight: 700, color: '#fff', lineHeight: 1.65, margin: '0 0 14px', fontStyle: 'italic' }}>
-                    &ldquo;[One plain sentence from Harish in his own words, pending.]&rdquo;
+                    &ldquo;Every client that comes to us deserves to finally see their marketing work. That is what we show up for every single day.&rdquo;
                   </p>
                   <div style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.42)', letterSpacing: '.03em' }}>Harish Pandey, Founder</div>
                 </div>

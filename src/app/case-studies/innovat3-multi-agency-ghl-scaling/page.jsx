@@ -15,7 +15,7 @@ export default function Innovat3CaseStudyPage() {
         duration: 'Ongoing · 1–2 Years',
         services: 'White-Label GoHighLevel Development',
       },
-      heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
+      heroImage: '/casestudy/innovet-banner.webp',
       resultHeadline: [
         { text: 'What started as one agency account is now ' },
         { text: '3 agencies, 20+ live sub-accounts, and 100+ websites built', highlight: true },
@@ -49,7 +49,7 @@ export default function Innovat3CaseStudyPage() {
         'Isuremedia was brought on as Innovat3\'s dedicated white-label GoHighLevel partner. The engagement started with a single agency account and, over roughly 1-2 years, expanded into full technical ownership across Innovat3\'s growing agency portfolio.',
         'The scope covers five pillars: client website development, custom integrations beyond native GHL, sub-account setup and management, custom automation and referral logic, and voice and conversation AI, all delivered entirely under the Innovat3 brand.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80',
+      overviewImage: '/casestudy/innovet-inner.webp',
       didHeading: 'Five pillars, one team building all of them.',
       didIntro: 'Every sub-account gets the same build standards, whether it is client website work, a custom integration, or the automation logic running behind it.',
       process: [
