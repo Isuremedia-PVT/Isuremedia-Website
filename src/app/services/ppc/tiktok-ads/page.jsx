@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-shirt', title: 'D2C and e-commerce brands', desc: 'Product demos, unboxings, and native shopping ads that turn scroll-stopping content directly into checkout.', img: 'https://picsum.photos/seed/tiktok-whofor-dtc/700/620' },
-  { icon: 'fa-solid fa-mobile-screen', title: 'Apps and digital products', desc: 'Fast-moving install and sign-up campaigns built around demo-style content that shows the product in use.', img: 'https://picsum.photos/seed/tiktok-whofor-app/700/620' },
-  { icon: 'fa-solid fa-person-running', title: 'Beauty, fashion, and lifestyle brands', desc: 'Categories where TikTok has become the primary discovery engine, ahead of search and other social platforms.', img: 'https://picsum.photos/seed/tiktok-whofor-beauty/700/620' },
-  { icon: 'fa-solid fa-utensils', title: 'Local businesses wanting reach with young audiences', desc: 'Restaurants, gyms, and experiences that benefit from location-based visibility and trend-driven discovery.', img: 'https://picsum.photos/seed/tiktok-whofor-local/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product', desc: 'A fast, high-reach channel for putting a new offer in front of an engaged audience before it’s searched for.', img: 'https://picsum.photos/seed/tiktok-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-people-arrows', title: 'Brands with existing creator relationships', desc: 'Turning influencer content already performing organically into paid Spark Ads that extend its reach.', img: 'https://picsum.photos/seed/tiktok-whofor-creator/700/620' },
+  { icon: 'fa-solid fa-shirt', title: 'D2C and e-commerce brands', desc: 'Product demos, unboxings, and native shopping ads that turn scroll-stopping content directly into checkout.', img: '/services-six-card/Ppc/tiktok ads/d2d copy.webp' },
+  { icon: 'fa-solid fa-mobile-screen', title: 'Apps and digital products', desc: 'Fast-moving install and sign-up campaigns built around demo-style content that shows the product in use.', img: '/services-six-card/Ppc/tiktok ads/Apps and digital products.webp' },
+  { icon: 'fa-solid fa-person-running', title: 'Beauty, fashion, and lifestyle brands', desc: 'Categories where TikTok has become the primary discovery engine, ahead of search and other social platforms.', img: '/services-six-card/Ppc/tiktok ads/Beauty fashion and lifestylebrands.webp' },
+  { icon: 'fa-solid fa-utensils', title: 'Local businesses wanting reach with young audiences', desc: 'Restaurants, gyms, and experiences that benefit from location-based visibility and trend-driven discovery.', img: '/services-six-card/Ppc/tiktok ads/Local businesses wanting reachwith young audiences.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product', desc: 'A fast, high-reach channel for putting a new offer in front of an engaged audience before it’s searched for.', img: '/services-six-card/Ppc/tiktok ads/Brands launching a new product.webp' },
+  { icon: 'fa-solid fa-people-arrows', title: 'Brands with existing creator relationships', desc: 'Turning influencer content already performing organically into paid Spark Ads that extend its reach.', img: '/services-six-card/Ppc/tiktok ads/Brands with existing creatorrelationships.webp' },
 ];
 
 const WHY_ISM = [

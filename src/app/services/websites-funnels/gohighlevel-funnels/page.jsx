@@ -46,12 +46,12 @@ const BUILD = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Businesses that subscribed to GHL but can’t get it working', desc: 'Most subscribers set up the basics and stop. We audit what’s there and build what’s missing, properly.', img: 'https://picsum.photos/seed/ghl-whofor-audit/700/620' },
-  { icon: 'fa-solid fa-house', title: 'Local service businesses', desc: 'HVAC, plumbing, dental, legal, real estate, GHL was built for exactly this, handling lead capture and follow-up automatically.', img: 'https://picsum.photos/seed/ghl-whofor-local/700/620' },
-  { icon: 'fa-solid fa-user-tie', title: 'Coaches and high-ticket service providers', desc: 'Application funnels, booking systems, and client nurture, GHL handles every stage of a high-ticket sales process.', img: 'https://picsum.photos/seed/ghl-whofor-coaches/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Marketing agencies managing multiple clients', desc: 'Snapshots, sub-accounts, and white-label branding built for managing every client from one place.', img: 'https://picsum.photos/seed/ghl-whofor-agencies/700/620' },
-  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses migrating from multiple tools', desc: 'Moving from HubSpot, ActiveCampaign, or Calendly to GHL, we manage the full migration, contacts and all.', img: 'https://picsum.photos/seed/ghl-whofor-migrate/700/620' },
-  { icon: 'fa-solid fa-cubes-stacked', title: 'Agencies reselling GHL as white-label SaaS', desc: 'Branded login, pricing plans, client onboarding, the infrastructure that makes a white-label GHL business viable.', img: 'https://picsum.photos/seed/ghl-whofor-saas/700/620' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Businesses that subscribed to GHL but can’t get it working', desc: 'Most subscribers set up the basics and stop. We audit what’s there and build what’s missing, properly.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Businesses that subscribed to GHL but can’t get it working.webp' },
+  { icon: 'fa-solid fa-house', title: 'Local service businesses', desc: 'HVAC, plumbing, dental, legal, real estate, GHL was built for exactly this, handling lead capture and follow-up automatically.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Local service businesses.webp' },
+  { icon: 'fa-solid fa-user-tie', title: 'Coaches and high-ticket service providers', desc: 'Application funnels, booking systems, and client nurture, GHL handles every stage of a high-ticket sales process.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Coaches and high-ticket service providers.webp' },
+  { icon: 'fa-solid fa-building', title: 'Marketing agencies managing multiple clients', desc: 'Snapshots, sub-accounts, and white-label branding built for managing every client from one place.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Marketing agencies managing multiple clients.webp' },
+  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses migrating from multiple tools', desc: 'Moving from HubSpot, ActiveCampaign, or Calendly to GHL, we manage the full migration, contacts and all.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Businesses migrating from multiple tools.webp' },
+  { icon: 'fa-solid fa-cubes-stacked', title: 'Agencies reselling GHL as white-label SaaS', desc: 'Branded login, pricing plans, client onboarding, the infrastructure that makes a white-label GHL business viable.', img: '/services-six-card/Web Development Section/GoHighLevel Funnels and Automation/Agencies reselling GHL as white-label SaaS.webp' },
 ];
 
 const WHY_ISM = [

@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies delivering GHL builds to clients', desc: 'A properly built snapshot lets agencies deploy proven systems to new clients quickly and consistently.', img: 'https://picsum.photos/seed/ghl-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Businesses replacing multiple disconnected tools', desc: 'CRM, email, funnel builder, and calendar consolidated into one platform and one subscription.', img: 'https://picsum.photos/seed/ghl-whofor-consolidate/700/620' },
-  { icon: 'fa-solid fa-robot', title: 'Businesses wanting CRM and automation together', desc: 'Pipeline management and follow-up automation working from the same data, natively connected.', img: 'https://picsum.photos/seed/ghl-whofor-automation/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Businesses launching a new funnel or offer', desc: 'A GHL funnel with proper tracking and automation built in from the first campaign.', img: 'https://picsum.photos/seed/ghl-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a GHL account left half-configured', desc: 'Most GHL frustration comes from an incomplete build, not the platform itself, usually fixable without starting over.', img: 'https://picsum.photos/seed/ghl-whofor-half/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Businesses needing team training on the platform', desc: 'A properly configured GHL system only works if the team using it actually understands it.', img: 'https://picsum.photos/seed/ghl-whofor-training/700/620' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies delivering GHL builds to clients', desc: 'A properly built snapshot lets agencies deploy proven systems to new clients quickly and consistently.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Small businesses needing a straightforward website.webp' },
+  { icon: 'fa-solid fa-building', title: 'Businesses replacing multiple disconnected tools', desc: 'CRM, email, funnel builder, and calendar consolidated into one platform and one subscription.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Businesses replacing multiple disconnected tools.webp' },
+  { icon: 'fa-solid fa-robot', title: 'Businesses wanting CRM and automation together', desc: 'Pipeline management and follow-up automation working from the same data, natively connected.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Businesses wanting CRM and automation together.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Businesses launching a new funnel or offer', desc: 'A GHL funnel with proper tracking and automation built in from the first campaign.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Businesses launching a new funnel or offer.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses with a GHL account left half-configured', desc: 'Most GHL frustration comes from an incomplete build, not the platform itself, usually fixable without starting over.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Businesses with a GHL account left half-configured.webp' },
+  { icon: 'fa-solid fa-users', title: 'Businesses needing team training on the platform', desc: 'A properly configured GHL system only works if the team using it actually understands it.', img: '/services-six-card/Web Development Section/GoHighLevel Development/Businesses needing team training on the platform.webp' },
 ];
 
 const WHY_ISM = [

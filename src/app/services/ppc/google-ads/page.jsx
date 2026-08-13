@@ -55,12 +55,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Running ads that aren’t converting', desc: 'The problem is almost always structural, keyword targeting, landing pages, or tracking. We audit and fix what’s broken.', img: 'https://picsum.photos/seed/gads-whofor-notconverting/700/620' },
-  { icon: 'fa-solid fa-flag', title: 'Never run Google Ads before', desc: 'Getting the structure and tracking right from the start, instead of learning from expensive mistakes.', img: 'https://picsum.photos/seed/gads-whofor-new/700/620' },
-  { icon: 'fa-solid fa-phone', title: 'Local service businesses needing calls', desc: 'Plumbers, lawyers, dentists, contractors, put your business at the top the same day someone searches nearby.', img: 'https://picsum.photos/seed/gads-whofor-local/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Shopping and Search campaigns managed together for the best return across purchase-intent searches.', img: 'https://picsum.photos/seed/gads-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Preparing to scale', desc: 'A campaign that’s working, ready for more budget and new markets without performance degrading.', img: 'https://picsum.photos/seed/gads-whofor-scale/700/620' },
-  { icon: 'fa-solid fa-eye', title: 'Want transparent management', desc: 'Every spend decision explainable, every result attributable, no reports you can’t interpret.', img: 'https://picsum.photos/seed/gads-whofor-transparent/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Running ads that aren’t converting', desc: 'The problem is almost always structural, keyword targeting, landing pages, or tracking. We audit and fix what’s broken.', img: "/services-six-card/Ppc/google ads/Running ads that aren'tconverting.webp" },
+  { icon: 'fa-solid fa-flag', title: 'Never run Google Ads before', desc: 'Getting the structure and tracking right from the start, instead of learning from expensive mistakes.', img: '/services-six-card/Ppc/google ads/Never run Google Ads before.webp' },
+  { icon: 'fa-solid fa-phone', title: 'Local service businesses needing calls', desc: 'Plumbers, lawyers, dentists, contractors, put your business at the top the same day someone searches nearby.', img: '/services-six-card/Ppc/google ads/Local service businessesneeding calls.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Shopping and Search campaigns managed together for the best return across purchase-intent searches.', img: '/services-six-card/Ppc/google ads/E-commerce wanting to grow sales.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Preparing to scale', desc: 'A campaign that’s working, ready for more budget and new markets without performance degrading.', img: '/services-six-card/Ppc/google ads/Preparing to scale.webp' },
+  { icon: 'fa-solid fa-eye', title: 'Want transparent management', desc: 'Every spend decision explainable, every result attributable, no reports you can’t interpret.', img: '/services-six-card/Ppc/google ads/Want transparent management.webp' },
 ];
 
 const WHY_ISM = [

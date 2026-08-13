@@ -15,7 +15,7 @@ export default function GarnusIndiaCaseStudyPage() {
         duration: '6 Months',
         services: 'Social Media Content & Influencer Strategy',
       },
-      heroImage: 'https://images.unsplash.com/photo-1584589167171-541ce45f1eea?w=1200&q=80',
+      heroImage: '/casestudy/Garnus-banner.webp',
       resultHeadline: [
         { text: 'From a blank page to ' },
         { text: '447 followers and 50-60k+ organic views in 6 months', highlight: true },
@@ -48,7 +48,7 @@ export default function GarnusIndiaCaseStudyPage() {
         'Garnus India needed a distinct, personality-led content style that stopped the scroll rather than blending into a category full of similar wooden-product brands, creative-first, not just product shots.',
         'Isuremedia built a content and influencer strategy combining playful, relatable creatives, festive and sale campaigns, and mid-tier creator partnerships to build awareness from the ground up.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=700&q=80',
+      overviewImage: '/casestudy/Garnus-inner.webp',
       didHeading: 'Built around a recognisable voice, not just a content calendar.',
       didIntro: 'Every part of the strategy, creative style, campaigns, and partnerships, was designed to make Garnus India recognisable in a category full of near-identical products.',
       process: [

@@ -15,7 +15,7 @@ export default function BrownLegalCaseStudyPage() {
         duration: '3 Months',
         services: 'SEO, AEO & Local SEO',
       },
-      heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80',
+      heroImage: '/casestudy/brownlegalimmigration-banner.webp',
       resultHeadline: [
         { text: 'A website with zero organic visibility went to ' },
         { text: '86% of target keywords on page one', highlight: true },
@@ -48,7 +48,7 @@ export default function BrownLegalCaseStudyPage() {
         'Brown Legal needed the website to start carrying its share of the weight instead of leaving everything to the Google Business Profile, ranking organically, and appearing in the AI-generated answers a growing share of prospective clients now search through first.',
         'Isuremedia built the SEO and AEO foundation in parallel over a three-month engagement.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80',
+      overviewImage: '/casestudy/brown-inner.webp',
       didHeading: 'Built the SEO and AI-visibility foundation practice area by practice area.',
       didIntro: 'Audit, content and on-page work, then technical fixes and off-page authority, three phases run back-to-back inside one three-month window.',
       process: [

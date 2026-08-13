@@ -110,7 +110,7 @@ export default function VideoTestimonials() {
 
         {/* Bottom CTA */}
         <div className="vt-cta" style={{ textAlign: 'center', marginTop: 44 }}>
-          <a href="#cta"
+          <a href="/testimonials"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
+import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -18,10 +19,10 @@ const GROW_ITEMS = [
 
 
 const CAROUSEL_SLIDES = [
-  { img: '/career-about/Team image for GMB 1.webp', caption: 'Real work. Real clients. Every single day.', sub: 'US & UK accounts across SEO, PPC, web, content and automation.' },
-  { img: '/career-about/linkdin post (1).webp', caption: 'One office. One team. No silos.', sub: 'Everyone working toward the same outcome for the same clients.' },
-  { img: '/career-about/IMG_8914.webp', caption: 'Build your career on accounts that actually matter.', sub: 'The feedback loop here is fast. You grow because the stakes are real.' },
-  { img: '/career-about/IMG_6278.webp', caption: 'Come do the best work of your career.', sub: 'Haldwani, Uttarakhand, serving markets across the US and UK.' },
+  { img: '/career-about/Team image for GMB new 4.webp', caption: 'Real work. Real clients. Every single day.', sub: 'US & UK accounts across SEO, PPC, web, content and automation.' },
+  { img: '/career-about/Team image for GMB new 5.webp', caption: 'One office. One team. No silos.', sub: 'Everyone working toward the same outcome for the same clients.' },
+  { img: '/career-about/Team image for GMB new 3.webp', caption: 'Build your career on accounts that actually matter.', sub: 'The feedback loop here is fast. You grow because the stakes are real.' },
+  { img: '/career-about/Team image for GMB new 1.webp', caption: 'Come do the best work of your career.', sub: 'Haldwani, Uttarakhand, serving markets across the US and UK.' },
 ];
 
 const JOB_SCHEMA = JSON.stringify({
@@ -64,53 +65,7 @@ export default function CareersPageClient() {
     return () => clearInterval(t);
   }, [slideIdx, goSlide]);
 
-  const [formRole, setFormRole] = useState('');
-  const [file, setFile] = useState(null);
-  const [fileError, setFileError] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-  const [form, setForm] = useState({ name: '', email: '', phone: '', role: '', linkedin: '', portfolio: '', message: '' });
-  const fileRef = useRef(null);
   const formRef = useRef(null);
-
-  const handleApply = (role) => {
-    setFormRole(role);
-    setForm(f => ({ ...f, role }));
-    setTimeout(() => formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
-  };
-
-  const handleFile = (e) => {
-    const f = e.target.files?.[0];
-    if (!f) return;
-    if (f.size > 5 * 1024 * 1024) { setFileError('File must be under 5MB'); setFile(null); return; }
-    setFileError('');
-    setFile(f);
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-    const f = e.dataTransfer.files?.[0];
-    if (!f) return;
-    if (f.size > 5 * 1024 * 1024) { setFileError('File must be under 5MB'); setFile(null); return; }
-    setFileError('');
-    setFile(f);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setTimeout(() => { setSubmitting(false); setSubmitted(true); }, 1400);
-  };
-
-  const inp = (extra) => ({
-    style: {
-      width: '100%', fontFamily: I, fontSize: 15, color: 'var(--color-navy)',
-      background: '#F7F8FA', border: '1px solid var(--color-border)', borderRadius: 10,
-      padding: '13px 16px', outline: 'none', boxSizing: "border-box",
-      transition: 'border-color .15s',
-      ...extra,
-    },
-  });
 
   return (
     <>
@@ -160,7 +115,7 @@ export default function CareersPageClient() {
               <div style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
+                  src="banner/career_banner.webp"
                   alt="Isuremedia team"
                   style={{ width: '100%', height: 480, objectFit: 'cover', borderRadius: 20, display: 'block' }}
                 />
@@ -338,12 +293,14 @@ export default function CareersPageClient() {
             </div>
 
             {/* Row 1, 4 images */}
-            <div className="car-mosaic-row1" style={{ display: 'grid', gridTemplateColumns: '1.3fr 0.85fr 1.7fr 0.95fr', gap: 10, marginBottom: 10 }}>
+            <div className="car-mosaic-row1" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 10 }}>
               {[
-                { src: '/career-about/IMG_2490.webp', h: 280, pos: 'center 25%' },
+                { src: '/career-about/IMG_8926.webp', h: 280, pos: 'center 20%' },
                 { src: '/career-about/IMG_3490.webp', h: 280, pos: 'center 12%' },
-                { src: '/career-about/IMG_9299.webp', h: 280, pos: 'center 20%' },
+                { src: '/career-about/Team image for GMB new 2.webp', h: 280, pos: 'center 20%' },
                 { src: '/career-about/IMG_3508.webp', h: 280, pos: 'center 12%' },
+                { src: '/career-about/IMG_2490.webp', h: 280, pos: 'center 25%' },
+                { src: '/career-about/IMG_9123.webp', h: 280, pos: 'center 15%' },
               ].map((img, i) => (
                 <div key={i} style={{ borderRadius: 14, overflow: 'hidden', height: img.h }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -386,8 +343,8 @@ export default function CareersPageClient() {
 
           </div>
           <style>{`
-            @media (max-width: 1024px) { .car-mosaic-row1 { grid-template-columns: 1fr 1fr !important; } .car-mosaic-row2 { grid-template-columns: 1fr !important; } .car-mosaic-reels { height: 420px !important; } }
-            @media (max-width: 480px) { .car-mosaic-row1 { grid-template-columns: 1fr !important; } }
+            @media (max-width: 1024px) { .car-mosaic-row1 { grid-template-columns: repeat(2,1fr) !important; } .car-mosaic-row2 { grid-template-columns: 1fr !important; } .car-mosaic-reels { height: 420px !important; } }
+            @media (max-width: 560px) { .car-mosaic-row1 { grid-template-columns: 1fr !important; } }
           `}</style>
         </section>
 
@@ -425,123 +382,29 @@ export default function CareersPageClient() {
               </div>
 
               {/* RIGHT, Form */}
-              <div>
-                {formRole && (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'rgba(30,77,195,.07)', border: '1px solid rgba(30,77,195,.16)', borderRadius: 10, padding: '12px 16px', marginBottom: 28 }}>
-                    <i className="fa-solid fa-circle-check" style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    <span style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', flex: 1 }}>Applying for: {formRole}</span>
-                    <button onClick={() => { setFormRole(''); setForm(f => ({ ...f, role: '' })); }} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', padding: 0, fontSize: 14 }}>✕</button>
-                  </div>
-                )}
-
-                {submitted ? (
-                  <div style={{ textAlign: 'center', padding: '60px 40px', background: '#F7F8FA', borderRadius: 20, border: '1px solid var(--color-border)' }}>
-                    <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(16,185,129,.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
-                      <i className="fa-solid fa-check" style={{ color: '#10B981', fontSize: 26 }} />
-                    </div>
-                    <div style={{ fontFamily: J, fontSize: 22, fontWeight: 800, color: 'var(--color-navy)', marginBottom: 10 }}>Application Received</div>
-                    <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 360, margin: '0 auto' }}>
-                      Thank you. We review every application and will be in touch within two business days.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
-
-                    <div>
-                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>Full name *</label>
-                      <input {...inp()} type="text" placeholder="Harish Pandey" required value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
-                    </div>
-
-                    <div className="car-row2" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-                      <div>
-                        <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>Email *</label>
-                        <input {...inp()} type="email" placeholder="harish@youremail.com" required value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} />
-                      </div>
-                      <div>
-                        <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>Phone <span style={{ fontWeight: 400, color: 'var(--color-text-muted)' }}>(optional)</span></label>
-                        <input {...inp()} type="tel" placeholder="+91 98000 00000" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>Role you are applying for *</label>
-                      <select {...inp()} required value={form.role} onChange={e => setForm(f => ({ ...f, role: e.target.value }))} style={{ ...inp().style, appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A6080' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 14px center', paddingRight: 40 }}>
-                        <option value="">Select a role</option>
-                        <option value="Business Development Executive">Business Development Executive</option>
-                        <option value="Business Development Manager">Business Development Manager</option>
-                        <option value="Open application, no specific role listed">Open application, no specific role listed</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>LinkedIn profile or portfolio <span style={{ fontWeight: 400, color: 'var(--color-text-muted)' }}>(optional)</span></label>
-                      <input {...inp()} type="url" placeholder="linkedin.com/in/yourname or yourportfolio.com" value={form.linkedin} onChange={e => setForm(f => ({ ...f, linkedin: e.target.value }))} />
-                      <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', marginTop: 6 }}>No LinkedIn? You can also email your CV to careers@isuremedia.com</div>
-                    </div>
-
-                    <div>
-                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>
-                        Tell us about yourself and why Isuremedia *
-                      </label>
-                      <textarea
-                        {...inp()}
-                        rows={5}
-                        placeholder="What you do, what you are looking for, and why you think ISM is the right place for you."
-                        required
-                        value={form.message}
-                        onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-                        style={{ ...inp().style, resize: 'vertical', minHeight: 130 }}
-                      />
-                      <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', marginTop: 6 }}>
-                        This is the part we read most carefully. Two to four sentences is enough.
-                      </div>
-                    </div>
-
-                    {/* CV Upload */}
-                    <div>
-                      <label style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', display: 'block', marginBottom: 8 }}>CV or Resume <span style={{ fontWeight: 400, color: 'var(--color-text-muted)' }}>(optional)</span></label>
-                      <div
-                        onClick={() => fileRef.current?.click()}
-                        onDragOver={e => e.preventDefault()}
-                        onDrop={handleDrop}
-                        style={{ border: `2px dashed ${file ? '#10B981' : 'var(--color-border)'}`, borderRadius: 12, padding: '24px 20px', textAlign: 'center', cursor: 'pointer', background: file ? 'rgba(16,185,129,.04)' : '#F7F8FA', transition: 'border-color .2s' }}
-                      >
-                        {file ? (
-                          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
-                            <i className="fa-solid fa-file-check" style={{ color: '#10B981', fontSize: 20 }} />
-                            <div style={{ textAlign: 'left' }}>
-                              <div style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: '#10B981' }}>{file.name}</div>
-                              <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>{(file.size / 1024).toFixed(0)} KB</div>
-                            </div>
-                            <button onClick={e => { e.stopPropagation(); setFile(null); if (fileRef.current) fileRef.current.value = ''; }} style={{ marginLeft: 8, background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: 16 }}>✕</button>
-                          </div>
-                        ) : (
-                          <>
-                            <i className="fa-solid fa-cloud-arrow-up" style={{ color: 'var(--color-text-muted)', fontSize: 22, marginBottom: 8, display: 'block' }} />
-                            <div style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 3 }}>Click to upload or drag and drop</div>
-                            <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>PDF, DOC, DOCX · Max 5MB</div>
-                          </>
-                        )}
-                      </div>
-                      <input ref={fileRef} type="file" accept=".pdf,.doc,.docx" onChange={handleFile} style={{ display: 'none' }} />
-                      {fileError && <div style={{ fontFamily: I, fontSize: 12, color: '#EF4444', marginTop: 6 }}>{fileError}</div>}
-                    </div>
-
-                    <div>
-                      <button
-                        type="submit"
-                        disabled={submitting}
-                        style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', border: 'none', cursor: submitting ? 'not-allowed' : 'pointer', boxShadow: '0 6px 20px rgba(30,77,195,.30)', letterSpacing: '.04em', textTransform: 'uppercase', opacity: submitting ? 0.75 : 1, transition: 'all .18s', width: '100%', justifyContent: 'center' }}
-                      >
-                        {submitting ? <><i className="fa-solid fa-spinner fa-spin" /> Sending…</> : <>Apply Now <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} /></>}
-                      </button>
-                      <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', marginTop: 12, textAlign: 'center' }}>
-                        We review every application · Reply within two business days · careers@isuremedia.com
-                      </div>
-                    </div>
-
-                  </form>
-                )}
+              <div style={{ background: 'linear-gradient(145deg,#0F2070 0%,#1E4DC3 55%,#2558E0 100%)', borderRadius: 24, padding: 32, boxShadow: '0 8px 40px rgba(30,77,195,.22)' }}>
+                <iframe
+                  src="https://link.salesley.com/widget/form/UYhs6DEch50CpyoQeKzp"
+                  style={{ width: '100%', height: 1231, border: 'none', borderRadius: 12, display: 'block', background: 'transparent', overflow: 'hidden' }}
+                  id="inline-UYhs6DEch50CpyoQeKzp"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Careers - Hiring "
+                  data-height="1231"
+                  data-layout-iframe-id="inline-UYhs6DEch50CpyoQeKzp"
+                  data-form-id="UYhs6DEch50CpyoQeKzp"
+                  title="Careers - Hiring "
+                  data-initial-iframe-hidden="true"
+                  data-unique-id-mapped="true"
+                  data-iframe-resizer-initialized="true"
+                  scrolling="no"
+                />
+                <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
               </div>
 
             </div>
@@ -575,27 +438,25 @@ export default function CareersPageClient() {
 
                 <div className="car-cta-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                   <a
-                    href="https://linkedin.com/company/isuremedia"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/appointment"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                   >
-                    <i className="fa-brands fa-linkedin" style={{ fontSize: 14 }} />
-                    Follow on LinkedIn
+                    <i className="fa-solid fa-phone" style={{ fontSize: 14 }} />
+                    Book a Free Call
                   </a>
 
                   <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.50)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
 
                   <a
-                    href="mailto:careers@isuremedia.com"
+                    href="/contact"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.25)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,.20)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,.12)'; e.currentTarget.style.transform = ''; }}
                   >
                     <i className="fa-solid fa-envelope" style={{ fontSize: 13 }} />
-                    Email Us Directly
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -604,7 +465,7 @@ export default function CareersPageClient() {
               <div className="car-cta-img" style={{ position: 'relative', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80"
+                  src="/result_footer/not the right time career page.webp"
                   alt="Join Isuremedia"
                   style={{ width: '100%', height: 320, objectFit: 'cover', borderRadius: 16, display: 'block', boxShadow: '0 16px 48px rgba(0,0,0,.25)' }}
                 />

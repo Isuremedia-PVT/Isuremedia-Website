@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-bullseye', title: 'Businesses selling a single core offer or product', desc: 'One clear offer deserves a funnel built specifically around it, not a general website page.', img: 'https://picsum.photos/seed/sfn-whofor-offer/700/620' },
-  { icon: 'fa-solid fa-chalkboard-user', title: 'Course creators and coaches', desc: 'A structured funnel with order bumps and upsells captures far more revenue per lead than a single sales page.', img: 'https://picsum.photos/seed/sfn-whofor-coach/700/620' },
-  { icon: 'fa-solid fa-bag-shopping', title: 'E-commerce brands wanting higher AOV', desc: 'Order bumps and post-purchase upsells are among the fastest ways to lift average order value.', img: 'https://picsum.photos/seed/sfn-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Agencies running paid ads to a single landing page', desc: 'Paid traffic deserves a funnel that converts it fully, not a page that stops at one call to action.', img: 'https://picsum.photos/seed/sfn-whofor-ads/700/620' },
-  { icon: 'fa-solid fa-chart-line', title: 'Businesses with high traffic but low conversion', desc: 'If visitors are showing up but not buying, the fix is usually funnel structure and tracking, not more traffic.', img: 'https://picsum.photos/seed/sfn-whofor-traffic/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'SaaS companies with a free-trial-to-paid funnel', desc: 'The path from trial signup to paid customer is a funnel in its own right, and it deserves the same structure and tracking.', img: 'https://picsum.photos/seed/sfn-whofor-saas/700/620' },
+  { icon: 'fa-solid fa-bullseye', title: 'Businesses selling a single core offer or product', desc: 'One clear offer deserves a funnel built specifically around it, not a general website page.', img: '/services-six-card/Web Development Section/Sales Funnels/Businesses selling a single core offer or product.webp' },
+  { icon: 'fa-solid fa-chalkboard-user', title: 'Course creators and coaches', desc: 'A structured funnel with order bumps and upsells captures far more revenue per lead than a single sales page.', img: '/services-six-card/Web Development Section/Sales Funnels/Course creators and coaches.webp' },
+  { icon: 'fa-solid fa-bag-shopping', title: 'E-commerce brands wanting higher AOV', desc: 'Order bumps and post-purchase upsells are among the fastest ways to lift average order value.', img: '/services-six-card/Web Development Section/Sales Funnels/E-commerce brands wanting higher AOV.webp' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Agencies running paid ads to a single landing page', desc: 'Paid traffic deserves a funnel that converts it fully, not a page that stops at one call to action.', img: '/services-six-card/Web Development Section/Sales Funnels/Agencies running paid ads to a single landing page.webp' },
+  { icon: 'fa-solid fa-chart-line', title: 'Businesses with high traffic but low conversion', desc: 'If visitors are showing up but not buying, the fix is usually funnel structure and tracking, not more traffic.', img: '/services-six-card/Web Development Section/Sales Funnels/Businesses with high traffic but low conversion.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'SaaS companies with a free-trial-to-paid funnel', desc: 'The path from trial signup to paid customer is a funnel in its own right, and it deserves the same structure and tracking.', img: '/services-six-card/Web Development Section/Sales Funnels/SaaS companies with a free-trial-to-paid funnel.webp' },
 ];
 
 const WHY_ISM = [

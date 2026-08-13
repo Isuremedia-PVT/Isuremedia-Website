@@ -96,7 +96,7 @@ export default function ServicesPage() {
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/ready_for_result.png"
+                  src="/result_footer/ready_for_result.webp"
                   alt="Isuremedia Services"
                   style={{ width: '100%', maxWidth: 560, height: 'auto', display: 'block', objectFit: 'contain' }}
                 />

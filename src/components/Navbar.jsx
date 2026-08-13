@@ -241,7 +241,7 @@ export default function Navbar() {
               <i className="fa-solid fa-envelope" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
               info@isuremedia.com
             </a>
-            <a href="#cta"
+            <a href="/appointment"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '5px 14px', borderRadius: 6, fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', textTransform: 'uppercase', transition: 'all .15s' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; }}
@@ -589,7 +589,7 @@ export default function Navbar() {
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--ism-amber)', textDecoration: 'none' }}>
               <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> +1 646-588-1430
             </a>
-            <a href="#cta" onClick={() => setMobileOpen(false)}
+            <a href="/appointment" onClick={() => setMobileOpen(false)}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 7, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 600, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none' }}>
               Request a Call →
             </a>

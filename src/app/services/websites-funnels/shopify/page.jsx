@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-cart-shopping', title: 'Brands launching a new online store', desc: 'A properly built Shopify store from day one avoids the rebuild most fast-launched stores eventually need.', img: 'https://picsum.photos/seed/shopify-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing stores with slow load times or low conversion', desc: 'Most Shopify performance issues trace back to app bloat or unoptimised imagery, both fixable without a rebuild.', img: 'https://picsum.photos/seed/shopify-whofor-slow/700/620' },
-  { icon: 'fa-solid fa-boxes-stacked', title: 'Growing catalogues outgrowing a DIY theme', desc: 'A free or purchased theme that worked at 50 products often breaks down visually and functionally at 500.', img: 'https://picsum.photos/seed/shopify-whofor-catalogue/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'High-volume brands considering Shopify Plus', desc: 'Multi-currency, multi-storefront, and high-traffic operations that need enterprise-grade infrastructure.', img: 'https://picsum.photos/seed/shopify-whofor-plus/700/620' },
-  { icon: 'fa-solid fa-repeat', title: 'Subscription and recurring-revenue brands', desc: 'Subscription apps and checkout flows configured properly for recurring billing and retention.', img: 'https://picsum.photos/seed/shopify-whofor-sub/700/620' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Brands migrating from another platform', desc: 'Moving from WooCommerce, Wix, or a custom build without losing product data, reviews, or search rankings.', img: 'https://picsum.photos/seed/shopify-whofor-migrate/700/620' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'Brands launching a new online store', desc: 'A properly built Shopify store from day one avoids the rebuild most fast-launched stores eventually need.', img: '/services-six-card/Web Development Section/Shopify Development/Brands launching a new online store.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing stores with slow load times or low conversion', desc: 'Most Shopify performance issues trace back to app bloat or unoptimised imagery, both fixable without a rebuild.', img: '/services-six-card/Web Development Section/Shopify Development/Existing stores with slow load times or low conversion.webp' },
+  { icon: 'fa-solid fa-boxes-stacked', title: 'Growing catalogues outgrowing a DIY theme', desc: 'A free or purchased theme that worked at 50 products often breaks down visually and functionally at 500.', img: '/services-six-card/Web Development Section/Shopify Development/Growing catalogues outgrowing a DIY theme.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'High-volume brands considering Shopify Plus', desc: 'Multi-currency, multi-storefront, and high-traffic operations that need enterprise-grade infrastructure.', img: '/services-six-card/Web Development Section/Shopify Development/High-volume brands considering Shopify Plus.webp' },
+  { icon: 'fa-solid fa-repeat', title: 'Subscription and recurring-revenue brands', desc: 'Subscription apps and checkout flows configured properly for recurring billing and retention.', img: '/services-six-card/Web Development Section/Shopify Development/Subscription and recurring-revenue brands.webp' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Brands migrating from another platform', desc: 'Moving from WooCommerce, Wix, or a custom build without losing product data, reviews, or search rankings.', img: '/services-six-card/Web Development Section/Shopify Development/Brands migrating from another platform.webp' },
 ];
 
 const WHY_ISM = [

@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'New businesses needing a first professional website', desc: 'A credible, conversion-ready site built right from day one, no starting from a DIY builder.', img: 'https://picsum.photos/seed/bwb-whofor-new/700/620' },
-  { icon: 'fa-solid fa-clock-rotate-left', title: 'Businesses whose current site is outdated or slow', desc: 'A rebuild that fixes the speed, design, and structure problems dragging down your results.', img: 'https://picsum.photos/seed/bwb-whofor-outdated/700/620' },
-  { icon: 'fa-solid fa-question', title: 'Businesses unsure which platform fits their needs', desc: 'We evaluate your actual requirements and recommend the platform that fits, not the one we push on everyone.', img: 'https://picsum.photos/seed/bwb-whofor-platform/700/620' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Service businesses needing lead-generation-focused sites', desc: 'A site built around getting the phone to ring and the contact form to fill up.', img: 'https://picsum.photos/seed/bwb-whofor-leadgen/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses needing a storefront', desc: 'A storefront built to convert browsers into buyers, on a platform that scales with you.', img: 'https://picsum.photos/seed/bwb-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Businesses relaunching after a rebrand', desc: 'A new site that matches your new brand and gives you a real reason to re-announce yourself.', img: 'https://picsum.photos/seed/bwb-whofor-rebrand/700/620' },
+  { icon: 'fa-solid fa-store', title: 'New businesses needing a first professional website', desc: 'A credible, conversion-ready site built right from day one, no starting from a DIY builder.', img: '/services-six-card/Web Development Section/Business Website/New businesses needing a first.webp' },
+  { icon: 'fa-solid fa-clock-rotate-left', title: 'Businesses whose current site is outdated or slow', desc: 'A rebuild that fixes the speed, design, and structure problems dragging down your results.', img: '/services-six-card/Web Development Section/Business Website/Businesses whose current site is.webp' },
+  { icon: 'fa-solid fa-question', title: 'Businesses unsure which platform fits their needs', desc: 'We evaluate your actual requirements and recommend the platform that fits, not the one we push on everyone.', img: '/services-six-card/Web Development Section/Business Website/Businesses unsure which platforms fits their needs.webp' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Service businesses needing lead-generation-focused sites', desc: 'A site built around getting the phone to ring and the contact form to fill up.', img: '/services-six-card/Web Development Section/Business Website/Service businesses needing lead-generation-focused sites.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses needing a storefront', desc: 'A storefront built to convert browsers into buyers, on a platform that scales with you.', img: '/services-six-card/Web Development Section/Business Website/E-commerce businesses needing a storefront.webp' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Businesses relaunching after a rebrand', desc: 'A new site that matches your new brand and gives you a real reason to re-announce yourself.', img: '/services-six-card/Web Development Section/Business Website/Businesses relaunching after a rebrand.webp' },
 ];
 
 const WHY_ISM = [

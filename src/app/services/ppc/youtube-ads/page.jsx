@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Tried YouTube Ads without results', desc: 'Poorly targeted or weak-hook campaigns waste budget fast. The problem is almost always structure or creative, not the platform.', img: 'https://picsum.photos/seed/yads-whofor-tried/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Video Action campaigns paired with remarketing turn product demonstrations directly into checkout traffic.', img: 'https://picsum.photos/seed/yads-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-building', title: 'B2B and service businesses building trust', desc: 'Explainer and testimonial-style video ads that build credibility ahead of a sales conversation.', img: 'https://picsum.photos/seed/yads-whofor-b2b/700/620' },
-  { icon: 'fa-solid fa-camera', title: 'Businesses with existing video assets', desc: 'Brand films, testimonials, and product demos already shot can often be repurposed straight into ad creative.', img: 'https://picsum.photos/seed/yads-whofor-assets/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product', desc: 'A high-reach channel for putting a new offer in front of a large, targeted audience at relatively low cost per view.', img: 'https://picsum.photos/seed/yads-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-filter', title: 'Need a full-funnel approach', desc: 'Awareness, consideration, and conversion managed together so budget is allocated across the whole journey.', img: 'https://picsum.photos/seed/yads-whofor-funnel/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Tried YouTube Ads without results', desc: 'Poorly targeted or weak-hook campaigns waste budget fast. The problem is almost always structure or creative, not the platform.', img: '/services-six-card/Ppc/youtube/Tried YouTube Ads withoutresults.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Video Action campaigns paired with remarketing turn product demonstrations directly into checkout traffic.', img: '/services-six-card/Ppc/youtube/E-commerce wanting to growsales.webp' },
+  { icon: 'fa-solid fa-building', title: 'B2B and service businesses building trust', desc: 'Explainer and testimonial-style video ads that build credibility ahead of a sales conversation.', img: '/services-six-card/Ppc/youtube/B2B and service businessesbuilding trust.webp' },
+  { icon: 'fa-solid fa-camera', title: 'Businesses with existing video assets', desc: 'Brand films, testimonials, and product demos already shot can often be repurposed straight into ad creative.', img: '/services-six-card/Ppc/youtube/Businesses with existing videoassets.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product', desc: 'A high-reach channel for putting a new offer in front of a large, targeted audience at relatively low cost per view.', img: '/services-six-card/Ppc/youtube/business launch a new product.webp' },
+  { icon: 'fa-solid fa-filter', title: 'Need a full-funnel approach', desc: 'Awareness, consideration, and conversion managed together so budget is allocated across the whole journey.', img: '/services-six-card/Ppc/youtube/Need a full-funnel approach.webp' },
 ];
 
 const WHY_ISM = [

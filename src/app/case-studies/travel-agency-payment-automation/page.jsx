@@ -15,7 +15,7 @@ export default function HijrahWalksCaseStudyPage() {
         duration: 'Ongoing Engagement',
         services: 'GoHighLevel & Custom Code Automation',
       },
-      heroImage: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=80',
+      heroImage: '/casestudy/hijrah-banner.webp',
       resultHeadline: [
         { text: 'Every applicant now receives a ' },
         { text: 'personalised checkout link with the correct group price and an automated instalment schedule', highlight: true },
@@ -48,7 +48,7 @@ export default function HijrahWalksCaseStudyPage() {
         'Hijrah Walks needed a dynamic pricing layer that calculated the correct group rate at the point of registration, plus an instalment billing system where every due date was calculated relative to the applicant\'s chosen expedition date, not a fixed calendar date.',
         'Isuremedia built a custom code layer alongside GoHighLevel workflows to handle both, structured around the agency\'s full 12-expedition yearly calendar.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=700&q=80',
+      overviewImage: '/casestudy/hijrah-inner.webp',
       didHeading: 'Built as a dynamic pricing and billing engine spanning a full yearly calendar.',
       didIntro: 'From the moment an applicant registers to the day they depart, every price, checkout link, and payment reminder is generated automatically.',
       process: [

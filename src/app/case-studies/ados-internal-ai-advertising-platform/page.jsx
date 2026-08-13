@@ -15,7 +15,7 @@ export default function AdOSCaseStudyPage() {
         duration: '~1 Month · Single Developer',
         services: 'Custom Full-Stack Development & AI Integration',
       },
-      heroImage: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80',
+      heroImage: '/casestudy/Web-banner.webp',
       resultHeadline: [
         { text: 'A single developer delivered a full-stack AI platform in about a month, ' },
         { text: 'cutting manual campaign management time by 60–75%', highlight: true },
@@ -48,7 +48,7 @@ export default function AdOSCaseStudyPage() {
         'Isuremedia needed a single platform to centralize campaign management, automate performance analysis with AI, and give the team a scalable foundation to grow without proportional increases in manual effort.',
         'A single full-stack developer designed, architected, and delivered AdOS, a NestJS and React platform integrated directly with the Meta Graph API and powered by Claude and GPT-4o via OpenRouter, in approximately one month.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&q=80',
+      overviewImage: '/casestudy/website-inner.webp',
       didHeading: 'Built as a full-stack platform, not a dashboard bolted onto Meta Ads Manager.',
       didIntro: 'Every part of the campaign workflow, connection, management, analysis, and research, was rebuilt directly into a single internal tool.',
       process: [

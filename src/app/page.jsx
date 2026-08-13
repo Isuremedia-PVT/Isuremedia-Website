@@ -42,7 +42,7 @@ export default function Home() {
         <TrustVideo />
         <Services />
         <Industries />
-        <HowItWorks />
+        <HowItWorks ctaHref="/appointment" />
         <ToolsStrip />
         <VideoTestimonials />
         <Testimonials
@@ -51,7 +51,7 @@ export default function Home() {
           showTrustBar={false}
         />
         <FAQ />
-        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" cardPadTop={28} cardPadX={48} />
+        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} showOr={false} />
       </main>
       <Footer />
     </>

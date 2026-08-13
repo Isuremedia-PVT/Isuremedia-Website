@@ -15,7 +15,7 @@ export default function GlobalAllianzCaseStudyPage() {
         duration: '24-Month Engagement',
         services: 'Meta Ads Lead Generation',
       },
-      heroImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80',
+      heroImage: '/casestudy/globalallianzlawads-banner.webp',
       resultHeadline: [
         { text: 'With only a 33% increase in ad spend, ' },
         { text: 'lead volume grew 1,309% while Cost Per Lead dropped over 90%', highlight: true },
@@ -48,7 +48,7 @@ export default function GlobalAllianzCaseStudyPage() {
         'Global Allianz needed campaigns restructured around higher-quality lead forms, audiences refined toward high-intent Spanish-speaking communities, and creative that built trust around a genuinely difficult, high-stakes decision.',
         'Isuremedia rebuilt the account around educational, trust-building Spanish-language creative, refined targeting, and continuous testing of messaging, audiences, and lead quality.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80',
+      overviewImage: '/casestudy/globalallianzlawfirm-inner (2).webp',
       didHeading: 'Built around trust-building creative and continuous refinement.',
       didIntro: 'Every part of the account, campaigns, audiences, and creative, was rebuilt around what Spanish-speaking immigration prospects actually needed to see to take the next step.',
       process: [

@@ -15,7 +15,7 @@ export default function MentaraHealthCaseStudyPage() {
         duration: 'Platform Development Engagement',
         services: 'Custom Platform & LMS Development',
       },
-      heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80',
+      heroImage: '/casestudy/mentrahealth-banner.webp',
       resultHeadline: [
         { text: 'A five-level content hierarchy, ' },
         { text: 'Category, Exam, Section, Case Study, and Question, now mirrors real certification program design', highlight: true },
@@ -48,7 +48,7 @@ export default function MentaraHealthCaseStudyPage() {
         'Mentara Health needed a robust content management flow that mirrored how healthcare professionals actually learn and are assessed, through progressive, case-based evaluation, with support for multiple certification programs and content reuse through cloning.',
         'Isuremedia designed and implemented a fully structured exam content management system introducing a five-level hierarchy, Category, Exam, Section, Case Study, and Questions, with Visits nested inside each case study.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=700&q=80',
+      overviewImage: '/casestudy/globalallianzlawfirm-inner.webp',
       didHeading: 'Built as a five-level hierarchy that mirrors real certification program design.',
       didIntro: 'Administrators can now create or clone content at every level of the hierarchy, dramatically reducing the time spent on exam setup for new certification programs.',
       process: [

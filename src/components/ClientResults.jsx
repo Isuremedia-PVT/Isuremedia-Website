@@ -8,7 +8,7 @@ const LOGO_STRIP = '/images/partner.webp';
 
 const DEFAULT_CASES = [
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/garden-card.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
     quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
@@ -21,7 +21,7 @@ const DEFAULT_CASES = [
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/hijrah-card.webp',
     client: 'Hijrah Walks Expeditions',
     intro: 'Group size changes the price, but GoHighLevel checkout links can\'t do that natively.',
     quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',

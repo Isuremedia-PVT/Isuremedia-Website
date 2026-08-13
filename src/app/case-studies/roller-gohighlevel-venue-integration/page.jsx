@@ -15,7 +15,7 @@ export default function AirtopiaCaseStudyPage() {
         duration: '3 Weeks · 130+ hrs',
         services: 'Web Development & Integration',
       },
-      heroImage: 'https://images.unsplash.com/photo-1751235640841-d8d1035a80f0?w=1200&q=80',
+      heroImage: '/casestudy/airtopia-banner.webp',
       resultHeadline: [
         { text: 'Every booking, membership, and waiver ' },
         { text: 'now syncs to GoHighLevel the moment it happens in ROLLER', highlight: true },
@@ -49,7 +49,7 @@ export default function AirtopiaCaseStudyPage() {
         'The ask was not a one-off script. It was a production-grade, multi-tenant platform that any venue could connect to GoHighLevel through an admin panel, with no engineering work required per location.',
         'Isuremedia scoped, architected, and delivered the complete platform in three weeks.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=700&q=80',
+      overviewImage: '/casestudy/airtopia-inner.webp',
       didHeading: 'Built to solve the problem completely, not partially.',
       didIntro: 'Every ROLLER webhook is intercepted, validated, enriched where needed, and synced to GoHighLevel as a complete contact profile.',
       process: [

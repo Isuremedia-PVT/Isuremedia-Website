@@ -56,12 +56,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-file-circle-question', title: 'Good content that still isn’t ranking', desc: 'If solid content is stuck on page two or three, on-page SEO is almost always the reason.', img: 'https://picsum.photos/seed/opseo-whofor-good-content/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'New websites that need to rank quickly', desc: 'Getting on-page SEO right from the start avoids costly rework months later.', img: 'https://picsum.photos/seed/opseo-whofor-new-site/700/620' },
-  { icon: 'fa-solid fa-file-circle-plus', title: 'Launching new service or product pages', desc: 'We optimise before pages go live so they start building rankings from day one.', img: 'https://picsum.photos/seed/opseo-whofor-newpages/700/620' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Changed services or locations', desc: 'Your existing pages may be targeting the wrong keywords entirely. We realign them.', img: 'https://picsum.photos/seed/opseo-whofor-pivot/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce product and category pages', desc: 'The highest-value pages on any store, and the most commonly under-optimised.', img: 'https://picsum.photos/seed/opseo-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-newspaper', title: 'Any business investing in content', desc: 'Content that isn’t optimised for search doesn’t get found. We make sure it’s built to rank.', img: 'https://picsum.photos/seed/opseo-whofor-content/700/620' },
+  { icon: 'fa-solid fa-file-circle-question', title: 'Good content that still isn’t ranking', desc: 'If solid content is stuck on page two or three, on-page SEO is almost always the reason.', img: '/services-six-card/Seo/onpage seo/Good content that still isn\'tranking.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'New websites that need to rank quickly', desc: 'Getting on-page SEO right from the start avoids costly rework months later.', img: '/services-six-card/Seo/onpage seo/New websites that need to rankquickly.webp' },
+  { icon: 'fa-solid fa-file-circle-plus', title: 'Launching new service or product pages', desc: 'We optimise before pages go live so they start building rankings from day one.', img: '/services-six-card/Seo/onpage seo/Launching new service orproduct pages.webp' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Changed services or locations', desc: 'Your existing pages may be targeting the wrong keywords entirely. We realign them.', img: '/services-six-card/Seo/onpage seo/Changed services or locations.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce product and category pages', desc: 'The highest-value pages on any store, and the most commonly under-optimised.', img: '/services-six-card/Seo/onpage seo/E-commerce product andcategory pages.webp' },
+  { icon: 'fa-solid fa-newspaper', title: 'Any business investing in content', desc: 'Content that isn’t optimised for search doesn’t get found. We make sure it’s built to rank.', img: '/services-six-card/Seo/onpage seo/Any business investing incontent.webp' },
 ];
 
 const WHY_ISM = [
@@ -188,7 +188,7 @@ export default function OnPageSEOPage() {
 
               <div className="opseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/onpageseohero/640/720" alt="On-page SEO optimisation" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/on page.webp" alt="On-Page SEO" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-heading" style={{ color: '#fff', fontSize: 22 }} />
