@@ -15,7 +15,7 @@ export default function SignaturePoolsCaseStudyPage() {
         duration: '1 Week',
         services: 'GoHighLevel Pipeline & Automation Build',
       },
-      heroImage: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80',
+      heroImage: '/casestudy/signature-pools-banner.webp',
       resultHeadline: [
         { text: 'A business-specific pipeline, automated notifications, and ' },
         { text: 'a live Google Sheets reporting sync', highlight: true },
@@ -49,7 +49,7 @@ export default function SignaturePoolsCaseStudyPage() {
         'We redesigned the lead management process inside GoHighLevel around Signature Pools\' real sales workflow, then layered automated notifications on top, for new leads, nurture replies, and qualified transfers, so every stage change triggers the right alert to the right person.',
         'To simplify handoffs, callers now transfer a qualified lead simply by moving its card into the Live Transfer stage, which automatically notifies the assigned rep. A Google Sheets integration built with Make and GoHighLevel webhooks keeps a centralized reporting sheet synchronized with every pipeline update.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=700&q=80',
+      overviewImage: '/casestudy/signature-pools-inner.webp',
       didHeading: 'From pipeline redesign to a live reporting sync, in five days.',
       didIntro: 'The build moved from discovery straight through to a tested, deployed system inside a single one-week engagement.',
       process: [

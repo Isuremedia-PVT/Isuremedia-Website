@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (Marketing Automation) ─────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/casestudy/globalallianzlawfirm-card.webp',
+    img: '/casestudy/mentrahealth-card.webp',
     client: 'Mentara Health',
     intro: 'Exam content was managed with no clear hierarchy, no way to organise by certification type, section, or case scenario.',
     quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',

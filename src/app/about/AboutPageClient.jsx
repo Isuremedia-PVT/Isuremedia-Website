@@ -130,9 +130,9 @@ export default function AboutPageClient() {
                 <div style={{ position: 'absolute', top: 24, right: -16, width: '88%', height: '86%', background: 'rgba(30,77,195,.07)', borderRadius: 20, zIndex: 0 }} />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
+                  src="/career-about/We Cover Every about us.webp"
                   alt="Isuremedia team"
-                  style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', borderRadius: 16, display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.18)' }}
+                  style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', borderRadius: 16, display: 'block' }}
                 />
                 <div style={{ position: 'absolute', bottom: 32, left: -24, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
                   <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -328,7 +328,7 @@ export default function AboutPageClient() {
               </div>
               <div className="about-vm-photo" style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80" alt="Isuremedia vision" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <img src="/career-about/1000 Businesses and Agencies about us.webp" alt="Isuremedia vision" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
             </div>
 
@@ -352,7 +352,7 @@ export default function AboutPageClient() {
               </div>
               <div className="about-vm-photo" style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Isuremedia mission" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <img src="/career-about/Digital Growth Made Simple about us.webp" alt="Isuremedia mission" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
             </div>
 
@@ -638,10 +638,10 @@ export default function AboutPageClient() {
                 </div>
 
                 {/* ── RIGHT, Image only ── */}
-                <div style={{ borderRadius: 18, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,.28)', height: '100%', minHeight: 380 }}>
+                <div style={{ borderRadius: 18, overflow: 'hidden', height: '100%', minHeight: 380 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80"
+                    src="/career-about/Ready to rank higher.webp"
                     alt="Isuremedia team collaborating"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                   />
