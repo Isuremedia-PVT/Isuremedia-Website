@@ -179,7 +179,7 @@ export default function AboutPageClient() {
                 <div style={{ position: 'relative', zIndex: 1, borderRadius: 22, overflow: 'hidden', boxShadow: '0 32px 80px rgba(0,35,83,.18)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
+                    src="/career-about/We Built ISM about us 1.webp"
                     alt="Isuremedia team at work"
                     style={{ width: '100%', height: 420, objectFit: 'cover', display: 'block' }}
                   />
@@ -189,7 +189,7 @@ export default function AboutPageClient() {
                 <div style={{ position: 'absolute', bottom: -32, right: -20, width: '52%', borderRadius: 16, overflow: 'hidden', border: '4px solid #F7F8FA', boxShadow: '0 20px 48px rgba(0,35,83,.20)', zIndex: 2 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+                    src="/career-about/We Built ISM about us 2.webp"
                     alt="Isuremedia strategy session"
                     style={{ width: '100%', height: 190, objectFit: 'cover', display: 'block' }}
                   />
