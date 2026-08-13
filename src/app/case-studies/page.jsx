@@ -161,7 +161,7 @@ const CASES = [
   },
   {
     service: 'White-Label',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/innovet-card.webp',
     client: 'Innovat3 Solutions',
     intro: 'One GoHighLevel agency account, run mostly by hand.',
     quote: 'Isuremedia functions as our embedded build team, and that consistency is what let us keep signing clients.',
