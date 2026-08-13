@@ -77,7 +77,7 @@ const CASES = [
   },
   {
     service: 'Marketing Automation',
-    img: '/casestudy/globalallianzlawfirm-card.webp',
+    img: '/casestudy/mentrahealth-card.webp',
     client: 'Mentara Health',
     intro: 'Exam content was managed with no clear hierarchy, no way to organise by certification type, section, or case scenario.',
     quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',
@@ -175,7 +175,7 @@ const CASES = [
   },
   {
     service: 'White-Label',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/signature-pools-card.webp',
     client: 'Signature Pools',
     intro: 'Facebook leads were reaching GoHighLevel. Nothing structured happened after that.',
     quote: 'The pipeline finally reflects how we actually sell, and management can see exactly where every lead stands.',

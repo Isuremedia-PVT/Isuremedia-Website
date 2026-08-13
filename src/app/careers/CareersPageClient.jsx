@@ -301,6 +301,9 @@ export default function CareersPageClient() {
                 { src: '/career-about/IMG_3508.webp', h: 280, pos: 'center 12%' },
                 { src: '/career-about/IMG_3485.webp', h: 280, pos: 'center 25%' },
                 { src: '/career-about/IMG_9123.webp', h: 280, pos: 'center 15%' },
+                { src: '/career-about/IMG_3543.webp', h: 280, pos: 'center 20%' },
+                { src: '/career-about/IMG_6139.webp', h: 280, pos: 'center 25%' },
+                { src: '/career-about/IMG_6155.webp', h: 280, pos: 'center 25%' },
               ].map((img, i) => (
                 <div key={i} style={{ borderRadius: 14, overflow: 'hidden', height: img.h }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -310,15 +313,6 @@ export default function CareersPageClient() {
                   />
                 </div>
               ))}
-            </div>
-
-            {/* Row 1B, full-width strip, no partial row / gap */}
-            <div style={{ borderRadius: 14, overflow: 'hidden', height: 280, marginBottom: 10 }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/career-about/IMG_3543.webp" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', transition: 'transform .4s ease' }}
-                onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.03)'; }}
-                onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
-              />
             </div>
 
             {/* Row 2, 1 wide image + 2 reels */}

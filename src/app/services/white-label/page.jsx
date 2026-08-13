@@ -26,7 +26,7 @@ const RELATED_CASES = [
     linkLabel: "Read Innovat3 Solutions's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/signature-pools-card.webp',
     client: 'Signature Pools',
     intro: 'Facebook leads were reaching GoHighLevel. Nothing structured happened after that.',
     quote: 'The pipeline finally reflects how we actually sell, and management can see exactly where every lead stands.',

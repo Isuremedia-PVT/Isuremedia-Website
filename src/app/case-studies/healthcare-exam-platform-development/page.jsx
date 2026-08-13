@@ -48,7 +48,7 @@ export default function MentaraHealthCaseStudyPage() {
         'Mentara Health needed a robust content management flow that mirrored how healthcare professionals actually learn and are assessed, through progressive, case-based evaluation, with support for multiple certification programs and content reuse through cloning.',
         'Isuremedia designed and implemented a fully structured exam content management system introducing a five-level hierarchy, Category, Exam, Section, Case Study, and Questions, with Visits nested inside each case study.',
       ],
-      overviewImage: '/casestudy/globalallianzlawfirm-inner.webp',
+      overviewImage: '/casestudy/mentrahealth-inner.webp',
       didHeading: 'Built as a five-level hierarchy that mirrors real certification program design.',
       didIntro: 'Administrators can now create or clone content at every level of the hierarchy, dramatically reducing the time spent on exam setup for new certification programs.',
       process: [

@@ -188,7 +188,7 @@ export default function GoogleAdsPage() {
 
               <div className="gads-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/googleadshero/640/720" alt="Google Ads management" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/google ads banner.webp" alt="Google Ads management" style={{ width: '100%', height: 440, objectFit: 'contain', background: '#fff', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-google" style={{ color: '#fff', fontSize: 22 }} />
