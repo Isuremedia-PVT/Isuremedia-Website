@@ -64,11 +64,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops, any business with one physical location that wants more foot traffic and phone calls from nearby customers.', img: 'https://images.unsplash.com/photo-1766758196132-c81bdd247238?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers, businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Businesses with two or more locations need local SEO handled per location. Each site needs its own GBP, its own citations, and its own local page to rank independently in its area.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
-  { icon: 'fa-solid fa-sitemap', title: 'Franchises', desc: 'Franchise owners need visibility at the local level, not just brand-wide. We handle local SEO for individual franchise locations so each one performs in its own market.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem, not a product or service problem. We fix what is holding your rankings back.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
+  { icon: 'fa-solid fa-store', title: 'Single-location businesses', desc: 'Restaurants, salons, dental practices, law firms, gyms, retail shops, any business with one physical location that wants more foot traffic and phone calls from nearby customers.', img: '/services-six-card/Seo/Local Seo/Single-location businesses.webp' },
+  { icon: 'fa-solid fa-truck', title: 'Service-area businesses', desc: 'Plumbers, electricians, HVAC contractors, cleaners, landscapers, businesses that travel to the customer and serve a defined area without a public-facing shopfront. Local SEO works just as well without a physical address.', img: '/services-six-card/Seo/Local Seo/Service-area businesses.webp' },
+  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Businesses with two or more locations need local SEO handled per location. Each site needs its own GBP, its own citations, and its own local page to rank independently in its area.', img: '/services-six-card/Seo/Local Seo/Multi-location businesses.webp' },
+  { icon: 'fa-solid fa-sitemap', title: 'Franchises', desc: 'Franchise owners need visibility at the local level, not just brand-wide. We handle local SEO for individual franchise locations so each one performs in its own market.', img: '/services-six-card/Seo/Local Seo/Franchises.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Businesses losing ground to competitors', desc: 'If you have been in business for years but newer competitors are outranking you locally, it is almost always a local SEO problem, not a product or service problem. We fix what is holding your rankings back.', img: '/services-six-card/Seo/Local Seo/Businesses losing ground tocompetitors.webp' },
 ];
 
 const WHY_ISM = [
@@ -195,7 +195,7 @@ export default function LocalSEOPage() {
               {/* Right, photo + floating badges */}
               <div className="lseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/localseohero/640/720" alt="Local business owner" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/techinical.webp" alt="Local SEO" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-map-location-dot" style={{ color: '#fff', fontSize: 22 }} />

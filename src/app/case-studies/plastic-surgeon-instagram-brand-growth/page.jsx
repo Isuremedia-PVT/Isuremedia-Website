@@ -15,7 +15,7 @@ export default function DrGolshaniCaseStudyPage() {
         duration: '7 Months',
         services: 'Social Media Content & Strategy',
       },
-      heroImage: '/casestudy/seo-banner-casestudy-Dr_Daniel.webp',
+      heroImage: '/casestudy/danielgolshanimd-banner.webp',
       resultHeadline: [
         { text: 'From a blank profile to ' },
         { text: '800+ engaged, targeted followers in 7 months', highlight: true },
@@ -48,7 +48,7 @@ export default function DrGolshaniCaseStudyPage() {
         'Dr. Golshani needed a content system that could turn limited time into a consistent posting schedule, without ever compromising on medical accuracy or brand tone.',
         'Isuremedia built a repeatable production pipeline around a single recurring recording, with a strict approval-first workflow before anything went live.',
       ],
-      overviewImage: '/casestudy/seo-casestudy-inner-Dr_Daniel.webp',
+      overviewImage: '/casestudy/danielgolshanimd-inner.webp',
       didHeading: 'Built as a repeatable content engine, not one-off posts.',
       didIntro: 'Every part of the workflow, sourcing, editing, approval, and posting, was designed to run consistently without demanding more of the surgeon\'s time.',
       process: [

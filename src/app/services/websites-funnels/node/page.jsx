@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-comments', title: 'Businesses needing real-time features', desc: 'Live chat, notifications, or dashboards that update instantly without page refreshes.', img: 'https://picsum.photos/seed/node-whofor-realtime/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Startups building a scalable platform', desc: 'Applications that need to handle growing concurrent users without a rebuild.', img: 'https://picsum.photos/seed/node-whofor-startup/700/620' },
-  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: 'https://picsum.photos/seed/node-whofor-api/700/620' },
-  { icon: 'fa-brands fa-react', title: 'Teams already using React or Next.js', desc: 'JavaScript across the full stack for faster development and shared tooling.', img: 'https://picsum.photos/seed/node-whofor-react/700/620' },
-  { icon: 'fa-solid fa-cloud', title: 'Businesses deploying to modern cloud infrastructure', desc: 'Serverless and containerised deployments that Node.js is particularly well suited to.', img: 'https://picsum.photos/seed/node-whofor-cloud/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a no-code tool', desc: 'When a website builder or automation platform has hit its ceiling, custom development is the next step.', img: 'https://picsum.photos/seed/node-whofor-outgrown/700/620' },
+  { icon: 'fa-solid fa-comments', title: 'Businesses needing real-time features', desc: 'Live chat, notifications, or dashboards that update instantly without page refreshes.', img: '/services-six-card/Web Development Section/Node.js Development/Live chat notifications or dashboards that.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Startups building a scalable platform', desc: 'Applications that need to handle growing concurrent users without a rebuild.', img: '/services-six-card/Web Development Section/Node.js Development/Startups building a scalable platform.webp' },
+  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: '/services-six-card/Web Development Section/Node.js Development/Businesses needing an API for multiple platforms.webp' },
+  { icon: 'fa-brands fa-react', title: 'Teams already using React or Next.js', desc: 'JavaScript across the full stack for faster development and shared tooling.', img: '/services-six-card/Web Development Section/Node.js Development/Teams already using React or Next.js.webp' },
+  { icon: 'fa-solid fa-cloud', title: 'Businesses deploying to modern cloud infrastructure', desc: 'Serverless and containerised deployments that Node.js is particularly well suited to.', img: '/services-six-card/Web Development Section/Node.js Development/Businesses deploying to modern cloud infrastructure.webp' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a no-code tool', desc: 'When a website builder or automation platform has hit its ceiling, custom development is the next step.', img: '/services-six-card/Web Development Section/Node.js Development/Businesses that have outgrown a no-code tool.webp' },
 ];
 
 const WHY_ISM = [

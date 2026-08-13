@@ -38,7 +38,7 @@ export default function ProblemStatement() {
           >
             Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
           </a>
-          <a href="tel:+16465881430" className="ps-btn-secondary"
+          <a href="/appointment" className="ps-btn-secondary"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid rgba(255,255,255,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
           >
             Talk to an Expert

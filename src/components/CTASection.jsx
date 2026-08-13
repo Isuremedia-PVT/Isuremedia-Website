@@ -9,11 +9,13 @@ export default function CTASection({
   overflowTop = 0,
   primaryLabel = 'Get My Free Proposal',
   secondaryLabel = 'Call +1 646-588-1430',
+  secondaryHref = 'tel:+16465881430',
   description,
   heading = 'Ready for',
   headingHighlight = 'Results?',
   cardPadTop = 40,
-  cardPadX = 60
+  cardPadX = 60,
+  showOr = true
 }) {
   // bleed is expressed as a fraction of the person column's own width, so it scales
   // smoothly with the fluid clamp() below instead of being pinned to a fixed px value
@@ -53,9 +55,9 @@ export default function CTASection({
                 {primaryLabel}
               </a>
 
-              <span className="cta-or" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
+              {showOr && <span className="cta-or" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>}
 
-              <a href="tel:+16465881430" className="cta-btn"
+              <a href={secondaryHref} className="cta-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-bg-soft)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}

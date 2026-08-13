@@ -15,7 +15,7 @@ export default function GardenSolutionCaseStudyPage() {
         duration: '4 Months',
         services: 'Local SEO, GBP, Technical SEO & AEO',
       },
-      heroImage: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80',
+      heroImage: '/casestudy/seo gardensolution-banner.webp',
       resultHeadline: [
         { text: 'A local landscaping business grew organic traffic ' },
         { text: '800% in four months', highlight: true },
@@ -48,7 +48,7 @@ export default function GardenSolutionCaseStudyPage() {
         'Garden Solution Landscapes needed its website and Google Business Profile working as two reinforcing channels, a clean technical foundation, service pages built to rank, a real link-building program, and structured content that AI platforms could cite.',
         'Isuremedia built all of it in parallel, recovering from a mid-campaign hosting disruption without losing the timeline.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?w=700&q=80',
+      overviewImage: '/casestudy/Gardensolution-inner.webp',
       didHeading: 'Recovered the technical foundation, then built organic, local, and AI visibility on top of it.',
       didIntro: 'Three phases run back-to-back, stabilise the site, build out on-page and local, then push authority and AI visibility.',
       process: [

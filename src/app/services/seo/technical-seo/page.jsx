@@ -56,12 +56,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Rankings dropped after a Google update', desc: 'Most algorithm-related drops trace back to technical issues already present. A technical audit usually tells you why.', img: 'https://picsum.photos/seed/tseo-whofor-drop/700/620' },
-  { icon: 'fa-solid fa-chart-line', title: 'Growing businesses adding pages regularly', desc: 'Every new page is a new technical risk. Technical SEO keeps your site clean as it grows.', img: 'https://picsum.photos/seed/tseo-whofor-growing/700/620' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Invested in content but not seeing results', desc: 'Good content on a technically broken site does not rank the way it should. The problem is often technical.', img: 'https://picsum.photos/seed/tseo-whofor-content/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce with large product catalogues', desc: 'Large sites accumulate technical debt fast, thin pages, duplication, pagination problems.', img: 'https://picsum.photos/seed/tseo-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Preparing for a site migration or redesign', desc: 'A poorly managed migration can wipe out years of ranking authority overnight. We protect rankings through the transition.', img: 'https://picsum.photos/seed/tseo-whofor-migration/700/620' },
-  { icon: 'fa-solid fa-seedling', title: 'Any business serious about long-term growth', desc: 'Technical SEO is the foundation. Without it, every other SEO investment underperforms.', img: 'https://picsum.photos/seed/tseo-whofor-longterm/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Rankings dropped after a Google update', desc: 'Most algorithm-related drops trace back to technical issues already present. A technical audit usually tells you why.', img: '/services-six-card/Seo/Technical SEO/Rankings dropped after aGoogle update.webp' },
+  { icon: 'fa-solid fa-chart-line', title: 'Growing businesses adding pages regularly', desc: 'Every new page is a new technical risk. Technical SEO keeps your site clean as it grows.', img: '/services-six-card/Seo/Technical SEO/Growing businesses addingpages regularly.webp' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Invested in content but not seeing results', desc: 'Good content on a technically broken site does not rank the way it should. The problem is often technical.', img: '/services-six-card/Seo/Technical SEO/Invested in content but notseeing results.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce with large product catalogues', desc: 'Large sites accumulate technical debt fast, thin pages, duplication, pagination problems.', img: '/services-six-card/Seo/Technical SEO/E-commerce with large productcatalogues.webp' },
+  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Preparing for a site migration or redesign', desc: 'A poorly managed migration can wipe out years of ranking authority overnight. We protect rankings through the transition.', img: '/services-six-card/Seo/Technical SEO/Preparing for a site migration orredesign.webp' },
+  { icon: 'fa-solid fa-seedling', title: 'Any business serious about long-term growth', desc: 'Technical SEO is the foundation. Without it, every other SEO investment underperforms.', img: '/services-six-card/Seo/Technical SEO/Any business serious aboutlong-term growth.webp' },
 ];
 
 const WHY_ISM = [
@@ -188,7 +188,7 @@ export default function TechnicalSEOPage() {
 
               <div className="tseo-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://picsum.photos/seed/technicalseohero/640/720" alt="Technical SEO audit" style={{ width: '100%', height: 440, objectFit: 'cover', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/off.webp" alt="Technical SEO" style={{ width: '100%', height: 440, objectFit: 'contain', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-solid fa-gauge-high" style={{ color: '#fff', fontSize: 22 }} />

@@ -15,7 +15,7 @@ export default function Scrubs4UCaseStudyPage() {
         duration: '12-Month Engagement',
         services: 'Meta Ads Management',
       },
-      heroImage: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200&q=80',
+      heroImage: '/casestudy/PPC scrub--banner.webp',
       resultHeadline: [
         { text: 'A 7.9% increase in ad spend delivered a ' },
         { text: '173.6% increase in revenue and a 154% improvement in ROAS', highlight: true },
@@ -48,7 +48,7 @@ export default function Scrubs4UCaseStudyPage() {
         'Scrubs4U needed a system built on continuous optimization rather than one-time changes, restructured campaigns, refined audience targeting, and a steady pipeline of new creative to prevent fatigue from eroding performance.',
         'Isuremedia rebuilt the account around weekly analysis, creative and audience testing, and disciplined scaling of whatever was proven to work.',
       ],
-      overviewImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80',
+      overviewImage: '/casestudy/scrub-inner.webp',
       didHeading: 'Built around continuous optimization, not one-time changes.',
       didIntro: 'Every part of the account, campaigns, creative, and audiences, was treated as something to keep testing and improving, not something to set and leave.',
       process: [

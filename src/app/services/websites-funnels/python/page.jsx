@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses needing data pipelines or automation', desc: 'Repetitive manual reporting or data movement tasks that can be automated reliably.', img: 'https://picsum.photos/seed/python-whofor-pipeline/700/620' },
-  { icon: 'fa-solid fa-robot', title: 'Businesses building AI-integrated applications', desc: 'Applications that need to connect to or build on AI and machine learning capabilities.', img: 'https://picsum.photos/seed/python-whofor-ai/700/620' },
-  { icon: 'fa-solid fa-chart-line', title: 'Businesses needing data analysis or reporting tools', desc: 'Custom dashboards and analysis tools built around your actual data and metrics.', img: 'https://picsum.photos/seed/python-whofor-analysis/700/620' },
-  { icon: 'fa-solid fa-globe', title: 'Businesses building a Django or Flask web application', desc: 'Full-featured web platforms where Python’s frameworks provide the right structure.', img: 'https://picsum.photos/seed/python-whofor-web/700/620' },
-  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: 'https://picsum.photos/seed/python-whofor-api/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a no-code tool', desc: 'When a spreadsheet or automation platform has hit its ceiling, custom development is the next step.', img: 'https://picsum.photos/seed/python-whofor-outgrown/700/620' },
+  { icon: 'fa-solid fa-arrows-turn-to-dots', title: 'Businesses needing data pipelines or automation', desc: 'Repetitive manual reporting or data movement tasks that can be automated reliably.', img: '/services-six-card/Web Development Section/Python Development/Businesses needing data pipelines or automation.webp' },
+  { icon: 'fa-solid fa-robot', title: 'Businesses building AI-integrated applications', desc: 'Applications that need to connect to or build on AI and machine learning capabilities.', img: '/services-six-card/Web Development Section/Python Development/Businesses building AI-integrated applications.webp' },
+  { icon: 'fa-solid fa-chart-line', title: 'Businesses needing data analysis or reporting tools', desc: 'Custom dashboards and analysis tools built around your actual data and metrics.', img: '/services-six-card/Web Development Section/Python Development/Businesses needing data analysis or reporting tools.webp' },
+  { icon: 'fa-solid fa-globe', title: 'Businesses building a Django or Flask web application', desc: 'Full-featured web platforms where Python’s frameworks provide the right structure.', img: '/services-six-card/Web Development Section/Python Development/Businesses building a Django or Flask web application.webp' },
+  { icon: 'fa-solid fa-plug', title: 'Businesses needing an API for multiple platforms', desc: 'A single backend serving a website, mobile app, and third-party integrations consistently.', img: '/services-six-card/Web Development Section/Python Development/Businesses needing an API for multiple platforms.webp' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses that have outgrown a no-code tool', desc: 'When a spreadsheet or automation platform has hit its ceiling, custom development is the next step.', img: '/services-six-card/Web Development Section/Python Development/Businesses that have outgrown a no-code tool.webp' },
 ];
 
 const WHY_ISM = [

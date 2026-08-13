@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Tried Meta Ads without results', desc: 'Boosted posts and poorly structured campaigns waste budget. The problem is almost always structure or creative, not the platform.', img: 'https://picsum.photos/seed/mads-whofor-tried/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Advantage Plus Shopping is one of the most effective e-commerce channels available, we run it alongside retargeting.', img: 'https://picsum.photos/seed/mads-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-location-dot', title: 'Local businesses reaching their community', desc: 'Location-based targeting for restaurants, gyms, salons, and clinics driving local awareness and foot traffic.', img: 'https://picsum.photos/seed/mads-whofor-local/700/620' },
-  { icon: 'fa-solid fa-camera', title: 'A visually compelling product or service', desc: 'Food, fashion, fitness, beauty, home, travel, products that photograph well can create desire before anyone searches.', img: 'https://picsum.photos/seed/mads-whofor-visual/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'B2C launching a new product', desc: 'The fastest channel for getting a new offer in front of a large, targeted audience for reach and conversion together.', img: 'https://picsum.photos/seed/mads-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-filter', title: 'Need a full-funnel approach', desc: 'Awareness, consideration, and conversion managed together so budget is allocated across the whole journey.', img: 'https://picsum.photos/seed/mads-whofor-funnel/700/620' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Tried Meta Ads without results', desc: 'Boosted posts and poorly structured campaigns waste budget. The problem is almost always structure or creative, not the platform.', img: '/services-six-card/Ppc/metaads/Tried Meta Ads without results.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce wanting to grow sales', desc: 'Advantage Plus Shopping is one of the most effective e-commerce channels available, we run it alongside retargeting.', img: '/services-six-card/Ppc/metaads/E-commerce wanting to growsales.webp' },
+  { icon: 'fa-solid fa-location-dot', title: 'Local businesses reaching their community', desc: 'Location-based targeting for restaurants, gyms, salons, and clinics driving local awareness and foot traffic.', img: '/services-six-card/Ppc/metaads/Local businesses reaching theircommunity.webp' },
+  { icon: 'fa-solid fa-camera', title: 'A visually compelling product or service', desc: 'Food, fashion, fitness, beauty, home, travel, products that photograph well can create desire before anyone searches.', img: '/services-six-card/Ppc/metaads/A visually compelling product orservice.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'B2C launching a new product', desc: 'The fastest channel for getting a new offer in front of a large, targeted audience for reach and conversion together.', img: '/services-six-card/Ppc/metaads/B2C launching a new product.webp' },
+  { icon: 'fa-solid fa-filter', title: 'Need a full-funnel approach', desc: 'Awareness, consideration, and conversion managed together so budget is allocated across the whole journey.', img: '/services-six-card/Ppc/metaads/Need a full-funnel approach.webp' },
 ];
 
 const WHY_ISM = [

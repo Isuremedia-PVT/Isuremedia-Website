@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Small businesses needing a straightforward website', desc: 'A brochure or service site that needs to launch quickly and be easy for the owner to update.', img: 'https://picsum.photos/seed/wix-whofor-small/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'Small online stores with a limited catalogue', desc: 'Wix Stores handles straightforward product ranges well without the overhead of a bigger platform.', img: 'https://picsum.photos/seed/wix-whofor-store/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Teams wanting to edit content themselves', desc: 'Wix’s visual editor is genuinely approachable for non-technical staff making day-to-day changes.', img: 'https://picsum.photos/seed/wix-whofor-team/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing Wix sites with slow load times', desc: 'Most Wix performance issues come from unoptimised images or excess apps, both fixable without a rebuild.', img: 'https://picsum.photos/seed/wix-whofor-slow/700/620' },
-  { icon: 'fa-solid fa-palette', title: 'Businesses wanting design flexibility without code', desc: 'Wix Studio closes much of the gap with custom-coded sites for businesses that want more control.', img: 'https://picsum.photos/seed/wix-whofor-design/700/620' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Businesses migrating on or off the platform', desc: 'Moving onto Wix for simplicity, or off it once the business has outgrown what it can offer.', img: 'https://picsum.photos/seed/wix-whofor-migrate/700/620' },
+  { icon: 'fa-solid fa-store', title: 'Small businesses needing a straightforward website', desc: 'A brochure or service site that needs to launch quickly and be easy for the owner to update.', img: '/services-six-card/Web Development Section/Wix Development/Small businesses needing a.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'Small online stores with a limited catalogue', desc: 'Wix Stores handles straightforward product ranges well without the overhead of a bigger platform.', img: '/services-six-card/Web Development Section/Wix Development/Small online stores with a limited catalogue.webp' },
+  { icon: 'fa-solid fa-users', title: 'Teams wanting to edit content themselves', desc: 'Wix’s visual editor is genuinely approachable for non-technical staff making day-to-day changes.', img: '/services-six-card/Web Development Section/Wix Development/Teams wanting to edit content themselves.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Existing Wix sites with slow load times', desc: 'Most Wix performance issues come from unoptimised images or excess apps, both fixable without a rebuild.', img: '/services-six-card/Web Development Section/Wix Development/Existing Wix sites with slow load times.webp' },
+  { icon: 'fa-solid fa-palette', title: 'Businesses wanting design flexibility without code', desc: 'Wix Studio closes much of the gap with custom-coded sites for businesses that want more control.', img: '/services-six-card/Web Development Section/Wix Development/Businesses wanting design flexibility without code.webp' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Businesses migrating on or off the platform', desc: 'Moving onto Wix for simplicity, or off it once the business has outgrown what it can offer.', img: '/services-six-card/Web Development Section/Wix Development/Businesses migrating on or off the platform.webp' },
 ];
 
 const WHY_ISM = [

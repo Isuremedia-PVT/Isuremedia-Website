@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (Content & Creative) ───────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/casestudy/seo-card-image-case-study-Dr_Daniel.webp',
+    img: '/casestudy/danielgolshsnimd-card.webp',
     client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
     intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
     quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
@@ -26,7 +26,7 @@ const RELATED_CASES = [
     linkLabel: "Read Dr. Golshani's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/garnus-card.webp',
     client: 'Garnus India',
     intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
     quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
@@ -117,7 +117,7 @@ function FAQAccordion() {
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
               Honest answers before you decide.
             </p>
-            <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+            <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
@@ -571,7 +571,7 @@ export default function ContentCreativePage() {
                 >
                   Get a Free Content Review
                 </a>
-                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
+                <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
                 >

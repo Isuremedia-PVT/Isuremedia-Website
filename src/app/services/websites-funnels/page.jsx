@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (Websites & Funnels) ───────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/airtopia-card.webp',
     client: 'Airtopia',
     intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
     quote: 'Isuremedia built exactly what we needed and did it properly.',
@@ -26,7 +26,7 @@ const RELATED_CASES = [
     linkLabel: "Read Airtopia's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/webbb-card.webp',
     client: 'Isuremedia, AdOS Platform',
     intro: 'Managing 100+ campaigns across 20–25 Meta ad accounts manually was consuming 20 hours a week.',
     quote: 'A single developer delivered a full-stack AI platform in about a month, cutting manual campaign management time by 60-75%.',
@@ -149,7 +149,7 @@ function FAQAccordion() {
             <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 0 32px' }}>
               Honest answers before you decide.
             </p>
-            <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
+            <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
             >
@@ -214,12 +214,12 @@ export default function WebsitesPage() {
               >
                 Book a Free Discovery Call
               </a>
-              <a href="/portfolio"
+              <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
                 onMouseEnter={e=>{ (e.currentTarget).style.background='var(--color-primary)'; (e.currentTarget).style.color='#fff'; }}
                 onMouseLeave={e=>{ (e.currentTarget).style.background='transparent'; (e.currentTarget).style.color='var(--color-primary)'; }}
               >
-                See Our Work
+                Get in Touch
               </a>
             </div>
           </div>
@@ -604,7 +604,7 @@ export default function WebsitesPage() {
                 >
                   Get My Free Website Audit
                 </a>
-                <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
+                <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}
                 >

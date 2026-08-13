@@ -13,7 +13,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 /* ── Related case studies (SEO) ──────────────────────────────────────── */
 const RELATED_CASES = [
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/garden-card.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
     quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
@@ -26,7 +26,7 @@ const RELATED_CASES = [
     linkLabel: "Read Garden Solution Landscapes's Case Study",
   },
   {
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/broenlegalimmigration-card.webp',
     client: 'Brown Legal Immigration',
     intro: '100% of search traffic came from the map pack. The website was invisible.',
     quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
@@ -225,7 +225,7 @@ export default function SEOPage() {
 
             {/* CTAs */}
             <div style={{ display:'flex', alignItems:'center', gap:14, justifyContent:'center', flexWrap:'wrap', marginBottom:56 }}>
-              <a href="/contact"
+              <a href="/appointment"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 22px rgba(255,176,0,.38)', transition:'all .18s', border:'2px solid var(--ism-amber)' }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
@@ -710,7 +710,7 @@ export default function SEOPage() {
                 >
                   Get My Free SEO Audit
                 </a>
-                <a href="/contact"
+                <a href="/appointment"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'#fff', background:'transparent', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', border:'2px solid rgba(255,255,255,.40)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.borderColor='#fff'; e.currentTarget.style.background='rgba(255,255,255,.08)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.borderColor='rgba(255,255,255,.40)'; e.currentTarget.style.background='transparent'; }}

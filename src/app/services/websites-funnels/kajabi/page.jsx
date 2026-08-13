@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-chalkboard-user', title: 'Coaches launching their first course', desc: 'A properly built Kajabi site and funnel so your first launch doesn’t rely on a template doing the selling for you.', img: 'https://picsum.photos/seed/kaj-whofor-coach/700/620' },
-  { icon: 'fa-solid fa-right-left', title: 'Course creators migrating from other platforms', desc: 'Moving from Teachable, Thinkific, or Podia into Kajabi without losing students, content, or momentum.', img: 'https://picsum.photos/seed/kaj-whofor-migrate/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Membership site owners', desc: 'A membership area structured and designed to keep subscribers engaged and reduce cancellations.', img: 'https://picsum.photos/seed/kaj-whofor-membership/700/620' },
-  { icon: 'fa-solid fa-filter', title: 'Businesses wanting automated sales funnels', desc: 'A digital product that sells and follows up on its own, built on Kajabi’s native automation.', img: 'https://picsum.photos/seed/kaj-whofor-funnel/700/620' },
-  { icon: 'fa-solid fa-hammer', title: 'Creators with an unfinished DIY Kajabi site', desc: 'Started building it yourself and it stalled? We take over and get it built properly and launched.', img: 'https://picsum.photos/seed/kaj-whofor-diy/700/620' },
-  { icon: 'fa-solid fa-briefcase', title: 'Consultants and experts scaling a knowledge product', desc: 'Turning expertise into a scalable course or coaching product instead of trading time for one-off sessions.', img: 'https://picsum.photos/seed/kaj-whofor-expert/700/620' },
+  { icon: 'fa-solid fa-chalkboard-user', title: 'Coaches launching their first course', desc: 'A properly built Kajabi site and funnel so your first launch doesn’t rely on a template doing the selling for you.', img: '/services-six-card/Web Development Section/Kajabi/Coaches launching their first course.webp' },
+  { icon: 'fa-solid fa-right-left', title: 'Course creators migrating from other platforms', desc: 'Moving from Teachable, Thinkific, or Podia into Kajabi without losing students, content, or momentum.', img: '/services-six-card/Web Development Section/Kajabi/Course creators migrating from other platforms.webp' },
+  { icon: 'fa-solid fa-users', title: 'Membership site owners', desc: 'A membership area structured and designed to keep subscribers engaged and reduce cancellations.', img: '/services-six-card/Web Development Section/Kajabi/Membership site owners.webp' },
+  { icon: 'fa-solid fa-filter', title: 'Businesses wanting automated sales funnels', desc: 'A digital product that sells and follows up on its own, built on Kajabi’s native automation.', img: '/services-six-card/Web Development Section/Kajabi/Businesses wanting automated sales funnels.webp' },
+  { icon: 'fa-solid fa-hammer', title: 'Creators with an unfinished DIY Kajabi site', desc: 'Started building it yourself and it stalled? We take over and get it built properly and launched.', img: '/services-six-card/Web Development Section/Kajabi/Creators with an unfinished DIY Kajabi site.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Consultants and experts scaling a knowledge product', desc: 'Turning expertise into a scalable course or coaching product instead of trading time for one-off sessions.', img: '/services-six-card/Web Development Section/Kajabi/Consultants and experts scaling a knowledge product.webp' },
 ];
 
 const WHY_ISM = [

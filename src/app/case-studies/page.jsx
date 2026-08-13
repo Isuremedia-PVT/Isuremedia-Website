@@ -21,7 +21,7 @@ const SERVICES = [
 const CASES = [
   {
     service: 'Websites & Funnels',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/airtopia-card.webp',
     client: 'Airtopia',
     intro: 'Every ROLLER venue was doing this by hand. Now none of them have to.',
     quote: 'Isuremedia built exactly what we needed and did it properly.',
@@ -35,7 +35,7 @@ const CASES = [
   },
   {
     service: 'Websites & Funnels',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/webbb-card.webp',
     client: 'Isuremedia, AdOS Platform',
     intro: 'Managing 100+ campaigns across 20–25 Meta ad accounts manually was consuming 20 hours a week.',
     quote: 'A single developer delivered a full-stack AI platform in about a month, cutting manual campaign management time by 60-75%.',
@@ -49,7 +49,7 @@ const CASES = [
   },
   {
     service: 'SEO',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/garden-card.webp',
     client: 'Garden Solution Landscapes',
     intro: 'A great reputation and an active Google Business Profile, but almost no organic traffic.',
     quote: 'What Isuremedia built is a website and profile that finally reflect our reputation, and it shows up in the numbers every month.',
@@ -63,7 +63,7 @@ const CASES = [
   },
   {
     service: 'SEO',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/broenlegalimmigration-card.webp',
     client: 'Brown Legal Immigration',
     intro: '100% of search traffic came from the map pack. The website was invisible.',
     quote: 'Isuremedia got us cited by name in the AI answers our clients are actually searching.',
@@ -77,7 +77,7 @@ const CASES = [
   },
   {
     service: 'Marketing Automation',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/globalallianzlawfirm-card.webp',
     client: 'Mentara Health',
     intro: 'Exam content was managed with no clear hierarchy, no way to organise by certification type, section, or case scenario.',
     quote: 'A five-level content hierarchy now mirrors exactly how healthcare professionals are trained and assessed.',
@@ -91,7 +91,7 @@ const CASES = [
   },
   {
     service: 'Marketing Automation',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/hijrah-card.webp',
     client: 'Hijrah Walks Expeditions',
     intro: 'Group size changes the price, but GoHighLevel checkout links can\'t do that natively.',
     quote: 'What used to take our team hours each week now runs itself. Every applicant gets exactly the right checkout experience from the moment they register.',
@@ -105,7 +105,7 @@ const CASES = [
   },
   {
     service: 'PPC / Paid Ads',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/scrub-card.webp',
     client: 'Scrubs4U',
     intro: 'Purchases were inconsistent and rising acquisition costs made it hard to scale profitably.',
     quote: 'A 7.9% increase in ad spend delivered a 173.6% increase in revenue and 154% higher ROAS.',
@@ -119,7 +119,7 @@ const CASES = [
   },
   {
     service: 'PPC / Paid Ads',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/globalallianzadss-card.webp',
     client: 'Global Allianz',
     intro: 'Lead volume was inconsistent and Cost Per Lead was too high to scale profitably.',
     quote: 'With only a 33% increase in ad spend, lead volume grew 1,309% while Cost Per Lead dropped over 90%.',
@@ -133,7 +133,7 @@ const CASES = [
   },
   {
     service: 'Content & Creative',
-    img: '/casestudy/seo-card-image-case-study-Dr_Daniel.webp',
+    img: '/casestudy/danielgolshsnimd-card.webp',
     client: 'Dr. Daniel Golshani, M.D., F.A.C.S.',
     intro: 'A brand-new Instagram account with no followers, no content system, and no defined voice.',
     quote: 'From a blank profile to 800+ engaged, targeted followers in 7 months, built entirely from a repeatable content system.',
@@ -147,7 +147,7 @@ const CASES = [
   },
   {
     service: 'Content & Creative',
-    img: '/images/casestudy-dummy.webp',
+    img: '/casestudy/garnus-card.webp',
     client: 'Garnus India',
     intro: 'A brand-new Instagram presence with no followers, no content system, and no established voice.',
     quote: 'From a blank page to 447 followers and 50-60k+ organic views in 6 months, fully organic.',
