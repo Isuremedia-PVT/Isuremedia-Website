@@ -50,17 +50,13 @@ export default function Hero() {
             </p>
 
             <div className="hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap', marginBottom: 24 }}>
-              <a href="/contact" className="hero-btn"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap', transition: 'all .18s' }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
+              <a href="/contact" className="hero-btn hero-btn-amber"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
               >
                 Scale My Agency
               </a>
-              <a href="/contact" className="hero-btn"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(30,77,195,.25)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}
+              <a href="/contact" className="hero-btn hero-btn-primary"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', boxShadow: '0 4px 16px rgba(30,77,195,.25)' }}
               >
                 Scale My Business
               </a>
@@ -96,6 +92,9 @@ export default function Hero() {
       </svg>
 
       <style>{`
+        .hero-btn { transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease; }
+        .hero-btn-amber:hover { background: var(--color-accent-hover) !important; transform: translateY(-2px); box-shadow: 0 10px 26px rgba(255,176,0,.42); }
+        .hero-btn-primary:hover { background: var(--color-primary-hover) !important; transform: translateY(-2px); box-shadow: 0 8px 22px rgba(30,77,195,.32); }
         @media (max-width: 1023px) {
           .hero-grid { grid-template-columns: 45% 55% !important; min-height: 420px !important; }
           .hero-btns { flex-wrap: nowrap !important; gap: 10px !important; }
