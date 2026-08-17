@@ -185,7 +185,7 @@ export default function YouTubeAdsPage() {
 
               <div className="yads-hero-photo" style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/banner/youtube ads.webp" alt="YouTube Ads management" style={{ width: '100%', height: 440, objectFit: 'contain', background: '#fff', borderRadius: 24, display: 'block' }} />
+                <img src="/banner/youtube ads.webp" alt="YouTube Ads management" style={{ width: '100%', height: 440, objectFit: 'contain', background: 'transparent', borderRadius: 24, display: 'block' }} />
 
                 <div style={{ position: 'absolute', top: -18, left: -18, width: 56, height: 56, borderRadius: 16, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 26px rgba(30,77,195,.40)' }}>
                   <i className="fa-brands fa-youtube" style={{ color: '#fff', fontSize: 22 }} />
