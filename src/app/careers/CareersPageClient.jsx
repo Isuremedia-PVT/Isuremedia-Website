@@ -114,11 +114,14 @@ export default function CareersPageClient() {
               {/* RIGHT */}
               <div style={{ position: 'relative' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="banner/career_banner.webp"
-                  alt="Isuremedia team"
-                  style={{ width: '100%', height: 480, objectFit: 'cover', borderRadius: 20, display: 'block' }}
-                />
+                <div style={{ width: '100%', height: 480, borderRadius: 20, overflow: 'hidden', background: '#fff' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/banner/career_banner.webp"
+                    alt="Isuremedia team"
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                  />
+                </div>
                 <div style={{ position: 'absolute', top: 20, right: 20, background: 'var(--ism-amber)', borderRadius: 10, padding: '10px 18px', boxShadow: '0 6px 18px rgba(255,176,0,.45)' }}>
                   <div style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--color-navy)', textAlign: 'center', lineHeight: 1.3 }}>Haldwani,<br />India</div>
                 </div>
