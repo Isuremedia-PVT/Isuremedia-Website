@@ -119,6 +119,9 @@ const FAQS = [
   { q: 'What is GoHighLevel and do I need it?', a: 'A CRM and marketing automation platform that connects to your website and handles lead capture, follow-up, appointment booking, and pipeline management. If you want your website to do more than collect forms and leave the follow-up to you, it is the right tool.' },
   { q: 'Do you offer website maintenance after launch?', a: 'Yes. Ongoing monthly maintenance covering updates, security monitoring, backups, speed checks, and small content changes. Your website should get better over time, not drift toward breaking, we monitor it so you do not have to.' },
   { q: 'Do you offer white-label website builds for agencies?', a: 'Yes. If you run a marketing agency and need design or development delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work, same quality, fully white-labeled.' },
+  { q: 'Do you build GoHighLevel funnels?', a: 'Yes. GoHighLevel is one of our primary platforms. We build complete GHL systems including CRM, pipelines, funnels, appointment calendars, and email and SMS automations.' },
+  { q: 'What is the difference between a website and a sales funnel?', a: 'A website gives your business a professional home online. A sales funnel guides a visitor toward one specific action: a call, a purchase, or a sign-up. Most businesses need both.' },
+  { q: 'Can you redesign my existing website?', a: 'Yes. We handle full redesigns, keeping your domain, migrating your content, and improving both the design and SEO performance of the new site.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */

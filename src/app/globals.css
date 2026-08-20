@@ -242,8 +242,8 @@ a[style*="text-transform:uppercase"], a[style*="text-transform: uppercase"] {
    Enforces exact, consistent section spacing across ALL pages for Desktop, Tablet & Mobile.
    - Desktop (>1024px)     : 64px top / 64px bottom
    - Tablet (769-1024px)   : 48px top / 48px bottom
-   - Mobile (481-768px)    : 36px top / 36px bottom
-   - Small Mobile (<=480px): 28px top / 28px bottom
+   - Mobile (481-768px)    : 24px top / 24px bottom
+   - Small Mobile (<=480px): 18px top / 18px bottom
    ══════════════════════════════════════════════════════════════════ */
 
 /* Exclude all hero sections ([class*="hero"]) from global padding overrides so SVG waves don't cover buttons */
@@ -255,7 +255,7 @@ section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-ble
 
 /* Tablet (769px – 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]) {
+  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-bleed) {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
   }
@@ -263,17 +263,17 @@ section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-ble
 
 /* Mobile (481px – 768px) */
 @media (max-width: 768px) {
-  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]) {
-    padding-top: 36px !important;
-    padding-bottom: 36px !important;
+  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-bleed) {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
   }
 }
 
 /* Small Mobile (<= 480px) */
 @media (max-width: 480px) {
-  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]) {
-    padding-top: 28px !important;
-    padding-bottom: 28px !important;
+  section:not(.rs-section):not([class*="hero"]):not([class*="-hero"]):not(.cta-bleed) {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
   }
 }
 

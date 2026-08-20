@@ -46,15 +46,6 @@ const KEY_FACTORS = [
   { icon: 'fa-solid fa-screwdriver-wrench', title: 'Post-Launch Optimisation', impact: 'Contextual', desc: 'The funnel that launches is version one. Ongoing testing and refinement is what determines performance at month three, not just at launch.' },
 ];
 
-const FUNNEL_TYPES = [
-  { icon: 'fa-solid fa-user-plus', title: 'Lead Generation Funnels', desc: 'A high-converting opt-in page that captures contact details in exchange for a lead magnet or offer, followed by a thank you page, immediate delivery, and an email follow-up sequence. The foundation of most service business funnels.', img: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=500&q=80' },
-  { icon: 'fa-solid fa-file-lines', title: 'Sales Page Funnels', desc: 'A full sales page presenting your core offer, headline, offer stack, social proof, objection handling, clear CTA, followed by an order form, confirmation page, and post-purchase sequence.', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80' },
-  { icon: 'fa-solid fa-video', title: 'Webinar Funnels', desc: 'A registration page, confirmation page, reminder sequence, webinar delivery page, and post-webinar sales sequence, built as both live and evergreen automated funnels.', img: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=500&q=80' },
-  { icon: 'fa-solid fa-clipboard-check', title: 'Application Funnels', desc: 'For high-ticket services, an application form pre-qualifies prospects before booking only qualified leads onto your calendar, reducing no-shows and increasing close rates.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'Upsell and Order Bump Sequences', desc: 'One-click upsells, downsells, and order bumps connected to every purchase flow, complete offer stacks that increase average order value from every transaction.', img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=500&q=80' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Membership Site Funnels', desc: 'ClickFunnels membership areas connected to purchase, delivering course content, resources, or programme materials with access triggered automatically on purchase.', img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-route', title: 'Funnel Strategy and Architecture', desc: 'Before any page is built, we map the complete funnel, every stage, every offer, every upsell and downsell, and every automation trigger. Strategy defines the build.' },
   { icon: 'fa-solid fa-palette', title: 'Custom Funnel Design', desc: 'We design funnels that go beyond the standard ClickFunnels template look, custom visual design, brand-consistent layouts, and conversion-optimised page structure.' },
@@ -435,45 +426,6 @@ export default function ClickFunnelsPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. WHAT WE BUILD INSIDE CLICKFUNNELS ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Isuremedia Builds Inside Your ClickFunnels Account.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every funnel type. Every page. Fully connected and configured before launch.
-              </p>
-            </div>
-            <div className="funnel-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {FUNNEL_TYPES.map(g => (
-                <div key={g.title} className="funnel-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="funnel-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="funnel-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .funnel-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .funnel-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .funnel-card-img{ transition: transform .4s ease; }
-            .funnel-card:hover .funnel-card-img{ transform: scale(1.08); }
-            .funnel-card:hover .funnel-card-icon{ background: var(--ism-amber); }
-            .funnel-card:hover .funnel-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .funnel-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .funnel-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
         {/* ══ 08. ISM CLICKFUNNELS SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
@@ -596,7 +548,7 @@ export default function ClickFunnelsPage() {
                 ); })()}
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/cfwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\website.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
                 {(() => { const b = WHY_ISM[3]; return (
                   <div key={b.title} className="why-ism-card" style={{ background: '#fff', borderRadius: 16, padding: '24px 22px', border: '1px solid var(--color-border)' }}>

@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-clock', title: 'Can’t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI, a managed service removes the time constraint.', img: 'https://picsum.photos/seed/blog-whofor-inhouse/700/620' },
-  { icon: 'fa-solid fa-chart-line', title: 'Blog exists but generates little traffic', desc: 'If posts aren’t ranking, the strategy or the optimisation needs attention. We audit and build a programme that works.', img: 'https://picsum.photos/seed/blog-whofor-existing/700/620' },
-  { icon: 'fa-solid fa-flag', title: 'Entering a new market or launching a service', desc: 'A targeted programme builds topical authority in a new area before paid campaigns drive traffic to unranked pages.', img: 'https://picsum.photos/seed/blog-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references, scalable across multiple accounts.', img: 'https://picsum.photos/seed/blog-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-robot', title: 'Targeting AI search visibility', desc: 'For businesses whose customers research with AI tools, content structured for citation is a real competitive edge.', img: 'https://picsum.photos/seed/blog-whofor-ai/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce building informational funnels', desc: 'A reader who finds your post answering their question is far more likely to buy than a cold ad viewer.', img: 'https://picsum.photos/seed/blog-whofor-ecom/700/620' },
+  { icon: 'fa-solid fa-user-clock', title: 'Can’t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI, a managed service removes the time constraint.', img: "/services-six-card/content_and_creative/Seo blog writing/Can't produce content consistently in-house.png" },
+  { icon: 'fa-solid fa-chart-line', title: 'Blog exists but generates little traffic', desc: 'If posts aren’t ranking, the strategy or the optimisation needs attention. We audit and build a programme that works.', img: '/services-six-card/content_and_creative/Seo blog writing/Blog exists but generates littletraffic.png' },
+  { icon: 'fa-solid fa-flag', title: 'Entering a new market or launching a service', desc: 'A targeted programme builds topical authority in a new area before paid campaigns drive traffic to unranked pages.', img: '/services-six-card/content_and_creative/Seo blog writing/Entering a new market orlaunching a service.png' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references, scalable across multiple accounts.', img: '/services-six-card/content_and_creative/Seo blog writing/Agencies white-labellingcontent for clients.png' },
+  { icon: 'fa-solid fa-robot', title: 'Targeting AI search visibility', desc: 'For businesses whose customers research with AI tools, content structured for citation is a real competitive edge.', img: '/services-six-card/content_and_creative/Seo blog writing/Targeting Al search visibility.png' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce building informational funnels', desc: 'A reader who finds your post answering their question is far more likely to buy than a cold ad viewer.', img: '/services-six-card/content_and_creative/Seo blog writing/E-commerce buildinginformational funnels.png' },
 ];
 
 const WHY_ISM = [
@@ -570,7 +570,7 @@ export default function SEOBlogWritingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/blogwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

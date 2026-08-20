@@ -57,12 +57,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-group', title: 'Agencies outgrowing freelancer management', desc: 'Briefing, chasing, and re-briefing a different freelancer on every project is a full-time job in itself. A pod removes that overhead entirely.', img: 'https://picsum.photos/seed/pods-whofor-freelancers/700/620' },
-  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work, SEO, PPC, or development, every month, a dedicated pod is more efficient than sourcing per project.', img: 'https://picsum.photos/seed/pods-whofor-volume/700/620' },
-  { icon: 'fa-solid fa-sack-dollar', title: 'Agencies wanting predictable delivery cost', desc: 'A fixed monthly pod cost is easier to build into client pricing than quoting a new vendor for every project that comes in.', img: 'https://picsum.photos/seed/pods-whofor-cost/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies scaling faster than they can hire', desc: 'When client growth is outpacing your ability to hire and train, a pod gives you bench strength without the recruitment timeline.', img: 'https://picsum.photos/seed/pods-whofor-scale/700/620' },
-  { icon: 'fa-solid fa-brain', title: 'Agencies that keep losing institutional knowledge', desc: 'Every time a freelancer leaves, their context leaves with them. A fixed pod retains what it learns about your clients over time.', img: 'https://picsum.photos/seed/pods-whofor-knowledge/700/620' },
-  { icon: 'fa-solid fa-triangle-exclamation', title: 'Agencies tired of inconsistent quality', desc: 'A different vendor on every brief means a different quality bar every time. A dedicated pod is measured against one standard, consistently.', img: 'https://picsum.photos/seed/pods-whofor-quality/700/620' },
+  { icon: 'fa-solid fa-user-group', title: 'Agencies outgrowing freelancer management', desc: 'Briefing, chasing, and re-briefing a different freelancer on every project is a full-time job in itself. A pod removes that overhead entirely.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies outgrowing freelancermanagement.png' },
+  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work, SEO, PPC, or development, every month, a dedicated pod is more efficient than sourcing per project.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies with a steady volumeof one service.png' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'Agencies wanting predictable delivery cost', desc: 'A fixed monthly pod cost is easier to build into client pricing than quoting a new vendor for every project that comes in.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies wanting predictabledelivery cost.png' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies scaling faster than they can hire', desc: 'When client growth is outpacing your ability to hire and train, a pod gives you bench strength without the recruitment timeline.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies scaling faster thanthey can hire.png' },
+  { icon: 'fa-solid fa-brain', title: 'Agencies that keep losing institutional knowledge', desc: 'Every time a freelancer leaves, their context leaves with them. A fixed pod retains what it learns about your clients over time.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies that keep losinginstitutional knowledge.png' },
+  { icon: 'fa-solid fa-triangle-exclamation', title: 'Agencies tired of inconsistent quality', desc: 'A different vendor on every brief means a different quality bar every time. A dedicated pod is measured against one standard, consistently.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies tired of inconsistentquality.png' },
 ];
 
 const WHY_ISM = [
@@ -583,7 +583,7 @@ export default function DedicatedAgencyPodsPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/podswhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

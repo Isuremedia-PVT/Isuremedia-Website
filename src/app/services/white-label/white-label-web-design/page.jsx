@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Marketing & SEO agencies whose clients need websites', desc: 'Turning it down risks the relationship. Referring it out risks the experience. Say yes and deliver it under your brand.', img: 'https://picsum.photos/seed/wlweb-whofor-marketing/700/620' },
-  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build, delivered under your agency’s name.', img: 'https://picsum.photos/seed/wlweb-whofor-branding/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire, timelines still met.', img: 'https://picsum.photos/seed/wlweb-whofor-capacity/700/620' },
-  { icon: 'fa-solid fa-bullhorn', title: 'PR and comms agencies expanding into digital', desc: 'Adds digital delivery capability to a communications-led proposition without in-house technical resource.', img: 'https://picsum.photos/seed/wlweb-whofor-pr/700/620' },
-  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer, retain the margin and relationship.', img: 'https://picsum.photos/seed/wlweb-whofor-freelance/700/620' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured, say yes anyway.', img: 'https://picsum.photos/seed/wlweb-whofor-outside/700/620' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Marketing & SEO agencies whose clients need websites', desc: 'Turning it down risks the relationship. Referring it out risks the experience. Say yes and deliver it under your brand.', img: '/services-six-card/White Label/white label developer/Marketing & SEO agencieswhose clients need websites.png' },
+  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build, delivered under your agency’s name.', img: '/services-six-card/White Label/white label developer/Branding agencies without devcapacity.png' },
+  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire, timelines still met.', img: '/services-six-card/White Label/white label developer/Agencies with dev capacity atits limit.png' },
+  { icon: 'fa-solid fa-bullhorn', title: 'PR and comms agencies expanding into digital', desc: 'Adds digital delivery capability to a communications-led proposition without in-house technical resource.', img: '/services-six-card/White Label/white label developer/PR and comms agenciesexpanding into digital.png' },
+  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer, retain the margin and relationship.', img: '/services-six-card/White Label/white label developer/Freelance consultants building agency-level offers.png' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured, say yes anyway.', img: '/services-six-card/White Label/white label developer/Agencies handling buildsoutside their stack.png' },
 ];
 
 const WHY_ISM = [
@@ -569,7 +569,7 @@ export default function WhiteLabelWebDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/wlwebwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

@@ -54,11 +54,11 @@ const SERVICES = [
 
 const WHO_FOR = [
   { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with disconnected platforms', desc: 'Shopify, inventory, accounting, and email marketing all need to talk to each other for accurate, real-time operations.', img: 'https://picsum.photos/seed/api-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Businesses running multiple CRMs or tools', desc: 'Sales, support, and marketing teams using different platforms need data flowing between them automatically.', img: 'https://picsum.photos/seed/api-whofor-multi/700/620' },
-  { icon: 'fa-solid fa-file-invoice-dollar', title: 'Businesses with manual data entry bottlenecks', desc: 'If someone is copy-pasting data between systems daily, that role has just become an automation project.', img: 'https://picsum.photos/seed/api-whofor-manual/700/620' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Businesses using niche or custom software', desc: 'Platforms without a native integration ecosystem still need to connect, custom API work bridges the gap.', img: 'https://picsum.photos/seed/api-whofor-niche/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses scaling past spreadsheet workflows', desc: 'What worked at a smaller size breaks down as volume grows. Proper integrations replace fragile manual processes.', img: 'https://picsum.photos/seed/api-whofor-scale/700/620' },
-  { icon: 'fa-solid fa-triangle-exclamation', title: 'Businesses that have been burned by data errors', desc: 'Missed orders, duplicate contacts, and mismatched records caused by manual transfer are a solvable problem.', img: 'https://picsum.photos/seed/api-whofor-errors/700/620' },
+  { icon: 'fa-solid fa-building', title: 'Businesses running multiple CRMs or tools', desc: 'Sales, support, and marketing teams using different platforms need data flowing between them automatically.', img: '/services-six-card/Marketing Automation Section/API Integration/Businesses running multiple CRMs or tools.png' },
+  { icon: 'fa-solid fa-file-invoice-dollar', title: 'Businesses with manual data entry bottlenecks', desc: 'If someone is copy-pasting data between systems daily, that role has just become an automation project.', img: '/services-six-card/Marketing Automation Section/API Integration/Businesses with manual data entry bottlenecks.png' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Businesses using niche or custom software', desc: 'Platforms without a native integration ecosystem still need to connect, custom API work bridges the gap.', img: '/services-six-card/Marketing Automation Section/API Integration/Businesses using niche or custom software.png' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Businesses scaling past spreadsheet workflows', desc: 'What worked at a smaller size breaks down as volume grows. Proper integrations replace fragile manual processes.', img: '/services-six-card/Marketing Automation Section/API Integration/Businesses scaling past spreadsheet workflows.png' },
+  { icon: 'fa-solid fa-triangle-exclamation', title: 'Businesses that have been burned by data errors', desc: 'Missed orders, duplicate contacts, and mismatched records caused by manual transfer are a solvable problem.', img: '/services-six-card/Marketing Automation Section/API Integration/Businesses that have been burned by data errors.png' },
 ];
 
 const WHY_ISM = [
@@ -569,7 +569,7 @@ export default function ApiIntegrationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/apiwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

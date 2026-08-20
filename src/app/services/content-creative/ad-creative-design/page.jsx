@@ -46,15 +46,6 @@ const KEY_FACTORS = [
   { icon: 'fa-solid fa-gauge-high', title: 'Wasted Impression Rate', impact: 'Growing fast', desc: '23% of all ad impressions are considered wasted due to overexposure and creative fatigue, budget spent reaching people who have already tuned the creative out.' },
 ];
 
-const FORMATS = [
-  { icon: 'fa-solid fa-image', title: 'Static Image Ad Creative', desc: 'Single and multi-variant static sets designed to the platform’s visual norms, the campaign objective, and the audience’s position in the funnel.', img: 'https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=500&q=80' },
-  { icon: 'fa-solid fa-images', title: 'Carousel Ad Design', desc: 'Product, story-based, and benefit-led carousels designed as a sequence where each frame advances the narrative or presents a new element of the offer.', img: 'https://images.unsplash.com/photo-1522152302542-71a8e5172aa1?w=500&q=80' },
-  { icon: 'fa-solid fa-table-cells-large', title: 'Display and Banner Ad Sets', desc: 'Full sets in all standard IAB display sizes plus Google Responsive Display assets, with animated display ads in HTML5 where required.', img: 'https://images.unsplash.com/photo-1558698972-c50e325e6799?w=500&q=80' },
-  { icon: 'fa-solid fa-video', title: 'UGC-Style and Native Ad Creative', desc: 'Creative designed to look native to the platform rather than obviously branded, testimonial creative, founder-led formats, and native content treatments.', img: 'https://images.unsplash.com/photo-1620912189868-30778f884588?w=500&q=80' },
-  { icon: 'fa-brands fa-linkedin', title: 'LinkedIn Ad Creative', desc: 'Sponsored Content ads, Document Ads, and Conversation Ad copy designed for the LinkedIn feed’s professional context and B2B audiences.', img: 'https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?w=500&q=80' },
-  { icon: 'fa-solid fa-clapperboard', title: 'Video Ad Thumbnails and Static Frames', desc: 'Thumbnail design for YouTube and video campaigns, static frame ads, and end-card design for video creative across placements where video cannot run.', img: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-lightbulb', title: 'Creative Strategy and Messaging Framework', desc: 'The angles, hooks, and value propositions the creative set is built around, developed before any design begins.' },
   { icon: 'fa-solid fa-image', title: 'Static Image Ad Creative', desc: 'Multi-variant static sets for A/B testing across hooks, value propositions, and visual approaches.' },
@@ -67,12 +58,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Businesses running campaigns that are not converting', desc: 'If targeting is sound and budget is adequate but results are not there, the creative is almost certainly where the problem lives. We audit before we build.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Advertisers experiencing creative fatigue', desc: 'If performance was strong and has declined without targeting or budget changes, fatigue is the most likely cause. We diagnose it and implement a rotation plan.', img: 'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?w=700&q=80' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster, which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds, at the volume e-commerce campaigns require.', img: 'https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?w=700&q=80' },
-  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to, not repurposed Meta creative.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand, same quality, client-specific application, no Isuremedia references.', img: 'https://images.unsplash.com/photo-1784646583927-3159480116ac?w=700&q=80' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Businesses running campaigns that are not converting', desc: 'If targeting is sound and budget is adequate but results are not there, the creative is almost certainly where the problem lives. We audit before we build.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses running campaignsthat are not converting.png' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Advertisers experiencing creative fatigue', desc: 'If performance was strong and has declined without targeting or budget changes, fatigue is the most likely cause. We diagnose it and implement a rotation plan.', img: '/services-six-card/content_and_creative/Ads creative design/Advertisers experiencingcreative fatigue.png' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster, which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses scaling paid adspend.png' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds, at the volume e-commerce campaigns require.', img: '/services-six-card/content_and_creative/Ads creative design/E-commerce businesses onMeta and Google.png' },
+  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to, not repurposed Meta creative.', img: '/services-six-card/content_and_creative/Ads creative design/B2B businesses running Linkedlncampaigns.png' },
+  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand, same quality, client-specific application, no Isuremedia references.', img: '/services-six-card/content_and_creative/Ads creative design/Agencies white-labelling adcreative.png' },
 ];
 
 const WHY_ISM = [
@@ -473,69 +464,6 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. AD FORMATS WE PRODUCE ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Performance Creative Across Every Format Your Campaigns Need.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Different platforms and different funnel stages call for different formats. We produce every one to the platform&apos;s exact specs, nothing stretched, cropped, or left underperforming.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia Produces for Every Campaign</p>
-            <div className="formats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {FORMATS.map(g => (
-                <div key={g.title} className="formats-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="formats-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="formats-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .formats-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .formats-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .formats-card-img{ transition: transform .4s ease; }
-            .formats-card:hover .formats-card-img{ transform: scale(1.08); }
-            .formats-card:hover .formats-card-icon{ background: var(--ism-amber); }
-            .formats-card:hover .formats-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .formats-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .formats-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 08. WHAT CREATIVE FATIGUE IS COSTING YOU ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>This Is Happening in Your Account Right Now.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  After just four repeated exposures to the same creative, the likelihood of conversion drops by approximately{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>45%</span>.{' '}
-                  Click-through rates fall by 40% and conversion rates decline by as much as 60% at similar frequency levels.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>23% of all ad impressions</span>{' '}
-                  are considered wasted due to overexposure and creative fatigue, budget spent reaching people who have already tuned the creative out.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  The decline shows up as a ROAS plateau before it shows up in CTR or CPM, which means most advertisers do not catch it until significant budget has already been wasted. Running more of the same creative does not fix this. It accelerates it.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* ══ 09. OUR AD CREATIVE SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -660,7 +588,7 @@ export default function AdCreativeDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/acdwhatmakesdifferent2/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

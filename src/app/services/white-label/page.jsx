@@ -119,6 +119,9 @@ const FAQS = [
   { q: 'How do you handle reporting?', a: 'Reports go out on the schedule your clients expect, in the format they are used to, branded as your agency, SEO performance, paid ad results, and campaign overviews. Send us your template and we will match it.' },
   { q: 'What if a deliverable does not meet our standard?', a: 'You review everything before it goes to your client. If something needs to change, we change it, we do not charge for revision rounds. Proper briefing upfront is why most work passes review without significant changes.' },
   { q: 'How is pricing structured?', a: 'It depends on the service and volume, some priced per project, some per month, pods priced on skill mix and hours. We give you an honest range on the call and confirm full pricing before any work begins. No hidden fees.' },
+  { q: 'What is white-label digital marketing?', a: 'White-label marketing means we do the work and your agency takes the credit. Your clients see only your brand. No Isuremedia logos, no emails from our domain, no footprint of any kind.' },
+  { q: 'Do you offer white-label GoHighLevel setup?', a: 'Yes. We build complete GHL systems under your brand: CRM, pipelines, funnels, booking calendars, and email and SMS automations. Your clients get a fully operational system with only your branding.' },
+  { q: 'Is there a minimum commitment for white-label services?', a: 'No long-term contracts. We work month-to-month. You can start with one client, scale up as your agency grows, and pause or stop at any time.' },
 ];
 
 /* ── FAQ 2-COL ────────────────────────────────────────────────────── */

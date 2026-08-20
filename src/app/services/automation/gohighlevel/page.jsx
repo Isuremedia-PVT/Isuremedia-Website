@@ -65,11 +65,11 @@ const GHL_SERVICES = [
 ];
 
 const GHL_WHO_FOR = [
-  { icon: 'fa-solid fa-building-columns', title: 'Agencies reselling GoHighLevel', desc: 'Agencies that want to offer GHL to clients under their own brand need a white-labelled, properly structured account from the start.', img: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Home service businesses', desc: 'Plumbers, electricians, HVAC contractors, and cleaners use GHL to capture leads, book jobs, and follow up automatically after every call.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-headset', title: 'Coaches and consultants', desc: 'Booking flows, nurture sequences, and pipeline visibility that turn a coaching or consulting business into a repeatable client acquisition system.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Marketing agencies', desc: 'Agencies managing lead gen for multiple clients need pipelines, funnels, and reporting kept clearly separated and easy to hand off.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-building', title: 'Multi-location franchises', desc: 'Franchise owners need consistent sub-account structure across every location, with each one performing and reporting independently.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
+  { icon: 'fa-solid fa-building-columns', title: 'Agencies reselling GoHighLevel', desc: 'Agencies that want to offer GHL to clients under their own brand need a white-labelled, properly structured account from the start.', img: '/services-six-card/Marketing Automation Section/GHL setup and Automation/Agencies reselling GoHighLevel.png' },
+  { icon: 'fa-solid fa-truck', title: 'Home service businesses', desc: 'Plumbers, electricians, HVAC contractors, and cleaners use GHL to capture leads, book jobs, and follow up automatically after every call.', img: '/services-six-card/Marketing Automation Section/GHL setup and Automation/Home service businesses.png' },
+  { icon: 'fa-solid fa-headset', title: 'Coaches and consultants', desc: 'Booking flows, nurture sequences, and pipeline visibility that turn a coaching or consulting business into a repeatable client acquisition system.', img: '/services-six-card/Marketing Automation Section/GHL setup and Automation/Coaches and consultants.png' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Marketing agencies', desc: 'Agencies managing lead gen for multiple clients need pipelines, funnels, and reporting kept clearly separated and easy to hand off.', img: '/services-six-card/Marketing Automation Section/GHL setup and Automation/Marketing agencies.png' },
+  { icon: 'fa-solid fa-building', title: 'Multi-location franchises', desc: 'Franchise owners need consistent sub-account structure across every location, with each one performing and reporting independently.', img: '/services-six-card/Marketing Automation Section/GHL setup and Automation/Multi-location franchises.png' },
 ];
 
 const GHL_WHY_ISM = [
@@ -591,7 +591,7 @@ export default function GoHighLevelSetupPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/ghlwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = GHL_WHY_ISM[3]; return (

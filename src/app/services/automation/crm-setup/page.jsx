@@ -42,15 +42,6 @@ const CRM_KEY_FACTORS = [
   { icon: 'fa-solid fa-user-slash', title: 'Nobody Owns the CRM After Go-Live', impact: 'Growing risk', desc: 'CRM data decays. Contact details change, deals stall in the wrong stage, and custom fields get used inconsistently. A CRM that is not actively maintained becomes untrustworthy within months.' },
 ];
 
-const CRM_INCLUDED_CARDS = [
-  { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'We help you identify the right CRM for your business, GoHighLevel, HubSpot, Salesforce, Pipedrive, or another platform, based on your team size, sales process, budget, and existing tools.', img: 'https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?w=500&q=80' },
-  { icon: 'fa-solid fa-sitemap', title: 'Pipeline Design and Configuration', desc: 'Pipeline stages that match your actual sales process, from first enquiry through to closed deal, onboarding, and retention, with custom fields and stage-change triggers.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80' },
-  { icon: 'fa-solid fa-file-import', title: 'Contact and Lead Data Import', desc: 'We clean, format, and import your existing contact and lead data, deduplicating records, filling missing fields, and segmenting contacts into the right lists from day one.', img: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=500&q=80' },
-  { icon: 'fa-solid fa-robot', title: 'Automation of Manual Data Entry', desc: 'Form submissions that create contacts and start pipeline stages automatically, email integrations that log communication, and booking integrations that update deal records.', img: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=500&q=80' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Team Training and Adoption Support', desc: 'Training specific to your setup, your pipeline stages, and your sales process, including the why behind each part of the system so adoption is sustainable.', img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&q=80' },
-  { icon: 'fa-solid fa-broom', title: 'Ongoing CRM Management and Hygiene', desc: 'Monthly data quality reviews, contact deduplication, pipeline stage audits, automation monitoring, and configuration updates as your business evolves.', img: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80' },
-];
-
 const CRM_SERVICES = [
   { icon: 'fa-solid fa-layer-group', title: 'CRM Platform Selection and Strategy', desc: 'The right CRM for your team size, sales process, budget, and existing tools, not just the most popular platform on the market.' },
   { icon: 'fa-solid fa-sitemap', title: 'Pipeline Design and Configuration', desc: 'Custom stages, custom fields at each stage, required fields, and stage-change triggers that make the pipeline reflect reality.' },
@@ -63,12 +54,12 @@ const CRM_SERVICES = [
 ];
 
 const CRM_WHO_FOR = [
-  { icon: 'fa-solid fa-table-list', title: 'Businesses still managing leads in spreadsheets', desc: 'Spreadsheets break at scale. Leads get missed, follow-ups are inconsistent, and there is no single view of the pipeline. The transition is significantly smoother with professional setup.', img: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700&q=80' },
-  { icon: 'fa-solid fa-ban', title: 'Businesses with a CRM their team does not use', desc: 'If the CRM is there but the team is working around it, the configuration is the problem. We audit what is there, rebuild what is not working, and train the team on the version that fits how they sell.', img: 'https://images.unsplash.com/photo-1568658176307-bfbd2873abda?w=700&q=80' },
-  { icon: 'fa-solid fa-truck', title: 'Service businesses managing long sales cycles', desc: 'Professional services, legal, financial, healthcare, real estate, businesses where a relationship might take weeks or months to convert need a CRM that tracks every stage accurately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-user-plus', title: 'Growing businesses adding salespeople', desc: 'When a second or third salesperson joins, informal lead management breaks. A properly configured CRM gives every team member the same view of every contact.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing delivery and new business', desc: 'Agencies need to track both the pipeline for new business and the status of existing client relationships, often in the same system, without creating complexity.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
-  { icon: 'fa-solid fa-right-left', title: 'Businesses migrating from one CRM to another', desc: 'Moving from HubSpot to GoHighLevel, from Salesforce to something simpler, or from any other CRM. We manage the data transfer and verify everything before the old system is decommissioned.', img: 'https://images.unsplash.com/photo-1484383707950-89c8d3276e53?w=700&q=80' },
+  { icon: 'fa-solid fa-table-list', title: 'Businesses still managing leads in spreadsheets', desc: 'Spreadsheets break at scale. Leads get missed, follow-ups are inconsistent, and there is no single view of the pipeline. The transition is significantly smoother with professional setup.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Businesses still managing leads in spreadsheets.png' },
+  { icon: 'fa-solid fa-ban', title: 'Businesses with a CRM their team does not use', desc: 'If the CRM is there but the team is working around it, the configuration is the problem. We audit what is there, rebuild what is not working, and train the team on the version that fits how they sell.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Businesses with a CRM their team does not use.png' },
+  { icon: 'fa-solid fa-truck', title: 'Service businesses managing long sales cycles', desc: 'Professional services, legal, financial, healthcare, real estate, businesses where a relationship might take weeks or months to convert need a CRM that tracks every stage accurately.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Service businesses managing long sales cycles.png' },
+  { icon: 'fa-solid fa-user-plus', title: 'Growing businesses adding salespeople', desc: 'When a second or third salesperson joins, informal lead management breaks. A properly configured CRM gives every team member the same view of every contact.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Growing businesses adding salespeople.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing delivery and new business', desc: 'Agencies need to track both the pipeline for new business and the status of existing client relationships, often in the same system, without creating complexity.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Agencies managing delivery and new business.png' },
+  { icon: 'fa-solid fa-right-left', title: 'Businesses migrating from one CRM to another', desc: 'Moving from HubSpot to GoHighLevel, from Salesforce to something simpler, or from any other CRM. We manage the data transfer and verify everything before the old system is decommissioned.', img: '/services-six-card/Marketing Automation Section/CRM setup & Management/Businesses migrating from one CRM to another.png' },
 ];
 
 const CRM_WHY_ISM = [
@@ -467,46 +458,6 @@ export default function CRMSetupPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR CRM SETUP SERVICES ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Configuration That Fits Your Business. Management That Keeps It Accurate.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every engagement starts with discovery, understanding how your team actually sells before a single setting is touched.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia builds into your CRM</p>
-            <div className="crm-included-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {CRM_INCLUDED_CARDS.map(g => (
-                <div key={g.title} className="crm-included-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="crm-included-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="crm-included-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .crm-included-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .crm-included-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .crm-included-card-img{ transition: transform .4s ease; }
-            .crm-included-card:hover .crm-included-card-img{ transform: scale(1.08); }
-            .crm-included-card:hover .crm-included-card-icon{ background: var(--ism-amber); }
-            .crm-included-card:hover .crm-included-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .crm-included-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .crm-included-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
         {/* ══ 09. OUR CRM SETUP SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -631,7 +582,7 @@ export default function CRMSetupPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/crmwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = CRM_WHY_ISM[3]; return (

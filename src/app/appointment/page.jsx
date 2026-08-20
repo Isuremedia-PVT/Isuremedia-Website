@@ -16,7 +16,7 @@ const EXPECT_STEPS = [
 const CONTACT_QUICK = [
   { icon: 'fa-solid fa-phone',    label: 'Call Us',  text: '+91 70110 41363', href: 'tel:+917011041363' },
   { icon: 'fa-solid fa-envelope', label: 'Email',    text: 'info@isuremedia.com', href: 'mailto:info@isuremedia.com' },
-  { icon: 'fa-solid fa-clock',    label: 'Hours',    text: 'Mon–Fri 9 AM – 7 PM IST' },
+  { icon: 'fa-solid fa-clock',    label: 'Hours',    text: 'Mon–Fri 9 AM – 6 PM IST' },
   { icon: 'fa-solid fa-globe',    label: 'Time Zone', text: 'All timings are IST (UTC+5:30)' },
 ];
 
@@ -37,10 +37,14 @@ export default function AppointmentPage() {
 
               {/* LEFT */}
               <div>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
+                  <div style={{ width: 26, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase', color: 'var(--color-primary)' }}>Let&apos;s Talk Growth</span>
+                </div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(32px,4.5vw,60px)', color: 'var(--color-navy)', lineHeight: 1.06, letterSpacing: '-0.5px', marginBottom: 20 }}>
                   Book a Free Strategy Call.
                 </h1>
-                <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 40 }}>
+                <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 32 }}>
                   Pick a time that works for you. We show up prepared, with real ideas for your business, not a generic pitch.
                 </p>
 
@@ -59,20 +63,38 @@ export default function AppointmentPage() {
                 </div>
               </div>
 
-              {/* RIGHT, quick info */}
-              <div className="appt-quick-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-                {CONTACT_QUICK.map(c => (
-                  <div key={c.label} style={{ background: '#fff', borderRadius: 14, padding: '20px 18px', boxShadow: '0 2px 16px rgba(30,77,195,.08)', border: '1px solid var(--color-border)' }}>
-                    <div style={{ width: 42, height: 42, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
-                      <i className={c.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
+              {/* RIGHT, photo + floating contact card */}
+              <div className="appt-hero-photo-wrap" style={{ position: 'relative' }}>
+                <div style={{ borderRadius: 24, overflow: 'hidden', height: 400, boxShadow: '0 16px 48px rgba(0,35,83,.16)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/career-about/Team image for GMB new 4.webp"
+                    alt="The Isuremedia team"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+
+                <div style={{ position: 'absolute', top: 20, right: -14, background: 'var(--ism-amber)', borderRadius: 12, padding: '10px 16px', boxShadow: '0 8px 22px rgba(255,176,0,.40)', display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <i className="fa-solid fa-calendar-check" style={{ fontSize: 13, color: 'var(--color-navy)' }} />
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--color-navy)' }}>Slots Open Today</span>
+                </div>
+
+                <div className="appt-quick-cards" style={{ position: 'absolute', bottom: -24, left: -20, right: 40, background: '#fff', borderRadius: 14, padding: '13px 15px', boxShadow: '0 12px 32px rgba(0,35,83,.14)', border: '1px solid var(--color-border)', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 18, rowGap: 10 }}>
+                  {CONTACT_QUICK.map(c => (
+                    <div key={c.label} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+                      <div style={{ width: 25, height: 25, borderRadius: 7, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <i className={c.icon} style={{ fontSize: 10.5, color: 'var(--color-primary)' }} />
+                      </div>
+                      <div style={{ minWidth: 0 }}>
+                        <p style={{ fontFamily: J, fontSize: 8.5, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 2px' }}>{c.label}</p>
+                        {c.href
+                          ? <a href={c.href} style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, textDecoration: 'none', lineHeight: 1.35 }}>{c.text}</a>
+                          : <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.35, wordBreak: 'break-word' }}>{c.text}</p>
+                        }
+                      </div>
                     </div>
-                    <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.07em', textTransform: 'uppercase', marginBottom: 5 }}>{c.label}</p>
-                    {c.href
-                      ? <a href={c.href} style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', fontWeight: 600, textDecoration: 'none' }}>{c.text}</a>
-                      : <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', fontWeight: 600, margin: 0 }}>{c.text}</p>
-                    }
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
             </div>
@@ -189,9 +211,10 @@ export default function AppointmentPage() {
 
         /* ─── Tablet (≤860px) ─── */
         @media (max-width: 860px) {
-          .appt-hero { padding: 48px 0 52px !important; }
+          .appt-hero { padding: 48px 0 76px !important; }
           .appt-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; min-height: unset !important; }
-          .appt-quick-cards { grid-template-columns: repeat(4,1fr) !important; gap: 12px !important; }
+          .appt-hero-photo-wrap { margin-bottom: 40px; }
+          .appt-quick-cards { left: 16px !important; right: 16px !important; bottom: -24px !important; }
           .appt-booking-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
           .appt-panel-inner { position: static !important; }
         }
@@ -199,15 +222,17 @@ export default function AppointmentPage() {
         /* ─── Mobile (≤640px) ─── */
         @media (max-width: 640px) {
           .appt-container { padding: 0 20px !important; }
-          .appt-hero { padding: 40px 0 44px !important; }
-          .appt-quick-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+          .appt-hero { padding: 40px 0 32px !important; }
+          .appt-hero-photo-wrap { margin-bottom: 0; }
+          .appt-hero-photo-wrap > div:first-child { height: 300px !important; }
+          .appt-quick-cards { position: static !important; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,35,83,.10) !important; grid-template-columns: 1fr 1fr !important; }
           .appt-card { padding: 24px 18px !important; border-radius: 16px !important; }
           .appt-panel-inner { padding: 28px 22px !important; border-radius: 18px !important; }
         }
 
         /* ─── Small mobile (≤400px) ─── */
         @media (max-width: 400px) {
-          .appt-quick-cards { grid-template-columns: 1fr 1fr !important; }
+          .appt-quick-cards { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </>

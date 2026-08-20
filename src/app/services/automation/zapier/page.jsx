@@ -65,12 +65,12 @@ const ZAP_SERVICES = [
 ];
 
 const ZAP_WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Small businesses without a developer', desc: 'Zapier connects the tools you already use without writing code, making it the fastest way for lean teams to eliminate manual busywork.', img: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies juggling multiple client tools', desc: 'Agencies running different tool stacks per client need workflows that stay organised and documented across every account.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-users', title: 'Sales teams tired of manual data entry', desc: 'Lead routing, deal alerts, and CRM updates that happen automatically free sales reps to spend time selling instead of copying data.', img: 'https://images.unsplash.com/photo-1568658176307-bfbd2873abda?w=700&q=80' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses connecting order tools', desc: 'Orders, shipping notifications, and customer follow-ups synced automatically between your store, email, and fulfilment tools.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Service businesses automating bookings', desc: 'Booking confirmations that trigger invoices, calendar updates, and follow-up sequences without anyone touching a keyboard.', img: 'https://images.unsplash.com/photo-1584472666879-7d92db132958?w=700&q=80' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardising their stack', desc: 'As headcount grows, informal processes break down. Documented Zapier workflows give every new hire the same reliable process from day one.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
+  { icon: 'fa-solid fa-store', title: 'Small businesses without a developer', desc: 'Zapier connects the tools you already use without writing code, making it the fastest way for lean teams to eliminate manual busywork.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Small businesses without a developer.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies juggling multiple client tools', desc: 'Agencies running different tool stacks per client need workflows that stay organised and documented across every account.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Agencies juggling multiple client tools.png' },
+  { icon: 'fa-solid fa-users', title: 'Sales teams tired of manual data entry', desc: 'Lead routing, deal alerts, and CRM updates that happen automatically free sales reps to spend time selling instead of copying data.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Sales teams tired of manual data entry.png' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses connecting order tools', desc: 'Orders, shipping notifications, and customer follow-ups synced automatically between your store, email, and fulfilment tools.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/E-commerce businesses connecting order tools.png' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Service businesses automating bookings', desc: 'Booking confirmations that trigger invoices, calendar updates, and follow-up sequences without anyone touching a keyboard.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Service businesses automating bookings.png' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardising their stack', desc: 'As headcount grows, informal processes break down. Documented Zapier workflows give every new hire the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Growing teams standardising their stack.png' },
 ];
 
 const ZAP_WHY_ISM = [
@@ -591,7 +591,7 @@ export default function ZapierPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/zapierwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = ZAP_WHY_ISM[3]; return (

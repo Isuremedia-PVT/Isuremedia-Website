@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -35,7 +36,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }

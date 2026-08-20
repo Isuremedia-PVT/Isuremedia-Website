@@ -213,6 +213,7 @@ const faqs = [
   { q: 'Which page builders do your WordPress developers work with?', a: <>The developers work across <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Elementor, Divi, Bricks, Oxygen, Gutenberg</span>, and WooCommerce. Whatever your site is built on, it is already familiar territory.</> },
   { q: 'Can you work on an existing WordPress site or only new builds?', a: <>Both. A large part of the work ISureMedia handles is improving, fixing, or building on top of sites that already exist. If your current WordPress site is not performing the way it should, that is just as <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>straightforward to scope</span> as starting fresh.</> },
   { q: 'Do you handle WooCommerce or just standard WordPress sites?', a: <>WooCommerce is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fully within scope</span>. Store builds, product architecture, checkout improvements, payment gateway integrations, subscription functionality, and performance fixes for existing stores are all covered.</> },
+  { q: 'What is the difference between a project-based and a monthly retainer engagement?', a: 'A project-based engagement suits a defined piece of work: a new website build, a WooCommerce store, a migration, or a specific fix. The scope and cost are agreed upfront and the project is delivered with your sign-off at each stage. A monthly retainer suits ongoing needs: regular updates, new features, performance improvements, and maintenance. The same developer works on your site each month and knows it inside out, so there is no re-briefing or context-switching.' },
 ];
 
 
@@ -750,16 +751,11 @@ export default function HireWordPressDeveloper() {
 
         <style>{`
           @media (max-width: 1024px) {
-            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 32px !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: span 2; max-width: 55%; margin: 0 auto; }
-          }
-          @media (max-width: 768px) {
-            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 24px !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: span 2; max-width: 100%; }
+            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 28px 24px !important; }
+            .wp-whyism-grid > div:nth-child(2) { grid-column: auto !important; transform: none !important; box-shadow: none !important; }
           }
           @media (max-width: 600px) {
             .wp-whyism-grid { grid-template-columns: 1fr !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: auto !important; max-width: 100% !important; }
           }
         `}</style>
       </section>
@@ -952,7 +948,7 @@ export default function HireWordPressDeveloper() {
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">
-          <div style={{ background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', position: 'relative', overflow: 'hidden', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ background: 'linear-gradient(135deg,#1E4DC3 0%,#4484EE 100%)', borderRadius: 24, padding: '56px 60px', position: 'relative', overflow: 'hidden', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
             {/* Decorative elements */}
             <div style={{ position: 'absolute', top: '-15%', right: '25%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
             <div style={{ position: 'absolute', bottom: '-20%', left: '5%', width: 300, height: 300, background: 'radial-gradient(circle,rgba(255,176,0,.12) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
@@ -1039,14 +1035,6 @@ export default function HireWordPressDeveloper() {
         }
         @media (max-width: 540px) {
           .wp-proof-grid { grid-template-columns: 1fr !important; }
-        }
-
-        /* ── Why WordPress + Why ISM Cards ── */
-        @media (max-width: 900px) {
-          .wp-why-grid, .wp-whyism-grid { grid-template-columns: 1fr 1fr !important; }
-        }
-        @media (max-width: 540px) {
-          .wp-why-grid, .wp-whyism-grid { grid-template-columns: 1fr !important; }
         }
 
         /* ── Services Section Homepage Styling ── */

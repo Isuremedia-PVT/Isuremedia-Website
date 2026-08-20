@@ -75,6 +75,9 @@ const FAQS = [
   { q: 'Can you take over existing campaigns that are not working?',           a: 'Yes, regularly. We audit your account, identify what is wasting budget and what is worth keeping, restructure properly, and turn it around. The audit is free, and we tell you honestly if it is worth rebuilding.' },
   { q: 'Do you offer white-label PPC management for agencies?',                a: 'Yes. If you run a marketing agency and need paid ads managed for your clients, we handle the full delivery under your brand, you present the results, we do the work. No footprint, no contact with your clients.' },
   { q: 'What is your management fee structure?',                              a: 'We charge a management fee based on the scope of the account, not a percentage of ad spend, so we have no incentive to push your budget higher than it needs to be. We scope the work upfront and tell you exactly what it covers.' },
+  { q: 'What is a good ROAS for Google Ads?',                                  a: 'For most service businesses, a 3x–5x ROAS is a solid benchmark. E-commerce businesses typically target 4x or higher. Your target depends on your margins and cost per acquisition goals.' },
+  { q: 'Do you manage existing ad accounts or create new ones?',              a: 'Both. We can take over and optimise your existing campaigns or build new accounts from scratch. We always start with an audit to identify wasted spend before making changes.' },
+  { q: 'Do you write the ad copy and design the creatives?',                  a: 'Yes. Our team handles ad copywriting and creative design. For Meta and display campaigns, we produce the graphics and video thumbnails as part of the service.' },
 ];
 
 function FAQAccordion() {

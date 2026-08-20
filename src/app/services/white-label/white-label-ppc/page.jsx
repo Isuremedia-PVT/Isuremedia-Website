@@ -58,12 +58,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-slash', title: 'Agencies without an in-house PPC specialist', desc: 'You can say yes to paid media work without hiring, training, or maintaining certifications your agency does not use often enough to justify.', img: 'https://picsum.photos/seed/wlppc-whofor-nospecialist/700/620' },
-  { icon: 'fa-solid fa-tags', title: 'Agencies wanting to resell paid media without hiring', desc: 'Add Google, Meta, and LinkedIn Ads to your service menu and keep the margin, without carrying the payroll of a media buying team.', img: 'https://picsum.photos/seed/wlppc-whofor-resell/700/620' },
-  { icon: 'fa-solid fa-comments', title: 'Agencies with clients requesting Google, Meta or LinkedIn ads', desc: 'When a client asks for paid ads, say yes on the spot instead of referring them elsewhere and risking the relationship.', img: 'https://picsum.photos/seed/wlppc-whofor-requests/700/620' },
-  { icon: 'fa-solid fa-chart-line', title: 'Agencies wanting predictable margin on ad management', desc: 'A fixed white-label rate against what you charge the client gives you a predictable, repeatable margin on every account.', img: 'https://picsum.photos/seed/wlppc-whofor-margin/700/620' },
-  { icon: 'fa-solid fa-layer-group', title: 'Agencies needing overflow PPC capacity', desc: 'When your in-house team is at capacity, white-label overflow keeps new accounts moving without delaying onboarding.', img: 'https://picsum.photos/seed/wlppc-whofor-overflow/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding without certification overhead', desc: 'Expand into paid media as a core offering while we carry the certification, platform training, and day-to-day account management.', img: 'https://picsum.photos/seed/wlppc-whofor-expand/700/620' },
+  { icon: 'fa-solid fa-user-slash', title: 'Agencies without an in-house PPC specialist', desc: 'You can say yes to paid media work without hiring, training, or maintaining certifications your agency does not use often enough to justify.', img: '/services-six-card/White Label/White Label ppc/Agencies without an in-housePPC specialist.png' },
+  { icon: 'fa-solid fa-tags', title: 'Agencies wanting to resell paid media without hiring', desc: 'Add Google, Meta, and LinkedIn Ads to your service menu and keep the margin, without carrying the payroll of a media buying team.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting to resell paidmedia without hiring.png' },
+  { icon: 'fa-solid fa-comments', title: 'Agencies with clients requesting Google, Meta or LinkedIn ads', desc: 'When a client asks for paid ads, say yes on the spot instead of referring them elsewhere and risking the relationship.', img: '/services-six-card/White Label/White Label ppc/Agencies with clients requestingGoogle, Meta or Linkedln ads.png' },
+  { icon: 'fa-solid fa-chart-line', title: 'Agencies wanting predictable margin on ad management', desc: 'A fixed white-label rate against what you charge the client gives you a predictable, repeatable margin on every account.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting predictablemargin on ad management.png' },
+  { icon: 'fa-solid fa-layer-group', title: 'Agencies needing overflow PPC capacity', desc: 'When your in-house team is at capacity, white-label overflow keeps new accounts moving without delaying onboarding.', img: '/services-six-card/White Label/White Label ppc/Agencies needing overflow PPCcapacity.png' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding without certification overhead', desc: 'Expand into paid media as a core offering while we carry the certification, platform training, and day-to-day account management.', img: '/services-six-card/White Label/White Label ppc/Agencies expanding withoutcertification overhead.png' },
 ];
 
 const WHY_ISM = [
@@ -593,7 +593,7 @@ export default function WhiteLabelPPCPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/wlppcwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

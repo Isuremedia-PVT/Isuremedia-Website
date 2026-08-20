@@ -57,11 +57,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-mobile-screen-button', title: 'Brands posting daily social content', desc: 'Consistent short-form posting requires an editing pipeline, not a single editor working around other priorities.', img: 'https://picsum.photos/seed/vid-whofor-daily/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint, we scale to match demand.', img: 'https://picsum.photos/seed/vid-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative, we keep the pipeline fed so testing never stalls.', img: 'https://picsum.photos/seed/vid-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has, once they are edited into something worth sharing.', img: 'https://picsum.photos/seed/vid-whofor-coach/700/620' },
-  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content, we turn the backlog into a pipeline.', img: 'https://picsum.photos/seed/vid-whofor-footage/700/620' },
+  { icon: 'fa-solid fa-mobile-screen-button', title: 'Brands posting daily social content', desc: 'Consistent short-form posting requires an editing pipeline, not a single editor working around other priorities.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/brand posting.png' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Agencies needing white-label video.png' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative, we keep the pipeline fed so testing never stalls.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/E-commerce brands needing ad creative.png' },
+  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has, once they are edited into something worth sharing.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Coaches and consultantsneeding testimonial videos.png' },
+  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content, we turn the backlog into a pipeline.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Businesses sitting on uneditedraw footage.png' },
   { icon: 'fa-solid fa-display', title: 'SaaS companies needing demo and explainer videos', desc: 'Product walkthroughs and explainer videos that make a feature clear in under sixty seconds, not five minutes.', img: 'https://picsum.photos/seed/vid-whofor-saas/700/620' },
 ];
 
@@ -573,7 +573,7 @@ export default function VideoMarketingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/vidwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

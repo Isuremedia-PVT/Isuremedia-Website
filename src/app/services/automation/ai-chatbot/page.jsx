@@ -46,15 +46,6 @@ const KEY_FACTORS = [
   { icon: 'fa-solid fa-chart-line', title: 'Performance Monitoring and Optimisation', impact: 'Growing fast', desc: 'We monitor conversation completion rates, escalation rates, and booking conversion, and make ongoing improvements based on what the data shows.' },
 ];
 
-const CHANNELS = [
-  { icon: 'fa-solid fa-globe', title: 'Website Deployment', desc: 'A trained AI agent embedded directly on your site that engages every visitor the moment they land, answering questions and qualifying leads instantly.', img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&q=80' },
-  { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp Business', desc: 'The same qualification and booking logic deployed inside WhatsApp, where a huge share of your customers already message you.', img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=500&q=80' },
-  { icon: 'fa-solid fa-robot', title: 'GoHighLevel AI Chatbot', desc: 'Chatbot deployed directly inside your GHL account so every conversation, booking, and lead lives in one connected system, fully integrated with your CRM and pipelines.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80' },
-  { icon: 'fa-brands fa-facebook-f', title: 'Facebook Messenger', desc: 'Capture and qualify leads coming from your Facebook page and ads without them ever having to leave the conversation.', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=80' },
-  { icon: 'fa-brands fa-instagram', title: 'Instagram DM', desc: 'Turn Instagram enquiries into qualified, booked appointments automatically instead of getting lost in a crowded inbox.', img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&q=80' },
-  { icon: 'fa-solid fa-comment-dots', title: 'Channel-Specific Deployment', desc: 'Wherever your customers are most active, we deploy the same trained chatbot logic so every conversation is handled consistently.', img: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-comments', title: 'Chatbot Strategy and Conversation Flow Design', desc: 'We map the conversation strategy around how your customers actually enquire, not a generic template.' },
   { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', desc: 'Built on the platform that fits your business, including all conversation flows, response logic, and escalation pathways.' },
@@ -67,12 +58,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching, any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: 'https://images.unsplash.com/photo-1641199788912-9a7385a35c82?w=700&q=80' },
-  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week, pricing, availability, process, a chatbot handles those automatically and frees the team for conversations that need a human.', img: 'https://images.unsplash.com/photo-1642522029686-5485ea7e6042?w=700&q=80' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing, routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions, company size, budget, timeline, need, before routing to a sales rep produces significantly higher-quality conversations.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Local service businesses running paid ad campaigns', desc: 'A paid ad that drives traffic to a landing page with a chatbot converts at a higher rate than one that drives to a contact form, because it provides immediate, interactive engagement.', img: 'https://images.unsplash.com/photo-1745509267699-1b1db256601e?w=700&q=80' },
-  { icon: 'fa-solid fa-building', title: 'High-volume businesses that cannot scale headcount', desc: 'A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality or speed. Scaling human support by the same ratio would require proportionally more headcount and cost.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
+  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching, any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Service businesses with after-hours enquiry traffic.png' },
+  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week, pricing, availability, process, a chatbot handles those automatically and frees the team for conversations that need a human.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Teams that spend too much time on repetitive questions.png' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing, routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/E-commerce businesses handling high volumes.png' },
+  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions, company size, budget, timeline, need, before routing to a sales rep produces significantly higher-quality conversations.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/B2B businesses qualifying inbound leads.png' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Local service businesses running paid ad campaigns', desc: 'A paid ad that drives traffic to a landing page with a chatbot converts at a higher rate than one that drives to a contact form, because it provides immediate, interactive engagement.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Local service businesses running paid ad campaigns.png' },
+  { icon: 'fa-solid fa-building', title: 'High-volume businesses that cannot scale headcount', desc: 'A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality or speed. Scaling human support by the same ratio would require proportionally more headcount and cost.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/High-volume businesses that cannot scale headcount.png' },
 ];
 
 const WHY_ISM = [
@@ -477,46 +468,6 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. WHERE WE DEPLOY YOUR CHATBOT ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>One Chatbot Brain. Every Channel Your Customers Use.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Your customers do not all message the same way. We deploy the same trained chatbot logic across whichever channels your business relies on, so every conversation is handled consistently.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>Where We Deploy Your Chatbot</p>
-            <div className="channel-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {CHANNELS.map(g => (
-                <div key={g.title} className="channel-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="channel-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="channel-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .channel-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .channel-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .channel-card-img{ transition: transform .4s ease; }
-            .channel-card:hover .channel-card-img{ transform: scale(1.08); }
-            .channel-card:hover .channel-card-icon{ background: var(--ism-amber); }
-            .channel-card:hover .channel-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .channel-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .channel-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
         {/* ══ 09. OUR AI CHATBOT SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -641,7 +592,7 @@ export default function AIChatbotPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/chatbotwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

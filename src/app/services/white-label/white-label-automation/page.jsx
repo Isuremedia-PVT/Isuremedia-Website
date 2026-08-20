@@ -67,11 +67,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS resellers with growing client bases', desc: 'At five clients you handle support yourself. At fifty it is a full-time job. White-label support scales with your client base without scaling your personal time commitment.', img: 'https://images.unsplash.com/photo-1702047076267-6719aadd2807?w=700&q=80' },
-  { icon: 'fa-solid fa-users', title: 'Agencies using GHL as a retention tool', desc: 'Clients embedded in the platform generate embedded support requests. White-label support keeps those clients happy without the burden falling on your account managers.', img: 'https://images.unsplash.com/photo-1563279699-4c5dfcab048c?w=700&q=80' },
-  { icon: 'fa-solid fa-bolt', title: 'Agencies onboarding faster than they can set up', desc: 'A sales process that closes clients faster than the onboarding team can configure them creates a backlog that damages the first impression. Support keeps setup inside your sold timeline.', img: 'https://images.unsplash.com/photo-1716703742287-2b06c3c6d81a?w=700&q=80' },
-  { icon: 'fa-solid fa-user-clock', title: 'Owners spending too much time inside GHL', desc: 'If you are the most GHL-experienced person in the agency and support requests pull you into the platform for hours a week, white-label support removes you from the execution loop.', img: 'https://images.unsplash.com/photo-1726594699522-d7c2f5459f52?w=700&q=80' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding into GHL without deep expertise', desc: 'If you are adding GHL to your offering but your team is not deeply experienced yet, white-label support lets you sell it confidently while we handle the technical delivery.', img: 'https://images.unsplash.com/photo-1702047094974-a3475a6e37f5?w=700&q=80' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS resellers with growing client bases', desc: 'At five clients you handle support yourself. At fifty it is a full-time job. White-label support scales with your client base without scaling your personal time commitment.', img: '/services-six-card/White Label/whhite label ghl support/GHL SaaS resellers with growingclient bases.png' },
+  { icon: 'fa-solid fa-users', title: 'Agencies using GHL as a retention tool', desc: 'Clients embedded in the platform generate embedded support requests. White-label support keeps those clients happy without the burden falling on your account managers.', img: '/services-six-card/White Label/whhite label ghl support/Agencies using GHL as aretention tool.png' },
+  { icon: 'fa-solid fa-bolt', title: 'Agencies onboarding faster than they can set up', desc: 'A sales process that closes clients faster than the onboarding team can configure them creates a backlog that damages the first impression. Support keeps setup inside your sold timeline.', img: '/services-six-card/White Label/whhite label ghl support/Agencies onboarding fasterthan they can set up.png' },
+  { icon: 'fa-solid fa-user-clock', title: 'Owners spending too much time inside GHL', desc: 'If you are the most GHL-experienced person in the agency and support requests pull you into the platform for hours a week, white-label support removes you from the execution loop.', img: '/services-six-card/White Label/whhite label ghl support/Owners spending too much timeinside GHL.png' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding into GHL without deep expertise', desc: 'If you are adding GHL to your offering but your team is not deeply experienced yet, white-label support lets you sell it confidently while we handle the technical delivery.', img: '/services-six-card/White Label/whhite label ghl support/Agencies expanding into GHLwithout deep expertise.png' },
 ];
 
 const WHY_ISM = [
@@ -595,7 +595,7 @@ export default function WhiteLabelAutomationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/wlaghlwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

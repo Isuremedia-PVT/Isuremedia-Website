@@ -42,15 +42,6 @@ const LINK_FACTORS = [
   { icon: 'fa-solid fa-shield-halved', title: 'What We Never Build', impact: 'Zero tolerance', desc: 'Links from private blog networks, paid link schemes, irrelevant websites, auto-generated directories, or any source that violates Google&apos;s link spam guidelines. These create risk, not authority, and the ranking gains they produce rarely last.' },
 ];
 
-const OFFERINGS = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Backlink Audit & Competitor Gap Analysis', desc: 'We start by auditing your existing backlink profile, identifying your strongest links, flagging harmful ones, and mapping the gap between your domain authority and your top competitors.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80' },
-  { icon: 'fa-solid fa-handshake', title: 'Editorial Outreach', desc: 'We identify relevant, high-authority websites in your industry and pitch content ideas that earn genuine editorial placements built around your target keywords and pages.', img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&q=80' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Guest Post Campaigns', desc: 'We research, write, and place original content on real industry publications with editorial standards and genuine readership, each with a contextual, keyword-relevant link back to your site.', img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&q=80' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Digital PR and Data-Led Campaigns', desc: 'We create original research, data studies, or newsworthy content assets and pitch them to relevant journalists and publications, earning the highest-authority links available.', img: 'https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?w=500&q=80' },
-  { icon: 'fa-solid fa-link-slash', title: 'Niche Edits and Link Insertions', desc: 'We secure placements inside already-published, already-ranking content on relevant websites, a fast and effective way to build authority without waiting for new content to mature.', img: 'https://images.unsplash.com/photo-1754548930574-6a995e5eb5a7?w=500&q=80' },
-  { icon: 'fa-solid fa-font', title: 'Anchor Text Strategy & Link Monitoring', desc: 'We manage your anchor text profile deliberately and monitor your backlink profile continuously, handling disavow submissions where harmful links appear so your profile stays clean.', img: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Backlink Audit & Competitor Gap Analysis', desc: 'We audit your existing backlink profile and map the gap between your domain authority and your top competitors, so we know exactly what your site needs.' },
   { icon: 'fa-solid fa-handshake', title: 'Editorial Outreach', desc: 'We pitch relevant, high-authority websites in your industry with content ideas that earn genuine editorial placements around your target keywords.' },
@@ -471,46 +462,6 @@ export default function LinkBuildingPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. HOW WE BUILD YOUR LINKS ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>White-Hat Links From Real Websites. Built to Last.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                No single tactic builds a strong link profile on its own. We combine several proven, white-hat methods so your authority grows from a genuinely diverse set of sources.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>How Isuremedia Builds Your Link Profile</p>
-            <div className="lb-offer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {OFFERINGS.map(g => (
-                <div key={g.title} className="lb-offer-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="lb-offer-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="lb-offer-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .lb-offer-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .lb-offer-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .lb-offer-card-img{ transition: transform .4s ease; }
-            .lb-offer-card:hover .lb-offer-card-img{ transform: scale(1.08); }
-            .lb-offer-card:hover .lb-offer-card-icon{ background: var(--ism-amber); }
-            .lb-offer-card:hover .lb-offer-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .lb-offer-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .lb-offer-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
         {/* ══ 08. OUR LINK BUILDING SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
@@ -635,7 +586,7 @@ export default function LinkBuildingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/lbwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\seo.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
