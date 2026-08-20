@@ -609,7 +609,7 @@ export default function HireWordPressDeveloper() {
       {/* ════════════════════════════════════════
           SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 130, paddingBottom: 64, background: '#fff', overflow: 'hidden' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 150, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>
@@ -644,7 +644,7 @@ export default function HireWordPressDeveloper() {
               <img
                 src="/result_footer/ready_for_result.webp"
                 alt="WordPress Developer CTA"
-                style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '150%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
+                style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '125%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
             </div>
 
