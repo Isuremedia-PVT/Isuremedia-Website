@@ -57,12 +57,12 @@ const SPA_SERVICES = [
 ];
 
 const SPA_WHO_FOR = [
-  { icon: 'fa-solid fa-table-list', title: 'Sales teams outgrowing spreadsheets', desc: 'Once deal volume outpaces manual tracking, automated pipeline triggers keep every opportunity accounted for.', img: 'https://picsum.photos/seed/spa-whofor-1/700/620' },
-  { icon: 'fa-solid fa-user-tie', title: 'Founders doing sales personally', desc: 'Founders wearing the sales hat need reminders and sequences that fire automatically, not another task to manage.', img: 'https://picsum.photos/seed/spa-whofor-2/700/620' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multiple pipelines', desc: 'Agencies running pipelines for several clients need consistent, documented automation across every account.', img: 'https://picsum.photos/seed/spa-whofor-3/700/620' },
-  { icon: 'fa-solid fa-users', title: 'Teams with high deal volume', desc: 'When reps juggle dozens of open deals, automated task creation is the only way follow-up stays consistent.', img: 'https://picsum.photos/seed/spa-whofor-4/700/620' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Teams missing renewal and upsell windows', desc: 'Automated stage triggers surface renewal and upsell opportunities before the window closes.', img: 'https://picsum.photos/seed/spa-whofor-5/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardising process', desc: 'As headcount grows, automated pipeline rules give every new rep the same reliable process from day one.', img: 'https://picsum.photos/seed/spa-whofor-6/700/620' },
+  { icon: 'fa-solid fa-table-list', title: 'Sales teams outgrowing spreadsheets', desc: 'Once deal volume outpaces manual tracking, automated pipeline triggers keep every opportunity accounted for.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Sales teams outgrowing spreadsheets.png' },
+  { icon: 'fa-solid fa-user-tie', title: 'Founders doing sales personally', desc: 'Founders wearing the sales hat need reminders and sequences that fire automatically, not another task to manage.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Founders doing sales personally.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multiple pipelines', desc: 'Agencies running pipelines for several clients need consistent, documented automation across every account.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Agencies managing multiple pipelines.png' },
+  { icon: 'fa-solid fa-users', title: 'Teams with high deal volume', desc: 'When reps juggle dozens of open deals, automated task creation is the only way follow-up stays consistent.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams with high deal volume.png' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Teams missing renewal and upsell windows', desc: 'Automated stage triggers surface renewal and upsell opportunities before the window closes.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams missing renewal and upsell windows.png' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardising process', desc: 'As headcount grows, automated pipeline rules give every new rep the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Growing teams standardising process.png' },
 ];
 
 const SPA_WHY_ISM = [
@@ -583,7 +583,7 @@ export default function SalesPipelineAutomationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/spa-whatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = SPA_WHY_ISM[3]; return (

@@ -113,6 +113,8 @@ const FAQS = [
   { q: 'What is an AI chatbot and do I actually need one?', a: 'A bot that has a real conversation with a lead on your website, qualifying them, answering questions, and booking a call without a human involved. If you get enquiries outside business hours, it pays for itself quickly in leads that would otherwise go cold.' },
   { q: 'Do you offer white-label automation for agencies?', a: 'Yes. We build and manage GoHighLevel accounts and automation systems for agency clients under your brand. You present the service, we handle delivery, your clients only see your name.' },
   { q: 'How much does marketing automation setup cost?', a: 'It depends on the platform, the complexity of your lead journey, and what the system needs to do. A basic setup differs from a full GoHighLevel build with multiple funnels and integrations. We tell you exactly what it will cost after the audit.' },
+  { q: 'What is the difference between you and GoHighLevel itself?', a: 'GoHighLevel is the software. We are the agency that builds and runs your system inside it. Most businesses have the tool but lack the setup, strategy, and ongoing management to make it work.' },
+  { q: 'Do you write the email and SMS copy for automations?', a: 'Yes. We write all sequences: welcome emails, follow-up messages, appointment reminders, and re-engagement campaigns, as part of the automation setup service.' },
 ];
 
 /* ── FAQ 2-COL ────────────────────────────────────────────────────── */

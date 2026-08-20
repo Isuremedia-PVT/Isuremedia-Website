@@ -101,6 +101,8 @@ const FAQS = [
   { q: 'Do you handle content distribution or just production?', a: 'Both. For clients who need a full content marketing service, we manage the publishing calendar, scheduling, and analytics tracking on top of production. For clients who want to manage distribution themselves, we hand over assets ready to publish.' },
   { q: 'Do you offer white-label content for agencies?', a: 'Yes. We produce blog content, ad creatives, social posts, and design assets for agency clients under your brand. Your clients see your name on everything, we have no footprint in the relationship.' },
   { q: 'Can you produce content across different industries?', a: 'Yes, across every major industry including technology, e-commerce, legal, healthcare, home services, finance, and professional services. Our research and briefing process gets us up to speed before we write anything, no generic content that could apply to any business.' },
+  { q: 'How many blog posts can you produce per month?', a: 'Depending on the package, we can produce 4–16 SEO blog articles per month. Each article is researched, written, edited, and optimised before delivery.' },
+  { q: 'Can you manage our social media accounts?', a: 'Yes. We offer full social media management: content creation, scheduling, community management, and monthly reporting across Instagram, LinkedIn, Facebook, and X.' },
 ];
 
 /* ── FAQ 2-COL ────────────────────────────────────────────────────── */

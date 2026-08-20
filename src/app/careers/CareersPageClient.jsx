@@ -67,6 +67,27 @@ export default function CareersPageClient() {
 
   const formRef = useRef(null);
 
+  useEffect(() => {
+    const iframe = document.getElementById('inline-UYhs6DEch50CpyoQeKzp');
+    if (!iframe) return;
+    const BUFFER = 30;
+    let lastRawHeight = null;
+
+    const fix = () => {
+      if (iframe.getAttribute('scrolling') !== 'no') iframe.setAttribute('scrolling', 'no');
+      const current = parseInt(iframe.style.height, 10);
+      if (!current) return;
+      if (lastRawHeight !== null && current === lastRawHeight + BUFFER) return;
+      lastRawHeight = current;
+      iframe.style.height = (current + BUFFER) + 'px';
+    };
+
+    fix();
+    const observer = new MutationObserver(fix);
+    observer.observe(iframe, { attributes: true, attributeFilter: ['scrolling', 'style'] });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JOB_SCHEMA }} />
@@ -112,14 +133,13 @@ export default function CareersPageClient() {
               </div>
 
               {/* RIGHT */}
-              <div style={{ position: 'relative' }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <div style={{ width: '100%', height: 480, borderRadius: 20, overflow: 'hidden', background: '#fff' }}>
+              <div className="car-hero-photo-wrap" style={{ position: 'relative' }}>
+                <div style={{ width: '100%', height: 480, borderRadius: 20, overflow: 'hidden', boxShadow: '0 16px 48px rgba(0,35,83,.16)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/banner/career_banner.webp"
                     alt="Isuremedia team"
-                    style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block' }}
                   />
                 </div>
                 <div style={{ position: 'absolute', top: 20, right: 20, background: 'var(--ism-amber)', borderRadius: 10, padding: '10px 18px', boxShadow: '0 6px 18px rgba(255,176,0,.45)' }}>
@@ -131,8 +151,12 @@ export default function CareersPageClient() {
           </div>
 
           <style>{`
-            @media (max-width: 1024px) { .car-hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 40px !important; } }
-            @media (max-width: 768px) { .car-hero-btns { flex-direction: column !important; align-items: flex-start !important; } }
+            @media (min-width: 769px) and (max-width: 1024px) { .car-hero-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; } }
+            @media (max-width: 768px) {
+              .car-hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 40px !important; }
+              .car-hero-btns { flex-direction: column !important; align-items: flex-start !important; }
+              .car-hero-photo-wrap > div:first-child { height: 300px !important; }
+            }
           `}</style>
         </section>
 
@@ -452,8 +476,6 @@ export default function CareersPageClient() {
                     <i className="fa-solid fa-phone" style={{ fontSize: 14 }} />
                     Book a Free Call
                   </a>
-
-                  <span style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.50)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>
 
                   <a
                     href="/contact"

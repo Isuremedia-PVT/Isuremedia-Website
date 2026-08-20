@@ -65,12 +65,12 @@ const N8N_SERVICES = [
 ];
 
 const N8N_WHO_FOR = [
-  { icon: 'fa-solid fa-code', title: 'Engineering teams needing custom logic', desc: 'When built-in nodes are not enough, custom JavaScript or Python code nodes let engineering teams build exactly the logic they need.', img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume, self-hosted n8n removes that ceiling.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-database', title: 'Data-heavy businesses transforming large volumes', desc: 'High-volume data transformation and syncing is where per-execution pricing on other platforms becomes expensive fast.', img: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=700&q=80' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Businesses requiring full data ownership', desc: 'Regulated industries and businesses with strict data residency requirements need automation that never sends data through a third-party server.', img: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?w=700&q=80' },
-  { icon: 'fa-solid fa-server', title: 'Teams wanting to self-host for security', desc: 'Self-hosting on your own infrastructure gives your security team full visibility and control over exactly how automation runs.', img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&q=80' },
-  { icon: 'fa-solid fa-cubes', title: 'SaaS companies building internal tooling', desc: 'Product and ops teams use n8n to wire together internal tools and third-party APIs without waiting on engineering sprints for every change.', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80' },
+  { icon: 'fa-solid fa-code', title: 'Engineering teams needing custom logic', desc: 'When built-in nodes are not enough, custom JavaScript or Python code nodes let engineering teams build exactly the logic they need.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Engineering teams needing custom logic.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume, self-hosted n8n removes that ceiling.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Agencies wanting to avoid per-task billing.png' },
+  { icon: 'fa-solid fa-database', title: 'Data-heavy businesses transforming large volumes', desc: 'High-volume data transformation and syncing is where per-execution pricing on other platforms becomes expensive fast.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Data-heavy businesses transforming large volumes.png' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Businesses requiring full data ownership', desc: 'Regulated industries and businesses with strict data residency requirements need automation that never sends data through a third-party server.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Businesses requiring full data ownership.png' },
+  { icon: 'fa-solid fa-server', title: 'Teams wanting to self-host for security', desc: 'Self-hosting on your own infrastructure gives your security team full visibility and control over exactly how automation runs.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Teams wanting to self-host for security.png' },
+  { icon: 'fa-solid fa-cubes', title: 'SaaS companies building internal tooling', desc: 'Product and ops teams use n8n to wire together internal tools and third-party APIs without waiting on engineering sprints for every change.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/SaaS companies building internal tooling.png' },
 ];
 
 const N8N_WHY_ISM = [
@@ -593,7 +593,7 @@ export default function N8nPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/n8nwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = N8N_WHY_ISM[3]; return (

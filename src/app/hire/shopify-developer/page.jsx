@@ -215,6 +215,7 @@ const faqs = [
   { q: 'Do you work with Shopify Plus or only standard Shopify?', a: <>Both. ISureMedia developers work across standard Shopify and Shopify Plus. Shopify Plus work includes checkout customization, Shopify Functions, B2B company accounts, Shopify Flow, and Shopify Markets. If your store is on Plus or you are considering the upgrade, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>the team has done this before</span>.</> },
   { q: 'Can you migrate my WooCommerce or Magento store to Shopify?', a: <>Yes. Migrations from WooCommerce, Magento, and other platforms to Shopify are a regular part of what the team handles. Products, customer data, order history, and URL structures are all transferred and checked carefully. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>SEO is preserved throughout</span> so rankings are not affected by the move.</> },
   { q: 'Can I scale up or down depending on how much work my store needs?', a: <>Yes. Shopify stores rarely have a flat development workload. You can start with a project engagement, move to a monthly retainer as the store grows, and scale back between major pushes like product launches or BFCM. The same developer stays on your store and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>carries the context forward</span>.</> },
+  { q: 'Do you build custom Shopify themes or only use existing ones?', a: 'Both. Custom theme development is built around your brand and product catalogue using Online Store 2.0 architecture with sections and blocks. Where existing themes suit the scope, we customise them properly rather than retrofitting them badly. The decision is made based on what your store actually needs, not what is easiest to build.' },
 ];
 
 
@@ -752,16 +753,11 @@ export default function HireShopifyDeveloper() {
 
         <style>{`
           @media (max-width: 1024px) {
-            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 32px !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: span 2; max-width: 55%; margin: 0 auto; }
-          }
-          @media (max-width: 768px) {
-            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 24px !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: span 2; max-width: 100%; }
+            .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 28px 24px !important; }
+            .wp-whyism-grid > div:nth-child(2) { grid-column: auto !important; transform: none !important; box-shadow: none !important; }
           }
           @media (max-width: 600px) {
             .wp-whyism-grid { grid-template-columns: 1fr !important; }
-            .wp-whyism-grid > div:nth-child(2) { grid-column: auto !important; max-width: 100% !important; }
           }
         `}</style>
       </section>
@@ -954,7 +950,7 @@ export default function HireShopifyDeveloper() {
       ════════════════════════════════════════ */}
       <section style={{ padding: '80px 0', background: '#fff' }}>
         <div className="ism-container">
-          <div style={{ background: 'var(--color-primary)', borderRadius: 24, padding: '56px 60px', position: 'relative', overflow: 'hidden', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ background: 'linear-gradient(135deg,#1E4DC3 0%,#4484EE 100%)', borderRadius: 24, padding: '56px 60px', position: 'relative', overflow: 'hidden', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
             {/* Decorative elements */}
             <div style={{ position: 'absolute', top: '-15%', right: '25%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
             <div style={{ position: 'absolute', bottom: '-20%', left: '5%', width: 300, height: 300, background: 'radial-gradient(circle,rgba(255,176,0,.12) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
@@ -1045,11 +1041,6 @@ export default function HireShopifyDeveloper() {
 
         /* ── Why WordPress + Why ISM Cards ── */
         @media (max-width: 900px) {
-          .wp-why-grid, .wp-whyism-grid { grid-template-columns: 1fr 1fr !important; }
-        }
-        @media (max-width: 540px) {
-          .wp-why-grid, .wp-whyism-grid { grid-template-columns: 1fr !important; }
-        }
 
         /* ── Services Section Homepage Styling ── */
         .svc-fadein { animation: svcFade .32s cubic-bezier(.4,0,.2,1) both; }

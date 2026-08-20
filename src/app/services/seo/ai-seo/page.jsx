@@ -42,14 +42,6 @@ const ANSWER_SOURCES = [
   { icon: 'fa-solid fa-medal', title: 'E-E-A-T signals', desc: 'Experience, Expertise, Authoritativeness, and Trustworthiness, Google’s framework that now feeds directly into AI Overview citations. Businesses and content creators who demonstrate genuine expertise are cited more frequently than those who do not.' },
 ];
 
-const PLATFORMS = [
-  { icon: 'fa-brands fa-google', title: 'Google AI Overviews', desc: 'The most important AI surface for most businesses. AI Overviews now appear on 60% of US Google searches and are the first thing most users see. Being cited here means your business appears above every organic result on the page.', img: 'https://images.unsplash.com/photo-1586125674857-4eb86880905d?w=500&q=80' },
-  { icon: 'fa-solid fa-comments', title: 'ChatGPT Search', desc: '883 million monthly users. 2.5 billion daily prompts. ChatGPT is now the fifth most visited website globally and processes queries that would previously have gone to Google. When someone asks ChatGPT for a recommendation in your category, you need to be in the answer.', img: 'https://images.unsplash.com/photo-1751448582395-27fc57293f1a?w=500&q=80' },
-  { icon: 'fa-solid fa-compass', title: 'Perplexity', desc: 'Perplexity’s 18 to 22% click-through rate on cited sources is materially higher than Google AI Overviews, the businesses it recommends get the traffic. Perplexity is disproportionately used by researchers, professionals, and high-value buyers, making citations here particularly valuable.', img: 'https://images.unsplash.com/photo-1778735940467-1335c201966d?w=500&q=80' },
-  { icon: 'fa-solid fa-wand-magic-sparkles', title: 'Google Gemini', desc: 'Google’s AI assistant surfaces across Search, Google Workspace, and Android. Gemini uses Google’s index and entity graph, the same signals that feed traditional Google rankings, plus structured data and GBP signals.', img: 'https://images.unsplash.com/photo-1762330465857-07e4c81c0dfa?w=500&q=80' },
-  { icon: 'fa-brands fa-microsoft', title: 'Microsoft Copilot', desc: 'Integrated into Bing, Windows, and Microsoft 365, Copilot handles hundreds of millions of queries per month with a heavy skew toward professional and enterprise users. High-value B2B and professional service businesses benefit significantly from Copilot visibility.', img: 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'AI Visibility Audit', desc: 'We test your business across Google AI Overviews, ChatGPT, Perplexity, and Gemini, using the actual queries your customers search for. You get a clear picture of where you are being cited, where you are invisible, and exactly what is causing each gap.' },
   { icon: 'fa-solid fa-file-lines', title: 'Answer-Ready Content Optimisation', desc: 'We restructure your existing content, or create new content, specifically for AI extraction. Clear question-and-answer formats, concise direct answers, proper heading structure, and the right content depth for AI platforms to parse and cite with confidence.' },
@@ -467,70 +459,6 @@ export default function AISEOPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. THE PLATFORMS WE OPTIMISE FOR ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>One Strategy. Every Platform Where Your Customers Are Searching.</h2>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>The AI Platforms We Optimise Your Business For</p>
-            <div className="platform-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {PLATFORMS.map(g => (
-                <div key={g.title} className="platform-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="platform-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="platform-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .platform-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .platform-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .platform-card-img{ transition: transform .4s ease; }
-            .platform-card:hover .platform-card-img{ transform: scale(1.08); }
-            .platform-card:hover .platform-card-icon{ background: var(--ism-amber); }
-            .platform-card:hover .platform-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .platform-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .platform-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
-        {/* ══ 08. WHAT AI INVISIBILITY IS COSTING YOU ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 780, margin: '0 auto' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>This Is Happening Right Now. Not in the Future.</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  When an AI Overview appears on a Google search result, click-through rates on traditional organic results drop by{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>38%</span>.{' '}
-                  That traffic does not disappear. It goes to the businesses the AI cites in the summary above the results.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  If your business is not one of them, you are losing traffic you used to get, silently, with no warning and no obvious explanation for why your numbers are declining.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  AI search traffic converts at{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>14.2% on average</span>{' '}
-                 , five times higher than standard organic traffic. The visitors AI platforms send are pre-qualified and high-intent. Missing out on them is not just a traffic problem. It is a revenue problem.
-                </p>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                  The vast majority of local businesses have not taken any deliberate steps to optimise for AI search. That gap is closing fast. The businesses that move now establish presence before competitors catch up. The ones that wait are already behind.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* ══ 09. ISM AI SEO AND AEO SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
@@ -655,7 +583,7 @@ export default function AISEOPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/aiseowhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\seo.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

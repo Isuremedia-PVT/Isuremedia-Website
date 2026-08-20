@@ -23,13 +23,10 @@ const clients = [
   { name: 'Outdoorscapes', src: '/company_logo/outdoorscapes.webp' },
   { name: 'Jurissa International Bank', src: '/company_logo/jurissa-international-bank.webp' },
   { name: 'AgentMate', src: '/company_logo/agentmate.webp' },
-  { name: 'Mi Amor', src: '/company_logo/mi-amor.webp' },
   { name: 'ProMailShop', src: '/company_logo/promailshop.webp' },
-  { name: 'Salesley', src: '/company_logo/salesley.webp' },
   { name: 'Scrubs4U', src: '/company_logo/scrubs4u.webp' },
   { name: 'TyCan', src: '/company_logo/tycan.webp' },
   { name: 'Tortlink', src: '/company_logo/tortlink.webp' },
-  { name: 'Uttarakhand Business Listing', src: '/company_logo/uttarakhand-business-listing.webp' },
 ];
 
 export default function ClientsMarquee() {

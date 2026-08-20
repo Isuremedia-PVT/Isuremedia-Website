@@ -330,8 +330,10 @@ export default function CaseStudiesPage() {
         {/* ══ 2. FILTER ══════════════════════════════════════════════════ */}
         <section style={{ background: '#fff', padding: '56px 0 8px' }}>
           <div className="ism-container">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <h2 style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>Case Studies</h2>
+            <div className="cs-filter-tabs-outer" style={{ display: 'flex', justifyContent: 'center' }}>
               <div
+                className="cs-filter-tabs-wrap"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -341,8 +343,9 @@ export default function CaseStudiesPage() {
                   borderRadius: 14,
                   border: '1px solid #E2E8F0',
                   boxShadow: '0 2px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.9)',
-                  flexWrap: 'wrap',
+                  flexWrap: 'nowrap',
                   justifyContent: 'center',
+                  maxWidth: '100%',
                 }}
               >
                 {[{ label: 'All', icon: 'fa-solid fa-border-all' }, ...SERVICES].map((svc) => {
@@ -390,8 +393,19 @@ export default function CaseStudiesPage() {
               </div>
             </div>
             <style>{`
+              @media (max-width: 900px) {
+                .cs-filter-tabs-outer { justify-content: flex-start !important; overflow: hidden; }
+                .cs-filter-tabs-wrap {
+                  flex-wrap: nowrap !important;
+                  overflow-x: auto !important;
+                  -webkit-overflow-scrolling: touch;
+                  justify-content: flex-start !important;
+                  scrollbar-width: none;
+                }
+                .cs-filter-tabs-wrap::-webkit-scrollbar { display: none; }
+              }
               @media (max-width: 640px) {
-                .cs-filter-tabs-wrap > div { padding: 5px 6px; gap: 3px; }
+                .cs-filter-tabs-wrap { padding: 5px 6px; gap: 3px; }
                 .cs-filter-tabs-wrap button { padding: 9px 14px !important; font-size: 12px !important; }
               }
             `}</style>

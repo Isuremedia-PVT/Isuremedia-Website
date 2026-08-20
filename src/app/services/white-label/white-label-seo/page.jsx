@@ -45,11 +45,11 @@ const DELIVERY_STACK = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-bullhorn', title: 'Marketing and Digital Agencies', desc: 'If clients are asking for SEO and you are turning it down or referring it out, white-label fulfilment lets you offer it under your brand without building an internal team.', img: 'https://picsum.photos/seed/wlseowho1/700/620' },
-  { icon: 'fa-solid fa-laptop-code', title: 'Web Design and Development Agencies', desc: 'A build that delivers no organic traffic within six months is a client who questions the investment. Pairing development with ongoing SEO retains clients longer and adds recurring revenue.', img: 'https://picsum.photos/seed/wlseowho2/700/620' },
-  { icon: 'fa-solid fa-newspaper', title: 'PR and Content Agencies', desc: 'Agencies that can show measurable organic traffic and rankings alongside earned media and content output have a far stronger retention story with clients.', img: 'https://picsum.photos/seed/wlseowho3/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Agencies With Stalled SEO Campaigns', desc: 'If rankings have plateaued and reporting is getting harder to justify, specialist fulfilment behind the scenes resets the trajectory without the client knowing the delivery changed.', img: 'https://picsum.photos/seed/wlseowho4/700/620' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Agencies Scaling Past Capacity', desc: 'If your in-house SEO team is at its limit and new business is being turned down or under-delivered, white-label fulfilment extends capacity without the lead time or risk of a new hire.', img: 'https://picsum.photos/seed/wlseowho5/700/620' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Marketing and Digital Agencies', desc: 'If clients are asking for SEO and you are turning it down or referring it out, white-label fulfilment lets you offer it under your brand without building an internal team.', img: '/services-six-card/White Label/White label seo/Marketing and Digital Agencies.png' },
+  { icon: 'fa-solid fa-laptop-code', title: 'Web Design and Development Agencies', desc: 'A build that delivers no organic traffic within six months is a client who questions the investment. Pairing development with ongoing SEO retains clients longer and adds recurring revenue.', img: '/services-six-card/White Label/White label seo/Web Design and DevelopmentAgencies.png' },
+  { icon: 'fa-solid fa-newspaper', title: 'PR and Content Agencies', desc: 'Agencies that can show measurable organic traffic and rankings alongside earned media and content output have a far stronger retention story with clients.', img: '/services-six-card/White Label/White label seo/PR and Content Agencies.png' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Agencies With Stalled SEO Campaigns', desc: 'If rankings have plateaued and reporting is getting harder to justify, specialist fulfilment behind the scenes resets the trajectory without the client knowing the delivery changed.', img: '/services-six-card/White Label/White label seo/Agencies With Stalled SEOCampaigns.png' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Agencies Scaling Past Capacity', desc: 'If your in-house SEO team is at its limit and new business is being turned down or under-delivered, white-label fulfilment extends capacity without the lead time or risk of a new hire.', img: '/services-six-card/White Label/White label seo/Agencies Scaling Past Capacity.png' },
 ];
 
 const WHY_ISM = [
@@ -545,7 +545,7 @@ export default function WhiteLabelSEOPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/wlseowhydiff/700/620" alt="What makes ISureMedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\white-label.webp" alt="What makes ISureMedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

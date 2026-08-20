@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-building', title: 'Businesses standardising on the Zoho ecosystem', desc: 'Teams already using or considering Zoho One who need it properly configured to actually work for their process.', img: 'https://picsum.photos/seed/zoho-whofor-eco/700/620' },
-  { icon: 'fa-solid fa-arrow-right-arrow-left', title: 'Businesses migrating from spreadsheets', desc: 'Outgrowing spreadsheet-based sales and customer tracking, needing a proper CRM without enterprise pricing.', img: 'https://picsum.photos/seed/zoho-whofor-migrate/700/620' },
-  { icon: 'fa-solid fa-sack-dollar', title: 'Cost-conscious businesses wanting enterprise features', desc: 'Comparable capability to Salesforce or HubSpot at a fraction of the cost, properly configured to deliver on that promise.', img: 'https://picsum.photos/seed/zoho-whofor-cost/700/620' },
-  { icon: 'fa-solid fa-gears', title: 'Businesses with a specific, non-standard sales process', desc: 'Zoho’s deep customisation options fit processes that a rigid, template-based CRM can’t accommodate.', img: 'https://picsum.photos/seed/zoho-whofor-process/700/620' },
-  { icon: 'fa-solid fa-headset', title: 'Teams needing CRM, support, and billing connected', desc: 'Zoho One’s CRM, Desk, and Books integration keeps sales, support, and finance working from the same data.', img: 'https://picsum.photos/seed/zoho-whofor-suite/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Growing teams needing structure without complexity', desc: 'A properly configured Zoho instance scales with headcount without requiring a dedicated systems administrator.', img: 'https://picsum.photos/seed/zoho-whofor-growth/700/620' },
+  { icon: 'fa-solid fa-building', title: 'Businesses standardising on the Zoho ecosystem', desc: 'Teams already using or considering Zoho One who need it properly configured to actually work for their process.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses standardising on the.png' },
+  { icon: 'fa-solid fa-arrow-right-arrow-left', title: 'Businesses migrating from spreadsheets', desc: 'Outgrowing spreadsheet-based sales and customer tracking, needing a proper CRM without enterprise pricing.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses migrating from spreadsheets.png' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'Cost-conscious businesses wanting enterprise features', desc: 'Comparable capability to Salesforce or HubSpot at a fraction of the cost, properly configured to deliver on that promise.', img: '/services-six-card/Marketing Automation Section/Zoho/Cost-conscious businesses wanting enterprise features.png' },
+  { icon: 'fa-solid fa-gears', title: 'Businesses with a specific, non-standard sales process', desc: 'Zoho’s deep customisation options fit processes that a rigid, template-based CRM can’t accommodate.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses with a specific, non-standard sales process.png' },
+  { icon: 'fa-solid fa-headset', title: 'Teams needing CRM, support, and billing connected', desc: 'Zoho One’s CRM, Desk, and Books integration keeps sales, support, and finance working from the same data.', img: '/services-six-card/Marketing Automation Section/Zoho/Teams needing CRM, support, and billing connected.png' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Growing teams needing structure without complexity', desc: 'A properly configured Zoho instance scales with headcount without requiring a dedicated systems administrator.', img: '/services-six-card/Marketing Automation Section/Zoho/Growing teams needing structure without complexity.png' },
 ];
 
 const WHY_ISM = [
@@ -569,7 +569,7 @@ export default function ZohoPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/zohowhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

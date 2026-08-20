@@ -65,12 +65,12 @@ const MAKE_SERVICES = [
 ];
 
 const MAKE_WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Teams outgrowing Zapier', desc: 'When workflows need branching logic, data lookups, or API calls mid-scenario, Zapier becomes limiting or expensive. Make removes that ceiling.', img: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=700&q=80' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses with complex order logic', desc: 'Inventory syncs, multi-channel order routing, and conditional fulfilment rules need a platform that can branch and transform data, not just pass it along.', img: 'https://images.unsplash.com/photo-1590650046871-92c887180603?w=700&q=80' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multi-client workflows', desc: 'Agencies running automation across several client accounts need scenarios that stay organised, documented, and easy to hand over.', img: 'https://images.unsplash.com/photo-1617565817140-53081ee8f047?w=700&q=80' },
-  { icon: 'fa-solid fa-server', title: 'Operations teams needing data transformation', desc: 'Cleaning, mapping, and reshaping data between systems that were never designed to talk to each other is where Make earns its keep.', img: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=700&q=80' },
-  { icon: 'fa-solid fa-calendar-days', title: 'Businesses running scheduled batch reporting', desc: 'Nightly syncs, weekly reports, and bulk data updates that need to run reliably on a schedule without manual triggering.', img: 'https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=500&q=80' },
-  { icon: 'fa-solid fa-plug', title: 'SaaS companies integrating multiple APIs', desc: 'Products that need to talk to several third-party APIs at once benefit from Make’s visual canvas and per-operation pricing at scale.', img: 'https://images.unsplash.com/photo-1484383707950-89c8d3276e53?w=700&q=80' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Teams outgrowing Zapier', desc: 'When workflows need branching logic, data lookups, or API calls mid-scenario, Zapier becomes limiting or expensive. Make removes that ceiling.', img: '/services-six-card/Marketing Automation Section/Make Automation/Teams outgrowing Zapier.png' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses with complex order logic', desc: 'Inventory syncs, multi-channel order routing, and conditional fulfilment rules need a platform that can branch and transform data, not just pass it along.', img: '/services-six-card/Marketing Automation Section/Make Automation/E-commerce businesses with complex order logic.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multi-client workflows', desc: 'Agencies running automation across several client accounts need scenarios that stay organised, documented, and easy to hand over.', img: '/services-six-card/Marketing Automation Section/Make Automation/Agencies managing multi-client workflows.png' },
+  { icon: 'fa-solid fa-server', title: 'Operations teams needing data transformation', desc: 'Cleaning, mapping, and reshaping data between systems that were never designed to talk to each other is where Make earns its keep.', img: '/services-six-card/Marketing Automation Section/Make Automation/Operations teams needing data transformation.png' },
+  { icon: 'fa-solid fa-calendar-days', title: 'Businesses running scheduled batch reporting', desc: 'Nightly syncs, weekly reports, and bulk data updates that need to run reliably on a schedule without manual triggering.', img: '/services-six-card/Marketing Automation Section/Make Automation/Businesses running scheduled batch reporting.png' },
+  { icon: 'fa-solid fa-plug', title: 'SaaS companies integrating multiple APIs', desc: 'Products that need to talk to several third-party APIs at once benefit from Make’s visual canvas and per-operation pricing at scale.', img: '/services-six-card/Marketing Automation Section/Make Automation/SaaS companies integrating multiple APIs.png' },
 ];
 
 const MAKE_WHY_ISM = [
@@ -592,7 +592,7 @@ export default function MakeIntegromatPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/makewhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = MAKE_WHY_ISM[3]; return (

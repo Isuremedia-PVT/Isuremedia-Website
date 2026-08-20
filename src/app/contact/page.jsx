@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -29,7 +30,7 @@ const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-location-dot',
     label: 'India Office',
-    lines: ['First Floor, Chandra Complex, Gas Godam Road,', 'Chhadayal Nayabad, Near Riya Palace,', 'Haldwani, Nainital, Uttarakhand 263139, India'],
+    lines: ['Gas Godam Road, Chhadayal Nayabad,', 'First Floor, Chandra Complex,', 'Haldwani, Nainital, Uttarakhand 263139, India'],
   },
   {
     icon: 'fa-solid fa-location-dot',
@@ -39,8 +40,13 @@ const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-clock',
     label: 'Working Hours',
-    lines: ['Mon – Fri: 9 AM – 7 PM IST', 'Sat: 10 AM – 4 PM IST'],
   },
+];
+
+const WORKING_HOURS = [
+  { region: 'India', rows: [{ time: '9:00 AM – 6:00 PM', tz: 'IST' }] },
+  { region: 'UK', rows: [{ time: '8:30 AM – 5:30 PM', tz: 'GMT · Oct–Mar' }, { time: '9:30 AM – 6:30 PM', tz: 'BST · Mar–Oct' }] },
+  { region: 'US', rows: [{ time: '9:30 AM – 6:30 PM', tz: 'EST · Oct–Mar' }, { time: '10:30 AM – 7:30 PM', tz: 'EDT · Mar–Oct' }] },
 ];
 
 const REACH_US = [
@@ -66,6 +72,27 @@ const REACH_US = [
 ];
 
 export default function ContactPage() {
+  useEffect(() => {
+    const iframe = document.getElementById('inline-Y25fx4phZBA1MIYnJRr8');
+    if (!iframe) return;
+    const BUFFER = 30;
+    let lastRawHeight = null;
+
+    const fix = () => {
+      if (iframe.getAttribute('scrolling') !== 'no') iframe.setAttribute('scrolling', 'no');
+      const current = parseInt(iframe.style.height, 10);
+      if (!current) return;
+      if (lastRawHeight !== null && current === lastRawHeight + BUFFER) return;
+      lastRawHeight = current;
+      iframe.style.height = (current + BUFFER) + 'px';
+    };
+
+    fix();
+    const observer = new MutationObserver(fix);
+    observer.observe(iframe, { attributes: true, attributeFilter: ['scrolling', 'style'] });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -82,30 +109,52 @@ export default function ContactPage() {
 
               {/* LEFT */}
               <div>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
+                  <div style={{ width: 26, height: 3, background: 'var(--ism-amber)', borderRadius: 2 }} />
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase', color: 'var(--color-primary)' }}>We&apos;d Love to Hear From You</span>
+                </div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(32px,4.5vw,60px)', color: 'var(--color-navy)', lineHeight: 1.06, letterSpacing: '-0.5px', marginBottom: 20 }}>
                   Get in Touch
                 </h1>
-                <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 40 }}>
+                <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 440, marginBottom: 32 }}>
                   Your proposal is one form away. Your answers are one call away.
                 </p>
               </div>
 
-              {/* RIGHT, quick info cards */}
-              <div className="ct-quick-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-                {[
-                  { icon: 'fa-solid fa-location-dot', title: 'India Office', text: 'Haldwani, Uttarakhand' },
-                  { icon: 'fa-solid fa-location-dot', title: 'USA Office', text: 'Sheridan, Wyoming' },
-                  { icon: 'fa-solid fa-phone', title: 'Call Us', text: '+91 70110 41363' },
-                  { icon: 'fa-solid fa-envelope', title: 'Email', text: 'info@isuremedia.com' },
-                ].map(c => (
-                  <div key={c.title} style={{ background: '#fff', borderRadius: 14, padding: '20px 18px', boxShadow: '0 2px 16px rgba(30,77,195,.08)', border: '1px solid var(--color-border)' }}>
-                    <div style={{ width: 42, height: 42, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
-                      <i className={c.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
+              {/* RIGHT, photo + floating contact card */}
+              <div className="ct-hero-photo-wrap" style={{ position: 'relative' }}>
+                <div style={{ borderRadius: 24, overflow: 'hidden', height: 400, boxShadow: '0 16px 48px rgba(0,35,83,.16)' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/career-about/Team image for GMB new 4.webp"
+                    alt="The Isuremedia team"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+
+                <div style={{ position: 'absolute', top: 20, right: -14, background: 'var(--ism-amber)', borderRadius: 12, padding: '10px 16px', boxShadow: '0 8px 22px rgba(255,176,0,.40)', display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <i className="fa-solid fa-bolt" style={{ fontSize: 13, color: 'var(--color-navy)' }} />
+                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--color-navy)' }}>Fast Response</span>
+                </div>
+
+                <div className="ct-float-card" style={{ position: 'absolute', bottom: -24, left: -20, right: 40, background: '#fff', borderRadius: 14, padding: '13px 15px', boxShadow: '0 12px 32px rgba(0,35,83,.14)', border: '1px solid var(--color-border)', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 18, rowGap: 10 }}>
+                  {[
+                    { icon: 'fa-solid fa-location-dot', title: 'Offices', text: 'Haldwani & Wyoming' },
+                    { icon: 'fa-solid fa-phone', title: 'Call Us', text: '+91 70110 41363' },
+                    { icon: 'fa-solid fa-envelope', title: 'Email', text: 'info@isuremedia.com' },
+                    { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp', text: 'Chat with us now' },
+                  ].map(c => (
+                    <div key={c.title} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+                      <div style={{ width: 25, height: 25, borderRadius: 7, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <i className={c.icon} style={{ fontSize: 10.5, color: 'var(--color-primary)' }} />
+                      </div>
+                      <div style={{ minWidth: 0 }}>
+                        <p style={{ fontFamily: J, fontSize: 8.5, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 2px' }}>{c.title}</p>
+                        <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.35, wordBreak: 'break-word' }}>{c.text}</p>
+                      </div>
                     </div>
-                    <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.07em', textTransform: 'uppercase', marginBottom: 5 }}>{c.title}</p>
-                    <p style={{ fontFamily: I, fontSize: 13, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.5, wordBreak: 'break-word' }}>{c.text}</p>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
             </div>
@@ -205,27 +254,27 @@ export default function ContactPage() {
           <div className="ism-container ct-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px' }}>
 
             {/* Info grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1.2fr 1.3fr 1fr', gap: 20, marginBottom: 64 }} className="cinfo-grid">
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1.1fr 1.3fr', gap: 20, marginBottom: 64 }} className="cinfo-grid">
               {[CONTACT_INFO[0], CONTACT_INFO[1]].map(item => (
                 <div key={item.label} style={{ background: '#fff', borderRadius: 16, padding: '28px 24px', border: '1px solid var(--color-border)', borderTop: '3px solid var(--color-primary)', boxShadow: '0 4px 20px rgba(30,77,195,.07)' }}>
                   <div style={{ width: 44, height: 44, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
                     <i className={item.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
                   </div>
-                  <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>{item.label}</p>
-                  {item.lines.map((line, li) => <p key={li} style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>{line}</p>)}
+                  <span style={{ display: 'block', fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>{item.label}</span>
+                  {item.lines.map((line, li) => <span key={li} style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>{line}</span>)}
                 </div>
               ))}
 
               {/* Combined Phone / Email / WhatsApp card */}
               <div style={{ background: '#fff', borderRadius: 16, padding: '28px 24px', border: '1px solid var(--color-border)', borderTop: '3px solid var(--color-primary)', boxShadow: '0 4px 20px rgba(30,77,195,.07)', display: 'flex', flexDirection: 'column', gap: 20 }}>
-                <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', margin: 0 }}>Reach Us</p>
+                <span style={{ display: 'block', fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', margin: 0 }}>Reach Us</span>
                 {REACH_US.map(item => (
                   <div key={item.label} style={{ display: 'flex', gap: 12 }}>
                     <div style={{ width: 34, height: 34, borderRadius: 10, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <i className={item.icon} style={{ fontSize: 13, color: 'var(--color-primary)' }} />
                     </div>
                     <div>
-                      <p style={{ fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 3px' }}>{item.label}</p>
+                      <span style={{ display: 'block', fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 3px' }}>{item.label}</span>
                       {item.lines.map((line, li) =>
                         <a key={li} href={item.hrefs[li]} {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', textDecoration: 'none', lineHeight: 1.6, transition: 'color .15s' }}
                           onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
@@ -243,8 +292,20 @@ export default function ContactPage() {
                     <div style={{ width: 44, height: 44, borderRadius: 12, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
                       <i className={item.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
                     </div>
-                    <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 10 }}>{item.label}</p>
-                    {item.lines.map((line, li) => <p key={li} style={{ fontFamily: I, fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>{line}</p>)}
+                    <span style={{ display: 'block', fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 14 }}>{item.label}</span>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                      {WORKING_HOURS.map(g => (
+                        <div key={g.region}>
+                          <span style={{ display: 'block', fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-navy)', margin: '0 0 4px' }}>{g.region}</span>
+                          {g.rows.map((r, i) => (
+                            <div key={i} style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, fontFamily: I, fontSize: 12.5, lineHeight: 1.65, whiteSpace: 'nowrap' }}>
+                              <span style={{ color: 'var(--color-text-muted)' }}>{r.time}</span>
+                              <span style={{ color: 'var(--color-primary)', fontWeight: 600, fontSize: 10.5 }}>{r.tz}</span>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 );
               })()}
@@ -253,7 +314,7 @@ export default function ContactPage() {
             {/* Map */}
             <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,.08)', border: '1px solid var(--color-border)' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.8383285634397!2d79.51780867541577!3d29.218339775327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09a5a5a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2sHaldwani%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.5!2d79.4861243!3d29.1985821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09b59125c64b7%3A0xa50d6b8635f8ce83!2sIsuremedia%20Private%20Limited!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="420"
                 style={{ border: 0, display: 'block' }}
@@ -279,9 +340,10 @@ export default function ContactPage() {
 
         /* ─── Tablet (≤860px) ─── */
         @media (max-width: 860px) {
-          .ct-hero-section { padding: 48px 0 52px !important; }
+          .ct-hero-section { padding: 48px 0 76px !important; }
           .ct-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; min-height: unset !important; }
-          .ct-quick-cards { grid-template-columns: repeat(4,1fr) !important; gap: 12px !important; }
+          .ct-hero-photo-wrap { margin-bottom: 40px; }
+          .ct-float-card { left: 16px !important; right: 16px !important; bottom: -24px !important; }
           .contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
           .ct-panel-inner { position: static !important; }
           .cinfo-grid { grid-template-columns: repeat(3,1fr) !important; }
@@ -290,9 +352,11 @@ export default function ContactPage() {
         /* ─── Mobile (≤640px) ─── */
         @media (max-width: 640px) {
           .ct-container { padding: 0 20px !important; }
-          .ct-hero-section { padding: 40px 0 44px !important; }
+          .ct-hero-section { padding: 40px 0 32px !important; }
           .ct-section-pad { padding: 52px 0 60px !important; }
-          .ct-quick-cards { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+          .ct-hero-photo-wrap { margin-bottom: 0; }
+          .ct-hero-photo-wrap > div:first-child { height: 300px !important; }
+          .ct-float-card { position: static !important; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,35,83,.10) !important; grid-template-columns: 1fr 1fr !important; }
           .cinfo-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
           .ct-form-card { padding: 24px 18px !important; border-radius: 16px !important; }
           .ct-panel-inner { padding: 28px 22px !important; border-radius: 18px !important; }
@@ -300,7 +364,7 @@ export default function ContactPage() {
 
         /* ─── Small mobile (≤400px) ─── */
         @media (max-width: 400px) {
-          .ct-quick-cards { grid-template-columns: 1fr 1fr !important; }
+          .ct-float-card { grid-template-columns: 1fr !important; }
           .cinfo-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>

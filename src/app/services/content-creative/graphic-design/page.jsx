@@ -57,12 +57,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-layer-group', title: 'More work than design capacity', desc: 'When the calendar requires more output than one designer can produce, a partnership scales capacity without hiring overhead.', img: 'https://picsum.photos/seed/design-whofor-capacity/700/620' },
-  { icon: 'fa-solid fa-shuffle', title: 'Inconsistent visuals across channels', desc: 'If your social, email, and sales materials look like different businesses, a managed partnership applies consistent standards.', img: 'https://picsum.photos/seed/design-whofor-inconsistent/700/620' },
-  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time, one partner with a structured process removes it.', img: 'https://picsum.photos/seed/design-whofor-freelancers/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint, we scale to match demand.', img: 'https://picsum.photos/seed/design-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window, dedicated capacity keeps it on schedule.', img: 'https://picsum.photos/seed/design-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-building', title: 'SMBs that can’t justify an in-house hire', desc: 'A full-time senior designer is significant overhead, a retainer provides senior capability at the scale you actually need.', img: 'https://picsum.photos/seed/design-whofor-smb/700/620' },
+  { icon: 'fa-solid fa-layer-group', title: 'More work than design capacity', desc: 'When the calendar requires more output than one designer can produce, a partnership scales capacity without hiring overhead.', img: '/services-six-card/content_and_creative/Graphic Designer/More work than design capacity.png' },
+  { icon: 'fa-solid fa-shuffle', title: 'Inconsistent visuals across channels', desc: 'If your social, email, and sales materials look like different businesses, a managed partnership applies consistent standards.', img: '/services-six-card/content_and_creative/Graphic Designer/Inconsistent visuals acrosschannels.png' },
+  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time, one partner with a structured process removes it.', img: '/services-six-card/content_and_creative/Graphic Designer/Replacing freelancermanagement overhead.png' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Graphic Designer/Agencies needing white-label fulfilment.png' },
+  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window, dedicated capacity keeps it on schedule.', img: '/services-six-card/content_and_creative/Graphic Designer/Launching campaigns orrebrand rollouts.png' },
+  { icon: 'fa-solid fa-building', title: 'SMBs that can’t justify an in-house hire', desc: 'A full-time senior designer is significant overhead, a retainer provides senior capability at the scale you actually need.', img: "/services-six-card/content_and_creative/Graphic Designer/SMBs that can't justify an in- house hire.png" },
 ];
 
 const WHY_ISM = [
@@ -573,7 +573,7 @@ export default function GraphicDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/gfxwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

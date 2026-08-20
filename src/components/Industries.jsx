@@ -57,7 +57,7 @@ const industries = [
     tag: 'Local Services',
     title: 'Home Services',
     text: 'HVAC, cleaning, contracting, your customers are searching right now. We make sure your business shows up.',
-    img: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=80',
+    img: '/industries/HVAC.webp',
     bg: 'linear-gradient(155deg,#1E4DC3 0%,#2563eb 50%,#3b82f6 100%)',
     shine: 'rgba(37,99,235,0.38)',
   },
@@ -111,7 +111,7 @@ const industries = [
     tag: 'Auto Dealers',
     title: 'Automotive',
     text: 'We help dealerships show up consistently so they are the first place buyers think of after weeks of research.',
-    img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=700&q=80',
+    img: '/industries/Auto Repair & Dealerships.webp',
     bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#1E4DC3 100%)',
     shine: 'rgba(0,35,83,0.55)',
   },
@@ -180,7 +180,7 @@ export default function Industries() {
         >
           <div style={{ display: 'flex', marginLeft: '-12px' }}>
             {industries.map(ind => (
-              <div key={ind.title} className="ind-slide" style={{ flex: '0 0 25%', minWidth: 0, paddingLeft: '12px', boxSizing: 'border-box' }}>
+              <div key={ind.title} className="ind-slide" style={{ flex: '0 0 20%', minWidth: 0, paddingLeft: '12px', boxSizing: 'border-box' }}>
                 <div className="ind-card" style={{ borderRadius: 20, overflow: 'hidden', position: 'relative', height: 420, boxShadow: '0 4px 24px rgba(0,0,0,.14)', transition: 'transform .30s cubic-bezier(.22,1,.36,1), box-shadow .30s', cursor: 'pointer', background: ind.bg }}>
 
                   {/* Photo */}
@@ -250,16 +250,17 @@ export default function Industries() {
       {/* CTA */}
       <div style={{ textAlign: 'center', marginTop: 44 }}>
         <a href="/industries"
-          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '14px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 4px 20px rgba(255,176,0,.30)' }}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '14px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', transition: 'all .18s', boxShadow: '0 4px 20px rgba(255,176,0,.30)' }}
           onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,176,0,.40)'; }}
           onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,176,0,.30)'; }}
         >
-          View All Industries <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
+          VIEW ALL INDUSTRIES <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
         </a>
       </div>
 
       <style>{`
-        .ind-slide { flex: 0 0 25% !important; }
+        .ind-slide { flex: 0 0 20% !important; }
+        @media (max-width: 1280px) { .ind-slide { flex: 0 0 25% !important; } }
         @media (max-width: 1023px) { .ind-slide { flex: 0 0 50% !important; } }
         @media (max-width: 600px)  { .ind-slide { flex: 0 0 100% !important; } }
         @media (max-width: 768px)  { .ind-section { padding: 48px 0 40px !important; } }

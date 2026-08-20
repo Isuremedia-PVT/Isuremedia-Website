@@ -91,7 +91,7 @@ const serviceCategories = [
 ];
 
 const resourceLinks = [
-  { icon: 'fa-solid fa-newspaper',  label: 'Blog',       href: '/blog'      },
+  { icon: 'fa-solid fa-newspaper',  label: 'Blog',       href: 'https://blogs.isuremedia.com/'      },
   { icon: 'fa-solid fa-gift',       label: 'Free Tools', href: 'https://templates.isuremedia.com/' },
 ];
 
@@ -159,6 +159,7 @@ export default function Navbar() {
   const [activeServiceTab, setActiveServiceTab] = useState(0);
   const [mobileOpen, setMobileOpen]       = useState(false);
   const [mobileSection, setMobileSection] = useState(null);
+  const [mobileServiceCat, setMobileServiceCat] = useState(null);
   const [visible, setVisible]             = useState(true);
   const [scrolled, setScrolled]           = useState(false);
   const timer      = useRef(null);
@@ -242,11 +243,11 @@ export default function Navbar() {
               info@isuremedia.com
             </a>
             <a href="/appointment"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '5px 14px', borderRadius: 6, fontFamily: J, fontSize: 11, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', textTransform: 'uppercase', transition: 'all .15s' }}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '4px 11px', borderRadius: 6, fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .15s' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; }}
             >
-              Request a Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 9 }} />
+              REQUEST A CALL <i className="fa-solid fa-arrow-right" style={{ fontSize: 8 }} />
             </a>
           </div>
 
@@ -521,7 +522,7 @@ export default function Navbar() {
               <div key={item.label}>
                 {hasDropdown ? (
                   <>
-                    <button onClick={() => setMobileSection(isExpanded ? null : item.type)}
+                    <button onClick={() => { setMobileSection(isExpanded ? null : item.type); setMobileServiceCat(null); }}
                       style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: I, fontSize: 15, fontWeight: 500, color: 'var(--color-text-body)', background: 'none', border: 'none', cursor: 'pointer', padding: '10px 12px', borderRadius: 8 }}>
                       {item.label}
                       <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style={{ transform: isExpanded ? 'rotate(180deg)' : '', transition: 'transform .2s' }}>
@@ -531,15 +532,38 @@ export default function Navbar() {
                     {isExpanded && (
                       <div style={{ paddingLeft: 14, marginBottom: 4 }}>
                         {item.type === 'services'
-                          ? serviceCategories.flatMap(g => g.items).map(s => (
-                              <a key={s.label} href={s.href} onClick={() => setMobileOpen(false)}
-                                style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
-                                onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
-                                onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
-                              >
-                                <i className="fa-solid fa-arrow-right" style={{ fontSize: 9, color: 'var(--color-primary)' }} /> {s.label}
-                              </a>
-                            ))
+                          ? serviceCategories.map((cat, ci) => {
+                              const catExpanded = mobileServiceCat === ci;
+                              return (
+                                <div key={cat.label}>
+                                  <button onClick={() => setMobileServiceCat(catExpanded ? null : ci)}
+                                    style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, padding: '8px 12px', borderRadius: 8, background: 'none', border: 'none', cursor: 'pointer', fontFamily: I, fontSize: 14, fontWeight: 600, color: 'var(--color-text-body)' }}
+                                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                                  >
+                                    <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                      <i className={cat.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {cat.label}
+                                    </span>
+                                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none" style={{ transform: catExpanded ? 'rotate(180deg)' : '', transition: 'transform .2s', flexShrink: 0 }}>
+                                      <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                  </button>
+                                  {catExpanded && (
+                                    <div style={{ paddingLeft: 14 }}>
+                                      {cat.items.map(s => (
+                                        <a key={s.label} href={s.href} onClick={() => setMobileOpen(false)}
+                                          style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)' }}
+                                          onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                                          onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                                        >
+                                          <i className="fa-solid fa-arrow-right" style={{ fontSize: 9, color: 'var(--color-primary)' }} /> {s.label}
+                                        </a>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })
                           : item.type === 'whitelabel'
                           ? wlLinks.map(l => (
                               <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)}

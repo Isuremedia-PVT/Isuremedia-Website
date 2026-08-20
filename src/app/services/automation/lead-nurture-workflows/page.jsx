@@ -66,12 +66,12 @@ const LNW_SERVICES = [
 ];
 
 const LNW_WHO_FOR = [
-  { icon: 'fa-solid fa-users', title: 'Businesses generating high lead volume', desc: 'When leads come in faster than your team can call them, a nurture sequence keeps every one of them warm until someone can.', img: 'https://picsum.photos/seed/lnw-whofor-1/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Service businesses with long sales cycles', desc: 'Leads that take weeks or months to decide need consistent, staged follow-up instead of a single email that gets forgotten.', img: 'https://picsum.photos/seed/lnw-whofor-2/700/620' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands nurturing cart abandoners', desc: 'Automated sequences bring shoppers back to finish a purchase without anyone manually chasing an abandoned cart.', img: 'https://picsum.photos/seed/lnw-whofor-3/700/620' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing client lead flow', desc: 'Agencies running lead gen for clients need nurture sequences that keep every lead engaged, not just the ones sales gets to first.', img: 'https://picsum.photos/seed/lnw-whofor-4/700/620' },
-  { icon: 'fa-solid fa-envelope-circle-check', title: 'Teams manually sending follow-up emails', desc: 'If a rep is copy-pasting the same follow-up email by hand, that time and consistency can be reclaimed with automation.', img: 'https://picsum.photos/seed/lnw-whofor-5/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardizing sales process', desc: 'A documented nurture sequence gives every new sales hire the same reliable follow-up process from day one.', img: 'https://picsum.photos/seed/lnw-whofor-6/700/620' },
+  { icon: 'fa-solid fa-users', title: 'Businesses generating high lead volume', desc: 'When leads come in faster than your team can call them, a nurture sequence keeps every one of them warm until someone can.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Businesses generating high lead volume.png' },
+  { icon: 'fa-solid fa-handshake', title: 'Service businesses with long sales cycles', desc: 'Leads that take weeks or months to decide need consistent, staged follow-up instead of a single email that gets forgotten.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Service businesses with long sales cycles.png' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands nurturing cart abandoners', desc: 'Automated sequences bring shoppers back to finish a purchase without anyone manually chasing an abandoned cart.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/E-commerce brands nurturing cart abandoners.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing client lead flow', desc: 'Agencies running lead gen for clients need nurture sequences that keep every lead engaged, not just the ones sales gets to first.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Agencies managing client lead flow.png' },
+  { icon: 'fa-solid fa-envelope-circle-check', title: 'Teams manually sending follow-up emails', desc: 'If a rep is copy-pasting the same follow-up email by hand, that time and consistency can be reclaimed with automation.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Teams manually sending follow-up emails.png' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardizing sales process', desc: 'A documented nurture sequence gives every new sales hire the same reliable follow-up process from day one.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Growing teams standardizing sales process.png' },
 ];
 
 const LNW_WHY_ISM = [
@@ -592,7 +592,7 @@ export default function LeadNurtureWorkflowsPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/lnwwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = LNW_WHY_ISM[3]; return (

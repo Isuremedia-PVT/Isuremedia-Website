@@ -31,6 +31,26 @@ const faqs = [
     q: 'What services are included in white label fulfillment?',
     a: 'Our white label programme covers SEO, PPC, web design, content creation, social media management, and marketing automation, all delivered under your brand with client ready reports.',
   },
+  {
+    q: 'What services does Isuremedia offer?',
+    a: 'Isuremedia offers SEO, PPC advertising, website design, sales funnels, content marketing, social media, and marketing automation. All under one roof.',
+  },
+  {
+    q: 'How long has Isuremedia been in business?',
+    a: 'We have been delivering digital marketing results since 2018, with over 8 years of agency experience across 150+ clients in the US, UK, India, New Zealand, UAE, and Canada.',
+  },
+  {
+    q: 'Do you work with small businesses or only large companies?',
+    a: 'We work with businesses of all sizes, from local service providers and startups to established brands. Our packages are structured to scale with your growth.',
+  },
+  {
+    q: 'How do I get started with Isuremedia?',
+    a: 'Start with a free audit. We review your website, current rankings, and ad accounts, then put together a strategy before any commitment.',
+  },
+  {
+    q: 'Which countries do you serve?',
+    a: 'We have active clients in the US, UK, India, New Zealand, UAE, and Canada. Our team works across time zones to provide timely communication and support.',
+  },
 ];
 
 export default function FAQ() {

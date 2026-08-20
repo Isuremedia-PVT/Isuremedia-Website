@@ -192,8 +192,8 @@ export default function Services() {
         </div>
 
         {/* ── Tab bar ── */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44 }}>
-          <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 6, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '6px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
+        <div className="svc-tabbar-outer" style={{ display: 'flex', justifyContent: 'center', marginBottom: 44 }}>
+          <div className="svc-tabbar" style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 6, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 14, padding: '6px', boxShadow: '0 2px 12px rgba(0,0,0,.06)' }}>
             {tabs.map(t => {
               const isActive = t.id === activeId;
               return (
@@ -393,6 +393,11 @@ export default function Services() {
           .svc-card { padding: 32px 18px 40px !important; }
           .svc-check-item { padding: 12px 14px !important; }
           .svc-cta-pill { white-space: normal !important; text-align: center; padding: 14px 22px !important; }
+        }
+        @media (max-width: 640px) {
+          .svc-tabbar-outer { justify-content: flex-start !important; overflow: hidden; }
+          .svc-tabbar { flex-wrap: nowrap !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; max-width: 100%; }
+          .svc-tabbar::-webkit-scrollbar { display: none; }
         }
       `}</style>
     </section>

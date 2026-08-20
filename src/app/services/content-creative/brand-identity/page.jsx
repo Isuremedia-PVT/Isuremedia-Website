@@ -57,12 +57,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isn’t a brand system, we build the one you’ll still be using in five years.', img: 'https://picsum.photos/seed/brd-whofor-startup/700/620' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesn’t match the business you’ve become, a refreshed identity closes that gap.', img: 'https://picsum.photos/seed/brd-whofor-outgrown/700/620' },
-  { icon: 'fa-solid fa-compass-drafting', title: 'Companies rebranding after a pivot', desc: 'A change in offer, market, or ownership deserves a visual identity that reflects the business you are now.', img: 'https://picsum.photos/seed/brd-whofor-pivot/700/620' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label identity work', desc: 'Client rebrand requests that exceed internal capacity are handled under your brand, start to finish.', img: 'https://picsum.photos/seed/brd-whofor-agency/700/620' },
-  { icon: 'fa-solid fa-shuffle', title: 'Businesses with inconsistent branding', desc: 'If your website, social, and print materials look like three different companies, a documented system fixes it once.', img: 'https://picsum.photos/seed/brd-whofor-inconsistent/700/620' },
-  { icon: 'fa-solid fa-store', title: 'Franchises needing a scalable brand system', desc: 'Multi-location brands need guidelines rigid enough to stay consistent and clear enough for any location to follow.', img: 'https://picsum.photos/seed/brd-whofor-franchise/700/620' },
+  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isn’t a brand system, we build the one you’ll still be using in five years.', img: '/services-six-card/content_and_creative/Brand Identity/Startups launching without a realidentity.png' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesn’t match the business you’ve become, a refreshed identity closes that gap.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses that outgrew theiroriginal logo.png' },
+  { icon: 'fa-solid fa-compass-drafting', title: 'Companies rebranding after a pivot', desc: 'A change in offer, market, or ownership deserves a visual identity that reflects the business you are now.', img: '/services-six-card/content_and_creative/Brand Identity/Companies rebranding after apivot.png' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label identity work', desc: 'Client rebrand requests that exceed internal capacity are handled under your brand, start to finish.', img: '/services-six-card/content_and_creative/Brand Identity/Agencies needing white-labelidentity work.png' },
+  { icon: 'fa-solid fa-shuffle', title: 'Businesses with inconsistent branding', desc: 'If your website, social, and print materials look like three different companies, a documented system fixes it once.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses with inconsistentbranding.png' },
+  { icon: 'fa-solid fa-store', title: 'Franchises needing a scalable brand system', desc: 'Multi-location brands need guidelines rigid enough to stay consistent and clear enough for any location to follow.', img: '/services-six-card/content_and_creative/Brand Identity/Franchises needing a scalablebrand system.png' },
 ];
 
 const WHY_ISM = [
@@ -575,7 +575,7 @@ export default function BrandIdentityPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/brdwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

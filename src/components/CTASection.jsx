@@ -14,8 +14,7 @@ export default function CTASection({
   heading = 'Ready for',
   headingHighlight = 'Results?',
   cardPadTop = 40,
-  cardPadX = 60,
-  showOr = true
+  cardPadX = 60
 }) {
   // bleed is expressed as a fraction of the person column's own width, so it scales
   // smoothly with the fluid clamp() below instead of being pinned to a fixed px value
@@ -32,7 +31,7 @@ export default function CTASection({
     <section id="cta" className={`cta-section${bleed ? ' cta-bleed' : ''}`} style={{ paddingTop: sectionPadTop, paddingBottom: 64, background: '#fff', overflow: bleed ? 'visible' : 'hidden' }}>
       <div className="ism-container">
 
-        <div className="cta-card" style={{ position: 'relative', background: 'var(--color-primary)', borderRadius: 24, padding: `${cardPadTop}px ${cardPadX}px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
+        <div className="cta-card" style={{ position: 'relative', background: 'linear-gradient(135deg,#1E4DC3 0%,#4484EE 100%)', borderRadius: 24, padding: `${cardPadTop}px ${cardPadX}px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
 
           {/* Decorative glow */}
           <div className="cta-glow" style={{ position: 'absolute', right: '30%', top: '-10%', width: 400, height: 400, background: 'radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 65%)', pointerEvents: 'none', borderRadius: '50%' }} />
@@ -54,8 +53,6 @@ export default function CTASection({
               >
                 {primaryLabel}
               </a>
-
-              {showOr && <span className="cta-or" style={{ fontFamily: J, fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,.70)', textTransform: 'uppercase', letterSpacing: '.06em' }}>or</span>}
 
               <a href={secondaryHref} className="cta-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
@@ -104,7 +101,6 @@ export default function CTASection({
           .cta-glow { display: none !important; }
           .cta-btns { flex-direction: column !important; align-items: stretch !important; }
           .cta-btns a { justify-content: center !important; width: 100% !important; box-sizing: border-box !important; white-space: normal !important; text-align: center !important; }
-          .cta-or { text-align: center !important; align-self: center !important; }
           .cta-btn { padding: 13px 18px !important; font-size: 12.5px !important; }
         }
       `}</style>

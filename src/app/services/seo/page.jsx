@@ -132,6 +132,8 @@ const FAQS = [
   { q: 'Do you do local SEO for small businesses?', a: 'Yes. Local SEO is one of our core services, Google Business Profile, local citations, location pages, and map pack rankings. It works particularly well for service businesses and any business that serves a specific area.' },
   { q: 'Can SEO and paid ads work together?', a: 'Yes, and they work better together than either does alone. Paid ads get you in front of buyers immediately; SEO builds the long-term foundation that keeps traffic coming without ongoing ad spend. The fastest-growing businesses usually do both.' },
   { q: 'What happens if my rankings drop?', a: 'Rankings fluctuate, Google updates its algorithm regularly and competitor activity affects rankings too. When movement happens, we investigate immediately, identify the cause, and adjust the strategy. You are told what happened and what we are doing about it.' },
+  { q: 'What is included in your SEO services?', a: 'Our SEO includes technical audit and fixes, on-page optimisation, keyword mapping, content strategy, link building, local SEO (GBP), and AI Overview / AEO optimisation.' },
+  { q: 'What is AEO (Answer Engine Optimisation)?', a: 'AEO is the process of optimising your content to appear in AI-powered search results: Google AI Overviews, ChatGPT, and Perplexity. We structure content with FAQ schema and clear answers so AI systems cite your business.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */

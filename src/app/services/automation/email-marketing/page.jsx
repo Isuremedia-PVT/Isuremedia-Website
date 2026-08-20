@@ -53,12 +53,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with an existing list', desc: 'Abandoned cart and post-purchase flows alone typically recover revenue that more than covers the cost of the program.', img: 'https://picsum.photos/seed/email-whofor-ecom/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Service businesses nurturing long sales cycles', desc: 'Leads that aren’t ready to buy today stay warm through consistent, valuable email touch points until they are.', img: 'https://picsum.photos/seed/email-whofor-service/700/620' },
-  { icon: 'fa-solid fa-user-plus', title: 'Businesses collecting leads without following up', desc: 'A list sitting unused in a CRM is a missed asset. We turn it into an automated revenue channel.', img: 'https://picsum.photos/seed/email-whofor-leads/700/620' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Brands seeing email performance decline', desc: 'Falling open rates are usually a deliverability or segmentation problem, not an email-is-dead problem. We diagnose and fix it.', img: 'https://picsum.photos/seed/email-whofor-decline/700/620' },
-  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product or offer', desc: 'A warmed, segmented list is one of the fastest ways to generate first-week sales for a new launch.', img: 'https://picsum.photos/seed/email-whofor-launch/700/620' },
-  { icon: 'fa-solid fa-gears', title: 'Businesses wanting marketing on autopilot', desc: 'Once built, automated flows keep converting new subscribers and recovering lost sales without ongoing manual effort.', img: 'https://picsum.photos/seed/email-whofor-auto/700/620' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with an existing list', desc: 'Abandoned cart and post-purchase flows alone typically recover revenue that more than covers the cost of the program.', img: '/services-six-card/Marketing Automation Section/Email Marketing/E-commerce brands with an existing list.png' },
+  { icon: 'fa-solid fa-building', title: 'Service businesses nurturing long sales cycles', desc: 'Leads that aren’t ready to buy today stay warm through consistent, valuable email touch points until they are.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Service businesses nurturing long sales cycles.png' },
+  { icon: 'fa-solid fa-user-plus', title: 'Businesses collecting leads without following up', desc: 'A list sitting unused in a CRM is a missed asset. We turn it into an automated revenue channel.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses collecting leads without following up.png' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Brands seeing email performance decline', desc: 'Falling open rates are usually a deliverability or segmentation problem, not an email-is-dead problem. We diagnose and fix it.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands seeing email performance decline.png' },
+  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product or offer', desc: 'A warmed, segmented list is one of the fastest ways to generate first-week sales for a new launch.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands launching a new product or offer.png' },
+  { icon: 'fa-solid fa-gears', title: 'Businesses wanting marketing on autopilot', desc: 'Once built, automated flows keep converting new subscribers and recovering lost sales without ongoing manual effort.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses wanting marketing on autopilot.png' },
 ];
 
 const WHY_ISM = [
@@ -569,7 +569,7 @@ export default function EmailMarketingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/emailwhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

@@ -43,15 +43,6 @@ const RANKING_FACTORS = [
   { icon: 'fa-solid fa-robot', title: 'AI Search Visibility', impact: 'Growing fast', desc: 'Google AI Overviews, ChatGPT, and Perplexity now surface local business recommendations directly in search. Businesses with optimised GBPs, structured data, and strong review profiles are the ones appearing in these AI-generated answers. This is no longer optional.' },
 ];
 
-const GBP_ITEMS = [
-  { icon: 'fa-solid fa-clipboard-check', title: 'Full profile setup and optimisation', desc: 'We make sure every section of your profile is complete, business categories, service descriptions, attributes, hours, and contact details. Nothing left blank, nothing left to chance.', img: 'https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=500&q=80' },
-  { icon: 'fa-solid fa-camera', title: 'Photo and video management', desc: 'Profiles with photos receive significantly more clicks and direction requests. We manage your photo library and keep it current with real images of your business, team, and work.', img: 'https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=500&q=80' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Google Posts and updates', desc: 'Regular posts signal to Google that your business is active. We publish updates, offers, and announcements consistently so your profile stays fresh in both rankings and first impressions.', img: 'https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?w=500&q=80' },
-  { icon: 'fa-solid fa-comments', title: 'Q and A management', desc: 'The questions section on your GBP gets populated whether you manage it or not. We pre-populate it with the questions your customers actually ask and make sure the answers represent your business accurately.', img: 'https://images.unsplash.com/photo-1766066014237-00645c74e9c6?w=500&q=80' },
-  { icon: 'fa-solid fa-reply', title: 'Review response strategy', desc: 'Responding to reviews is a ranking signal and a trust signal. We help you build a response process that keeps your profile active and shows potential customers that your business is attentive.', img: 'https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=500&q=80' },
-  { icon: 'fa-solid fa-list', title: 'Service and product listings', desc: 'Every service you offer can be listed with a description and pricing indicator. We set these up properly so your profile communicates exactly what you do to both Google and the visitor.', img: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=500&q=80' },
-];
-
 const SERVICES = [
   { icon: 'fa-solid fa-map-location-dot', title: 'Google Business Profile Optimisation', desc: 'Your GBP is the most visible part of your local presence. We set it up completely, optimise every section, manage your photos and posts, handle Q and A, and keep it active so Google keeps ranking it.' },
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Local SEO Audit', desc: 'Before we touch anything, we audit your current local presence, your GBP, citations, on-page signals, competitor rankings, and review profile. You get a clear picture of where you stand and exactly what needs fixing.' },
@@ -471,47 +462,6 @@ export default function LocalSEOPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. GOOGLE BUSINESS PROFILE ══════════════════════════════════════════════ */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Get It Right and Everything Else Gets Easier.</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                When someone searches for a local business, the first thing they see is not your website. It is your Google Business Profile, your name, rating, photos, hours, reviews, and a button to call or get directions. That first impression decides whether they contact you or scroll past.
-                A complete, optimised GBP makes customers 2.7 times more likely to view your business as reputable and 70% more likely to visit. GBP actions have increased 41% year over year. Most businesses are leaving this entirely unmanaged.
-              </p>
-            </div>
-            <p style={{ textAlign: 'center', fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', letterSpacing: '.06em', textTransform: 'uppercase', marginBottom: 32 }}>What Isuremedia does with your GBP</p>
-            <div className="gbp-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-              {GBP_ITEMS.map(g => (
-                <div key={g.title} className="gbp-card" style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', border: '1px solid var(--color-border)' }}>
-                  <div style={{ position: 'relative', height: 170, overflow: 'hidden' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={g.img} alt="" className="gbp-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  </div>
-                  <div style={{ padding: '22px 24px 26px' }}>
-                    <div className="gbp-card-icon" style={{ width: 34, height: 34, borderRadius: 9, background: 'var(--ism-blue-50)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14, transition: 'background .2s ease' }}>
-                      <i className={g.icon} style={{ color: 'var(--color-primary)', fontSize: 14 }} />
-                    </div>
-                    <h3 style={{ fontFamily: J, fontSize: 15.5, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 8, lineHeight: 1.3 }}>{g.title}</h3>
-                    <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.68, margin: 0 }}>{g.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`
-            .gbp-card{ transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
-            .gbp-card:hover{ transform: translateY(-5px); box-shadow: 0 18px 40px rgba(0,35,83,.12); border-color: transparent; }
-            .gbp-card-img{ transition: transform .4s ease; }
-            .gbp-card:hover .gbp-card-img{ transform: scale(1.08); }
-            .gbp-card:hover .gbp-card-icon{ background: var(--ism-amber); }
-            .gbp-card:hover .gbp-card-icon i{ color: var(--color-navy) !important; }
-            @media (max-width:900px){ .gbp-grid{ grid-template-columns:repeat(2,1fr) !important; } }
-            @media (max-width:600px){ .gbp-grid{ grid-template-columns:1fr !important; } }
-          `}</style>
-        </section>
-
         {/* ══ 08. ISM LOCAL SEO SERVICES ══════════════════════════════════════════════ */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
@@ -636,7 +586,7 @@ export default function LocalSEOPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/lseowhatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\seo.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (

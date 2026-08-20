@@ -66,12 +66,12 @@ const APB_SERVICES = [
 ];
 
 const APB_WHO_FOR = [
-  { icon: 'fa-solid fa-stethoscope', title: 'Clinics and med spas', desc: 'Automated booking, reminders, and deposit collection keep treatment rooms full and reduce costly last-minute cancellations.', img: 'https://picsum.photos/seed/apb-whofor-1/700/620' },
-  { icon: 'fa-solid fa-scissors', title: 'Salons and personal services', desc: 'Clients book their own appointments around real-time stylist availability, and reminders keep chairs filled.', img: 'https://picsum.photos/seed/apb-whofor-2/700/620' },
-  { icon: 'fa-solid fa-house', title: 'Home service contractors', desc: 'Estimate bookings sync straight to the right technician calendar, cutting the back-and-forth of scheduling site visits.', img: 'https://picsum.photos/seed/apb-whofor-3/700/620' },
-  { icon: 'fa-solid fa-headset', title: 'Consultants and coaches', desc: 'Discovery calls book automatically against your live availability, with reminders that keep show-up rates high.', img: 'https://picsum.photos/seed/apb-whofor-4/700/620' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies booking discovery calls', desc: 'Sales calls fill your calendar automatically, with reminders and reschedule flows that protect your team’s time.', img: 'https://picsum.photos/seed/apb-whofor-5/700/620' },
-  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Every location and staff calendar stays in sync, so clients always book against accurate, real-time availability.', img: 'https://picsum.photos/seed/apb-whofor-6/700/620' },
+  { icon: 'fa-solid fa-stethoscope', title: 'Clinics and med spas', desc: 'Automated booking, reminders, and deposit collection keep treatment rooms full and reduce costly last-minute cancellations.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Clinics and med spas.png' },
+  { icon: 'fa-solid fa-scissors', title: 'Salons and personal services', desc: 'Clients book their own appointments around real-time stylist availability, and reminders keep chairs filled.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Salons and personal services.png' },
+  { icon: 'fa-solid fa-house', title: 'Home service contractors', desc: 'Estimate bookings sync straight to the right technician calendar, cutting the back-and-forth of scheduling site visits.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Home service contractors.png' },
+  { icon: 'fa-solid fa-headset', title: 'Consultants and coaches', desc: 'Discovery calls book automatically against your live availability, with reminders that keep show-up rates high.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Consultants and coaches.png' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies booking discovery calls', desc: 'Sales calls fill your calendar automatically, with reminders and reschedule flows that protect your team’s time.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Agencies booking discovery calls.png' },
+  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Every location and staff calendar stays in sync, so clients always book against accurate, real-time availability.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Multi-location businesses.png' },
 ];
 
 const APB_WHY_ISM = [
@@ -592,7 +592,7 @@ export default function AppointmentBookingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://picsum.photos/seed/apb-whatmakesdifferent/700/620" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = APB_WHY_ISM[3]; return (

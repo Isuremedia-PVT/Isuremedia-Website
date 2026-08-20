@@ -1,6 +1,5 @@
 'use client';
 
-const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const cols = [
@@ -78,17 +77,17 @@ export default function Footer() {
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/isuremedia-light.webp" alt="Isuremedia" style={{ height: 44, width: 'auto', objectFit: 'contain', objectPosition: 'left center', display: 'block', marginBottom: 16 }} />
-            <p style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.80)', lineHeight: 1.75, marginBottom: 24 }}>
+            <span className="ftr-tagline" style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.80)', lineHeight: 1.75, marginBottom: 24 }}>
               End to end digital marketing. One team. One strategy. Zero gaps.
-            </p>
+            </span>
 
             {/* India Address */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 16 }}>
               <i className="fa-solid fa-location-dot" style={{ fontSize: 11, color: 'var(--ism-amber)', marginTop: 3, flexShrink: 0 }} />
-              <p style={{ fontFamily: I, fontSize: 10, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, margin: 0 }}>
-                First Floor, Chandra Complex, Gas Godam Road, Chhadayal Nayabad,<br />
-                Near Riya Palace, Haldwani, Nainital, Uttarakhand 263139, India
-              </p>
+              <span className="ftr-address" style={{ display: 'block', fontFamily: I, fontSize: 12.5, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, margin: 0 }}>
+                Gas Godam Road, Chhadayal Nayabad, First Floor, Chandra Complex<br />
+                Haldwani, Nainital, Uttarakhand 263139, India
+              </span>
             </div>
 
             {/* Contacts */}
@@ -96,7 +95,6 @@ export default function Footer() {
               { href: 'tel:+917011041363',          icon: 'fa-solid fa-phone',    label: '+91 70110 41363' },
               { href: 'tel:+16465881430',            icon: 'fa-solid fa-phone',    label: '+1 646-588-1430' },
               { href: 'mailto:info@isuremedia.com',  icon: 'fa-solid fa-envelope', label: 'info@isuremedia.com' },
-              { href: 'https://api.whatsapp.com/send?phone=917011041363', icon: 'fa-brands fa-whatsapp', label: 'WhatsApp Us', external: true },
             ].map(c => (
               <a key={c.label} href={c.href} {...(c.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 style={{ fontFamily: I, fontSize: 12, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 9, transition: 'color .15s' }}
@@ -125,7 +123,7 @@ export default function Footer() {
           {/* Link columns */}
           {cols.map(col => (
             <div key={col.title}>
-              <h5 style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 22 }}>{col.title}</h5>
+              <span style={{ display: 'block', fontFamily: I, fontSize: 12, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: 22 }}>{col.title}</span>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
                 {col.links.map(link => (
                   <li key={link.label}>
@@ -146,10 +144,10 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom bar ── */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 0', flexWrap: 'wrap', gap: 12 }}>
-          <p style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.65)', margin: 0 }}>
+        <div className="ftr-bottom-bar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 0', flexWrap: 'wrap', gap: 12 }}>
+          <span style={{ display: 'block', fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.65)', margin: 0 }}>
             All rights are reserved by Isuremedia PVT. LTD. | Copyright © 2026
-          </p>
+          </span>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
             {legalLinks.map(item => (
               <a key={item.label} href={item.href}
@@ -168,9 +166,17 @@ export default function Footer() {
           .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; padding-bottom: 36px !important; }
           .footer-grid > div:first-child { grid-column: span 2 !important; }
         }
+        @media (max-width: 1100px) {
+          .ftr-bottom-bar { padding-bottom: 88px !important; }
+        }
         @media (max-width: 540px) {
           .ftr-section { padding: 36px 0 0 !important; }
           .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; padding-bottom: 28px !important; }
+          .footer-grid > div:first-child { grid-column: span 1 !important; }
+          .ftr-tagline { font-size: 12px !important; }
+          .ftr-address { font-size: 11.5px !important; }
+          .ftr-bottom-bar { flex-direction: column !important; align-items: flex-start !important; }
+          .ftr-bottom-bar > div { gap: 12px 16px !important; }
         }
       `}</style>
     </footer>
