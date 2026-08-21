@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { resultCards } from '@/components/ResultsStrip';
-import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
+import { PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -229,12 +229,12 @@ export default function Navbar() {
 
           {/* Right, phone, email, CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            <a href={PHONE_IN_TEL} style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
+            <a href={PHONE_US_TEL} style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
               onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
             >
               <i className="fa-solid fa-phone" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
-              {PHONE_IN}
+              {PHONE_US}
             </a>
             <a href={EMAIL_HREF} style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
