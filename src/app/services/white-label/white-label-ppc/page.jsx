@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -58,12 +58,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-slash', title: 'Agencies without an in-house PPC specialist', desc: 'You can say yes to paid media work without hiring, training, or maintaining certifications your agency does not use often enough to justify.', img: '/services-six-card/White Label/White Label ppc/Agencies without an in-housePPC specialist.png' },
-  { icon: 'fa-solid fa-tags', title: 'Agencies wanting to resell paid media without hiring', desc: 'Add Google, Meta, and LinkedIn Ads to your service menu and keep the margin, without carrying the payroll of a media buying team.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting to resell paidmedia without hiring.png' },
-  { icon: 'fa-solid fa-comments', title: 'Agencies with clients requesting Google, Meta or LinkedIn ads', desc: 'When a client asks for paid ads, say yes on the spot instead of referring them elsewhere and risking the relationship.', img: '/services-six-card/White Label/White Label ppc/Agencies with clients requestingGoogle, Meta or Linkedln ads.png' },
-  { icon: 'fa-solid fa-chart-line', title: 'Agencies wanting predictable margin on ad management', desc: 'A fixed white-label rate against what you charge the client gives you a predictable, repeatable margin on every account.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting predictablemargin on ad management.png' },
-  { icon: 'fa-solid fa-layer-group', title: 'Agencies needing overflow PPC capacity', desc: 'When your in-house team is at capacity, white-label overflow keeps new accounts moving without delaying onboarding.', img: '/services-six-card/White Label/White Label ppc/Agencies needing overflow PPCcapacity.png' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding without certification overhead', desc: 'Expand into paid media as a core offering while we carry the certification, platform training, and day-to-day account management.', img: '/services-six-card/White Label/White Label ppc/Agencies expanding withoutcertification overhead.png' },
+  { icon: 'fa-solid fa-user-slash', title: 'Agencies without an in-house PPC specialist', desc: 'You can say yes to paid media work without hiring, training, or maintaining certifications your agency does not use often enough to justify.', img: '/services-six-card/White Label/White Label ppc/Agencies without an in-housePPC specialist.webp' },
+  { icon: 'fa-solid fa-tags', title: 'Agencies wanting to resell paid media without hiring', desc: 'Add Google, Meta, and LinkedIn Ads to your service menu and keep the margin, without carrying the payroll of a media buying team.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting to resell paidmedia without hiring.webp' },
+  { icon: 'fa-solid fa-comments', title: 'Agencies with clients requesting Google, Meta or LinkedIn ads', desc: 'When a client asks for paid ads, say yes on the spot instead of referring them elsewhere and risking the relationship.', img: '/services-six-card/White Label/White Label ppc/Agencies with clients requestingGoogle, Meta or Linkedln ads.webp' },
+  { icon: 'fa-solid fa-chart-line', title: 'Agencies wanting predictable margin on ad management', desc: 'A fixed white-label rate against what you charge the client gives you a predictable, repeatable margin on every account.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting predictablemargin on ad management.webp' },
+  { icon: 'fa-solid fa-layer-group', title: 'Agencies needing overflow PPC capacity', desc: 'When your in-house team is at capacity, white-label overflow keeps new accounts moving without delaying onboarding.', img: '/services-six-card/White Label/White Label ppc/Agencies needing overflow PPCcapacity.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding without certification overhead', desc: 'Expand into paid media as a core offering while we carry the certification, platform training, and day-to-day account management.', img: '/services-six-card/White Label/White Label ppc/Agencies expanding withoutcertification overhead.webp' },
 ];
 
 const WHY_ISM = [
@@ -102,7 +102,7 @@ const RELATED = [
   { href: '/services/ppc-paid-marketing', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, Google, Meta, and LinkedIn campaigns.' },
 ];
 
-/* ── FAQ 2-COL, matches the sibling white-label pages layout ── */
+/* â”€â”€ FAQ 2-COL, matches the sibling white-label pages layout â”€â”€ */
 function WLPFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -121,7 +121,7 @@ function WLPFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -159,7 +159,7 @@ export default function WhiteLabelPPCPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wlp-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -211,7 +211,7 @@ export default function WhiteLabelPPCPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>250+ Accounts Managed</span>
@@ -249,10 +249,10 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -297,7 +297,7 @@ export default function WhiteLabelPPCPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS WHITE-LABEL PPC ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS WHITE-LABEL PPC â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wlp-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -387,7 +387,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY AGENCIES NEED WHITE-LABEL PPC ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY AGENCIES NEED WHITE-LABEL PPC â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
@@ -425,7 +425,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT MAKES A WHITE-LABEL PPC PARTNERSHIP WORK ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT MAKES A WHITE-LABEL PPC PARTNERSHIP WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -469,7 +469,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR WHITE-LABEL PPC SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR WHITE-LABEL PPC SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -499,7 +499,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -510,7 +510,7 @@ export default function WhiteLabelPPCPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -533,7 +533,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -560,7 +560,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -593,7 +593,7 @@ export default function WhiteLabelPPCPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -627,7 +627,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wlp-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -674,7 +674,7 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -701,10 +701,10 @@ export default function WhiteLabelPPCPage() {
           <style>{`@media(max-width:860px){ .wlp-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <WLPFAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/white label.webp" description={<>Running Google, Meta, and LinkedIn campaigns for every client stretches even the best in-house team thin. Our white-label PPC specialists manage the strategy, execution, and reporting under your agency&rsquo;s name, so you can offer full-funnel paid media without adding headcount. Let&rsquo;s talk about how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale your paid media offer under your brand</span>.</>} heading="Ready to Launch" headingHighlight="White-Label Campaigns?" primaryLabel="Start White-Label PPC" secondaryLabel="Talk to Our Ads Team" />
       </main>
       <Footer />

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -65,12 +65,12 @@ const N8N_SERVICES = [
 ];
 
 const N8N_WHO_FOR = [
-  { icon: 'fa-solid fa-code', title: 'Engineering teams needing custom logic', desc: 'When built-in nodes are not enough, custom JavaScript or Python code nodes let engineering teams build exactly the logic they need.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Engineering teams needing custom logic.png' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume, self-hosted n8n removes that ceiling.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Agencies wanting to avoid per-task billing.png' },
-  { icon: 'fa-solid fa-database', title: 'Data-heavy businesses transforming large volumes', desc: 'High-volume data transformation and syncing is where per-execution pricing on other platforms becomes expensive fast.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Data-heavy businesses transforming large volumes.png' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Businesses requiring full data ownership', desc: 'Regulated industries and businesses with strict data residency requirements need automation that never sends data through a third-party server.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Businesses requiring full data ownership.png' },
-  { icon: 'fa-solid fa-server', title: 'Teams wanting to self-host for security', desc: 'Self-hosting on your own infrastructure gives your security team full visibility and control over exactly how automation runs.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Teams wanting to self-host for security.png' },
-  { icon: 'fa-solid fa-cubes', title: 'SaaS companies building internal tooling', desc: 'Product and ops teams use n8n to wire together internal tools and third-party APIs without waiting on engineering sprints for every change.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/SaaS companies building internal tooling.png' },
+  { icon: 'fa-solid fa-code', title: 'Engineering teams needing custom logic', desc: 'When built-in nodes are not enough, custom JavaScript or Python code nodes let engineering teams build exactly the logic they need.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Engineering teams needing custom logic.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies wanting to avoid per-task billing', desc: 'Agencies running automation across many clients need a cost model that does not penalise them for volume, self-hosted n8n removes that ceiling.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Agencies wanting to avoid per-task billing.webp' },
+  { icon: 'fa-solid fa-database', title: 'Data-heavy businesses transforming large volumes', desc: 'High-volume data transformation and syncing is where per-execution pricing on other platforms becomes expensive fast.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Data-heavy businesses transforming large volumes.webp' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Businesses requiring full data ownership', desc: 'Regulated industries and businesses with strict data residency requirements need automation that never sends data through a third-party server.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Businesses requiring full data ownership.webp' },
+  { icon: 'fa-solid fa-server', title: 'Teams wanting to self-host for security', desc: 'Self-hosting on your own infrastructure gives your security team full visibility and control over exactly how automation runs.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/Teams wanting to self-host for security.webp' },
+  { icon: 'fa-solid fa-cubes', title: 'SaaS companies building internal tooling', desc: 'Product and ops teams use n8n to wire together internal tools and third-party APIs without waiting on engineering sprints for every change.', img: '/services-six-card/Marketing Automation Section/n8n Workflow Automation/SaaS companies building internal tooling.webp' },
 ];
 
 const N8N_WHY_ISM = [
@@ -101,7 +101,7 @@ const N8N_FAQS = [
   { q: 'How long does an n8n project take?', a: 'A typical engagement covering server setup and ten custom workflows moves from setup to deployed, monitored workflows in three to four weeks, depending on complexity.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function N8nFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -120,7 +120,7 @@ function N8nFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -158,7 +158,7 @@ export default function N8nPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="n8n-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -210,7 +210,7 @@ export default function N8nPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>200+ Workflows Deployed</span>
@@ -248,10 +248,10 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -296,7 +296,7 @@ export default function N8nPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS N8N AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS N8N AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="n8n-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -387,7 +387,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -425,7 +425,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -469,7 +469,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR N8N SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR N8N SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -499,7 +499,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -510,7 +510,7 @@ export default function N8nPage() {
               {N8N_WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -533,7 +533,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -560,7 +560,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -593,7 +593,7 @@ export default function N8nPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = N8N_WHY_ISM[3]; return (
@@ -627,7 +627,7 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="n8n-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -669,10 +669,10 @@ export default function N8nPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <N8nFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Automation.webp" description={<>If off-the-shelf automation tools keep hitting walls you can't get around, you need something built for full control. n8n gives your team the flexibility to build exactly the workflow your process demands. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automations with no limits</span>.</>} heading="Ready for Full" headingHighlight="Workflow Control?" primaryLabel="Build My n8n Workflows" secondaryLabel="Talk to an n8n Specialist" />
       </main>
       <Footer />

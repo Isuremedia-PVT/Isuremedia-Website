@@ -1,5 +1,7 @@
 'use client';
 
+import { PHONE_IN, PHONE_IN_TEL, PHONE_IN2, PHONE_IN2_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
+
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const cols = [
@@ -33,8 +35,8 @@ const cols = [
   {
     title: 'Resources',
     links: [
-      { label: 'Blog',          href: '/blog'           },
-      { label: 'Free Tools',    href: '/freetools'      },
+      { label: 'Blog',          href: 'https://blogs.isuremedia.com/'      },
+      { label: 'Free Tools',    href: 'https://templates.isuremedia.com/' },
       { label: 'Privacy Policy',href: '/privacy-policy' },
       { label: 'Terms of Service', href: '/terms'       },
       { label: 'Contact Us',    href: '/contact'        },
@@ -76,7 +78,7 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/isuremedia-light.webp" alt="Isuremedia" style={{ height: 44, width: 'auto', objectFit: 'contain', objectPosition: 'left center', display: 'block', marginBottom: 16 }} />
+            <img src="/isuremedia-light.webp" alt="Isuremedia" loading="lazy" style={{ height: 44, width: 'auto', objectFit: 'contain', objectPosition: 'left center', display: 'block', marginBottom: 16 }} />
             <span className="ftr-tagline" style={{ display: 'block', fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.80)', lineHeight: 1.75, marginBottom: 24 }}>
               End to end digital marketing. One team. One strategy. Zero gaps.
             </span>
@@ -92,9 +94,10 @@ export default function Footer() {
 
             {/* Contacts */}
             {[
-              { href: 'tel:+917011041363',          icon: 'fa-solid fa-phone',    label: '+91 70110 41363' },
-              { href: 'tel:+16465881430',            icon: 'fa-solid fa-phone',    label: '+1 646-588-1430' },
-              { href: 'mailto:info@isuremedia.com',  icon: 'fa-solid fa-envelope', label: 'info@isuremedia.com' },
+              // { href: PHONE_IN_TEL,  icon: 'fa-solid fa-phone',    label: PHONE_IN  },
+              { href: PHONE_IN2_TEL, icon: 'fa-solid fa-phone',    label: PHONE_IN2 },
+              { href: PHONE_US_TEL,  icon: 'fa-solid fa-phone',    label: PHONE_US  },
+              { href: EMAIL_HREF,    icon: 'fa-solid fa-envelope', label: EMAIL     },
             ].map(c => (
               <a key={c.label} href={c.href} {...(c.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 style={{ fontFamily: I, fontSize: 12, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 9, transition: 'color .15s' }}
@@ -128,6 +131,7 @@ export default function Footer() {
                 {col.links.map(link => (
                   <li key={link.label}>
                     <a href={link.href}
+                      {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                       style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.85)', textDecoration: 'none', transition: 'color .15s', display: 'flex', alignItems: 'center', gap: 6 }}
                       onMouseEnter={e => { e.currentTarget.style.color = 'var(--ism-amber)'; }}
                       onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,.85)'; }}

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -24,7 +24,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-star', title: 'Instant credibility with new prospects', desc: 'A polished, considered identity signals professionalism before a single word is read, trust starts on sight.' },
   { icon: 'fa-solid fa-swatchbook', title: 'One system, not one-off decisions', desc: 'Documented color, type, and logo usage rules mean nobody on your team has to guess what "on-brand" looks like.' },
   { icon: 'fa-solid fa-arrows-to-circle', title: 'A brand that scales without fragmenting', desc: 'As you add channels, hires, and partners, documented guidelines keep everything coherent instead of drifting apart.' },
-  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'A logo that shifts shape, colors that change by channel, prospects register it as a business that isn’t fully in control.' },
+  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'A logo that shifts shape, colors that change by channel, prospects register it as a business that isnâ€™t fully in control.' },
   { icon: 'fa-solid fa-handshake', title: '23% average revenue increase', desc: 'Consistent visual branding increases revenue by an average of 23% through recognition, trust, and perceived quality.' },
 ];
 
@@ -52,17 +52,17 @@ const SERVICES = [
   { icon: 'fa-solid fa-book-open', title: 'Brand Guideline Documents', desc: 'A documented reference for an identity that already exists but was never formally written down.' },
   { icon: 'fa-solid fa-comments', title: 'Brand Voice & Messaging', desc: 'Tone, vocabulary, and messaging pillars developed to align with, and reinforce, the visual identity.' },
   { icon: 'fa-solid fa-id-card', title: 'Stationery & Social Templates', desc: 'Business cards, letterhead, email signatures, and social media templates built on the new system.' },
-  { icon: 'fa-solid fa-tag', title: 'White-Label Brand Design for Agencies', desc: 'Full identity systems built for your clients under your agency’s brand, no ISureMedia references.' },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Brand Audit & Consistency Review', desc: 'An audit of how your brand currently appears across every channel, with a clear plan to fix what’s inconsistent.' },
+  { icon: 'fa-solid fa-tag', title: 'White-Label Brand Design for Agencies', desc: 'Full identity systems built for your clients under your agencyâ€™s brand, no ISureMedia references.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Brand Audit & Consistency Review', desc: 'An audit of how your brand currently appears across every channel, with a clear plan to fix whatâ€™s inconsistent.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isn’t a brand system, we build the one you’ll still be using in five years.', img: '/services-six-card/content_and_creative/Brand Identity/Startups launching without a realidentity.png' },
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesn’t match the business you’ve become, a refreshed identity closes that gap.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses that outgrew theiroriginal logo.png' },
-  { icon: 'fa-solid fa-compass-drafting', title: 'Companies rebranding after a pivot', desc: 'A change in offer, market, or ownership deserves a visual identity that reflects the business you are now.', img: '/services-six-card/content_and_creative/Brand Identity/Companies rebranding after apivot.png' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label identity work', desc: 'Client rebrand requests that exceed internal capacity are handled under your brand, start to finish.', img: '/services-six-card/content_and_creative/Brand Identity/Agencies needing white-labelidentity work.png' },
-  { icon: 'fa-solid fa-shuffle', title: 'Businesses with inconsistent branding', desc: 'If your website, social, and print materials look like three different companies, a documented system fixes it once.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses with inconsistentbranding.png' },
-  { icon: 'fa-solid fa-store', title: 'Franchises needing a scalable brand system', desc: 'Multi-location brands need guidelines rigid enough to stay consistent and clear enough for any location to follow.', img: '/services-six-card/content_and_creative/Brand Identity/Franchises needing a scalablebrand system.png' },
+  { icon: 'fa-solid fa-seedling', title: 'Startups launching without a real identity', desc: 'A logo made in an afternoon isnâ€™t a brand system, we build the one youâ€™ll still be using in five years.', img: '/services-six-card/content_and_creative/Brand Identity/Startups launching without a realidentity.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Businesses that outgrew their original logo', desc: 'What worked at launch often doesnâ€™t match the business youâ€™ve become, a refreshed identity closes that gap.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses that outgrew theiroriginal logo.webp' },
+  { icon: 'fa-solid fa-compass-drafting', title: 'Companies rebranding after a pivot', desc: 'A change in offer, market, or ownership deserves a visual identity that reflects the business you are now.', img: '/services-six-card/content_and_creative/Brand Identity/Companies rebranding after apivot.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label identity work', desc: 'Client rebrand requests that exceed internal capacity are handled under your brand, start to finish.', img: '/services-six-card/content_and_creative/Brand Identity/Agencies needing white-labelidentity work.webp' },
+  { icon: 'fa-solid fa-shuffle', title: 'Businesses with inconsistent branding', desc: 'If your website, social, and print materials look like three different companies, a documented system fixes it once.', img: '/services-six-card/content_and_creative/Brand Identity/Businesses with inconsistentbranding.webp' },
+  { icon: 'fa-solid fa-store', title: 'Franchises needing a scalable brand system', desc: 'Multi-location brands need guidelines rigid enough to stay consistent and clear enough for any location to follow.', img: '/services-six-card/content_and_creative/Brand Identity/Franchises needing a scalablebrand system.webp' },
 ];
 
 const WHY_ISM = [
@@ -90,7 +90,7 @@ const FAQS = [
   { q: 'How long does a full brand identity take?', a: 'Logo refinement alone: two to three weeks. A full identity system with guidelines: four to six weeks. Full rebrands with rollout support: six to eight weeks.' },
   { q: 'What is included in the brand guideline document?', a: 'Logo usage rules, color values, typography hierarchy, spacing, imagery direction, and voice guidelines, everything needed for anyone to apply the brand correctly.' },
   { q: 'Do you design business cards and other stationery?', a: 'Yes. Business cards, letterhead, email signatures, and social templates are designed as part of a full identity rollout.' },
-  { q: 'Do you offer white-label brand identity work for agencies?', a: 'Yes. We build full identity systems for your clients under your agency’s brand, with no ISureMedia references.' },
+  { q: 'Do you offer white-label brand identity work for agencies?', a: 'Yes. We build full identity systems for your clients under your agencyâ€™s brand, with no ISureMedia references.' },
   { q: 'Who owns the source files and final logo?', a: 'You do. Final delivery includes editable source files and every exported format, the identity is yours outright.' },
 ];
 
@@ -117,7 +117,7 @@ function BrandFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -154,7 +154,7 @@ export default function BrandIdentityPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="brd-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -205,7 +205,7 @@ export default function BrandIdentityPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Brands Built</span>
@@ -237,10 +237,10 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -286,7 +286,7 @@ export default function BrandIdentityPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT A REAL IDENTITY DOES ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT A REAL IDENTITY DOES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="brd-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -369,7 +369,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY BRAND IDENTITY MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY BRAND IDENTITY MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -407,7 +407,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. EVERY PIECE OF THE SYSTEM ══════════════════════════════════════════════ */}
+        {/* â•â• 06. EVERY PIECE OF THE SYSTEM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -451,7 +451,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR BRAND IDENTITY SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR BRAND IDENTITY SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -481,7 +481,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -492,7 +492,7 @@ export default function BrandIdentityPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -515,7 +515,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -542,7 +542,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -575,7 +575,7 @@ export default function BrandIdentityPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -609,7 +609,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="brd-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -656,7 +656,7 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -686,10 +686,10 @@ export default function BrandIdentityPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <BrandFAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Brand Identity & Visual Design_.webp" description={<>Whether you are launching your first logo or fixing a brand that looks like three different companies, the question is the same. Does your business look as credible as the work you actually do? Talk to us today and we will help you build the identity system that will <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>make your brand instantly recognizable</span>.</>} heading="Ready to Build" headingHighlight="A Brand That Scales?" primaryLabel="Get My Free Brand Consultation" secondaryLabel="Book a Brand Strategy Call" />
       </main>
       <Footer />

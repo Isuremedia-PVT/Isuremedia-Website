@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -66,12 +66,12 @@ const APB_SERVICES = [
 ];
 
 const APB_WHO_FOR = [
-  { icon: 'fa-solid fa-stethoscope', title: 'Clinics and med spas', desc: 'Automated booking, reminders, and deposit collection keep treatment rooms full and reduce costly last-minute cancellations.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Clinics and med spas.png' },
-  { icon: 'fa-solid fa-scissors', title: 'Salons and personal services', desc: 'Clients book their own appointments around real-time stylist availability, and reminders keep chairs filled.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Salons and personal services.png' },
-  { icon: 'fa-solid fa-house', title: 'Home service contractors', desc: 'Estimate bookings sync straight to the right technician calendar, cutting the back-and-forth of scheduling site visits.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Home service contractors.png' },
-  { icon: 'fa-solid fa-headset', title: 'Consultants and coaches', desc: 'Discovery calls book automatically against your live availability, with reminders that keep show-up rates high.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Consultants and coaches.png' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies booking discovery calls', desc: 'Sales calls fill your calendar automatically, with reminders and reschedule flows that protect your team’s time.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Agencies booking discovery calls.png' },
-  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Every location and staff calendar stays in sync, so clients always book against accurate, real-time availability.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Multi-location businesses.png' },
+  { icon: 'fa-solid fa-stethoscope', title: 'Clinics and med spas', desc: 'Automated booking, reminders, and deposit collection keep treatment rooms full and reduce costly last-minute cancellations.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Clinics and med spas.webp' },
+  { icon: 'fa-solid fa-scissors', title: 'Salons and personal services', desc: 'Clients book their own appointments around real-time stylist availability, and reminders keep chairs filled.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Salons and personal services.webp' },
+  { icon: 'fa-solid fa-house', title: 'Home service contractors', desc: 'Estimate bookings sync straight to the right technician calendar, cutting the back-and-forth of scheduling site visits.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Home service contractors.webp' },
+  { icon: 'fa-solid fa-headset', title: 'Consultants and coaches', desc: 'Discovery calls book automatically against your live availability, with reminders that keep show-up rates high.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Consultants and coaches.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies booking discovery calls', desc: 'Sales calls fill your calendar automatically, with reminders and reschedule flows that protect your teamâ€™s time.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Agencies booking discovery calls.webp' },
+  { icon: 'fa-solid fa-building', title: 'Multi-location businesses', desc: 'Every location and staff calendar stays in sync, so clients always book against accurate, real-time availability.', img: '/services-six-card/Marketing Automation Section/Appointment Booking Systems/Multi-location businesses.webp' },
 ];
 
 const APB_WHY_ISM = [
@@ -102,7 +102,7 @@ const APB_FAQS = [
   { q: 'How long does it take to launch a booking system?', a: 'A typical engagement covering audit, booking page design, calendar sync, reminders, and testing moves from audit to launch in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function APBFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -121,7 +121,7 @@ function APBFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -159,7 +159,7 @@ export default function AppointmentBookingPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="apb-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -211,7 +211,7 @@ export default function AppointmentBookingPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>1,200+ Bookings/Month</span>
@@ -249,10 +249,10 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="apb-bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -297,7 +297,7 @@ export default function AppointmentBookingPage() {
           <style>{`@media(max-width:860px){ .apb-bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS APPOINTMENT BOOKING AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS APPOINTMENT BOOKING AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="apb-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -386,7 +386,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -424,7 +424,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -468,7 +468,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR APPOINTMENT BOOKING SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR APPOINTMENT BOOKING SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -498,7 +498,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -509,7 +509,7 @@ export default function AppointmentBookingPage() {
               {APB_WHO_FOR.map(w => (
                 <div key={w.title} className="apb-who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="apb-who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="apb-who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -532,7 +532,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="apb-mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -559,7 +559,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -592,7 +592,7 @@ export default function AppointmentBookingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = APB_WHY_ISM[3]; return (
@@ -626,7 +626,7 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="apb-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -668,10 +668,10 @@ export default function AppointmentBookingPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <APBFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Appointment Booking Systems.webp" description={<>Every missed call and back-and-forth email is a booking that almost happened. A properly built scheduling system fills your calendar automatically, day and night, without anyone chasing a reply. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stop losing bookings to bad timing</span>.</>} heading="Ready to Fill Your" headingHighlight="Calendar?" primaryLabel="Build My Booking System" secondaryLabel="Talk to a Scheduling Expert" />
       </main>
       <Footer />

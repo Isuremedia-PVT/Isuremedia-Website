@@ -1,5 +1,7 @@
 'use client';
 
+import { PHONE_US, PHONE_US_TEL } from '@/data/contact';
+
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
@@ -41,13 +43,13 @@ export default function ReadyForResults() {
                 Get My Free Proposal
               </a>
               <a
-                href="tel:+16465881430"
+                href={PHONE_US_TEL}
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', whiteSpace: 'nowrap' }}
                 onMouseEnter={e => { (e.currentTarget).style.background = 'var(--color-primary-hover)'; (e.currentTarget).style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { (e.currentTarget).style.background = 'var(--color-primary)'; (e.currentTarget).style.transform = ''; }}
               >
                 <i className="fa-solid fa-phone" style={{ fontSize: 12 }} />
-                Call +1 646-588-1430
+                Call {PHONE_US}
               </a>
             </div>
           </div>

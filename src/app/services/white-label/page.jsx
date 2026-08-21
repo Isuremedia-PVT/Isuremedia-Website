@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
@@ -264,7 +264,7 @@ export default function WhiteLabelPage() {
 
               <div className="wl-strategy-mosaic" style={{ position:'relative', height:600, borderRadius:20, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why White-Label Fulfillment Drives Agency Growth.webp" alt="Why White-Label Fulfillment Drives Agency Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
+                <img loading="lazy" src="/main-services/Why White-Label Fulfillment Drives Agency Growth.webp" alt="Why White-Label Fulfillment Drives Agency Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -308,7 +308,7 @@ export default function WhiteLabelPage() {
               <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
+                  src="/main-services/seo-women.webp"
                   alt="White Label"
                   style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', height:'128%', width:'auto', maxWidth:'none', objectFit:'contain', objectPosition:'bottom center', display:'block' }}
                 />
@@ -341,7 +341,7 @@ export default function WhiteLabelPage() {
             <div className="wl-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/White-Label Fulfilment Built to Grow Your Agency.webp" alt="White-Label Fulfilment Built to Grow Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/White-Label Fulfilment Built to Grow Your Agency.webp" alt="White-Label Fulfilment Built to Grow Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
@@ -437,7 +437,7 @@ export default function WhiteLabelPage() {
               </div>
               <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why White-Label Fulfillment Is a Great Investment for Your Agency.webp" alt="Why White-Label Fulfillment Is a Great Investment for Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/Why White-Label Fulfillment Is a Great Investment for Your Agency.webp" alt="Why White-Label Fulfillment Is a Great Investment for Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>
@@ -616,7 +616,7 @@ export default function WhiteLabelPage() {
             </div>
             <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/result_footer/white label.webp" alt="White Label Partnership" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+              <img loading="lazy" src="/result_footer/white label.webp" alt="White Label Partnership" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           <style>{`@media (max-width: 900px) { .wl-rfr-grid { grid-template-columns: 1fr !important; padding: 40px 28px !important; } }`}</style>

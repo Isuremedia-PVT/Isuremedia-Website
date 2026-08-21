@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -57,12 +57,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-group', title: 'Agencies outgrowing freelancer management', desc: 'Briefing, chasing, and re-briefing a different freelancer on every project is a full-time job in itself. A pod removes that overhead entirely.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies outgrowing freelancermanagement.png' },
-  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work, SEO, PPC, or development, every month, a dedicated pod is more efficient than sourcing per project.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies with a steady volumeof one service.png' },
-  { icon: 'fa-solid fa-sack-dollar', title: 'Agencies wanting predictable delivery cost', desc: 'A fixed monthly pod cost is easier to build into client pricing than quoting a new vendor for every project that comes in.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies wanting predictabledelivery cost.png' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies scaling faster than they can hire', desc: 'When client growth is outpacing your ability to hire and train, a pod gives you bench strength without the recruitment timeline.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies scaling faster thanthey can hire.png' },
-  { icon: 'fa-solid fa-brain', title: 'Agencies that keep losing institutional knowledge', desc: 'Every time a freelancer leaves, their context leaves with them. A fixed pod retains what it learns about your clients over time.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies that keep losinginstitutional knowledge.png' },
-  { icon: 'fa-solid fa-triangle-exclamation', title: 'Agencies tired of inconsistent quality', desc: 'A different vendor on every brief means a different quality bar every time. A dedicated pod is measured against one standard, consistently.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies tired of inconsistentquality.png' },
+  { icon: 'fa-solid fa-user-group', title: 'Agencies outgrowing freelancer management', desc: 'Briefing, chasing, and re-briefing a different freelancer on every project is a full-time job in itself. A pod removes that overhead entirely.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies outgrowing freelancermanagement.webp' },
+  { icon: 'fa-solid fa-repeat', title: 'Agencies with a steady volume of one service', desc: 'If you consistently need the same type of work, SEO, PPC, or development, every month, a dedicated pod is more efficient than sourcing per project.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies with a steady volumeof one service.webp' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'Agencies wanting predictable delivery cost', desc: 'A fixed monthly pod cost is easier to build into client pricing than quoting a new vendor for every project that comes in.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies wanting predictabledelivery cost.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies scaling faster than they can hire', desc: 'When client growth is outpacing your ability to hire and train, a pod gives you bench strength without the recruitment timeline.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies scaling faster thanthey can hire.webp' },
+  { icon: 'fa-solid fa-brain', title: 'Agencies that keep losing institutional knowledge', desc: 'Every time a freelancer leaves, their context leaves with them. A fixed pod retains what it learns about your clients over time.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies that keep losinginstitutional knowledge.webp' },
+  { icon: 'fa-solid fa-triangle-exclamation', title: 'Agencies tired of inconsistent quality', desc: 'A different vendor on every brief means a different quality bar every time. A dedicated pod is measured against one standard, consistently.', img: '/services-six-card/White Label/Dedicated Agency Pods/Agencies tired of inconsistentquality.webp' },
 ];
 
 const WHY_ISM = [
@@ -93,7 +93,7 @@ const FAQS = [
   { q: 'Will our clients know a pod is delivering the work?', a: 'No. Every deliverable goes out under your agency brand with no Isuremedia references, and we sign NDAs if your agency requires one.' },
 ];
 
-/* ── FAQ 2-COL, matches the White-Label GHL Support page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the White-Label GHL Support page layout â”€â”€ */
 function PodsFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -112,7 +112,7 @@ function PodsFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -150,7 +150,7 @@ export default function DedicatedAgencyPodsPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="pod-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -202,7 +202,7 @@ export default function DedicatedAgencyPodsPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Pods Running for Agencies</span>
@@ -240,10 +240,10 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -288,7 +288,7 @@ export default function DedicatedAgencyPodsPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS A DEDICATED AGENCY POD ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS A DEDICATED AGENCY POD â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="pod-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -377,7 +377,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY A DEDICATED POD MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY A DEDICATED POD MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -415,7 +415,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT MAKES A POD WORK ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT MAKES A POD WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -459,7 +459,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR DEDICATED POD OPTIONS ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR DEDICATED POD OPTIONS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -489,7 +489,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -500,7 +500,7 @@ export default function DedicatedAgencyPodsPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -523,7 +523,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -550,7 +550,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -583,7 +583,7 @@ export default function DedicatedAgencyPodsPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -617,7 +617,7 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="pod-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -659,10 +659,10 @@ export default function DedicatedAgencyPodsPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 12. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <PodsFAQAccordion />
 
-        {/* ══ 13. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 13. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/white label.webp" description={<>Every agency has hit the wall where saying yes to a new client means finding another freelancer to vet, brief, and hope delivers on time. A dedicated pod fixes that with the same designers, developers, and project manager on every job. Talk to us today and let&rsquo;s build you a team built to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale your agency without the freelancer chaos</span>.</>} heading="Ready to Build" headingHighlight="Your Dedicated Pod?" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Call +1 646-588-1430" />
       </main>
       <Footer />

@@ -63,7 +63,7 @@ export default function ResultsStrip() {
             onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={card.img} alt="" aria-hidden style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={card.img} alt="" aria-hidden loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             <div style={{ position: 'absolute', inset: 0, background: card.overlay }} />
             <div style={{ position: 'absolute', bottom: -22, right: -22, width: 80, height: 80, borderRadius: '50%', background: card.shape1, opacity: 0.28 }} />
             <div style={{ position: 'absolute', top: -12, right: 28, width: 44, height: 44, borderRadius: '50%', background: card.shape2, opacity: 0.32 }} />

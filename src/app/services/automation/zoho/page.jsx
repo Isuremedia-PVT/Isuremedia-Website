@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -36,8 +36,8 @@ const WHY_MATTERS_VARIANTS = [
 
 const FAILURE_MODES = [
   { icon: 'fa-solid fa-box-open', title: 'Left on default configuration', impact: 'Most common', desc: 'Zoho out of the box is generic. Left unconfigured, teams work around the CRM instead of through it, and adoption fails.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Modules that don’t match the sales process', impact: 'High impact', desc: 'Pipeline stages and fields copied from a template rather than built around how your team actually sells create friction on every deal.' },
-  { icon: 'fa-solid fa-database', title: 'Migrated data that’s messy or duplicated', impact: 'High impact', desc: 'A rushed migration from spreadsheets or another CRM brings the old mess into the new system, undermining trust in the data from day one.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Modules that donâ€™t match the sales process', impact: 'High impact', desc: 'Pipeline stages and fields copied from a template rather than built around how your team actually sells create friction on every deal.' },
+  { icon: 'fa-solid fa-database', title: 'Migrated data thatâ€™s messy or duplicated', impact: 'High impact', desc: 'A rushed migration from spreadsheets or another CRM brings the old mess into the new system, undermining trust in the data from day one.' },
   { icon: 'fa-solid fa-user-graduate', title: 'No training, so the team reverts to old habits', impact: 'Ongoing', desc: 'A powerful CRM nobody knows how to use ends up running alongside spreadsheets, not instead of them.' },
 ];
 
@@ -53,19 +53,19 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-building', title: 'Businesses standardising on the Zoho ecosystem', desc: 'Teams already using or considering Zoho One who need it properly configured to actually work for their process.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses standardising on the.png' },
-  { icon: 'fa-solid fa-arrow-right-arrow-left', title: 'Businesses migrating from spreadsheets', desc: 'Outgrowing spreadsheet-based sales and customer tracking, needing a proper CRM without enterprise pricing.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses migrating from spreadsheets.png' },
-  { icon: 'fa-solid fa-sack-dollar', title: 'Cost-conscious businesses wanting enterprise features', desc: 'Comparable capability to Salesforce or HubSpot at a fraction of the cost, properly configured to deliver on that promise.', img: '/services-six-card/Marketing Automation Section/Zoho/Cost-conscious businesses wanting enterprise features.png' },
-  { icon: 'fa-solid fa-gears', title: 'Businesses with a specific, non-standard sales process', desc: 'Zoho’s deep customisation options fit processes that a rigid, template-based CRM can’t accommodate.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses with a specific, non-standard sales process.png' },
-  { icon: 'fa-solid fa-headset', title: 'Teams needing CRM, support, and billing connected', desc: 'Zoho One’s CRM, Desk, and Books integration keeps sales, support, and finance working from the same data.', img: '/services-six-card/Marketing Automation Section/Zoho/Teams needing CRM, support, and billing connected.png' },
-  { icon: 'fa-solid fa-arrow-trend-up', title: 'Growing teams needing structure without complexity', desc: 'A properly configured Zoho instance scales with headcount without requiring a dedicated systems administrator.', img: '/services-six-card/Marketing Automation Section/Zoho/Growing teams needing structure without complexity.png' },
+  { icon: 'fa-solid fa-building', title: 'Businesses standardising on the Zoho ecosystem', desc: 'Teams already using or considering Zoho One who need it properly configured to actually work for their process.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses standardising on the.webp' },
+  { icon: 'fa-solid fa-arrow-right-arrow-left', title: 'Businesses migrating from spreadsheets', desc: 'Outgrowing spreadsheet-based sales and customer tracking, needing a proper CRM without enterprise pricing.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses migrating from spreadsheets.webp' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'Cost-conscious businesses wanting enterprise features', desc: 'Comparable capability to Salesforce or HubSpot at a fraction of the cost, properly configured to deliver on that promise.', img: '/services-six-card/Marketing Automation Section/Zoho/Cost-conscious businesses wanting enterprise features.webp' },
+  { icon: 'fa-solid fa-gears', title: 'Businesses with a specific, non-standard sales process', desc: 'Zohoâ€™s deep customisation options fit processes that a rigid, template-based CRM canâ€™t accommodate.', img: '/services-six-card/Marketing Automation Section/Zoho/Businesses with a specific, non-standard sales process.webp' },
+  { icon: 'fa-solid fa-headset', title: 'Teams needing CRM, support, and billing connected', desc: 'Zoho Oneâ€™s CRM, Desk, and Books integration keeps sales, support, and finance working from the same data.', img: '/services-six-card/Marketing Automation Section/Zoho/Teams needing CRM, support, and billing connected.webp' },
+  { icon: 'fa-solid fa-arrow-trend-up', title: 'Growing teams needing structure without complexity', desc: 'A properly configured Zoho instance scales with headcount without requiring a dedicated systems administrator.', img: '/services-six-card/Marketing Automation Section/Zoho/Growing teams needing structure without complexity.webp' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-sliders', title: 'We configure around your process, not a template', desc: 'Pipelines, modules, and fields built to match how your team actually sells and operates, not a generic default.' },
   { icon: 'fa-solid fa-file-import', title: 'We migrate data cleanly', desc: 'De-duplicated, properly mapped migration so the new system starts with data your team can actually trust.' },
   { icon: 'fa-solid fa-robot', title: 'We build automation into the setup from day one', desc: 'Workflow rules and blueprints configured so the CRM does work for your team, not the other way around.' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'We train the team, not just build the system', desc: 'Adoption is the actual goal. We make sure your team knows how to use what’s been built for them.' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'We train the team, not just build the system', desc: 'Adoption is the actual goal. We make sure your team knows how to use whatâ€™s been built for them.' },
   { icon: 'fa-solid fa-comments', title: 'Plain English documentation and support', desc: 'What was configured, why, and how to make future changes, documented clearly, not buried in settings.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Ongoing support is month to month. You stay because the system is working, not because of a contract.' },
 ];
@@ -81,11 +81,11 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'What is the difference between Zoho CRM and Zoho One?', a: 'Zoho CRM is the standalone sales and pipeline tool. Zoho One is the full suite, CRM plus Books, Desk, Campaigns, Forms, and dozens of other connected apps.' },
-  { q: 'Can you migrate us from another CRM to Zoho?', a: 'Yes. We handle migration from Salesforce, HubSpot, spreadsheets, or any other system, with data cleaned and mapped correctly into Zoho’s structure.' },
+  { q: 'Can you migrate us from another CRM to Zoho?', a: 'Yes. We handle migration from Salesforce, HubSpot, spreadsheets, or any other system, with data cleaned and mapped correctly into Zohoâ€™s structure.' },
   { q: 'How long does a Zoho setup take?', a: 'A standard CRM configuration typically takes two to three weeks. Full Zoho One implementations with multiple connected apps usually take four to six weeks.' },
   { q: 'Do you provide training for our team?', a: 'Yes. Team training is included in every setup, covering day-to-day use of whatever modules and workflows were configured.' },
   { q: 'Can Zoho really replace Salesforce or HubSpot?', a: 'For most small and mid-sized businesses, yes, Zoho delivers comparable core functionality at a significantly lower cost, when properly configured.' },
-  { q: 'What if our sales process is unusual or complex?', a: 'Zoho’s customisation options, custom modules, fields, and blueprints, are built for exactly this. We configure around your actual process, not a generic template.' },
+  { q: 'What if our sales process is unusual or complex?', a: 'Zohoâ€™s customisation options, custom modules, fields, and blueprints, are built for exactly this. We configure around your actual process, not a generic template.' },
   { q: 'Do you offer ongoing support after setup?', a: 'Yes, on a month-to-month basis for continued configuration changes, troubleshooting, and optimisation as your business evolves.' },
   { q: 'Can Zoho integrate with our other tools?', a: 'Yes. Beyond native Zoho ecosystem apps, we build custom API integrations for tools outside the Zoho suite where needed.' },
 ];
@@ -113,7 +113,7 @@ function FAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -150,7 +150,7 @@ export default function ZohoPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="zoho-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -200,7 +200,7 @@ export default function ZohoPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Teams Onboarded &amp; Trained</span>
@@ -232,10 +232,10 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -280,7 +280,7 @@ export default function ZohoPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS ZOHO IMPLEMENTATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS ZOHO IMPLEMENTATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="zoho-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -363,7 +363,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY ZOHO WORKS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY ZOHO WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -401,7 +401,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT CAUSES ZOHO IMPLEMENTATIONS TO FAIL ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT CAUSES ZOHO IMPLEMENTATIONS TO FAIL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -445,7 +445,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR ZOHO SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR ZOHO SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -475,7 +475,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -486,7 +486,7 @@ export default function ZohoPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -509,7 +509,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -536,7 +536,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -569,7 +569,7 @@ export default function ZohoPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -603,7 +603,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="zoho-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -650,7 +650,7 @@ export default function ZohoPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -677,10 +677,10 @@ export default function ZohoPage() {
           <style>{`@media(max-width:860px){ .zoho-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Automation.webp" description={<>Big CRMs promise enterprise features but charge enterprise prices for tools you will rarely touch. A properly configured Zoho setup gives you that same power at a fraction of the cost. Talk to us today and we will show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get enterprise results on a lean budget</span>.</>} heading="Tired of Zoho on" headingHighlight="Default Settings?" primaryLabel="Set Up My Zoho System" secondaryLabel="Book a Zoho Consultation" />
       </main>
       <Footer />

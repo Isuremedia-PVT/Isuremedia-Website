@@ -152,7 +152,7 @@ export default function CaseStudyDetail({
               </div>
               <div className="csd-overview-right">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={d.overviewImage} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
+                <img src={d.overviewImage} alt="" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
               </div>
             </div>
           </div>
@@ -380,7 +380,7 @@ export default function CaseStudyDetail({
 
               <div className="csd-cta-img" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', height: 300 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={d.ctaImage} alt="" style={{ height: '100%', width: 'auto', objectFit: 'contain', objectPosition: 'bottom center', display: 'block' }} />
+                <img src={d.ctaImage} alt="" loading="lazy" style={{ height: '100%', width: 'auto', objectFit: 'contain', objectPosition: 'bottom center', display: 'block' }} />
               </div>
 
             </div>

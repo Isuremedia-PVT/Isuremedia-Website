@@ -279,7 +279,7 @@ export default function Services() {
             {/* Photo + floating badges */}
             <div className="svc-photo-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img key={active.id} src={active.img} alt={active.label} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block' }} />
+              <img key={active.id} src={active.img} alt={active.label} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: 20, display: 'block' }} />
               <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
               <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
               <div className="svc-rating">

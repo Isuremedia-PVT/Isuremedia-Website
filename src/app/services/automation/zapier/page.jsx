@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -65,17 +65,17 @@ const ZAP_SERVICES = [
 ];
 
 const ZAP_WHO_FOR = [
-  { icon: 'fa-solid fa-store', title: 'Small businesses without a developer', desc: 'Zapier connects the tools you already use without writing code, making it the fastest way for lean teams to eliminate manual busywork.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Small businesses without a developer.png' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies juggling multiple client tools', desc: 'Agencies running different tool stacks per client need workflows that stay organised and documented across every account.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Agencies juggling multiple client tools.png' },
-  { icon: 'fa-solid fa-users', title: 'Sales teams tired of manual data entry', desc: 'Lead routing, deal alerts, and CRM updates that happen automatically free sales reps to spend time selling instead of copying data.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Sales teams tired of manual data entry.png' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses connecting order tools', desc: 'Orders, shipping notifications, and customer follow-ups synced automatically between your store, email, and fulfilment tools.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/E-commerce businesses connecting order tools.png' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Service businesses automating bookings', desc: 'Booking confirmations that trigger invoices, calendar updates, and follow-up sequences without anyone touching a keyboard.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Service businesses automating bookings.png' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardising their stack', desc: 'As headcount grows, informal processes break down. Documented Zapier workflows give every new hire the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Growing teams standardising their stack.png' },
+  { icon: 'fa-solid fa-store', title: 'Small businesses without a developer', desc: 'Zapier connects the tools you already use without writing code, making it the fastest way for lean teams to eliminate manual busywork.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Small businesses without a developer.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies juggling multiple client tools', desc: 'Agencies running different tool stacks per client need workflows that stay organised and documented across every account.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Agencies juggling multiple client tools.webp' },
+  { icon: 'fa-solid fa-users', title: 'Sales teams tired of manual data entry', desc: 'Lead routing, deal alerts, and CRM updates that happen automatically free sales reps to spend time selling instead of copying data.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Sales teams tired of manual data entry.webp' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses connecting order tools', desc: 'Orders, shipping notifications, and customer follow-ups synced automatically between your store, email, and fulfilment tools.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/E-commerce businesses connecting order tools.webp' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Service businesses automating bookings', desc: 'Booking confirmations that trigger invoices, calendar updates, and follow-up sequences without anyone touching a keyboard.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Service businesses automating bookings.webp' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardising their stack', desc: 'As headcount grows, informal processes break down. Documented Zapier workflows give every new hire the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Zapier Workflow Automation/Growing teams standardising their stack.webp' },
 ];
 
 const ZAP_WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We audit before we automate', desc: 'Every engagement starts by mapping your current tools and manual tasks, so we build the workflows that actually save the most time.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We document every workflow', desc: 'Trigger events, actions, conditions, and error paths are documented for every Zap, not left as tribal knowledge in one person’s head.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We document every workflow', desc: 'Trigger events, actions, conditions, and error paths are documented for every Zap, not left as tribal knowledge in one personâ€™s head.' },
   { icon: 'fa-solid fa-plug', title: 'We connect your full stack, not just two apps', desc: 'CRM, forms, email, Slack, invoicing, we build the workflows that link your entire operation, not just a single quick win.' },
   { icon: 'fa-solid fa-triangle-exclamation', title: 'We build in error handling from day one', desc: 'A Zap that fails silently is worse than no automation at all. We configure error paths so failures get flagged immediately.' },
   { icon: 'fa-solid fa-chalkboard-user', title: 'We train your team on what we build', desc: 'A live walkthrough and clear documentation mean your team can manage and extend the automations after we hand them over.' },
@@ -101,7 +101,7 @@ const ZAP_FAQS = [
   { q: 'How long does a Zapier automation project take?', a: 'A typical engagement covering audit, ten custom Zaps, testing, and documentation moves from audit to fully documented workflows in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function ZapierFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -120,7 +120,7 @@ function ZapierFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -158,7 +158,7 @@ export default function ZapierPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="zap-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -210,7 +210,7 @@ export default function ZapierPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>250+ Zaps Built</span>
@@ -248,10 +248,10 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -296,7 +296,7 @@ export default function ZapierPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS ZAPIER AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS ZAPIER AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="zap-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -385,7 +385,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -423,7 +423,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -467,7 +467,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR ZAPIER AUTOMATION SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR ZAPIER AUTOMATION SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -497,7 +497,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -508,7 +508,7 @@ export default function ZapierPage() {
               {ZAP_WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -531,7 +531,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -558,7 +558,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -591,7 +591,7 @@ export default function ZapierPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = ZAP_WHY_ISM[3]; return (
@@ -625,7 +625,7 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="zap-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -667,10 +667,10 @@ export default function ZapierPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ZapierFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Zapier Workflow Automation_.webp" description={<>Whether you are drowning in manual data entry or just tired of copying leads between apps by hand, the fix is the same. A properly built Zapier workflow eliminates the busywork for good. Talk to us today and we will show you exactly how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>automate the work that's eating your week</span>.</>} heading="Ready to" headingHighlight="Automate the Busywork?" primaryLabel="Build My Zapier Workflows" secondaryLabel="Talk to an Automation Expert" />
       </main>
       <Footer />

@@ -81,7 +81,7 @@ export default function ClientResults({
                 {/* Thumbnail, matches this case study's own hero image */}
                 <div className="cr-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={c.img} alt={c.client}
+                  <img src={c.img} alt={c.client} loading="lazy"
                     style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
                   />
                 </div>

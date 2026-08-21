@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -25,7 +25,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-arrows-to-circle', title: 'A brand that scales without fragmenting', desc: 'As a business grows, design consistency becomes harder to maintain without a system, we keep every asset coherent.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Speed on campaigns and launches', desc: 'When design capacity is reliable and predictable, campaign timelines stop slipping.' },
   { icon: 'fa-solid fa-percent', title: '23% average revenue increase', desc: 'Consistent visual branding increases revenue by an average of 23% through recognition, trust, and perceived quality.' },
-  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'Different fonts and colour treatments across channels signal a business that isn’t in control of its own presentation.' },
+  { icon: 'fa-solid fa-eye', title: 'Inconsistency is noticed, even unnamed', desc: 'Different fonts and colour treatments across channels signal a business that isnâ€™t in control of its own presentation.' },
 ];
 
 const WHY_MATTERS_VARIANTS = [
@@ -57,20 +57,20 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-layer-group', title: 'More work than design capacity', desc: 'When the calendar requires more output than one designer can produce, a partnership scales capacity without hiring overhead.', img: '/services-six-card/content_and_creative/Graphic Designer/More work than design capacity.png' },
-  { icon: 'fa-solid fa-shuffle', title: 'Inconsistent visuals across channels', desc: 'If your social, email, and sales materials look like different businesses, a managed partnership applies consistent standards.', img: '/services-six-card/content_and_creative/Graphic Designer/Inconsistent visuals acrosschannels.png' },
-  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time, one partner with a structured process removes it.', img: '/services-six-card/content_and_creative/Graphic Designer/Replacing freelancermanagement overhead.png' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Graphic Designer/Agencies needing white-label fulfilment.png' },
-  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window, dedicated capacity keeps it on schedule.', img: '/services-six-card/content_and_creative/Graphic Designer/Launching campaigns orrebrand rollouts.png' },
-  { icon: 'fa-solid fa-building', title: 'SMBs that can’t justify an in-house hire', desc: 'A full-time senior designer is significant overhead, a retainer provides senior capability at the scale you actually need.', img: "/services-six-card/content_and_creative/Graphic Designer/SMBs that can't justify an in- house hire.png" },
+  { icon: 'fa-solid fa-layer-group', title: 'More work than design capacity', desc: 'When the calendar requires more output than one designer can produce, a partnership scales capacity without hiring overhead.', img: '/services-six-card/content_and_creative/Graphic Designer/More work than design capacity.webp' },
+  { icon: 'fa-solid fa-shuffle', title: 'Inconsistent visuals across channels', desc: 'If your social, email, and sales materials look like different businesses, a managed partnership applies consistent standards.', img: '/services-six-card/content_and_creative/Graphic Designer/Inconsistent visuals acrosschannels.webp' },
+  { icon: 'fa-solid fa-user-group', title: 'Replacing freelancer management overhead', desc: 'Briefing, revising, and chasing multiple freelancers takes real time, one partner with a structured process removes it.', img: '/services-six-card/content_and_creative/Graphic Designer/Replacing freelancermanagement overhead.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label fulfilment', desc: 'Design-intensive accounts that exceed internal capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Graphic Designer/Agencies needing white-label fulfilment.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Launching campaigns or rebrand rollouts', desc: 'A launch needs a high volume of design in a defined window, dedicated capacity keeps it on schedule.', img: '/services-six-card/content_and_creative/Graphic Designer/Launching campaigns orrebrand rollouts.webp' },
+  { icon: 'fa-solid fa-building', title: 'SMBs that canâ€™t justify an in-house hire', desc: 'A full-time senior designer is significant overhead, a retainer provides senior capability at the scale you actually need.', img: "/services-six-card/content_and_creative/Graphic Designer/SMBs that can't justify an in- house hire.webp" },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-bullseye', title: 'We design for outcomes, not just aesthetics', desc: 'Every asset is designed with the marketing goal in mind, conversion, trust, or engagement.' },
-  { icon: 'fa-solid fa-swatchbook', title: 'We work within your brand system', desc: 'When guidelines exist, we apply them correctly. When they don’t, we flag inconsistencies and keep everything coherent.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We’re part of your full marketing operation', desc: 'The ad creative connects to campaign strategy, the email connects to the nurture sequence. Design isn’t isolated.' },
+  { icon: 'fa-solid fa-swatchbook', title: 'We work within your brand system', desc: 'When guidelines exist, we apply them correctly. When they donâ€™t, we flag inconsistencies and keep everything coherent.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Weâ€™re part of your full marketing operation', desc: 'The ad creative connects to campaign strategy, the email connects to the nurture sequence. Design isnâ€™t isolated.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Structured delivery, predictable timelines', desc: 'Simple assets within 24 to 48 hours. Complex projects with a clear timeline agreed at brief stage.' },
-  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Design production for agency clients under your brand, your client’s brand applied correctly, scalable across accounts.' },
+  { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Design production for agency clients under your brand, your clientâ€™s brand applied correctly, scalable across accounts.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the output is reliable and the quality is consistent, not because you are contractually committed.' },
 ];
 
@@ -85,7 +85,7 @@ const PROCESS = [
 
 const FAQS = [
   { q: 'What types of graphic design do you produce?', a: 'Social media graphics, presentation decks, email templates, marketing collateral, infographics, display advertising, brand assets, and document design, the full range a marketing team regularly needs.' },
-  { q: 'Do you work from our existing brand guidelines?', a: 'Yes. When guidelines exist, we apply them correctly. When they’re incomplete, we flag the gaps and keep every asset visually coherent.' },
+  { q: 'Do you work from our existing brand guidelines?', a: 'Yes. When guidelines exist, we apply them correctly. When theyâ€™re incomplete, we flag the gaps and keep every asset visually coherent.' },
   { q: 'How fast can you turn around design work?', a: 'Simple assets within 24 to 48 hours. Deck redesigns take three to five business days. Full campaign systems take five to ten business days.' },
   { q: 'How do you handle revisions?', a: 'Revisions are included in every project, not an add-on cost, until the asset meets the brief.' },
   { q: 'Do you provide source files?', a: 'Yes. Final delivery includes editable source files alongside exported final assets. You own the files.' },
@@ -116,7 +116,7 @@ function FAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -153,7 +153,7 @@ export default function GraphicDesignPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="gfx-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -204,7 +204,7 @@ export default function GraphicDesignPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Assets Delivered On Brand</span>
@@ -236,10 +236,10 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -284,7 +284,7 @@ export default function GraphicDesignPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT CONSISTENT DESIGN DOES ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT CONSISTENT DESIGN DOES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="gfx-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -367,7 +367,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY DESIGN CONSISTENCY MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY DESIGN CONSISTENCY MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -405,7 +405,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT WE DESIGN ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT WE DESIGN â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -449,7 +449,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR GRAPHIC DESIGN SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR GRAPHIC DESIGN SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -479,7 +479,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -490,7 +490,7 @@ export default function GraphicDesignPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -513,7 +513,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -540,7 +540,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -573,7 +573,7 @@ export default function GraphicDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -607,7 +607,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="gfx-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -654,7 +654,7 @@ export default function GraphicDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -681,10 +681,10 @@ export default function GraphicDesignPage() {
           <style>{`@media(max-width:640px){ .gfx-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/graphic.webp" description={<>Whether your content calendar is stalling on unfinished graphics or your brand looks different on every channel, the question is the same. Is your design output keeping pace with your marketing? Talk to us today and we will help you build the design pipeline that keeps every asset <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>consistent, on-brand, and on time</span>.</>} heading="Let's Design" headingHighlight="Every Asset You Need" primaryLabel="Get My Free Design Consultation" secondaryLabel="Talk to a Designer" />
       </main>
       <Footer />

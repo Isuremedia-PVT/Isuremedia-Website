@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -37,7 +37,7 @@ const LNW_CARD_VARIANTS = [
 const LNW_KEY_FACTORS = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Lead Scoring Setup', impact: 'Highest impact', desc: 'We define what makes a lead hot, warm, or cold based on real behavior, so every sequence responds to genuine engagement.' },
   { icon: 'fa-solid fa-diagram-project', title: 'Sequence and Branch Logic Mapping', impact: 'High impact', desc: 'Every path is mapped before we build, what happens on an open, a click, a form fill, or silence, all planned out clearly.' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Email and SMS Copywriting', impact: 'High impact', desc: 'Messaging written to move a lead forward at each stage, not generic templates that read like everyone else’s inbox.' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Email and SMS Copywriting', impact: 'High impact', desc: 'Messaging written to move a lead forward at each stage, not generic templates that read like everyone elseâ€™s inbox.' },
   { icon: 'fa-solid fa-plug', title: 'CRM Integration', impact: 'High impact', desc: 'Sequences connected directly to your CRM so lead status, scores, and stage changes stay in sync automatically.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Trigger and Delay Configuration', impact: 'Medium impact', desc: 'Precise timing between touches, so leads get followed up with quickly without being overwhelmed with messages.' },
   { icon: 'fa-solid fa-vial', title: 'Testing and Validation', impact: 'Medium impact', desc: 'Every branch tested end-to-end with real scenarios before a single sequence goes live on your actual leads.' },
@@ -66,12 +66,12 @@ const LNW_SERVICES = [
 ];
 
 const LNW_WHO_FOR = [
-  { icon: 'fa-solid fa-users', title: 'Businesses generating high lead volume', desc: 'When leads come in faster than your team can call them, a nurture sequence keeps every one of them warm until someone can.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Businesses generating high lead volume.png' },
-  { icon: 'fa-solid fa-handshake', title: 'Service businesses with long sales cycles', desc: 'Leads that take weeks or months to decide need consistent, staged follow-up instead of a single email that gets forgotten.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Service businesses with long sales cycles.png' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands nurturing cart abandoners', desc: 'Automated sequences bring shoppers back to finish a purchase without anyone manually chasing an abandoned cart.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/E-commerce brands nurturing cart abandoners.png' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing client lead flow', desc: 'Agencies running lead gen for clients need nurture sequences that keep every lead engaged, not just the ones sales gets to first.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Agencies managing client lead flow.png' },
-  { icon: 'fa-solid fa-envelope-circle-check', title: 'Teams manually sending follow-up emails', desc: 'If a rep is copy-pasting the same follow-up email by hand, that time and consistency can be reclaimed with automation.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Teams manually sending follow-up emails.png' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardizing sales process', desc: 'A documented nurture sequence gives every new sales hire the same reliable follow-up process from day one.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Growing teams standardizing sales process.png' },
+  { icon: 'fa-solid fa-users', title: 'Businesses generating high lead volume', desc: 'When leads come in faster than your team can call them, a nurture sequence keeps every one of them warm until someone can.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Businesses generating high lead volume.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Service businesses with long sales cycles', desc: 'Leads that take weeks or months to decide need consistent, staged follow-up instead of a single email that gets forgotten.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Service businesses with long sales cycles.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands nurturing cart abandoners', desc: 'Automated sequences bring shoppers back to finish a purchase without anyone manually chasing an abandoned cart.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/E-commerce brands nurturing cart abandoners.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing client lead flow', desc: 'Agencies running lead gen for clients need nurture sequences that keep every lead engaged, not just the ones sales gets to first.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Agencies managing client lead flow.webp' },
+  { icon: 'fa-solid fa-envelope-circle-check', title: 'Teams manually sending follow-up emails', desc: 'If a rep is copy-pasting the same follow-up email by hand, that time and consistency can be reclaimed with automation.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Teams manually sending follow-up emails.webp' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardizing sales process', desc: 'A documented nurture sequence gives every new sales hire the same reliable follow-up process from day one.', img: '/services-six-card/Marketing Automation Section/Lead Nurture Workflows/Growing teams standardizing sales process.webp' },
 ];
 
 const LNW_WHY_ISM = [
@@ -102,7 +102,7 @@ const LNW_FAQS = [
   { q: 'How long does it take to launch a lead nurture workflow?', a: 'A typical engagement covering scoring setup, sequence mapping, copywriting, CRM integration, and testing moves from audit to a fully live and documented workflow in two to four weeks, depending on how many branches and touchpoints are involved.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function LNWFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -121,7 +121,7 @@ function LNWFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -159,7 +159,7 @@ export default function LeadNurtureWorkflowsPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="lnw-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -211,7 +211,7 @@ export default function LeadNurtureWorkflowsPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>4,000+ Leads Nurtured</span>
@@ -249,10 +249,10 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -297,7 +297,7 @@ export default function LeadNurtureWorkflowsPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS LEAD NURTURE AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS LEAD NURTURE AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="lnw-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -386,7 +386,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -424,7 +424,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -468,7 +468,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR LEAD NURTURE SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR LEAD NURTURE SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -498,18 +498,18 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
               <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Who Lead Nurture Workflows Are Built For</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>If Your Leads Go Cold Because Follow-Up Isn’t Consistent, This Is for You.</p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>If Your Leads Go Cold Because Follow-Up Isnâ€™t Consistent, This Is for You.</p>
             </div>
             <div className="who-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {LNW_WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -532,7 +532,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -559,7 +559,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -592,7 +592,7 @@ export default function LeadNurtureWorkflowsPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = LNW_WHY_ISM[3]; return (
@@ -626,7 +626,7 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="lnw-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -668,10 +668,10 @@ export default function LeadNurtureWorkflowsPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <LNWFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Lead Nurture Workflows.webp" description={<>Leads that don't hear back within minutes go cold, and go to a competitor instead. An automated nurture workflow follows up instantly, every single time, so nothing falls through the cracks. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never miss a follow-up again</span>.</>} heading="Tired of Leads" headingHighlight="Going Cold?" primaryLabel="Build My Nurture Workflows" secondaryLabel="Talk to a Nurture Strategist" />
       </main>
       <Footer />

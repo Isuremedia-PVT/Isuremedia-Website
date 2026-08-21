@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -24,7 +24,7 @@ const WHY_MATTERS = [
   { icon: 'fa-solid fa-chart-line', title: 'Creative quality drives the majority of ad lift', desc: 'Nielsen analysis found 47% of the incremental sales lift from advertising is attributable to creative quality, more than targeting, reach, and frequency combined.' },
   { icon: 'fa-solid fa-hand', title: 'Stops the scroll before the message lands', desc: 'A visual or headline that does not create an immediate reason to stop is an impression that never became an engagement. Pattern interruption is what the first creative element is for.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Communicates the offer before the click-away', desc: 'Most ads have one to three seconds to communicate enough of the offer to earn a click. Visual hierarchy determines whether the most important information lands first or gets buried.' },
-  { icon: 'fa-solid fa-route', title: 'Matches the audience’s position in the funnel', desc: 'A cold prospect needs a different creative than a warm retargeting audience. The same creative served to both produces results for neither.' },
+  { icon: 'fa-solid fa-route', title: 'Matches the audienceâ€™s position in the funnel', desc: 'A cold prospect needs a different creative than a warm retargeting audience. The same creative served to both produces results for neither.' },
   { icon: 'fa-solid fa-shuffle', title: 'Format diversity keeps performance alive', desc: 'An account running only static single-image ads fatigues faster than one running static, carousel, video, and UGC-style formats in rotation.' },
   { icon: 'fa-solid fa-scale-balanced', title: 'Strong creative beats a stronger offer', desc: 'A strong offer with weak creative consistently underperforms a moderate offer with strong creative, true on Meta, Google Display, LinkedIn, and every paid channel.' },
 ];
@@ -41,7 +41,7 @@ const KEY_FACTORS = [
   { icon: 'fa-solid fa-coins', title: 'CPM Rising While CTR Holds Steady', impact: 'High impact', desc: 'This pattern means the algorithm is paying more to reach the diminishing unconverted portion of the audience, a direct cost of creative fatigue.' },
   { icon: 'fa-solid fa-arrow-up-right-dots', title: 'Frequency Rising Faster Than Usual', impact: 'Medium impact', desc: 'Rising frequency means the algorithm has concentrated delivery on fewer people, a sign that the creative pool has stopped reaching new audience segments.' },
   { icon: 'fa-solid fa-calendar-week', title: 'The Week-2-to-Week-5 Decline', impact: 'Medium impact', desc: 'Creative that performs well at week two is often fatigued by week five. The Andromeda ranking system concentrates delivery on strong performers, accelerating their own burnout.' },
-  { icon: 'fa-solid fa-robot', title: 'Algorithmic Concentration', impact: 'Contextual', desc: 'Meta’s Andromeda system gives the algorithm granular creative-level signal. The better a creative performs, the faster it gets shown to the same people repeatedly.' },
+  { icon: 'fa-solid fa-robot', title: 'Algorithmic Concentration', impact: 'Contextual', desc: 'Metaâ€™s Andromeda system gives the algorithm granular creative-level signal. The better a creative performs, the faster it gets shown to the same people repeatedly.' },
   { icon: 'fa-solid fa-shuffle', title: 'Format Diversity Gaps', impact: 'Contextual', desc: 'Running the same static-to-carousel pipeline repeatedly does not solve creative decay, it accelerates it. Genuine format diversity is what prevents it.' },
   { icon: 'fa-solid fa-gauge-high', title: 'Wasted Impression Rate', impact: 'Growing fast', desc: '23% of all ad impressions are considered wasted due to overexposure and creative fatigue, budget spent reaching people who have already tuned the creative out.' },
 ];
@@ -58,12 +58,12 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Businesses running campaigns that are not converting', desc: 'If targeting is sound and budget is adequate but results are not there, the creative is almost certainly where the problem lives. We audit before we build.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses running campaignsthat are not converting.png' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Advertisers experiencing creative fatigue', desc: 'If performance was strong and has declined without targeting or budget changes, fatigue is the most likely cause. We diagnose it and implement a rotation plan.', img: '/services-six-card/content_and_creative/Ads creative design/Advertisers experiencingcreative fatigue.png' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster, which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses scaling paid adspend.png' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds, at the volume e-commerce campaigns require.', img: '/services-six-card/content_and_creative/Ads creative design/E-commerce businesses onMeta and Google.png' },
-  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to, not repurposed Meta creative.', img: '/services-six-card/content_and_creative/Ads creative design/B2B businesses running Linkedlncampaigns.png' },
-  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand, same quality, client-specific application, no Isuremedia references.', img: '/services-six-card/content_and_creative/Ads creative design/Agencies white-labelling adcreative.png' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Businesses running campaigns that are not converting', desc: 'If targeting is sound and budget is adequate but results are not there, the creative is almost certainly where the problem lives. We audit before we build.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses running campaignsthat are not converting.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Advertisers experiencing creative fatigue', desc: 'If performance was strong and has declined without targeting or budget changes, fatigue is the most likely cause. We diagnose it and implement a rotation plan.', img: '/services-six-card/content_and_creative/Ads creative design/Advertisers experiencingcreative fatigue.webp' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Businesses scaling paid ad spend', desc: 'A larger budget reaches a larger audience faster, which means it saturates faster too. We build the production system that keeps creative supply ahead of demand.', img: '/services-six-card/content_and_creative/Ads creative design/Businesses scaling paid adspend.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce businesses on Meta and Google', desc: 'Product-specific visual treatment, offer clarity, and constant format variety to compete in increasingly crowded feeds, at the volume e-commerce campaigns require.', img: '/services-six-card/content_and_creative/Ads creative design/E-commerce businesses onMeta and Google.webp' },
+  { icon: 'fa-brands fa-linkedin', title: 'B2B businesses running LinkedIn campaigns', desc: 'Professional visual treatment, specific pain-point framing, and the credibility signals B2B buyers respond to, not repurposed Meta creative.', img: '/services-six-card/content_and_creative/Ads creative design/B2B businesses running Linkedlncampaigns.webp' },
+  { icon: 'fa-solid fa-people-group', title: 'Agencies white-labelling ad creative', desc: 'Performance ad creative produced for your clients under your brand, same quality, client-specific application, no Isuremedia references.', img: '/services-six-card/content_and_creative/Ads creative design/Agencies white-labelling adcreative.webp' },
 ];
 
 const WHY_ISM = [
@@ -79,12 +79,12 @@ const PROCESS = [
   { n: '01', title: 'Creative Audit', desc: 'For existing campaigns, we audit current creative, performance by asset, fatigue indicators, format diversity, and messaging angle coverage, before recommending what to build.' },
   { n: '02', title: 'Messaging Framework', desc: 'We develop the specific angles, hooks, and value propositions the creative set will be built around, so the set has genuine variety from day one.' },
   { n: '03', title: 'Brief and Format Selection', desc: 'We brief the creative set, formats, dimensions, copy direction, visual approach, and testing structure, based on platform, audience, and fatigue prevention.' },
-  { n: '04', title: 'Design and Production', desc: 'We produce the creative set to the brief, the brand system, and the platform’s visual norms, with clean multi-variant sets for testing.' },
+  { n: '04', title: 'Design and Production', desc: 'We produce the creative set to the brief, the brand system, and the platformâ€™s visual norms, with clean multi-variant sets for testing.' },
   { n: '05', title: 'Test, Refresh, and Deliver', desc: 'Creative is delivered in every required format, monitored for fatigue indicators, and the next refresh cycle is already in production before ROAS declines.' },
 ];
 
 const FAQS = [
-  { q: 'How often does ad creative need to be refreshed?', a: 'For audiences under 500,000, creative can fatigue in two to three weeks at moderate spend. For larger audiences, four to six weeks before fatigue becomes visible in ROAS. The Andromeda algorithm’s concentration of delivery on top performers means fatigue arrives faster than it used to.' },
+  { q: 'How often does ad creative need to be refreshed?', a: 'For audiences under 500,000, creative can fatigue in two to three weeks at moderate spend. For larger audiences, four to six weeks before fatigue becomes visible in ROAS. The Andromeda algorithmâ€™s concentration of delivery on top performers means fatigue arrives faster than it used to.' },
   { q: 'What is the difference between creative fatigue and creative failure?', a: 'Creative failure never performed, wrong message, wrong audience, wrong hierarchy. Creative fatigue performed well and then declined because the audience has seen it too many times. Failure requires a new approach. Fatigue requires new variants of an approach that was already working.' },
   { q: 'Which formats perform best on Meta in 2026?', a: 'Video generates 20 to 40% higher conversion for products requiring demonstration. Static images deliver 40 to 60% lower CPMs. UGC-style creative outperforms polished branded creative in cold prospecting. The answer for most accounts is format diversity in rotation, not one optimal format.' },
   { q: 'Do you write the ad copy or just design the visuals?', a: 'Both. Headline, primary text, and description copy are produced alongside the visual design as part of every brief, the hook in the headline and the visual hook need to work together.' },
@@ -96,7 +96,7 @@ const FAQS = [
   { q: 'Can you audit our existing creative before we commission new work?', a: 'Yes. A creative audit is our standard starting point, reviewing performance by creative, fatigue indicators, format diversity, and messaging coverage before recommending what to build.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -115,7 +115,7 @@ function FAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -153,7 +153,7 @@ export default function AdCreativeDesignPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="acd-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -206,7 +206,7 @@ export default function AdCreativeDesignPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Campaigns Refreshed Every Month</span>
@@ -244,10 +244,10 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -292,7 +292,7 @@ export default function AdCreativeDesignPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. CREATIVE FATIGUE IS THE BIGGEST THREAT ══════════════════════════════════════════════ */}
+        {/* â•â• 04. CREATIVE FATIGUE IS THE BIGGEST THREAT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="acd-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -382,7 +382,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY AD CREATIVE QUALITY DETERMINES CAMPAIGN PERFORMANCE ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY AD CREATIVE QUALITY DETERMINES CAMPAIGN PERFORMANCE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
@@ -420,7 +420,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. CREATIVE FATIGUE WARNING SIGNS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. CREATIVE FATIGUE WARNING SIGNS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -464,7 +464,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR AD CREATIVE SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR AD CREATIVE SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -494,7 +494,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -505,7 +505,7 @@ export default function AdCreativeDesignPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -528,7 +528,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -555,7 +555,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -588,7 +588,7 @@ export default function AdCreativeDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -622,7 +622,7 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="acd-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -667,10 +667,10 @@ export default function AdCreativeDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/ads creative.webp" description={<>Whether your campaigns are stuck on a ROAS plateau or your best creative is already showing signs of fatigue, the underlying question is the same. Is your ad creative doing its job, or just spending your budget? Talk to us today and we will help you build the ad sets that <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keep every campaign converting</span>.</>} heading="Tired of" headingHighlight="Creative Fatigue?" primaryLabel="Get My Free Creative Audit" secondaryLabel="Talk to a Creative Strategist" />
       </main>
       <Footer />

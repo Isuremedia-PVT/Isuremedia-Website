@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -22,7 +22,7 @@ const BRIDGE_ITEMS = [
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-sack-dollar', title: 'The highest ROI channel in marketing', desc: 'Email consistently returns more per dollar spent than any paid channel, an owned audience you never pay to reach twice.' },
   { icon: 'fa-solid fa-layer-group', title: 'Segmentation turns a list into a system', desc: 'One message to everyone underperforms. Behaviour-based segments mean every subscriber gets the message relevant to them.' },
-  { icon: 'fa-solid fa-robot', title: 'Automation works while you don’t', desc: 'Welcome series, abandoned cart, and win-back flows run continuously, converting leads and recovering revenue on autopilot.' },
+  { icon: 'fa-solid fa-robot', title: 'Automation works while you donâ€™t', desc: 'Welcome series, abandoned cart, and win-back flows run continuously, converting leads and recovering revenue on autopilot.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Deliverability decides whether any of this works', desc: 'The best email ever written is worthless in a spam folder. Proper authentication and sending practices protect inbox placement.' },
   { icon: 'fa-solid fa-flask', title: 'Testing compounds over time', desc: 'Subject lines, send times, and content tested consistently produce a system that gets measurably better every quarter.' },
   { icon: 'fa-solid fa-chart-line', title: 'Revenue attribution, not vanity metrics', desc: 'Open rates are a start. What matters is which emails actually produce clicks, bookings, and sales, tracked and reported.' },
@@ -45,20 +45,20 @@ const SERVICES = [
   { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Email Marketing Audit', desc: 'List health, segmentation, deliverability, and current automation performance, what to fix first.' },
   { icon: 'fa-solid fa-layer-group', title: 'List Segmentation & Strategy', desc: 'Behaviour, purchase history, and engagement-based segments so every send reaches the right audience.' },
   { icon: 'fa-solid fa-hand-wave', title: 'Welcome & Nurture Sequences', desc: 'Automated sequences that introduce new subscribers to your brand and move them toward a first purchase.' },
-  { icon: 'fa-solid fa-cart-arrow-down', title: 'Abandoned Cart & Win-Back Flows', desc: 'Automated recovery sequences that bring back lost carts and re-engage subscribers who’ve gone quiet.' },
+  { icon: 'fa-solid fa-cart-arrow-down', title: 'Abandoned Cart & Win-Back Flows', desc: 'Automated recovery sequences that bring back lost carts and re-engage subscribers whoâ€™ve gone quiet.' },
   { icon: 'fa-solid fa-newspaper', title: 'Newsletter Design & Copywriting', desc: 'On-brand templates and copy written to be read, not skimmed and deleted.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Deliverability & Authentication Setup', desc: 'SPF, DKIM, and DMARC configured properly so your emails land in the inbox, not the spam folder.' },
   { icon: 'fa-solid fa-flask', title: 'A/B Testing Framework', desc: 'Subject lines, send times, and content tested systematically to improve performance over time.' },
-  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Opens, clicks, and revenue attributed by campaign, in plain English, with next month’s plan.' },
+  { icon: 'fa-solid fa-chart-simple', title: 'Monthly Reporting & Optimisation', desc: 'Opens, clicks, and revenue attributed by campaign, in plain English, with next monthâ€™s plan.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with an existing list', desc: 'Abandoned cart and post-purchase flows alone typically recover revenue that more than covers the cost of the program.', img: '/services-six-card/Marketing Automation Section/Email Marketing/E-commerce brands with an existing list.png' },
-  { icon: 'fa-solid fa-building', title: 'Service businesses nurturing long sales cycles', desc: 'Leads that aren’t ready to buy today stay warm through consistent, valuable email touch points until they are.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Service businesses nurturing long sales cycles.png' },
-  { icon: 'fa-solid fa-user-plus', title: 'Businesses collecting leads without following up', desc: 'A list sitting unused in a CRM is a missed asset. We turn it into an automated revenue channel.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses collecting leads without following up.png' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Brands seeing email performance decline', desc: 'Falling open rates are usually a deliverability or segmentation problem, not an email-is-dead problem. We diagnose and fix it.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands seeing email performance decline.png' },
-  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product or offer', desc: 'A warmed, segmented list is one of the fastest ways to generate first-week sales for a new launch.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands launching a new product or offer.png' },
-  { icon: 'fa-solid fa-gears', title: 'Businesses wanting marketing on autopilot', desc: 'Once built, automated flows keep converting new subscribers and recovering lost sales without ongoing manual effort.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses wanting marketing on autopilot.png' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands with an existing list', desc: 'Abandoned cart and post-purchase flows alone typically recover revenue that more than covers the cost of the program.', img: '/services-six-card/Marketing Automation Section/Email Marketing/E-commerce brands with an existing list.webp' },
+  { icon: 'fa-solid fa-building', title: 'Service businesses nurturing long sales cycles', desc: 'Leads that arenâ€™t ready to buy today stay warm through consistent, valuable email touch points until they are.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Service businesses nurturing long sales cycles.webp' },
+  { icon: 'fa-solid fa-user-plus', title: 'Businesses collecting leads without following up', desc: 'A list sitting unused in a CRM is a missed asset. We turn it into an automated revenue channel.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses collecting leads without following up.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Brands seeing email performance decline', desc: 'Falling open rates are usually a deliverability or segmentation problem, not an email-is-dead problem. We diagnose and fix it.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands seeing email performance decline.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Brands launching a new product or offer', desc: 'A warmed, segmented list is one of the fastest ways to generate first-week sales for a new launch.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Brands launching a new product or offer.webp' },
+  { icon: 'fa-solid fa-gears', title: 'Businesses wanting marketing on autopilot', desc: 'Once built, automated flows keep converting new subscribers and recovering lost sales without ongoing manual effort.', img: '/services-six-card/Marketing Automation Section/Email Marketing/Businesses wanting marketing on autopilot.webp' },
 ];
 
 const WHY_ISM = [
@@ -66,7 +66,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-robot', title: 'We build automation that runs itself', desc: 'Welcome, abandoned cart, and win-back flows configured once, converting and recovering revenue continuously afterward.' },
   { icon: 'fa-solid fa-shield-halved', title: 'We protect your deliverability', desc: 'Proper authentication and sending practices monitored continuously so your emails keep landing in the inbox.' },
   { icon: 'fa-solid fa-flask', title: 'We test relentlessly', desc: 'Subject lines, send times, and content tested on a rolling basis for compounding performance gains.' },
-  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we sent, what it returned, and what we’re doing differently next month, reported clearly.' },
+  { icon: 'fa-solid fa-comments', title: 'Plain English reporting', desc: 'What we sent, what it returned, and what weâ€™re doing differently next month, reported clearly.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You stay because the program is delivering, not because you are contractually obligated to.' },
 ];
 
@@ -113,7 +113,7 @@ function FAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -150,7 +150,7 @@ export default function EmailMarketingPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="email-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -200,7 +200,7 @@ export default function EmailMarketingPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Flows Live &amp; Converting</span>
@@ -232,10 +232,10 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -280,7 +280,7 @@ export default function EmailMarketingPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS EMAIL MARKETING AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS EMAIL MARKETING AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="email-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -363,7 +363,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY EMAIL MARKETING WORKS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY EMAIL MARKETING WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -401,7 +401,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT CAUSES EMAIL PROGRAMS TO FAIL ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT CAUSES EMAIL PROGRAMS TO FAIL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -445,7 +445,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR EMAIL MARKETING SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR EMAIL MARKETING SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -475,7 +475,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -486,7 +486,7 @@ export default function EmailMarketingPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -509,7 +509,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -536,7 +536,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -569,7 +569,7 @@ export default function EmailMarketingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -603,7 +603,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="email-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -650,7 +650,7 @@ export default function EmailMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -677,10 +677,10 @@ export default function EmailMarketingPage() {
           <style>{`@media(max-width:860px){ .email-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Automation.webp" description={<>If your email list mostly just sits there while other channels do the heavy lifting, you are leaving revenue on the table. The right automated sequences turn subscribers into repeat buyers without extra effort from your team. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your list into a revenue channel</span>.</>} heading="Ready to Turn Your List Into" headingHighlight="Revenue?" primaryLabel="Build My Email Engine" secondaryLabel="Talk to an Email Strategist" />
       </main>
       <Footer />

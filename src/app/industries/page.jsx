@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import CTASection from '@/components/CTASection';
@@ -148,7 +148,7 @@ export default function IndustriesPage() {
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-6px)'; el.style.boxShadow = '0 22px 48px rgba(0,35,83,.20)'; }}
                   onMouseLeave={e => { const el = e.currentTarget; el.style.transform = ''; el.style.boxShadow = '0 10px 30px rgba(0,35,83,.10)'; }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={ind.img} alt={ind.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={ind.img} alt={ind.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,10,30,.92) 0%, rgba(0,10,30,.55) 42%, rgba(0,10,30,.05) 72%, transparent 100%)' }} />
 
                   <div style={{ position: 'absolute', top: 20, left: 20, right: 20, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>

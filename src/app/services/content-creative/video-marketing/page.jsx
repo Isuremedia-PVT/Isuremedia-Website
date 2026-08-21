@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -57,11 +57,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-mobile-screen-button', title: 'Brands posting daily social content', desc: 'Consistent short-form posting requires an editing pipeline, not a single editor working around other priorities.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/brand posting.png' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Agencies needing white-label video.png' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative, we keep the pipeline fed so testing never stalls.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/E-commerce brands needing ad creative.png' },
-  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has, once they are edited into something worth sharing.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Coaches and consultantsneeding testimonial videos.png' },
-  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content, we turn the backlog into a pipeline.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Businesses sitting on uneditedraw footage.png' },
+  { icon: 'fa-solid fa-mobile-screen-button', title: 'Brands posting daily social content', desc: 'Consistent short-form posting requires an editing pipeline, not a single editor working around other priorities.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/brand posting.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies needing white-label video', desc: 'Video-intensive accounts that exceed internal editing capacity are a common growth constraint, we scale to match demand.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Agencies needing white-label video.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce brands needing ad creative', desc: 'Paid social runs on a constant supply of new video creative, we keep the pipeline fed so testing never stalls.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/E-commerce brands needing ad creative.webp' },
+  { icon: 'fa-solid fa-microphone', title: 'Coaches and consultants needing testimonial videos', desc: 'Client wins are the strongest sales asset a service business has, once they are edited into something worth sharing.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Coaches and consultantsneeding testimonial videos.webp' },
+  { icon: 'fa-solid fa-folder-open', title: 'Businesses sitting on unedited raw footage', desc: 'Hours of interviews, events, and demos that never got turned into content, we turn the backlog into a pipeline.', img: '/services-six-card/content_and_creative/Video Marketing & Editing/Businesses sitting on uneditedraw footage.webp' },
   { icon: 'fa-solid fa-display', title: 'SaaS companies needing demo and explainer videos', desc: 'Product walkthroughs and explainer videos that make a feature clear in under sixty seconds, not five minutes.', img: 'https://picsum.photos/seed/vid-whofor-saas/700/620' },
 ];
 
@@ -69,7 +69,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-mobile-screen-button', title: 'We edit for the platform, not just the footage', desc: 'A vertical Reel, a YouTube upload, and a paid ad are cut differently, each is edited for how it will actually be watched.' },
   { icon: 'fa-solid fa-closed-captioning', title: 'We caption everything for silent viewing', desc: 'Every video is captioned by default, the message lands whether the sound is on or off.' },
   { icon: 'fa-solid fa-swatchbook', title: 'We keep brand consistency across every video', desc: 'Fonts, colours, lower thirds, and pacing stay consistent so every video looks like it came from the same channel.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'We work within your existing content system', desc: 'Video editing connects to the content calendar and campaign strategy, it isn’t handled in isolation from the rest of marketing.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'We work within your existing content system', desc: 'Video editing connects to the content calendar and campaign strategy, it isnâ€™t handled in isolation from the rest of marketing.' },
   { icon: 'fa-solid fa-stopwatch', title: 'Structured turnaround times', desc: 'Short-form clips within 24 to 48 hours. Long-form edits with a clear timeline agreed at brief stage.' },
   { icon: 'fa-solid fa-tag', title: 'White-label available for agencies', desc: 'Video editing for agency clients delivered under your brand, scalable across accounts with no ISureMedia references.' },
 ];
@@ -117,7 +117,7 @@ function VideoFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -154,7 +154,7 @@ export default function VideoMarketingPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="vid-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -204,7 +204,7 @@ export default function VideoMarketingPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Videos Edited & Delivered</span>
@@ -236,10 +236,10 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -284,7 +284,7 @@ export default function VideoMarketingPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT CONSISTENT VIDEO DOES ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT CONSISTENT VIDEO DOES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="vid-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -367,7 +367,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY VIDEO MARKETING MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY VIDEO MARKETING MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -405,7 +405,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT WE EDIT ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT WE EDIT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -449,7 +449,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR VIDEO MARKETING SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR VIDEO MARKETING SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -479,7 +479,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -490,7 +490,7 @@ export default function VideoMarketingPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -513,7 +513,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -540,7 +540,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -573,7 +573,7 @@ export default function VideoMarketingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -607,7 +607,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="vid-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -654,7 +654,7 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -683,10 +683,10 @@ export default function VideoMarketingPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <VideoFAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/video edting.webp" description={<>Whether your raw footage is piling up unedited or your social channel has gone quiet, the question is the same. Is your video content actually getting made, or stuck in the backlog? Talk to us today and we will help you build the editing pipeline that keeps <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>every platform posting on schedule</span>.</>} heading="Let's Make Video" headingHighlight="That Performs" primaryLabel="Get My Free Video Consultation" secondaryLabel="Book an Editing Strategy Call" />
       </main>
       <Footer />

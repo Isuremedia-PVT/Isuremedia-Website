@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -520,7 +520,7 @@ export default function HireWordPressDeveloper() {
                   {/* Right Column, Photo + floating badges */}
                   <div className="svc-photo-wrap" style={{ position: 'relative', minHeight: 320 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', borderRadius: 20, display: 'block' }} />
+                    <img loading="lazy" src={svc.img} alt={svc.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', borderRadius: 20, display: 'block' }} />
                     <div className="svc-pin svc-pin-a"><i className="fa-solid fa-location-dot" /></div>
                     <div className="svc-pin svc-pin-b"><i className="fa-solid fa-bolt" /></div>
                     <div className="svc-rating">
@@ -980,7 +980,7 @@ export default function HireWordPressDeveloper() {
             {/* Right Column - Image */}
             <div style={{ position: 'relative', zIndex: 2, height: 'auto', minHeight: 300 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
+              <img loading="lazy" 
                 src="/result_footer/website.webp" 
                 alt="WordPress Website Development" 
                 style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain' }} 

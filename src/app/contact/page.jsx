@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF, WHATSAPP_HREF } from '@/data/contact';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -53,20 +54,20 @@ const REACH_US = [
   {
     icon: 'fa-solid fa-phone',
     label: 'Phone',
-    lines: ['+91 70110 41363', '+1 646-588-1430'],
-    hrefs: ['tel:+917011041363', 'tel:+16465881430'],
+    lines: [PHONE_IN, PHONE_US],
+    hrefs: [PHONE_IN_TEL, PHONE_US_TEL],
   },
   {
     icon: 'fa-solid fa-envelope',
     label: 'Email',
-    lines: ['info@isuremedia.com'],
-    hrefs: ['mailto:info@isuremedia.com'],
+    lines: [EMAIL],
+    hrefs: [EMAIL_HREF],
   },
   {
     icon: 'fa-brands fa-whatsapp',
     label: 'WhatsApp',
     lines: ['Chat with us'],
-    hrefs: ['https://api.whatsapp.com/send?phone=917011041363'],
+    hrefs: [WHATSAPP_HREF],
     external: true,
   },
 ];
@@ -140,8 +141,8 @@ export default function ContactPage() {
                 <div className="ct-float-card" style={{ position: 'absolute', bottom: -24, left: -20, right: 40, background: '#fff', borderRadius: 14, padding: '13px 15px', boxShadow: '0 12px 32px rgba(0,35,83,.14)', border: '1px solid var(--color-border)', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 18, rowGap: 10 }}>
                   {[
                     { icon: 'fa-solid fa-location-dot', title: 'Offices', text: 'Haldwani & Wyoming' },
-                    { icon: 'fa-solid fa-phone', title: 'Call Us', text: '+91 70110 41363' },
-                    { icon: 'fa-solid fa-envelope', title: 'Email', text: 'info@isuremedia.com' },
+                    { icon: 'fa-solid fa-phone', title: 'Call Us', text: PHONE_IN },
+                    { icon: 'fa-solid fa-envelope', title: 'Email', text: EMAIL },
                     { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp', text: 'Chat with us now' },
                   ].map(c => (
                     <div key={c.title} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
