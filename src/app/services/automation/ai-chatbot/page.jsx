@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -37,7 +37,7 @@ const CARD_VARIANTS = [
 
 const KEY_FACTORS = [
   { icon: 'fa-solid fa-comments', title: 'Chatbot Strategy and Conversation Flow Design', impact: 'Highest impact', desc: 'Before any build begins, we map the full conversation strategy, what the chatbot handles, what it escalates, the qualification questions it asks, and the actions it triggers at each outcome.' },
-  { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', impact: 'High impact', desc: 'We build your chatbot on the platform that fits your business, GoHighLevel’s AI chatbot, a purpose-built AI agent on your website, or a channel-specific deployment.' },
+  { icon: 'fa-solid fa-robot', title: 'AI Chatbot Build and Configuration', impact: 'High impact', desc: 'We build your chatbot on the platform that fits your business, GoHighLevelâ€™s AI chatbot, a purpose-built AI agent on your website, or a channel-specific deployment.' },
   { icon: 'fa-solid fa-book', title: 'Business Training and Knowledge Base Setup', impact: 'High impact', desc: 'We train the chatbot on your services, pricing ranges, process, FAQs, and qualification criteria, so responses feel genuine rather than generic.' },
   { icon: 'fa-solid fa-database', title: 'CRM Integration and Lead Capture', impact: 'High impact', desc: 'Every chatbot conversation that produces a lead is automatically logged in your CRM, contact details captured, conversation summary recorded, pipeline stage updated.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Integration', impact: 'Medium impact', desc: 'We connect the chatbot directly to your calendar system so qualified leads can book immediately within the conversation.' },
@@ -58,16 +58,16 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching, any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Service businesses with after-hours enquiry traffic.png' },
-  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week, pricing, availability, process, a chatbot handles those automatically and frees the team for conversations that need a human.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Teams that spend too much time on repetitive questions.png' },
-  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing, routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/E-commerce businesses handling high volumes.png' },
-  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions, company size, budget, timeline, need, before routing to a sales rep produces significantly higher-quality conversations.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/B2B businesses qualifying inbound leads.png' },
-  { icon: 'fa-solid fa-bullhorn', title: 'Local service businesses running paid ad campaigns', desc: 'A paid ad that drives traffic to a landing page with a chatbot converts at a higher rate than one that drives to a contact form, because it provides immediate, interactive engagement.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Local service businesses running paid ad campaigns.png' },
-  { icon: 'fa-solid fa-building', title: 'High-volume businesses that cannot scale headcount', desc: 'A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality or speed. Scaling human support by the same ratio would require proportionally more headcount and cost.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/High-volume businesses that cannot scale headcount.png' },
+  { icon: 'fa-solid fa-truck', title: 'Service businesses with after-hours enquiry traffic', desc: 'HVAC, plumbing, dental, legal, real estate, coaching, any service business where potential customers enquire outside business hours needs a system that engages them immediately.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Service businesses with after-hours enquiry traffic.webp' },
+  { icon: 'fa-solid fa-headset', title: 'Teams that spend too much time on repetitive questions', desc: 'If your team is answering the same questions dozens of times a week, pricing, availability, process, a chatbot handles those automatically and frees the team for conversations that need a human.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Teams that spend too much time on repetitive questions.webp' },
+  { icon: 'fa-solid fa-store', title: 'E-commerce businesses handling high volumes', desc: 'Product questions, order status, returns, sizing, routine enquiries handled at any volume without increasing headcount. Salesforce projects 50% of service cases resolved by AI by 2027.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/E-commerce businesses handling high volumes.webp' },
+  { icon: 'fa-solid fa-building-columns', title: 'B2B businesses qualifying inbound leads', desc: 'A chatbot that asks the right qualification questions, company size, budget, timeline, need, before routing to a sales rep produces significantly higher-quality conversations.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/B2B businesses qualifying inbound leads.webp' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Local service businesses running paid ad campaigns', desc: 'A paid ad that drives traffic to a landing page with a chatbot converts at a higher rate than one that drives to a contact form, because it provides immediate, interactive engagement.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/Local service businesses running paid ad campaigns.webp' },
+  { icon: 'fa-solid fa-building', title: 'High-volume businesses that cannot scale headcount', desc: 'A chatbot handles 500 or 5,000 simultaneous conversations with no difference in quality or speed. Scaling human support by the same ratio would require proportionally more headcount and cost.', img: '/services-six-card/Marketing Automation Section/Al Chatbot & Conversation/High-volume businesses that cannot scale headcount.webp' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-crosshairs', title: 'We design scope before we build anything', desc: 'The most common reason chatbot implementations fail is scope creep. We define the chatbot’s scope precisely before building anything, so what it does, it does excellently.' },
+  { icon: 'fa-solid fa-crosshairs', title: 'We design scope before we build anything', desc: 'The most common reason chatbot implementations fail is scope creep. We define the chatbotâ€™s scope precisely before building anything, so what it does, it does excellently.' },
   { icon: 'fa-solid fa-book', title: 'We train on your business, not a generic knowledge base', desc: 'A chatbot that knows your services, pricing, process, and most common customer questions produces conversations that feel helpful rather than frustrating.' },
   { icon: 'fa-solid fa-plug', title: 'We integrate with your full automation stack', desc: 'CRM updates, pipeline stage changes, booking confirmations, nurture sequence enrolment, the chatbot does not exist in isolation from your business.' },
   { icon: 'fa-solid fa-right-from-bracket', title: 'We configure human handoff properly', desc: 'A chatbot that traps visitors in a conversation they cannot escape is worse than no chatbot. We configure clear, graceful handoff pathways with full context passed to the human.' },
@@ -76,7 +76,7 @@ const WHY_ISM = [
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Strategy and Scope Definition', desc: 'We define the chatbot’s scope, what it handles, what it escalates, the qualification questions it asks, and map conversation flows before any build begins.' },
+  { n: '01', title: 'Strategy and Scope Definition', desc: 'We define the chatbotâ€™s scope, what it handles, what it escalates, the qualification questions it asks, and map conversation flows before any build begins.' },
   { n: '02', title: 'Knowledge Base and Training Data Build', desc: 'We build the knowledge base, services, pricing ranges, process, geography, FAQs, and qualification criteria, that the chatbot draws on to answer questions.' },
   { n: '03', title: 'Conversation Flow Build and Configuration', desc: 'Opening messages, question sequences, branching logic, qualification routing, booking integration, and human handoff configuration, every path is mapped and built.' },
   { n: '04', title: 'CRM and Integration Setup', desc: 'We connect the chatbot to your CRM, booking system, and nurture sequences, configuring the triggers that fire when each conversation outcome is reached.' },
@@ -86,7 +86,7 @@ const PROCESS = [
 const FAQS = [
   { q: 'What is the difference between an AI chatbot and a scripted chatbot?', a: 'A scripted chatbot follows a fixed decision tree, it can only respond to options it was explicitly programmed to handle. An AI chatbot uses a language model to understand natural language, maintain conversation context, and produce responses to questions it has not been explicitly scripted for.' },
   { q: 'Will the chatbot frustrate visitors if it cannot answer a question?', a: 'Only if the handoff is not configured properly. We build chatbots with clear, graceful escalation pathways, when a question is outside scope, the chatbot acknowledges it clearly, collects contact details, and arranges a human follow-up with full conversation context.' },
-  { q: 'What platform do you build chatbots on?', a: 'We build on GoHighLevel’s AI chatbot for clients already on GHL, fully integrated with their CRM, pipelines, and booking system. We also build custom AI chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM.' },
+  { q: 'What platform do you build chatbots on?', a: 'We build on GoHighLevelâ€™s AI chatbot for clients already on GHL, fully integrated with their CRM, pipelines, and booking system. We also build custom AI chatbots for website deployment and channel-specific deployments for WhatsApp, Facebook Messenger, and Instagram DM.' },
   { q: 'Can the chatbot book appointments directly?', a: 'Yes. We connect the chatbot to your calendar system, GoHighLevel calendar, Calendly, or another booking tool, so a qualified lead can book a call directly within the conversation.' },
   { q: 'How do you train the chatbot to know about our business?', a: 'We build a knowledge base from the information you provide, your services, pricing ranges, process, geography, team, and most common customer questions. The knowledge base is updated whenever your services or pricing change.' },
   { q: 'Can the chatbot qualify leads before they reach our sales team?', a: 'Yes. We configure the qualification questions that determine whether a lead matches your ideal customer profile and route qualified leads to booking and unqualified leads to a different outcome, all within the conversation.' },
@@ -102,7 +102,7 @@ const RELATED = [
   { icon: 'fa-solid fa-route', title: 'Lead Nurture Workflows', desc: 'Automated follow-up sequences that keep leads warm after the chatbot conversation ends.', href: '/services/automation/lead-nurture-workflows' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function ChatbotFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -121,7 +121,7 @@ function ChatbotFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -159,7 +159,7 @@ export default function AIChatbotPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="chatbot-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -211,7 +211,7 @@ export default function AIChatbotPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>300+ Chatbots Deployed</span>
@@ -249,10 +249,10 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -297,7 +297,7 @@ export default function AIChatbotPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS AI CHATBOT AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS AI CHATBOT AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="chatbot-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -386,7 +386,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -424,7 +424,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -468,7 +468,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR AI CHATBOT SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR AI CHATBOT SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -498,7 +498,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -509,7 +509,7 @@ export default function AIChatbotPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -532,7 +532,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -559,7 +559,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -592,7 +592,7 @@ export default function AIChatbotPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -626,7 +626,7 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="chatbot-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -668,10 +668,10 @@ export default function AIChatbotPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ChatbotFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/ai chatbaoat.webp" description={<>Leads don't wait for business hours, and neither should your response. An AI chatbot qualifies visitors, answers their questions, and books appointments the moment they show up on your site. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>capture leads around the clock</span>.</>} heading="Ready for Leads Handled" headingHighlight="Around the Clock?" primaryLabel="Build My AI Chatbot" secondaryLabel="Talk to a Chatbot Specialist" />
       </main>
       <Footer />

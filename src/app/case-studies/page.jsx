@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState, useMemo } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -209,7 +209,7 @@ function CaseCard({
         {/* Thumbnail, matches this case study's own hero image */}
         <div className="cs-thumb" style={{ position: 'relative', width: '100%', height: 260, borderRadius: 14, overflow: 'hidden' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={c.img} alt={c.client}
+          <img loading="lazy" src={c.img} alt={c.client}
             style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
           />
         </div>

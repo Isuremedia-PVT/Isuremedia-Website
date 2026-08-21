@@ -23,7 +23,7 @@ const HOME_SCHEMA = JSON.stringify({
       "@type": "Organization",
       "name": "Isuremedia",
       "url": "https://isuremedia.com",
-      "logo": "https://isuremedia.com/wp-content/uploads/logo.png",
+      "logo": "https://isuremedia.com/isuremedia-dark.webp",
       "email": "seoteam@isuremedia.com",
       "foundingDate": "2018",
       "description": "Full-service digital marketing agency offering SEO, PPC, web design, and marketing automation.",
@@ -36,12 +36,7 @@ const HOME_SCHEMA = JSON.stringify({
     {
       "@type": "WebSite",
       "url": "https://isuremedia.com",
-      "name": "Isuremedia",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://isuremedia.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "name": "Isuremedia"
     },
     {
       "@type": "FAQPage",

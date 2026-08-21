@@ -31,12 +31,12 @@ const SITEMAP = [
     section: 'Hire a Team',
     icon: 'fa-solid fa-users',
     links: [
-      { label: 'Hire Overview',             href: '/hire' },
-      { label: 'Hire an SEO Specialist',    href: '/hire/seo-specialist' },
-      { label: 'Hire a PPC Manager',        href: '/hire/ppc-manager' },
-      { label: 'Hire a Web Developer',      href: '/hire/web-developer' },
-      { label: 'Hire a Content Writer',     href: '/hire/content-writer' },
-      { label: 'Hire a GHL Expert',         href: '/hire/ghl-expert' },
+      { label: 'Hire a WordPress Developer',        href: '/hire/wordpress-developer'         },
+      { label: 'Hire a Shopify Developer',          href: '/hire/shopify-developer'           },
+      { label: 'Hire a Web Designer',               href: '/hire/web-designer'                },
+      { label: 'Hire an SEO Expert',                href: '/hire/seo-expert'                  },
+      { label: 'Hire a GoHighLevel Expert',         href: '/hire/gohighlevel-expert'          },
+      { label: 'Hire a Marketing Automation Expert',href: '/hire/marketing-automation-expert' },
     ],
   },
   {
@@ -55,7 +55,7 @@ const SITEMAP = [
     section: 'Resources',
     icon: 'fa-solid fa-book-open',
     links: [
-      { label: 'Blog',               href: '/blog' },
+      { label: 'Blog',               href: 'https://blogs.isuremedia.com/' },
       { label: 'Case Studies',       href: '/case-studies' },
     ],
   },

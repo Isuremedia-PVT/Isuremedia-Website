@@ -1,10 +1,12 @@
 'use client';
 
+import { WHATSAPP_HREF } from '@/data/contact';
+
 export default function WhatsAppFloat() {
   return (
     <>
       <a
-        href="https://api.whatsapp.com/send?phone=917011041363"
+        href={WHATSAPP_HREF}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"

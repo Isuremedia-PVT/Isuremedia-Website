@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
@@ -189,7 +189,7 @@ export default function PPCPage() {
 
               <div className="ppc-strategy-mosaic" style={{ position:'relative', height:600, borderRadius:20, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why Paid Ads Are Your Fastest Path to Revenue.webp" alt="Why Paid Ads Are Your Fastest Path to Revenue" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
+                <img loading="lazy" src="/main-services/Why Paid Ads Are Your Fastest Path to Revenue.webp" alt="Why Paid Ads Are Your Fastest Path to Revenue" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -231,7 +231,7 @@ export default function PPCPage() {
               <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
+                  src="/main-services/seo-women.webp"
                   alt="PPC Expert"
                   style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', height:'128%', width:'auto', maxWidth:'none', objectFit:'contain', objectPosition:'bottom center', display:'block' }}
                 />
@@ -262,7 +262,7 @@ export default function PPCPage() {
             <div className="ppc-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Paid Ad Campaigns That Deliver Real, Measurable Results.webp" alt="Paid Ad Campaigns That Deliver Real, Measurable Results" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/Paid Ad Campaigns That Deliver Real, Measurable Results.webp" alt="Paid Ad Campaigns That Deliver Real, Measurable Results" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>Every campaign we run is built around one metric, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>return, not clicks or impressions</span>. We track cost per lead, cost per acquisition, and revenue per dollar spent.</p>
@@ -327,7 +327,7 @@ export default function PPCPage() {
               </div>
               <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why PPC Is a Smart Investment.webp" alt="Why PPC Is a Smart Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/Why PPC Is a Smart Investment.webp" alt="Why PPC Is a Smart Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>
@@ -461,7 +461,7 @@ export default function PPCPage() {
             </div>
             <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/result_footer/ppc.webp" alt="PPC Growth" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+              <img loading="lazy" src="/result_footer/ppc.webp" alt="PPC Growth" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           </div>

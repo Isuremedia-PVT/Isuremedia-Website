@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -35,10 +35,10 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const WHY_NOT_RANK = [
-  { icon: 'fa-solid fa-bullseye', title: 'Written to a topic, not a search intent', impact: 'Most common', desc: 'A post that covers the topic isn’t the same as one that answers the exact question someone typed into Google. Intent match ranks. Topic coverage alone doesn’t.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Written to a topic, not a search intent', impact: 'Most common', desc: 'A post that covers the topic isnâ€™t the same as one that answers the exact question someone typed into Google. Intent match ranks. Topic coverage alone doesnâ€™t.' },
   { icon: 'fa-solid fa-layer-group', title: 'No topical authority strategy', impact: 'High impact', desc: 'One post on a subject has less authority than twenty interconnected posts covering every related question.' },
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword presence without semantic depth', impact: 'High impact', desc: 'Including a keyword a few times isn’t SEO. Modern algorithms reward content that covers a topic thoroughly and demonstrates real expertise.' },
-  { icon: 'fa-solid fa-bullseye', title: 'Satisfies the topic, not the specific question', impact: 'Medium impact', desc: 'The more precisely a post matches the searcher’s exact situation, the more likely it is to rank and convert.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Keyword presence without semantic depth', impact: 'High impact', desc: 'Including a keyword a few times isnâ€™t SEO. Modern algorithms reward content that covers a topic thoroughly and demonstrates real expertise.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Satisfies the topic, not the specific question', impact: 'Medium impact', desc: 'The more precisely a post matches the searcherâ€™s exact situation, the more likely it is to rank and convert.' },
 ];
 
 const SERVICES = [
@@ -47,23 +47,23 @@ const SERVICES = [
   { icon: 'fa-solid fa-pen-nib', title: 'Long-Form SEO Blog Writing', desc: 'Researched to the specific intent, structured for the format Google and readers both expect. We write for depth.' },
   { icon: 'fa-solid fa-code', title: 'On-Page SEO Optimisation', desc: 'Title tag, meta description, headers, internal linking, alt text, and schema, applied to every post before publication.' },
   { icon: 'fa-solid fa-file-lines', title: 'Content Briefs for In-House Writers', desc: 'Keyword, intent, structure, headers, and key points, everything a writer needs without SEO expertise of their own.' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Content Refresh & Updating', desc: 'Updating underperforming posts can boost organic traffic by an average of 106%, we find and fix what’s close to ranking.' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Content Refresh & Updating', desc: 'Updating underperforming posts can boost organic traffic by an average of 106%, we find and fix whatâ€™s close to ranking.' },
   { icon: 'fa-solid fa-robot', title: 'AI Search & AEO Optimisation', desc: 'Clear definitions, direct answers, and structured data so AI systems can cite your content accurately.' },
   { icon: 'fa-solid fa-calendar-days', title: 'Monthly Content Calendars', desc: 'Topics, keywords, publishing dates, and internal linking planned so the programme runs consistently.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-clock', title: 'Can’t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI, a managed service removes the time constraint.', img: "/services-six-card/content_and_creative/Seo blog writing/Can't produce content consistently in-house.png" },
-  { icon: 'fa-solid fa-chart-line', title: 'Blog exists but generates little traffic', desc: 'If posts aren’t ranking, the strategy or the optimisation needs attention. We audit and build a programme that works.', img: '/services-six-card/content_and_creative/Seo blog writing/Blog exists but generates littletraffic.png' },
-  { icon: 'fa-solid fa-flag', title: 'Entering a new market or launching a service', desc: 'A targeted programme builds topical authority in a new area before paid campaigns drive traffic to unranked pages.', img: '/services-six-card/content_and_creative/Seo blog writing/Entering a new market orlaunching a service.png' },
-  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references, scalable across multiple accounts.', img: '/services-six-card/content_and_creative/Seo blog writing/Agencies white-labellingcontent for clients.png' },
-  { icon: 'fa-solid fa-robot', title: 'Targeting AI search visibility', desc: 'For businesses whose customers research with AI tools, content structured for citation is a real competitive edge.', img: '/services-six-card/content_and_creative/Seo blog writing/Targeting Al search visibility.png' },
-  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce building informational funnels', desc: 'A reader who finds your post answering their question is far more likely to buy than a cold ad viewer.', img: '/services-six-card/content_and_creative/Seo blog writing/E-commerce buildinginformational funnels.png' },
+  { icon: 'fa-solid fa-user-clock', title: 'Canâ€™t produce content consistently in-house', desc: 'Consistent publishing is the biggest driver of content ROI, a managed service removes the time constraint.', img: "/services-six-card/content_and_creative/Seo blog writing/Can't produce content consistently in-house.webp" },
+  { icon: 'fa-solid fa-chart-line', title: 'Blog exists but generates little traffic', desc: 'If posts arenâ€™t ranking, the strategy or the optimisation needs attention. We audit and build a programme that works.', img: '/services-six-card/content_and_creative/Seo blog writing/Blog exists but generates littletraffic.webp' },
+  { icon: 'fa-solid fa-flag', title: 'Entering a new market or launching a service', desc: 'A targeted programme builds topical authority in a new area before paid campaigns drive traffic to unranked pages.', img: '/services-six-card/content_and_creative/Seo blog writing/Entering a new market orlaunching a service.webp' },
+  { icon: 'fa-solid fa-handshake', title: 'Agencies white-labelling content for clients', desc: 'Same quality, client-specific voice, no ISureMedia references, scalable across multiple accounts.', img: '/services-six-card/content_and_creative/Seo blog writing/Agencies white-labellingcontent for clients.webp' },
+  { icon: 'fa-solid fa-robot', title: 'Targeting AI search visibility', desc: 'For businesses whose customers research with AI tools, content structured for citation is a real competitive edge.', img: '/services-six-card/content_and_creative/Seo blog writing/Targeting Al search visibility.webp' },
+  { icon: 'fa-solid fa-cart-shopping', title: 'E-commerce building informational funnels', desc: 'A reader who finds your post answering their question is far more likely to buy than a cold ad viewer.', img: '/services-six-card/content_and_creative/Seo blog writing/E-commerce buildinginformational funnels.webp' },
 ];
 
 const WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We research before we write a word', desc: 'Every brief starts with keyword research and intent analysis. Writing comes after the research is done, not alongside it.' },
-  { icon: 'fa-solid fa-bullseye', title: 'We write for intent, not keyword density', desc: 'Every post is structured around whether it satisfies the searcher better than what’s already on page one.' },
+  { icon: 'fa-solid fa-bullseye', title: 'We write for intent, not keyword density', desc: 'Every post is structured around whether it satisfies the searcher better than whatâ€™s already on page one.' },
   { icon: 'fa-solid fa-layer-group', title: 'We build authority strategies, not one-off posts', desc: 'A cluster of interconnected posts consistently outranks single posts in a competitive niche.' },
   { icon: 'fa-solid fa-code', title: 'We optimise every post before publishing', desc: 'Title tag, meta description, headers, internal linking, schema, part of the editorial process, not an afterthought.' },
   { icon: 'fa-solid fa-robot', title: 'We write for AI search, not just Google', desc: 'Content cited in ChatGPT, Perplexity, or AI Overviews converts at 4x to 5x traditional organic search.' },
@@ -74,9 +74,9 @@ const PROCESS = [
   { n: '01', title: 'Keyword Research & Mapping', desc: 'The keyword landscape for your business, mapped into the topical clusters that build authority most efficiently.' },
   { n: '02', title: 'Strategy & Calendar Planning', desc: 'Topical clusters, cornerstone articles, supporting posts, internal linking plan, and publishing calendar.' },
   { n: '03', title: 'Content Brief Development', desc: 'Keyword, intent, target length, headers, key points, and competitive differentiation, the blueprint for every post.' },
-  { n: '04', title: 'Writing & Editorial Review', desc: 'Written to the brief, in your brand’s voice, reviewed for accuracy, flow, and SEO before delivery.' },
+  { n: '04', title: 'Writing & Editorial Review', desc: 'Written to the brief, in your brandâ€™s voice, reviewed for accuracy, flow, and SEO before delivery.' },
   { n: '05', title: 'On-Page SEO & Optimisation', desc: 'Title tag, meta description, header hierarchy, internal linking, alt text, and schema before publication.' },
-  { n: '06', title: 'Monitoring & Iteration', desc: 'Rankings and engagement tracked for every post, what’s gaining traction, what needs updating, what’s next.' },
+  { n: '06', title: 'Monitoring & Iteration', desc: 'Rankings and engagement tracked for every post, whatâ€™s gaining traction, what needs updating, whatâ€™s next.' },
 ];
 
 const FAQS = [
@@ -85,7 +85,7 @@ const FAQS = [
   { q: 'Can you write content that also works for AI search like ChatGPT and Perplexity?', a: 'Yes. We structure content for AI citation, clear definitions, direct answers, and proper schema markup.' },
   { q: 'Do you do keyword research or do we provide the topics?', a: 'Both. We typically conduct research and recommend topics, but we can validate and refine client-provided topics too.' },
   { q: 'What is a topical cluster and why does it matter?', a: 'A group of interlinked pieces covering a subject comprehensively. Sites with strong topical authority rank more easily for new terms in that area.' },
-  { q: 'Can you write in our brand’s voice and tone?', a: 'Yes. We develop a voice and tone brief before writing begins, based on your existing content and guidelines.' },
+  { q: 'Can you write in our brandâ€™s voice and tone?', a: 'Yes. We develop a voice and tone brief before writing begins, based on your existing content and guidelines.' },
   { q: 'What is content refreshing and when does it make sense?', a: 'Updating existing posts with ranking potential but underperforming, can increase organic traffic by an average of 106%.' },
   { q: 'How many posts per month do we need to see results?', a: 'Four to eight well-researched, properly optimised posts per month is the effective range for most businesses.' },
 ];
@@ -113,7 +113,7 @@ function FAQAccordion() {
             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
             onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
           >
-            Get Started →
+            Get Started â†’
           </a>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -150,7 +150,7 @@ export default function SEOBlogWritingPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="blog-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -201,7 +201,7 @@ export default function SEOBlogWritingPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Posts Researched &amp; Ranking</span>
@@ -233,10 +233,10 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -281,7 +281,7 @@ export default function SEOBlogWritingPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS SEO BLOG WRITING ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS SEO BLOG WRITING â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="blog-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -364,7 +364,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY SEO BLOG CONTENT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY SEO BLOG CONTENT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -402,7 +402,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHY MOST BLOG CONTENT DOES NOT RANK ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHY MOST BLOG CONTENT DOES NOT RANK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -446,7 +446,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR SEO BLOG WRITING SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR SEO BLOG WRITING SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -476,7 +476,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -487,7 +487,7 @@ export default function SEOBlogWritingPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -510,7 +510,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -537,7 +537,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -570,7 +570,7 @@ export default function SEOBlogWritingPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\graphics.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -604,7 +604,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="blog-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -651,7 +651,7 @@ export default function SEOBlogWritingPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -678,10 +678,10 @@ export default function SEOBlogWritingPage() {
           <style>{`@media(max-width:860px){ .blog-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/SEO Blog Writing.webp" description={<>Whether your blog already exists but isn&apos;t ranking, or you haven&apos;t published a single post yet, the question is the same. Is your content actually generating search traffic, or just sitting there? Talk to us today and we will help you build the content programme that turns every post into <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>traffic that keeps compounding</span>.</>} heading="Ready to" headingHighlight="Start Ranking?" primaryLabel="Get My Free Content Strategy Call" secondaryLabel="Talk to an SEO Writer" />
       </main>
       <Footer />

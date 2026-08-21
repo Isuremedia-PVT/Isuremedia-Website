@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -57,19 +57,19 @@ const SPA_SERVICES = [
 ];
 
 const SPA_WHO_FOR = [
-  { icon: 'fa-solid fa-table-list', title: 'Sales teams outgrowing spreadsheets', desc: 'Once deal volume outpaces manual tracking, automated pipeline triggers keep every opportunity accounted for.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Sales teams outgrowing spreadsheets.png' },
-  { icon: 'fa-solid fa-user-tie', title: 'Founders doing sales personally', desc: 'Founders wearing the sales hat need reminders and sequences that fire automatically, not another task to manage.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Founders doing sales personally.png' },
-  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multiple pipelines', desc: 'Agencies running pipelines for several clients need consistent, documented automation across every account.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Agencies managing multiple pipelines.png' },
-  { icon: 'fa-solid fa-users', title: 'Teams with high deal volume', desc: 'When reps juggle dozens of open deals, automated task creation is the only way follow-up stays consistent.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams with high deal volume.png' },
-  { icon: 'fa-solid fa-arrows-rotate', title: 'Teams missing renewal and upsell windows', desc: 'Automated stage triggers surface renewal and upsell opportunities before the window closes.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams missing renewal and upsell windows.png' },
-  { icon: 'fa-solid fa-building', title: 'Growing teams standardising process', desc: 'As headcount grows, automated pipeline rules give every new rep the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Growing teams standardising process.png' },
+  { icon: 'fa-solid fa-table-list', title: 'Sales teams outgrowing spreadsheets', desc: 'Once deal volume outpaces manual tracking, automated pipeline triggers keep every opportunity accounted for.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Sales teams outgrowing spreadsheets.webp' },
+  { icon: 'fa-solid fa-user-tie', title: 'Founders doing sales personally', desc: 'Founders wearing the sales hat need reminders and sequences that fire automatically, not another task to manage.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Founders doing sales personally.webp' },
+  { icon: 'fa-solid fa-briefcase', title: 'Agencies managing multiple pipelines', desc: 'Agencies running pipelines for several clients need consistent, documented automation across every account.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Agencies managing multiple pipelines.webp' },
+  { icon: 'fa-solid fa-users', title: 'Teams with high deal volume', desc: 'When reps juggle dozens of open deals, automated task creation is the only way follow-up stays consistent.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams with high deal volume.webp' },
+  { icon: 'fa-solid fa-arrows-rotate', title: 'Teams missing renewal and upsell windows', desc: 'Automated stage triggers surface renewal and upsell opportunities before the window closes.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Teams missing renewal and upsell windows.webp' },
+  { icon: 'fa-solid fa-building', title: 'Growing teams standardising process', desc: 'As headcount grows, automated pipeline rules give every new rep the same reliable process from day one.', img: '/services-six-card/Marketing Automation Section/Sales Pipeline Automation/Growing teams standardising process.webp' },
 ];
 
 const SPA_WHY_ISM = [
   { icon: 'fa-solid fa-magnifying-glass', title: 'We audit before we automate', desc: 'Every engagement starts by mapping your current pipeline and finding exactly where deals stall or go cold.' },
   { icon: 'fa-solid fa-diagram-project', title: 'We build triggers, not just reminders', desc: 'Our automations move deals forward based on real stage logic, not generic follow-up emails on a timer.' },
   { icon: 'fa-solid fa-plug', title: 'We integrate with your existing CRM', desc: 'HubSpot, Pipedrive, GoHighLevel, or another platform, we build inside the CRM your team already knows.' },
-  { icon: 'fa-solid fa-file-lines', title: 'We document every automation', desc: 'Every trigger, task, and sequence is documented clearly, so nothing lives as tribal knowledge in one person’s head.' },
+  { icon: 'fa-solid fa-file-lines', title: 'We document every automation', desc: 'Every trigger, task, and sequence is documented clearly, so nothing lives as tribal knowledge in one personâ€™s head.' },
   { icon: 'fa-solid fa-chalkboard-user', title: 'We train your team on what we build', desc: 'A live walkthrough and clear documentation mean your reps and managers can manage the system after handover.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'We do not tie you into long contracts. You stay because deals are moving faster, not because you signed something months ago.' },
 ];
@@ -87,13 +87,13 @@ const SPA_FAQS = [
   { q: 'How fast do follow-up reminders fire after a stage changes?', a: 'Stage-change triggers fire immediately. The moment a deal moves stage, the next task or reminder is created and assigned to the right rep, there is no batch delay or manual step in between.' },
   { q: 'Does this replace our sales reps?', a: 'No. Automation handles the reminders, task creation, and follow-up sequencing so reps never forget a step, but the actual selling, relationship building, and closing still happens with your team.' },
   { q: 'What happens if a deal skips a stage or moves backward?', a: 'We build logic for both scenarios during the mapping phase, so a deal that jumps stages or moves back still triggers the correct tasks and alerts instead of falling through a gap.' },
-  { q: 'Is this compatible with HubSpot, Pipedrive, and GoHighLevel?', a: 'Yes. We have built pipeline automation across all three, along with several other CRMs. The underlying logic is the same, audit, map stages, build triggers, the implementation just adapts to each platform’s automation tools.' },
+  { q: 'Is this compatible with HubSpot, Pipedrive, and GoHighLevel?', a: 'Yes. We have built pipeline automation across all three, along with several other CRMs. The underlying logic is the same, audit, map stages, build triggers, the implementation just adapts to each platformâ€™s automation tools.' },
   { q: 'What if our pipeline stages are messy or inconsistent right now?', a: 'That is common, and it is part of what the audit catches. CRM cleanup and stage standardisation happen before we automate, since automation built on inconsistent data just automates the mess.' },
   { q: 'Can you set up deal-aging alerts for opportunities that go quiet?', a: 'Yes. We configure alerts that flag any deal sitting untouched past a threshold you set, notifying both the rep and their manager so stalled opportunities get addressed instead of forgotten.' },
   { q: 'How long does a sales pipeline automation project take?', a: 'A typical engagement covering the audit, stage-trigger mapping, automation build, testing, and documentation moves from audit to a fully live pipeline in two to three weeks.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function SPAFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -112,7 +112,7 @@ function SPAFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -150,7 +150,7 @@ export default function SalesPipelineAutomationPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="spa-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -202,7 +202,7 @@ export default function SalesPipelineAutomationPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>340+ Deals Auto-Advanced</span>
@@ -240,10 +240,10 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -256,7 +256,7 @@ export default function SalesPipelineAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build automation directly into your CRM that moves deals forward,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one person’s memory.
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one personâ€™s memory.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -288,7 +288,7 @@ export default function SalesPipelineAutomationPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS SALES PIPELINE AUTOMATION ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS SALES PIPELINE AUTOMATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="spa-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -304,7 +304,7 @@ export default function SalesPipelineAutomationPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Deals that sit untouched get flagged before they go cold,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no more opportunities quietly dying at the bottom of a rep’s task list</span>. A stalled deal gets surfaced to the rep and their manager the moment it crosses your threshold.
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no more opportunities quietly dying at the bottom of a repâ€™s task list</span>. A stalled deal gets surfaced to the rep and their manager the moment it crosses your threshold.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We design and build the automations that keep every deal moving, stage triggers, reminders, follow-up sequencing, and forecasting, so your pipeline reflects what is actually happening, not what someone remembered to log.
@@ -377,7 +377,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT MATTERS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT MATTERS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -415,7 +415,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. KEY FACTORS ══════════════════════════════════════════════ */}
+        {/* â•â• 06. KEY FACTORS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -459,7 +459,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. OUR SALES PIPELINE AUTOMATION SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 07. OUR SALES PIPELINE AUTOMATION SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -489,7 +489,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 09. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -500,7 +500,7 @@ export default function SalesPipelineAutomationPage() {
               {SPA_WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -523,7 +523,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 10. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -550,7 +550,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 11. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -583,7 +583,7 @@ export default function SalesPipelineAutomationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\automation.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = SPA_WHY_ISM[3]; return (
@@ -617,7 +617,7 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 12. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="spa-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -659,10 +659,10 @@ export default function SalesPipelineAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <SPAFAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/Sales Pipeline Automation.webp" description={<>Deals stall when follow-ups depend on someone remembering to send them. An automated sales pipeline moves prospects forward on its own, so nothing sits untouched waiting on a rep. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keep every deal moving forward</span>.</>} heading="Ready for Deals That Move" headingHighlight="Themselves?" primaryLabel="Automate My Pipeline" secondaryLabel="Talk to a Sales Ops Expert" />
       </main>
       <Footer />

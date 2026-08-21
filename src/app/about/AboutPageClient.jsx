@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -328,7 +328,7 @@ export default function AboutPageClient() {
               </div>
               <div className="about-vm-photo" style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/career-about/1000 Businesses and Agencies about us.webp" alt="Isuremedia vision" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <img loading="lazy" src="/career-about/1000 Businesses and Agencies about us.webp" alt="Isuremedia vision" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
             </div>
 
@@ -352,7 +352,7 @@ export default function AboutPageClient() {
               </div>
               <div className="about-vm-photo" style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', width: 320, height: 420, borderRadius: 20, overflow: 'hidden', boxShadow: '0 24px 60px rgba(0,35,83,.25)', zIndex: 2 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/career-about/Digital Growth Made Simple about us.webp" alt="Isuremedia mission" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <img loading="lazy" src="/career-about/Digital Growth Made Simple about us.webp" alt="Isuremedia mission" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
             </div>
 

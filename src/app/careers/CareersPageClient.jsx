@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Script from 'next/script';
@@ -334,7 +334,7 @@ export default function CareersPageClient() {
               ].map((img, i) => (
                 <div key={i} style={{ borderRadius: 14, overflow: 'hidden', height: img.h }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={img.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.pos, display: 'block', transition: 'transform .4s ease' }}
+                  <img loading="lazy" src={img.src} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.pos, display: 'block', transition: 'transform .4s ease' }}
                     onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.04)'; }}
                     onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
                   />
@@ -347,7 +347,7 @@ export default function CareersPageClient() {
               {/* Wide image */}
               <div style={{ borderRadius: 14, overflow: 'hidden', height: 360 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/career-about/IMG_3431.webp" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', transition: 'transform .4s ease' }}
+                <img loading="lazy" src="/career-about/IMG_3431.webp" alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block', transition: 'transform .4s ease' }}
                   onMouseEnter={e => { (e.currentTarget).style.transform = 'scale(1.03)'; }}
                   onMouseLeave={e => { (e.currentTarget).style.transform = 'scale(1)'; }}
                 />

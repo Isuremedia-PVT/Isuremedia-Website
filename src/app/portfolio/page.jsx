@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useMemo } from 'react';
 import Navbar from '@/components/Navbar';
@@ -249,7 +249,7 @@ export default function PortfolioPage() {
                   {/* Image wrap */}
                   <div className="port-card-img-wrap">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={p.img} alt={p.name} className="port-card-img" />
+                    <img loading="lazy" src={p.img} alt={p.name} className="port-card-img" />
                     
                     {/* Hover tint overlay */}
                     <div className="port-card-overlay" />

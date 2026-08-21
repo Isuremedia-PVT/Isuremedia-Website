@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -67,11 +67,11 @@ const SERVICES = [
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS resellers with growing client bases', desc: 'At five clients you handle support yourself. At fifty it is a full-time job. White-label support scales with your client base without scaling your personal time commitment.', img: '/services-six-card/White Label/whhite label ghl support/GHL SaaS resellers with growingclient bases.png' },
-  { icon: 'fa-solid fa-users', title: 'Agencies using GHL as a retention tool', desc: 'Clients embedded in the platform generate embedded support requests. White-label support keeps those clients happy without the burden falling on your account managers.', img: '/services-six-card/White Label/whhite label ghl support/Agencies using GHL as aretention tool.png' },
-  { icon: 'fa-solid fa-bolt', title: 'Agencies onboarding faster than they can set up', desc: 'A sales process that closes clients faster than the onboarding team can configure them creates a backlog that damages the first impression. Support keeps setup inside your sold timeline.', img: '/services-six-card/White Label/whhite label ghl support/Agencies onboarding fasterthan they can set up.png' },
-  { icon: 'fa-solid fa-user-clock', title: 'Owners spending too much time inside GHL', desc: 'If you are the most GHL-experienced person in the agency and support requests pull you into the platform for hours a week, white-label support removes you from the execution loop.', img: '/services-six-card/White Label/whhite label ghl support/Owners spending too much timeinside GHL.png' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding into GHL without deep expertise', desc: 'If you are adding GHL to your offering but your team is not deeply experienced yet, white-label support lets you sell it confidently while we handle the technical delivery.', img: '/services-six-card/White Label/whhite label ghl support/Agencies expanding into GHLwithout deep expertise.png' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS resellers with growing client bases', desc: 'At five clients you handle support yourself. At fifty it is a full-time job. White-label support scales with your client base without scaling your personal time commitment.', img: '/services-six-card/White Label/whhite label ghl support/GHL SaaS resellers with growingclient bases.webp' },
+  { icon: 'fa-solid fa-users', title: 'Agencies using GHL as a retention tool', desc: 'Clients embedded in the platform generate embedded support requests. White-label support keeps those clients happy without the burden falling on your account managers.', img: '/services-six-card/White Label/whhite label ghl support/Agencies using GHL as aretention tool.webp' },
+  { icon: 'fa-solid fa-bolt', title: 'Agencies onboarding faster than they can set up', desc: 'A sales process that closes clients faster than the onboarding team can configure them creates a backlog that damages the first impression. Support keeps setup inside your sold timeline.', img: '/services-six-card/White Label/whhite label ghl support/Agencies onboarding fasterthan they can set up.webp' },
+  { icon: 'fa-solid fa-user-clock', title: 'Owners spending too much time inside GHL', desc: 'If you are the most GHL-experienced person in the agency and support requests pull you into the platform for hours a week, white-label support removes you from the execution loop.', img: '/services-six-card/White Label/whhite label ghl support/Owners spending too much timeinside GHL.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding into GHL without deep expertise', desc: 'If you are adding GHL to your offering but your team is not deeply experienced yet, white-label support lets you sell it confidently while we handle the technical delivery.', img: '/services-six-card/White Label/whhite label ghl support/Agencies expanding into GHLwithout deep expertise.webp' },
 ];
 
 const WHY_ISM = [
@@ -105,7 +105,7 @@ const FAQS = [
   { q: 'Can you support GHL clients outside the US?', a: 'Yes, globally, with awareness of regional differences in SMS sending, phone provisioning, and compliance. UK, Australian, Canadian, and Indian clients get the regional setup they actually need, not a US-centric default.' },
 ];
 
-/* ── FAQ 2-COL, matches the Local SEO page layout ── */
+/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
 function AutomationFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -124,7 +124,7 @@ function AutomationFAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started →
+              Get Started â†’
             </a>
           </div>
           {/* Right accordion */}
@@ -162,7 +162,7 @@ export default function WhiteLabelAutomationPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wla-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -214,7 +214,7 @@ export default function WhiteLabelAutomationPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>40+ GHL Agencies Supported</span>
@@ -252,10 +252,10 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -300,7 +300,7 @@ export default function WhiteLabelAutomationPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHAT IS WHITE-LABEL GHL SUPPORT ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHAT IS WHITE-LABEL GHL SUPPORT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wla-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -389,7 +389,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. THE GHL SUPPORT LOAD CONSUMING YOUR TIME ══════════════════════════════════════════════ */}
+        {/* â•â• 05. THE GHL SUPPORT LOAD CONSUMING YOUR TIME â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
@@ -427,7 +427,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT MAKES A WHITE-LABEL GHL PARTNERSHIP WORK ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT MAKES A WHITE-LABEL GHL PARTNERSHIP WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -471,7 +471,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. OUR WHITE-LABEL GHL SUPPORT SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 09. OUR WHITE-LABEL GHL SUPPORT SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -501,7 +501,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -512,7 +512,7 @@ export default function WhiteLabelAutomationPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -535,7 +535,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -562,7 +562,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -595,7 +595,7 @@ export default function WhiteLabelAutomationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -629,7 +629,7 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 13. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wla-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -674,10 +674,10 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* ══ 14. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <AutomationFAQAccordion />
 
-        {/* ══ 15. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/white label.webp" description={<>Every new GHL client you onboard shouldn&rsquo;t mean another support ticket pile-up for your team. Our white-label automation specialists build and maintain funnels, workflows, and integrations under your brand, freeing your hours for the work that actually grows your agency. Let&rsquo;s talk about how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>handle more clients without the support drag</span>.</>} heading="Ready to Offload" headingHighlight="the GHL Support Load?" primaryLabel="Start White-Label GHL Support" secondaryLabel="Call +1 646-588-1430" />
       </main>
       <Footer />

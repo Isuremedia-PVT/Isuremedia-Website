@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { resultCards } from '@/components/ResultsStrip';
+import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -228,19 +229,19 @@ export default function Navbar() {
 
           {/* Right, phone, email, CTA */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
-            <a href="tel:+917300007650" style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
+            <a href={PHONE_IN_TEL} style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
               onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
             >
               <i className="fa-solid fa-phone" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
-              +91-73-0000-7650
+              {PHONE_IN}
             </a>
-            <a href="mailto:info@isuremedia.com" style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
+            <a href={EMAIL_HREF} style={{ display: 'flex', alignItems: 'center', gap: 7, fontFamily: I, fontSize: 12, fontWeight: 500, color: '#fff', textDecoration: 'none', transition: 'color .15s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--ism-amber)')}
               onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
             >
               <i className="fa-solid fa-envelope" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
-              info@isuremedia.com
+              {EMAIL}
             </a>
             <a href="/appointment"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '4px 11px', borderRadius: 6, fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .15s' }}
@@ -383,7 +384,7 @@ export default function Navbar() {
                         >
                           {/* BG image */}
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={card.img} alt="" aria-hidden style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                          <img src={card.img} alt="" aria-hidden loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                           {/* Color overlay */}
                           <div style={{ position: 'absolute', inset: 0, background: card.overlay }} />
                           {/* Decorative shapes */}
@@ -609,9 +610,9 @@ export default function Navbar() {
           })}
 
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 10 }}>
-            <a href="tel:+16465881430"
+            <a href={PHONE_US_TEL}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--ism-amber)', textDecoration: 'none' }}>
-              <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> +1 646-588-1430
+              <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> {PHONE_US}
             </a>
             <a href="/appointment" onClick={() => setMobileOpen(false)}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 7, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 600, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none' }}>

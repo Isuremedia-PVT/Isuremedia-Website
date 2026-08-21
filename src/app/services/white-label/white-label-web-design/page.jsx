@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Navbar from '@/components/Navbar';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -44,21 +44,21 @@ const FAILURE_MODES = [
 const SERVICES = [
   { icon: 'fa-brands fa-wordpress', title: 'WordPress Websites', desc: 'Bespoke sites built for performance, clean code, mobile-first layouts, and a CMS interface clients can actually manage.' },
   { icon: 'fa-brands fa-react', title: 'Next.js and React Builds', desc: 'For performance-critical projects, server-side rendering and edge-optimised delivery for sub-second load times.' },
-  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages & Campaign Pages', desc: 'Single-purpose pages for lead capture, launches, and events, connected to the client’s CRM and automation.' },
+  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages & Campaign Pages', desc: 'Single-purpose pages for lead capture, launches, and events, connected to the clientâ€™s CRM and automation.' },
   { icon: 'fa-solid fa-cart-shopping', title: 'E-Commerce, WooCommerce & Shopify', desc: 'Product catalogue setup, payment gateways, shipping rules, and abandoned cart configuration included.' },
   { icon: 'fa-solid fa-robot', title: 'GoHighLevel Website & Funnel Builds', desc: 'Properly designed and built GHL sites taking full advantage of native CRM and automation connectivity.' },
   { icon: 'fa-solid fa-arrows-rotate', title: 'Redesigns & Migrations', desc: 'Outdated or outgrown sites rebuilt with SEO value, content, and domain authority preserved.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'Ongoing Maintenance & Care Plans', desc: 'Plugin updates, security and uptime monitoring, and content changes, under your agency’s brand.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'Ongoing Maintenance & Care Plans', desc: 'Plugin updates, security and uptime monitoring, and content changes, under your agencyâ€™s brand.' },
   { icon: 'fa-solid fa-list-check', title: 'Full Project Management', desc: 'Brief to launch, one point of contact on our side, so you manage the client relationship, not our team.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Marketing & SEO agencies whose clients need websites', desc: 'Turning it down risks the relationship. Referring it out risks the experience. Say yes and deliver it under your brand.', img: '/services-six-card/White Label/white label developer/Marketing & SEO agencieswhose clients need websites.png' },
-  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build, delivered under your agency’s name.', img: '/services-six-card/White Label/white label developer/Branding agencies without devcapacity.png' },
-  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire, timelines still met.', img: '/services-six-card/White Label/white label developer/Agencies with dev capacity atits limit.png' },
-  { icon: 'fa-solid fa-bullhorn', title: 'PR and comms agencies expanding into digital', desc: 'Adds digital delivery capability to a communications-led proposition without in-house technical resource.', img: '/services-six-card/White Label/white label developer/PR and comms agenciesexpanding into digital.png' },
-  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer, retain the margin and relationship.', img: '/services-six-card/White Label/white label developer/Freelance consultants building agency-level offers.png' },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured, say yes anyway.', img: '/services-six-card/White Label/white label developer/Agencies handling buildsoutside their stack.png' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Marketing & SEO agencies whose clients need websites', desc: 'Turning it down risks the relationship. Referring it out risks the experience. Say yes and deliver it under your brand.', img: '/services-six-card/White Label/white label developer/Marketing & SEO agencieswhose clients need websites.webp' },
+  { icon: 'fa-solid fa-palette', title: 'Branding agencies without dev capacity', desc: 'A brand identity project becomes a full brand and web build, delivered under your agencyâ€™s name.', img: '/services-six-card/White Label/white label developer/Branding agencies without devcapacity.webp' },
+  { icon: 'fa-solid fa-users', title: 'Agencies with dev capacity at its limit', desc: 'White-label overflow takes the backlog without the cost of a new hire, timelines still met.', img: '/services-six-card/White Label/white label developer/Agencies with dev capacity atits limit.webp' },
+  { icon: 'fa-solid fa-bullhorn', title: 'PR and comms agencies expanding into digital', desc: 'Adds digital delivery capability to a communications-led proposition without in-house technical resource.', img: '/services-six-card/White Label/white label developer/PR and comms agenciesexpanding into digital.webp' },
+  { icon: 'fa-solid fa-user-tie', title: 'Freelance consultants building agency-level offers', desc: 'Offer website builds as part of your service without being the developer, retain the margin and relationship.', img: '/services-six-card/White Label/white label developer/Freelance consultants building agency-level offers.webp' },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Agencies handling builds outside their stack', desc: 'A WordPress agency asked for Next.js, or a GHL funnel your team has never configured, say yes anyway.', img: '/services-six-card/White Label/white label developer/Agencies handling buildsoutside their stack.webp' },
 ];
 
 const WHY_ISM = [
@@ -66,7 +66,7 @@ const WHY_ISM = [
   { icon: 'fa-solid fa-file-signature', title: 'Scope defined in writing before work begins', desc: 'A written specification signed off by the agency before any work begins eliminates scope disputes before they start.' },
   { icon: 'fa-solid fa-object-group', title: 'Design and development as one team', desc: 'No translation loss, the site the client sees at launch looks like the design that was approved.' },
   { icon: 'fa-solid fa-clipboard-check', title: 'QA before every delivery', desc: 'Desktop and mobile, all browsers, all integrations tested, ready to present, not a build you check yourself.' },
-  { icon: 'fa-solid fa-eye-slash', title: 'No ISureMedia reference anywhere', desc: 'Code, file names, staging URLs, and communications cleared. The website that goes live is your agency’s work.' },
+  { icon: 'fa-solid fa-eye-slash', title: 'No ISureMedia reference anywhere', desc: 'Code, file names, staging URLs, and communications cleared. The website that goes live is your agencyâ€™s work.' },
   { icon: 'fa-solid fa-calendar-check', title: 'Month to month arrangements', desc: 'No volume commitments, no retainer minimums, no penalty for months with lower output.' },
 ];
 
@@ -74,7 +74,7 @@ const PROCESS = [
   { n: '01', title: 'Partner Discovery Call', desc: 'Your typical project types, platforms, and volume, a fulfilment structure and margin model proposed for your scope.' },
   { n: '02', title: 'Agency Onboarding', desc: 'Brand standards, briefing format, and support preferences established, with your dedicated project contact assigned.' },
   { n: '03', title: 'Brief & Scope Definition', desc: 'A written specification agreed by your agency before work begins, the document that prevents scope disputes.' },
-  { n: '04', title: 'Design Phase', desc: 'Wireframes and visual design delivered for your agency’s review and approval before development begins.' },
+  { n: '04', title: 'Design Phase', desc: 'Wireframes and visual design delivered for your agencyâ€™s review and approval before development begins.' },
   { n: '05', title: 'Development & Integration', desc: 'Code, CMS configuration, and integrations built, reviewed on staging at agreed milestones.' },
   { n: '06', title: 'QA, Delivery & Launch', desc: 'Full QA across devices and browsers, delivered for final review, launched on your confirmation.' },
 ];
@@ -83,10 +83,10 @@ const FAQS = [
   { q: 'Will my clients know you built the website?', a: 'No. Every deliverable, code, file structure, staging URL, CMS login, is cleared of ISureMedia references before delivery.' },
   { q: 'What platforms do you build on?', a: 'WordPress is our primary platform, plus Next.js and React for performance-critical builds, Shopify and WooCommerce for e-commerce, and GoHighLevel for CRM-integrated sites.' },
   { q: 'Do we manage the project or do you?', a: 'We manage the build. You manage the client relationship. Your agency has one contact who coordinates everything on our side.' },
-  { q: 'What happens if a client requests significant changes mid-build?', a: 'Changes outside the written specification are scoped as additional work, quoted, and added with your agency’s approval.' },
+  { q: 'What happens if a client requests significant changes mid-build?', a: 'Changes outside the written specification are scoped as additional work, quoted, and added with your agencyâ€™s approval.' },
   { q: 'What does QA involve before you deliver to our agency?', a: 'Full build tested across desktop and mobile on all major browsers, every integration verified live, and performance benchmarks measured and met.' },
   { q: 'Can you migrate an existing website to a new platform?', a: 'Yes. Migrations from Wix, Squarespace, or old WordPress builds are handled with redirect mapping and pre-launch SEO verification.' },
-  { q: 'Do you offer post-launch maintenance for our clients?', a: 'Yes, as a white-label care plan under your agency’s brand, creating recurring revenue from clients who’d otherwise generate none after launch.' },
+  { q: 'Do you offer post-launch maintenance for our clients?', a: 'Yes, as a white-label care plan under your agencyâ€™s brand, creating recurring revenue from clients whoâ€™d otherwise generate none after launch.' },
   { q: 'What is the typical margin structure?', a: 'Most agencies mark up white-label development 40 to 60% above wholesale cost, a $3,000 build typically retails at $4,500 to $5,000.' },
 ];
 
@@ -113,7 +113,7 @@ function FAQAccordion() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Book a Partner Call →
+              Book a Partner Call â†’
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -150,7 +150,7 @@ export default function WhiteLabelWebDesignPage() {
       <Navbar />
       <main>
 
-        {/* ══ 01. HERO ══════════════════════════════════════════════ */}
+        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wlweb-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -200,7 +200,7 @@ export default function WhiteLabelWebDesignPage() {
                   <div style={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
                     {[1, 2, 3, 4].map(n => (
                       /* eslint-disable-next-line @next/next/no-img-element */
-                      (<img key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
+                      (<img loading="lazy" key={n} src={`/placeholders/avatar-${n}.svg`} alt="" aria-hidden style={{ width: 24, height: 24, borderRadius: '50%', border: '2px solid #fff', marginLeft: n === 1 ? 0 : -8, display: 'block' }} />)
                     ))}
                   </div>
                   <span style={{ fontFamily: I, fontSize: 11, fontWeight: 600, color: 'var(--color-text-muted)' }}>Builds Delivered &amp; QA&apos;d</span>
@@ -232,10 +232,10 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 02. PROOF STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <ReviewsStrip />
 
-        {/* ══ 03. BRIDGE SECTION ══════════════════════════════════════════════ */}
+        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
@@ -280,7 +280,7 @@ export default function WhiteLabelWebDesignPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* ══ 04. WHY WHITE-LABEL WEB PARTNERSHIPS MATTER ══════════════════════════════════════════════ */}
+        {/* â•â• 04. WHY WHITE-LABEL WEB PARTNERSHIPS MATTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wlweb-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -363,7 +363,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 05. WHY IT WORKS ══════════════════════════════════════════════ */}
+        {/* â•â• 05. WHY IT WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -401,7 +401,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 06. WHAT CAUSES WHITE-LABEL BUILDS TO FAIL ══════════════════════════════════════════════ */}
+        {/* â•â• 06. WHAT CAUSES WHITE-LABEL BUILDS TO FAIL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -445,7 +445,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 07. WHAT WE BUILD ══════════════════════════════════════════════ */}
+        {/* â•â• 07. WHAT WE BUILD â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -475,7 +475,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 08. WHO THIS IS FOR ══════════════════════════════════════════════ */}
+        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -486,7 +486,7 @@ export default function WhiteLabelWebDesignPage() {
               {WHO_FOR.map(w => (
                 <div key={w.title} className="who-card" style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 300, boxShadow: '0 4px 20px rgba(0,35,83,.08)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src={w.img} alt="" className="who-card-img" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,35,83,.10) 0%, rgba(0,23,56,.94) 76%)' }} />
                   <div style={{ position: 'relative', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: '26px 24px' }}>
                     <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16, flexShrink: 0 }}>
@@ -509,7 +509,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 09. MID-PAGE CTA STRIP ══════════════════════════════════════════════ */}
+        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
@@ -536,7 +536,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 10. WHY CHOOSE ISM ══════════════════════════════════════════════ */}
+        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
@@ -569,7 +569,7 @@ export default function WhiteLabelWebDesignPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -603,7 +603,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 11. OUR PROCESS ══════════════════════════════════════════════ */}
+        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="wlweb-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
@@ -650,7 +650,7 @@ export default function WhiteLabelWebDesignPage() {
           `}</style>
         </section>
 
-        {/* ══ 12. RELATED SERVICES ══════════════════════════════════════════════ */}
+        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -677,10 +677,10 @@ export default function WhiteLabelWebDesignPage() {
           <style>{`@media(max-width:860px){ .wlweb-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* ══ 13. FAQ ══════════════════════════════════════════════ */}
+        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <FAQAccordion />
 
-        {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
+        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <CTASection image="/result_footer/white label.webp" description={<>Turning down a web design project because your team is stretched thin costs you revenue and, eventually, the client relationship too. Our white-label design team works quietly behind your brand so you can say yes to every site, funnel, and redesign that comes your way. Let&rsquo;s talk about <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scaling your web design capacity without hiring</span>.</>} heading="Stop Turning Away" headingHighlight="Website Projects" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Talk to Our Web Team" />
       </main>
       <Footer />

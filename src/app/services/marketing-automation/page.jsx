@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
@@ -244,7 +244,7 @@ export default function AutomationPage() {
 
               <div className="auto-strategy-mosaic" style={{ position:'relative', height:600, borderRadius:20, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why Marketing Automation Drives Business Growth.webp" alt="Why Marketing Automation Drives Business Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
+                <img loading="lazy" src="/main-services/Why Marketing Automation Drives Business Growth.webp" alt="Why Marketing Automation Drives Business Growth" style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
               </div>
 
             </div>
@@ -286,7 +286,7 @@ export default function AutomationPage() {
               <div style={{ position:'relative', overflow:'visible', minHeight:280 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://cdn-icggj.nitrocdn.com/AphBmykuaGyxZijWArNhxcCiPzVdYZGT/assets/images/optimized/rev-3039f85/thriveagency.com/wp-content/themes/thrive-agency/images/unblockseo-women.svg"
+                  src="/main-services/seo-women.webp"
                   alt="Automation"
                   style={{ position:'absolute', bottom:0, left:'50%', transform:'translateX(-50%)', height:'128%', width:'auto', maxWidth:'none', objectFit:'contain', objectPosition:'bottom center', display:'block' }}
                 />
@@ -319,7 +319,7 @@ export default function AutomationPage() {
             <div className="auto-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
               <div style={{ borderRadius:14, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Automation Systems That Drive Real Business Growth.webp" alt="Automation Systems That Drive Real Business Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/Automation Systems That Drive Real Business Growth.webp" alt="Automation Systems That Drive Real Business Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
@@ -415,7 +415,7 @@ export default function AutomationPage() {
               </div>
               <div style={{ borderRadius:16, overflow:'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/main-services/Why Marketing Automation Is a Great Investment.webp" alt="Why Marketing Automation Is a Great Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
+                <img loading="lazy" src="/main-services/Why Marketing Automation Is a Great Investment.webp" alt="Why Marketing Automation Is a Great Investment" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
             </div>
           </div>
@@ -595,7 +595,7 @@ export default function AutomationPage() {
             </div>
             <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'center', height:320 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/result_footer/Automation.webp" alt="Marketing Automation" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
+              <img loading="lazy" src="/result_footer/Automation.webp" alt="Marketing Automation" style={{ height:'100%', width:'auto', objectFit:'contain', objectPosition:'bottom center', display:'block' }} />
             </div>
           </div>
           </div>

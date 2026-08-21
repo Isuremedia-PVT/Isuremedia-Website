@@ -3,6 +3,7 @@
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -14,8 +15,8 @@ const EXPECT_STEPS = [
 ];
 
 const CONTACT_QUICK = [
-  { icon: 'fa-solid fa-phone',    label: 'Call Us',  text: '+91 70110 41363', href: 'tel:+917011041363' },
-  { icon: 'fa-solid fa-envelope', label: 'Email',    text: 'info@isuremedia.com', href: 'mailto:info@isuremedia.com' },
+  { icon: 'fa-solid fa-phone',    label: 'Call Us',  text: PHONE_IN, href: PHONE_IN_TEL },
+  { icon: 'fa-solid fa-envelope', label: 'Email',    text: EMAIL,    href: EMAIL_HREF  },
   { icon: 'fa-solid fa-clock',    label: 'Hours',    text: 'Mon–Fri 9 AM – 6 PM IST' },
   { icon: 'fa-solid fa-globe',    label: 'Time Zone', text: 'All timings are IST (UTC+5:30)' },
 ];
@@ -187,11 +188,11 @@ export default function AppointmentPage() {
 
                 <div style={{ marginTop: 28, padding: '18px 20px', borderRadius: 14, background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.12)' }}>
                   <p style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--ism-amber)', letterSpacing: '.05em', textTransform: 'uppercase', marginBottom: 6 }}>Prefer to call us?</p>
-                  <a href="tel:+917011041363" style={{ fontFamily: I, fontSize: 14, fontWeight: 600, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> +91 70110 41363
+                  <a href={PHONE_IN_TEL} style={{ fontFamily: I, fontSize: 14, fontWeight: 600, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> {PHONE_IN}
                   </a>
-                  <a href="tel:+16465881430" style={{ fontFamily: I, fontSize: 14, fontWeight: 600, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginTop: 6 }}>
-                    <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> +1 646-588-1430
+                  <a href={PHONE_US_TEL} style={{ fontFamily: I, fontSize: 14, fontWeight: 600, color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, marginTop: 6 }}>
+                    <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> {PHONE_US}
                   </a>
                 </div>
               </div>

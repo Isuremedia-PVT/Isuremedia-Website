@@ -1,5 +1,7 @@
 'use client';
 
+import { PHONE_US, PHONE_US_TEL } from '@/data/contact';
+
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
@@ -8,8 +10,8 @@ export default function CTASection({
   imageWidth = 320,
   overflowTop = 0,
   primaryLabel = 'Get My Free Proposal',
-  secondaryLabel = 'Call +1 646-588-1430',
-  secondaryHref = 'tel:+16465881430',
+  secondaryLabel = `Call ${PHONE_US}`,
+  secondaryHref = PHONE_US_TEL,
   description,
   heading = 'Ready for',
   headingHighlight = 'Results?',
