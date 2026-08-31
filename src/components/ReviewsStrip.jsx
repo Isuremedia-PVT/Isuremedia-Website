@@ -23,8 +23,10 @@ export default function ReviewsStrip() {
 
           {/* Client Reviews */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Client.webp" alt="Client Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            <a href="https://share.google/hQMI70Qc8akOncmq9" target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/Client.webp" alt="Client Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            </a>
           </div>
 
         </div>
