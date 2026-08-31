@@ -132,7 +132,7 @@ export default function AboutPageClient() {
                 <img
                   src="/career-about/We Cover Every about us.webp"
                   alt="Isuremedia team"
-                  style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', borderRadius: 16, display: 'block' }}
+                  style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', objectPosition: 'center top', borderRadius: 16, display: 'block' }}
                 />
                 <div style={{ position: 'absolute', bottom: 32, left: -24, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
                   <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
