@@ -29,10 +29,6 @@ export const metadata = {
   icons: {
     icon: "/favicon.webp",
   },
-  robots: {
-    index: false,
-    follow: false,
-  },
 };
 
 export default function RootLayout({
