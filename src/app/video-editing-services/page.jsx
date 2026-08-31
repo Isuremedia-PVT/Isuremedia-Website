@@ -95,9 +95,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'Static and video ad creative built to perform across paid social and search campaigns.', href: '/services/content-creative/ad-creative-design' },
-  { icon: 'fa-solid fa-palette', title: 'Graphic Design', desc: 'Social graphics, decks, email templates, and marketing collateral, on-brand and on time.', href: '/services/content-creative/graphic-design' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Content & Creative Hub', desc: 'Explore the full range of content and creative services under one roof.', href: '/services/content-creative' },
+  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'Static and video ad creative built to perform across paid social and search campaigns.', href: '/ad-creative-design-services' },
+  { icon: 'fa-solid fa-palette', title: 'Graphic Design', desc: 'Social graphics, decks, email templates, and marketing collateral, on-brand and on time.', href: '/graphic-design-agency' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Content & Creative Hub', desc: 'Explore the full range of content and creative services under one roof.', href: '/content-marketing-and-creative-agency' },
 ];
 
 function VideoFAQAccordion() {

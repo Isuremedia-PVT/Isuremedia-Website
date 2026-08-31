@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/services/seo/local-seo#service",
+      "@id": "https://isuremedia.com/local-seo-services#service",
       "name": "Local SEO Services",
       "description": "Full-service local SEO including Google Business Profile optimisation, citation building, review strategy, on-page local content, and AI search visibility.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/services/seo/local-seo",
+      "url": "https://isuremedia.com/local-seo-services",
       "serviceType": "Local SEO"
     },
     {
@@ -32,7 +32,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Local SEO Services | Local SEO Agency | Isuremedia",
   description: "Get found in local search and Google's map pack. Isuremedia's local SEO services cover GBP optimisation, citations, reviews, and AI visibility. Free audit.",
-  alternates: { canonical: "/services/seo/local-seo" },
+  alternates: { canonical: "/local-seo-services" },
+  openGraph: { images: [{ url: "/feature_image/local-seo.webp", width: 1618, height: 950 }] },
 };
 
 export default function LocalSeoLayout({ children }) {

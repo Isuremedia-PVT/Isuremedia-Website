@@ -5,7 +5,7 @@ const SCHEMA = JSON.stringify({
       "@type": "Service",
       "name": "Website Design & Sales Funnel Services",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
-      "url": "https://isuremedia.com/services/websites-funnels",
+      "url": "https://isuremedia.com/websites-and-funnels",
       "description": "We design websites, landing pages, and GoHighLevel funnels that convert."
     },
     {
@@ -25,7 +25,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Website Design & Sales Funnel Agency | Isuremedia",
   description: "We design and build websites, landing pages, and sales funnels that convert. Business sites, GoHighLevel funnels & CRO. Free website audit.",
-  alternates: { canonical: "/services/websites-funnels" },
+  alternates: { canonical: "/websites-and-funnels" },
+  openGraph: { images: [{ url: "/feature_image/websites-funnels.webp", width: 1618, height: 950 }] },
 };
 
 export default function WebsitesFunnelsLayout({ children }) {

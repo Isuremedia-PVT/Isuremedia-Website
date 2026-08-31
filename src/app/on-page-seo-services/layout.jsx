@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/services/seo/on-page-seo#service",
+      "@id": "https://isuremedia.com/on-page-seo-services#service",
       "name": "On-Page SEO Services",
       "description": "On-page SEO optimisation covering keyword research, title tags, meta descriptions, heading structure, content, internal linking, image optimisation, and schema markup.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/services/seo/on-page-seo",
+      "url": "https://isuremedia.com/on-page-seo-services",
       "serviceType": "On-Page SEO"
     },
     {
@@ -32,7 +32,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "On-Page SEO Services | SEO Optimization Service | Isuremedia",
   description: "Isuremedia optimises every page element, from title tags to content structure, so Google ranks your site for the right searches. Free on-page SEO audit.",
-  alternates: { canonical: "/services/seo/on-page-seo" },
+  alternates: { canonical: "/on-page-seo-services" },
+  openGraph: { images: [{ url: "/feature_image/on-page-seo.webp", width: 1618, height: 950 }] },
 };
 
 export default function OnPageSeoLayout({ children }) {

@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Intent-driven search, shopping, and display campaigns that capture buyers at the moment of search.', href: '/services/ppc/google-ads' },
-  { icon: 'fa-brands fa-meta', title: 'Meta Ads', desc: 'Facebook and Instagram campaigns built on precise audience targeting and creative testing.', href: '/services/ppc/meta-ads' },
-  { icon: 'fa-brands fa-tiktok', title: 'TikTok Ads', desc: 'Native-feeling video creative and campaigns built for the TikTok feed.', href: '/services/ppc/tiktok-ads' },
+  { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Intent-driven search, shopping, and display campaigns that capture buyers at the moment of search.', href: '/google-ads-management' },
+  { icon: 'fa-brands fa-meta', title: 'Meta Ads', desc: 'Facebook and Instagram campaigns built on precise audience targeting and creative testing.', href: '/meta-ads-management' },
+  { icon: 'fa-brands fa-tiktok', title: 'TikTok Ads', desc: 'Native-feeling video creative and campaigns built for the TikTok feed.', href: '/tiktok-ads-management' },
 ];
 
 function FAQAccordion() {

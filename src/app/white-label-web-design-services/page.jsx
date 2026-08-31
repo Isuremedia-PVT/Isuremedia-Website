@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Full SEO delivery for your clients, branded as your agency.', href: '/services/white-label/white-label-seo' },
-  { icon: 'fa-solid fa-chart-bar', title: 'White-Label PPC', desc: 'Google, Meta, and LinkedIn campaign management under your brand.', href: '/services/white-label/white-label-ppc' },
-  { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: 'A fixed team assigned to your agency for consistent, accountable delivery.', href: '/services/white-label/dedicated-agency-pods' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Full SEO delivery for your clients, branded as your agency.', href: '/white-label-seo-services' },
+  { icon: 'fa-solid fa-chart-bar', title: 'White-Label PPC', desc: 'Google, Meta, and LinkedIn campaign management under your brand.', href: '/white-label-ppc-services' },
+  { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: 'A fixed team assigned to your agency for consistent, accountable delivery.', href: '/dedicated-agency-pods' },
 ];
 
 function FAQAccordion() {

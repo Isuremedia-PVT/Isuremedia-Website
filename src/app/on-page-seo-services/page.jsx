@@ -94,9 +94,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-screwdriver-wrench', title: 'Technical SEO', desc: 'Fix crawl issues, speed, and site architecture so your on-page work can actually rank.', href: '/services/seo/technical-seo' },
-  { icon: 'fa-solid fa-location-dot', title: 'Local SEO', desc: 'Dominate local search results with GBP optimisation, citations, and local content.', href: '/services/seo/local-seo' },
-  { icon: 'fa-solid fa-link', title: 'Link Building', desc: 'Earn editorial backlinks that build real domain authority and long-term rankings.', href: '/services/seo/link-building' },
+  { icon: 'fa-solid fa-screwdriver-wrench', title: 'Technical SEO', desc: 'Fix crawl issues, speed, and site architecture so your on-page work can actually rank.', href: '/technical-seo' },
+  { icon: 'fa-solid fa-location-dot', title: 'Local SEO', desc: 'Dominate local search results with GBP optimisation, citations, and local content.', href: '/local-seo-services' },
+  { icon: 'fa-solid fa-link', title: 'Link Building', desc: 'Earn editorial backlinks that build real domain authority and long-term rankings.', href: '/link-building-service' },
 ];
 
 function FAQAccordion() {

@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-node-js', title: 'Node.js Development', desc: 'Real-time, scalable backend applications built on Node.js.', href: '/services/websites-funnels/node' },
-  { icon: 'fa-solid fa-robot', title: 'AI Development', desc: 'AI-integrated applications and automation built around your business.', href: '/services/websites-funnels/ai-development' },
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/services/automation/api-integration' },
+  { icon: 'fa-brands fa-node-js', title: 'Node.js Development', desc: 'Real-time, scalable backend applications built on Node.js.', href: '/nodejs-development-services' },
+  { icon: 'fa-solid fa-robot', title: 'AI Development', desc: 'AI-integrated applications and automation built around your business.', href: '/ai-development-services' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/api-integration-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function PythonDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" description={<>Whether you&apos;re drowning in manual reporting, chasing an automation that keeps breaking, or building something AI-integrated, the question is the same. Is your data actually reliable, or just working until it isn&apos;t? If you&apos;re unsure, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automation you can actually trust</span>.</>} heading="Ready to Automate" headingHighlight="the Busywork?" primaryLabel="Start My Python Project" secondaryLabel="Talk to a Python Developer" />
+        <CTASection image="/result_footer/python.webp" description={<>Whether you&apos;re drowning in manual reporting, chasing an automation that keeps breaking, or building something AI-integrated, the question is the same. Is your data actually reliable, or just working until it isn&apos;t? If you&apos;re unsure, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automation you can actually trust</span>.</>} heading="Ready to Automate" headingHighlight="the Busywork?" primaryLabel="Start My Python Project" secondaryLabel="Talk to a Python Developer" />
       </main>
       <Footer />
     </>

@@ -47,49 +47,49 @@ const SERVICES = [
     title: 'White-Label SEO',
     icon: 'fa-solid fa-magnifying-glass',
     desc: 'SEO is one of the highest-value recurring services an agency can offer, and one of the hardest to deliver without a dedicated team. We handle the full SEO delivery for your clients, technical audits, on-page optimisation, link building, content strategy, and monthly reporting, branded as your agency.',
-    href: '/services/white-label/white-label-seo',
+    href: '/white-label-seo-services',
   },
   {
     title: 'White-Label PPC',
     icon: 'fa-solid fa-chart-bar',
     desc: 'Running paid ads for clients requires platform certifications, daily account management, and creative that converts. We manage Google, Meta, and LinkedIn campaigns for your agency clients, all reporting under your brand, recurring revenue without a PPC specialist on staff.',
-    href: '/services/white-label/white-label-ppc',
+    href: '/white-label-ppc-services',
   },
   {
     title: 'White-Label Web Development',
     icon: 'fa-solid fa-code',
     desc: 'Website projects are often where agencies lose money, scoped badly, delivered late, handed off to a freelancer who disappears. We deliver builds, landing pages, and redesigns under your agency label, with clean handover and no surprises on the timeline.',
-    href: '/services/white-label/white-label-web-design',
+    href: '/white-label-web-design-services',
   },
   {
     title: 'White-Label GoHighLevel',
     icon: 'fa-solid fa-bolt',
     desc: 'GoHighLevel is one of the fastest-growing platforms in the agency market, and clients increasingly ask for it by name. We set up sub-accounts, build funnels and automation, and configure CRMs under your agency brand, your clients never see our name in the account.',
-    href: '/services/white-label/white-label-automation',
+    href: '/gohighlevel-white-label-support-services',
   },
   {
     title: 'White-Label Link Building',
     icon: 'fa-solid fa-link',
     desc: 'Link building is one of the most requested and most commonly outsourced SEO services. We run white-hat, outreach-based campaigns, real editorial placements with transparent reporting under your agency branding. No PBNs, no penalty risk.',
-    href: '/services/white-label',
+    href: '/white-label-digital-marketing',
   },
   {
     title: 'White-Label Graphic Design',
     icon: 'fa-solid fa-palette',
     desc: 'On-demand design production for your client accounts, social creatives, ad assets, brand collateral, and presentation decks, produced to spec with zero Isuremedia branding on any asset.',
-    href: '/services/white-label',
+    href: '/white-label-digital-marketing',
   },
   {
     title: 'White-Label Reporting & Dashboards',
     icon: 'fa-solid fa-chart-line',
     desc: 'Monthly reporting is where agency relationships are won or lost. We produce branded client reports covering SEO, paid ads, and website analytics, formatted to your template and delivered as your work.',
-    href: '/services/white-label',
+    href: '/white-label-digital-marketing',
   },
   {
     title: 'Dedicated Agency Pods',
     icon: 'fa-solid fa-users',
     desc: 'Project-by-project outsourcing creates inconsistency, a different person on every brief, no institutional knowledge. A dedicated pod is a fixed team assigned to your agency, giving you the output of an in-house team without the cost of hiring one.',
-    href: '/services/white-label/dedicated-agency-pods',
+    href: '/dedicated-agency-pods',
   },
 ];
 
@@ -110,9 +110,9 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'Will my clients ever find out that Isuremedia is doing the work?', a: <>No. We <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>operate completely silently</span>. Every deliverable carries your agency branding, and we never reach out to your clients or mention Isuremedia anywhere. We sign NDAs before any work begins if you require one, your clients only ever see your agency.</> },
+  { q: 'Will my clients know that Isuremedia is doing the work?', a: <>No. We <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>operate completely silently</span>. All reports and deliverables are branded with your agency. We sign an NDA before work begins.</> },
   { q: 'How do the briefs and handovers work?', a: 'During onboarding we set up a briefing process that fits how your agency already works, your project management tools, brief templates, and communication preferences. The workflow is designed to feel like an extension of your internal team, not an external supplier.' },
-  { q: 'What services can you deliver white-label?', a: 'SEO, PPC, web development, GoHighLevel setup and automation, content marketing, link building, graphic design, white-label reporting, and dedicated agency pods. Use one service or all of them, scaled independently based on your client load.' },
+  { q: 'Which services can you white-label?', a: 'SEO, PPC, website design, GoHighLevel setup, content writing, social media, link building, and reporting. We can handle single services or full-campaign delivery.' },
   { q: 'How quickly can you turn around work?', a: 'It depends on the service. SEO reports and content pieces typically turn around in five to seven business days, website builds take two to six weeks, and ad campaign setup takes one to two weeks. Tell us your deadline and we build the schedule around it.' },
   { q: 'Can I start with just one client?', a: 'Yes. Most agency partnerships start with one client and grow from there. There is no minimum, start with one, prove the quality, and scale when you are ready.' },
   { q: 'Do you work with freelancers who are building toward agency?', a: 'Yes. Some of our strongest partners started as solo consultants. White-label fulfillment lets a one-person operation pitch and win full-service contracts without having a full-service team behind them.' },

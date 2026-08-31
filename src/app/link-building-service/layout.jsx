@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/services/seo/link-building#service",
+      "@id": "https://isuremedia.com/link-building-service#service",
       "name": "Link Building Services",
       "description": "White-hat link building including editorial outreach, guest post campaigns, digital PR, niche edits, and white-label link building for agencies.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/services/seo/link-building",
+      "url": "https://isuremedia.com/link-building-service",
       "serviceType": "Link Building"
     },
     {
@@ -32,7 +32,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Best Link Building Services | SEO Backlinks | Isuremedia",
   description: "Isuremedia earns white-hat editorial backlinks that build domain authority and lift search rankings across your entire site. Free backlink audit included.",
-  alternates: { canonical: "/services/seo/link-building" },
+  alternates: { canonical: "/link-building-service" },
+  openGraph: { images: [{ url: "/feature_image/link-building.webp", width: 1618, height: 950 }] },
 };
 
 export default function LinkBuildingLayout({ children }) {

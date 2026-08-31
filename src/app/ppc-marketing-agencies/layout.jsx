@@ -5,7 +5,7 @@ const SCHEMA = JSON.stringify({
       "@type": "Service",
       "name": "PPC Advertising Services",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
-      "url": "https://isuremedia.com/services/ppc-paid-marketing",
+      "url": "https://isuremedia.com/ppc-marketing-agencies",
       "description": "PPC management across Google Ads, Meta, LinkedIn & YouTube. ROAS-focused campaigns with full tracking."
     },
     {
@@ -23,9 +23,9 @@ const SCHEMA = JSON.stringify({
 });
 
 export const metadata = {
-  title: "PPC Ads Agency | Google, Meta & LinkedIn | Isuremedia",
+  title: "ppc marketing agencies | Google, Meta & LinkedIn Ads | Isuremedia",
   description: "Results-driven PPC agency managing Google Ads, Meta, LinkedIn & YouTube campaigns. Every dollar tracked, every lead counted. Free PPC audit.",
-  alternates: { canonical: "/services/ppc-paid-marketing" },
+  alternates: { canonical: "/ppc-marketing-agencies" },
 };
 
 export default function PPCLayout({ children }) {

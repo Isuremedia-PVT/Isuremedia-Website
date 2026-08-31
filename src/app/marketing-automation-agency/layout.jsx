@@ -5,7 +5,7 @@ const SCHEMA = JSON.stringify({
       "@type": "Service",
       "name": "Marketing Automation Services",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
-      "url": "https://isuremedia.com/services/marketing-automation",
+      "url": "https://isuremedia.com/marketing-automation-agency",
       "description": "Marketing automation services: GoHighLevel setup, CRM, lead nurture, email and SMS automation."
     },
     {
@@ -25,7 +25,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Marketing Automation Agency | GoHighLevel Setup | Isuremedia",
   description: "Marketing automation built and managed for you. GoHighLevel setup, CRM workflows, lead nurture, email & SMS automation. Keep your pipeline full 24/7.",
-  alternates: { canonical: "/services/marketing-automation" },
+  alternates: { canonical: "/marketing-automation-agency" },
 };
 
 export default function MarketingAutomationLayout({ children }) {

@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-diagram-project', title: 'GoHighLevel Funnels & Automation', desc: 'Full-funnel builds with automated follow-up and booking.', href: '/services/websites-funnels/gohighlevel-funnels' },
-  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead and deal organised.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-globe', title: 'White-Label GoHighLevel Support', desc: 'GHL build and support delivered under your agency’s brand.', href: '/services/white-label/white-label-automation' },
+  { icon: 'fa-solid fa-diagram-project', title: 'GoHighLevel Funnels & Automation', desc: 'Full-funnel builds with automated follow-up and booking.', href: '/gohighlevel-developer' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead and deal organised.', href: '/crm-setup-management' },
+  { icon: 'fa-solid fa-globe', title: 'White-Label GoHighLevel Support', desc: 'GHL build and support delivered under your agency’s brand.', href: '/gohighlevel-white-label-support-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function GoHighLevelDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/GoHighLevel Funnels & Automation.webp" description={<>Most GoHighLevel accounts are running on a generic snapshot that was never built around how the business actually sells. Your site, funnels, pipelines, and automations should be configured around your real sales process, not a template. Talk to us and we will help you get a GoHighLevel setup that is <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built right from day one</span>.</>} heading="One Platform." headingHighlight="Built Right." primaryLabel="Build My GoHighLevel System" secondaryLabel="Talk to a GHL Developer" />
+        <CTASection image="/result_footer/ghl developer.webp" description={<>Most GoHighLevel accounts are running on a generic snapshot that was never built around how the business actually sells. Your site, funnels, pipelines, and automations should be configured around your real sales process, not a template. Talk to us and we will help you get a GoHighLevel setup that is <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built right from day one</span>.</>} heading="One Platform." headingHighlight="Built Right." primaryLabel="Build My GoHighLevel System" secondaryLabel="Talk to a GHL Developer" />
       </main>
       <Footer />
     </>

@@ -673,7 +673,7 @@ export default function N8nPage() {
         <N8nFAQAccordion />
 
         {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/Automation.webp" description={<>If off-the-shelf automation tools keep hitting walls you can't get around, you need something built for full control. n8n gives your team the flexibility to build exactly the workflow your process demands. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automations with no limits</span>.</>} heading="Ready for Full" headingHighlight="Workflow Control?" primaryLabel="Build My n8n Workflows" secondaryLabel="Talk to an n8n Specialist" />
+        <CTASection image="/result_footer/n8n workflow automation_.webp" description={<>If off-the-shelf automation tools keep hitting walls you can't get around, you need something built for full control. n8n gives your team the flexibility to build exactly the workflow your process demands. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build automations with no limits</span>.</>} heading="Ready for Full" headingHighlight="Workflow Control?" primaryLabel="Build My n8n Workflows" secondaryLabel="Talk to an n8n Specialist" />
       </main>
       <Footer />
     </>

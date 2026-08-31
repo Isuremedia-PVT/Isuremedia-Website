@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/web-designer#service",
+      "@id": "https://isuremedia.com/hire-web-designer#service",
       "name": "Hire a Web Designer",
       "description": "Hire a professional web designer from Isuremedia for custom websites, landing pages, UX design, Webflow builds, and conversion-focused design across WordPress, Shopify, and Webflow.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/web-designer",
+      "url": "https://isuremedia.com/hire-web-designer",
       "serviceType": "Web Design"
     },
     {
@@ -28,7 +28,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Hire a Web Designer | Professional Web Design | Isuremedia",
   description: "Hire a professional web designer from Isuremedia. Custom websites, landing pages, UX design, and Webflow builds. In-house team, no contracts. Free proposal.",
-  alternates: { canonical: "/hire/web-designer" },
+  alternates: { canonical: "/hire-web-designer" },
 };
 
 export default function HireWebDesignerLayout({ children }) {

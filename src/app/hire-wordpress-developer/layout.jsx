@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/wordpress-developer#service",
+      "@id": "https://isuremedia.com/hire-wordpress-developer#service",
       "name": "Hire WordPress Developer",
       "description": "Hire a dedicated WordPress developer from Isuremedia for custom builds, WooCommerce stores, plugin development, API integrations, migrations, and maintenance.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/wordpress-developer",
+      "url": "https://isuremedia.com/hire-wordpress-developer",
       "serviceType": "WordPress Development"
     },
     {
@@ -28,7 +28,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Hire WordPress Developer | Custom WP Services | Isuremedia",
   description: "Hire a dedicated WordPress developer from Isuremedia. Custom builds, WooCommerce, plugin dev, and migrations. In-house team, no contracts. Starts in 48 hours.",
-  alternates: { canonical: "/hire/wordpress-developer" },
+  alternates: { canonical: "/hire-wordpress-developer" },
 };
 
 export default function HireWordpressLayout({ children }) {

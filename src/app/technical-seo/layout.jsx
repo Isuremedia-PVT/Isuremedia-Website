@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/services/seo/technical-seo#service",
+      "@id": "https://isuremedia.com/technical-seo#service",
       "name": "Technical SEO Services",
       "description": "End-to-end technical SEO including crawl fixes, Core Web Vitals optimisation, schema markup, site architecture, and indexation management.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/services/seo/technical-seo",
+      "url": "https://isuremedia.com/technical-seo",
       "serviceType": "Technical SEO"
     },
     {
@@ -32,7 +32,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Technical SEO Specialist & Audit Services | Isuremedia",
   description: "Isuremedia's technical SEO specialists fix crawl errors, Core Web Vitals, broken redirects, and schema gaps so Google can rank your site. Free audit.",
-  alternates: { canonical: "/services/seo/technical-seo" },
+  alternates: { canonical: "/technical-seo" },
+  openGraph: { images: [{ url: "/feature_image/technical-seo.webp", width: 1618, height: 950 }] },
 };
 
 export default function TechnicalSeoLayout({ children }) {

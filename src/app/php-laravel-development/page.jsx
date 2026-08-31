@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-node-js', title: 'Node.js Development', desc: 'Real-time, scalable backend applications built on Node.js.', href: '/services/websites-funnels/node' },
-  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/services/websites-funnels/python' },
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/services/automation/api-integration' },
+  { icon: 'fa-brands fa-node-js', title: 'Node.js Development', desc: 'Real-time, scalable backend applications built on Node.js.', href: '/nodejs-development-services' },
+  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/python-development-services' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/api-integration-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function PhpLaravelDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" description={<>Whether you need a custom internal tool, a data-heavy platform, or an API serving multiple systems, the question is the same. Is your software actually built to your specification, or bent to fit someone else&apos;s template? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build software that fits your business exactly</span>.</>} heading="Ready for Software" headingHighlight="Built Right?" primaryLabel="Start My Laravel Project" secondaryLabel="Talk to a Laravel Developer" />
+        <CTASection image="/result_footer/php.webp" description={<>Whether you need a custom internal tool, a data-heavy platform, or an API serving multiple systems, the question is the same. Is your software actually built to your specification, or bent to fit someone else&apos;s template? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build software that fits your business exactly</span>.</>} heading="Ready for Software" headingHighlight="Built Right?" primaryLabel="Start My Laravel Project" secondaryLabel="Talk to a Laravel Developer" />
       </main>
       <Footer />
     </>

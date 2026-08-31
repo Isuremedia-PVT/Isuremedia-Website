@@ -94,9 +94,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-file-lines', title: 'On-Page SEO', desc: 'Optimise every page element to improve relevance, CTR, and keyword alignment.', href: '/services/seo/on-page-seo' },
-  { icon: 'fa-solid fa-link', title: 'Link Building', desc: 'Earn editorial backlinks that build real domain authority and long-term rankings.', href: '/services/seo/link-building' },
-  { icon: 'fa-solid fa-robot', title: 'AI SEO & AEO', desc: 'Get cited and recommended in AI answers across Google AI Overviews, ChatGPT, and Perplexity.', href: '/services/seo/ai-seo' },
+  { icon: 'fa-solid fa-file-lines', title: 'On-Page SEO', desc: 'Optimise every page element to improve relevance, CTR, and keyword alignment.', href: '/on-page-seo-services' },
+  { icon: 'fa-solid fa-link', title: 'Link Building', desc: 'Earn editorial backlinks that build real domain authority and long-term rankings.', href: '/link-building-service' },
+  { icon: 'fa-solid fa-robot', title: 'AI SEO & AEO', desc: 'Get cited and recommended in AI answers across Google AI Overviews, ChatGPT, and Perplexity.', href: '/ai-seo-services' },
 ];
 
 function FAQAccordion() {

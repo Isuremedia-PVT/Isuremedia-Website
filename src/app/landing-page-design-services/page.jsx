@@ -660,9 +660,9 @@ export default function LandingPagesPage() {
             </div>
             <div className="lp-related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
               {[
-                { icon: 'fa-solid fa-diagram-project', title: 'ClickFunnels', desc: 'Fast-launching funnel builds for offers, webinars, and lead generation.', href: '/services/websites-funnels/clickfunnels' },
-                { icon: 'fa-solid fa-robot', title: 'GoHighLevel Funnels', desc: 'Full funnel and automation builds inside GoHighLevel.', href: '/services/websites-funnels/gohighlevel-funnels' },
-                { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Send the right traffic to the page, search campaigns built around your target cost per lead.', href: '/services/ppc/google-ads' },
+                { icon: 'fa-solid fa-diagram-project', title: 'ClickFunnels', desc: 'Fast-launching funnel builds for offers, webinars, and lead generation.', href: '/clickfunnels-development' },
+                { icon: 'fa-solid fa-robot', title: 'GoHighLevel Funnels', desc: 'Full funnel and automation builds inside GoHighLevel.', href: '/gohighlevel-developer' },
+                { icon: 'fa-brands fa-google', title: 'Google Ads', desc: 'Send the right traffic to the page, search campaigns built around your target cost per lead.', href: '/google-ads-management' },
               ].map((r, i) => (
                 <a key={i} href={r.href} style={{ display: 'block', background: '#fff', borderRadius: 16, border: '1px solid var(--color-border)', padding: '32px 28px', textDecoration: 'none', transition: 'all .22s' }}
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 44px rgba(30,77,195,.12)'; el.style.borderColor = 'var(--color-primary)'; }}

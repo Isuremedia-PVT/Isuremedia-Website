@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-bolt', title: 'ClickFunnels', desc: 'Funnel builds specifically on the ClickFunnels platform, from a single page to a full multi-step funnel.', href: '/services/websites-funnels/clickfunnels' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Kajabi', desc: 'Course, membership, and funnel builds for creators and coaches selling on Kajabi.', href: '/services/websites-funnels/kajabi' },
-  { icon: 'fa-solid fa-layer-group', title: 'Websites & Funnels', desc: 'Explore our full range of website and funnel services.', href: '/services/websites-funnels' },
+  { icon: 'fa-solid fa-bolt', title: 'ClickFunnels', desc: 'Funnel builds specifically on the ClickFunnels platform, from a single page to a full multi-step funnel.', href: '/clickfunnels-development' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'Kajabi', desc: 'Course, membership, and funnel builds for creators and coaches selling on Kajabi.', href: '/kajabi-website-development' },
+  { icon: 'fa-solid fa-layer-group', title: 'Websites & Funnels', desc: 'Explore our full range of website and funnel services.', href: '/websites-and-funnels' },
 ];
 
 function SalesFunnelsFAQAccordion() {

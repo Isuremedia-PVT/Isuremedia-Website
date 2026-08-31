@@ -97,9 +97,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { href: '/services/white-label', icon: 'fa-solid fa-building', title: 'White-Label Hub', desc: 'Overview of all white-label services, SEO, PPC, content, web design, and automation under your brand.' },
-  { href: '/services/white-label/white-label-seo', icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Resell full-stack SEO services under your agency brand with branded reports and scalable delivery.' },
-  { href: '/services/ppc-paid-marketing', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, Google, Meta, and LinkedIn campaigns.' },
+  { href: '/white-label-digital-marketing', icon: 'fa-solid fa-building', title: 'White-Label Hub', desc: 'Overview of all white-label services, SEO, PPC, content, web design, and automation under your brand.' },
+  { href: '/white-label-seo-services', icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Resell full-stack SEO services under your agency brand with branded reports and scalable delivery.' },
+  { href: '/ppc-marketing-agencies', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, Google, Meta, and LinkedIn campaigns.' },
 ];
 
 /* â”€â”€ FAQ 2-COL, matches the sibling white-label pages layout â”€â”€ */

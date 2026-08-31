@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically, without manual work.', href: '/services/automation/api-integration' },
-  { icon: 'fa-solid fa-envelope', title: 'Email Marketing', desc: 'Segmented, automated email systems that turn your list into a revenue channel.', href: '/services/automation/email-marketing' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/crm-setup-management' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically, without manual work.', href: '/api-integration-services' },
+  { icon: 'fa-solid fa-envelope', title: 'Email Marketing', desc: 'Segmented, automated email systems that turn your list into a revenue channel.', href: '/email-marketing-automation' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function ZohoPage() {
         <FAQAccordion />
 
         {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/Automation.webp" description={<>Big CRMs promise enterprise features but charge enterprise prices for tools you will rarely touch. A properly configured Zoho setup gives you that same power at a fraction of the cost. Talk to us today and we will show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get enterprise results on a lean budget</span>.</>} heading="Tired of Zoho on" headingHighlight="Default Settings?" primaryLabel="Set Up My Zoho System" secondaryLabel="Book a Zoho Consultation" />
+        <CTASection image="/result_footer/zoho.webp" description={<>Big CRMs promise enterprise features but charge enterprise prices for tools you will rarely touch. A properly configured Zoho setup gives you that same power at a fraction of the cost. Talk to us today and we will show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get enterprise results on a lean budget</span>.</>} heading="Tired of Zoho on" headingHighlight="Default Settings?" primaryLabel="Set Up My Zoho System" secondaryLabel="Book a Zoho Consultation" />
       </main>
       <Footer />
     </>

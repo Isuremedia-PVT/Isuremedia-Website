@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-comments', title: 'AI Chatbot', desc: 'Instant, intelligent conversations that qualify leads and book appointments around the clock.', href: '/services/automation/ai-chatbot' },
-  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/services/websites-funnels/python' },
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/services/automation/api-integration' },
+  { icon: 'fa-solid fa-comments', title: 'AI Chatbot', desc: 'Instant, intelligent conversations that qualify leads and book appointments around the clock.', href: '/ai-chatbot-automation' },
+  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/python-development-services' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/api-integration-services' },
 ];
 
 function FAQAccordion() {
@@ -682,7 +682,7 @@ export default function AiDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/ai chatbaoat.webp" description={<>Generic chatbots and off-the-shelf automation rarely hold up once real customers start using them. What you need is AI that is actually built around your business, your data, and your process. Talk to us and we will help you design and ship <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI that keeps working</span>.</>} heading="Time to Put AI" headingHighlight="to Work." primaryLabel="Launch My AI Feature" secondaryLabel="Talk to an AI Developer" />
+        <CTASection image="/result_footer/ai developer.webp" description={<>Generic chatbots and off-the-shelf automation rarely hold up once real customers start using them. What you need is AI that is actually built around your business, your data, and your process. Talk to us and we will help you design and ship <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI that keeps working</span>.</>} heading="Time to Put AI" headingHighlight="to Work." primaryLabel="Launch My AI Feature" secondaryLabel="Talk to an AI Developer" />
       </main>
       <Footer />
     </>

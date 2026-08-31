@@ -637,9 +637,9 @@ export default function WhiteLabelSEOPage() {
             </div>
             <div className="wlseo-related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
               {[
-                { icon: 'fa-solid fa-chart-bar', title: 'White-Label PPC', desc: 'Google, Meta, and LinkedIn campaign management delivered under your agency brand.', href: '/services/white-label/white-label-ppc' },
-                { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Builds, landing pages, and redesigns delivered under your agency label.', href: '/services/white-label/white-label-web-design' },
-                { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: 'A fixed team assigned to your agency for consistent, accountable delivery.', href: '/services/white-label/dedicated-agency-pods' },
+                { icon: 'fa-solid fa-chart-bar', title: 'White-Label PPC', desc: 'Google, Meta, and LinkedIn campaign management delivered under your agency brand.', href: '/white-label-ppc-services' },
+                { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Builds, landing pages, and redesigns delivered under your agency label.', href: '/white-label-web-design-services' },
+                { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: 'A fixed team assigned to your agency for consistent, accountable delivery.', href: '/dedicated-agency-pods' },
               ].map((r, i) => (
                 <a key={i} href={r.href} style={{ display: 'block', background: '#fff', borderRadius: 16, border: '1px solid var(--color-border)', padding: '32px 28px', textDecoration: 'none', transition: 'all .22s' }}
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 44px rgba(30,77,195,.12)'; el.style.borderColor = 'var(--color-primary)'; }}

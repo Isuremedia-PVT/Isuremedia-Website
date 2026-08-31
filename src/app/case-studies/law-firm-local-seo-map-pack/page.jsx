@@ -111,7 +111,7 @@ export default function BrownLegalCaseStudyPage() {
         { text: '. Talk to us and we will show you exactly where the gap is.' },
       ],
       ctaPrimaryLabel: 'Get My Free SEO & AEO Audit',
-      ctaPrimaryHref: '/services/seo/ai-seo',
+      ctaPrimaryHref: '/ai-seo-services',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/AI seo.webp',

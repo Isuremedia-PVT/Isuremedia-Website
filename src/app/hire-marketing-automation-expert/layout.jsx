@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/marketing-automation-expert#service",
+      "@id": "https://isuremedia.com/hire-marketing-automation-expert#service",
       "name": "Hire a Marketing Automation Expert",
       "description": "Hire a marketing automation expert from Isuremedia for CRM workflows, lead nurturing sequences, email and SMS campaigns, AI automation, and platform migrations across GoHighLevel, HubSpot, and Klaviyo.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/marketing-automation-expert",
+      "url": "https://isuremedia.com/hire-marketing-automation-expert",
       "serviceType": "Marketing Automation"
     },
     {
@@ -26,9 +26,9 @@ const SCHEMA = JSON.stringify({
 });
 
 export const metadata = {
-  title: "Hire a Marketing Automation Expert | Isuremedia",
+  title: "Hire Marketing Automation Expert | CRM Automation | Isuremedia",
   description: "Hire a marketing automation expert from Isuremedia. CRM workflows, lead nurturing, and AI automation across GoHighLevel, HubSpot, and Klaviyo. Free proposal.",
-  alternates: { canonical: "/hire/marketing-automation-expert" },
+  alternates: { canonical: "/hire-marketing-automation-expert" },
 };
 
 export default function HireMarketingAutomationLayout({ children }) {

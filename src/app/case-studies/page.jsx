@@ -10,12 +10,12 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ── Services represented by a live case study ───────────────────────── */
 const SERVICES = [
-  { label: 'Websites & Funnels',     icon: 'fa-solid fa-globe',            href: '/services/websites-funnels'     },
-  { label: 'SEO',                    icon: 'fa-solid fa-magnifying-glass', href: '/services/seo'                  },
-  { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/services/ppc-paid-marketing'   },
-  { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/services/content-creative'     },
-  { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/services/marketing-automation' },
-  { label: 'White-Label',            icon: 'fa-solid fa-handshake',        href: '/services/white-label'          },
+  { label: 'Websites & Funnels',     icon: 'fa-solid fa-globe',            href: '/websites-and-funnels'     },
+  { label: 'SEO',                    icon: 'fa-solid fa-magnifying-glass', href: '/seo-services'                  },
+  { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/ppc-marketing-agencies'   },
+  { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/content-marketing-and-creative-agency'     },
+  { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/marketing-automation-agency' },
+  { label: 'White-Label',            icon: 'fa-solid fa-handshake',        href: '/white-label-digital-marketing'          },
 ];
 
 const CASES = [

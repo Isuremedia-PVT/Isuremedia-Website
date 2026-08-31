@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Fast, secure WordPress websites and WooCommerce stores.', href: '/services/websites-funnels/wordpress' },
-  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/services/websites-funnels/landing-pages' },
-  { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Website builds delivered under your agency’s brand, project-managed end to end.', href: '/services/white-label/white-label-web-design' },
+  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Fast, secure WordPress websites and WooCommerce stores.', href: '/wordpress-development-services' },
+  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/landing-page-design-services' },
+  { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Website builds delivered under your agency’s brand, project-managed end to end.', href: '/white-label-web-design-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function ShopifyDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/website.webp" description={<>Whether you&apos;re launching a new store, drowning in app overload, or watching checkout friction cost you sales, the question is the same. Is your store actually built to convert, or just built to look good? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Shopify store that actually sells</span>.</>} heading="Ready to Build" headingHighlight="a Store That Sells?" primaryLabel="Build My Shopify Store" secondaryLabel="Talk to a Shopify Expert" />
+        <CTASection image="/result_footer/shopify developer.webp" description={<>Whether you&apos;re launching a new store, drowning in app overload, or watching checkout friction cost you sales, the question is the same. Is your store actually built to convert, or just built to look good? If it&apos;s the latter, let&apos;s talk. We will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Shopify store that actually sells</span>.</>} heading="Ready to Build" headingHighlight="a Store That Sells?" primaryLabel="Build My Shopify Store" secondaryLabel="Talk to a Shopify Expert" />
       </main>
       <Footer />
     </>

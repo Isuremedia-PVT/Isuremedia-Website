@@ -85,9 +85,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'Conversion-first pages for ads, email campaigns, and product launches.', href: '/services/websites-funnels/landing-pages' },
-  { icon: 'fa-solid fa-diagram-project', title: 'ClickFunnels', desc: 'Fast-launching funnel builds for offers, webinars, and lead generation.', href: '/services/websites-funnels/clickfunnels' },
-  { icon: 'fa-solid fa-robot', title: 'GoHighLevel Automation', desc: 'Deeper automation builds for teams already live on GHL.', href: '/services/automation/gohighlevel' },
+  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'Conversion-first pages for ads, email campaigns, and product launches.', href: '/landing-page-design-services' },
+  { icon: 'fa-solid fa-diagram-project', title: 'ClickFunnels', desc: 'Fast-launching funnel builds for offers, webinars, and lead generation.', href: '/clickfunnels-development' },
+  { icon: 'fa-solid fa-robot', title: 'GoHighLevel Automation', desc: 'Deeper automation builds for teams already live on GHL.', href: '/gohighlevel-automation-setup' },
 ];
 
 function FAQAccordion() {

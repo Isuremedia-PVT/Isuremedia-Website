@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Fast, secure WordPress websites and WooCommerce stores.', href: '/services/websites-funnels/wordpress' },
-  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'Purpose-built e-commerce stores on the platform made for online retail.', href: '/services/websites-funnels/shopify' },
-  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/services/websites-funnels/landing-pages' },
+  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Fast, secure WordPress websites and WooCommerce stores.', href: '/wordpress-development-services' },
+  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'Purpose-built e-commerce stores on the platform made for online retail.', href: '/shopify-development-services' },
+  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/landing-page-design-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function WixDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/website.webp" description={<>A DIY Wix template rarely loads fast, ranks well, or looks the way your brand deserves. A properly built Wix or Wix Studio site can do all three, and still be easy for your team to manage. Talk to us today and let's get your site <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>launched fast and built to last</span>.</>} heading="Let's Get Your" headingHighlight="Wix Site Right." primaryLabel="Start My Wix Project" secondaryLabel="Talk to a Wix Developer" />
+        <CTASection image="/result_footer/wix.webp" description={<>A DIY Wix template rarely loads fast, ranks well, or looks the way your brand deserves. A properly built Wix or Wix Studio site can do all three, and still be easy for your team to manage. Talk to us today and let's get your site <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>launched fast and built to last</span>.</>} heading="Let's Get Your" headingHighlight="Wix Site Right." primaryLabel="Start My Wix Project" secondaryLabel="Talk to a Wix Developer" />
       </main>
       <Footer />
     </>

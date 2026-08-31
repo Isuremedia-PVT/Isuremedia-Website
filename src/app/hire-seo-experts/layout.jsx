@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/seo-expert#service",
+      "@id": "https://isuremedia.com/hire-seo-experts#service",
       "name": "Hire an SEO Expert",
       "description": "Hire a dedicated SEO expert from Isuremedia for technical SEO, keyword strategy, on-page optimization, link building, local SEO, and AI search visibility.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/seo-expert",
+      "url": "https://isuremedia.com/hire-seo-experts",
       "serviceType": "SEO Services"
     },
     {
@@ -28,7 +28,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Hire an SEO Expert | Dedicated SEO Specialist | Isuremedia",
   description: "Hire a dedicated SEO expert from Isuremedia. Technical SEO, link building, local SEO, and AI search visibility. No contracts. Free SEO audit included.",
-  alternates: { canonical: "/hire/seo-expert" },
+  alternates: { canonical: "/hire-seo-experts" },
 };
 
 export default function HireSeoExpertLayout({ children }) {

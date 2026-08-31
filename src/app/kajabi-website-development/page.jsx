@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-filter', title: 'ClickFunnels', desc: 'Funnel-first builds for offers that need a dedicated, high-conversion funnel platform.', href: '/services/websites-funnels/clickfunnels' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Sales Funnels', desc: 'Full-funnel strategy and design across any platform, from lead-in to checkout.', href: '/services/websites-funnels/sales-funnels' },
-  { icon: 'fa-solid fa-globe', title: 'Websites & Funnels', desc: 'Explore our full range of website and funnel build services.', href: '/services/websites-funnels' },
+  { icon: 'fa-solid fa-filter', title: 'ClickFunnels', desc: 'Funnel-first builds for offers that need a dedicated, high-conversion funnel platform.', href: '/clickfunnels-development' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Sales Funnels', desc: 'Full-funnel strategy and design across any platform, from lead-in to checkout.', href: '/sales-funnel-design' },
+  { icon: 'fa-solid fa-globe', title: 'Websites & Funnels', desc: 'Explore our full range of website and funnel build services.', href: '/websites-and-funnels' },
 ];
 
 function KajabiFAQAccordion() {

@@ -5,7 +5,7 @@ const SCHEMA = JSON.stringify({
       "@type": "Service",
       "name": "White-Label Digital Marketing",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
-      "url": "https://isuremedia.com/services/white-label",
+      "url": "https://isuremedia.com/white-label-digital-marketing",
       "audience": { "@type": "Audience", "audienceType": "Marketing Agencies" },
       "description": "White-label SEO, PPC, GHL, content, and web services for agencies. NDA included. No footprint."
     },
@@ -26,7 +26,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "White-Label Digital Marketing for Agencies | Isuremedia",
   description: "Scale your agency without hiring. White-label SEO, PPC, web, GHL & content under your brand. NDA on every engagement. 100+ agency partners.",
-  alternates: { canonical: "/services/white-label" },
+  alternates: { canonical: "/white-label-digital-marketing" },
 };
 
 export default function WhiteLabelLayout({ children }) {

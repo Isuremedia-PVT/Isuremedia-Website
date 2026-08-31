@@ -92,7 +92,7 @@ const FAQS = [
   { q: 'What happens if I stop doing local SEO?', a: 'Your rankings will gradually decline as competitors continue optimising and your GBP becomes stale. Local SEO is not a one-time fix. It requires ongoing attention to maintain and build on rankings. That said, the authority you build does not disappear overnight, it fades slowly, not instantly.' },
 ];
 
-/* ── FAQ 2-COL, matches the main /services/seo page layout ── */
+/* ── FAQ 2-COL, matches the main /seo-services page layout ── */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (

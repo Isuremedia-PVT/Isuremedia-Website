@@ -8,12 +8,12 @@ const cols = [
   {
     title: 'Services',
     links: [
-      { label: 'Websites & Funnels',   href: '/services/websites-funnels'    },
-      { label: 'SEO & Organic Growth', href: '/services/seo'                 },
-      { label: 'PPC & Paid Marketing', href: '/services/ppc-paid-marketing'  },
-      { label: 'Content & Creative',   href: '/services/content-creative'    },
-      { label: 'White-Label',          href: '/services/white-label'         },
-      { label: 'Marketing Automation', href: '/services/marketing-automation'},
+      { label: 'Websites & Funnels',   href: '/websites-and-funnels'    },
+      { label: 'SEO & Organic Growth', href: '/seo-services'                 },
+      { label: 'PPC & Paid Marketing', href: '/ppc-marketing-agencies'  },
+      { label: 'Content & Creative',   href: '/content-marketing-and-creative-agency'    },
+      { label: 'White-Label',          href: '/white-label-digital-marketing'         },
+      { label: 'Marketing Automation', href: '/marketing-automation-agency'},
     ],
   },
   {

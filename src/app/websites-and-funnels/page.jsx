@@ -47,49 +47,49 @@ const SERVICES = [
     title: 'Business Websites',
     icon: 'fa-solid fa-globe',
     desc: 'Your website is where most buyers decide whether to contact you or move on to a competitor. We build custom sites that load fast, rank on Google, look right on every device, and guide visitors toward the one action you need. No templates, no off-the-shelf themes, no shortcuts.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'Landing Pages',
     icon: 'fa-solid fa-file-lines',
     desc: 'A landing page exists for one reason: to get a specific person to take a specific action. Every extra link or distraction reduces its conversion rate. We build standalone pages around a single goal, a call booking, a form, or a sale, with no exits and no distractions.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'Sales Funnels',
     icon: 'fa-solid fa-filter',
     desc: <>Most businesses send all their traffic to a homepage and hope for the best. A sales funnel moves someone from first visit to buying decision through a sequence of pages. We build multi-step funnels connected to your CRM so every lead is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>captured, tracked, and followed up</span> automatically.</>,
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'GoHighLevel Funnels and Automation',
     icon: 'fa-solid fa-bolt',
     desc: 'GoHighLevel is the platform Isuremedia runs on, and the platform we build for our clients. Whether starting from scratch or rebuilding an existing account, we handle the full setup, funnel builds, automation workflows, CRM configuration, and booking systems, so your site and CRM work as one.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'Website Redesign',
     icon: 'fa-solid fa-pen-ruler',
     desc: 'An outdated website that loads slowly or never converts is actively costing you leads every day. We rebuild existing sites from the ground up, keeping what works and fixing what does not, a faster, higher-converting site on the same domain with no rankings lost.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'Conversion Rate Optimization',
     icon: 'fa-solid fa-chart-line',
     desc: 'You are already getting traffic. The question is why more of it is not converting. We run heatmaps, session recordings, and UX audits to find where visitors drop off and fix it, the highest-ROI work most businesses never do.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'Website Maintenance and Support',
     icon: 'fa-solid fa-shield-halved',
     desc: 'A website that is not maintained gets slower and more vulnerable as plugins and platforms update around it. We handle ongoing maintenance so your site stays fast and secure every month, updates, backups, security monitoring, and small fixes, all handled for you.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     title: 'ClickFunnels and Kajabi Builds',
     icon: 'fa-solid fa-layer-group',
     desc: 'If your business already runs on ClickFunnels or Kajabi, we build inside your existing platform, course launches, membership sites, sales pages, and onboarding sequences, built for conversion, not just aesthetics.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
 ];
 
@@ -111,13 +111,13 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'How long does a website build take?', a: <>A standard business website takes <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>four to eight weeks</span> from brief to launch. Landing pages and single-page funnels can be done in two to three. GoHighLevel builds depend on complexity, but we give you a timeline at the scoping stage before any work starts.</> },
+  { q: 'How long does a website build take?', a: <>Most business websites take <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>three to six weeks</span> from briefing to launch. Landing pages and funnels are typically one to two weeks. Timelines depend on content readiness and feedback speed.</> },
   { q: 'How much does a website cost?', a: 'It depends on what you need, a five-page business website is a different project from a multi-step funnel connected to GoHighLevel. We do not have fixed packages because those produce generic websites. We scope your project and tell you exactly what it costs before we start.' },
   { q: 'Do you build websites on WordPress?', a: 'Yes. Most business websites we build are on WordPress because it gives you full ownership of your content after launch. We also build on Next.js for faster performance, and directly in GoHighLevel for clients who need CRM integration from the ground up.' },
   { q: 'Will my website rank on Google?', a: 'Every website we build is SEO-ready from day one, fast load times, clean code, heading structure, schema markup, and mobile optimisation built in. That means the technical foundation is right; full ongoing SEO is a separate campaign on top of it.' },
   { q: 'Can you rebuild my existing website without losing my Google rankings?', a: 'Yes. Bad migrations can damage rankings significantly. We handle redirects, preserve your URL structure where possible, and monitor Search Console closely around launch. A rebuild done correctly should improve your rankings, not hurt them.' },
   { q: 'What is GoHighLevel and do I need it?', a: 'A CRM and marketing automation platform that connects to your website and handles lead capture, follow-up, appointment booking, and pipeline management. If you want your website to do more than collect forms and leave the follow-up to you, it is the right tool.' },
-  { q: 'Do you offer website maintenance after launch?', a: 'Yes. Ongoing monthly maintenance covering updates, security monitoring, backups, speed checks, and small content changes. Your website should get better over time, not drift toward breaking, we monitor it so you do not have to.' },
+  { q: 'Do you offer ongoing website maintenance?', a: 'Yes. We offer monthly maintenance plans covering updates, security, speed optimisation, and content changes.' },
   { q: 'Do you offer white-label website builds for agencies?', a: 'Yes. If you run a marketing agency and need design or development delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work, same quality, fully white-labeled.' },
   { q: 'Do you build GoHighLevel funnels?', a: 'Yes. GoHighLevel is one of our primary platforms. We build complete GHL systems including CRM, pipelines, funnels, appointment calendars, and email and SMS automations.' },
   { q: 'What is the difference between a website and a sales funnel?', a: 'A website gives your business a professional home online. A sales funnel guides a visitor toward one specific action: a call, a purchase, or a sign-up. Most businesses need both.' },

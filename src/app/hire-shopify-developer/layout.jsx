@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/shopify-developer#service",
+      "@id": "https://isuremedia.com/hire-shopify-developer#service",
       "name": "Hire Shopify Developer",
       "description": "Hire a dedicated Shopify developer from Isuremedia for custom stores, Shopify Plus, theme development, app integrations, WooCommerce migrations, and checkout optimization.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/shopify-developer",
+      "url": "https://isuremedia.com/hire-shopify-developer",
       "serviceType": "Shopify Development"
     },
     {
@@ -28,7 +28,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Hire Shopify Developer | Shopify Experts | Isuremedia",
   description: "Hire a Shopify developer from Isuremedia for custom stores, Shopify Plus, theme development, and WooCommerce migrations. In-house team. Starts in 48 hours.",
-  alternates: { canonical: "/hire/shopify-developer" },
+  alternates: { canonical: "/hire-shopify-developer" },
 };
 
 export default function HireShopifyLayout({ children }) {

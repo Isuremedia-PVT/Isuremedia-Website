@@ -97,9 +97,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Automation', desc: 'Turn qualified chatbot conversations into booked calls with a calendar system that removes the back-and-forth.', href: '/services/automation/appointment-booking' },
-  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that captures and organises every lead your chatbot qualifies.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-route', title: 'Lead Nurture Workflows', desc: 'Automated follow-up sequences that keep leads warm after the chatbot conversation ends.', href: '/services/automation/lead-nurture-workflows' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Appointment Booking Automation', desc: 'Turn qualified chatbot conversations into booked calls with a calendar system that removes the back-and-forth.', href: '/appointment-booking-automation' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that captures and organises every lead your chatbot qualifies.', href: '/crm-setup-management' },
+  { icon: 'fa-solid fa-route', title: 'Lead Nurture Workflows', desc: 'Automated follow-up sequences that keep leads warm after the chatbot conversation ends.', href: '/lead-nurture-workflows' },
 ];
 
 /* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */

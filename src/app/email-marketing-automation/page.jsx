@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically, without manual work.', href: '/services/automation/api-integration' },
-  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-robot', title: 'AI Chatbot', desc: 'Instant, intelligent conversations that qualify leads and book appointments around the clock.', href: '/services/automation/ai-chatbot' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically, without manual work.', href: '/api-integration-services' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/crm-setup-management' },
+  { icon: 'fa-solid fa-robot', title: 'AI Chatbot', desc: 'Instant, intelligent conversations that qualify leads and book appointments around the clock.', href: '/ai-chatbot-automation' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function EmailMarketingPage() {
         <FAQAccordion />
 
         {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/Automation.webp" description={<>If your email list mostly just sits there while other channels do the heavy lifting, you are leaving revenue on the table. The right automated sequences turn subscribers into repeat buyers without extra effort from your team. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your list into a revenue channel</span>.</>} heading="Ready to Turn Your List Into" headingHighlight="Revenue?" primaryLabel="Build My Email Engine" secondaryLabel="Talk to an Email Strategist" />
+        <CTASection image="/result_footer/email marketing.webp" description={<>If your email list mostly just sits there while other channels do the heavy lifting, you are leaving revenue on the table. The right automated sequences turn subscribers into repeat buyers without extra effort from your team. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turn your list into a revenue channel</span>.</>} heading="Ready to Turn Your List Into" headingHighlight="Revenue?" primaryLabel="Build My Email Engine" secondaryLabel="Talk to an Email Strategist" />
       </main>
       <Footer />
     </>

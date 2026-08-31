@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/hire/gohighlevel-expert#service",
+      "@id": "https://isuremedia.com/hire-gohighlevel-expert#service",
       "name": "Hire a GoHighLevel Expert",
       "description": "Hire a certified GoHighLevel expert from Isuremedia for CRM setup, workflow automation, funnel builds, AI chatbots, SaaS Mode configuration, and platform migrations.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/hire/gohighlevel-expert",
+      "url": "https://isuremedia.com/hire-gohighlevel-expert",
       "serviceType": "GoHighLevel Setup and Automation"
     },
     {
@@ -28,7 +28,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "Hire a GoHighLevel Expert | GHL Certified Setup | Isuremedia",
   description: "Hire a certified GoHighLevel expert from Isuremedia. CRM setup, workflow automation, funnels, AI chatbots, and SaaS Mode. No contracts. Starts in 48 hours.",
-  alternates: { canonical: "/hire/gohighlevel-expert" },
+  alternates: { canonical: "/hire-gohighlevel-expert" },
 };
 
 export default function HireGohighlevelLayout({ children }) {

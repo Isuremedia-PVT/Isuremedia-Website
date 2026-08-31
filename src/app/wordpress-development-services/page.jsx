@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'Purpose-built e-commerce stores on the platform made for online retail.', href: '/services/websites-funnels/shopify' },
-  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/services/websites-funnels/landing-pages' },
-  { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Website builds delivered under your agency’s brand, project-managed end to end.', href: '/services/white-label/white-label-web-design' },
+  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'Purpose-built e-commerce stores on the platform made for online retail.', href: '/shopify-development-services' },
+  { icon: 'fa-solid fa-rectangle-list', title: 'Landing Pages', desc: 'High-converting, single-purpose pages built for campaigns and lead capture.', href: '/landing-page-design-services' },
+  { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Website builds delivered under your agency’s brand, project-managed end to end.', href: '/white-label-web-design-services' },
 ];
 
 function FAQAccordion() {

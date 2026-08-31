@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-pen-nib', title: 'Graphic Design', desc: 'Visual assets and brand collateral to pair with every piece of written content.', href: '/services/content-creative/graphic-design' },
-  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'High-performance visual ad creative for Meta, Google, TikTok, and YouTube.', href: '/services/content-creative/ad-creative-design' },
-  { icon: 'fa-solid fa-file-lines', title: 'On-Page SEO', desc: 'Optimise every page element to improve relevance, CTR, and keyword alignment.', href: '/services/seo/on-page-seo' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Graphic Design', desc: 'Visual assets and brand collateral to pair with every piece of written content.', href: '/graphic-design-agency' },
+  { icon: 'fa-solid fa-rectangle-ad', title: 'Ad Creative Design', desc: 'High-performance visual ad creative for Meta, Google, TikTok, and YouTube.', href: '/ad-creative-design-services' },
+  { icon: 'fa-solid fa-file-lines', title: 'On-Page SEO', desc: 'Optimise every page element to improve relevance, CTR, and keyword alignment.', href: '/on-page-seo-services' },
 ];
 
 function FAQAccordion() {

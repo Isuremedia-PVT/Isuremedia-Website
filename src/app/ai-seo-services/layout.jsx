@@ -3,12 +3,12 @@ const SCHEMA = JSON.stringify({
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://isuremedia.com/services/seo/ai-seo#service",
+      "@id": "https://isuremedia.com/ai-seo-services#service",
       "name": "AI SEO and AEO Services",
       "description": "AI SEO and AEO agency services covering Google AI Overview optimisation, ChatGPT visibility, Perplexity citations, entity optimisation, FAQ schema, and E-E-A-T authority building.",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
       "areaServed": ["US", "GB", "IN", "NZ", "AE", "CA"],
-      "url": "https://isuremedia.com/services/seo/ai-seo",
+      "url": "https://isuremedia.com/ai-seo-services",
       "serviceType": "AI SEO and AEO"
     },
     {
@@ -32,7 +32,8 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "AI SEO & AEO Agency | AI Search Optimization | Isuremedia",
   description: "Isuremedia is an AI SEO and AEO agency that gets your business cited in Google AI Overviews, ChatGPT, Perplexity, and Gemini. Free AI visibility audit.",
-  alternates: { canonical: "/services/seo/ai-seo" },
+  alternates: { canonical: "/ai-seo-services" },
+  openGraph: { images: [{ url: "/feature_image/ai-seo.webp", width: 1618, height: 950 }] },
 };
 
 export default function AiSeoLayout({ children }) {

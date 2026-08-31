@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Flexible, content-friendly websites built on the platform that powers a third of the internet.', href: '/services/websites-funnels/wordpress' },
-  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'E-commerce storefronts built to convert browsers into buyers.', href: '/services/websites-funnels/shopify' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Websites & Funnels', desc: 'Explore the full range of website, funnel, and platform services we offer.', href: '/services/websites-funnels' },
+  { icon: 'fa-brands fa-wordpress', title: 'WordPress Development', desc: 'Flexible, content-friendly websites built on the platform that powers a third of the internet.', href: '/wordpress-development-services' },
+  { icon: 'fa-brands fa-shopify', title: 'Shopify Development', desc: 'E-commerce storefronts built to convert browsers into buyers.', href: '/shopify-development-services' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Websites & Funnels', desc: 'Explore the full range of website, funnel, and platform services we offer.', href: '/websites-and-funnels' },
 ];
 
 function BusinessWebsitesFAQAccordion() {

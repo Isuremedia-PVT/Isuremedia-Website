@@ -5,7 +5,7 @@ const SCHEMA = JSON.stringify({
       "@type": "Service",
       "name": "SEO Services",
       "provider": { "@type": "Organization", "name": "Isuremedia", "url": "https://isuremedia.com" },
-      "url": "https://isuremedia.com/services/seo",
+      "url": "https://isuremedia.com/seo-services",
       "description": "Full-service SEO including technical SEO, on-page, link building, local SEO, AI SEO and AEO."
     },
     {
@@ -25,7 +25,7 @@ const SCHEMA = JSON.stringify({
 export const metadata = {
   title: "SEO Services | Rank on Google & AI Search | Isuremedia",
   description: "Full-service SEO agency. Technical SEO, on-page, link building, local SEO & AI Search optimisation. 150+ clients ranked. Free SEO audit.",
-  alternates: { canonical: "/services/seo" },
+  alternates: { canonical: "/seo-services" },
 };
 
 export default function SeoLayout({ children }) {

@@ -95,8 +95,8 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-newspaper', title: 'SEO Blog Writing', desc: 'Fully human-authored SEO articles for clients who prioritise depth and authority.', href: '/services/content-creative/seo-blog-writing' },
-  { icon: 'fa-solid fa-pen-nib', title: 'Content & Creative Hub', desc: 'Explore the full range of content and creative services under one roof.', href: '/services/content-creative' },
+  { icon: 'fa-solid fa-newspaper', title: 'SEO Blog Writing', desc: 'Fully human-authored SEO articles for clients who prioritise depth and authority.', href: '/seo-content-writing-services' },
+  { icon: 'fa-solid fa-pen-nib', title: 'Content & Creative Hub', desc: 'Explore the full range of content and creative services under one roof.', href: '/content-marketing-and-creative-agency' },
 ];
 
 function FAQAccordion() {

@@ -47,43 +47,43 @@ const SERVICES = [
     title: 'GoHighLevel Setup and Automation',
     icon: 'fa-solid fa-bolt',
     desc: 'GoHighLevel is one of the most powerful business platforms available. It is also the most commonly set up halfway and abandoned, funnels that never connect, workflows that never fire, a CRM nobody trusts. We set it up properly from the ground up, or rebuild accounts that are not working. When we are done, the system runs your pipeline and books appointments without anyone on your team managing it.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'CRM Setup and Management',
     icon: 'fa-solid fa-users',
     desc: 'A CRM your team does not trust and does not keep up to date is worse than no CRM at all. We configure it, build the pipelines, set up tagging and segmentation, and create the automations that keep it accurate without manual entry. Every deal in the right stage, every lead in the right sequence.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'Lead Nurture Workflows',
     icon: 'fa-solid fa-route',
     desc: 'Most leads are not ready to buy when they first contact you. The businesses that convert them stay in touch, consistently, until they are. We build multi-step email and SMS nurture sequences that run automatically from the moment a lead enters your system, educational content, social proof, and booking nudges, timed to what the lead does.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'AI Chatbot and Conversation Automation',
     icon: 'fa-solid fa-robot',
     desc: 'A lead who contacts you at 11pm on a Sunday and gets no response until Monday is a lead you are competing to keep. An AI chatbot answers questions, qualifies prospects, and books calls 24 hours a day without any staffing cost, moving the lead into your pipeline before your team starts the day.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'Appointment Booking Systems',
     icon: 'fa-solid fa-calendar-check',
     desc: 'Booking calls manually, sending reminders by hand, and chasing no-shows are tasks automation eliminates entirely. We build end-to-end booking systems covering scheduling links, calendar integration, confirmations, reminder sequences, and no-show follow-up, handled without anyone on your team touching it.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'Zapier, Make, and n8n Workflow Automation',
     icon: 'fa-solid fa-diagram-project',
     desc: 'GoHighLevel does not connect to everything, and neither does any single platform. We bridge your tools using Zapier for straightforward automation, Make for complex multi-step workflows, and n8n for full control without per-task pricing. If data needs to move between your tools, we build the connection.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
   {
     title: 'White-Label GoHighLevel Support for Agencies',
     icon: 'fa-solid fa-handshake',
     desc: 'If you run a marketing agency and want to offer GoHighLevel to your clients, we build and manage every account under your brand, sub-account setup, funnel builds, ongoing support, and CRM management. No Isuremedia footprint, everything delivered under your name.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
 ];
 
@@ -104,9 +104,9 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'What exactly is marketing automation?', a: <>Software that does repetitive tasks automatically, following up with leads, sending reminders, updating your CRM, moving deals through a pipeline, booking calls. A set of rules and triggers handles them the moment they need to happen, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>day or night</span>.</> },
-  { q: 'Do I need GoHighLevel specifically?', a: 'Not necessarily. It is our primary platform and we recommend it for most small and medium businesses because it covers CRM, automation, booking, funnels, and SMS in one place. If you are already on HubSpot or ActiveCampaign, we can build on that instead.' },
-  { q: 'How long does it take to build a GoHighLevel system?', a: 'A basic setup with core automations takes one to two weeks. A full build covering CRM, multiple funnels, nurture sequences, and integrations takes three to six weeks depending on complexity. We give you a specific timeline at the audit stage.' },
+  { q: 'What is marketing automation?', a: <>Marketing automation uses software to handle repetitive tasks automatically: lead follow-up, appointment booking, CRM updates, and email and SMS sequences. The right action happens every time <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual work</span>.</> },
+  { q: 'Do you work with GoHighLevel?', a: 'Yes. GoHighLevel is our primary automation platform. We build complete GHL systems including CRM, pipelines, funnels, appointment calendars, and email and SMS automations from scratch.' },
+  { q: 'How long does it take to set up marketing automation?', a: 'A standard GoHighLevel setup takes 1–3 weeks. More complex systems with multi-step nurture sequences and integrations may take 3–6 weeks. We provide a clear timeline before starting.' },
   { q: 'My GoHighLevel account already exists but is not working properly. Can you fix it?', a: 'Yes, this is one of the most common things we do. We audit your existing account, identify what is broken or misconfigured, and rebuild what needs rebuilding. If something is working, we keep it.' },
   { q: 'What happens if an automation breaks or stops working?', a: 'We monitor all active systems and act on issues before you notice them. Our team knows your system because we built it, you call us, we know what you are talking about, and we fix it fast.' },
   { q: 'Can you connect GoHighLevel to other tools we already use?', a: 'Yes. GoHighLevel connects natively to over 200 tools, and we extend that through Zapier, Make, and n8n for anything it does not cover. If data needs to flow between your tools, we build the connection.' },

@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-brands fa-laravel', title: 'PHP / Laravel Development', desc: 'Custom Laravel applications and APIs built to specification.', href: '/services/websites-funnels/php-laravel' },
-  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/services/websites-funnels/python' },
-  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/services/automation/api-integration' },
+  { icon: 'fa-brands fa-laravel', title: 'PHP / Laravel Development', desc: 'Custom Laravel applications and APIs built to specification.', href: '/php-laravel-development' },
+  { icon: 'fa-brands fa-python', title: 'Python Development', desc: 'Data-driven applications and automation built on Python.', href: '/python-development-services' },
+  { icon: 'fa-solid fa-plug', title: 'API Integration', desc: 'Connecting your tools and platforms so data flows automatically.', href: '/api-integration-services' },
 ];
 
 function FAQAccordion() {
@@ -681,7 +681,7 @@ export default function NodeDevelopmentPage() {
         <FAQAccordion />
 
         {/* ══ 14. ENDING CTA ══════════════════════════════════════════════ */}
-        <CTASection image="/result_footer/Api.webp" description={<>Whether your app needs real-time chat, live notifications, or an API serving multiple platforms, the question is the same. Is your backend actually architected to handle real load, or just holding together? If it&apos;s the latter, let&apos;s fix that. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Node.js application that scales</span>.</>} heading="Built for" headingHighlight="Real-Time Scale?" primaryLabel="Start My Node.js Build" secondaryLabel="Talk to a Backend Developer" />
+        <CTASection image="/result_footer/node.webp" description={<>Whether your app needs real-time chat, live notifications, or an API serving multiple platforms, the question is the same. Is your backend actually architected to handle real load, or just holding together? If it&apos;s the latter, let&apos;s fix that. Talk to us today and we will help you <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build a Node.js application that scales</span>.</>} heading="Built for" headingHighlight="Real-Time Scale?" primaryLabel="Start My Node.js Build" secondaryLabel="Talk to a Backend Developer" />
       </main>
       <Footer />
     </>

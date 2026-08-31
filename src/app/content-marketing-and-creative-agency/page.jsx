@@ -47,31 +47,31 @@ const SERVICES = [
     title: 'SEO Blog Writing',
     icon: 'fa-solid fa-pen-nib',
     desc: <>Most businesses publish blog content that nobody finds because it was never built to rank. Every article starts with keyword research and search intent mapping so the content targets searches your buyers are actually making. No keyword stuffing, no filler, long-form articles that rank, get read, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build topical authority</span>.</>,
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
   {
     title: 'Graphic Design',
     icon: 'fa-solid fa-palette',
     desc: 'Every marketing channel your business uses needs design that matches, social posts, email headers, ad banners, infographics, pitch decks, and presentation assets. We produce brand-aligned design across every format so your business looks consistent everywhere. No freelancers, no style inconsistency, no template-look design.',
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
   {
     title: 'Ad Creative Design',
     icon: 'fa-solid fa-rectangle-ad',
     desc: 'An ad that stops the scroll earns the click. An ad that blends in wastes the budget. We design static and animated creatives for Google Display, Meta, and LinkedIn, built around the campaign goal and audience. We test variations, identify what performs, and iterate.',
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
   {
     title: 'Video Marketing and Editing',
     icon: 'fa-solid fa-video',
     desc: 'Video is the highest-engagement format on every platform and the most underused asset in most marketing setups. We produce short-form video for ads and social, explainer videos for landing pages, and edit raw footage into something polished. Every video is built for a specific channel and goal.',
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
   {
     title: 'Brand Identity and Visual Design',
     icon: 'fa-solid fa-fingerprint',
     desc: 'A logo is not a brand. A brand is the full system: logo, colour palette, typography, visual style, tone of voice, and the rules that hold it together across every touchpoint. We build identities from scratch or rebuild inconsistent ones. Consistency makes everything look intentional, and buyers notice.',
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
 ];
 
@@ -92,10 +92,10 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'Do you write SEO content or just general blog posts?', a: 'Every piece starts with keyword research and search intent analysis. We write for the searches your buyers are actually making, not just topics that sound relevant, structured for both Google and real readers. Every piece has a target keyword, a clear structure, and a purpose.' },
+  { q: 'Do you write SEO-optimised content?', a: 'Yes. Every piece of content is keyword-researched, optimised for search intent, and structured with proper headings and schema where applicable. We write for humans first, then optimise for search.' },
   { q: 'Do you use AI to write content?', a: 'We use AI to speed up parts of production where it makes sense, but every piece is still planned, written, and edited by a human who knows your industry and brand. The output sounds like your brand, not a language model, and AI-assisted production lets us deliver more without dropping quality.' },
-  { q: 'Can you match our existing brand voice and visual style?', a: 'Yes. Before we produce anything, we study your existing content, design assets, and brand guidelines, building them as part of the work if you do not have any. Your audience will not be able to tell that an agency was involved.' },
-  { q: 'What formats do you cover?', a: 'SEO blog writing, website copywriting, ad copy, email newsletters, social media captions and creative, graphic design, ad creative design, video production and editing, and full brand identity including logo, colour system, and typography. One team handles all of it.' },
+  { q: 'How do you make content sound like our brand?', a: 'We start every engagement with a brand voice session, reviewing your existing content, tone preferences, and key messaging. Our writers then follow a custom brand guide for all content.' },
+  { q: 'What types of content do you produce?', a: 'We produce SEO blog articles, website copy, landing page copy, social media content, email marketing copy, ad creatives (graphic and video), and LinkedIn thought leadership content.' },
   { q: 'How quickly can you turn around content?', a: <>Most pieces come back within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>five to seven business days</span>. Ad creatives and social graphics are usually faster; brand identity projects depend on scope. If you have a launch deadline, tell us and we will build the schedule around it.</> },
   { q: 'How many revision rounds are included?', a: 'Two rounds as standard. Most work is finalised within one or two because we do the research and briefing properly upfront. If something needs more work, we do not charge extra for it.' },
   { q: 'Do you handle content distribution or just production?', a: 'Both. For clients who need a full content marketing service, we manage the publishing calendar, scheduling, and analytics tracking on top of production. For clients who want to manage distribution themselves, we hand over assets ready to publish.' },

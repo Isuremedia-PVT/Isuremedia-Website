@@ -91,9 +91,9 @@ const FAQS = [
 ];
 
 const RELATED = [
-  { icon: 'fa-solid fa-envelope', title: 'Email Marketing', desc: 'Segmented, automated email systems that turn your list into a revenue channel.', href: '/services/automation/email-marketing' },
-  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/services/automation/crm-setup' },
-  { icon: 'fa-solid fa-bolt', title: 'Zapier Automation', desc: 'No-code workflow automation connecting the apps you already use.', href: '/services/automation/zapier' },
+  { icon: 'fa-solid fa-envelope', title: 'Email Marketing', desc: 'Segmented, automated email systems that turn your list into a revenue channel.', href: '/email-marketing-automation' },
+  { icon: 'fa-solid fa-diagram-project', title: 'CRM Setup & Optimization', desc: 'A properly configured CRM that keeps every lead, contact, and deal organised and actionable.', href: '/crm-setup-management' },
+  { icon: 'fa-solid fa-bolt', title: 'Zapier Automation', desc: 'No-code workflow automation connecting the apps you already use.', href: '/zapier-workflow-automation' },
 ];
 
 function FAQAccordion() {
