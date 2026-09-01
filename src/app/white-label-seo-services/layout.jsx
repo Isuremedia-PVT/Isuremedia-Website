@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Will my clients ever find out Isuremedia is doing the work?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. Isuremedia's name appears on no client-facing material. All reports, audits, and content are branded to your agency. We operate as your invisible fulfilment team without exception." } },
-        { "@type": "Question", "name": "How does white-label reporting work?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We produce fully formatted monthly reports under your agency brand covering rankings, traffic, links built, and next-month priorities. Ready to send to clients without any editing." } },
-        { "@type": "Question", "name": "What is the typical gross margin for white-label SEO?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Agencies using white-label SEO at 100 to 150% markup consistently report 40 to 60% gross margins. The margin is predictable because the wholesale cost is fixed." } }
+        { "@type": "Question", "name": "What are white label SEO services?",
+          "acceptedAnswer": { "@type": "Answer", "text": "White label SEO services are SEO fulfillment services delivered by a specialist provider for another agency to sell under its own brand. The agency keeps the client relationship while the white-label provider handles the agreed SEO work." } },
+        { "@type": "Question", "name": "What is the difference between white label SEO and SEO reseller services?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Both models involve an agency or reseller offering SEO without doing every delivery task in-house. White label SEO emphasizes behind-the-scenes fulfillment under the agency's brand, while reseller arrangements can vary in how much delivery, branding, and client communication the provider handles." } },
+        { "@type": "Question", "name": "Can white label SEO improve my agency's margins?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It can, depending on how you price the service, how efficiently the fulfillment is delivered, and what your internal costs would be. The right comparison is your client revenue against the combined fulfillment, account management, and operating costs." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "White Label SEO Services | SEO Reseller Agency | Isuremedia",
-  description: "Deliver white label SEO services under your agency brand. Full-stack fulfillment: technical audits, link building, local SEO, and AI search. Branded to your agency.",
+  title: "White Label SEO Services for Agencies, Resellers & Partners",
+  description: "White label SEO services let your agency offer SEO under its own brand while a specialist team handles the fulfillment, giving you more delivery capacity without another internal team.",
   alternates: { canonical: "/white-label-seo-services" },
   openGraph: { images: [{ url: "/feature_image/white-label-seo.webp", width: 1618, height: 950 }] },
 };

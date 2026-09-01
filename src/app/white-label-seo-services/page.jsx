@@ -10,21 +10,21 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'Technical SEO audits and implementation',
-  'On-page optimisation, content, structure, and internal linking',
-  'SEO content production, blog posts, landing pages, and cluster content',
-  'Link building, outreach, placement, and DR-qualified backlink acquisition',
-  'Local SEO, Google Business Profile, citations, and local landing pages',
-  'AI search and AEO optimisation, structured for AI Overview citation',
-  'White-label monthly reporting, branded to your agency',
-  'Dedicated account manager, one contact for all fulfilment queries',
+  'Technical SEO audit and implementation',
+  'On-page optimization, content, structure, and internal linking',
+  'SEO content production, blog posts, location pages, and cluster content',
+  'Link building, outreach, and agreed-quality link acquisition',
+  'White label local SEO services, Google Business Profile, and citations',
+  'AI search and AEO optimization',
+  'White label monthly reporting, branded to your agency',
+  'Dedicated account manager, one contact for all fulfillment queries',
 ];
 
 const WHY_MATTERS = [
   { icon: 'fa-solid fa-door-open', title: 'No Barrier to Entry', desc: 'Selling SEO takes one thing: delivering it well. Building that capability in-house means hiring, training, and tooling before the revenue exists to justify it. White-label fulfilment removes the barrier, you sell from day one, we deliver from day one.' },
   { icon: 'fa-solid fa-sack-dollar', title: '40 to 60% Gross Margins', desc: 'Agencies using white-label SEO at a 100 to 150% markup on wholesale costs consistently report 40 to 60% gross margins on their retainers. The margin is predictable because the wholesale cost is fixed.' },
   { icon: 'fa-solid fa-layer-group', title: 'Scales Without Headcount', desc: 'Adding five more SEO clients to an in-house team means more hires, more tools, more management overhead. Adding five more clients to a white-label arrangement just means five more retainers in the fulfilment scope.' },
-  { icon: 'fa-solid fa-bullseye', title: 'Your Team Stays Focused', desc: 'Your agencyâ€™s value is client relationships, strategy, and growth. If your team is writing content and chasing link placements, they are not spending time on what actually grows the agency.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Your Team Stays Focused', desc: 'Your agency\'s value is client relationships, strategy, and growth. If your team is writing content and chasing link placements, they are not spending time on what actually grows the agency.' },
   { icon: 'fa-solid fa-graduation-cap', title: 'Deeper Expertise Than In-House', desc: 'A specialist white-label team works on SEO every day across dozens of clients and industries. That accumulated expertise is not replicable by a generalist in-house hire at the same cost.' },
 ];
 
@@ -35,56 +35,51 @@ const WHY_MATTERS_VARIANTS = [
 ];
 
 const DELIVERY_STACK = [
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical SEO Audit and Implementation', tag: 'Where every engagement starts', desc: 'Full site audits covering crawl errors, indexation, duplicate content, URL structure, internal linking, schema markup, Core Web Vitals, page speed, mobile usability, HTTPS, and sitemap configuration, delivered in your branded format.' },
-  { icon: 'fa-solid fa-file-lines', title: 'On-Page Optimisation', tag: 'Core deliverable', desc: 'Page-by-page optimisation of existing content, title tags, meta descriptions, header structure, content depth, keyword alignment, internal link placement, and image optimisation, as a prioritised list or applied directly to the CMS.' },
-  { icon: 'fa-solid fa-pen-nib', title: 'SEO Content Production', tag: 'Core deliverable', desc: 'Blog posts, pillar pages, location landing pages, and cluster content, keyword-researched and structured for both traditional ranking and AI search citation, written in your agencyâ€™s voice with no ISureMedia attribution.' },
-  { icon: 'fa-solid fa-link', title: 'Link Building', tag: 'White hat only', desc: 'Outreach-based link acquisition to DR-qualified, topically relevant domains, genuine editorial placements, guest posts, and digital PR-style coverage. Reports include domain metrics, anchor text, and live URL confirmation.' },
-  { icon: 'fa-solid fa-map-location-dot', title: 'Local SEO', tag: 'Multi-location ready', desc: 'Google Business Profile optimisation and management, citation building and NAP consistency, local landing page optimisation for multi-location clients, and monthly local performance reporting.' },
-  { icon: 'fa-solid fa-robot', title: 'AI Search and AEO Optimisation', tag: 'Included, not an add-on', desc: 'Structured content optimisation for AI Overview citation, Perplexity, ChatGPT, and Gemini visibility, answer formatting, FAQ schema, entity SEO, and E-E-A-T signal strengthening. Any white-label provider not delivering this in 2026 is delivering an incomplete service.' },
-  { icon: 'fa-solid fa-chart-line', title: 'White-Label Monthly Reporting', tag: 'Every month, on time', desc: 'Rankings, organic traffic movement, technical health, content published, links acquired, and next-month priorities, delivered in your branded template, ready to present without extra formatting work.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Technical SEO Audit & Implementation', tag: 'Where every engagement starts', desc: 'We audit crawlability, indexing, duplicate content, URL structure, internal linking, schema, Core Web Vitals, page speed, mobile usability, HTTPS, and sitemap configuration, then organize the findings into an implementation plan your agency can use.' },
+  { icon: 'fa-solid fa-file-lines', title: 'On-Page Optimization', tag: 'Core deliverable', desc: 'We optimize titles, meta descriptions, headings, content structure, internal links, keyword targeting, and page-level relevance based on the search intent each URL needs to satisfy.' },
+  { icon: 'fa-solid fa-pen-nib', title: 'SEO Content Production', tag: 'Core deliverable', desc: 'We create blog posts, pillar pages, location pages, and cluster content around agreed keyword targets, search intent, and the client\'s market, with delivery prepared for your agency\'s review.' },
+  { icon: 'fa-solid fa-link', title: 'Link Building', tag: 'White hat only', desc: 'We manage outreach and link acquisition around relevant domains, suitable placements, and agreed quality standards. Your agency receives the agreed reporting and link documentation.' },
+  { icon: 'fa-solid fa-map-location-dot', title: 'White Label Local SEO Services', tag: 'Multi-location ready', desc: 'For multi-location and local businesses, we can support Google Business Profile optimization, local landing pages, citations, review-related work, and ongoing local SEO reporting.' },
+  { icon: 'fa-solid fa-robot', title: 'AI Search & AEO Optimization', tag: 'Included, not an add-on', desc: 'We structure and refine content for AI-assisted search visibility by improving answer clarity, topical coverage, entity context, structured information, and other on-page signals that help search systems interpret the content.' },
+  { icon: 'fa-solid fa-chart-line', title: 'White Label Monthly Reporting', tag: 'Every month, on time', desc: 'Receive branded reports covering rankings, organic traffic, technical health, content published, links acquired, and next-month priorities so your agency can present the work directly to clients.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-bullhorn', title: 'Marketing and Digital Agencies', desc: 'If clients are asking for SEO and you are turning it down or referring it out, white-label fulfilment lets you offer it under your brand without building an internal team.', img: '/services-six-card/White Label/White label seo/Marketing and Digital Agencies.webp' },
-  { icon: 'fa-solid fa-laptop-code', title: 'Web Design and Development Agencies', desc: 'A build that delivers no organic traffic within six months is a client who questions the investment. Pairing development with ongoing SEO retains clients longer and adds recurring revenue.', img: '/services-six-card/White Label/White label seo/Web Design and DevelopmentAgencies.webp' },
-  { icon: 'fa-solid fa-newspaper', title: 'PR and Content Agencies', desc: 'Agencies that can show measurable organic traffic and rankings alongside earned media and content output have a far stronger retention story with clients.', img: '/services-six-card/White Label/White label seo/PR and Content Agencies.webp' },
-  { icon: 'fa-solid fa-arrow-trend-down', title: 'Agencies With Stalled SEO Campaigns', desc: 'If rankings have plateaued and reporting is getting harder to justify, specialist fulfilment behind the scenes resets the trajectory without the client knowing the delivery changed.', img: '/services-six-card/White Label/White label seo/Agencies With Stalled SEOCampaigns.webp' },
-  { icon: 'fa-solid fa-gauge-high', title: 'Agencies Scaling Past Capacity', desc: 'If your in-house SEO team is at its limit and new business is being turned down or under-delivered, white-label fulfilment extends capacity without the lead time or risk of a new hire.', img: '/services-six-card/White Label/White label seo/Agencies Scaling Past Capacity.webp' },
+  { icon: 'fa-solid fa-bullhorn', title: 'Marketing & Digital Agencies', desc: 'You already manage client acquisition and account relationships but need an SEO fulfillment team behind your offer.', img: '/services-six-card/White Label/White label seo/Marketing and Digital Agencies.webp' },
+  { icon: 'fa-solid fa-laptop-code', title: 'Web Design & Development Agencies', desc: 'Your clients want organic visibility alongside website work. White-label SEO adds an ongoing service without forcing your developers to take on SEO production.', img: '/services-six-card/White Label/White label seo/Web Design and DevelopmentAgencies.webp' },
+  { icon: 'fa-solid fa-bullseye', title: 'PPC & Content Agencies', desc: 'Your clients may need SEO alongside paid media or content. A specialist partner lets you expand the offer while keeping delivery organized.', img: '/services-six-card/White Label/White label seo/PR and Content Agencies.webp' },
+  { icon: 'fa-solid fa-arrow-trend-down', title: 'Agencies With Stalled SEO Campaigns', desc: 'When rankings have plateaued or reporting is becoming harder to maintain, an outside SEO team can provide additional technical and execution capacity.', img: '/services-six-card/White Label/White label seo/Agencies With Stalled SEOCampaigns.webp' },
+  { icon: 'fa-solid fa-gauge-high', title: 'Agencies Scaling Past Capacity', desc: 'If your in-house team is at its limit, outsource SEO services can add delivery capacity without immediately hiring more specialists.', img: '/services-six-card/White Label/White label seo/Agencies Scaling Past Capacity.webp' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-layer-group', title: 'Complete SEO Stack, Not One Component', desc: 'Many white-label providers specialise in one area, content, or links, or audits. We deliver technical, on-page, content, links, local, and AI search as one partner with one account manager.' },
-  { icon: 'fa-solid fa-robot', title: 'AI Search Is Included, Not an Add-On', desc: 'We include structured optimisation for AI Overview citation, ChatGPT, Perplexity, and Gemini visibility in every engagement, not as an upsell.' },
-  { icon: 'fa-solid fa-tag', title: 'Your Brand on Everything We Produce', desc: 'Reports, audits, content, and strategy documents all carry your agencyâ€™s brand. ISureMediaâ€™s name appears nowhere in client-facing materials.' },
-  { icon: 'fa-solid fa-headset', title: 'One Dedicated Account Manager', desc: 'You manage one contact who coordinates all fulfilment, answers delivery questions, and escalates issues before they reach your clients.' },
-  { icon: 'fa-solid fa-shield-halved', title: 'We Do Not Work With Your Competitors', desc: 'We limit agency partners per market and service niche to prevent conflict of interest, and we tell you upfront if there is an overlap in your market.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Month to Month, No Lock-In', desc: 'White-label arrangements scale up when you win clients and scale down when one churns. You are never committed to a volume that does not match your book.' },
+  { icon: 'fa-solid fa-layer-group', title: 'Complete SEO Stack, Not One Component', desc: 'Our white label SEO services cover technical SEO, on-page optimization, content, links, local SEO, AI search optimization, and reporting through one delivery team.' },
+  { icon: 'fa-solid fa-robot', title: 'AI Search Is Included', desc: 'We include AI-assisted search optimization in the delivery framework where it fits the account, rather than treating it as a separate add-on.' },
+  { icon: 'fa-solid fa-tag', title: 'Your Brand on Everything We Produce', desc: 'Reports, content, recommendations, and agreed deliverables are prepared for your agency\'s client-facing workflow rather than carrying our brand.' },
+  { icon: 'fa-solid fa-headset', title: 'One Dedicated Account Manager', desc: 'Your agency has one point of contact for fulfillment questions, delivery coordination, and account updates.' },
+  { icon: 'fa-solid fa-shield-halved', title: 'We Do Not Work With Your Direct Competitors', desc: 'We can avoid conflicts where the same market or service overlap would create a concern for your agency\'s client relationships.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Month to Month, No Lock-In', desc: 'White-label arrangements can scale with your client volume without forcing you into a long-term commitment before you know what capacity you need.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Partner Discovery Call', desc: 'We talk through your current SEO client base, delivery gaps, and client expectations, then propose a fulfilment structure and wholesale pricing that fits your margin targets. No commitment at this stage.' },
-  { n: '02', title: 'Partnership Onboarding', desc: 'We onboard your agency, brand assets, report templates, delivery standards, and communication preferences, and assign your dedicated account manager.' },
-  { n: '03', title: 'Client Onboarding', desc: 'For each client, we run a structured intake, access credentials, existing analytics data, competitor context, and priorities, then deliver an initial audit within two weeks and a 90-day plan before anything goes client-facing.' },
-  { n: '04', title: 'Monthly Delivery Cycle', desc: 'Content produced, technical items implemented, link outreach in progress, local SEO maintained. Your white-label report lands by a defined date each month, ready to present.' },
-  { n: '05', title: 'Account Review', desc: 'Monthly or quarterly review calls between your agency and your account manager cover performance, issues, and upcoming priorities, so you always know what is happening before your client asks.' },
-  { n: '06', title: 'Scale', desc: 'As you win more SEO clients, we add them to the fulfilment scope, no new hires, no new tools, no new management overhead on your side.' },
+  { n: '01', title: 'Partner Discovery Call', desc: 'We review your client base, current SEO offer, fulfillment requirements, and the type of work you need delivered. Then we propose a fulfillment structure that fits your margin targets.' },
+  { n: '02', title: 'Partnership Onboarding', desc: 'We gather agency assets, brand requirements, report templates, client information, access, and communication preferences, then assign your dedicated account manager.' },
+  { n: '03', title: 'Client Onboarding', desc: 'For each client, we collect the required intake, credentials, existing SEO data, competitor context, priorities, and access so the initial SEO plan can be built correctly.' },
+  { n: '04', title: 'Monthly Delivery Cycle', desc: 'Technical work, on-page optimization, content, outreach, local SEO, and other agreed tasks move through the monthly delivery cycle. Your agency receives the work in its required format.' },
+  { n: '05', title: 'Account Review', desc: 'Monthly or quarterly reviews cover performance, completed work, upcoming priorities, and the next actions for the account.' },
+  { n: '06', title: 'Scale', desc: 'As your client volume grows, the fulfillment structure can expand with it. You can add SEO accounts without immediately building another internal SEO team.' },
 ];
 
 const FAQS = [
-  { q: 'Will my clients ever find out you are doing the work?', a: 'No, provided the operational boundary is maintained correctly, which it always is on our side. ISureMediaâ€™s name appears on no client-facing material. All communication between your agency and ISureMedia stays internal. The deliverables your clients receive are branded entirely to your agency. We operate as your invisible fulfilment team.' },
-  { q: 'Do you communicate directly with our clients?', a: 'Never. All client-facing communication belongs to your agency. We communicate exclusively with your designated contact at the agency, your account manager relationship is with us, not between us and your clients. This boundary is fundamental to how the white-label model works and we maintain it without exception.' },
-  { q: 'What happens if a client asks a technical question you are better placed to answer?', a: 'Your account manager at ISureMedia prepares the answer. You or your team presents it. The client never knows the preparation happened behind the scenes. For agencies that want to present ISureMedia on calls as a specialist partner rather than a fully invisible fulfilment team, that arrangement is also available, but the default is full white-label invisibility.' },
-  { q: 'How do you handle reporting, do we need to build the reports ourselves?', a: 'No. We produce white-label reports, branded to your agency, and deliver them to you by a defined date each month. The reports are formatted to be presented directly to clients or forwarded as-is. If you have a specific report format you use across your client base, we build to that format.' },
-  { q: 'What is the typical margin structure for white-label SEO?', a: 'Agencies using white-label SEO at a 100 to 150% markup on wholesale costs consistently report 40 to 60% gross margins on SEO retainers. The specific margin depends on your retail pricing and the scope of fulfilment required. We walk through the margin structure for your specific client base and pricing in the discovery call.' },
-  { q: 'Do you work with agencies that already have some in-house SEO capacity?', a: 'Yes. The most common arrangement is a hybrid, your team handles strategy, client communication, and the elements they have capacity for, and we handle specific fulfilment components: link building, content production, technical implementation, or local SEO.' },
-  { q: 'What industries do you have experience delivering SEO for?', a: 'We have delivered white-label SEO across professional services, e-commerce, SaaS, home services, healthcare, legal, financial services, real estate, hospitality, and technology. We draw on existing experience from day one rather than learning the niche at your clientâ€™s expense.' },
-  { q: 'How do you handle link building, what standards do you apply?', a: 'All link building is white hat, genuine editorial placements, topically relevant guest posts, and digital PR-style coverage. We do not use private blog networks, link farms, or any manipulative link schemes. Domain rating thresholds and topical relevance criteria are agreed at the start of each campaign.' },
-  { q: 'What notice period is required if we want to stop the partnership?', a: 'White-label arrangements are month to month. Thirty days notice is required to wind down an account or the full partnership. There are no long-term contracts, no exit penalties, and no obligation to continue beyond the period you find the arrangement valuable.' },
-  { q: 'How quickly can you onboard a new client?', a: 'Agency onboarding takes two to three business days. For each new client, the intake and initial audit is completed within seven to ten business days of receiving access. The first full month of delivery begins immediately after the audit is reviewed and the 90-day campaign plan is agreed.' },
-  { q: 'What happens if I need help handling reporting for clients with multiple locations?', a: 'We build local landing pages and manage citations, NAP consistency, and Google Business Profiles on a per-location basis, then roll performance up into a single branded report so your account manager can present one consolidated view per client.' },
+  { q: 'What are white label SEO services?', a: 'White label SEO services are SEO fulfillment services delivered by a specialist provider for another agency to sell under its own brand. The agency keeps the client relationship while the white-label provider handles the agreed SEO work.' },
+  { q: 'What is the difference between white label SEO and SEO reseller services?', a: "Both models involve an agency or reseller offering SEO without doing every delivery task in-house. White label SEO emphasizes behind-the-scenes fulfillment under the agency's brand, while reseller arrangements can vary in how much delivery, branding, and client communication the provider handles." },
+  { q: 'Can my clients tell that the SEO work is outsourced?', a: "The purpose of a white-label arrangement is to keep the fulfillment behind your agency's brand. Reports, agreed deliverables, and communications can be structured so the client-facing relationship remains with your agency." },
+  { q: 'What services are included in white label SEO?', a: 'White label SEO can include technical SEO, on-page optimization, content production, link building, local SEO, AI search and AEO optimization, reporting, and other agreed SEO tasks.' },
+  { q: 'Can I keep my clients even if I already have an in-house SEO team?', a: 'Yes. White label support does not require replacing your internal team. It can be used to add specialist capacity, cover workload spikes, provide technical support, or handle services your current team does not offer.' },
+  { q: "Can white label SEO improve my agency's margins?", a: 'It can, depending on how you price the service, how efficiently the fulfillment is delivered, and what your internal costs would be. The right comparison is your client revenue against the combined fulfillment, account management, and operating costs.' },
 ];
 
-/* â”€â”€ FAQ 2-COL, matches the local-seo page layout â”€â”€ */
+/* ── FAQ 2-COL, matches the local-seo page layout ── */
 function FAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -93,16 +88,16 @@ function FAQAccordion() {
         <div className="wlseo-faq-grid" style={{ display: 'grid', gridTemplateColumns: '380px 1fr', gap: 64, alignItems: 'start' }}>
           <div className="wlseo-faq-sticky" style={{ position: 'sticky', top: 100 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 14, marginTop: 0, lineHeight: 1.15 }}>
-              Questions About <span style={{ color: 'var(--ism-amber)' }}>White-Label SEO</span>
+              Questions About <span style={{ color: 'var(--ism-amber)' }}>White Label SEO Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: '0 0 32px' }}>
-              Straight answers to the questions agency directors ask most.
+              Answering you on fulfillment, communication, pricing, reporting, margins and how the partnership works.
             </p>
             <a href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Book a Partner Discovery Call â†’
+              Book a Partner Discovery Call →
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -139,7 +134,7 @@ export default function WhiteLabelSEOPage() {
       <Navbar />
       <main>
 
-        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  01. HERO  */}
         <section className="wlseo-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -148,7 +143,7 @@ export default function WhiteLabelSEOPage() {
 
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
-                  Deliver SEO Results Under{' '}
+                  White Label SEO Services Built to Deliver Under{' '}
                   <span style={{ position: 'relative', display: 'inline-block' }}>
                     Your Brand.
                     <svg viewBox="0 0 100 12" preserveAspectRatio="none" style={{ position: 'absolute', left: 0, bottom: -6, width: '100%', height: 10 }} aria-hidden>
@@ -158,8 +153,7 @@ export default function WhiteLabelSEOPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 540, marginBottom: 36 }}>
-                  We handle the fulfilment. ISureMedia delivers technical audits, on-page optimisation, content, link building, local SEO, and AI search optimisation, plus white-label reporting,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>invisible to your clients</span>, and built to the standard your agency&apos;s reputation depends on.
+                  We handle <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>technical SEO, on-page optimization, content, link building, local SEO</span>, AI search optimization, and branded reporting so your agency can sell SEO without adding an in-house fulfillment team.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -226,29 +220,30 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  02. PROOF STRIP  */}
         <ReviewsStrip />
 
-        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  03. BRIDGE SECTION  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(24px,2.8vw,40px)', color: 'var(--color-navy)', lineHeight: 1.2, letterSpacing: '-0.4px', marginBottom: 24 }}>
-                  Your Clients Want SEO. Building the Team to Deliver It Properly Costs More Than Most Agencies Can Justify.
+                  Your Clients Need SEO. You Don&apos;t Need Another In-House Team.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Building a capable in-house SEO team, a technical specialist, content strategist, link builder, local SEO manager, and reporting analyst, can exceed $300,000 a year in combined salaries before tools and overhead. For most agencies, that investment only makes sense at a client volume that requires the infrastructure before the revenue exists to justify it.
+                  Building an in-house SEO team means recruiting specialists, managing workloads, reviewing deliverables, and keeping enough capacity to support every client account. For many agencies, that only makes financial sense once SEO demand is consistently high.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The alternative is white-label fulfilment. You sell the SEO, you own the client relationship, and we handle delivery, technical audits, on-page work, content, links, local SEO, and monthly reporting, under your brand. Your clients see your agency&apos;s name. They never see ours. Agencies using this model report{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>40 to 60% gross margins</span> on SEO retainers after markup.
+                  White label SEO services give you another option. Your agency owns{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the client relationship, strategy communication, and account direction</span>{' '}
+                  while our team handles the agreed SEO fulfillment behind the scenes, technical audits, on-page optimization, content production, link building, local SEO, AI search optimization, and monthly reporting, delivered under your brand.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-                  Book Your Partner Discovery Call
+                  Book a Partner Discovery Call
                 </a>
               </div>
               <div style={{ background: '#fff', borderRadius: 20, padding: '36px 32px', border: '1px solid var(--color-border)', boxShadow: '0 20px 50px rgba(0,35,83,.08)' }}>
@@ -274,28 +269,28 @@ export default function WhiteLabelSEOPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* â•â• 04. WHAT YOUR CLIENTS SEE, AND WHAT STAYS INVISIBLE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  04. WHAT YOUR CLIENTS SEE, AND WHAT STAYS INVISIBLE  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wlseo-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
             <div className="wlseo-whatis-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.85fr)', gap: 64, alignItems: 'center' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', lineHeight: 1.22, letterSpacing: '-0.4px', marginBottom: 20 }}>
-                  Your Brand on Every Deliverable. Our Name on None of Them.
+                  Your Brand on Every Deliverable. Your Partner Behind the Work.
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The white-label arrangement is operationally straightforward. Your agency owns the client relationship, onboarding, strategy calls, expectation management, and commercial terms. We operate as{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your fulfilment team</span>{' '}
-                    , producing the deliverables your clients receive under your brand.
+                    In a private label SEO arrangement, your agency owns the client relationship and decides how the work is presented. We operate as{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the fulfillment team</span>{' '}
+                    supporting your account.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Every report carries your agency&apos;s name and branding. Every email comes from your address. Deliverables are formatted to your standards, and the strategy and recommendations you present are shown as your agency&apos;s own work, including the monthly report, styled with your logo.
+                    Reports, content, technical recommendations, outreach updates, and other agreed deliverables are prepared for your agency&apos;s workflow and branding. Your clients see your agency as the provider.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    What never appears is ISureMedia. Our name, our tools, our processes, and every conversation between your agency and ours{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>stay entirely behind the scenes</span>
-                    . All client queries route through your account manager at ISureMedia, who produces the work your team presents, a boundary we maintain without exception.
+                    For agencies comparing SEO reseller services with in-house delivery, the main difference is who carries the fulfillment workload. With a white-label model, specialist execution happens behind your team while you remain the account owner. Communication stays{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>internal</span>
+                    , giving your agency one consistent point of contact while we handle the SEO tasks your account requires.
                   </p>
                 </div>
               </div>
@@ -307,7 +302,7 @@ export default function WhiteLabelSEOPage() {
                   <div style={{ width: 30, height: 30, borderRadius: 9, background: 'var(--ism-blue-100)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 14 }}>
                     <i className="fa-solid fa-eye-slash" style={{ color: 'var(--color-primary)', fontSize: 13 }} />
                   </div>
-                  <div style={{ fontFamily: J, fontSize: 11, fontWeight: 800, color: 'var(--color-text-muted)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: 10 }}>ISureMedia</div>
+                  <div style={{ fontFamily: J, fontSize: 11, fontWeight: 800, color: 'var(--color-text-muted)', letterSpacing: '.04em', textTransform: 'uppercase', marginBottom: 10 }}>Isuremedia</div>
                   <div style={{ height: 6, width: '80%', background: 'var(--ism-blue-100)', borderRadius: 3, marginBottom: 7 }} />
                   <div style={{ height: 6, width: '60%', background: 'var(--ism-blue-100)', borderRadius: 3, marginBottom: 7 }} />
                   <div style={{ height: 6, width: '70%', background: 'var(--ism-blue-100)', borderRadius: 3 }} />
@@ -369,7 +364,7 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 05. WHY THE WHITE-LABEL MODEL WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  05. WHY THE WHITE-LABEL MODEL WORKS  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
@@ -407,13 +402,13 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 06. THE FULL SEO DELIVERY STACK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  06. THE FULL SEO DELIVERY STACK  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Full SEO Delivery Stack, Everything Your Clients Need to Rank.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Full White Label SEO Services Stack Your Clients Need</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Technical, on-page, content, links, local, and AI search. One partner, one account manager, your brand on every deliverable.
+                One white-label SEO team covering technical SEO, on-page work, content, links, local search, AI search optimization, and reporting.
               </p>
             </div>
             <div className="delivery-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -451,12 +446,12 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 07. WHO WHITE-LABEL SEO FULFILMENT IS BUILT FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  07. WHO WHITE-LABEL SEO FULFILMENT IS BUILT FOR  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Which Agencies This Partnership Is Built For</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>If You Are Selling SEO Without the Team to Deliver It, or Turning It Down Because You Cannot, This Changes That.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>White Label SEO for Agencies at Different Stages</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Add specialist SEO fulfillment where your current team lacks capacity, technical depth, or delivery bandwidth.</p>
             </div>
             <div className="who-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {WHO_FOR.map(w => (
@@ -485,15 +480,15 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 08. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  08. MID-PAGE CTA STRIP  */}
         <section style={{ padding: '56px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
               <div aria-hidden style={{ position: 'absolute', top: '-30%', right: '-5%', width: 300, height: 300, background: 'radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 65%)', pointerEvents: 'none' }} />
               <div style={{ position: 'relative', maxWidth: 560 }}>
-                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Find out what white-label SEO would cost your agency, and what margin it would return.</h3>
+                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Find Out What White Label SEO Could Cost Your Agency</h3>
                 <p style={{ fontFamily: I, fontSize: 14.5, color: 'rgba(255,255,255,.80)', lineHeight: 1.65, margin: 0 }}>
-                  A 30-minute discovery call walks through your client base, fulfilment cost, and margin structure before you commit to anything.
+                  Book a short partner discovery call to review your client base, fulfillment needs, reporting, and margin structure before you commit to a delivery model.
                 </p>
               </div>
               <a href="/appointment" className="mid-cta-btn"
@@ -512,12 +507,12 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 09. WHY AGENCIES CHOOSE ISUREMEDIA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  09. WHY AGENCIES CHOOSE ISUREMEDIA  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Agencies Choose ISureMedia as Their White-Label SEO Partner</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Specialist Delivery. Clean Operational Boundary. Your Brand on Everything.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Agencies Choose Isuremedia for White Label SEO</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Keep your brand in front of the client while a dedicated SEO team handles the work behind it.</p>
             </div>
             <div className="why-ism-bento" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16 }}>
               {WHY_ISM.slice(0, 2).map(b => (
@@ -545,7 +540,7 @@ export default function WhiteLabelSEOPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes ISureMedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="/services-mid-image/white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -579,15 +574,15 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 10. HOW THE WHITE-LABEL PARTNERSHIP WORKS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  10. HOW THE WHITE-LABEL PARTNERSHIP WORKS  */}
         <section className="wlseo-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 14px' }}>
-                How the <span style={{ color: 'var(--ism-amber)' }}>White-Label SEO Partnership</span> Works
+                How Our <span style={{ color: 'var(--ism-amber)' }}>White Label SEO Services</span> Work From Onboarding to Scale
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>
-                Onboarding. Delivery. Reporting. Review. Scale.
+                We keep the process simple: scope the work, onboard the account, deliver under your brand, report, review, and scale.
               </p>
             </div>
             <div className="wlseo-timeline" style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 0, position: 'relative' }}>
@@ -604,7 +599,7 @@ export default function WhiteLabelSEOPage() {
             </div>
             <div style={{ textAlign: 'center', marginTop: 48 }}>
               <span style={{ display: 'inline-block', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', background: 'var(--color-bg-soft)', borderRadius: 100, padding: '10px 22px', lineHeight: 1.6 }}>
-                Agency onboarding takes two to three business days. First client intake and initial audit delivery takes seven to ten business days from access being granted.
+                Agency onboarding can take roughly two to three business days when the required access and information are ready; initial client intake and setup timelines depend on the account requirements.
               </span>
             </div>
             <div style={{ textAlign: 'center', marginTop: 40 }}>
@@ -628,18 +623,18 @@ export default function WhiteLabelSEOPage() {
           `}</style>
         </section>
 
-        {/* â•â• 11. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  11. RELATED SERVICES  */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
-              <h2 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,36px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Pair It With</h2>
-              <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', marginTop: 10 }}>A few things agencies usually bundle with white-label SEO.</p>
+              <h2 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,36px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Pair White Label SEO With the Services Your Clients Already Need</h2>
+              <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', marginTop: 10 }}>Combine SEO fulfillment with paid media, development, or dedicated delivery support when your clients need a broader service mix.</p>
             </div>
             <div className="wlseo-related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
               {[
                 { icon: 'fa-solid fa-chart-bar', title: 'White-Label PPC', desc: 'Google, Meta, and LinkedIn campaign management delivered under your agency brand.', href: '/white-label-ppc-services' },
-                { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: 'Builds, landing pages, and redesigns delivered under your agency label.', href: '/white-label-web-design-services' },
-                { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: 'A fixed team assigned to your agency for consistent, accountable delivery.', href: '/dedicated-agency-pods' },
+                { icon: 'fa-solid fa-globe', title: 'White-Label Web Development', desc: "Builds, landing pages, and redesigns delivered behind your agency's client-facing brand.", href: '/white-label-web-design-services' },
+                { icon: 'fa-solid fa-users', title: 'Dedicated Agency Pods', desc: "A dedicated delivery team that works around your agency's processes, client volume, and service mix.", href: '/dedicated-agency-pods' },
               ].map((r, i) => (
                 <a key={i} href={r.href} style={{ display: 'block', background: '#fff', borderRadius: 16, border: '1px solid var(--color-border)', padding: '32px 28px', textDecoration: 'none', transition: 'all .22s' }}
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 44px rgba(30,77,195,.12)'; el.style.borderColor = 'var(--color-primary)'; }}
@@ -659,11 +654,11 @@ export default function WhiteLabelSEOPage() {
           <style>{`@media(max-width:860px){ .wlseo-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* â•â• 12. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  12. FAQ  */}
         <FAQAccordion />
 
-        {/* â•â• 13. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/white label.webp" description={<>Clients want rankings and traffic, not excuses about bandwidth. Our white-label SEO team delivers the strategy, content, and links under your agency&rsquo;s name, so you can offer real results without building an in-house department. Reach out and we&rsquo;ll show you how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>expand your SEO offer risk-free</span>.</>} heading="Ready to Scale" headingHighlight="Your SEO Retainers?" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Talk to Our Partnerships Team" />
+        {/*  13. ENDING CTA  */}
+        <CTASection image="/result_footer/white label.webp" description={<>Keep your agency focused on strategy, sales, and client relationships while our SEO team handles the fulfillment behind your brand, from technical audits and on-page optimization to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>content, link building, local SEO, AI search optimization</span> and branded reporting.</>} heading="Scale Your SEO Service" headingHighlight="Without Building the Whole Team" primaryLabel="Book a Partner Discovery Call" secondaryLabel="Talk to Our White Label Team" />
       </main>
       <Footer />
     </>
