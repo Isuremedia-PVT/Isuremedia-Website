@@ -26,12 +26,12 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-palette', title: 'First Impression Impact', desc: <>Users <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>decide in milliseconds</span>. Good design builds trust, credibility, and authority. Bad design loses customers before they read a word.</> },
-  { icon: 'fa-solid fa-mouse', title: 'User Experience Drives Conversion', desc: <>Design is not decoration. It is user flow, clarity, and friction reduction. Good design <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>makes actions obvious</span> and simple.</> },
-  { icon: 'fa-solid fa-mobile', title: 'Responsive Design is Mandatory', desc: <>Half your visitors are on mobile. Design must work <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>at 320px and 1440px</span>. A responsive designer knows how to design for every viewport.</> },
-  { icon: 'fa-solid fa-bolt', title: 'Brand System Consistency', desc: <>Design is not random. Colors, typography, spacing, and components follow a system. Consistency <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>builds recognition and professionalism</span>.</> },
-  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Goals', desc: <>Every design decision should serve a business goal. CTA placement, visual hierarchy, color psychology, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>all connected to conversion</span>.</> },
-  { icon: 'fa-solid fa-brain', title: 'Design Psychology and Behavior', desc: <>Designers understand how users scan pages, where eyes go, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>what makes people act</span>. This knowledge drives results.</> },
+  { icon: 'fa-solid fa-palette', title: 'First Impression Impact', desc: <><strong style={{ color: 'var(--color-navy)' }}>People Form Opinions Quickly.</strong> Users decide whether a site feels credible, relevant, and easy to use within seconds. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Clear hierarchy, strong visuals, and focused messaging</span> help visitors understand what you offer before they leave.</> },
+  { icon: 'fa-solid fa-mouse', title: 'User Experience Drives Conversion', desc: <><strong style={{ color: 'var(--color-navy)' }}>Make the Next Step Obvious.</strong> Good design is not decoration. It gives users a clear path through the site, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>removes unnecessary friction</span>, and makes important actions easier to find.</> },
+  { icon: 'fa-solid fa-mobile', title: 'Responsive Design Is Mandatory', desc: <><strong style={{ color: 'var(--color-navy)' }}>Design for Every Screen.</strong> People browse on phones, tablets, and desktops. Responsive design <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>adapts the layout, navigation, content, and interactions</span> to the screen being used.</> },
+  { icon: 'fa-solid fa-bolt', title: 'Brand System Consistency', desc: <><strong style={{ color: 'var(--color-navy)' }}>Make Every Page Feel Connected.</strong> Consistent colors, type, spacing, imagery, and components make a site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>easier to recognize and easier to navigate</span>. A defined design system also makes future updates more efficient.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Business Goals', desc: <><strong style={{ color: 'var(--color-navy)' }}>Every Page Has a Job.</strong> A page should support a business objective, whether that is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>generating enquiries, selling products, building trust</span>, or moving users toward a specific action.</> },
+  { icon: 'fa-solid fa-brain', title: 'Design Psychology and Behavior', desc: <><strong style={{ color: 'var(--color-navy)' }}>Reduce Friction.</strong> Good designers consider how users scan pages, compare options, interpret calls to action, and move through the interface. That understanding helps <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>remove confusion from the user journey</span>.</> },
 ];
 
 const servicesTabs = [
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'Custom Website Design',
     img: '/hire/webdesign/hire web designer custom_.webp',
-    desc: <>Get a website designed specifically for your business, your audience, and what you need the site to do. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Not a template</span> with your logo dropped in, a proper design built around your goals and the way your visitors think.</>,
+    desc: <>Get a website designed around your business, your audience, and the action you need visitors to take. We build the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>visual hierarchy, page layouts, components, and responsive experience</span> around those requirements.</>,
     bullets: [
       'Custom page design for homepage, service pages, and about pages',
       'Conversion-focused layout and information architecture',
@@ -60,9 +60,9 @@ const servicesData = [
     ],
   },
   {
-    num: '02', title: 'UX Design and Wireframing',
+    num: '02', title: 'UX Design & Research',
     img: '/hire/webdesign/h UX Design.webp',
-    desc: <>Before any visual design starts, the structure needs to be right. Get wireframes and UX flows that map how visitors move through your site, where they drop off, and what changes make them <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stay and convert</span>.</>,
+    desc: <>We study user needs, content structure, navigation, and task flows before visual design begins. The goal is to make the site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>easier to understand and easier to use</span>.</>,
     bullets: [
       'User flow mapping and journey documentation',
       'Low-fidelity wireframes for all key pages',
@@ -75,7 +75,7 @@ const servicesData = [
   {
     num: '03', title: 'Landing Page Design',
     img: '/hire/webdesign/Landing Pages.webp',
-    desc: <>A landing page that does not convert is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>an expensive piece of content</span>. Get landing pages designed specifically around the one action you want visitors to take, with every visual decision made to support that outcome.</>,
+    desc: <>A landing page has a specific goal. We design the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>message hierarchy, sections, layout, and calls to action</span> around one conversion objective without unnecessary distractions.</>,
     bullets: [
       'Single-goal landing page design for paid traffic and campaigns',
       'CTA placement and visual hierarchy optimization',
@@ -88,7 +88,7 @@ const servicesData = [
   {
     num: '04', title: 'WordPress Web Design',
     img: '/hire/webdesign/WordPress.webp',
-    desc: <>Get a WordPress site designed properly from the inside out. Not just a theme that looks reasonable, a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>purpose-built design</span> that works the way your business needs it to and is easy for your team to manage after launch.</>,
+    desc: <>Get a WordPress site designed around your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>content model, brand, and editing needs</span>. We can work with existing builders or design a custom interface for a more tailored experience.</>,
     bullets: [
       'Custom WordPress theme design and implementation',
       'Page builder design (Elementor, Divi, Bricks, Gutenberg)',
@@ -99,9 +99,9 @@ const servicesData = [
     ],
   },
   {
-    num: '05', title: 'Shopify Store Design',
+    num: '05', title: 'Shopify Web Design',
     img: '/hire/webdesign/Shopify.webp',
-    desc: <>Get a Shopify store designed to sell. A store that looks polished, loads fast, and makes the path from product discovery to checkout <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>as frictionless as possible</span> for the customer.</>,
+    desc: <>We design Shopify storefronts with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>clear product discovery, responsive layouts, strong visual hierarchy</span>, and a focused path from product page to checkout.</>,
     bullets: [
       'Custom Shopify theme design and Online Store 2.0 builds',
       'Product page and collection page design',
@@ -112,9 +112,9 @@ const servicesData = [
     ],
   },
   {
-    num: '06', title: 'Webflow Design and Development',
+    num: '06', title: 'Webflow Design',
     img: '/hire/webdesign/Webflow.webp',
-    desc: <>Get a Webflow site that combines design freedom with clean, fast output. For businesses that want a visually distinctive site without the constraints of a traditional CMS, built and maintained <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without writing code</span>.</>,
+    desc: <>For businesses using Webflow, we create <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>polished responsive designs</span> that translate cleanly into the platform and maintain consistency across pages and components.</>,
     bullets: [
       'Custom Webflow site design and build',
       'Responsive layouts with Webflow interactions and animations',
@@ -125,9 +125,9 @@ const servicesData = [
     ],
   },
   {
-    num: '07', title: 'Brand and UI Design Systems',
+    num: '07', title: 'Design Systems & Brand Interfaces',
     img: '/hire/webdesign/Brand Systems.webp',
-    desc: <>When every touchpoint looks like it belongs to the same business, visitors remember you. Get a consistent visual system that covers your website, ads, emails, and social media, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built once and applied everywhere</span>.</>,
+    desc: <>Create a repeatable visual system covering typography, colors, spacing, components, and interaction patterns so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>new pages stay consistent</span> as your site grows.</>,
     bullets: [
       'Visual identity application across digital channels',
       'UI component and design system documentation',
@@ -138,9 +138,9 @@ const servicesData = [
     ],
   },
   {
-    num: '08', title: 'Conversion Rate Optimization Design',
+    num: '08', title: 'Conversion-Focused Web Design',
     img: '/hire/webdesign/Conversion CRO.webp',
-    desc: <>Sometimes the problem is not traffic. It is the design of what the traffic lands on. Get a design audit and targeted improvements to the pages that matter most, focused on the changes that <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>move conversion numbers</span>.</>,
+    desc: <>We examine where users hesitate, lose context, or miss the next action, then improve <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>hierarchy, messaging, layout and interaction patterns</span> to support more conversions.</>,
     bullets: [
       'Heatmap and session recording analysis (Hotjar, Microsoft Clarity)',
       'CTA placement, copy, and design review',
@@ -162,10 +162,12 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Every Designer Is In-House', desc: <>Your project <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never gets handed off</span> to a freelancer or outsourced to another studio. The designer working on your site is part of the ISureMedia team, accountable for the work from brief to delivery.</> },
-  { icon: 'fa-solid fa-file-lines', title: 'Design That Thinks Commercially', desc: <>ISureMedia&#39;s designers are not just visual creatives. They understand conversion, user behaviour, and what makes visitors take action. Every design decision is made with your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>business outcome in mind</span>, not just how it looks.</> },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Engagements run month to month and you can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stop at any time</span>. No penalties, no notice periods. The work continues because it is delivering what your business needs, not because you are tied to a contract.</> },
-  { icon: 'fa-solid fa-code', title: 'Multi-Platform Capability', desc: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Whatever platform your business is on, the team knows it and can design and build to its full capability <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without a handoff</span> to a separate developer.</> },
+  { icon: 'fa-solid fa-building', title: 'Every Designer Is In-House', desc: <>Your project is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>not passed to a freelancer</span> or another studio. The designer working on your site is part of the Isuremedia team and accountable from brief to delivery.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Design That Thinks Commercially', desc: <>Our designers consider <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>conversion, user behavior, messaging</span> and what each page needs to accomplish, not only how the interface looks.</> },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Ongoing work is available <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>month to month</span> when you need it. No unnecessary long-term commitments or exit penalties.</> },
+  { icon: 'fa-solid fa-code', title: 'Multi-Platform Capability', desc: <>Our designers work across WordPress, Shopify, Webflow, and GoHighLevel. The design approach can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>adapt to the platform</span> instead of forcing your site into one system.</> },
+  { icon: 'fa-solid fa-bullseye', title: 'Built Around Your Goals', desc: <>Whether the goal is lead generation, ecommerce, bookings, or stronger brand presentation, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>the design decisions are tied to what the site needs to achieve</span>.</> },
+  { icon: 'fa-solid fa-comments', title: 'Clear Communication Throughout', desc: <>You know what is being designed, what changed, and what comes next. Feedback stays direct, timelines are clear, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scope changes are discussed before work is added</span>.</> },
 ];
 
 const engagementModels = [
@@ -194,10 +196,10 @@ const engagementModels = [
   {
     title: 'White Label',
     tag: 'For agencies delivering design to their own clients',
-    desc: <>You handle the client relationship. ISureMedia handles the design work behind the scenes under your agency brand. Your clients <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never know we exist</span> and everything delivered carries your name, not ours.</>,
+    desc: <>You handle the client relationship. Isuremedia handles the design work behind the scenes under your agency brand. Your clients <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never know we exist</span> and everything delivered carries your name, not ours.</>,
     bullets: [
       'All work delivered under your agency name',
-      'No ISureMedia branding on any deliverable',
+      'No Isuremedia branding on any deliverable',
       'We never contact your clients directly',
       'Scales as your client pipeline grows',
     ],
@@ -205,14 +207,11 @@ const engagementModels = [
 ];
 
 const faqs = [
-  { q: 'How quickly can a web designer start on my project?', a: <>Most projects are up and running <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> of the onboarding call. Once you share your brief and we agree on scope, the designer collects your brand assets and starts work quickly. There is no long waiting period between saying yes and seeing the first draft.</> },
-  { q: 'Do you work white label for agencies?', a: <>Yes. Everything ISureMedia produces <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>goes out under your name</span>. No ISureMedia branding on any file, no contact with your clients, and nothing on any deliverable that suggests the work came from anywhere other than you.</> },
-  { q: 'Is there a long term contract?', a: <>No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no lock-in of any kind</span>.</> },
-  { q: 'Who owns the design files and assets once the work is delivered?', a: <>You do. Every Figma file, every exported asset, and every component produced during the engagement <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>belongs to you</span> from the moment it is delivered. There are no licensing conditions or usage restrictions on work ISureMedia creates for you.</> },
-  { q: 'Do you design only, or do you also build the website?', a: <>Both options are available. ISureMedia can deliver Figma design files for your own developer to build, or take the project through to a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fully built and launched</span> site on WordPress, Shopify, Webflow, or GoHighLevel. The scope is agreed at the start so there are no surprises.</> },
-  { q: 'What platforms do your web designers work with?', a: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Design is done in Figma. Builds are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>done natively in the platform</span> your business uses.</> },
-  { q: 'How many revision rounds are included?', a: <>Revision rounds are agreed as part of the project scope before work starts. Typically <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>two structured rounds</span> per major design phase. Feedback is collected in Figma or via a shared review document so nothing gets lost in email threads.</> },
-  { q: 'Can you redesign an existing site or only build new ones?', a: <>Both. A large part of ISureMedia&#39;s design work is improving sites that already exist. If your current site is not converting, looks outdated, or does not reflect the business properly, that is a well-defined design problem with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a clear solution</span>.</> },
+  { q: 'What does a web designer do?', a: <>A web designer plans and creates the visual layout and user experience of a website. Their work can include <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>UX research, wireframes, page layouts, responsive design</span>, interface design, design systems, and conversion-focused page structure.</> },
+  { q: 'How much does it cost to hire a web designer?', a: "The cost of hiring a web designer depends on the project's scope, number of pages, design complexity, platform, and whether you need a one-time project or ongoing support. A focused landing page usually requires less design work than a full website or design system." },
+  { q: 'What is the difference between a web designer and a web developer?', a: 'A web designer focuses on a website\'s visual design, user experience, layout, and interaction patterns, while a web developer builds and implements the technical functionality. Many website projects require both roles.' },
+  { q: 'Can you design websites for WordPress, Shopify, or Webflow?', a: <>Yes. Web designers can create designs for WordPress, Shopify, Webflow, and other platforms. The design approach can be adapted to the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>platform&apos;s content model, components, and technical constraints</span>.</> },
+  { q: 'Can you redesign my website without rebuilding everything?', a: 'Yes. A redesign can focus on the pages, layouts, components, or user flows that need improvement while keeping parts of the existing site that still work well. The right approach depends on the current platform and design system.' },
 ];
 
 
@@ -239,12 +238,12 @@ export default function HireWebDesigner() {
         <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1, textAlign: 'center' }}>
           {/* Heading */}
           <h1 style={{ fontFamily: J, fontWeight: 900, color: 'var(--color-navy)', marginBottom: 24, fontSize: 'clamp(36px, 4.5vw, 58px)', lineHeight: 1.12, letterSpacing: '-0.5px' }}>
-            Hire a <span style={{ color: 'var(--ism-amber)' }}>Web Designer</span>
+            Hire a Web Designer Who <span style={{ color: 'var(--ism-amber)' }}>Designs for Conversion</span>
           </h1>
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get custom <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>web design that converts</span>, covering everything from brand-aligned design and user experience to responsive sites, landing pages, and conversion-optimized layouts.
+            Get a custom website designed around your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>brand, audience and goals</span>, from UX research and landing pages to responsive layouts and conversion-focused design.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -294,13 +293,16 @@ export default function HireWebDesigner() {
             {/* Left Column: Text & List */}
             <div>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.15, marginBottom: 24 }}>
-                Professional Web Design Built to <span style={{ color: 'var(--ism-amber)' }}>Convert, Not Just Impress</span>
+                Web Design That Makes Your Website <span style={{ color: 'var(--ism-amber)' }}>Easier to Use and Easier to Trust</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                Web design covers a wide range of specialized work, from UX research and wireframing to high-fidelity mockups, responsive builds, landing page design, brand system application, and front-end implementation across platforms like WordPress, Shopify, and Webflow. A skilled web designer brings the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>creative depth and commercial thinking</span> to handle all of it, not just the visual surface.
+                From UX research and wireframes to high-fidelity design, responsive layouts, and design systems, we create websites around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>how people actually use them</span>.
+              </p>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
+                Web design covers more than colors and page layouts. Strong work starts with understanding your users, your offer, and the action each page needs to support.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                Getting it right means working with someone who understands how visitors move through a site, what makes them trust a business enough to take action, and how design decisions <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>directly affect conversions</span>, bounce rates, and the first impression your brand makes. That is the standard ISureMedia's web designers work to.
+                Our designers work across <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>UX research, information architecture, responsive design, UI systems</span>, landing pages, and front-end collaboration so the finished site is clear, consistent, and easy to use. That&apos;s the standard our web designers work to.
               </p>
               
               {/* 2-Column List */}
@@ -321,7 +323,7 @@ export default function HireWebDesigner() {
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-                Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                Get a Free Quote <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
               </a>
             </div>
 
@@ -348,9 +350,12 @@ export default function HireWebDesigner() {
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: 0 }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 16px' }}>
               Why Good Web Design <span style={{ color: 'var(--ism-amber)' }}>Matters for Business</span>
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 640, margin: '0 auto' }}>
+              Your design affects how quickly people understand your offer, trust your business, and decide what to do next.
+            </p>
           </div>
           <div style={{ position: 'relative' }}>
             <div className="wp-why-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '64px 32px', position: 'relative', zIndex: 1 }}>
@@ -424,10 +429,10 @@ export default function HireWebDesigner() {
           {/* Header */}
           <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 52px' }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 16, lineHeight: 1.15, letterSpacing: '-0.5px' }}>
-              The Full Range of Web <span style={{ color: 'var(--ism-amber)' }}>Design Services</span>
+              Services Our <span style={{ color: 'var(--ism-amber)' }}>Web Designers Provide</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From custom website design and UX research to landing pages, brand systems, responsive builds, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>conversion rate optimization</span> across WordPress, Shopify, and Webflow.
+              From custom website design and UX research to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>landing pages, brand systems, and conversion-focused interfaces</span>, we design the front end of your digital experience.
             </p>
           </div>
 
@@ -620,10 +625,10 @@ export default function HireWebDesigner() {
             {/* ── Left: Text + Buttons ── */}
             <div style={{ position: 'relative', zIndex: 2, padding: '10px 0', alignSelf: 'center' }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(24px,3vw,34px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-                Is your website costing you customers before they even read a word<span style={{ color: 'var(--ism-amber)' }}>?</span>
+                Is Your Website Losing Customers Before They <span style={{ color: 'var(--ism-amber)' }}>Understand Your Offer?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Tell us what your site needs and get a free proposal back with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no obligation</span>.
+                Tell us what your website needs and we&apos;ll recommend the right design approach with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no obligation</span>.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -632,7 +637,7 @@ export default function HireWebDesigner() {
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
                 >
-                  Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                  Book a Free Consultation <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
                 </a>
               </div>
             </div>
@@ -642,7 +647,7 @@ export default function HireWebDesigner() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/result_footer/ready_for_result.webp"
-                alt="WordPress Developer CTA"
+                alt="Web Designer CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '125%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
             </div>
@@ -674,11 +679,14 @@ export default function HireWebDesigner() {
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 80 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, margin: 0 }}>
-              Why Businesses Choose<br /><span style={{ color: 'var(--ism-amber)' }}>ISureMedia&#39;s Web Designers</span>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, margin: '0 0 16px' }}>
+              Why Businesses Choose Web<br />Designers from <span style={{ color: 'var(--ism-amber)' }}>Isuremedia</span>
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 640, margin: '0 auto' }}>
+              You get an accountable design team that stays close to the project from first brief through handoff.
+            </p>
           </div>
-          <div className="wp-whyism-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 0, alignItems: 'flex-start' }}>
+          <div className="wp-whyism-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0 8px', alignItems: 'flex-start' }}>
             {whyISMCards.map((card, idx) => {
               const isFeatured = idx === 1; // Middle card is featured
               return (
@@ -767,10 +775,10 @@ export default function HireWebDesigner() {
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,4vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-              Start with the right scope <span style={{ color: 'var(--ism-amber)' }}>for your goals.</span>
+              Choose the Web Design <span style={{ color: 'var(--ism-amber)' }}>Setup That Fits Your Project</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a dedicated WordPress developer and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>transparent reporting</span>.
+              Choose project-based design, ongoing support, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label delivery</span> based on how your business or agency works.
             </p>
           </div>
 
@@ -848,15 +856,15 @@ export default function HireWebDesigner() {
       {/* ════════════════════════════════════════
           SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
-      <HowItWorks 
-        title="From Your First Message to Work Starting"
+      <HowItWorks
+        title="From Your First Message to Work Starting on Your Site"
         highlightWord="on Your Site"
-        subtitle="We keep it simple so you get results that speak for themselves."
+        subtitle="Tell us what you need. We'll match the right design approach before work begins."
         steps={[
-          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need. A new build, a fix, a WooCommerce store, ongoing support, or something else entirely. No long forms, no discovery calls before anyone speaks to you. Just tell us what is going on.' },
-          { num: 2, title: 'We Match You to the Right Setup', text: 'Every WordPress project is different. Some need a developer for a one-off job. Some need someone working on the site every month. We look at what you have shared, ask a few questions if needed, and come back with a clear recommendation and a cost.' },
-          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once you are happy to move forward, access is set up, preferences are agreed, and work starts. The developer on your project knows your brief from the first day. No long handoffs, no repeat briefings.' },
-          { num: 4, title: 'You Stay in Control', text: 'Review work as it comes in. Give feedback directly. If the scope changes, the engagement changes with it. Nothing is fixed in stone and you are never stuck with something that no longer fits what you need.' },
+          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need, a new website, a landing page, a redesign, a new section, or ongoing design support. No long forms. Just explain what you need.' },
+          { num: 2, title: 'We Match You to the Right Setup', text: 'Every design project is different. We review the work, platform, scope, and timeline, then recommend the right designer and engagement.' },
+          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once the scope is approved and the required access and assets are ready, your designer gets to work with the requirements already agreed.' },
+          { num: 4, title: 'You Stay in Control', text: 'Review the work as it develops and give feedback directly. If the scope changes, we discuss it before adding work outside the agreed project.' },
         ]}
         ctaText="Start Your Project"
         ctaHref="/contact"
@@ -875,11 +883,11 @@ export default function HireWebDesigner() {
             {/* ── Left Column: Title & CTA ── */}
             <div style={{ position: 'sticky', top: 120 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.1, marginBottom: 20 }}>
-                Questions About <br />
-                <span style={{ color: 'var(--ism-amber)' }}>WordPress</span>
+                FAQs About Hiring a <br />
+                <span style={{ color: 'var(--ism-amber)' }}>Web Designer</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Honest answers before you decide. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No spin, no buzzwords</span>.
+                Straight answers about design scope, platforms, timelines, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>ownership, revisions, and ongoing support</span>.
               </p>
               <a href="/contact"
                 style={{
@@ -955,17 +963,17 @@ export default function HireWebDesigner() {
             {/* Left Column - Text */}
             <div style={{ position: 'relative', zIndex: 1, maxWidth: 720 }}>
               <h2 style={{ fontFamily: J, color: '#fff', marginBottom: 20, lineHeight: 1.2, fontSize: 'clamp(28px, 3.5vw, 38px)' }}>
-                Get a Website That Converts Visitors <span style={{ color: 'var(--ism-amber)' }}>Into Customers</span>
+                Get a Web Designer Who Can Turn Your Ideas <span style={{ color: 'var(--ism-amber)' }}>Into a Better Website</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you need a brand new website, a redesign that actually works, or fixing one that is not bringing in leads, the next step is clear. Send your requirements and get a free proposal, or talk to a web designer about your goals and how a well-designed site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turns visitors into customers</span>.
+                Whether you&apos;re starting from scratch, redesigning an existing site, or improving a page that is not converting, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we&apos;ll help you define the right design scope</span> and get the work moving.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-                  Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+                  Book a Free Website Audit <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
                 </a>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
@@ -1213,7 +1221,7 @@ export default function HireWebDesigner() {
           .wp-tech-pills { gap: 6px !important; flex-wrap: wrap !important; }
           .wp-tech-pills span { padding: 6px 10px !important; font-size: 11px !important; border-radius: 6px !important; }
 
-          /* ── Why ISureMedia Section ── */
+          /* ── Why Isuremedia Section ── */
           .wp-whyism-section { padding: 40px 0 !important; }
           .wp-whyism-section h2 { font-size: 24px !important; margin-bottom: 16px !important; }
           .wp-whyism-section > p { font-size: 13px !important; margin-bottom: 24px !important; }
@@ -1303,7 +1311,7 @@ export default function HireWebDesigner() {
           /* ── Tech ── */
           .wp-tech-row { flex-direction: column !important; gap: 16px !important; }
 
-          /* ── Why ISureMedia ── */
+          /* ── Why Isuremedia ── */
           .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 18px !important; }
 
           /* ── Engagement ── */

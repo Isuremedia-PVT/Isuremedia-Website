@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Do you design only, or do you also build the website?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Both. Our designers work across WordPress, Shopify, Webflow, and GoHighLevel so the same team that designs your site can also build it with no handoff to a separate developer." } },
-        { "@type": "Question", "name": "Who owns the design files once the work is delivered?",
-          "acceptedAnswer": { "@type": "Answer", "text": "You do. All Figma files and design assets are transferred to you on completion. No ongoing licence fee, no lock-in, no situation where you need to return just to access your own files." } },
-        { "@type": "Question", "name": "Can you redesign an existing site or only build new ones?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We redesign existing sites regularly. We review what exists, identify what is and is not working, and redesign around a brief tied to business goals so the site performs better, not just looks different." } }
+        { "@type": "Question", "name": "What does a web designer do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A web designer plans and creates the visual layout and user experience of a website. Their work can include UX research, wireframes, page layouts, responsive design, interface design, design systems, and conversion-focused page structure." } },
+        { "@type": "Question", "name": "What is the difference between a web designer and a web developer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A web designer focuses on a website's visual design, user experience, layout, and interaction patterns, while a web developer builds and implements the technical functionality. Many website projects require both roles." } },
+        { "@type": "Question", "name": "Can you design websites for WordPress, Shopify, or Webflow?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Web designers can create designs for WordPress, Shopify, Webflow, and other platforms. The design approach can be adapted to the platform's content model, components, and technical constraints." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire a Web Designer | Professional Web Design | Isuremedia",
-  description: "Hire a professional web designer from Isuremedia. Custom websites, landing pages, UX design, and Webflow builds. In-house team, no contracts. Free proposal.",
+  title: "Hire a Web Designer for Conversion Focused Websites & Web Apps",
+  description: "Hire a web designer for custom websites, web apps, APIs, and integrations. Get experienced development support for complex builds, performance and ongoing maintenance.",
   alternates: { canonical: "/hire-web-designer" },
 };
 
