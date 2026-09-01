@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How long does it take to see results from SEO?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Initial improvements can show in four to eight weeks. Meaningful ranking movement on competitive keywords typically takes three to six months. SEO compounds: each month builds on the last." } },
-        { "@type": "Question", "name": "Do you optimize for Google AI Overviews as well as traditional results?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every engagement includes AI search optimization: FAQ schema, E-E-A-T content structuring, entity optimization, and answer-first content patterns for Google AI Overviews, ChatGPT, and Perplexity." } },
-        { "@type": "Question", "name": "Do you provide white-label SEO for agencies?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. All work and reports delivered under your agency brand with no Isuremedia branding. We never contact your clients directly and scale across multiple accounts." } }
+        { "@type": "Question", "name": "What does an SEO expert do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An SEO expert improves a website's visibility in search by working on technical SEO, keyword strategy, content, on-page optimization, links, local SEO and other search-related factors." } },
+        { "@type": "Question", "name": "Do you optimize websites for AI search as well as Google?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. SEO for AI search focuses on clear information, strong topical coverage, structured content, useful answers, and signals that help AI-powered search systems interpret the business and its content alongside traditional search." } },
+        { "@type": "Question", "name": "Can you recover a website that has been affected by a Google penalty?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. SEO specialists can investigate a potential manual action or algorithm-related traffic loss, identify the likely causes, and create a recovery plan. The correct steps depend on the type and cause of the decline." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire an SEO Expert | Dedicated SEO Specialist | Isuremedia",
-  description: "Hire a dedicated SEO expert from Isuremedia. Technical SEO, link building, local SEO, and AI search visibility. No contracts. Free SEO audit included.",
+  title: "Hire SEO Experts for Technical, Local & AI Search SEO",
+  description: "Hire SEO experts to uncover what is holding your search visibility back and build a strategy around technical SEO, content, local search and AI visibility.",
   alternates: { canonical: "/hire-seo-experts" },
 };
 
