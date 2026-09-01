@@ -10,23 +10,23 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'Google Ads campaign management',
-  'Meta Ads campaign management',
-  'LinkedIn Ads campaign management',
+  'White label Google Ads management',
+  'White label Facebook & Meta Ads management',
+  'White label LinkedIn Ads management',
   'Campaign strategy and audience targeting',
   'Ad creative production',
   'Conversion tracking setup',
-  'Negative keyword and budget management',
-  'Monthly branded performance reports',
+  'Landing page review and CRO recommendations',
+  'Branded monthly reporting',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-certificate', title: 'Certification requirements', desc: 'Google Ads and Meta Blueprint certifications take real time to earn and maintain, and platforms change their requirements often. Most agencies cannot justify that investment for one or two paid media clients.' },
-  { icon: 'fa-solid fa-calendar-days', title: 'Daily account management burden', desc: 'Bid adjustments, budget pacing, search term reviews, and audience refinement need daily attention. That is a full role, not a side task squeezed between other client work.' },
-  { icon: 'fa-solid fa-images', title: 'Creative production needs', desc: 'Ad creative that performs needs testing, iteration, and platform-specific formats, static, video, carousel. Most agencies without a dedicated media buyer do not have this pipeline either.' },
-  { icon: 'fa-solid fa-arrows-spin', title: 'Platform algorithm changes', desc: 'Google and Meta update targeting, bidding, and delivery logic constantly. Campaigns optimised six months ago can quietly underperform without someone watching for the shift.' },
-  { icon: 'fa-solid fa-heart-crack', title: 'Client retention risk from poor ad performance', desc: 'A client paying for ad management they are not confident in is a client who starts shopping for a new agency. Certified, hands-on management protects that relationship.' },
-  { icon: 'fa-solid fa-sack-dollar', title: 'Margin without headcount', desc: 'Hiring an in-house PPC specialist is a five-figure annual commitment before a single dollar of ad spend is managed. White-label delivery gets you the margin without the payroll.' },
+  { icon: 'fa-solid fa-certificate', title: 'Certification Requirements', desc: 'Google Ads and Meta Blueprint certifications require ongoing learning and platform updates. For smaller teams, maintaining specialist knowledge across multiple ad platforms can be difficult.' },
+  { icon: 'fa-solid fa-calendar-days', title: 'Daily Account Management Burden', desc: 'Bid adjustments, budget pacing, search-term reviews, audience refinement, creative checks, and campaign monitoring make paid media an ongoing operating task, not a one-time setup.' },
+  { icon: 'fa-solid fa-images', title: 'Creative Production Needs', desc: 'Paid media often requires multiple creatives, formats, variations, and refreshes. A dedicated paid media team can manage the testing cycle without adding another production function to your agency.' },
+  { icon: 'fa-solid fa-arrows-spin', title: 'Platform Algorithm Changes', desc: 'Google and Meta change targeting, bidding, creative, and delivery systems regularly. Campaigns can need adjustments when platform behavior changes.' },
+  { icon: 'fa-solid fa-heart-crack', title: 'Client Retention Risk From Poor Ad Performance', desc: 'When paid media underperforms, the client relationship is at risk. Consistent optimization, reporting, and account management give your agency a more reliable delivery process.' },
+  { icon: 'fa-solid fa-sack-dollar', title: 'Margin Without Adding Headcount', desc: 'Hiring an in-house PPC specialist adds salary, management, training, and capacity costs. A white-label model lets you structure fulfillment around account volume instead.' },
 ];
 
 const CARD_VARIANTS = [
@@ -36,73 +36,77 @@ const CARD_VARIANTS = [
 ];
 
 const KEY_FACTORS = [
-  { icon: 'fa-solid fa-medal', title: 'Certified Google, Meta & LinkedIn Specialists', impact: 'Highest impact', desc: 'Every account is managed by a certified specialist on the platform it runs on, not a generalist spreading attention across every channel at once.' },
-  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy Before Launch', impact: 'High impact', desc: 'No campaign goes live without a documented strategy, audience targeting, budget allocation, and platform selection matched to the client\'s actual goal.' },
-  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', impact: 'High impact', desc: 'Pixels, conversion events, and attribution configured correctly before spend begins, so every reported result reflects what actually happened.' },
-  { icon: 'fa-solid fa-flask', title: 'Creative Testing', impact: 'High impact', desc: 'Multiple ad variants tested against each other on every active campaign, with underperformers rotated out based on real data, not guesswork.' },
-  { icon: 'fa-solid fa-ban', title: 'Negative Keyword Hygiene', impact: 'Medium impact', desc: 'Search term reports reviewed on a schedule and negative keywords added continuously, keeping budget away from searches that were never going to convert.' },
-  { icon: 'fa-solid fa-file-shield', title: 'NDA-Protected Fulfillment', impact: 'Medium impact', desc: 'Every partnership is covered by a full NDA. We never contact your clients directly, all communication and delivery routes through your agency.' },
-  { icon: 'fa-solid fa-chart-bar', title: 'Branded Reporting', impact: 'Contextual', desc: 'Performance reports carry your logo, your colours, and your name, a polished document your clients see as coming from your agency.' },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Monthly Optimization Reviews', impact: 'Growing fast', desc: 'Every account gets a monthly review covering performance trends, budget reallocation, and recommendations for the next optimisation cycle.' },
+  { icon: 'fa-solid fa-medal', title: 'Certified Google, Meta & LinkedIn Specialists', impact: 'Highest impact', desc: 'Each account is managed by a specialist familiar with the platform rather than a generalist splitting attention across unrelated channel work.' },
+  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy Before Launch', impact: 'High impact', desc: 'We document campaign objectives, audience targeting, budget allocation, and platform selection before campaigns go live.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', impact: 'High impact', desc: 'Pixels, conversion events, attribution settings, and related tracking are configured before meaningful optimization begins, so reporting has usable conversion data.' },
+  { icon: 'fa-solid fa-flask', title: 'Creative Testing', impact: 'High impact', desc: 'Multiple ad variants can be tested against each other within the campaign structure, with decisions guided by performance data.' },
+  { icon: 'fa-solid fa-ban', title: 'Negative Keyword Hygiene', impact: 'Medium impact', desc: 'For search campaigns, search terms and negative keywords are reviewed regularly to reduce spend on queries that are unlikely to convert.' },
+  { icon: 'fa-solid fa-file-shield', title: 'NDA-Protected Fulfillment', impact: 'Medium impact', desc: 'The partnership is structured around confidentiality, with client communication and delivery routed through your agency.' },
+  { icon: 'fa-solid fa-chart-bar', title: 'Branded Reporting', impact: 'Contextual', desc: "Performance reports can carry your agency's branding, naming conventions, and preferred format so your team can present the work directly." },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'Monthly Optimization Reviews', impact: 'Growing fast', desc: 'Accounts are reviewed on a defined schedule to assess performance trends, budget allocation, creative results, and priorities for the next cycle.' },
 ];
 
 const SERVICES = [
-  { icon: 'fa-brands fa-google', title: 'Google Ads Management', desc: 'Search, Display, Shopping, and Performance Max campaigns built, launched, and optimised inside the client\'s own ad account.' },
-  { icon: 'fa-brands fa-meta', title: 'Meta Ads Management', desc: 'Facebook and Instagram campaigns across awareness, lead generation, and conversion objectives, managed daily.' },
-  { icon: 'fa-brands fa-linkedin', title: 'LinkedIn Ads Management', desc: 'B2B lead generation and sponsored content campaigns for clients targeting decision-makers by role, industry, and company size.' },
-  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy & Audience Targeting', desc: 'A documented strategy for every campaign, platform selection, audience definition, and budget allocation before launch.' },
-  { icon: 'fa-solid fa-images', title: 'Ad Creative Production', desc: 'Static, video, and carousel ad creative produced and tested across variants to find what actually converts.' },
-  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', desc: 'Pixels, conversion events, and attribution configured correctly so every reported result is one you can trust.' },
-  { icon: 'fa-solid fa-magnifying-glass', title: 'Landing Page Review & CRO Recommendations', desc: 'Landing pages reviewed against best practice and specific, actionable recommendations delivered to lift conversion rate.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Branded Monthly Reporting', desc: 'A polished performance report under your agency\'s branding, ready to present to the client without any editing.' },
+  { icon: 'fa-brands fa-google', title: 'White Label Google Ads Management', desc: "Manage Search, Display, Shopping, and Performance Max campaigns inside the client's own account, with ongoing optimization and reporting under your agency brand." },
+  { icon: 'fa-brands fa-meta', title: 'White Label Facebook & Meta Ads', desc: 'Manage campaigns across Facebook and Instagram for awareness, lead generation, ecommerce, and other conversion objectives.' },
+  { icon: 'fa-brands fa-linkedin', title: 'White Label LinkedIn Ads Management', desc: 'Handle B2B lead generation, retargeting, and audience-based campaigns on LinkedIn.' },
+  { icon: 'fa-solid fa-chess', title: 'Campaign Strategy & Audience Targeting', desc: 'Create a documented paid media strategy covering platform selection, audience definition, budget allocation, funnel stage, and campaign objectives.' },
+  { icon: 'fa-solid fa-images', title: 'Ad Creative Production', desc: 'Produce and test static, video, and carousel variations across campaigns to identify stronger-performing creative.' },
+  { icon: 'fa-solid fa-bullseye', title: 'Conversion Tracking Setup', desc: 'Configure pixels, conversion events, attribution settings, and related tracking so performance reporting has usable conversion data.' },
+  { icon: 'fa-solid fa-magnifying-glass', title: 'Landing Page Review & CRO Recommendations', desc: 'Review landing pages against campaign intent, relevance, message match, and conversion friction, with actionable recommendations.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Branded Monthly Reporting', desc: "Prepare performance reporting under your agency's branding so it is ready to present to clients." },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-user-slash', title: 'Agencies without an in-house PPC specialist', desc: 'You can say yes to paid media work without hiring, training, or maintaining certifications your agency does not use often enough to justify.', img: '/services-six-card/White Label/White Label ppc/Agencies without an in-housePPC specialist.webp' },
-  { icon: 'fa-solid fa-tags', title: 'Agencies wanting to resell paid media without hiring', desc: 'Add Google, Meta, and LinkedIn Ads to your service menu and keep the margin, without carrying the payroll of a media buying team.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting to resell paidmedia without hiring.webp' },
-  { icon: 'fa-solid fa-comments', title: 'Agencies with clients requesting Google, Meta or LinkedIn ads', desc: 'When a client asks for paid ads, say yes on the spot instead of referring them elsewhere and risking the relationship.', img: '/services-six-card/White Label/White Label ppc/Agencies with clients requestingGoogle, Meta or Linkedln ads.webp' },
-  { icon: 'fa-solid fa-chart-line', title: 'Agencies wanting predictable margin on ad management', desc: 'A fixed white-label rate against what you charge the client gives you a predictable, repeatable margin on every account.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting predictablemargin on ad management.webp' },
-  { icon: 'fa-solid fa-layer-group', title: 'Agencies needing overflow PPC capacity', desc: 'When your in-house team is at capacity, white-label overflow keeps new accounts moving without delaying onboarding.', img: '/services-six-card/White Label/White Label ppc/Agencies needing overflow PPCcapacity.webp' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding without certification overhead', desc: 'Expand into paid media as a core offering while we carry the certification, platform training, and day-to-day account management.', img: '/services-six-card/White Label/White Label ppc/Agencies expanding withoutcertification overhead.webp' },
+  { icon: 'fa-solid fa-user-slash', title: 'Agencies Without an In-House PPC Specialist', desc: 'Add paid media without hiring, training, and managing another specialist role.', img: '/services-six-card/White Label/White Label ppc/Agencies without an in-housePPC specialist.webp' },
+  { icon: 'fa-solid fa-tags', title: 'Agencies That Want to Resell Paid Media', desc: 'Add Google Ads, Meta Ads, and LinkedIn Ads while a fulfillment team handles the campaign work behind your brand.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting to resell paidmedia without hiring.webp' },
+  { icon: 'fa-solid fa-comments', title: 'Agencies With Clients Requesting Google, Meta or LinkedIn Ads', desc: 'Turn repeated paid media requests into an organized service instead of referring clients elsewhere.', img: '/services-six-card/White Label/White Label ppc/Agencies with clients requestingGoogle, Meta or Linkedln ads.webp' },
+  { icon: 'fa-solid fa-chart-line', title: 'Agencies Wanting Predictable Margin on Ad Management', desc: 'Structure delivery around your pricing model and account volume while outsourcing the operational campaign work.', img: '/services-six-card/White Label/White Label ppc/Agencies wanting predictablemargin on ad management.webp' },
+  { icon: 'fa-solid fa-layer-group', title: 'Agencies Needing Overflow PPC Capacity', desc: 'Use additional delivery capacity when your internal team reaches its limit or new accounts arrive faster than you can onboard them.', img: '/services-six-card/White Label/White Label ppc/Agencies needing overflow PPCcapacity.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies Expanding Without Certification Overhead', desc: 'Offer more paid media services without building every platform certification, training, creative, and optimization process internally.', img: '/services-six-card/White Label/White Label ppc/Agencies expanding withoutcertification overhead.webp' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-medal', title: 'Certified specialists managing every account', desc: 'Google Ads and Meta Blueprint certified specialists manage each account on the platform they are certified in, not a generalist across every channel.' },
-  { icon: 'fa-solid fa-building-shield', title: 'Campaigns run in the client\'s own ad account', desc: 'Every campaign runs inside the client\'s ad account, not ours, full ownership and historical data stay with your client, where it belongs.' },
-  { icon: 'fa-solid fa-user-secret', title: 'Full NDA protection, clients never know', desc: 'A signed NDA covers every partnership. We never reach out to your clients directly, and ISureMedia appears nowhere in any client-facing material.' },
-  { icon: 'fa-solid fa-chart-bar', title: 'Branded reporting with your logo and colours', desc: 'Every performance report is built in your agency\'s branding, logo, colours, and name, ready to send without any editing on your end.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'Scale the number of accounts up or down as your client base changes. No annual contract, no minimum ad spend commitment to us.' },
-  { icon: 'fa-solid fa-headset', title: 'One dedicated contact for all accounts', desc: 'A single point of contact at ISureMedia coordinates every account under your agency, so you are never chasing different specialists for updates.' },
+  { icon: 'fa-solid fa-medal', title: 'Certified Specialists Managing Every Account', desc: 'Google Ads and Meta Blueprint certified specialists manage accounts on the platforms they work in, with channel-specific knowledge instead of one generalist covering everything.' },
+  { icon: 'fa-solid fa-building-shield', title: "Campaigns Run in the Client's Own Account", desc: 'Each campaign runs inside the client\'s account so account ownership and historical campaign data remain where they belong.' },
+  { icon: 'fa-solid fa-user-secret', title: 'Full NDA Protection, Clients Never Know', desc: 'A signed NDA covers every partnership. Client-facing materials and communication are routed through your agency.' },
+  { icon: 'fa-solid fa-chart-bar', title: 'Branded Reporting With Your Logo and Colours', desc: "Performance reporting is prepared using your agency's branding, so reports are ready to send without another formatting pass." },
+  { icon: 'fa-solid fa-calendar-check', title: 'Month to Month, No Lock-In', desc: 'Scale the number of accounts up or down as your client base changes without committing to a fixed annual ad-management volume.' },
+  { icon: 'fa-solid fa-headset', title: 'One Dedicated Contact for All Accounts', desc: "A single point of contact coordinates account delivery, questions, and updates across your agency's client base." },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Brief', desc: 'We take a detailed brief from your agency, client goals, target audience, budget, platform preference, and any existing account history.' },
-  { n: '02', title: 'Strategy', desc: 'Our certified team builds a full campaign strategy including platform selection, audience targeting, budget allocation, and creative direction.' },
-  { n: '03', title: 'Launch', desc: 'Campaigns go live inside the client\'s own ad account. We handle all setup, conversion tracking, and initial creative delivery.' },
-  { n: '04', title: 'Optimize', desc: 'Daily monitoring and optimisation, bid adjustments, budget pacing, negative keywords, and creative testing based on real performance data.' },
-  { n: '05', title: 'Report', desc: 'A branded monthly performance report delivered under your agency\'s name, ready to present to the client without any editing.' },
+  { n: '01', title: 'Brief', desc: 'You share client goals, target audience, budget, platform preference, existing account information, and relevant campaign history.' },
+  { n: '02', title: 'Strategy', desc: 'A paid media specialist builds campaign strategy, including platform selection, audience targeting, budget allocation, funnel stage, and creative direction.' },
+  { n: '03', title: 'Launch', desc: 'Campaigns go live inside the client\'s own account. We handle the agreed setup, tracking, creative delivery, and launch checks.' },
+  { n: '04', title: 'Optimize', desc: 'Ongoing optimization covers budgets, bids, search terms, audiences, creative performance, and other account signals relevant to the campaign.' },
+  { n: '05', title: 'Report', desc: 'A branded performance report is delivered on your agreed schedule, ready for your agency to review and present.' },
 ];
 
 const FAQS = [
-  { q: 'How does NDA protection actually work?', a: 'Every partnership is covered by a signed NDA before any work begins. We never contact your clients directly, never reference ISureMedia in any deliverable, and route all communication through your agency.' },
-  { q: 'Which ad platforms do you support?', a: 'Google Ads (Search, Display, Shopping, Performance Max), Meta Ads (Facebook and Instagram), and LinkedIn Ads for B2B lead generation. Most partners use us for one or two platforms and expand from there.' },
-  { q: 'Do campaigns run in our ad account or the client\'s?', a: 'The client\'s own ad account, always. We are granted access to manage it, but the account, its history, and its data belong to the client, not to us or your agency.' },
-  { q: 'How are the reports branded?', a: 'Every monthly report carries your agency\'s logo, colour scheme, and name. You can send it to the client as-is or layer your own commentary on top before it goes out.' },
-  { q: 'Is there a minimum ad spend?', a: 'We work with accounts across a wide range of budgets. There is a modest minimum monthly ad spend for us to manage an account effectively, this is confirmed on your discovery call based on the platform and goal.' },
-  { q: 'How fast can a campaign launch?', a: 'Once we have the brief and account access, most campaigns launch within three to five business days, faster if conversion tracking and creative are already in place.' },
-  { q: 'Do you handle landing pages too?', a: 'We review landing pages against best practice and provide specific CRO recommendations. Landing page builds themselves are handled through our white-label web development service.' },
-  { q: 'What if a client wants LinkedIn ads specifically?', a: 'LinkedIn is fully supported for B2B lead generation and sponsored content campaigns, managed by a specialist familiar with LinkedIn\'s targeting and bidding model, which behaves differently than Google or Meta.' },
-  { q: 'How is pricing and margin structured?', a: 'You are quoted a wholesale white-label management fee per account, and you set your own client-facing price. Most agencies mark up 40 to 60% above the wholesale rate.' },
-  { q: 'What are the cancellation terms?', a: 'Month to month, no lock-in. You can pause or stop management on any account with 30 days\' notice, with no penalty and no minimum term.' },
+  { q: 'What is a white label PPC agency?', a: 'A white label PPC agency manages paid advertising for another agency to sell under its own brand. The agency keeps the client relationship while the white-label provider handles the agreed campaign strategy, execution, optimization, and reporting.' },
+  { q: 'How do white label PPC services work?', a: 'The agency provides client goals, account access, brand requirements, and the agreed scope. The PPC partner then manages campaigns inside the client\'s ad account and provides the reporting and deliverables needed for client communication.' },
+  { q: 'Which advertising platforms do you support?', a: 'We support Google Ads, Meta Ads, and LinkedIn Ads, including campaign management, audience targeting, tracking, creative testing, and optimization based on the platform and campaign goal.' },
+  { q: 'Do campaigns run in my client\'s account or yours?', a: 'Campaigns run in the client\'s advertising account. This keeps account ownership and historical campaign data with the client while the white-label PPC team manages the agreed work.' },
+  { q: 'Can I offer white label Google Ads under my agency brand?', a: 'Yes. White label Google Ads management allows your agency to sell Google advertising services while a specialist team handles campaign setup, optimization, search-term review, tracking, and reporting behind your brand.' },
+  { q: 'Do you offer white label Facebook and Meta Ads management?', a: 'Yes. White label Meta Ads management can cover Facebook and Instagram campaigns, audience targeting, creative testing, conversion tracking, optimization, and reporting.' },
+  { q: 'How quickly can a white label PPC campaign launch?', a: 'A new campaign can generally launch within three to five business days once the required brief, account access, assets, tracking information, and approvals are available. The timeline can vary by platform and campaign complexity.' },
+  { q: 'How are white label PPC reports branded?', a: 'Reports can use your agency\'s logo, colors, naming conventions, and preferred format so your team can review and present the work without another formatting step.' },
+  { q: 'Do you communicate directly with my clients?', a: 'By default, your agency remains the client-facing contact. Campaign communication, reporting, and delivery are routed through your agency unless a different arrangement is agreed in advance.' },
+  { q: 'Is there a minimum ad spend for white label PPC?', a: 'A minimum ad spend should depend on campaign objective, platform, audience, and account economics rather than one universal number. We can review the planned spend and scope before recommending a delivery model.' },
+  { q: 'How does pricing work for white label PPC management?', a: 'Pricing depends on the number of client accounts, platforms, campaign scope, creative requirements, tracking needs, and reporting workload. The delivery cost should be scoped around the actual service requirements.' },
+  { q: 'Can I use white label PPC if I already have an in-house media buyer?', a: 'Yes. White-label PPC can supplement an internal team by providing overflow capacity, platform-specific expertise, creative testing support, or additional account management when the internal team reaches capacity.' },
+  { q: 'What is the difference between white label PPC and PPC reseller services?', a: 'Both models let an agency sell PPC without performing every delivery task itself. White label PPC emphasizes behind-the-scenes fulfillment under the agency\'s brand, while reseller arrangements can vary in branding, delivery responsibility, and client communication.' },
+  { q: 'Can you manage landing pages and conversion tracking too?', a: 'Yes. Depending on the agreed scope, the service can include landing page reviews, conversion tracking setup, pixels, events, attribution configuration, and recommendations to improve the path from ad click to conversion.' },
 ];
 
 const RELATED = [
-  { href: '/white-label-digital-marketing', icon: 'fa-solid fa-building', title: 'White-Label Hub', desc: 'Overview of all white-label services, SEO, PPC, content, web design, and automation under your brand.' },
-  { href: '/white-label-seo-services', icon: 'fa-solid fa-magnifying-glass', title: 'White-Label SEO', desc: 'Resell full-stack SEO services under your agency brand with branded reports and scalable delivery.' },
-  { href: '/ppc-marketing-agencies', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, Google, Meta, and LinkedIn campaigns.' },
+  { href: '/white-label-digital-marketing', icon: 'fa-solid fa-building', title: 'White Label Hub', desc: 'Overview of white-label SEO, PPC, content, web design, and automation services delivered under your agency brand.' },
+  { href: '/white-label-seo-services', icon: 'fa-solid fa-magnifying-glass', title: 'White Label SEO', desc: 'Resell full-stack SEO services with branded reporting and ongoing delivery.' },
+  { href: '/ppc-marketing-agencies', icon: 'fa-solid fa-bullseye', title: 'PPC & Paid Marketing', desc: 'Direct PPC management for your own business, including Google, Meta, and LinkedIn campaigns.' },
 ];
 
-/* â”€â”€ FAQ 2-COL, matches the sibling white-label pages layout â”€â”€ */
+/* ── FAQ 2-COL, matches the sibling white-label pages layout ── */
 function WLPFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -112,16 +116,16 @@ function WLPFAQAccordion() {
           {/* Left */}
           <div className="wlp-faq-sticky" style={{ position: 'sticky', top: 100 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 14, marginTop: 0, lineHeight: 1.15 }}>
-              Questions About <span style={{ color: 'var(--ism-amber)' }}>White-Label PPC</span>
+              Questions About <span style={{ color: 'var(--ism-amber)' }}>White Label PPC Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: '0 0 32px' }}>
-              Straight answers to the questions agency owners ask most about white-label paid media.
+              Straight answers about account ownership, platforms, reporting, pricing, launches, and how agencies use white-label paid media.
             </p>
             <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started â†’
+              Get Started →
             </a>
           </div>
           {/* Right accordion */}
@@ -159,7 +163,7 @@ export default function WhiteLabelPPCPage() {
       <Navbar />
       <main>
 
-        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  01. HERO  */}
         <section className="wlp-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -169,9 +173,9 @@ export default function WhiteLabelPPCPage() {
               {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
-                  Google, Meta, and LinkedIn Ads.{' '}
+                  White Label PPC Agency That Runs{' '}
                   <span style={{ position: 'relative', display: 'inline-block' }}>
-                    Managed Under Your Brand.
+                    Paid Media Under Your Brand.
                     <svg viewBox="0 0 100 12" preserveAspectRatio="none" style={{ position: 'absolute', left: 0, bottom: -6, width: '100%', height: 10 }} aria-hidden>
                       <path d="M2,8 Q50,0 98,7" fill="none" stroke="var(--ism-amber)" strokeWidth="6" strokeLinecap="round" />
                     </svg>
@@ -179,8 +183,7 @@ export default function WhiteLabelPPCPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We provide white-label Google Ads, Meta Ads, and LinkedIn Ads management for agencies, certified specialists running campaigns inside your clients' own ad accounts, fully NDA-protected, with branded monthly reports so{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>you own the client relationship</span>.
+                  We manage <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Google Ads, Meta Ads, and LinkedIn Ads</span> inside your clients' own accounts, with certified specialists, branded reporting, and communication routed through your agency.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -249,23 +252,24 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  02. PROOF STRIP  */}
         <ReviewsStrip />
 
-        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  03. BRIDGE SECTION  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(24px,2.8vw,40px)', color: 'var(--color-navy)', lineHeight: 1.2, letterSpacing: '-0.4px', marginBottom: 24 }}>
-                  Sell Paid Media Without Becoming a Media Buying Agency.
+                  Sell Paid Media Without Building the Media Buying Team.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  Clients ask for Google Ads, Meta Ads, and LinkedIn Ads constantly. Turning that work away or referring it out risks the relationship and leaves margin on the table. Hiring an in-house PPC specialist and keeping up certifications is a slow, expensive way to say yes.
+                  Clients ask for Google Ads, Meta Ads, and LinkedIn Ads constantly. Turning that demand into a reliable service means more than launching campaigns. It means maintaining platform knowledge, reviewing performance, producing creative, and staying current with changes across each advertising platform.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  ISureMedia manages Google, Meta, and LinkedIn campaigns for your clients under full NDA protection, inside the client's own ad account, reported under your brand.{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>You keep the client relationship and the margin</span>. We run the campaigns.
+                  A white label PPC agency gives your team another way to deliver.{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Your agency keeps the client relationship and commercial strategy</span>{' '}
+                  while a specialist paid media team handles the agreed campaign work inside the client's own ad accounts, helping you add PPC to your service mix without building another department.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -297,7 +301,7 @@ export default function WhiteLabelPPCPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* â•â• 04. WHAT IS WHITE-LABEL PPC â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  04. WHAT IS WHITE-LABEL PPC  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wlp-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
@@ -308,16 +312,16 @@ export default function WhiteLabelPPCPage() {
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    White-label PPC means every campaign runs{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>inside your client's own ad account</span>, not ours, full ownership and historical data stay exactly where the client expects them to.
+                    With white label PPC management, the advertising account remains{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the client's property</span> and your agency stays responsible for the client relationship. We operate as the fulfillment team behind the service you sell.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    The whole engagement is covered by a signed NDA, so{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your clients never know ISureMedia exists</span>, only your agency, delivering the result.
+                    Campaign strategy, account management, optimization, testing, and reporting follow the agreed delivery process. Client-facing reports can use{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's branding and naming conventions</span>.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Every account is managed by a Google or Meta certified specialist, and every monthly report is built in{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's own branding</span>, ready to send without any editing.
+                    This model shifts much of the day-to-day campaign workload to a specialist team without requiring you to build another paid media department. Communication stays{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>routed through your agency</span> unless a different arrangement is agreed in advance.
                   </p>
                 </div>
               </div>
@@ -387,13 +391,13 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 05. WHY AGENCIES NEED WHITE-LABEL PPC â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  05. WHY AGENCIES NEED WHITE-LABEL PPC  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>Why Agencies Need White-Label PPC Instead of an In-House Team.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Hidden Work Behind Every Paid Media Account.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Paid media is one of the most requested services agencies turn away. These are the reasons most agencies do not build it in-house.
+                Behind every campaign are platform requirements, daily account work, creative decisions, tracking, optimization, and client expectations.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -425,13 +429,13 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 06. WHAT MAKES A WHITE-LABEL PPC PARTNERSHIP WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  06. WHAT MAKES A WHITE-LABEL PPC PARTNERSHIP WORK  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Actually Makes a White-Label PPC Partnership Work.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Standards We Bring to Every White Label PPC Account.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Handing off paid media only pays off if the campaigns actually perform. These are the factors Isuremedia builds into every white-label PPC engagement.
+                The goal is not to hand off campaigns. It is to build a repeatable PPC delivery process your agency can rely on.
               </p>
             </div>
             <div className="wlp-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -469,12 +473,12 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 07. OUR WHITE-LABEL PPC SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  07. OUR WHITE-LABEL PPC SERVICES  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our White-Label PPC Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Everything Your Agency Needs to Offer Paid Media Confidently.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>White Label PPC Services Across Google, Meta & LinkedIn</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Manage paid media across the platforms your clients already use without building every part of the delivery operation in-house.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -499,12 +503,12 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 08. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  08. WHO THIS IS FOR  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Which Agencies White-Label PPC Is Built For</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>If Clients Are Asking for Paid Media and You Are Turning It Down, This Fixes That.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Where White Label PPC Fits Into Your Agency</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Add paid media delivery where your agency lacks specialist capacity, needs overflow support, or wants to expand its offer.</p>
             </div>
             <div className="who-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {WHO_FOR.map(w => (
@@ -533,15 +537,15 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 09. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  09. MID-PAGE CTA STRIP  */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
               <div aria-hidden style={{ position: 'absolute', top: '-30%', right: '-5%', width: 300, height: 300, background: 'radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 65%)', pointerEvents: 'none' }} />
               <div style={{ position: 'relative', maxWidth: 560 }}>
-                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Every paid media request you turn away is revenue and margin going to someone else.</h3>
+                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>See What White Label PPC Could Cost at Your Current Volume</h3>
                 <p style={{ fontFamily: I, fontSize: 14.5, color: 'rgba(255,255,255,.80)', lineHeight: 1.65, margin: 0 }}>
-                  A quick call will show you exactly what white-label PPC would cost for your typical client account.
+                  Book a quick call to review your account volume, platforms, reporting needs, and delivery model before you commit.
                 </p>
               </div>
               <a href="/contact" className="mid-cta-btn"
@@ -560,12 +564,12 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 10. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  10. WHY CHOOSE ISM  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Agencies Choose Isuremedia for White-Label PPC</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Certified Specialists. Full NDA Protection. Your Brand on Every Report.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Agencies Choose Isuremedia for White Label PPC</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Keep your agency client-facing while a specialist team manages paid media work, reporting, and account operations.</p>
             </div>
             <div className="why-ism-bento" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16 }}>
               {WHY_ISM.slice(0, 2).map(b => (
@@ -593,7 +597,7 @@ export default function WhiteLabelPPCPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="/services-mid-image/white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -627,15 +631,15 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 11. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  11. OUR PROCESS  */}
         <section className="wlp-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 14px' }}>
-                How White-Label PPC Works <span style={{ color: 'var(--ism-amber)' }}>With ISureMedia</span>
+                How Our <span style={{ color: 'var(--ism-amber)' }}>White Label PPC Services</span> Work From Brief to Report
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>
-                Simple for you. Invisible to your clients.
+                We keep the delivery process structured so your agency knows what is happening before campaigns launch, during optimization, and at reporting time.
               </p>
             </div>
             <div className="wlp-timeline" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 0, position: 'relative' }}>
@@ -651,7 +655,7 @@ export default function WhiteLabelPPCPage() {
               ))}
             </div>
             <p style={{ textAlign: 'center', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.7, maxWidth: 780, margin: '48px auto 0' }}>
-              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> Campaign launch after brief and account access, three to five business days. Daily optimisation runs continuously across every active account. Branded reports delivered monthly, or on your preferred cadence.
+              New campaigns can generally launch within three to five business days after the required brief and account access are available. Ongoing optimization runs according to the agreed service scope.
             </p>
             <div style={{ textAlign: 'center', marginTop: 40 }}>
               <a href="/contact"
@@ -674,12 +678,12 @@ export default function WhiteLabelPPCPage() {
           `}</style>
         </section>
 
-        {/* â•â• 12. RELATED SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  12. RELATED SERVICES  */}
         <section style={{ padding: '96px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', marginBottom: 48 }}>
-              <h2 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,36px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Pair It With</h2>
-              <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', marginTop: 10 }}>A few things agencies usually bundle with white-label PPC.</p>
+              <h2 style={{ fontFamily: J, fontSize: 'clamp(22px,2.4vw,36px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.4px' }}>Build a Broader White Label Service Stack Around PPC</h2>
+              <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', marginTop: 10 }}>Combine paid media with SEO, web development, or dedicated agency support when your clients need more than one channel.</p>
             </div>
             <div className="wlp-related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
               {RELATED.map((r, i) => (
@@ -701,11 +705,11 @@ export default function WhiteLabelPPCPage() {
           <style>{`@media(max-width:860px){ .wlp-related-grid{ grid-template-columns:1fr !important; } }`}</style>
         </section>
 
-        {/* â•â• 13. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  13. FAQ  */}
         <WLPFAQAccordion />
 
-        {/* â•â• 14. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/white label.webp" description={<>Running Google, Meta, and LinkedIn campaigns for every client stretches even the best in-house team thin. Our white-label PPC specialists manage the strategy, execution, and reporting under your agency&rsquo;s name, so you can offer full-funnel paid media without adding headcount. Let&rsquo;s talk about how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale your paid media offer under your brand</span>.</>} heading="Ready to Launch" headingHighlight="White-Label Campaigns?" primaryLabel="Start White-Label PPC" secondaryLabel="Talk to Our Ads Team" />
+        {/*  14. ENDING CTA  */}
+        <CTASection image="/result_footer/white label.webp" description={<>Tell us how many accounts you manage, which platforms you sell, and how you want fulfillment handled. We&rsquo;ll help you map the right <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label PPC model</span> for your agency.</>} heading="Launch More Paid Media" headingHighlight="Without Hiring Another Team" primaryLabel="Start White-Label PPC" secondaryLabel="Talk to Our Ads Team" />
       </main>
       <Footer />
     </>

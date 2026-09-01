@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Do campaigns run in our ad account or the client's own account?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Every campaign runs inside the client's own ad account. Full ownership and historical data stay with the client. If the engagement ends, nothing needs to be transferred or rebuilt." } },
-        { "@type": "Question", "name": "How are monthly PPC reports branded?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Reports are built with your agency's logo, colours, and name on every page, ready to send without any editing. They cover spend, clicks, conversions, and next-month priorities." } },
-        { "@type": "Question", "name": "How fast can a campaign launch after onboarding a new client?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Campaigns are typically live within three to five business days of receiving a brief and account access, including strategy, audience setup, creative production, and conversion tracking." } }
+        { "@type": "Question", "name": "What is a white label PPC agency?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A white label PPC agency manages paid advertising for another agency to sell under its own brand. The agency keeps the client relationship while the white-label provider handles the agreed campaign strategy, execution, optimization, and reporting." } },
+        { "@type": "Question", "name": "Do campaigns run in my client's account or yours?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Campaigns run in the client's advertising account. This keeps account ownership and historical campaign data with the client while the white-label PPC team manages the agreed work." } },
+        { "@type": "Question", "name": "How quickly can a white label PPC campaign launch?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A new campaign can generally launch within three to five business days once the required brief, account access, assets, tracking information, and approvals are available. The timeline can vary by platform and campaign complexity." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "White Label PPC Agency | White Label Google Ads | Isuremedia",
-  description: "White label PPC management for agencies. Google, Meta, and LinkedIn Ads run by certified specialists under your brand. NDA-protected, branded reports.",
+  title: "White Label PPC Agency for Google, Meta & LinkedIn Ads",
+  description: "A white label PPC agency helps you add paid media to your offer without building another department, while your agency keeps control of the client relationship.",
   alternates: { canonical: "/white-label-ppc-services" },
   openGraph: { images: [{ url: "/feature_image/white-label-ppc.webp", width: 1618, height: 950 }] },
 };
