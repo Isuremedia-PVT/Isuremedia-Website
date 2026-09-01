@@ -87,7 +87,7 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 16 }}>
               <i className="fa-solid fa-location-dot" style={{ fontSize: 11, color: 'var(--ism-amber)', marginTop: 3, flexShrink: 0 }} />
               <span className="ftr-address" style={{ display: 'block', fontFamily: I, fontSize: 12.5, color: 'rgba(255,255,255,.75)', lineHeight: 1.6, margin: 0 }}>
-                Gas Godam Road, Chhadayal Nayabad, First Floor, Chandra Complex<br />
+                Gas Godam Road, Chharayal Nayabad, First Floor, Chandra Complex<br />
                 Haldwani, Nainital, Uttarakhand 263139, India
               </span>
             </div>

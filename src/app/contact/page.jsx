@@ -31,7 +31,7 @@ const CONTACT_INFO = [
   {
     icon: 'fa-solid fa-location-dot',
     label: 'India Office',
-    lines: ['Gas Godam Road, Chhadayal Nayabad,', 'First Floor, Chandra Complex,', 'Haldwani, Nainital, Uttarakhand 263139, India'],
+    lines: ['Gas Godam Road, Chharayal Nayabad,', 'First Floor, Chandra Complex,', 'Haldwani, Nainital, Uttarakhand 263139, India'],
   },
   {
     icon: 'fa-solid fa-location-dot',
