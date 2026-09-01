@@ -5,7 +5,7 @@ import { useState } from 'react';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const VIDEO_ID = 'dQw4w9WgXcQ';
+const VIDEO_ID = 'fahX52XsGWM';
 
 export default function HomeVideoSection() {
   const [playing, setPlaying] = useState(false);
