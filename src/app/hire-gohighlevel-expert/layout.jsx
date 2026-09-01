@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
+        { "@type": "Question", "name": "What does a GoHighLevel expert do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A GoHighLevel expert configures and manages the platform for business or agency workflows. The work can include CRM setup, pipelines, automations, funnels, websites, messaging, calendars, reporting, AI tools, integrations, and ongoing administration." } },
         { "@type": "Question", "name": "Can you fix a GoHighLevel account that was set up badly?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Fixing poorly built GHL accounts is a major part of our work. We audit the account, document what exists, and rebuild workflows, pipelines, and SaaS Mode configuration properly rather than patching indefinitely." } },
-        { "@type": "Question", "name": "Do you handle GHL SaaS Mode and white-label setup?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. SaaS Mode setup includes white-label branding, Stripe integration, sub-account provisioning templates, and onboarding automations. Isuremedia co-owns SalesleyAI, a live GHL SaaS product, so we know this from the inside." } },
-        { "@type": "Question", "name": "Can you migrate from HubSpot or ActiveCampaign to GoHighLevel?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We handle full migrations including contact data, pipeline recreation, workflow logic, funnel rebuilding, and campaign migration from HubSpot, ActiveCampaign, ClickFunnels, Kajabi, and Keap." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A GoHighLevel expert can audit an existing account, identify broken workflows, clean up pipelines and fields, restructure automations, and rebuild parts of the setup that are no longer reliable." } },
+        { "@type": "Question", "name": "Do you offer white-label GoHighLevel support for agencies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. White-label GoHighLevel support lets agencies use a technical delivery team behind their own brand. Work can include account setup, automation, funnels, SaaS configuration, integrations, and ongoing support." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire a GoHighLevel Expert | GHL Certified Setup | Isuremedia",
-  description: "Hire a certified GoHighLevel expert from Isuremedia. CRM setup, workflow automation, funnels, AI chatbots, and SaaS Mode. No contracts. Starts in 48 hours.",
+  title: "Hire a GoHighLevel Expert for CRM, Automation & SaaS",
+  description: "Hire a GoHighLevel expert to build, fix, or manage your system. Get help with CRM setup, automation, integrations, SaaS workflows and ongoing support.",
   alternates: { canonical: "/hire-gohighlevel-expert" },
 };
 

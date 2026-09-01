@@ -26,30 +26,30 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-arrow-down', title: 'Leads Never Fall Through the Cracks', desc: <>Every lead that comes in, from any source, goes into the right pipeline stage automatically. Follow-up <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>starts within minutes</span> without anyone manually doing it. Missed calls get a text back. No lead sits untouched because someone forgot to check the CRM.</> },
-  { icon: 'fa-solid fa-cogs', title: 'Your Sales Process Runs Without You', desc: 'Leads move through your pipeline based on what they do, not what your team remembers to do. Appointment reminders go out automatically. No-show sequences fire. Proposals get sent. The system does the repetitive work so your team focuses on closing.' },
-  { icon: 'fa-solid fa-link', title: 'Every Channel Works Together', desc: 'Email, SMS, WhatsApp, and voice all talk to each other inside one system. A lead who does not open an email gets a text. A text that gets no reply triggers a call task. The communication strategy adapts to how each lead actually responds.' },
-  { icon: 'fa-solid fa-brain', title: 'AI Handles the First Touch', desc: 'GHL\'s AI Conversation tool qualifies leads, answers common questions, and books appointments without a human in the loop. At 2am when your team is offline, the AI is still responding, qualifying, and booking. The right leads arrive already pre-qualified.' },
-  { icon: 'fa-solid fa-shop', title: 'Your Agency Can Sell GHL as a Product', desc: 'White-label SaaS Mode lets agencies offer GHL under their own brand with their own domain, logo, and pricing. Sub-accounts are provisioned automatically. Billing runs through Stripe. Your clients use a powerful CRM platform that looks like it belongs to you.' },
-  { icon: 'fa-solid fa-chart-bar', title: 'You Can Actually See What Is Working', desc: 'Custom dashboards show where leads come from, which campaigns convert, which pipeline stages leak, and what your team is doing. Not a generic report, a live view of your specific sales process built around the numbers that actually matter for your business.' },
+  { icon: 'fa-solid fa-arrow-down', title: 'Leads Move Into the Right Pipeline Automatically', desc: <>A properly configured GoHighLevel workflow can route new leads into the correct pipeline, apply the right tags, and trigger follow-up based on where the lead came from, so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no lead sits untouched</span>.</> },
+  { icon: 'fa-solid fa-cogs', title: 'Your Sales Process Runs Without Constant Manual Updates', desc: 'GoHighLevel workflows can handle follow-ups, appointment reminders, task creation, and other repetitive actions so the team can focus on conversations that require human attention.' },
+  { icon: 'fa-solid fa-link', title: 'Every Channel Can Share the Same Customer Context', desc: 'Email, SMS, WhatsApp, voice, forms, calendars, and other connected channels can feed information into the same contact and pipeline record when the setup is configured correctly.' },
+  { icon: 'fa-solid fa-brain', title: 'AI Can Handle the First Conversation', desc: 'GoHighLevel conversation tools can respond to prospects, qualify leads, answer routine questions, and support appointment booking according to configured rules.' },
+  { icon: 'fa-solid fa-shop', title: 'Your Agency Can Package GHL as a Client Service', desc: 'With the right setup, agencies can offer GoHighLevel as part of their delivery model, including branded sub-accounts, workflows, reporting, and ongoing support.' },
+  { icon: 'fa-solid fa-chart-bar', title: 'You Can See What the System Is Doing', desc: 'Custom reporting and dashboards can show lead sources, campaign activity, pipeline stages, and other business metrics instead of leaving the team to piece the information together manually.' },
 ];
 
 const servicesTabs = [
   { label: 'CRM Setup', icon: 'fa-solid fa-database' },
   { label: 'Workflows', icon: 'fa-solid fa-arrows-spin' },
   { label: 'Funnels', icon: 'fa-solid fa-funnel' },
-  { label: 'AI Chatbots', icon: 'fa-solid fa-robot' },
-  { label: 'Email & SMS', icon: 'fa-solid fa-envelope' },
-  { label: 'White Label', icon: 'fa-solid fa-label' },
+  { label: 'AI Automation', icon: 'fa-solid fa-robot' },
+  { label: 'SaaS Mode', icon: 'fa-solid fa-cloud' },
+  { label: 'Integrations', icon: 'fa-solid fa-plug' },
   { label: 'Migrations', icon: 'fa-solid fa-right-left' },
   { label: 'Reporting', icon: 'fa-solid fa-chart-line' },
 ];
 
 const servicesData = [
   {
-    num: '01', title: 'CRM Setup and Configuration',
+    num: '01', title: 'GoHighLevel CRM Setup and Configuration',
     img: '/hire/expert_ghl/ghl expert crm setup.webp',
-    desc: <>A GHL account that is not properly structured from the start causes problems for every automation built on top of it. Get a CRM <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built around your actual sales process</span>, with the right pipelines, stages, custom fields, tags, and contact organization to support the way your business actually works.</>,
+    desc: <>A CRM that is not structured properly from the start creates problems later. We configure <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>pipelines, stages, custom fields, tags</span>, contact organization, lead sources, and related settings around your sales process.</>,
     bullets: [
       'Pipeline and stage architecture aligned to your sales process',
       'Custom fields and contact record setup',
@@ -60,9 +60,9 @@ const servicesData = [
     ],
   },
   {
-    num: '02', title: 'Workflow Automation',
+    num: '02', title: 'GoHighLevel Workflow Automation',
     img: '/hire/expert_ghl/workflow.webp',
-    desc: 'Workflows are where GHL delivers the most value and where most accounts fall short. Get automations built with proper logic, tested before they go live, and documented so your team understands what each one does and why.',
+    desc: 'We design triggers, actions, branches, notifications, follow-ups, and task logic around how leads move through the pipeline so repetitive steps happen without manual intervention.',
     bullets: [
       'Lead nurture and follow-up sequences',
       'Appointment confirmation, reminder, and no-show workflows',
@@ -73,9 +73,9 @@ const servicesData = [
     ],
   },
   {
-    num: '03', title: 'Funnel and Website Development',
+    num: '03', title: 'GoHighLevel Funnels and Websites',
     img: '/hire/expert_ghl/funnel.webp',
-    desc: 'GHL funnels and websites built with the right structure convert better than most third-party alternatives because they are directly connected to the CRM. No disconnect between the page and the pipeline.',
+    desc: 'Build landing pages, websites, forms, booking flows, and funnel steps inside GoHighLevel with the CRM and automation logic connected behind them.',
     bullets: [
       'Landing pages and opt-in funnels',
       'Sales pages with order forms and upsell flows',
@@ -86,9 +86,9 @@ const servicesData = [
     ],
   },
   {
-    num: '04', title: 'AI Chatbot and Conversation AI',
+    num: '04', title: 'GoHighLevel AI and Conversation Automation',
     img: '/hire/expert_ghl/ai chatboat.webp',
-    desc: 'GHL\'s AI features have moved well beyond basic chatbots. Get Conversation AI configured to qualify leads, answer questions, and book appointments automatically, with training specific to your business, your offers, and the way your customers actually communicate.',
+    desc: 'Set up AI-assisted conversations that can respond to prospects, qualify enquiries, answer routine questions, and support appointment booking according to your rules.',
     bullets: [
       'Conversation AI setup and training',
       'Lead qualification flows and qualification criteria',
@@ -99,22 +99,9 @@ const servicesData = [
     ],
   },
   {
-    num: '05', title: 'Email and SMS Campaigns',
-    img: '/hire/expert_ghl/email and ss.webp',
-    desc: 'GHL handles all broadcast and drip communication in one place. Get campaigns built with proper segmentation, deliverability optimization, and the right timing logic to keep leads engaged without burning your list.',
-    bullets: [
-      'Email campaign setup and broadcast scheduling',
-      'SMS campaign builds and compliance setup',
-      'Drip sequence design and content',
-      'List segmentation and conditional sending',
-      'Email deliverability and domain authentication',
-      'Re-engagement campaigns for cold contacts',
-    ],
-  },
-  {
-    num: '06', title: 'White-Label SaaS Configuration',
+    num: '05', title: 'GoHighLevel SaaS Mode Setup',
     img: '/hire/expert_ghl/whitelabel_.webp',
-    desc: 'Agencies using GHL SaaS Mode can offer a fully branded CRM platform to their clients. Get SaaS Mode configured properly from the start, with billing integration, sub-account provisioning, snapshot deployment, and the onboarding experience your clients will see.',
+    desc: 'Configure GoHighLevel SaaS features for agencies that want to package the platform as a branded client offering, with the account structure and settings needed for repeatable delivery.',
     bullets: [
       'SaaS Mode setup and white-label domain configuration',
       'Stripe billing integration and plan setup',
@@ -125,9 +112,22 @@ const servicesData = [
     ],
   },
   {
-    num: '07', title: 'Platform Migrations',
+    num: '06', title: 'GoHighLevel Integrations',
+    img: '/hire/expert_ghl/email and ss.webp',
+    desc: 'Connect GoHighLevel to tools your business already uses through native integrations, Zapier, Make, n8n, APIs, webhooks, and other supported methods.',
+    bullets: [
+      'Native integrations with calendars, payment, and communication tools',
+      'Zapier, Make, and n8n workflow connections',
+      'REST API and webhook-based custom connections',
+      'Two-way data sync between GoHighLevel and external systems',
+      'Facebook Lead Ads, Google Ads, and form integrations',
+      'Third-party app connections for reporting and billing tools',
+    ],
+  },
+  {
+    num: '07', title: 'GoHighLevel Migration',
     img: '/hire/expert_ghl/megrations.webp',
-    desc: 'Moving from HubSpot, ActiveCampaign, ClickFunnels, Kajabi, or any other platform to GHL without losing data, automations, or funnel logic requires more than an export and import. Every migration is mapped, tested, and documented before the old system is switched off.',
+    desc: 'Move your business or agency setup from platforms such as HubSpot, ActiveCampaign, ClickFunnels, Kajabi, Mailchimp, Keap, Pipedrive, or other systems with a planned migration and data structure.',
     bullets: [
       'HubSpot to GoHighLevel migration',
       'ActiveCampaign to GoHighLevel migration',
@@ -138,9 +138,9 @@ const servicesData = [
     ],
   },
   {
-    num: '08', title: 'Custom Reporting and Dashboards',
+    num: '08', title: 'GoHighLevel Reporting and Dashboards',
     img: '/hire/expert_ghl/reporting.webp',
-    desc: 'The default GHL reports tell you what happened. Custom dashboards tell you why and what to do about it. Get a reporting setup built around the specific metrics your business needs to track, visible to the right people at the right level.',
+    desc: 'Build dashboards and reporting views around the metrics your team actually needs, including leads, sources, pipeline movement, campaigns and conversion activity.',
     bullets: [
       'Custom dashboard design and configuration',
       'Pipeline performance and conversion tracking',
@@ -162,59 +162,63 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-certificate', title: 'GoHighLevel Certified', desc: <>ISureMedia is GoHighLevel Certified. This is not a casual claim. Certification covers the platform at a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>production level</span>, not just the basics. It means the team builds with a depth of knowledge that most freelancers calling themselves GHL experts do not have.</> },
-  { icon: 'fa-solid fa-star', title: 'GHL Is Our Primary Platform', desc: 'GoHighLevel is not one of many tools ISureMedia works with. It is the primary platform the team builds in every day. That depth of daily use translates into systems that are faster to build, less likely to break, and better designed from the ground up.' },
-  { icon: 'fa-solid fa-file-lines', title: 'We Have Built White-Label GHL SaaS', desc: 'ISureMedia co-owns SalesleyAI, a white-label GHL SaaS platform for home service businesses. Building and operating a live GHL SaaS product means the team understands SaaS Mode from the inside, not just from documentation.' },
-  { icon: 'fa-solid fa-book', title: 'Everything Is Documented', desc: 'Every system ISureMedia builds is documented properly. SOPs, workflow logic explanations, and video walkthroughs are part of every delivery. Your team knows how to use what was built and what to do when something needs changing.' },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Engagements run month to month and you can stop at any time. No penalties, no notice periods. The work continues because the system is delivering results, not because a contract locks you in.' },
-  { icon: 'fa-solid fa-shield', title: 'Accountable After Delivery', desc: 'GHL systems are not fire-and-forget. Workflows need monitoring, platform updates change behaviour, and businesses evolve. ISureMedia stays accountable after delivery and handles issues that arise after go-live as part of the engagement.' },
+  { icon: 'fa-solid fa-certificate', title: 'GoHighLevel Certified', desc: <>Our team includes <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel-certified specialists</span>. Certification supports platform knowledge, but the value comes from applying that knowledge to the business process being built.</> },
+  { icon: 'fa-solid fa-star', title: 'GHL Is a Core Platform for Our Team', desc: 'GoHighLevel is not an occasional add-on in our service stack. We use the platform regularly for CRM, funnels, automation, communication, and client systems.' },
+  { icon: 'fa-solid fa-file-lines', title: 'White-Label GoHighLevel SaaS Support', desc: 'Agencies can use our team for white-label GoHighLevel SaaS delivery, with the work handled behind their brand and client relationship.' },
+  { icon: 'fa-solid fa-book', title: 'Everything Is Documented', desc: 'We document workflows, configurations, explanations, and system logic so the account is easier to manage when something needs to change.' },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Ongoing work can be handled month to month. There is no unnecessary long-term commitment or exit penalty.' },
+  { icon: 'fa-solid fa-shield', title: 'Accountable After Delivery', desc: 'GoHighLevel systems need maintenance as workflows change, integrations update, and business processes evolve. We stay involved when the system needs changes or troubleshooting.' },
 ];
 
 const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific GHL job to get done',
-    desc: <>You need a full system build, a migration from another platform, a SaaS Mode setup, or an account that needs fixing properly. The scope is mapped before work starts, you know the cost upfront, and a dedicated GHL expert sees it through <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>from architecture to handover</span>.</>,
+    desc: <>Use this when you have a defined GoHighLevel requirement such as a full setup, migration, workflow rebuild, or a specific automation system, mapped <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>before work starts</span>.</>,
     bullets: [
-      'Scoped and priced before any work begins',
-      'Architecture mapping before a single workflow is built',
-      'Full documentation and team training on delivery',
-      'No ongoing commitment once the project is complete',
+      'Scope and price agreed before work begins',
+      'Architecture mapped before a build starts',
+      'One dedicated GoHighLevel expert on the project',
+      'No ongoing commitment after completion',
     ],
   },
   {
     title: 'Monthly Retainer',
     tag: 'For businesses that need ongoing GHL support and development',
-    desc: 'Your GHL account needs continuous attention as your business grows. New workflows, campaign builds, funnel additions, system improvements, and ongoing monitoring. A dedicated GHL expert works in your account every month and stays close to how it is performing.',
+    desc: 'Choose ongoing support when your GHL account changes regularly and needs continuous automation, workflow improvements, integrations, monitoring, and development.',
     bullets: [
-      'Dedicated GHL expert working in your account monthly',
-      'Covers new builds, improvements, and ongoing monitoring',
+      'Dedicated GHL expert working on the account',
+      'New workflows, campaigns, improvements, and monitoring',
       'Month to month with no lock-in',
-      'Same person each month who knows your system',
+      'Same person each month who knows the system',
     ],
   },
   {
     title: 'White Label',
     tag: 'For agencies delivering GHL work to their own clients',
-    desc: 'You handle the client relationship. ISureMedia handles the GHL setup, automation builds, and system configuration behind the scenes under your brand. Your clients receive a polished, fully working GHL system that looks like it came entirely from you.',
+    desc: 'Use our team as the technical delivery partner while your agency owns the client relationship and presents the GoHighLevel service under your brand.',
     bullets: [
-      'All work delivered under your agency name',
-      'Sub-account builds, snapshots, and SaaS Mode included',
-      'We never contact your clients directly',
-      'Scales as your client pipeline grows',
+      'Work delivered under your agency name',
+      'Sub-accounts, snapshots, and SaaS setup included where required',
+      'No Isuremedia branding on client deliverables',
+      'Scales with your client pipeline',
     ],
   },
 ];
 
 const faqs = [
-  { q: 'How quickly can work start on my GHL account?', a: <>Most projects are up and running <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> of the onboarding call. Once the brief is confirmed and account access is set up, the architecture mapping starts immediately. For urgent situations, contact us directly and we will confirm availability.</> },
-  { q: 'Can you fix a GHL account that was set up badly?', a: 'Yes. Rebuilding or restructuring accounts that were partially set up, set up incorrectly, or built by someone who no longer has access is a regular part of what ISureMedia handles. The process starts with an account audit to understand what exists and what needs to change before any new work begins.' },
-  { q: 'Do you work white label for agencies?', a: 'Yes. Everything ISureMedia produces goes out under your agency name. No ISureMedia branding on any deliverable, no contact with your clients, and nothing that reveals the work came from anywhere other than you. Sub-account builds, snapshots, SaaS Mode configuration, and client-facing systems are all included.' },
-  { q: 'Is there a long term contract?', a: 'No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, no lock-in of any kind.' },
-  { q: 'Do you handle GHL SaaS Mode and white-label setup for agencies?', a: 'Yes. SaaS Mode configuration including white-label domain setup, Stripe billing integration, plan creation, sub-account provisioning, branded mobile app setup, and snapshot deployment is all within scope. ISureMedia has built and operates a live white-label GHL SaaS product, so this is not new territory.' },
-  { q: 'Can you migrate my business from HubSpot or ActiveCampaign to GHL?', a: 'Yes. Migrations from HubSpot, ActiveCampaign, ClickFunnels, Kajabi, Mailchimp, and other platforms are handled regularly. Contacts, tags, pipeline stages, automations, and funnel logic are all mapped and migrated with a test phase before the old system is switched off.' },
-  { q: 'What does GHL AI do and can you set it up?', a: 'GoHighLevel\'s Conversation AI qualifies leads, answers questions, and books appointments automatically via SMS, chat, and other channels. The Voice AI Agent handles missed calls, inbound inquiries, and follow-up calls without a human in the loop. ISureMedia configures both, trained specifically to your business, your offers, and how your customers communicate.' },
-  { q: 'What happens if something breaks after the project is done?', a: 'If something breaks as a direct result of ISureMedia\'s work, it gets fixed. For ongoing retainer clients, post-delivery support is covered as part of the engagement. For project-based work, a support window is agreed before the project starts so there are no grey areas after handover.' },
+  { q: 'What does a GoHighLevel expert do?', a: 'A GoHighLevel expert configures and manages the platform for business or agency workflows. The work can include CRM setup, pipelines, automations, funnels, websites, messaging, calendars, reporting, AI tools, integrations, and ongoing administration.' },
+  { q: 'How much does it cost to hire a GoHighLevel expert?', a: 'The cost depends on the account structure, number of workflows, integrations, migration requirements, and whether the work is a one-time project or ongoing support. A defined setup or rebuild can be scoped separately from a monthly support engagement.' },
+  { q: 'How quickly can a GoHighLevel expert start my project?', a: <>A GoHighLevel expert can typically start <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> once the scope is approved and the required account access and assets are available. Larger migrations or complex builds may require additional planning before implementation.</> },
+  { q: 'Can you fix a GoHighLevel account that was set up badly?', a: 'Yes. A GoHighLevel expert can audit an existing account, identify broken workflows, clean up pipelines and fields, restructure automations, and rebuild parts of the setup that are no longer reliable.' },
+  { q: 'Do I need a GoHighLevel setup expert if I already have an account?', a: 'Not necessarily. An existing account may only need a few changes, but specialist help is useful when workflows are complex, the CRM is poorly structured, automations are unreliable, or the account needs to support a larger sales process.' },
+  { q: 'What is GoHighLevel SaaS mode?', a: 'GoHighLevel SaaS mode is a feature set that lets agencies package and sell GoHighLevel-based services to clients under a branded offering. Setup can include account structure, SaaS configuration, pricing, onboarding, and related agency workflows.' },
+  { q: 'Can you migrate my business from HubSpot or ActiveCampaign to GoHighLevel?', a: 'Yes. A GoHighLevel migration can include planning the data structure, mapping fields and pipelines, rebuilding relevant automations, moving supported data, and reconnecting integrations from platforms such as HubSpot or ActiveCampaign.' },
+  { q: 'Can you set up AI in GoHighLevel?', a: 'Yes. GoHighLevel AI tools can be configured for tasks such as answering common questions, qualifying leads, handling conversations, and supporting appointment booking. The setup depends on the conversation rules and workflow requirements.' },
+  { q: 'Can GoHighLevel connect to other software?', a: 'Yes. GoHighLevel can connect to other software through native integrations, webhooks, APIs, and automation platforms such as Zapier, Make, and n8n. The appropriate method depends on the system being connected and the data that needs to move.' },
+  { q: 'Do you offer white-label GoHighLevel support for agencies?', a: 'Yes. White-label GoHighLevel support lets agencies use a technical delivery team behind their own brand. Work can include account setup, automation, funnels, SaaS configuration, integrations, and ongoing support.' },
+  { q: 'Do you require a long-term contract for GoHighLevel support?', a: 'No. Ongoing support can be provided month to month, while project-based builds are scoped around specific deliverables and requirements.' },
+  { q: 'What happens if a GoHighLevel workflow stops working?', a: 'A broken workflow should be checked for trigger conditions, action errors, integrations, permissions, and recent account changes. A GoHighLevel specialist can identify the failure point, correct the setup, test the workflow, and verify that the intended path works again.' },
 ];
 
 
@@ -241,12 +245,12 @@ export default function HireGoHighLevelExpert() {
         <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1, textAlign: 'center' }}>
           {/* Heading */}
           <h1 style={{ fontFamily: J, fontWeight: 900, color: 'var(--color-navy)', marginBottom: 24, fontSize: 'clamp(36px, 4.5vw, 58px)', lineHeight: 1.12, letterSpacing: '-0.5px' }}>
-            Hire a <span style={{ color: 'var(--ism-amber)' }}>GoHighLevel Expert</span>
+            Hire a GoHighLevel Expert for <span style={{ color: 'var(--ism-amber)' }}>CRM, Automation, and SaaS</span>
           </h1>
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get GoHighLevel <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built, fixed, or scaled</span> by a certified expert who knows the platform properly, covering everything from CRM setup and workflow automation to funnel builds, AI chatbots, white-label SaaS configuration, and full system migrations from HubSpot, ActiveCampaign, and ClickFunnels.
+            GoHighLevel <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built, configured, and maintained</span> by an experienced specialist across CRM setup, workflows, funnels, AI, SaaS, migrations, and integrations.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -302,7 +306,7 @@ export default function HireGoHighLevelExpert() {
                 GoHighLevel covers a wide range of specialized work, from CRM architecture and pipeline setup to workflow automation, funnel and website builds, AI chatbots and voice agents, email and SMS campaigns, calendar and booking systems, reputation management, white-label SaaS configuration, and full migrations from other platforms. Most businesses buy GoHighLevel and use a fraction of what it can do. A skilled GHL expert builds it as <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a complete system</span>, not a collection of disconnected tools.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                Getting it right means working with someone who understands your sales process before they touch a single workflow, knows how GHL features interact with each other, and builds systems that keep running after they leave instead of requiring constant fixes. GoHighLevel is ISureMedia's primary platform. That depth shows in how the systems are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>designed, documented, and handed over</span>.
+                Getting it right means working with someone who understands your sales process before they touch a single workflow, knows how GHL features interact with each other, and builds systems that keep running after they leave instead of requiring constant fixes. GoHighLevel is Isuremedia's primary platform. That depth shows in how the systems are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>designed, documented, and handed over</span>.
               </p>
               
               {/* 2-Column List */}
@@ -349,10 +353,13 @@ export default function HireGoHighLevelExpert() {
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
-          <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: 0 }}>
-              Why Agencies Choose <span style={{ color: 'var(--ism-amber)' }}>GoHighLevel</span>
+          <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 72px' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>
+              Why Agencies Choose GoHighLevel <span style={{ color: 'var(--ism-amber)' }}>for Client Delivery</span>
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, margin: 0 }}>
+              The value of GoHighLevel comes from connecting lead capture, follow-up, pipelines, communication, booking, and reporting into one system.
+            </p>
           </div>
           <div style={{ position: 'relative' }}>
             <div className="wp-why-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '64px 32px', position: 'relative', zIndex: 1 }}>
@@ -426,10 +433,10 @@ export default function HireGoHighLevelExpert() {
           {/* Header */}
           <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 52px' }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 16, lineHeight: 1.15, letterSpacing: '-0.5px' }}>
-              The Full Range of GoHighLevel <span style={{ color: 'var(--ism-amber)' }}>Expertise</span>
+              Full Range of GoHighLevel <span style={{ color: 'var(--ism-amber)' }}>Expert Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From CRM setup and workflow automation to funnel builds, AI chatbots and voice agents, email and SMS campaigns, white-label SaaS configuration, and full system migrations from other platforms.
+              From CRM configuration and workflow automation to funnels, AI, SaaS, integrations, migrations and reporting, we build the parts of GoHighLevel your process actually needs.
             </p>
           </div>
 
@@ -622,10 +629,10 @@ export default function HireGoHighLevelExpert() {
             {/* ── Left: Text + Buttons ── */}
             <div style={{ position: 'relative', zIndex: 2, padding: '10px 0', alignSelf: 'center' }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(24px,3vw,34px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-                Is your WordPress site slow, broken, or just not doing <span style={{ color: 'var(--ism-amber)' }}>enough?</span>
+                Paying for GoHighLevel but Still Doing Everything <span style={{ color: 'var(--ism-amber)' }}>Manually?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Tell us what your WordPress site needs and get a free proposal back with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no obligation</span>.
+                Tell us what is not working and get a clear proposal for the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel setup, cleanup or automation work</span> you need.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -644,7 +651,7 @@ export default function HireGoHighLevelExpert() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/result_footer/ready_for_result.webp"
-                alt="WordPress Developer CTA"
+                alt="GoHighLevel Expert CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '125%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
             </div>
@@ -677,7 +684,7 @@ export default function HireGoHighLevelExpert() {
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 80 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, margin: 0 }}>
-              Why Businesses Choose<br /><span style={{ color: 'var(--ism-amber)' }}>ISureMedia&#39;s GoHighLevel Experts</span>
+              Why Businesses Choose<br /><span style={{ color: 'var(--ism-amber)' }}>Isuremedia&#39;s GoHighLevel Experts</span>
             </h2>
           </div>
           <div className="wp-whyism-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 0, alignItems: 'flex-start' }}>
@@ -769,10 +776,10 @@ export default function HireGoHighLevelExpert() {
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,4vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-              Start with the right scope <span style={{ color: 'var(--ism-amber)' }}>for your goals.</span>
+              Hire a GoHighLevel Expert for <span style={{ color: 'var(--ism-amber)' }}>the Scope You Actually Need</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a dedicated WordPress developer and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>transparent reporting</span>.
+              Choose a defined build, ongoing GHL support, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label delivery</span> based on your account and workload.
             </p>
           </div>
 
@@ -850,15 +857,15 @@ export default function HireGoHighLevelExpert() {
       {/* ════════════════════════════════════════
           SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
-      <HowItWorks 
-        title="From Your First Message to Work Starting"
-        highlightWord="on Your Site"
-        subtitle="We keep it simple so you get results that speak for themselves."
+      <HowItWorks
+        title="From First Brief to a Working GoHighLevel System"
+        highlightWord="GoHighLevel System"
+        subtitle="We start with the business process, map the system, then build and test the GHL workflows around it."
         steps={[
-          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need. A new build, a fix, a WooCommerce store, ongoing support, or something else entirely. No long forms, no discovery calls before anyone speaks to you. Just tell us what is going on.' },
-          { num: 2, title: 'We Match You to the Right Setup', text: 'Every WordPress project is different. Some need a developer for a one-off job. Some need someone working on the site every month. We look at what you have shared, ask a few questions if needed, and come back with a clear recommendation and a cost.' },
-          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once you are happy to move forward, access is set up, preferences are agreed, and work starts. The developer on your project knows your brief from the first day. No long handoffs, no repeat briefings.' },
-          { num: 4, title: 'You Stay in Control', text: 'Review work as it comes in. Give feedback directly. If the scope changes, the engagement changes with it. Nothing is fixed in stone and you are never stuck with something that no longer fits what you need.' },
+          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need: a new GHL account, a broken workflow fixed, a migration, SaaS setup, an integration, or ongoing support. We start with the problem.' },
+          { num: 2, title: 'We Match You to the Right Setup', text: 'We review the account, business process, integrations, and scope, then recommend the right GoHighLevel specialist and engagement.' },
+          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once the scope is approved and the required access is ready, the project starts. The agreed requirements are already documented, so you do not need to repeat the brief.' },
+          { num: 4, title: 'You Stay in Control', text: 'Review the work and give feedback throughout the project. Scope changes are discussed before anything outside the agreed work is added.' },
         ]}
         ctaText="Start Your Project"
         ctaHref="/contact"
@@ -878,10 +885,10 @@ export default function HireGoHighLevelExpert() {
             <div style={{ position: 'sticky', top: 120 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.1, marginBottom: 20 }}>
                 Questions About <br />
-                <span style={{ color: 'var(--ism-amber)' }}>WordPress</span>
+                <span style={{ color: 'var(--ism-amber)' }}>Hiring a GoHighLevel Expert</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Honest answers before you decide. No spin, no buzzwords.
+                Clear answers about setup, migration, SaaS, AI, contracts, timelines, and ongoing GHL support.
               </p>
               <a href="/contact"
                 style={{
@@ -957,10 +964,10 @@ export default function HireGoHighLevelExpert() {
             {/* Left Column - Text */}
             <div style={{ position: 'relative', zIndex: 1, maxWidth: 720 }}>
               <h2 style={{ fontFamily: J, color: '#fff', marginBottom: 20, lineHeight: 1.2, fontSize: 'clamp(28px, 3.5vw, 38px)' }}>
-                Get GoHighLevel <span style={{ color: 'var(--ism-amber)' }}>Working the Way It Should</span>
+                Get GoHighLevel Working the Way <span style={{ color: 'var(--ism-amber)' }}>Your Business Needs</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you are setting up GoHighLevel for the first time, fixing a system that is underperforming, or migrating from another platform, the next step is simple. Send your requirements and get a free proposal, or talk to a GoHighLevel expert about your exact business needs and how the platform can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale with you</span>.
+                Whether you're starting from scratch, fixing a broken account, migrating from another platform, or expanding your agency offer, we'll help you build the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>right GoHighLevel system</span>.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"
@@ -973,7 +980,7 @@ export default function HireGoHighLevelExpert() {
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-bg-soft)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}>
-                  Talk to an Expert
+                  Talk to a GoHighLevel Expert
                 </a>
               </div>
             </div>
@@ -1215,7 +1222,7 @@ export default function HireGoHighLevelExpert() {
           .wp-tech-pills { gap: 6px !important; flex-wrap: wrap !important; }
           .wp-tech-pills span { padding: 6px 10px !important; font-size: 11px !important; border-radius: 6px !important; }
 
-          /* ── Why ISureMedia Section ── */
+          /* ── Why Isuremedia Section ── */
           .wp-whyism-section { padding: 40px 0 !important; }
           .wp-whyism-section h2 { font-size: 24px !important; margin-bottom: 16px !important; }
           .wp-whyism-section > p { font-size: 13px !important; margin-bottom: 24px !important; }
@@ -1305,7 +1312,7 @@ export default function HireGoHighLevelExpert() {
           /* ── Tech ── */
           .wp-tech-row { flex-direction: column !important; gap: 16px !important; }
 
-          /* ── Why ISureMedia ── */
+          /* ── Why Isuremedia ── */
           .wp-whyism-grid { grid-template-columns: repeat(2,1fr) !important; gap: 18px !important; }
 
           /* ── Engagement ── */
