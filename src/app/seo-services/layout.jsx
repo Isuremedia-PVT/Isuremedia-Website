@@ -11,20 +11,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How long does SEO take to show results?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Most businesses see ranking movement within 3–6 months. Traffic and lead growth typically follows at 6–9 months." } },
-        { "@type": "Question", "name": "What is AEO (Answer Engine Optimisation)?",
-          "acceptedAnswer": { "@type": "Answer", "text": "AEO optimises your content to appear in Google AI Overviews, ChatGPT, and Perplexity. We structure content with FAQ schema so AI systems cite your business." } },
-        { "@type": "Question", "name": "What is included in your SEO services?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Technical audit, on-page optimisation, keyword mapping, content strategy, link building, local SEO (GBP), and AI Overview / AEO optimisation." } }
+        { "@type": "Question", "name": "How long does SEO take to produce measurable leads and traffic?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most websites begin seeing positive keyword movement within 3 to 6 months, with substantial traffic gains and inbound sales leads materializing between months 6 and 9." } },
+        { "@type": "Question", "name": "What is AEO (Answer Engine Optimization) and why is it essential?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Answer Engine Optimization (AEO) formats website data so AI search engines like ChatGPT, Perplexity and Google AI Overviews can digest, trust and quote your website in direct answer summaries." } },
+        { "@type": "Question", "name": "What specific elements are covered within your SEO services?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Our full-service campaigns cover technical code repair, keyword mapping, on-page copywriting, white-hat link acquisition, Google Business Profile management, AI answer optimization, and monthly performance tracking." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "SEO Services | Rank on Google & AI Search | Isuremedia",
-  description: "Full-service SEO agency. Technical SEO, on-page, link building, local SEO & AI Search optimisation. 150+ clients ranked. Free SEO audit.",
+  title: "SEO Services Agency | Drive Organic Traffic Growth",
+  description: "Rank higher on search engines with an expert SEO services agency. We provide technical SEO audits, local SEO services, and strategic link building.",
   alternates: { canonical: "/seo-services" },
 };
 

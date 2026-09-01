@@ -46,74 +46,74 @@ const SERVICES = [
   {
     title: 'Technical SEO',
     icon: 'fa-solid fa-gear',
-    desc: 'Your website needs to be built in a way Google can read, crawl, and rank. We fix what holds your site back, slow load times, broken pages, crawl errors, and messy structure. Most businesses do not know these issues exist until they see the rankings they are missing.',
+    desc: 'As a dedicated technical SEO agency, we eliminate crawl errors, optimize site speed, repair broken links, and configure clean schema markup so search bots index every valuable page without technical friction.',
     href: '/technical-seo',
   },
   {
     title: 'On-Page SEO',
     icon: 'fa-solid fa-file-lines',
-    desc: 'Every page on your site needs to be set up for the right search. We work on your headings, copy, title tags, meta descriptions, and internal links so Google knows exactly what each page is about and who to show it to.',
+    desc: 'We align your page copy, headers, title tags, meta descriptions, and internal linking structures with real buyer search intent, making it clear to search engines exactly what you sell and who to show it to.',
     href: '/on-page-seo-services',
   },
   {
     title: 'Local SEO',
     icon: 'fa-solid fa-location-dot',
-    desc: 'If your customers are in a specific city or area, you need to show up when they search nearby. We set up your Google Business Profile, build local citations, and create location pages so your business appears when local buyers are looking.',
+    desc: 'Our targeted local SEO services optimize your Google Business Profile, build verified geo-citations, and publish location-specific landing pages so nearby buyers find your business first.',
     href: '/local-seo-services',
   },
   {
     title: 'E-Commerce SEO',
     icon: 'fa-solid fa-cart-shopping',
-    desc: 'Product and category pages need to rank for searches where people are ready to buy. We optimise your store structure, product descriptions, and site architecture so visitors landing on your pages are already looking to purchase.',
+    desc: 'We structure online stores, optimize product descriptions, and refine category pages to rank for high-intent transactional searches, turning organic visitors directly into store checkouts.',
     href: '/on-page-seo-services',
   },
   {
     title: 'Link Building',
     icon: 'fa-solid fa-link',
-    desc: <>Google ranks websites higher when trusted sites link to them. We build those links through <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>real outreach and digital PR</span>, not shortcuts that get sites penalised. Every link we earn adds to your authority and holds up long term.</>,
+    desc: <>Operating as an ethical link building agency, we earn high-authority editorial backlinks through <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>genuine outreach and digital PR</span>, forging long-term domain trust that protects your rank stability.</>,
     href: '/link-building-service',
   },
   {
     title: 'Keyword Research & Content Strategy',
     icon: 'fa-solid fa-pen-nib',
-    desc: 'Ranking on the wrong searches brings the wrong people. We research what your customers type into Google at every stage of the buying process and build your content strategy around those searches, the right keywords, in the right content, on the right pages.',
+    desc: 'We pinpoint precisely what your ideal buyers query at every stage of their buying decision, building search-targeted content campaigns around commercial keywords that drive actual sales revenue.',
     href: '/on-page-seo-services',
   },
   {
     title: 'SEO Audits',
     icon: 'fa-solid fa-magnifying-glass-chart',
-    desc: 'Before anything else, you need to know where you stand. Our audit covers your technical health, on-page setup, backlink profile, and keyword gaps. You get a clear report showing what is holding your rankings back and what to fix first.',
+    desc: 'Our in-depth audit diagnoses your technical performance, on-page setup, backlink health, and competitor keyword gaps, providing a clear roadmap of what is holding you back and what to fix first.',
     href: '/technical-seo',
   },
   {
     title: 'AI SEO (AEO and GEO)',
     icon: 'fa-solid fa-robot',
-    desc: 'Google AI Overviews, ChatGPT, and Perplexity are now part of how people search. We structure your content so these tools cite your business in their answers. Most agencies still only optimise for traditional Google results. We cover both.',
+    desc: 'As a cutting-edge AI SEO agency, our AEO optimisation service formats your digital assets so AI platforms like ChatGPT, Perplexity, and Google AI Overviews cite your brand as the expert recommendation.',
     href: '/ai-seo-services',
   },
   {
     title: 'White-Label SEO',
     icon: 'fa-solid fa-tag',
-    desc: 'If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients get the results, your brand gets the credit. No footprint, no subcontracting.',
+    desc: 'We deliver confidential, white-label execution for digital marketing agencies, executing elite technical, content and backlink strategies behind the scenes so your brand takes full credit for the results.',
     href: '/on-page-seo-services',
   },
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Site Audit & Business Discovery',                     desc: 'We run a full audit of your site covering technical health, current rankings, content gaps, and backlink profile. You get a clear picture of where things stand before any work starts.' },
-  { num: 2, period: 'Keyword Research & Strategy',                          desc: 'We map out what your buyers are searching for at every stage, from first search to ready to buy. Every keyword we target is one real people search for and that brings people close to a decision.' },
-  { num: 3, period: 'Technical, Content & Link Building, All at Once',     desc: 'Technical fixes go live, content goes up, and link building runs in parallel. Every campaign also includes AI Search and AEO optimisation from day one so you show up in Google, ChatGPT, and Perplexity.' },
-  { num: 4, period: 'Monthly Reporting & Refinement',                       desc: <>Every month you get a plain report covering traffic, rankings, leads, and everything we worked on. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No vanity metrics</span>, just what moved, what did not, and what we are doing next.</> },
-  { num: 5, period: 'Scale What Is Working',                                desc: 'Once your core keywords are ranking and traffic is growing, we expand, new keyword clusters, new content, deeper link authority, and broader AI search coverage. The work compounds month by month.' },
+  { num: 1, period: 'Audit & Market Discovery',                             desc: 'We execute a deep technical audit evaluating site architecture, keyword positioning, and backlink authority. As a transparent search engine optimisation company, we establish a clear baseline before launching any work.' },
+  { num: 2, period: 'Keyword Strategy & Funnel Mapping',                    desc: 'We map high-intent commercial search queries to match buyer intent. Every keyword target selected by our team is designed to attract visitors who are actively preparing to make a buying decision.' },
+  { num: 3, period: 'Simultaneous Technical, Content & Link Building',      desc: 'Technical repairs go live, conversion copy is published, and backlink outreach launches simultaneously. Our AEO optimisation service runs concurrently so you capture both traditional Google results and AI search tools.' },
+  { num: 4, period: 'Monthly Reporting & Strategy Refinement',              desc: <>Every month you receive a straightforward performance report detailing organic traffic, keyword positions, leads generated and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>completed tasks focusing strictly on business growth</span>.</> },
+  { num: 5, period: 'Aggressive Campaign Scaling',                          desc: 'Once core terms hit Page 1, our AI SEO agency team expands your reach targeting secondary keyword clusters, publishing fresh content assets, and deepening authority to keep your growth compounding.' },
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'Flexible Plans for Every Budget',        desc: 'SEO should not be something only large companies can afford. We build plans around what your business needs right now, not a fixed package with services you do not need, a campaign built for your goals and your budget.' },
-  { dark: false, icon: 'fa-solid fa-robot',          title: 'We Get You Found in AI Search',          desc: <>People are asking ChatGPT, Perplexity, and Google AI Overviews for answers, and those tools recommend specific businesses. We structure your content and build your authority so AI systems read it, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trust it, and cite it</span>.</> },
-  { dark: false, icon: 'fa-solid fa-circle-check',  title: 'You Are Free to Leave Any Time',         desc: 'We do not hold clients with long contracts because we do not need to. Our work speaks for itself every month. There are no penalties, no minimum terms, and no awkward exit process.' },
-  { dark: false, icon: 'fa-solid fa-shield-halved', title: 'We Only Use White Hat SEO',              desc: 'Some agencies use shortcuts that end in Google penalties taking months or years to recover from. Every link we build and every optimisation we make follows Google\'s guidelines so your rankings are safe and built to last.' },
-  { dark: false, icon: 'fa-solid fa-eye',            title: 'Full Visibility Into Everything We Do',  desc: 'Every month you get a clear report covering traffic, keyword rankings, leads, and a full breakdown of completed work. You keep direct access to Google Analytics and Search Console at all times, your data belongs to you.' },
-  { dark: false, icon: 'fa-solid fa-headset',        title: 'Regular Updates, One Dedicated Contact', desc: 'You get one person assigned to your account from day one. That person knows your business, tracks your campaign, and is your direct line for any question or update, never passed around or left waiting.' },
+  { dark: true,  icon: 'fa-solid fa-sliders',       title: 'Flexible Plans Aligned to Your Budget',  desc: "High-performing search optimization shouldn't require enterprise-only budgets. We tailor campaigns directly to your growth goals, delivering the exact technical, content, and link assets needed to win without fluff." },
+  { dark: false, icon: 'fa-solid fa-robot',          title: 'AI Search Optimization Built In',        desc: <>Millions of users now consult ChatGPT, Perplexity, and Google AI Overviews for purchase decisions. As a forward-thinking AI SEO agency, we structure your brand assets so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI models reference your business as an authority</span>.</> },
+  { dark: false, icon: 'fa-solid fa-circle-check',  title: 'Zero Long-Term Contract Lock-Ins',        desc: 'We earn your business month after month through tangible ranking gains. There are no exit fees, zero 12-month lock-in traps, and no awkward exit terms if you ever decide to pause.' },
+  { dark: false, icon: 'fa-solid fa-shield-halved', title: 'Strict White-Hat Execution Only',         desc: "Shortcuts and cheap link networks result in severe Google penalties. Every technical adjustment and backlink created by our technical SEO agency follows search engine guidelines to keep your domain authority safe." },
+  { dark: false, icon: 'fa-solid fa-eye',            title: 'Complete Visibility & Asset Ownership',   desc: 'You retain 100% control of your Google Analytics, Search Console and tracking system. Every month, we deliver transparent reports detailing your traffic, keywords and leads.' },
+  { dark: false, icon: 'fa-solid fa-headset',        title: 'One Dedicated Account Specialist',        desc: 'You work with a dedicated specialist who knows your market inside and out. Your account lead tracks your campaign, runs your strategy, and provides clear updates without delays.' },
 ];
 
 const INDUSTRIES = [
@@ -124,16 +124,16 @@ const INDUSTRIES = [
 
 
 const FAQS = [
-  { q: 'How long does SEO take to show results?', a: <>Most businesses see ranking movement within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>three to six months</span>, with meaningful traffic and leads following at six to nine. The timeline depends on how competitive your industry is and the current state of your site. We tell you what to expect honestly at the start.</> },
-  { q: 'How is Isuremedia different from other SEO agencies?', a: 'Three things. We never outsource, your campaign is handled entirely in-house. We run technical SEO, content, and link building together because that is how results compound. And we include AI Search optimisation on every campaign because search has changed.' },
-  { q: 'Do you offer white-label SEO for agencies?', a: 'Yes. If you run a marketing agency and need SEO delivered under your brand, we handle everything behind the scenes. Your clients see your name on the work, we have no footprint in the relationship.' },
-  { q: 'What does your SEO audit cover?', a: 'Technical health (speed, crawlability, Core Web Vitals, indexation), on-page (keyword mapping, title tags, headings, internal linking), and off-page (backlink profile, toxic links, competitor gaps). You get a prioritised action plan, not just a list of issues.' },
-  { q: 'How much do SEO services cost?', a: 'Our SEO packages start from $500/month depending on the scope, number of pages, and target market. We offer a free audit before proposing any package.' },
-  { q: 'Do you offer local SEO for small businesses?', a: 'Yes. Local SEO is one of our core services. We optimize your Google Business Profile, build local citations, and target location-specific keywords to get you into the Google Map Pack.' },
-  { q: 'Can SEO and paid ads work together?', a: 'Yes, and they work better together than either does alone. Paid ads get you in front of buyers immediately; SEO builds the long-term foundation that keeps traffic coming without ongoing ad spend. The fastest-growing businesses usually do both.' },
-  { q: 'What happens if my rankings drop?', a: 'Rankings fluctuate, Google updates its algorithm regularly and competitor activity affects rankings too. When movement happens, we investigate immediately, identify the cause, and adjust the strategy. You are told what happened and what we are doing about it.' },
-  { q: 'What is included in your SEO services?', a: 'Our SEO includes technical audit and fixes, on-page optimisation, keyword mapping, content strategy, link building, local SEO (GBP), and AI Overview / AEO optimisation.' },
-  { q: 'What is AEO (Answer Engine Optimisation)?', a: 'AEO is the process of optimising your content to appear in AI-powered search results: Google AI Overviews, ChatGPT, and Perplexity. We structure content with FAQ schema and clear answers so AI systems cite your business.' },
+  { q: 'How long does SEO take to produce measurable leads and traffic?', a: <>Most websites begin seeing positive keyword movement within <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>3 to 6 months</span>, with substantial traffic gains and inbound sales leads materializing between months 6 and 9. Timelines vary based on site age, competitive difficulty, and technical fixes completed by your technical SEO agency.</> },
+  { q: 'How is Isuremedia different from traditional SEO agencies?', a: 'Traditional agencies limit their focus to standard Google rankings. We operate as a full-funnel search company, combining technical site repairs, link building, and an advanced AEO optimisation service so your site ranks on Page 1 of Google while getting cited inside ChatGPT, Perplexity and Google AI Overviews.' },
+  { q: 'Do you offer white-label SEO services for marketing agencies?', a: 'Yes. We act as an unbranded backend partner for marketing agencies delivering technical fixes, on-page optimization, content creation and backlink outreach under strict NDA agreements so your agency gets full credit.' },
+  { q: 'What does your initial SEO site audit include?', a: 'Our comprehensive audit inspects underlying technical code, site speed bottlenecks, crawl errors, schema markup, on-page content relevance, backlink authority, and competitor search gaps to highlight what needs immediate fixing.' },
+  { q: 'How much do professional SEO services cost?', a: 'Pricing is tailored to your market competition, target geographic footprint, and overall execution scope. We provide transparent, itemized campaign options immediately following your initial discovery audit.' },
+  { q: 'Do you provide local SEO services for regional service businesses?', a: 'Yes. Our dedicated local SEO services optimize your Google Business Profile, correct local citations, create location landing pages, and implement review acquisition strategies to place your business at the top of Google Map Packs.' },
+  { q: 'Can organic SEO work alongside paid search ad campaigns?', a: 'Absolutely. Combining paid ads with organic search dominates Google Search Engine Results Pages (SERPs). Paid ads bring instant visibility, while your organic search strategy builds a compounding digital asset that drops overall customer acquisition costs.' },
+  { q: 'What steps do you take if search engine algorithms update?', a: 'Because our link building agency and content teams adhere strictly to white-hat search guidelines, our sites stay protected against core algorithm penalties. If search shifts occur, we analyze ranking telemetry instantly and refine your pages to maintain top positions.' },
+  { q: 'What specific elements are covered within your SEO services?', a: 'Our full-service campaigns cover technical code repair, keyword mapping, on-page copywriting, white-hat link acquisition, Google Business Profile management, AI answer optimization, and monthly performance tracking.' },
+  { q: 'What is AEO (Answer Engine Optimization) and why is it essential?', a: 'Answer Engine Optimization (AEO) formats website data so AI search engines like ChatGPT, Perplexity and Google AI Overviews can digest, trust and quote your website in direct answer summaries. Implementing AEO ensures your brand captures buyers as search habits migrate toward AI models.' },
 ];
 
 /* ── PILL ─────────────────────────────────────────────────────────── */
@@ -216,13 +216,16 @@ export default function SEOPage() {
           <div className="ism-container" style={{ textAlign:'center', position:'relative' }}>
 
             <h1 style={{ fontFamily:J, fontSize:'clamp(38px,5.5vw,72px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-2px', lineHeight:1.06, margin:'0 auto 24px', maxWidth:940 }}>
-              Rank on Google.<br />
-              Show Up in AI Search.<br />
-              <span style={{ color:'var(--ism-amber)' }}>Grow Your Business.</span>
+              SEO Services That Get You Found on Google and in AI Search.<br />
+              <span style={{ color:'var(--ism-amber)' }}>Turn Searches Into Customers.</span>
             </h1>
 
-            <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 36px' }}>
-              We get your business to Page&nbsp;1 on Google and into AI Search results, so the right people <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>find you, contact you, and buy</span>.
+            <p style={{ fontFamily:I, fontSize:'clamp(15px,1.6vw,18px)', color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:600, margin:'0 auto 20px' }}>
+              Our SEO and AIO strategies help your business appear where customers search, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>build visibility, and drive more qualified leads</span>.
+            </p>
+
+            <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.78, maxWidth:680, margin:'0 auto 36px' }}>
+              Getting top rankings is meaningless if your site traffic doesn&apos;t convert into cash flow. As a specialized search engine optimisation company, we build complete search strategies engineered to capture market share and drive bottom-line growth. Whether you need an AI SEO agency to capture modern answer engines or an elite link building agency to forge unshakeable domain authority, we deliver measurable ROI along with vanity metrics.
             </p>
 
             {/* CTAs */}
@@ -232,14 +235,14 @@ export default function SEOPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Start Growing Organically
+                Claim Free Audit Now
               </a>
               <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'16px 36px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:800, color:'var(--color-primary)', background:'transparent', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', border:'2px solid var(--color-primary)', transition:'all .18s' }}
                 onMouseEnter={e=>{ (e.currentTarget).style.background='var(--color-primary)'; (e.currentTarget).style.color='#fff'; }}
                 onMouseLeave={e=>{ (e.currentTarget).style.background='transparent'; (e.currentTarget).style.color='var(--color-primary)'; }}
               >
-                Claim Free Audit Now
+                Start Growing Organically
               </a>
             </div>
 
@@ -256,10 +259,10 @@ export default function SEOPage() {
             {/* Heading */}
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,40px)', fontWeight:800, color:'var(--color-navy)', letterSpacing:'-0.4px', lineHeight:1.2, maxWidth:820, margin:'0 auto 14px' }}>
-                Why SEO Should Be the <span style={{ color:'var(--ism-amber)' }}>Foundation</span> of Your Growth
+                Why SEO Is the <span style={{ color:'var(--ism-amber)' }}>Highest-Margin Investment</span> You Can Make
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', maxWidth:580, margin:'0 auto', lineHeight:1.75 }}>
-                Organic search is the largest single source of traffic on the internet. Here is what that means for your business.
+                Organic search captures more buying intent than any other digital channel. Here is why it belongs at the core of your growth.
               </p>
             </div>
 
@@ -269,11 +272,11 @@ export default function SEOPage() {
               {/* Left, 4 numbered points */}
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Most customers start with a search', text:<>53% of all website traffic comes from organic search, more than paid ads, social, and email combined. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That is where we start every campaign</span>.</> },
-                  { num:'02', title:'Page 2 is basically invisible', text:<>The #1 result gets <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>39.8% of all clicks</span>. Page 2 gets under 1%. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Page one is our minimum, not our goal</span>.</> },
-                  { num:'03', title:'Organic leads convert better', text:<>Organic leads convert at nearly 9x the rate of outbound, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>people already want what you sell before they click</span>.</> },
-                  { num:'04', title:'AI search is the next big shift', text:<>Getting cited in ChatGPT, Perplexity, and AI Overviews now matters as much as ranking on page one. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>We make sure our clients show up in both places</span>.</> },
-                  { num:'05', title:'Rankings compound instead of resetting', text:<>Paid traffic stops the moment you stop paying. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Organic rankings keep working long after the campaign that built them</span>.</> },
+                  { num:'01', title:'Most buyers begin with a search query', text:<>53% of all web traffic originates from organic search, dwarfing paid ads, social media, and cold email combined. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That unmatched buyer intent is why we start every growth campaign here</span>.</> },
+                  { num:'02', title:'Page 2 is almost invisible', text:<>The top result on Google claims <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>nearly 40% of all clicks</span>, while Page 2 receives less than 1%. As your dedicated technical SEO agency, we relentlessly optimize your site to secure high-converting Page 1 placements.</> },
+                  { num:'03', title:'Organic traffic converts at higher rates', text:<>Organic search leads convert at nearly <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>9x the rate of cold outbound marketing</span>. When visitors land on your site via search, they are already looking for the exact solution you provide.</> },
+                  { num:'04', title:'AI search is rewriting the rules', text:<>Getting cited in ChatGPT, Perplexity, and Google AI Overviews is now as critical as traditional web rankings. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Our AEO optimisation service positions your brand as the primary authority</span> across both frontiers.</> },
+                  { num:'05', title:'Rankings compound while ad costs rise', text:<>Paid ad channels demand more cash for every click. Partnering with a proven link building agency builds long-term domain authority, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>generating continuous traffic that compounds over time</span>.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
@@ -342,17 +345,17 @@ export default function SEOPage() {
               {/* Right, text */}
               <div style={{ padding:'44px 52px 44px 36px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'flex-start' }}>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(24px,2.6vw,38px)', fontWeight:900, color:'#1A1A1A', lineHeight:1.22, letterSpacing:'-0.4px', margin:'0 0 16px' }}>
-                  Your next customer is searching right now. Are you <span style={{ color:'var(--ism-amber)' }}>showing up?</span>
+                  High-Intent Buyers Are Searching Right Now. <span style={{ color:'var(--ism-amber)' }}>Will They Find You?</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Get a free SEO audit and find out why your site is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>not getting the traffic</span> it should.
+                  Request your free SEO audit today to reveal hidden ranking blockage and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>capture lost market share</span>.
                 </p>
                 <a href="/contact"
                   style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                 >
-                  Run My Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                  Get My Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                 </a>
               </div>
 
@@ -375,7 +378,7 @@ export default function SEOPage() {
         <section className="seo-imgtext-section" style={{ background:'var(--color-bg-soft)', padding:'88px 0' }}>
           <div className="ism-container">
             <h2 style={{ fontFamily:J, fontSize:'clamp(22px,2.8vw,38px)', fontWeight:800, color:'var(--color-navy)', textAlign:'center', letterSpacing:'-0.4px', lineHeight:1.2, margin:'0 auto 52px', maxWidth:820 }}>
-              Proven SEO Strategies That Drive <span style={{ color:'var(--ism-amber)' }}>Real Business Growth</span>
+              Drive Measurable Business Growth with <span style={{ color:'var(--ism-amber)' }}>Proven SEO</span>
             </h2>
             <div className="seo-imgtext-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:56, alignItems:'center' }}>
 
@@ -392,13 +395,10 @@ export default function SEOPage() {
               {/* Right, text */}
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  SEO builds on itself in a way most channels do not. Content you publish today <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keeps earning rankings next year</span>, and links you build today add to your authority permanently. Every piece of work compounds.
+                  Search engine optimization offers a unique compounding advantage that traditional paid channels simply cannot match. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>High-value content engineered today keeps acquiring top rankings next year</span>, while backlink authority acquired today permanently elevates your entire domain. Every optimization stacks up to build a defensive digital moat around your brand.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The businesses that start SEO earliest are hardest to displace later</span>, the longer you wait, the more ground competitors cover. Few marketing decisions have a compounding advantage that never goes away.
-                </p>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Isuremedia handles all of this, the rankings, the AI citations, and making sure every visitor landing on your site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>already wants what you sell</span>.
+                  Businesses that invest in professional SEO services early become <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>almost impossible for competitors to dethrone later</span>. Few digital investments yield a permanent competitive edge that never expires. Our team executes the entire strategy, eliminating technical flaws, securing AI search citations, and making sure every visitor landing on your pages is primed to convert.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact"
@@ -406,7 +406,7 @@ export default function SEOPage() {
                     onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
                     onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                   >
-                    Get My Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                    Check My Site&apos;s Performance <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                   </a>
                 </div>
               </div>
@@ -425,7 +425,10 @@ export default function SEOPage() {
         </section>
 
         {/* ══ 11. TESTIMONIALS ════════════════════════════════════════════ */}
-        <Testimonials />
+        <Testimonials
+          heading="What Business Leaders Say About Working With Us"
+          subheading={<>Hear from businesses and agencies who trust us to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale their organic growth</span>.</>}
+        />
 
         {/* ══ 4. SERVICES GRID ════════════════════════════════════════════ */}
         <section className="seo-section" style={{ padding:'100px 0', background:'var(--color-bg-soft)' }}>
@@ -497,17 +500,17 @@ export default function SEOPage() {
               {/* Left */}
               <div>
                 <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.2vw,46px)', fontWeight:900, color:'#fff', letterSpacing:'-0.5px', margin:'0 0 12px', lineHeight:1.12 }}>
-                  Why SEO Is a{' '}
+                  Why SEO Services Is a{' '}
                   <span style={{ color:'var(--ism-amber)' }}>Great Investment</span>
                 </h2>
 
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--ism-amber)', fontWeight:600, lineHeight:1.6, margin:'0 0 24px' }}>
-                  Turn Your Website Into Your Best-Performing Sales Channel
+                  Build an Organic Search Foundation That Generates Leads 24/7
                 </p>
 
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>Most marketing stops when you stop paying.</strong> A ranked page keeps sending traffic every day with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no ongoing cost per click</span>, and organic leads convert 9× better than outbound, because we build for Google and AI search alike.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Most marketing stops when you stop paying.</strong> A ranked page keeps sending traffic every day with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no ongoing cost per click</span>, and organic leads convert 9× better than outbound marketing because we build for Google search engine rankings and AI answer platforms alike. As a specialized search engine optimisation company, we optimize your site architecture so every targeted keyword earns recurring, high-converting organic visitors without reliance on ad budgets.
                   </p>
                 </div>
 
@@ -516,7 +519,7 @@ export default function SEOPage() {
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.45)'; }}
                   onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.30)'; }}
                 >
-                  Start Building Your SEO Asset →
+                  Lock In Long-Term Organic Traffic →
                 </a>
               </div>
 
@@ -538,10 +541,10 @@ export default function SEOPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:64 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
-                Isuremedia&apos;s Proven SEO System for <span style={{ color:'var(--ism-amber)' }}>Measurable Growth</span>
+                Isuremedia&apos;s Proven 5-Step SEO <span style={{ color:'var(--ism-amber)' }}>Roadmap for Organic Growth</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Your First Step Toward Bigger Rankings and Better Business
+                How our SEO experts plan, execute and scale multi-channel campaigns to deliver maximum return on investment.
               </p>
             </div>
             <div className="seo-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:0, position:'relative' }}>
@@ -567,7 +570,7 @@ export default function SEOPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 30px rgba(255,176,0,.50)'; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 22px rgba(255,176,0,.38)'; }}
               >
-                Get a Free SEO Audit
+                Claim Your Free SEO Audit
               </a>
             </div>
           </div>
@@ -578,11 +581,11 @@ export default function SEOPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(26px,3vw,44px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px' }}>
-                Start with the right scope{' '}
-                <span style={{ color:'var(--ism-amber)' }}>for your goals.</span>
+                Choose the Right SEO Scope{' '}
+                <span style={{ color:'var(--ism-amber)' }}>to Hit Your Revenue Targets.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every plan includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated SEO manager</span> and monthly reporting.
+                Every plan includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated SEO/campaign manager</span>, transparent monthly reporting and no long-term contracts.
               </p>
             </div>
             <div className="seo-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>
@@ -653,10 +656,10 @@ export default function SEOPage() {
           <div className="ism-container">
             <div style={{ textAlign:'center', marginBottom:60 }}>
               <h2 style={{ fontFamily:J, fontSize:'clamp(24px,3vw,42px)', fontWeight:900, color:'var(--color-navy)', letterSpacing:'-0.5px', margin:'0 0 14px', maxWidth:700, marginLeft:'auto', marginRight:'auto', lineHeight:1.2 }}>
-                Why Our SEO Services Drive <span style={{ color:'var(--ism-amber)' }}>Better Growth</span> for Your Business
+                Why Go with <span style={{ color:'var(--ism-amber)' }}>Our SEO Services</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Get the organic traffic your business deserves.
+                Built for modern search engines, total accountability and lasting organic success.
               </p>
             </div>
             <div className="seo-diff-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24 }}>
@@ -696,11 +699,11 @@ export default function SEOPage() {
               </div>
 
               <h2 style={{ fontFamily:J, fontSize:'clamp(28px,3.5vw,48px)', fontWeight:900, color:'#fff', lineHeight:1.1, letterSpacing:'-0.5px', margin:'0 0 20px' }}>
-                Ready to rank higher<br />and bring in <span style={{ color:'var(--ism-amber)' }}>more customers?</span>
+                Ready to Rank Higher and Turn<br />Search Traffic Into <span style={{ color:'var(--ism-amber)' }}>Revenue?</span>
               </h2>
 
               <p style={{ fontFamily:I, fontSize:16, color:'rgba(255,255,255,.75)', lineHeight:1.80, margin:'0 0 36px', maxWidth:520 }}>
-                Whether you are a local business, a growing brand, or a marketing agency, the question is the same. Are your best customers <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>finding you on Google</span>? If not, talk to us and we will show you where the opportunity is.
+                Whether you are a local business owner, an expanding brand or a digital agency lead, the core question stays the same: are your best potential buyers <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>finding your website on Google and AI search platforms</span>? If not, talk to our team today. We will audit your existing search performance, pinpoint the biggest ranking opportunities and build your dominant organic search presence.
               </p>
 
               {/* Buttons */}
