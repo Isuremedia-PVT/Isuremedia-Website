@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How quickly can a Shopify developer start on my store?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Once requirements are confirmed, a developer starts within 48 hours. The same developer builds your store from day one with no handoffs." } },
-        { "@type": "Question", "name": "Can you migrate my WooCommerce store to Shopify?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Isuremedia handles full migrations including product data, customer records, order history, and SEO signals. Planned before work starts to ensure nothing is lost." } },
-        { "@type": "Question", "name": "Do you work with Shopify Plus?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our developers work across standard Shopify and Shopify Plus including checkout extensions, Shopify Functions, B2B configuration, and Shopify Markets." } }
+        { "@type": "Question", "name": "What does a Shopify developer do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A Shopify developer builds, customizes, integrates, and maintains Shopify stores. Their work can include themes, storefront functionality, apps, APIs, Shopify Plus, performance improvements, migrations, and checkout optimization." } },
+        { "@type": "Question", "name": "Can you migrate a WooCommerce store to Shopify?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A WooCommerce to Shopify migration can include product and customer data, storefront setup, URL redirects, integrations, and other technical work required to move the store to Shopify." } },
+        { "@type": "Question", "name": "Do you offer Shopify Plus development?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Shopify Plus development can include advanced storefront work, custom integrations, more complex workflows, and technical support for businesses using the Shopify Plus platform." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire Shopify Developer | Shopify Experts | Isuremedia",
-  description: "Hire a Shopify developer from Isuremedia for custom stores, Shopify Plus, theme development, and WooCommerce migrations. In-house team. Starts in 48 hours.",
+  title: "Hire a Shopify Developer for Custom Stores & Shopify Plus",
+  description: "Hire a Shopify developer to build a store around your products and customers, with custom design, smoother shopping experiences, and technical support as you grow.",
   alternates: { canonical: "/hire-shopify-developer" },
 };
 
