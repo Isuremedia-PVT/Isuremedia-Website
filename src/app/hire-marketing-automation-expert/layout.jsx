@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Which platforms do your marketing automation specialists work with?",
-          "acceptedAnswer": { "@type": "Answer", "text": "GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, Mailchimp, Brevo, and Customer.io. CRM work covers GHL CRM, HubSpot CRM, Salesforce, Pipedrive, and Zoho. Integrations via Zapier, Make, n8n, and direct API." } },
-        { "@type": "Question", "name": "What does AI marketing automation do that regular automation does not?",
-          "acceptedAnswer": { "@type": "Answer", "text": "AI automation fires on behaviour rather than time: sending when a lead is most likely to open, scoring higher when they visit pricing pages, adapting messaging when a lead goes quiet. Each lead gets individual treatment, not the same sequence for everyone." } },
-        { "@type": "Question", "name": "Can you migrate from one automation platform to another?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Full migrations including contacts, workflow logic, sequences, funnels, and email and SMS campaigns. Most common: ActiveCampaign to GoHighLevel, HubSpot to GoHighLevel. Planned before work starts so no active leads are lost." } }
+        { "@type": "Question", "name": "What does a marketing automation expert do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A marketing automation expert designs and manages systems that automate repetitive marketing and sales tasks. This can include CRM workflows, lead nurture, email and SMS campaigns, lead scoring, customer follow-up, integrations, AI-assisted conversations, and reporting." } },
+        { "@type": "Question", "name": "Can AI be used in marketing automation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. AI can support marketing automation through lead qualification, conversational responses, personalization, scoring, routing, and other workflow tasks. The right use depends on the business process and the data available." } },
+        { "@type": "Question", "name": "Do you provide white-label marketing automation services for agencies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. White-label marketing automation services allow agencies to have CRM, workflow, AI, email, SMS, and integration work delivered behind their brand while they keep the client relationship." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire Marketing Automation Expert | CRM Automation | Isuremedia",
-  description: "Hire a marketing automation expert from Isuremedia. CRM workflows, lead nurturing, and AI automation across GoHighLevel, HubSpot, and Klaviyo. Free proposal.",
+  title: "Hire a Marketing Automation Expert for CRM & Lead Automation",
+  description: "Hire a marketing automation expert to replace manual follow-up with smarter workflows, lead nurturing, CRM automation, AI and connected customer journeys.",
   alternates: { canonical: "/hire-marketing-automation-expert" },
 };
 

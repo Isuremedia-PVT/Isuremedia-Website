@@ -26,12 +26,12 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-person-dots-from-line', title: 'Leads Are Nurtured Without Manual Work', desc: <>Every lead gets consistent, relevant follow-up regardless of how busy your team is. Sequences run based on what each lead actually does, not a generic time schedule. The right message arrives at the right moment because the system is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>watching behaviour, not a calendar</span>.</> },
-  { icon: 'fa-solid fa-chart-line', title: 'Your Best Leads Rise to the Top Automatically', desc: 'AI-powered lead scoring tracks engagement signals across email opens, link clicks, page visits, and form interactions. The leads most likely to convert get flagged and prioritized for your sales team without anyone having to manually review the CRM every morning.' },
-  { icon: 'fa-solid fa-plug', title: 'Every Tool in Your Stack Talks to the Others', desc: 'Your CRM, email platform, website, ads, booking system, and payment processor all feed data into one system and respond to each other. A purchase triggers a thank-you and upsell sequence. A booking cancellation starts a recovery flow. No data sitting in separate platforms that nobody connects.' },
-  { icon: 'fa-solid fa-brain', title: 'AI Handles Qualification at Any Hour', desc: 'Conversational AI qualifies new leads, answers common questions, and routes the right people to the right next step, whether that is a booking, a sales call, or a nurture sequence. At 11pm when your team is offline, the system is still engaging every lead that comes in.' },
-  { icon: 'fa-solid fa-heart', title: 'Customers Get Kept, Not Just Acquired', desc: 'Post-purchase automation handles onboarding, usage prompts, check-ins, renewal reminders, and win-back sequences for customers who go quiet. The businesses that retain customers cost-efficiently are the ones whose automation system keeps working long after the sale.' },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'You Can See What Is Actually Driving Revenue', desc: 'Proper attribution shows which campaigns, which channels, and which automations are producing leads that convert to revenue. Not open rate reports. Not click rate reports. A clear line from marketing activity to money in the business.' },
+  { icon: 'fa-solid fa-person-dots-from-line', title: 'Leads Stay in Motion Without Manual Follow-Up', desc: <>Automation can trigger relevant follow-up when a lead enters the CRM, completes a form, books a call, or takes another defined action. Your team does not need to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>remember every next step</span>.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Lead Scoring Helps Your Team Prioritize', desc: 'A marketing automation system can score leads using actions such as page visits, form submissions, email engagement, or other defined signals, helping sales teams focus on stronger opportunities first.' },
+  { icon: 'fa-solid fa-plug', title: 'Your Tools Can Share the Same Customer Data', desc: 'Connecting your CRM, email platform, website, ads, booking system, and other business tools reduces duplicate entry and keeps customer information available where the next action happens.' },
+  { icon: 'fa-solid fa-brain', title: 'AI Can Support First-Line Qualification', desc: 'AI-assisted automation can answer routine questions, collect information, qualify enquiries, and support booking workflows outside normal business hours, with human escalation where needed.' },
+  { icon: 'fa-solid fa-heart', title: 'Customers Keep Hearing From You After the Sale', desc: 'Post-sale automation can handle onboarding messages, reminders, review requests, renewal prompts, and other follow-up so customer communication does not stop at the first transaction.' },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'You Can Trace Automation Back to Business Outcomes', desc: 'Useful reporting connects campaigns and workflows to lead sources, pipeline movement, appointments, and conversions, making it easier to see which automation is supporting the business.' },
 ];
 
 const servicesTabs = [
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'CRM Workflow Design and Automation',
     img: '/hire/marketing_automtion/marketing automation expert crm_.webp',
-    desc: <>Most CRMs are full of contacts that nobody is acting on because the workflow logic was never built properly. Get a CRM automation system designed around how your sales process actually works, with triggers that fire when they should and actions that move leads forward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual intervention</span>.</>,
+    desc: <>Most CRMs are full of contacts that no workflow is acting on. We build CRM automation around your sales process, with triggers, actions, routing, notifications, and updates that move leads forward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual intervention</span>.</>,
     bullets: [
       'Pipeline stage automation and movement triggers',
       'Lead assignment and routing rules',
@@ -60,9 +60,9 @@ const servicesData = [
     ],
   },
   {
-    num: '02', title: 'Lead Nurture Sequences',
+    num: '02', title: 'Lead Nurture Automation',
     img: '/hire/marketing_automtion/Lead Nurturing.webp',
-    desc: 'Generic time-based email sequences treat every lead the same and convert poorly. Get nurture sequences built around what each lead actually does, designed to move them through a buying decision at their own pace with the right message at the right stage.',
+    desc: 'Not every lead is ready to buy immediately. We create nurture sequences that respond to lead behavior, timing, interests, and lifecycle stage so prospects receive the right follow-up over time.',
     bullets: [
       'Behaviour-triggered nurture sequences',
       'Multi-touch sequences across email and SMS',
@@ -73,9 +73,9 @@ const servicesData = [
     ],
   },
   {
-    num: '03', title: 'Email and SMS Campaign Automation',
+    num: '03', title: 'Email and SMS Marketing Automation',
     img: '/hire/marketing_automtion/email and sms.webp',
-    desc: 'Broadcast and drip communication across email and SMS, built with proper segmentation, timing logic, and deliverability setup so the right messages reach the right people and actually land in the inbox.',
+    desc: 'Build automated email and SMS campaigns for lead follow-up, appointment reminders, event communication, reactivation, onboarding, and other recurring customer touchpoints.',
     bullets: [
       'Email campaign architecture and automation builds',
       'SMS campaign setup and compliance configuration',
@@ -86,9 +86,9 @@ const servicesData = [
     ],
   },
   {
-    num: '04', title: 'AI-Powered Automation and Behavioural Logic',
+    num: '04', title: 'AI Marketing Automation',
     img: '/hire/marketing_automtion/ai automations.webp',
-    desc: 'AI changes what automation can do. Instead of rules based on time, AI-powered systems respond to behaviour, adapt to engagement signals, and make decisions about what to send and when based on what each contact is actually doing. The result is automation that gets more effective as it runs, not automation that stays static.',
+    desc: 'Use AI where it adds practical value, such as first-response conversations, lead qualification, personalized follow-up, customer support, or routing enquiries to the right team member.',
     bullets: [
       'AI lead scoring and engagement signal tracking',
       'Predictive send-time optimization for email and SMS',
@@ -99,9 +99,9 @@ const servicesData = [
     ],
   },
   {
-    num: '05', title: 'Lead Scoring and Qualification',
+    num: '05', title: 'Lead Scoring and Behavioral Automation',
     img: '/hire/marketing_automtion/lead scroing.webp',
-    desc: 'Your sales team should spend time on leads most likely to close, not manually sorting through every contact to figure out who is ready. Get a lead scoring system that tracks the right signals, weights them properly, and puts the best leads in front of the right person automatically.',
+    desc: 'Create scoring and triggers based on actions such as page visits, form submissions, campaign engagement, bookings, and other behavioral signals so workflows respond to what prospects actually do.',
     bullets: [
       'Lead scoring model design and configuration',
       'Engagement signal weighting and threshold setup',
@@ -114,7 +114,7 @@ const servicesData = [
   {
     num: '06', title: 'Cross-Platform Integrations',
     img: '/hire/marketing_automtion/Integrations.webp',
-    desc: 'Your tools only work as a system when they are properly connected. Get your CRM, email platform, website, ads, booking system, payment processor, and any other tool your business runs on sharing data properly and triggering actions across each other.',
+    desc: 'Connect CRM, email, ads, payments, calendars, forms, analytics, and other tools using native integrations, APIs, webhooks, Zapier, Make, n8n, or other appropriate methods.',
     bullets: [
       'CRM and email platform integration',
       'Website form and behaviour to CRM connection',
@@ -125,9 +125,9 @@ const servicesData = [
     ],
   },
   {
-    num: '07', title: 'Customer Retention and Lifecycle Automation',
+    num: '07', title: 'Customer Retention Automation',
     img: '/hire/marketing_automtion/retention.webp',
-    desc: 'Acquiring a customer is only the start. The businesses that grow most efficiently keep their customers engaged, buying again, and referring others. Get lifecycle automation built for every stage after the sale.',
+    desc: 'Automate onboarding, follow-up, renewal reminders, review requests, re-engagement, and other post-sale communication that keeps customers moving through the lifecycle.',
     bullets: [
       'Post-purchase onboarding and activation sequences',
       'Usage-based trigger automation for SaaS and subscriptions',
@@ -138,9 +138,9 @@ const servicesData = [
     ],
   },
   {
-    num: '08', title: 'Attribution and Automation Reporting',
+    num: '08', title: 'Automation Reporting and Attribution',
     img: '/hire/marketing_automtion/reporting.webp',
-    desc: 'Automation you cannot measure is automation you cannot improve. Get reporting set up to show which campaigns produce leads that convert, which automations drive pipeline movement, and what the actual revenue impact of your marketing system is.',
+    desc: 'Track workflow activity and connect automation to lead sources, pipeline stages, appointments, and conversions so your team can see what the system is contributing.',
     bullets: [
       'Campaign attribution and revenue tracking setup',
       'Automation performance monitoring and reporting',
@@ -162,59 +162,63 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Multi-Platform Depth', desc: "ISureMedia's specialists work across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, and the integration tools that connect them. Most automation problems are not platform problems. They are architecture problems. The team solves both." },
-  { icon: 'fa-solid fa-file-lines', title: 'AI Automation Is Standard, Not an Add-On', desc: 'ISureMedia builds AI-powered automation as a core part of every system, not a premium extra. Lead scoring, behavioural triggers, conversational AI, and predictive logic are built into the architecture from the start, not retrofitted later.' },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Engagements run month to month and you can stop at any time. No penalties, no notice periods. The work continues because the system is delivering measurable results, not because a contract locks you in.' },
-  { icon: 'fa-solid fa-code', title: 'Process-First, Tools Second', desc: <>The biggest mistake in marketing automation is building workflows before mapping the process. ISureMedia maps your sales and marketing process before touching a single platform. The architecture is designed <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>around your buyer journey</span>, not around what a tool can do by default.</> },
-  { icon: 'fa-solid fa-file-lines', title: 'Everything Is Documented', desc: 'Every system ISureMedia builds is documented properly. SOPs, workflow logic explanations, and video walkthroughs are part of every delivery. Your team knows how to use what was built and what to do when something needs changing.' },
-  { icon: 'fa-solid fa-handshake', title: 'White Label for Agencies', desc: 'Agencies delivering marketing automation to their own clients can have ISureMedia handle all the build work behind the scenes. Everything goes out under your agency brand. Your clients never know we exist and every deliverable carries your name.' },
+  { icon: 'fa-solid fa-building', title: 'Multi-Platform Depth', desc: <>Our marketing automation specialists work across <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel, HubSpot, ActiveCampaign, Klaviyo</span>, and the integrations that connect them. The platform follows the workflow requirement.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'AI Automation Is Built In, Not Added Later', desc: 'AI can be part of the automation architecture from the start where it makes sense, including lead scoring, conversational responses, personalization, and routing.' },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Ongoing support is available month to month. There is no unnecessary long-term commitment or exit penalty.' },
+  { icon: 'fa-solid fa-code', title: 'Process First, Tools Second', desc: 'The automation should reflect the customer\'s journey and the team\'s sales process. We map those requirements before deciding how the workflow should be built.' },
+  { icon: 'fa-solid fa-book', title: 'Everything Is Documented', desc: 'Workflows, configurations, logic, and important system decisions are documented so your team can understand what the automation is doing and what to change later.' },
+  { icon: 'fa-solid fa-tag', title: 'White Label for Agencies', desc: 'Agencies can use our team as an execution partner for marketing automation behind their brand, while keeping the client relationship and presenting the service under their own name.' },
 ];
 
 const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific automation job to get done',
-    desc: <>You need a full automation system built, a broken system fixed properly, a platform migration completed, or a specific workflow that is not working sorted out. The scope is mapped before work starts, the cost is agreed upfront, and a dedicated specialist sees it through to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>delivery and handover</span>.</>,
+    desc: <>Use this when you have a defined automation requirement, such as building a workflow system, fixing broken automations, or connecting a specific group of tools, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>mapped before work starts</span>.</>,
     bullets: [
-      'Process mapping before any platform work begins',
-      'Scoped and priced before any build starts',
-      'Full documentation and team training on delivery',
+      'Process mapping before automation work begins',
+      'Scope and price agreed before build starts',
+      'Full documentation and handover',
       'No ongoing commitment once the project is complete',
     ],
   },
   {
     title: 'Monthly Retainer',
     tag: 'For businesses that need ongoing automation management and growth',
-    desc: 'Your automation system needs continuous attention as your business evolves. New campaigns, sequence improvements, AI layer additions, platform updates, and performance monitoring. A dedicated specialist works in your system every month and keeps it performing as your business grows.',
+    desc: 'Choose ongoing support when your automation system needs regular improvements, new campaigns, workflow monitoring, integrations, AI updates, and reporting.',
     bullets: [
-      'Dedicated specialist working in your systems monthly',
-      'Covers new builds, optimizations, and ongoing monitoring',
+      'Dedicated marketing automation specialist',
+      'New workflows, optimization, and ongoing monitoring',
       'Month to month with no lock-in',
-      'Same person each month who knows your architecture',
+      'Same specialist familiar with your system',
     ],
   },
   {
     title: 'White Label',
     tag: 'For agencies delivering automation to their own clients',
-    desc: 'You manage the client relationship. ISureMedia handles the automation builds, platform configurations, and system integrations behind the scenes under your brand. Everything delivered carries your agency name and your clients never know we are involved.',
+    desc: 'Your agency keeps the client relationship while we handle marketing automation delivery behind your brand.',
     bullets: [
-      'All work delivered under your agency name',
-      'No ISureMedia branding on any deliverable',
-      'We never contact your clients directly',
-      'Scales as your client pipeline grows',
+      'Work delivered under your agency name',
+      'No Isuremedia branding on client deliverables',
+      'Automation builds and ongoing support',
+      'Scales with your client pipeline',
     ],
   },
 ];
 
 const faqs = [
-  { q: 'How quickly can work start on my automation system?', a: <>Most projects are up and running <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> of the onboarding call. Once the brief is confirmed and platform access is set up, the process mapping begins immediately. For urgent situations, contact us directly and we will confirm availability.</> },
-  { q: 'Which platforms do your specialists work with?', a: 'ISureMedia\'s specialists work across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, Mailchimp, Salesforce, and the integration tools that connect them including Zapier, Make, and n8n. GoHighLevel is ISureMedia\'s primary platform, which means the depth of knowledge there is significantly higher than on platforms touched occasionally.' },
-  { q: 'Do you work white label for agencies?', a: 'Yes. Everything ISureMedia produces goes out under your agency name. No ISureMedia branding anywhere, no contact with your clients, and nothing that suggests the work came from anyone other than you.' },
-  { q: 'Is there a long term contract?', a: 'No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, no lock-in of any kind.' },
-  { q: 'What does AI marketing automation actually do that regular automation does not?', a: 'Rule-based automation fires on fixed triggers, time delays, form fills, specific actions. AI automation responds to behavioural patterns across multiple signals, scores leads dynamically, adapts send timing based on individual engagement history, and uses conversational AI to qualify leads without human involvement. The practical difference is a system that improves as it runs rather than one that stays static.' },
-  { q: 'Can you fix an automation system that was set up badly?', a: 'Yes. Auditing and restructuring partially built or incorrectly built automation systems is a regular part of what ISureMedia handles. The process starts with a full audit of what exists, what is working, what is not, and what the underlying process needs to look like before any rebuild begins.' },
-  { q: 'What happens to the system after the project is complete?', a: 'For project-based work, you receive full documentation and a handover session. Post-delivery support is agreed as part of the project scope so there are no grey areas. For retainer clients, ongoing monitoring, adjustments, and improvements are part of the monthly engagement.' },
-  { q: 'Can you migrate our existing automation from one platform to another?', a: 'Yes. Migrations between platforms including HubSpot, ActiveCampaign, Klaviyo, and GoHighLevel are handled regularly. Contact data, sequence logic, scoring models, and integration connections are all mapped and rebuilt in the destination platform with a test phase before the old system is switched off.' },
+  { q: 'What does a marketing automation expert do?', a: 'A marketing automation expert designs and manages systems that automate repetitive marketing and sales tasks. This can include CRM workflows, lead nurture, email and SMS campaigns, lead scoring, customer follow-up, integrations, AI-assisted conversations, and reporting.' },
+  { q: 'How much does it cost to hire a marketing automation expert?', a: 'The cost depends on the number of workflows, platforms, integrations, data requirements, AI functionality, and whether the work is a one-time project or ongoing support. A defined automation build can be scoped separately from a monthly optimization engagement.' },
+  { q: 'How quickly can a marketing automation expert start my project?', a: <>A marketing automation expert can typically start <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> once the scope is approved and the required access and assets are available. More complex systems may require additional planning before implementation.</> },
+  { q: 'Can you automate my existing CRM without replacing it?', a: 'Yes. Marketing automation can often be built around an existing CRM by improving pipelines, triggers, workflows, lead routing, follow-up, and integrations. Whether a platform change is necessary depends on the current system and requirements.' },
+  { q: 'What marketing tasks can be automated?', a: 'Marketing automation can handle tasks such as lead capture, follow-up emails and texts, lead scoring, appointment reminders, customer onboarding, reactivation, review requests, internal notifications, data updates, and lead routing.' },
+  { q: 'Can you connect marketing automation tools to each other?', a: 'Yes. Marketing automation systems can connect CRMs, email tools, websites, ads, calendars, payment platforms, analytics, and other software through native integrations, APIs, webhooks, Zapier, Make, n8n, and similar tools.' },
+  { q: 'Can AI be used in marketing automation?', a: 'Yes. AI can support marketing automation through lead qualification, conversational responses, personalization, scoring, routing, and other workflow tasks. The right use depends on the business process and the data available.' },
+  { q: 'Do you work with GoHighLevel and HubSpot?', a: 'Yes. Marketing automation specialists can work across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, and other platforms depending on the workflow and integration requirements.' },
+  { q: 'Can you fix marketing automation that was set up badly?', a: 'Yes. An automation expert can audit existing workflows, identify broken triggers or actions, clean up CRM logic, reconnect integrations, and rebuild unreliable automation paths.' },
+  { q: 'What is the difference between a marketing automation expert and a marketing automation consultant?', a: 'A marketing automation consultant typically focuses on strategy, process design, and recommendations, while a marketing automation expert may also implement, test, and maintain the workflows. One person or team can provide both services.' },
+  { q: 'Do you provide white-label marketing automation services for agencies?', a: 'Yes. White-label marketing automation services allow agencies to have CRM, workflow, AI, email, SMS, and integration work delivered behind their brand while they keep the client relationship.' },
+  { q: 'Do you require a long-term contract for marketing automation support?', a: 'No. Ongoing support can be handled month to month, while project-based work is scoped around defined deliverables and requirements.' },
 ];
 
 
@@ -241,12 +245,12 @@ export default function HireMarketingAutomationExpert() {
         <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1, textAlign: 'center' }}>
           {/* Heading */}
           <h1 style={{ fontFamily: J, fontWeight: 900, color: 'var(--color-navy)', marginBottom: 24, fontSize: 'clamp(36px, 4.5vw, 58px)', lineHeight: 1.12, letterSpacing: '-0.5px' }}>
-            Hire a <span style={{ color: 'var(--ism-amber)' }}>Marketing Automation Expert</span>
+            Hire a Marketing Automation Expert to <span style={{ color: 'var(--ism-amber)' }}>Build Your System</span>
           </h1>
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get your marketing and sales processes automated properly, covering everything from CRM workflows and lead nurturing to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI-powered segmentation</span>, email and SMS campaigns, cross-platform integrations, and behavioural automation across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, and beyond.
+            Build <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>CRM workflows, lead nurture sequences, email and SMS automation</span>, AI-powered personalization, and cross-platform integrations around the way your business actually sells.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -296,13 +300,13 @@ export default function HireMarketingAutomationExpert() {
             {/* Left Column: Text & List */}
             <div>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.15, marginBottom: 24 }}>
-                Your Marketing Should Be Working <span style={{ color: 'var(--ism-amber)' }}>While Your Team Is Not</span>
+                Marketing Automation Built Around <span style={{ color: 'var(--ism-amber)' }}>How Your Team Sells</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                Marketing automation covers a wide range of specialized work, from CRM workflow design and lead nurture sequences to behavioural triggers, email and SMS campaigns, lead scoring, cross-platform integrations, AI-powered personalization, and the full connection between your marketing tools and your sales process. A skilled specialist builds it as <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a connected system</span>, not a collection of tools that each do something in isolation.
+                Marketing automation covers more than sending scheduled emails. A useful system can manage <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>lead capture, scoring, nurture sequences</span>, appointment workflows, customer follow-up, CRM updates, and data movement between the tools your team already uses.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                In 2026, the gap between basic automation and genuinely effective automation has widened significantly. AI-powered systems that respond to behaviour, score leads dynamically, and adapt messaging in real time outperform traditional time-based drip sequences by <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a measurable margin</span>. Getting it right means working with someone who understands both the technical architecture and the commercial logic behind how your buyers make decisions. That is the standard ISureMedia&#39;s marketing automation specialists work to, and it is why businesses trust them to build, connect, and scale their marketing systems.
+                A marketing automation specialist should understand the business process behind the automation, not only how to configure a platform. We map <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>what should happen, when it should happen</span>, and what information each workflow needs before building it. That&#39;s the standard our marketing automation team works to.
               </p>
               
               {/* 2-Column List */}
@@ -349,10 +353,13 @@ export default function HireMarketingAutomationExpert() {
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0', overflow: 'hidden' }}>
         <div className="ism-container">
-          <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: 0 }}>
-              Why Automation Changes <span style={{ color: 'var(--ism-amber)' }}>Marketing</span>
+          <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 72px' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>
+              What Marketing Automation Changes <span style={{ color: 'var(--ism-amber)' }}>for Your Business</span>
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, margin: 0 }}>
+              Good automation keeps leads moving, connects customer data, and gives your team more time for work that requires judgment.
+            </p>
           </div>
           <div style={{ position: 'relative' }}>
             <div className="wp-why-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '64px 32px', position: 'relative', zIndex: 1 }}>
@@ -429,7 +436,7 @@ export default function HireMarketingAutomationExpert() {
               The Full Range of Marketing <span style={{ color: 'var(--ism-amber)' }}>Automation Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From CRM workflow design and lead nurturing to behavioural triggers, email and SMS campaigns, lead scoring, cross-platform integrations, AI-powered personalization, and the full connection between your marketing tools and your sales process.
+              From CRM workflow automation and lead nurture to email, AI, integrations, retention, and reporting, we build the automation your sales process needs.
             </p>
           </div>
 
@@ -541,10 +548,13 @@ export default function HireMarketingAutomationExpert() {
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
-          <div style={{ textAlign: 'center', marginBottom: 72 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, margin: 0 }}>
-              Technologies and Tools<br />Our <span style={{ color: 'var(--ism-amber)' }}>Marketing Automation Specialists</span> Work With
+          <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 72px' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 16 }}>
+              The Tools Our <span style={{ color: 'var(--ism-amber)' }}>Marketing Automation Specialists</span> Work With
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, margin: 0 }}>
+              We work across CRM platforms, automation tools, messaging infrastructure, AI systems, analytics, and integrations based on what your workflow requires.
+            </p>
           </div>
           <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 48 }}>
             {techCategories.map((cat, idx) => {
@@ -622,10 +632,10 @@ export default function HireMarketingAutomationExpert() {
             {/* ── Left: Text + Buttons ── */}
             <div style={{ position: 'relative', zIndex: 2, padding: '10px 0', alignSelf: 'center' }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(24px,3vw,34px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-                Got leads coming in but not enough of them converting<span style={{ color: 'var(--ism-amber)' }}>?</span>
+                Getting Leads Is One Thing. <span style={{ color: 'var(--ism-amber)' }}>What Happens Next?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Tell us what is happening and get a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>free proposal</span> for exactly what needs to be built.
+                Tell us what is happening today and get a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>clear proposal</span> for the automation your business needs to build next.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -644,7 +654,7 @@ export default function HireMarketingAutomationExpert() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/result_footer/ready_for_result.webp"
-                alt="WordPress Developer CTA"
+                alt="Marketing Automation Expert CTA"
                 style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: '125%', display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
               />
             </div>
@@ -675,10 +685,13 @@ export default function HireMarketingAutomationExpert() {
       ════════════════════════════════════════ */}
       <section style={{ background: '#fff', padding: '96px 0' }}>
         <div className="ism-container">
-          <div style={{ textAlign: 'center', marginBottom: 80 }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, margin: 0 }}>
-              Why Businesses Choose<br /><span style={{ color: 'var(--ism-amber)' }}>ISureMedia&#39;s Marketing Automation Specialists</span>
+          <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 80px' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(32px,4vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
+              Why Businesses Choose Our <span style={{ color: 'var(--ism-amber)' }}>Marketing Automation Specialists</span>
             </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, margin: 0 }}>
+              You get a specialist team that maps the workflow first, builds the system, documents it, and stays accountable after delivery.
+            </p>
           </div>
           <div className="wp-whyism-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 0, alignItems: 'flex-start' }}>
             {whyISMCards.map((card, idx) => {
@@ -769,10 +782,10 @@ export default function HireMarketingAutomationExpert() {
         <div className="ism-container">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,4vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 16 }}>
-              Start with the right scope <span style={{ color: 'var(--ism-amber)' }}>for your goals.</span>
+              Choose the Marketing Automation <span style={{ color: 'var(--ism-amber)' }}>Support Model That Fits</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a dedicated WordPress developer and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>transparent reporting</span>.
+              Choose project-based automation, ongoing optimization, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label delivery</span> based on your system and workload.
             </p>
           </div>
 
@@ -850,15 +863,15 @@ export default function HireMarketingAutomationExpert() {
       {/* ════════════════════════════════════════
           SECTION 10, HOW IT WORKS (Using HowItWorks Component)
       ════════════════════════════════════════ */}
-      <HowItWorks 
-        title="From Your First Message to Work Starting"
-        highlightWord="on Your Site"
-        subtitle="We keep it simple so you get results that speak for themselves."
+      <HowItWorks
+        title="From First Brief to a Working Automation System"
+        highlightWord="Automation System"
+        subtitle="We start with the customer journey, map the workflows, then build and test the automation around it."
         steps={[
-          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need. A new build, a fix, a WooCommerce store, ongoing support, or something else entirely. No long forms, no discovery calls before anyone speaks to you. Just tell us what is going on.' },
-          { num: 2, title: 'We Match You to the Right Setup', text: 'Every WordPress project is different. Some need a developer for a one-off job. Some need someone working on the site every month. We look at what you have shared, ask a few questions if needed, and come back with a clear recommendation and a cost.' },
-          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once you are happy to move forward, access is set up, preferences are agreed, and work starts. The developer on your project knows your brief from the first day. No long handoffs, no repeat briefings.' },
-          { num: 4, title: 'You Stay in Control', text: 'Review work as it comes in. Give feedback directly. If the scope changes, the engagement changes with it. Nothing is fixed in stone and you are never stuck with something that no longer fits what you need.' },
+          { num: 1, title: 'Share Your Requirement', text: 'Tell us what you need: CRM automation, lead nurture, email and SMS campaigns, AI workflows, integrations, or ongoing optimization. Start with the problem, not the software.' },
+          { num: 2, title: 'We Match You to the Right Setup', text: 'We review your existing tools, customer journey, data, and workflow requirements, then recommend the right marketing automation specialist and engagement.' },
+          { num: 3, title: 'Work Begins Within 48 Hours', text: 'Once the scope is approved and the required access is ready, work begins on the agreed priorities. The process and requirements are documented from the start.' },
+          { num: 4, title: 'You Stay in Control', text: 'Review the work as it develops and give feedback directly. Changes outside the agreed scope are discussed before additional work is added.' },
         ]}
         ctaText="Start Your Project"
         ctaHref="/contact"
@@ -878,10 +891,10 @@ export default function HireMarketingAutomationExpert() {
             <div style={{ position: 'sticky', top: 120 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(32px, 4vw, 44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.1, marginBottom: 20 }}>
                 Questions About <br />
-                <span style={{ color: 'var(--ism-amber)' }}>WordPress</span>
+                <span style={{ color: 'var(--ism-amber)' }}>Hiring a Marketing Automation Expert</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Honest answers before you decide. No spin, no buzzwords.
+                Clear answers about automation strategy, tools, costs, timelines, AI, CRM workflows, and ongoing support.
               </p>
               <a href="/contact"
                 style={{
@@ -957,10 +970,10 @@ export default function HireMarketingAutomationExpert() {
             {/* Left Column - Text */}
             <div style={{ position: 'relative', zIndex: 1, maxWidth: 720 }}>
               <h2 style={{ fontFamily: J, color: '#fff', marginBottom: 20, lineHeight: 1.2, fontSize: 'clamp(28px, 3.5vw, 38px)' }}>
-                Build a Marketing System That <span style={{ color: 'var(--ism-amber)' }}>Grows Your Business</span>
+                Build a Marketing Automation System <span style={{ color: 'var(--ism-amber)' }}>Your Team Can Rely On</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you are building automation from scratch, fixing <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a system that never quite delivered</span>, or ready to add AI to what you already have, the first step is the same. Send your requirements and get a free proposal, or talk to an expert and walk through exactly what your marketing system needs to do.
+                Whether you're building automation from scratch, fixing <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a system that was set up badly</span>, or connecting tools that do not talk to each other, we'll help you build the right workflow.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"
@@ -973,7 +986,7 @@ export default function HireMarketingAutomationExpert() {
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-bg-soft)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}>
-                  Talk to an Expert
+                  Talk to a Marketing Automation Expert
                 </a>
               </div>
             </div>
@@ -981,7 +994,7 @@ export default function HireMarketingAutomationExpert() {
             {/* Right Column - Image */}
             <div style={{ position: 'relative', zIndex: 2, height: 'auto', minHeight: 300 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img loading="lazy" 
+              <img loading="lazy"
                 src="/result_footer/make automation.webp"
                 alt="Marketing Automation & Workflows" 
                 style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain' }} 
