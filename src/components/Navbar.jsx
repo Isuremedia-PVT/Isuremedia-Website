@@ -188,6 +188,24 @@ export default function Navbar() {
     };
   }, []);
 
+  /* ── Close the mobile menu on an outside click/tap ── */
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onOutside = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setMobileOpen(false);
+        setMobileSection(null);
+        setMobileServiceCat(null);
+      }
+    };
+    document.addEventListener('mousedown', onOutside);
+    document.addEventListener('touchstart', onOutside);
+    return () => {
+      document.removeEventListener('mousedown', onOutside);
+      document.removeEventListener('touchstart', onOutside);
+    };
+  }, [mobileOpen]);
+
   /* ── Shared dropdown wrapper ── */
   const Dropdown = ({
     children,
