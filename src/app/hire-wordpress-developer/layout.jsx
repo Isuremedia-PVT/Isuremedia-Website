@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How quickly can a WordPress developer start on my project?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Once requirements are confirmed, a developer starts within 48 hours. The same person works on your site from day one through to completion with no handoffs or repeat briefings." } },
-        { "@type": "Question", "name": "Do you provide white-label WordPress development for agencies?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. All work delivered under your agency brand with no Isuremedia branding. We do not contact your clients directly." } },
-        { "@type": "Question", "name": "Which page builders do your WordPress developers work with?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Elementor, Divi, Bricks, Oxygen, Gutenberg, and Beaver Builder. WooCommerce for ecommerce. HubSpot, Klaviyo, Salesforce, and Zapier integrations included." } }
+        { "@type": "Question", "name": "What does a WordPress developer do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A WordPress developer builds, customizes, and maintains WordPress websites. Depending on the project, that can include custom themes, plugins, WooCommerce stores, API integrations, performance optimization, security fixes, and ongoing maintenance." } },
+        { "@type": "Question", "name": "How much does it cost to hire a WordPress developer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The cost depends on the project's scope, technical requirements, and whether you need a one-time build or ongoing support. We scope the work before development begins so you know what you're paying for." } },
+        { "@type": "Question", "name": "Do you build WooCommerce websites?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build and customize WooCommerce stores, including product pages, storefronts, checkout flows, custom functionality, third-party integrations, and performance optimization." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Hire WordPress Developer | Custom WP Services | Isuremedia",
-  description: "Hire a dedicated WordPress developer from Isuremedia. Custom builds, WooCommerce, plugin dev, and migrations. In-house team, no contracts. Starts in 48 hours.",
+  title: "Hire a WordPress Developer for Custom Websites & WooCommerce",
+  description: "Hire a WordPress developer to build a faster, more flexible website tailored to your business, from custom functionality to WooCommerce and ongoing improvements.",
   alternates: { canonical: "/hire-wordpress-developer" },
 };
 
