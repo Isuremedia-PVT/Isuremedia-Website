@@ -12,20 +12,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Will my clients know that Isuremedia is doing the work?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. All reports and deliverables are branded with your agency. We sign an NDA before work begins." } },
-        { "@type": "Question", "name": "Do you offer white-label GoHighLevel setup?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build complete GHL systems under your brand: CRM, pipelines, funnels, calendars, and email/SMS automations." } },
-        { "@type": "Question", "name": "Is there a minimum commitment?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No long-term contracts. Month-to-month. Start with one client and scale as your agency grows." } }
+        { "@type": "Question", "name": "Will my clients ever find out that work is outsourced?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No, your clients will never know we exist because all files, reports, and graphics are completely unbranded. We sign strict non-disclosure contracts (NDAs) before starting, and every deliverable features your agency logo and visual identity." } },
+        { "@type": "Question", "name": "How do you help agencies using GoHighLevel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "As a white label GoHighLevel agency, we set up sub-accounts, email/SMS triggers, deal pipelines, and custom snapshots inside your system, letting you sell complete CRM setups to clients without spending hours on complex technical configuration." } },
+        { "@type": "Question", "name": "How does reseller digital marketing pricing work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Our reseller digital marketing plans use fixed wholesale rates that leave room for your agency markups. You charge your clients your usual monthly retainer fee while paying us a flat wholesale price." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "White-Label Digital Marketing for Agencies | Isuremedia",
-  description: "Scale your agency without hiring. White-label SEO, PPC, web, GHL & content under your brand. NDA on every engagement. 100+ agency partners.",
+  title: "White Label Digital Marketing | Outsource Digital Agency",
+  description: "Scale your client base with white label digital marketing. Trusted white label SEO agency and PPC management services designed for growing agencies.",
   alternates: { canonical: "/white-label-digital-marketing" },
 };
 
