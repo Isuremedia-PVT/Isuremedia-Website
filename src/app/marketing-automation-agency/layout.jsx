@@ -12,18 +12,18 @@ const SCHEMA = JSON.stringify({
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "What is marketing automation?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Marketing automation handles repetitive tasks automatically: lead follow-up, appointment booking, CRM updates, and email and SMS sequences. The right action happens every time." } },
-        { "@type": "Question", "name": "Do you work with GoHighLevel?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. GoHighLevel is our primary platform. We build complete GHL systems including CRM, pipelines, funnels, calendars, and email and SMS automations from scratch." } },
-        { "@type": "Question", "name": "How long does it take to set up marketing automation?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A standard GoHighLevel setup takes 1–3 weeks. Complex systems may take 3–6 weeks." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "Marketing automation refers to software systems that run repetitive sales and marketing tasks without manual effort. These tasks include lead follow-up, calendar scheduling, pipeline updates, and customer reminder messages triggered by specific user actions." } },
+        { "@type": "Question", "name": "Do I need GoHighLevel specifically for marketing automation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "GoHighLevel is not strictly required, but it consolidates CRM, email, SMS, and funnel tools into one platform. Businesses can also run automated workflows using combinations of HubSpot, Zapier, Make, or n8n." } },
+        { "@type": "Question", "name": "How long does it take to build a GoHighLevel system?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A standard GoHighLevel setup takes between 2 to 4 weeks from initial audit to final launch. Complex enterprise setups take between 4 to 8 weeks to design, build, and test thoroughly." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Marketing Automation Agency | GoHighLevel Setup | Isuremedia",
+  title: "Marketing Automation Agency | GoHighLevel Setup",
   description: "Marketing automation built and managed for you. GoHighLevel setup, CRM workflows, lead nurture, email & SMS automation. Keep your pipeline full 24/7.",
   alternates: { canonical: "/marketing-automation-agency" },
 };
