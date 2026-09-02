@@ -14,20 +14,20 @@ const SCHEMA = JSON.stringify({
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Do my clients need to know Isuremedia is providing GHL support?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. All support responses go under your agency brand, email domain, and communication style. Isuremedia's name appears nowhere in any client-facing communication." } },
-        { "@type": "Question", "name": "Can you handle A2P 10DLC registration for our GHL clients?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We handle full A2P 10DLC registration including brand registration, campaign filing, and number provisioning, plus troubleshooting delivery issues. A2P compliance is part of standard support scope." } },
-        { "@type": "Question", "name": "What is your response time for GHL support requests?",
-          "acceptedAnswer": { "@type": "Answer", "text": "First response within four business hours for standard requests, most resolved within one business day. Urgent issues affecting client-facing systems are prioritised immediately." } }
+        { "@type": "Question", "name": "What is GoHighLevel white label support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "GoHighLevel white label support is technical support delivered by a specialist team behind an agency's brand. The agency keeps the client relationship while the support team handles agreed GoHighLevel setup, changes, troubleshooting, and maintenance." } },
+        { "@type": "Question", "name": "Do my clients know that the GoHighLevel support is outsourced?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The white-label model is designed to keep the technical fulfillment behind the agency. Client-facing communication and deliverables can remain under your agency's brand." } },
+        { "@type": "Question", "name": "Can you handle A2P 10DLC registration for GoHighLevel clients?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A2P 10DLC setup and registration support can be included when it is part of the agreed scope. Requirements depend on the account, business information, messaging use case, and registration status." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "GoHighLevel White Label Support for Agencies | Isuremedia",
-  description: "White label GoHighLevel support for agencies. Sub-account setup, funnels, automations, and ongoing GHL client support under your brand. 4-hour response time.",
+  title: "GoHighLevel White Label Support for Agencies & SaaS Resellers",
+  description: "Get GoHighLevel white label support that takes recurring client requests off your team's plate while keeping the support experience under your agency's brand.",
   alternates: { canonical: "/gohighlevel-white-label-support-services" },
   openGraph: { images: [{ url: "/feature_image/white-label-automation.webp", width: 1618, height: 950 }] },
 };

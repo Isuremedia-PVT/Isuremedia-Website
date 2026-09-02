@@ -10,23 +10,23 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const BRIDGE_ITEMS = [
-  'New client sub-account setup and configuration from your Snapshot',
+  'Sub-account setup and snapshot deployment for new clients',
   'Funnel and landing page builds inside client sub-accounts',
-  'Automation and workflow build, troubleshooting, and repair',
-  'CRM pipeline setup, custom field configuration, and stage management',
+  'Automation and workflow support, troubleshooting, and repair',
+  'CRM and pipeline configuration around the client\'s sales process',
   'Calendar and appointment booking setup and troubleshooting',
-  'Email and SMS sending configuration, domain verification, A2P 10DLC',
-  'Integration connections, Stripe, Zapier, third-party tools',
-  'Ongoing technical support for client GHL questions and issues',
+  'Email and SMS sending configuration and related troubleshooting',
+  'Third-party integration setup, Stripe, Zapier, Make, webhooks',
+  'Ongoing technical support for recurring GHL requests',
 ];
 
 const WHY_MATTERS = [
-  { icon: 'fa-solid fa-user-plus', title: 'Onboarding and initial setup', desc: 'Every new client needs their sub-account configured, Snapshot applied, calendar connected, pipeline set up, email domain verified. For an agency adding clients monthly, that is a recurring burden that falls on whoever knows the platform best.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Funnel and automation build requests', desc: 'Clients sold on GHL as a funnel and automation platform expect to be able to build inside it. Most cannot. Every "can you build me a funnel" request needs platform expertise and fast turnaround.' },
-  { icon: 'fa-solid fa-bug', title: 'Technical troubleshooting', desc: 'GoHighLevel updates constantly. Automations stop firing, calendars stop syncing, A2P 10DLC blocks SMS sending. Each issue needs someone who can diagnose it fast without extended back-and-forth.' },
-  { icon: 'fa-solid fa-repeat', title: 'Ongoing change requests', desc: 'A new service needs a pipeline stage. A new campaign needs a funnel. Individually low-complexity, these requests aggregate into a significant time cost across twenty or thirty accounts.' },
-  { icon: 'fa-solid fa-chart-line', title: 'A load that grows faster than your time', desc: 'At five clients you handle support yourself. At twenty it consumes your evenings. At fifty it is a full-time job that leaves no time for selling or growing the agency.' },
-  { icon: 'fa-solid fa-heart-pulse', title: 'Client retention on the line', desc: 'A client who cannot get their automation fixed or their calendar working is a client who starts questioning the platform, and the agency that sold it to them.' },
+  { icon: 'fa-solid fa-user-plus', title: 'Onboarding and Initial Setup', desc: 'New clients need sub-account configuration, snapshots, calendars, pipelines, domains, email, phone, and other settings checked and verified before launch.' },
+  { icon: 'fa-solid fa-diagram-project', title: 'Funnel and Automation Build Requests', desc: 'Clients often ask for new funnels, automations, forms, triggers, and follow-up sequences. Each request needs platform knowledge and careful testing.' },
+  { icon: 'fa-solid fa-bug', title: 'Technical Troubleshooting', desc: 'GoHighLevel updates can affect workflows, snapshots, integrations, and page behavior. Support teams need to diagnose issues and identify what changed.' },
+  { icon: 'fa-solid fa-repeat', title: 'Ongoing Change Requests', desc: "A new service, campaign, offer, or workflow often requires changes to the client's GHL setup. Small requests can accumulate across multiple accounts." },
+  { icon: 'fa-solid fa-chart-line', title: 'A Support Queue That Grows With Your Client Base', desc: 'Five clients may generate manageable support volume. Fifty clients can create a full-time queue unless the agency has a defined support structure.' },
+  { icon: 'fa-solid fa-heart-pulse', title: 'Client Retention Depends on Reliable Support', desc: 'When a client cannot get a workflow, calendar, or automation working, the agency feels the pressure. Responsive support becomes part of the service itself.' },
 ];
 
 const CARD_VARIANTS = [
@@ -36,76 +36,71 @@ const CARD_VARIANTS = [
 ];
 
 const KEY_FACTORS = [
-  { icon: 'fa-solid fa-medal', title: 'Deep GoHighLevel Expertise', impact: 'Highest impact', desc: 'We use GHL for our own clients and build inside it every day. That depth is what shows up in issues resolved correctly the first time, not after extended back-and-forth.' },
-  { icon: 'fa-solid fa-layer-group', title: 'Full Platform Stack Coverage', impact: 'High impact', desc: 'Some providers specialise in one area, automations only, or funnels only. Full coverage across funnels, automations, CRM, calendars, email and SMS, and integrations means one partner for everything.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Documentation on Every Build', impact: 'High impact', desc: 'Every sub-account we configure and every automation we build is documented, what it does, how it is triggered, what it connects. That record lives in your agency, not ours.' },
-  { icon: 'fa-solid fa-stopwatch', title: 'Agreed Response Times', impact: 'High impact', desc: 'Response times are set at the start of the partnership. Typical arrangements: first response within four business hours, resolution within one business day for standard issues.' },
-  { icon: 'fa-solid fa-mobile-screen', title: 'A2P 10DLC and SaaS Mode Fluency', impact: 'Medium impact', desc: 'A2P registration and SaaS mode configuration are two of the most common technical blockers for GHL agencies. We handle both as a standard part of the support scope.' },
-  { icon: 'fa-solid fa-user-secret', title: 'A Support Channel That Stays Invisible', impact: 'Medium impact', desc: 'Your support email domain, your agency name, your tone of voice. Clients interact with your brand end to end, ISureMedia appears nowhere in any client-facing communication.' },
-  { icon: 'fa-solid fa-earth-americas', title: 'Regional Configuration Awareness', impact: 'Contextual', desc: 'US, UK, Australian, Canadian, and Indian clients each have different SMS, phone provisioning, and compliance requirements. We configure to the region, not a US-centric default.' },
-  { icon: 'fa-solid fa-sliders', title: 'Month to Month Flexibility', impact: 'Growing fast', desc: 'You scale support up as your sub-account count grows and scale down if it contracts. No commitment to a volume that no longer matches your agency.' },
-];
-
-const SUB_SERVICES = [
-  { icon: 'fa-solid fa-clone', title: 'Sub-Account Setup and Snapshot Deployment', desc: 'New client sub-accounts configured from your Snapshot, business details, calendar, pipeline stages, and initial automation sequences, ready for the client handover you present.', img: 'https://images.unsplash.com/photo-1709281847802-9aef10b6d4bf?w=500&q=80' },
-  { icon: 'fa-solid fa-object-ungroup', title: 'Funnel and Landing Page Builds', desc: 'Funnels, landing pages, opt-in pages, and thank you pages built to the client brief, branded to their business, and connected to the automations that follow each conversion.', img: 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=500&q=80' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Automation and Workflow Build', desc: 'Lead nurture sequences, appointment reminders, post-purchase flows, and pipeline triggers, plus troubleshooting and repair of automations that have stopped working.', img: 'https://images.unsplash.com/photo-1666698809123-44e998e93f23?w=500&q=80' },
-  { icon: 'fa-solid fa-database', title: 'CRM and Pipeline Configuration', desc: 'Pipeline stage setup, custom fields, contact tags, and conversation routing, configured to the client\'s actual sales process rather than a generic default.', img: 'https://images.unsplash.com/photo-1702047063975-0841a0621b5a?w=500&q=80' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Calendar and Appointment Booking Setup', desc: 'Team calendars, round-robin routing, service menus, availability rules, and confirmation sequences, plus troubleshooting of booking flow issues.', img: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80' },
-  { icon: 'fa-solid fa-envelope', title: 'Email and SMS Sending Configuration', desc: 'Custom domain verification, LC Email activation, and A2P 10DLC registration support for SMS, the difference between communications that work and ones going to spam.', img: 'https://images.unsplash.com/photo-1553775282-20af80779df7?w=500&q=80' },
+  { icon: 'fa-solid fa-medal', title: 'Deep GoHighLevel Expertise', impact: 'Highest impact', desc: 'We work inside GoHighLevel every day, including edge cases, workflow failures, account configuration, and platform changes that require more than basic setup knowledge.' },
+  { icon: 'fa-solid fa-layer-group', title: 'Full Platform Stack Coverage', impact: 'High impact', desc: 'Support can span funnels, workflows, CRM, calendars, email, SMS, integrations, reporting, and SaaS features so your agency does not need multiple support providers.' },
+  { icon: 'fa-solid fa-file-lines', title: 'Documentation on Every Build', impact: 'High impact', desc: 'Sub-account changes, workflows, triggers, configurations, and integration logic are documented so your agency has a record of what was changed and how it works.' },
+  { icon: 'fa-solid fa-stopwatch', title: 'Agreed Response Times', impact: 'High impact', desc: 'Support expectations are defined at the start. Response and resolution times depend on the issue type and the scope of the engagement.' },
+  { icon: 'fa-solid fa-mobile-screen', title: 'A2P 10DLC and SaaS Mode Fluency', impact: 'Medium impact', desc: 'Support can include A2P 10DLC-related setup and GoHighLevel SaaS workflows where those capabilities are part of the agreed service.' },
+  { icon: 'fa-solid fa-user-secret', title: 'A Support Channel That Stays Invisible', impact: 'Medium impact', desc: 'Your client sees your agency as the provider. Support communication can stay routed through your agency so white-label delivery remains consistent.' },
+  { icon: 'fa-solid fa-earth-americas', title: 'Regional Configuration Awareness', impact: 'Contextual', desc: 'SMS, phone provisioning, compliance, and communication requirements vary by market. Support can account for region-specific requirements when configuring accounts.' },
+  { icon: 'fa-solid fa-sliders', title: 'Month-to-Month Flexibility', impact: 'Growing fast', desc: "Support capacity can scale with the number of client sub-accounts without forcing your agency into a fixed long-term volume commitment." },
 ];
 
 const SERVICES = [
-  { icon: 'fa-solid fa-clone', title: 'Sub-Account Setup and Snapshot Deployment', desc: 'Every new client sub-account configured from your Snapshot and delivered within your agreed onboarding timeline.' },
-  { icon: 'fa-solid fa-object-ungroup', title: 'Funnel and Landing Page Builds', desc: 'Funnels, opt-ins, and sales pages built inside client sub-accounts to your agency\'s standard format.' },
-  { icon: 'fa-solid fa-diagram-project', title: 'Automation and Workflow Build', desc: 'Lead nurture, reminders, and pipeline triggers, built, tested, and repaired when something breaks.' },
-  { icon: 'fa-solid fa-database', title: 'CRM and Pipeline Configuration', desc: 'Stage setup, custom fields, tagging, and smart lists matched to how the client actually sells.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Calendar and Booking Setup', desc: 'Calendars, round-robin routing, and booking flow troubleshooting for GHL-as-a-booking-system clients.' },
-  { icon: 'fa-solid fa-envelope', title: 'Email and SMS Sending Configuration', desc: 'Domain verification, LC Email, and A2P 10DLC registration and troubleshooting.' },
-  { icon: 'fa-solid fa-plug', title: 'Third-Party Integration Setup', desc: 'Stripe billing, Zapier and Make connections, webhooks, and troubleshooting of integrations that stop passing data.' },
-  { icon: 'fa-solid fa-headset', title: 'Ongoing Technical Support', desc: 'A support channel under your brand, resolved by our GHL specialists, at the response times you agree with us.' },
+  { icon: 'fa-solid fa-clone', title: 'Sub-Account Setup and Snapshot Deployment', desc: 'Configure new client sub-accounts from your approved snapshots, apply the required settings, and prepare each account for onboarding.' },
+  { icon: 'fa-solid fa-object-ungroup', title: 'Funnel and Landing Page Builds', desc: "Build or update funnels, landing pages, forms, and page sections inside GoHighLevel according to your agency's requirements." },
+  { icon: 'fa-solid fa-diagram-project', title: 'Automation and Workflow Support', desc: 'Create, modify, test, and troubleshoot workflows for lead routing, reminders, follow-up, internal notifications, and pipeline movement.' },
+  { icon: 'fa-solid fa-database', title: 'CRM and Pipeline Configuration', desc: "Configure stages, custom fields, tags, lead sources, and other CRM settings around the client's sales process." },
+  { icon: 'fa-solid fa-calendar-check', title: 'Calendar and Booking Setup', desc: 'Set up calendars, round-robin routing, booking pages, availability, and related settings for appointment-based client workflows.' },
+  { icon: 'fa-solid fa-envelope', title: 'Email and SMS Sending Configuration', desc: 'Support domain authentication, email and SMS configuration, delivery settings, and related troubleshooting.' },
+  { icon: 'fa-solid fa-plug', title: 'Third-Party Integration Setup', desc: "Connect GoHighLevel with tools such as Stripe, Zapier, Make, webhooks, and other systems required by the client's workflow." },
+  { icon: 'fa-solid fa-headset', title: 'Ongoing Technical Support', desc: 'Handle recurring technical requests, troubleshooting, workflow changes, account updates, and other support needs as part of an ongoing GHL support engagement.' },
 ];
 
 const WHO_FOR = [
-  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS resellers with growing client bases', desc: 'At five clients you handle support yourself. At fifty it is a full-time job. White-label support scales with your client base without scaling your personal time commitment.', img: '/services-six-card/White Label/whhite label ghl support/GHL SaaS resellers with growingclient bases.webp' },
-  { icon: 'fa-solid fa-users', title: 'Agencies using GHL as a retention tool', desc: 'Clients embedded in the platform generate embedded support requests. White-label support keeps those clients happy without the burden falling on your account managers.', img: '/services-six-card/White Label/whhite label ghl support/Agencies using GHL as aretention tool.webp' },
-  { icon: 'fa-solid fa-bolt', title: 'Agencies onboarding faster than they can set up', desc: 'A sales process that closes clients faster than the onboarding team can configure them creates a backlog that damages the first impression. Support keeps setup inside your sold timeline.', img: '/services-six-card/White Label/whhite label ghl support/Agencies onboarding fasterthan they can set up.webp' },
-  { icon: 'fa-solid fa-user-clock', title: 'Owners spending too much time inside GHL', desc: 'If you are the most GHL-experienced person in the agency and support requests pull you into the platform for hours a week, white-label support removes you from the execution loop.', img: '/services-six-card/White Label/whhite label ghl support/Owners spending too much timeinside GHL.webp' },
-  { icon: 'fa-solid fa-rocket', title: 'Agencies expanding into GHL without deep expertise', desc: 'If you are adding GHL to your offering but your team is not deeply experienced yet, white-label support lets you sell it confidently while we handle the technical delivery.', img: '/services-six-card/White Label/whhite label ghl support/Agencies expanding into GHLwithout deep expertise.webp' },
+  { icon: 'fa-solid fa-arrow-up-right-dots', title: 'GHL SaaS Resellers With Growing Client Bases', desc: 'At a few clients, support may be manageable internally. As sub-account volume grows, a dedicated support team can take on the recurring platform work.', img: '/services-six-card/White Label/whhite label ghl support/GHL SaaS resellers with growingclient bases.webp' },
+  { icon: 'fa-solid fa-users', title: 'Agencies Using GHL as a Client Retention Tool', desc: 'When clients rely on GoHighLevel for sales and automation, ongoing support becomes part of the service experience. A support partner can help keep accounts maintained.', img: '/services-six-card/White Label/whhite label ghl support/Agencies using GHL as aretention tool.webp' },
+  { icon: 'fa-solid fa-bolt', title: 'Agencies Onboarding Faster Than They Can Set Up Accounts', desc: 'New client setup can consume launch-week capacity. White-label support can handle account configuration so onboarding stays on schedule.', img: '/services-six-card/White Label/whhite label ghl support/Agencies onboarding fasterthan they can set up.webp' },
+  { icon: 'fa-solid fa-user-clock', title: 'Owners Spending Too Much Time Inside GoHighLevel', desc: 'If the agency owner is handling GHL troubleshooting, support requests, and account changes personally, shifting platform work to a specialist team can free that time.', img: '/services-six-card/White Label/whhite label ghl support/Owners spending too much timeinside GHL.webp' },
+  { icon: 'fa-solid fa-rocket', title: 'Agencies Expanding Into GHL Without Deep Expertise', desc: 'A support partner can provide technical GoHighLevel knowledge while the agency builds its offer and client base without immediately hiring a full specialist team.', img: '/services-six-card/White Label/whhite label ghl support/Agencies expanding into GHLwithout deep expertise.webp' },
 ];
 
 const WHY_ISM = [
-  { icon: 'fa-solid fa-medal', title: 'We know GoHighLevel in depth', desc: 'We use GHL for our own clients and build inside it every day, its edge cases, failure modes, and the workarounds the documentation does not cover.' },
-  { icon: 'fa-solid fa-user-secret', title: 'Your brand on every client interaction', desc: 'Support responses go out under your agency\'s email domain, your name, your tone of voice. Your clients never see ISureMedia.' },
-  { icon: 'fa-solid fa-headset', title: 'One dedicated contact for all support', desc: 'You manage one contact at ISureMedia who coordinates all support delivery and escalates issues before they affect clients. Clear and reliable.' },
-  { icon: 'fa-solid fa-layer-group', title: 'The full GHL stack, not one slice', desc: 'Funnels, automations, CRM, calendars, email and SMS, integrations, and SaaS mode troubleshooting, one partner for all platform support.' },
-  { icon: 'fa-solid fa-file-shield', title: 'Every sub-account documented', desc: 'What it does, how it is triggered, what it connects, living in your agency\'s records. If you transition to in-house delivery, you have a complete record.' },
-  { icon: 'fa-solid fa-calendar-check', title: 'Month to month, no lock-in', desc: 'You scale up when your GHL client base grows and scale down if it contracts. Never committed to a volume that does not match your agency.' },
+  { icon: 'fa-solid fa-medal', title: 'We Know GoHighLevel in Depth', desc: 'We use GHL for ongoing builds and support, including edge cases, failure modes, and account configurations that basic platform knowledge does not cover.' },
+  { icon: 'fa-solid fa-user-secret', title: 'Your Brand on Every Client Interaction', desc: "Support responses can use your agency's brand, email domain, communication style, and preferred delivery process rather than exposing the technical partner." },
+  { icon: 'fa-solid fa-headset', title: 'One Dedicated Contact for All Support', desc: 'Your agency has one support contact coordinating client requests, troubleshooting, account changes, and escalation.' },
+  { icon: 'fa-solid fa-layer-group', title: 'The Full GHL Stack, Not One Slice', desc: 'Support can cover funnels, automations, CRM, calendars, email, SMS, integrations, and SaaS features so you are not coordinating multiple providers.' },
+  { icon: 'fa-solid fa-file-shield', title: 'Every Sub-Account Documented', desc: 'Important account changes, workflow logic, and configuration notes are documented so your team can understand what was changed.' },
+  { icon: 'fa-solid fa-calendar-check', title: 'Month to Month, No Lock-In', desc: 'Scale support as your GHL client base grows without committing to a fixed support volume that may not match your agency.' },
 ];
 
 const PROCESS = [
-  { n: '01', title: 'Partner Discovery Call', desc: 'We talk through your current GHL client base, Snapshot setup, common support types, and expected onboarding volume, then propose a support structure and pricing.' },
-  { n: '02', title: 'Agency Onboarding', desc: 'We review your Snapshot, sub-account standards, and brand guidelines, and establish how requests come in, how we respond, and how escalations are handled.' },
-  { n: '03', title: 'Support Channel Setup', desc: 'The support channel is configured under your brand, your email domain, ticketing system, or preferred method. Clients submit to you. We resolve invisibly.' },
-  { n: '04', title: 'Ongoing Support Delivery', desc: 'Requests handled within agreed response times. Simple questions resolved in hours, builds delivered within agreed timelines, with an activity summary at your preferred frequency.' },
-  { n: '05', title: 'New Client Onboarding', desc: 'When you close a new client, you pass us the intake details. We configure the sub-account and deploy the Snapshot within the agreed setup timeline.' },
-  { n: '06', title: 'Monthly Review', desc: 'A monthly check-in covering support volume, recurring issues, platform changes affecting your client base, and any adjustments to scope.' },
+  { n: '01', title: 'Partner Discovery Call', desc: 'We review your current GHL client base, support volume, service scope, and preferred communication process, then define the support structure.' },
+  { n: '02', title: 'Agency Onboarding', desc: 'We gather your SOPs, account standards, support channels, brand guidelines, and escalation rules so requests can be handled consistently.' },
+  { n: '03', title: 'Support Channel Setup', desc: "The support channel is configured under your preferred communication method. Client requests are routed according to your agency's process." },
+  { n: '04', title: 'Ongoing Support Delivery', desc: 'Requests are reviewed, prioritized, resolved, and documented. Larger builds or complex changes are handled within the agreed scope and timeline.' },
+  { n: '05', title: 'New Client Onboarding', desc: 'When a new client joins, we can configure their sub-account, deploy the required snapshot, and prepare the account for launch.' },
+  { n: '06', title: 'Monthly Review', desc: 'A regular review covers support volume, recurring issues, platform changes, and adjustments to scope or capacity.' },
 ];
 
 const FAQS = [
-  { q: 'Do my clients need to know you are providing the support?', a: 'No. All support responses go out under your agency\'s brand, your email domain, your agency name, your communication style. ISureMedia\'s name appears nowhere in any client-facing communication.' },
-  { q: 'How do support requests reach you from clients?', a: 'Through whatever support channel your agency uses, a ticketing system, a support email on your domain, a Slack channel, or a dedicated inbox. We access it, respond, and resolve under your brand.' },
-  { q: 'What happens when a GHL update breaks something in a client sub-account?', a: 'We monitor for platform update impacts across accounts we support and proactively identify issues where possible. When a client reports a break, we diagnose and resolve it within the agreed response time.' },
-  { q: 'Can you handle A2P 10DLC registration for our clients?', a: 'Yes. A2P 10DLC is one of the most common technical blockers for GHL clients in the US, required for SMS sending and frequently rejected on first submission. We handle registration and troubleshooting.' },
-  { q: 'Do you build custom Snapshots for agencies?', a: 'Yes. If you need a new Snapshot built, or an existing one updated with new funnels or automations, we build and maintain it as a living asset that improves as your delivery standards improve.' },
-  { q: 'Can you support GHL clients in SaaS mode?', a: 'Yes. SaaS mode configuration, Stripe rebilling, plan tier setup, automated sub-account creation on payment, and SaaS-specific troubleshooting are all within scope.' },
-  { q: 'What is your response time for client support requests?', a: 'Agreed at the start of the partnership. Typical arrangements: first response within four business hours, resolution within one business day for standard issues, and same-day acknowledgement for everything else.' },
-  { q: 'Do you handle GHL training for our clients?', a: 'We can produce training documentation, how-to guides, video walkthroughs, and FAQ documents, branded to your agency, covering the GHL features your clients actually use.' },
-  { q: 'What if we already have some in-house GHL capability?', a: 'The most common arrangement is hybrid, your team handles what they are confident with and we handle the complex builds, troubleshooting, and high-volume onboarding periods.' },
-  { q: 'Can you support GHL clients outside the US?', a: 'Yes, globally, with awareness of regional differences in SMS sending, phone provisioning, and compliance. UK, Australian, Canadian, and Indian clients get the regional setup they actually need, not a US-centric default.' },
+  { q: 'What is GoHighLevel white label support?', a: "GoHighLevel white label support is technical support delivered by a specialist team behind an agency's brand. The agency keeps the client relationship while the support team handles agreed GoHighLevel setup, changes, troubleshooting, and maintenance." },
+  { q: 'How does GoHighLevel white label support work for agencies?', a: "The agency sends client requests through an agreed support channel, and the GHL support team handles the approved work inside the client's account. Delivery and communication remain aligned with the agency's brand and process." },
+  { q: 'Do my clients know that the GoHighLevel support is outsourced?', a: "The white-label model is designed to keep the technical fulfillment behind the agency. Client-facing communication and deliverables can remain under your agency's brand." },
+  { q: 'Can you support multiple GoHighLevel client sub-accounts?', a: 'Yes. A white-label GHL support team can manage support across multiple sub-accounts, with capacity and scope based on the number of clients and the type of requests.' },
+  { q: 'Can you fix a GoHighLevel account that is not working properly?', a: 'Yes. Support can include troubleshooting broken workflows, forms, calendars, integrations, automations, pages, and account settings. The first step is identifying where the failure occurs and what changed.' },
+  { q: 'Can you handle A2P 10DLC registration for GoHighLevel clients?', a: 'A2P 10DLC setup and registration support can be included when it is part of the agreed scope. Requirements depend on the account, business information, messaging use case, and registration status.' },
+  { q: 'Do you provide GoHighLevel SaaS mode support?', a: 'Yes. Support can include GoHighLevel SaaS mode setup and maintenance for agencies using the platform to deliver a branded software or service offering.' },
+  { q: 'Can you build custom snapshots for agencies?', a: 'Yes. We can help configure and maintain GoHighLevel snapshots when the agency needs a repeatable account structure for onboarding multiple clients.' },
+  { q: 'What is the response time for white label GHL support?', a: 'Response times depend on the agreed support arrangement and the type of request. Response and resolution expectations are defined during onboarding so your agency knows what to expect.' },
+  { q: 'Can you support GoHighLevel clients outside the US?', a: 'Yes. Support can be provided for clients in different regions. SMS, phone, compliance, and communication requirements may vary by market, so account configuration is handled according to the relevant regional requirements.' },
+  { q: 'Do you provide GoHighLevel training for agency teams?', a: 'Training can be included when it is part of the engagement. Training may cover account structure, workflows, support procedures, and how the agency should manage recurring GHL tasks.' },
+  { q: 'What happens when a GoHighLevel update breaks something in a client sub-account?', a: 'We investigate the affected workflow or feature, identify whether the change is related to the platform or account configuration, apply the required fix, and test the affected process before closing the support request.' },
+  { q: 'Can I use white label GHL support if I already have in-house GoHighLevel staff?', a: 'Yes. White-label GHL support can supplement an internal team by handling overflow, troubleshooting, onboarding, recurring account changes, or specialist work when your staff reaches capacity.' },
+  { q: 'Do you require a long-term contract for GoHighLevel agency support?', a: 'No. Ongoing support can be structured month to month, while larger builds or defined setup work can be scoped as project-based engagements.' },
 ];
 
-/* â”€â”€ FAQ 2-COL, matches the Local SEO page layout â”€â”€ */
+/* ── FAQ 2-COL, matches the Local SEO page layout ── */
 function AutomationFAQAccordion() {
   const [open, setOpen] = useState(0);
   return (
@@ -115,16 +110,16 @@ function AutomationFAQAccordion() {
           {/* Left */}
           <div className="wla-faq-sticky" style={{ position: 'sticky', top: 100 }}>
             <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 14, marginTop: 0, lineHeight: 1.15 }}>
-              Questions About <span style={{ color: 'var(--ism-amber)' }}>White-Label GHL Support</span>
+              Questions About <span style={{ color: 'var(--ism-amber)' }}>GoHighLevel White Label Support</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: '0 0 32px' }}>
-              Straight answers to the questions GHL agency owners ask most.
+              Clear answers about client communication, setup, SaaS, troubleshooting, response times, and agency support.
             </p>
             <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
-              Get Started â†’
+              Get Started →
             </a>
           </div>
           {/* Right accordion */}
@@ -162,7 +157,7 @@ export default function WhiteLabelAutomationPage() {
       <Navbar />
       <main>
 
-        {/* â•â• 01. HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  01. HERO  */}
         <section className="wla-hero" style={{ background: 'linear-gradient(160deg,var(--ism-blue-50) 0%,#fff 60%)', padding: '88px 0 96px', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: '-15%', right: '-8%', width: 720, height: 720, background: 'radial-gradient(circle,rgba(30,77,195,.07) 0%,transparent 65%)', pointerEvents: 'none' }} />
 
@@ -172,9 +167,9 @@ export default function WhiteLabelAutomationPage() {
               {/* Left, copy */}
               <div>
                 <h1 style={{ fontFamily: J, fontWeight: 900, fontSize: 'clamp(30px,3.8vw,54px)', color: 'var(--color-navy)', lineHeight: 1.14, letterSpacing: '-0.5px', marginBottom: 22 }}>
-                  Handle More GHL Clients Without the Support Load Consuming Your{' '}
+                  GoHighLevel White Label Support That Takes the{' '}
                   <span style={{ position: 'relative', display: 'inline-block' }}>
-                    Time.
+                    Support Load Off Your Team.
                     <svg viewBox="0 0 100 12" preserveAspectRatio="none" style={{ position: 'absolute', left: 0, bottom: -6, width: '100%', height: 10 }} aria-hidden>
                       <path d="M2,8 Q50,0 98,7" fill="none" stroke="var(--ism-amber)" strokeWidth="6" strokeLinecap="round" />
                     </svg>
@@ -182,8 +177,7 @@ export default function WhiteLabelAutomationPage() {
                 </h1>
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
-                  We provide white-label GoHighLevel setup, configuration, and ongoing technical support for agencies and SaaS resellers, handling the platform work your clients generate under your brand, so{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>you focus on growing the agency</span> while your clients get expert GHL support fast.
+                  Provide <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GoHighLevel setup, configuration, troubleshooting, and ongoing agency support</span> under your brand while your team stays focused on growth.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -252,23 +246,23 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 02. PROOF STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  02. PROOF STRIP  */}
         <ReviewsStrip />
 
-        {/* â•â• 03. BRIDGE SECTION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  03. BRIDGE SECTION  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="bridge-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,0.9fr)', gap: 64, alignItems: 'start' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(24px,2.8vw,40px)', color: 'var(--color-navy)', lineHeight: 1.2, letterSpacing: '-0.4px', marginBottom: 24 }}>
-                  You Sold the Platform. Now the Support Requests Are Coming In Faster Than You Can Handle Them.
+                  Your Agency Stays Client-Facing. Our Team Handles the GHL Work.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 16 }}>
-                  The GoHighLevel white-label opportunity is real. Agencies on SaaS Pro are reselling GHL-powered platforms at $97 to $497 per client per month and keeping 70 to 85% margin. At 30 clients that is $2,000 to $3,000 per month in net recurring revenue from the platform alone.
+                  GoHighLevel white label support means your agency can continue selling and owning the client relationship while Isuremedia becomes the technical team working behind your support process.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
-                  The constraint is not the platform. It is the support load. ISureMedia handles{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GHL client support under your brand</span>, your clients submit requests to your support channel, we respond, resolve, and deliver at the standard your clients expect. You get the margin. We handle the platform work.
+                  Your clients submit requests through the channel you choose. We can handle{' '}
+                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>sub-account configuration, workflow changes, funnel updates, calendar settings, integrations, and troubleshooting</span> according to your agency's process, designed for agencies that want to support more GHL clients without making every new request another internal task.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,26 +294,26 @@ export default function WhiteLabelAutomationPage() {
           <style>{`@media(max-width:860px){ .bridge-grid{ grid-template-columns:minmax(0,1fr) !important; gap:40px !important; } }`}</style>
         </section>
 
-        {/* â•â• 04. WHAT IS WHITE-LABEL GHL SUPPORT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  04. WHAT IS WHITE-LABEL GHL SUPPORT  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="wla-whatis-box" style={{ background: '#fff', border: '1px solid var(--color-border)', borderRadius: 24, padding: '56px 56px', boxShadow: '0 24px 64px rgba(0,35,83,.08)' }}>
             <div className="wla-whatis-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.05fr) minmax(0,0.85fr)', gap: 64, alignItems: 'center' }}>
               <div>
                 <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', lineHeight: 1.22, letterSpacing: '-0.4px', marginBottom: 20 }}>
-                  One Support Channel. Every GHL Request Handled Under Your Name.
+                  One Support Channel for Every GHL Client Request.
                 </h2>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    White-label GHL support means your agency keeps selling and owning the client relationship while ISureMedia becomes{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the platform team working behind your support channel</span>.
+                    Your agency keeps{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ownership of the client relationship</span> while a specialist team handles setup, changes, troubleshooting, and ongoing platform support.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Your clients submit a request the same way they always have. We configure the sub-account, build the automation, fix the calendar, or resolve the delivery issue,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>under your agency&apos;s name, at the standard your clients expect</span>.
+                    This model is designed for agencies that want to support more GHL clients{' '}
+                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>without making every new request another internal task</span> for the same account managers or specialists.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
-                    Agencies reselling GHL-powered platforms keep 70 to 85% margin on the platform fee. The constraint has never been the margin, it is the support load. Removing that constraint is the entire point of the partnership.
+                    The work stays behind your agency's brand, with the delivery process, communication, and support scope defined with you.
                   </p>
                 </div>
               </div>
@@ -389,13 +383,13 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 05. THE GHL SUPPORT LOAD CONSUMING YOUR TIME â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  05. THE GHL SUPPORT LOAD CONSUMING YOUR TIME  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Four Categories of GHL Support Consuming Your Agency&apos;s Time.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Keeps GoHighLevel Support on Your Team's To-Do List.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Every GHL agency faces these. Most handle them themselves. GoHighLevel is a powerful platform, and a complex one. Every client generates a stream of requests that require genuine platform expertise to resolve quickly.
+                Every GHL client creates recurring requests, from onboarding and workflow changes to technical troubleshooting and platform updates.
               </p>
             </div>
             <div className="why-matters-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, marginBottom: 48 }}>
@@ -427,13 +421,13 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 06. WHAT MAKES A WHITE-LABEL GHL PARTNERSHIP WORK â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  06. WHAT MAKES A WHITE-LABEL GHL PARTNERSHIP WORK  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 720, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>What Actually Makes a White-Label GHL Partnership Work.</h2>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 18 }}>The Standards Behind Reliable White Label GoHighLevel Support.</h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>
-                Handing off platform support only pays off if the delivery is reliable. These are the factors Isuremedia builds into every white-label GHL support engagement.
+                Reliable support depends on platform depth, documentation, response times, and a clear route for every client request.
               </p>
             </div>
             <div className="wla-factor-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }}>
@@ -471,12 +465,12 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 09. OUR WHITE-LABEL GHL SUPPORT SERVICES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  09. OUR WHITE-LABEL GHL SUPPORT SERVICES  */}
         <section style={{ padding: '104px 0', background: '#fff' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Our White-Label GHL Support Services</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Everything Your Agency Needs to Scale GHL Client Support Confidently.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>GoHighLevel White Label Support Services for Your Client Accounts</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Give your agency one support team for the recurring GoHighLevel work that keeps client accounts running.</p>
             </div>
             <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}>
               {SERVICES.map((s, i) => {
@@ -501,12 +495,12 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 10. WHO THIS IS FOR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  10. WHO THIS IS FOR  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Which GHL Agencies White-Label Support Is Built For</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>If Your Support Load Is Growing Faster Than Your Capacity, This Is the Partnership That Fixes That.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Which Agencies Benefit From GoHighLevel White Label Support?</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Use white label GoHighLevel support when the platform workload is growing faster than your internal capacity.</p>
             </div>
             <div className="who-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
               {WHO_FOR.map(w => (
@@ -535,15 +529,15 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 11. MID-PAGE CTA STRIP â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  11. MID-PAGE CTA STRIP  */}
         <section style={{ padding: '56px 0', background: '#fff' }}>
           <div className="ism-container">
             <div className="mid-cta" style={{ background: 'var(--color-primary)', borderRadius: 20, padding: '40px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 28, flexWrap: 'wrap', position: 'relative', overflow: 'hidden' }}>
               <div aria-hidden style={{ position: 'absolute', top: '-30%', right: '-5%', width: 300, height: 300, background: 'radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 65%)', pointerEvents: 'none' }} />
               <div style={{ position: 'relative', maxWidth: 560 }}>
-                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>Every hour you spend inside a client&apos;s GHL sub-account is an hour you are not spending growing your agency.</h3>
+                <h3 style={{ fontFamily: J, fontSize: 'clamp(18px,2vw,24px)', fontWeight: 800, color: '#fff', marginBottom: 8, lineHeight: 1.3 }}>How Much Is Your GHL Support Queue Costing Your Agency?</h3>
                 <p style={{ fontFamily: I, fontSize: 14.5, color: 'rgba(255,255,255,.80)', lineHeight: 1.65, margin: 0 }}>
-                  A partner discovery call will show you exactly what white-label GHL support would cost for your current client base.
+                  Bring your client volume, current support workload, and required services to a partner discovery call and we&apos;ll map the right support model.
                 </p>
               </div>
               <a href="/appointment" className="mid-cta-btn"
@@ -562,12 +556,12 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 12. WHY CHOOSE ISM â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  12. WHY CHOOSE ISM  */}
         <section style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
             <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 56px' }}>
-              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why GHL Agencies Choose Isuremedia for White-Label Support</h2>
-              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Deep Platform Expertise. Your Brand on Everything. One Contact for All Support.</p>
+              <h2 style={{ fontFamily: J, fontWeight: 800, fontSize: 'clamp(22px,2.6vw,38px)', color: 'var(--color-navy)', letterSpacing: '-0.4px', marginBottom: 14 }}>Why Agencies Choose Isuremedia for White Label GHL Support</h2>
+              <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75 }}>Your agency gets deep platform support, one point of contact, documented accounts, and a support process that stays client-facing through your brand.</p>
             </div>
             <div className="why-ism-bento" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16 }}>
               {WHY_ISM.slice(0, 2).map(b => (
@@ -595,7 +589,7 @@ export default function WhiteLabelAutomationPage() {
 
                 <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', minHeight: 200 }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img loading="lazy" src="\services-mid-image\white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img loading="lazy" src="/services-mid-image/white-label.webp" alt="What makes Isuremedia different" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
 
                 {(() => { const b = WHY_ISM[3]; return (
@@ -629,15 +623,15 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 13. OUR PROCESS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  13. OUR PROCESS  */}
         <section className="wla-section" style={{ padding: '100px 0', background: '#fff' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ textAlign: 'center', marginBottom: 64 }}>
               <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,44px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', margin: '0 0 14px' }}>
-                How White-Label GHL Support Works in <span style={{ color: 'var(--ism-amber)' }}>Practice</span>
+                How Our <span style={{ color: 'var(--ism-amber)' }}>GoHighLevel White Label Support</span> Works
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>
-                Simple for you. Invisible to your clients.
+                We keep intake, support routing, account access, delivery, and review structured so your agency stays in control of the client experience.
               </p>
             </div>
             <div className="wla-timeline" style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 0, position: 'relative' }}>
@@ -653,7 +647,7 @@ export default function WhiteLabelAutomationPage() {
               ))}
             </div>
             <p style={{ textAlign: 'center', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.7, maxWidth: 780, margin: '48px auto 0' }}>
-              <strong style={{ color: 'var(--color-navy)' }}>Typical timelines:</strong> New sub-account setup from Snapshot, one to two business days. Standard automation builds, two to three business days. Technical troubleshooting, responded to within four hours, resolved within one business day for most issues.
+              New sub-account setup from an approved snapshot can often take one to two business days. Standard automation changes can take around two to three business days. Technical troubleshooting depends on the issue and may require longer investigation.
             </p>
             {/* CTA */}
             <div style={{ textAlign: 'center', marginTop: 40 }}>
@@ -674,11 +668,11 @@ export default function WhiteLabelAutomationPage() {
           `}</style>
         </section>
 
-        {/* â•â• 14. FAQ â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/*  14. FAQ  */}
         <AutomationFAQAccordion />
 
-        {/* â•â• 15. ENDING CTA â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
-        <CTASection image="/result_footer/white label.webp" description={<>Every new GHL client you onboard shouldn&rsquo;t mean another support ticket pile-up for your team. Our white-label automation specialists build and maintain funnels, workflows, and integrations under your brand, freeing your hours for the work that actually grows your agency. Let&rsquo;s talk about how to <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>handle more clients without the support drag</span>.</>} heading="Ready to Offload" headingHighlight="the GHL Support Load?" primaryLabel="Start White-Label GHL Support" secondaryLabel="Call +1 646-588-1430" />
+        {/*  15. ENDING CTA  */}
+        <CTASection image="/result_footer/white label.webp" description={<>Tell us how many GHL clients you support, what requests your team handles today, and where support is slowing growth. We&rsquo;ll help you define the <span style={{ background: 'var(--ism-amber)', color: 'var(--color-navy)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>right white-label model</span>.</>} heading="Take GHL Support Off" headingHighlight="Your Team's To-Do List" primaryLabel="Start White-Label GHL Support" secondaryLabel="Talk to Our GHL Support Team" />
       </main>
       <Footer />
     </>
