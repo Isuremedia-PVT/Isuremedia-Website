@@ -15,19 +15,19 @@ const SCHEMA = JSON.stringify({
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "What is a dedicated agency pod?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A fixed team of a project manager plus specialists assigned permanently to your agency. Your pod knows your brand, clients, and standards. Context accumulates over time instead of resetting with each new freelancer." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "A dedicated agency pod is a fixed team assigned to one agency for recurring client delivery. It can include specialists such as SEO, PPC, web development, content, design, or automation, plus project management and quality control." } },
         { "@type": "Question", "name": "How is a dedicated pod different from project-based outsourcing?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Project outsourcing sources a different vendor for each brief and resets context every time. A dedicated pod is the same people on every brief, building accumulated knowledge and consistent quality against one standard." } },
-        { "@type": "Question", "name": "What happens if our client volume changes?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pod size is reviewed monthly and adjusted without penalty. If a client churns, the pod scales back. If you win new clients, capacity is added. Month to month with no minimum commitment." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "Project-based outsourcing usually assigns work one project at a time, often with different people. A dedicated pod keeps the same team assigned to your agency so they retain knowledge of your standards, clients, tools, and working process." } },
+        { "@type": "Question", "name": "Can I scale the pod up or down?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pod size and scope can be reviewed as your client volume changes. This allows your agency to adjust fulfillment capacity without rebuilding the entire team." } }
       ]
     }
   ]
 });
 
 export const metadata = {
-  title: "Dedicated Agency Pod | White Label Team | Isuremedia",
-  description: "Get a dedicated agency pod from Isuremedia. A fixed team of specialists assigned to your agency every month for SEO, PPC, web dev, and content.",
+  title: "Dedicated Marketing Teams for Agencies & White Label Fulfillment",
+  description: "Build a dedicated marketing team for agencies that stays familiar with your clients, processes, and standards, so recurring fulfillment does not start from zero every time.",
   alternates: { canonical: "/dedicated-agency-pods" },
   openGraph: { images: [{ url: "/feature_image/dedicated-agency-pods.webp", width: 1618, height: 950 }] },
 };
