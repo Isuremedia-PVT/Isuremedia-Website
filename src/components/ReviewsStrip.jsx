@@ -7,8 +7,10 @@ export default function ReviewsStrip() {
 
           {/* Google */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/Google.webp" alt="Google Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            <a href="https://www.google.com/maps/place/Isuremedia+Private+Limited/@29.1985821,79.4835494,17z/data=!3m2!4b1!5s0x39a09b4f3fbe1675:0xb03c9b4c838bcb6c!4m6!3m5!1s0x39a09b59125c64b7:0xa50d6b8635f8ce83!8m2!3d29.1985821!4d79.4861243!16s%2Fg%2F11c6pqx1_6?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style={{ display: 'block' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/Google.webp" alt="Google Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
+            </a>
           </div>
 
           <div className="rs-divider" style={{ width: 1, height: 48, background: 'var(--color-border)', alignSelf: 'center', margin: '0 auto' }} />

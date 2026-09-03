@@ -12,8 +12,6 @@ const TABS = [
   { name: 'All', icon: 'fa-solid fa-border-all' },
   { name: 'Web Design', icon: 'fa-solid fa-laptop-code' },
   { name: 'Funnels', icon: 'fa-solid fa-filter' },
-  { name: 'SEO', icon: 'fa-solid fa-chart-line' },
-  { name: 'Content', icon: 'fa-solid fa-pen-nib' },
 ];
 
 const PROJECTS = [
@@ -67,39 +65,12 @@ const PROJECTS = [
     href: '/case-studies',
   },
   {
-    name: 'NovaDerm Skincare Rebrand',
-    category: 'SEO & Organic Growth',
-    tag: 'SEO',
-    date: 'May 19, 2025',
-    desc: 'DTC e-commerce SEO strategy resulting in 312% revenue growth year-over-year.',
-    img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1000&q=80',
-    href: '/case-studies',
-  },
-  {
     name: 'TechStack SaaS Dashboard',
     category: 'Funnels & Product',
     tag: 'Funnels',
     date: 'April 11, 2025',
     desc: 'SaaS user interface and lead-gen site driving 45% higher demo request conversion.',
     img: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000&q=80',
-    href: '/case-studies',
-  },
-  {
-    name: 'Urban Realty Group Portal',
-    category: 'Content & Strategy',
-    tag: 'Content',
-    date: 'March 28, 2025',
-    desc: 'Custom real estate platform with interactive listing filters and lead automation.',
-    img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1000&q=80',
-    href: '/case-studies',
-  },
-  {
-    name: 'PulseMed Clinic Automation',
-    category: 'Marketing Automation',
-    tag: 'Content',
-    date: 'January 10, 2025',
-    desc: 'Patient acquisition and automated scheduling reducing no-shows by 61%.',
-    img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1000&q=80',
     href: '/case-studies',
   },
 ];

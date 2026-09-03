@@ -620,7 +620,7 @@ export default function HireMarketingAutomationExpert() {
       {/* ════════════════════════════════════════
           SECTION 07, MID-PAGE CTA
       ════════════════════════════════════════ */}
-      <section className="wp-mid-cta" style={{ paddingTop: 150, paddingBottom: 64, background: '#fff', overflow: 'visible' }}>
+      <section className="wp-mid-cta" style={{ paddingTop: 150, paddingBottom: 64, background: '#fff', overflowX: 'hidden', overflowY: 'visible' }}>
         <div className="ism-container">
 
           <div className="wp-cta-card" style={{ position: 'relative', background: 'var(--ism-blue-50)', borderRadius: 24, padding: '24px 60px', display: 'grid', gridTemplateColumns: '1fr clamp(220px, 30vw, 320px)', alignItems: 'end', gap: 60, minHeight: 180 }}>

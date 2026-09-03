@@ -95,7 +95,7 @@ const SERVICES = [
     title: 'White-Label SEO',
     icon: 'fa-solid fa-tag',
     desc: 'We deliver confidential, white-label execution for digital marketing agencies, executing elite technical, content and backlink strategies behind the scenes so your brand takes full credit for the results.',
-    href: '/on-page-seo-services',
+    href: '/white-label-seo-services',
   },
 ];
 
@@ -394,8 +394,8 @@ export default function SEOPage() {
 
               {/* Right, text */}
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  Search engine optimization offers a unique compounding advantage that traditional paid channels simply cannot match. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>High-value content engineered today keeps acquiring top rankings next year</span>, while backlink authority acquired today permanently elevates your entire domain. Every optimization stacks up to build a defensive digital moat around your brand.
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
+                  Search engine optimization offers a unique compounding advantage that traditional paid channels simply cannot match. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>High-value content engineered today keeps acquiring top rankings next year</span>, while backlink authority acquired today permanently elevates your entire domain. Every optimization stacks up to build a defensive digital moat around your brand.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   Businesses that invest in professional SEO services early become <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>almost impossible for competitors to dethrone later</span>. Few digital investments yield a permanent competitive edge that never expires. Our team executes the entire strategy, eliminating technical flaws, securing AI search citations, and making sure every visitor landing on your pages is primed to convert.
@@ -406,7 +406,7 @@ export default function SEOPage() {
                     onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
                     onMouseLeave={e=>{ e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='0 6px 20px rgba(255,176,0,.35)'; }}
                   >
-                    Check My Site&apos;s Performance <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
+                    Get My Free SEO Audit <i className="fa-solid fa-arrow-right" style={{ fontSize:12 }} />
                   </a>
                 </div>
               </div>

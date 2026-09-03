@@ -342,7 +342,7 @@ export default function WebsitesPage() {
                 <img loading="lazy" src="/main-services/Websites and Funnels That Work Harder for Your Business.webp" alt="Websites and Funnels That Work Harder for Your Business" style={{ width:'100%', display:'block', objectFit:'cover' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   Most websites <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>look good but fail to bring in sales</span>. The difference between a pretty page and one that converts comes down to layout, speed, and clear messaging.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>

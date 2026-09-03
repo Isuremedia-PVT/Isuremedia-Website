@@ -326,7 +326,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div style={{ paddingLeft: 24, minWidth: 220 }}>
-                      <CtaCard heading="Scale Your Business with Isuremedia" sub="Book a free strategy call with our team." btnLabel="Book Free Call" />
+                      <CtaCard heading="Scale Your Business with Isuremedia" sub="Book a free strategy call with our team." btnLabel="Book Free Call" href="/appointment" />
                     </div>
                   </Dropdown>
                 )}
@@ -379,7 +379,7 @@ export default function Navbar() {
                       </div>
                       {/* CTA card */}
                       <div>
-                        <CtaCard heading="Not sure which service fits?" sub="Talk to our team and get a custom plan built for your business." btnLabel="Get Started" />
+                        <CtaCard heading="Not sure which service fits?" sub="Talk to our team and get a custom plan built for your business." btnLabel="Get Started" href="/appointment" />
                       </div>
                     </div>
                   </div>

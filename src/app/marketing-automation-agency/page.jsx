@@ -321,7 +321,7 @@ export default function AutomationPage() {
                 <img loading="lazy" src="/main-services/Automation Systems That Drive Real Business Growth.webp" alt="Automation Systems That Drive Real Business Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   The point of automation is not to remove people from your business. It makes sure your people spend their time <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>talking to qualified buyers</span> instead of typing data into software and sending manual texts.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>

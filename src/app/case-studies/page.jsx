@@ -346,6 +346,9 @@ export default function CaseStudiesPage() {
                   flexWrap: 'nowrap',
                   justifyContent: 'center',
                   maxWidth: '100%',
+                  overflowX: 'auto',
+                  WebkitOverflowScrolling: 'touch',
+                  scrollbarWidth: 'none',
                 }}
               >
                 {[{ label: 'All', icon: 'fa-solid fa-border-all' }, ...SERVICES].map((svc) => {
@@ -393,6 +396,7 @@ export default function CaseStudiesPage() {
               </div>
             </div>
             <style>{`
+              .cs-filter-tabs-wrap::-webkit-scrollbar { display: none; }
               @media (max-width: 900px) {
                 .cs-filter-tabs-outer { justify-content: flex-start !important; overflow: hidden; }
                 .cs-filter-tabs-wrap {
@@ -402,7 +406,6 @@ export default function CaseStudiesPage() {
                   justify-content: flex-start !important;
                   scrollbar-width: none;
                 }
-                .cs-filter-tabs-wrap::-webkit-scrollbar { display: none; }
               }
               @media (max-width: 640px) {
                 .cs-filter-tabs-wrap { padding: 5px 6px; gap: 3px; }

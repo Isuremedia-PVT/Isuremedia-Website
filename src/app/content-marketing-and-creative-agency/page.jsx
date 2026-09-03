@@ -316,7 +316,7 @@ export default function ContentCreativePage() {
                 <img loading="lazy" src="/main-services/Content and Creative That Drive Real Business Growth.webp" alt="Content and Creative That Drive Real Business Growth" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   Good content does two main jobs: it brings in qualified buyers and guides them toward a purchase. Articles that rank well pull in people who are already searching for your services. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Visual ad designs that address customer pain points make users stop scrolling immediately</span>. Both channels build compounding value for your brand over time.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>

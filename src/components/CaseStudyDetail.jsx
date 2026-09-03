@@ -43,7 +43,7 @@ export default function CaseStudyDetail({
             </p>
             <p style={{ color: MUTED, lineHeight: 1.8, maxWidth: 600, marginBottom: 28 }}>{d.intro}</p>
 
-            <div className="csd-meta" style={{ display: 'flex', border: `1px solid ${BORDER}`, borderRadius: 10, overflow: 'hidden', width: 'fit-content', boxShadow: 'var(--sh-xs)' }}>
+            <div className="csd-meta" style={{ display: 'flex', flexWrap: 'wrap', border: `1px solid ${BORDER}`, borderRadius: 10, overflow: 'hidden', width: 'fit-content', maxWidth: '100%', boxShadow: 'var(--sh-xs)' }}>
               {[
                 ['Industry', d.meta.industry],
                 ['Location', d.meta.location],

@@ -342,7 +342,7 @@ export default function WhiteLabelPage() {
                 <img loading="lazy" src="/main-services/White-Label Fulfilment Built to Grow Your Agency.webp" alt="White-Label Fulfilment Built to Grow Your Agency" style={{ width:'100%', display:'block', objectFit:'contain' }} />
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
-                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
+                <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   Every agency owner eventually faces a choice: should you hire in-house staff or find a better way to handle client work? <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Hiring locks you into fixed monthly salaries, onboarding costs, and payroll risk</span> if a client leaves.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
