@@ -3,7 +3,7 @@
 import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
+import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL } from '@/data/contact';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -12,13 +12,6 @@ const EXPECT_STEPS = [
   { num: '01', title: 'Pick a Slot.', body: 'Choose the date and time that works for you. No long waits, slots are available within 24 hours.' },
   { num: '02', title: 'We Prepare.', body: 'Before the call we review your business, your goals, and prepare real, actionable ideas, not a generic pitch.' },
   { num: '03', title: 'You Get Clarity.', body: 'Walk away with a clear growth plan, honest recommendations, and next steps you can act on immediately.' },
-];
-
-const CONTACT_QUICK = [
-  { icon: 'fa-solid fa-phone',    label: 'Call Us',  text: PHONE_IN, href: PHONE_IN_TEL },
-  { icon: 'fa-solid fa-envelope', label: 'Email',    text: EMAIL,    href: EMAIL_HREF  },
-  { icon: 'fa-solid fa-clock',    label: 'Hours',    text: 'Mon–Fri 9 AM – 6 PM IST' },
-  { icon: 'fa-solid fa-globe',    label: 'Time Zone', text: 'All timings are IST (UTC+5:30)' },
 ];
 
 export default function AppointmentPage() {
@@ -69,8 +62,8 @@ export default function AppointmentPage() {
                 <div style={{ borderRadius: 24, overflow: 'hidden', height: 400, boxShadow: '0 16px 48px rgba(0,35,83,.16)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/career-about/Team image for GMB new 4.webp"
-                    alt="The Isuremedia team"
+                    src="/banner/appointment_page.webp"
+                    alt="Book an appointment with Isuremedia"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   />
                 </div>
@@ -80,22 +73,6 @@ export default function AppointmentPage() {
                   <span style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--color-navy)' }}>Slots Open Today</span>
                 </div>
 
-                <div className="appt-quick-cards" style={{ position: 'absolute', bottom: -24, left: -20, right: 40, background: '#fff', borderRadius: 14, padding: '13px 15px', boxShadow: '0 12px 32px rgba(0,35,83,.14)', border: '1px solid var(--color-border)', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 18, rowGap: 10 }}>
-                  {CONTACT_QUICK.map(c => (
-                    <div key={c.label} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-                      <div style={{ width: 25, height: 25, borderRadius: 7, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <i className={c.icon} style={{ fontSize: 10.5, color: 'var(--color-primary)' }} />
-                      </div>
-                      <div style={{ minWidth: 0 }}>
-                        <p style={{ fontFamily: J, fontSize: 8.5, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 2px' }}>{c.label}</p>
-                        {c.href
-                          ? <a href={c.href} style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, textDecoration: 'none', lineHeight: 1.35 }}>{c.text}</a>
-                          : <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.35, wordBreak: 'break-word' }}>{c.text}</p>
-                        }
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
 
             </div>
@@ -215,7 +192,6 @@ export default function AppointmentPage() {
           .appt-hero { padding: 48px 0 76px !important; }
           .appt-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; min-height: unset !important; }
           .appt-hero-photo-wrap { margin-bottom: 40px; }
-          .appt-quick-cards { left: 16px !important; right: 16px !important; bottom: -24px !important; }
           .appt-booking-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
           .appt-panel-inner { position: static !important; }
         }
@@ -226,14 +202,8 @@ export default function AppointmentPage() {
           .appt-hero { padding: 40px 0 32px !important; }
           .appt-hero-photo-wrap { margin-bottom: 0; }
           .appt-hero-photo-wrap > div:first-child { height: 300px !important; }
-          .appt-quick-cards { position: static !important; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,35,83,.10) !important; grid-template-columns: 1fr 1fr !important; }
           .appt-card { padding: 24px 18px !important; border-radius: 16px !important; }
           .appt-panel-inner { padding: 28px 22px !important; border-radius: 18px !important; }
-        }
-
-        /* ─── Small mobile (≤400px) ─── */
-        @media (max-width: 400px) {
-          .appt-quick-cards { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </>

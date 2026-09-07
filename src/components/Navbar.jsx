@@ -266,7 +266,7 @@ export default function Navbar() {
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; }}
             >
-              REQUEST A CALL <i className="fa-solid fa-arrow-right" style={{ fontSize: 8 }} />
+              REQUEST A QUOTE <i className="fa-solid fa-arrow-right" style={{ fontSize: 8 }} />
             </a>
           </div>
 
@@ -634,7 +634,7 @@ export default function Navbar() {
             </a>
             <a href="/appointment" onClick={() => setMobileOpen(false)}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 7, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 600, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none' }}>
-              Request a Call →
+              Request a Quote →
             </a>
           </div>
         </div>

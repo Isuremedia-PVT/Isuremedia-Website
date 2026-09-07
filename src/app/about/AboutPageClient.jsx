@@ -54,16 +54,17 @@ const VALUES = [
 ];
 
 const TEAM = [
-  { name: 'Pooja Pandey',           role: 'HR Head',              img: '/career-about/team/pooja mam image.webp' },
-  { name: 'Sumit Joshi',           role: 'CTO',                  img: '/career-about/team/sumit.webp' },
-  { name: 'Tyler Brown',     role: 'Sales Manager',        img: '/career-about/team/ty image.webp' },
-  { name: 'Pradeep Mehta',   role: 'Sr. Project Manager',  img: '/career-about/team/pradeep.webp' },
-  { name: 'Rahul Verma',     role: 'Sr. Project Manager',  img: '/career-about/team/rahul.webp' },
-  { name: 'Devashish Joshi', role: 'PPC & SEO Manager',    img: '/career-about/team/devashish.webp' },
-  { name: 'Gayatri Bera',    role: 'Project Manager',      img: '/career-about/team/gayatri.webp' },
-  { name: 'Vedansh Kandpal', role: 'Tech Lead',            img: '/career-about/team/vedansh.webp' },
-  { name: 'Suraj Joshi',     role: 'Creative Manager',     img: '/career-about/team/suraj.webp' },
-  { name: 'Deepti Lohni',          role: 'HR Manager',           img: '/career-about/team/deepti.webp' },
+  { name: 'Pooja Pandey',      role: 'Director / HR Head',       img: '/career-about/team/pooja mam image.webp' },
+  { name: 'Sumit Joshi',       role: 'COO',                      img: '/career-about/team/sumit.webp' },
+  { name: 'Tyler Brown',       role: 'Sales Director (USA)',     img: '/career-about/team/ty image.webp' },
+  { name: 'Mrityunjay Pandey', role: 'Sales Head (India)',       img: '/placeholders/avatar-1.svg' },
+  { name: 'Pradeep Mehta',     role: 'Sr. Project Manager',      img: '/career-about/team/pradeep.webp' },
+  { name: 'Rahul Verma',       role: 'Sr. Project Manager',      img: '/career-about/team/rahul.webp' },
+  { name: 'Devashish Joshi',   role: 'PPC & SEO Manager',        img: '/career-about/team/devashish.webp' },
+  { name: 'Vedansh Kandpal',   role: 'Tech Lead',                img: '/career-about/team/vedansh.webp' },
+  { name: 'Gayatri Bera',      role: 'Project Associate',        img: '/career-about/team/gayatri.webp' },
+  { name: 'Suraj Joshi',       role: 'Creative Team Lead',       img: '/career-about/team/suraj.webp' },
+  { name: 'Deepti Lohni',      role: 'HR Executive',             img: '/career-about/team/deepti.webp' },
 ];
 
 const HOW_BUILT = [
@@ -134,17 +135,14 @@ export default function AboutPageClient() {
                   alt="Isuremedia team"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', objectPosition: 'center top', borderRadius: 16, display: 'block' }}
                 />
-                <div style={{ position: 'absolute', bottom: 32, left: -24, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
+                <div style={{ position: 'absolute', top: -16, right: 32, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
                   <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <i className="fa-solid fa-globe" style={{ color: 'var(--color-primary)', fontSize: 18 }} />
+                    <i className="fa-solid fa-user-group" style={{ color: 'var(--color-primary)', fontSize: 18 }} />
                   </div>
                   <div>
-                    <div style={{ fontFamily: J, fontSize: 22, fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.1 }}>400+</div>
-                    <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>Clients Worldwide</div>
+                    <div style={{ fontFamily: J, fontSize: 22, fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.1 }}>40+</div>
+                    <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>Specialists</div>
                   </div>
-                </div>
-                <div style={{ position: 'absolute', top: -16, right: 32, zIndex: 2, background: 'var(--ism-amber)', borderRadius: 10, padding: '10px 18px', boxShadow: '0 6px 20px rgba(255,176,0,.40)' }}>
-                  <div style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', textAlign: 'center', lineHeight: 1.3 }}>40+<br />Specialists</div>
                 </div>
               </div>
 
@@ -204,12 +202,6 @@ export default function AboutPageClient() {
                     <div style={{ fontFamily: J, fontSize: 22, fontWeight: 900, color: 'var(--color-primary)', lineHeight: 1 }}>$50M+</div>
                     <div style={{ fontFamily: I, fontSize: 11, color: 'var(--color-text-muted)', marginTop: 3 }}>Growth Tracked</div>
                   </div>
-                </div>
-
-                {/* 400+ clients amber badge */}
-                <div style={{ position: 'absolute', bottom: 130, left: -28, zIndex: 3, background: 'var(--ism-amber)', borderRadius: 12, padding: '12px 18px', boxShadow: '0 6px 22px rgba(255,176,0,.42)', textAlign: 'center' }}>
-                  <div style={{ fontFamily: J, fontSize: 20, fontWeight: 900, color: 'var(--color-navy)', lineHeight: 1 }}>400+</div>
-                  <div style={{ fontFamily: I, fontSize: 11, color: 'var(--color-navy)', marginTop: 3, fontWeight: 600 }}>Clients</div>
                 </div>
 
               </div>
@@ -503,7 +495,6 @@ export default function AboutPageClient() {
                 <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 32 }}>
                   {[
                     { icon: 'fa-solid fa-calendar-check', label: '10+ Years Experience' },
-                    { icon: 'fa-solid fa-globe',          label: '400+ Global Clients' },
                     { icon: 'fa-solid fa-building',       label: 'Fully In-House' },
                   ].map((tag, i) => (
                     <div key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid var(--color-border)', borderRadius: 100, padding: '7px 15px', boxShadow: '0 1px 4px rgba(0,0,0,.05)' }}>
@@ -550,10 +541,10 @@ export default function AboutPageClient() {
               Our Team
             </h2>
 
-            {/* Team grid, 5 per row, last row left-aligned */}
+            {/* Team grid, 4 per row, last row left-aligned */}
             <div className="about-team-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 24 }}>
               {TEAM.map((m) => (
-                <div key={m.name} className="about-team-card" style={{ flex: '0 0 calc((100% - 96px) / 5)', background: '#fff', border: '1px solid var(--color-border)', borderRadius: 4, overflow: 'hidden', transition: 'background .18s, border-color .18s' }}>
+                <div key={m.name} className="about-team-card" style={{ flex: '0 0 calc((100% - 72px) / 4)', background: '#fff', border: '1px solid var(--color-border)', borderRadius: 4, overflow: 'hidden', transition: 'background .18s, border-color .18s' }}>
                   <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img

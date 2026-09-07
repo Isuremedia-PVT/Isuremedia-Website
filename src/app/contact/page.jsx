@@ -127,8 +127,8 @@ export default function ContactPage() {
                 <div style={{ borderRadius: 24, overflow: 'hidden', height: 400, boxShadow: '0 16px 48px rgba(0,35,83,.16)' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/career-about/Team image for GMB new 4.webp"
-                    alt="The Isuremedia team"
+                    src="/banner/contact_us.webp"
+                    alt="Contact Isuremedia"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   />
                 </div>
@@ -138,24 +138,6 @@ export default function ContactPage() {
                   <span style={{ fontFamily: J, fontSize: 12, fontWeight: 800, color: 'var(--color-navy)' }}>Fast Response</span>
                 </div>
 
-                <div className="ct-float-card" style={{ position: 'absolute', bottom: -24, left: -20, right: 40, background: '#fff', borderRadius: 14, padding: '13px 15px', boxShadow: '0 12px 32px rgba(0,35,83,.14)', border: '1px solid var(--color-border)', display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 18, rowGap: 10 }}>
-                  {[
-                    { icon: 'fa-solid fa-location-dot', title: 'Offices', text: 'Haldwani & Wyoming' },
-                    { icon: 'fa-solid fa-phone', title: 'Call Us', text: PHONE_IN },
-                    { icon: 'fa-solid fa-envelope', title: 'Email', text: EMAIL },
-                    { icon: 'fa-brands fa-whatsapp', title: 'WhatsApp', text: 'Chat with us now' },
-                  ].map(c => (
-                    <div key={c.title} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-                      <div style={{ width: 25, height: 25, borderRadius: 7, background: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <i className={c.icon} style={{ fontSize: 10.5, color: 'var(--color-primary)' }} />
-                      </div>
-                      <div style={{ minWidth: 0 }}>
-                        <p style={{ fontFamily: J, fontSize: 8.5, fontWeight: 700, color: 'var(--color-text-muted)', letterSpacing: '.06em', textTransform: 'uppercase', margin: '0 0 2px' }}>{c.title}</p>
-                        <p style={{ fontFamily: I, fontSize: 11.5, color: 'var(--color-navy)', fontWeight: 600, margin: 0, lineHeight: 1.35, wordBreak: 'break-word' }}>{c.text}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
 
             </div>
@@ -238,11 +220,11 @@ export default function ContactPage() {
                 ))}
 
                 <a href="/appointment"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)' }}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                 >
-                  Skip the wait. Book a 30-minute call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
+                  Book a 30-minute call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
                 </a>
               </div>
             </div>
@@ -344,7 +326,6 @@ export default function ContactPage() {
           .ct-hero-section { padding: 48px 0 76px !important; }
           .ct-hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; min-height: unset !important; }
           .ct-hero-photo-wrap { margin-bottom: 40px; }
-          .ct-float-card { left: 16px !important; right: 16px !important; bottom: -24px !important; }
           .contact-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
           .ct-panel-inner { position: static !important; }
           .cinfo-grid { grid-template-columns: repeat(3,1fr) !important; }
@@ -357,7 +338,6 @@ export default function ContactPage() {
           .ct-section-pad { padding: 52px 0 60px !important; }
           .ct-hero-photo-wrap { margin-bottom: 0; }
           .ct-hero-photo-wrap > div:first-child { height: 300px !important; }
-          .ct-float-card { position: static !important; margin-top: 20px; box-shadow: 0 4px 20px rgba(0,35,83,.10) !important; grid-template-columns: 1fr 1fr !important; }
           .cinfo-grid { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
           .ct-form-card { padding: 24px 18px !important; border-radius: 16px !important; }
           .ct-panel-inner { padding: 28px 22px !important; border-radius: 18px !important; }
@@ -365,7 +345,6 @@ export default function ContactPage() {
 
         /* ─── Small mobile (≤400px) ─── */
         @media (max-width: 400px) {
-          .ct-float-card { grid-template-columns: 1fr !important; }
           .cinfo-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
