@@ -13,7 +13,6 @@ const nextConfig: NextConfig = {
   // that ever changes under static export it needs a loader or this flag -
   // left here as a guardrail so it doesn't silently fail to optimize later.
   images: { unoptimized: true },
-  allowedDevOrigins: ["*.ngrok-free.app", "*.ngrok-free.dev", "*.ngrok.io"],
   experimental: {
     turbopackFileSystemCacheForDev: false,
   },
