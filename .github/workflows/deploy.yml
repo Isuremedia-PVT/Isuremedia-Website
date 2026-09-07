@@ -32,3 +32,10 @@ jobs:
             -e "ssh -i ~/.ssh/deploy_key" \
             out/ \
             ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:~/app/static-site/
+          rsync -avz \
+            -e "ssh -i ~/.ssh/deploy_key" \
+            nginx/static-site.conf \
+            ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:~/app/nginx/conf.d/static-site.conf
+          ssh -i ~/.ssh/deploy_key \
+            ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} \
+            "docker exec app-nginx-proxy-1 nginx -t && docker exec app-nginx-proxy-1 nginx -s reload"
