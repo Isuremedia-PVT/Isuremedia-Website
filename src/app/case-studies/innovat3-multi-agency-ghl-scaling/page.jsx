@@ -82,7 +82,7 @@ export default function Innovat3CaseStudyPage() {
         { text: '. Talk to us today about what it looks like for your agency.' },
       ],
       ctaPrimaryLabel: 'Get My Free Partner Proposal',
-      ctaPrimaryHref: '/services/white-label',
+      ctaPrimaryHref: '/white-label-digital-marketing',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/white label.webp',

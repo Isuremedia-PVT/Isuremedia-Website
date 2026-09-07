@@ -98,7 +98,7 @@ export default function Scrubs4UCaseStudyPage() {
         { text: ', that is exactly what we do. Talk to us today.' },
       ],
       ctaPrimaryLabel: 'Get My Free Meta Ads Audit',
-      ctaPrimaryHref: '/services/ppc-paid-marketing',
+      ctaPrimaryHref: '/ppc-marketing-agencies',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/meta ads.webp',

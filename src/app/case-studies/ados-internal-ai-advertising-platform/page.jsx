@@ -95,7 +95,7 @@ export default function AdOSCaseStudyPage() {
         { text: '. Talk to us about what a platform like AdOS could look like for your business.' },
       ],
       ctaPrimaryLabel: 'Get My Free Platform Consultation',
-      ctaPrimaryHref: '/services/websites-funnels',
+      ctaPrimaryHref: '/websites-and-funnels',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/Api.webp',

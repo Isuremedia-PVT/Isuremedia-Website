@@ -13,37 +13,37 @@ const SERVICES = [
     icon: 'fa-solid fa-globe',
     title: 'Websites & Funnels',
     desc: 'High-converting websites, landing pages, and sales funnels built on WordPress, Shopify, and GoHighLevel. Designed to look great and close.',
-    href: '/services/websites-funnels',
+    href: '/websites-and-funnels',
   },
   {
     icon: 'fa-solid fa-magnifying-glass',
     title: 'SEO & Organic Growth',
     desc: 'Technical, on-page, and off-page SEO that earns sustainable first-page rankings. Real results without shortcuts or grey-hat tactics.',
-    href: '/services/seo',
+    href: '/seo-services',
   },
   {
     icon: 'fa-solid fa-chart-bar',
     title: 'PPC & Paid Marketing',
     desc: 'Google Ads, Meta Ads, LinkedIn, YouTube, and retargeting campaigns managed to maximise ROAS and minimise wasted spend.',
-    href: '/services/ppc-paid-marketing',
+    href: '/ppc-marketing-agencies',
   },
   {
     icon: 'fa-solid fa-palette',
     title: 'Content & Creative',
     desc: 'SEO blogs, website copy, ad creatives, social content, graphic design, and email campaigns that engage, rank, and convert.',
-    href: '/services/content-creative',
+    href: '/content-marketing-and-creative-agency',
   },
   {
     icon: 'fa-solid fa-tag',
     title: 'White-Label Fulfillment',
     desc: 'Unbranded delivery for agencies. SEO, PPC, web dev, content, GHL builds, delivered under your brand with NDA-protected confidentiality.',
-    href: '/services/white-label',
+    href: '/white-label-digital-marketing',
   },
   {
     icon: 'fa-solid fa-robot',
     title: 'Marketing Automation',
     desc: 'GoHighLevel, CRM setup, Zapier, Make, n8n, and AI chatbots that automate your lead follow-up, onboarding, and growth workflows.',
-    href: '/services/marketing-automation',
+    href: '/marketing-automation-agency',
   },
 ];
 

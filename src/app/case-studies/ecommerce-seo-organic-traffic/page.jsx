@@ -105,7 +105,7 @@ export default function GardenSolutionCaseStudyPage() {
         { text: '. Talk to us and we will show you where the opportunity is.' },
       ],
       ctaPrimaryLabel: 'Get My Free Local SEO Audit',
-      ctaPrimaryHref: '/services/seo/local-seo',
+      ctaPrimaryHref: '/local-seo-services',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/local seo.webp',

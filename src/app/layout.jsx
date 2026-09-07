@@ -1,7 +1,9 @@
+import Script from "next/script";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import CookieConsent from "@/components/CookieConsent";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -39,6 +41,20 @@ export default function RootLayout({
       <body>
         {children}
         <WhatsAppFloat />
+        <CookieConsent />
+
+        {/* GoHighLevel chat widget, stays on the bottom-right */}
+        <chat-widget
+          location-id="jnLK3WXibjhfqnyON1Ru"
+          use-email-field="true"
+          prompt-avatar="https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/locationPhotos%2FjnLK3WXibjhfqnyON1Ru%2Fchat-widget-person?alt=media&token=b2293854-7524-4a84-85c9-bbdc64d10a99"
+          locale="en-us"
+        ></chat-widget>
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

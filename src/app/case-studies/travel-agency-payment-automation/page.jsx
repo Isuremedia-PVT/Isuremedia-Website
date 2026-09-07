@@ -81,7 +81,7 @@ export default function HijrahWalksCaseStudyPage() {
         { text: '. Talk to us today and we will show you where the leak is.' },
       ],
       ctaPrimaryLabel: 'Get My Free Automation Audit',
-      ctaPrimaryHref: '/services/marketing-automation',
+      ctaPrimaryHref: '/marketing-automation-agency',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/Automation.webp',

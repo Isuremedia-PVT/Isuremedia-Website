@@ -10,12 +10,12 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 /* ── Services represented by a live case study ───────────────────────── */
 const SERVICES = [
-  { label: 'Websites & Funnels',     icon: 'fa-solid fa-globe',            href: '/services/websites-funnels'     },
-  { label: 'SEO',                    icon: 'fa-solid fa-magnifying-glass', href: '/services/seo'                  },
-  { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/services/ppc-paid-marketing'   },
-  { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/services/content-creative'     },
-  { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/services/marketing-automation' },
-  { label: 'White-Label',            icon: 'fa-solid fa-handshake',        href: '/services/white-label'          },
+  { label: 'Websites & Funnels',     icon: 'fa-solid fa-globe',            href: '/websites-and-funnels'     },
+  { label: 'SEO',                    icon: 'fa-solid fa-magnifying-glass', href: '/seo-services'                  },
+  { label: 'PPC / Paid Ads',         icon: 'fa-solid fa-bars-staggered',   href: '/ppc-marketing-agencies'   },
+  { label: 'Content & Creative',     icon: 'fa-solid fa-palette',          href: '/content-marketing-and-creative-agency'     },
+  { label: 'Marketing Automation',   icon: 'fa-solid fa-robot',            href: '/marketing-automation-agency' },
+  { label: 'White-Label',            icon: 'fa-solid fa-handshake',        href: '/white-label-digital-marketing'          },
 ];
 
 const CASES = [
@@ -346,6 +346,9 @@ export default function CaseStudiesPage() {
                   flexWrap: 'nowrap',
                   justifyContent: 'center',
                   maxWidth: '100%',
+                  overflowX: 'auto',
+                  WebkitOverflowScrolling: 'touch',
+                  scrollbarWidth: 'none',
                 }}
               >
                 {[{ label: 'All', icon: 'fa-solid fa-border-all' }, ...SERVICES].map((svc) => {
@@ -393,6 +396,7 @@ export default function CaseStudiesPage() {
               </div>
             </div>
             <style>{`
+              .cs-filter-tabs-wrap::-webkit-scrollbar { display: none; }
               @media (max-width: 900px) {
                 .cs-filter-tabs-outer { justify-content: flex-start !important; overflow: hidden; }
                 .cs-filter-tabs-wrap {
@@ -402,7 +406,6 @@ export default function CaseStudiesPage() {
                   justify-content: flex-start !important;
                   scrollbar-width: none;
                 }
-                .cs-filter-tabs-wrap::-webkit-scrollbar { display: none; }
               }
               @media (max-width: 640px) {
                 .cs-filter-tabs-wrap { padding: 5px 6px; gap: 3px; }

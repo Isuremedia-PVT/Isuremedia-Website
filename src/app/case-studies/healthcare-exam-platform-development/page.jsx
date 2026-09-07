@@ -81,7 +81,7 @@ export default function MentaraHealthCaseStudyPage() {
         { text: ', that is exactly what we build. Talk to us today.' },
       ],
       ctaPrimaryLabel: 'Get My Free Platform Consultation',
-      ctaPrimaryHref: '/services/websites-funnels',
+      ctaPrimaryHref: '/websites-and-funnels',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/Api.webp',

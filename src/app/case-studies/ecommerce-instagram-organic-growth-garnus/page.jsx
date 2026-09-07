@@ -81,7 +81,7 @@ export default function GarnusIndiaCaseStudyPage() {
         { text: ', that is exactly what we do. Talk to us today.' },
       ],
       ctaPrimaryLabel: 'Get My Free Content Strategy Call',
-      ctaPrimaryHref: '/services/content-creative',
+      ctaPrimaryHref: '/content-marketing-and-creative-agency',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/video edting.webp',

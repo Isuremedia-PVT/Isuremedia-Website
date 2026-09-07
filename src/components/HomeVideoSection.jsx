@@ -5,7 +5,7 @@ import { useState } from 'react';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-const VIDEO_ID = 'dQw4w9WgXcQ';
+const VIDEO_ID = 'fahX52XsGWM';
 
 export default function HomeVideoSection() {
   const [playing, setPlaying] = useState(false);
@@ -47,7 +47,7 @@ export default function HomeVideoSection() {
                 {/* Thumbnail */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
+                  src={`https://img.youtube.com/vi/${VIDEO_ID}/hqdefault.jpg`}
                   alt="Isuremedia Client Results Video"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />

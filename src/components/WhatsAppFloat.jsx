@@ -13,7 +13,7 @@ export default function WhatsAppFloat() {
         className="wa-float-btn"
         style={{
           position: 'fixed',
-          right: 24,
+          left: 24,
           bottom: 24,
           zIndex: 999,
           width: 56,
@@ -34,7 +34,7 @@ export default function WhatsAppFloat() {
       </a>
       <style>{`
         @media (max-width: 480px) {
-          .wa-float-btn { width: 50px !important; height: 50px !important; right: 16px !important; bottom: 16px !important; }
+          .wa-float-btn { width: 50px !important; height: 50px !important; left: 16px !important; bottom: 16px !important; }
           .wa-float-icon { font-size: 24px !important; }
         }
       `}</style>

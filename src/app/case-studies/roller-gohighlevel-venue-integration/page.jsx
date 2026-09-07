@@ -82,7 +82,7 @@ export default function AirtopiaCaseStudyPage() {
         { text: '. Talk to us today and we will show you what is possible.' },
       ],
       ctaPrimaryLabel: 'Get My Free Integration Audit',
-      ctaPrimaryHref: '/services/websites-funnels',
+      ctaPrimaryHref: '/websites-and-funnels',
       ctaSecondaryLabel: 'Talk to Our Team',
       ctaSecondaryHref: '/contact',
       ctaImage: '/result_footer/Api.webp',
