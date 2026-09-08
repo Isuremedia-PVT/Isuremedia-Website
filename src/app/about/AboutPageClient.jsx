@@ -57,7 +57,7 @@ const TEAM = [
   { name: 'Pooja Pandey',      role: 'Director / HR Head',       img: '/career-about/team/pooja mam image.webp' },
   { name: 'Sumit Joshi',       role: 'COO',                      img: '/career-about/team/sumit.webp' },
   { name: 'Tyler Brown',       role: 'Sales Director (USA)',     img: '/career-about/team/ty image.webp' },
-  { name: 'Mrityunjay Pandey', role: 'Sales Head (India)',       img: '/career-about/team/Mrityunjay.png' },
+  { name: 'Mrityunjay Pandey', role: 'Sales Head (India)',       img: '/career-about/team/Mrityunjay.webp' },
   { name: 'Pradeep Mehta',     role: 'Sr. Project Manager',      img: '/career-about/team/pradeep.webp' },
   { name: 'Rahul Verma',       role: 'Sr. Project Manager',      img: '/career-about/team/rahul.webp' },
   { name: 'Devashish Joshi',   role: 'PPC & SEO Manager',        img: '/career-about/team/devashish.webp' },
