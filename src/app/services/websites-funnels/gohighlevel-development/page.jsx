@@ -248,7 +248,7 @@ export default function GoHighLevelDevelopmentPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds GoHighLevel sites, funnels, and automations custom, tested, trained into the team, and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to actually be used</span>.
+                  built to actually be used.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,11 +292,11 @@ export default function GoHighLevelDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     GoHighLevel connects your site, pipeline, and follow-up into{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>one platform, one login</span>, instead of five disconnected tools.
+                    one platform, one login, instead of five disconnected tools.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Properly built, it means{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every lead is captured and followed up</span> automatically, without manual work.
+                    every lead is captured and followed up automatically, without manual work.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Development means configuring it around your actual process, and testing every automation before your team relies on it.

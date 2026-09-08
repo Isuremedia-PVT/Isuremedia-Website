@@ -174,7 +174,7 @@ export default function BrandIdentityPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We build complete visual identity systems, logo, color, typography, and documented guidelines, that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hold up across your website, social, print</span>{' '}
+                  hold up across your website, social, print{' '}
                   and every future hire who has to use them.
                 </p>
 
@@ -253,7 +253,7 @@ export default function BrandIdentityPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds the complete identity system your business needs,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>discovered, designed, documented, and rolled out</span>{' '}
+                  discovered, designed, documented, and rolled out{' '}
                  , so every future asset starts from the same solid foundation.
                 </p>
                 <a href="/contact"
@@ -302,7 +302,7 @@ export default function BrandIdentityPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A logo without a system signals a business{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span>, prospects notice it even when they can&apos;t name it.
+                    not in control of its own presentation, prospects notice it even when they can&apos;t name it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A real identity system means every future logo placement, color choice, and typography decision is already made, nobody has to reinvent it.

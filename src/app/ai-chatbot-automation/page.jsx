@@ -265,7 +265,7 @@ export default function AIChatbotPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia builds AI chatbots that are{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>properly trained, properly integrated, and properly handoff-configured</span>, so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
+                  properly trained, properly integrated, and properly handoff-configured, so they handle what they should handle and transfer what they should transfer, without frustrating the visitor in the process.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -309,11 +309,11 @@ export default function AIChatbotPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     An AI chatbot is a software system that engages website visitors or messaging app users in a conversation, answering questions, collecting information, qualifying leads, and{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>routing the right enquiries to the right people automatically</span>, without human intervention for routine interactions.
+                    routing the right enquiries to the right people automatically, without human intervention for routine interactions.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Modern AI chatbots use large language models to understand natural language, maintain context through a conversation, and produce responses that feel genuinely conversational. They can be{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>trained on your specific business</span>, your services, pricing, FAQs, and qualification criteria.
+                    trained on your specific business, your services, pricing, FAQs, and qualification criteria.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Conversation automation goes beyond the chatbot itself. It includes the integration of chatbot interactions with your CRM, booking system, nurture sequences, and sales pipeline, so every conversation produces the right action in your business systems automatically.

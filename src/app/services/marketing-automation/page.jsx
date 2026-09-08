@@ -95,7 +95,7 @@ const TIMELINE_STEPS = [
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-bolt',          title: 'GoHighLevel Is What We Do',                     desc: <>GoHighLevel is our primary platform and the system our own business runs on. We are not generalists who added GHL to a service list, we have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built it hundreds of times</span> across every industry, so when we set it up for you, it works.</> },
+  { dark: true,  icon: 'fa-solid fa-bolt',          title: 'GoHighLevel Is What We Do',                     desc: <>GoHighLevel is our primary platform and the system our own business runs on. We are not generalists who added GHL to a service list, we have built it hundreds of times across every industry, so when we set it up for you, it works.</> },
   { dark: false, icon: 'fa-solid fa-circle-check',  title: 'No Long-Term Contracts',                        desc: 'You stay because the system performs. No 12-month agreements, no exit penalties, no pressure to renew. If the system we build does not deliver, you should not be paying for it.' },
   { dark: false, icon: 'fa-solid fa-sliders',       title: 'We Build for Your Process, Not a Template',     desc: 'Every system starts with mapping your actual lead journey, where leads come in, where they drop off, what your team does manually. We build around that, not a GoHighLevel snapshot from a tutorial. Two businesses in the same industry need different systems.' },
   { dark: false, icon: 'fa-solid fa-headset',       title: 'The Same Team Builds and Supports Your System', desc: 'The people who built your system are the same people you call when something needs changing. No support tickets, no offshore handoffs. Your system is documented, understood, and maintained by the people who built it.' },
@@ -104,7 +104,7 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'What exactly is marketing automation?', a: <>Software that does repetitive tasks automatically, following up with leads, sending reminders, updating your CRM, moving deals through a pipeline, booking calls. A set of rules and triggers handles them the moment they need to happen, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>day or night</span>.</> },
+  { q: 'What exactly is marketing automation?', a: <>Software that does repetitive tasks automatically, following up with leads, sending reminders, updating your CRM, moving deals through a pipeline, booking calls. A set of rules and triggers handles them the moment they need to happen, day or night.</> },
   { q: 'Do I need GoHighLevel specifically?', a: 'Not necessarily. It is our primary platform and we recommend it for most small and medium businesses because it covers CRM, automation, booking, funnels, and SMS in one place. If you are already on HubSpot or ActiveCampaign, we can build on that instead.' },
   { q: 'How long does it take to build a GoHighLevel system?', a: 'A basic setup with core automations takes one to two weeks. A full build covering CRM, multiple funnels, nurture sequences, and integrations takes three to six weeks depending on complexity. We give you a specific timeline at the audit stage.' },
   { q: 'My GoHighLevel account already exists but is not working properly. Can you fix it?', a: 'Yes, this is one of the most common things we do. We audit your existing account, identify what is broken or misconfigured, and rebuild what needs rebuilding. If something is working, we keep it.' },
@@ -226,11 +226,11 @@ export default function AutomationPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Speed to lead decides whether it converts', text:<>Responding within 5 minutes makes a lead 21x more likely to qualify than waiting 30. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Automation fires the moment a form is submitted</span>.</> },
-                  { num:'02', title:'80% of leads buy within 18 months, just not today', text:<>Leads that go dark get lost to competitors who stayed in touch. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Automation keeps every lead warm for as long as it takes</span>.</> },
-                  { num:'03', title:'Manual CRMs are where pipelines go to die', text:<>A CRM that depends on manual updates is always out of date. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Automation keeps the pipeline reflecting reality</span>.</> },
-                  { num:'04', title:'Automation grows pipeline without adding headcount', text:<>Follow-up, reminders, and routing run without a person touching them. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The same team closes more without hiring anyone new</span>.</> },
-                  { num:'05', title:'Automation gets smarter the longer it runs', text:<>Every interaction feeds data back into the system. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>The pipeline gets more accurate the longer automation runs it</span>.</> },
+                  { num:'01', title:'Speed to lead decides whether it converts', text:<>Responding within 5 minutes makes a lead 21x more likely to qualify than waiting 30. Automation fires the moment a form is submitted.</> },
+                  { num:'02', title:'80% of leads buy within 18 months, just not today', text:<>Leads that go dark get lost to competitors who stayed in touch. Automation keeps every lead warm for as long as it takes.</> },
+                  { num:'03', title:'Manual CRMs are where pipelines go to die', text:<>A CRM that depends on manual updates is always out of date. Automation keeps the pipeline reflecting reality.</> },
+                  { num:'04', title:'Automation grows pipeline without adding headcount', text:<>Follow-up, reminders, and routing run without a person touching them. The same team closes more without hiring anyone new.</> },
+                  { num:'05', title:'Automation gets smarter the longer it runs', text:<>Every interaction feeds data back into the system. The pipeline gets more accurate the longer automation runs it.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
@@ -251,7 +251,7 @@ export default function AutomationPage() {
 
             <div style={{ textAlign:'center' }}>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:'0 auto 22px', maxWidth:560 }}>
-                Isuremedia builds every automation system around your actual business process, we <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>map the lead journey first</span>, then build the system around what needs to happen at every step.
+                Isuremedia builds every automation system around your actual business process, we map the lead journey first, then build the system around what needs to happen at every step.
               </p>
               <a href="/contact"
                 style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 36px', borderRadius:9, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 24px rgba(255,176,0,.38)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -296,7 +296,7 @@ export default function AutomationPage() {
                   How much business is your <span style={{ color:'var(--ism-amber)' }}>follow-up system</span> leaving behind?
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Book a free automation audit and see where <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>leads are falling through</span>, and what a proper system looks like.
+                  Book a free automation audit and see where leads are falling through, and what a proper system looks like.
                 </p>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -323,13 +323,13 @@ export default function AutomationPage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  The goal of automation is not to remove the human element from your business. It is to make sure it shows up where it matters most, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>in conversations with qualified leads</span>, rather than in manual data entry and repetitive follow-up.
+                  The goal of automation is not to remove the human element from your business. It is to make sure it shows up where it matters most, in conversations with qualified leads, rather than in manual data entry and repetitive follow-up.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Every automation we build is designed around your specific processes. We do not install templates and hand them over, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we map your actual workflow</span>, build around it, test it, and stay involved to keep it performing.
+                  Every automation we build is designed around your specific processes. We do not install templates and hand them over, we map your actual workflow, build around it, test it, and stay involved to keep it performing.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  From your first lead form submission to the review request after a job is completed, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>every step can be automated</span>, personalised, and improved. We build the complete system.
+                  From your first lead form submission to the review request after a job is completed, every step can be automated, personalised, and improved. We build the complete system.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -356,7 +356,7 @@ export default function AutomationPage() {
                 Every Automation Service You Need. <span style={{ color:'var(--ism-amber)' }}>One In-House Team.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                From <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel setup and CRM configuration</span> to AI chatbots and multi-platform workflow automation.
+                From GoHighLevel setup and CRM configuration to AI chatbots and multi-platform workflow automation.
               </p>
             </div>
             <div className="auto-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
@@ -403,7 +403,7 @@ export default function AutomationPage() {
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>The most expensive thing in most businesses is not the marketing budget.</strong> It is the leads that budget generates that never get followed up. Automation makes sure every lead gets followed up every time, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>gives your team back the hours lost to manual follow-up</span>, for agencies, it is a service you can sell to every client.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>The most expensive thing in most businesses is not the marketing budget.</strong> It is the leads that budget generates that never get followed up. Automation makes sure every lead gets followed up every time, and gives your team back the hours lost to manual follow-up, for agencies, it is a service you can sell to every client.
                   </p>
                 </div>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
@@ -429,7 +429,7 @@ export default function AutomationPage() {
                 How We Build Your <span style={{ color:'var(--ism-amber)' }}>Automation System</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                From your current setup to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a pipeline that runs without you</span>. Here is every step.
+                From your current setup to a pipeline that runs without you. Here is every step.
               </p>
             </div>
             <div className="auto-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:0, position:'relative' }}>
@@ -439,7 +439,7 @@ export default function AutomationPage() {
                   <div
                     onMouseEnter={()=>setHoveredStep(i)}
                     onMouseLeave={()=>setHoveredStep(null)}
-                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? '0 8px 26px rgba(255,176,0,.55)' : '0 4px 18px rgba(30,77,195,.30)', border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
                   >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
@@ -468,7 +468,7 @@ export default function AutomationPage() {
                 <span style={{ color:'var(--ism-amber)' }}>for your business.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every plan includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated automation specialist</span> and full documentation.
+                Every plan includes a dedicated automation specialist and full documentation.
               </p>
             </div>
             <div className="auto-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>

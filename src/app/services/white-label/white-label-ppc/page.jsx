@@ -265,7 +265,7 @@ export default function WhiteLabelPPCPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia manages Google, Meta, and LinkedIn campaigns for your clients under full NDA protection, inside the client's own ad account, reported under your brand.{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>You keep the client relationship and the margin</span>. We run the campaigns.
+                  You keep the client relationship and the margin. We run the campaigns.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -309,15 +309,15 @@ export default function WhiteLabelPPCPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     White-label PPC means every campaign runs{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>inside your client's own ad account</span>, not ours, full ownership and historical data stay exactly where the client expects them to.
+                    inside your client's own ad account, not ours, full ownership and historical data stay exactly where the client expects them to.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The whole engagement is covered by a signed NDA, so{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your clients never know ISureMedia exists</span>, only your agency, delivering the result.
+                    your clients never know ISureMedia exists, only your agency, delivering the result.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Every account is managed by a Google or Meta certified specialist, and every monthly report is built in{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's own branding</span>, ready to send without any editing.
+                    your agency's own branding, ready to send without any editing.
                   </p>
                 </div>
               </div>

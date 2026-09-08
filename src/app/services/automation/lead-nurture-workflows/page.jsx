@@ -265,7 +265,7 @@ export default function LeadNurtureWorkflowsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build branching nurture workflows that follow up automatically based on what a lead actually does, opens, clicks, form fills, and time delays, so every lead gets{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>consistent attention until they convert</span> or clearly disqualify themselves.
+                  consistent attention until they convert or clearly disqualify themselves.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -309,11 +309,11 @@ export default function LeadNurtureWorkflowsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A lead nurture workflow is not a fixed drip of emails everyone gets on the same schedule.{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>It branches based on opens, clicks, form fills, and time delays</span>, so every lead follows the path that fits their actual behavior.
+                    It branches based on opens, clicks, form fills, and time delays, so every lead follows the path that fits their actual behavior.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A lead score builds in the background as engagement happens,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hot leads get routed to sales automatically, cold leads move into re-engagement</span>. Nobody has to remember to check in or guess who is ready.
+                    hot leads get routed to sales automatically, cold leads move into re-engagement. Nobody has to remember to check in or guess who is ready.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We design and build the scoring, sequences, and integrations that keep every lead followed up with consistently, until they convert or clearly disqualify.

@@ -248,7 +248,7 @@ export default function WixDevelopmentPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia designs custom Wix and Wix Studio sites, properly optimised for speed and SEO, and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>genuinely easy for your team to manage</span>.
+                  genuinely easy for your team to manage.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,11 +292,11 @@ export default function WixDevelopmentPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Wix handles{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>hosting, security, and infrastructure</span> natively, the platform isn&apos;t the bottleneck.
+                    hosting, security, and infrastructure natively, the platform isn&apos;t the bottleneck.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A custom build with{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>proper SEO and speed optimisation</span> stands apart from the default-template look most Wix sites have.
+                    proper SEO and speed optimisation stands apart from the default-template look most Wix sites have.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Development means building it around your brand, then handing over an editor your team can actually use.

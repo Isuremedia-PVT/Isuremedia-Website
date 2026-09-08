@@ -251,7 +251,7 @@ export default function GoogleAdsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia manages Google Ads{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from strategy through to results</span>, the right keywords, the right bids, ads that get clicked, and landing pages that convert.
+                  from strategy through to results, the right keywords, the right bids, ads that get clicked, and landing pages that convert.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -295,11 +295,11 @@ export default function GoogleAdsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unlike SEO, which builds visibility over months, Google Ads puts you{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>in front of buyers the same day</span> your campaign goes live.
+                    in front of buyers the same day your campaign goes live.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     But running Google Ads and running them well are two different things, campaign types, bidding strategies, Quality Scores, Smart Bidding. Getting any of it wrong means{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>paying for traffic that never converts</span>.
+                    paying for traffic that never converts.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Management is the ongoing work of making sure every part of your campaign is set up correctly, tested regularly, and optimised continuously.

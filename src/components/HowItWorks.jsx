@@ -54,22 +54,19 @@ export default function HowItWorks({
             left: '10%',
             right: '10%',
             height: 2,
-            background: 'linear-gradient(to right, var(--ism-amber) 0%, var(--ism-amber) 10%, var(--color-navy) 22%, var(--color-navy) 100%)',
+            background: 'var(--color-navy)',
             zIndex: 0,
             opacity: 0.35,
           }} />
 
           <div className="hiw-grid" style={{ display: 'grid', gridTemplateColumns: `repeat(${steps.length},1fr)`, gap: 0, position: 'relative', zIndex: 1 }}>
             {steps.map((s, i) => {
-              const isFirst   = i === 0;
               const isHov     = hovered === i;
-              /* on hover: amber ↔ blue swap */
-              const circleBg  = isHov
-                ? (isFirst ? 'var(--color-primary)' : 'var(--ism-amber)')
-                : (isFirst ? 'var(--ism-amber)'     : 'var(--color-primary)');
+              /* blue by default, amber on hover */
+              const circleBg  = isHov ? 'var(--ism-amber)' : 'var(--color-primary)';
               const shadow    = isHov
-                ? (isFirst ? '0 8px 28px rgba(30,77,195,.40)'  : '0 8px 28px rgba(255,176,0,.55)')
-                : (isFirst ? '0 6px 22px rgba(255,176,0,.45)'  : '0 6px 22px rgba(30,77,195,.22)');
+                ? '0 8px 28px rgba(255,176,0,.55)'
+                : '0 6px 22px rgba(30,77,195,.22)';
 
               return (
                 <div key={s.num} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 14px', textAlign: 'center' }}>

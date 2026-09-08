@@ -559,7 +559,7 @@ export default function SupportGoHighLevelPage() {
               with a Price of Single Go High Level Virtual Assistant
             </h1>
             <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.6vw,18px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 620, margin: '0 auto 36px' }}>
-              White-label GoHighLevel support, dedicated project management, and everything your agency needs to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>run GHL on autopilot</span>.
+              White-label GoHighLevel support, dedicated project management, and everything your agency needs to run GHL on autopilot.
             </p>
             <div style={{ marginBottom: 52 }}>
               <CTAButton href={APPOINTMENT_HREF}>Click Here to Schedule a Call</CTAButton>
@@ -647,7 +647,7 @@ export default function SupportGoHighLevelPage() {
             </SectionHeading>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18, marginBottom: 56 }}>
               <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85 }}>
-                We are not just limited to GHL. Our dynamic team, consisting of skilled web developers specialising in WordPress, Wix, and Shopify, creative graphic designers, GHL experts, and dedicated project managers, collaborates seamlessly to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>deliver outstanding results</span> for your projects.
+                We are not just limited to GHL. Our dynamic team, consisting of skilled web developers specialising in WordPress, Wix, and Shopify, creative graphic designers, GHL experts, and dedicated project managers, collaborates seamlessly to deliver outstanding results for your projects.
               </p>
               <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85 }}>
                 With experience working with clients from various industries worldwide, we have successfully met unique requirements and consistently satisfied our clients. Our mastery of GHL automation allows us to provide the right solutions, utilising third-party tools like Zapier, Pabbly Connect, Integromat, Google Sheets, ManyChat, and more.
@@ -792,7 +792,7 @@ export default function SupportGoHighLevelPage() {
               Our VAs are well-versed in WordPress, Shopify, Wix, and GHL, ensuring comprehensive support. We don&apos;t believe in one-size-fits-all. Our solutions are customised to suit your unique requirements.
             </p>
             <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, marginBottom: 8 }}>
-              You are investing in <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>only one VA capable of tackling various tasks</span>, saving you money on hiring separate WordPress or Shopify experts. Save time and energy by letting our VAs handle the technicalities, leaving you free to focus on what you do best for running your business.
+              You are investing in only one VA capable of tackling various tasks, saving you money on hiring separate WordPress or Shopify experts. Save time and energy by letting our VAs handle the technicalities, leaving you free to focus on what you do best for running your business.
             </p>
             <div>
               <CTAButton href={APPOINTMENT_HREF} filled={false}>Get Your VA at Nominal Prices</CTAButton>
@@ -842,7 +842,7 @@ export default function SupportGoHighLevelPage() {
             <div className="ghl-support-grid" style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 48, alignItems: 'center', marginBottom: 48 }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85 }}>
-                  We can assist you in migrating from another service provider to GoHighLevel, troubleshoot any issues, and set up your projects according to your unique requirements. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Give your business an incredible boost</span>, regardless of its size, with a leading CRM solution that combines diverse marketing and sales tools under one roof.
+                  We can assist you in migrating from another service provider to GoHighLevel, troubleshoot any issues, and set up your projects according to your unique requirements. Give your business an incredible boost, regardless of its size, with a leading CRM solution that combines diverse marketing and sales tools under one roof.
                 </p>
                 <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85 }}>
                   Imagine the possibilities: increased productivity across your team, streamlined client and lead management, more leads closed, and vital business relationships strengthened. Our partnership with Go High Level allows you to reduce operational costs and enhance client retention.

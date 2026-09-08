@@ -248,7 +248,7 @@ export default function SalesFunnelsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds strategic, multi-step funnels{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>grounded in tracking and testing</span>, on whichever platform genuinely fits your offer, not the one we happen to push everyone into.
+                  grounded in tracking and testing, on whichever platform genuinely fits your offer, not the one we happen to push everyone into.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,11 +292,11 @@ export default function SalesFunnelsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A real funnel maps{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every step from first click to sale</span>, landing, offer, order bump, upsell/downsell, and thank you.
+                    every step from first click to sale, landing, offer, order bump, upsell/downsell, and thank you.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Proper build means{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>tracking configured from day one</span>, not bolted on after you notice conversion problems.
+                    tracking configured from day one, not bolted on after you notice conversion problems.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Strategy comes first, then the platform is chosen to fit, Kajabi, ClickFunnels, GoHighLevel, WordPress, or custom-built.

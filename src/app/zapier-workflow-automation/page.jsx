@@ -179,7 +179,7 @@ export default function ZapierPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   Custom Zapier automations that link your CRM, forms, email, and apps,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no code, no delays, no manual copying</span> between systems.
+                  no code, no delays, no manual copying between systems.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -264,7 +264,7 @@ export default function ZapierPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Zapier connects over 7,000 apps through a visual workflow builder. We design and build automations that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>eliminate the manual steps between your tools</span>, so your team spends time on work that matters, not copying data between systems.
+                  eliminate the manual steps between your tools, so your team spends time on work that matters, not copying data between systems.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -312,7 +312,7 @@ export default function ZapierPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Every workflow fires the moment the trigger event happens,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no batch delays, no manual exports, no missed notifications</span>. A lead fills out a form and is in your CRM before you have finished reading the notification.
+                    no batch delays, no manual exports, no missed notifications. A lead fills out a form and is in your CRM before you have finished reading the notification.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We design and build the automations that eliminate the manual steps between your tools, lead routing, deal alerts, invoicing, and follow-up sequences, so your team spends time on work that matters.

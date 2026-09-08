@@ -248,7 +248,7 @@ export default function WhiteLabelWebDesignPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds websites for agencies under their brand,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>from brief to launch, project-managed by us</span>, QA&apos;d before delivery. Your agency delivers the website. We build it.
+                  from brief to launch, project-managed by us, QA&apos;d before delivery. Your agency delivers the website. We build it.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,11 +292,11 @@ export default function WhiteLabelWebDesignPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     From brief to launch, project-managed by us, QA&apos;d before delivery, with{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no ISureMedia reference anywhere</span> in the final product.
+                    no ISureMedia reference anywhere in the final product.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     WordPress, Next.js, Shopify, WooCommerce, GoHighLevel,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>on platform and off</span>, whatever your clients ask for.
+                    on platform and off, whatever your clients ask for.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your agency captures website revenue without carrying the development overhead, you manage the client relationship, we manage the build.

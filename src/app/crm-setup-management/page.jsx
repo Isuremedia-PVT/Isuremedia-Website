@@ -255,7 +255,7 @@ export default function CRMSetupPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A CRM that nobody uses is not just a wasted subscription. It creates false confidence, you think leads are being tracked when they are not. Isuremedia configures CRMs that your team actually uses,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around your sales process</span>, not a generic template.
+                  built around your sales process, not a generic template.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -299,11 +299,11 @@ export default function CRMSetupPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     CRM stands for Customer Relationship Management. In practice, it is the system that tracks every lead, contact, and opportunity your business has, so your team always knows{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>who to follow up with, what was last said, and what happens next</span>.
+                    who to follow up with, what was last said, and what happens next.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Setting up a CRM is not just installing software and importing contacts. It means designing the pipeline stages that match your actual sales process, configuring custom fields, and building the automations that eliminate manual data entry.{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>A CRM configured to fit the way your business works gets used</span>. One configured to match a generic template gets ignored.
+                    A CRM configured to fit the way your business works gets used. One configured to match a generic template gets ignored.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     CRM management is the ongoing work of keeping the system clean, accurate, and useful as your business changes, updating pipeline stages as your process evolves and maintaining contact data quality.

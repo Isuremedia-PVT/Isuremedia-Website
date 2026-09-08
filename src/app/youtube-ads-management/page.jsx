@@ -170,7 +170,7 @@ export default function YouTubeAdsPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We build and manage YouTube Ads campaigns across in-stream, in-feed, and Shorts that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>earn attention, build trust, and convert viewers</span> into leads and customers.
+                  earn attention, build trust, and convert viewers into leads and customers.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -248,7 +248,7 @@ export default function YouTubeAdsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Real YouTube advertising is built on hook strategy, audience targeting, and proper conversion tracking. ISureMedia builds campaigns that are{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to be watched, not just to be shown</span>.
+                  built to be watched, not just to be shown.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,7 +292,7 @@ export default function YouTubeAdsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     YouTube is the second-largest search engine in the world, with{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>intent already present</span> in how and what people search for.
+                    intent already present in how and what people search for.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     With over 2.5 billion monthly logged-in users, YouTube gives businesses access to{' '}

@@ -256,7 +256,7 @@ export default function DedicatedAgencyPodsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A dedicated pod is a fixed team assigned to your agency, giving you{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the output of an in-house team</span>, consistent people, retained knowledge, direct communication, without the cost of hiring one.
+                  the output of an in-house team, consistent people, retained knowledge, direct communication, without the cost of hiring one.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,11 +300,11 @@ export default function DedicatedAgencyPodsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A dedicated pod is{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the same named team assigned to your agency every month</span>, not a pool of freelancers sourced fresh for every brief.
+                    the same named team assigned to your agency every month, not a pool of freelancers sourced fresh for every brief.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your pod{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>knows your brand, your standards, and your clients</span>, context that compounds instead of resetting with every new vendor.
+                    knows your brand, your standards, and your clients, context that compounds instead of resetting with every new vendor.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     You get a dedicated project manager, agreed response times, and direct access to the people doing the work, the structure of an in-house team, without the overhead of hiring one.

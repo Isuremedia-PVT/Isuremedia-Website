@@ -164,7 +164,7 @@ export default function GoHighLevelFunnelsPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We build, configure, and automate GoHighLevel for service businesses and agencies, CRM, funnels, pipelines, booking, and workflows, set up by{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>people who know it inside out</span>.
+                  people who know it inside out.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -286,11 +286,11 @@ export default function GoHighLevelFunnelsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     GoHighLevel replaces your CRM, email platform, SMS tool, funnel builder, booking software, and reputation management system, and{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>connects them all</span> so data flows automatically.
+                    connects them all so data flows automatically.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     For agencies, it goes further: a white-label sub-account model, a SaaS mode to resell GHL under your own brand, and a{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>snapshot system</span> that deploys a fully configured setup in minutes.
+                    snapshot system that deploys a fully configured setup in minutes.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The platform works best with a clear strategy behind it, the right pipelines, the right automations, the right funnels connected to the right follow-up. That is what we build.

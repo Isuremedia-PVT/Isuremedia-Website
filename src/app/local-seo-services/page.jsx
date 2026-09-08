@@ -255,7 +255,7 @@ export default function LocalSEOPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia helps you fix that. We{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle everything that goes into ranking locally</span>{' '}
+                  handle everything that goes into ranking locally{' '}
                   so you can focus on running your business.
                 </p>
                 <a href="/contact"
@@ -300,12 +300,12 @@ export default function LocalSEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     When someone searches for a local business, Google shows a map and three results at the top of the page. Those three spots get the majority of clicks and calls. Local SEO is everything that goes into{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>earning one of those spots</span>{' '}
+                    earning one of those spots{' '}
                     for your business.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unlike broader SEO, local SEO targets customers in a specific area. A plumber in Dallas, a dentist in Melbourne, a law firm in Toronto, local SEO makes sure{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the right people in the right location</span>{' '}
+                    the right people in the right location{' '}
                     find your business when they search.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

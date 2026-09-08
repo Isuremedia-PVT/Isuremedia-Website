@@ -265,7 +265,7 @@ export default function AppointmentBookingPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build booking systems that let clients see real availability and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>book themselves in seconds</span>, then keep them accountable with automated reminders, so your calendar fills up and stays full, without anyone on your team chasing a booking by hand.
+                  book themselves in seconds, then keep them accountable with automated reminders, so your calendar fills up and stays full, without anyone on your team chasing a booking by hand.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -309,11 +309,11 @@ export default function AppointmentBookingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     An appointment booking system gives clients a branded page where they{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>see real-time availability across every staff member and location and book themselves in seconds</span>.
+                    see real-time availability across every staff member and location and book themselves in seconds.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Automated confirmation and reminder sequences fire the moment a booking is made,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no manual texts, no forgotten reminder calls, no missed appointments</span>. Clients get exactly what they need to show up, and can reschedule themselves if they cannot.
+                    no manual texts, no forgotten reminder calls, no missed appointments. Clients get exactly what they need to show up, and can reschedule themselves if they cannot.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We design and build the booking flow that eliminates the manual steps between a client wanting an appointment and it landing on your calendar, sync, reminders, deposits, and follow-up, so your team spends time serving clients, not scheduling them.

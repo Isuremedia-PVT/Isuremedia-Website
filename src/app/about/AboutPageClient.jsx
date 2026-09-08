@@ -57,7 +57,7 @@ const TEAM = [
   { name: 'Pooja Pandey',      role: 'Director / HR Head',       img: '/career-about/team/pooja mam image.webp' },
   { name: 'Sumit Joshi',       role: 'COO',                      img: '/career-about/team/sumit.webp' },
   { name: 'Tyler Brown',       role: 'Sales Director (USA)',     img: '/career-about/team/ty image.webp' },
-  { name: 'Mrityunjay Pandey', role: 'Sales Head (India)',       img: '/placeholders/avatar-1.svg' },
+  { name: 'Mrityunjay Pandey', role: 'Sales Head (India)',       img: '/career-about/team/Mrityunjay.webp' },
   { name: 'Pradeep Mehta',     role: 'Sr. Project Manager',      img: '/career-about/team/pradeep.webp' },
   { name: 'Rahul Verma',       role: 'Sr. Project Manager',      img: '/career-about/team/rahul.webp' },
   { name: 'Devashish Joshi',   role: 'PPC & SEO Manager',        img: '/career-about/team/devashish.webp' },
@@ -135,15 +135,6 @@ export default function AboutPageClient() {
                   alt="Isuremedia team"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 460, objectFit: 'cover', objectPosition: 'center top', borderRadius: 16, display: 'block' }}
                 />
-                <div style={{ position: 'absolute', top: -16, right: 32, zIndex: 2, background: '#fff', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 32px rgba(0,35,83,.15)', display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <i className="fa-solid fa-user-group" style={{ color: 'var(--color-primary)', fontSize: 18 }} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: J, fontSize: 22, fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.1 }}>40+</div>
-                    <div style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)' }}>Specialists</div>
-                  </div>
-                </div>
               </div>
 
             </div>
@@ -193,17 +184,6 @@ export default function AboutPageClient() {
                   />
                 </div>
 
-                {/* $50M chip */}
-                <div style={{ position: 'absolute', top: 24, left: -28, zIndex: 3, background: '#fff', borderRadius: 16, padding: '16px 22px', boxShadow: '0 10px 40px rgba(0,35,83,.14)', display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(30,77,195,.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <i className="fa-solid fa-chart-line" style={{ color: 'var(--color-primary)', fontSize: 18 }} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: J, fontSize: 22, fontWeight: 900, color: 'var(--color-primary)', lineHeight: 1 }}>$50M+</div>
-                    <div style={{ fontFamily: I, fontSize: 11, color: 'var(--color-text-muted)', marginTop: 3 }}>Growth Tracked</div>
-                  </div>
-                </div>
-
               </div>
 
               {/* ── RIGHT, scrolling content ── */}
@@ -221,21 +201,21 @@ export default function AboutPageClient() {
                     color: 'var(--color-primary)',
                     bg: 'rgba(30,77,195,.07)',
                     text: 'You started your business because you are good at what you do. At some point you realised that being good at what you do is not enough. You also need the right people to find you, trust you, and choose you. That is where digital marketing comes in.',
-                    highlight: 'find you, trust you, and choose you',
+                    highlight: '',
                   },
                   {
                     num: '02',
                     color: '#9A6800',
                     bg: 'rgba(255,176,0,.12)',
                     text: 'Some businesses try to figure it out themselves. Some hire an agency and hope for the best. Some build a small team and give it a go. Some have no idea where to even start. Whatever the path, most of them hit the same wall. The results are not matching the effort. The strategy is unclear or missing completely. There is no way to tell what is working and what is not. And growing the business feels like it should be simpler than this.',
-                    highlight: 'hit the same wall',
+                    highlight: '',
                   },
                   {
                     num: '03',
                     color: 'var(--color-primary)',
                     bg: 'rgba(30,77,195,.07)',
                     text: 'That is the moment businesses and agencies find ISM. We come in wherever you are. Just getting started, stuck in the middle, or ready to grow faster than your current setup allows. We look at your goals, your market, and what actually needs to happen to move your business forward. Then we build a clear strategy and bring in the right experts to execute it.',
-                    highlight: 'build a clear strategy',
+                    highlight: '',
                   },
                 ].map((step, idx) => (
                   <div key={idx} style={{ display: 'flex', gap: 20, marginBottom: 32, position: 'relative' }}>
@@ -399,7 +379,7 @@ export default function AboutPageClient() {
                 <span style={{ color: 'var(--color-primary)' }}>Isuremedia</span> Different.
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 520, margin: '0 auto', lineHeight: 1.75 }}>
-                These are not marketing lines. They are the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>structural decisions</span> that shape how every piece of work gets done.
+                These are not marketing lines. They are the structural decisions that shape how every piece of work gets done.
               </p>
             </div>
 
@@ -473,16 +453,6 @@ export default function AboutPageClient() {
                   alt="Harish Pandey, Founder, Isuremedia"
                   style={{ position: 'relative', zIndex: 1, width: '100%', height: 480, borderRadius: 20, objectFit: 'cover', objectPosition: 'center top', display: 'block', boxShadow: '0 24px 64px rgba(0,35,83,.18)' }}
                 />
-
-                {/* Isuremedia chip, top left */}
-                <div style={{ position: 'absolute', top: -14, left: 28, zIndex: 2, background: 'var(--color-primary)', borderRadius: 8, padding: '8px 16px', boxShadow: '0 4px 18px rgba(30,77,195,.38)' }}>
-                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '.02em' }}>Isuremedia</span>
-                </div>
-
-                {/* Founder badge, bottom right */}
-                <div style={{ position: 'absolute', bottom: -20, right: -20, zIndex: 2, background: 'var(--ism-amber)', borderRadius: 14, padding: '16px 22px', boxShadow: '0 8px 28px rgba(255,176,0,.45)', textAlign: 'center' }}>
-                  <div style={{ fontFamily: J, fontSize: 14, fontWeight: 800, color: 'var(--color-navy)', lineHeight: 1.3 }}>Founder<br />Isuremedia</div>
-                </div>
               </div>
 
               {/* ── Bio ── */}
@@ -505,7 +475,7 @@ export default function AboutPageClient() {
                 </div>
 
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: '0 0 32px' }}>
-                  Harish built Isuremedia around one conviction: that a business owner should always know what their marketing is producing and who is accountable for it. He designed the agency as a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fully in-house operation</span> from the start, with US-facing strategy and India-based execution, because he believed that combination could deliver serious results at a cost that works for growing businesses. Every part of how ISM operates reflects what he learned working across SEO, paid advertising, automation, and web development about what actually moves a business forward.
+                  Harish built Isuremedia around one conviction: that a business owner should always know what their marketing is producing and who is accountable for it. He designed the agency as a fully in-house operation from the start, with US-facing strategy and India-based execution, because he believed that combination could deliver serious results at a cost that works for growing businesses. Every part of how ISM operates reflects what he learned working across SEO, paid advertising, automation, and web development about what actually moves a business forward.
                 </p>
 
                 {/* Quote card, dark navy for contrast */}

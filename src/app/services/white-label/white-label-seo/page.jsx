@@ -242,7 +242,7 @@ export default function WhiteLabelSEOPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   The alternative is white-label fulfilment. You sell the SEO, you own the client relationship, and we handle delivery, technical audits, on-page work, content, links, local SEO, and monthly reporting, under your brand. Your clients see your agency&apos;s name. They never see ours. Agencies using this model report{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>40 to 60% gross margins</span> on SEO retainers after markup.
+                  40 to 60% gross margins on SEO retainers after markup.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -286,7 +286,7 @@ export default function WhiteLabelSEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The white-label arrangement is operationally straightforward. Your agency owns the client relationship, onboarding, strategy calls, expectation management, and commercial terms. We operate as{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your fulfilment team</span>{' '}
+                    your fulfilment team{' '}
                     , producing the deliverables your clients receive under your brand.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -294,7 +294,7 @@ export default function WhiteLabelSEOPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     What never appears is ISureMedia. Our name, our tools, our processes, and every conversation between your agency and ours{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>stay entirely behind the scenes</span>
+                    stay entirely behind the scenes
                     . All client queries route through your account manager at ISureMedia, who produces the work your team presents, a boundary we maintain without exception.
                   </p>
                 </div>

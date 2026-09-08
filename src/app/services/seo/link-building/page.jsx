@@ -256,7 +256,7 @@ export default function LinkBuildingPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia builds backlinks the right way. No link farms. No private blog networks. No paid placements on sites that exist only to sell links. Every link we build is{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>editorially placed on a real, relevant website</span>{' '}
+                  editorially placed on a real, relevant website{' '}
                  , the kind Google trusts and rewards.
                 </p>
                 <a href="/contact"
@@ -301,12 +301,12 @@ export default function LinkBuildingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A backlink is a link from another website to yours. When a reputable, relevant website links to your page, Google treats it as{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a vote of confidence</span>{' '}
+                    a vote of confidence{' '}
                    , a signal that your content is trustworthy, authoritative, and worth showing to people who search for what you offer.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Link building is the process of earning those links systematically. Not by buying them from link farms or publishing on low-quality directories, but by{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>placing content on real websites that Google already trusts</span>{' '}
+                    placing content on real websites that Google already trusts{' '}
                     so that trust transfers to your domain.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

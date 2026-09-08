@@ -26,7 +26,7 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-chart-line', title: 'Organic Traffic Does Not Stop When You Stop Paying', desc: <>Paid ads stop delivering the moment the budget runs out. Organic rankings built through proper SEO keep sending traffic month after month without an ongoing cost per click. For most businesses, SEO delivers the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>highest long-term ROI</span> of any digital channel.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Organic Traffic Does Not Stop When You Stop Paying', desc: <>Paid ads stop delivering the moment the budget runs out. Organic rankings built through proper SEO keep sending traffic month after month without an ongoing cost per click. For most businesses, SEO delivers the highest long-term ROI of any digital channel.</> },
   { icon: 'fa-solid fa-list-check', title: 'The First Page Is the Only Page That Matters', desc: 'Over 90% of search traffic goes to results on the first page of Google. The difference between ranking on page one and page two is not a small gap in visibility. It is the difference between being found and being invisible. Most visitors never scroll past the first few results.' },
   { icon: 'fa-solid fa-sparkles', title: 'AI Search Is Now Part of the Picture', desc: 'Google AI Overviews, ChatGPT, Perplexity, and Gemini are changing how people find businesses. A site optimized only for traditional search is missing a growing share of discovery. Isuremedia\'s SEO experts build for both, so your business shows up wherever your customers are looking.' },
   { icon: 'fa-solid fa-funnel', title: 'Rankings Without Leads Are Worthless', desc: 'High traffic with low conversions means the wrong people are finding you, or the right people are not being given a clear reason to act. The best SEO work targets the queries your ideal customers are actually using and ensures the page they land on earns their trust.' },
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'Technical SEO',
     img: '/hire/seo/seo custom  tenical seo.webp',
-    desc: <>If your site has crawl errors, slow load times, poor mobile performance, or structural issues that search engines cannot read properly, rankings suffer regardless of how good your content is. A technical SEO audit finds every issue and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fixes it at the root</span>.</>,
+    desc: <>If your site has crawl errors, slow load times, poor mobile performance, or structural issues that search engines cannot read properly, rankings suffer regardless of how good your content is. A technical SEO audit finds every issue and fixes it at the root.</>,
     bullets: [
       'Full technical SEO audit and priority issue identification',
       'Core Web Vitals improvements and site speed optimization',
@@ -163,7 +163,7 @@ const techCategories = [
 
 const whyISMCards = [
   { icon: 'fa-solid fa-building', title: 'Every SEO Expert Is In-House', desc: 'Your SEO is never subcontracted to a third party or handed to a junior with a task list. The specialist working on your campaign is part of the Isuremedia team, accountable for results from the first month.' },
-  { icon: 'fa-solid fa-file-lines', title: 'Rankings and Revenue, Not Just Reports', desc: <>Isuremedia measures SEO success by <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>traffic, leads, and conversions</span>, not by keyword position reports that look good but tell you nothing about business impact. Every campaign is built around what you are actually trying to grow.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Rankings and Revenue, Not Just Reports', desc: <>Isuremedia measures SEO success by traffic, leads, and conversions, not by keyword position reports that look good but tell you nothing about business impact. Every campaign is built around what you are actually trying to grow.</> },
   { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Engagements run month to month and you can stop at any time. No penalties, no notice periods. The work continues because it is delivering measurable organic growth, not because you are locked into a 12-month commitment.' },
   { icon: 'fa-solid fa-code', title: 'AI Search Is Included', desc: 'Isuremedia\'s SEO experts optimize for traditional Google search and AI search simultaneously. Answer Engine Optimization, schema markup for AI Overviews, and entity building for ChatGPT and Perplexity visibility are part of every campaign, not a separate add-on.' },
   { icon: 'fa-solid fa-chart-line', title: 'Full Transparency on What Is Being Done', desc: 'Every month you receive a clear report covering what was done, what moved, what is planned next, and why. No jargon, no vanity metrics. If something is not working, you hear about it directly and the plan adjusts accordingly.' },
@@ -174,7 +174,7 @@ const engagementModels = [
   {
     title: 'Monthly Retainer',
     tag: 'For businesses that want ongoing SEO growth',
-    desc: <>SEO is a long-term channel. The businesses that win in organic search are the ones that invest consistently, build authority over time, and stay ahead of competitors who do the same. A monthly retainer is the right model for sustainable, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>compounding organic growth</span>.</>,
+    desc: <>SEO is a long-term channel. The businesses that win in organic search are the ones that invest consistently, build authority over time, and stay ahead of competitors who do the same. A monthly retainer is the right model for sustainable, compounding organic growth.</>,
     bullets: [
       'Dedicated SEO expert on your campaign every month',
       'Covers technical, on-page, content, and link building',
@@ -246,7 +246,7 @@ export default function HireSeoExpert() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get expert SEO built around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>technical performance, search intent, content, local visibility, and AI search</span>, not just monthly ranking reports.
+            Get expert SEO built around technical performance, search intent, content, local visibility, and AI search, not just monthly ranking reports.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -299,10 +299,10 @@ export default function HireSeoExpert() {
                 SEO Strategy Built for <span style={{ color: 'var(--ism-amber)' }}>How People Search Today</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                SEO in 2026 is no longer just about ranking on Google. It covers a wide range of specialized work, from technical audits and keyword strategy to content optimization, link building, local search, and now <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>AI search visibility</span> across Google AI Overviews, ChatGPT, Perplexity, and Gemini. A skilled SEO expert brings the technical depth and strategic thinking to handle all of it, not just the parts that are easy to report on.
+                SEO in 2026 is no longer just about ranking on Google. It covers a wide range of specialized work, from technical audits and keyword strategy to content optimization, link building, local search, and now AI search visibility across Google AI Overviews, ChatGPT, Perplexity, and Gemini. A skilled SEO expert brings the technical depth and strategic thinking to handle all of it, not just the parts that are easy to report on.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                Getting it right means working with someone who understands search intent, how Google evaluates authority and trust, what the difference between rankings and revenue actually is, and how to build visibility that <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>compounds over time</span> instead of fluctuating with every algorithm update. That is the standard Isuremedia's SEO experts work to.
+                Getting it right means working with someone who understands search intent, how Google evaluates authority and trust, what the difference between rankings and revenue actually is, and how to build visibility that compounds over time instead of fluctuating with every algorithm update. That is the standard Isuremedia's SEO experts work to.
               </p>
               
               {/* 2-Column List */}
@@ -625,7 +625,7 @@ export default function HireSeoExpert() {
                 Paying for SEO every month but not seeing rankings move<span style={{ color: 'var(--ism-amber)' }}>?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Get a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>free SEO audit</span> and find out exactly what is holding your site back.
+                Get a free SEO audit and find out exactly what is holding your site back.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -772,7 +772,7 @@ export default function HireSeoExpert() {
               Start With the Right SEO Support <span style={{ color: 'var(--ism-amber)' }}>Plan for Your Goals.</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a dedicated SEO expert and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>transparent reporting</span>.
+              Every plan includes a dedicated SEO expert and transparent reporting.
             </p>
           </div>
 
@@ -960,7 +960,7 @@ export default function HireSeoExpert() {
                 Get Your Site Ranking for the Keywords <span style={{ color: 'var(--ism-amber)' }}>That Drive Sales</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether your site is new and needs visibility, losing rankings to competitors, or not bringing in the right customers, the path forward is the same. Send your keyword targets and business goals, get a free SEO audit and proposal, or talk to an SEO expert who understands how to rank for <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>keywords that actually convert</span>.
+                Whether your site is new and needs visibility, losing rankings to competitors, or not bringing in the right customers, the path forward is the same. Send your keyword targets and business goals, get a free SEO audit and proposal, or talk to an SEO expert who understands how to rank for keywords that actually convert.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"

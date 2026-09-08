@@ -177,7 +177,7 @@ export default function CareersPageClient() {
               {/* RIGHT, values */}
               <div style={{ paddingTop: 16 }}>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.85, marginBottom: 32 }}>
-                  Good work comes from good people in a good environment. We have spent a lot of time building a place where the work is real, the people are honest, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>getting better at your craft</span> is something the job actively supports.
+                  Good work comes from good people in a good environment. We have spent a lot of time building a place where the work is real, the people are honest, and getting better at your craft is something the job actively supports.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
                   {[
@@ -213,7 +213,7 @@ export default function CareersPageClient() {
                 A Place Where the Work<br />Makes <span style={{ color: 'var(--color-primary)' }}>You Better.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 520, lineHeight: 1.75 }}>
-                At Isuremedia, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>when people grow, the company grows</span>. That is not a philosophy, it is how we make decisions every day.
+                At Isuremedia, when people grow, the company grows. That is not a philosophy, it is how we make decisions every day.
               </p>
             </div>
 
@@ -315,7 +315,7 @@ export default function CareersPageClient() {
                 The Team Behind <span style={{ color: 'var(--color-primary)' }}>the Work.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', maxWidth: 500, margin: '0 auto', lineHeight: 1.75 }}>
-                <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Real people, real accounts, one office</span>. This is what working at Isuremedia actually looks like.
+                Real people, real accounts, one office. This is what working at Isuremedia actually looks like.
               </p>
             </div>
 
@@ -393,7 +393,7 @@ export default function CareersPageClient() {
                   Tell us about yourself.
                 </h2>
                 <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.80, marginBottom: 36 }}>
-                  Takes about three minutes. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>We read every application</span>.
+                  Takes about three minutes. We read every application.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
                   {[

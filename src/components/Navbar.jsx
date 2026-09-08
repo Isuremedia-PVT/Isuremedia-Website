@@ -206,15 +206,23 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  /* ── Shared dropdown wrapper ── */
+  /* ── Shared dropdown wrapper ──
+     Anchored to its own trigger (the `position:relative` item wrapper), not
+     the viewport, so it always opens directly under the item that was
+     clicked/hovered instead of drifting to the screen center. */
   const Dropdown = ({
     children,
-    wide = false
+    wide = false,
+    align = 'center'
   }) => (
     <div
       onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
       onMouseLeave={closeNav}
-      style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: wide ? 860 : 640, background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', padding: '28px 28px 24px', zIndex: 10000, display: 'grid', gridTemplateColumns: wide ? '1fr 1fr 1fr auto' : '1fr auto', gap: 0 }}
+      style={{
+        position: 'absolute', top: 'calc(100% + 12px)',
+        ...(align === 'left' ? { left: 0 } : align === 'right' ? { right: 0 } : { left: '50%', transform: 'translateX(-50%)' }),
+        width: wide ? 860 : 640, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', padding: '28px 28px 24px', zIndex: 10000, display: 'grid', gridTemplateColumns: wide ? '1fr 1fr 1fr auto' : '1fr auto', gap: 0
+      }}
     >
       {children}
     </div>
@@ -307,7 +315,7 @@ export default function Navbar() {
 
                 {/* Company dropdown */}
                 {isOpen && item.type === 'company' && (
-                  <Dropdown>
+                  <Dropdown align="left">
                     <div style={{ paddingRight: 24, borderRight: '1px solid #E2E8F0' }}>
                       <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>Company</p>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -336,7 +344,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, overflow: 'hidden' }}
+                    style={{ position: 'absolute', top: 'calc(100% + 12px)', left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, overflow: 'hidden' }}
                   >
                     {/* Icon tab row */}
                     <div style={{ display: 'flex', borderBottom: '1px solid #E2E8F0', background: '#FAFBFF' }}>
@@ -390,7 +398,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 24px 28px' }}
+                    style={{ position: 'absolute', top: 'calc(100% + 12px)', left: '50%', transform: 'translateX(-50%)', width: 1020, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 24px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Our Results</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 10 }}>
@@ -437,7 +445,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 720, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
+                    style={{ position: 'absolute', top: 'calc(100% + 12px)', left: '50%', transform: 'translateX(-50%)', width: 720, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
                     <div className="wl-nav-items-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, alignContent: 'start', alignSelf: 'start' }}>
@@ -459,7 +467,7 @@ export default function Navbar() {
 
                 {/* Resources dropdown */}
                 {isOpen && item.type === 'resources' && (
-                  <Dropdown>
+                  <Dropdown align="right">
                     <div style={{ paddingRight: 24, borderRight: '1px solid #E2E8F0' }}>
                       <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>Resources</p>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -489,7 +497,7 @@ export default function Navbar() {
                   <div
                     onMouseEnter={() => { if (timer.current) clearTimeout(timer.current); }}
                     onMouseLeave={closeNav}
-                    style={{ position: 'fixed', top: 104, left: '50%', transform: 'translateX(-50%)', width: 760, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
+                    style={{ position: 'absolute', top: 'calc(100% + 12px)', right: 0, width: 760, maxWidth: 'calc(100vw - 32px)', background: '#fff', borderRadius: 16, border: '1px solid #E2E8F0', boxShadow: '0 16px 48px rgba(0,0,0,.12)', zIndex: 10000, padding: '24px 28px 28px' }}
                   >
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Hire a Specialist</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10 }}>
@@ -555,18 +563,26 @@ export default function Navbar() {
                               const catExpanded = mobileServiceCat === ci;
                               return (
                                 <div key={cat.label}>
-                                  <button onClick={() => setMobileServiceCat(catExpanded ? null : ci)}
-                                    style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, padding: '8px 12px', borderRadius: 8, background: 'none', border: 'none', cursor: 'pointer', fontFamily: I, fontSize: 14, fontWeight: 600, color: 'var(--color-text-body)' }}
-                                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
-                                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
-                                  >
-                                    <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                  <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 2 }}>
+                                    <a href={cat.mainHref} onClick={() => setMobileOpen(false)}
+                                      style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, fontWeight: 600, color: 'var(--color-text-body)' }}
+                                      onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                                      onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                                    >
                                       <i className={cat.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {cat.label}
-                                    </span>
-                                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none" style={{ transform: catExpanded ? 'rotate(180deg)' : '', transition: 'transform .2s', flexShrink: 0 }}>
-                                      <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                  </button>
+                                    </a>
+                                    <button onClick={() => setMobileServiceCat(catExpanded ? null : ci)}
+                                      aria-label={catExpanded ? `Collapse ${cat.label}` : `Expand ${cat.label}`}
+                                      aria-expanded={catExpanded}
+                                      style={{ flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', width: 36, height: 36, borderRadius: 8, background: 'none', border: 'none', cursor: 'pointer' }}
+                                      onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                                      onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                                    >
+                                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" style={{ transform: catExpanded ? 'rotate(180deg)' : '', transition: 'transform .2s', flexShrink: 0 }}>
+                                        <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                      </svg>
+                                    </button>
+                                  </div>
                                   {catExpanded && (
                                     <div style={{ paddingLeft: 14 }}>
                                       {cat.items.map(s => (

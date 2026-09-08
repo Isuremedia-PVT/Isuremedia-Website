@@ -252,7 +252,7 @@ export default function VideoMarketingPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia provides the editing capacity your video content needs, short-form, long-form, and ad creative, delivered consistently and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>cut for the platform it&apos;s built for</span>.
+                  cut for the platform it&apos;s built for.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -296,11 +296,11 @@ export default function VideoMarketingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Edited, captioned video sees{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>up to 80% higher watch time</span> than raw or uncaptioned uploads, the edit is what turns footage into content that performs.
+                    up to 80% higher watch time than raw or uncaptioned uploads, the edit is what turns footage into content that performs.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Video is shared{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>12x more than text and images combined</span>, but only when it&apos;s cut and captioned for how people actually watch.
+                    12x more than text and images combined, but only when it&apos;s cut and captioned for how people actually watch.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unedited footage sitting on a hard drive produces nothing. A structured editing pipeline is what turns raw video into a channel that keeps growing.

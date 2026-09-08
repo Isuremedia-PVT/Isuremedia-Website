@@ -170,7 +170,7 @@ export default function ZohoPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We set up and configure Zoho CRM and the Zoho One suite{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>around how your business actually operates</span>, properly migrated, automated, and adopted by your team.
+                  around how your business actually operates, properly migrated, automated, and adopted by your team.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -248,7 +248,7 @@ export default function ZohoPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia configures Zoho around your actual sales process,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>migrated cleanly, automated properly</span>, and trained into the team so it actually gets used.
+                  migrated cleanly, automated properly, and trained into the team so it actually gets used.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -292,7 +292,7 @@ export default function ZohoPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Zoho One connects{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>CRM, invoicing, support, and marketing</span> into a single ecosystem instead of five disconnected tools.
+                    CRM, invoicing, support, and marketing into a single ecosystem instead of five disconnected tools.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     It delivers{' '}

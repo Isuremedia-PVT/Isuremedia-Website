@@ -26,7 +26,7 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-arrow-down', title: 'Leads Move Into the Right Pipeline Automatically', desc: <>A properly configured GoHighLevel workflow can route new leads into the correct pipeline, apply the right tags, and trigger follow-up based on where the lead came from, so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no lead sits untouched</span>.</> },
+  { icon: 'fa-solid fa-arrow-down', title: 'Leads Move Into the Right Pipeline Automatically', desc: <>A properly configured GoHighLevel workflow can route new leads into the correct pipeline, apply the right tags, and trigger follow-up based on where the lead came from, so no lead sits untouched.</> },
   { icon: 'fa-solid fa-cogs', title: 'Your Sales Process Runs Without Constant Manual Updates', desc: 'GoHighLevel workflows can handle follow-ups, appointment reminders, task creation, and other repetitive actions so the team can focus on conversations that require human attention.' },
   { icon: 'fa-solid fa-link', title: 'Every Channel Can Share the Same Customer Context', desc: 'Email, SMS, WhatsApp, voice, forms, calendars, and other connected channels can feed information into the same contact and pipeline record when the setup is configured correctly.' },
   { icon: 'fa-solid fa-brain', title: 'AI Can Handle the First Conversation', desc: 'GoHighLevel conversation tools can respond to prospects, qualify leads, answer routine questions, and support appointment booking according to configured rules.' },
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'GoHighLevel CRM Setup and Configuration',
     img: '/hire/expert_ghl/ghl expert crm setup.webp',
-    desc: <>A CRM that is not structured properly from the start creates problems later. We configure <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>pipelines, stages, custom fields, tags</span>, contact organization, lead sources, and related settings around your sales process.</>,
+    desc: <>A CRM that is not structured properly from the start creates problems later. We configure pipelines, stages, custom fields, tags, contact organization, lead sources, and related settings around your sales process.</>,
     bullets: [
       'Pipeline and stage architecture aligned to your sales process',
       'Custom fields and contact record setup',
@@ -162,7 +162,7 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-certificate', title: 'GoHighLevel Certified', desc: <>Our team includes <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel-certified specialists</span>. Certification supports platform knowledge, but the value comes from applying that knowledge to the business process being built.</> },
+  { icon: 'fa-solid fa-certificate', title: 'GoHighLevel Certified', desc: <>Our team includes GoHighLevel-certified specialists. Certification supports platform knowledge, but the value comes from applying that knowledge to the business process being built.</> },
   { icon: 'fa-solid fa-star', title: 'GHL Is a Core Platform for Our Team', desc: 'GoHighLevel is not an occasional add-on in our service stack. We use the platform regularly for CRM, funnels, automation, communication, and client systems.' },
   { icon: 'fa-solid fa-file-lines', title: 'White-Label GoHighLevel SaaS Support', desc: 'Agencies can use our team for white-label GoHighLevel SaaS delivery, with the work handled behind their brand and client relationship.' },
   { icon: 'fa-solid fa-book', title: 'Everything Is Documented', desc: 'We document workflows, configurations, explanations, and system logic so the account is easier to manage when something needs to change.' },
@@ -174,7 +174,7 @@ const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific GHL job to get done',
-    desc: <>Use this when you have a defined GoHighLevel requirement such as a full setup, migration, workflow rebuild, or a specific automation system, mapped <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>before work starts</span>.</>,
+    desc: <>Use this when you have a defined GoHighLevel requirement such as a full setup, migration, workflow rebuild, or a specific automation system, mapped before work starts.</>,
     bullets: [
       'Scope and price agreed before work begins',
       'Architecture mapped before a build starts',
@@ -250,7 +250,7 @@ export default function HireGoHighLevelExpert() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            GoHighLevel <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built, configured, and maintained</span> by an experienced specialist across CRM setup, workflows, funnels, AI, SaaS, migrations, and integrations.
+            GoHighLevel built, configured, and maintained by an experienced specialist across CRM setup, workflows, funnels, AI, SaaS, migrations, and integrations.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -303,10 +303,10 @@ export default function HireGoHighLevelExpert() {
                 GoHighLevel Is Powerful. It Just Needs to <span style={{ color: 'var(--ism-amber)' }}>Be Built Properly.</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                GoHighLevel covers a wide range of specialized work, from CRM architecture and pipeline setup to workflow automation, funnel and website builds, AI chatbots and voice agents, email and SMS campaigns, calendar and booking systems, reputation management, white-label SaaS configuration, and full migrations from other platforms. Most businesses buy GoHighLevel and use a fraction of what it can do. A skilled GHL expert builds it as <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a complete system</span>, not a collection of disconnected tools.
+                GoHighLevel covers a wide range of specialized work, from CRM architecture and pipeline setup to workflow automation, funnel and website builds, AI chatbots and voice agents, email and SMS campaigns, calendar and booking systems, reputation management, white-label SaaS configuration, and full migrations from other platforms. Most businesses buy GoHighLevel and use a fraction of what it can do. A skilled GHL expert builds it as a complete system, not a collection of disconnected tools.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                Getting it right means working with someone who understands your sales process before they touch a single workflow, knows how GHL features interact with each other, and builds systems that keep running after they leave instead of requiring constant fixes. GoHighLevel is Isuremedia's primary platform. That depth shows in how the systems are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>designed, documented, and handed over</span>.
+                Getting it right means working with someone who understands your sales process before they touch a single workflow, knows how GHL features interact with each other, and builds systems that keep running after they leave instead of requiring constant fixes. GoHighLevel is Isuremedia's primary platform. That depth shows in how the systems are designed, documented, and handed over.
               </p>
               
               {/* 2-Column List */}
@@ -632,7 +632,7 @@ export default function HireGoHighLevelExpert() {
                 Paying for GoHighLevel but Still Doing Everything <span style={{ color: 'var(--ism-amber)' }}>Manually?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Tell us what is not working and get a clear proposal for the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel setup, cleanup or automation work</span> you need.
+                Tell us what is not working and get a clear proposal for the GoHighLevel setup, cleanup or automation work you need.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -779,7 +779,7 @@ export default function HireGoHighLevelExpert() {
               Hire a GoHighLevel Expert for <span style={{ color: 'var(--ism-amber)' }}>the Scope You Actually Need</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Choose a defined build, ongoing GHL support, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label delivery</span> based on your account and workload.
+              Choose a defined build, ongoing GHL support, or white-label delivery based on your account and workload.
             </p>
           </div>
 
@@ -967,7 +967,7 @@ export default function HireGoHighLevelExpert() {
                 Get GoHighLevel Working the Way <span style={{ color: 'var(--ism-amber)' }}>Your Business Needs</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you're starting from scratch, fixing a broken account, migrating from another platform, or expanding your agency offer, we'll help you build the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>right GoHighLevel system</span>.
+                Whether you're starting from scratch, fixing a broken account, migrating from another platform, or expanding your agency offer, we'll help you build the right GoHighLevel system.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"
