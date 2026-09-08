@@ -264,7 +264,7 @@ export default function MakeIntegromatPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Make uses a visual canvas that shows the full flow of data through your scenario, every module, filter, router, and error handler visible at a glance. We build scenarios that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle real-world complexity without breaking</span> when edge cases appear.
+                  handle real-world complexity without breaking when edge cases appear.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -308,12 +308,12 @@ export default function MakeIntegromatPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Make is a visual automation platform that connects the apps your business already uses. Unlike simple trigger-based tools, Make handles{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>branching paths, conditional routers, iterators, and aggregators</span>{' '}
+                    branching paths, conditional routers, iterators, and aggregators{' '}
                     that basic automation simply cannot.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Every scenario is built on a canvas that shows the full flow of data, every module, filter, router, and error handler visible at a glance. We design scenarios that{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>handle real-world complexity without breaking when edge cases appear</span>.
+                    handle real-world complexity without breaking when edge cases appear.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Because Make charges per operation rather than per Zap, it is often significantly cheaper at scale for high-volume or complex automation needs, making it the right choice once your workflows outgrow simple triggers.

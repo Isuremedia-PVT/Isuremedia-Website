@@ -171,7 +171,7 @@ export default function LandingPagesPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design and build landing pages that turn ad clicks, email traffic, and campaign visitors into leads, bookings, and sales, with every element tested, optimised, and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around one clear goal</span>.
+                  built around one clear goal.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -293,11 +293,11 @@ export default function LandingPagesPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A landing page is a standalone web page built for a single campaign, a single audience, and{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a single conversion goal</span>. It has no navigation to distract visitors and no competing messages.
+                    a single conversion goal. It has no navigation to distract visitors and no competing messages.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your website serves everyone and does many things. A landing page serves one type of visitor and does one thing. That focus is exactly what makes it{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>convert at a higher rate</span> than any other page on your site.
+                    convert at a higher rate than any other page on your site.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The average landing page converts between 2 and 5% of visitors. Top-performing landing pages convert at 10 to 12% or higher. The difference is almost never the offer, it is almost always the page.

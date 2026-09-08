@@ -171,7 +171,7 @@ export default function SalesPipelineAutomationPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   Automated stage movement, task creation, and follow-up sequencing tied to every deal, so{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>opportunities stop stalling</span> because someone forgot to check the CRM.
+                  opportunities stop stalling because someone forgot to check the CRM.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -256,7 +256,7 @@ export default function SalesPipelineAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build automation directly into your CRM that moves deals forward,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one personâ€™s memory.
+                  creates the next task automatically, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one personâ€™s memory.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,7 +300,7 @@ export default function SalesPipelineAutomationPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Sales pipeline automation connects the stages in your CRM to the actions that should happen the moment a deal moves.{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Stage changes trigger tasks, reminders, and follow-up sequences automatically</span>, with nobody needing to remember to make it happen.
+                    Stage changes trigger tasks, reminders, and follow-up sequences automatically, with nobody needing to remember to make it happen.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Deals that sit untouched get flagged before they go cold,{' '}

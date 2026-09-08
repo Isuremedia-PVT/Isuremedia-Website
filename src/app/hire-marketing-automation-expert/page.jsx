@@ -26,7 +26,7 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-person-dots-from-line', title: 'Leads Stay in Motion Without Manual Follow-Up', desc: <>Automation can trigger relevant follow-up when a lead enters the CRM, completes a form, books a call, or takes another defined action. Your team does not need to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>remember every next step</span>.</> },
+  { icon: 'fa-solid fa-person-dots-from-line', title: 'Leads Stay in Motion Without Manual Follow-Up', desc: <>Automation can trigger relevant follow-up when a lead enters the CRM, completes a form, books a call, or takes another defined action. Your team does not need to remember every next step.</> },
   { icon: 'fa-solid fa-chart-line', title: 'Lead Scoring Helps Your Team Prioritize', desc: 'A marketing automation system can score leads using actions such as page visits, form submissions, email engagement, or other defined signals, helping sales teams focus on stronger opportunities first.' },
   { icon: 'fa-solid fa-plug', title: 'Your Tools Can Share the Same Customer Data', desc: 'Connecting your CRM, email platform, website, ads, booking system, and other business tools reduces duplicate entry and keeps customer information available where the next action happens.' },
   { icon: 'fa-solid fa-brain', title: 'AI Can Support First-Line Qualification', desc: 'AI-assisted automation can answer routine questions, collect information, qualify enquiries, and support booking workflows outside normal business hours, with human escalation where needed.' },
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'CRM Workflow Design and Automation',
     img: '/hire/marketing_automtion/marketing automation expert crm_.webp',
-    desc: <>Most CRMs are full of contacts that no workflow is acting on. We build CRM automation around your sales process, with triggers, actions, routing, notifications, and updates that move leads forward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without manual intervention</span>.</>,
+    desc: <>Most CRMs are full of contacts that no workflow is acting on. We build CRM automation around your sales process, with triggers, actions, routing, notifications, and updates that move leads forward without manual intervention.</>,
     bullets: [
       'Pipeline stage automation and movement triggers',
       'Lead assignment and routing rules',
@@ -162,7 +162,7 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Multi-Platform Depth', desc: <>Our marketing automation specialists work across <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>GoHighLevel, HubSpot, ActiveCampaign, Klaviyo</span>, and the integrations that connect them. The platform follows the workflow requirement.</> },
+  { icon: 'fa-solid fa-building', title: 'Multi-Platform Depth', desc: <>Our marketing automation specialists work across GoHighLevel, HubSpot, ActiveCampaign, Klaviyo, and the integrations that connect them. The platform follows the workflow requirement.</> },
   { icon: 'fa-solid fa-file-lines', title: 'AI Automation Is Built In, Not Added Later', desc: 'AI can be part of the automation architecture from the start where it makes sense, including lead scoring, conversational responses, personalization, and routing.' },
   { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: 'Ongoing support is available month to month. There is no unnecessary long-term commitment or exit penalty.' },
   { icon: 'fa-solid fa-code', title: 'Process First, Tools Second', desc: 'The automation should reflect the customer\'s journey and the team\'s sales process. We map those requirements before deciding how the workflow should be built.' },
@@ -174,7 +174,7 @@ const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific automation job to get done',
-    desc: <>Use this when you have a defined automation requirement, such as building a workflow system, fixing broken automations, or connecting a specific group of tools, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>mapped before work starts</span>.</>,
+    desc: <>Use this when you have a defined automation requirement, such as building a workflow system, fixing broken automations, or connecting a specific group of tools, mapped before work starts.</>,
     bullets: [
       'Process mapping before automation work begins',
       'Scope and price agreed before build starts',
@@ -250,7 +250,7 @@ export default function HireMarketingAutomationExpert() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Build <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>CRM workflows, lead nurture sequences, email and SMS automation</span>, AI-powered personalization, and cross-platform integrations around the way your business actually sells.
+            Build CRM workflows, lead nurture sequences, email and SMS automation, AI-powered personalization, and cross-platform integrations around the way your business actually sells.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -303,10 +303,10 @@ export default function HireMarketingAutomationExpert() {
                 Marketing Automation Built Around <span style={{ color: 'var(--ism-amber)' }}>How Your Team Sells</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                Marketing automation covers more than sending scheduled emails. A useful system can manage <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>lead capture, scoring, nurture sequences</span>, appointment workflows, customer follow-up, CRM updates, and data movement between the tools your team already uses.
+                Marketing automation covers more than sending scheduled emails. A useful system can manage lead capture, scoring, nurture sequences, appointment workflows, customer follow-up, CRM updates, and data movement between the tools your team already uses.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                A marketing automation specialist should understand the business process behind the automation, not only how to configure a platform. We map <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>what should happen, when it should happen</span>, and what information each workflow needs before building it. That&#39;s the standard our marketing automation team works to.
+                A marketing automation specialist should understand the business process behind the automation, not only how to configure a platform. We map what should happen, when it should happen, and what information each workflow needs before building it. That&#39;s the standard our marketing automation team works to.
               </p>
               
               {/* 2-Column List */}
@@ -635,7 +635,7 @@ export default function HireMarketingAutomationExpert() {
                 Getting Leads Is One Thing. <span style={{ color: 'var(--ism-amber)' }}>What Happens Next?</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 560, marginBottom: 24 }}>
-                Tell us what is happening today and get a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>clear proposal</span> for the automation your business needs to build next.
+                Tell us what is happening today and get a clear proposal for the automation your business needs to build next.
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
@@ -785,7 +785,7 @@ export default function HireMarketingAutomationExpert() {
               Choose the Marketing Automation <span style={{ color: 'var(--ism-amber)' }}>Support Model That Fits</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Choose project-based automation, ongoing optimization, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label delivery</span> based on your system and workload.
+              Choose project-based automation, ongoing optimization, or white-label delivery based on your system and workload.
             </p>
           </div>
 
@@ -973,7 +973,7 @@ export default function HireMarketingAutomationExpert() {
                 Build a Marketing Automation System <span style={{ color: 'var(--ism-amber)' }}>Your Team Can Rely On</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you're building automation from scratch, fixing <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a system that was set up badly</span>, or connecting tools that do not talk to each other, we'll help you build the right workflow.
+                Whether you're building automation from scratch, fixing a system that was set up badly, or connecting tools that do not talk to each other, we'll help you build the right workflow.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"

@@ -58,7 +58,7 @@ const SERVICES = [
   {
     title: 'Sales Funnel Agency Services',
     icon: 'fa-solid fa-filter',
-    desc: <>Sending paid ads to a generic homepage wastes money. We build multi-step sales funnels that guide prospects from first click <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>straight into your sales pipeline</span>.</>,
+    desc: <>Sending paid ads to a generic homepage wastes money. We build multi-step sales funnels that guide prospects from first click straight into your sales pipeline.</>,
     href: '/websites-and-funnels',
   },
   {
@@ -94,7 +94,7 @@ const SERVICES = [
 ];
 
 const TIMELINE_STEPS = [
-  { num: 1, period: 'Discovery and Scoping', desc: <>Before opening a design tool, we study your business, your target buyers, and what your current site lacks. As a dedicated website design agency, we give you a clear written plan before work starts. That means total transparency with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no extra costs or scope creep</span> mid-project.</> },
+  { num: 1, period: 'Discovery and Scoping', desc: <>Before opening a design tool, we study your business, your target buyers, and what your current site lacks. As a dedicated website design agency, we give you a clear written plan before work starts. That means total transparency with no extra costs or scope creep mid-project.</> },
   { num: 2, period: 'Strategy and Wireframes', desc: 'We plan out every page layout and button placement before doing any visual design work. Wireframes show you how visitors will navigate your site and where they will take action. Strategy comes first because a good-looking page with a bad layout will not convert visitors into buyers.' },
   { num: 3, period: 'Design and Content', desc: 'We write content copy and create designs together so your main message stays simple and clear. As your landing page design service, we make sure every section fits your brand. You get to review and approve every single page before we start building, so nothing moves forward until you like it.' },
   { num: 4, period: 'Development and CRM Connection', desc: 'We code every page to load fast, look clean, and work smoothly on all mobile devices. Our GoHighLevel funnel builder team connects your forms straight into your CRM system. That way, new leads receive automated follow-ups immediately, and no potential sale gets missed.' },
@@ -102,7 +102,7 @@ const TIMELINE_STEPS = [
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-headset',           title: 'Your Own Dedicated Build Team',           desc: <>The same designers, developers and GoHighLevel funnel builder experts who plan your project are the ones building it. No handoffs to outsourced freelancers, just <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one accountable team</span> working on your project from brief to launch.</> },
+  { dark: true,  icon: 'fa-solid fa-headset',           title: 'Your Own Dedicated Build Team',           desc: <>The same designers, developers and GoHighLevel funnel builder experts who plan your project are the ones building it. No handoffs to outsourced freelancers, just one accountable team working on your project from brief to launch.</> },
   { dark: false, icon: 'fa-solid fa-circle-check',       title: 'No Long-Term Contracts',                  desc: "We earn your business every month by delivering real performance. As a transparent website design agency, we don't lock you into 12-month retainers or charge exit penalties. You stay with us because the system delivers real lead volume." },
   { dark: false, icon: 'fa-solid fa-layer-group',        title: 'Design, Development and Automation Together', desc: 'Most agencies design a page and leave you to set up the software yourself. As a full-service sales funnel agency, we design, code, and connect your pages to GoHighLevel all at once as a single complete project.' },
   { dark: false, icon: 'fa-solid fa-bolt',               title: 'CRM-Connected From Day One',              desc: 'Every site or landing page design service project we build is tied directly to your CRM before going live. New leads drop straight into your sales pipeline, trigger automated follow-ups, and book calls without manual effort.' },
@@ -111,9 +111,9 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'What is the difference between a website and a sales funnel?', a: <>A traditional website provides general information and navigation across multiple pages. A sales funnel is a focused, step-by-step path designed to guide visitors toward <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one specific action</span>, such as booking a call or buying a product. As a performance-focused website design agency, we build hybrid systems that combine brand authority with high-converting funnel workflows.</> },
+  { q: 'What is the difference between a website and a sales funnel?', a: <>A traditional website provides general information and navigation across multiple pages. A sales funnel is a focused, step-by-step path designed to guide visitors toward one specific action, such as booking a call or buying a product. As a performance-focused website design agency, we build hybrid systems that combine brand authority with high-converting funnel workflows.</> },
   { q: 'What platforms do you use to build websites and funnels?', a: 'We build on WordPress for custom brand websites, Next.js for high-speed custom builds, and directly inside platforms like GoHighLevel, ClickFunnels and Kajabi. As an expert GoHighLevel funnel builder, we ensure your front-end layout integrates seamlessly with your backend CRM and automation tools.' },
-  { q: 'How long does a website or funnel project take to complete?', a: <>A single landing page design service project typically takes <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>1 to 2 weeks</span>, while a full small business website design or multi-step sales funnel takes 3 to 5 weeks from discovery to launch. Timelines depend on the overall scope, custom assets, and approval speed.</> },
+  { q: 'How long does a website or funnel project take to complete?', a: <>A single landing page design service project typically takes 1 to 2 weeks, while a full small business website design or multi-step sales funnel takes 3 to 5 weeks from discovery to launch. Timelines depend on the overall scope, custom assets, and approval speed.</> },
   { q: 'How much does a custom website or sales funnel cost?', a: 'Project costs vary based on scope, technical complexity, and required integrations. Single landing pages start lower for specific campaign goals, while full custom website and automated funnel systems are quoted transparently during our discovery call with zero hidden fees or scope creep.' },
   { q: 'Can you redesign my existing website without losing Google rankings?', a: 'Yes. During a website redesign, we preserve your existing SEO rankings by keeping URL structures intact, implementing 301 redirects, and transferring page authority. As a specialized conversion rate optimisation agency, we upgrade your layout to drive more leads while keeping your organic traffic secure.' },
   { q: 'What is GoHighLevel and why should I integrate it into my site?', a: 'GoHighLevel is an all-in-one sales and marketing CRM platform that handles lead capture, automated text/email follow-ups, and pipeline tracking. Integrating GoHighLevel ensures every lead generated by your site gets contacted instantly without requiring manual work.' },
@@ -246,11 +246,11 @@ export default function WebsitesPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Websites Influence Buying Decisions', text:<>People do 80% of their research online first. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Your site makes the sale before a sales call ever happens</span>. Working with a skilled website design agency ensures your site proves your value right away.</> },
-                  { num:'02', title:'First Impressions Start With Your Website', text:<>94% of first impressions depend on design. A slow or confusing site drives away customers who are ready to buy. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Clear small business website design keeps visitors on your page</span> and guides them to take action.</> },
-                  { num:'03', title:'Turn Website Traffic Into Leads', text:<>Typical sites lose 97 out of every 100 visitors. A conversion rate optimisation agency fixes your page layout so more of your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>current traffic turns into real sales leads</span>.</> },
-                  { num:'04', title:'Automate Lead Generation With Your Website', text:<>Your site should collect contact details and schedule calls automatically, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>24/7 while your team is offline</span>. Bringing in a GoHighLevel funnel builder turns simple pages into a practical lead pipeline.</> },
-                  { num:'05', title:'Your Website Is the Digital Asset You Truly Own', text:<>Social media platforms change their rules overnight. Your site is an asset you own. A direct-response sales funnel agency builds a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>foundation that protects your customer pipeline for the long term</span>.</> },
+                  { num:'01', title:'Websites Influence Buying Decisions', text:<>People do 80% of their research online first. Your site makes the sale before a sales call ever happens. Working with a skilled website design agency ensures your site proves your value right away.</> },
+                  { num:'02', title:'First Impressions Start With Your Website', text:<>94% of first impressions depend on design. A slow or confusing site drives away customers who are ready to buy. Clear small business website design keeps visitors on your page and guides them to take action.</> },
+                  { num:'03', title:'Turn Website Traffic Into Leads', text:<>Typical sites lose 97 out of every 100 visitors. A conversion rate optimisation agency fixes your page layout so more of your current traffic turns into real sales leads.</> },
+                  { num:'04', title:'Automate Lead Generation With Your Website', text:<>Your site should collect contact details and schedule calls automatically, 24/7 while your team is offline. Bringing in a GoHighLevel funnel builder turns simple pages into a practical lead pipeline.</> },
+                  { num:'05', title:'Your Website Is the Digital Asset You Truly Own', text:<>Social media platforms change their rules overnight. Your site is an asset you own. A direct-response sales funnel agency builds a foundation that protects your customer pipeline for the long term.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
@@ -316,7 +316,7 @@ export default function WebsitesPage() {
                   Your website should <span style={{ color:'var(--ism-amber)' }}>bring in more leads.</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Get a free audit from our top website design agency to see what is stopping visitors from <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turning into leads</span>.
+                  Get a free audit from our top website design agency to see what is stopping visitors from turning into leads.
                 </p>
                 <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -343,13 +343,13 @@ export default function WebsitesPage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Most websites <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>look good but fail to bring in sales</span>. The difference between a pretty page and one that converts comes down to layout, speed, and clear messaging.
+                  Most websites look good but fail to bring in sales. The difference between a pretty page and one that converts comes down to layout, speed, and clear messaging.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  We do not just build pages and walk away. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>As your website design agency, we stay involved after launch</span>, using real visitor data to keep improving your results.
+                  We do not just build pages and walk away. As your website design agency, we stay involved after launch, using real visitor data to keep improving your results.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  Whether you need a landing page design service, a simple small business website design, or a full setup by a GoHighLevel funnel builder, we build everything around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>one primary goal: getting you more leads</span>.
+                  Whether you need a landing page design service, a simple small business website design, or a full setup by a GoHighLevel funnel builder, we build everything around one primary goal: getting you more leads.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -368,7 +368,7 @@ export default function WebsitesPage() {
         {/* ══ TESTIMONIALS ════════════════════════════════════════════════ */}
         <Testimonials
           heading="What Our Clients Are Saying"
-          subheading={<>Hear from brands that pick us as their go-to sales funnel agency to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale their leads</span>.</>}
+          subheading={<>Hear from brands that pick us as their go-to sales funnel agency to scale their leads.</>}
         />
 
         {/* ══ SERVICES GRID ════════════════════════════════════════════════ */}
@@ -426,7 +426,7 @@ export default function WebsitesPage() {
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    A basic site wastes money, but a high-converting system generates revenue. Partnering with a direct-response website design agency or conversion rate optimization agency changes everything by extracting <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>3x more qualified leads</span> from the traffic you already get.
+                    A basic site wastes money, but a high-converting system generates revenue. Partnering with a direct-response website design agency or conversion rate optimization agency changes everything by extracting 3x more qualified leads from the traffic you already get.
                   </p>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
                     When your site is set up by an expert GoHighLevel funnel builder or sales funnel agency, it captures, qualifies and books sales calls automatically 24/7, without extra ad spend.
@@ -465,7 +465,7 @@ export default function WebsitesPage() {
                   <div
                     onMouseEnter={()=>setHoveredStep(i)}
                     onMouseLeave={()=>setHoveredStep(null)}
-                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? '0 8px 26px rgba(255,176,0,.55)' : '0 4px 18px rgba(30,77,195,.30)', border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
                   >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
@@ -494,7 +494,7 @@ export default function WebsitesPage() {
                 <span style={{ color:'var(--ism-amber)' }}>for Your Revenue Goals.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every project includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated project manager</span> and post-launch support.
+                Every project includes a dedicated project manager and post-launch support.
               </p>
             </div>
             <div className="web-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>

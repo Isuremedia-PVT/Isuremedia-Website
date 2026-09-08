@@ -251,7 +251,7 @@ export default function TechnicalSEOPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>finds every technical issue holding your site back</span>{' '}
+                  finds every technical issue holding your site back{' '}
                   and fixes it, so your website works as hard for your rankings as it does for your visitors.
                 </p>
                 <a href="/contact"
@@ -296,11 +296,11 @@ export default function TechnicalSEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Search results aren&apos;t just the sites with the best content, they&apos;re the sites Google could{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>actually crawl, understand, and trust</span>. Technical SEO is the work that makes sure your site is one of them.
+                    actually crawl, understand, and trust. Technical SEO is the work that makes sure your site is one of them.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     It&apos;s different from content SEO or link building, it works on{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the foundation</span>: your site&apos;s structure, speed, code, and signals.
+                    the foundation: your site&apos;s structure, speed, code, and signals.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     For businesses that rely on organic traffic, technical SEO is not optional. It is the floor everything else is built on.

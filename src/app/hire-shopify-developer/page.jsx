@@ -26,12 +26,12 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-shopping-cart', title: 'Built for Selling Purpose', desc: <>Shopify is designed around online commerce. Inventory, payments, shipping, product management, and checkout are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built into the platform</span> instead of being added after the fact.</> },
-  { icon: 'fa-solid fa-gauge-high', title: 'Store Built to Handle Traffic', desc: <>Shopify provides hosted infrastructure, CDN delivery, and built-in performance features so your team can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>focus on products, customers, and growth</span> rather than server management.</> },
-  { icon: 'fa-solid fa-lock', title: 'Core Protections Managed for You', desc: <>Shopify handles core platform security, SSL, and payment compliance requirements, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>reducing the infrastructure work</span> your team would otherwise need to manage.</> },
-  { icon: 'fa-solid fa-plug', title: 'Extend Your Store With the Tools You Need', desc: <>Shopify connects with apps for CRM, email, accounting, fulfillment, customer support, analytics, and marketing. We help <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>select and configure integrations</span> that fit your workflow.</> },
-  { icon: 'fa-solid fa-chart-line', title: 'Understand Store Performance', desc: <>Shopify provides reporting and commerce data that help you track sales, products, customers, and conversion activity. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Additional analytics tools can be connected</span> when you need deeper reporting.</> },
-  { icon: 'fa-solid fa-globe', title: 'Sell Across More Than One Channel', desc: <>Shopify supports selling across your online store and additional channels such as social platforms and marketplaces. Your team can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>manage products and orders from a central system</span>.</> },
+  { icon: 'fa-solid fa-shopping-cart', title: 'Built for Selling Purpose', desc: <>Shopify is designed around online commerce. Inventory, payments, shipping, product management, and checkout are built into the platform instead of being added after the fact.</> },
+  { icon: 'fa-solid fa-gauge-high', title: 'Store Built to Handle Traffic', desc: <>Shopify provides hosted infrastructure, CDN delivery, and built-in performance features so your team can focus on products, customers, and growth rather than server management.</> },
+  { icon: 'fa-solid fa-lock', title: 'Core Protections Managed for You', desc: <>Shopify handles core platform security, SSL, and payment compliance requirements, reducing the infrastructure work your team would otherwise need to manage.</> },
+  { icon: 'fa-solid fa-plug', title: 'Extend Your Store With the Tools You Need', desc: <>Shopify connects with apps for CRM, email, accounting, fulfillment, customer support, analytics, and marketing. We help select and configure integrations that fit your workflow.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Understand Store Performance', desc: <>Shopify provides reporting and commerce data that help you track sales, products, customers, and conversion activity. Additional analytics tools can be connected when you need deeper reporting.</> },
+  { icon: 'fa-solid fa-globe', title: 'Sell Across More Than One Channel', desc: <>Shopify supports selling across your online store and additional channels such as social platforms and marketplaces. Your team can manage products and orders from a central system.</> },
 ];
 
 const servicesTabs = [
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'Custom Shopify Store Development',
     img: '/hire/shopify/Shopify Developer  custom store.webp',
-    desc: <>Get a Shopify store built around your products, brand, customers, and sales process. Our developers <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>structure the storefront, templates, and functionality</span> around what your store actually needs.</>,
+    desc: <>Get a Shopify store built around your products, brand, customers, and sales process. Our developers structure the storefront, templates, and functionality around what your store actually needs.</>,
     bullets: [
       'Custom Shopify store setup and architecture',
       'Product page and collection page development',
@@ -62,7 +62,7 @@ const servicesData = [
   {
     num: '02', title: 'Shopify Theme Development',
     img: '/hire/shopify/theme dev.webp',
-    desc: <>Customize an existing Shopify theme or build a custom storefront when your requirements go beyond the theme&apos;s standard options. We focus on <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>responsive design, maintainable code</span>, and a clear path for your team to manage content.</>,
+    desc: <>Customize an existing Shopify theme or build a custom storefront when your requirements go beyond the theme&apos;s standard options. We focus on responsive design, maintainable code, and a clear path for your team to manage content.</>,
     bullets: [
       'Custom Shopify theme development from scratch',
       'Liquid template development and optimization',
@@ -75,7 +75,7 @@ const servicesData = [
   {
     num: '03', title: 'Shopify Plus Development',
     img: '/hire/shopify/Shopify Plus.webp',
-    desc: <>For larger or more complex stores, we work with Shopify Plus features, advanced storefront requirements, custom processes, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>integrations that support higher order volumes</span> and more involved operations.</>,
+    desc: <>For larger or more complex stores, we work with Shopify Plus features, advanced storefront requirements, custom processes, and integrations that support higher order volumes and more involved operations.</>,
     bullets: [
       'Shopify Plus store setup and configuration',
       'Checkout UI extensions and customization',
@@ -88,7 +88,7 @@ const servicesData = [
   {
     num: '04', title: 'Shopify App Development',
     img: '/hire/shopify/app dev.webp',
-    desc: <>When an existing app cannot handle the workflow you need, we build or connect the right solution. This can include <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>custom functionality, third-party integrations, APIs</span>, and automated data flows.</>,
+    desc: <>When an existing app cannot handle the workflow you need, we build or connect the right solution. This can include custom functionality, third-party integrations, APIs, and automated data flows.</>,
     bullets: [
       'Custom private app development',
       'Embedded admin app builds',
@@ -101,7 +101,7 @@ const servicesData = [
   {
     num: '05', title: 'Shopify Migration Services',
     img: '/hire/shopify/Migrations.webp',
-    desc: <>Moving from WooCommerce to Shopify? We handle the storefront, product data, customer data, redirects, integrations, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>technical migration work</span> needed to move platforms without losing important store functionality.</>,
+    desc: <>Moving from WooCommerce to Shopify? We handle the storefront, product data, customer data, redirects, integrations, and technical migration work needed to move platforms without losing important store functionality.</>,
     bullets: [
       'WooCommerce to Shopify migrations',
       'Magento to Shopify and Shopify Plus migrations',
@@ -114,7 +114,7 @@ const servicesData = [
   {
     num: '06', title: 'Speed and Performance Optimization',
     img: '/hire/shopify/performance.webp',
-    desc: <>We identify what is slowing your storefront down, then improve theme code, assets, apps, and page structure to create a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>faster shopping experience</span> across devices.</>,
+    desc: <>We identify what is slowing your storefront down, then improve theme code, assets, apps, and page structure to create a faster shopping experience across devices.</>,
     bullets: [
       'Core Web Vitals audit and optimization',
       'Theme and script performance improvements',
@@ -127,7 +127,7 @@ const servicesData = [
   {
     num: '07', title: 'Checkout Optimization',
     img: '/hire/shopify/cheackout.webp',
-    desc: <>We review the path from product discovery to checkout, identify friction points, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>improve page structure, messaging, and user flow</span> to help more visitors complete their purchase.</>,
+    desc: <>We review the path from product discovery to checkout, identify friction points, and improve page structure, messaging, and user flow to help more visitors complete their purchase.</>,
     bullets: [
       'Checkout flow audit and friction reduction',
       'Payment gateway setup and optimization',
@@ -140,7 +140,7 @@ const servicesData = [
   {
     num: '08', title: 'Integrations and Third-Party Connections',
     img: '/hire/shopify/integrayions.webp',
-    desc: <>Keep your store updated and supported with ongoing development, issue resolution, app management, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>performance checks, and technical improvements</span> and integrations.</>,
+    desc: <>Keep your store updated and supported with ongoing development, issue resolution, app management, performance checks, and technical improvements and integrations.</>,
     bullets: [
       'CRM integrations (HubSpot, Klaviyo, Salesforce)',
       'ERP and inventory system connections',
@@ -162,19 +162,19 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Every Developer Is In-House', desc: <>Your store is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>not passed to a freelancer</span> or subcontractor. The developer working on it is part of the Isuremedia team and accountable from start to finish.</> },
-  { icon: 'fa-solid fa-file-lines', title: 'Everything Gets Documented', desc: <>Your theme changes, customizations, integrations, and technical decisions are documented so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>another developer can understand the store</span> without rebuilding the context.</> },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Ongoing work is available <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>month to month</span> when you need it. No unnecessary long-term commitment or exit penalties.</> },
-  { icon: 'fa-solid fa-code', title: 'Shopify and Shopify Plus Depth', desc: <>Our developers work across standard Shopify and Shopify Plus, including themes, checkout-related functionality, apps, integrations, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>more advanced store requirements</span>.</> },
-  { icon: 'fa-solid fa-rocket', title: 'Built for Conversions', desc: <>A Shopify store needs to do more than launch. We build around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>product discovery, page speed, checkout flow</span>, and the actions that move visitors toward purchase.</> },
-  { icon: 'fa-solid fa-comments', title: 'Clear Communication Throughout', desc: <>You know what is being worked on, what has changed, and what comes next. Updates stay direct, timelines are clear, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scope changes are discussed before work is added</span>.</> },
+  { icon: 'fa-solid fa-building', title: 'Every Developer Is In-House', desc: <>Your store is not passed to a freelancer or subcontractor. The developer working on it is part of the Isuremedia team and accountable from start to finish.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Everything Gets Documented', desc: <>Your theme changes, customizations, integrations, and technical decisions are documented so another developer can understand the store without rebuilding the context.</> },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Ongoing work is available month to month when you need it. No unnecessary long-term commitment or exit penalties.</> },
+  { icon: 'fa-solid fa-code', title: 'Shopify and Shopify Plus Depth', desc: <>Our developers work across standard Shopify and Shopify Plus, including themes, checkout-related functionality, apps, integrations, and more advanced store requirements.</> },
+  { icon: 'fa-solid fa-rocket', title: 'Built for Conversions', desc: <>A Shopify store needs to do more than launch. We build around product discovery, page speed, checkout flow, and the actions that move visitors toward purchase.</> },
+  { icon: 'fa-solid fa-comments', title: 'Clear Communication Throughout', desc: <>You know what is being worked on, what has changed, and what comes next. Updates stay direct, timelines are clear, and scope changes are discussed before work is added.</> },
 ];
 
 const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific Shopify job to get done',
-    desc: <>You have a clear requirement. A new store build, a migration from WooCommerce, a Shopify Plus setup, or a specific feature that needs building. The scope is agreed before work starts, you <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>know the cost upfront</span>, and one developer sees it through from start to finish.</>,
+    desc: <>You have a clear requirement. A new store build, a migration from WooCommerce, a Shopify Plus setup, or a specific feature that needs building. The scope is agreed before work starts, you know the cost upfront, and one developer sees it through from start to finish.</>,
     bullets: [
       'Scoped and priced before any work begins',
       'One dedicated developer on your project throughout',
@@ -185,7 +185,7 @@ const engagementModels = [
   {
     title: 'Monthly Retainer',
     tag: 'For stores that need ongoing Shopify development or support',
-    desc: <>Your store needs regular attention around new product launches, seasonal campaigns, BFCM, performance improvements, and ongoing development. A dedicated developer works on your store every month, knows it properly, and is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>there when something needs doing</span>.</>,
+    desc: <>Your store needs regular attention around new product launches, seasonal campaigns, BFCM, performance improvements, and ongoing development. A dedicated developer works on your store every month, knows it properly, and is there when something needs doing.</>,
     bullets: [
       'Dedicated developer familiar with your store and codebase',
       'Covers updates, new features, seasonal builds, and fixes',
@@ -196,7 +196,7 @@ const engagementModels = [
   {
     title: 'White Label',
     tag: 'For agencies delivering Shopify work to their own clients',
-    desc: <>You handle the client relationship. Isuremedia handles the Shopify development behind the scenes under your brand. Your clients <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never know we exist</span> and nothing we deliver carries any Isuremedia footprint.</>,
+    desc: <>You handle the client relationship. Isuremedia handles the Shopify development behind the scenes under your brand. Your clients never know we exist and nothing we deliver carries any Isuremedia footprint.</>,
     bullets: [
       'All work delivered under your agency name',
       'No Isuremedia branding on any deliverable',
@@ -207,16 +207,16 @@ const engagementModels = [
 ];
 
 const faqs = [
-  { q: 'What does a Shopify developer do?', a: <>A Shopify developer builds, customizes, integrates, and maintains Shopify stores. Their work can include <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>themes, storefront functionality, apps, APIs</span>, Shopify Plus, performance improvements, migrations, and checkout optimization.</> },
+  { q: 'What does a Shopify developer do?', a: <>A Shopify developer builds, customizes, integrates, and maintains Shopify stores. Their work can include themes, storefront functionality, apps, APIs, Shopify Plus, performance improvements, migrations, and checkout optimization.</> },
   { q: 'How much does it cost to hire a Shopify developer?', a: 'The cost of hiring a Shopify developer depends on the scope, complexity, platform requirements, and integrations involved. A specific theme change or fix usually requires less development time than a custom store, migration, or Shopify Plus project. The scope should be confirmed before development begins.' },
   { q: 'How quickly can a Shopify developer start my project?', a: <>A Shopify developer can typically start <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> once the project is approved, the scope is confirmed, and the required store access and assets are available. Larger projects may require additional planning before development begins.</> },
   { q: 'Can I hire a Shopify developer for an existing store?', a: 'Yes. Shopify developers can improve and maintain existing stores as well as build new ones. Common work includes theme customization, bug fixes, app integrations, performance improvements, new features, and conversion-focused changes.' },
   { q: 'Can a Shopify developer build a custom Shopify store?', a: 'Yes. A Shopify developer can build a custom storefront around your brand, products, customer journey, and technical requirements instead of relying entirely on a pre-built theme.' },
-  { q: 'Do you offer Shopify Plus development?', a: <>Yes. Shopify Plus development can include <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>advanced storefront work, custom integrations</span>, more complex workflows, and technical support for businesses using the Shopify Plus platform.</> },
+  { q: 'Do you offer Shopify Plus development?', a: <>Yes. Shopify Plus development can include advanced storefront work, custom integrations, more complex workflows, and technical support for businesses using the Shopify Plus platform.</> },
   { q: 'Can you migrate a WooCommerce store to Shopify?', a: 'Yes. A WooCommerce to Shopify migration can include product and customer data, storefront setup, URL redirects, integrations, and other technical work required to move the store to Shopify.' },
   { q: 'Can you customize my existing Shopify theme?', a: 'Yes. Shopify theme customization can include layout changes, custom sections, templates, styling, functionality, and performance improvements. A custom theme may be recommended when the existing theme cannot support the required experience efficiently.' },
   { q: 'Do you build custom Shopify apps and integrations?', a: 'Yes. Shopify developers can build custom functionality or connect Shopify with third-party systems using apps, APIs, webhooks, and other integration methods when standard apps are not enough.' },
-  { q: 'Do you offer white-label Shopify development for agencies?', a: <>Yes. We provide white-label Shopify development for agencies that need an execution partner behind the scenes. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Work can be delivered under the agency&apos;s brand</span> while the agency keeps the client relationship.</> },
+  { q: 'Do you offer white-label Shopify development for agencies?', a: <>Yes. We provide white-label Shopify development for agencies that need an execution partner behind the scenes. Work can be delivered under the agency&apos;s brand while the agency keeps the client relationship.</> },
   { q: 'Who owns the Shopify work after development?', a: 'Your business retains access to its Shopify store and related accounts. Development work should be documented so your team or another developer can understand and maintain the implementation after delivery.' },
 ];
 
@@ -249,7 +249,7 @@ export default function HireShopifyDeveloper() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get a custom Shopify store built for <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>speed, conversions, and growth</span>, from theme development and Shopify Plus to app integrations, migrations, and checkout optimization.
+            Get a custom Shopify store built for speed, conversions, and growth, from theme development and Shopify Plus to app integrations, migrations, and checkout optimization.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -302,13 +302,13 @@ export default function HireShopifyDeveloper() {
                 Custom Shopify Development for <span style={{ color: 'var(--ism-amber)' }}>Every Stage of Your Store</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                From custom storefronts and Shopify Plus to apps, integrations, performance, and checkout optimization, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>get the technical support your store needs</span> to sell effectively.
+                From custom storefronts and Shopify Plus to apps, integrations, performance, and checkout optimization, get the technical support your store needs to sell effectively.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
                 Shopify development covers more than building pages. You may need a custom storefront, theme development, Shopify Plus configuration, app integrations, payment setup, performance work, or a migration from another platform.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                The right Shopify developer should understand how your store&apos;s <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>design, checkout, apps, data, and marketing stack</span> work together and how those decisions affect sales. That&apos;s the standard our Shopify development team works to.
+                The right Shopify developer should understand how your store&apos;s design, checkout, apps, data, and marketing stack work together and how those decisions affect sales. That&apos;s the standard our Shopify development team works to.
               </p>
               
               {/* 2-Column List */}
@@ -438,7 +438,7 @@ export default function HireShopifyDeveloper() {
               Full Range of Our Shopify <span style={{ color: 'var(--ism-amber)' }}>Development Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From custom storefronts and Shopify Plus to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>themes, apps, migrations, performance, and integrations</span>, we handle the technical work behind your store.
+              From custom storefronts and Shopify Plus to themes, apps, migrations, performance, and integrations, we handle the technical work behind your store.
             </p>
           </div>
 
@@ -781,7 +781,7 @@ export default function HireShopifyDeveloper() {
               Start With the Right <span style={{ color: 'var(--ism-amber)' }}>Shopify Development Plan</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Choose project-based development, ongoing support, or <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>white-label Shopify delivery</span> based on how your store or agency operates.
+              Choose project-based development, ongoing support, or white-label Shopify delivery based on how your store or agency operates.
             </p>
           </div>
 
@@ -890,7 +890,7 @@ export default function HireShopifyDeveloper() {
                 <span style={{ color: 'var(--ism-amber)' }}>Shopify Development</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Know about development, cost, timelines, Shopify Plus, migrations, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>ownership and ongoing support</span>.
+                Know about development, cost, timelines, Shopify Plus, migrations, ownership and ongoing support.
               </p>
               <a href="/contact"
                 style={{
@@ -969,7 +969,7 @@ export default function HireShopifyDeveloper() {
                 Let&apos;s Build the Shopify Store <span style={{ color: 'var(--ism-amber)' }}>Your Business Needs</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you&apos;re building a new store, fixing what is not working, migrating from another platform, or adding new functionality, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we&apos;ll help you choose the right development approach</span> and get the work moving.
+                Whether you&apos;re building a new store, fixing what is not working, migrating from another platform, or adding new functionality, we&apos;ll help you choose the right development approach and get the work moving.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"

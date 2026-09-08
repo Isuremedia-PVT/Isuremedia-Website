@@ -268,7 +268,7 @@ export default function WhiteLabelPPCPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A white label PPC agency gives your team another way to deliver.{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Your agency keeps the client relationship and commercial strategy</span>{' '}
+                  Your agency keeps the client relationship and commercial strategy{' '}
                   while a specialist paid media team handles the agreed campaign work inside the client's own ad accounts, helping you add PPC to your service mix without building another department.
                 </p>
                 <a href="/contact"
@@ -313,15 +313,15 @@ export default function WhiteLabelPPCPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     With white label PPC management, the advertising account remains{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the client's property</span> and your agency stays responsible for the client relationship. We operate as the fulfillment team behind the service you sell.
+                    the client's property and your agency stays responsible for the client relationship. We operate as the fulfillment team behind the service you sell.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Campaign strategy, account management, optimization, testing, and reporting follow the agreed delivery process. Client-facing reports can use{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your agency's branding and naming conventions</span>.
+                    your agency's branding and naming conventions.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     This model shifts much of the day-to-day campaign workload to a specialist team without requiring you to build another paid media department. Communication stays{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>routed through your agency</span> unless a different arrangement is agreed in advance.
+                    routed through your agency unless a different arrangement is agreed in advance.
                   </p>
                 </div>
               </div>

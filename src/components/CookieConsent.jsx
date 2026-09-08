@@ -22,6 +22,15 @@ export default function CookieConsent() {
     if (!getConsent()) setVisible(true);
   }, []);
 
+  /* Lock page scroll while the banner is up so the visitor can't scroll
+     content behind it before making a choice. */
+  useEffect(() => {
+    if (!visible) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prevOverflow; };
+  }, [visible]);
+
   function acceptAll() {
     saveConsent({ analytics: true, preference: true, marketing: true });
     setVisible(false);
@@ -40,13 +49,22 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div
+    <>
+      {/* Blocking backdrop — sits just under the banner and swallows all
+          clicks/taps so nothing behind it (nav, links, page content) is
+          reachable until the visitor accepts or rejects cookies. */}
+      <div
+        aria-hidden="true"
+        style={{ position: 'fixed', inset: 0, zIndex: 2147483646, background: 'rgba(10,16,32,.45)' }}
+      />
+      <div
       className="cc-wrap"
       role="dialog"
+      aria-modal="true"
       aria-live="polite"
       aria-label="Cookie consent"
       style={{
-        position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 10000,
+        position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2147483647,
         padding: '20px 24px', background: 'var(--color-navy)',
         borderTop: '1px solid rgba(255,255,255,.10)', boxShadow: '0 -8px 32px rgba(0,0,0,.25)',
       }}
@@ -142,6 +160,7 @@ export default function CookieConsent() {
           .cc-toggles { grid-template-columns: 1fr 1fr !important; }
         }
       `}</style>
-    </div>
+      </div>
+    </>
   );
 }

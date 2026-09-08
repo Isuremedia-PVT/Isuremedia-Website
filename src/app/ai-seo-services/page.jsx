@@ -256,7 +256,7 @@ export default function AISEOPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia fixes that. We optimise your content, your entity signals, your structured data, and your authority so AI platforms have{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>every reason to recommend your business</span>{' '}
+                  every reason to recommend your business{' '}
                   over competitors.
                 </p>
                 <a href="/contact"
@@ -301,12 +301,12 @@ export default function AISEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     AI SEO is the practice of optimising your online presence so AI-powered search platforms can find, understand, trust, and recommend your business. AEO, Answer Engine Optimisation, is a specific discipline within that, focused on{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>structuring your content so AI systems extract it as a direct answer</span>{' '}
+                    structuring your content so AI systems extract it as a direct answer{' '}
                     to a user&apos;s question.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Traditional SEO targets keyword rankings in Google&apos;s blue-link results. AI SEO targets something different,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the answers that ChatGPT, Perplexity, Google AI Overviews, and Gemini generate</span>{' '}
+                    the answers that ChatGPT, Perplexity, Google AI Overviews, and Gemini generate{' '}
                     when someone asks a question related to your business or industry.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

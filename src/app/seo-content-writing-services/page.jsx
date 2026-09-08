@@ -249,7 +249,7 @@ export default function SEOBlogWritingPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   The problem isn&apos;t that blog content doesn&apos;t work, it&apos;s that most of it doesn&apos;t rank. ISureMedia writes SEO blog content that&apos;s{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built to rank from the start</span>.
+                  built to rank from the start.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -293,11 +293,11 @@ export default function SEOBlogWritingPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     What makes SEO blog writing distinct is the research that comes before the writing,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>search intent analysis</span> that determines structure, length, and angle.
+                    search intent analysis that determines structure, length, and angle.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     In 2026, SEO blog writing also means visibility in{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>AI search</span>, the answers ChatGPT, Perplexity, and Google AI Overviews surface for direct questions.
+                    AI search, the answers ChatGPT, Perplexity, and Google AI Overviews surface for direct questions.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A post written with proper intent analysis satisfies the specific need that caused someone to search in the first place. We write for both readers and rankings.

@@ -174,7 +174,7 @@ export default function VideoMarketingPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We edit the short-form, ad, and YouTube video content that keeps a channel performing, Reels, TikToks, Shorts, testimonials, and ad creative,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered consistently without an in-house editor</span>.
+                  delivered consistently without an in-house editor.
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -252,7 +252,7 @@ export default function VideoMarketingPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia provides the editing capacity your video content needs, short-form, long-form, and ad creative, delivered consistently and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>cut for the platform it&apos;s built for</span>.
+                  cut for the platform it&apos;s built for.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,7 +300,7 @@ export default function VideoMarketingPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Video is shared{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>12x more than text and images combined</span>, but only when it&apos;s cut and captioned for how people actually watch.
+                    12x more than text and images combined, but only when it&apos;s cut and captioned for how people actually watch.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Unedited footage sitting on a hard drive produces nothing. A structured editing pipeline is what turns raw video into a channel that keeps growing.

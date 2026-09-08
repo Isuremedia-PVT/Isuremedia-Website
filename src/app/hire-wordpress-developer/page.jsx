@@ -26,12 +26,12 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-brands fa-osi', title: 'Open Source Platform', desc: <><strong style={{ color: 'var(--color-navy)' }}>WordPress Gives You Full Ownership.</strong> WordPress is open source, so you&apos;re not locked into a proprietary platform or vendor. You control your website, content, data, and hosting instead of building your business around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>someone else&apos;s software rules</span>.</> },
+  { icon: 'fa-brands fa-osi', title: 'Open Source Platform', desc: <><strong style={{ color: 'var(--color-navy)' }}>WordPress Gives You Full Ownership.</strong> WordPress is open source, so you&apos;re not locked into a proprietary platform or vendor. You control your website, content, data, and hosting instead of building your business around someone else&apos;s software rules.</> },
   { icon: 'fa-solid fa-layer-group', title: 'Scalable Architecture', desc: <><strong style={{ color: 'var(--color-navy)' }}>Start Small. Scale Without Starting Over.</strong> A WordPress site can grow from a simple business website into a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>full ecommerce store, membership platform, or larger digital experience</span> without forcing you to rebuild from scratch.</> },
-  { icon: 'fa-solid fa-plug', title: 'Flexible Integrations', desc: <><strong style={{ color: 'var(--color-navy)' }}>Connect WordPress to Your Existing Stack.</strong> WordPress integrates with CRMs, payment platforms, email tools, analytics systems, and other business software. We build those connections around <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>how your business actually operates</span>.</> },
-  { icon: 'fa-solid fa-pen-to-square', title: 'Easy Content Management', desc: <><strong style={{ color: 'var(--color-navy)' }}>Update Your Site Without Calling a Developer.</strong> Once your site is properly built, your team can add pages, update content, publish posts, and manage products <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without touching code</span> for every small change.</> },
-  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'SEO-Friendly Foundation', desc: <><strong style={{ color: 'var(--color-navy)' }}>Build on a Platform Search Engines Can Understand.</strong> Clean architecture, proper URLs, fast load times, structured data, mobile performance, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>technical SEO give your content a stronger foundation</span> for organic search.</> },
-  { icon: 'fa-solid fa-puzzle-piece', title: 'Plugin Ecosystem', desc: <><strong style={{ color: 'var(--color-navy)' }}>Extend Your Site Without Reinventing Everything.</strong> WordPress has a massive ecosystem of plugins and integrations. When an off-the-shelf solution isn&apos;t enough, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a custom WordPress developer can build the functionality</span> your business actually needs.</> },
+  { icon: 'fa-solid fa-plug', title: 'Flexible Integrations', desc: <><strong style={{ color: 'var(--color-navy)' }}>Connect WordPress to Your Existing Stack.</strong> WordPress integrates with CRMs, payment platforms, email tools, analytics systems, and other business software. We build those connections around how your business actually operates.</> },
+  { icon: 'fa-solid fa-pen-to-square', title: 'Easy Content Management', desc: <><strong style={{ color: 'var(--color-navy)' }}>Update Your Site Without Calling a Developer.</strong> Once your site is properly built, your team can add pages, update content, publish posts, and manage products without touching code for every small change.</> },
+  { icon: 'fa-solid fa-magnifying-glass-chart', title: 'SEO-Friendly Foundation', desc: <><strong style={{ color: 'var(--color-navy)' }}>Build on a Platform Search Engines Can Understand.</strong> Clean architecture, proper URLs, fast load times, structured data, mobile performance, and technical SEO give your content a stronger foundation for organic search.</> },
+  { icon: 'fa-solid fa-puzzle-piece', title: 'Plugin Ecosystem', desc: <><strong style={{ color: 'var(--color-navy)' }}>Extend Your Site Without Reinventing Everything.</strong> WordPress has a massive ecosystem of plugins and integrations. When an off-the-shelf solution isn&apos;t enough, a custom WordPress developer can build the functionality your business actually needs.</> },
 ];
 
 const servicesTabs = [
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'Custom WordPress Website Development',
     img: '/hire/wordpress/hire word press Custom Websites.webp',
-    desc: <>Get a WordPress website built around your business, your goals and your audience, not a template forced to fit your requirements. Our custom WordPress developers build the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>architecture, front end, functionality, and content structure</span> from the ground up.</>,
+    desc: <>Get a WordPress website built around your business, your goals and your audience, not a template forced to fit your requirements. Our custom WordPress developers build the architecture, front end, functionality, and content structure from the ground up.</>,
     bullets: [
       'Custom website architecture and CMS setup',
       'Landing pages and conversion-focused page development',
@@ -62,7 +62,7 @@ const servicesData = [
   {
     num: '02', title: 'WooCommerce Development',
     img: '/hire/wordpress/WooCommerce.webp',
-    desc: <>Build a WooCommerce store around your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>products, customers, and sales process</span>. We handle custom storefronts, product structures, checkout experiences, integrations, and performance.</>,
+    desc: <>Build a WooCommerce store around your products, customers, and sales process. We handle custom storefronts, product structures, checkout experiences, integrations, and performance.</>,
     bullets: [
       'WooCommerce store setup and customization',
       'Product catalog architecture and management',
@@ -75,7 +75,7 @@ const servicesData = [
   {
     num: '03', title: 'WordPress Theme Development',
     img: '/hire/wordpress/Theme Dev.webp',
-    desc: <>Need something beyond an off-the-shelf theme? We build custom WordPress themes with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>clean architecture, responsive layouts</span>, and the flexibility your content team needs.</>,
+    desc: <>Need something beyond an off-the-shelf theme? We build custom WordPress themes with clean architecture, responsive layouts, and the flexibility your content team needs.</>,
     bullets: [
       'Custom theme development from scratch',
       'Theme customization and redesign',
@@ -88,7 +88,7 @@ const servicesData = [
   {
     num: '04', title: 'WordPress Plugin Development',
     img: '/hire/wordpress/_Plugin Dev.webp',
-    desc: <>When an existing plugin can&apos;t do what your business needs, we build custom functionality instead of <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>forcing your workflow around a generic solution</span>.</>,
+    desc: <>When an existing plugin can&apos;t do what your business needs, we build custom functionality instead of forcing your workflow around a generic solution.</>,
     bullets: [
       'Custom plugin development for specific business logic',
       'Existing plugin customization and modification',
@@ -101,7 +101,7 @@ const servicesData = [
   {
     num: '05', title: 'WordPress Migration & Upgrades',
     img: '/hire/wordpress/Migrations.webp',
-    desc: <>Moving from another CMS, replacing an outdated WordPress setup, or upgrading an existing site? We handle the technical migration while <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>protecting your content, URLs, functionality, and SEO foundations</span>.</>,
+    desc: <>Moving from another CMS, replacing an outdated WordPress setup, or upgrading an existing site? We handle the technical migration while protecting your content, URLs, functionality, and SEO foundations.</>,
     bullets: [
       'Platform-to-WordPress migrations',
       'Host-to-host migrations with zero downtime',
@@ -114,7 +114,7 @@ const servicesData = [
   {
     num: '06', title: 'WordPress Speed & Performance Optimization',
     img: '/hire/wordpress/Speed & Performance.webp',
-    desc: <>Slow websites cost attention, conversions, and potentially search visibility. We identify what&apos;s holding your site back, from <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>bloated assets and inefficient code</span> to database and hosting issues, and optimize the underlying system.</>,
+    desc: <>Slow websites cost attention, conversions, and potentially search visibility. We identify what&apos;s holding your site back, from bloated assets and inefficient code to database and hosting issues, and optimize the underlying system.</>,
     bullets: [
       'Core Web Vitals audit and optimization',
       'Page speed improvements across all pages',
@@ -127,7 +127,7 @@ const servicesData = [
   {
     num: '07', title: 'API & Third-Party Integrations',
     img: '/hire/wordpress/API & Integrations.webp',
-    desc: <>Connect WordPress with your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>CRM, ERP, payment platform, marketing tools</span>, or custom application through secure APIs and integrations designed around your existing workflow.</>,
+    desc: <>Connect WordPress with your CRM, ERP, payment platform, marketing tools, or custom application through secure APIs and integrations designed around your existing workflow.</>,
     bullets: [
       'CRM integrations (HubSpot, Zoho, Salesforce)',
       'Marketing platform connections (Mailchimp, Klaviyo, ActiveCampaign)',
@@ -140,7 +140,7 @@ const servicesData = [
   {
     num: '08', title: 'Ongoing WordPress Maintenance',
     img: '/hire/wordpress/AI-Ready.webp',
-    desc: <>Keep your site secure, updated, and functioning properly after launch with ongoing maintenance, backups, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>performance checks, security monitoring</span>, and technical support.</>,
+    desc: <>Keep your site secure, updated, and functioning properly after launch with ongoing maintenance, backups, performance checks, security monitoring, and technical support.</>,
     bullets: [
       'Core, theme, and plugin updates',
       'Regular backups and disaster recovery',
@@ -162,17 +162,17 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Every Developer Is In-House', desc: <>Your project isn&apos;t passed to a freelancer or subcontractor. The developer working on your site is part of the Isuremedia team and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>accountable for the work</span> from start to finish.</> },
-  { icon: 'fa-solid fa-file-lines', title: 'Everything Gets Documented', desc: <>Your builds, customizations, integrations, and technical decisions are documented so the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>next developer knows exactly what was done</span> and why.</> },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Work month to month when you need ongoing support. No unnecessary <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>long-term commitments, exit penalties</span>, or pressure to stay.</> },
-  { icon: 'fa-solid fa-code', title: 'Broad WordPress Expertise', desc: <>Our developers can work across Gutenberg, Elementor, Divi, Bricks, Oxygen, WooCommerce, and custom WordPress environments, so <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>you&apos;re not limited to one setup</span>.</> },
+  { icon: 'fa-solid fa-building', title: 'Every Developer Is In-House', desc: <>Your project isn&apos;t passed to a freelancer or subcontractor. The developer working on your site is part of the Isuremedia team and accountable for the work from start to finish.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Everything Gets Documented', desc: <>Your builds, customizations, integrations, and technical decisions are documented so the next developer knows exactly what was done and why.</> },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Work month to month when you need ongoing support. No unnecessary long-term commitments, exit penalties, or pressure to stay.</> },
+  { icon: 'fa-solid fa-code', title: 'Broad WordPress Expertise', desc: <>Our developers can work across Gutenberg, Elementor, Divi, Bricks, Oxygen, WooCommerce, and custom WordPress environments, so you&apos;re not limited to one setup.</> },
 ];
 
 const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific WordPress job to get done',
-    desc: <>You have a clear requirement. A new build, a WooCommerce store, a migration, a site that needs fixing properly. The scope is agreed before work starts, you <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>know the cost upfront</span>, and one developer sees it through from start to finish.</>,
+    desc: <>You have a clear requirement. A new build, a WooCommerce store, a migration, a site that needs fixing properly. The scope is agreed before work starts, you know the cost upfront, and one developer sees it through from start to finish.</>,
     bullets: [
       'Scoped and priced before any work begins',
       'One dedicated developer on your project throughout',
@@ -183,7 +183,7 @@ const engagementModels = [
   {
     title: 'Monthly Retainer',
     tag: 'For businesses that need ongoing WordPress support or development',
-    desc: <>Your site needs regular attention. New features, updates, performance improvements, fixes, or continuous development work. A developer works on your site every month, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>knows it inside out</span>, and is there when something needs doing.</>,
+    desc: <>Your site needs regular attention. New features, updates, performance improvements, fixes, or continuous development work. A developer works on your site every month, knows it inside out, and is there when something needs doing.</>,
     bullets: [
       'Dedicated developer familiar with your site',
       'Covers updates, new features, fixes, and improvements',
@@ -194,7 +194,7 @@ const engagementModels = [
   {
     title: 'White Label',
     tag: 'For agencies delivering WordPress to their own clients',
-    desc: <>You handle the client relationship. Isuremedia handles the WordPress work behind the scenes under your brand. Your clients never know we exist and nothing we deliver <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>carries any Isuremedia footprint</span>.</>,
+    desc: <>You handle the client relationship. Isuremedia handles the WordPress work behind the scenes under your brand. Your clients never know we exist and nothing we deliver carries any Isuremedia footprint.</>,
     bullets: [
       'All work delivered under your agency name',
       'No Isuremedia branding on any deliverable',
@@ -205,11 +205,11 @@ const engagementModels = [
 ];
 
 const faqs = [
-  { q: 'What does a WordPress developer do?', a: <>A WordPress developer builds, customizes, and maintains WordPress websites. Depending on the project, that can include <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>custom themes, plugins, WooCommerce stores</span>, API integrations, performance optimization, security fixes, and ongoing maintenance.</> },
+  { q: 'What does a WordPress developer do?', a: <>A WordPress developer builds, customizes, and maintains WordPress websites. Depending on the project, that can include custom themes, plugins, WooCommerce stores, API integrations, performance optimization, security fixes, and ongoing maintenance.</> },
   { q: 'How much does it cost to hire a WordPress developer?', a: "The cost of hiring a WordPress developer depends on the project's scope, technical requirements, and whether you need a one-time build or ongoing support. A simple website or specific fix will generally require less development time than a custom WooCommerce store, plugin, or API integration. We scope the work before development begins so you know what you're paying for." },
-  { q: 'Can I hire a WordPress developer for an existing website?', a: <>Yes. You can hire a WordPress developer to improve or maintain an existing site as well as build a new one. We can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>troubleshoot bugs, redesign sections, improve performance</span>, add functionality, integrate third-party tools, or take over ongoing maintenance.</> },
+  { q: 'Can I hire a WordPress developer for an existing website?', a: <>Yes. You can hire a WordPress developer to improve or maintain an existing site as well as build a new one. We can troubleshoot bugs, redesign sections, improve performance, add functionality, integrate third-party tools, or take over ongoing maintenance.</> },
   { q: 'Can a WordPress developer build a custom website from scratch?', a: 'Yes. A custom WordPress developer can build the site\'s architecture, theme, templates, functionality, and integrations around your business requirements rather than adapting an off-the-shelf theme.' },
-  { q: 'Do you build WooCommerce websites?', a: <>Yes. We build and customize WooCommerce stores, including <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>product pages, storefronts, checkout flows</span>, custom functionality, third-party integrations, and performance optimization.</> },
+  { q: 'Do you build WooCommerce websites?', a: <>Yes. We build and customize WooCommerce stores, including product pages, storefronts, checkout flows, custom functionality, third-party integrations, and performance optimization.</> },
 ];
 
 
@@ -241,7 +241,7 @@ export default function HireWordPressDeveloper() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get a custom WordPress site built for speed, security, SEO and conversions. From <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>WooCommerce and plugin development</span> to API integrations and ongoing support.
+            Get a custom WordPress site built for speed, security, SEO and conversions. From WooCommerce and plugin development to API integrations and ongoing support.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -294,10 +294,10 @@ export default function HireWordPressDeveloper() {
                 Custom WordPress Development From <span style={{ color: 'var(--ism-amber)' }}>Strategy to Support</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                WordPress development covers far more than putting pages together. You may need a custom website, a WooCommerce store, plugin development, API integrations, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>performance optimization or ongoing technical support</span>.
+                WordPress development covers far more than putting pages together. You may need a custom website, a WooCommerce store, plugin development, API integrations, performance optimization or ongoing technical support.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                The right WordPress developer should understand how those pieces work together and how they affect your site&apos;s <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>speed, security, SEO and ability to generate business</span>. That&apos;s the standard our WordPress development team works to.
+                The right WordPress developer should understand how those pieces work together and how they affect your site&apos;s speed, security, SEO and ability to generate business. That&apos;s the standard our WordPress development team works to.
               </p>
               
               {/* 2-Column List */}
@@ -427,7 +427,7 @@ export default function HireWordPressDeveloper() {
               Full Range of WordPress <span style={{ color: 'var(--ism-amber)' }}>Development Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From custom websites and WooCommerce stores to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>plugins, APIs, migrations, and performance optimization</span>, we handle the technical work behind your WordPress site.
+              From custom websites and WooCommerce stores to plugins, APIs, migrations, and performance optimization, we handle the technical work behind your WordPress site.
             </p>
           </div>
 
@@ -770,7 +770,7 @@ export default function HireWordPressDeveloper() {
               Start with the right scope <span style={{ color: 'var(--ism-amber)' }}>for your goals.</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated WordPress developer</span> and transparent reporting.
+              Every plan includes a dedicated WordPress developer and transparent reporting.
             </p>
           </div>
 
@@ -879,7 +879,7 @@ export default function HireWordPressDeveloper() {
                 <span style={{ color: 'var(--ism-amber)' }}>WordPress</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Honest answers before you decide. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No spin, no buzzwords</span>.
+                Honest answers before you decide. No spin, no buzzwords.
               </p>
               <a href="/contact"
                 style={{
@@ -958,7 +958,7 @@ export default function HireWordPressDeveloper() {
                 Get a WordPress Developer Who Can <span style={{ color: 'var(--ism-amber)' }}>Actually Move Your Project Forward</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you&apos;re starting from scratch, fixing an existing site, or adding functionality your current setup can&apos;t handle, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>we&apos;ll help you find the right development approach</span> and get the work moving.
+                Whether you&apos;re starting from scratch, fixing an existing site, or adding functionality your current setup can&apos;t handle, we&apos;ll help you find the right development approach and get the work moving.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"

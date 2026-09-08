@@ -170,7 +170,7 @@ export default function BusinessWebsitesPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design and build custom, conversion-focused business websites on{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>whatever platform actually fits your needs</span>{' '}
+                  whatever platform actually fits your needs{' '}
                  , not whichever one we happen to push on everyone.
                 </p>
 
@@ -249,7 +249,7 @@ export default function BusinessWebsitesPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Most business websites fail to convert because they were built without strategy, a template filled in, not a site{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>designed around how customers actually decide</span>.
+                  designed around how customers actually decide.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -297,7 +297,7 @@ export default function BusinessWebsitesPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Beyond 3 seconds of load time,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>visitor abandonment rises sharply</span>, speed isn&apos;t a nice-to-have, it&apos;s the entry fee.
+                    visitor abandonment rises sharply, speed isn&apos;t a nice-to-have, it&apos;s the entry fee.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A proper business website means design, structure, and platform choices working together, not fighting each other.

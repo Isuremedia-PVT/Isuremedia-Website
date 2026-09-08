@@ -264,7 +264,7 @@ export default function N8nPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   As an open-source workflow automation platform, n8n can be{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>, extended with custom JavaScript or Python code nodes, and integrated with any API, no integration marketplace dependency required.
+                  self-hosted on your own infrastructure, extended with custom JavaScript or Python code nodes, and integrated with any API, no integration marketplace dependency required.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -308,12 +308,12 @@ export default function N8nPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     n8n is an open-source workflow automation platform that can be{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>self-hosted on your own infrastructure</span>{' '}
+                    self-hosted on your own infrastructure{' '}
                    , your data never has to leave your servers.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Where SaaS automation tools charge per task and cap what you can build, n8n can be{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>extended with custom JavaScript or Python code nodes</span>{' '}
+                    extended with custom JavaScript or Python code nodes{' '}
                     for logic that off-the-shelf platforms simply cannot handle.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

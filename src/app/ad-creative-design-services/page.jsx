@@ -174,7 +174,7 @@ export default function AdCreativeDesignPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design performance ad creative for Meta, Google, LinkedIn, and other paid channels, static images, carousel sets, video thumbnails, display banners, and UGC-style visuals,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>built around messaging frameworks that drive conversions</span>{' '}
+                  built around messaging frameworks that drive conversions{' '}
                   and refreshed frequently enough to prevent creative fatigue from killing your campaign performance.
                 </p>
 
@@ -260,7 +260,7 @@ export default function AdCreativeDesignPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia produces ad creative that is built for performance, designed around the specific objective, the specific audience, and the specific platform, and refreshed at the cadence your campaigns need to{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>keep ROAS climbing rather than decaying</span>.
+                  keep ROAS climbing rather than decaying.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -304,7 +304,7 @@ export default function AdCreativeDesignPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Meta&apos;s Andromeda ranking system gives the algorithm significantly more granular signal on creative-level performance than its predecessor. When a creative performs well, the algorithm concentrates delivery on it, and{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a creative performing well at week two is often fatigued by week five</span>.
+                    a creative performing well at week two is often fatigued by week five.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     After just four repeated exposures to the same creative, the likelihood of conversion drops by approximately 45%.{' '}

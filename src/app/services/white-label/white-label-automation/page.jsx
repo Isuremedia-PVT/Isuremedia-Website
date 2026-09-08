@@ -268,7 +268,7 @@ export default function WhiteLabelAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   The constraint is not the platform. It is the support load. ISureMedia handles{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>GHL client support under your brand</span>, your clients submit requests to your support channel, we respond, resolve, and deliver at the standard your clients expect. You get the margin. We handle the platform work.
+                  GHL client support under your brand, your clients submit requests to your support channel, we respond, resolve, and deliver at the standard your clients expect. You get the margin. We handle the platform work.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -312,11 +312,11 @@ export default function WhiteLabelAutomationPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     White-label GHL support means your agency keeps selling and owning the client relationship while ISureMedia becomes{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the platform team working behind your support channel</span>.
+                    the platform team working behind your support channel.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your clients submit a request the same way they always have. We configure the sub-account, build the automation, fix the calendar, or resolve the delivery issue,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>under your agency&apos;s name, at the standard your clients expect</span>.
+                    under your agency&apos;s name, at the standard your clients expect.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Agencies reselling GHL-powered platforms keep 70 to 85% margin on the platform fee. The constraint has never been the margin, it is the support load. Removing that constraint is the entire point of the partnership.

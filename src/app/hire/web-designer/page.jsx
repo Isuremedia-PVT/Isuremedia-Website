@@ -26,12 +26,12 @@ const proofStats = [
 ];
 
 const whyWPCards = [
-  { icon: 'fa-solid fa-palette', title: 'First Impression Impact', desc: <>Users <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>decide in milliseconds</span>. Good design builds trust, credibility, and authority. Bad design loses customers before they read a word.</> },
-  { icon: 'fa-solid fa-mouse', title: 'User Experience Drives Conversion', desc: <>Design is not decoration. It is user flow, clarity, and friction reduction. Good design <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>makes actions obvious</span> and simple.</> },
+  { icon: 'fa-solid fa-palette', title: 'First Impression Impact', desc: <>Users decide in milliseconds. Good design builds trust, credibility, and authority. Bad design loses customers before they read a word.</> },
+  { icon: 'fa-solid fa-mouse', title: 'User Experience Drives Conversion', desc: <>Design is not decoration. It is user flow, clarity, and friction reduction. Good design makes actions obvious and simple.</> },
   { icon: 'fa-solid fa-mobile', title: 'Responsive Design is Mandatory', desc: <>Half your visitors are on mobile. Design must work <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>at 320px and 1440px</span>. A responsive designer knows how to design for every viewport.</> },
-  { icon: 'fa-solid fa-bolt', title: 'Brand System Consistency', desc: <>Design is not random. Colors, typography, spacing, and components follow a system. Consistency <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>builds recognition and professionalism</span>.</> },
-  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Goals', desc: <>Every design decision should serve a business goal. CTA placement, visual hierarchy, color psychology, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>all connected to conversion</span>.</> },
-  { icon: 'fa-solid fa-brain', title: 'Design Psychology and Behavior', desc: <>Designers understand how users scan pages, where eyes go, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>what makes people act</span>. This knowledge drives results.</> },
+  { icon: 'fa-solid fa-bolt', title: 'Brand System Consistency', desc: <>Design is not random. Colors, typography, spacing, and components follow a system. Consistency builds recognition and professionalism.</> },
+  { icon: 'fa-solid fa-chart-line', title: 'Design Supports Goals', desc: <>Every design decision should serve a business goal. CTA placement, visual hierarchy, color psychology, all connected to conversion.</> },
+  { icon: 'fa-solid fa-brain', title: 'Design Psychology and Behavior', desc: <>Designers understand how users scan pages, where eyes go, and what makes people act. This knowledge drives results.</> },
 ];
 
 const servicesTabs = [
@@ -49,7 +49,7 @@ const servicesData = [
   {
     num: '01', title: 'Custom Website Design',
     img: '/hire/webdesign/hire web designer custom_.webp',
-    desc: <>Get a website designed specifically for your business, your audience, and what you need the site to do. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Not a template</span> with your logo dropped in, a proper design built around your goals and the way your visitors think.</>,
+    desc: <>Get a website designed specifically for your business, your audience, and what you need the site to do. Not a template with your logo dropped in, a proper design built around your goals and the way your visitors think.</>,
     bullets: [
       'Custom page design for homepage, service pages, and about pages',
       'Conversion-focused layout and information architecture',
@@ -62,7 +62,7 @@ const servicesData = [
   {
     num: '02', title: 'UX Design and Wireframing',
     img: '/hire/webdesign/h UX Design.webp',
-    desc: <>Before any visual design starts, the structure needs to be right. Get wireframes and UX flows that map how visitors move through your site, where they drop off, and what changes make them <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stay and convert</span>.</>,
+    desc: <>Before any visual design starts, the structure needs to be right. Get wireframes and UX flows that map how visitors move through your site, where they drop off, and what changes make them stay and convert.</>,
     bullets: [
       'User flow mapping and journey documentation',
       'Low-fidelity wireframes for all key pages',
@@ -75,7 +75,7 @@ const servicesData = [
   {
     num: '03', title: 'Landing Page Design',
     img: '/hire/webdesign/Landing Pages.webp',
-    desc: <>A landing page that does not convert is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>an expensive piece of content</span>. Get landing pages designed specifically around the one action you want visitors to take, with every visual decision made to support that outcome.</>,
+    desc: <>A landing page that does not convert is an expensive piece of content. Get landing pages designed specifically around the one action you want visitors to take, with every visual decision made to support that outcome.</>,
     bullets: [
       'Single-goal landing page design for paid traffic and campaigns',
       'CTA placement and visual hierarchy optimization',
@@ -88,7 +88,7 @@ const servicesData = [
   {
     num: '04', title: 'WordPress Web Design',
     img: '/hire/webdesign/WordPress.webp',
-    desc: <>Get a WordPress site designed properly from the inside out. Not just a theme that looks reasonable, a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>purpose-built design</span> that works the way your business needs it to and is easy for your team to manage after launch.</>,
+    desc: <>Get a WordPress site designed properly from the inside out. Not just a theme that looks reasonable, a purpose-built design that works the way your business needs it to and is easy for your team to manage after launch.</>,
     bullets: [
       'Custom WordPress theme design and implementation',
       'Page builder design (Elementor, Divi, Bricks, Gutenberg)',
@@ -101,7 +101,7 @@ const servicesData = [
   {
     num: '05', title: 'Shopify Store Design',
     img: '/hire/webdesign/Shopify.webp',
-    desc: <>Get a Shopify store designed to sell. A store that looks polished, loads fast, and makes the path from product discovery to checkout <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>as frictionless as possible</span> for the customer.</>,
+    desc: <>Get a Shopify store designed to sell. A store that looks polished, loads fast, and makes the path from product discovery to checkout as frictionless as possible for the customer.</>,
     bullets: [
       'Custom Shopify theme design and Online Store 2.0 builds',
       'Product page and collection page design',
@@ -114,7 +114,7 @@ const servicesData = [
   {
     num: '06', title: 'Webflow Design and Development',
     img: '/hire/webdesign/Webflow.webp',
-    desc: <>Get a Webflow site that combines design freedom with clean, fast output. For businesses that want a visually distinctive site without the constraints of a traditional CMS, built and maintained <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without writing code</span>.</>,
+    desc: <>Get a Webflow site that combines design freedom with clean, fast output. For businesses that want a visually distinctive site without the constraints of a traditional CMS, built and maintained without writing code.</>,
     bullets: [
       'Custom Webflow site design and build',
       'Responsive layouts with Webflow interactions and animations',
@@ -127,7 +127,7 @@ const servicesData = [
   {
     num: '07', title: 'Brand and UI Design Systems',
     img: '/hire/webdesign/Brand Systems.webp',
-    desc: <>When every touchpoint looks like it belongs to the same business, visitors remember you. Get a consistent visual system that covers your website, ads, emails, and social media, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>built once and applied everywhere</span>.</>,
+    desc: <>When every touchpoint looks like it belongs to the same business, visitors remember you. Get a consistent visual system that covers your website, ads, emails, and social media, built once and applied everywhere.</>,
     bullets: [
       'Visual identity application across digital channels',
       'UI component and design system documentation',
@@ -140,7 +140,7 @@ const servicesData = [
   {
     num: '08', title: 'Conversion Rate Optimization Design',
     img: '/hire/webdesign/Conversion CRO.webp',
-    desc: <>Sometimes the problem is not traffic. It is the design of what the traffic lands on. Get a design audit and targeted improvements to the pages that matter most, focused on the changes that <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>move conversion numbers</span>.</>,
+    desc: <>Sometimes the problem is not traffic. It is the design of what the traffic lands on. Get a design audit and targeted improvements to the pages that matter most, focused on the changes that move conversion numbers.</>,
     bullets: [
       'Heatmap and session recording analysis (Hotjar, Microsoft Clarity)',
       'CTA placement, copy, and design review',
@@ -162,17 +162,17 @@ const techCategories = [
 ];
 
 const whyISMCards = [
-  { icon: 'fa-solid fa-building', title: 'Every Designer Is In-House', desc: <>Your project <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never gets handed off</span> to a freelancer or outsourced to another studio. The designer working on your site is part of the ISureMedia team, accountable for the work from brief to delivery.</> },
-  { icon: 'fa-solid fa-file-lines', title: 'Design That Thinks Commercially', desc: <>ISureMedia&#39;s designers are not just visual creatives. They understand conversion, user behaviour, and what makes visitors take action. Every design decision is made with your <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>business outcome in mind</span>, not just how it looks.</> },
-  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Engagements run month to month and you can <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stop at any time</span>. No penalties, no notice periods. The work continues because it is delivering what your business needs, not because you are tied to a contract.</> },
-  { icon: 'fa-solid fa-code', title: 'Multi-Platform Capability', desc: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Whatever platform your business is on, the team knows it and can design and build to its full capability <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>without a handoff</span> to a separate developer.</> },
+  { icon: 'fa-solid fa-building', title: 'Every Designer Is In-House', desc: <>Your project never gets handed off to a freelancer or outsourced to another studio. The designer working on your site is part of the ISureMedia team, accountable for the work from brief to delivery.</> },
+  { icon: 'fa-solid fa-file-lines', title: 'Design That Thinks Commercially', desc: <>ISureMedia&#39;s designers are not just visual creatives. They understand conversion, user behaviour, and what makes visitors take action. Every design decision is made with your business outcome in mind, not just how it looks.</> },
+  { icon: 'fa-solid fa-handshake', title: 'No Long-Term Contracts', desc: <>Engagements run month to month and you can stop at any time. No penalties, no notice periods. The work continues because it is delivering what your business needs, not because you are tied to a contract.</> },
+  { icon: 'fa-solid fa-code', title: 'Multi-Platform Capability', desc: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Whatever platform your business is on, the team knows it and can design and build to its full capability without a handoff to a separate developer.</> },
 ];
 
 const engagementModels = [
   {
     title: 'Project Based',
     tag: 'For businesses with a specific design job to get done',
-    desc: <>You have a clear scope. A new website, a landing page, a Shopify store design, or a full UX overhaul. The project is <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scoped and priced before work starts</span>, one designer owns it from wireframe to handoff, and you get everything delivered to a fixed timeline.</>,
+    desc: <>You have a clear scope. A new website, a landing page, a Shopify store design, or a full UX overhaul. The project is scoped and priced before work starts, one designer owns it from wireframe to handoff, and you get everything delivered to a fixed timeline.</>,
     bullets: [
       'Scoped and priced before any work begins',
       'One dedicated designer on your project throughout',
@@ -183,7 +183,7 @@ const engagementModels = [
   {
     title: 'Monthly Retainer',
     tag: 'For businesses that need ongoing design support',
-    desc: <>Your business keeps evolving and your design needs to keep up. New pages, campaign assets, landing pages, ad creatives, email templates, and ongoing improvements. A dedicated designer works on your brand every month and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>stays familiar with your visual identity</span>.</>,
+    desc: <>Your business keeps evolving and your design needs to keep up. New pages, campaign assets, landing pages, ad creatives, email templates, and ongoing improvements. A dedicated designer works on your brand every month and stays familiar with your visual identity.</>,
     bullets: [
       'Dedicated designer familiar with your brand',
       'Covers new pages, assets, and ongoing improvements',
@@ -194,7 +194,7 @@ const engagementModels = [
   {
     title: 'White Label',
     tag: 'For agencies delivering design to their own clients',
-    desc: <>You handle the client relationship. ISureMedia handles the design work behind the scenes under your agency brand. Your clients <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never know we exist</span> and everything delivered carries your name, not ours.</>,
+    desc: <>You handle the client relationship. ISureMedia handles the design work behind the scenes under your agency brand. Your clients never know we exist and everything delivered carries your name, not ours.</>,
     bullets: [
       'All work delivered under your agency name',
       'No ISureMedia branding on any deliverable',
@@ -206,13 +206,13 @@ const engagementModels = [
 
 const faqs = [
   { q: 'How quickly can a web designer start on my project?', a: <>Most projects are up and running <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>within 48 hours</span> of the onboarding call. Once you share your brief and we agree on scope, the designer collects your brand assets and starts work quickly. There is no long waiting period between saying yes and seeing the first draft.</> },
-  { q: 'Do you work white label for agencies?', a: <>Yes. Everything ISureMedia produces <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>goes out under your name</span>. No ISureMedia branding on any file, no contact with your clients, and nothing on any deliverable that suggests the work came from anywhere other than you.</> },
-  { q: 'Is there a long term contract?', a: <>No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>no lock-in of any kind</span>.</> },
-  { q: 'Who owns the design files and assets once the work is delivered?', a: <>You do. Every Figma file, every exported asset, and every component produced during the engagement <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>belongs to you</span> from the moment it is delivered. There are no licensing conditions or usage restrictions on work ISureMedia creates for you.</> },
-  { q: 'Do you design only, or do you also build the website?', a: <>Both options are available. ISureMedia can deliver Figma design files for your own developer to build, or take the project through to a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>fully built and launched</span> site on WordPress, Shopify, Webflow, or GoHighLevel. The scope is agreed at the start so there are no surprises.</> },
-  { q: 'What platforms do your web designers work with?', a: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Design is done in Figma. Builds are <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>done natively in the platform</span> your business uses.</> },
-  { q: 'How many revision rounds are included?', a: <>Revision rounds are agreed as part of the project scope before work starts. Typically <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>two structured rounds</span> per major design phase. Feedback is collected in Figma or via a shared review document so nothing gets lost in email threads.</> },
-  { q: 'Can you redesign an existing site or only build new ones?', a: <>Both. A large part of ISureMedia&#39;s design work is improving sites that already exist. If your current site is not converting, looks outdated, or does not reflect the business properly, that is a well-defined design problem with <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>a clear solution</span>.</> },
+  { q: 'Do you work white label for agencies?', a: <>Yes. Everything ISureMedia produces goes out under your name. No ISureMedia branding on any file, no contact with your clients, and nothing on any deliverable that suggests the work came from anywhere other than you.</> },
+  { q: 'Is there a long term contract?', a: <>No. Every engagement runs month to month and you can stop at any time. No penalties, no notice periods, no lock-in of any kind.</> },
+  { q: 'Who owns the design files and assets once the work is delivered?', a: <>You do. Every Figma file, every exported asset, and every component produced during the engagement belongs to you from the moment it is delivered. There are no licensing conditions or usage restrictions on work ISureMedia creates for you.</> },
+  { q: 'Do you design only, or do you also build the website?', a: <>Both options are available. ISureMedia can deliver Figma design files for your own developer to build, or take the project through to a fully built and launched site on WordPress, Shopify, Webflow, or GoHighLevel. The scope is agreed at the start so there are no surprises.</> },
+  { q: 'What platforms do your web designers work with?', a: <>ISureMedia&#39;s designers work across WordPress, Shopify, Webflow, and GoHighLevel. Design is done in Figma. Builds are done natively in the platform your business uses.</> },
+  { q: 'How many revision rounds are included?', a: <>Revision rounds are agreed as part of the project scope before work starts. Typically two structured rounds per major design phase. Feedback is collected in Figma or via a shared review document so nothing gets lost in email threads.</> },
+  { q: 'Can you redesign an existing site or only build new ones?', a: <>Both. A large part of ISureMedia&#39;s design work is improving sites that already exist. If your current site is not converting, looks outdated, or does not reflect the business properly, that is a well-defined design problem with a clear solution.</> },
 ];
 
 
@@ -244,7 +244,7 @@ export default function HireWebDesigner() {
 
           {/* Subheading */}
           <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 720, margin: '0 auto 32px' }}>
-            Get custom <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>web design that converts</span>, covering everything from brand-aligned design and user experience to responsive sites, landing pages, and conversion-optimized layouts.
+            Get custom web design that converts, covering everything from brand-aligned design and user experience to responsive sites, landing pages, and conversion-optimized layouts.
           </p>
 
           {/* Trust Chips - Centered */}
@@ -297,10 +297,10 @@ export default function HireWebDesigner() {
                 Professional Web Design Built to <span style={{ color: 'var(--ism-amber)' }}>Convert, Not Just Impress</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 20 }}>
-                Web design covers a wide range of specialized work, from UX research and wireframing to high-fidelity mockups, responsive builds, landing page design, brand system application, and front-end implementation across platforms like WordPress, Shopify, and Webflow. A skilled web designer brings the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>creative depth and commercial thinking</span> to handle all of it, not just the visual surface.
+                Web design covers a wide range of specialized work, from UX research and wireframing to high-fidelity mockups, responsive builds, landing page design, brand system application, and front-end implementation across platforms like WordPress, Shopify, and Webflow. A skilled web designer brings the creative depth and commercial thinking to handle all of it, not just the visual surface.
               </p>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-                Getting it right means working with someone who understands how visitors move through a site, what makes them trust a business enough to take action, and how design decisions <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>directly affect conversions</span>, bounce rates, and the first impression your brand makes. That is the standard ISureMedia's web designers work to.
+                Getting it right means working with someone who understands how visitors move through a site, what makes them trust a business enough to take action, and how design decisions directly affect conversions, bounce rates, and the first impression your brand makes. That is the standard ISureMedia's web designers work to.
               </p>
               
               {/* 2-Column List */}
@@ -427,7 +427,7 @@ export default function HireWebDesigner() {
               The Full Range of Web <span style={{ color: 'var(--ism-amber)' }}>Design Services</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-              From custom website design and UX research to landing pages, brand systems, responsive builds, and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>conversion rate optimization</span> across WordPress, Shopify, and Webflow.
+              From custom website design and UX research to landing pages, brand systems, responsive builds, and conversion rate optimization across WordPress, Shopify, and Webflow.
             </p>
           </div>
 
@@ -770,7 +770,7 @@ export default function HireWebDesigner() {
               Start with the right scope <span style={{ color: 'var(--ism-amber)' }}>for your goals.</span>
             </h2>
             <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-              Every plan includes a dedicated WordPress developer and <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>transparent reporting</span>.
+              Every plan includes a dedicated WordPress developer and transparent reporting.
             </p>
           </div>
 
@@ -879,7 +879,7 @@ export default function HireWebDesigner() {
                 <span style={{ color: 'var(--ism-amber)' }}>WordPress</span>
               </h2>
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
-                Honest answers before you decide. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>No spin, no buzzwords</span>.
+                Honest answers before you decide. No spin, no buzzwords.
               </p>
               <a href="/contact"
                 style={{
@@ -958,7 +958,7 @@ export default function HireWebDesigner() {
                 Get a Website That Converts Visitors <span style={{ color: 'var(--ism-amber)' }}>Into Customers</span>
               </h2>
               <p className="wp-end-cta-para" style={{ fontFamily: I, fontSize: 16, color: 'rgba(255,255,255,.85)', lineHeight: 1.78, marginBottom: 36, maxWidth: 640 }}>
-                Whether you need a brand new website, a redesign that actually works, or fixing one that is not bringing in leads, the next step is clear. Send your requirements and get a free proposal, or talk to a web designer about your goals and how a well-designed site <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>turns visitors into customers</span>.
+                Whether you need a brand new website, a redesign that actually works, or fixing one that is not bringing in leads, the next step is clear. Send your requirements and get a free proposal, or talk to a web designer about your goals and how a well-designed site turns visitors into customers.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
                 <a href="/contact"

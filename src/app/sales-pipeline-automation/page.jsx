@@ -256,7 +256,7 @@ export default function SalesPipelineAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   We build automation directly into your CRM that moves deals forward,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>creates the next task automatically</span>, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one personâ€™s memory.
+                  creates the next task automatically, and fires follow-up sequences tied to exactly where a deal sits, so momentum does not depend on any one personâ€™s memory.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,11 +300,11 @@ export default function SalesPipelineAutomationPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Sales pipeline automation connects the stages in your CRM to the actions that should happen the moment a deal moves.{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>Stage changes trigger tasks, reminders, and follow-up sequences automatically</span>, with nobody needing to remember to make it happen.
+                    Stage changes trigger tasks, reminders, and follow-up sequences automatically, with nobody needing to remember to make it happen.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Deals that sit untouched get flagged before they go cold,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>no more opportunities quietly dying at the bottom of a repâ€™s task list</span>. A stalled deal gets surfaced to the rep and their manager the moment it crosses your threshold.
+                    no more opportunities quietly dying at the bottom of a repâ€™s task list. A stalled deal gets surfaced to the rep and their manager the moment it crosses your threshold.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We design and build the automations that keep every deal moving, stage triggers, reminders, follow-up sequencing, and forecasting, so your pipeline reflects what is actually happening, not what someone remembered to log.

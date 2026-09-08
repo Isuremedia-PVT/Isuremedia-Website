@@ -173,7 +173,7 @@ export default function GraphicDesignPage() {
 
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We produce the graphics, visuals, and marketing design assets your business needs, social graphics, decks, email templates, and more,{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered on time, on brand</span>{' '}
+                  delivered on time, on brand{' '}
                   and at the quality your marketing needs to work.
                 </p>
 
@@ -252,7 +252,7 @@ export default function GraphicDesignPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia provides the design output your marketing operation needs, consistent, on-brand, and{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>delivered at the speed your campaigns require</span>.
+                  delivered at the speed your campaigns require.
                 </p>
                 <a href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -300,7 +300,7 @@ export default function GraphicDesignPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Inconsistent design signals a business{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>not in control of its own presentation</span>, prospects notice it even when they can&apos;t name it.
+                    not in control of its own presentation, prospects notice it even when they can&apos;t name it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Design quality is a signal. It tells prospects what the work they&apos;ll receive looks like, before they&apos;ve seen any of it.

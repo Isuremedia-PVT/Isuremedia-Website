@@ -167,7 +167,7 @@ export default function ClickFunnelsPage() {
                 </h1>
                 <p style={{ fontFamily: I, fontSize: 'clamp(15px,1.2vw,17px)', color: 'var(--color-text-muted)', lineHeight: 1.78, maxWidth: 520, marginBottom: 36 }}>
                   We design, build, and optimise funnels and pages inside ClickFunnels, from opt-in pages and sales pages to{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>full multi-step funnel sequences</span>{' '}
+                  full multi-step funnel sequences{' '}
                  , so your account is actually producing the results the platform was built to deliver.
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
@@ -232,7 +232,7 @@ export default function ClickFunnelsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Most ClickFunnels users build funnels that{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>look right but underperform</span>{' '}
+                  look right but underperform{' '}
                  , because the copy is not matched to the audience, the structure does not follow conversion logic, or the automation sequences are incomplete. The platform is capable. The build is the problem.
                 </p>
                 <a href="/contact"
@@ -277,7 +277,7 @@ export default function ClickFunnelsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     ClickFunnels is a funnel builder, not just a page builder. Every build we do inside the platform is designed as{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a complete connected sequence</span>{' '}
+                    a complete connected sequence{' '}
                    , from the first page a visitor lands on through to purchase, upsell, and confirmation.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>

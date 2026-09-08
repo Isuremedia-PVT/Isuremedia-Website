@@ -262,7 +262,7 @@ export default function WhiteLabelAutomationPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Your clients submit requests through the channel you choose. We can handle{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>sub-account configuration, workflow changes, funnel updates, calendar settings, integrations, and troubleshooting</span> according to your agency's process, designed for agencies that want to support more GHL clients without making every new request another internal task.
+                  sub-account configuration, workflow changes, funnel updates, calendar settings, integrations, and troubleshooting according to your agency's process, designed for agencies that want to support more GHL clients without making every new request another internal task.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -306,11 +306,11 @@ export default function WhiteLabelAutomationPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Your agency keeps{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>ownership of the client relationship</span> while a specialist team handles setup, changes, troubleshooting, and ongoing platform support.
+                    ownership of the client relationship while a specialist team handles setup, changes, troubleshooting, and ongoing platform support.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     This model is designed for agencies that want to support more GHL clients{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>without making every new request another internal task</span> for the same account managers or specialists.
+                    without making every new request another internal task for the same account managers or specialists.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     The work stays behind your agency's brand, with the delivery process, communication, and support scope defined with you.

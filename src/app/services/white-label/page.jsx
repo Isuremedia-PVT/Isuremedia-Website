@@ -101,7 +101,7 @@ const TIMELINE_STEPS = [
 ];
 
 const DIFFERENTIATORS = [
-  { dark: true,  icon: 'fa-solid fa-eye-slash',      title: 'Your Clients Never Discover Us',          desc: <>We <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>never contact your clients</span>, appear on any deliverable, or do anything that could reveal this partnership. Every report and asset goes out under your agency brand, and we sign NDAs if you need one. Your clients only ever see your agency.</> },
+  { dark: true,  icon: 'fa-solid fa-eye-slash',      title: 'Your Clients Never Discover Us',          desc: <>We never contact your clients, appear on any deliverable, or do anything that could reveal this partnership. Every report and asset goes out under your agency brand, and we sign NDAs if you need one. Your clients only ever see your agency.</> },
   { dark: false, icon: 'fa-solid fa-circle-check',   title: 'No Long-Term Contracts',                  desc: 'Start with one client and scale as your agency grows. Pause or stop any service when you need to, no minimum commitments, no penalties for changing scope. We earn the next month by delivering on this one.' },
   { dark: false, icon: 'fa-solid fa-users',          title: 'The Same Specialists Work on Your Accounts', desc: 'We do not rotate through different people every month. The same writers, SEO specialists, or developers handle your accounts each time, they know your clients and standards, and the work gets better over time.' },
   { dark: false, icon: 'fa-solid fa-building',       title: 'Every Service Delivered In-House',        desc: 'We do not outsource your work to another white-label provider. Everything is done by our in-house team, meaning consistent quality and no third-party handoffs creating risk for your agency.' },
@@ -110,7 +110,7 @@ const DIFFERENTIATORS = [
 ];
 
 const FAQS = [
-  { q: 'Will my clients ever find out that Isuremedia is doing the work?', a: <>No. We <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>operate completely silently</span>. Every deliverable carries your agency branding, and we never reach out to your clients or mention Isuremedia anywhere. We sign NDAs before any work begins if you require one, your clients only ever see your agency.</> },
+  { q: 'Will my clients ever find out that Isuremedia is doing the work?', a: <>No. We operate completely silently. Every deliverable carries your agency branding, and we never reach out to your clients or mention Isuremedia anywhere. We sign NDAs before any work begins if you require one, your clients only ever see your agency.</> },
   { q: 'How do the briefs and handovers work?', a: 'During onboarding we set up a briefing process that fits how your agency already works, your project management tools, brief templates, and communication preferences. The workflow is designed to feel like an extension of your internal team, not an external supplier.' },
   { q: 'What services can you deliver white-label?', a: 'SEO, PPC, web development, GoHighLevel setup and automation, content marketing, link building, graphic design, white-label reporting, and dedicated agency pods. Use one service or all of them, scaled independently based on your client load.' },
   { q: 'How quickly can you turn around work?', a: 'It depends on the service. SEO reports and content pieces typically turn around in five to seven business days, website builds take two to six weeks, and ad campaign setup takes one to two weeks. Tell us your deadline and we build the schedule around it.' },
@@ -246,11 +246,11 @@ export default function WhiteLabelPage() {
 
               <div style={{ display:'flex', flexDirection:'column', gap:26 }}>
                 {[
-                  { num:'01', title:'Most agencies can’t deliver every service a client needs', text:<>Limited headcount means saying no or scrambling for a freelancer. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>White-label means the answer is always yes</span>.</> },
-                  { num:'02', title:'Hiring is the slowest way to add capacity', text:<>A senior specialist costs $80K+ a year and months to ramp up. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>A white-label partner adds that same capacity immediately</span>.</> },
-                  { num:'03', title:'Margins shrink when costs scale with revenue', text:<>Variable fulfilment costs mean every new client adds revenue without a proportional cost. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>That is how agencies scale without burning out</span>.</> },
-                  { num:'04', title:'Clients trust your brand, not who delivers it', text:<>As long as the work is good, clients don&apos;t need to know who produced it. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>It just needs to carry your name</span>.</> },
-                  { num:'05', title:'You keep the relationship and the recurring revenue', text:<>The client stays yours, the invoice stays yours, and the margin stays yours. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>White-label adds a revenue line, not a dependency</span>.</> },
+                  { num:'01', title:'Most agencies can’t deliver every service a client needs', text:<>Limited headcount means saying no or scrambling for a freelancer. White-label means the answer is always yes.</> },
+                  { num:'02', title:'Hiring is the slowest way to add capacity', text:<>A senior specialist costs $80K+ a year and months to ramp up. A white-label partner adds that same capacity immediately.</> },
+                  { num:'03', title:'Margins shrink when costs scale with revenue', text:<>Variable fulfilment costs mean every new client adds revenue without a proportional cost. That is how agencies scale without burning out.</> },
+                  { num:'04', title:'Clients trust your brand, not who delivers it', text:<>As long as the work is good, clients don&apos;t need to know who produced it. It just needs to carry your name.</> },
+                  { num:'05', title:'You keep the relationship and the recurring revenue', text:<>The client stays yours, the invoice stays yours, and the margin stays yours. White-label adds a revenue line, not a dependency.</> },
                 ].map(item => (
                   <div key={item.num} style={{ display:'flex', gap:16, alignItems:'flex-start' }}>
                     <div style={{ fontFamily:J, fontSize:11.5, fontWeight:800, color:'var(--ism-amber)', letterSpacing:'.06em', flexShrink:0, paddingTop:3, minWidth:26 }}>{item.num},</div>
@@ -271,7 +271,7 @@ export default function WhiteLabelPage() {
 
             <div style={{ background:'var(--ism-blue-50,#EEF2FF)', borderRadius:14, padding:'22px 28px', marginBottom:36, border:'1px solid rgba(30,77,195,.14)' }}>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-navy)', lineHeight:1.80, margin:0, fontStyle:'italic' }}>
-                Isuremedia works as the <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>silent delivery arm</span> for agencies across the US, UK, and Canada. Your strategy. Your client relationships. Our execution. Every deliverable carries your brand.
+                Isuremedia works as the silent delivery arm for agencies across the US, UK, and Canada. Your strategy. Your client relationships. Our execution. Every deliverable carries your brand.
               </p>
             </div>
             <div style={{ textAlign:'center' }}>
@@ -318,7 +318,7 @@ export default function WhiteLabelPage() {
                   What could your agency be delivering <span style={{ color:'var(--ism-amber)' }}>under your own name?</span>
                 </h2>
                 <p style={{ fontFamily:I, fontSize:15, color:'#555', lineHeight:1.82, margin:'0 0 32px', maxWidth:460 }}>
-                  Book a free agency call and see <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>how the partnership would work</span> for your clients.
+                  Book a free agency call and see how the partnership would work for your clients.
                 </p>
                 <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 10px 28px rgba(255,176,0,.50)'; }}
@@ -345,13 +345,13 @@ export default function WhiteLabelPage() {
               </div>
               <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-primary)', lineHeight:1.80, margin:0 }}>
-                  The question every agency owner asks at some point is: <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>should I hire for this or find another way</span>? It almost always depends on how many clients you have for this service right now, and how confident you are that number stays that way.
+                  The question every agency owner asks at some point is: should I hire for this or find another way? It almost always depends on how many clients you have for this service right now, and how confident you are that number stays that way.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
                   <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>Hiring is a bet</strong> on client load staying consistent enough to justify a salary and the months it takes someone to get productive. <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>White-label fulfillment is a variable cost that scales with your revenue instead</strong>, you pay for what your clients need this month, and add capacity when you win a new account.
                 </p>
                 <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.80, margin:0 }}>
-                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>There is also a positioning argument.</strong> An agency that can say yes to any service a client asks for is more valuable than one that refers them elsewhere. The moment you do, you introduce a competitor into your client relationship, white-label keeps <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>everything under your control</span>.
+                  <strong style={{ color:'var(--color-navy)', fontWeight:700 }}>There is also a positioning argument.</strong> An agency that can say yes to any service a client asks for is more valuable than one that refers them elsewhere. The moment you do, you introduce a competitor into your client relationship, white-label keeps everything under your control.
                 </p>
                 <div style={{ marginTop:8 }}>
                   <a href="/contact" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'15px 32px', borderRadius:8, fontFamily:J, fontSize:14, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.04em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.35)', transition:'all .18s', whiteSpace:'nowrap' }}
@@ -378,7 +378,7 @@ export default function WhiteLabelPage() {
                 Every White-Label Service <span style={{ color:'var(--ism-amber)' }}>Under One Roof</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:15, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Pick one service or all of them. Every deliverable carries your agency brand. <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>Same quality standard regardless of volume</span>.
+                Pick one service or all of them. Every deliverable carries your agency brand. Same quality standard regardless of volume.
               </p>
             </div>
             <div className="wl-svc-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #E8EAF0', borderRadius:16, overflow:'hidden' }}>
@@ -425,7 +425,7 @@ export default function WhiteLabelPage() {
                 </p>
                 <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:36 }}>
                   <p style={{ fontFamily:I, fontSize:15, color:'rgba(255,255,255,.75)', lineHeight:1.75, margin:0 }}>
-                    <strong style={{ color:'#fff', fontWeight:700 }}>Isuremedia works as the silent delivery arm for agencies who want to offer more without hiring more.</strong> Your strategy, your client relationships, our execution, <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>every deliverable carries your brand</span>. The agencies that grow fastest are not the ones with the biggest internal teams; they are the ones that can deliver more, consistently, without the overhead holding back the margin.
+                    <strong style={{ color:'#fff', fontWeight:700 }}>Isuremedia works as the silent delivery arm for agencies who want to offer more without hiring more.</strong> Your strategy, your client relationships, our execution, every deliverable carries your brand. The agencies that grow fastest are not the ones with the biggest internal teams; they are the ones that can deliver more, consistently, without the overhead holding back the margin.
                   </p>
                 </div>
                 <a href="/appointment" style={{ display:'inline-flex', alignItems:'center', gap:8, padding:'14px 28px', borderRadius:8, fontFamily:J, fontSize:13, fontWeight:700, color:'var(--color-navy)', background:'var(--ism-amber)', textDecoration:'none', letterSpacing:'.06em', textTransform:'uppercase', boxShadow:'0 6px 20px rgba(255,176,0,.30)', transition:'all .18s' }}
@@ -451,7 +451,7 @@ export default function WhiteLabelPage() {
                 How the Partnership <span style={{ color:'var(--ism-amber)' }}>Works</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                From your first call to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>delivering work under your brand</span>. Here is exactly what to expect.
+                From your first call to delivering work under your brand. Here is exactly what to expect.
               </p>
             </div>
             <div className="wl-timeline" style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:0, position:'relative' }}>
@@ -461,7 +461,7 @@ export default function WhiteLabelPage() {
                   <div
                     onMouseEnter={()=>setHoveredStep(i)}
                     onMouseLeave={()=>setHoveredStep(null)}
-                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? (i===0?'var(--color-primary)':'var(--ism-amber)') : (i===0?'var(--ism-amber)':'var(--color-primary)'), display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? (i===0?'0 8px 26px rgba(30,77,195,.45)':'0 8px 26px rgba(255,176,0,.55)') : `0 4px 18px ${i===0?'rgba(255,176,0,.40)':'rgba(30,77,195,.30)'}`, border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
+                    style={{ width:56, height:56, borderRadius:'50%', background: hoveredStep===i ? 'var(--ism-amber)' : 'var(--color-primary)', display:'flex', alignItems:'center', justifyContent:'center', margin:'0 auto 20px', boxShadow: hoveredStep===i ? '0 8px 26px rgba(255,176,0,.55)' : '0 4px 18px rgba(30,77,195,.30)', border:'4px solid #fff', transition:'background .22s ease, box-shadow .22s ease, transform .22s ease', transform: hoveredStep===i ? 'scale(1.12)' : 'scale(1)', cursor:'default' }}
                   >
                     <span style={{ fontFamily:J, fontSize:18, fontWeight:900, color:'#fff' }}>{step.num}</span>
                   </div>
@@ -490,7 +490,7 @@ export default function WhiteLabelPage() {
                 <span style={{ color:'var(--ism-amber)' }}>around your agency.</span>
               </h2>
               <p style={{ fontFamily:I, fontSize:16, color:'var(--color-text-muted)', lineHeight:1.75, margin:0 }}>
-                Every engagement includes NDA, branded reporting, and a <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>dedicated agency account manager</span>.
+                Every engagement includes NDA, branded reporting, and a dedicated agency account manager.
               </p>
             </div>
             <div className="wl-plan-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:24, alignItems:'start' }}>

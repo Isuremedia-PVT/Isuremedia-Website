@@ -248,7 +248,7 @@ export default function KajabiPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   ISureMedia builds Kajabi sites and funnels with{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an actual strategy behind them</span>{' '}
+                  an actual strategy behind them{' '}
                  , course architecture, checkout design, and automation, done properly from the start.
                 </p>
                 <a href="/contact"
@@ -293,11 +293,11 @@ export default function KajabiPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Kajabi gives you the hosting, checkout, and email tools,{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the strategy and design still have to be built</span> on top of it.
+                    the strategy and design still have to be built on top of it.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A proper build means{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a checkout designed to convert</span>, not the default page left untouched.
+                    a checkout designed to convert, not the default page left untouched.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Development means scoping your course and offer first, then building the site, funnel, and automation to match, tested before launch, not after.

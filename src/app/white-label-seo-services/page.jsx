@@ -236,7 +236,7 @@ export default function WhiteLabelSEOPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   White label SEO services give you another option. Your agency owns{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the client relationship, strategy communication, and account direction</span>{' '}
+                  the client relationship, strategy communication, and account direction{' '}
                   while our team handles the agreed SEO fulfillment behind the scenes, technical audits, on-page optimization, content production, link building, local SEO, AI search optimization, and monthly reporting, delivered under your brand.
                 </p>
                 <a href="/appointment"
@@ -281,7 +281,7 @@ export default function WhiteLabelSEOPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     In a private label SEO arrangement, your agency owns the client relationship and decides how the work is presented. We operate as{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>the fulfillment team</span>{' '}
+                    the fulfillment team{' '}
                     supporting your account.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
@@ -289,7 +289,7 @@ export default function WhiteLabelSEOPage() {
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     For agencies comparing SEO reseller services with in-house delivery, the main difference is who carries the fulfillment workload. With a white-label model, specialist execution happens behind your team while you remain the account owner. Communication stays{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>internal</span>
+                    internal
                     , giving your agency one consistent point of contact while we handle the SEO tasks your account requires.
                   </p>
                 </div>

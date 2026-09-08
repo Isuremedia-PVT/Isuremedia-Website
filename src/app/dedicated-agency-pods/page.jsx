@@ -262,7 +262,7 @@ export default function DedicatedAgencyPodsPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   A dedicated marketing team for agencies works differently.{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>The same specialists stay assigned to your agency</span>, learn your service mix, and build familiarity with how your projects should be handled, meaning less re-briefing and more continuity when several client projects are moving at once.
+                  The same specialists stay assigned to your agency, learn your service mix, and build familiarity with how your projects should be handled, meaning less re-briefing and more continuity when several client projects are moving at once.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -306,11 +306,11 @@ export default function DedicatedAgencyPodsPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     A dedicated agency pod is{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>a fixed group of specialists assigned to your agency</span> instead of a rotating pool of freelancers. The pod can include the roles your service mix requires, SEO, PPC, web development, design, content, automation, or a combination.
+                    a fixed group of specialists assigned to your agency instead of a rotating pool of freelancers. The pod can include the roles your service mix requires, SEO, PPC, web development, design, content, automation, or a combination.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Because the same people continue working on your accounts, they build{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>familiarity with your brand, clients, tools, and delivery standards</span>. Your agency gets the consistency of an internal team without carrying every hiring and management responsibility itself.
+                    familiarity with your brand, clients, tools, and delivery standards. Your agency gets the consistency of an internal team without carrying every hiring and management responsibility itself.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     You also get a dedicated project manager who coordinates the work, keeps scope clear, and gives your agency one point of contact for delivery.

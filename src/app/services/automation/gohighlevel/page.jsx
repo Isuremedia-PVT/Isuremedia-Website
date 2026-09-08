@@ -263,7 +263,7 @@ export default function GoHighLevelSetupPage() {
                 </p>
                 <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.82, marginBottom: 32 }}>
                   Isuremedia has configured GHL for agencies, home service businesses, coaches, and enterprises. We know what works, what breaks, and how to{' '}
-                  <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>build a system your team will actually use</span>.
+                  build a system your team will actually use.
                 </p>
                 <a href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
@@ -307,12 +307,12 @@ export default function GoHighLevelSetupPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     GoHighLevel is one of the most powerful all-in-one platforms available, but out of the box it is just software. A proper setup is{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>an architecture exercise, not a checkbox</span>{' '}
+                    an architecture exercise, not a checkbox{' '}
                    , sub-accounts, pipelines, funnels, and automations all need deliberate design.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     We configure every module around your business, CRM and pipeline architecture, automated lead nurture, reputation management, and calendar booking, so{' '}
-                    <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700, color: 'var(--color-navy)' }}>your account works the way your business actually operates</span>.
+                    your account works the way your business actually operates.
                   </p>
                   <p style={{ fontFamily: I, fontSize: 15.5, color: 'var(--color-text-muted)', lineHeight: 1.85, margin: 0 }}>
                     Whether you want it fully white-labelled to resell to clients or configured purely for internal use, the same discipline applies, structure it right the first time, and everything after that gets easier.
