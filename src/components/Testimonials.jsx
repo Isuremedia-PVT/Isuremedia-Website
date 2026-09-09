@@ -7,7 +7,7 @@ import Autoplay from 'embla-carousel-autoplay';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
-export const testimonials = [
+export const defaultTestimonials = [
   {
     name: 'Eichelle Williams', reviews: '2 reviews',
     pre: 'Harish, Rahul and Pradeep have been so helpful to our team! ',
@@ -47,13 +47,14 @@ export const testimonials = [
 ];
 
 export const AVATAR_COLORS = ['#1E4DC3', '#FFB000', '#0E9B6E', '#8B5CF6', '#EF4444', '#0EA5E9'];
-const SLIDE_COUNT = Math.ceil(testimonials.length / 2);
 
 export default function Testimonials({
   heading = 'What Our Clients Say',
   subheading = <>Real results from businesses and agencies who have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trusted us</span>.</>,
-  showTrustBar = true
+  showTrustBar = true,
+  testimonials = defaultTestimonials
 }) {
+  const SLIDE_COUNT = Math.ceil(testimonials.length / 2);
   const autoplay = useRef(Autoplay({ delay: 4500, stopOnInteraction: false }));
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: 'start', slidesToScroll: 1 },

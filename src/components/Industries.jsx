@@ -13,6 +13,7 @@ const industries = [
     title: 'Real Estate',
     text: 'We help developers, brokers, and property platforms get in front of serious buyers and generate quality leads.',
     img: '/industries/real-estate.webp',
+    alt: 'Real estate SEO and digital marketing services by iSureMedia',
     bg: 'linear-gradient(155deg,#001a3d 0%,#002353 45%,#1E4DC3 100%)',
     shine: 'rgba(30,77,195,0.40)',
   },
@@ -22,6 +23,7 @@ const industries = [
     title: 'E-Commerce',
     text: 'We handle SEO, paid ads, email, and creative together so your store keeps running even when one channel dips.',
     img: '/industries/ecommerce.webp',
+    alt: 'Ecommerce SEO and online marketing services by iSureMedia',
     bg: 'linear-gradient(155deg,#001d42 0%,#0a2d66 45%,#2f67e8 100%)',
     shine: 'rgba(47,103,232,0.38)',
   },
@@ -31,6 +33,7 @@ const industries = [
     title: 'Marketing Agencies',
     text: 'SEO, PPC, web builds, content, and more, all delivered under your brand when your team needs backup.',
     img: '/industries/marketing-agencies.webp',
+    alt: 'White label SEO services for marketing agencies',
     bg: 'linear-gradient(155deg,#0a1f4e 0%,#133280 45%,#1E4DC3 100%)',
     shine: 'rgba(30,77,195,0.40)',
   },
@@ -40,6 +43,7 @@ const industries = [
     title: 'Coaches & Consultants',
     text: 'We help coaches, consultants, and course creators reach the right people and turn interest into paying clients.',
     img: '/industries/coaches-consultants.webp',
+    alt: 'SEO and digital marketing for coaches and consultants',
     bg: 'linear-gradient(155deg,#000f24 0%,#062a5c 45%,#1840A0 100%)',
     shine: 'rgba(24,64,160,0.40)',
   },
@@ -49,6 +53,7 @@ const industries = [
     title: 'Law Firms',
     text: 'We make sure high-intent legal searchers find you first, from Google rankings to paid ads and reputation.',
     img: '/industries/law-firms.webp',
+    alt: 'Law firm SEO services and legal marketing by iSureMedia',
     bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#0f3d7a 100%)',
     shine: 'rgba(0,35,83,0.50)',
   },
@@ -58,6 +63,7 @@ const industries = [
     title: 'Home Services',
     text: 'HVAC, cleaning, contracting, your customers are searching right now. We make sure your business shows up.',
     img: '/industries/HVAC.webp',
+    alt: 'HVAC company SEO and local marketing services',
     bg: 'linear-gradient(155deg,#1E4DC3 0%,#2563eb 50%,#3b82f6 100%)',
     shine: 'rgba(37,99,235,0.38)',
   },
@@ -67,6 +73,7 @@ const industries = [
     title: 'Education & Courses',
     text: 'We help education brands attract the right students and turn interest into actual sign-ups and enrolments.',
     img: '/industries/education.webp',
+    alt: 'Education and online course marketing services by iSureMedia',
     bg: 'linear-gradient(155deg,#001630 0%,#08305f 45%,#3b82f6 100%)',
     shine: 'rgba(59,130,246,0.35)',
   },
@@ -76,6 +83,7 @@ const industries = [
     title: 'Health & Wellness',
     text: 'We help clinics and wellness brands build an online presence that earns trust and brings in the right clients.',
     img: '/industries/health-wellness.webp',
+    alt: 'Health and wellness business marketing services',
     bg: 'linear-gradient(155deg,#001833 0%,#002353 45%,#1840A0 100%)',
     shine: 'rgba(24,64,160,0.45)',
   },
@@ -85,6 +93,7 @@ const industries = [
     title: 'SaaS & Tech',
     text: 'We help SaaS and tech companies keep their pipeline full without relying solely on word-of-mouth referrals.',
     img: '/industries/saas-tech.webp',
+    alt: 'SaaS and tech company SEO and digital marketing services by iSureMedia',
     bg: 'linear-gradient(155deg,#0a0f1e 0%,#0f1f3d 45%,#1E4DC3 100%)',
     shine: 'rgba(30,77,195,0.42)',
   },
@@ -94,6 +103,7 @@ const industries = [
     title: 'Finance & Fintech',
     text: 'We help financial advisors and fintech companies cut through noise and reach the right high-intent audience.',
     img: '/industries/finance-fintech.webp',
+    alt: 'Finance and fintech marketing services',
     bg: 'linear-gradient(155deg,#000c1c 0%,#052350 45%,#1E4DC3 100%)',
     shine: 'rgba(30,77,195,0.42)',
   },
@@ -103,6 +113,7 @@ const industries = [
     title: 'Restaurants & Hospitality',
     text: 'We help restaurants, hotels, and hospitality brands show up in local search and build a name people remember.',
     img: '/industries/restaurants-hospitality.webp',
+    alt: 'Restaurant and hospitality SEO and digital marketing services',
     bg: 'linear-gradient(155deg,#001533 0%,#1E4DC3 55%,#2f67e8 100%)',
     shine: 'rgba(30,77,195,0.38)',
   },
@@ -112,6 +123,7 @@ const industries = [
     title: 'Automotive',
     text: 'We help dealerships show up consistently so they are the first place buyers think of after weeks of research.',
     img: '/industries/Auto Repair & Dealerships.webp',
+    alt: 'Auto repair shop and car dealership SEO services',
     bg: 'linear-gradient(155deg,#001228 0%,#002353 50%,#1E4DC3 100%)',
     shine: 'rgba(0,35,83,0.55)',
   },
@@ -185,7 +197,7 @@ export default function Industries() {
 
                   {/* Photo */}
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={ind.img} alt="" aria-hidden loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src={ind.img} alt={ind.alt} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
 
                   {/* Brand color tint over photo */}
                   <div aria-hidden style={{ position: 'absolute', inset: 0, background: ind.bg, opacity: 0.40, mixBlendMode: 'overlay' }} />

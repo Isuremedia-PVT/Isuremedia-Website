@@ -16,6 +16,57 @@ import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
+const HOME_TESTIMONIALS = [
+  {
+    name: 'Eichelle Williams', reviews: '2 reviews · 11 months ago',
+    pre: 'Harish, Rahul and Pradeep have been so helpful to our team! ',
+    highlight: "They've consulted on complex CRM builds for our clients and were consistently quick to respond to any questions we had.",
+    post: " 100% recommend iSuremedia as your technical support team if you're an agency owner looking to streamline your SAAS products.",
+  },
+  {
+    name: 'Regine Villariza', reviews: '2 reviews · 11 months ago',
+    pre: 'As a dentist, running the clinic itself takes so much focus, and figuring out ads or tech was always stressful for me. Partnering with the iSureMedia PPC team has been such a relief. ',
+    highlight: 'They set up our Google LSA ads and Meta ads in a way that brought in real new patient inquiries',
+    post: ' without me having to chase after marketing details.',
+  },
+  {
+    name: 'Ken Herbert', reviews: '3 reviews · 3 years ago',
+    pre: "I had an advanced-level technical issue with the GoHighLevel platform that needed to be solved. GoHighLevel support couldn't solve it. ",
+    highlight: "I found iSure Media after firing our previously contracted tech team who couldn't solve the issue after working on it for a month.",
+    post: '',
+  },
+  {
+    name: 'Felix Rosado', reviews: '11 reviews · 2 years ago',
+    pre: 'If there were a way to give Harish Pandey and his team at iSuremedia more than five stars, I would do it in a heartbeat! ',
+    highlight: 'Working with their services has been nothing short of spectacular.',
+    post: ' Harish epitomizes professionalism and promptness, a rarity in this fast-paced digital world.',
+  },
+  {
+    name: 'Ryan Mitchell', reviews: '1 review · a year ago',
+    pre: 'Before I started working with iSureMedia, my finance consultancy was struggling to attract consistent leads online. Birmingham is a place where we have cut throat competition, we decided to stay on top and we did, with Isuremedia. And honestly, ',
+    highlight: 'the experience with Harish and the IsureMedia team has been a game-changer.',
+    post: '',
+  },
+  {
+    name: 'Kranky K9', reviews: '11 reviews · 2 years ago',
+    pre: 'Harish and his team are absolutely wonderful to work with. ',
+    highlight: 'Their service has exceeded our expectation every time.',
+    post: ' The customer service is second to none and there is no doubt we will be working with this business for years to come. — Casey Phillips, Kranky K9 Dog Training LLC.',
+  },
+  {
+    name: 'David Goldstein', reviews: '10 reviews · 2 years ago',
+    pre: 'I highly recommend Isure Media for their outstanding technical support and exceptional design and development services. ',
+    highlight: 'Their team not only resolved complex technical issues efficiently but also delivered creative designs and robust development solutions',
+    post: ' that perfectly aligned with my vision.',
+  },
+  {
+    name: 'Sharon Longridge', reviews: '10 reviews · a year ago',
+    pre: 'iSure Media have been our trusted technology partner since 2022, handling all Kajabi and Active Campaign-related tasks including the creation and ongoing management of custom automations (email and SMS) and our Google Analytics user engagement dashboard. ',
+    highlight: 'Our collaboration is built on trust, transparency, and proactive communication.',
+    post: '',
+  },
+];
+
 const HOME_SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
@@ -86,6 +137,7 @@ export default function Home() {
           heading="Trusted by Businesses and Agencies Worldwide."
           subheading="From local businesses to white-label agency partners, here is what our clients say about working with us."
           showTrustBar={false}
+          testimonials={HOME_TESTIMONIALS}
         />
         <FAQ />
         <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
