@@ -119,9 +119,14 @@ export default function Testimonials({
                       {t.pre}<span style={{ color: 'var(--color-accent-hover)', fontWeight: 700 }}>{t.highlight}</span>{t.post}
                     </p>
                     <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: 18, display: 'flex', alignItems: 'center', gap: 12 }}>
-                      <div aria-hidden style={{ width: 44, height: 44, borderRadius: '50%', background: AVATAR_COLORS[i % AVATAR_COLORS.length], display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <span style={{ fontFamily: J, fontWeight: 800, fontSize: 16, color: '#fff' }}>{t.name.charAt(0)}</span>
-                      </div>
+                      {t.img ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={t.img} alt={t.name} loading="lazy" style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
+                      ) : (
+                        <div aria-hidden style={{ width: 44, height: 44, borderRadius: '50%', background: AVATAR_COLORS[i % AVATAR_COLORS.length], display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                          <span style={{ fontFamily: J, fontWeight: 800, fontSize: 16, color: '#fff' }}>{t.name.charAt(0)}</span>
+                        </div>
+                      )}
                       <div>
                         <div style={{ fontFamily: J, fontWeight: 700, fontSize: 14, color: 'var(--color-navy)' }}>{t.name}</div>
                         <div style={{ fontFamily: I, fontSize: 11, color: 'var(--color-text-muted)', marginBottom: 4 }}>{t.reviews}</div>
