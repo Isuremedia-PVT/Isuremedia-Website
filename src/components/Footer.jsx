@@ -184,8 +184,8 @@ export default function Footer() {
           .footer-grid > div:first-child { grid-column: span 2 !important; }
           .ftr-tagline { font-size: 12px !important; }
           .ftr-address { font-size: 11.5px !important; }
-          .ftr-bottom-bar { flex-direction: column !important; align-items: flex-start !important; }
-          .ftr-bottom-bar > div { gap: 12px 16px !important; }
+          .ftr-bottom-bar { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+          .ftr-bottom-bar > div { gap: 12px 16px !important; justify-content: center !important; }
         }
       `}</style>
     </footer>
