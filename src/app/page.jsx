@@ -16,65 +16,6 @@ import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
-const HOME_TESTIMONIALS = [
-  {
-    name: 'Eichelle Williams', reviews: '2 reviews · 11 months ago',
-    img: '/review_home page/review images/Eichelle Williams.webp',
-    pre: 'Harish, Rahul and Pradeep have been so helpful to our team! ',
-    highlight: "They've consulted on complex CRM builds for our clients and were consistently quick to respond to any questions we had.",
-    post: " 100% recommend iSuremedia as your technical support team if you're an agency owner looking to streamline your SAAS products.",
-  },
-  {
-    name: 'Regine Villariza', reviews: '2 reviews · 11 months ago',
-    img: '/review_home page/review images/Regine Villariza.webp',
-    pre: 'As a dentist, running the clinic itself takes so much focus, and figuring out ads or tech was always stressful for me. Partnering with the iSureMedia PPC team has been such a relief. ',
-    highlight: 'They set up our Google LSA ads and Meta ads in a way that brought in real new patient inquiries',
-    post: ' without me having to chase after marketing details.',
-  },
-  {
-    name: 'Ken Herbert', reviews: '3 reviews · 3 years ago',
-    img: '/review_home page/review images/Ken Herbert.webp',
-    pre: "I had an advanced-level technical issue with the GoHighLevel platform that needed to be solved. GoHighLevel support couldn't solve it. ",
-    highlight: "I found iSure Media after firing our previously contracted tech team who couldn't solve the issue after working on it for a month.",
-    post: '',
-  },
-  {
-    name: 'Felix Rosado', reviews: '11 reviews · 2 years ago',
-    img: '/review_home page/review images/Felix Rosado.webp',
-    pre: 'If there were a way to give Harish Pandey and his team at iSuremedia more than five stars, I would do it in a heartbeat! ',
-    highlight: 'Working with their services has been nothing short of spectacular.',
-    post: ' Harish epitomizes professionalism and promptness, a rarity in this fast-paced digital world.',
-  },
-  {
-    name: 'Ryan Mitchell', reviews: '1 review · a year ago',
-    img: '/review_home page/review images/Ryan Mitchell.webp',
-    pre: 'Before I started working with iSureMedia, my finance consultancy was struggling to attract consistent leads online. Birmingham is a place where we have cut throat competition, we decided to stay on top and we did, with Isuremedia. And honestly, ',
-    highlight: 'the experience with Harish and the IsureMedia team has been a game-changer.',
-    post: '',
-  },
-  {
-    name: 'Kranky K9', reviews: '11 reviews · 2 years ago',
-    img: '/review_home page/review images/Kranky K9.webp',
-    pre: 'Harish and his team are absolutely wonderful to work with. ',
-    highlight: 'Their service has exceeded our expectation every time.',
-    post: ' The customer service is second to none and there is no doubt we will be working with this business for years to come. — Casey Phillips, Kranky K9 Dog Training LLC.',
-  },
-  {
-    name: 'David Goldstein', reviews: '10 reviews · 2 years ago',
-    img: '/review_home page/review images/David Goldstein.webp',
-    pre: 'I highly recommend Isure Media for their outstanding technical support and exceptional design and development services. ',
-    highlight: 'Their team not only resolved complex technical issues efficiently but also delivered creative designs and robust development solutions',
-    post: ' that perfectly aligned with my vision.',
-  },
-  {
-    name: 'Sharon Longridge', reviews: '10 reviews · a year ago',
-    img: '/review_home page/review images/Sharon Longridge.webp',
-    pre: 'iSure Media have been our trusted technology partner since 2022, handling all Kajabi and Active Campaign-related tasks including the creation and ongoing management of custom automations (email and SMS) and our Google Analytics user engagement dashboard. ',
-    highlight: 'Our collaboration is built on trust, transparency, and proactive communication.',
-    post: '',
-  },
-];
-
 const HOME_SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
@@ -116,7 +57,7 @@ const HOME_SCHEMA = JSON.stringify({
           "postalCode": "263139",
           "addressCountry": "IN"
         },
-        "telephone": "+91-73-0000-7650"
+        "telephone": "+91-70110-41363"
       },
 
       "additionalProperty": {
@@ -128,7 +69,7 @@ const HOME_SCHEMA = JSON.stringify({
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+91-73-0000-7650",
+          "telephone": "+91-70110-41363",
           "contactType": "customer service",
           "areaServed": "IN"
         },
@@ -145,7 +86,9 @@ const HOME_SCHEMA = JSON.stringify({
         { "@type": "Country", "name": "United Kingdom" },
         { "@type": "Country", "name": "Australia" },
         { "@type": "Country", "name": "Canada" },
-        { "@type": "Country", "name": "India" }
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "New Zealand" },
+        { "@type": "Country", "name": "United Arab Emirates" }
       ],
 
       "serviceType": "Digital Marketing Agency Services (SEO, PPC, Web Design, Content, Marketing Automation, White-Label Fulfilment)",
@@ -170,9 +113,9 @@ const HOME_SCHEMA = JSON.stringify({
         { "@type": "Question", "name": "What services does Isuremedia offer?",
           "acceptedAnswer": { "@type": "Answer", "text": "Isuremedia offers SEO, PPC advertising, website design, sales funnels, content marketing, social media, and marketing automation. All under one roof." } },
         { "@type": "Question", "name": "How long has Isuremedia been in business?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We have been delivering digital marketing results since 2018, with over 8 years of agency experience across 150+ clients in the US, UK, India, New Zealand, UAE, and Canada." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "We have been delivering digital marketing results since 2017, with over 9 years of agency experience across 150+ clients in the US, UK, Australia, India, New Zealand, UAE, and Canada." } },
         { "@type": "Question", "name": "Which countries do you serve?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We have active clients in the US, UK, India, New Zealand, UAE, and Canada." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "We have active clients in the US, UK, Australia, India, New Zealand, UAE, and Canada." } }
       ]
     }
   ]
@@ -180,13 +123,20 @@ const HOME_SCHEMA = JSON.stringify({
 
 export const metadata = {
   title: "Digital Marketing Agency | SEO, PPC & Web | Isuremedia",
-  description: "Isuremedia is a results-driven digital marketing agency. SEO, PPC, content, web design & marketing automation. 150+ clients. 8 years. Free audit.",
+  description: "Isuremedia is a results-driven digital marketing agency. SEO, PPC, content, web design & marketing automation. 150+ clients. 9 years. Free audit.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
     description: "SEO, PPC, web design, content, and marketing automation delivered by an in-house team. One agency, every digital service you need to grow.",
     type: "website",
     url: "/",
+    images: [{ url: "/isuremedia-dark.webp", width: 1200, height: 346 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
+    description: "SEO, PPC, web design, content, and marketing automation delivered by an in-house team. One agency, every digital service you need to grow.",
+    images: ["/isuremedia-dark.webp"],
   },
 };
 
@@ -212,7 +162,6 @@ export default function Home() {
           heading="Trusted by Businesses and Agencies Worldwide."
           subheading="From local businesses to white-label agency partners, here is what our clients say about working with us."
           showTrustBar={false}
-          testimonials={HOME_TESTIMONIALS}
         />
         <FAQ />
         <CTASection imageWidth={340} overflowTop={70} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
