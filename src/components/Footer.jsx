@@ -1,6 +1,6 @@
 'use client';
 
-import { PHONE_IN, PHONE_IN_TEL, PHONE_IN2, PHONE_IN2_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
+import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
 
 const I = 'var(--font-inter,Inter,sans-serif)';
 
@@ -96,8 +96,7 @@ export default function Footer() {
 
             {/* Contacts */}
             {[
-              // { href: PHONE_IN_TEL,  icon: 'fa-solid fa-phone',    label: PHONE_IN  },
-              { href: PHONE_IN2_TEL, icon: 'fa-solid fa-phone',    label: PHONE_IN2 },
+              { href: PHONE_IN_TEL,  icon: 'fa-solid fa-phone',    label: PHONE_IN  },
               { href: PHONE_US_TEL,  icon: 'fa-solid fa-phone',    label: PHONE_US  },
               { href: EMAIL_HREF,    icon: 'fa-solid fa-envelope', label: EMAIL     },
             ].map(c => (
