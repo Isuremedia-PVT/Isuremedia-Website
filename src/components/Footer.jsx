@@ -180,8 +180,8 @@ export default function Footer() {
         }
         @media (max-width: 540px) {
           .ftr-section { padding: 36px 0 0 !important; }
-          .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; padding-bottom: 28px !important; }
-          .footer-grid > div:first-child { grid-column: span 1 !important; }
+          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 24px 20px !important; padding-bottom: 28px !important; }
+          .footer-grid > div:first-child { grid-column: span 2 !important; }
           .ftr-tagline { font-size: 12px !important; }
           .ftr-address { font-size: 11.5px !important; }
           .ftr-bottom-bar { flex-direction: column !important; align-items: flex-start !important; }
