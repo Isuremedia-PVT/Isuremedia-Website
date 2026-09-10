@@ -7,7 +7,7 @@ const I = 'var(--font-inter,Inter,sans-serif)';
 
 export default function CTASection({
   image = '/result_footer/ready_for_result.webp',
-  imageWidth = 320,
+  imageWidth = 280,
   overflowTop = 0,
   primaryLabel = 'Get My Free Proposal',
   secondaryLabel = `Call ${PHONE_US}`,
@@ -15,7 +15,7 @@ export default function CTASection({
   description,
   heading = 'Ready for',
   headingHighlight = 'Results?',
-  cardPadTop = 40,
+  cardPadTop = 32,
   cardPadX = 60
 }) {
   // bleed is expressed as a fraction of the person column's own width, so it scales
@@ -27,10 +27,10 @@ export default function CTASection({
   // the card's own top padding only buys back part of the bleed height, once overflowTop
   // exceeds it, the head pokes past the section's box too, so give the section enough
   // top padding to always contain the peak bleed (at imageWidth) plus a clearance buffer.
-  const sectionPadTop = bleed ? Math.max(64, overflowTop - cardPadTop + 48) : 64;
+  const sectionPadTop = bleed ? Math.max(64, overflowTop - cardPadTop + 48) : 48;
 
   return (
-    <section id="cta" className={`cta-section${bleed ? ' cta-bleed' : ''}`} style={{ paddingTop: sectionPadTop, paddingBottom: 64, background: '#fff', overflow: bleed ? 'visible' : 'hidden' }}>
+    <section id="cta" className={`cta-section${bleed ? ' cta-bleed' : ''}`} style={{ paddingTop: sectionPadTop, paddingBottom: bleed ? 64 : 48, background: '#fff', overflow: bleed ? 'visible' : 'hidden' }}>
       <div className="ism-container">
 
         <div className="cta-card" style={{ position: 'relative', background: 'linear-gradient(135deg,#1E4DC3 0%,#4484EE 100%)', borderRadius: 24, padding: `${cardPadTop}px ${cardPadX}px`, display: 'grid', gridTemplateColumns: `1fr ${personSize}`, alignItems: 'end', gap: 40, overflow: bleed ? 'visible' : 'hidden', minHeight: 200 }}>
@@ -83,6 +83,15 @@ export default function CTASection({
       </div>
 
       <style>{`
+        /* #cta beats the site-wide section-padding system (globals.css) on
+           specificity, so this is the actual override for the default
+           (non-bleed) case — trims the flat 64px/64px down to something
+           less excessive now that the card/image are also more compact.
+           Scoped to >768px only — below that, the global system's own
+           mobile tiers (24px/18px) are already smaller and should win. */
+        @media (min-width: 769px) {
+          #cta:not(.cta-bleed) { padding-top: 48px !important; padding-bottom: 48px !important; }
+        }
         @media (max-width: 1024px) {
           .cta-card { padding: 34px 30px !important; gap: 24px !important; }
           .cta-person { margin-bottom: -34px !important; }
