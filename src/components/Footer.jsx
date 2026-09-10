@@ -59,9 +59,6 @@ const socials = [
 ];
 
 const legalLinks = [
-  { label: 'Sitemap',        href: '/sitemap'        },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms',          href: '/terms'          },
   { label: 'Cookie Policy',  href: '/cookie-policy'  },
   { label: 'Refund Policy',  href: '/refund-policy'  },
   { label: 'GDPR',           href: '/gdpr'           },
