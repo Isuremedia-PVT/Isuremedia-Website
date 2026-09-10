@@ -29,6 +29,11 @@ const cols = [
   {
     title: 'Industries',
     links: [
+      { label: 'Real Estate',          href: '/industries'                    },
+      { label: 'E-Commerce',           href: '/industries'                    },
+      { label: 'Marketing Agencies',   href: '/industries'                    },
+      { label: 'Law Firms',            href: '/industries'                    },
+      { label: 'Health & Wellness',    href: '/industries'                    },
       { label: 'All Industries',       href: '/industries'                    },
     ],
   },
