@@ -224,7 +224,7 @@ export default function ContactPage() {
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                 >
-                  Book a 30-minute call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
+                  Book a Discovery Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
                 </a>
               </div>
             </div>
