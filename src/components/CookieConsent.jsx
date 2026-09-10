@@ -71,11 +71,11 @@ export default function CookieConsent() {
     >
       <div className="cc-inner" style={{ maxWidth: 1280, margin: '0 auto' }}>
         <div className="cc-row" style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, flex: '1 1 420px', minWidth: 260 }}>
-            <div style={{ width: 40, height: 40, borderRadius: 10, background: 'rgba(255,176,0,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <div className="cc-text" style={{ display: 'flex', alignItems: 'flex-start', gap: 14, flex: '1 1 420px', minWidth: 260 }}>
+            <div className="cc-icon" style={{ width: 40, height: 40, borderRadius: 10, background: 'rgba(255,176,0,.14)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <i className="fa-solid fa-cookie-bite" style={{ fontSize: 17, color: 'var(--ism-amber)' }} />
             </div>
-            <p style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.82)', lineHeight: 1.65, margin: 0 }}>
+            <p className="cc-desc" style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.82)', lineHeight: 1.65, margin: 0 }}>
               We use cookies to run this site, understand how it&apos;s used, and personalize content. Choose what you&apos;re comfortable with, or read our{' '}
               <a href="/cookie-policy" style={{ color: 'var(--ism-amber)', textDecoration: 'underline' }}>Cookie Policy</a>
               {' '}and{' '}
@@ -153,10 +153,17 @@ export default function CookieConsent() {
           .cc-toggles { grid-template-columns: repeat(2,1fr) !important; }
         }
         @media (max-width: 640px) {
-          .cc-wrap { padding: 18px 16px !important; }
-          .cc-row { flex-direction: column !important; align-items: stretch !important; }
-          .cc-btns { width: 100% !important; }
-          .cc-btns button { flex: 1 1 auto !important; }
+          .cc-wrap { padding: 14px 16px !important; }
+          .cc-row { flex-direction: column !important; align-items: stretch !important; gap: 14px !important; }
+          /* Without this, the 420px flex-basis meant for the row's HORIZONTAL
+             sizing gets read as a vertical one once the row stacks, forcing
+             this block to try to be ~420px tall — that's the huge empty gap. */
+          .cc-text { flex: 1 1 auto !important; min-width: 0 !important; gap: 10px !important; }
+          .cc-icon { width: 32px !important; height: 32px !important; }
+          .cc-icon i { font-size: 14px !important; }
+          .cc-desc { font-size: 12.5px !important; line-height: 1.55 !important; }
+          .cc-btns { width: 100% !important; gap: 8px !important; }
+          .cc-btns button { flex: 1 1 auto !important; padding: 10px 12px !important; font-size: 12.5px !important; }
           .cc-toggles { grid-template-columns: 1fr 1fr !important; }
         }
       `}</style>

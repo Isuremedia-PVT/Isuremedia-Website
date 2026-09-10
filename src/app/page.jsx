@@ -16,21 +16,147 @@ import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
+const HOME_TESTIMONIALS = [
+  {
+    name: 'Eichelle Williams', reviews: '2 reviews · 11 months ago',
+    img: '/review_home page/review images/Eichelle Williams.webp',
+    pre: 'Harish, Rahul and Pradeep have been so helpful to our team! ',
+    highlight: "They've consulted on complex CRM builds for our clients and were consistently quick to respond to any questions we had.",
+    post: " 100% recommend iSuremedia as your technical support team if you're an agency owner looking to streamline your SAAS products.",
+  },
+  {
+    name: 'Regine Villariza', reviews: '2 reviews · 11 months ago',
+    img: '/review_home page/review images/Regine Villariza.webp',
+    pre: 'As a dentist, running the clinic itself takes so much focus, and figuring out ads or tech was always stressful for me. Partnering with the iSureMedia PPC team has been such a relief. ',
+    highlight: 'They set up our Google LSA ads and Meta ads in a way that brought in real new patient inquiries',
+    post: ' without me having to chase after marketing details.',
+  },
+  {
+    name: 'Ken Herbert', reviews: '3 reviews · 3 years ago',
+    img: '/review_home page/review images/Ken Herbert.webp',
+    pre: "I had an advanced-level technical issue with the GoHighLevel platform that needed to be solved. GoHighLevel support couldn't solve it. ",
+    highlight: "I found iSure Media after firing our previously contracted tech team who couldn't solve the issue after working on it for a month.",
+    post: '',
+  },
+  {
+    name: 'Felix Rosado', reviews: '11 reviews · 2 years ago',
+    img: '/review_home page/review images/Felix Rosado.webp',
+    pre: 'If there were a way to give Harish Pandey and his team at iSuremedia more than five stars, I would do it in a heartbeat! ',
+    highlight: 'Working with their services has been nothing short of spectacular.',
+    post: ' Harish epitomizes professionalism and promptness, a rarity in this fast-paced digital world.',
+  },
+  {
+    name: 'Ryan Mitchell', reviews: '1 review · a year ago',
+    img: '/review_home page/review images/Ryan Mitchell.webp',
+    pre: 'Before I started working with iSureMedia, my finance consultancy was struggling to attract consistent leads online. Birmingham is a place where we have cut throat competition, we decided to stay on top and we did, with Isuremedia. And honestly, ',
+    highlight: 'the experience with Harish and the IsureMedia team has been a game-changer.',
+    post: '',
+  },
+  {
+    name: 'Kranky K9', reviews: '11 reviews · 2 years ago',
+    img: '/review_home page/review images/Kranky K9.webp',
+    pre: 'Harish and his team are absolutely wonderful to work with. ',
+    highlight: 'Their service has exceeded our expectation every time.',
+    post: ' The customer service is second to none and there is no doubt we will be working with this business for years to come. — Casey Phillips, Kranky K9 Dog Training LLC.',
+  },
+  {
+    name: 'David Goldstein', reviews: '10 reviews · 2 years ago',
+    img: '/review_home page/review images/David Goldstein.webp',
+    pre: 'I highly recommend Isure Media for their outstanding technical support and exceptional design and development services. ',
+    highlight: 'Their team not only resolved complex technical issues efficiently but also delivered creative designs and robust development solutions',
+    post: ' that perfectly aligned with my vision.',
+  },
+  {
+    name: 'Sharon Longridge', reviews: '10 reviews · a year ago',
+    img: '/review_home page/review images/Sharon Longridge.webp',
+    pre: 'iSure Media have been our trusted technology partner since 2022, handling all Kajabi and Active Campaign-related tasks including the creation and ongoing management of custom automations (email and SMS) and our Google Analytics user engagement dashboard. ',
+    highlight: 'Our collaboration is built on trust, transparency, and proactive communication.',
+    post: '',
+  },
+];
+
 const HOME_SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "name": "Isuremedia",
-      "url": "https://isuremedia.com",
+      "@type": "MarketingAgency",
+      "@id": "https://isuremedia.com/#organization",
+      "name": "Isuremedia Private Limited",
+      "alternateName": "Isuremedia",
+      "url": "https://isuremedia.com/",
       "logo": "https://isuremedia.com/isuremedia-dark.webp",
-      "email": "seoteam@isuremedia.com",
-      "foundingDate": "2018",
-      "description": "Full-service digital marketing agency offering SEO, PPC, web design, and marketing automation.",
-      "areaServed": ["US", "UK", "IN", "NZ", "AE", "CA"],
+      "image": "https://isuremedia.com/isuremedia-dark.webp",
+      "description": "Isuremedia is a results-driven digital marketing agency offering SEO, PPC, content, web design and marketing automation, along with white-label fulfilment for agencies. We serve clients online across the USA, UK, Australia, Canada and India.",
+      "foundingDate": "2017",
+      "priceRange": "$$",
+
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gas Godam Road, Chharayal Nayabad, First Floor, Chandra Complex",
+        "addressLocality": "Haldwani",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "263139",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.1985821,
+        "longitude": 79.4861243
+      },
+      "hasMap": "https://www.google.com/maps/place/Isuremedia+Private+Limited/@29.1985821,79.4835494,17z",
+
+      "location": {
+        "@type": "Place",
+        "name": "Isuremedia India Office",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gas Godam Road, Chharayal Nayabad, First Floor, Chandra Complex",
+          "addressLocality": "Haldwani",
+          "addressRegion": "Uttarakhand",
+          "postalCode": "263139",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-73-0000-7650"
+      },
+
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "US Registered Address",
+        "value": "30 N. Gould St., Suite B, Sheridan, WY 82801, United States"
+      },
+
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-73-0000-7650",
+          "contactType": "customer service",
+          "areaServed": "IN"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-646-588-1430",
+          "contactType": "customer service",
+          "areaServed": ["US", "UK", "AU", "CA"]
+        }
+      ],
+
+      "areaServed": [
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "Canada" },
+        { "@type": "Country", "name": "India" }
+      ],
+
+      "serviceType": "Digital Marketing Agency Services (SEO, PPC, Web Design, Content, Marketing Automation, White-Label Fulfilment)",
+
       "sameAs": [
-        "https://www.linkedin.com/company/isuremedia",
-        "https://www.facebook.com/isuremedia"
+        "https://www.linkedin.com/company/isuremedia/",
+        "https://www.facebook.com/Isuremedia2017/",
+        "https://www.instagram.com/isuremedia/",
+        "https://x.com/isuremedia_",
+        "https://www.youtube.com/channel/UC5DR1JBq-Sf2QOlzvQsLeKw",
+        "https://www.google.com/maps/place/Isuremedia+Private+Limited/@29.1985821,79.4835494,17z/data=!3m2!4b1!5s0x39a09b4f3fbe1675:0xb03c9b4c838bcb6c!4m6!3m5!1s0x39a09b59125c64b7:0xa50d6b8635f8ce83!8m2!3d29.1985821!4d79.4861243!16s%2Fg%2F11c6pqx1_6"
       ]
     },
     {
@@ -86,9 +212,10 @@ export default function Home() {
           heading="Trusted by Businesses and Agencies Worldwide."
           subheading="From local businesses to white-label agency partners, here is what our clients say about working with us."
           showTrustBar={false}
+          testimonials={HOME_TESTIMONIALS}
         />
         <FAQ />
-        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
+        <CTASection imageWidth={340} overflowTop={70} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
       </main>
       <Footer />
     </>

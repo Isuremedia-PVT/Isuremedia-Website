@@ -49,6 +49,7 @@ export default function HomeVideoSection() {
                 <img
                   src={`https://img.youtube.com/vi/${VIDEO_ID}/hqdefault.jpg`}
                   alt="Isuremedia Client Results Video"
+                  loading="lazy"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
 

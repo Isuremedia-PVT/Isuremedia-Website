@@ -1,0 +1,49 @@
+# Isuremedia Private Limited
+
+> Isuremedia is a results-driven digital marketing agency founded in 2017, offering SEO, PPC, content marketing, web design, marketing automation, AI development, and white-label digital marketing services for businesses and agencies. We serve clients across the USA, UK, Australia, Canada, India, New Zealand, and UAE.
+
+## Services
+
+- [SEO Services](https://isuremedia.com/seo-services/): Full-service SEO including technical SEO, on-page optimisation, local SEO, link building, and AI search optimisation.
+- [Websites & Funnels](https://isuremedia.com/websites-and-funnels/): Web design and development including WordPress, Shopify, GoHighLevel, ClickFunnels, Kajabi, landing pages, and custom websites.
+- [PPC Marketing](https://isuremedia.com/ppc-marketing-agencies/): Paid advertising management across Google Ads, Meta, and other advertising platforms.
+- [Content & Creative](https://isuremedia.com/content-marketing-and-creative-agency/): SEO content writing, graphic design, ad creative, video marketing, and brand identity.
+- [White Label Digital Marketing](https://isuremedia.com/white-label-digital-marketing/): White-label SEO, PPC, web design, GoHighLevel support, and dedicated agency pods for reseller agencies.
+- [Marketing Automation](https://isuremedia.com/marketing-automation-agency/): GoHighLevel setup, CRM implementation, automation workflows, and marketing automation.
+
+## Web Development
+
+- [Landing Page Design](https://isuremedia.com/landing-page-design-services/): High-converting landing page design and development.
+- [Business Website Design](https://isuremedia.com/business-website-design-services/): Professional business websites built for performance and conversions.
+- [WordPress Development](https://isuremedia.com/wordpress-development-services/): Custom WordPress website design and development.
+- [Shopify Development](https://isuremedia.com/shopify-development-services/): Shopify store design, development, and optimisation.
+- [GoHighLevel Developer](https://isuremedia.com/gohighlevel-developer/): GoHighLevel funnel and website development.
+- [GoHighLevel Development Services](https://isuremedia.com/gohighlevel-development-services/): GoHighLevel CRM setup, automation, and custom development.
+- [ClickFunnels Development](https://isuremedia.com/clickfunnels-development/): ClickFunnels funnel design and development.
+- [Sales Funnel Design](https://isuremedia.com/sales-funnel-design/): Custom sales funnel strategy, design, and development.
+- [Kajabi Website Development](https://isuremedia.com/kajabi-website-development/): Kajabi course and membership website development.
+- [PHP Laravel Development](https://isuremedia.com/php-laravel-development/): Custom web application development using PHP and Laravel.
+- [Node.js Development](https://isuremedia.com/nodejs-development-services/): Scalable backend and full-stack Node.js development.
+- [Python Development](https://isuremedia.com/python-development-services/): Python-based web application and automation development.
+- [AI Development](https://isuremedia.com/ai-development-services/): AI-powered application, integration, and automation development.
+- [Wix Website Development](https://isuremedia.com/wix-website-development/): Professional Wix website design and development.
+
+## Company
+
+- [About Isuremedia](https://isuremedia.com/about/): Company background, team, and values.
+- [Portfolio](https://isuremedia.com/portfolio/): Examples of past client work across industries.
+- [Case Studies](https://isuremedia.com/case-studies/): Detailed client results and campaign outcomes.
+- [Testimonials](https://isuremedia.com/testimonials/): Reviews and feedback from clients.
+- [Careers](https://isuremedia.com/careers/): Open positions and hiring information.
+- [Contact](https://isuremedia.com/contact/): Get in touch with the Isuremedia team.
+- [Book an Appointment](https://isuremedia.com/appointment/): Schedule a strategy call.
+
+## Key Facts
+
+- Founded: 2017
+- Headquarters: Haldwani, Uttarakhand, India
+- Markets served: United States, United Kingdom, Australia, Canada, India, New Zealand, UAE
+- Industries: Dog training, real estate, construction, landscaping, healthcare, e-commerce, SaaS, law firms, marketing agencies
+- Email: seoteam@isuremedia.com
+- India: +91-73-0000-7650
+- US/UK/AU/CA: +1-646-588-1430
