@@ -96,7 +96,6 @@ export default function CTASection({
           .cta-person-img { position: static !important; left: auto !important; transform: none !important; width: 100% !important; max-width: 220px !important; height: auto !important; }
           .cta-section { padding: 36px 0 !important; }
           .cta-btn { padding: 12px 22px !important; font-size: 12.5px !important; }
-          .cta-section h2 { font-size: 30px !important; }
         }
         @media (max-width: 480px) {
           .cta-section { padding: 28px 0 !important; }

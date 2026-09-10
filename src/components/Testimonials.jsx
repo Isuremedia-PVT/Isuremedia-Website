@@ -181,7 +181,6 @@ export default function Testimonials({
         @media (max-width: 768px) {
           .tsm-section { padding: 32px 0 48px !important; }
           .tsm-carousel-wrap { padding: 0 44px !important; }
-          .tsm-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 640px) {
           .tsm-carousel-wrap { padding: 0 !important; }

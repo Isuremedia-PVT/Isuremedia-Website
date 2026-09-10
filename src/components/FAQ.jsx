@@ -106,7 +106,6 @@ export default function FAQ() {
       <style>{`
         @media (max-width: 768px) {
           .faq-section { padding: 44px 0 !important; }
-          .faq-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 480px) {
           .faq-section { padding: 32px 0 !important; }

@@ -105,7 +105,6 @@ export default function TrustVideo() {
           .tv-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
           .tv-btns { flex-direction: column !important; align-items: stretch !important; }
           .tv-btns a { width: 100% !important; justify-content: center !important; box-sizing: border-box !important; }
-          .tv-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 480px) {
           .tv-section { padding: 32px 0 !important; }

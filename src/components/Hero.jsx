@@ -103,7 +103,6 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; min-height: unset !important; gap: 24px !important; }
           .hero-container { padding: 0 20px !important; max-width: 100% !important; }
-          .hero-container h1 { font-size: 34px !important; }
         }
         @media (max-width: 480px) {
           .hero-btns { flex-direction: column !important; align-items: stretch !important; }
