@@ -127,6 +127,7 @@ export default function VideoTestimonials() {
         @media (max-width: 768px) {
           .vt-section { padding: 44px 0 28px !important; }
           .vt-grid { grid-template-columns: 1fr !important; }
+          .vt-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 480px) {
           .vt-section { padding: 32px 0 20px !important; }

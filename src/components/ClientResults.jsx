@@ -144,6 +144,7 @@ export default function ClientResults({
         @media (max-width: 760px) {
           .cr-grid { grid-template-columns: minmax(0,1fr) !important; }
           .cr-section { padding: 44px 0 !important; }
+          .cr-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 1024px) {
           .cr-header { grid-template-columns: minmax(0,1fr) !important; }

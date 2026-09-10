@@ -129,6 +129,9 @@ export default function HowItWorks({
           .hiw-grid { grid-template-columns: repeat(2,1fr) !important; gap: 36px !important; }
           .hiw-line { display: none !important; }
         }
+        @media (max-width: 768px) {
+          .hiw-section h2 { font-size: 32px !important; }
+        }
         @media (max-width: 520px) {
           .hiw-section { padding: 36px 0 32px !important; }
           .hiw-grid { grid-template-columns: 1fr !important; gap: 32px !important; }

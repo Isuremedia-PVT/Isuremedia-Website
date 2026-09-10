@@ -52,6 +52,7 @@ export default function ProblemStatement() {
         @media (max-width: 768px) {
           .ps-section { padding: 44px 0 40px !important; }
           .ps-container { padding: 0 20px !important; max-width: 100% !important; }
+          .ps-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 480px) {
           .ps-section { padding: 36px 0 32px !important; }

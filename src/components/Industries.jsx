@@ -275,7 +275,7 @@ export default function Industries() {
         @media (max-width: 1280px) { .ind-slide { flex: 0 0 25% !important; } }
         @media (max-width: 1023px) { .ind-slide { flex: 0 0 50% !important; } }
         @media (max-width: 600px)  { .ind-slide { flex: 0 0 100% !important; } }
-        @media (max-width: 768px)  { .ind-section { padding: 48px 0 40px !important; } }
+        @media (max-width: 768px)  { .ind-section { padding: 48px 0 40px !important; } .ind-header h2 { font-size: 32px !important; } }
         @media (max-width: 480px)  { .ind-section { padding: 36px 0 32px !important; } }
 
         .ind-card:hover { transform: translateY(-6px); box-shadow: 0 20px 56px rgba(0,0,0,.30) !important; }

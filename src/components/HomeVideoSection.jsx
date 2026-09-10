@@ -103,6 +103,7 @@ export default function HomeVideoSection() {
           .hvs-watch-label { display: none !important; }
           .hvs-play-btn { width: 56px !important; height: 56px !important; }
           .hvs-play-wrap { gap: 0 !important; }
+          .hvs-section h2 { font-size: 32px !important; }
         }
         @media (max-width: 480px) {
           .hvs-section { padding: 36px 0 !important; }

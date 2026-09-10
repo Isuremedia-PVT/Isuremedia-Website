@@ -352,6 +352,9 @@ export default function Services() {
           .svc-top { grid-template-columns: minmax(0,1fr) !important; gap: 24px !important; }
           .svc-photo-wrap { order: -1; margin-bottom: 12px; height: auto; aspect-ratio: 16/9; }
         }
+        @media (max-width: 768px) {
+          .svc-section h2 { font-size: 32px !important; }
+        }
         @media (max-width: 480px) {
           .svc-section { padding: 36px 0 40px !important; }
           .svc-card { padding: 32px 18px 40px !important; }
