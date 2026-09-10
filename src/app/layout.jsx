@@ -33,15 +33,17 @@ export const metadata = {
     description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
     type: "website",
     // Site-wide fallback preview image — any page that doesn't set its own
-    // openGraph.images inherits this, so link previews always show the
-    // Isuremedia logo instead of no image at all.
-    images: [{ url: "/isuremedia-dark.webp", width: 1200, height: 346 }],
+    // openGraph.images inherits this, so link previews always show a proper
+    // branded card instead of no image at all. Purpose-made 1200x630 (the
+    // recommended OG/Twitter card ratio) — the raw logo file is 1200x346,
+    // which renders letterboxed/cropped oddly on most link-preview cards.
+    images: [{ url: "/og-fallback.webp", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
     description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
-    images: ["/isuremedia-dark.webp"],
+    images: ["/og-fallback.webp"],
   },
   icons: {
     icon: "/favicon.webp",

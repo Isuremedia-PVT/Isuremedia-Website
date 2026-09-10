@@ -123,13 +123,20 @@ const HOME_SCHEMA = JSON.stringify({
 
 export const metadata = {
   title: "Digital Marketing Agency | SEO, PPC & Web | Isuremedia",
-  description: "Isuremedia is a results-driven digital marketing agency. SEO, PPC, content, web design & marketing automation. 150+ clients. 8 years. Free audit.",
+  description: "Isuremedia is a results-driven digital marketing agency. SEO, PPC, content, web design & marketing automation. 150+ clients. 9 years. Free audit.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
     description: "SEO, PPC, web design, content, and marketing automation delivered by an in-house team. One agency, every digital service you need to grow.",
     type: "website",
     url: "/",
+    images: [{ url: "/images/banner02.webp", width: 1200, height: 741 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
+    description: "SEO, PPC, web design, content, and marketing automation delivered by an in-house team. One agency, every digital service you need to grow.",
+    images: ["/images/banner02.webp"],
   },
 };
 
