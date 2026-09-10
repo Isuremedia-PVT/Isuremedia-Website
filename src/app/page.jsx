@@ -215,7 +215,7 @@ export default function Home() {
           testimonials={HOME_TESTIMONIALS}
         />
         <FAQ />
-        <CTASection imageWidth={460} overflowTop={140} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
+        <CTASection imageWidth={340} overflowTop={70} primaryLabel="Get a Free Proposal" secondaryLabel="Talk to an Expert" secondaryHref="/appointment" cardPadTop={28} cardPadX={48} />
       </main>
       <Footer />
     </>
