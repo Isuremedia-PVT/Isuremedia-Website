@@ -20,6 +20,11 @@ const inter = Inter({
 });
 
 export const metadata = {
+  // Without this, Next.js can't resolve relative OG/Twitter image URLs to an
+  // absolute address — on Vercel it silently falls back to the deployment's
+  // own *.vercel.app URL (or localhost in dev), so link previews show
+  // Vercel's own placeholder/branding instead of ours.
+  metadataBase: new URL("https://isuremedia.com"),
   title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
   description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
   keywords: "digital marketing agency, white label marketing, SEO agency, PPC management, social media marketing, content marketing",
@@ -27,6 +32,16 @@ export const metadata = {
     title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
     description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
     type: "website",
+    // Site-wide fallback preview image — any page that doesn't set its own
+    // openGraph.images inherits this, so link previews always show the
+    // Isuremedia logo instead of no image at all.
+    images: [{ url: "/isuremedia-dark.webp", width: 1200, height: 346 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Isuremedia – Full Service Digital Marketing Agency & White Label Partner",
+    description: "End-to-end digital marketing agency. SEO, Web, PPC, Automation. One team. One strategy. Zero gaps.",
+    images: ["/isuremedia-dark.webp"],
   },
   icons: {
     icon: "/favicon.webp",
