@@ -57,7 +57,7 @@ const HOME_SCHEMA = JSON.stringify({
           "postalCode": "263139",
           "addressCountry": "IN"
         },
-        "telephone": "+91-73-0000-7650"
+        "telephone": "+91-70110-41363"
       },
 
       "additionalProperty": {
@@ -69,7 +69,7 @@ const HOME_SCHEMA = JSON.stringify({
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+91-73-0000-7650",
+          "telephone": "+91-70110-41363",
           "contactType": "customer service",
           "areaServed": "IN"
         },
