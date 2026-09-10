@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'How long has Isuremedia been in business?',
-    a: 'We have been delivering digital marketing results since 2018, with over 8 years of agency experience across 150+ clients in the US, UK, India, New Zealand, UAE, and Canada.',
+    a: 'We have been delivering digital marketing results since 2017, with over 9 years of agency experience across 150+ clients in the US, UK, Australia, India, New Zealand, UAE, and Canada.',
   },
   {
     q: 'Do you work with small businesses or only large companies?',
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: 'Which countries do you serve?',
-    a: 'We have active clients in the US, UK, India, New Zealand, UAE, and Canada. Our team works across time zones to provide timely communication and support.',
+    a: 'We have active clients in the US, UK, Australia, India, New Zealand, UAE, and Canada. Our team works across time zones to provide timely communication and support.',
   },
 ];
 
