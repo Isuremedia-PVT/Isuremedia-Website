@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Block admin, private, and utility paths
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /api/
+Disallow: /.env
+Disallow: /cdn-cgi/
+
+# Block HTML sitemap page (not the XML sitemap)
+Disallow: /sitemap/
+
+# Sitemap location
+Sitemap: https://isuremedia.com/sitemap.xml
