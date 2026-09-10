@@ -108,10 +108,10 @@ export default function Testimonials({
         >
           <NavBtn dir="prev" onClick={prev} />
           <div ref={emblaRef} style={{ overflow: 'hidden' }}>
-            <div style={{ display: 'flex', padding: '16px 2px' }}>
+            <div style={{ display: 'flex' }}>
               {testimonials.map((t, i) => (
                 <div key={i} className="tsm-slide">
-                  <div className="tsm-card" style={{ background: '#fff', borderRadius: 20, padding: '32px 30px', height: '100%', display: 'flex', flexDirection: 'column', boxShadow: '0 4px 20px rgba(0,35,83,.06)', border: '1px solid var(--color-border)', boxSizing: 'border-box' }}>
+                  <div className="tsm-card" style={{ background: '#fff', borderRadius: 20, padding: '32px 30px', height: '100%', display: 'flex', flexDirection: 'column', border: '1px solid var(--color-border)', boxSizing: 'border-box' }}>
                     <div style={{ width: 44, height: 44, borderRadius: '50%', background: '#F1F3F6', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 18, flexShrink: 0 }}>
                       <i className="fa-solid fa-quote-left" style={{ fontSize: 16, color: 'var(--color-text-muted)' }} />
                     </div>
