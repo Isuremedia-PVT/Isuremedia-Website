@@ -74,6 +74,7 @@ export default function CTASection({
               className="cta-person-img"
               src={image}
               alt="Isuremedia team"
+              loading="lazy"
               style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: 'auto', maxWidth: 'none', height: `${100 + bleed * 100}%`, display: 'block', objectFit: 'contain', objectPosition: 'bottom center' }}
             />
           </div>
