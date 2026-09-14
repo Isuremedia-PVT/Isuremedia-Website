@@ -29,6 +29,7 @@ export const metadata = {
   title: "Hire a GoHighLevel Expert for CRM, Automation & SaaS",
   description: "Hire a GoHighLevel expert to build, fix, or manage your system. Get help with CRM setup, automation, integrations, SaaS workflows and ongoing support.",
   alternates: { canonical: "/hire-gohighlevel-expert" },
+  openGraph: { images: [{ url: "/feature_image/Hire a GoHighLevelExpert.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireGohighlevelLayout({ children }) {

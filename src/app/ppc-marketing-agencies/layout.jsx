@@ -26,6 +26,7 @@ export const metadata = {
   title: "Paid Advertising Agency | PPC Marketing Agencies & PPC Management Services",
   description: "Scale revenue with top PPC marketing agencies. Expert paid advertising agency offering PPC management services across Google Ads, Meta ads & LinkedIn ads.",
   alternates: { canonical: "/ppc-marketing-agencies" },
+  openGraph: { images: [{ url: "/feature_image/ppc.webp", width: 1618, height: 950 }] },
 };
 
 export default function PPCLayout({ children }) {

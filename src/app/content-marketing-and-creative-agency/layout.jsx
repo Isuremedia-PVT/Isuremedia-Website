@@ -26,6 +26,7 @@ export const metadata = {
   title: "Content Marketing Agency | SEO & Blog Writing Services",
   description: "Grow your brand with a full-service content marketing agency. Get expert SEO content writing, custom ad creative design, and website copywriting services.",
   alternates: { canonical: "/content-marketing-and-creative-agency" },
+  openGraph: { images: [{ url: "/feature_image/Content &Creative.webp", width: 1618, height: 950 }] },
 };
 
 export default function ContentCreativeLayout({ children }) {

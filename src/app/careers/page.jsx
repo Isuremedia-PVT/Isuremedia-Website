@@ -9,6 +9,7 @@ export const metadata = {
     description: "Real client accounts from day one. See open roles and apply to join Isuremedia's in-house digital marketing team.",
     type: "website",
     url: "/careers",
+    images: [{ url: "/feature_image/Careers.webp", width: 1618, height: 950 }],
   },
 };
 

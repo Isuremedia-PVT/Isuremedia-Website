@@ -26,6 +26,7 @@ export const metadata = {
   title: "SEO Services Agency | Drive Organic Traffic Growth",
   description: "Rank higher on search engines with an expert SEO services agency. We provide technical SEO audits, local SEO services, and strategic link building.",
   alternates: { canonical: "/seo-services" },
+  openGraph: { images: [{ url: "/feature_image/seo.webp", width: 1618, height: 950 }] },
 };
 
 export default function SeoLayout({ children }) {

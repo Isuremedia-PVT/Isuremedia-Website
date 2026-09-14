@@ -29,6 +29,7 @@ export const metadata = {
   title: "Hire a Web Designer for Conversion Focused Websites & Web Apps",
   description: "Hire a web designer for custom websites, web apps, APIs, and integrations. Get experienced development support for complex builds, performance and ongoing maintenance.",
   alternates: { canonical: "/hire-web-designer" },
+  openGraph: { images: [{ url: "/feature_image/Hire a Web Designer.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireWebDesignerLayout({ children }) {
