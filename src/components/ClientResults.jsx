@@ -4,6 +4,7 @@ const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
 const LOGO_STRIP = '/images/partner.webp';
+const LOGO_STRIP_MOBILE = '/images/partners-mobile.webp';
 
 
 const DEFAULT_CASES = [
@@ -48,12 +49,15 @@ export default function ClientResults({
         {/* ── Partner Logos Strip ── */}
         {showLogos && (
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 56 }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={LOGO_STRIP}
-              alt="Partner certifications"
-              style={{ maxWidth: '100%', height: 'auto', display: 'block', opacity: 0.88 }}
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={LOGO_STRIP_MOBILE} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={LOGO_STRIP}
+                alt="Partner certifications"
+                style={{ maxWidth: '100%', height: 'auto', display: 'block', opacity: 0.88 }}
+              />
+            </picture>
           </div>
         )}
 
