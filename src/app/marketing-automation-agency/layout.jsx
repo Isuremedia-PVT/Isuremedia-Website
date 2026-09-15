@@ -26,6 +26,7 @@ export const metadata = {
   title: "Marketing Automation Agency | GoHighLevel Setup",
   description: "Marketing automation built and managed for you. GoHighLevel setup, CRM workflows, lead nurture, email & SMS automation. Keep your pipeline full 24/7.",
   alternates: { canonical: "/marketing-automation-agency" },
+  openGraph: { images: [{ url: "/feature_image/MarketingAutomation.webp", width: 1618, height: 950 }] },
 };
 
 export default function MarketingAutomationLayout({ children }) {

@@ -52,7 +52,7 @@ export default function RootLayout({
   children
 }) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
+    <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`} suppressHydrationWarning>
       {/* Google tag (gtag.js) — Google Ads conversion tracking, account AW-11188806111 */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-11188806111"
@@ -78,7 +78,7 @@ export default function RootLayout({
         `}
       </Script>
 
-      <body>
+      <body suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

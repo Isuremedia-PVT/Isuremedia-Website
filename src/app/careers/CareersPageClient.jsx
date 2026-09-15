@@ -1,4 +1,5 @@
 ﻿'use client';
+import Link from 'next/link';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Script from 'next/script';
@@ -194,9 +195,9 @@ export default function CareersPageClient() {
                     </div>
                   ))}
                 </div>
-                <a href="/about" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginTop: 32, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' }}>
+                <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginTop: 32, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' }}>
                   Get to know the company <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                </a>
+                </Link>
               </div>
 
             </div>
@@ -467,7 +468,7 @@ export default function CareersPageClient() {
                 </p>
 
                 <div className="car-cta-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  <a
+                  <Link
                     href="/appointment"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
@@ -475,9 +476,9 @@ export default function CareersPageClient() {
                   >
                     <i className="fa-solid fa-phone" style={{ fontSize: 14 }} />
                     Book a Free Call
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="/contact"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'rgba(255,255,255,.12)', border: '1px solid rgba(255,255,255,.25)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,.20)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
@@ -485,7 +486,7 @@ export default function CareersPageClient() {
                   >
                     <i className="fa-solid fa-envelope" style={{ fontSize: 13 }} />
                     Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
 

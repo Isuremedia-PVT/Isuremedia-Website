@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -261,13 +262,13 @@ export default function Industries() {
 
       {/* CTA */}
       <div style={{ textAlign: 'center', marginTop: 44 }}>
-        <a href="/industries"
+        <Link href="/industries"
           style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '14px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', transition: 'all .18s', boxShadow: '0 4px 20px rgba(255,176,0,.30)' }}
           onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(255,176,0,.40)'; }}
           onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,176,0,.30)'; }}
         >
           VIEW ALL INDUSTRIES <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-        </a>
+        </Link>
       </div>
 
       <style>{`

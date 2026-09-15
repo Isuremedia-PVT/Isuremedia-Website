@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -361,20 +362,20 @@ export default function CaseStudyDetail({
                 </p>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-                  <a href={d.ctaPrimaryHref}
+                  <Link href={d.ctaPrimaryHref}
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
                     onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.55)'; }}
                     onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
                   >
                     {d.ctaPrimaryLabel}
-                  </a>
-                  <a href={d.ctaSecondaryHref}
+                  </Link>
+                  <Link href={d.ctaSecondaryHref}
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 26px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: '#fff', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid rgba(255,255,255,.40)', transition: 'all .18s', whiteSpace: 'nowrap' }}
                     onMouseEnter={e => { e.currentTarget.style.borderColor = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,.08)'; }}
                     onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,.40)'; e.currentTarget.style.background = 'transparent'; }}
                   >
                     {d.ctaSecondaryLabel}
-                  </a>
+                  </Link>
                 </div>
               </div>
 

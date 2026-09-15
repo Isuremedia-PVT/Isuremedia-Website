@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
@@ -115,11 +116,11 @@ export default function ServicesPage() {
                   Strategy, execution, and growth, all under one roof. From websites and SEO to paid ads, content, automation, and white-label fulfillment, Isuremedia covers the full digital marketing stack so you never have to juggle agencies again.
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-                  <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                     Get Free Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                  </a>
+                  </Link>
                   <a href="#services-grid" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; (e.currentTarget).style.color = '#fff'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; (e.currentTarget).style.color = 'var(--color-primary)'; }}>
@@ -175,11 +176,11 @@ export default function ServicesPage() {
                   <div style={{ width: 32, height: 3, background: 'var(--ism-amber)', borderRadius: 2, marginBottom: 16 }} />
                   <h3 style={{ fontFamily: J, fontSize: 20, fontWeight: 800, color: 'var(--color-navy)', marginBottom: 12 }}>{s.title}</h3>
                   <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 24 }}>{s.desc}</p>
-                  <a href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'gap .18s' }}
+                  <Link href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'gap .18s' }}
                     onMouseEnter={e => (e.currentTarget.style.gap = '12px')}
                     onMouseLeave={e => (e.currentTarget.style.gap = '7px')}>
                     Explore <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

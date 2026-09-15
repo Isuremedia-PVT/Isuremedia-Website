@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -93,13 +94,13 @@ export default function FAQ() {
 
         <div style={{ textAlign: 'center', marginTop: 40 }}>
           <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', marginBottom: 14 }}>Still have questions?</p>
-          <a href="/appointment"
+          <Link href="/appointment"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; }}
           >
             Talk to Us <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-          </a>
+          </Link>
         </div>
       </div>
 

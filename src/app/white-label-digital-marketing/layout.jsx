@@ -27,6 +27,7 @@ export const metadata = {
   title: "White Label Digital Marketing | Outsource Digital Agency",
   description: "Scale your client base with white label digital marketing. Trusted white label SEO agency and PPC management services designed for growing agencies.",
   alternates: { canonical: "/white-label-digital-marketing" },
+  openGraph: { images: [{ url: "/feature_image/white-label.webp", width: 1618, height: 950 }] },
 };
 
 export default function WhiteLabelLayout({ children }) {

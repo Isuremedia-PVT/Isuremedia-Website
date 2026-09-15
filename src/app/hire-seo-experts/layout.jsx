@@ -29,6 +29,7 @@ export const metadata = {
   title: "Hire SEO Experts for Technical, Local & AI Search SEO",
   description: "Hire SEO experts to uncover what is holding your search visibility back and build a strategy around technical SEO, content, local search and AI visibility.",
   alternates: { canonical: "/hire-seo-experts" },
+  openGraph: { images: [{ url: "/feature_image/hire-seo-expert.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireSeoExpertLayout({ children }) {

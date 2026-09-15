@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
+import Link from 'next/link';
 
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
@@ -242,13 +243,13 @@ function CaseCard({
       {/* Body + link */}
       <div>
         <p style={{ fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)', lineHeight: 1.78, margin: '0 0 14px' }}>{c.body}</p>
-        <a href={c.link}
+        <Link href={c.link}
           style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', transition: 'gap .15s' }}
           onMouseEnter={e => { e.currentTarget.style.textDecoration = 'underline'; (e.currentTarget).style.gap = '10px'; }}
           onMouseLeave={e => { e.currentTarget.style.textDecoration = 'none'; (e.currentTarget).style.gap = '6px'; }}
         >
           {c.linkLabel} <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-        </a>
+        </Link>
       </div>
 
     </div>
@@ -283,11 +284,11 @@ export default function CaseStudiesPage() {
                   Filter by service to see a real result from that exact type of engagement.
                 </p>
                 <div className="cs-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  <a href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  <Link href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                     Book a Free Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                  </a>
+                  </Link>
                 </div>
               </div>
 

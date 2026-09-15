@@ -9,6 +9,7 @@ export const metadata = {
     description: "Meet the Isuremedia team and the story behind an in-house digital marketing agency built for measurable growth.",
     type: "website",
     url: "/about",
+    images: [{ url: "/feature_image/about-us.webp", width: 1618, height: 950 }],
   },
 };
 

@@ -29,6 +29,7 @@ export const metadata = {
   title: "Hire a Marketing Automation Expert for CRM & Lead Automation",
   description: "Hire a marketing automation expert to replace manual follow-up with smarter workflows, lead nurturing, CRM automation, AI and connected customer journeys.",
   alternates: { canonical: "/hire-marketing-automation-expert" },
+  openGraph: { images: [{ url: "/feature_image/hire-marketing-automation-expert.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireMarketingAutomationLayout({ children }) {

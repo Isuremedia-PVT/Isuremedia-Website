@@ -1,4 +1,5 @@
 ﻿'use client';
+import Link from 'next/link';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -263,18 +264,18 @@ export default function HireMarketingAutomationExpert() {
 
           {/* CTAs - Centered */}
           <div className="wp-hero-btns" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-            <a href="/contact"
+            <Link href="/contact"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
               Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-            </a>
-            <a href="/appointment"
+            </Link>
+            <Link href="/appointment"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s', boxShadow: '0 2px 8px rgba(30,77,195,0.06)' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--ism-blue-50)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}>
               Talk to an Expert
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -319,12 +320,12 @@ export default function HireMarketingAutomationExpert() {
                 ))}
               </div>
 
-              <a href="/contact"
+              <Link href="/contact"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                 Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-              </a>
+              </Link>
             </div>
 
             {/* Right Column: Image */}
@@ -513,9 +514,9 @@ export default function HireMarketingAutomationExpert() {
                     </div>
 
                     {/* CTA Pill */}
-                    <a href="/contact" className="svc-cta-pill">
+                    <Link href="/contact" className="svc-cta-pill">
                       Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-                    </a>
+                    </Link>
                   </div>
 
                   {/* Right Column, Photo + floating badges */}
@@ -629,13 +630,13 @@ export default function HireMarketingAutomationExpert() {
               </p>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                <a href="/contact"
+                <Link href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '14px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
                 >
                   Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -824,12 +825,12 @@ export default function HireMarketingAutomationExpert() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: 44 }}>
-            <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 40px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.50)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
             >
               Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-            </a>
+            </Link>
           </div>
 
           <style>{`
@@ -883,7 +884,7 @@ export default function HireMarketingAutomationExpert() {
               <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 36 }}>
                 Honest answers before you decide. No spin, no buzzwords.
               </p>
-              <a href="/contact"
+              <Link href="/contact"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 800, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.25)'
                 }}
@@ -891,7 +892,7 @@ export default function HireMarketingAutomationExpert() {
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
                 Get Started <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-              </a>
+              </Link>
             </div>
 
             {/* ── Right Column: FAQ Accordion ── */}
@@ -963,18 +964,18 @@ export default function HireMarketingAutomationExpert() {
                 Whether you are building automation from scratch, fixing a system that never quite delivered, or ready to add AI to what you already have, the first step is the same. Send your requirements and get a free proposal, or talk to an expert and walk through exactly what your marketing system needs to do.
               </p>
               <div className="wp-end-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                <a href="/contact"
+                <Link href="/contact"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                   Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                </a>
-                <a href="/appointment"
+                </Link>
+                <Link href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
                   onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-bg-soft)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}>
                   Talk to an Expert
-                </a>
+                </Link>
               </div>
             </div>
 

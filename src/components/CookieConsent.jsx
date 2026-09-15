@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { getConsent, saveConsent, DEFAULT_PREFS } from '@/data/cookieConsent';
+import Link from 'next/link';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -77,9 +78,9 @@ export default function CookieConsent() {
             </div>
             <p className="cc-desc" style={{ fontFamily: I, fontSize: 14, color: 'rgba(255,255,255,.82)', lineHeight: 1.65, margin: 0 }}>
               We use cookies to run this site, understand how it&apos;s used, and personalize content. Choose what you&apos;re comfortable with, or read our{' '}
-              <a href="/cookie-policy" style={{ color: 'var(--ism-amber)', textDecoration: 'underline' }}>Cookie Policy</a>
+              <Link href="/cookie-policy" style={{ color: 'var(--ism-amber)', textDecoration: 'underline' }}>Cookie Policy</Link>
               {' '}and{' '}
-              <a href="/privacy-policy" style={{ color: 'var(--ism-amber)', textDecoration: 'underline' }}>Privacy Policy</a>.
+              <Link href="/privacy-policy" style={{ color: 'var(--ism-amber)', textDecoration: 'underline' }}>Privacy Policy</Link>.
             </p>
           </div>
 

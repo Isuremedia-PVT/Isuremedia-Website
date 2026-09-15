@@ -1,9 +1,11 @@
 ﻿'use client';
+import Link from 'next/link';
 
 import { useState, useMemo } from 'react';
 import Navbar from '@/components/Navbar';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
+import SmartLink from '@/components/SmartLink';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -102,11 +104,11 @@ export default function PortfolioPage() {
                   From high-converting websites to revenue-driving funnels and SEO campaigns, browse a selection of projects we&apos;ve delivered for clients across the globe.
                 </p>
                 <div className="port-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                     Start Your Project <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -216,7 +218,7 @@ export default function PortfolioPage() {
               {filteredProjects.map((p, i) => {
                 const isExternal = p.href.startsWith('http');
                 return (
-                <a key={i} href={p.href} className="port-card" {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+                <SmartLink key={i} href={p.href} className="port-card" {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                   {/* Image wrap */}
                   <div className="port-card-img-wrap">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -247,7 +249,7 @@ export default function PortfolioPage() {
                       {p.desc}
                     </p>
                   </div>
-                </a>
+                </SmartLink>
                 );
               })}
             </div>

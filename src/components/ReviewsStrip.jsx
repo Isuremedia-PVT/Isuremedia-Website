@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function ReviewsStrip() {
   return (
     <section className="rs-section" style={{ background: '#F7F8FA', padding: '16px 0' }}>
@@ -25,10 +26,10 @@ export default function ReviewsStrip() {
 
           {/* Client Reviews */}
           <div className="rs-item" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '8px 40px' }}>
-            <a href="/testimonials" style={{ display: 'block' }}>
+            <Link href="/testimonials" style={{ display: 'block' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/Client.webp" alt="Client Reviews" className="rs-img" style={{ height: 90, width: 'auto', maxWidth: '100%', objectFit: 'contain', display: 'block' }} />
-            </a>
+            </Link>
           </div>
 
         </div>

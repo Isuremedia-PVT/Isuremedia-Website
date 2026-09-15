@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -68,6 +69,21 @@ export const defaultTestimonials = [
 
 export const AVATAR_COLORS = ['#1E4DC3', '#FFB000', '#0E9B6E', '#8B5CF6', '#EF4444', '#0EA5E9'];
 
+function NavBtn({ dir, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={dir}
+      className="tsm-nav"
+      style={{ position: 'absolute', [dir === 'prev' ? 'left' : 'right']: 0, top: '50%', transform: 'translateY(-50%)', zIndex: 2, width: 42, height: 42, borderRadius: '50%', background: '#fff', border: '1.5px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 2px 12px rgba(0,0,0,.10)', transition: 'all .18s' }}
+      onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i')).style.color = '#fff'; }}
+      onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = 'var(--color-border)'; (e.currentTarget.querySelector('i')).style.color = 'var(--color-primary)'; }}
+    >
+      <i className={`fa-solid fa-chevron-${dir === 'prev' ? 'left' : 'right'}`} style={{ fontSize: 12, color: 'var(--color-primary)', transition: 'color .18s' }} />
+    </button>
+  );
+}
+
 export default function Testimonials({
   heading = 'What Our Clients Say',
   subheading = <>Real results from businesses and agencies who have <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>trusted us</span>.</>,
@@ -92,22 +108,6 @@ export default function Testimonials({
 
   const prev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const next = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
-
-  const NavBtn = ({
-    dir,
-    onClick
-  }) => (
-    <button
-      onClick={onClick}
-      aria-label={dir}
-      className="tsm-nav"
-      style={{ position: 'absolute', [dir === 'prev' ? 'left' : 'right']: 0, top: '50%', transform: 'translateY(-50%)', zIndex: 2, width: 42, height: 42, borderRadius: '50%', background: '#fff', border: '1.5px solid var(--color-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 2px 12px rgba(0,0,0,.10)', transition: 'all .18s' }}
-      onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.borderColor = 'var(--color-primary)'; (e.currentTarget.querySelector('i')).style.color = '#fff'; }}
-      onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.borderColor = 'var(--color-border)'; (e.currentTarget.querySelector('i')).style.color = 'var(--color-primary)'; }}
-    >
-      <i className={`fa-solid fa-chevron-${dir === 'prev' ? 'left' : 'right'}`} style={{ fontSize: 12, color: 'var(--color-primary)', transition: 'color .18s' }} />
-    </button>
-  );
 
   return (
     <section className="tsm-section" style={{ padding: '48px 0 64px', background: '#fff' }}>
@@ -184,13 +184,13 @@ export default function Testimonials({
                 From startups to enterprise brands, across every industry.
               </div>
             </div>
-            <a href="/appointment"
+            <Link href="/appointment"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
             >
               Join Them <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-            </a>
+            </Link>
           </div>
         )}
       </div>
