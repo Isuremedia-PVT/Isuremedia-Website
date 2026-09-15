@@ -29,7 +29,7 @@ export const metadata = {
   title: "Hire a WordPress Developer for Custom Websites & WooCommerce",
   description: "Hire a WordPress developer to build a faster, more flexible website tailored to your business, from custom functionality to WooCommerce and ongoing improvements.",
   alternates: { canonical: "/hire-wordpress-developer" },
-  openGraph: { images: [{ url: "/feature_image/Hire a WordPressDeveloper.webp", width: 1618, height: 950 }] },
+  openGraph: { images: [{ url: "/feature_image/hire-wordpress-developer.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireWordpressLayout({ children }) {

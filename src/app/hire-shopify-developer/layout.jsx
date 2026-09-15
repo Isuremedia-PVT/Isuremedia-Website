@@ -29,7 +29,7 @@ export const metadata = {
   title: "Hire a Shopify Developer for Custom Stores & Shopify Plus",
   description: "Hire a Shopify developer to build a store around your products and customers, with custom design, smoother shopping experiences, and technical support as you grow.",
   alternates: { canonical: "/hire-shopify-developer" },
-  openGraph: { images: [{ url: "/feature_image/Hire a Shopify sDeveloper copy.webp", width: 1618, height: 950 }] },
+  openGraph: { images: [{ url: "/feature_image/hire-shopify-developer.webp", width: 1618, height: 950 }] },
 };
 
 export default function HireShopifyLayout({ children }) {
