@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -110,13 +111,13 @@ export default function VideoTestimonials() {
 
         {/* Bottom CTA */}
         <div className="vt-cta" style={{ textAlign: 'center', marginTop: 44 }}>
-          <a href="/testimonials"
+          <Link href="/testimonials"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}
           >
             See More Success Stories <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-          </a>
+          </Link>
         </div>
       </div>
 

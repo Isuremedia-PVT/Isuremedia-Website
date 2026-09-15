@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useEffect } from 'react';
 import Script from 'next/script';
@@ -185,9 +186,9 @@ export default function ContactPage() {
               </p>
 
               <div style={{ textAlign: 'center', marginTop: 12 }}>
-                <a href="/appointment" style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none' }}>
+                <Link href="/appointment" style={{ fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none' }}>
                   Prefer to talk? Book a free call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -219,13 +220,13 @@ export default function ContactPage() {
                   </div>
                 ))}
 
-                <a href="/appointment"
+                <Link href="/appointment"
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', padding: '12px 22px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .18s', boxShadow: '0 4px 16px rgba(255,176,0,.35)' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                 >
                   Book a Discovery Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-                </a>
+                </Link>
               </div>
             </div>
 

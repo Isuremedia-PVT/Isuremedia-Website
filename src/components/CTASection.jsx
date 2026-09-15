@@ -1,4 +1,6 @@
 'use client';
+import Link from 'next/link';
+import SmartLink from '@/components/SmartLink';
 
 import { PHONE_US, PHONE_US_TEL } from '@/data/contact';
 
@@ -48,22 +50,22 @@ export default function CTASection({
             </p>
 
             <div className="cta-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-              <a href="/contact" className="cta-btn"
+              <Link href="/contact" className="cta-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.35)', whiteSpace: 'nowrap' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
                 {primaryLabel}
-              </a>
+              </Link>
 
-              <a href={secondaryHref} className="cta-btn"
+              <SmartLink href={secondaryHref} className="cta-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: '#fff', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', whiteSpace: 'nowrap', transition: 'all .18s', boxShadow: '0 4px 16px rgba(0,0,0,.12)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-bg-soft)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.transform = ''; }}
               >
                 <i className="fa-solid fa-phone" style={{ fontSize: 12 }} />
                 {secondaryLabel}
-              </a>
+              </SmartLink>
             </div>
           </div>
 

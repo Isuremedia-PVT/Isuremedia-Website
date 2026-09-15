@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
 
@@ -33,16 +34,16 @@ export default function ProblemStatement() {
         </p>
 
         <div className="ps-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-          <a href="/contact" className="ps-btn-primary"
+          <Link href="/contact" className="ps-btn-primary"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
           >
             Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-          </a>
-          <a href="/appointment" className="ps-btn-secondary"
+          </Link>
+          <Link href="/appointment" className="ps-btn-secondary"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 9, padding: '16px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid rgba(255,255,255,.35)', transition: 'all .18s', whiteSpace: 'nowrap' }}
           >
             Talk to an Expert
-          </a>
+          </Link>
         </div>
 
       </div>

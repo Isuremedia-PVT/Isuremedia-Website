@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ReviewsStrip from '@/components/ReviewsStrip';
+import SmartLink from '@/components/SmartLink';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -414,10 +415,9 @@ function ToolLogoCloud({ items }) {
 function CTAButton({ href, children, filled = true, external = false
 }) {
   return (
-    <a
+    <SmartLink
       href={href}
-      target={external ? '_blank' : undefined}
-      rel={external ? 'noopener noreferrer' : undefined}
+      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', transition: 'all .18s',
         color: filled ? 'var(--color-navy)' : 'var(--color-primary)',
         background: filled ? 'var(--ism-amber)' : 'transparent',
@@ -428,7 +428,7 @@ function CTAButton({ href, children, filled = true, external = false
       onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
     >
       {children}
-    </a>
+    </SmartLink>
   );
 }
 

@@ -1,4 +1,5 @@
 ﻿'use client';
+import Link from 'next/link';
 
 import Navbar from '@/components/Navbar';
 import CTASection from '@/components/CTASection';
@@ -86,11 +87,11 @@ export default function IndustriesPage() {
                   We specialise in the channels and strategies that move the needle in your sector. Browse your industry below to see exactly how we grow businesses like yours.
                 </p>
                 <div className="ind-hero-btns" style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-                  <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
                     Get Free Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                  </a>
+                  </Link>
                   <a href="#industries-grid" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
                     onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; (e.currentTarget).style.color = '#fff'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; (e.currentTarget).style.color = 'var(--color-primary)'; }}>
@@ -144,7 +145,7 @@ export default function IndustriesPage() {
             </div>
             <div className="ind-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 28 }}>
               {INDUSTRIES.map((ind, i) => (
-                <a key={i} href={ind.href} className="ind-card" style={{ position: 'relative', display: 'block', height: 420, borderRadius: 24, overflow: 'hidden', textDecoration: 'none', boxShadow: '0 10px 30px rgba(0,35,83,.10)', transition: 'transform .25s, box-shadow .25s' }}
+                <Link key={i} href={ind.href} className="ind-card" style={{ position: 'relative', display: 'block', height: 420, borderRadius: 24, overflow: 'hidden', textDecoration: 'none', boxShadow: '0 10px 30px rgba(0,35,83,.10)', transition: 'transform .25s, box-shadow .25s' }}
                   onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-6px)'; el.style.boxShadow = '0 22px 48px rgba(0,35,83,.20)'; }}
                   onMouseLeave={e => { const el = e.currentTarget; el.style.transform = ''; el.style.boxShadow = '0 10px 30px rgba(0,35,83,.10)'; }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -163,7 +164,7 @@ export default function IndustriesPage() {
                     <h3 style={{ fontFamily: J, fontSize: 21, fontWeight: 800, color: '#fff', letterSpacing: '-0.3px', margin: 0 }}>{ind.title}</h3>
                     <p className="ind-desc" style={{ fontFamily: I, fontSize: 13.5, color: 'rgba(255,255,255,.82)', lineHeight: 1.6, margin: 0, maxHeight: 0, opacity: 0, overflow: 'hidden', transition: 'max-height .3s ease, opacity .3s ease, margin-top .3s ease' }}>{ind.desc}</p>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

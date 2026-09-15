@@ -1,4 +1,5 @@
 ﻿'use client';
+import Link from 'next/link';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -117,13 +118,13 @@ export default function AboutPageClient() {
                   Isuremedia is an end-to-end digital marketing agency and white-label fulfillment partner. Built for businesses that want results and agencies that want to <span style={{ background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 }}>scale without hiring</span>.
                 </p>
 
-                <a href="/appointment"
+                <Link href="/appointment"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '16px 36px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 24px rgba(255,176,0,.38)', transition: 'all .18s', whiteSpace: 'nowrap' }}
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 30px rgba(255,176,0,.52)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 24px rgba(255,176,0,.38)'; }}
                 >
                   Talk to Our Team <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-                </a>
+                </Link>
               </div>
 
               {/* RIGHT */}
@@ -581,20 +582,20 @@ export default function AboutPageClient() {
 
                   {/* Buttons */}
                   <div className="about-cta-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-                    <a href="/contact"
+                    <Link href="/contact"
                       style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', boxShadow: '0 6px 24px rgba(255,176,0,.40)', transition: 'all .18s', whiteSpace: 'nowrap' }}
                       onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                       onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
                     >
                       Get My Free SEO Audit
-                    </a>
-                    <a href="/appointment"
+                    </Link>
+                    <Link href="/appointment"
                       style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 700, color: '#fff', background: 'transparent', textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', border: '2px solid rgba(255,255,255,.55)', transition: 'all .18s', whiteSpace: 'nowrap' }}
                       onMouseEnter={e => { e.currentTarget.style.borderColor = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,.08)'; }}
                       onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,.55)'; e.currentTarget.style.background = 'transparent'; }}
                     >
                       Talk to Our Team
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

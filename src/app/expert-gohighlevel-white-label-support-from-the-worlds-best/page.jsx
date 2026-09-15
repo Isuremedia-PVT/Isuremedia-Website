@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ReviewsStrip from '@/components/ReviewsStrip';
@@ -80,7 +81,7 @@ function Highlight({ children }) {
 
 function CTAButton({ href, children, filled = true }) {
   return (
-    <a
+    <Link
       href={href}
       style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 34px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 800, textDecoration: 'none', letterSpacing: '.05em', textTransform: 'uppercase', transition: 'all .18s',
         color: filled ? 'var(--color-navy)' : 'var(--color-primary)',
@@ -92,7 +93,7 @@ function CTAButton({ href, children, filled = true }) {
       onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
     >
       {children}
-    </a>
+    </Link>
   );
 }
 

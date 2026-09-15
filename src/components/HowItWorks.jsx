@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -112,13 +113,13 @@ export default function HowItWorks({
 
         {/* ── CTA ── */}
         <div style={{ marginTop: 68, textAlign: 'center' }}>
-          <a href={ctaHref}
+          <Link href={ctaHref}
             style={{ display: 'inline-flex', alignItems: 'center', gap: 10, padding: '16px 40px', borderRadius: 10, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .20s', boxShadow: '0 6px 28px rgba(255,176,0,.38)' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.color = 'var(--color-navy)'; e.currentTarget.style.transform = ''; }}
           >
             {ctaText} <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-          </a>
+          </Link>
         </div>
 
       </div>

@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -225,19 +226,19 @@ export default function Services() {
               <div className="svc-checklist-wrap">
                 <div className="svc-checklist">
                   {active.subServices.map(s => (
-                    <a key={s.name} href={s.href} className="svc-check-item">
+                    <Link key={s.name} href={s.href} className="svc-check-item">
                       <span className="svc-check-dot" />
                       <span>{s.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="svc-checklist-fade" aria-hidden />
               </div>
 
               {/* CTA */}
-              <a href={active.href} className="svc-cta-pill">
+              <Link href={active.href} className="svc-cta-pill">
                 {active.cta} <i className="fa-solid fa-arrow-right" style={{ fontSize: 12 }} />
-              </a>
+              </Link>
             </div>
 
             {/* Photo + floating badges */}

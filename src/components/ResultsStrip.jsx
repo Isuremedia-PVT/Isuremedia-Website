@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -57,7 +58,7 @@ export default function ResultsStrip() {
       <p style={{ fontFamily: J, fontSize: 12, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Our Results</p>
       <div className="rstrip-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 14 }}>
         {resultCards.map(card => (
-          <a key={card.label} href={card.href}
+          <Link key={card.label} href={card.href}
             style={{ textDecoration: 'none', borderRadius: 14, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 190, position: 'relative', transition: 'transform .18s, box-shadow .18s', cursor: 'pointer' }}
             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 14px 34px rgba(0,0,0,.28)'; }}
             onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
@@ -82,7 +83,7 @@ export default function ResultsStrip() {
                 <div style={{ fontFamily: I, fontSize: 10, color: 'rgba(255,255,255,.65)', marginTop: 2 }}>{card.statLabel}</div>
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
       <style>{`

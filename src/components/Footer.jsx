@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+import SmartLink from '@/components/SmartLink';
 import { PHONE_IN, PHONE_IN_TEL, PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
 
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -131,15 +133,14 @@ export default function Footer() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
                 {col.links.map(link => (
                   <li key={link.label}>
-                    <a href={link.href}
-                      {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    <SmartLink href={link.href}
                       style={{ fontFamily: I, fontSize: 13, color: 'rgba(255,255,255,.85)', textDecoration: 'none', transition: 'color .15s', display: 'flex', alignItems: 'center', gap: 6 }}
                       onMouseEnter={e => { e.currentTarget.style.color = 'var(--ism-amber)'; }}
                       onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,.85)'; }}
                     >
                       <span style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--ism-amber)', flexShrink: 0, display: 'inline-block' }} />
                       {link.label}
-                    </a>
+                    </SmartLink>
                   </li>
                 ))}
               </ul>
@@ -155,11 +156,11 @@ export default function Footer() {
           </span>
           <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
             {legalLinks.map(item => (
-              <a key={item.label} href={item.href}
+              <Link key={item.label} href={item.href}
                 style={{ fontFamily: I, fontSize: 12, color: 'rgba(255,255,255,.65)', textDecoration: 'none', transition: 'color .15s' }}
                 onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,.65)')}
-              >{item.label}</a>
+              >{item.label}</Link>
             ))}
           </div>
         </div>

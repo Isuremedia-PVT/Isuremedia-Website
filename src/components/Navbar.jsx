@@ -1,8 +1,10 @@
 'use client';
+import Link from 'next/link';
 
 import { useState, useRef, useEffect } from 'react';
 import { resultCards } from '@/components/ResultsStrip';
 import { PHONE_US, PHONE_US_TEL, EMAIL, EMAIL_HREF } from '@/data/contact';
+import SmartLink from '@/components/SmartLink';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
@@ -135,7 +137,6 @@ function CtaCard({
   btnLabel,
   href = '#cta'
 }) {
-  const isExternal = href.startsWith('http');
   return (
     <div style={{ background: 'linear-gradient(135deg,#EFF4FF 0%,#E0E9FF 100%)', borderRadius: 14, padding: '24px 20px', border: '1px solid #C7D7FD', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
       <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -143,14 +144,13 @@ function CtaCard({
       </div>
       <p style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.35, margin: 0 }}>{heading}</p>
       <p style={{ fontFamily: I, fontSize: 12, color: 'var(--color-text-muted)', lineHeight: 1.60, margin: 0 }}>{sub}</p>
-      <a href={href}
-        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      <SmartLink href={href}
         style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '10px 18px', borderRadius: 8, fontFamily: J, fontSize: 13, fontWeight: 600, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', transition: 'all .15s', alignSelf: 'flex-start', marginTop: 4 }}
         onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
         onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
       >
         {btnLabel} <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-      </a>
+      </SmartLink>
     </div>
   );
 }
@@ -269,13 +269,13 @@ export default function Navbar() {
               <i className="fa-solid fa-envelope" style={{ fontSize: 10, color: 'var(--ism-amber)' }} />
               {EMAIL}
             </a>
-            <a href="/appointment"
+            <Link href="/appointment"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '4px 11px', borderRadius: 6, fontFamily: J, fontSize: 10, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.03em', transition: 'all .15s' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; }}
             >
               REQUEST A QUOTE <i className="fa-solid fa-arrow-right" style={{ fontSize: 8 }} />
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -285,10 +285,10 @@ export default function Navbar() {
       <div className="ism-container nav-main-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 62 }}>
 
         {/* ── Logo ── */}
-        <a href="/" className="nav-logo" style={{ textDecoration: 'none', flexShrink: 0 }}>
+        <Link href="/" className="nav-logo" style={{ textDecoration: 'none', flexShrink: 0 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/isuremedia-dark.webp" alt="Isuremedia" style={{ height: 40, width: 'auto', display: 'block' }} />
-        </a>
+        </Link>
 
         {/* ── Desktop Nav ── */}
         <nav className="hidden lg:flex" style={{ alignItems: 'center', gap: 2 }}>
@@ -300,18 +300,28 @@ export default function Navbar() {
                 onMouseEnter={() => hasDropdown ? openNav(item.type) : undefined}
                 onMouseLeave={() => hasDropdown ? closeNav() : undefined}
               >
-                <a href={item.type === 'contact' ? '/contact' : item.type === 'link' ? '#' : undefined}
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontFamily: I, fontSize: 14, fontWeight: 500, color: isOpen ? 'var(--color-primary)' : 'var(--color-text-body)', textDecoration: 'none', padding: '8px 13px', borderRadius: 7, transition: 'all .15s', whiteSpace: 'nowrap', background: isOpen ? 'var(--ism-blue-50,#EFF4FF)' : 'transparent', cursor: 'pointer' }}
-                  onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-primary)'; e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)'; }}
-                  onMouseLeave={e => { if (!isOpen) { e.currentTarget.style.color = 'var(--color-text-body)'; e.currentTarget.style.background = 'transparent'; } }}
-                >
-                  {item.label}
-                  {hasDropdown && (
-                    <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style={{ transform: isOpen ? 'rotate(180deg)' : '', transition: 'transform .2s' }}>
-                      <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  )}
-                </a>
+                {item.type === 'contact' ? (
+                  <Link href="/contact"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontFamily: I, fontSize: 14, fontWeight: 500, color: isOpen ? 'var(--color-primary)' : 'var(--color-text-body)', textDecoration: 'none', padding: '8px 13px', borderRadius: 7, transition: 'all .15s', whiteSpace: 'nowrap', background: isOpen ? 'var(--ism-blue-50,#EFF4FF)' : 'transparent', cursor: 'pointer' }}
+                    onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-primary)'; e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)'; }}
+                    onMouseLeave={e => { if (!isOpen) { e.currentTarget.style.color = 'var(--color-text-body)'; e.currentTarget.style.background = 'transparent'; } }}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a href={item.type === 'link' ? '#' : undefined}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontFamily: I, fontSize: 14, fontWeight: 500, color: isOpen ? 'var(--color-primary)' : 'var(--color-text-body)', textDecoration: 'none', padding: '8px 13px', borderRadius: 7, transition: 'all .15s', whiteSpace: 'nowrap', background: isOpen ? 'var(--ism-blue-50,#EFF4FF)' : 'transparent', cursor: 'pointer' }}
+                    onMouseEnter={e => { e.currentTarget.style.color = 'var(--color-primary)'; e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)'; }}
+                    onMouseLeave={e => { if (!isOpen) { e.currentTarget.style.color = 'var(--color-text-body)'; e.currentTarget.style.background = 'transparent'; } }}
+                  >
+                    {item.label}
+                    {hasDropdown && (
+                      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" style={{ transform: isOpen ? 'rotate(180deg)' : '', transition: 'transform .2s' }}>
+                        <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </a>
+                )}
 
                 {/* Company dropdown */}
                 {isOpen && item.type === 'company' && (
@@ -320,7 +330,7 @@ export default function Navbar() {
                       <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>Company</p>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                         {companyLinks.map(l => (
-                          <a key={l.label} href={l.href}
+                          <Link key={l.label} href={l.href}
                             style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 12px', borderRadius: 10, textDecoration: 'none', transition: 'background .15s' }}
                             onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                             onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -329,7 +339,7 @@ export default function Navbar() {
                               <i className={l.icon} style={{ fontSize: 13, color: 'var(--color-primary)' }} />
                             </div>
                             <span style={{ fontFamily: I, fontSize: 14, fontWeight: 500, color: 'var(--color-text-heading)' }}>{l.label}</span>
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -351,14 +361,14 @@ export default function Navbar() {
                       {serviceCategories.map((cat, i) => {
                         const isTab = activeServiceTab === i;
                         return (
-                          <a key={cat.label} href={cat.mainHref} onMouseEnter={() => setActiveServiceTab(i)}
+                          <Link key={cat.label} href={cat.mainHref} onMouseEnter={() => setActiveServiceTab(i)}
                             style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 10, padding: '14px 18px', cursor: 'pointer', borderBottom: isTab ? '2px solid var(--color-primary)' : '2px solid transparent', background: isTab ? '#EFF4FF' : 'transparent', transition: 'all .15s', textDecoration: 'none' }}
                           >
                             <div style={{ width: 34, height: 34, borderRadius: 8, background: isTab ? 'var(--color-primary)' : '#F1F5FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transition: 'all .15s' }}>
                               <i className={cat.icon} style={{ fontSize: 14, color: isTab ? '#fff' : 'var(--color-primary)' }} />
                             </div>
                             <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: isTab ? 'var(--color-primary)' : 'var(--color-text-muted)', lineHeight: 1.3, transition: 'color .15s' }}>{cat.label}</span>
-                          </a>
+                          </Link>
                         );
                       })}
                     </div>
@@ -369,19 +379,19 @@ export default function Navbar() {
                       <div>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
                           <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', margin: 0 }}>{serviceCategories[activeServiceTab].label}</p>
-                          <a href={serviceCategories[activeServiceTab].mainHref} style={{ fontFamily: I, fontSize: 12, fontWeight: 600, color: 'var(--color-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5, transition: 'opacity .15s' }}
+                          <Link href={serviceCategories[activeServiceTab].mainHref} style={{ fontFamily: I, fontSize: 12, fontWeight: 600, color: 'var(--color-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 5, transition: 'opacity .15s' }}
                             onMouseEnter={e => (e.currentTarget.style.opacity = '.7')}
                             onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-                          >View all <i className="fa-solid fa-arrow-right" style={{ fontSize: 9 }} /></a>
+                          >View all <i className="fa-solid fa-arrow-right" style={{ fontSize: 9 }} /></Link>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '4px 12px' }}>
                           {serviceCategories[activeServiceTab].items.map(s => (
-                            <a key={s.label} href={s.href} className="nav-svc-link"
+                            <Link key={s.label} href={s.href} className="nav-svc-link"
                               style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
                             >
                               <i className="fa-solid fa-arrow-right nav-svc-icon" style={{ fontSize: 9, flexShrink: 0 }} />
                               <span className="nav-svc-text" style={{ fontFamily: I, fontSize: 13, fontWeight: 500 }}>{s.label}</span>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -403,7 +413,7 @@ export default function Navbar() {
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Our Results</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 10 }}>
                       {resultCards.map(card => (
-                        <a key={card.label} href={card.href}
+                        <Link key={card.label} href={card.href}
                           style={{ textDecoration: 'none', borderRadius: 12, overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 180, position: 'relative', transition: 'transform .18s, box-shadow .18s', cursor: 'pointer' }}
                           onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,.30)'; }}
                           onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = ''; }}
@@ -434,7 +444,7 @@ export default function Navbar() {
                               <div style={{ fontFamily: I, fontSize: 10, color: 'rgba(255,255,255,.65)', marginTop: 2 }}>{card.statLabel}</div>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -450,7 +460,7 @@ export default function Navbar() {
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 20 }}>White Label Services</p>
                     <div className="wl-nav-items-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, alignContent: 'start', alignSelf: 'start' }}>
                       {whitelabelCategories.flatMap(cat => cat.items).map(l => (
-                        <a key={l.label} href={l.href}
+                        <Link key={l.label} href={l.href}
                           style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '9px 12px', borderRadius: 8, textDecoration: 'none', transition: 'background .15s' }}
                           onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                           onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -459,7 +469,7 @@ export default function Navbar() {
                             <i className={l.icon} style={{ fontSize: 11, color: 'var(--color-primary)' }} />
                           </div>
                           <span style={{ fontFamily: I, fontSize: 13, fontWeight: 500, color: 'var(--color-text-heading)', lineHeight: 1.3 }}>{l.label}</span>
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -472,8 +482,7 @@ export default function Navbar() {
                       <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 14 }}>Resources</p>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                         {resourceLinks.map(l => (
-                          <a key={l.label} href={l.href}
-                            {...(l.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                          <SmartLink key={l.label} href={l.href}
                             style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '10px 12px', borderRadius: 10, textDecoration: 'none', transition: 'background .15s' }}
                             onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                             onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -482,7 +491,7 @@ export default function Navbar() {
                               <i className={l.icon} style={{ fontSize: 13, color: 'var(--color-primary)' }} />
                             </div>
                             <span style={{ fontFamily: I, fontSize: 14, fontWeight: 500, color: 'var(--color-text-heading)' }}>{l.label}</span>
-                          </a>
+                          </SmartLink>
                         ))}
                       </div>
                     </div>
@@ -502,7 +511,7 @@ export default function Navbar() {
                     <p style={{ fontFamily: J, fontSize: 11, fontWeight: 700, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--color-primary)', marginBottom: 16 }}>Hire a Specialist</p>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10 }}>
                       {hireLinks.map(l => (
-                        <a key={l.label} href={l.href}
+                        <Link key={l.label} href={l.href}
                           style={{ display: 'flex', alignItems: 'center', gap: 13, padding: '14px 16px', borderRadius: 12, textDecoration: 'none', border: '1px solid #E8EEFF', background: '#FAFBFF', transition: 'all .15s' }}
                           onMouseEnter={e => { e.currentTarget.style.background = '#EFF4FF'; e.currentTarget.style.borderColor = 'var(--color-primary)'; }}
                           onMouseLeave={e => { e.currentTarget.style.background = '#FAFBFF'; e.currentTarget.style.borderColor = '#E8EEFF'; }}
@@ -511,7 +520,7 @@ export default function Navbar() {
                             <i className={l.icon} style={{ fontSize: 16, color: 'var(--color-primary)' }} />
                           </div>
                           <span style={{ fontFamily: I, fontSize: 13, fontWeight: 600, color: 'var(--color-text-heading)', lineHeight: 1.35 }}>{l.label}</span>
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -564,13 +573,13 @@ export default function Navbar() {
                               return (
                                 <div key={cat.label}>
                                   <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 2 }}>
-                                    <a href={cat.mainHref} onClick={() => setMobileOpen(false)}
+                                    <Link href={cat.mainHref} onClick={() => setMobileOpen(false)}
                                       style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, fontWeight: 600, color: 'var(--color-text-body)' }}
                                       onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                       onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                                     >
                                       <i className={cat.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {cat.label}
-                                    </a>
+                                    </Link>
                                     <button onClick={() => setMobileServiceCat(catExpanded ? null : ci)}
                                       aria-label={catExpanded ? `Collapse ${cat.label}` : `Expand ${cat.label}`}
                                       aria-expanded={catExpanded}
@@ -586,13 +595,13 @@ export default function Navbar() {
                                   {catExpanded && (
                                     <div style={{ paddingLeft: 14 }}>
                                       {cat.items.map(s => (
-                                        <a key={s.label} href={s.href} onClick={() => setMobileOpen(false)}
+                                        <Link key={s.label} href={s.href} onClick={() => setMobileOpen(false)}
                                           style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '7px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 13.5, color: 'var(--color-text-muted)' }}
                                           onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                           onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                                         >
                                           <i className="fa-solid fa-arrow-right" style={{ fontSize: 9, color: 'var(--color-primary)' }} /> {s.label}
-                                        </a>
+                                        </Link>
                                       ))}
                                     </div>
                                   )}
@@ -601,39 +610,45 @@ export default function Navbar() {
                             })
                           : item.type === 'whitelabel'
                           ? wlLinks.map(l => (
-                              <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
+                              <Link key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                               >
                                 <i className={l.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {l.label}
-                              </a>
+                              </Link>
                             ))
                           : item.type === 'work'
                           ? resultCards.map(c => (
-                              <a key={c.label} href={c.href} onClick={() => setMobileOpen(false)}
+                              <Link key={c.label} href={c.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                               >
                                 <i className={c.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {c.label}
-                              </a>
+                              </Link>
                             ))
                           : links.map(l => (
-                              <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
+                              <SmartLink key={l.label} href={l.href} onClick={() => setMobileOpen(false)}
                                 style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 12px', borderRadius: 8, textDecoration: 'none', fontFamily: I, fontSize: 14, color: 'var(--color-text-body)' }}
                                 onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                                 onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                               >
                                 <i className={l.icon} style={{ fontSize: 12, color: 'var(--color-primary)' }} /> {l.label}
-                              </a>
+                              </SmartLink>
                             ))
                         }
                       </div>
                     )}
                   </>
+                ) : item.type === 'contact' ? (
+                  <Link href="/contact" onClick={() => setMobileOpen(false)}
+                    style={{ display: 'block', fontFamily: I, fontSize: 15, fontWeight: 500, color: 'var(--color-text-body)', textDecoration: 'none', padding: '10px 12px', borderRadius: 8 }}
+                    onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
+                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                  >{item.label}</Link>
                 ) : (
-                  <a href={item.type === 'contact' ? '/contact' : '#'} onClick={() => setMobileOpen(false)}
+                  <a href="#" onClick={() => setMobileOpen(false)}
                     style={{ display: 'block', fontFamily: I, fontSize: 15, fontWeight: 500, color: 'var(--color-text-body)', textDecoration: 'none', padding: '10px 12px', borderRadius: 8 }}
                     onMouseEnter={e => (e.currentTarget.style.background = 'var(--ism-blue-50,#EFF4FF)')}
                     onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
@@ -648,10 +663,10 @@ export default function Navbar() {
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--ism-amber)', textDecoration: 'none' }}>
               <i className="fa-solid fa-phone" style={{ fontSize: 12 }} /> {PHONE_US}
             </a>
-            <a href="/appointment" onClick={() => setMobileOpen(false)}
+            <Link href="/appointment" onClick={() => setMobileOpen(false)}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 7, padding: '12px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 600, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none' }}>
               Request a Quote →
-            </a>
+            </Link>
           </div>
         </div>
       )}

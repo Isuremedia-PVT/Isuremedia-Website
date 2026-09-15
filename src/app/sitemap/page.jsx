@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -222,12 +223,12 @@ export default function SitemapPage() {
                   <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 4 }}>
                     {group.links.map((link, j) => (
                       <li key={j}>
-                        <a href={link.href} style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', textDecoration: 'none', padding: '8px 0', borderBottom: '1px solid var(--color-border)', transition: 'color .18s' }}
+                        <Link href={link.href} style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', textDecoration: 'none', padding: '8px 0', borderBottom: '1px solid var(--color-border)', transition: 'color .18s' }}
                           onMouseEnter={e => { (e.currentTarget).style.color = 'var(--color-primary)'; }}
                           onMouseLeave={e => { (e.currentTarget).style.color = 'var(--color-text-muted)'; }}>
                           <i className="fa-solid fa-chevron-right" style={{ fontSize: 9, color: 'var(--color-primary)', flexShrink: 0 }} />
                           {link.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

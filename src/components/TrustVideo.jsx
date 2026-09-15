@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -76,20 +77,20 @@ export default function TrustVideo() {
               Isuremedia works with clients of every size, from local businesses and startups to established brands, multi location companies, and enterprise clients, across the US, UK, Canada, and beyond. We have worked across every major industry and offer clear pricing that works for any budget. Our terms are month to month because we genuinely believe in the quality of our work.
             </p>
             <div className="tv-btns" style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-              <a href="/contact" className="tv-btn"
+              <Link href="/contact" className="tv-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(255,176,0,.30)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}
               >
                 Get a Free Proposal <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-              </a>
-              <a href="/appointment" className="tv-btn"
+              </Link>
+              <Link href="/appointment" className="tv-btn"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: '#fff', background: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'all .18s', boxShadow: '0 6px 20px rgba(30,77,195,.30)' }}
                 onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.transform = ''; }}
               >
                 Start Growing Today
-              </a>
+              </Link>
             </div>
           </div>
 
