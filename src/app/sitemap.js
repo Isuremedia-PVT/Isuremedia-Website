@@ -19,6 +19,7 @@ function isExcluded(urlPath) {
   if (urlPath.startsWith('/hire/')) return true;
   if (urlPath === '/sitemap') return true; // human-readable HTML sitemap, not the XML one; also disallowed in robots.txt
   if (urlPath === '/thank-you' || urlPath === '/appointment-confirmation') return true;
+  if (urlPath === '/home-revise-draft' || urlPath === '/home-revise-draft-2') return true;
   return false;
 }
 
