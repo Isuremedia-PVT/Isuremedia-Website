@@ -1,4 +1,5 @@
 export const metadata = {
+  robots: { index: false, follow: true },
   title: "Digital Marketing Services for Business Growth | iSureMedia",
   description: "Discover iSureMedia's digital marketing services, including SEO, PPC, web development, content marketing, automation, and more.",
   alternates: { canonical: "/services" },
