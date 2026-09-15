@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Our Services | Isuremedia",
-  description: "Websites & funnels, SEO, PPC, content & creative, white-label fulfillment, and marketing automation, full-service digital marketing delivered under one roof.",
+  title: "Digital Marketing Services for Business Growth | iSureMedia",
+  description: "Discover iSureMedia's digital marketing services, including SEO, PPC, web development, content marketing, automation, and more.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Our Services | Isuremedia",
-    description: "Websites & funnels, SEO, PPC, content & creative, white-label fulfillment, and marketing automation, full-service digital marketing delivered under one roof.",
+    title: "Digital Marketing Services for Business Growth | iSureMedia",
+    description: "Discover iSureMedia's digital marketing services, including SEO, PPC, web development, content marketing, automation, and more.",
     type: "website",
     url: "/services",
     images: [{ url: "/isuremedia-dark.webp", width: 1200, height: 346 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Services | Isuremedia",
-    description: "Websites & funnels, SEO, PPC, content & creative, white-label fulfillment, and marketing automation, full-service digital marketing delivered under one roof.",
+    title: "Digital Marketing Services for Business Growth | iSureMedia",
+    description: "Discover iSureMedia's digital marketing services, including SEO, PPC, web development, content marketing, automation, and more.",
     images: ["/isuremedia-dark.webp"],
   },
 };
