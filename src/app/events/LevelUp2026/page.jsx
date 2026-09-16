@@ -1,6 +1,6 @@
 import { Lora } from "next/font/google";
 import ClientsMarquee from "@/components/ClientsMarquee";
-import ServicesShowcase from "./ServicesShowcase";
+import Services from "@/components/Services";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -75,7 +75,7 @@ export default function LevelUp2026Page() {
         .lu2026 .hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
 
         /* ── What we do (card grid, tinted band) ── */
-        .lu2026 .capability-wrap{background:var(--soft);padding:34px 0 76px}
+        .lu2026 .capability-wrap{background:#fff;padding:34px 0 76px}
         .lu2026 .hero-card{position:relative;color:var(--ink);max-width:1160px;margin:0 auto;text-align:left}
         .lu2026 .agenda-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:28px;flex-wrap:wrap}
         .lu2026 .agenda-cta{padding:10px 16px;font-size:13px;flex-shrink:0}
@@ -135,24 +135,6 @@ export default function LevelUp2026Page() {
         .lu2026 .card h3{font-family:var(--J);margin:0 0 8px;font-size:19px;font-weight:800}
         .lu2026 .card p{margin:0;color:var(--muted);font-size:14.5px}
 
-        .lu2026 .showcase-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-        .lu2026 .showcase-tab{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:11px 18px;font-family:var(--J);font-size:13.5px;font-weight:700;color:var(--muted);cursor:pointer;transition:all .15s ease}
-        .lu2026 .showcase-tab:hover{border-color:var(--blue)}
-        .lu2026 .showcase-tab.is-active{background:var(--blue);border-color:var(--blue);color:#fff}
-        .lu2026 .showcase-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 20px 55px rgba(0,35,83,.08)}
-        .lu2026 .showcase-text{padding:44px}
-        .lu2026 .showcase-text h3{font-family:var(--J);font-size:24px;font-weight:800;margin:0 0 10px;color:var(--ink);text-transform:none;letter-spacing:normal}
-        .lu2026 .showcase-text > p{color:var(--muted);font-size:15px;margin:0 0 22px}
-        .lu2026 .showcase-list-label{font-family:var(--J);font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
-        .lu2026 .showcase-list{list-style:none;padding:0;margin:0 0 26px}
-        .lu2026 .showcase-list li{display:flex;align-items:center;gap:10px;padding:9px 0;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
-        .lu2026 .showcase-list li i{color:var(--blue);font-size:12px}
-        .lu2026 .showcase-visual{position:relative;background:var(--soft);display:flex;align-items:center;justify-content:center;min-height:340px}
-        .lu2026 .showcase-ring{position:absolute;width:230px;height:230px;border-radius:50%;border:2px dashed var(--ism-blue-200,#94aeee);opacity:.5}
-        .lu2026 .showcase-hub{position:relative;width:86px;height:86px;border-radius:50%;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:30px;box-shadow:0 14px 34px rgba(0,35,83,.3);z-index:2}
-        .lu2026 .showcase-orbit{position:absolute;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);color:var(--muted);display:grid;place-items:center;font-size:15px;transform:translate(-50%,-50%);box-shadow:0 8px 20px rgba(0,35,83,.1);transition:all .2s ease;z-index:1}
-        .lu2026 .showcase-orbit.is-active{background:var(--blue);border-color:var(--blue);color:#fff;transform:translate(-50%,-50%) scale(1.15)}
-
         .lu2026 .band{background:var(--soft)}
         .lu2026 .split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
         .lu2026 .checklist{list-style:none;padding:0;margin:24px 0 0}
@@ -190,8 +172,6 @@ export default function LevelUp2026Page() {
           .lu2026 .news-photo-card{min-height:260px}
           .lu2026 .process{grid-template-columns:1fr 1fr}
           .lu2026 .agenda-grid{grid-template-columns:1fr 1fr}
-          .lu2026 .showcase-panel{grid-template-columns:1fr}
-          .lu2026 .showcase-visual{min-height:260px}
           .lu2026 h1{letter-spacing:-1.4px}
           .lu2026 .about-collage{order:2;height:320px;width:100%;max-width:420px;margin:30px auto 0}
         }
@@ -199,8 +179,6 @@ export default function LevelUp2026Page() {
           .lu2026 .container{width:100%;padding:0 20px;margin:auto}
           .lu2026 .nav-cta{display:none}
           .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
-          .lu2026 .showcase-text{padding:28px}
-          .lu2026 .showcase-tab{padding:9px 14px;font-size:12.5px}
           .lu2026 .full{grid-column:auto}
           .lu2026 section{padding:52px 0}
           .lu2026 .capability-wrap{padding:24px 0 52px}
@@ -324,15 +302,7 @@ export default function LevelUp2026Page() {
           </div>
         </section>
 
-        <section id="services">
-          <div className="container">
-            <div className="section-head section-head-center">
-              <h2>Everything your agency needs to <em className="text-blue">deliver more.</em></h2>
-              <p>From strategy and acquisition to implementation and ongoing support, Isuremedia helps agencies extend their capabilities under their own brand.</p>
-            </div>
-            <ServicesShowcase />
-          </div>
-        </section>
+        <Services />
 
         <section className="band">
           <div className="container split">
