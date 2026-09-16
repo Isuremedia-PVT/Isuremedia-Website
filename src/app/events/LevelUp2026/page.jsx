@@ -1,5 +1,6 @@
 import { Lora } from "next/font/google";
 import ClientsMarquee from "@/components/ClientsMarquee";
+import ServicesShowcase from "./ServicesShowcase";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -74,9 +75,8 @@ export default function LevelUp2026Page() {
         .lu2026 .hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
 
         /* ── What we do (card grid, tinted band) ── */
-        .lu2026 .capability-wrap{background:var(--soft);padding:76px 0}
+        .lu2026 .capability-wrap{background:var(--soft);padding:34px 0 76px}
         .lu2026 .hero-card{position:relative;color:var(--ink);max-width:1160px;margin:0 auto;text-align:left}
-        .lu2026 .hero-card h3{font-family:var(--J);font-size:22px;font-weight:800;margin:6px 0 0}
         .lu2026 .agenda-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:28px;flex-wrap:wrap}
         .lu2026 .agenda-cta{padding:10px 16px;font-size:13px;flex-shrink:0}
         .lu2026 .agenda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:34px}
@@ -84,7 +84,7 @@ export default function LevelUp2026Page() {
         .lu2026 .agenda-item:hover{box-shadow:0 16px 40px rgba(0,35,83,.12);transform:translateY(-3px)}
         .lu2026 .agenda-icon{width:46px;height:46px;border-radius:12px;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:18px;margin:0 0 18px}
         .lu2026 .agenda-icon-amber{background:var(--navy);color:#7cc0ff}
-        .lu2026 .agenda-item h4{font-family:var(--J);font-size:15.5px;font-weight:800;margin:0 0 8px;color:var(--ink)}
+        .lu2026 .agenda-item h4{font-family:var(--J);font-size:15.5px;font-weight:800;margin:0 0 8px;color:var(--ink);text-transform:none;letter-spacing:normal}
         .lu2026 .agenda-item p{margin:0 0 16px;font-size:13.5px;color:var(--muted)}
         .lu2026 .agenda-link{display:inline-block;font-family:var(--J);font-size:13px;font-weight:800;color:var(--ink)}
         .lu2026 .agenda-item:hover .agenda-link{color:var(--blue)}
@@ -135,6 +135,24 @@ export default function LevelUp2026Page() {
         .lu2026 .card h3{font-family:var(--J);margin:0 0 8px;font-size:19px;font-weight:800}
         .lu2026 .card p{margin:0;color:var(--muted);font-size:14.5px}
 
+        .lu2026 .showcase-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+        .lu2026 .showcase-tab{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:11px 18px;font-family:var(--J);font-size:13.5px;font-weight:700;color:var(--muted);cursor:pointer;transition:all .15s ease}
+        .lu2026 .showcase-tab:hover{border-color:var(--blue)}
+        .lu2026 .showcase-tab.is-active{background:var(--blue);border-color:var(--blue);color:#fff}
+        .lu2026 .showcase-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 20px 55px rgba(0,35,83,.08)}
+        .lu2026 .showcase-text{padding:44px}
+        .lu2026 .showcase-text h3{font-family:var(--J);font-size:24px;font-weight:800;margin:0 0 10px;color:var(--ink);text-transform:none;letter-spacing:normal}
+        .lu2026 .showcase-text > p{color:var(--muted);font-size:15px;margin:0 0 22px}
+        .lu2026 .showcase-list-label{font-family:var(--J);font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+        .lu2026 .showcase-list{list-style:none;padding:0;margin:0 0 26px}
+        .lu2026 .showcase-list li{display:flex;align-items:center;gap:10px;padding:9px 0;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
+        .lu2026 .showcase-list li i{color:var(--blue);font-size:12px}
+        .lu2026 .showcase-visual{position:relative;background:var(--soft);display:flex;align-items:center;justify-content:center;min-height:340px}
+        .lu2026 .showcase-ring{position:absolute;width:230px;height:230px;border-radius:50%;border:2px dashed var(--ism-blue-200,#94aeee);opacity:.5}
+        .lu2026 .showcase-hub{position:relative;width:86px;height:86px;border-radius:50%;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:30px;box-shadow:0 14px 34px rgba(0,35,83,.3);z-index:2}
+        .lu2026 .showcase-orbit{position:absolute;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);color:var(--muted);display:grid;place-items:center;font-size:15px;transform:translate(-50%,-50%);box-shadow:0 8px 20px rgba(0,35,83,.1);transition:all .2s ease;z-index:1}
+        .lu2026 .showcase-orbit.is-active{background:var(--blue);border-color:var(--blue);color:#fff;transform:translate(-50%,-50%) scale(1.15)}
+
         .lu2026 .band{background:var(--soft)}
         .lu2026 .split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
         .lu2026 .checklist{list-style:none;padding:0;margin:24px 0 0}
@@ -172,6 +190,8 @@ export default function LevelUp2026Page() {
           .lu2026 .news-photo-card{min-height:260px}
           .lu2026 .process{grid-template-columns:1fr 1fr}
           .lu2026 .agenda-grid{grid-template-columns:1fr 1fr}
+          .lu2026 .showcase-panel{grid-template-columns:1fr}
+          .lu2026 .showcase-visual{min-height:260px}
           .lu2026 h1{letter-spacing:-1.4px}
           .lu2026 .about-collage{order:2;height:320px;width:100%;max-width:420px;margin:30px auto 0}
         }
@@ -179,8 +199,11 @@ export default function LevelUp2026Page() {
           .lu2026 .container{width:100%;padding:0 20px;margin:auto}
           .lu2026 .nav-cta{display:none}
           .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
+          .lu2026 .showcase-text{padding:28px}
+          .lu2026 .showcase-tab{padding:9px 14px;font-size:12.5px}
           .lu2026 .full{grid-column:auto}
-          .lu2026 section,.lu2026 .capability-wrap{padding:52px 0}
+          .lu2026 section{padding:52px 0}
+          .lu2026 .capability-wrap{padding:24px 0 52px}
           .lu2026 .hero-ring{width:200px;height:200px;top:-50px;right:-50px}
           .lu2026 .photo-card{height:240px}
           .lu2026 .hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 36px),0 100%);padding-bottom:36px}
@@ -218,7 +241,7 @@ export default function LevelUp2026Page() {
             <div className="hero-card">
               <div className="agenda-head">
                 <div>
-                  <h3>How Isuremedia can help you <em className="text-blue">scale.</em></h3>
+                  <h2>How Isuremedia can help you <em className="text-blue">scale.</em></h2>
                 </div>
               </div>
               <div className="agenda-grid">
@@ -307,14 +330,7 @@ export default function LevelUp2026Page() {
               <h2>Everything your agency needs to <em className="text-blue">deliver more.</em></h2>
               <p>From strategy and acquisition to implementation and ongoing support, Isuremedia helps agencies extend their capabilities under their own brand.</p>
             </div>
-            <div className="cards">
-              <div className="card"><div className="icon"><i className="fa-solid fa-gears" /></div><h3>GoHighLevel Development</h3><p>Funnels, websites, snapshots, onboarding flows, pipelines, calendars, forms, products, memberships and custom integrations.</p></div>
-              <div className="card"><div className="icon"><i className="fa-solid fa-tags" /></div><h3>White-Label Fulfillment</h3><p>Deliver under your agency&rsquo;s brand with behind-the-scenes execution, project coordination, QA and ongoing support.</p></div>
-              <div className="card"><div className="icon"><i className="fa-solid fa-bolt" /></div><h3>Marketing Automation</h3><p>Workflows, lead routing, follow-up systems, CRM setup, email and SMS integrations and conversion-focused automations.</p></div>
-              <div className="card"><div className="icon"><i className="fa-solid fa-globe" /></div><h3>Websites & Funnels</h3><p>Landing pages, campaign pages, WordPress, Shopify, WooCommerce, GoHighLevel sites, migrations and redesigns.</p></div>
-              <div className="card"><div className="icon"><i className="fa-solid fa-magnifying-glass-chart" /></div><h3>SEO & Paid Marketing</h3><p>Technical SEO, content planning, local growth, Google Ads, Meta Ads, LinkedIn Ads, tracking and performance reporting.</p></div>
-              <div className="card"><div className="icon"><i className="fa-solid fa-palette" /></div><h3>Content & Creative</h3><p>Graphic design, video editing, social assets, website banners, PDFs, creative production and campaign support.</p></div>
-            </div>
+            <ServicesShowcase />
           </div>
         </section>
 
