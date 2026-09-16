@@ -73,7 +73,10 @@ export default function LevelUp2026Page() {
 
         /* ── About the event ── */
         .lu2026 .event-card-wrap{position:relative;z-index:2;margin-top:-90px;padding:0 0 40px}
-        .lu2026 .event-card{position:relative;max-width:820px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(0,35,83,.16);padding:26px 36px;text-align:left;overflow:hidden}
+        .lu2026 .event-card{position:relative;max-width:820px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(0,35,83,.16);padding:34px 36px 26px;text-align:left;overflow:hidden}
+        .lu2026 .event-card:after{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--blue) 0%,var(--amber) 100%)}
+        .lu2026 .event-eyebrow{display:inline-flex;align-items:center;gap:7px;font-family:var(--J);font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--amber-hover);margin-bottom:8px}
+        .lu2026 .event-eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
         .lu2026 .event-card:before{content:"";position:absolute;top:-80px;right:-80px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 70%);pointer-events:none}
         .lu2026 .event-band-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:24px}
         .lu2026 .event-band-text{flex:1;min-width:0}
@@ -82,7 +85,7 @@ export default function LevelUp2026Page() {
         .lu2026 .text-amber{color:var(--amber-hover)}
         .lu2026 .event-card p{color:var(--muted);font-size:13.5px;margin:0}
         .lu2026 .event-stats{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
-        .lu2026 .event-stat{text-align:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:10px 4px}
+        .lu2026 .event-stat{text-align:center;background:var(--blue-50);border:1px solid var(--ism-blue-200,#94aeee);border-radius:12px;padding:10px 4px}
         .lu2026 .event-stat strong{display:block;font-family:var(--J);font-size:16px;font-weight:800;color:var(--blue);margin-bottom:2px}
         .lu2026 .event-stat span{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:var(--muted)}
         .lu2026 .event-stat span i{font-size:9px;color:var(--amber-hover)}
@@ -238,6 +241,7 @@ export default function LevelUp2026Page() {
             <div className="event-card">
               <div className="event-band-top">
                 <div className="event-band-text">
+                  <div className="event-eyebrow">We&rsquo;re exhibiting at</div>
                   <h2>Stop guessing. <em className="text-amber">Start growing.</em></h2>
                   <p>GoHighLevel&rsquo;s flagship conference. Isuremedia will be there.</p>
                 </div>
