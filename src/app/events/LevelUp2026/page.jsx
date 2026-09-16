@@ -2,11 +2,11 @@ import ClientsMarquee from "@/components/ClientsMarquee";
 
 export const metadata = {
   title: "LevelUp 2026 | Isuremedia, Your White Label Growth Partner",
-  description: "Meet Isuremedia at GHL LevelUp 2026. Scale your agency with white-label GHL development, funnels, automation, SEO, PPC, websites and creative fulfillment.",
+  description: "Meet Isuremedia at GHL LevelUp 2026, October 26-29 in Dallas, TX. Scale your agency with white-label GHL development, funnels, automation, SEO, PPC, websites and creative fulfillment.",
   alternates: { canonical: "/events/LevelUp2026" },
   openGraph: {
     title: "LevelUp 2026 | Isuremedia, Your White Label Growth Partner",
-    description: "Meet Isuremedia at GHL LevelUp 2026. Scale your agency with white-label GHL development, funnels, automation, SEO, PPC, websites and creative fulfillment.",
+    description: "Meet Isuremedia at GHL LevelUp 2026, October 26-29 in Dallas, TX. Scale your agency with white-label GHL development, funnels, automation, SEO, PPC, websites and creative fulfillment.",
     type: "website",
     url: "/events/LevelUp2026",
   },
@@ -52,6 +52,9 @@ export default function LevelUp2026Page() {
         .lu2026 h1{font-family:var(--J);font-size:clamp(38px,5vw,64px);font-weight:800;line-height:1.06;letter-spacing:-2px;margin:20px 0;color:#fff;text-shadow:0 2px 20px rgba(0,8,20,.4)}
         .lu2026 h1 em{font-style:normal;color:var(--amber)}
         .lu2026 .hero p{font-size:18px;color:#dbe6fb;max-width:640px;margin:0 auto}
+        .lu2026 .hero-event-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:20px}
+        .lu2026 .hero-event-meta span{display:inline-flex;align-items:center;gap:8px;font-family:var(--J);font-size:13.5px;font-weight:700;color:#fff}
+        .lu2026 .hero-event-meta i{color:var(--amber);font-size:13px}
         .lu2026 .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px;justify-content:center}
         .lu2026 .btn{display:inline-flex;justify-content:center;align-items:center;padding:15px 22px;border-radius:10px;font-family:var(--J);font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
         .lu2026 .btn-primary{background:var(--amber);color:var(--navy-deep);box-shadow:0 10px 28px rgba(255,176,0,.32)}
@@ -203,6 +206,10 @@ export default function LevelUp2026Page() {
               <div className="eyebrow">GHL LevelUp 2026 &middot; Agency Growth</div>
               <h1>Your growth engine.<br /><em>Our fulfillment team.</em></h1>
               <p>Turn more opportunities into revenue with Isuremedia, your behind-the-scenes white-label partner for GoHighLevel, digital marketing, websites, automation and creative execution.</p>
+              <div className="hero-event-meta">
+                <span><i className="fa-solid fa-calendar" /> October 26&ndash;29, 2026</span>
+                <span><i className="fa-solid fa-location-dot" /> Dallas, TX</span>
+              </div>
               <div className="actions">
                 <a className="btn btn-primary" href="#connect">Explore a Partnership</a>
                 <a className="btn btn-ghost" href="#services">See Our Services</a>
