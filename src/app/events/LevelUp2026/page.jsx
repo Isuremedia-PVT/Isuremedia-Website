@@ -269,13 +269,6 @@ export default function LevelUp2026Page() {
                 </div>
                 <div className="agenda-col">
                   <div className="agenda-item">
-                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-magnifying-glass-chart" /></div>
-                    <div className="agenda-text">
-                      <h4>SEO &amp; Paid Media</h4>
-                      <p>Technical SEO, Google Ads and Meta Ads that convert.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
                     <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-globe" /></div>
                     <div className="agenda-text">
                       <h4>Websites &amp; E-commerce</h4>
@@ -287,6 +280,13 @@ export default function LevelUp2026Page() {
                     <div className="agenda-text">
                       <h4>API Integration</h4>
                       <p>Connect your tools and platforms end to end.</p>
+                    </div>
+                  </div>
+                  <div className="agenda-item">
+                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-magnifying-glass-chart" /></div>
+                    <div className="agenda-text">
+                      <h4>SEO &amp; Paid Media</h4>
+                      <p>Technical SEO, Google Ads and Meta Ads that convert.</p>
                     </div>
                   </div>
                   <div className="agenda-item">
