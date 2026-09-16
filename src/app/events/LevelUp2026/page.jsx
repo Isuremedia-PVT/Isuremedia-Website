@@ -174,6 +174,9 @@ export default function LevelUp2026Page() {
 
         .lu2026 footer{background:var(--navy-deep);color:#c3d1ee;padding:30px 0}
         .lu2026 .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+        .lu2026 .footer-social{display:flex;gap:10px}
+        .lu2026 .footer-social a{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#c3d1ee;font-size:13px;transition:all .15s ease}
+        .lu2026 .footer-social a:hover{background:var(--amber);border-color:var(--amber);color:var(--navy-deep)}
         .lu2026 .footer-row .brand-logo{height:30px}
         .lu2026 .small{font-size:13px !important;color:#8fa3cc}
 
@@ -471,6 +474,13 @@ export default function LevelUp2026Page() {
         <footer>
           <div className="container footer-row">
             <div><img src="/isuremedia-light.webp" alt="Isuremedia" className="brand-logo" style={{ marginBottom: 8 }} /><div className="small">White Label Partner &middot; Digital Marketing &middot; GHL Services</div></div>
+            <div className="footer-social">
+              <a href="https://www.linkedin.com/company/isuremedia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in" /></a>
+              <a href="https://www.facebook.com/Isuremedia2017/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></a>
+              <a href="https://www.instagram.com/isuremedia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram" /></a>
+              <a href="https://x.com/isuremedia_" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i className="fa-brands fa-x-twitter" /></a>
+              <a href="https://www.youtube.com/channel/UC5DR1JBq-Sf2QOlzvQsLeKw" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i className="fa-brands fa-youtube" /></a>
+            </div>
             <div className="small">© 2026 Isuremedia. All rights reserved.</div>
           </div>
         </footer>
