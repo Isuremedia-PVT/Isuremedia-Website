@@ -167,7 +167,8 @@ export default function LevelUp2026Page() {
         @media(max-width:1024px){
           .lu2026 .hero-grid,.lu2026 .split,.lu2026 .form-wrap,.lu2026 .about-grid{grid-template-columns:1fr}
           .lu2026 .cards{grid-template-columns:1fr 1fr}
-          .lu2026 .news-grid{grid-template-columns:1fr}
+          .lu2026 .news-grid{grid-template-columns:1fr 1fr}
+          .lu2026 .news-grid a:last-child{grid-column:1/-1}
           .lu2026 .news-photo-card{min-height:260px}
           .lu2026 .process{grid-template-columns:1fr 1fr}
           .lu2026 h1{letter-spacing:-1.4px}
@@ -176,7 +177,7 @@ export default function LevelUp2026Page() {
         @media(max-width:768px){
           .lu2026 .container{width:100%;padding:0 20px;margin:auto}
           .lu2026 .nav-cta{display:none}
-          .lu2026 .cards,.lu2026 form,.lu2026 .process{grid-template-columns:1fr}
+          .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
           .lu2026 .join-list{grid-template-columns:1fr}
           .lu2026 .join-row{flex-direction:column;align-items:stretch}
           .lu2026 .join-thumb{width:100%;height:150px;margin:0 0 4px}
