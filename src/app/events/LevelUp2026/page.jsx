@@ -50,12 +50,12 @@ export default function LevelUp2026Page() {
         .lu2026 .nav-cta{padding:11px 18px;border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-family:var(--J);font-weight:700;font-size:14px}
 
         /* ── Hero (real photo banner, diagonal-cut bottom) ── */
-        .lu2026 .hero{position:relative;background:url('/career-about/Team%20image%20for%20GMB%20new%201.webp') center 30%/cover no-repeat;color:#fff;overflow:hidden;clip-path:polygon(0 0,100% 0,100% calc(100% - 70px),0 100%);padding-bottom:70px}
+        .lu2026 .hero{position:relative;background:url('/banner/event_banner.webp') center 30%/cover no-repeat;color:#fff;overflow:hidden;clip-path:polygon(0 0,100% 0,100% calc(100% - 70px),0 100%);padding-bottom:70px}
         .lu2026 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,15,36,.82) 0%,rgba(0,25,58,.86) 55%,rgba(0,15,36,.94) 100%);pointer-events:none}
         .lu2026 .hero-ring{position:absolute;top:-70px;right:-70px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(255,176,0,.4);pointer-events:none;z-index:0}
         .lu2026 .hero-ring:after{content:"";position:absolute;inset:34px;border-radius:50%;border:1px solid rgba(255,255,255,.25)}
         .lu2026 .nav,.lu2026 .hero-inner{position:relative;z-index:1}
-        .lu2026 .hero-inner{max-width:760px;margin:0 auto;text-align:center;padding:36px 0 30px}
+        .lu2026 .hero-inner{max-width:760px;margin:0 auto;text-align:center;padding:36px 0 60px}
         .lu2026 .eyebrow{display:inline-flex;gap:9px;align-items:center;background:rgba(255,176,0,.14);border:1px solid rgba(255,176,0,.45);padding:8px 14px;border-radius:999px;font-family:var(--J);font-size:12.5px;font-weight:700;letter-spacing:1.1px;color:var(--amber);text-transform:uppercase}
         .lu2026 .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
         .lu2026 h1{font-family:var(--J);font-size:clamp(38px,5vw,64px);font-weight:800;line-height:1.06;letter-spacing:-2px;margin:20px 0;color:#fff;text-shadow:0 2px 20px rgba(0,8,20,.4)}
@@ -72,12 +72,13 @@ export default function LevelUp2026Page() {
         .lu2026 .hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
 
         /* ── About the event ── */
-        .lu2026 .event-card-wrap{position:relative;z-index:2;margin-top:-46px;padding:0 0 40px}
-        .lu2026 .event-card{position:relative;max-width:800px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(0,35,83,.16);padding:30px 36px;text-align:center;overflow:hidden}
+        .lu2026 .event-card-wrap{position:relative;z-index:2;margin-top:-90px;padding:0 0 40px}
+        .lu2026 .event-card{position:relative;max-width:820px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(0,35,83,.16);padding:26px 36px;text-align:left;overflow:hidden}
         .lu2026 .event-card:before{content:"";position:absolute;top:-80px;right:-80px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 70%);pointer-events:none}
-        .lu2026 .event-logo{height:20px;width:auto;margin-bottom:12px;position:relative;z-index:1}
-        .lu2026 .event-band-top{position:relative;z-index:1}
-        .lu2026 .event-card h2{color:var(--ink);margin:0 0 6px;font-size:clamp(22px,2.6vw,30px)}
+        .lu2026 .event-band-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:24px}
+        .lu2026 .event-band-text{flex:1;min-width:0}
+        .lu2026 .event-logo{height:44px;width:auto;flex-shrink:0}
+        .lu2026 .event-card h2{color:var(--ink);margin:0 0 6px;font-size:clamp(13px,1.3vw,18px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
         .lu2026 .text-amber{color:var(--amber-hover)}
         .lu2026 .event-card p{color:var(--muted);font-size:13.5px;margin:0}
         .lu2026 .event-stats{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
@@ -193,7 +194,10 @@ export default function LevelUp2026Page() {
           .lu2026 .nav-cta{display:none}
           .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
           .lu2026 .event-card{padding:22px 18px;border-radius:18px}
-          .lu2026 .event-card-wrap{margin-top:-30px;padding-bottom:30px}
+          .lu2026 .event-band-top{flex-direction:column;align-items:flex-start;gap:14px}
+          .lu2026 .event-card h2{white-space:normal;overflow:visible;text-overflow:clip}
+          .lu2026 .event-logo{height:34px}
+          .lu2026 .event-card-wrap{margin-top:-50px;padding-bottom:30px}
           .lu2026 .event-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}
           .lu2026 .full{grid-column:auto}
           .lu2026 section{padding:52px 0}
@@ -212,7 +216,7 @@ export default function LevelUp2026Page() {
           <div className="container">
             <nav className="nav">
               <img src="/isuremedia-light.webp" alt="Isuremedia" className="brand-logo" />
-              <a className="nav-cta" href="#connect">Meet us at LevelUp 2026 →</a>
+              <a className="nav-cta" href="#connect">Partner with Us →</a>
             </nav>
             <div className="hero-inner">
               <div className="eyebrow">GHL LevelUp 2026 &middot; Agency Growth</div>
@@ -230,9 +234,11 @@ export default function LevelUp2026Page() {
           <div className="container">
             <div className="event-card">
               <div className="event-band-top">
+                <div className="event-band-text">
+                  <h2>Stop guessing. <em className="text-amber">Start growing.</em></h2>
+                  <p>GoHighLevel&rsquo;s flagship conference. Isuremedia will be there.</p>
+                </div>
                 <img className="event-logo" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/bqd3A7Wt0iWPLpxnwLdJ/media/6a94d40cc71cb92aef017ad0.svg" alt="GoHighLevel" />
-                <h2>Stop guessing. <em className="text-amber">Start growing.</em></h2>
-                <p>GoHighLevel&rsquo;s flagship conference. Isuremedia will be there.</p>
               </div>
               <div className="event-stats">
                 <div className="event-stat"><strong>Oct 26&ndash;29</strong><span><i className="fa-solid fa-calendar" /> 2026</span></div>
@@ -364,7 +370,6 @@ export default function LevelUp2026Page() {
               <div>
                 <h2>From first conversation to <em className="text-blue">reliable fulfillment.</em></h2>
               </div>
-              <a className="btn btn-ghost agenda-cta" href="#connect">Start a Conversation →</a>
             </div>
             <div className="process">
                 <div className="step"><div className="process-icon"><i className="fa-solid fa-magnifying-glass" /></div><h3>Discover</h3><p>Understand your offers, clients, platforms, workload and growth goals.</p></div>
@@ -381,7 +386,6 @@ export default function LevelUp2026Page() {
               <div>
                 <h2>Recent <em className="text-blue">case studies.</em></h2>
               </div>
-              <a className="btn btn-primary agenda-cta" href="/case-studies"><i className="fa-solid fa-arrow-right" /> More Case Studies</a>
             </div>
             <div className="news-grid">
               <a className="news-photo-card" href="/case-studies/roller-gohighlevel-venue-integration">
