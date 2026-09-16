@@ -73,21 +73,21 @@ export default function LevelUp2026Page() {
         .lu2026 .hero .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
         .lu2026 .hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
 
-        /* ── What we do (plain section, no card/shadow) ── */
-        .lu2026 .capability-wrap{background:#fff;padding:76px 0}
-        .lu2026 .hero-card{position:relative;color:var(--ink);max-width:980px;margin:0 auto;text-align:left}
+        /* ── What we do (card grid, tinted band) ── */
+        .lu2026 .capability-wrap{background:var(--soft);padding:76px 0}
+        .lu2026 .hero-card{position:relative;color:var(--ink);max-width:1160px;margin:0 auto;text-align:left}
         .lu2026 .hero-card h3{font-family:var(--J);font-size:22px;font-weight:800;margin:6px 0 0}
         .lu2026 .agenda-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:28px;flex-wrap:wrap}
         .lu2026 .agenda-cta{padding:10px 16px;font-size:13px;flex-shrink:0}
-        .lu2026 .agenda-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:26px}
-        .lu2026 .agenda-badge{display:inline-block;font-family:var(--J);font-weight:800;font-size:13px;letter-spacing:.3px;padding:9px 18px;border-radius:999px;margin-bottom:18px}
-        .lu2026 .agenda-badge-blue{background:var(--blue-50);color:var(--blue);border:1px solid var(--ism-blue-200,#94aeee)}
-        .lu2026 .agenda-badge-amber{background:var(--amber-50);color:var(--amber-hover);border:1px solid #f8d995}
-        .lu2026 .agenda-item{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
-        .lu2026 .agenda-icon{flex-shrink:0;width:38px;height:38px;border-radius:50%;background:var(--blue-50);color:var(--blue);display:grid;place-items:center;font-size:14px}
-        .lu2026 .agenda-icon-amber{background:var(--amber-50);color:var(--amber-hover)}
-        .lu2026 .agenda-text h4{font-family:var(--J);font-size:15px;font-weight:800;margin:0 0 3px;color:var(--ink)}
-        .lu2026 .agenda-text p{margin:0;font-size:13.5px;color:var(--muted)}
+        .lu2026 .agenda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:34px}
+        .lu2026 .agenda-item{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;text-align:left;transition:box-shadow .18s ease,transform .18s ease}
+        .lu2026 .agenda-item:hover{box-shadow:0 16px 40px rgba(0,35,83,.12);transform:translateY(-3px)}
+        .lu2026 .agenda-icon{width:46px;height:46px;border-radius:12px;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:18px;margin:0 0 18px}
+        .lu2026 .agenda-icon-amber{background:var(--navy);color:#7cc0ff}
+        .lu2026 .agenda-item h4{font-family:var(--J);font-size:15.5px;font-weight:800;margin:0 0 8px;color:var(--ink)}
+        .lu2026 .agenda-item p{margin:0 0 16px;font-size:13.5px;color:var(--muted)}
+        .lu2026 .agenda-link{display:inline-block;font-family:var(--J);font-size:13px;font-weight:800;color:var(--ink)}
+        .lu2026 .agenda-item:hover .agenda-link{color:var(--blue)}
         .lu2026 .hero-card > .btn-primary{display:flex;width:fit-content;margin-left:auto;margin-right:auto}
 
         .lu2026 .photo-card{position:relative;border-radius:20px;overflow:hidden;height:340px;box-shadow:0 20px 50px rgba(0,35,83,.14)}
@@ -96,18 +96,6 @@ export default function LevelUp2026Page() {
         .lu2026 .photo-badge strong{font-family:var(--J);font-size:24px;font-weight:800;color:var(--blue)}
         .lu2026 .photo-badge span{font-size:13px;color:var(--muted);line-height:1.3}
 
-        .lu2026 .join-event{background:var(--soft)}
-        .lu2026 .join-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-        .lu2026 .join-row{display:flex;gap:26px;align-items:center;background:white;border:1px solid var(--line);border-radius:14px;padding:28px 30px 28px 24px;transition:box-shadow .18s ease,transform .18s ease}
-        .lu2026 .join-row:hover{box-shadow:0 16px 40px rgba(0,35,83,.1);transform:translateY(-2px)}
-        .lu2026 .join-thumb{flex-shrink:0;width:130px;height:170px;border-radius:12px;object-fit:cover;margin:-38px 0;box-shadow:0 16px 34px rgba(0,35,83,.22)}
-        .lu2026 .join-row-body{min-width:0}
-        .lu2026 .join-row-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:8px}
-        .lu2026 .join-row-meta span{display:inline-flex;align-items:center;gap:6px;font-family:var(--J);font-size:12px;font-weight:700;color:var(--blue)}
-        .lu2026 .join-row-meta i{font-size:11px}
-        .lu2026 .join-row-body h3{font-family:var(--J);font-size:16.5px;font-weight:800;margin:0 0 6px;color:var(--ink)}
-        .lu2026 .join-row-body p{margin:0 0 8px;color:var(--muted);font-size:13.5px}
-        .lu2026 .join-row-host{font-size:12.5px;color:var(--muted);font-style:italic}
 
         .lu2026 .news-band{background:#fff}
         .lu2026 .news-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;align-items:stretch}
@@ -183,6 +171,7 @@ export default function LevelUp2026Page() {
           .lu2026 .news-grid a:last-child{grid-column:1/-1}
           .lu2026 .news-photo-card{min-height:260px}
           .lu2026 .process{grid-template-columns:1fr 1fr}
+          .lu2026 .agenda-grid{grid-template-columns:1fr 1fr}
           .lu2026 h1{letter-spacing:-1.4px}
           .lu2026 .about-collage{order:2;height:320px;width:100%;max-width:420px;margin:30px auto 0}
         }
@@ -190,9 +179,6 @@ export default function LevelUp2026Page() {
           .lu2026 .container{width:100%;padding:0 20px;margin:auto}
           .lu2026 .nav-cta{display:none}
           .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
-          .lu2026 .join-list{grid-template-columns:1fr}
-          .lu2026 .join-row{flex-direction:column;align-items:stretch}
-          .lu2026 .join-thumb{width:100%;height:150px;margin:0 0 4px}
           .lu2026 .full{grid-column:auto}
           .lu2026 section,.lu2026 .capability-wrap{padding:52px 0}
           .lu2026 .hero-ring{width:200px;height:200px;top:-50px;right:-50px}
@@ -232,144 +218,63 @@ export default function LevelUp2026Page() {
             <div className="hero-card">
               <div className="agenda-head">
                 <div>
-                  <div className="kicker">// What We Do</div>
                   <h3>How Isuremedia can help you <em className="text-blue">scale.</em></h3>
                 </div>
               </div>
               <div className="agenda-grid">
-                <div className="agenda-col">
-                  <div className="agenda-item">
-                    <div className="agenda-icon"><i className="fa-solid fa-gears" /></div>
-                    <div className="agenda-text">
-                      <h4>GoHighLevel Builds &amp; Funnels</h4>
-                      <p>Full GHL implementation, from funnels to automations.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon"><i className="fa-solid fa-tags" /></div>
-                    <div className="agenda-text">
-                      <h4>White-Label Fulfillment</h4>
-                      <p>Delivered under your brand, QA&rsquo;d and supported end to end.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon"><i className="fa-solid fa-bolt" /></div>
-                    <div className="agenda-text">
-                      <h4>Automation &amp; CRM</h4>
-                      <p>Workflows, lead routing and CRM setup that just works.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon"><i className="fa-solid fa-code" /></div>
-                    <div className="agenda-text">
-                      <h4>Web Development</h4>
-                      <p>Custom builds in Node, PHP/Laravel and Python.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="agenda-col">
-                  <div className="agenda-item">
-                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-globe" /></div>
-                    <div className="agenda-text">
-                      <h4>Websites &amp; E-commerce</h4>
-                      <p>WordPress, Shopify and custom-built sites that perform.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-plug" /></div>
-                    <div className="agenda-text">
-                      <h4>API Integration</h4>
-                      <p>Connect your tools and platforms end to end.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-magnifying-glass-chart" /></div>
-                    <div className="agenda-text">
-                      <h4>SEO &amp; Paid Media</h4>
-                      <p>Technical SEO, Google Ads and Meta Ads that convert.</p>
-                    </div>
-                  </div>
-                  <div className="agenda-item">
-                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-palette" /></div>
-                    <div className="agenda-text">
-                      <h4>Creative Support</h4>
-                      <p>Graphic design, video and content production on demand.</p>
-                    </div>
-                  </div>
-                </div>
+                <a className="agenda-item" href="/gohighlevel-development-services">
+                  <div className="agenda-icon"><i className="fa-solid fa-gears" /></div>
+                  <h4>GoHighLevel Builds &amp; Funnels</h4>
+                  <p>Full GHL implementation, from funnels to automations.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/gohighlevel-white-label-support-services">
+                  <div className="agenda-icon"><i className="fa-solid fa-tags" /></div>
+                  <h4>White-Label Fulfillment</h4>
+                  <p>Delivered under your brand, QA&rsquo;d and supported end to end.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/marketing-automation-agency">
+                  <div className="agenda-icon"><i className="fa-solid fa-bolt" /></div>
+                  <h4>Automation &amp; CRM</h4>
+                  <p>Workflows, lead routing and CRM setup that just works.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/nodejs-development-services">
+                  <div className="agenda-icon"><i className="fa-solid fa-code" /></div>
+                  <h4>Web Development</h4>
+                  <p>Custom builds in Node, PHP/Laravel and Python.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/websites-and-funnels">
+                  <div className="agenda-icon"><i className="fa-solid fa-globe" /></div>
+                  <h4>Websites &amp; E-commerce</h4>
+                  <p>WordPress, Shopify and custom-built sites that perform.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/api-integration-services">
+                  <div className="agenda-icon"><i className="fa-solid fa-plug" /></div>
+                  <h4>API Integration</h4>
+                  <p>Connect your tools and platforms end to end.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/seo-services">
+                  <div className="agenda-icon"><i className="fa-solid fa-magnifying-glass-chart" /></div>
+                  <h4>SEO &amp; Paid Media</h4>
+                  <p>Technical SEO, Google Ads and Meta Ads that convert.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
+                <a className="agenda-item" href="/graphic-design-agency">
+                  <div className="agenda-icon"><i className="fa-solid fa-palette" /></div>
+                  <h4>Creative Support</h4>
+                  <p>Graphic design, video and content production on demand.</p>
+                  <span className="agenda-link">Explore now →</span>
+                </a>
               </div>
               <a className="btn btn-primary" style={{ marginTop: 8 }} href="#connect">Start the Conversation</a>
             </div>
           </div>
         </div>
-
-        <section className="join-event">
-          <div className="container">
-            <div className="agenda-head">
-              <div>
-                <div className="kicker">// Visit Our Booth</div>
-                <h2>Why you should <em className="text-blue">stop by.</em></h2>
-              </div>
-              <a className="btn btn-primary agenda-cta" href="#connect"><i className="fa-solid fa-arrow-right" /> Talk to Us</a>
-            </div>
-            <div className="join-list">
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/Team%20image%20for%20GMB%20new%201.webp" alt="Live demos at the Isuremedia booth" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>Live Demos</h3>
-                  <p>See real GHL builds and automations demoed live at the booth.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/IMG_3431.webp" alt="1:1 conversations with the Isuremedia team" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>1:1 Conversations</h3>
-                  <p>Talk through your agency&rsquo;s specific fulfillment needs with our team.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/IMG_3508.webp" alt="Partnership perks with Isuremedia" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>Partnership Perks</h3>
-                  <p>Explore white-label and referral partnership options.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/IMG_6139.webp" alt="Portfolio walkthrough with Isuremedia" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>Portfolio Walkthrough</h3>
-                  <p>Browse real client work across SEO, PPC, web and automation.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/Team%20image%20for%20GMB%20new%201.webp" style={{ objectPosition: '85% 40%' }} alt="Meet the friendly Isuremedia team" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>Friendly Team</h3>
-                  <p>Meet the people behind the work, always approachable and ready to help.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-              <div className="join-row">
-                <img className="join-thumb" src="/career-about/IMG_3508.webp" style={{ objectPosition: '50% 20%' }} alt="GHL tips and tricks from Isuremedia" />
-                <div className="join-row-body">
-                  <div className="join-row-meta"><span><i className="fa-solid fa-location-dot" /> Isuremedia Booth</span><span><i className="fa-solid fa-calendar" /> GHL LevelUp 2026</span></div>
-                  <h3>GHL Tips &amp; Tricks</h3>
-                  <p>Pick up quick wins to get more out of your GoHighLevel setup.</p>
-                  <div className="join-row-host">Hosted by the Isuremedia team</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <ClientsMarquee />
 
@@ -381,7 +286,6 @@ export default function LevelUp2026Page() {
               <div className="about-dots" />
             </div>
             <div>
-              <div className="kicker">// About Isuremedia</div>
               <h2>Your behind-the-scenes <em className="text-blue">growth partner.</em></h2>
               <p style={{ color: "var(--muted)", fontSize: 16.5 }}>An in-house digital marketing agency built on US strategy and India-based execution, working as an extension of agency teams since 2017.</p>
               <div className="solution-row">
@@ -400,7 +304,6 @@ export default function LevelUp2026Page() {
         <section id="services">
           <div className="container">
             <div className="section-head section-head-center">
-              <div className="kicker">(One partner. More capacity.)</div>
               <h2>Everything your agency needs to <em className="text-blue">deliver more.</em></h2>
               <p>From strategy and acquisition to implementation and ongoing support, Isuremedia helps agencies extend their capabilities under their own brand.</p>
             </div>
@@ -418,7 +321,6 @@ export default function LevelUp2026Page() {
         <section className="band">
           <div className="container split">
             <div>
-              <div className="kicker">Why agencies choose Isuremedia</div>
               <h2>Sell the solution. <em className="text-blue">We help deliver it.</em></h2>
               <p style={{ color: "var(--muted)" }}>Expand your service menu without immediately expanding your payroll. We work as an extension of your team, helping you protect the client relationship while increasing delivery capacity.</p>
               <ul className="checklist">
@@ -443,7 +345,6 @@ export default function LevelUp2026Page() {
           <div className="container">
             <div className="agenda-head">
               <div>
-                <div className="kicker">// A simple partnership model</div>
                 <h2>From first conversation to <em className="text-blue">reliable fulfillment.</em></h2>
               </div>
               <a className="btn btn-ghost agenda-cta" href="#connect">Start a Conversation →</a>
@@ -461,7 +362,6 @@ export default function LevelUp2026Page() {
           <div className="container">
             <div className="agenda-head">
               <div>
-                <div className="kicker">// Real Results</div>
                 <h2>Recent <em className="text-blue">case studies.</em></h2>
               </div>
               <a className="btn btn-primary agenda-cta" href="/case-studies"><i className="fa-solid fa-arrow-right" /> More Case Studies</a>
@@ -498,7 +398,6 @@ export default function LevelUp2026Page() {
         <section id="connect" className="band">
           <div className="container form-wrap">
             <div>
-              <div className="kicker">Let&rsquo;s connect at LevelUp 2026</div>
               <h2>Tell us what you want to <em className="text-blue">build next.</em></h2>
               <p style={{ fontSize: 17, color: "var(--muted)" }}>Whether you need a GHL implementation team, white-label marketing fulfillment, or support with a specific client project, share a few details and we&rsquo;ll start the conversation.</p>
               <ul className="checklist">
