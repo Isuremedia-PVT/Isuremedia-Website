@@ -1,4 +1,12 @@
+import { Lora } from "next/font/google";
 import ClientsMarquee from "@/components/ClientsMarquee";
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["italic"],
+  variable: "--font-lora",
+});
 
 export const metadata = {
   title: "LevelUp 2026 | Isuremedia, Your White Label Growth Partner",
@@ -50,7 +58,8 @@ export default function LevelUp2026Page() {
         .lu2026 .eyebrow{display:inline-flex;gap:9px;align-items:center;background:rgba(255,176,0,.14);border:1px solid rgba(255,176,0,.45);padding:8px 14px;border-radius:999px;font-family:var(--J);font-size:12.5px;font-weight:700;letter-spacing:1.1px;color:var(--amber);text-transform:uppercase}
         .lu2026 .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
         .lu2026 h1{font-family:var(--J);font-size:clamp(38px,5vw,64px);font-weight:800;line-height:1.06;letter-spacing:-2px;margin:20px 0;color:#fff;text-shadow:0 2px 20px rgba(0,8,20,.4)}
-        .lu2026 h1 em{font-style:normal;color:var(--amber)}
+        .lu2026 h1 em,.lu2026 h2 em{font-family:var(--font-lora),serif;font-style:italic;font-weight:600}
+        .lu2026 h1 em{color:var(--amber)}
         .lu2026 .hero p{font-size:18px;color:#dbe6fb;max-width:640px;margin:0 auto}
         .lu2026 .hero-event-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:20px}
         .lu2026 .hero-event-meta span{display:inline-flex;align-items:center;gap:8px;font-family:var(--J);font-size:13.5px;font-weight:700;color:#fff}
@@ -117,7 +126,7 @@ export default function LevelUp2026Page() {
         .lu2026 .about-photo-main{width:78%;height:88%;top:0;left:0;z-index:2}
         .lu2026 .about-photo-sm{width:52%;height:52%;bottom:0;right:0;z-index:3}
         .lu2026 .about-dots{position:absolute;top:-24px;right:6%;width:110px;height:110px;background-image:radial-gradient(var(--blue) 2.5px,transparent 2.5px);background-size:14px 14px;opacity:.25;z-index:1}
-        .lu2026 .text-blue{font-style:normal;color:var(--blue)}
+        .lu2026 .text-blue{color:var(--blue)}
         .lu2026 .solution-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
         .lu2026 .solution-card{display:flex;align-items:center;gap:9px;background:var(--blue-50);border:1px solid var(--ism-blue-200,#94aeee);border-radius:11px;padding:12px 16px;font-family:var(--J);font-weight:700;font-size:13.5px;color:var(--navy)}
         .lu2026 .solution-card i{color:var(--blue);font-size:12px}
@@ -194,7 +203,7 @@ export default function LevelUp2026Page() {
         }
       `}</style>
 
-      <div className="lu2026">
+      <div className={`lu2026 ${lora.variable}`}>
         <header className="hero">
           <div className="hero-ring" />
           <div className="container">
