@@ -62,9 +62,6 @@ export default function LevelUp2026Page() {
         .lu2026 h1 em,.lu2026 h2 em,.lu2026 h3 em{font-family:var(--font-lora),serif;font-style:italic;font-weight:600}
         .lu2026 h1 em{color:var(--amber)}
         .lu2026 .hero p{font-size:18px;color:#dbe6fb;max-width:640px;margin:0 auto}
-        .lu2026 .hero-event-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:20px}
-        .lu2026 .hero-event-meta span{display:inline-flex;align-items:center;gap:8px;font-family:var(--J);font-size:13.5px;font-weight:700;color:#fff}
-        .lu2026 .hero-event-meta i{color:var(--amber);font-size:13px}
         .lu2026 .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px;justify-content:center}
         .lu2026 .btn{display:inline-flex;justify-content:center;align-items:center;padding:15px 22px;border-radius:10px;font-family:var(--J);font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
         .lu2026 .btn-primary{background:var(--amber);color:var(--navy-deep);box-shadow:0 10px 28px rgba(255,176,0,.32)}
@@ -73,6 +70,21 @@ export default function LevelUp2026Page() {
         .lu2026 .btn-ghost:hover{background:var(--blue-50)}
         .lu2026 .hero .btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
         .lu2026 .hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+        /* ── About the event ── */
+        .lu2026 .event-card-wrap{position:relative;z-index:2;margin-top:-46px;padding:0 0 40px}
+        .lu2026 .event-card{position:relative;max-width:800px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 26px 60px rgba(0,35,83,.16);padding:30px 36px;text-align:center;overflow:hidden}
+        .lu2026 .event-card:before{content:"";position:absolute;top:-80px;right:-80px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,176,0,.16) 0%,transparent 70%);pointer-events:none}
+        .lu2026 .event-logo{height:20px;width:auto;margin-bottom:12px;position:relative;z-index:1}
+        .lu2026 .event-band-top{position:relative;z-index:1}
+        .lu2026 .event-card h2{color:var(--ink);margin:0 0 6px;font-size:clamp(22px,2.6vw,30px)}
+        .lu2026 .text-amber{color:var(--amber-hover)}
+        .lu2026 .event-card p{color:var(--muted);font-size:13.5px;margin:0}
+        .lu2026 .event-stats{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
+        .lu2026 .event-stat{text-align:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:10px 4px}
+        .lu2026 .event-stat strong{display:block;font-family:var(--J);font-size:16px;font-weight:800;color:var(--blue);margin-bottom:2px}
+        .lu2026 .event-stat span{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:var(--muted)}
+        .lu2026 .event-stat span i{font-size:9px;color:var(--amber-hover)}
 
         /* ── What we do (card grid, tinted band) ── */
         .lu2026 .capability-wrap{background:#fff;padding:34px 0 76px}
@@ -172,6 +184,7 @@ export default function LevelUp2026Page() {
           .lu2026 .news-photo-card{min-height:260px}
           .lu2026 .process{grid-template-columns:1fr 1fr}
           .lu2026 .agenda-grid{grid-template-columns:1fr 1fr}
+          .lu2026 .event-card{max-width:600px;padding:26px}
           .lu2026 h1{letter-spacing:-1.4px}
           .lu2026 .about-collage{order:2;height:320px;width:100%;max-width:420px;margin:30px auto 0}
         }
@@ -179,6 +192,9 @@ export default function LevelUp2026Page() {
           .lu2026 .container{width:100%;padding:0 20px;margin:auto}
           .lu2026 .nav-cta{display:none}
           .lu2026 .cards,.lu2026 form,.lu2026 .process,.lu2026 .news-grid{grid-template-columns:1fr}
+          .lu2026 .event-card{padding:22px 18px;border-radius:18px}
+          .lu2026 .event-card-wrap{margin-top:-30px;padding-bottom:30px}
+          .lu2026 .event-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}
           .lu2026 .full{grid-column:auto}
           .lu2026 section{padding:52px 0}
           .lu2026 .capability-wrap{padding:24px 0 52px}
@@ -202,10 +218,6 @@ export default function LevelUp2026Page() {
               <div className="eyebrow">GHL LevelUp 2026 &middot; Agency Growth</div>
               <h1>Your growth engine.<br /><em>Our fulfillment team.</em></h1>
               <p>Turn more opportunities into revenue with Isuremedia, your behind-the-scenes white-label partner for GoHighLevel, digital marketing, websites, automation and creative execution.</p>
-              <div className="hero-event-meta">
-                <span><i className="fa-solid fa-calendar" /> October 26&ndash;29, 2026</span>
-                <span><i className="fa-solid fa-location-dot" /> Dallas, TX</span>
-              </div>
               <div className="actions">
                 <a className="btn btn-primary" href="#connect">Explore a Partnership</a>
                 <a className="btn btn-ghost" href="#services">See Our Services</a>
@@ -213,6 +225,25 @@ export default function LevelUp2026Page() {
             </div>
           </div>
         </header>
+
+        <div className="event-card-wrap">
+          <div className="container">
+            <div className="event-card">
+              <div className="event-band-top">
+                <img className="event-logo" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/bqd3A7Wt0iWPLpxnwLdJ/media/6a94d40cc71cb92aef017ad0.svg" alt="GoHighLevel" />
+                <h2>Stop guessing. <em className="text-amber">Start growing.</em></h2>
+                <p>GoHighLevel&rsquo;s flagship conference. Isuremedia will be there.</p>
+              </div>
+              <div className="event-stats">
+                <div className="event-stat"><strong>Oct 26&ndash;29</strong><span><i className="fa-solid fa-calendar" /> 2026</span></div>
+                <div className="event-stat"><strong>Dallas</strong><span><i className="fa-solid fa-location-dot" /> Texas</span></div>
+                <div className="event-stat"><strong>1,000+</strong><span><i className="fa-solid fa-users" /> Attendees</span></div>
+                <div className="event-stat"><strong>60+</strong><span><i className="fa-solid fa-microphone" /> Speakers</span></div>
+                <div className="event-stat"><strong>300+</strong><span><i className="fa-solid fa-bolt" /> New features</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="capability-wrap">
           <div className="container">
