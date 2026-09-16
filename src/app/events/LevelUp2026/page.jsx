@@ -58,7 +58,7 @@ export default function LevelUp2026Page() {
         .lu2026 .eyebrow{display:inline-flex;gap:9px;align-items:center;background:rgba(255,176,0,.14);border:1px solid rgba(255,176,0,.45);padding:8px 14px;border-radius:999px;font-family:var(--J);font-size:12.5px;font-weight:700;letter-spacing:1.1px;color:var(--amber);text-transform:uppercase}
         .lu2026 .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--amber)}
         .lu2026 h1{font-family:var(--J);font-size:clamp(38px,5vw,64px);font-weight:800;line-height:1.06;letter-spacing:-2px;margin:20px 0;color:#fff;text-shadow:0 2px 20px rgba(0,8,20,.4)}
-        .lu2026 h1 em,.lu2026 h2 em{font-family:var(--font-lora),serif;font-style:italic;font-weight:600}
+        .lu2026 h1 em,.lu2026 h2 em,.lu2026 h3 em{font-family:var(--font-lora),serif;font-style:italic;font-weight:600}
         .lu2026 h1 em{color:var(--amber)}
         .lu2026 .hero p{font-size:18px;color:#dbe6fb;max-width:640px;margin:0 auto}
         .lu2026 .hero-event-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:20px}
@@ -233,7 +233,7 @@ export default function LevelUp2026Page() {
               <div className="agenda-head">
                 <div>
                   <div className="kicker">// What We Do</div>
-                  <h3>How Isuremedia can help you scale.</h3>
+                  <h3>How Isuremedia can help you <em className="text-blue">scale.</em></h3>
                 </div>
               </div>
               <div className="agenda-grid">
@@ -259,6 +259,13 @@ export default function LevelUp2026Page() {
                       <p>Workflows, lead routing and CRM setup that just works.</p>
                     </div>
                   </div>
+                  <div className="agenda-item">
+                    <div className="agenda-icon"><i className="fa-solid fa-code" /></div>
+                    <div className="agenda-text">
+                      <h4>Web Development</h4>
+                      <p>Custom builds in Node, PHP/Laravel and Python.</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="agenda-col">
                   <div className="agenda-item">
@@ -273,6 +280,13 @@ export default function LevelUp2026Page() {
                     <div className="agenda-text">
                       <h4>Websites &amp; E-commerce</h4>
                       <p>WordPress, Shopify and custom-built sites that perform.</p>
+                    </div>
+                  </div>
+                  <div className="agenda-item">
+                    <div className="agenda-icon agenda-icon-amber"><i className="fa-solid fa-plug" /></div>
+                    <div className="agenda-text">
+                      <h4>API Integration</h4>
+                      <p>Connect your tools and platforms end to end.</p>
                     </div>
                   </div>
                   <div className="agenda-item">
@@ -387,7 +401,7 @@ export default function LevelUp2026Page() {
           <div className="container">
             <div className="section-head section-head-center">
               <div className="kicker">(One partner. More capacity.)</div>
-              <h2>Everything your agency needs to deliver more.</h2>
+              <h2>Everything your agency needs to <em className="text-blue">deliver more.</em></h2>
               <p>From strategy and acquisition to implementation and ongoing support, Isuremedia helps agencies extend their capabilities under their own brand.</p>
             </div>
             <div className="cards">
@@ -405,7 +419,7 @@ export default function LevelUp2026Page() {
           <div className="container split">
             <div>
               <div className="kicker">Why agencies choose Isuremedia</div>
-              <h2>Sell the solution. We help deliver it.</h2>
+              <h2>Sell the solution. <em className="text-blue">We help deliver it.</em></h2>
               <p style={{ color: "var(--muted)" }}>Expand your service menu without immediately expanding your payroll. We work as an extension of your team, helping you protect the client relationship while increasing delivery capacity.</p>
               <ul className="checklist">
                 <li>White-label delivery under your brand</li>
@@ -485,7 +499,7 @@ export default function LevelUp2026Page() {
           <div className="container form-wrap">
             <div>
               <div className="kicker">Let&rsquo;s connect at LevelUp 2026</div>
-              <h2>Tell us what you want to build next.</h2>
+              <h2>Tell us what you want to <em className="text-blue">build next.</em></h2>
               <p style={{ fontSize: 17, color: "var(--muted)" }}>Whether you need a GHL implementation team, white-label marketing fulfillment, or support with a specific client project, share a few details and we&rsquo;ll start the conversation.</p>
               <ul className="checklist">
                 <li>Discuss your agency&rsquo;s current service model</li>
