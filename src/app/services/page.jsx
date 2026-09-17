@@ -258,7 +258,7 @@ export default function ServicesPage() {
 
         {/* ── FINAL CTA ── */}
         <CTASection
-          image="/service-event/Ready to partner with a.webp"
+          image="/result_footer/ready_for_result.webp"
           imageWidth={280}
           heading="Ready to Partner with a"
           headingHighlight={<><br />Results-Driven Agency?</>}
