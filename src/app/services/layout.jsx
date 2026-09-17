@@ -1,4 +1,5 @@
 export const metadata = {
+  robots: { index: false, follow: true },
   title: "Top Digital Marketing Agency in US | SEO & Marketing Services",
   description: "Top digital marketing agency offering SEO services, PPC advertising, social media marketing, & content marketing services. Drive organic digital growth today.",
   keywords: [

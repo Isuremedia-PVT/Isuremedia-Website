@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 export const dynamic = 'force-static';
 
@@ -18,6 +19,7 @@ function isExcluded(urlPath) {
   if (urlPath.startsWith('/hire/')) return true;
   if (urlPath === '/sitemap') return true; // human-readable HTML sitemap, not the XML one; also disallowed in robots.txt
   if (urlPath === '/thank-you' || urlPath === '/appointment-confirmation') return true;
+  if (urlPath === '/home-revise-draft' || urlPath === '/home-revise-draft-2') return true;
   return false;
 }
 
@@ -53,10 +55,19 @@ export default function sitemap() {
 
   return pages
     .sort((a, b) => a.urlPath.localeCompare(b.urlPath))
-    .map(({ urlPath, file }) => ({
-      url: `${SITE_URL}${urlPath}`,
-      lastModified: fs.statSync(file).mtime,
-      changeFrequency: urlPath === '/' ? 'weekly' : 'monthly',
-      priority: priorityFor(urlPath),
-    }));
+    .map(({ urlPath, file }) => {
+      let lastModified;
+      try {
+        const iso = execSync(`git log -1 --format=%cI -- "${file}"`, { encoding: 'utf8' }).trim();
+        lastModified = iso || fs.statSync(file).mtime;
+      } catch {
+        lastModified = fs.statSync(file).mtime;
+      }
+      return {
+        url: `${SITE_URL}${urlPath}`,
+        lastModified,
+        changeFrequency: urlPath === '/' ? 'weekly' : 'monthly',
+        priority: priorityFor(urlPath),
+      };
+    });
 }
