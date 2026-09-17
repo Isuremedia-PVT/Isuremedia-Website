@@ -205,36 +205,48 @@ export default function ServicesPage() {
         {/* ── TRUST BAR ── */}
         <ClientsMarquee />
 
-        {/* ── FAQ ── */}
-        <section style={{ padding: '64px 0', background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #eff6ff 100%)' }}>
+        {/* ── FAQ (2-col, left sticky intro + right accordion) ── */}
+        <section className="svc-faq-section" style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
           <div className="ism-container">
-            <div style={{ textAlign: 'center', maxWidth: 640, margin: '0 auto 52px' }}>
-              <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
-                Frequently Asked Questions
-              </h2>
-            </div>
-            <div style={{ maxWidth: 820, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 10 }}>
-              {FAQS.map((faq, i) => {
-                const isOpen = openIdx === i;
-                return (
-                  <div key={i} style={{ background: '#fff', border: `1px solid ${isOpen ? 'var(--ism-blue-100)' : 'var(--color-border)'}`, borderRadius: 14, overflow: 'hidden', boxShadow: isOpen ? 'var(--sh-sm)' : '' }}>
-                    <button
-                      onClick={() => setOpenIdx(isOpen ? null : i)}
-                      style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, cursor: 'pointer', background: 'transparent', border: 'none', textAlign: 'left' }}
-                    >
-                      <span style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: isOpen ? 'var(--color-primary)' : 'var(--color-text-heading)', lineHeight: 1.45, flex: 1 }}>{i + 1}. {faq.q}</span>
-                      <span style={{ width: 28, height: 28, borderRadius: '50%', background: isOpen ? 'var(--color-primary)' : 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 16, color: isOpen ? '#fff' : 'var(--color-primary)', fontWeight: 700, transition: 'all .2s', transform: isOpen ? 'rotate(45deg)' : '' }}>+</span>
-                    </button>
-                    {isOpen && (
-                      <div style={{ padding: '0 24px 22px' }}>
-                        <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>{faq.a}</p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+            <div className="svc-faq-grid" style={{ display: 'grid', gridTemplateColumns: '380px 1fr', gap: 64, alignItems: 'start' }}>
+              <div className="svc-faq-sticky" style={{ position: 'sticky', top: 100 }}>
+                <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 14, marginTop: 0, lineHeight: 1.15 }}>
+                  Questions About <span style={{ color: 'var(--ism-amber)' }}>Digital Marketing</span>
+                </h2>
+                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: '0 0 32px' }}>
+                  Honest answers before you decide. No spin, no buzzwords.
+                </p>
+                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 28px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 28px rgba(255,176,0,.45)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 6px 20px rgba(255,176,0,.35)'; }}
+                >
+                  Get Started →
+                </Link>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {FAQS.map((faq, i) => {
+                  const isOpen = openIdx === i;
+                  return (
+                    <div key={i} style={{ background: '#fff', borderRadius: 12, border: `1px solid ${isOpen ? 'var(--color-primary)' : 'var(--color-border)'}`, overflow: 'hidden', transition: 'border-color .2s' }}>
+                      <button onClick={() => setOpenIdx(isOpen ? null : i)}
+                        style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 24px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', gap: 16 }}>
+                        <span style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: 'var(--color-navy)' }}>{faq.q}</span>
+                        <i className="fa-solid fa-chevron-down" style={{ fontSize: 12, color: 'var(--ism-amber)', flexShrink: 0, transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform .22s' }} />
+                      </button>
+                      {isOpen && (
+                        <div style={{ padding: '0 24px 20px' }}>
+                          <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.78, margin: 0 }}>{faq.a}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
+          <style>{`
+            @media (max-width: 900px) { .svc-faq-grid { grid-template-columns: 1fr !important; gap: 40px !important; } .svc-faq-sticky { position: static !important; } }
+          `}</style>
         </section>
 
         {/* ── FINAL CTA ── */}
