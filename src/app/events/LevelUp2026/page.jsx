@@ -19,6 +19,7 @@ export const metadata = {
     description: "Meet Isuremedia at GHL LevelUp 2026, October 26-29 in Dallas, TX. Scale your agency with white-label GHL development, funnels, automation, SEO, PPC, websites and creative fulfillment.",
     type: "website",
     url: "/events/LevelUp2026",
+    images: [{ url: "/banner/event_banner.webp", width: 1200, height: 630 }],
   },
 };
 
@@ -136,7 +137,6 @@ export default function LevelUp2026Page() {
         .lu2026 .solution-card{display:flex;align-items:center;gap:9px;background:var(--blue-50);border:1px solid var(--ism-blue-200,#94aeee);border-radius:11px;padding:12px 16px;font-family:var(--J);font-weight:700;font-size:13.5px;color:var(--navy)}
         .lu2026 .solution-card i{color:var(--blue);font-size:12px}
 
-        section{padding:0}
         .lu2026 section{padding:76px 0}
         .lu2026 .section-head{max-width:760px;margin-bottom:34px}
         .lu2026 .section-head-center{max-width:640px;margin:0 auto 44px;text-align:center}
@@ -239,7 +239,7 @@ export default function LevelUp2026Page() {
                   <h2>Stop guessing. <em className="text-amber">Start growing.</em></h2>
                   <p>GoHighLevel&rsquo;s flagship conference. Isuremedia will be there.</p>
                 </div>
-                <img className="event-logo" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/bqd3A7Wt0iWPLpxnwLdJ/media/6a94d40cc71cb92aef017ad0.svg" alt="GoHighLevel" />
+                <img className="event-logo" width="120" height="44" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/bqd3A7Wt0iWPLpxnwLdJ/media/6a94d40cc71cb92aef017ad0.svg" alt="GoHighLevel" />
               </div>
               <div className="event-stats">
                 <div className="event-stat"><strong>Oct 26&ndash;29</strong><span><i className="fa-solid fa-calendar" /> 2026</span></div>
