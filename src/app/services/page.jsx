@@ -147,7 +147,7 @@ export default function ServicesPage() {
         <InlineCTA
           heading="You Don't Need More Marketing."
           highlight="You Need Market-Dominating Results."
-          description="Let&rsquo;s identify what&rsquo;s holding your revenue back and build an execution plan that scales."
+          description="Let’s identify what’s holding your revenue back and build an execution plan that scales."
           primaryLabel="Get a Free Quote"
           primaryHref="/contact"
           secondaryLabel="Talk to an Expert"
@@ -265,7 +265,7 @@ export default function ServicesPage() {
           cardPadX={48}
           heading="Ready to Partner with a"
           headingHighlight={<><br />Results-Driven Agency?</>}
-          description="Whether you run a growing business or an agency looking for reliable fulfillment, generic marketing won&rsquo;t get you to the top. Partner with an advanced digital marketing agency in the US and beyond that builds custom growth engines focused on your bottom line."
+          description="Whether you run a growing business or an agency looking for reliable fulfillment, generic marketing won’t get you to the top. Partner with an advanced digital marketing agency in the US and beyond that builds custom growth engines focused on your bottom line."
           primaryLabel="Get a Free Proposal"
           secondaryLabel="Talk to an Expert"
           secondaryHref="/appointment"
