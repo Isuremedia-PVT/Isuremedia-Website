@@ -320,8 +320,8 @@ export default function LevelUp2026Page() {
         <section className="about-band">
           <div className="container about-grid">
             <div className="about-collage">
-              <img className="about-photo about-photo-main" src="/career-about/IMG_3431.webp" alt="Isuremedia team at work" />
-              <img className="about-photo about-photo-sm" src="/career-about/IMG_3508.webp" alt="Isuremedia office" />
+              <img className="about-photo about-photo-main" src="/service-event/Behind the scene.webp" alt="Isuremedia team at work" />
+              <img className="about-photo about-photo-sm" src="/service-event/Behind the scene_2.webp" alt="Isuremedia office" />
               <div className="about-dots" />
             </div>
             <div>
@@ -356,7 +356,7 @@ export default function LevelUp2026Page() {
               </ul>
             </div>
             <div className="photo-card">
-              <img src="/career-about/Team image for GMB new 1.webp" alt="The Isuremedia team" />
+              <img src="/service-event/Sell the solution. We help deliver it_.webp" alt="The Isuremedia team" />
               <div className="photo-badge">
                 <strong>150+</strong>
                 <span>agencies &amp; businesses served across 9+ years</span>

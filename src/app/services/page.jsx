@@ -152,11 +152,11 @@ export default function ServicesPage() {
           primaryHref="/contact"
           secondaryLabel="Talk to an Expert"
           secondaryHref="/appointment"
-          image="/result_footer/ready_for_result.webp"
+          image="/service-event/You Don't Need More Marketing_.webp"
         />
 
         {/* ── EXPAND YOUR GROWTH ── */}
-        <SplitSection image="/career-about/IMG_3431.webp" alt="The Isuremedia team" background="#fff" reverse>
+        <SplitSection image="/service-event/Expand Your Growth with a Results.webp" alt="The Isuremedia team" background="#fff" reverse>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.18, marginBottom: 22 }}>
             Expand Your Growth with a Results-Driven Digital Marketing Agency
           </h2>
@@ -187,7 +187,7 @@ export default function ServicesPage() {
         />
 
         {/* ── INDUSTRY CUSTOMIZATION ── */}
-        <SplitSection image="/banner/industry served.webp" alt="Industries we serve" background="var(--color-bg-soft)">
+        <SplitSection image="/service-event/Custom Digital Marketing Services.webp" alt="Industries we serve" background="var(--color-bg-soft)">
           <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 20 }}>
             Custom Digital Marketing Services Built for Your Industry
           </h2>
@@ -258,7 +258,7 @@ export default function ServicesPage() {
 
         {/* ── FINAL CTA ── */}
         <CTASection
-          image="/result_footer/ready_for_result.webp"
+          image="/service-event/Ready to partner with a.webp"
           imageWidth={280}
           heading="Ready to Partner with a"
           headingHighlight={<><br />Results-Driven Agency?</>}
