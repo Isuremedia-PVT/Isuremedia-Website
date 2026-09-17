@@ -60,7 +60,7 @@ const FAQ_SCHEMA = JSON.stringify({
   })),
 });
 
-function SplitSection({ image, alt, background = 'var(--color-bg-soft)', reverse = false, children }) {
+function SplitSection({ image, alt, background = 'var(--color-bg-soft)', reverse = false, shadow = true, children }) {
   return (
     <section style={{ padding: '80px 0', background }}>
       <div className="ism-container">
@@ -68,7 +68,7 @@ function SplitSection({ image, alt, background = 'var(--color-bg-soft)', reverse
           <div style={{ direction: 'ltr' }}>{children}</div>
           <div style={{ direction: 'ltr', display: 'flex', justifyContent: 'center' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={image} alt={alt} style={{ width: '100%', maxWidth: 460, height: 'auto', borderRadius: 20, display: 'block', boxShadow: '0 20px 50px rgba(30,77,195,.14)' }} />
+            <img src={image} alt={alt} style={{ width: '100%', maxWidth: 460, height: 'auto', borderRadius: 20, display: 'block', boxShadow: shadow ? '0 20px 50px rgba(30,77,195,.14)' : 'none' }} />
           </div>
         </div>
       </div>
@@ -187,7 +187,7 @@ export default function ServicesPage() {
         />
 
         {/* ── INDUSTRY CUSTOMIZATION ── */}
-        <SplitSection image="/service-event/Custom Digital Marketing Services.webp" alt="Industries we serve" background="var(--color-bg-soft)">
+        <SplitSection image="/service-event/Custom Digital Marketing Services.webp" alt="Industries we serve" background="var(--color-bg-soft)" shadow={false}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 20 }}>
             Custom Digital Marketing Services Built for Your Industry
           </h2>
