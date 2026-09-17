@@ -168,8 +168,7 @@ export default function LevelUp2026Page() {
         .lu2026 .form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
         .lu2026 .form-panel{background:white;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 20px 55px rgba(0,10,30,.18)}
         .lu2026 .connect-center{display:flex;flex-direction:column;align-items:center;text-align:center}
-        .lu2026 .connect-center .form-panel{width:100%;max-width:640px;margin-top:36px}
-        .lu2026 .checklist-center{display:inline-block;text-align:left;margin-left:auto;margin-right:auto}
+        .lu2026 .connect-center .form-panel{width:100%;max-width:900px;margin-top:36px}
 
         .lu2026 footer{background:var(--navy-deep);color:#c3d1ee;padding:30px 0}
         .lu2026 .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
@@ -423,11 +422,6 @@ export default function LevelUp2026Page() {
             <div className="section-head section-head-center">
               <h2>Tell us what you want to <em className="text-blue">build next.</em></h2>
               <p style={{ fontSize: 17, color: "var(--muted)" }}>Whether you need a GHL implementation team, white-label marketing fulfillment, or support with a specific client project, share a few details and we&rsquo;ll start the conversation.</p>
-              <ul className="checklist checklist-center">
-                <li>Discuss your agency&rsquo;s current service model</li>
-                <li>Identify fulfillment gaps and growth opportunities</li>
-                <li>Explore a suitable support or partnership structure</li>
-              </ul>
             </div>
             <div className="form-panel">
               <iframe
