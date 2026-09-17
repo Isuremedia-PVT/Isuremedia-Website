@@ -259,7 +259,10 @@ export default function ServicesPage() {
         {/* ── FINAL CTA ── */}
         <CTASection
           image="/result_footer/ready_for_result.webp"
-          imageWidth={280}
+          imageWidth={340}
+          overflowTop={70}
+          cardPadTop={28}
+          cardPadX={48}
           heading="Ready to Partner with a"
           headingHighlight={<><br />Results-Driven Agency?</>}
           description="Whether you run a growing business or an agency looking for reliable fulfillment, generic marketing won&rsquo;t get you to the top. Partner with an advanced digital marketing agency in the US and beyond that builds custom growth engines focused on your bottom line."
