@@ -126,7 +126,10 @@ const tabs = [
   },
 ];
 
-export default function Services() {
+export default function Services({
+  title = <>Digital Marketing Services Built<br />to Grow Your <span style={{ color: 'var(--ism-amber)' }}>Business</span>.</>,
+  subtitle = 'Get found on Google and in AI search. Turn ad spend into revenue. Build websites, funnels, and automations that convert.',
+}) {
   const [activeId, setActiveId] = useState('web');
   const [animKey, setAnimKey] = useState(0);
   const active = tabs.find(t => t.id === activeId);
@@ -149,10 +152,10 @@ export default function Services() {
         {/* ── Header ── */}
         <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto 52px' }}>
           <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 800, color: 'var(--color-navy)', marginBottom: 16, lineHeight: 1.15, letterSpacing: '-0.5px' }}>
-            Digital Marketing Services Built<br />to Grow Your <span style={{ color: 'var(--ism-amber)' }}>Business</span>.
+            {title}
           </h2>
           <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.80 }}>
-            Get found on Google and in AI search. Turn ad spend into revenue. Build websites, funnels, and automations that convert.
+            {subtitle}
           </p>
         </div>
 

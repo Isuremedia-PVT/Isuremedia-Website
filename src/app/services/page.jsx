@@ -3,224 +3,252 @@ import Link from 'next/link';
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import Services from '@/components/Services';
+import ClientResults from '@/components/ClientResults';
+import HowItWorks from '@/components/HowItWorks';
+import VideoTestimonials from '@/components/VideoTestimonials';
+import ClientsMarquee from '@/components/ClientsMarquee';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
 const J = 'var(--font-jakarta,"Plus Jakarta Sans",sans-serif)';
 const I = 'var(--font-inter,Inter,sans-serif)';
+const HL = { background: 'rgba(255,176,0,.35)', borderRadius: 4, padding: '1px 6px', fontWeight: 700 };
 
-const SERVICES = [
+const ROADMAP_STEPS = [
+  { num: 1, title: 'Discovery Call',       text: <>We map out your goals, audit your current ecosystem and identify bottlenecks. <span style={HL}>No generic templates or pre-packaged pitch decks.</span></> },
+  { num: 2, title: 'Your Growth Roadmap',  text: <>We deliver a transparent, data-backed execution plan outlining precise deliverables, scope and expected outcomes <span style={HL}>before work begins</span>.</> },
+  { num: 3, title: 'Onboarding & Alignment', text: <>We configure tracking, integrate reporting dashboards and brief specialized team leads so <span style={HL}>everyone aligns with your targets</span>.</> },
+  { num: 4, title: 'Precision Execution',  text: <>Campaigns are built, launched and continuously optimized. You receive <span style={HL}>regular, transparent reporting</span> without having to ask.</> },
+  { num: 5, title: 'The Revenue Payoff',   text: <>We double down on high-performing campaigns and eliminate underperforming channels. <span style={HL}>Most clients see measurable momentum within 90 days.</span></> },
+];
+
+const FAQS = [
   {
-    icon: 'fa-solid fa-globe',
-    title: 'Websites & Funnels',
-    desc: 'High-converting websites, landing pages, and sales funnels built on WordPress, Shopify, and GoHighLevel. Designed to look great and close.',
-    href: '/websites-and-funnels',
+    q: 'How much does a digital marketing agency cost per month?',
+    a: 'Digital marketing services typically cost between $2,500 and $10,000+ per month, depending on project scope, target channels and campaign scale. We structure flexible, transparent pricing models customized around your target return on investment rather than forcing rigid, one-size-fits-all retainers.',
   },
   {
-    icon: 'fa-solid fa-magnifying-glass',
-    title: 'SEO & Organic Growth',
-    desc: 'Technical, on-page, and off-page SEO that earns sustainable first-page rankings. Real results without shortcuts or grey-hat tactics.',
-    href: '/seo-services',
+    q: 'How long does it take for a digital marketing agency to get results?',
+    a: 'Paid campaigns through PPC advertising services generate targeted traffic and leads within 3 to 7 days of launch. For organic growth, sustainable top-page rankings on Google typically take 3 to 6 months to mature.',
   },
   {
-    icon: 'fa-solid fa-chart-bar',
-    title: 'PPC & Paid Marketing',
-    desc: 'Google Ads, Meta Ads, LinkedIn, YouTube, and retargeting campaigns managed to maximise ROAS and minimise wasted spend.',
-    href: '/ppc-marketing-agencies',
+    q: 'What is the difference between an SEO services agency and PPC advertising services?',
+    a: 'An SEO services agency optimizes site tech, content and backlinks to earn free, long-term organic search traffic. PPC advertising services use paid ad campaigns on search and social channels to buy immediate top placement on a cost-per-click basis.',
   },
   {
-    icon: 'fa-solid fa-palette',
-    title: 'Content & Creative',
-    desc: 'SEO blogs, website copy, ad creatives, social content, graphic design, and email campaigns that engage, rank, and convert.',
-    href: '/content-marketing-and-creative-agency',
+    q: 'Can I hire a digital marketing agency in the US if my business is located in another country?',
+    a: 'Yes. Modern digital agencies manage international client bases seamlessly using cloud reporting dashboards, real-time messaging and video strategy sessions aligned with your standard business hours.',
   },
   {
-    icon: 'fa-solid fa-tag',
-    title: 'White-Label Fulfillment',
-    desc: 'Unbranded delivery for agencies. SEO, PPC, web dev, content, GHL builds, delivered under your brand with NDA-protected confidentiality.',
-    href: '/white-label-digital-marketing',
+    q: 'Do you offer white-label digital marketing services for other agencies?',
+    a: 'Yes. We act as a silent execution partner for growing agencies. We deliver unbranded SEO, custom funnel development, PPC management and social media fulfillment protected by strict non-disclosure agreements (NDAs) so you retain complete client ownership.',
   },
   {
-    icon: 'fa-solid fa-robot',
-    title: 'Marketing Automation',
-    desc: 'GoHighLevel, CRM setup, Zapier, Make, n8n, and AI chatbots that automate your lead follow-up, onboarding, and growth workflows.',
-    href: '/marketing-automation-agency',
+    q: 'Do I have to sign a long-term contract with a digital marketing agency?',
+    a: "No. While many agencies force 12-month lock-ins, we offer flexible month-to-month service agreements. We believe performance and clear campaign metrics should earn your partnership every single month.",
   },
 ];
 
-const STATS = [
-  { num: '6',   label: 'Core Service Areas'      },
-  { num: '50+', label: 'In-House Specialists'     },
-  { num: '200+',label: 'Clients Served'           },
-  { num: '10+', label: 'Years of Experience'      },
-];
+const FAQ_SCHEMA = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
 
-const WHY = [
-  {
-    icon: 'fa-solid fa-layer-group',
-    title: 'Full-Service Under One Roof',
-    desc: 'SEO, paid ads, web builds, content, automation, one team handles it all. No hand-offs. No gaps. No agencies blaming each other.',
-  },
-  {
-    icon: 'fa-solid fa-chart-line',
-    title: 'Data-Driven Strategy',
-    desc: 'Every campaign is built on research and benchmarked against real numbers. We make decisions based on what the data actually says.',
-  },
-  {
-    icon: 'fa-solid fa-file-chart-column',
-    title: 'Transparent Reporting',
-    desc: 'You get a live dashboard and regular reports that show exactly what is working, what changed, and what we are doing next.',
-  },
-  {
-    icon: 'fa-solid fa-user-tie',
-    title: 'Dedicated Account Managers',
-    desc: 'One point of contact who knows your account inside out. Available, responsive, and accountable for your results.',
-  },
-];
+function InlineCTA({ heading, highlight, description, primaryLabel, primaryHref, secondaryLabel, secondaryHref }) {
+  return (
+    <section style={{ padding: '72px 0', background: 'var(--color-bg-soft)' }}>
+      <div className="ism-container" style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 18 }}>
+          {heading} <span style={{ color: 'var(--color-primary)' }}>{highlight}</span>
+        </h2>
+        <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
+          {description}
+        </p>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
+          <Link href={primaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+            {primaryLabel}
+          </Link>
+          <Link href={secondaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
+            {secondaryLabel}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function ServicesPage() {
+  const [openIdx, setOpenIdx] = useState(null);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: FAQ_SCHEMA }} />
       <Navbar />
       <main>
 
         {/* ── HERO ── */}
-        <section style={{ background: 'var(--color-bg-soft)', padding: '72px 0', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ background: 'var(--color-bg-soft)', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: -80, right: -60, width: 460, height: 460, background: 'rgba(30,77,195,0.18)', borderRadius: '58% 42% 50% 50% / 46% 58% 42% 54%', filter: 'blur(50px)', pointerEvents: 'none' }} />
           <div style={{ position: 'absolute', bottom: -60, left: -50, width: 360, height: 360, background: 'rgba(255,176,0,0.13)', borderRadius: '46% 54% 62% 38% / 54% 46% 54% 46%', filter: 'blur(44px)', pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', top: '25%', left: '40%', width: 260, height: 260, background: 'rgba(30,77,195,0.08)', borderRadius: '50% 50% 38% 62% / 62% 38% 62% 38%', filter: 'blur(38px)', pointerEvents: 'none' }} />
 
-          <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 40px', position: 'relative' }}>
-            <div className="svc-hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', minHeight: 480 }}>
-
-              {/* Left, image only */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/result_footer/ready_for_result.webp"
-                  alt="Isuremedia Services"
-                  style={{ width: '100%', maxWidth: 560, height: 'auto', display: 'block', objectFit: 'contain' }}
-                />
-              </div>
-
-              {/* Right, text */}
-              <div>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
-                  <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-                  <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Our Services</span>
-                </div>
-                <h1 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,52px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.10, marginBottom: 20 }}>
-                  One Agency. Every Digital Service You&apos;ll Ever Need.
-                </h1>
-                <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 36, maxWidth: 520 }}>
-                  Strategy, execution, and growth, all under one roof. From websites and SEO to paid ads, content, automation, and white-label fulfillment, Isuremedia covers the full digital marketing stack so you never have to juggle agencies again.
-                </p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-                  <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
-                    onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                    onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-                    Get Free Strategy Call <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-                  </Link>
-                  <a href="#services-grid" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
-                    onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; (e.currentTarget).style.color = '#fff'; }}
-                    onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; (e.currentTarget).style.color = 'var(--color-primary)'; }}>
-                    View All Services
-                  </a>
-                </div>
-              </div>
-
+          <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 40px', position: 'relative', textAlign: 'center' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
+              <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
+              <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Digital Marketing Agency</span>
+            </div>
+            <h1 style={{ fontFamily: J, fontSize: 'clamp(30px,4vw,52px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.14, marginBottom: 22 }}>
+              Digital Marketing Agency &amp; White-Label Partner Built for Measurable Growth
+            </h1>
+            <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 36, maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>
+              Stop settling for vanity metrics. As a premier digital marketing agency, we deliver predictable, data-backed growth for scaling brands and offer silent white-label fulfillment for agencies looking to expand their capacity. Get end-to-end digital marketing services engineered for ROI, all in one place.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
+              <Link href="/white-label-digital-marketing" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+                Scale My Agency <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+              </Link>
+              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
+                Scale My Business
+              </Link>
             </div>
           </div>
-          <style>{`@media(max-width:768px){.svc-hero-grid{grid-template-columns:1fr!important;}}`}</style>
         </section>
 
-        {/* ── STATS ── */}
-        <section style={{ padding: '56px 0', background: '#fff' }}>
-          <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 28px' }}>
-            <div className="stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1, background: 'var(--color-border)', borderRadius: 16, overflow: 'hidden' }}>
-              {STATS.map((s, i) => (
-                <div key={i} style={{ background: '#fff', padding: '40px 24px', textAlign: 'center' }}>
-                  <div style={{ fontFamily: J, fontSize: 'clamp(40px,4.5vw,64px)', fontWeight: 800, color: 'var(--color-primary)', marginBottom: 6, letterSpacing: '-1px' }}>{s.num}</div>
-                  <div style={{ width: 32, height: 3, background: 'var(--ism-amber)', borderRadius: 2, margin: '0 auto 10px' }} />
-                  <div style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)' }}>{s.label}</div>
-                </div>
-              ))}
+        {/* ── PROOF / RESULTS ── */}
+        <ClientResults heading="This Is What A High-Performance Digital Marketing Agency Achieves" />
+
+        {/* ── MID-PAGE CTA ── */}
+        <InlineCTA
+          heading="You Don't Need More Marketing."
+          highlight="You Need Market-Dominating Results."
+          description="Let&rsquo;s identify what&rsquo;s holding your revenue back and build an execution plan that scales."
+          primaryLabel="Get a Free Quote"
+          primaryHref="/contact"
+          secondaryLabel="Talk to an Expert"
+          secondaryHref="/appointment"
+        />
+
+        {/* ── EXPAND YOUR GROWTH ── */}
+        <section style={{ padding: '80px 0', background: '#fff' }}>
+          <div className="ism-container" style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.18, marginBottom: 22 }}>
+              Expand Your Growth with a Results-Driven Digital Marketing Agency
+            </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 20 }}>
+              Since 2017, Isuremedia has operated as an outcome-focused growth engine for startups, enterprise brands and fellow digital marketing agencies across the US, UK, Canada and beyond. Every strategy we execute is backed by dedicated campaign leads, clear KPIs and complete accountability.
+            </p>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 32 }}>
+              We offer transparent, month-to-month contracts because we believe performance should earn your partnership, not restrictive lock-in agreements.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
+              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+                Get a Free Proposal
+              </Link>
+              <Link href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
+                Start Growing Today
+              </Link>
             </div>
           </div>
-          <style>{`@media(max-width:640px){.stats-grid{grid-template-columns:repeat(2,1fr)!important;}}`}</style>
         </section>
 
-        {/* ── SERVICES GRID ── */}
-        <section id="services-grid" style={{ padding: '104px 0', background: 'var(--color-bg-soft)' }}>
+        {/* ── 6 PILLARS / SERVICES TABS ── */}
+        <Services
+          title={<>6 Pillars of Digital Marketing Services We Offer<br />That Will Scale Your <span style={{ color: 'var(--ism-amber)' }}>Business</span></>}
+          subtitle="Capture high-intent search traffic, turn ad spend into profit, build high-converting websites and automate lead operations."
+        />
+
+        {/* ── INDUSTRY CUSTOMIZATION ── */}
+        <section style={{ padding: '80px 0', background: '#fff' }}>
+          <div className="ism-container" style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 20 }}>
+              Custom Digital Marketing Services Built for Your Industry
+            </h2>
+            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 28 }}>
+              Partner with a specialized digital marketing agency that understands the unique regulatory demands, customer buying cycles and competitive search landscapes of your specific sector. We engineer custom digital marketing services, from niche-focused SEO organic growth and targeted PPC advertising services to automated lead pipelines, helping both growing brands and agency partners capture high-intent buyers, outperform direct competitors and scale revenue smarter.
+            </p>
+            <Link href="/industries" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' }}>
+              Explore Industries We Serve <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+            </Link>
+          </div>
+        </section>
+
+        {/* ── ROADMAP ── */}
+        <HowItWorks
+          title="Our Digital Marketing Services Roadmap to Deliver"
+          highlightWord="High Revenue"
+          subtitle="Start now and build a business that performs every single month."
+          steps={ROADMAP_STEPS}
+          ctaText="Get a Free Proposal"
+          ctaHref="/contact"
+        />
+
+        {/* ── TESTIMONIALS ── */}
+        <VideoTestimonials />
+
+        {/* ── TRUST BAR ── */}
+        <ClientsMarquee />
+
+        {/* ── FAQ ── */}
+        <section style={{ padding: '64px 0', background: 'linear-gradient(135deg, #fffbeb 0%, #ffffff 50%, #eff6ff 100%)' }}>
           <div className="ism-container">
-            <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 28 }}>
-                <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-                <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>What We Do</span>
-              </div>
-              <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>
-                Every Service You Need to Grow
+            <div style={{ textAlign: 'center', maxWidth: 640, margin: '0 auto 52px' }}>
+              <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,40px)', fontWeight: 700, color: 'var(--color-text-heading)', lineHeight: 1.20, marginBottom: 14 }}>
+                Frequently Asked Questions
               </h2>
-              <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 600, margin: '0 auto' }}>
-                Six core service areas. One integrated strategy. Delivered by specialists who live and breathe digital growth.
-              </p>
             </div>
-            <div className="svc-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 28 }}>
-              {SERVICES.map((s, i) => (
-                <div key={i} style={{ background: '#fff', borderRadius: 16, border: '1px solid var(--color-border)', padding: '40px 36px', transition: 'all .22s', cursor: 'pointer' }}
-                  onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 52px rgba(30,77,195,.14)'; el.style.borderColor = 'var(--color-primary)'; }}
-                  onMouseLeave={e => { const el = e.currentTarget; el.style.transform = ''; el.style.boxShadow = ''; el.style.borderColor = 'var(--color-border)'; }}>
-                  <div style={{ width: 56, height: 56, borderRadius: 14, background: 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-                    <i className={s.icon} style={{ fontSize: 22, color: 'var(--color-primary)' }} />
+            <div style={{ maxWidth: 820, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {FAQS.map((faq, i) => {
+                const isOpen = openIdx === i;
+                return (
+                  <div key={i} style={{ background: '#fff', border: `1px solid ${isOpen ? 'var(--ism-blue-100)' : 'var(--color-border)'}`, borderRadius: 14, overflow: 'hidden', boxShadow: isOpen ? 'var(--sh-sm)' : '' }}>
+                    <button
+                      onClick={() => setOpenIdx(isOpen ? null : i)}
+                      style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, cursor: 'pointer', background: 'transparent', border: 'none', textAlign: 'left' }}
+                    >
+                      <span style={{ fontFamily: J, fontSize: 15, fontWeight: 700, color: isOpen ? 'var(--color-primary)' : 'var(--color-text-heading)', lineHeight: 1.45, flex: 1 }}>{i + 1}. {faq.q}</span>
+                      <span style={{ width: 28, height: 28, borderRadius: '50%', background: isOpen ? 'var(--color-primary)' : 'var(--ism-blue-50)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 16, color: isOpen ? '#fff' : 'var(--color-primary)', fontWeight: 700, transition: 'all .2s', transform: isOpen ? 'rotate(45deg)' : '' }}>+</span>
+                    </button>
+                    {isOpen && (
+                      <div style={{ padding: '0 24px 22px' }}>
+                        <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.78 }}>{faq.a}</p>
+                      </div>
+                    )}
                   </div>
-                  <div style={{ width: 32, height: 3, background: 'var(--ism-amber)', borderRadius: 2, marginBottom: 16 }} />
-                  <h3 style={{ fontFamily: J, fontSize: 20, fontWeight: 800, color: 'var(--color-navy)', marginBottom: 12 }}>{s.title}</h3>
-                  <p style={{ fontFamily: I, fontSize: 15, color: 'var(--color-text-muted)', lineHeight: 1.75, marginBottom: 24 }}>{s.desc}</p>
-                  <Link href={s.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, fontFamily: J, fontSize: 13, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', transition: 'gap .18s' }}
-                    onMouseEnter={e => (e.currentTarget.style.gap = '12px')}
-                    onMouseLeave={e => (e.currentTarget.style.gap = '7px')}>
-                    Explore <i className="fa-solid fa-arrow-right" style={{ fontSize: 10 }} />
-                  </Link>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
-          <style>{`@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:600px){.svc-grid{grid-template-columns:1fr!important;}}`}</style>
         </section>
 
-        {/* ── WHY ISM ── */}
-        <section style={{ padding: '104px 0', background: '#fff' }}>
-          <div className="ism-container">
-            <div style={{ textAlign: 'center', marginBottom: 64 }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 28 }}>
-                <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-                <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Why Isuremedia</span>
-              </div>
-              <h2 style={{ fontFamily: J, fontSize: 'clamp(28px,3.5vw,48px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', marginBottom: 16 }}>
-                The Agency That Actually Delivers
-              </h2>
-              <p style={{ fontFamily: I, fontSize: 17, color: 'var(--color-text-muted)', lineHeight: 1.75, maxWidth: 560, margin: '0 auto' }}>
-                We built Isuremedia around one promise: make the whole thing easier, and the results better.
-              </p>
-            </div>
-            <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 24 }}>
-              {WHY.map((w, i) => (
-                <div key={i} style={{ background: 'var(--color-bg-soft)', borderRadius: 16, border: '1px solid var(--color-border)', padding: '36px 28px', textAlign: 'center', transition: 'all .22s' }}
-                  onMouseEnter={e => { const el = e.currentTarget; el.style.transform = 'translateY(-5px)'; el.style.boxShadow = '0 18px 52px rgba(30,77,195,.14)'; el.style.borderColor = 'var(--color-primary)'; }}
-                  onMouseLeave={e => { const el = e.currentTarget; el.style.transform = ''; el.style.boxShadow = ''; el.style.borderColor = 'var(--color-border)'; }}>
-                  <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--ism-amber)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: '0 6px 20px rgba(255,176,0,.30)' }}>
-                    <i className={w.icon} style={{ fontSize: 20, color: 'var(--color-navy)' }} />
-                  </div>
-                  <h3 style={{ fontFamily: J, fontSize: 17, fontWeight: 700, color: 'var(--color-navy)', marginBottom: 12 }}>{w.title}</h3>
-                  <p style={{ fontFamily: I, fontSize: 14, color: 'var(--color-text-muted)', lineHeight: 1.75, margin: 0 }}>{w.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <style>{`@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)!important;}}@media(max-width:540px){.why-grid{grid-template-columns:1fr!important;}}`}</style>
-        </section>
+        {/* ── FINAL CTA ── */}
+        <CTASection
+          image="/result_footer/ready_for_result.webp"
+          imageWidth={280}
+          heading="Ready to Partner with a"
+          headingHighlight="Results-Driven Agency?"
+          description="Whether you run a growing business or an agency looking for reliable fulfillment, generic marketing won&rsquo;t get you to the top. Partner with an advanced digital marketing agency in the US and beyond that builds custom growth engines focused on your bottom line."
+          primaryLabel="Get a Free Proposal"
+          secondaryLabel="Talk to an Expert"
+          secondaryHref="/appointment"
+        />
 
-        <CTASection image="/result_footer/ready_for_result.webp" />
       </main>
       <Footer />
     </>
