@@ -259,8 +259,8 @@ export default function ServicesPage() {
         {/* ── FINAL CTA ── */}
         <CTASection
           image="/service-event/Ready to partner with a.webp"
-          imageWidth={340}
-          overflowTop={70}
+          imageWidth={420}
+          overflowTop={40}
           cardPadTop={28}
           cardPadX={48}
           heading="Ready to Partner with a"
