@@ -60,30 +60,45 @@ const FAQ_SCHEMA = JSON.stringify({
   })),
 });
 
-function InlineCTA({ heading, highlight, description, primaryLabel, primaryHref, secondaryLabel, secondaryHref }) {
+function SplitSection({ image, alt, background = 'var(--color-bg-soft)', reverse = false, children }) {
   return (
-    <section style={{ padding: '72px 0', background: 'var(--color-bg-soft)' }}>
-      <div className="ism-container" style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto' }}>
-        <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 18 }}>
-          {heading} <span style={{ color: 'var(--color-primary)' }}>{highlight}</span>
-        </h2>
-        <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
-          {description}
-        </p>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-          <Link href={primaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-            {primaryLabel}
-          </Link>
-          <Link href={secondaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
-            onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
-            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
-            {secondaryLabel}
-          </Link>
+    <section style={{ padding: '80px 0', background }}>
+      <div className="ism-container">
+        <div className="svc-split-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'center', direction: reverse ? 'rtl' : 'ltr' }}>
+          <div style={{ direction: 'ltr' }}>{children}</div>
+          <div style={{ direction: 'ltr', display: 'flex', justifyContent: 'center' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={image} alt={alt} style={{ width: '100%', maxWidth: 460, height: 'auto', borderRadius: 20, display: 'block', boxShadow: '0 20px 50px rgba(30,77,195,.14)' }} />
+          </div>
         </div>
       </div>
+      <style>{`@media(max-width:860px){.svc-split-grid{grid-template-columns:1fr!important;direction:ltr!important;}}`}</style>
     </section>
+  );
+}
+
+function InlineCTA({ heading, highlight, description, primaryLabel, primaryHref, secondaryLabel, secondaryHref, image, reverse }) {
+  return (
+    <SplitSection image={image} alt={heading} reverse={reverse}>
+      <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.15, marginBottom: 18 }}>
+        {heading} <span style={{ color: 'var(--color-primary)' }}>{highlight}</span>
+      </h2>
+      <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.78, marginBottom: 32 }}>
+        {description}
+      </p>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
+        <Link href={primaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+          {primaryLabel}
+        </Link>
+        <Link href={secondaryHref} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+          onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
+          {secondaryLabel}
+        </Link>
+      </div>
+    </SplitSection>
   );
 }
 
@@ -102,10 +117,6 @@ export default function ServicesPage() {
           <div style={{ position: 'absolute', bottom: -60, left: -50, width: 360, height: 360, background: 'rgba(255,176,0,0.13)', borderRadius: '46% 54% 62% 38% / 54% 46% 54% 46%', filter: 'blur(44px)', pointerEvents: 'none' }} />
 
           <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 40px', position: 'relative', textAlign: 'center' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--ism-blue-50)', border: '1px solid var(--ism-blue-100)', borderRadius: 100, padding: '6px 18px', marginBottom: 24 }}>
-              <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--color-primary)', display: 'inline-block' }} />
-              <span style={{ fontFamily: J, fontSize: 12, fontWeight: 700, color: 'var(--color-primary)', letterSpacing: '.09em', textTransform: 'uppercase' }}>Digital Marketing Agency</span>
-            </div>
             <h1 style={{ fontFamily: J, fontSize: 'clamp(30px,4vw,52px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-1px', lineHeight: 1.14, marginBottom: 22 }}>
               Digital Marketing Agency &amp; White-Label Partner Built for Measurable Growth
             </h1>
@@ -127,6 +138,8 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        <ClientsMarquee />
+
         {/* ── PROOF / RESULTS ── */}
         <ClientResults heading="This Is What A High-Performance Digital Marketing Agency Achieves" />
 
@@ -139,34 +152,33 @@ export default function ServicesPage() {
           primaryHref="/contact"
           secondaryLabel="Talk to an Expert"
           secondaryHref="/appointment"
+          image="/result_footer/ready_for_result.webp"
         />
 
         {/* ── EXPAND YOUR GROWTH ── */}
-        <section style={{ padding: '80px 0', background: '#fff' }}>
-          <div className="ism-container" style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.18, marginBottom: 22 }}>
-              Expand Your Growth with a Results-Driven Digital Marketing Agency
-            </h2>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 20 }}>
-              Since 2017, Isuremedia has operated as an outcome-focused growth engine for startups, enterprise brands and fellow digital marketing agencies across the US, UK, Canada and beyond. Every strategy we execute is backed by dedicated campaign leads, clear KPIs and complete accountability.
-            </p>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 32 }}>
-              We offer transparent, month-to-month contracts because we believe performance should earn your partnership, not restrictive lock-in agreements.
-            </p>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
-                Get a Free Proposal
-              </Link>
-              <Link href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
-                Start Growing Today
-              </Link>
-            </div>
+        <SplitSection image="/career-about/IMG_3431.webp" alt="The Isuremedia team" background="#fff" reverse>
+          <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,42px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.18, marginBottom: 22 }}>
+            Expand Your Growth with a Results-Driven Digital Marketing Agency
+          </h2>
+          <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 20 }}>
+            Since 2017, Isuremedia has operated as an outcome-focused growth engine for startups, enterprise brands and fellow digital marketing agencies across the US, UK, Canada and beyond. Every strategy we execute is backed by dedicated campaign leads, clear KPIs and complete accountability.
+          </p>
+          <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 32 }}>
+            We offer transparent, month-to-month contracts because we believe performance should earn your partnership, not restrictive lock-in agreements.
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 32px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-navy)', background: 'var(--ism-amber)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', boxShadow: '0 6px 20px rgba(255,176,0,.35)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-accent-hover)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'var(--ism-amber)'; e.currentTarget.style.transform = ''; }}>
+              Get a Free Proposal
+            </Link>
+            <Link href="/appointment" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 30px', borderRadius: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', background: 'transparent', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase', border: '2px solid var(--color-primary)', transition: 'all .18s' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--color-primary)'; e.currentTarget.style.color = '#fff'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}>
+              Start Growing Today
+            </Link>
           </div>
-        </section>
+        </SplitSection>
 
         {/* ── 6 PILLARS / SERVICES TABS ── */}
         <Services
@@ -175,19 +187,17 @@ export default function ServicesPage() {
         />
 
         {/* ── INDUSTRY CUSTOMIZATION ── */}
-        <section style={{ padding: '80px 0', background: '#fff' }}>
-          <div className="ism-container" style={{ maxWidth: 860, margin: '0 auto', textAlign: 'center' }}>
-            <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 20 }}>
-              Custom Digital Marketing Services Built for Your Industry
-            </h2>
-            <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 28 }}>
-              Partner with a specialized digital marketing agency that understands the unique regulatory demands, customer buying cycles and competitive search landscapes of your specific sector. We engineer custom digital marketing services, from niche-focused SEO organic growth and targeted PPC advertising services to automated lead pipelines, helping both growing brands and agency partners capture high-intent buyers, outperform direct competitors and scale revenue smarter.
-            </p>
-            <Link href="/industries" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' }}>
-              Explore Industries We Serve <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
-            </Link>
-          </div>
-        </section>
+        <SplitSection image="/banner/industry served.webp" alt="Industries we serve" background="var(--color-bg-soft)">
+          <h2 style={{ fontFamily: J, fontSize: 'clamp(26px,3.2vw,40px)', fontWeight: 900, color: 'var(--color-navy)', letterSpacing: '-0.5px', lineHeight: 1.2, marginBottom: 20 }}>
+            Custom Digital Marketing Services Built for Your Industry
+          </h2>
+          <p style={{ fontFamily: I, fontSize: 16, color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: 28 }}>
+            Partner with a specialized digital marketing agency that understands the unique regulatory demands, customer buying cycles and competitive search landscapes of your specific sector. We engineer custom digital marketing services, from niche-focused SEO organic growth and targeted PPC advertising services to automated lead pipelines, helping both growing brands and agency partners capture high-intent buyers, outperform direct competitors and scale revenue smarter.
+          </p>
+          <Link href="/industries" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: J, fontSize: 14, fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'none', letterSpacing: '.04em', textTransform: 'uppercase' }}>
+            Explore Industries We Serve <i className="fa-solid fa-arrow-right" style={{ fontSize: 11 }} />
+          </Link>
+        </SplitSection>
 
         {/* ── ROADMAP ── */}
         <HowItWorks
@@ -201,9 +211,6 @@ export default function ServicesPage() {
 
         {/* ── TESTIMONIALS ── */}
         <VideoTestimonials />
-
-        {/* ── TRUST BAR ── */}
-        <ClientsMarquee />
 
         {/* ── FAQ (2-col, left sticky intro + right accordion) ── */}
         <section className="svc-faq-section" style={{ padding: '100px 0', background: 'var(--color-bg-soft)' }}>
@@ -254,7 +261,7 @@ export default function ServicesPage() {
           image="/result_footer/ready_for_result.webp"
           imageWidth={280}
           heading="Ready to Partner with a"
-          headingHighlight="Results-Driven Agency?"
+          headingHighlight={<><br />Results-Driven Agency?</>}
           description="Whether you run a growing business or an agency looking for reliable fulfillment, generic marketing won&rsquo;t get you to the top. Partner with an advanced digital marketing agency in the US and beyond that builds custom growth engines focused on your bottom line."
           primaryLabel="Get a Free Proposal"
           secondaryLabel="Talk to an Expert"
