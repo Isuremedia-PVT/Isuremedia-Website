@@ -1,4 +1,5 @@
 import { Lora } from "next/font/google";
+import Script from "next/script";
 import ClientsMarquee from "@/components/ClientsMarquee";
 import Services from "@/components/Services";
 
@@ -166,14 +167,6 @@ export default function LevelUp2026Page() {
 
         .lu2026 .form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
         .lu2026 .form-panel{background:white;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 20px 55px rgba(0,10,30,.18)}
-        .lu2026 form{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-        .lu2026 label{font-family:var(--J);font-size:13px;font-weight:700;display:block;margin-bottom:6px;color:var(--navy)}
-        .lu2026 input,.lu2026 select,.lu2026 textarea{width:100%;border:1px solid #cbd8ea;border-radius:9px;padding:13px;font:inherit;background:#fff;color:var(--ink)}
-        .lu2026 input:focus,.lu2026 select:focus,.lu2026 textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
-        .lu2026 textarea{min-height:105px;resize:vertical}
-        .lu2026 .full{grid-column:1/-1}
-        .lu2026 .consent{font-size:12px;color:var(--muted)}
-        .lu2026 .submit{width:100%;border:0;margin-top:4px}
 
         .lu2026 footer{background:var(--navy-deep);color:#c3d1ee;padding:30px 0}
         .lu2026 .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
@@ -205,7 +198,6 @@ export default function LevelUp2026Page() {
           .lu2026 .event-logo{height:34px}
           .lu2026 .event-card-wrap{margin-top:-50px;padding-bottom:30px}
           .lu2026 .event-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}
-          .lu2026 .full{grid-column:auto}
           .lu2026 section{padding:52px 0}
           .lu2026 .capability-wrap{padding:24px 0 52px}
           .lu2026 .hero-ring{width:200px;height:200px;top:-50px;right:-50px}
@@ -437,40 +429,26 @@ export default function LevelUp2026Page() {
             <div className="form-panel">
               <h3 style={{ fontFamily: "var(--J)", fontSize: 23, fontWeight: 800, marginTop: 0 }}>Connect with Isuremedia</h3>
               <p style={{ color: "var(--muted)", fontSize: 14 }}>Complete the form and our team will get in touch.</p>
-              {/* Replace the action URL below with your GHL form endpoint or embed this form inside a GHL funnel. */}
-              <form action="YOUR_GHL_FORM_OR_WEBHOOK_URL" method="POST">
-                <div><label htmlFor="first_name">First name *</label><input id="first_name" name="first_name" required /></div>
-                <div><label htmlFor="last_name">Last name</label><input id="last_name" name="last_name" /></div>
-                <div><label htmlFor="email">Work email *</label><input id="email" name="email" type="email" required /></div>
-                <div><label htmlFor="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" /></div>
-                <div><label htmlFor="company">Agency / Company *</label><input id="company" name="company" required /></div>
-                <div><label htmlFor="website">Website</label><input id="website" name="website" type="url" placeholder="https://" /></div>
-                <div><label htmlFor="agency_type">I am a&hellip;</label>
-                  <select id="agency_type" name="agency_type">
-                    <option>Agency owner</option>
-                    <option>Agency executive</option>
-                    <option>Business owner</option>
-                    <option>Freelancer / consultant</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div><label htmlFor="interest">Primary interest</label>
-                  <select id="interest" name="interest">
-                    <option>White-label GHL services</option>
-                    <option>GHL funnels and websites</option>
-                    <option>CRM and automation</option>
-                    <option>SEO and paid marketing</option>
-                    <option>Web development</option>
-                    <option>Creative and content</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div className="full"><label htmlFor="message">What are you looking for?</label><textarea id="message" name="message" placeholder="Tell us about your agency, current needs, or upcoming projects…" /></div>
-                <input type="hidden" name="source" value="GHL LevelUp 2026" />
-                <input type="hidden" name="campaign" value="levelup-2026" />
-                <div className="full consent">By submitting this form, you agree that Isuremedia may contact you regarding your inquiry.</div>
-                <div className="full"><button className="btn btn-primary submit" type="submit">Request a Conversation →</button></div>
-              </form>
+              <iframe
+                src="https://crm.isuremedia.com/widget/form/KvUjcscgC5rLPUQl3Rah"
+                style={{ width: "100%", height: 841, border: "none", borderRadius: 20, display: "block" }}
+                id="inline-KvUjcscgC5rLPUQl3Rah"
+                data-layout='{"id":"INLINE"}'
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Events-LevelUp2026"
+                data-height="841"
+                data-layout-iframe-id="inline-KvUjcscgC5rLPUQl3Rah"
+                data-form-id="KvUjcscgC5rLPUQl3Rah"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Events-LevelUp2026"
+              />
+              <Script src="https://crm.isuremedia.com/js/form_embed.js" strategy="afterInteractive" />
             </div>
           </div>
         </section>
