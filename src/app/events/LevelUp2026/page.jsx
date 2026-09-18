@@ -1,7 +1,8 @@
 import { Lora } from "next/font/google";
-import Script from "next/script";
 import ClientsMarquee from "@/components/ClientsMarquee";
 import Services from "@/components/Services";
+import VideoTestimonials from "@/components/VideoTestimonials";
+import BookingWidget from "./BookingWidget";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -166,9 +167,8 @@ export default function LevelUp2026Page() {
         .lu2026 .step p{margin:0;color:var(--muted);font-size:14px}
 
         .lu2026 .form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
-        .lu2026 .form-panel{background:white;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 20px 55px rgba(0,10,30,.18)}
+
         .lu2026 .connect-center{display:flex;flex-direction:column;align-items:center;text-align:center}
-        .lu2026 .connect-center .form-panel{width:100%;max-width:900px;margin-top:36px}
 
         .lu2026 footer{background:var(--navy-deep);color:#c3d1ee;padding:30px 0}
         .lu2026 .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
@@ -207,6 +207,17 @@ export default function LevelUp2026Page() {
           .lu2026 .hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 36px),0 100%);padding-bottom:36px}
           .lu2026 .agenda-grid{grid-template-columns:1fr;gap:6px}
           .lu2026 .agenda-head{flex-direction:column;align-items:flex-start}
+        }
+
+        /* This page hides the site-wide WhatsApp button and GHL chat widget */
+        .wa-float-btn{display:none !important}
+        chat-widget{display:none !important}
+
+        /* Services tab bar on mobile scrolls off-screen with no hint it's scrollable — add a fade edge and snap so it reads as swipeable */
+        @media(max-width:640px){
+          .lu2026 #services .svc-tabbar-outer{position:relative}
+          .lu2026 #services .svc-tabbar{-webkit-mask-image:linear-gradient(to right,#000 85%,transparent 100%);mask-image:linear-gradient(to right,#000 85%,transparent 100%);scroll-snap-type:x proximity;padding-right:24px}
+          .lu2026 #services .svc-tabbar button{scroll-snap-align:start;min-height:44px}
         }
       `}</style>
 
@@ -417,34 +428,15 @@ export default function LevelUp2026Page() {
           </div>
         </section>
 
+        <VideoTestimonials />
+
         <section id="connect" className="band">
           <div className="container connect-center">
             <div className="section-head section-head-center">
               <h2>Tell us what you want to <em className="text-blue">build next.</em></h2>
-              <p style={{ fontSize: 17, color: "var(--muted)" }}>Whether you need a GHL implementation team, white-label marketing fulfillment, or support with a specific client project, share a few details and we&rsquo;ll start the conversation.</p>
+              <p style={{ fontSize: 17, color: "var(--muted)" }}>Whether you need a GHL implementation team, white-label marketing fulfillment, or support with a specific client project, book a slot with Ty directly.</p>
             </div>
-            <div className="form-panel">
-              <iframe
-                src="https://crm.isuremedia.com/widget/form/KvUjcscgC5rLPUQl3Rah"
-                style={{ width: "100%", height: 841, border: "none", borderRadius: 20, display: "block" }}
-                id="inline-KvUjcscgC5rLPUQl3Rah"
-                data-layout='{"id":"INLINE"}'
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Events-LevelUp2026"
-                data-height="841"
-                data-layout-iframe-id="inline-KvUjcscgC5rLPUQl3Rah"
-                data-form-id="KvUjcscgC5rLPUQl3Rah"
-                data-cookie-consent="true"
-                data-cookie-consent-provider="auto"
-                title="Events-LevelUp2026"
-              />
-              <Script src="https://crm.isuremedia.com/js/form_embed.js" strategy="afterInteractive" />
-            </div>
+            <BookingWidget />
           </div>
         </section>
 
